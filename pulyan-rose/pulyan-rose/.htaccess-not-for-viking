@@ -1,0 +1,14 @@
+AuthType Basic
+AuthName "Pulyan and Rose Letters"
+AuthUserFile "/home3/reversev/.htpasswds/public_html/selfdefinition.org/pulyan-rose/passwd"
+require valid-user
+
+
+# auth added Jan 5, 2017
+
+IndexIgnore scripts smallscreentopmenu.js
+
+
+
+# end
+

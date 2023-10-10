@@ -1,0 +1,306 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Rose</title>
+    <meta name="description" content="Richard Rose index page">
+    <meta property="og:title" content="Richard Rose">
+    <meta property="og:description" content="Richard Rose index page">
+    <meta property="og:image" content="https://selfdefinition.org/rose/images/Richard-Rose-ABJ-1982.jpg">
+    <link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+    <!-- updated section-index-2022.css on April 17,2022 to incorporate the next 
+    <link href="/rose/five-item-top-menu-tweak.css" rel="stylesheet" type="text/css">-->
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+
+
+    <style>
+        /* default image width is 210px */
+        #image {}
+
+        @media only print {
+            #main-content:after {
+                content: "Page update April 17, 2022";
+            }
+        }
+
+
+        /* from old   removed, no watermark */
+        /* gets rid of google watermark  
+        .gsc-input {
+            background: none !important;
+        }
+*/
+        html.dark .gsc-input {
+            background: #555 !important;
+            background: #555;
+            color: lightgreen;
+            outline: none;
+        }
+
+        .gsc-input {
+            background: #ccc !important;
+            background: #ccc;
+            color: black;
+            outline: none;
+        }
+
+
+
+        /*
+        https://stackoverflow.com/questions/30843561/css-issue-with-styling-the-google-custom-search-box
+        */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper-index">
+        <div id="container">
+            <div id="fixed-header">
+                <ul id="menu-site">
+                    <!-- these are floats -->
+                    <li><a href="/">Site Root</a></li>
+                    <li><a href="/sitemap.htm">Site Map</a></li>
+                    <li><a href="/paginas-en-espanol.htm">Español</a></li>
+                    <li><a href="/rose/search/rose-search-multisite.htm">Search RR</a></li>
+                    <li><a href="javascript:scroll(0,0)" role="button">Top of Page</a></li>
+                </ul>
+                <div style="clear: both;">
+                </div>
+            </div>
+
+            <div id="main-content">
+                <div id="style-gadget">
+                    <label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+                        Dark theme: <input type="checkbox" id="theme-checkbox">
+                    </label>
+                    <!-- Can't be in head. Can be in README -->
+                    <script src="/scripts/set-theme-cookie-checkbox.js"></script>
+                </div>
+                <header>
+                    <p class="logo">
+                        Self<span style="margin-left: 1px;">Definition.Org</span>
+                    </p>
+                    <h1 class="title">
+                        Richard Rose
+                    </h1>
+                    <p class="tight">
+                        Transcriptions, Articles, Writings</p>
+                </header>
+                <div id="announce">
+
+                    <div id="image-div">
+                        <img id="image" src="/rose/images/Richard-Rose-ABJ-1982-small.jpg" alt="Richard Rose" />
+                        <p id="photo-link" class="tiny">
+                            <a href="/rose/images/Richard-Rose-ABJ-1982.jpg">
+                                See this image larger size</a>
+                        </p>
+                    </div>
+
+                    <div id="top-links">
+					
+						<p class="motto">"The path to truth begins with the self."<br />&ndash; Richard Rose</p>
+
+                        <div class="featured-links">
+                            <h4>
+                                In this section</h4>
+                        </div><!-- end .featured-links -->
+                        <div class="external-links note">
+                            <p>
+                                Transcriptions in PDF section are recent. For older see:
+                            </p>
+                            <ul class="links-list">
+                                <li class="first">Richard Rose, <em>The Direct Mind Experience</em>
+                                    <a href="https://tatfoundation.org/direct.htm">tatfoundation.org/direct.htm</a>
+                                </li>
+                                <li>TAT Foundation archives
+                                    <a href="https://tatfoundation.org/forum_index.htm#Rose">tatfoundation.org/forum_index.htm#Rose</a>
+                                </li>
+                                <li>and SearchWithin.Org
+                                    <a href="https://www.searchwithin.org/download.htm">www.searchwithin.org/download.htm</a>
+                                </li>
+                            </ul>
+
+                        </div><!-- end .external-links -->
+                        <div class="site-links">
+
+                            <p class="note80">See search page for Richard Rose: <a class="inline" href="/rose/search/rose-search-multisite.htm">
+                                    rose-search-multisite.htm</a></p>
+
+                            <!-- These instructions are good
+                        https://developers.google.com/custom-search/docs/tutorial/implementingsearchbox
+                       
+                            <div id="custom-search-bar">
+                                <p class="tiny">
+                                    Search docs on this page with Google. Or try <a class="inline" href="rose-search-multisite.htm">Rose multisite search</a><br />
+                                    (For search box to load, ad-blocker has to allow Google Ajax Search API)
+                                <div style="background:#335;">
+
+                                    <script async src="https://cse.google.com/cse.js?cx=96d8258db0622770b"></script>
+                                    <div class="gcse-searchbox-only" data-resultsUrl="rose-search-results.htm"></div>
+
+                                </div>
+                            </div> -->
+                            <!-- end #custom-search-bar -->
+
+                        </div><!-- end .site-links -->
+                    </div> <!-- end #top-links -->
+                    <div style="clear:both;"></div>
+                </div>
+                <!-- end announce -->
+                <div id="bottom-links">
+
+                    <div class="featured-links">
+
+                        <!-- must use inline-block. Inline doesn't do it -->
+                        <h4>
+                            Article index </h4>
+                        <p>
+                            <a href="/rose/about/article-index.htm">/rose/about/<wbr />article-index.htm</a>
+                        </p>
+
+                        <p>
+                            Wheeling newspaper, 1968<br />
+                            <a href="/rose/articles/richard-rose-farm-1968.htm">
+                                "McCreary Ridge Hippies Live Quietly in Hills Meditating"</a>
+                        </p>
+                        <p>
+                            More old newspaper articles <a href="/rose/articles/">
+                                /rose/articles/</a></p>
+                        <p>
+                            "Notice" by Richard Rose <a href="/rose/writings/richard-rose-notice.htm">
+                                /rose/writings/richard-rose-notice.htm</a></p>
+                        <p>
+                            "The Mind" by Richard Rose <a href="/rose/writings/richard-rose-the-mind.htm">
+                                /rose/writings/richard-rose-the-mind.htm</a></p>
+                        <p>
+                            "Yoga: Hatha, Shabd, and Raja," by Richard Rose <a href="/rose/writings/richard-rose-yoga-hatha-shabd-raja.htm">
+                                /rose/writings/richard-rose-yoga-hatha-shabd-raja.htm</a></p>
+                        <h4>
+                            About Richard Rose</h4>
+                        <p>
+                            Wikipedia entry
+                            <a class="inline" href="https://en.wikipedia.org/wiki/Richard_Rose_(mystic)">en.wikipedia.org/wiki/<wbr />Richard_<wbr />Rose_<wbr />(mystic)</a>
+                        </p>
+                        <p>
+                            Michael Casari: Richard Rose, the Man Who Was a Mirror<br />
+                            <a href="/rose/about/richard-rose-the-man-who-was-a-mirror.htm">
+                                /rose/about/richard-rose-the-man-who-was-a-mirror.htm
+                            </a>
+                        </p>
+                        <p>
+                            Michael Casari: About Richard Rose - Interview, 2005, Interfaith Forums<br />
+                            <a href="/rose/about/michael-casari-about-richard-rose.htm">
+                                /rose/about/michael-casari-about-richard-rose.htm
+                            </a>
+                        </p>
+                        <p>
+                            Alan Fitzpatrick: Richard Rose and the Assimilation of his Enlightenment Experience<br />
+                            <a href="/rose/about/richard-rose-assimilation-enlightenment.htm">
+                                /rose/about/richard-rose-assimilation-enlightenment.htm
+                            </a>
+                        </p>
+                        
+                        <h4>Retreat From Untruth</h4>
+                        
+                        <p>
+                            Alan Fitzpatrick: The Teachings of Richard Rose, American Zen Master (2 chapters)<br>
+                            12) The Ascendency of Rose's Teachings <br>
+                            13) The Surest Path
+                            <a href="/rose/retreat/contents.htm">
+                                /rose/retreat/contents.htm
+                            </a>
+                        </p>
+                        
+                        <h4>
+                            Richard Rose in the Celibacy section of this site</h4>
+                        <p>
+                            Temptation (1947): <a href="/celibacy/quotes/richard-rose-temptation.htm">/celibacy/quotes/richard-rose-temptation.htm</a>
+                        </p>
+                        <p>
+                            Prostaglandins and Morality: <a href="/celibacy/quotes/richard-rose-prostaglandins-and-morality.htm">
+                                /celibacy/quotes/richard-rose-prostaglandins-and-morality.htm</a></p>
+                        <p>
+                            Notes on Celibacy (1980): <a href="/celibacy/quotes/richard-rose-notes-on-celibacy.htm">
+                                /celibacy/quotes/richard-rose-notes-on-celibacy.htm</a></p>
+
+                    </div>
+
+                    <div class="site-links">
+
+                        <h4>
+                            The Alfred Pulyan, Richard Rose letters</h4>
+
+                        <p class="tight"><a href="/pulyan/letters/1960-0820-pulyan.htm">/pulyan/letters/1960-0820-pulyan.htm</a></p>
+
+                        <p class="note tight">For the letters from Rose to Pulyan, please contact the webmaster.</p>
+
+
+                        <h4>Richard Rose Audio Recordings</h4>
+
+                        <p>
+                            Wiki of transcripts, including transcripts in-process
+                            <a href=" https://www.direct-mind.org/index.php?title=Recordings">
+                                https://www.direct-mind.org</a>
+                        </p>
+                        <p>
+                            Spreadsheet of known recordings (widescreen only)
+                            <a href="/rose/rose-audio-temp/recordings-source-list-in-process.htm">
+                                /rose/rose-audio-temp/recordings-source-list-in-process.htm</a>
+                        </p>
+
+                        <p>
+                            Contact webmaster for more information
+                            <a href="https://selfdefinition.org/contact/">
+                                https://selfdefinition.org/<wbr />contact/</a>
+                        </p>
+
+                    </div>
+
+                    <div class="external-links">
+                        <h4>External Links</h4>
+
+                        <p>Richard Rose Biography, at the TAT Foundation:
+                            <a href="https://tatfoundation.org/bio.htm">
+                                tatfoundation.org/bio.htm</a>
+                        </p>
+
+                        <p>About Richard Rose, at Richard Rose Teachings:
+                            <a href="http://richardroseteachings.com/about/">
+                                www.richardroseteachings.com/about/</a>
+                        </p>
+                        
+                        <p>Richard Rose's seminal work <em>The Albigen Papers</em>, containing the core of his teachings at 
+                        	<a href="https://amzn.to/3yLxTfs">Amazon.Com</a>
+                        </p>
+                    </div>
+
+
+                </div> <!-- end bottom-links -->
+                <p class="totop center">
+                    <a href="javascript:scroll(0,0)" role="button">top of page</a>
+                </p>
+                <!-- this tag preceeds the autogenerated section -->
+                <div id="maincontentpre">
+                    <!-- This is inside #main-conten -->
+
+                    <!-- for testing only 
+                </div> #maincontentpre
+            </div> #main-content
+        </div> #container
+    </div> #mainwrapper-index   -->
+
+                    <!--
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+-->

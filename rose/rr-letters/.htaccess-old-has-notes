@@ -1,0 +1,26 @@
+# .htaccess file for selfdefinition.org/rose/rr-letters/
+
+# Options -Indexes
+# Options +Indexes
+ 
+# apparently there is to no way to un-ignore without writinbg a custom handler
+ 
+Redirect 301 "/rose/rr-letters/rose-papers-catalogue-version-1.htm"    /rose/rr-letters/
+
+
+
+
+
+
+	  
+
+
+
+
+
+
+
+
+
+
+

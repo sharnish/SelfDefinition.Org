@@ -1,0 +1,104 @@
+<!-- start of menu include file update Sep 27, 2019. April 26, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/buddhism/">Buddhism index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm">Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <!-- #menu-container is targeted by the script RecoverDivScroll  -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/buddhism/">Buddhism index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li class="normal">
+                <img class="menu-image" src="images/buddha-statue.jpg" alt="Buddha statue" />
+            </li>
+            <li>Topga Rinpoche</li>
+            <li>Buddhist Philosophy
+                <span class="normal">based on the<br /> Rice Seedling Sutra</span>
+            </li>
+            <li class="normal tight">(Salistamba Sutra)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="introduction.htm">Introduction</a></li>
+                <li><a href="rice-seedling-01.htm">Part 1</a></li>
+                <li><a href="rice-seedling-01-q-and-a.htm">Part 1 Q and A</a></li>
+                <li><a href="rice-seedling-02.htm">Part 2</a></li>
+                <li><a href="rice-seedling-03.htm">Part 3</a></li>
+                <li><a href="rice-seedling-04.htm">Part 4</a></li>
+                <li><a href="rice-seedling-05.htm">Part 5</a></li>
+                <li><a href="rice-seedling-06.htm">Part 6</a></li>
+                <li><a href="rice-seedling-07.htm">Part 7</a></li>
+                <li><a href="rice-seedling-08.htm">Part 8</a></li>
+                <li><a href="rice-seedling-09.htm">Part 9</a></li>
+                <li><a href="rice-seedling-10.htm">Part 10</a></li>
+                <li><a href="rice-seedling-11.htm">Part 11</a></li>
+                <li><a href="rice-seedling-12.htm">Part 12</a></li>
+                <li><a href="rice-seedling-13.htm">Part 13</a></li>
+                <li><a href="rice-seedling-14.htm">Part 14</a></li>
+                <li><a href="rice-seedling-15.htm">Part 15</a></li>
+                <li><a href="rice-seedling-16.htm">Part 16</a></li>
+                <li><a href="rice-seedling-17.htm">Part 17</a></li>
+                <li><a href="rice-seedling-18.htm">Part 18</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div id="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li>Source: <a class="inline" href="https://www.scribd.com/document/111105657/The-Rice-Seedling-Sutra">Scribd.Com</a></li>
+                <li class="tight">Link opens <a claass="inline" href="/buddhism/Togpa-Rinpoche-Rice-Seedling-Sutra-course.pdf">70 page pdf</a>
+                    <span class="note80 inline">Copyright: Attribution Non-Commercial (BY-NC)</span>
+                </li>
+
+                <li>Rice Seedling Sutra at
+                    <a href="http://www.rigpawiki.org/index.php?title=Rice_Seedling_Sutra">RigapaWiki.org</a>
+                </li>
+
+                <li>The 12 Nidanas at <a href="http://www.khandro.net/doctrine_12Nidanas.htm">
+                        Khandro.net</a></li>
+                <li>En Español a <a href="http://budadharmazen.org/tierra-del-buda/tripitaka/textos-tradiciones-principales/salistamba.pdf">
+                        budadharmazen.org</a></li>
+                <li>urchase book (the sutra): <a href="http://www.namsebangdzo.com/Salistamba_Sutra_p/10579.htm">
+                        namsebangdzo.com</a></li>
+                <li>Salistamba Sutra (searchable scan, texts and translation, 1993) <a href="https://books.google.com.mx/books?id=e4mzEVD1glkC&pg=PA2&lpg=PA2&dq=salistamba+nagarjuna#v=onepage&q=salistamba%20nagarjuna&f=false">
+                        Google Books</a></li>
+                <li>Salistamba Sutra (same as the above) link opens: <a href="">PDF, </a></li>
+            </ul>
+        </div>
+
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

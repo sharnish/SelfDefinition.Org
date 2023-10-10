@@ -1,0 +1,52 @@
+/* file:  /ramana/self-enquiry/_self-enquiry-refresh.css
+
+Update June 17, 2020. May 24, 2022.
+
+*/
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #faffee;
+}
+
+/*  Blue, for selfdefinition-responsive.css WAS #ddf0ff  Tried this, green, #d6f6d6;*/
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #ddd;
+}
+
+p.qnum {
+	background: #c9ffc9;
+	text-align: center;
+}
+
+div.hidden,
+p.hidden {
+	color: maroon;
+}
+
+html.dark p.qnum {
+	background: #333;
+}
+
+label,
+label span {
+	background: inherit;
+}
+
+html.dark label,
+html.dark label span {
+	background: inherit;
+}
+
+
+/* end */

@@ -1,0 +1,123 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Talks on Sri Ramana Maharshi: Narrated by David Godman</title>
+	<meta name="description" content="Talks on Sri Ramana Maharshi: Narrated by David Godman (42 min video)" />
+	<meta name="author" content="David Godman">
+	<meta property="og:title" content="Talks on Sri Ramana Maharshi: Narrated by David Godman " />
+	<meta property="og:description" content="Talks on Sri Ramana Maharshi: Narrated by David Godman (42 min video)" />
+	<meta property="og:image" content="https://selfdefinition.org/ramana/quotes/images/ramana-og-image.jpg" />
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_ramana-quotes-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon" />
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_ramana-quotes-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_ramana-quotes-title-include.htm"); ?>
+									<h3 class="toowide">
+										Talks on Sri Ramana Maharshi: Narrated by David Godman
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="sadhu-om-self-inquiry.htm">&lt; Sadhu Om, Self Inquiry</a></li>
+									<li class="align-right"><a></a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- copied from page RA Wilson Free your Mind -->
+							<div class="videoWrapper">
+								<!-- see CSS style sheet -->
+								<div class="loading">
+									<p class="note80" style="margin-left: 20px;">
+										YouTube video is loading ...</p>
+									<img src="/images/video-loading.jpg" alt="video loading image" style="margin-left: 20px;" />
+								</div>
+								<iframe width="400" height="300" src="https://www.youtube.com/embed/UDVQC_uHRCI" allowfullscreen></iframe>
+							</div>
+							<!-- MUST have some text below the video of sufficient width, or video width will collapse on a small screen -->
+							<p>
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+							</p>
+							<!-- embed code offered by Youtube
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UDVQC_uHRCI" frameborder="0" allowfullscreen></iframe>
+                            -->
+							<!-- add more videos here -->
+							<!-- THE FOLLOWING IS NOT NEEDED, SHORT PAGE
+                           
+                            <p>&nbsp;</p>
+							<p class="note center">
+                                [ end ]
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                             -->
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

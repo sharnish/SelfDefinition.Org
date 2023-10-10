@@ -1,0 +1,87 @@
+<!-- start of menu include file Update October 21, 2020. May 25, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/van-der-leeuw/">Van der Leeuw index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents-and-preface.htm">Contents</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+		<div style="clear: both;">
+		</div>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/van-der-leeuw/">Van der Leeuw index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Conquest of Illusion</li>
+			<li>
+				<img class="menu-image" src="images/van-der-leeuw.jpg" alt="J. J. Van der Leeuw" />
+			</li>
+			<li>J. J. Van der Leeuw</li>
+			<li class="normal note">(1893&ndash;1934)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="contents-and-preface.htm">Contents and Preface</a> </li>
+				<li><a href="01-the-quest-of-life.htm">1. The Quest Of Life</a> </li>
+				<li><a href="02-from-the-unreal-to-the-real.htm">2. From The Unreal To The Real</a> </li>
+				<li><a href="03-intuition-and-intellect.htm">3. Intuition And Intellect</a> </li>
+				<li><a href="04-the-absolute-and-the-relative.htm">4. The Absolute And the Relative</a> </li>
+				<li><a href="05-the-mystery-of-creation.htm">5. The Mystery Of Creation</a> </li>
+				<li><a href="06-spirit-and-matter.htm">6. Spirit And Matter</a> </li>
+				<li><a href="07-the-phantom-of-evil.htm">7. The Phantom Of Evil</a> </li>
+				<li><a href="08-the-freedom-of-the-will.htm">8. The Freedom Of The Will</a> </li>
+				<li><a href="09-the-justice-of-life.htm">9. The Justice Of Life</a> </li>
+				<li><a href="10-the-immortality-of-the-soul.htm">10. The Immortality Of The Soul</a> </li>
+				<li><a href="11-in-the-light-of-the-eternal.htm">11. In The Light Of The Eternal</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<!-- div.optional-links disappears when #menu-container disappears -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>J. J. Van der Leeuw at <a href="https://en.wikipedia.org/wiki/Johannes_Jacobus_(J._J.)_van_der_Leeuw">Wikipedia</a> </li>
+			</ul>
+		</div>
+		<!-- div.site-links disappears when #menu-container disappears -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site<br />
+				<li class="first-item">
+					PDFs and bio: <a href="/van-der-leeuw/">/van-der-leeuw/</a>
+				</li>
+				<li>Blavatsky-Theosophy section: <a href="/blavatsky/">/blavatsky/</a> </li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

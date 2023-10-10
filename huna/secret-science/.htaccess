@@ -1,0 +1,69 @@
+# .htaccess file for selfdefinition.org/huna/secret-science/
+
+
+# PAGE NAME CHANGES JJAN 29, 2017 
+
+Redirect 301 "/huna/max-freedom-long-huna-bulletin.htm" "/huna/huna-bulletin/contents.htm"
+
+# correct bad spelling of image for google image search
+
+Redirect 301 "/huna/secret-science/images/mechanics-of-telapathy-prayer.jpg"    "/huna/secret-science/images/mechanics-of-telepathy-prayer.jpg"
+
+# fix misspelling of file (for google image search)
+Redirect 301 "/huna/secret-science/images/mechanics-of-telapathy-prayer.jpg"    "/huna/secret-science/images/mechanics-of-telepathy-prayer.jpg"
+
+
+# Page renaming on reformat Dec 2016
+
+Redirect 301 "/huna/secret-science/00-secret-science-behind-miracles-table-of-contents.htm"           "/huna/secret-science/contents.htm"
+
+Redirect 301 "/huna/secret-science/00-secret-science-behind-miracles-illustrations.htm"               "/huna/secret-science/illustrations.htm"
+
+Redirect 301 "/huna/secret-science/01-the-discovery-that-may-change-the-world.htm"                    "/huna/secret-science/chapter-01.htm"
+
+Redirect 301 "/huna/secret-science/02-fire-walking-as-introduction-to-magic.htm"                      "/huna/secret-science/chapter-02.htm"
+
+Redirect 301 "/huna/secret-science/03-the-incredible-force-used-in-magic.htm"                         "/huna/secret-science/chapter-03.htm"
+
+Redirect 301 "/huna/secret-science/04-the-two-souls-of-man-and-the-proofs-that-there-are-two.htm"     "/huna/secret-science/chapter-04.htm"
+
+Redirect 301 "/huna/secret-science/05-kahuna-system-three-souls-or-spirits-each-own-voltage.htm"      "/huna/secret-science/chapter-05.htm"
+
+Redirect 301 "/huna/secret-science/06-taking-measure-of-the-third-element-in-magic-invisible-substance.htm"  "/huna/secret-science/chapter-06.htm"
+
+Redirect 301 "/huna/secret-science/07-psychometry-crystal-gazing-visions-past-future-explained.htm"          "/huna/secret-science/chapter-07.htm"  
+
+Redirect 301 "/huna/secret-science/08-mind-reading-clairvoyance-prevision-psychometry-explained.htm"         "/huna/secret-science/chapter-08.htm"
+
+Redirect 301 "/huna/secret-science/09-significance-of-seeing-into-the-future-psychometric-and-dreams.htm"    "/huna/secret-science/chapter-09.htm"
+
+Redirect 301 "/huna/secret-science/10-the-easy-way-to-dream-into-the-future.htm"                             "/huna/secret-science/chapter-10.htm"
+
+Redirect 301 "/huna/secret-science/11-instant-healing-through-the-high-self-proofs-and-methods.htm"          "/huna/secret-science/chapter-11.htm"
+
+Redirect 301 "/huna/secret-science/12-raising-the-dead-permanently-and-temporarily.htm"                      "/huna/secret-science/chapter-12.htm"
+
+Redirect 301 "/huna/secret-science/13-the-life-giving-secrets-of-lomilomi-and-laying-on-of-hands.htm"        "/huna/secret-science/chapter-13.htm"  
+
+Redirect 301 "/huna/secret-science/14-startling-new-ideas-kahunas-nature-of-the-complex-and-healing.htm"     "/huna/secret-science/chapter-14.htm"
+
+Redirect 301 "/huna/secret-science/15-the-secret-kahuna-method-of-treating-the-complex.htm"             "/huna/secret-science/chapter-15.htm"
+
+Redirect 301 "/huna/secret-science/16-how-the-kahunas-fought-the-horrid-things-of-darkness.htm"         "/huna/secret-science/chapter-16.htm"
+
+Redirect 301 "/huna/secret-science/17-the-secret-within-the-secret.htm"                                 "/huna/secret-science/chapter-17.htm"
+
+Redirect 301 "/huna/secret-science/18-the-secret-which-enabled-kahunas-to-perform-instant-healing.htm"  "/huna/secret-science/chapter-18.htm"
+
+Redirect 301 "/huna/secret-science/19-the-magic-of-rebuilding-the-unwanted-future.htm"                  "/huna/secret-science/chapter-19.htm"
+
+Redirect 301 "/huna/secret-science/20-the-high-self-and-the-healing-in-psychic-science.htm"             "/huna/secret-science/chapter-20.htm"  
+
+Redirect 301 "/huna/secret-science/21-how-the-kahunas-controlled-winds-weather-sharks-by-magic.htm"     "/huna/secret-science/chapter-21.htm"
+
+Redirect 301 "/huna/secret-science/22-the-practical-use-of-the-magic-of-the-miracle.htm"                "/huna/secret-science/chapter-22.htm"
+
+Redirect 301 "/huna/secret-science/00-secret-science-behind-miracles-appendix.htm"                      "/huna/secret-science/appendix.htm"
+
+
+# end

@@ -1,0 +1,96 @@
+<!-- start of menu include file   May 8, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <!-- these float <  check, where is it cleared? -->
+            <li class="first-item"><a href="/christian/">Christian<span class="menu-conditional-hide"> index</span></a></li>
+            <li><a href="/rose/">Rose index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="conditional-hide-3"><a href="/">Site root</a></li>
+            <li><a href="contents.htm">Contents</a></li>
+            <li id="menu-totop" class="note"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/christian/">Christian index</a></li>
+            <li><a href="/rose/">Richard Rose index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Some features use ajax api</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center">
+            <li class="normal">
+                <img class="menu-image" src="images/michelangelo-creation-of-adam-god.jpg" alt="Creation of Adam" />
+            </li>
+            <li>Leon Paul Wood</li>
+            <li>Christian Mystic</li>
+            <li class="normal note">(1917-1965)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Paul Wood Contents</a></li>
+                <li><a href="paul-wood-story.htm">Story of Leon Paul Wood</a> </li>
+                <li>
+                    <hr />
+                </li>
+                <li class="note">Richard Rose's Comments on Paul Wood (lecture extracts):</li>
+                <li><a href="richard-rose-paul-wood-1974-cleveland.htm">Cleveland, Ohio, 1974<br />
+                        Obstacles</a></li>
+                <li><a href="richard-rose-paul-wood-1976-la-zen-esoteric-christianity.htm">Los Angeles, 1976<br />
+                        Zen and Esoteric Christianity</a></li>
+                <li><a href="richard-rose-paul-wood-1976-kent-state.htm">Kent State Univ., 1976<br />
+                        Definition of Zen</a></li>
+                <li><a href="richard-rose-paul-wood-1978-columbus.htm">Columbus, Ohio, 1978<br />
+                        Relative and Absolute</a></li>
+                <li><a href="richard-rose-paul-wood-1989-zen-is-action.htm">Columbus, Ohio, 1989 Zen Is Action</a></li>
+                <li><a href="richard-rose-paul-wood-1991-augie-raleigh.htm">Raleigh, NC, 1991<br />
+                        Augie's Apartment</a></li>
+                <li>
+                    <hr />
+                </li>
+                <li><a href="robert-martin-on-leon-paul-wood.htm">Robert J. Martin on Leon Paul Wood</a> </li>
+                <li><a href="paul-wood-obituary.htm">Leon Paul Wood Obituary</a> </li>
+                <li><a href="paul-wood-article-full-size.htm">Newspaper Article Full Size, Eugene Register-Guard, 209 KB image </a></li>
+                <li><a href="robert-j-martin-obituary.htm">Robert Martin Obit 2003</a></li>
+                <!-- not in menu 
+                <li><a href="guggenheim-gleason.htm">guggenheim-gleason.htm</a></li>
+                -->
+            </ul>
+        </div>
+        <div class="external-links">
+            <ul class="menu-section">
+                <li class="external-links-item">Also on sister site</li>
+                <li class="external-first-item">Search direct-mind.org on Paul Wood <a href="https://www.direct-mind.org/index.php?title=Special:Search&limit=50&offset=0&profile=default&search=paul+wood">www.direct-mind.org</a></li>
+                <!-- not used
+                <li>Partial Rose transcription (search the page on paul wood): <a class="inline" href="https://www.direct-mind.org/index.php?title=1991-Unitarian-Church-Raleigh">
+                    direct-mind.org .. 1991-Unitarian-Church-Raleigh</a> </li>
+                -->
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

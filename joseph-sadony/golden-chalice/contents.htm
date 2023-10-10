@@ -1,0 +1,236 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Golden Chalice by Joseph Sadony</title>
+	<meta name="description" content="When in doubt you need but ask your questions 
+    and drink from the golden chalice, where the comforting spirit of truth moves you find your answer.">
+	<meta name="author" content="Joseph Sadony">
+	<meta property="og:title" content="The Golden Chalice by Joseph Sadony">
+	<meta property="og:description" content="When in doubt you need but ask your questions and drink from the golden chalice, where the comforting spirit of truth moves you find your answer.">
+	<meta property="og:image" content="https://selfdefinition.org/joseph-sadony/golden-chalice/images/joseph-sadony-og-image-2.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_golden-chalice-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- start -->
+	<link rel="next" href="foreword.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Social media
+        
+        When in a quiet, peaceful mood why not ask your soul a few questions as I do mine in the following meditations, and see what answers you get? If nothing more, it can be a game of review to see what you have and what you are that you call "I", your very "Self". 
+        
+        
+        (the above is from the Forward)
+           
+        */
+
+
+		/* CSS3 columns; see Garma Chang book index */
+
+		nav.contents {
+			-webkit-columns: 3;
+			-moz-columns: 3;
+			columns: 3;
+			width: 100%;
+			margin: 35px auto 0;
+			border: 0px solid yellow;
+		}
+
+		@media only screen and (max-width:460px) {
+			div.to-center {
+				width: 300px;
+			}
+
+			nav.contents {
+				-webkit-columns: 2;
+				-moz-columns: 2;
+				columns: 2;
+			}
+		}
+
+		nav.contents .item {
+			font-size: 95%;
+			width: 130px;
+			margin-bottom: 30px;
+			border: 0px solid red;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_golden-chalice-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_golden-chalice-title-include.htm"); ?>
+									<h3>
+										Contents
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="foreword.htm">Foreword &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- items have :hover styling, color change -->
+							<!-- the uls don't float; they are display: inline-block -->
+							<div class="to-center">
+								<nav class="contents" style="margin-top:35px;">
+									<div class="item">
+										<a href="foreword.htm">Foreword</a>
+									</div>
+									<div class="item">
+										<a href="title-page.htm">Title Page</a>
+									</div>
+									<div class="item">
+										<a href="chapter-01.htm">Chapter 1</a>
+									</div>
+									<div class="item">
+										<a href="chapter-02.htm">Chapter 2</a>
+									</div>
+									<div class="item">
+										<a href="chapter-03.htm">Chapter 3</a>
+									</div>
+									<div class="item">
+										<a href="chapter-04.htm">Chapter 4</a>
+									</div>
+									<div class="item">
+										<a href="chapter-05.htm">Chapter 5</a>
+									</div>
+									<div class="item">
+										<a href="chapter-06.htm">Chapter 6</a>
+									</div>
+									<div class="item">
+										<a href="chapter-07.htm">Chapter 7</a>
+									</div>
+									<div class="item">
+										<a href="chapter-08.htm">Chapter 8</a>
+									</div>
+									<div class="item">
+										<a href="chapter-09.htm">Chapter 9</a>
+									</div>
+									<div class="item">
+										<a href="chapter-10.htm">Chapter 10</a>
+									</div>
+									<div class="item">
+										<a href="chapter-11.htm">Chapter 11</a>
+									</div>
+									<div class="item">
+										<a href="chapter-12.htm">Chapter 12</a>
+									</div>
+									<div class="item">
+										<a href="chapter-13.htm">Chapter 13</a>
+									</div>
+									<div class="item">
+										<a href="chapter-14.htm">Chapter 14</a>
+									</div>
+									<div class="item">
+										<a href="chapter-15.htm">Chapter 15</a>
+									</div>
+									<div class="item">
+										<a href="chapter-16.htm">Chapter 16</a>
+									</div>
+								</nav>
+								<!-- end of #contents -->
+								<hr />
+							</div>
+							<nav id="index-lists">
+
+								<ul class="index-site-links">
+									<li class="site-links-item">More Sadony this site</li>
+									<li class="site-first-item"><a href="/joseph-sadony/gates-of-the-mind/joseph-sadony-obituary-1960.htm">Obituary (1960)</a></li>
+									<li><a href="/joseph-sadony/gates-of-the-mind/contents.htm">Gates of the Mind (autobiography)</a></li>
+									<!-- this section
+                                    <li><a href="/joseph-sadony/golden-chalice/contents.htm">The Golden Chalice</a></li>
+                                    -->
+									<li><a href="/joseph-sadony/pine-needles/contents.htm">Pine Needles (aphorisms)</a></li>
+									<li><a href="/joseph-sadony/human-radio/contents.htm">The Human Radio</a></li>
+									<li><a href="/joseph-sadony/enlightening-flashes/contents.htm">Enlight'ning Flashes</a></li>
+								</ul>
+								<ul class="index-external-links">
+									<li class="external-links-item">External Links</li>
+									<!-- website has disappeared
+                                    <li><a href="http://www.gatesofthemind.com/">GatesOfTheMind.Com</a> &ndash; Scroll down on page for Html from OCR of many Sadony books</li>
+                                    -->
+									<li class="external-first-item"><a href="http://www.valleyofthepines.com/">The Valley of the Pines</a> &ndash; Dedicated to the legacy of Joseph A. Sadony</li>
+									<li class="external-links-item">Joseph Sadony at</li>
+									<li class="external-first-item"><a href="https://www.spiritualteachers.org/joseph-sadony/">SpiritualTeachers.Org</a> &ndash; Has links to several articles, videos</li>
+									<li><a href="http://www.mysticmissal.org/sadony.htm">MysticMissal.Org</a> &ndash; Sadony's life and work</li>
+									<!--
+                                    <li>Biography and review at <a class="inline" href="https://www.goodreads.com/author/show/2985742.Joseph_Sadony">Goodreads.Com</a> </li>
+									-->
+								</ul>
+							</nav>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="foreword.htm">Foreword &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

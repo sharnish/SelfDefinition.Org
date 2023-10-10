@@ -1,0 +1,713 @@
+﻿<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brief Biography of Bhagvan Ramana</title>
+	<meta name="description" content="Birth and Youth; The Experience; Leaving Home; Tiruvannamalai; Ganapati; Alagammal; The Ashram; The End; Teachings">
+	<meta name="author" content="T. M. P. Mahadevan">
+	<meta property="og:title" content="Brief Biography of Bhagvan Ramana">
+	<meta property="og:description" content="Birth and Youth; The Experience; Leaving Home; Tiruvannamalai; Ganapati; Alagammal; The Ashram; The End; Teachings">
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-og-image-new.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* start CSS3 columns */
+		/* start CSS3 columns */
+		/* see uarelove.css for right-image-div */
+		/* photo and quote at top, WIDE screen, 
+           2 column table centered */
+
+		nav.contents {
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			columns: 2;
+		}
+
+		nav.contents {
+			width: 400px;
+			column-rule: 1px solid #666;
+			border: 0px solid yellow;
+		}
+
+		@media only screen and (max-width: 460px) {
+			div.to-center {
+				width: 100%;
+			}
+
+			nav.contents {
+				width: 100%;
+			}
+		}
+
+		nav.contents .item {
+			border: 0px solid blue;
+			padding-left: 10px;
+			width: 180px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width: 500px) {
+
+			nav.contents .item {
+				width: 159px;
+			}
+
+			nav.contents .item a {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			nav.contents {
+				-webkit-columns: 1;
+				-moz-columns: 1;
+				columns: 1;
+			}
+
+			nav.contents .item {
+				width: 190px;
+				margin-left: 70px;
+			}
+		}
+
+
+		/* end CSS3 columns */
+		/* end CSS3 columns */
+		div.photo-group {
+			margin-top: 30px;
+		}
+
+		div.photo-group p {
+			margin-top: 0px;
+		}
+
+		div.photo-container {
+			text-align: center;
+			display: block;
+		}
+
+		div.guru-photos {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2>
+										Sri Ramana Maharshi
+									</h2>
+									<h3>
+										A Brief Biography
+									</h3>
+									<p class="note">
+										by T. M. P. Mahadevan</p>
+								</header>
+							</div>
+
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="direct-path-mouni-sadhu.htm">&lt; M. Sadhu: Direct Path</a></li>
+									<li class="align-right"><a href="michael-james-muruganar-sadhu-om.htm"> Muruganar &amp; Sadhu Om &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="tiny center">
+								See copyright credits at the bottom of the&nbsp;page.
+							</p>
+							<div class="to-center" style="margin-top:35px;">
+								<nav class="contents">
+
+									<div class="item"><a href="#introduction">Introduction</a></div>
+									<div class="item"><a href="#birth-and-youth">Birth and Youth</a></div>
+									<div class="item"><a href="#the-experience">The Experience</a></div>
+									<div class="item"><a href="#leaving-home">Leaving Home</a></div>
+									<div class="item"><a href="#tiruvannamalai">Tiruvannamalai</a></div>
+									<div class="item"><a href="#ganapati">Ganapati</a></div>
+									<div class="item"><a href="#alagammal">Alagammal</a></div>
+									<div class="item"><a href="#visitors">Visitors</a></div>
+									<div class="item"><a href="#the-ashram">The Ashram</a></div>
+									<div class="item"><a href="#the-end">The End</a></div>
+									<div class="item"><a href="#teachings">Teachings</a></div>
+									<div class="item"><a href="#publisher" class="note">Publisher</a></div>
+
+								</nav>
+								<div style="clear:both;"></div>
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="introduction">&nbsp;</a>
+							<h4>
+								Introduction
+							</h4>
+							<p>
+								The Scriptures tell us that it is as difficult to trace the path a sage pursues as it is to draw a line marking the course a bird takes in the air while on its wings. Most humans have to be content with a slow and laborious journey towards the goal. But a few are born as adepts in flying non-stop to the common home of all beings - the supreme Self.
+							</p>
+							<div id="header-container">
+								<div class="right-image-div">
+									<img src="images/ramana-color-blue-background.jpg" alt="Ramana" />
+								</div>
+							</div>
+							<p>
+								The generality of mankind takes heart when such a sage appears. Though it is unable to keep pace with him, it feels uplifted in his presence and has a foretaste of the felicity compared to which the pleasures of the world pale into nothing.
+							</p>
+							<p>
+								Countless people who went to Tiruvannamalai during the life-time of Maharshi Sri Ramana had this experience. They saw in him a sage without the least touch of worldliness, a saint of matchless purity, a witness to the eternal truth of Vedanta. It is not often that a spiritual genius of the magnitude of Sri Ramana visits this earth. But when such an event occurs, the entire humanity gets benefited and a new era of hope opens before it.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="birth-and-youth">&nbsp;</a>
+							<h4>
+								Birth and Youth
+							</h4>
+
+							<p>
+								About thirty miles south of Madurai there is a village Tirucculi by name with an ancient Siva temple about which two of the great Tamil saints, Sundaramurti and Manikkavacakar, have sung. In this sacred village there lived in the latter part of the nineteenth century an uncertified pleader, Sundaram Aiyar with his wife Alagammal. Piety, devotion and charity characterised this ideal couple.
+							</p>
+							<p>
+								Sundaram Aiyar was generous even beyond his measure. Alagammal was an ideal Hindu wife. To them was born Venkataraman - who later came to be known to the world as Ramana Maharshi - on the 30th of December, 1879.
+							</p>
+							<p>
+								It was an auspicious day for the Hindus, the Ardra-darsanam day. On this day every year the image of the Dancing Siva, Nataraja, is taken out of the temples in procession in order to celebrate the divine grace of the Lord that made Him appear before such saints as Gautama, Patanjali, Vyaghrapada, and Manikkavacaka. In the year 1879 on the Ardra day the Nataraja Image of the temple at Tirucculi was taken out with all the attendant ceremonies, and just as it was about to re-enter, Venkataraman was born.
+							</p>
+							<p>
+								There was nothing markedly distinctive about Venkataraman's early years. He grew up just as an average boy. He was sent to an elementary school in Tirucculi, and then for a year's education to a school in Dindigul. When he was twelve his father died. This necessitated his going to Madurai along with the family and living with his paternal uncle Subbaiyar. There he was sent to Scott's Middle School and then to the American Mission High School.</p>
+							<p>
+								He was an indifferent student, not at all serious about his studies. But he was a healthy and strong lad. His school mates and other companions were afraid of his strength. If some of them had any grievance against him at any time, they would dare play pranks with him, only when he was asleep. In this he was rather unusual: he would not know of anything that happened to him during sleep. He would be carried away or even beaten without his waking up in the process.
+							</p>
+							<p>
+								It was apparently by accident that Venkataraman heard about Arunachala when he was sixteen years of age. One day an elderly relative of his called on the family in Madurai. The boy asked him where he had come from. The relative replied, "From Arunachala". The very name 'Arunachala' acted as a magic spell on Venkataraman, and with an evident excitement he put his next question to the elderly gentleman, "What! From Arunachala! Where is it?" And he got the reply that Tiruvannamalai was Arunachala.
+							</p>
+							<p>
+								Referring to this incident the Sage says later on in one of his hymns to Arunachala : 'Oh, great wonder! As an insentient hill it stands. Its action is difficult for anyone to understand. From my childhood it appeared to my intelligence that Arunachala was something very great. But even when I came to know through another that it was the same as Tiruvannamalai I did not understand its meaning. When, stilling my mind, it drew me up to it, and I came close, I found that it was the Immovable.'
+							</p>
+							<p>
+								Quickly following the incident which attracted Venkataraman's attention to Arunachala, there was another happening which also contributed to the turning of the boy's mind to the deeper values of spirituality. He chanced to lay his hands, on a copy of Sekkilar's Periyapuranam which relates the lives of the Saiva saints. He read the book and was enthralled by it. This was the first piece of religious literature that he read.</p>
+							<p>
+								The example of the saints fascinated him; and in the inner recesses of his heart he found something responding favourably. Without any apparent earlier preparation, a longing arose in him to emulate the spirit of renunciation and devotion that constituted the essence of saintly life.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="the-experience">&nbsp;</a>
+							<h4>
+								The Experience
+							</h4>
+							<p>
+								The spiritual experience that Venkataraman was now wishing devoutly to have came to him soon, and quite unexpectedly. It was about the middle of the year 1896; Venkataraman was seventeen then. One day he was sitting up alone on the first floor of his uncle's house. He was in his usual health. There was nothing wrong with it. But a sudden and unmistakable fear of death took hold of him. He felt he was going to die.</p>
+							<p>
+								Why this feeling should have come to him he did not know. The feeling of impending death, however, did not unnerve him. He calmly thought about what he should do. He said to himself, "Now, death has come. What does it mean? What is it that is dying? This body dies."
+							</p>
+							<p>
+								Immediately thereafter he lay down stretching his limbs out and holding them stiff as though rigor mortis had set in. He held his breath and kept his lips tightly closed, so that to all outward appearance his body resembled a corpse. Now, what would happen?
+							</p>
+							<p>
+								This was what he thought: "Well, this body is now dead. It will be carried to the burning ground and there burnt and reduced to ashes. But with the death, of this body am I dead? Is the body I? This body is silent and inert. But I feel the full force of my personality and even the voice of the 'I' within me, apart from it. So I am the Spirit transcending the body. The body dies but the Spirit that transcends it cannot be touched by death. That means I am the deathless Spirit".</p>
+							<p>
+								As Bhagavan Sri Ramana narrated this experience later on for the benefit of his devotees it looked as though this was a process of reasoning. But he took care to explain that this was not so. The realization came to him in a flash. He perceived the truth directly. 'I' was something very real, the only real thing. Fear of death had vanished once and for all. From then on, 'I' continued like the fundamental sruti note that underlies and blends with all the other notes.
+							</p>
+							<p>
+								Thus young Venkataraman found himself on the peak of spirituality without any arduous or prolonged sadhana. The ego was lost in the flood of Self-awareness. All on a sudden the boy that used to be called Venkataraman had flowered into a sage and saint.
+							</p>
+							<p>
+								There was noticed a complete change in the young sage's life. The things that he had valued earlier now lost their value. The spiritual values which he had ignored till then became the only objects of attention. School-studies, friends, relations - none of these had now any significance for him.
+							</p>
+							<p>
+								He grew utterly indifferent to his surroundings. Humility, meekness, non-resistance and other virtues became his adornment. Avoiding company he preferred to sit alone, all-absorbed in concentration on the Self. He went to the Minaksi temple every day and experienced an exaltation every time he stood before the images of the gods and the saints. Tears flowed from his eyes profusely. The new vision was constantly with him. His was the transfigured life.
+							</p>
+							<p>
+								Venkataraman's elder brother observed the great change that had come upon him. On several occasions he rebuked the boy for his indifferent and yogi-like behaviour. About six weeks after the great experience the crisis came.
+							</p>
+							<p>
+								It was the 29th of August, 1896. Venkataraman's English teacher had asked him, as a punishment for indifference in studies, to copy out a lesson from Bain's Grammar three times. The boy copied it out twice, but stopped there, realizing the utter futility of that task. Throwing aside the book and the papers, he sat up, closed his eyes, and turned inward in meditation.
+							</p>
+							<p>
+								The elder brother who was watching Venkataraman's behaviour all the while went up to him and said : "What use is all this to one who is like this?" This was obviously meant as a rebuke for Venkataraman's unworldly ways including neglect of studies.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="leaving-home">&nbsp;</a>
+							<h4>
+								Leaving Home
+							</h4>
+
+							<p>
+								Venkataraman did not give any reply. He admitted to himself that there was no use pretending to study and be his old self. He decided to leave his home; and he remembered that there was a place to go to, viz. Tiruvannamalai. But if he expressed his intention to his elders, they would not let him go. So he had to use guile. He told his brother that he was going to school to attend a special class that noon.
+							</p>
+							<p>
+								The brother thereupon asked him to take five rupees from the box below and pay it as his fee at the college where he was studying. Venkataraman went downstairs; his aunt served him a meal and gave him the five rupees. He took out an atlas which was in the house and noted that the nearest railway station to Tiruvannamalai mentioned there was Tindivanam.
+							</p>
+							<p>
+								Actually, however, a branch line had been laid to Tiruvannamalai itself. The atlas was an old one, and so this was not marked there. Calculating that three rupees would be enough for the journey, Venkataraman took that much and left the balance with a letter at a place in the house where his brother could easily find them, and made his departure for Tiruvannamalai.
+							</p>
+							<p>
+								This was what he wrote in that letter: "I have set out in quest of my Father in accordance with his command. This (meaning his person) has only embarked on a virtuous enterprise. Therefore, no one need grieve over this act. And no money need be spent in search of this. Your college fee has not been paid. Herewith rupees two."
+							</p>
+							<p>
+								There was a curse on Venkataraman's family - in truth, it was a blessing - that one out of every generation should turn out to be a mendicant. This curse was administered by a wandering ascetic who, it is said, begged alms at the house of one of Venkataraman's forbears, and was refused.
+							</p>
+							<p>
+								A paternal uncle of Sundaram Aiyar's became a sannyasin; so did Sundaram Aiyar's elder brother. Now, it was the turn of Venkataraman, although no one could have foreseen that the curse would work out in this manner. Dispassion found lodgement in Venkataraman's heart, and he became a parivrajaka.
+							</p>
+							<p>
+								It was an epic journey that Venkataraman made from Madurai to Tiruvannamalai. About noon he left his uncle's house. He walked to the railway station which was half a mile way. The train was running fortunately late that day; otherwise he would have missed it. He looked up the table of fares and came to know that the third-class fare to Tindivanam was two rupees and thirteen annas. He bought a ticket, and kept with him the balance of three annas.
+							</p>
+							<p>
+								Had he known that there was a rail-track to Tiruvannamalai itself, and had he consulted the table of fares, he would have found that the fare was exactly three rupees. When the train arrived, he boarded it quietly and took his seat.
+							</p>
+							<p>
+								A Maulvi who was also travelling entered into conversation with Venkataraman. From him Venkataraman learnt that there was train-service to Tiruvannamalai and that one need not go to Tindivanam but could change trains at Viluppuram. This was a piece of useful information.
+							</p>
+							<p>
+								It was dusk when the train reached Tiruccirappalli. Venkataraman was hungry; he bought two country pears for half an anna; and strangely enough even with the first bite his hunger was appeased. About three o'clock in the morning the train arrived at Viluppuram. Venkataraman got off the train there with the intention of completing the rest, of the journey to Tiruvannamalai by walk.
+							</p>
+							<p>
+								At daybreak he went into the town, and was looking out for the sign-post to Tiruvannamalai. He saw a sign-board reading 'Mambalappattu' but did not know then that Mambalappattu was a place en route to Tiruvannamalai. Before making further efforts to find out which road he was to take, he wanted to refresh himself as he was tired and hungry.
+							</p>
+							<p>
+								He went up to a hotel and asked for food. He had to wait till noon for the food to be ready. After eating his meal, he proffered two annas in payment. The hotel proprietor asked him how much money he had. When told by Venkataraman that he had only two and a half annas, he declined to accept payment.
+							</p>
+							<p>
+								It was from him that Venkataraman came to know that Mambalappattu was a place, on the way to Tiruvannamalai. Venkataraman went back to Viluppuram station and bought a ticket to Mambalappattu for which the money he had was just enough.
+							</p>
+							<p>
+								It was sometime in the afternoon when Venkataraman arrived at Mambalappattu by train. From there he set out on foot for Tiruvannamalai. About ten miles he walked, and it was late in the evening.
+							</p>
+							<p>
+								There was the temple of Arayaninallur nearby, built on a large rock. He went there waited for the doors to be opened, entered and sat down in the pillared hall.</p>
+							<p>
+								He had a vision there - a vision of brilliant light enveloping the entire place. It was no physical light. It shone for some time and then disappeared.
+							</p>
+							<p>
+								Venkataraman continued sitting in a mood of deep meditation, till he was roused by the temple priests who were wanting to lock the doors and go to another temple three quarters of a mile away at Kilur for service. Venkataraman followed them, and while inside the temple he got lost in samadhi again.</p>
+							<p>
+								After finishing their duties the priests woke him up, but would not give him any food. The temple drummer who had been watching the rude behaviour of the priests implored them to hand over his share of the temple food to the strange youth.
+							</p>
+							<p>
+								When Venkataraman asked for some drinking water, he was directed to a Sastri's house which was at some distance. While in that house he fainted and fell down. A few minutes later he rallied round and saw a small crowd looking at him curiously. He drank the water, ate some food, and lay down and slept.
+							</p>
+							<p>
+								Next morning he woke up. It was the 31st of August, 1896, the Gokulastami day, the day of Sri Krishna's birth. Venkataraman resumed his journey and walked for quite a while.
+							</p>
+							<p>
+								He felt tired and hungry. So he wished for some food first, and then he would go to Tiruvannamalai, by train if that was possible.
+							</p>
+							<p>
+								The thought occurred to him that he could dispose of the pair of gold ear-rings he was wearing and raise the money that was required. But how was this to be accomplished? He went and stood outside a house which happened to belong to one Muthukrishna Bhagavatar. He asked the Bhagavatar for food and was directed to the housewife.</p>
+							<p>
+								The good lady was pleased to receive the young sadhu and feed him on the auspicious day of Sri Krisna's birth. After the meal, Venkataraman went to the Bhagavatar again and told him that he wanted to pledge his ear-rings for four rupees in order that he may complete his pilgrimage. The rings were worth about twenty rupees, but Venkataraman had no need for that much money.
+							</p>
+							<p>
+								The Bhagavatar examined the ear-rings, gave Venkataraman the money he had asked for, took down the youth's address, wrote out his own on a piece of paper for him, and told him that he could redeem the rings at any time.</p>
+							<p>
+								Venkataraman had his lunch at the Bhagavatar's house. The pious lady gave him a packet of sweets that she had prepared for Gokulastami. Venkataraman took leave, of the couple, tore up the address the Bhagavatar had given him - for he had no intention of redeeming the ear-rings - and went to the railway station. As there was no train till the next morning, he spent the night there.</p>
+							<p>
+								On the morning of the 1st of September, 1896, he boarded the train to Tiruvannamalai. The travel took, only a short time. Alighting from the train, he hastened to the great temple of Arunacalesvara. All the gates stood open - even the doors of the inner shrine. The temple was then empty of all people - even the priests.</p>
+							<p>
+								Venkataraman entered the sanctum sanctorum, and as he stood before his Father Arunacalesvara he experienced great ecstasy and unspeakable joy. The epic journey had ended. The ship had come safely to port.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="tiruvannamalai">&nbsp;</a>
+							<h4>
+								Tiruvannamalai
+							</h4>
+							<p>
+								The rest of what we regard as Ramana's life - this is how we shall call him hereafter - was spent in Tiruvannamalai. Ramana was not formally initiated into sannyasa. As he came out of the temple and was walking along the streets of the town, someone called out and asked whether he wanted his tuft removed. He consented readily, and was conducted to the Ayyankulam tank where a barber shaved his head.
+							</p>
+							<p>
+								Then he stood on the steps of the tank and threw away into the water his remaining money. He also discarded the packet of sweets given by the Bhagavatar's wife. The next to go was the sacred thread he was wearing. As he was returning to the temple he was just wondering why he should give his body the luxury of a bath, when there was a downpour which drenched him.
+							</p>
+							<p>
+								The first place of Ramana's residence in Tiruvannamalai was the great temple. For a few weeks he remained in the thousand-pillared hall. But he was troubled by urchins who pelted stones at him as he sat in meditation. He shifted himself to obscure corners and even to an underground vault known as Patala-lingam. Undisturbed he used to spend several days in deep absorption.
+							</p>
+							<p>
+								Without moving he sat in samadhi, not being aware of even the bites of vermin and pests. But the mischievous boys soon discovered the retreat and indulged in their pastime of throwing potsherds at the young Svami [swami].
+							</p>
+							<p>
+								There was at the time in Tiruvannamalai a senior Svami by name Seshadri. Those who did not know him took him for a madman. He sometimes stood guard over the young Svami, and drove away the urchins. At long last he was removed from the pit by devotees without his being aware of it and deposited in the vicinity of a shrine of Subrahmanya.
+							</p>
+							<p>
+								From then on there was some one or other to take care of Ramana. The seat of residence had to be changed frequently. Gardens, groves, shrines - these were chosen to keep the Svami. The Svami himself never spoke. Not that he took any vow of silence; he had no inclination to talk. At times the texts like Vasistham and Kaivalyanavanitam used to be read out to him.
+							</p>
+							<p>
+								A little less than six months after his arrival at Tiruvannamalai Ramana shifted his residence to a shrine called Gurumurtam at the earnest request of its keeper, a Tambiransvami. As days passed and as Ramana's fame spread, increasing numbers of pilgrims and sight-seers came to visit him.
+							</p>
+							<p>
+								After about a year's stay at Gurumurtam, the Svami - locally he was known as Brahmana-svami - moved to a neighbouring mango orchard. It was here that one of his uncles, Nelliyappa Aiyar traced him out.
+							</p>
+							<p>
+								Nelliyappa Aiyar was a second-grade pleader at Manamadurai. Having learnt from a friend that Venkataraman was then a revered Sadhu at Tiruvannamalai, he went there to see him. He tried his best to take Ramana along with him to Manamadurai. But the young sage would not respond. He did not show any sign of interest in the visitor. So, Nelliyappa Aiyar went back disappointed to Manamadurai. However, he conveyed the news to Alagammal, Ramana's mother.
+							</p>
+							<p>
+								The mother went to Tiruvannamalai accompanied by her eldest son. Ramana was then living at Pavalakkunru, one of the eastern spurs of Arunachala. With tears in her eyes Alagammal entreated Ramana to go back with her.
+							</p>
+							<p>
+								But, for the sage there was no going back. Nothing moved him -- not even the wailings and weepings of his mother. He kept silent giving no reply.
+							</p>
+							<p>
+								A devotee who had been observing the struggle of the mother for several days requested Ramana to write out at least what he had to say. The sage wrote on a piece of paper quite in an impersonal way thus : "In accordance with the prarabdha of each, the One whose function it is to ordain makes each to act. What will not happen will never happen, whatever effort one may put forth. And what will happen will not fail to happen, however much one may seek to prevent it. This is certain. The part of wisdom therefore is to stay quiet."
+							</p>
+							<p>
+								Disappointed and with a heavy heart, the mother went back to Manamadurai. Sometime after this event Ramana went up the hill Arunachala, and started living in a cave called Virupaksa after a saint who dwelt and was buried there.
+							</p>
+							<p>
+								Here also the crowds came, and among them were a few earnest seekers. These latter used to put him questions regarding spiritual experience or bring sacred books for having some points explained. Ramana sometimes wrote out his answers and explanations.
+							</p>
+							<p>
+								One of the books that was brought to him during this period was Sankara's Vivekacudamani which later on he rendered into Tamil prose. There were also some simple unlettered folk that came to him for solace and spiritual guidance. One of them was Echammal who having lost her husband, son, and daughter, was disconsolate till the Fates guided her to Ramana's presence. She made it a point to visit the Svami every day and took upon herself the task of bringing food for him as well as for those who lived with him.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ganapati">&nbsp;</a>
+							<h4>
+								Ganapati
+							</h4>
+
+							<p>
+								In 1903 there came to Tiruvannamalai a great Samskrit scholar and savant, Ganapati Sastri known also as Ganapati Muni because of the austerities he had been observing. He had the title Kavya-kantha (one who had poetry at his throat), and his disciples addressed him as nayana (father). He was a specialist in the worship of the Divine Mother. He visited Ramana in the Virupaksa cave quite a few times.
+							</p>
+							<!-- same picture formatting as on main index page -->
+							<div class="photo-group">
+								<div class="photo-container">
+									<div class="guru-photos">
+										<img src="images/ramana_halflotus.jpg" style="height:200px;" alt="Ramana" />
+										<p class="caption">
+											Sri Ramana</p>
+									</div>
+
+									<div class="guru-photos">
+										<img src="images/ganipati_sastri.jpg" style="height:200px;" alt="Ganapati Sastri" />
+										<p class="caption">
+											Ganapati Sastri
+										</p>
+									</div>
+								</div>
+								<div class="photo-container">
+									<div class="guru-photos">
+										<img src="images/ramana_ganapatimuni.jpg" height="195" alt="Later years" />
+										<p class="caption">
+											Later years
+										</p>
+									</div>
+								</div>
+							</div>
+							<p>
+								Once in 1907 Ganapati Sastri was assailed by doubts regarding his own spiritual practices. He went up the hill, saw Ramana sitting alone in the cave, and expressed himself thus : "All that has to be read I have read; even Vedanta sastra I have fully understood; I have done japa to my heart's content; yet I have not up to this time understood what tapas is. Therefore I have sought refuge at your feet. Pray enlighten me as to the nature of tapas."
+							</p>
+							<p>
+								Ramana replied, now speaking, "If one watches whence the notion 'I' arises, the mind gets absorbed there; that is tapas. When a mantra is repeated, if one watches whence that mantra sound arises, the mind gets absorbed there; that is tapas."
+							</p>
+							<p>
+								To the scholar this came as a revelation; he felt the grace of the sage enveloping him. He it was that proclaimed Ramana to be Maharshi and Bhagavan. He composed hymns in Sanskrit in praise of the sage, and also wrote the Ramana-Gita explaining his teachings.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="alagammal">&nbsp;</a>
+							<h4>
+								Alagammal
+							</h4>
+
+							<p>
+								Ramana's mother, Alagammal, after her return to Manamadurai, lost her eldest son. Two years later, her youngest son, Nagasundaram paid a brief visit to Tiruvannamalai. She herself went there once on her return from a pilgrimage to Varanasi, and again during a visit to Tirupati. On this occasion she fell ill and suffered for several weeks with symptoms of typhoid.
+							</p>
+							<p>
+								Ramana showed great solicitude in nursing her and restoring her to health. He even composed a hymn in Tamil beseeching Lord Arunachala to cure her of her disease. The first verse of the hymn runs as follows: 'Oh Medicine in the form of a Hill that arose to cure the disease of all the births that come in succession like waves! Oh Lord! It is Thy duty to save my mother who regards Thy feet alone as her refuge, by curing her fever.'
+							</p>
+							<p>
+								He also prayed that his mother should be granted the vision divine and be weaned from worldliness. It is needless to say that both the prayers were answered. Alagammal recovered, and went back to Manamadurai. But not long after she returned to Tiruvannamalai; a little later followed her youngest son, Nagasundaram who had in the meanwhile lost his wife leaving a son.
+							</p>
+							<p>
+								It was in the beginning of 1916 that the mother came, resolved to spend the rest of her life with Ramana. Soon after his mother's arrival, Ramana moved from Virupaksa to Skandasramam, a little higher up the hill. The mother received training in intense spiritual life. She donned the ochre robe, and took charge of the Asrama kitchen. Nagasundaram too became a sannyasin, assuming the name Niranjanananda. Among Ramana's devotees he came to be popularly known as Chinnaswami (the Younger Swami).
+							</p>
+							<p>
+								In 1920 the mother grew weak in health and ailments incidental to old age came to her. Ramana tended her with care and affection, and spent even sleepless nights sitting up with her. The end came on May 19, 1922, which was the Bahulanavami day, in the month of Vaisakha. The mother's body was taken down the hill to be interred. The spot chosen was at the southernmost point, between Palitirtham Tank and the Daksinamurti Mantapam.
+							</p>
+							<div class="photo-group">
+								<div class="photo-container">
+									<div class="guru-photos">
+										<img src="images/ramana_with_mother.jpg" alt="Ramana with mother" height="270" />
+										<p class="caption">
+											With Mother, Alagammal</p>
+									</div>
+								</div>
+							</div>
+							<p>
+								While the ceremonies were being performed, Ramana himself stood silently looking on. Niranjanananda Swami took his residence near the tomb. Ramana who continued to remain at Skandasramam visited the tomb every day. After about six months he came to stay there, as he said later on, not out of his own volition but in obedience to the Divine Will. Thus was founded the Ramanasramam.</p>
+							<p>
+								A temple was raised over the tomb and was consecrated in 1949. As the years rolled by the Asramam grew steadily, and people not only from India but from every continent of the world came to see the sage and receive help from him in their spiritual pursuits.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="visitors">&nbsp;</a>
+							<h4>
+								Visitors
+							</h4>
+
+							<p>
+								Ramana's first Western devotee was F. H. Humphrys. He came to India in 1911 to take up a post in the Police service at Vellore. Given to the practice of occultism, he was in search of a Mahatma. He was introduced to Ganapati Sastri by his Telugu tutor; and Sastri took him to Ramana. The Englishman was greatly impressed.</p>
+							<p>
+								Writing about his first visit to the sage in the International Psychic Gazette, he said: 'On reaching the cave we sat before him, at his feet, and said nothing. We sat thus for a long time and I felt lifted out of myself. For half an hour I looked into the Maharshi's eyes, which never changed their expression of deep contemplation.... The Maharshi is a man beyond description in his expression of dignity, gentleness, self-control and calm strength of conviction.'
+							</p>
+							<div class="photo-group">
+								<div class="photo-container">
+									<div class="guru-photos">
+										<img src="images/humphreys.gif" alt="F. H. Humphrys" height="150" />
+										<p class="caption">
+											Frank H. Humphrys</p>
+									</div>
+								</div>
+							</div>
+							<p>
+								Humphry's ideas of spirituality changed for the better as a result of the contact with Ramana. He repeated his visits to the sage. He recorded his impressions in his letters to a friend in England which were published in the Gazette mentioned above. In one of them he wrote, 'You can imagine nothing more beautiful than his smile.' And again, 'It is strange what a change it makes in one to have been in his Presence!'
+							</p>
+							<p>
+								It was not all good people that went to the Asrama. Sometimes bad ones turned up also - even bad sadhus. Twice in the year 1924 thieves broke into the Asrama in quest of loot. On the second of these occasions they even beat the Maharshi, finding that there was very little for them to take. When one of the devotees sought the sage's permission to punish the thieves, the sage forbade him, saying: "They have their dharma, we have ours. It is for us to bear and forbear. Let us not interfere with them."
+							</p>
+							<p>
+								When one of the thieves gave him a blow on the left thigh, he told him: "If you are not satisfied you can strike the other leg also." After the thieves had left, a devotee enquired about the beating. The sage remarked, "I also have received some puja," punning on the word which means 'worship' but is also used to mean 'blows'.
+							</p>
+							<p>
+								The spirit of harmlessness that permeated the sage and his environs made even animals and birds make friends with him. He showed them the same consideration that he did to the humans that went to him. When he referred to any of them, he used the form 'he' or 'she' and not 'it'. Birds and squirrels built their nests around him.
+							</p>
+							<p>
+								Cows, dogs and monkeys found asylum in the Asrama. All of them behaved intelligently - especially the cow Laksmi. The sage knew their ways quite intimately. He would see to it that they were fed properly and well. And, when any of them died, the body would be buried with due ceremony.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="the-ashram">&nbsp;</a>
+							<h4>
+								The Ashram
+							</h4>
+
+							<p>
+								The life in the Asrama flowed on smoothly. With the passage of time more and more of visitors came - some of them for a short stay and others for longer periods. The dimensions of the Asrama increased, and new features and departments were added - a home for the cattle, a school for the study of the Vedas, a department for publication, and the Mother's temple with regular worship, etc.
+							</p>
+							<p>
+								Ramana sat most of the time in the hall that had been constructed for the purpose as the witness to all that happened around him. It was not that he was not active. He used to stitch leaf-plates, dress vegetables, read proofs received from the press, look into newspapers and books, suggest lines of reply to letters received, etc. Yet it was quite evident that he was apart from everything.
+							</p>
+							<p>
+								There were numerous invitations for him to undertake tours. But he never moved out of Tiruvannamalai, and in the later years out of the Asrama. Most of the time, every day, people sat before him. They sat mostly in silence. Sometimes some of them asked questions; and sometimes he answered them. It was a great experience to sit before him and to look at his beaming eyes. Many did experience time coming to a stop and a stillness and peace beyond description.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="the-end">&nbsp;</a>
+							<h4>
+								The End
+							</h4>
+							<p>
+								The golden jubilee of Ramana's coming to stay at Tiruvannamalai was celebrated in 1946. In 1947 his health began to fail. He was not yet seventy, but looked much older. Towards the end of 1948 a small nodule appeared below the elbow of his left arm. As it grew in size, the doctor in charge of the Asrama dispensary cut it out. But in a month's time it reappeared. Surgeons from Madras were called, and they operated. The wound did not heal, and the tumour came again. On further examination it was diagnosed that the affection was a case of sarcoma.</p>
+							<p>
+								The doctors suggested amputating the arm above the affected part. Ramana replied with a smile : "There is no need for alarm. The body is itself a disease. Let it have its natural end. Why mutilate it? Simple dressing of the affected part will do."
+							</p>
+							<p>
+								Two more operations had to be performed, but the tumour appeared again. Indigenous systems of medicine were tried; and homeopathy too. The disease did not yield itself to treatment.
+							</p>
+							<p>
+								The sage was quite unconcerned, and was supremely indifferent to suffering. He sat as a spectator watching the disease waste the body. But his eyes shone as bright as ever; and his grace flowed towards all beings.
+							</p>
+							<p>
+								Crowds came in large numbers. Ramana insisted that they should be allowed to have his darsana. Devotees profoundly wished that the sage should cure his body through an exercise of supernormal powers. Some of them imagined that they themselves had had the benefit of these powers which they attributed to Ramana.
+							</p>
+							<p>
+								Ramana had compassion for those who grieved over the suffering, and he sought to comfort them by reminding them of the truth that Bhagavan was not the body : "They take this body for Bhagavan and attribute suffering to him. What a pity! They are despondent the Bhagavan is going to leave them and go away - where can he go, and how?"
+							</p>
+							<p>
+								The end came on the 14th of April, 1950. That evening the sage gave darsana to the devotees that came. All that were present in the Asrama knew that the end was nearing. They sat singing Ramana's hymn to Arunachala with the refrain Arunachala-Siva.
+							</p>
+							<p>
+								The sage asked his attendants to make him sit up. He opened his luminous and gracious eyes for a brief while; there was a smile; a tear of bliss trickled down from the outer corner of his eyes; and at 8-47 the breathing stopped. There was no struggle, no spasm, none of the signs of death. At that very moment, a comet moved slowly across the sky, reached the summit, of the holy hill, Arunachala, and disappeared behind it.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="teachings">&nbsp;</a>
+							<h4>
+								Teachings
+							</h4>
+							<p>
+								Ramana Maharshi seldom wrote; and what little he did write in prose or verse was written to meet the specific demands of his devotees. He himself declared once : "Somehow, it never occurs to me to write a book or compose poems. All the poems I have made were on the request of someone or other in connection with some particular event."
+							</p>
+							<p>
+								The most important of his works is The Forty Verses on Existence. In the Upadesa Saram which is also a poem the quintessence of Vedanta is set forth. The sage composed five hymns to Arunachala. Some of the works of Sankara like Vivekacudamani and Atma-bodha were rendered into Tamil by him. Most of what he wrote is in Tamil. But he wrote also in Sanskrit, Telugu, and Malayalam.
+							</p>
+							<p>
+								The philosophy of Sri Ramana - which is the same as that of Advaita-Vedanta has for its aim Self-realization. The central path taught in this philosophy is the inquiry into the nature of Self, the content of the notion 'I'.
+							</p>
+							<p>
+								Ordinarily the sphere of the 'I' varies and covers a multiplicity of factors. But these factors are not really the 'I'. For instance, we speak of the physical body as 'I'; we say, 'I am fat', 'I am lean,' etc.
+							</p>
+							<p>
+								It will not take long to discover that this is a wrong usage. The body itself cannot say, 'I' for it is inert. Even the most ignorant man understands the implication of the expression 'my body'. It is not easy, however, to resolve the mistaken identity of the 'I' with egoity (ahankara). That is because the inquiring mind is the ego, and in order to remove the wrong identification it has to pass a sentence of death, as it were, on itself. This is by no means a simple thing. The offering of the ego in the fire of wisdom is the greatest form of sacrifice.
+							</p>
+							<p>
+								The discrimination of the Self from the ego, we said, is not easy. But it is not impossible. All of us can have this discrimination if we ponder over the implication of our sleep-experience.
+							</p>
+							<p>
+								In sleep 'we are', though the ego has made its exit. The ego does not function there. Still there is the 'I' that witnesses the absence of the ego as well as of the objects. If the 'I' were not there, one would not recall on waking from one's sleep-experience, and say; "I slept happily. I did not know anything." We have, then, two 'I's' - the 'pseudo-I' which is the ego and the true 'I' which is the Self.
+							</p>
+							<p>
+								The identification of the 'I' with the ego is so strong that we seldom see the ego without its mask. Moreover, all our relative experience turns on the pivot of the ego. With the rise of the ego on waking from sleep, the entire world rises with it. The ego, therefore, looks so important and unassailable.
+							</p>
+							<p>
+								But this is really a fortress made of cards. Once the process of inquiry starts, it will be found to crumble and dissolve. For undertaking this inquiry, one must possess a sharp mind - much sharper than the one required for unravelling the mysteries of matter.
+							</p>
+							<p>
+								It is with the one-pointed intellect that the truth is to be seen (drsyate tu agraya buddhya). It is true that even the intellect will have to get resolved before the final wisdom dawns. But up to that point it has to inquire - and inquire relentlessly. Wisdom, surely, is not for the indolent!
+							</p>
+							<p>
+								The inquiry 'Who am I?' is not to be regarded as a mental effort to understand the mind's nature. Its main purpose is 'to focus the entire mind at its source'. The source of the 'pseudo-I' is the Self. What one does in Self-inquiry is to run against the mental current instead of running along with it, and finally transcend the sphere of mental modifications. When the 'pseudo-I' is tracked down to its source, it vanishes. Then the Self shines in all its splendour - which shining is called realization and release.
+							</p>
+							<div class="photo-group">
+								<div class="photo-container">
+									<div class="guru-photos">
+										<img src="images/ramana_elderly.jpg" alt="Sri Ramana" height="240" />
+										<p class="caption">
+											Sri Ramana</p>
+									</div>
+								</div>
+							</div>
+							<p>
+								The cessation or non-cessation of the body has nothing to do with release. The body may continue to exist and the world may continue to appear, as in the case of the Maharshi. That makes no difference at all to the Self that has been realized.
+							</p>
+							<p>
+								In truth, there is neither the body nor the world for him; there is only the Self, the eternal Existence (sat), the Intelligence (cit), the unsurpassable bliss (ananda).</p>
+							<p>
+								Such an experience is not entirely foreign to us. We have it in sleep, where we are conscious neither of the external world of things nor of the inner world of dreams. But that experience lies under the cover of ignorance.
+							</p>
+							<p>
+								So it is that we come back to the phantasies of dream and of the world of waking. Non-return to duality is possible only when nescience has been removed. To make this possible is the aim of Vedanta.
+							</p>
+							<p>
+								To inspire even the lowliest of us with hope and help us out of the Slough of Despond, is the supreme significance of such illustrious exemplars as the Maharshi.
+							</p>
+							<p>
+								May Bhagavan accept this offering!
+							</p>
+							<p>
+								Aradhana Day T. M. P. MAHADEVAN May 5, 1959.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="publisher">&nbsp;</a>
+							<p class="note">
+								Publisher
+							</p>
+
+							<p>
+								This essay from 1959 appears in "Ramana Maharshi and His Philosophy of Existence". Sri Ramanasramam has kindly made this and many other books available for download at: <a href="https://www.arunachala-ramana.org/downloads/index.htm">https://www.arunachala-ramana.org/<wbr />downloads/<wbr />index.htm</a>
+							</p>
+							<p>&nbsp;</p>
+							<p class="note center">
+
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="direct-path-mouni-sadhu.htm">&lt; M. Sadhu: Direct Path</a></li>
+									<li class="align-right"><a href="michael-james-muruganar-sadhu-om.htm"> Muruganar &amp; Sadhu Om &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+# .htaccess file for selfdefinition.org/christian/
+
+
+IndexIgnore guggenheim-gleason.htm 
+
+# paul wood pages
+IndexIgnore paul-wood* robert-martin-on-leon-paul-wood.htm
+
+ 
+ 
+ 
+# moved to "articles" directory Oct 24, 2019
+
+Redirect 301 "/christian/bucke-chart-p43-one-in-a-million.htm"                          "/christian/articles/bucke-chart-p43-one-in-a-million.htm" 
+Redirect 301 "/christian/francis-thompson-hound-of-heaven.htm"                          "/christian/articles/francis-thompson-hound-of-heaven.htm"
+Redirect 301 "/christian/richard-bucke-personal-experience-cosmic-consciousness.htm"    "/christian/articles/richard-bucke-personal-experience-cosmic-consciousness.htm"
+
+# page name cleanup Jan 24, 2017 
+
+Redirect 301 "/christian/Anthony de Mello - Awareness.pdf"                    "/christian/Anthony-de-Mello-Awareness.pdf"
+
+Redirect 301 "/christian/Confessions of Jacob Boehme--W-Scott-Palmer.pdf"     "/christian/Confessions-of-Jacob-Boehme-W-Scott-Palmer.pdf"
+
+Redirect 301 "/christian/Cosmic-Consciousness-by-Richard-M-Bucke--text.pdf"   "/christian/Cosmic-Consciousness-by-Richard-M-Bucke-text.pdf"
+
+Redirect 301 "/christian/Franz Hartmann - The Life of Jehoshua, the Prophet of Nazareth.pdf"   "/christian/Franz-Hartmann-Life-of-Jehoshua-Prophet-of-Nazareth.pdf"
+
+# Redirect 301 "/christian/"   "/christian/"
+
+# Feb 7, 2017
+
+Redirect 301 "/christian/Francois-Fenelon-Spiritual-Progress[public-domain].pdf"  "/christian/Francois-Fenelon-Spiritual-Progress.pdf"
+
+
+#### add canonical links to pdfs 
+#### Use spaces in file names, not %20 
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+#</Files>
+
+
+<Files 'Jacob-Boehme-Mysterium-Magnum-Part-One.mobi'>
+	Header add Link '<http://selfdefinition.org/christian/jacob-boehme/mysterium-magnum/cover-page.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Jacob-Boehme-Mysterium-Magnum-Part-One.pdf'>
+	Header add Link '<http://selfdefinition.org/christian/jacob-boehme/mysterium-magnum/cover-page.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Karl-Von-Eckartshausen-Cloud-Upon-the-Sanctuary.pdf'>
+	Header add Link '<http://selfdefinition.org/christian/eckartshausen/cloud-upon-the-sanctuary/contents.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Karl-Von-Eckartshausen-Cloud-Upon-the-Sanctuary.text'>
+	Header add Link '<http://selfdefinition.org/christian/eckartshausen/cloud-upon-the-sanctuary/contents.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+# end

@@ -1,0 +1,92 @@
+<!-- start of menu include file Update June 7, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <!-- No william-samuel index yet
+            <li class="first-item"><a href="/william-samuel/">William Samuel index</a></li>
+            -->
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="note"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <!-- not used, no william-samuel index yet
+            <li><a href="/william-samuel/">William Samuel index</a></li>
+            -->
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+        </ul>
+        <!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li class="normal">
+                <img class="menu-image" src="images/william-samuel.jpg" alt="William Samuel" />
+            </li>
+            <li>William Samuel</li>
+            <li class="normal note tight">&nbsp;&nbsp;(1924-1996)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+                <li><a href="the-truth-about-identity.htm">The Truth About Identity (this page)</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <!-- there is  no page at Wikipedia for William Samuel 
+            <ul class="menu-section">
+                <li>drop-in at <a href="">
+                    Wikipedia</a> </li>
+            </ul>
+            -->
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="first-item">Ramana Maharshi<br /> <a href="/ramana/self-enquiry/contents.htm">Self-Enquiry</a></li>
+                <li>Siddharameshwar<br /> <a href="/siddharameshwar/dasbodh-selections/contents.htm">Selections from Amrut Laya</a></li>
+            </ul>
+        </div>
+        <div class="external-links">
+            <ul class="menu-section">
+                <li class="header-item">External Links</li>
+                <li class="first-item"><a href="http://www.williamsamuel.org/">WilliamSamuel.org</a></li>
+                <li>William Samuel <a href="http://www.williamsamuel.org/aboutwilliam.html">biography</a>
+                </li>
+                <li>William Samuel at<br />
+                    <a href="https://www.selfdiscoveryportal.com/WmSamuel.htm">Self Discovery Portal</a>
+                </li>
+                <li><a href="http://www.mysticmissal.org/william_samuel.htm">MysticMissal.Org </a>
+                </li>
+                <li><a href="http://the-wanderling.com/soldiers_story.html">The-Wanderling.Com</a>
+                </li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="To top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

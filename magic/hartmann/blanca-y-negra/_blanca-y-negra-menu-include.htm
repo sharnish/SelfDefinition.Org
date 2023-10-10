@@ -1,0 +1,106 @@
+<!-- start of menu include file Updated Sep 7, 2019, May 21, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="spanish"><a href="contenido.htm">Contenido</a></li>
+			<li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver </span>Arriba</a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li><em>Magia Blanca y Negra</em> <span class="normal">(1888) 4th&nbsp;edition</span></li>
+			<li class="normal">
+				<img class="menu-image" src="images/franz-hartmann-md.jpg" alt="Franz Hartmann, MD" />
+			</li>
+			<li>Franz Hartmann</li>
+			<li class="normal note">(1838-1912)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contenido.htm">Contenido</a> </li>
+				<li><a href="prefacio.htm">Prefacio del Autor</a> </li>
+				<li><a href="introduccion-la-ley-espiritual.htm">Introducción: La Ley Espiritual en el Mundo Natural</a></li>
+				<li><a href="capitulo-01-el-ideal.htm">I: El Ideal</a> </li>
+				<li><a href="capitulo-02-real-y-irreal.htm">II: Lo Real y lo Irreal</a> </li>
+				<li><a href="capitulo-03-forma.htm">III: Forma</a> </li>
+				<li><a href="capitulo-04-la-vida.htm">IV: La Vida</a> </li>
+				<li><a href="capitulo-05-armonia.htm">V: Armonía</a> </li>
+				<li><a href="capitulo-06-ilusiones.htm">VI: Ilusiones</a> </li>
+				<li><a href="capitulo-07-consciencia.htm">VII: Consciencia</a> </li>
+				<li><a href="capitulo-08-inconsciencia.htm">VIII: Inconsciencia</a> </li>
+				<li><a href="capitulo-09-tranformaciones.htm">IX: Transformaciones</a> </li>
+				<li><a href="capitulo-10-creacion.htm">X: Creación</a> </li>
+				<li><a href="capitulo-11-luz.htm">XI: Luz</a> </li>
+				<li><a href="capitulo-12-theosofia.htm">XII: Teosofía</a> </li>
+				<li><a href="apendice-nueva-guia-del-sendero.htm">Apéndice: Nueva Guía del Sendero</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li>
+					<hr />
+				</li>
+				<li>Este documento en formato
+					<a class="inline" href="/magic/espanol-Franz-Hartmann-Magia-Blanca-y-Negra.pdf">PDF (177 páginas, 1.8 meg)</a>
+				</li>
+				<li>
+					<hr />
+				</li>
+				<li>Franz Hartman at <a href="https://en.wikipedia.org/wiki/Franz_Hartmann">Wikipedia</a> </li>
+				<li><em>Magic White &amp; Black</em> 8th edition <a class="inline" href="https://archive.org/details/magicwhiteandbl00unkngoog">Archive.Org</a> </li>
+				<li><a href="http://esoterismo-guia.blogspot.com/2011/08/franz-hartmann-biografia-historia.html">Franz Hartmann Biografia y Historia</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also by Hartmann</li>
+				<li class="site-first-item"><a class="inline" href="/magic/hartmann/wisdom/chapter-08-alchemy.htm#axiomata-hermetica">43 Axioms of Alchemy</a></li>
+				<li><a href="/magic/paracelsus/">Life of Paracelsus</a></li>
+				<li><a class="inline" href="/magic/hartmann/wisdom/">Pronaos of the Temple of Wisdom </a></li>
+				<li>
+					<hr class="menu-hr" />
+				</li>
+				<li>Link to pdf's in Christian section (Jakob Boehme) <a href="/christian/">/christian/</a></li>
+				<li>Paperback at:
+					<br />
+					<a href="https://tatfoundation.org/magic.htm">TAT Foundation</a>
+					<br />
+					<img class="menu-image" src="images/franz-hartmann-cover-lightening-small.jpg" alt="Franz Hartmann, Magia Blanca y Negra, book cover" />
+				</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

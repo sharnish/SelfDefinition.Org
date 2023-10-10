@@ -1,0 +1,78 @@
+/* file:  /redirect/_redirect-sparse.css 
+
+Created Apr 16, 2020  */
+
+@media only print {
+
+	#article:after {
+		content: "update Apr 20, 2022";
+		font-size: 60%;
+	}
+}
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffea;
+}
+
+/* whaat was his for?
+body {
+    background: initial;
+}
+*/
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #c9d4fc;
+}
+
+/* use jquery to make this visible for specified section */
+a.replaceable-link {
+	display: none;
+}
+
+
+#announce header p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 767px) {
+	#announce header h3 {
+		margin-top: 0px;
+	}
+}
+
+
+/* testing Amazon */
+
+div.item-list {
+	border: 0px solid red;
+}
+
+div.item-container {
+	border: 0px solid blue;
+}
+
+div.image-link {
+	border: 0px solid green;
+}
+
+div.text-link,
+div.text-link-only {
+	border: 0px solid maroon;
+}
+
+/* end */

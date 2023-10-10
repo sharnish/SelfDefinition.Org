@@ -1,0 +1,327 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paradoxes of the Highest Science, The Unalterable Principles</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradoxes/images/Eliphas-Levi-1872-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_paradoxes-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="magic-and-magism-footnotes.htm">
+	<link rel="next" href="the-great-secret.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		p.principle {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		/* unalterable-principles  */
+		label[for=element-toggle-135-1],
+		label[for=element-toggle-135-2],
+		label[for=element-toggle-137-1],
+		label[for=element-toggle-137-2],
+		label[for=element-toggle-138-1],
+		label[for=element-toggle-141-1],
+		label[for=element-toggle-143-1],
+		label[for=element-toggle-145-1],
+		label[for=element-toggle-146-1],
+		label[for=element-toggle-150-1],
+		label[for=element-toggle-150-2],
+		label[for=element-toggle-150-3],
+		label[for=element-toggle-153-1],
+		label[for=element-toggle-154-1],
+		label[for=element-toggle-156-1],
+		label[for=element-toggle-156-2],
+		label[for=element-toggle-157-1],
+		label[for=element-toggle-157-2] {
+			cursor: pointer;
+		}
+
+		/* unalterable-principles  */
+		#element-toggle-135-1,
+		#element-toggle-135-2,
+		#element-toggle-137-1,
+		#element-toggle-137-2,
+		#element-toggle-138-1,
+		#element-toggle-141-1,
+		#element-toggle-143-1,
+		#element-toggle-145-1,
+		#element-toggle-146-1,
+		#element-toggle-150-1,
+		#element-toggle-150-2,
+		#element-toggle-150-3,
+		#element-toggle-153-1,
+		#element-toggle-154-1,
+		#element-toggle-156-1,
+		#element-toggle-156-2,
+		#element-toggle-157-1,
+		#element-toggle-157-2 {
+			display: none;
+		}
+
+		/* unalterable-principles  */
+		#element-toggle-135-1:not(:checked)~#toggled-element-135-1,
+		#element-toggle-135-2:not(:checked)~#toggled-element-135-2,
+		#element-toggle-137-1:not(:checked)~#toggled-element-137-1,
+		#element-toggle-137-2:not(:checked)~#toggled-element-137-2,
+		#element-toggle-138-1:not(:checked)~#toggled-element-138-1,
+		#element-toggle-141-1:not(:checked)~#toggled-element-141-1,
+		#element-toggle-143-1:not(:checked)~#toggled-element-143-1,
+		#element-toggle-145-1:not(:checked)~#toggled-element-145-1,
+		#element-toggle-146-1:not(:checked)~#toggled-element-146-1,
+		#element-toggle-150-1:not(:checked)~#toggled-element-150-1,
+		#element-toggle-150-2:not(:checked)~#toggled-element-150-2,
+		#element-toggle-150-3:not(:checked)~#toggled-element-150-3,
+		#element-toggle-153-1:not(:checked)~#toggled-element-153-1,
+		#element-toggle-154-1:not(:checked)~#toggled-element-154-1,
+		#element-toggle-156-1:not(:checked)~#toggled-element-156-1,
+		#element-toggle-156-2:not(:checked)~#toggled-element-156-2,
+		#element-toggle-157-1:not(:checked)~#toggled-element-157-1,
+		#element-toggle-157-2:not(:checked)~#toggled-element-157-2 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_paradoxes-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens --> <?php include( "_paradoxes-title-include.htm"); ?><h3> The Unalterable Principles </h3>
+									<p class="tiny"> Esta página en español: <a href="../paradojas/los-principios-inalterbles.htm">.. los-principios-inalterbles.htm</a></p>
+								</header>
+							</div>
+							<p id="page_135" class="page-number"> p. 135 </p>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="magic-and-magism.htm">&lt; Magic and Magism </a> </li>
+									<li class="align-right"><a href="the-great-secret.htm">The Great Secret &gt;</a> </li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav> <!-- Source: Sacred Text Archive  https://www.sacred-texts.com/eso/levi/phs/index.htm -->
+							<p> Let us now sum up, laying down those unalterable principles that will serve alike as a basis and a crown to all we have written. </p>
+							<p>
+							<p class="principle"> I </p>
+							<p> Man has two means of attaining certainty&mdash;mathematics and common sense. </p>
+							<p class="principle"> II </p>
+							<p> <em>There may be truths which outrun common sense, there are none which contradict mathematics</em>. </p>
+							<p class="principle"> III </p>
+							<p> "He who, outside pure mathematics, pronounces the word <em>impossible</em>, lacks prudence," (Arago), which means that outside of pure mathematics there is no complete, universal and absolute certainty. </p>
+							<p class="principle"> IV </p>
+							<p> Outside complete, universal and absolute certainty there are only beliefs or opinions. </p>
+							<p class="principle"> V </p>
+							<p> Beliefs and opinions cannot be demonstrated; men choose them as a matter of taste or accept them as a matter of policy. </p>
+							<p class="principle"> VI </p>
+							<p> Useful opinions ought to be encouraged, and dangerous or noxious ones should be repressed. This explains the necessary struggle between conservatives and innovators; <em>only conservatives become persecutors when they consider, or affect to believe, dangerous what is evidently useful</em>.&nbsp;<sup>[135:1]</sup> </p> <label for="element-toggle-135-1"> [135:1. Toggle footnote.]</label> <input id="element-toggle-135-1" type="checkbox" />
+							<p id="toggled-element-135-1" class="fnote hidden"> [135:1. Very feeble! who is to be the judge? What you consider useful, I hold to be noxious, and vice versa.&mdash;<em>Trans</em>.] </p>
+							<p class="principle"> VII </p>
+							<p> Pure mathematics exist by themselves; no will produces them, no power can limit them. <sup>[135:2]</sup> They are eternal Laws, that no man can infringe, and from which it is impossible to escape. </p> <label for="element-toggle-135-2"> [135:2. Toggle long footnote.]</label> <input id="element-toggle-135-2" type="checkbox" />
+							<p id="toggled-element-135-2" class="fnote hidden"> [135:2. Our author, borrowing Pythagorean ideas, often speaks of pure mathematics, as if they were a kind of superhuman existence, things, as he says existing by themselves, or self-existent. But what are they really? Simply rigidly logical deductions from rigidly limited and defined hypotheses. To say their results are certain is merely to repeat with Oliver Wendell Holmes, "Logic is logic, that's all I say." Given certain accurately and exhaustively defined premises, then logical deductions therefrom must be true. Mathematics are the creation of the Human mind, and depend on meanings and values and limitations of these, which it assigns to certain symbols. There is nothing mysterious or superhuman in them. Change your scale of notation from the decimal to the duodecimal, and various "eternal laws" of the <em>former</em> disappear from the latter. Pass on to the differential calculus or the calculus of Infinity in which you introduce hypotheses not rigidly limited, and you at once get, along with the true ones, crowds of utterly irrelevant solutions. To say that no will creates them and no power limits them is absurd; they were created by the will that originated their fundamental hypotheses, and by these are rigidly limited.&mdash;<em>Trans</em>.] </p>
+							<p class="principle"> VIII </p>
+							<p> A thing may <em>appear</em> absurd and <em>be</em> true when it is above common sense <sup>[137:1]</sup> but a thing contrary to the laws of mathematics is really and absolutely absurd, and whoso believes in such an absurdity is a fool. </p> <label for="element-toggle-137-1"> [137:1. Toggle footnote.]</label> <input id="element-toggle-137-1" type="checkbox" />
+							<p id="toggled-element-137-1" class="fnote hidden"> [137:1. Nothing is <em>above</em> common sense, but a thing may be too ill-defined for common sense to grasp it. All our author's sententious aphorism means, is that if the nature, <em>or our knowledge</em>, of a thing is such that we are unable rigorously and exhaustively to define its premises and then argue logically from these, <em>look</em>, to our imperfect vision, as our conclusions <em>may--they may</em> nevertheless be true-we are in no position to decide; whereas, if we <em>can</em> rigorously and exhaustively define the premises and we then argue strictly logically from these, our conclusions must be correct, and no one but a fool can doubt the fact.&mdash;<em>Trans</em>.] </p>
+							<p> The sign of the cross, which is the intersection of two lines, equilibrilised one by the other, has always been considered as a divine symbol. It is the Tau of the ancient Hebrews, the Chi (<em>x</em>) of the Greeks and Christians; in mathematics this sign + represents the infinite, and <em>x</em> the unknown; + signifies plus or more, and the Infinite is always more.&nbsp;<sup>[137:2]</sup> </p> <label for="element-toggle-137-2"> [137:2. Toggle footnote.]</label> <input id="element-toggle-137-2" type="checkbox" />
+							<p id="toggled-element-137-2" class="fnote hidden"> [137:2. This seems quibbling. Of course the usual sign for infinity in mathematics is &#8734; <span class="nowrap">&mdash;<em>Trans</em>.]</span> </p>
+							<p> Develop science as you will, mark its first step with Alpha, its last with Omega, and you will still always have before you the unknown, which you must recognise, and your formula remains &#0937; + x;&nbsp;<sup>[138:1]</sup> all that we learn is wound off that unknown which is never wholly unwound, it is this which produces all things; <em>not knowing what it is, we personify it and call it God</em>.&nbsp;<sup>[138:2]</sup> </p> <label for="element-toggle-138-1" style="margin-top: 20px;"> [138:1. Toggle footnote.]</label> <input id="element-toggle-138-1" type="checkbox" />
+							<p id="toggled-element-138-1" class="fnote hidden"> [138:1. Hence the Tibetan cross on the Dalai Lama's headgear. &mdash;E.O.] </p>
+							<p class="fnote"> [138:2. At last the cat is out of the bag.<span class="nowrap">&mdash;E.O.</span>] </p>
+							<p> Once it <em>seemed</em> as if this personification was realised on earth, <em>but the God-Man</em> died upon the cross, that is on the eternal <em>x</em>, and the cross alone remains, for us. </p>
+							<p class="principle"> X </p>
+							<p> The hypothetical personification of the Infinite can only be infinite and excludes, necessarily, individual unity. Every individuality is limited by some other, unless it suppresses all others; God, on the contrary, being the principle of all individualities, cannot be an individual. It is on this account that he is said to be one in several Persons. Three is a mystic number which represents the generation of all numbers. </p>
+							<p class="principle"> XI </p>
+							<p> God never speaks to men, except through men, and does nothing in nature save through the Laws of Nature. </p>
+							<p class="principle"> XII </p>
+							<p> <em>The supernatural is that which outsteps our natural intelligence and our knowledge of the Laws of Nature</em>. </p>
+							<p class="principle"> XIII </p>
+							<p> God, even, ought not to be considered as supernatural by the Theologians, since they reason upon the Nature of God. </p>
+							<p class="principle"> XIV </p>
+							<p> The Fathers at the Council of Nice have furnished a substance to God by affirming that the Son is of the same substance as the Father. Moreover if it be impossible to admit, without confounding them, a finite substance and an infinite substance, the decision of the Council of Nice might furnish arguments to the pantheists and even to the materialists. </p>
+							<p class="principle"> XV </p>
+							<p> If God, as says Catholicism, has created us to know, love, and serve him, and by these means obtain eternal life, and if, as said Jesus Christ, that which we do to a neighbour we do to God, it follows that God has created men, to know, love, and serve each other and by these means attain Eternal Life. </p>
+							<p> The true worship of God, then, must be philanthropy. </p>
+							<p> And every Religion which does not inspire, augment and perfect philanthropy must be a false Religion. </p>
+							<p class="principle"> XVI </p>
+							<p> A Religion, the consequence of which is the reprobation and eternal punishment of the majority of men or of some men, or even of one single man, does not inspire Philanthropy. </p>
+							<p> This does not touch the true Catholic doctrine, which only employs reprobation as a threat, and is in reality salvation offered to all men. </p>
+							<p> <em>He who loves not remains in the death</em>, said St. John, and those cast away by Philanthropy are those who <em>will</em> not love. </p>
+							<p class="principle"> XVII </p>
+							<p> If God were, as is ridiculously supposed, an Omnipotent Personage who laid stress upon being honoured by certain special ceremonies, he would have revealed those ceremonies in a manner, evident and incontestable to all men, and there would be only one form of religious worship on earth, but such is not the case, and what he has given to all is the need and the duty of loving. Philanthropy is therefore the true and the only Religion, <em>really</em> Catholic, that is to say Universal. </p>
+							<p class="principle"> XVIII </p>
+							<p> Every word of blessing and love is the Word of God, and every word of malediction and hate is the cry of Human Wickedness, which men have personified, calling it the Devil. </p>
+							<p class="principle"> XIX </p>
+							<p> An act of Philanthropy, even the most imperfect, is more religious and meritorious than all the fasts, all the genuflexions, and all the prayers. </p>
+							<p class="principle"> XX </p>
+							<p> The attraction which draws together the sexes is not philanthropic; on the contrary it is often the most brutal of all egoisms. </p>
+							<p class="principle"> XXI </p>
+							<p> This attraction only merits the name of Love when it is sanctified by sentiments of self-devotion and sacrifice. </p>
+							<p class="principle"> XXII </p>
+							<p> The man who kills a woman because she no longer loves him is a coward and an assassin, which however does not justify adultery; but all that can be said in regard to <em>this</em> has been said by Jesus Christ. </p>
+							<p class="principle"> XXIII </p>
+							<p> Law should be always rigorous; justice indulgent. </p>
+							<p class="principle"> XXIV </p>
+							<p> The little suffer for the great, but the great also must answer for the little. The rich will pay the debt of the poor.&nbsp;<sup>[141:1]</sup> </p> <label for="element-toggle-141-1"> [141:1. Toggle footnote.]</label> <input id="element-toggle-141-1" type="checkbox" />
+							<p id="toggled-element-141-1" class="fnote hidden"> [141:1. It is only in a very far-fetched or else transcendental sense that this is true. Every soul pays its <em>own</em> debts, be it or they great or small. This is the true and eternal basis alike of justice and morality.&mdash;<em>Trans</em>.] </p>
+							<p class="principle"> XXV </p>
+							<p> The best things when corrupted become worse than the bad ones. What more venerable than the Priesthood, yet what more contemptible than a bad Priest? But the duties of the Priesthood are so sublime and so lifted above human nature, that every priest who is not a saint <em>is</em> bad. This explains the discredit that falls upon the Priesthood in periods when the religious sentiment is feeble. <em>The Gospels tell us that Christ found a good thief, but they nowhere tell us that he met with a good priest</em>! </p>
+							<p class="principle"> XXVI </p>
+							<p> The good Priest is self-sacrifice incarnate; he is Philanthropy raised to a divine ideal; the bad Priest is one who sells prayers and takes the sacred vases for his cooking pots. </p>
+							<p class="principle"> XXVII </p>
+							<p> All that <em>does</em> good <em>is</em> good; all that does ill <em>is</em> bad. </p>
+							<p class="principle"> XXVIII </p>
+							<p> All that gives us pleasure <em>seems</em> to as good, and all that inconveniences or afflicts us seems bad; but we often deceive ourselves, and these errors are "the extenuating circumstances" of sin. </p>
+							<p class="principle"> XXIX </p>
+							<p> It is impossible to love evil for its own sake, knowing what it is, and without its having some appearance of good. </p>
+							<p class="principle"> XXX </p>
+							<p> Evil has no real existence, or, to put it better, it does not exist in an absolute manner. That which ought not to be, is not: that is certain and incontestable.&nbsp;<sup>[143:1]</sup> </p> <label for="element-toggle-143-1"> [143:1. Toggle very long footnote.]</label> <input id="element-toggle-143-1" type="checkbox" />
+							<div id="toggled-element-143-1" class="fnote hidden">
+								<p> [143:1. It is neither certain nor incontestable, and the whole paragraph deals in an unsatisfactory and sophistical manner with the "eternal riddle"--the origin of evil. Evil may in one sense be said to be the darkness necessary to make good apparent, but darkness is real <em>for us</em>, all the same, and so is evil. </p>
+								<p> The occultist's explanation is that evil is merely the result of the infringement of natural laws. The universe is the outcome of unaltering laws. One of these laws is evolution; at one stage of this, sentient beings are developed, and then commences, from their ignorant transgression of the physical laws of the universe, physical evil, bodily pain and suffering. At a later stage of evolution, intelligence and moral responsibility are developed, and then, with the transgression of the moral laws of the universe by evolutes who have developed a will and moral sense of their own, moral evil commences. There is no attempt to deny the reality--<em>quoad</em> us--of evil; <em>but</em> it is the inevitable result of the transgression of the unchanging laws of nature. It is quite admitted that the recuperative energies (the law of the reconstruction of the efficient out of the effete) of
+									<!-- <p class="note green"> Footnote 143:1 extends from p. 143 to p. 145. </p> <p class="note green"> footnote 143:1 on p. 144 </p> --> nature often (perhaps always in the long run) bring good out of evil, just as the putrefying corpse is made a source of fertilisation: but the evil is as real as is, to <em>our</em> senses, the loathsome odour of putrefaction.
+								</p>
+								<p> It is, probably, mainly the reality of evil that leads one section of occultists not merely to say "we can find no God <em>in</em> the universe," but to affirm that there <em>is</em> no God <em>outside</em> this, no intelligent conscious will as a source of the cognisable Laws. For, they argue, if there were, <em>he</em> would be responsible for all the evil, and if so he cannot be God--which means Good. </p>
+								<p> But another section argue that, conditioned as we are in the universe, we cannot draw any conclusions in regard to, or by any possibility realise or conceive, anything outside that universe, but that at the same time they have a spiritual intuition, through which, though unable to conceive Him, they <em>know</em> that there is such an intelligent conscious will, the essence of all perfection. And they add that why the adepts of the first class have no such intuition is simply because their peculiar psychical self-evolution, their psycho-physical training, renders them as incapable of spiritual intuition as the materio-physical training of ordinary athletes render these incapable of psychical intuition. The man, they say, who trains and develops what, for want of a more exact terminology, I call his psychical powers, so as to guide the laws of nature, control the elementals, and manipulate the astral light, as effectually closes the doors on his highest spiritual perceptions, as the man
+									<!--</p> <p class="note green"> footnote 143:1 on p. 145 </p> --> who so trains and develops his physical powers as to win the silver sculls on the Thames. or the champion's belt, closes the doors on his psychical as well as his spiritual perceptions. We students can only sit at the feet of our respective masters and listen. We cannot form any conception of who is right; and one thing is certain, that, who ever be right as to these highest transcendental mysteries, real adepts of either class are almost as superior to ordinary men as these are to monkeys.&mdash;<em>Trans</em>.]
+								</p>
+							</div>
+							<p> That which we call evil exists as the shadow necessary to the manifestation of light; metaphysical evil is error, physical evil is pain; but error is excusable when it is involuntary. To know perfectly that we are deceiving ourselves, and yet to persist is no longer deceiving ourselves; it is seeking to deceive others. As for physical pain, it is the preservative from, and the remedy for, the abuse of pleasure; it exercises the patience of the wise, admonishes the thoughtless and chastises the wicked. It is, therefore, rather a good than an evil. </p>
+							<p class="principle"> XXXI </p>
+							<p> Disorder in nature is never more than apparent, and all alleged miracles are either exceptional phenomena or conjuring tricks. </p>
+							<p class="principle"> XXXII </p>
+							<p> When you <em>see</em> a phenomenon contrary in appearance to the laws demonstrated by Mathematics,&nbsp;<sup>[145:1]</sup> be sure either that you have observed imperfectly or that you have been duped, or that you have been hallucinated. </p> <label for="element-toggle-145-1"> [145:1. Toggle footnote.]</label> <input id="element-toggle-145-1" type="checkbox" />
+							<p id="toggled-element-145-1" class="fnote hidden"> [145:1. It is difficult to understand what is meant here. Surely the laws of mathematics demonstrate that two do not equal and cannot take the place of one. Yet without any <em>conjuring</em>, the occultist doubles or reduplicates things, and that though your observation may have been perfect, and though you have been neither duped nor hallucinated.&mdash;<em>Trans</em>.] </p>
+							<p class="principle"> XXXIII </p>
+							<p> Truth needs no miracles, and no miracles can prove a falsehood. </p>
+							<p class="principle"> XXXIV </p>
+							<p> <em>The general laws of nature are known to science, but neither all the Forces nor all the Agents are yet known</em>. A glimpse has been obtained of animal magnetism which certainly exists, but science treats it as a problem which it has not attempted to solve. </p>
+							<p class="principle"> XXXV </p>
+							<p> People always ask why the extraordinary phenomena of magnetism are never produced in the presence of men of learning.&nbsp;<sup>[146:1]</sup> It is because few men of learning who witness a phenomenon inexplicable to themselves would have the courage to attest its occurrence. </p> <label for="element-toggle-146-1"> [146:1. Toggle footnote.]</label> <input id="element-toggle-146-1" type="checkbox" />
+							<p id="toggled-element-146-1" class="fnote hidden"> [146:1. This, though reasonable enough a score of years ago, has now become obsolete: plenty of men of learning have of late years witnessed and attested them.&mdash;<em>Trans</em>.] </p>
+							<p class="principle"> XXXVI </p>
+							<p> The light that we see is only one portion of the infinite light. It is those few rays of our sun which are <em>en rapport</em> with our visual apparatus. Our sun himself is but a lamp suited to our benightedness; it is but a point luminous in space which would be darkness to the eyes of our body, and which is resplendent for the intuition of our souls. </p>
+							<p class="principle"> XXXVII </p>
+							<p> The word <em>magnetism</em> expresses the action and not the nature of the great universal agent which serves as mediator between thought and life. This agent is the infinite light or rather (for the Light is only a phenomenon) is the light bearer, the great Lucifer of Nature, the mediator between matter and spirit,&nbsp;<sup>[147:1]</sup> which the ignorant and impostors call the Devil, and which is the first creature of God. </p>
+							<p class="fnote"> [147:1. Astral Light, the storehouse of Occult Electricity; the <em>vehicle</em> of the Primeval Chaos.<span class="nowrap">&mdash;E.O.</span>] </p>
+							<p class="principle"> XXXVIII </p>
+							<p> What is more absurd and more impious than to give to the Devil, that is to say to Evil personified, the name of Lucifer which signifies Light-bearer? </p>
+							<p> The intellectual Lucifer is the spirit of intelligence and love; it is the Paraclete, it is the Holy spirit, and the physical Lucifer is the great agent of Universal Magnetism. </p>
+							<p class="principle"> XXXIX </p>
+							<p> To personify evil and make of it an intelligence, a rival to God, which can moreover understand and can no more love, this is a monstrous fiction. <em>To believe that God permits this evil intelligence to deceiveand destroy his feeble creatures already so weak in themselves, is to make of God a Personage more wicked even than the Devil</em>; for God, in taking from the Devil the possibility of repenting and loving, himself forces him to do evil. Moreover a spirit of error and falsehood can only be a thinking folly, and does not even deserve the appellation of spirit. <em>The Devil is the opposite of God, therefore if God defines himself as the one who</em> IS, <em>the Devil must be he who is</em> NOT. </p>
+							<p id="p148" class="page-number"> p. 148 </p> <!--    -->
+							<!--    -->
+							<!-- PRESERVE THIS ID (Rose Transcription) -->
+							<!--  ?? or maybe the next, need to find it  -->
+							<!--    -->
+							<p class="principle"> XL </p>
+							<p> We must seek the spirit of the Dogmas, while receiving in its integrity their letter, such as the sacerdotal Sphinx transmits it to us. This letter is obviously absurd, <em>in order</em> that we may seek further and higher. It is certain that to <em>act</em> one must <em>be</em>, and that to sin one must have a conscience, and that, therefore, one cannot be born guilty; that one cannot make anything out of nothing; that God cannot be a man, nor a man God; that God can neither suffer nor die; that a woman who gives birth to a child cannot be a virgin, etc., etc. No one, then, can seriously affirm the contrary of these truths, so palpable and evident, without warning us that there is a mystery in it, that is to say <em>a hidden sense which must be extracted and understood under pain of becoming either an unbeliever or a fool</em>. </p>
+							<p class="principle" id="p148-XL"> XLI </p> <!-- PRESERVE THIS ID (Rose Transcription) -->
+							<p> That which excuses the so-called Atheists is the deplorable conception that the masses make for themselves of God. Men have endowed Him with all their own vices, and have imagined they were making Him great by exaggerating these to paradoxical proportions. Thus for an example: </p>
+							<p> <em>Pride</em>.&mdash;God has for object only His own Glory! He looks for this glory in the abasement of His rivals&mdash;as if He could have any; He tortures for eternity His miserable creatures&mdash;for His glory; He has killed His son&mdash;for His glory! </p>
+							<p> <em>Avarice</em>.&mdash;Absolute master of all good things, he gives to the larger number of his children only misery, and distributes his favours to the smaller number, only slowly and parsimoniously. </p>
+							<p> <em>Envy</em>.&mdash;He is the jealous God. He proscribes liberty; He leads astray the reason of the wise, and favours by preference the ignorant and the idiotic. </p>
+							<p> <em>Greed</em>.&mdash;He is never satiated with the flesh of His victims; under the old law He required holocausts of bulls, under the new he sniffs the steam of human victims burning in <em>auto da fés</em>. </p>
+							<p> <em>Luxury</em>.&mdash;He must have Virgins like the Minotaur; he has his seraglios of languishing amorous damsels, and monks tortured by obscene nightmares; he has invented celibacy to create phantoms, more immodest than all the Roman orgies, and unnatural dreams. </p>
+							<p> <em>Anger</em>.&mdash;The main topic of the sacred books and collections of sermons is the wrath of God. His fury lets loose pestilences, and in his implacable rage he hollows out a hell for all eternity. </p>
+							<p> <em>Sloth</em>.&mdash;After a repose of an eternity, he works during six days&nbsp;<sup>[150:1]</sup> His work consisted in giving daily one order, and after giving these six orders he felt the necessity of. resting, and how was St. John wrong when, after having represented evil under the form of a monster with seven heads, he tells us that men prostrated themselves before and adored this beast?&nbsp;<sup>[150:2]</sup> </p> <label for="element-toggle-150-1"> [150:1. Toggle footnote.]</label> <input id="element-toggle-150-1" type="checkbox" />
+							<p id="toggled-element-150-1" class="fnote hidden"> [150:1. Of course the six days represent <em>inter alia</em> the six working cycles or circuits of man&mdash;the seventh being the cycle of rest.&mdash;<em>Trans</em>.] </p> <label for="element-toggle-150-2" style="margin-top: 20px;"> [150:2. Toggle footnote.]</label> <input id="element-toggle-150-2" type="checkbox" />
+							<p id="toggled-element-150-2" class="fnote hidden"> [150:2. The correct interpretation. There was no more of a <em>personal</em> God to be found in John's ideas than in our own heads.&mdash;E.O.] </p>
+							<p> St. John adds that Anti-Christism must animate the image of this beast, and make it speak, and that the world will prostrate itself before this living simulacrum of human folly. <em>Let us beware of thinking that this could ever be realised in the Person of a sovereign Pontiff of Catholicism; doubtless reference is here made to sonic Antipope or Perhaps to the grand Lama of Tibet</em>! </p>
+							<p class="principle"> XLII </p>
+							<p> St. Vincent de Lerius says that that alone pertains to the true Catholic or universal Dogma, which has been admitted at all times, in all places, and by every one.&nbsp;<sup>[150:3]</sup> This would simplify symbology marvellously and prodigiously enlarge the Church. </p> <label for="element-toggle-150-3"> [150:3. Toggle footnote.]</label> <input id="element-toggle-150-3" type="checkbox" />
+							<p id="toggled-element-150-3" class="fnote hidden"> [150:3. We must go back a good deal further than St. Vincent for the "<em>quod semper ubique et ab omnibus</em>." [that it is always, everywhere and by everyone]. &mdash;<em>Trans</em>.] </p>
+							<p class="principle"> XLIII </p>
+							<p> It is customary to reply to those who take objections to the teachings of the Theologians, are you stronger minded than St. Augustine? Have you more genius than Bossuet? more intelligence than Fénélon? These questions are very ridiculous, when the matter at issue is one of common sense. I am certainly less versed in mathematics than Pascal, and yet had I lived in the time of that great man, and had he said or allowed it to be said before me that two and two make five, I should have reckoned his great authority as nothing, and should have continued to believe, or rather to know, that two and two make four. </p>
+							<p class="principle"> XLIV </p>
+							<p> The great and learned men who have held their tongues, or have spoken in a certain manner, have had assuredly their own reasons for speaking or keeping silence. High truths are not suitable for low souls; there must be fables for children, and threats for cowards; there must be absurdities for folly and mysteries for credulity. It is through blackened glasses that we can alone gaze on the sun; looked at through a clear glass, it seems to us black, and blinds us. God is for us as a sun; we must walk by his light with lowered eyes: if one tries to gaze fixedly on Him our sight fails us. The most dangerous and the saddest of sciences is Theology, for it constitutes itself wrongly a science of God. Rather is it a science of the foolishness of man when it seeks to explain the inscrutable mystery of the Divine. </p>
+							<p class="principle"> XLV </p>
+							<p> The light of God sparkles in us all&mdash;it is our conscience. To do the good to which this incites us and to avoid the evil against which this warns us, these are our duties towards God. </p>
+							<p class="principle"> XLVI </p>
+							<p> God sows the idea in the Infinite, and the rays of the suns bring to birth the germs in the Planets. The animals have issued from the earth like the trees, but no more than the trees did they issue full formed and of full size; species have their embryotic periods as well as the individuals of each species. To imagine that God has first moulded a statue of clay, to blow later in its face and so make of it a man, is to believe a story similar to that they tell little girls about babies being dug up out of cabbage beds. Is God denied or is Glory lessened by declining to look on him as a statuary? It is nature that produces everything progressively and by slow degrees, operating ever through the orderly functions of the forces inherent in the substance, but it is the Divine word that guides the forces towards the ideal of the Form. Nature executes, she does not invent. The thoughts which are designed in matter come only from matter, though matter does not think. From the development of the first living cell, to the perfection of the Human Form, God has said to the forces of Nature, "Let us make man," and his behest has endured through many millions of years which, before him, were but an instant. Genesis is not the natural history of man, it is the commencement of his Religious Epopee. The Primitive couple is Human unity established in the first family of believers. When God diffused over the face of man a breath of Immortality, man had already a face; what else then was he but one species of anthropoid animal? Certainly man does not descend from the ape, but the ape and man perhaps descend from the same primitive animal. Darwin's theory does not contradict the Bible, it restores to it its character of the symbolic Lion, exclusively religious; the great week of the creation is a series of Geological epochs&nbsp;<sup>[153:1]</sup> and God is said to rest when man begins to understand that the Universe moves on alone.&nbsp;<sup>[153:2]</sup> </p> <label for="element-toggle-153-1"> [153:1. Toggle footnote.]</label> <input id="element-toggle-153-1" type="checkbox" />
+							<p id="toggled-element-153-1" class="fnote hidden"> [153:1. Or rather of cycles of development either from zero to the monkey-man, or from the monkey-man to Nirvana.&mdash;<em>Trans</em>.] </p>
+							<p class="fnote"> [153:2. Ingenious but..... &mdash;<em>Trans</em>.] </p>
+							<p class="principle"> XLVII </p>
+							<p> The supernatural is the eternal Paradox of the infinite desire. Man craves to assimilate himself with God, and he does so in the Catholic communion. From a Rationalistic point of view and considered in a purely natural manner, this communion is a thing of colossal extravagance. In the Catholic Communion they eat the spirit of God and the body of a man! Eat a spirit, and an infinite Spirit! What madness! Eat the body of a man! How horrible! Theophagy, and Androphagy! What claims to immortality! And yet,&nbsp;<sup>[154:1]</sup> what can be more beautiful, more soothing, more really divine than the Catholic Communion? The religious want, innate in man, will never find more complete satisfaction; and how vividly we feel that it is true, when we believe in it Faith to a certain extent creates what she affirms; hope in the superhuman never deceives, and the Love of the divine is never a deception. The First Communion is the coronation of the human royalty, it is the inauguration of the serious side of life, it is the apotheosis and the transfiguration of childhood, it is the most pure of all joys and the most true of all happinesses. </p> <label for="element-toggle-154-1"> [154:1. Toggle long footnote.]</label> <input id="element-toggle-154-1" type="checkbox" />
+							<div id="toggled-element-154-1" class="fnote hidden">
+								<p> [154:1. These ever recurring "yets" and "buts" sound odious! He is more than humouring public superstition. He becomes a literary flunkey in his double dealings. &mdash;E.O. </p>
+								<p> I think my revered friend judges our author not only harshly, in this case, but wrongly. The shield has two sides for the non-believer and the believer. The cause of truth demands that both sides should he seen and understood. Were there not to the believer something inexpressibly sweet and comforting in this sacrament, would <em>billions</em> of men have derived from it their greatest happiness in life, their chief consolation in death? Such consolation, such happiness, may not be for us, but it might almost be said "<em>V&aelig; victis</em>" for those whom TRUTH has conquered. But, be this as it may, the very cause of Truth demands that the court should prove its familiarity with both sides of the case, and its verdict would carry little weight with impartial inquirers, were this not shown. As it is, the powerful rationalistic enunciation of the monstrous character of the real conception, is only brought into stronger relief by the frank admission of the ideal beauty with which Faith is able to veil it for believers. &mdash;<em>Trans</em>.] </p>
+							</div>
+							<p class="principle"> XLVIII </p>
+							<p> There is then something above both Nature and Reason to explain, justify, and satisfy the highest aspirations of both. From this point of view the Supernatural is Natural, and the paradoxical formula of the necessary hypotheses becomes perfectly reasonable. It is the human spirit that constructs the Impossible in order to attain the Infinite. </p>
+							<p class="principle"> XLIX </p>
+							<p> According to the Fathers of the Church, the Ancient Law was only an image and a shadow of the new Law. The astonishing stories of the Bible are but images, (they do not say allegories, the word would have been dangerous), images of the new dogma inaugurated by Jesus Christ, and the basis of this dogma is that God is personally united with humanity, and that we must love and serve God in man; in a word that we must love one another, which resumes all the Law and the prophets. There is then nothing true in the Bible which is not in conformity with the Gospels, and the spirit of the Gospels is the spirit of charity. </p>
+							<p class="principle"> L </p>
+							<p> To love one another and not revile, curse, excommunicate, persecute or burn each other. To love one another and consequently to assist, console, support and bless one another. Charity is Humanity endowed with a Divine Principle; it is solidarity enriched by self-devotion; it is the spirit of the saints, and consequently the true spirit of the Catholic or Universal Church. Those possessed with a spirit opposed to this do not belong to the Church. </p>
+							<p> But charity in the Church ought to preserve above all things the Hierarchy and unity.&nbsp;<sup>[156:1]</sup> It is rightful to protest against the abuse of authority, but not against authority itself.&nbsp;<sup>[156:2]</sup> </p> <label for="element-toggle-156-1"> [156:1. Toggle footnote.]</label> <input id="element-toggle-156-1" type="checkbox" />
+							<p id="toggled-element-156-1" class="fnote hidden"> [156:1. Quite so, when the priests, as Éliphas always repeats that they <em>should</em> be, <em>are</em> all adepts of the highest occult mysteries, and the doctrines are those of the eternal wisdom religion.&mdash;<em>Trans</em>.] </p> <label for="element-toggle-156-2" style="margin-top: 20px;"> [156:2. Toggle footnote.]</label> <input id="element-toggle-156-2" type="checkbox" />
+							<p id="toggled-element-156-2" class="fnote hidden"> [156:2. Quite so, when authority <em>really</em> means superiority in spiritual knowledge; but, when leaping down at abound from this Utopian church and priesthood of his hopes, into the arena of the Catholic Church as it is, he assails the so-called Old Catholics for their schism, which after all is a step, if a small one, towards Reason and Truth, it is <em>he</em> who becomes the child and disciple of error.&mdash;<em>Trans</em>.] </p>
+							<p> There exists at present a new sect of Protestants who call themselves Old Catholics, as if the child just born could call itself old, because it has had a grandfather? But the ancestors of these ridiculous Protestants were no old Catholics, who would have died a thousand times rather than separate themselves from the Hierarchy and Authority. Their ancestors are the heretics of all ages, and their great ancestor is Satan,&nbsp;<sup>[157:1]</sup> that unsubmitting old Catholic. </p> <label for="element-toggle-157-1"> [157:1. Toggle footnote.]</label> <input id="element-toggle-157-1" type="checkbox" />
+							<p id="toggled-element-157-1" class="fnote hidden"> [157:1. Very consistent this with what he has said above. Is this <em>his</em> charity?&mdash;E.O.] </p>
+							<p class="principle"> LI </p>
+							<p> If Religion is to be one, if it is to be holy, if it is to be universal, if it is to preserve and continue the chain of tradition, if it is to rest on a legitimate and hierarchical authority, if it is to realise and give what it promises, if it is to have signs of power and consolations for all, if it is to veil for feeble visions the eternal truths, if it is to unite in one sheaf all the aspirations and all the hopes of the most exacting souls, it <em>can</em> only be Catholic,&nbsp;<sup>[157:2]</sup> and all nations soon or late will return to Catholicity when some God-enlightened Pope boldly disavows the petty passions, full of greed and hate, of clerical Catholicism, when a learned clergy shall be competent to reconcile the lights of Reason with the obscurities of Faith, and when worship freed from material interests shall be no longer an object of mercantile enterprise. </p> <label for="element-toggle-157-2"> [157:2. Toggle long footnote.]</label> <input id="element-toggle-157-2" type="checkbox" />
+							<div id="toggled-element-157-2" class="fnote hidden">
+								<p> [157:2. Perhaps it might be said that the foregoing neither wholly coincides with nor exhausts our conception of the Ideal Church of the Future. But, be this as it may, one thing is certain, viz., that on pain of losing all vitality, it must have nothing to do with "Catholicism," or any other name already bristling with pre-existing conceptions and constituting a cluster of fully developed ideas, prejudices and superstitions. </p>
+								<p> What destroyed the vitality of Christ's teachings, turned his love and blessing into hatred and curses for mankind, and now makes it necessary to preach anew what he really taught? Simply the disregard of his warning not to put new wine into old bottles. When the fathers of the Christian Church took in and to disguise and dress up the occult verities of true Christism in the cast off and tattered garbs of other dead or moribund faiths, they burked the new born child as effectually as though they had buried it with the corpses they despoiled, to furnish it with swaddling clothes. </p>
+								<p> Theosophy may not be absolutely irreproachable as a name for the Religion of the Future because to scholars it is associated with doctrines and ideas not wholly true, though having affinities with the truth. But, to the mass of mankind the word is a blank without associations, and scholars, unless wilfully, are not to be thus misled. Anyhow it is preferable to any of the names Éliphas Lévi suggests, redolent as all these are of a tyrannical and effete dogmatism.&mdash;<em>Trans</em>.] </p>
+							</div>
+							<p> This <em>will</em> be, because it <em>ought</em> to be, and it will then be discovered that in the Christian dogmas there are, as in the earlier portions of the Bible, images and shadows of the religion of the future, which already exists and might designate itself as Messianism, Paracletism, or better still absolute Catholicity, and which will be the light of all spirits and the life eternal of all souls. </p>
+							<p class="note center"> ( End of chapter The Unalterable Principles ) </p>
+							<p class="totop-above-anchor"> <a href="javascript:toTopCleanUrl();">top of page</a> </p> <!-- anchor element must not be empty --> <a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button> <!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="magic-and-magism.htm">&lt; Magic and Magism </a> </li>
+							<li class="align-right"><a href="the-great-secret.htm">The Great Secret &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div> <!-- end #main-content-relative -->
+			</div> <!-- end main-content -->
+		</div> <!-- end container -->
+	</div> <!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+
+</html>

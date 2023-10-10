@@ -1,0 +1,92 @@
+<!-- start of menu include file   update April 25, 2022-->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/buddhism/">Buddhism index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<!-- #menu-container is targeted by the script RecoverDivScroll  -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li class="first-item"><a href="/buddhism/">Buddhism index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<!-- "offset" allows you to center but remove a little space at left. -->
+		<ul class="menu-text">
+			<li>Buddhism Articles</li>
+			<li class="normal">
+				<img class="menu-image" src="images/buddha-small.jpg" alt="Buddha statue" />
+			</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li>
+					<a href="twelve-links-of-dependent-arising.htm">Twelve Links of Dependent Arising (this page)</a>
+				</li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Buddhism at <a class="inline" href="https://en.wikipedia.org/wiki/Buddhism">Wikipedia</a> </li>
+				<li>The 12 Nidanas at
+					<a href="https://en.wikipedia.org/wiki/Twelve_Nid%C4%81nas">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">Mantak Chia, Taoist Master: <a class="inline" href="/psychology/articles/mantak-chia-kundalini-psychosis.htm">The Most Effective Cure for Kundalini Psychosis</a>
+				</li>
+				<li>Topga Rinpoche on: <a href="/buddhism/topga-rinpoche/contents.htm">Rice Seedling Sutra</a></li>
+				<li>E.J. Thomas (1917): <a href="/buddhism/scriptures/chain-of-causation.htm">The Chain of Causation</a></li>
+				<li class="header-item">Zen section</li>
+				<li class="first-item"><a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">Zen Teachings of Huang Po - The Dharma of Mind Transmission</a></li>
+				<li>Garma C.C. Chang
+					<a href="/zen/garma-chang/practice-of-zen/">The Practice of Zen</a>
+				</li>
+				<li class="header-item">Tibetan section</li>
+				<li class="first-item">Trungpa Rinpoche: <a class="inline" href="/tibetan/trungpa/trungpa-rinpoche-the-hard-way.htm">The Hard Way</a> and <a class="inline" href="/tibetan/trungpa/energy-and-emotional-transmutation.htm">Energy and Emotional Transformation</a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">Holybooks.Com (multitude of free pdfs on Buddhism)
+					<a href="https://www.holybooks.com/category/buddhism/">www.holybooks.com</a>
+				</li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,80 @@
+<!-- start of menu include file - update April 2, 2020, 
+dark theme added Feb 9, 2022, php update April 25, 2022   -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/blavatsky/">Blavatsky index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-3"><a href="/">Site root</a></li>
+			<li><a href="contents-and-title.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li class="first-item"><a href="/blavatsky/">Blavatsky index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!-- ajax has negative top and bottom margins in .CSS -->
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!--  "menu-text" must be a class -->
+		<ul class="menu-text center">
+			<li>Light On The Path<span class="normal block"> (1888)</span></li>
+			<li>
+				<img class="menu-image" src="images/mabel-collins.jpg" alt="Mabel Collins" />
+			</li>
+			<li class="center">Mabel Collins <span class="normal block">(1851&ndash;1927)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents-and-title.htm"><span class="block"></span>Contents and Title Page</a> </li>
+				<li><a href="section-1-text.htm">Section 1 - The Text</a></li>
+				<li><a href="section-2-comments.htm">Section 2 - Comments</a></li>
+				<!--  page removed
+                <li><a href="appendix.htm"><span class="block">Appendix (Intro</span> by Leadbeater)</a></li>
+                -->
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">Mabel Collins at <a href="https://en.wikipedia.org/wiki/Mabel_Collins">Wikipedia</a></li>
+				<li>Source at <a href="https://www.theosociety.org/pasadena/lightpat/lightpat.htm">theosociety.org</a></li>
+				<li>Comments by Osho on this work appear in <em>The New Alchemy: To Turn You On.</em> See <a href="https://www.satrakshita.com/light_on_the_path.htm">satrakshita.com</a> </li>
+				<li>Theosophical University Press: <a style="display: inline;" href="https://www.theosociety.org/pasadena/ts/tup.htm">TUP Catalog</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">H.P. Blavatsky, <a href="/blavatsky/voice-of-the-silence/voice-contents.htm"><em>The Voice of the Silence</em></a></li>
+				<li>Franz Hartmann, <a href="/magic/hartmann/white-and-black/contents.htm"><em>Magic White and Black</em></a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

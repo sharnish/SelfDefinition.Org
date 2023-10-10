@@ -1,0 +1,156 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alan Fitzpatrick - Mind Parasites, Fact or Fiction?</title>
+	<meta name="description" content="A lecture on mind parasites given in Los Angeles in 1976.">
+	<meta name="author" content="Alan Fitzpatrick">
+	<meta property="og:title" content="Alan Fitzpatrick - Mind Parasites, Fact or Fiction?">
+	<meta property="og:description" content="A lecture on mind parasites given in Los Angeles in 1976.">
+	<meta property="og:image" content="https://selfdefinition.org/hearing-voices/articles/images/alan-fitzpatrick-mind-parasites-fact-or-fantasy.gif">
+	<!-- load external stylesheets before the menu scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_hearing-voices-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		#poster-image img {
+			width: 100%;
+			max-width: 100%;
+			border: 0px solid green;
+		}
+
+		/* PAGE-LINKS */
+		ul.page-links {
+			width: 240px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		.page-links li {
+			border: 1px solid blue;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_hearing-voices-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_hearing-voices-articles-title-include.htm"); ?>
+									<h3>
+										Mind Parasites - Fact or Fiction?
+									</h3>
+									<h4>
+										Lecture by Alan Fitzpatrick
+									</h4>
+									<p class="note80">
+										(Poster for a lecture by Alan Fitzpatrick in Los Angeles, 1976.)
+									</p>
+								</header>
+							</div>
+
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">&lt; Surest Path to Mental Clarity</a></li>
+									<li class="align-right"><a href="alcoholics-anonymous-252-slogans.htm">A.A. 252 Slogans &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<p>
+								For centuries men have looked upon their fellows and attempted to find reason for the mystery of madness that afflicts the human mind.
+							</p>
+							<p>
+								And throughout the ages, a few have alluded to the existence of psychic thought-forms and entities of other mental dimensions that intrude upon the human consciousness, and are the source of our inner conflicts.
+							</p>
+							<p>
+								This investigative study will endeavor to discuss the current theories and historical evidence surrounding what are known as entities, familiars, spirits, and poltergeist phenomena.
+							</p>
+							<p class="note">
+								Tuesday, June 1, 1976<br>
+								Hollywood Public Library, 1623 Ivar Avenue, Los Angeles
+							</p>
+							<!-- bodytext -->
+							<div id="poster-image">
+								<img src="images/alan-fitzpatrick-mind-parasites-fact-or-fantasy.gif" style="border: 1px solid black;" alt="Parasites poster">
+							</div>
+							<div class="author-reference">
+								<p>
+									Alan Fitzpatrick is the author of <em>The Sex Connection, A Study of Desire, Seduction and Compulsion</em>. Information available at <a href="https://amzn.to/3Or2jZz">Amazon</a>.
+								</p>
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">&lt; Surest Path to Mental Clarity</a></li>
+									<li class="align-right"><a href="alcoholics-anonymous-252-slogans.htm">A.A. 252 Slogans &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

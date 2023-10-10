@@ -1,0 +1,103 @@
+<!-- start of menu include file   Update July 4, 2021. June 2, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<!-- these float, Don't forget Div below to clear -->
+			<li class="first-item"><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>Propaganda <span class="note">(1928)</span></li>
+			<li class="normal note">
+				<img class="menu-image" src="images/edward-bernays.jpg" alt="Edward Bernays">
+			</li>
+			<li>Edward L. Bernays</li>
+			<li class="normal note tight" style="margin-top:-5px;">(1891-1995)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="chapter-01.htm">
+						I. Organizing Chaos</a></li>
+				<li><a href="chapter-02.htm">
+						II. The New Propaganda</a></li>
+				<li><a href="chapter-03.htm">
+						III. The New Propagandists</a></li>
+				<li><a href="chapter-04.htm">
+						IV. The Psychology of Public Relations</a></li>
+				<li><a href="chapter-05.htm">
+						V. Business and the Public</a></li>
+				<li><a href="chapter-06.htm">
+						VI. Propaganda and Political Leadership</a></li>
+				<li><a href="chapter-07.htm">
+						VII. Women's Activities and Propaganda</a></li>
+				<li><a href="chapter-08.htm">
+						VIII. Propaganda for Education</a></li>
+				<li><a href="chapter-09.htm">
+						IX. Propaganda in Social Service</a></li>
+				<li><a href="chapter-10.htm">
+						X. Art and Science</a></li>
+				<li><a href="chapter-11.htm">
+						XI. The Mechanics of Propaganda</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>Edward Bernays at <a href="https://en.wikipedia.org/wiki/Edward_Bernays">
+						Wikipedia</a> </li>
+				<li>Propaganda (this book)<br> at <a href="https://en.wikipedia.org/wiki/Propaganda_(book)">
+						Wikipedia</a> </li>
+				<li>Psychological manipulation at <a href="https://en.wikipedia.org/wiki/Psychological_manipulation">
+						Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Psychology</li>
+				<li class="subhead">Gustave Le Bon</li>
+				<li class="first-item"> <a href="/psychology/gustave-le-bon/the-crowd/contents.htm"> The Crowd, A Study of the Popular Mind </a></li>
+				<li class="header-item">Liberty section</li>
+				<li class="subhead">Étienne de La Boétie</li>
+				<li class="first-item"> <a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+			</ul>
+		</div>
+
+
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

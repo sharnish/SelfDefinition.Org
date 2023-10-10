@@ -1,0 +1,191 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Life of Paracelsus</title>
+	<meta name="author" content="Franz Hartmann, M.D.">
+	<meta name="description" content="The substance of his teachings: Concerning cosmology, 
+    anthropology, pneumatology, magic and sorcery, medicine, alchemy and astrology, philosophy and theosophy.">
+	<meta property="og:title" content="Life of Paracelsus" />
+	<meta property="og:description" content="The substance of his teachings: Concerning cosmology, 
+    anthropology, pneumatology, magic and sorcery, medicine, alchemy and astrology, philosophy and theosophy. 
+    Extracted and translated from his rare and extensive works." />
+	<meta property="og:image" content="https://selfdefinition.org/magic/paracelsus/hartmann-life-of-paracelsus/images/paracelsus-full-size.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_life-of-paracelsus-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="contents.htm">
+	<link rel="next" href="preface.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* definition list styling on this page was moved to local stylesheet */
+
+		/* styling for #frontispiece, with media query */
+
+		#frontispiece {
+			width: 500px;
+			margin-top: 35px;
+			text-align: center;
+		}
+
+		@media only screen and (max-width: 560px) {
+
+			#frontispiece {
+				width: auto;
+				max-width: 500px;
+			}
+
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_paracelsus-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_paracelsus-title-include.htm"); ?>
+									<h3>
+										Title Page
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+									<li class="align-right"><a href="preface.htm">Preface &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div id="frontispiece">
+								<!-- put half in the header -->
+								<header>
+									<h4>
+										THE LIFE OF PHILIPPUS THEOPHRASTUS BOMBAST OF HOHENHEIM</h4>
+									<p class="note">
+										KNOWN BY THE NAME OF
+									</p>
+									<h3>
+										PARACELSUS</h3>
+									<!-- class "optional" are hidden for screens 560px and smaller
+
+                                         on local style sheet -->
+									<p class="note">
+										AND
+									</p>
+									<h4>
+										THE SUBSTANCE OF HIS TEACHINGS</h4>
+									<p class="note">
+										CONCERNING COSMOLOGY, ANTHROPOLOGY, PNEUMATOLOGY, MAGIC AND SORCERY, MEDICINE, ALCHEMY AND ASTROLOGY, PHILOSOPHY AND THEOSOPHY
+									</p>
+									<p class="note" style="margin-top:25px;">
+										EXTRACTED AND TRANSLATED FROM HIS RARE AND EXTENSIVE WORKS AND FROM SOME UNPUBLISHED MANUSCRIPTS
+									</p>
+									<p class="note">
+										by
+									</p>
+									<h3>
+										FRANZ HARTMANN, M.D.</h3>
+								</header>
+								<p class="note">
+									AUTHOR OF "MAGIC", ETC.
+								</p>
+								<p class="note tight">
+									SECOND EDITION, REVISED AND ENLARGED
+								</p>
+								<p class="note tight">
+									(THIRD IMPRESSION)
+								</p>
+								<p>
+									<em>"The beginning of wisdom is the beginning of supernatural power." - Paracelsus</em>
+								</p>
+								<div class="note">
+									<p>
+										LONDON
+									</p>
+									<p class="tight">
+										KEGAN PAUL, TRENCH, TRUBNER &amp; CO. LTD
+									</p>
+									<p class="tight">
+										BROADWAY HOUSE, 68-74 CARTER LANE, K C.
+									</p>
+									<p class="tight">
+										The rights of translation and reproduction are reserved.
+									</p>
+									<p class="tight">
+										Printed in Great Britain
+									</p>
+								</div>
+								<hr />
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+									<li class="align-right"><a href="preface.htm">Preface &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

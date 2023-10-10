@@ -1,0 +1,1238 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Numbered Endnotes - Practice of Zen - Garma C.C. Chang</title>
+	<meta name="description" content="These are the numbered endnotes. The lettered endnotes refer to Chinese Characters in the appendix.">
+	<meta name="author" content="Garma C. C. Chang">
+	<meta property="og:title" content="Numbered Endnotes - Practice of Zen, Garma C. C. Chang">
+	<meta property="og:description" content="These are the numbered endnotes. The lettered endnotes refer to Chinese Characters in the appendix.">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load style sheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practice-of-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="ch-4b3-three-stages-meditation.htm">
+	<link rel="next" href="bibliography.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* DO NOT REFORMAT THIS PAGE - EASIER TO EDIT */
+		/* see endnote positioning (applied in paragraphs) at bottom */
+
+		h4 {
+			margin-bottom: 0;
+		}
+
+		.endnotes-list {
+			margin-top: 0;
+			border: 0px solid yellow;
+		}
+
+		.endnotes-list li p:last-child {
+			border: 0px solid green;
+		}
+
+		/*    */
+
+		ul.page-links {
+			width: 310px;
+			margin: 0 auto;
+		}
+
+		/*must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page  */
+
+		@media only screen and (max-width:315px) {
+			ul.page-links {
+				width: calc(100% - 10px);
+			}
+		}
+
+		.send-back-link {
+			background: transparent;
+		}
+
+		a.page-link-anchor {
+			background: transparent;
+			display: inline;
+		}
+
+		/* copied from Transmission
+        There the section was #references-list
+    
+     */
+		/* For page jump links in endnotes.html
+       Jump links IDs are in the list item, not the anchor tag
+       Positioning is copied from Illusion of Conjugal Sadhana */
+		/* HEIGHT is necessary or note will collapse */
+		/* this is ul */
+
+		ul.endnotes-list {
+			list-style: none;
+			margin-left: 0;
+			padding-left: 0px;
+		}
+
+		/* for some weird reasons, LI appear spaced at width = 500px or less
+        but not spaced at 520px through 767px. The ARE spaced at 768px.
+        Try to fix with the following (too much on wide screen:
+        Added Aug 21, 2019. Just a patch. I don't understand it.
+    */
+
+		@media only screen and (min-width:501px) and (max-width:767px) {
+			ul.endnotes-list li {
+				margin-bottom: 17px;
+			}
+		}
+
+		/*   */
+
+		.endnotes-list li:before {
+			content: "";
+			display: block;
+			height: 50px;
+			padding-top: 30px;
+			margin-top: -30px;
+		}
+
+		@media only screen and (max-width: 767px) {
+			.endnotes-list li:before {
+				content: "";
+				display: block;
+				height: 100px;
+				margin-top: -100px;
+			}
+		}
+
+		@media only screen and (max-width: 507px) {
+			.endnotes-list li:before {
+				height: 130px;
+				padding-top: 110px;
+				margin-top: -110px;
+			}
+		}
+
+		.endnotes-list li p:first-child {
+			margin-top: 0;
+		}
+
+		.endnotes-list li p:last-child {
+			margin-bottom: 0;
+		}
+
+		.endnotes-list li div:last-child {
+			margin-bottom: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practice-of-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practice-of-zen-title-include.htm"); ?>
+									<h3>
+										Endnotes, by Chapter
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="../la-practica-del-zen/notas.htm">..notas.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ch-4b3-three-stages-meditation.htm">&lt; Three
+											Stages of Meditation</a></li>
+									<li class="align-right"><a href="bibliography.htm">Bibliography &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- new item Nov 1, 2019 -->
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li class="notes" style="margin-bottom:0;">Sections of this page:</li>
+									<li><a href="#chapter-1">Chapter 1. The Nature of Zen</a></li>
+									<li><a href="#chapter-2">Chapter 2. The Practice of Zen</a></li>
+									<li><a href="#chapter-3">Chapter 3. The Four Problems of Zen Buddhism</a></li>
+									<li><a href="#chapter-4">Chapter 4. Buddha and Meditation</a></li>
+								</ul>
+							</nav>
+							<p class="note">
+								These are the <strong>numbered</strong> endnotes. The <strong>lettered</strong> endnotes
+								refer to Chinese Characters in the <a href="appendix-chinese.htm">APPENDIX</a>.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="chapter-1">&nbsp;</a>
+							<h4>
+								Chapter I. The Nature of Zen
+							</h4>
+							<ul class="endnotes-list">
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-1"></a><a href="ch-1a1-nature-of-zen.htm#return-ch-1a1-note-1" class="send-back-link">[Ch-1-Note-1]</a> Koan, the Japanese pronunciation of
+										the Chinese <em>kung-an.</em> This term has many meanings. Here it signifies
+										"story" or "event." In the majority of cases where this term appears in Chapter
+										I, it is used in this sense only; in Chapter II, "The Practice of Zen," it is
+										used largely in a specific sense, denoting the <em>Hua Tou</em> exercise. See
+										Chapter II, p. 72, <a href="ch-2b1-four-masters-discourses-hsu-yun.htm">"The
+											Discourses of Master Hsu Yun"</a> and Chapter III, Footnote 6. <span class="note">[<a class="nowrap" href="#chapter-3-6">Ch-3-Note-6</a>]</span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-2"></a><a href="ch-1a1-nature-of-zen.htm#return-ch-1a1-note-2" class="send-back-link">[Ch-1-Note-2]</a> Enlightenment. This word is used in
+										this book solely to indicate the transcendental experience of realizing
+										universal Reality. It signifies a spiritual, mystical, and intuitive
+										realization, and should not be understood as a term denoting an intellectual
+										awakening as its common application in association with "The Age of Reason"
+										suggests.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-3"></a><a href="ch-1a2-nature-of-zen-koans.htm#return-ch-1a2-note-3" class="send-back-link">[Ch-1-Note-3]</a> Although the dragon and the phoenix
+										are both considered to be auspicious animals by the Chinese, this expression can
+										be used in either a complimentary or a sarcastic sense. While this was
+										ostensibly a compliment, Tien Jan was speaking sarcastically.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-4"></a><a href="ch-1a3-nature-of-zen-special-art.htm#return-ch-1a3-note-4" class="send-back-link">[Ch-1-Note-4]</a> Eight Worldly Winds is a term
+										widely used by Buddhists to denote the eight worldly influences or interests
+										that fan the passions and thus drive one on forever as a slave in Sangsara. They
+										are: gain, loss; defamation, eulogy; praise, ridicule; sorrow, joy.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-5"></a><a href="ch-1a3-nature-of-zen-special-art.htm#return-ch-1a3-note-5" class="send-back-link">[Ch-1-Note-5]</a> No-birth (Chinese: <em>wu
+											sheng</em>; Tibetan: <em>skyed wa med ba</em>). This term is a literal
+										translation of the Sanskrit <em>ajata,</em> but this literal rendering is
+										somewhat misleading for those who do not realize that it denotes the nonexistent
+										aspect of being. A better translation is "nonarising," or "nonexisting" &ndash;
+										for anything that is "existent" must first be born.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-6"></a><a href="ch-1b-core-of-zen.htm#return-ch-1b-note-6" class="send-back-link">[Ch-1-Note-6]</a> The Chinese phrase <em>hua yen</em>
+										means "flower-ornament" or "beautiful garland," denoting the title of an
+										important Mahayana scripture called the <em>Hua Yen Chin</em> or the <em>Garland
+											Sutra</em> (Sanskrit: <em>Avatamsaka Sutra</em>). <sup>[1]</sup>
+									</p>
+									<p class="fnote">
+										[1. Link opens a 108 page pdf (549K) on this site: <a href="/buddhism/Garland-Sutra-Avatamsaka-Sutra.pdf">/buddhism/<wbr />Garland-Sutra-Avatamsaka-Sutra.pdf </a>&nbsp;]
+									</p>
+									<p>
+										Because the system and tenets of this philosophy are based upon the <em>Hua
+											Yen</em> or <em>Garland Sutra,</em> it has been called "The philosophy of
+										Hua Yen." This philosophy was established by the founder of the Hua Yen School,
+										Master Tu Hsun of the Tang Dynasty, and has been generally considered as one of
+										the greatest achievements of Chinese Buddhist scholarship.
+									</p>
+									<p>
+										At present, <span class="note">[1959]</span> neither a translation of the
+										original text of the <em>Garland Sutra</em> nor of its exegeses and commentaries
+										is available in European languages. <span class="note">[but see above]</span>
+										The personal opinion of the author is that unless the texts of this
+										<em>Sutra</em> are studied, one can hardly understand the spirit and philosophy
+										of Mahayana Buddhism at its highest level and in its profoundest sense. The
+										<em>Hua Yen Sutra</em> is, indeed, as the Chinese Buddhist proverb has said,
+										"the King of all sutras."
+									</p>
+									<p>
+										It is our high hope that this supreme sutra, together with its commentaries,
+										will soon be translated into the English language. At present the reader may
+										refer to D. T. Suzuki's excellent book, <em>The Essence of Buddhism,</em>
+										<sup>[out of print]</sup> wherein some basic tenets of the Hua Yen philosophy
+										are introduced. Briefly speaking, Hua Yen philosophy is the philosophy of
+										<em>totality,</em> the elucidation of the unfathomable Realm of Buddhahood and
+										the brave spirit and profound understanding of the Bodhisattvas &ndash; those
+										persons who strive for Enlightenment in order to save sentient beings.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-7"></a><a href="ch-1b-core-of-zen.htm#return-ch-1b-note-7" class="send-back-link">[Ch-1-Note-7]</a> The Eight Consciousnesses.
+										According to the Yogacara philosophy (Buddhist Idealism), the consciousness
+										possessed by each sentient being has eight different functional aspects which
+										are conveniently designated as the "Eight Consciousnesses." Of these, the first
+										five are the Consciousness of the Eye, of the Ear, of the Nose, of the Tongue,
+										and of the Body. The sixth is called "The Consciousness of Discrimination," the
+										seventh, "The Consciousness of Constant Thought" or "Ego," and the eighth, the
+										<em>Alaya</em> or "Store Consciousness." See Chapter II, p. 72, "The Discourse
+										of Master Hsu Yun."
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-8"></a><a href="ch-1b-core-of-zen.htm#return-ch-1b-note-8" class="send-back-link">[Ch-1-Note-8]</a> Shen Hsiu's stanza to the Fifth
+										Patriarch was:
+									</p>
+									<blockquote>
+										<p>
+											This body is the <em>Bodhi</em> Tree,
+											<br />
+											This mind is like the mirror bright;
+											<br />
+											Take heed to keep it always clean
+											<br />
+											And let no dust collect upon it. <sup>[2]</sup>
+										</p>
+										<p class="fnote">
+											[2. Sutra of the Sixth Patriarch, Hui Heng, "The Platform Sutra": <a href="/zen/hui-neng/platform/contents.htm">/zen/hui-neng/<wbr />platform/<wbr />contents.htm</a>&nbsp;]
+										</p>
+									</blockquote>
+									<p>
+										A complete account of this event may be read in Goddard's <em>Buddhist
+											Bible,</em> pp. 498-502. <span class="note">[Link opens a 124 page PDF
+											(870K): <a href="/buddhism/A-Buddhist-Bible-Goddard-1932.pdf">/buddhism/A-Buddhist-Bible-Goddard-1932.pdf</a>&nbsp;]</span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-9"></a><a href="ch-1c-four-vital-points.htm#return-ch-1c-note-9" class="send-back-link">[Ch-1-Note-9]</a> <em>Ta chi ta yung.</em> This Zen
+										phrase is very difficult to translate. <em>Ta</em> means "great," and
+										<em>chi</em> means "the critical point, time, or event." <em>Chi</em> can also
+										mean "cleverness," "adroitness," or "opportunity," when combined with other
+										words such as <em>chi chiao</em> or <em>chi hui.</em> <em>Ta chi</em> thus means
+										"great opportunity," "great cleverness," "flexibility," or "crisis," implying
+										that the Zen Master knows how to instruct his disciples under different
+										circumstances with great skill and flexibility. When <em>ta yung,</em> meaning
+										"great power and capability," is combined with <em>ta chi,</em> the phrase
+										becomes more expressive and forceful.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-10"></a><a href="ch-1c-four-vital-points.htm#return-ch-1c-note-10" class="send-back-link">[Ch-1-Note-10]</a> The Ten Successive Steps of Zen
+										Practice as suggested by Zen Master Yuan Chin are considered to be of great
+										significance, but some of them are very enigmatic, especially points 3 and 6.
+										Detailed commentaries on the text are not available at this time. The following
+										brief explanations or interpretations of points 3, 5, and 6 may be helpful,
+										however:
+									</p>
+									<p>
+										a. Point 3: When one reaches the state of <em>Satori,</em> he experiences all,
+										and all is embraced by and identical with, the Great Tao. Both sentient and
+										insentient beings are alive in this "Great Whole." Thus even insentient beings
+										are capable of preaching the Dharma.
+									</p>
+									<p>
+										b. Point 5: The distinguishing "Eye of Dharma" means the capability of making
+										correct discriminations and evaluations of all teachings and all things.
+									</p>
+									<p>
+										c. Point 6: The meaning of this point is very obscure. The translator presumes
+										that the "Path of the Birds" and the "Road of Beyond," or "Road of Wonder,"
+										suggest that advanced yogis should live in solitude for a time in order to
+										mature their Zen realization.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-11"></a><a href="ch-1c-four-vital-points.htm#return-ch-1c-note-11" class="send-back-link">[Ch-1-Note-11]</a> <em>Trikaya.</em> The three bodies
+										of Buddha. They are: the <em>Dharmakaya,</em> the <em>Sambhogakaya,</em> and the
+										<em>Nirmanakaya.</em> The <em>Dharmakaya</em> is the self-nature of Buddha,
+										while the <em>Sambhogakaya</em> and <em>Nirmanakaya</em> are manifestations of
+										Buddha. The <em>Dharmakaya</em> is the void and abstract aspect, and the
+										<em>Sambhogakaya</em> and <em>Nirmanakaya</em> are the active dynamic aspects.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-1-12"></a><a href="ch-1c-four-vital-points.htm#return-ch-1c-note-12" class="send-back-link">[Ch-1-Note-12]</a> The original text of this sentence
+										as found in the <em>Ch'an Yuan Meng Chiao,</em> and in the <em>Chih Yueh
+											Lu,</em> is very obscure in its meaning: hence different interpretations may
+										be given to it. The translator's opinion is that "the subject matter of the One
+										Form" (Chinese: <em>I se Pien Shih</em>), referred to by the Chief Monk, implied
+										his understanding of "a length of white silk" as being the illumination
+										experience that one attains in the advanced stage of Dhyana. This
+										"understanding" was disapproved and discredited by the challenging monk, Chiu
+										Feng. D. T. Suzuki, in his <em>An Introduction to Zen Buddhism</em> (p. 115),
+										renders this story in quite a different manner. In the last paragraph of the
+										story, as rendered by Suzuki (p. 115, lines 21 to 27), there appears to be some
+										distortion of the original text. For instance, in line 23, "As to getting into a
+										trance [<em>tso t'o li wong</em>] you have shown a splendid example," is
+										definitely a mistranslation. The Chinese phrase <em>tso t'o</em> means to
+										"liberate [oneself in] the sitting posture," and <em>li wong</em> means to "die
+										while standing up." The whole phrase implies the capability of passing away at
+										will in a sitting or standing posture. Though <em>li wong</em> may also be
+										interpreted as "die right away," because the Chinese word <em>li</em> could also
+										imply <em>li k'o</em> meaning "at once," it should not be so interpreted in this
+										case. Furthermore, <em>tso t'o li wong</em> is a technical Zen phrase widely
+										used by all Buddhists. It has never meant "getting into a trance," as Suzuki
+										suggests. (The original Chinese text of this story is given on p. 243, under
+										"Chinese Characters for the Notes," Chapter I, Footnote 12.)
+									</p>
+								</li>
+							</ul>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="chapter-2">&nbsp;</a>
+							<h4>
+								Chapter II. The Practice of Zen
+							</h4>
+							<ul class="endnotes-list">
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-1"></a><a href="ch-2-review-of-zen-practice.htm#return-ch-2-note-1" class="send-back-link">[Ch-2-Note-1]</a> Mahamudra <sup>[3]</sup> is the
+										<em>Prajnaparamita</em> applied in its simplest and most practical form. This
+										teaching is considered to be the highest teaching of Tibetan Buddhism. As a
+										whole, Mahamudra may be thought of as the "Zen Buddhism of Tibet," although its
+										style and idioms may not be identical with those of Zen. Mahamudra is a teaching
+										through which one may realize his own mind in its natural and pristine form. See
+										Evans-Wentz's <em>The Tibetan Book of the Great Liberation,</em> and Book II of
+										his <em>Tibetan Yoga and Secret</em> <span class="nowrap"><em>Doctrines.</em> **</span>
+									</p>
+									<p class="fnote wiki">
+										[3. <a href="https://en.wikipedia.org/wiki/Mahamudra">en.wikipedia.org/wiki/<wbr />Mahamudra</a>&nbsp;]
+									</p>
+									<p class="fnote">[** PDFs on this site:<br />
+										[pdf 104 pages, 585 KB] <a href="/tibetan/Padma-Sambhava-Tibetan-Book-of-the-Great-Liberation.pdf">Padma-Sambhava-Tibetan-Book-of-the-Great-Liberation.pdf</a>
+										<br />
+										[pdf 441 pages, 2.7 Meg] <a href="/tibetan/Evans-Wentz-Tibetan-Yoga-and-Secret-Doctrines.pdf">Evans-Wentz-Tibetan-Yoga-and-Secret-Doctrines.pdf</a>&nbsp;]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-2"></a><a href="ch-2-review-of-zen-practice.htm#return-ch-2-note-2" class="send-back-link">[Ch-2-Note-2]</a> Serene-reflection meditation
+										(Chinese: <em>mo chao ch'an</em>) may also be rendered as "silent-observation
+										meditation," or "meditation of tranquil-contemplation."
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-3"></a><a href="ch-2-review-of-zen-practice.htm#return-ch-2-note-3" class="send-back-link">[Ch-2-Note-3]</a> <span class="note">[Return to <a href="#chapter-2-32">Ch-2-Note-32</a> or <a href="#chapter-3-4">Ch-3-Note-4</a>]</span> <em>Wu.</em> This
+										word, as used here, is pronounced according to the "second tone," and is a
+										completely different word from the other "<em>Wu</em>" (<em>Satori</em>). The
+										latter is pronounced according to the "fourth tone." The former "<em>wu</em>"
+										means "nothingness," and the latter, "Enlightenment."
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-4"></a><a href="ch-2b1-four-masters-discourses-hsu-yun.htm#return-ch-2b1-note-4" class="send-back-link">[Ch-2-Note-4]</a> Seven Days' Meditation. In order to
+										avoid distractions and interruptions so that they may seriously practice
+										meditation under more favorable conditions, Buddhist devotees sometimes go into
+										retreat for a period, or successive periods, of seven days in a quiet place
+										&ndash; alone, or with their fellow brothers in the Dharma.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-5"></a><a href="ch-2b1-four-masters-discourses-hsu-yun.htm#return-ch-2b1-note-5" class="send-back-link">[Ch-2-Note-5]</a> Not every day of the two periods of
+										the "Seven Days' Meditation" has been given here, for the reason that (1) the
+										Master does not preach every day, and (2) only those discourses which are
+										pertinent have been included.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-6"></a><a href="ch-2b1-four-masters-discourses-hsu-yun.htm#return-ch-2b1-note-6" class="send-back-link">[Ch-2-Note-6]</a> "Chang" and "Lee" are two of the
+										most common surnames in China.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-7"></a><a href="ch-2b2-discourses-tsung-kao.htm#return-ch-2b2-note-7" class="send-back-link">[Ch-2-Note-7]</a> The original sentence, if literally
+										translated, would read, "The Mind, Intellect, and Consciousness (Chinese:
+										<em>Chin, I, Shih</em>; Sanskrit: <em>Citta, Mana, Vijnana</em>) are hindrances
+										on the Path more obstructive than poisonous snakes and wild beasts. ..." Here
+										Master Tsung Kao used the Yogacara terminology in a very loose and free manner
+										which is, strictly speaking, incorrect and misleading. What he meant was that
+										the "conceptualization," but not the mind itself, is blameworthy. A free
+										translation in this case is, therefore, more desirable.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-8"></a><a href="ch-2b2-discourses-tsung-kao.htm#return-ch-2b2-note-8" class="send-back-link">[Ch-2-Note-8]</a> This refers to the seats made of
+										straw and the bamboo chairs specially designed for meditation purposes.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-9"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-9" class="send-back-link">[Ch-2-Note-9]</a> <span class="note">[Return to <a href="#chapter-2-34">Ch-2-Note-34</a>]</span> <em>I chin</em>
+										(pronounced "ee-chin"). This is a very important Zen term meaning
+										"doubt-sensation" or the feeling of doubt.
+									</p>
+									<p>
+										The whole system of koan exercises is based upon the generation, and then the
+										breakthrough, of this "doubt-sensation." "Doubt," as used here, is not doubt in
+										the ordinary sense of the word; it is, rather, a special type of doubt &ndash; a
+										doubt without content &ndash; or, more succinctly, the pure sensation of "doubt"
+										per se. Sometimes the Zen Buddhists also use the term "doubt-mass" (Chinese:
+										<em>I t'uan</em>) to denote that this sensation is like a great mass or load
+										weighing upon one's mind. Though <em>I chin</em> in its original usage denotes
+										the sensation of doubt brought about by the koan exercise, Master Po Shan
+										<sup class="black">[this chapter]</sup> seemed
+										to have used it in his discourse in a much wider sense, not only denoting the
+										preliminary sensation of doubt originally suggested by the term, but also
+										including almost all the advanced Zen experiences brought forth by the koan
+										exercises.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-10"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-10" class="send-back-link">[Ch-2-Note-10]</a> "To revive after death" is a Zen
+										phrase denoting the advanced stage of Enlightenment. One who has reached this
+										stage not only realizes the void aspect (allegorically, death), but also the
+										dynamic aspect (allegorically, life) of being &ndash; seeing them as a whole.
+										This realization of the dynamic vitality of all things is what Zen calls "The
+										Great Revival" (Chinese: <em>Ta Huo</em>).
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-11"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-11" class="send-back-link">[Ch-2-Note-11]</a> The Chinese term <em>yung
+											huo,</em> the state of "flexible-hollowness," is extremely difficult to
+										translate adequately. Yung means "merging," "melting," "harmonious"; and huo
+										means "empty," "hollow," "spacious," etc. When yung and huo arc combined, the
+										term is used in a special sense denoting an "all-free" sensation that Zen
+										practitioners experience. Although "flexible hollowness" is not a very
+										satisfactory translation for <em>yung huo,</em> it is the best the translator
+										can find.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-12"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-12" class="send-back-link">[Ch-2-Note-12]</a> "The state of wonder" (Chinese:
+										<em>hua chin</em>) is another untranslatable phrase widely used by Taoists and
+										Zenists. <em>Hua</em> means "transformation," "changing," "melting,"
+										"vanishing," and "wonder"; <em>chin</em> means "realm," "state," "experience,"
+										etc. <em>Hua chin</em> is thus a state of melting-down of all obstructions, a
+										state of liberation and wonder.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-13"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-13" class="send-back-link">[Ch-2-Note-13]</a> <em>Tsen Ch'an</em> (Japanese:
+										<em>Zan-Zen</em>) is to "bore into the work of Zen." <em>Tsen</em> is a verb,
+										meaning to "bore," "pierce," or "penetrate into." <em>Tsen Ch'an</em> thus
+										implies that in practicing Zen one should try to penetrate into the very depths
+										of his mind. The exertion of "penetrating into" is what the tsen word stresses.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-14"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-14" class="send-back-link">[Ch-2-Note-14]</a> A Zen expression denoting freedom
+										and liberation.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-15"></a><a href="ch-2b3-discourses-po-shan.htm#return-ch-2b3-note-15" class="send-back-link">[Ch-2-Note-15]</a> <em>Huo chu</em> is a very strange
+										Zen term, literally meaning a "live sentence" or "live remark," but its
+										connotation is just the reverse of what the literal meaning apparently suggests.
+										These "live remarks" are the utterly unintelligible, inexplicable, absurd, and
+										dead-end type of sayings which Zen uses so frequently, while the "dead remarks"
+										(Chinese: <em>ssu chu</em>) arc the intelligible ones. The book of the <em>Notes
+											in the Forest</em> (Chinese: <em>Ling Chien Lu</em>) quotes Zen Master Tung
+										Shan as saying. "Those remarks within which one may find another remark
+										[intelligible] are called 'dead remarks,' and those within which no other
+										remarks or meanings can be found [unintelligible] are called 'live remarks.' "
+										(See <em>The Great Buddhist Dictionary</em> [in Chinese], by Ting Fu Pao, p.
+										1666.)
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-16"></a><a href="ch-2b4-discourse-han-shan.htm#return-ch-2b4-note-16" class="send-back-link">[Ch-2-Note-16]</a> Chinese Zen Buddhists divide
+										Buddhism into two distinct groups. One is designated as "The Principle"
+										(<em>Tsung</em>), and the other as "The Doctrine" (<em>Chiao</em>). The former
+										is the teaching of Zen, and the latter is the teaching of all other Buddhist
+										schools, including all the sects of Hinayana and Mahayana Buddhism.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-17"></a><a href="ch-2b4-discourse-han-shan.htm#return-ch-2b4-note-17" class="send-back-link">[Ch-2-Note-17]</a> As prophesied by Buddha himself,
+										Buddhism has been declining with the degeneration of morality in mankind.
+										According to Buddha's prophecy, the progressive decline and degeneration of
+										Buddhism will continue until it disappears from the earth. Then the Buddha
+										Maitreya will descend to this world, and Buddhism will again prevail, this time
+										over the entire earth. The Buddhism of the next period &ndash; that of the
+										Buddha Maitreya &ndash; will not be subject to the decline-pattern that the
+										Buddhism of this present period &ndash; that of the Buddha Sakyamuni &ndash; is
+										now undergoing.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-18"></a><a href="ch-2b4-discourse-han-shan.htm#return-ch-2b4-note-18" class="send-back-link">[Ch-2-Note-18]</a> The Three Kindoms. According to
+										Buddhist cosmology, there are three realms or "universes" wherein dwell three
+										different grades of sentient beings. The highest domain is called "The Domain of
+										Non-form." Sentient beings of this domain have no bodily form, existing only in
+										the expression of different states of consciousness. The second domain is called
+										"The Domain of Form." Sentient beings of this domain have bodily form, but no
+										desires or lusts. The third domain is called "The Domain of Desires." Sentient
+										beings of this domain have many different kinds of desires and fears. Animals,
+										human beings, beings in Hell, and those in certain regions of Heaven all belong
+										to this "Domain of Desire." Sentient beings of the two upper Domains, namely,
+										the "Domain of Form" and the "Domain of Non-form," are those who have gained
+										various stages of <em>Samadhi.</em> Their states of consciousness vary greatly,
+										from the consciousness state of the First <em>Dhyana</em> to that of the Eighth
+										<em>Dhyana.</em> <sup>[4]</sup> Having absorbed themselves in the great Ecstasy
+										and Illumination, these sentient beings consider themselves to have reached
+										<em>Nirvana.</em> But the truth is that they are only indulging themselves in an
+										ecstatic state of "resemblance to <em>Nirvana.</em>" Orthodox Buddhists deem
+										these states to be of little value or significance.
+									</p>
+									<p class="fnote">
+										[4. <a href="https://en.wikipedia.org/wiki/Dhy%C4%81na_in_Buddhism">en.wikipedia.org/wiki/<wbr />Dhyana_in_<wbr />Buddhism</a>&nbsp;]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-19"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-19" class="send-back-link">[Ch-2-Note-19]</a> The year 1545. The original text
+										reads: "The 25th year of Chia Chin of the Emperor Shih Tsung of Ming [Dynasty],"
+										which is equivalent to a.d. 1545. For the convenience of the reader, the
+										original Chinese dates given in this autobiography have been converted into
+										those of the Christian chronology.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-20"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-20" class="send-back-link">[Ch-2-Note-20]</a> In the old days, attaining a high
+										position in the government was the major, if not the only, ambition of Chinese
+										intellectuals. Study was mainly for this purpose.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-21"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-21" class="send-back-link">[Ch-2-Note-21]</a> Champion Scholar (Chinese:
+										<em>Chuang Yuan</em>). In imperial days the royal government of China held a
+										national examination every three or four years to select the "most learned" men
+										in China. The champion of this final national examination, known as the Chuang
+										Yuan, would receive the highest honors the nation could bestow. Opportunities
+										for governmental positions were also offered to him. To become the Champion
+										Scholar of the nation was, therefore, the chief ambition of intellectuals in
+										those days.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-22"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-22" class="send-back-link">[Ch-2-Note-22]</a> "The Master of Men and Heaven" was
+										a title of respect conferred upon certain highly advanced monks. According to
+										Buddhist tradition, only those monks capable of being Masters or Teachers of all
+										men and heavenly beings merited this title.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-23"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-23" class="send-back-link">[Ch-2-Note-23]</a> Preliminary official examinations
+										were held by the district or provincial governments in order to select their
+										candidates for the final national examination. Anyone who passed the district or
+										provincial examinations would also be honored by the government, and good
+										opportunities for governmental posts were also offered to him. (See Footnote
+										2-21, above.)
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-24"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-24" class="send-back-link">[Ch-2-Note-24]</a> The Ten Mysterious Gates (Chinese:
+										<em>shih hsuan men</em>) are the ten basic principles of Hua Yen, <sup>[5]</sup>
+										by means of which the Hua Yen philosophy of totality is expounded.
+									</p>
+									<p class="fnote">
+										[5. <a href="https://en.wikipedia.org/wiki/Huayan">en.wikipedia.org/wiki/<wbr />Huayan</a>&nbsp;]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-25"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-25" class="send-back-link">[Ch-2-Note-25]</a> The meaning of this sentence is
+										not very clear. "Subduing the Ox" probably implies accomplishing the successive
+										stages of Zen work, as illustrated in the "Ox-Herding" pictures. See Reps's
+										<em>Zen Flesh, Zen Bones,</em> the "10 Bulls" by Kakuan, transcribed by Nyogen
+										Senzaki and Paul Reps, pp. 165-187. <sup>[6]</sup>
+									</p>
+									<p class="fnote">
+										[6. <a href="https://en.wikipedia.org/wiki/Ten_Bulls">en.wikipedia.org/wiki/<wbr />Ten_Bulls</a>&nbsp;]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-26"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-26" class="send-back-link">[Ch-2-Note-26]</a> <em>Ch'an ping</em>
+										("Zen-sickness," or "The sickness that has arisen through Zen practice") refers
+										to the hindrances and mishaps that one may encounter in the practice of Zen.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-27"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-27" class="send-back-link">[Ch-2-Note-27]</a> "The Miraculous Understanding of
+										Avalokitesvara" (Chinese: <em>Kwati Yin Yuan Tung</em>). "Kwan Yin" is the
+										Chinese translation of "Avalokitesvara," but there is no clear-cut definition or
+										meaning of the phrase <em>yuan tung.</em> It is difficult, therefore, to
+										translate this phrase very accurately. <em>Yuan</em> means "round," "complete,"
+										or "perfect"; and <em>tung</em> means "thorough understanding," or "thorough
+										awakening." "The Miraculous Understanding of Avalokitesvara" is, therefore, a
+										free and tentative translation.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-28"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-28" class="send-back-link">[Ch-2-Note-28]</a> "Mutual Turning-into" is a
+										frequently used term in Hua Yen philosophy. (See Suzuki's <em>The Essence of
+											Buddhism.</em>)
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-29"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-29" class="send-back-link">[Ch-2-Note-29]</a> <em>Vajra</em>-seat, or "The
+										Diamond Seat."
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-30"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-30" class="send-back-link">[Ch-2-Note-30]</a> Maitreya is the coming Buddha.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-31"></a><a href="ch-2c1-autobiographies-han-shan.htm#return-ch-2c1-note-31" class="send-back-link">[Ch-2-Note-31]</a> According to an old Chinese
+										legend, under the jaw of a black dragon there lies a most precious pearl. Hence
+										the term <em>li-lung</em> (black dragon) symbolizes the most precious thing to
+										be found in the world.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-32"></a><a href="ch-2c2-story-wu-wen.htm#return-ch-2c2-note-32" class="send-back-link">[Ch-2-Note-32]</a> <em>Wu.</em> The "Wu" word, as
+										used here, is pronounced according to the "second tone." (See Footnote 3,
+										above.) <span class="note">[Return to <a class="nowrap" href="#chapter-2-3">Ch-2-Note-3</a>]</span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-33"></a><a href="ch-2c3-story-hsueh-yen.htm#return-ch-2c3-note-33" class="send-back-link">[Ch-2-Note-33]</a> Travel-for-study visits. In order
+										to find the Guru who may help one most, visiting different teachers and studying
+										under them are necessary for all Zen students. Zen Buddhists, therefore,
+										established a tradition and system called "Travel-for-study" (Chinese: <em>tsen
+											fang</em>) to facilitate and further the Zen student's progress. After basic
+										training in the monastery, the monk is encouraged to begin his travel-for-study
+										period.
+									</p>
+								</li>
+								<li>
+									<p>
+										<a class="endnote" id="chapter-2-34"></a><a href="ch-2c3-story-hsueh-yen.htm#return-ch-2c3-note-34" class="send-back-link">[Ch-2-Note-34]</a> I-chin. See Footnote 9: <a class="nowrap" href="#chapter-2-9">Ch-2-Note-9</a>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-35"></a><a href="ch-2c3-story-hsueh-yen.htm#return-ch-2c3-note-35" class="send-back-link">[Ch-2-Note-35]</a> Most Chinese monasteries have
+										three major courts separated by three walls and gates.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-36"></a><a href="ch-2c4-story-meng-shan.htm#return-ch-2c4-note-36" class="send-back-link">[Ch-2-Note-36]</a> Ocean-seal <em>Samadhi</em>
+										(Chinese: <em>Hai yin san mei</em>) is the Samadhi of Buddhahood. Since the
+										ocean is the destination of all rivers and is also a great mirror that is
+										capable of reflecting all manifestations in the world, it is figuratively used
+										to describe the all-reflecting Wisdom of Buddhahood now expressed in the term
+										<em>Samadhi.</em> This expression is frequently used by Zen and Hua Yen
+										scholars.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-37"></a><a href="ch-2c4-story-meng-shan.htm#return-ch-2c4-note-37" class="send-back-link">[Ch-2-Note-37]</a> Chao Chou was a remarkable Zen
+										Master. He was regarded as one of the most acute and profound Zen teachers, and
+										looked upon both as a symbol and as an example to be emulated by all Zen
+										Buddhists.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-38"></a><a href="ch-2c5-story-kao-feng.htm#return-ch-2c5-note-38" class="send-back-link">[Ch-2-Note-38]</a> The six organs are the eyes, ears,
+										nose, tongue, body, and mind. "The organ of mind" is a very controversial
+										subject in Buddhist philosophy. Many scholars of the Yogacara School believe
+										that the Seventh, or Ego, Consciousness, is the organ of mind.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-2-39"></a><a href="ch-2c5-story-kao-feng.htm#return-ch-2c5-note-39" class="send-back-link">[Ch-2-Note-39]</a> Fa Yan (?-1104) was known as the
+										"Fifth Patriarch" by the Lin Chi School, and should not be confused with the
+										original Fifth Patriarch, Hung Jeng, the teacher of Hui Neng.
+									</p>
+								</li>
+							</ul>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="chapter-3">&nbsp;</a>
+							<h4>
+								Chapter III. The Four Problems of Zen Buddhism
+							</h4>
+							<ul class="endnotes-list">
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-1"></a><a href="ch-3a-is-zen-unintelligible.htm#return-ch-3a-note-1" class="send-back-link">[Ch-3-Note-1]</a> This is a well-known saying of
+										Mahamudra, widely used in Tibet. The Tibetan is:
+									</p>
+									<blockquote>
+										<p>
+											<em>Snah wa ma byin shen pa byin<br />
+												Shen pa khyod kyis Naropa</em>
+										</p>
+									</blockquote>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-2"></a><a href="ch-3a-is-zen-unintelligible.htm#return-ch-3a-note-2" class="send-back-link">[Ch-3-Note-2]</a> <span class="note">[Return to <a href="#chapter-3-12">Ch-3-Note-12</a>&nbsp;]</span>
+										"<em>Pu-shuo-po</em>" ("not to speak too plainly") was rightly translated by Hu
+										Shih in his article, "Ch'an (Zen) Buddhism in China," <em>Philosophy East and
+											West,</em> III (No. 1, April, 1953), 3-24, <sup>[7a]</sup> though his
+										understanding and interpretation of Ch'an were purely from the historian's
+										viewpoint and so are not always philosophically sound. Suzuki gave an elaborate
+										explanation of "<em>pu-shuo-po,</em>" which covered almost three pages in his
+										article, "A Reply to Hu Shih," <em>Philosophy East and West,</em>&nbsp;III (No.
+										1, April, 1953, 25-46). <sup>[7b]</sup> Here I am afraid Suzuki missed the
+										point. He stressed only the inexpressible or inscrutable aspect of Zen Truth.
+									</p>
+									<p class="fnote">
+										[7a, 7b. Requires registration to read online: <br />7a) <a href="https://www.jstor.org/stable/1397361">https://www.jstor.org/<wbr />stable/<wbr />1397361</a>
+										<br />7b) <a href="https://www.jstor.org/stable/1397362">https://www.jstor.org/<wbr />stable/<wbr />1397362</a>&nbsp;]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-3"></a><a href="ch-3a-is-zen-unintelligible.htm#return-ch-3a-note-3" class="send-back-link">[Ch-3-Note-3]</a> There are three different schools
+										of thought in Buddhism concerning the relationship between the <em>klesas</em>
+										(passions or desires) and <em>Bodhi, Sangsara,</em> and <em>Nirvana.</em>
+										Theravada stresses the necessity of destroying the passions in order to attain
+										Nirvana. General Mahayana advocates the transformation of the passions into
+										Bodhi. The third view emphasizes the identity of the sentient being and the
+										Buddha, of the passions and Bodhi, and of Sangsara and Nirvana, since from the
+										ultimate viewpoint there is no difference between the pure and the impure. This
+										last view is held by both Zen and Tantra.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-4"></a><a href="ch-3b-zen-enlightenment.htm#return-ch-3b-note-4" class="send-back-link">[Ch-3-Note-4]</a> <em>Wu,</em> pronounced in the
+										"fourth tone." This word differs from the other "Wu". See Footnote 3, Chapter
+										II, above. <a href="#chapter-2-3">[Ch-2-Note-3]</a>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-5"></a><a href="ch-3b-zen-enlightenment.htm#return-ch-3b-note-5" class="send-back-link">[Ch-3-Note-5]</a> This is a well-known Zen proverb
+										and is used widely by Zen students in China.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-6"></a><a href="ch-3b-zen-enlightenment.htm#return-ch-3b-note-6" class="send-back-link">[Ch-3-Note-6]</a> <span class="note">[Return to <a href="#chapter-1-1">Ch-1-Note-1</a>&nbsp;]</span> <em>Hua Tou</em> ("the
+										essence of the sentence"). Suzuki uses "koan exercise" instead of "<em>Hua
+											Tou</em> exercise" in most of his writings. See Suzuki, <em>Zen
+											Buddhism,</em> p. 139. Although both "koan" and "<em>Hua Tou</em>" may be
+										used to denote the "inquiry exercise of Zen," the latter is original and more
+										accurate. "Koan" implies the entire Zen story, including all the events, plus
+										the main question at issue, and therefore it is a general term, while "<em>Hua
+											Tou</em>" is very specific. "<em>Hua Tou</em>" denotes only the question,
+										not the whole story; and in most cases only the "gist," "highlight," or
+										"essence," so to speak, of the question is implied.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-7"></a><a href="ch-3b-zen-enlightenment.htm#return-ch-3b-note-7" class="send-back-link">[Ch-3-Note-7]</a> This story is selected from Chu
+										Hung (1535-1616), <em>Exhortation on the Advance Through Ch'an Gates</em>
+										(<em>Ch'an kuan tse chin</em>).
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-8"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-8" class="send-back-link">[Ch-3-Note-8]</a> "Dharma" is a term widely used in
+										Buddhism. While it has many meanings, the two most commonly used are
+									</p>
+									<p>
+										(a) the Buddhist doctrine, or the teaching of Buddha, and
+									</p>
+									<p>
+										(b) being, existence, subject, principle, etc. Dharma is here used in the latter
+										sense.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-9"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-9" class="send-back-link">[Ch-3-Note-9]</a> Hsuan Chuang (596-664), <em>Chen
+											Wei Shih Lun</em> (<em>Vijnapti-matratasiddhi-Sastra</em>), Chapter 7.
+										<sup>[8, 9, 10]</sup>
+									</p>
+									<div class="fnote">
+										<p class="fnote wiki">
+											[8. Hsüan-tsang (c. 602–664) <a href="https://en.wikipedia.org/wiki/Xuanzang">en.wikipedia.org/<wbr />wiki/<wbr />Xuanzang</a>&nbsp;]
+										</p>
+										<p class="fnote wiki">
+											[9. &quot;Discourse on the Perfection of Consciousness-only&quot;. <a href="https://en.wikipedia.org/wiki/Cheng_Weishi_Lun">en.wikipedia.org/<wbr />wiki/<wbr />Cheng_<wbr />Weishi_Lun</a>&nbsp;]
+										</p>
+										<p class="fnote wiki">
+											[10. Sixth-century Indian Buddhist scholar-monk. <a href="https://en.wikipedia.org/wiki/Sthiramati">en.wikipedia.org/wiki/Sthiramati</a>&nbsp;]
+										</p>
+									</div>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-10"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-10" class="send-back-link">[Ch-3-Note-10]</a> The Eight Consciousnesses are:
+										eye, ear, nose, tongue, body, mind, ego, and storehouse consciousnesses.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-11"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-11" class="send-back-link">[Ch-3-Note-11]</a> According to Sthiramati, <span class="note">[endnote 3-9 above]</span> there are only three portions in each
+										consciousness. In contrast to Dharmapala's theory of four portions, Sthiramati's
+										is much clearer and simpler. The four-portion theory as propounded by Dharmapala
+										seems to be redundant and it has been criticized by a number of Yogacara
+										scholars in recent years. Some explanation of the four portions is given by
+										Junjiro Taka-kusu, <em>The Essentials of Buddhist Philosophy</em> (Honololu:
+										University of Hawaii, 1947), p. 88. The reader is also referred to p. 89, where
+										the three object-realms which are in close relation with the four-portions
+										theory are explained. However, Takakusu's explanation of the object-realm of
+										mere shadow is too concise and thus misleading:
+									</p>
+									<blockquote>
+										"... 2. The object-domain of mere shadow or illusion. The shadow-image appears
+										simply from one's own imagination and has no real existence. Of course, it has
+										no original substance as a ghost which does not exist at all. Only the sixth,
+										sensecenter, functions on it and imagines it to be."</blockquote>
+									<p>
+										This passage gives the impression that the Sixth Consciousness &ndash; the most
+										active and versatile among the Eight Consciousnesses &ndash; which people
+										generally call "mind," is a faculty which senses solely the delusive images.
+										This is not true. The <em>Pa Shih Kuei Chu Sung,</em> by Hsuan Chuang, explains
+										the Sixth Consciousness in relation to the three object-realms in the following
+										sentence: "It includes the three natures, three measurements and also three
+										object domains." This sentence describes the Sixth Consciousness as embracing
+										all the three natures &ndash; good, bad, and neutral; the three measurements
+										&ndash; direct, indirect, and erroneous; and the three object realms of nature,
+										of mere shadow, and of the original substance. Thus we know that the Sixth
+										Consciousness functions not merely on the delusive images which
+										characteristically belong to the erroneous measurement but also functions on the
+										object-realm of nature which belongs to the direct measurement, and in some
+										cases on the object of the original substance.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-12"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-12" class="send-back-link">[Ch-3-Note-12]</a> For this sentence, see Hu Shih,
+										"Ch'an (Zen) Buddhism in China," <em>Philosophy East and West,</em> III (No. 1,
+										April, 1953), 3-24. Hu Shih translated it as "The one word 'knowledge' is the
+										gateway to all mysteries." <span class="note">[Linked at <a href="#chapter-3-2">Ch-3-Note-2</a>]</span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-13"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-13" class="send-back-link">[Ch-3-Note-13]</a> Suzuki, "A Reply to Hu Shih,"
+										<em>Philosophy East and West,</em> III (No. 1, April, 1953), 31-32. <span class="note"><a href="#chapter-3-2">[Ch-3-Note-2]</a></span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-14"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-14" class="send-back-link">[Ch-3-Note-14]</a> <em>Discourses of the Six
+											Patriarchs,</em> p. 18.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-15"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-15" class="send-back-link">[Ch-3-Note-15]</a> <em>Te-shan goto egen.</em> Book
+										VII: <em>Dianikon Zokuzokyo,</em> p. 116.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-16"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-16" class="send-back-link">[Ch-3-Note-16]</a> The Eight Negations are: no
+										arising, no extinction, no eternity, no cessation, no oneness, no manifoldness,
+										no coming, no going.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-17"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-17" class="send-back-link">[Ch-3-Note-17]</a> <em>Transmission of the Lamp,</em>
+										Book V: <em>Taisho Daizo- kyo,</em> No. 2076; Vol. LI, p. 240.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-18"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-18" class="send-back-link">[Ch-3-Note-18]</a> <em>Chin</em> is a Chinese unit of
+										weight equal to about 1 1/3 pounds avoirdupois.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-19"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-19" class="send-back-link">[Ch-3-Note-19]</a> See the koan of "Drawing the Bow
+										After the Thief Had Left," <em>National Translation of the Collective Works in
+											Zen Studies,</em> XVI, 13.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-20"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-20" class="send-back-link">[Ch-3-Note-20]</a> See the koan of "The Cold Fountain
+										and the Ancient Stream," <em>National Translation of the Collective Works in Zen
+											Studies,</em> XVI, 13.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-21"></a><a href="ch-3c-zen-and-mahayana.htm#return-ch-3c-note-21" class="send-back-link">[Ch-3-Note-21]</a> See the <em>Prajnaparamita-hrdaya
+											Sutra.</em> [Heart sutra]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-22"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-22" class="send-back-link">[Ch-3-Note-22]</a> <em>Szu liao chien</em> is
+										expediently translated here as the "Four Distinctions." It may also be rendered
+										as "Four Distinctions and Selections."
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-23"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-23" class="send-back-link">[Ch-3-Note-23]</a> See the "Discourse of Zen Master
+										Lin-chi Hui-chao of Chen-chou," in <em>National Translations of the Collected
+											Works in Zen Studies,</em> V, p.&nbsp;5. <span class="note">[Lin Chi was a
+											disciple of Huang Po. See <em>The Zen Teachings of Master Lin-chi</em>,
+											trans. Burton Watson, at Terebess.Hu (link opens a 89 page pdf, 16 megs): <a href="https://terebess.hu/zen/Lin-chi.pdf">terebess.hu/zen/Lin-chi.pdf</a>&nbsp;]</span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-24"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-24" class="send-back-link">[Ch-3-Note-24]</a> <em>Ibid.</em> [This and the next five endnotes
+										refer to the document referenced in Note 3-23.]
+									</p>
+								</li>
+								<li>
+									<p>
+										<a class="endnote" id="chapter-3-25"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-25" class="send-back-link">[Ch-3-Note-25]</a> See pp. 145, 146. <span class="note">[In chapter II part 3, &quot;Zen Master Hsueh Yen's
+											Story,&quot; Hsueh Yen brieflly recounts meditating with the congregation of
+											Master Yuan of Shuang Lin. <a href="ch-2c3-story-hsueh-yen.htm">ch-2c3-story-hsueh-yen.htm</a>&nbsp;]</span>
+									</p>
+								</li>
+
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-26"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-26" class="send-back-link">[Ch-3-Note-26]</a> See "Discourse of Master Lin-chi,"
+										p. 3.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-27"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-27" class="send-back-link">[Ch-3-Note-27]</a> <em>Ibid.</em>, p. 20.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-28"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-28" class="send-back-link">[Ch-3-Note-28]</a> <em>Ibid.</em>, pp. 3-4.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-29"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-29" class="send-back-link">[Ch-3-Note-29]</a> <em>Ibid.</em>, p. 3.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-30"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-30" class="send-back-link">[Ch-3-Note-30]</a> See <em>Transmission of the
+											Lamp,</em> Book I, p. 4.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-31"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-31" class="send-back-link">[Ch-3-Note-31]</a> See "Discourse of Master Lin-chi,"
+										p. 26. <span class="note">[See note 3-26 above.]</span>
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-3-32"></a><a href="ch-3d-four-distinctions-of-lin-chi.htm#return-ch-3d-note-32" class="send-back-link">[Ch-3-Note-32]</a> See <em>The Five Ranks of Lord and
+											Vassal,</em> p. 11.
+									</p>
+								</li>
+							</ul>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="chapter-4">&nbsp;</a>
+							<h4>
+								Chapter IV. Buddha and Meditation
+							</h4>
+							<ul class="endnotes-list">
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-4-1"></a><a href="ch-4a-meditation-three-aspects.htm#return-ch-4a-note-1" class="send-back-link">[Ch-4-Note-1]</a> <em>Dharmadhatu</em> is a term
+										widely used by Hua Yen scholars denoting the infinite universes that penetrate
+										and embrace one another in the absolute realm of Totality. See D. T. Suzuki's
+										<em>The Essence of Buddhism,</em> Lecture II.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-4-2"></a><a href="ch-4b1-four-characteristics-samadhi.htm#return-ch-4b1-note-2" class="send-back-link">[Ch-4-Note-2]</a> The quotation referred to is as
+										follows:
+									</p>
+									<p>
+										"Although it is not necessary to expound here all the many aspects of the
+										doctrine, one of the more important of them should receive some attention,
+										namely, 'the reciprocal character of mind and <em>Prana</em>,' which means that
+										a certain type of mind or mental activity is invariably accompanied by a
+										<em>Prana</em> of corresponding character, whether transcendental or mundane.
+										For instance, a particular mood, feeling, or thought is always accompanied,
+										manifested, or reflected by a <em>Prana</em> or breathing of corresponding
+										character and rhythm. Thus anger produces not merely an inflamed
+										thought-feeling, but also a harsh and accentuated 'roughness' of breathing. On
+										the other hand, when there is calm concentration on an intellectual problem, the
+										thought and the breathing exhibit a like calmness. When the concentration is in
+										a state of profound thinking, as during an effort to solve a subtle problem,
+										unconsciously the breath is held. When one is in a mood of danger, pride, envy,
+										shame, arrogance, love, lust, and so on, simultaneously there arises the 'air,'
+										or <em>Prana</em>, of anger, pride, envy, shame, arrogance, love, lust, and so
+										on; and this 'air' can be felt immediately within oneself. In deep Samadhi no
+										thought arises; so there is no perceptible breathing. At the initial moment of
+										enlightenment, which is also the moment of the total transformation of normal
+										consciousness, the <em>Prana</em>, too, undergoes a revolutionary
+										transformation. Accordingly, every mood, thought, and feeling, whether simple,
+										subtle, or complex, is accompanied by a corresponding or reciprocal
+										<em>Prana</em>.
+									</p>
+									<p>
+										"In the higher states of meditation, the circulation of the blood is slowed down
+										almost to cessation, perceptible breathing ceases, and the yogi experiences some
+										degree of illumination, or 'brightness,' together with the thoughtfree state of
+										mind. Then not only does a change of consciousness occur, but also a change in
+										the physiological functioning of the body. In the body of a fully enlightened
+										being, the breathing, the pulse, the circulatory and nerve systems are quite
+										different from those of ordinary men. Much evidence in support of this fact is
+										available from Hindu, Tibetan, and Chinese sources."
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-4-3"></a><a href="ch-4b2-seven-types-meditation.htm#return-ch-4b2-note-3" class="send-back-link">[Ch-4-Note-3]</a> See the author's "Yogic Commentary"
+										in Evans- Wentz's <em>Tibetan Yoga and Secret Doctrines</em> (2nd edition), pp.
+										xli and xlii. <sup>[11]</sup>
+									</p>
+									<p class="fnote">
+										[11. Various formats available at <a href="https://archive.org/details/in.ernet.dli.2015.24914/page/n3">Archive.Org</a>&nbsp;]
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-4-4"></a><a href="ch-4b2-seven-types-meditation.htm#return-ch-4b2-note-4" class="send-back-link">[Ch-4-Note-4]</a> For further details, consult
+										Evans-Wentz's <em>Tibetan Yoga and Secret Doctrines</em> (2nd edition), pp.
+										187-210, the author's forthcoming <em>Esoteric Teachings from the Tibetan
+											Tantra,</em> and other books referring to the subject.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-4-5"></a><a href="ch-4b2-seven-types-meditation.htm#return-ch-4b2-note-5" class="send-back-link">[Ch-4-Note-5]</a> <em>Mandala</em> means "circle." In
+										its general sense this term is used by Tantrism to denote any individual unit,
+										either <em>Sangsaric</em> or <em>Nirvanic,</em> in the universe. In its specific
+										sense it implies the "city" or "residence" of a specific deity. This "City of
+										Buddha" is usually depicted with a chief Buddha in the center and a number of
+										escorting deities placed in a circle around him. The over-all picture of a
+										Tantric <em>Mandala</em> is strikingly similar to that of the structure of an
+										atom or solar system. The <em>Mandala</em> is considered by Tantric scholars as
+										a symbol of the Universe, in either its macrocosmic or its microcosmic sense.
+									</p>
+								</li>
+								<li class="endnote-item">
+									<p>
+										<a class="endnote" id="chapter-4-6"></a><a href="ch-4b3-three-stages-meditation.htm#return-ch-4b3-note-6" class="send-back-link">[Ch-4-Note-6]</a> <em>Elucidation of the Hidden
+											Profundity Sutra</em> (Chinese: <em>Chieh sheng mi chin</em>; Sanskrit:
+										<em>Sandhi-nirmocana-Sutra</em>). <sup>[12]</sup>
+									</p>
+									<p class="fnote">
+										[12. The most important of the Yogacara Sutras. <a href="https://en.wikipedia.org/wiki/Sandhinirmocana_Sutra">en.wikipedia.org/<wbr />wiki/<wbr />Sandhinirmocana_<wbr />Sutra</a>&nbsp;]
+									</p>
+								</li>
+							</ul>
+							<p>
+								&nbsp;</p>
+							<p class="note center">
+								[ end of notes&nbsp;]</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ch-4b3-three-stages-meditation.htm">&lt; Three
+											Stages of Meditation</a></li>
+									<li class="align-right"><a href="bibliography.htm">Bibliography &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

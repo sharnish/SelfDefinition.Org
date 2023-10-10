@@ -1,0 +1,1324 @@
+﻿/* file:  /styles-2020/section-index-2022.css
+
+update April 17, 2022. Tweak July 23, 2022 
+
+Where used
+
+1.	Model:		/temp-section-test/HEADER.html - used Brunton top, some Zen bottom
+2.	Try Brunton
+3.	Zen - has most activity dark Themes- posted Apr 12
+4.	Afterlife
+5.	Advaita
+6.	Blavatsky
+7.	Buddhism	> through Copyright as of Apr 13 a.m.
+
+Next: Frauds
+
+
+*/
+
+/* Override "content" for update in HEADER.html file */
+@media only print {
+	#main-content::after {
+		content: "Page update 2022";
+		/* display:block; to enable positioning */
+		display: block;
+		font-size: 80%;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	#style-gadget,
+	#fixed-header,
+	p.totop {
+		display: none;
+	}
+
+	/* in README after #main-content
+    	beginning with Frauds, alphabetically */
+	#print-date {
+		font-size: 80%;
+		text-align: center;
+
+	}
+}
+
+/* Do not print "print-date" on screens */
+@media only screen {
+	#print-date {
+		display: none;
+	}
+}
+
+#device-width-display {
+	text-align: center;
+	font-size: 80%;
+	color: red;
+}
+
+html.dark #device-width-display {
+	color: #FF4040;
+}
+
+
+/* selfdefinition.css default font size is 18px, here using 16px */
+html,
+body {
+	text-align: left;
+	font-family: verdana, tahoma, ariel, sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	/* 1.8em x 16px = 28.8, make it 28 */
+	height: 100%;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+/* for the Apache-generated table, fixed width fonts */
+/* other table features defined further below */
+#maincontentpre table,
+#maincontentpre pre {
+	line-height: 30px;
+	/* 1.8em x 16px = 28.8, make it 30 */
+	text-align: left;
+	font-family: lucida console, prestige, courier;
+	font-size: 15px;
+}
+
+/* test- from /styles/simple-root-responsive */
+/* larger on phones for readability */
+@media only screen and (max-width:500px) {
+
+	html,
+	body {
+		font-size: 17px;
+	}
+}
+
+/* Smaller on Iphone 4 for space */
+@media only screen and (max-width:340px) {
+
+	html,
+	body {
+		font-size: 16px;
+	}
+}
+
+
+
+
+div {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+
+body,
+#main-content,
+#announce,
+#article,
+article {
+	z-index: 0
+}
+
+#fixed-header {
+	z-index: 9
+}
+
+/* #menu-site is ul */
+#menu-site {
+	z-index: 10
+}
+
+#menu-site li {
+	z-index: 12
+}
+
+
+#main-content a {
+	word-break: break-word;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* style gadget is inside #main-content, immediately below the top menu
+	ONLY position the right edge, do NOT position the top */
+
+/* take the style gadget out of the document flow to reduce empty space at top */
+#style-gadget {
+	text-align: right;
+	font-size: 70%;
+	position: absolute;
+	top: 10px;
+	right: 40px;
+}
+
+@media only screen and (max-width:650px) {
+	#style-gadget {
+		right: 20px;
+	}
+}
+
+
+
+/* style-gadget is positioned absolute and down to reduce space */
+p.logo {
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+/* style gadget is too close to logo at about 600px so move down (is before two-line  breakpoint   */
+@media only screen and (max-width:600px) {
+	#style-gadget {
+		top: 0px;
+	}
+
+	p.logo {
+		margin-top: 20px;
+	}
+}
+
+/* April 17, 2022 edit
+	Adding a "Search" list item (Rose section) to the top menu causes "to-top" to be
+	a 5th item, so float any fifth item left so it won't overwrite style-gadget.
+	See below for:   #menu-site li:nth-of-type(5)
+	 */
+
+h1.title {}
+
+/* unused hook in html */
+h1 {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+
+
+/*  Change 1em to 16px April 13 afternoon
+NEVER assume 1em = 16px. You can only ever assume that 1em = browser default font-size on the body (or html)
+element. Many browsers happen to choose 16px as their default font-size, but there are users who can and will
+adjust this (typically for accessibility reasons). */
+
+p {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding: 0
+}
+
+p.totop {
+	margin-top: 32px;
+	text-align: center;
+}
+
+
+h4,
+#top-links h4,
+#bottom-links h4 {
+	margin-top: 16px;
+	margin-bottom: 3px;
+}
+
+/* for any paragraph tag after h4 */
+
+h4 + p,
+h4 + div {
+	margin-top: 3px;
+}
+
+h5 + p,
+h5 + div {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+div.featured-links p:first-of-type,
+div.site-links p:first-of-type,
+div.external-links p:first-of-type {
+	margin-top: 3px;
+}
+
+/* in case the first paragraph is "motto" with no h4 header */
+div.featured-links p.motto {
+	margin-top: 16px;
+}
+
+p.motto {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 125%;
+}
+
+h2 {
+	font-size: 115%;
+}
+
+h3 {
+	font-size: 100%;
+	margin-bottom: 3px;
+}
+
+h4 {
+	font-size: 95%;
+	text-align: left;
+}
+
+/* all h4 are maroon */
+h5 {
+	font-size: 100%;
+	text-align: left;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+hr {
+	margin-left: 25px;
+}
+
+ul.links-list {
+	padding-left: 16px;
+	list-style: none;
+}
+
+ul.links-list li {
+	margin-bottom: 16px;
+}
+
+p.tight,
+blockquote.tight p,
+div.tight p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* override width in project */
+div.centering-container,
+div.container-to-center {
+	width: 400px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+/* MISCELLANEOUS CLASSES */
+
+.block {
+	display: block;
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold,
+.strong {
+	font-weight: bold;
+}
+
+.red {
+	color: red;
+}
+
+html.dark .red {
+	color: #ff3333;
+}
+
+/* Deemphasize <strong> a little */
+strong,
+.strong,
+.bold {
+	font-size: 95%;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.note {
+	font-size: 90%
+}
+
+.note80 {
+	font-size: 80%
+}
+
+.tiny {
+	font-size: 70%;
+}
+
+@media only screen and (max-width:500px) {
+	.note {
+		font-size: 95%
+	}
+
+	.note80 {
+		font-size: 90%
+	}
+
+	.tiny {
+		font-size: 85%;
+	}
+
+}
+
+/**** start small size {tablet and phone ****/
+@media only screen and (max-width: 767px) {
+
+	.hide-if-small-screen {
+		display: none;
+	}
+}
+
+/**** end small size {tablet and phone ****/
+
+/* Nook is 600px; */
+/**** start tablet  ****/
+@media only screen and (max-width: 640px) {}
+
+/**** end tablet ****/
+
+
+/* Start Anchor Tags */
+/* Start Anchor Tags */
+/* Start Anchor Tags */
+
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+
+/* get rid of weird outline auound anchor tags */
+a {
+	outline: none !important;
+}
+
+
+/* Anchor tags light theme  */
+a:link {
+	color: #0000aa;
+}
+
+a:visited {
+	color: #0000aa;
+}
+
+a:hover {
+	color: #008000;
+}
+
+a:active {
+	color: #0000aa;
+}
+
+/* anchors in the table */
+/* darken the pdf links when theme is light */
+#maincontentpre a:link {
+	color: #000033;
+}
+
+#maincontentpre a:visited {
+	color: #000033;
+}
+
+#maincontentpre a:hover {
+	color: #008000;
+}
+
+#maincontentpre a {
+	font-weight: bold;
+}
+
+#maincontentpre td {
+	font-size: 17px;
+	margin-top: 5px;
+}
+
+
+/* Anchor tags dark theme  */
+@media only screen {
+
+	html.dark a:link,
+	html.dark a:visited,
+	html.dark a:hover,
+	html.dark a:active,
+	html.dark #maincontentpre a:link,
+	html.dark #maincontentpre a:visited {
+		color: aqua;
+	}
+
+	html.dark tr:nth-child(3) > td:nth-child(1) a:before {
+		color: #fdfdff;
+	}
+}
+
+/* was inline */
+
+/* What is this? {display:block;margin: 0 0 0 5px;}  */
+/* put links on a separate line for uniformity, indented at left w padding */
+/* prevent link-as-block element from expanding to 100%
+https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content  */
+#top-links a,
+#bottom-links a {
+	display: block;
+	margin: 0 0 0 5px;
+	width: fit-content;
+}
+
+#top-links a.inline,
+#bottom-links a.inline {
+	display: inline;
+}
+
+
+/* let anchors wrap */
+#main-content a,
+#bottom-links a,
+pre a,
+table a {
+	word-break: break-word;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+
+/* End Anchor Tags */
+/* End Anchor Tags */
+/* End Anchor Tags */
+
+
+/* Start backgrounds and colors */
+/* Start backgrounds and colors */
+/* Start backgrounds and colors */
+
+/* Default light theme colors */
+
+html,
+body,
+/* must include these or #fixed-header will be transparent */
+#fixed-header,
+#menu-site,
+.progress-header,
+.progress-container {
+	background: #f0fff0;
+	color: black;
+}
+
+@media only screen {
+
+	/* do not include "span" .progress-header.dark  */
+
+	html.dark,
+	html.dark body,
+	html.dark #fixed-header,
+	html.dark #menu-site,
+	html.dark .progress-container,
+	html.dark p.black,
+	html.dark span.black,
+	html.dark sup.black {
+		background: #202020;
+		color: #fdfdff;
+		/* see note below */
+	}
+}
+
+/* maroons in light theeme and dark */
+
+.maroon {
+	color: maroon;
+}
+
+
+html.dark .maroon {
+	color: #fa8362;
+}
+
+p.logo,
+h4,
+#top-links h4,
+#bottom-links h4,
+#external-links h4 {
+	color: maroon;
+}
+
+
+@media only screen {
+
+	html.dark p.logo,
+	html.dark h4,
+	html.dark #top-links h4,
+	html.dark #bottom-links h4,
+	html.dark h4.external-h4 {
+		color: #FA8362;
+	}
+}
+
+
+/* End backgrounds and colors */
+/* End backgrounds and colors */
+/* End backgrounds and colors */
+
+
+/* START LAYOUT AND WIDTHS */
+/* START LAYOUT AND WIDTHS */
+/* START LAYOUT AND WIDTHS */
+
+/* Breakpoints for various devices
+	Nexus is 412px
+	iPhone 4 breakpoint is 480 px
+	iPhone 5 width of 320 is 640 px
+*/
+
+/*  WIDTH SCHEMA:
+
+	Wide screen width Selfdefinition 2022.CSS is 800px but it has a left menu
+	800px minus left menu of 240 is 560, less padding so content area is 530px;
+
+	DEFAULT 750 PX. #main-content 730px
+
+	FOR LESS THAN 767:
+	1. KEEP IMAGE-DIV THE SAME, SHRINK #TOP-LINKS
+
+	FOR LESS THAN 600
+	2. SHRINK IMAGE AND IMAGE DIV A LITTLE, KEEP SHRINKING TOP LINKS
+
+	FOR LESS THAN ???
+	3. IMAGE-DIV AND TOP-LINKS NO LONGER FLOAT, THEY STACK
+	4. IMAGE-DIV IS CENTERED
+	5. #TOP-LINKS EXPANDS TO 100%
+
+*/
+
+/* center the page; wide screen default width  */
+/* border:1px solid green;  */
+
+/*	#mainwrapper-index is used by root files, search, and by section indexes */
+/* setting to 700px on changelog and espanol for easirt reading */
+#mainwrapper-index {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#mainwrapper-index {
+	border-bottom: 300px solid transparent;
+}
+
+/* for Edge device mobile screens */
+@media only screen and (max-width:767px) {
+
+	#menu-site,
+	#main-content,
+	#maincontentpre {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+
+/* HTML STRUCTURE
+
+Tricks for debugging:
+
+@media only print {
+    div::before {
+        content: "#"attr(id);
+    }
+}
+
+body":after {
+    content: " update "attr(update);
+}
+
+<body>
+
+#mainwrapper-index
+	#container			unused hook
+		#fixed-header
+			#menu-site
+		#main-content
+			#style-gadget
+			header
+			#announce
+				#image-div
+				#top-links	(.featured-links, ,site-links)
+			#bottom-links	(.featured-links, ,site-links. .external-links)
+			#maincontentpre		all one word	< is inside #main-content
+
+Apache-generated
+				table #indexlist
+					tbody
+						tr
+README file
+			<!-- end maincontentpre
+		<!-- end main-content
+	<!-- end container
+<!-- end mainwrapper-index
+
+</body>
+
+END HTML STRUCTURE */
+
+
+
+/* START FIXED HEADER, MENU-SITE */
+/* START FIXED HEADER, MENU-SITE */
+
+/* New fixed menu, copied html from changellog and CSS from /styles/root-files-simple-responsive.css
+
+Consider integrating these two CSS sheets.
+
+*/
+
+/* this reduces to 17px at two-line breakpoint  */
+/* border: 1px solid blue; */
+#fixed-header {
+	font-size: 18px;
+	border: 0px solid blue;
+}
+
+/* Shrink the "Top of Page" item a little, give more separation */
+/* WAS #menu-site li:last-of-type {margin-left:5px;font-size:16px;} */
+#menu-site li:last-of-type {
+	font-size: 16px;
+	float: right;
+}
+
+/* WAS @media only screen and (min-width:768px) {   */
+@media only screen and (min-width:740px) {
+	#menu-site li:last-of-type {
+		margin-right: 70px;
+	}
+}
+
+/* Top menu search item tweak. IF SEARCH IS ADDED THERE ARE NOW 5 ITEMS
+	So move "totop", the last item, to float left, not right,
+	and then it won't interfere with #style-gadget  */
+/* get rid of this temporarily April 17
+@media only screen and (max-width:610px) {
+#menu-site li:nth-of-type(5) {
+  	float:left;
+  	border-bottom:0px solid green;
+	}
+}
+
+
+/* #fixed-header testing fuck
+CSS borders interfering with absolute positioning
+https://stackoverflow.com/questions/14706866/css-borders-interfering-with-absolute-positioning
+
+ */
+#fixed-header {
+	border: 1px solid blue;
+}
+
+#menu-site {
+	border: 1px solid yellow;
+}
+
+#menu-site li {
+	border: 1px solid green;
+}
+
+#main-content {
+	border: 1px solid red;
+}
+
+
+#fixed-header {
+	border: 1px solid transparent;
+}
+
+#menu-site {
+	border: 1px solid transparent;
+}
+
+#menu-site li {
+	border: 1px solid transparent;
+}
+
+#main-content {
+	border: 1px solid transparent;
+}
+
+
+
+/* #menu-site is a "ul", must override default margin
+	as "ul" has default left padding of 40px; */
+/* border: 1px solid yellow; */
+#menu-site {
+	margin-top: 0;
+	padding-left: 20px;
+}
+
+/* Must put #fixed-header width to 100% because without that,
+   #menu-site does not expand to 100%, scrolled part is visible  */
+
+#fixed-header,
+#menu-site {
+	position: fixed;
+	width: 100%;
+	max-width: 800px;
+}
+
+/* Default single line menu */
+/* Default single-line menu */
+
+#fixed-header {
+	top: 0;
+	height: 60px;
+}
+
+#menu-site {
+	top: 0;
+	height: 60px;
+}
+
+/* min width=76px helps the elements to line up on the leftedge  */
+#menu-site li {
+	display: block;
+	min-width: 76px;
+	float: left;
+	/* WAS padding: 5px 3px 5px 3px;*/
+	padding: 0;
+	/* don't let menu items touch to avoid errors */
+	/* WAS margin: 0px 20px 5px 0;
+      now add what was padding to the margins */
+	margin: 10px 23px 5px 3px;
+}
+
+/* try putting the padding on the anchor, not the list item */
+#menu-site li a {
+	padding: 5px 3px 5px 3px;
+}
+
+
+/* shrink menu items a little on small screens */
+/* Update April 17, 2020 must do earlier, adding Search item WAS 500px, now 700px */
+@media only screen and (max-width:670px) {
+	#menu-site li {
+		margin-right: 10px;
+	}
+
+	#fixed-header {
+		font-size: 17px;
+	}
+}
+
+
+/* Start conditional hide general and menu */
+/* Start conditional hide general and menu */
+/* adjust if needed in project */
+@media only screen and (max-width:600px) {
+
+	.conditional-hide,
+	#menu-site li.conditional-hide,
+	#menu-site li span.conditional-hide {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:500px) {
+
+	.conditional-hide-2,
+	#menu-site li.conditional-hide-2,
+	#menu-site li span.conditional-hide-2 {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:400px) {
+
+	.conditional-hide-3,
+	#menu-site li.conditional-hide-3,
+	#menu-site li span.conditional-hide-3 {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:359px) {
+
+	.conditional-hide-4,
+	#menu-site .conditional-hide-4,
+	#menu-site li span.conditional-hide-4 {
+		display: none;
+	}
+}
+
+/* 2020.CSS has #main-content = absolute and them #main-content-relative = relative,
+
+	Here just make #main content relative
+
+	Absolute positioning takes the element out of document flow:
+	https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
+
+	If you make it "fixed" it won't scroll - border is yellow;
+
+	Because of ragged right edge, looks more centered if less than full allowable width.
+	*/
+#main-content {
+	position: relative;
+	top: 61px;
+}
+
+
+/* override this on page for index page = 800px */
+#main-content,
+#maincontentpre {
+	width: 100%;
+	max-width: 780px;
+}
+
+/* WAS TRANSPARENT. Problem to hide content under the fixed header, was not working
+	Because was using #fixed-header-small-screen instesad of #fixed-header
+	in background color section  */
+
+
+/* Menu two line breakpoint is at about 425px; */
+/* Menu two-line breakpoint is at about 425px; so use 430px */
+/* Update April 17, 2022 change two-line breakpoint from 430px to 610px
+	to accomodate "search" link in top menu */
+/* Was taken from /rose/root-files/five-item-top-menu-tweak.css */
+/* WAS @media only screen and (max-width:430px) { */
+@media only screen and (max-width:550px) {
+
+	#fixed-header,
+	#menu-site {
+		height: 95px;
+	}
+
+	#main-content {
+		top: 96px;
+	}
+
+	/* a little more clearance away from #style-gadget */
+	p.logo {
+		margin-top: 30px;
+	}
+
+	#menu-site li:last-of-type {
+		float: left;
+		margin-right: 0;
+	}
+}
+
+
+/* END FIXED HEADER, MENU-SITE DEFAULT LAYOUT */
+/* END FIXED HEADER, MENU-SITE DEFAULT LAYOUT */
+
+/* CONTINUE DEFAULT LAYOUT AND WIDTHS */
+/* CONTINUE DEFAULT LAYOUT AND WIDTHS */
+
+
+/* border:1px solid yellow;  */
+#main-content {}
+
+
+/* "header" has the logo "p" and the page title, which is "h1" */
+/* border:1px solid green;  */
+header {
+	text-align: center;
+}
+
+
+/* border:1px solid red;  */
+/*  must set top margin at "0' or stacks on image-div margins.
+	See breakpoint adjustment below */
+#announce {
+	margin: 0 0 0 0;
+	width: 100%;
+}
+
+/* #announce contains 2 child sections: 1) #image-div, 2. #top-links
+
+/* border:1px solid blue; */
+#image-div {
+	float: left;
+	width: 220px;
+	margin: 25px 20px 10px 0;
+	text-align: center;
+}
+
+/* image size may need to be adjusted on page, if aspect ratio is unusual */
+/* top margin = 1em, same as paragraph, to match #top-links < no, add some for closer match*/
+#image-div img {
+	width: 210px;
+	height: auto;
+	margin: 0 0 0 0;
+}
+
+/* must have class="note" on page if used */
+#image-div p {
+	margin-top: 10px;
+}
+
+
+/* #main-content page width = 680px */
+/* 680 minus 220px for image div plus 20px left margin of #top-links =>
+	so #top-links max-width can be = 680 - 240 = 460px; will use 430px for safety */
+
+/* This is default wide screens width. Break #1 is at 767px */
+/* #main-content width is 730px, Subtract 220px + 20px margin for #image-div = add 15px for safety  */
+/* MUST HAVE SPACE FOR CALC FORMULA */
+#top-links {
+	float: left;
+	width: calc(780px - 255px);
+	margin: 0;
+	padding-right: 0px;
+}
+
+
+/* START RESPONSIVE LAYOUT AND WIDTHS */
+/* START RESPONSIVE LAYOUT AND WIDTHS */
+/* START RESPONSIVE LAYOUT AND WIDTHS */
+
+
+@media only screen and (max-width: 767px) {
+	#mainwrapper-index {
+		width: auto;
+		max-width: 100%;
+	}
+
+	#main-content {
+		width: auto;
+		max-width: 100%;
+	}
+
+	#announce {
+		width: auto;
+		max-width: 100%;
+	}
+
+	#top-links {
+		width: calc(100% - 255px);
+	}
+
+	/* see "calc" above" */
+	#bottom-links {
+		width: auto;
+		max-width: 100%;
+	}
+
+	#maincontentpre {
+		width: auto;
+		max-width: 100%;
+	}
+
+	table {
+		width: auto;
+		max-width: 100%;
+	}
+}
+
+
+/* shrink the image a little when screen is between 600px and 540px */
+@media only screen and (max-width: 600px) {
+	#image-div {
+		width: 180px
+	}
+
+	#image-div img {
+		width: 180px;
+	}
+
+	#top-links {
+		width: calc(100% - 205px);
+	}
+}
+
+/* At 540px items stack and lo longer float, image gos back to original size  */
+@media only screen and (max-width: 540px) {
+	#announce {
+		margin-top: 20px;
+	}
+
+	#image-div {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#image-div img {
+		width: 210px;
+		margin: 0 auto;
+	}
+
+	#top-links {
+		float: none;
+		width: 100%;
+	}
+}
+
+
+
+
+/**** Compare with index-style-sheet.css  in root directory */
+
+/* file listings need a monospece font */
+/* note: if you suppress sorting by size, you get "pre" not "table",
+	so apply these styles to pre */
+
+/* Table layout needs to be set in .htaccess as follows:
+# When icon is suppressed, the file name is td:first-child
+# these are not in selfdefinition root .htaccess				<- is this note still valid?
+IndexOptions SuppressIcon
+IndexOptions SuppressLastModified
+IndexOptions -SuppressSize
+IndexOptions SuppressDescription
+ */
+
+
+
+/* Trick to add the full path to the "Parent Directory" anchor.
+OLD SAVE
+tr:nth-child(3) > td:nth-child(1) a:before { content: " [check file sizes before downloading] " }
+ */
+
+/* new method for inserting message April 10, 2020 */
+/* do this to hide outline around the message (placing the message hr::after ) */
+#maincontentpre hr {
+	border: none;
+}
+
+
+/* This was taken froom version #30 as versions through #47 failed to insert the message AFTER "parent directory" */
+
+tr.indexbreakrow hr::after {
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	content: " Check file sizes before downloading ";
+}
+
+tr.indexbreakrow hr::after {
+	color: red;
+}
+
+html.dark tr.indexbreakrow hr::after {
+	color: #FA8362;
+	font-weight: bold;
+}
+
+
+/* Use the sibling selector to hide the second occurance of the class
+https://stackoverflow.com/questions/6447045/css3-selector-first-of-type-with-class-name
+	This works   */
+.indexbreakrow ~ .indexbreakrow {
+	display: none;
+}
+
+
+/**** Table cell styling ****/
+/**** Viking gives table; Site5 gives "pre" ****/
+/* Above is Old. Site5 now gives "table" */
+/* WAS table {width:620px;margin-top:20px;} */
+
+#maincontentpre table {
+	width: 100%;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+	#maincontentpre table {
+		width: 100%;
+	}
+}
+
+td {
+	vertical-align: top;
+	padding-top: 15px;
+}
+
+
+th:first-child {
+	padding: 0 10px 10px 10px;
+}
+
+/* every <td> element that is the first child of its parent */
+/* this is the "filename" column */
+#maincontentpre td:first-child,
+#maincontentpre th:first-child {
+	/* WAS width:500px; */
+	width: auto;
+	max-width: 100%;
+	padding: 0 10px 10px 10px;
+}
+
+
+/* this is the "size" column */
+td:last-child,
+th:last-child {
+	width: 60px;
+	text-align: right;
+	padding: 0 10px 10px 0;
+}
+
+/* anchor inline-block is necessary to avoid dead space
+between lines when an anchor tag wraps
+a {display:inline-block;}  */
+
+/* default maincontentpre styling
+#maincontentpre {margin-left:0px;}
+#maincontentpre pre {margin-left:0px;}
+#maincontentpre pre  hr {margin-left:60px;}
+*/
+
+
+/* first used bottom of Magic index (Chaos) */
+/* TO UPDATE - ALSO SEE GURDJIEFF  */
+.image-div-below-files {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 80%;
+}
+
+#footer-image {
+	border-bottom: 10em solid transparent;
+	width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+	div.image-div-below-files {
+		display: none;
+	}
+}
+
+
+/* see comment above. does not appear
+pre {}     */
+
+
+
+/* test for curve-around on S7 edge.
+  Copied from /gurdjueff/quotes/  */
+/* S7 width is 360 for CSS
+See:
+https://mydevice.io/devices/
+*/
+/* Don't use - margin is already 10px for less than 500px
+
+@media only screen and (max-width: 500px) {
+    #menu-site-small-screen, #article h4, #article p {margin-left:8px; margin-right:8px;}
+}
+
+*/
+
+/* testing */
+
+/*  ****
+
+
+#mainwrapper-index {
+    border-top: 1px solid green;
+    border-right: 1px solid green;
+    border-left: 1px solid green;
+}
+
+#fixed-header {
+    border: 1px solid blue;
+}
+
+#menu-site {
+    border: 1px solid yellow;
+}
+
+#menu-site li
+	{border: 1px solid green;}
+
+#main-content {
+    border: 1px solid red;
+}
+
+.site-links, .external-links {
+    border: 1px solid blue;
+}
+
+.site-links p, .external-links p {
+    border: 0px solid red;
+}
+
+header {
+    border: 1px solid green;
+}
+
+header p.logo,
+header h1
+ {
+    border: 0px solid blue;
+}
+
+#announce {
+    border: 1px solid red;
+}
+
+#image-div {border:1px solid blue;}
+
+#image-div img {border:1px solid green;}
+
+
+
+#top-links, #bottom-links
+ {
+    border: 1px solid blue;
+}
+
+
+#top-links p, #bottom-links p
+ {
+    border: 1px solid maroon;
+}
+
+table {border:1px solid white;}
+
+
+
+#article {
+    border: 1px solid white;
+}
+
+ */
+
+
+/* END */

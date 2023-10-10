@@ -1,0 +1,16 @@
+
+<!-- tried this on Napoleon hill -->
+
+<div id="book-links">
+    <?php 
+    //echo "The document root is ";
+    echo ($_SERVER['DOCUMENT_ROOT']);
+    //echo "The directory is ";
+    //define("directory", __DIR__);
+    //echo directory;
+    // this didn't work
+    //include('../../redirect/includes/'.(__DIR__).'/_include-template.htm'); 
+    // try
+    include($_SERVER['DOCUMENT_ROOT'].'/redirect/includes/_include-path-test.htm'); 
+    ?>
+</div>

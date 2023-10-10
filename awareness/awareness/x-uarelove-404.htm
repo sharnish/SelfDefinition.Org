@@ -1,0 +1,113 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>404 File not Found - suggest index</title>
+	<meta name="description" content="404 File not Found, plese check url">
+	<meta property="og:title" content="404 File not Found - suggest index">
+	<meta property="og:description" content="404 File not Found, plese check url">
+	<meta property="og:image" content="https://albigen.com/uarelove/images/ramana-og-image-new.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		h1 {
+			font-weight: normal;
+			font-size: 100%;
+			margin-top: -15px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="main-content">
+			<!-- no menu must test -->
+			<div id="article">
+				<article>
+					<div id="announce">
+						<header>
+							<!-- image is shown in menu for large screens, title include for small screens -->
+							<?php include( "_uarelove-title-include.htm"); ?>
+							<h2>
+								404 &ndash; file not found
+							</h2>
+						</header>
+					</div>
+					<p>
+						The URL you requested is not found on this server.
+					</p>
+					<p>
+						Return to
+						<a href="javascript:history.back()" role="button">Previous Page</a>
+					</p>
+					<p>
+						Or please see ...
+					</p>
+					<p>
+						Awareness Watching Awareness Contents page
+					</p>
+					<p class="page-link">
+						<a href="/awareness/contents.htm">
+							/awareness/contents.htm</a>
+					</p>
+					<p>
+						Awareness Watching Awareness Home page
+					</p>
+					<p class="page-link">
+						<a href="/awareness/awareness-home.htm">
+							/awareness/awareness-home.htm</a>
+					</p>
+					<p>
+						The Most Rapid and Direct Means to Eternal Bliss
+					</p>
+					<p class="page-link">
+						<a href="/awareness/most-rapid/contents.htm">
+							/awareness/most-rapid/<wbr>contents.htm
+						</a>
+					</p>
+					<p>
+						Site index page: <a href="/awareness-home.htm"> https://selfdefinition.org</a>
+					</p>
+
+					<p>
+						Site map: <a href="/sitemap.htm"> https://selfdefinition.org/sitemap.htm</a>
+					</p>
+					<p>&nbsp;</p>
+					<p class="totop-above-anchor">
+						<a href="javascript:scroll(0,0);">top of page</a>
+					</p>
+					<!-- anchor element must not be empty -->
+					<a class="page-link-anchor" id="end">&nbsp;</a>
+
+					<br />
+
+				</article>
+			</div>
+			<!-- end div#article -->
+		</div>
+		<!-- end #main-content -->
+	</div>
+	<!-- end mainwrapper -->
+	<div id="analytics-in-server-doc-root-plus-albigen">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

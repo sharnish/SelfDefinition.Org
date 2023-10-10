@@ -1,0 +1,949 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>III. Forma &ndash; Magia Blanca y Negra</title>
+	<meta name="description" content="Según Platón, la esencia primordial es una emanación de la Mente Demiúrgica, que contiene desde la eternidad la idea del mundo natural dentro de sí misma.">
+	<meta name="author" content="Franz Hartmann, MD">
+	<meta property="og:title" content="III. Forma &ndash; Magia Blanca y Negra">
+	<meta property="og:description" content="Según Platón, la esencia primordial es una emanación de la Mente Demiúrgica, que contiene desde la eternidad la idea del mundo natural dentro de sí misma.">
+	<meta property="og:image" content="https://selfdefinition.org/magic/hartmann/blanca-y-negra/images/frontispiece-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_blanca-y-negra-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="capitulo-02-real-y-irreal.htm">
+	<link rel="next" href="capitulo-04-la-vida.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 250px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		/* this page only */
+		#seven-principles-list {
+			width: 90%;
+		}
+
+		#seven-principles-list li {
+			padding-left: 5px;
+		}
+
+		@media only screen and (max-width:500px) {
+			#seven-principles-list {
+				width: 98%;
+			}
+		}
+
+		/* this page only */
+		table {
+			width: 100%;
+		}
+
+		td,
+		th {
+			vertical-align: top;
+			text-align: center;
+		}
+
+		th {
+			border-bottom: 1px solid black;
+		}
+
+		.active {
+			background: #d3ffd3;
+		}
+
+		html.dark .active {
+			background: #252;
+		}
+
+		.lesser {
+			background: #ccccff;
+		}
+
+		html.dark .lesser {
+			background: #225;
+		}
+
+		.latent {
+			background: #ffffaa;
+		}
+
+		html.dark .latent {
+			background: #3a3a3a;
+		}
+
+		tr.has-top td {
+			border-top: 1px solid black;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_blanca-y-negra-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_blanca-y-negra-title-include.htm"); ?>
+									<h3>
+										Capitulo III - Forma
+									</h3>
+									<p class="tiny this-page">
+										This page in English: <a href="../white-and-black/chapter-03-form.htm">..chapter-03-form.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="capitulo-02-real-y-irreal.htm">&lt; 2, Lo Real y lo Irreal</a></li>
+									<li class="align-right"><a href="capitulo-04-la-vida.htm">4, La Vida &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header class="chapter-header">
+								<p>
+									<img class="chapter-image" src="images/chapter-03.jpg" alt="Triangle, isosceles" />
+								</p>
+								<p>
+									<em>&quot;El universo es un pensamiento de Dios.&quot;</em> <span class="nowrap">&ndash; Paracelso</span>
+								</p>
+							</header>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#primordial-essence">Esencia primordial</a></li>
+									<li><a href="#seven-principles">Siete principios</a></li>
+									<li><a href="#divine-state">Estado divino del ser</a></li>
+									<li><a href="#bodily-spheres">Esferas corporales</a></li>
+									<li><a href="#ethereal-forms">Formas etéreas</a></li>
+									<li><a href="#invisible-beings">Seres invisibles</a></li>
+									<li><a href="#realm-of-the-soul">Reino del alma</a></li>
+									<li><a href="#elemental-forms">Formas elementales</a></li>
+									<li><a href="#thought-projection">Proyección del pensamiento</a></li>
+									<li><a href="#apparitions">Apariciones</a></li>
+									<li><a href="#necromancy">Necromancia</a></li>
+									<li><a href="#strength-of-character">Fuerza de caracter</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="primordial-essence">&nbsp;</a>
+							<h4>
+								Esencia primordial
+							</h4>
+							<div class="right-image-div">
+								<img src="images/plato.jpg" alt="Platon" />
+								<p class="note">
+									Platon<br />
+									<span class="date">Siglo IV a.C.</span>
+								</p>
+							</div>
+							<p>
+								Según Platón, la esencia primordial es una emanación de la Mente demiúrgico, que desde la eternidad contiene en sí la idea del mundo natural y la manifiesta objetivamente por el poder de Su voluntad. Esta doctrina parece ser casi tan antigua como la razón humana, pues expresa esencialmente la misma verdad enseñada por los rishis y expuesta (aunque tal vez en otros términos) por los más profundos pensadores de todas las épocas, desde el primer espíritu planetario que apareció en la tierra, hasta los filósofos modernos para quienes el mundo es efecto de ideación y voluntad.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Schopenhauer: Die Weit ais Wille und Vorstellung. (El mundo como voluntad y manifestación).
+							</p>
+							<hr />
+							<p>
+								El gran místico cristiano Jacobo Boehme dice que la gran Causa primordial es una trinidad compuesta de voluntad, pensamiento y acción. Esta doctrina es análoga a la enseñada en Oriente respecto a las tres emanaciones de Brama, aunque Boehme ignoraba esta circunstancia y necesariamente había de ignorarla en aquélla época, y concebirla tan sólo por ser iluminado. Dice e su obra: <em>Los Tres Principios,</em> [de la Esencia ivina] <sup>[1]</sup> que por la actividad de la Voluntad-Fuego en el Centro, la Conciencia eterna se reflejó en el espacio como en un espejo, y de esta actividad nacieron Luz y Vida.
+							</p>
+							<p class="fnote">
+								[1. Escrito 1619, traducido al inglés 1648 por John Sparrow. Pdf (inglés, 400 páginas, 1.8 meg) en <a href="http://jacobboehmeonline.com/yahoo_site_admin/assets/docs/three_principles_jbo_vers.69170922.pdf">jacobboehmeonline<wbr />.com</a>&nbsp;]
+							</p>
+							<div class="left-image-div">
+								<img src="images/jacob-boehme.jpg" alt="Jacob Boehme" />
+								<p>
+									Jacob Boehme
+									<br />
+									<span class="date">(1575-1624)</span>
+								</p>
+							</div>
+							<p>
+								Después declara cómo la acción que irradia del incomprensible Centro hacia el elemento de la Materia, y la subsiguiente reacción de la periferia al Centro, determinaron la rotación, y cómo tomó existencia en el Éter el mundo de las formas y fue creciendo en densidad material. Así por la acción del Padre en el Hijo se manifestó el Espíritu Santo, y su manifestación es la unidad del Universo tanto visible como invisible, con todos sus soles, estrellas, planetas, formas, habitantes, Ángeles, demonios, devas, elementales, hombres y animales, es decir, con todas las energías y potencias y formas de los aspectos visible e invisible de la Naturaleza.
+							</p>
+							<p>
+								Esta trinidad se manifiesta en tres distintos planos o modos de acción a saber: Materia, Alma y Espíritu; o según el simbolismo de la antigua ciencia oculta: Tierra, Agua y Fuego. El Uno se manifiesta en los Tres; pero los Tres son un todo que no consta de tres partes sucesivas, sino que brotan simultáneamente a la existencia. La reacción no puede existir sin la acción, y ambas derivan de una Causa o Potencia co-existente.
+							</p>
+							<p>
+								El Espíritu o Fuego es inmaterial, sin forma y universal, que manifiesta su poder en formas. Es el Creador, el gran Arquitecto del universo, e Padre de Cristo, cuya madre es Maya, la siempre virgen Naturaleza.<sup>[2]</sup>
+							</p>
+							<p class="fnote">
+								[2. En la octava edición, donde se agregaron párrafos, esto se describe como &quot;la matriz&quot; y &quot;la Voluntad misma&quot;. Hartmann escribe: &quot;Ningún proceso mágico se ha logrado sin el fuego mágico; y aprender a conocer la verdadera naturaleza de ese fuego es el gran deseo de cada ocultista.&quot;]
+							</p>
+							<p>
+								El Alma o Agua es un elemento semimaterial y sin forma en su original estado. Es el elemento organizador de las formas corpóreas. Penetra y rodea los planetas del mismo modo que rodea y penetra los cuerpos de los hombres y de los animales y todos los demás cuerpos y formas que perecen en cuanto el alma cesa de actuar en ellas.
+							</p>
+							<p>
+								Materia o Tierra (llamada akása en su primordial estado) es un invisible elemento material que penetra todo el espacio. Condensada por el poder organizador del alma, plasma las formas de ésta última y las hace visibles en el plano físico.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="seven-principles">&nbsp;</a>
+							<h4>
+								Siete principios
+							</h4>
+							<p>
+								De la interacción de los tres elementos primordiales: Espíritu, Alma y Materia, derivan cuatro principios intermedios que, añadidos a los tres primordiales, constituyen siete principios que no existen separadamente, sino que son los siete aspectos de un mismo elemento, de la propia suerte que las siete notas de una octava son siete modificaciones de una misma vibración acústica.
+							</p>
+							<p>
+								El hombre es una unidad; pero también es una trina expresión capaz de cuatro distintos estados de conciencia y existencia, un compuesto de cuatro elementos unidos al quinto o elemento uno para constituir un armonioso acorde de cinco notas.
+							</p>
+							<p>
+								También puede considerarse como la manifestación de tres potencias superiores y otras tres inferiores en las que se ha de manifestar la inmanifestada séptima potencia. Todas estas divisiones son legítimas y no arbitrarias, porque se fundan en la acción de ciertas leyes naturales.
+							</p>
+							<ol class="generic tall">
+								<li><strong>A.</strong> Elemento de Materia (Akása), representado por Tierra. </li>
+								<li><strong>AB.</strong> Combinación de Materia y Alma, llamada cuerpo astral; mezcla de &quot;Tierra y Agua&quot;. </li>
+								<li><strong>B.</strong> Alma o principio animal del hombre, representado por &quot;Agua&quot;. </li>
+								<li><strong>ABC.</strong> La Esencia de Vida; combinación de Materia, Alma y Espíritu; &quot;Tierra, Agua y Fuego&quot;. </li>
+								<li><strong>AC.</strong> Mente; combinación de Materia y Espíritu, o &quot;Tierra y Fuego&quot;, (principio de intelectualidad). </li>
+								<li><strong>BC.</strong> Alma Espiritual, combinación de Alma y puro Espíritu, o &quot;Agua y Fuego&quot;, (principio de inteligencia espiritual). </li>
+								<li><strong>C.</strong> Espíritu puro o &quot;Fuego&quot; <sup class="asterisk">*</sup> </li>
+							</ol>
+							<hr />
+							<p class="note">
+								* Los términos sánscritos, de los siete principios, son: 1. Prakriti. 2. Lingasarira. 3. Kamarupa. 4. Jiva. 5. Manas. 6. Buddhi. 7. Atma. Véase: Cinco años de Teosofía. Inglés: "Five Years of Theosophy," p. 153. <span class="maroon">[ <a href="http://www.phx-ult-lodge.org/five-years.htm">www.phx-ult-lodge.org/<wbr />five-years.htm</a>&nbsp;]</span>
+							</p>
+							<hr />
+							<p>
+								La división adoptada por Paracelso y la del &quot;Buddhismo Esotérico&quot;&nbsp;<sup>[3]</sup> es casi idéntica a la precedente, de este modo: 1. El cuerpo físico. 2. Vitalidad (Mumia). 3. Cuerpo astral (Cuerpo sidéreo). 4. Alma animal. 5. Alma intelectual. 6. Alma espiritual. 7. Espíritu.
+							</p>
+							<p class="fnote">
+								[3. Por A.P. Sinnett. Pdf en inglés de 110 páginas, 588 KB (<em>Esoteric Buddhism</em>) blavatskyarchives.com <a href="https://blavatskyarchives.com/theosophypdfs/sinnett_esoteric_buddhism_first_edition_1883.pdf">enlace de descarga</a>&nbsp;]
+							</p>
+							<p>
+								Se dice que los antiguos hebreos conocieron esta división y que con arreglo a ella compusieron su alfabeto de veintidós letras; porque el tres en siete estados produce doce símbolos, y 3+7+12=22.
+							</p>
+							<p class="fnote">
+								[En la tercera edición, se inserta aquí un pasaje de Boehme (dos párrafos, inglés), pero se omite en la octava. Ver página 90 de la 3ra edición.]
+							</p>
+							<p>
+								Esta séptuple división de principios, que representa la constitución del hombre, asi como la del universo en conjunto, fue también conocida de los egipcios, quienes la describieron como sigue:
+							</p>
+							<p>
+								I. <em>chat.</em> Cuerpo físico.
+							</p>
+							<p>
+								II. <em>bas.</em> (corazón) and <em>nif.</em> (aliento) Vida física.
+							</p>
+							<p>
+								III. <em>Ka.</em> Cuerpo astral (Personalidad).
+							</p>
+							<p>
+								IV. <em>ab.</em> Deseo (Kama) Centro.
+							</p>
+							<p>
+								V. <em>ba.</em> Alma (Manas).
+							</p>
+							<p>
+								VI. <em>chaib.</em> Sombra del Espíritu (Buddhi).
+							</p>
+							<p>
+								VII. <em>chu.</em> Espíritu (Atma).
+							</p>
+							<p>
+								Los alquimistas representaban las mismas ideas que los símbolos de los siete planetas.
+							</p>
+							<p>
+								<img src="images/saturn.jpg" alt="saturn">
+								Saturno. Elemento material.
+							</p>
+							<p>
+								<img src="images/jupiter.jpg" alt="jupiter">
+								Júpiter. Poder de Vida.
+							</p>
+							<p>
+								<img src="images/mars.jpg" alt="mars">
+								Marte. Voluntad; Fuerza.
+							</p>
+							<p>
+								<img src="images/sun.jpg" alt="sun" />
+								Sol. El centro; la fuente de todos los planetas.
+							</p>
+							<p>
+								<img src="images/venus.jpg" alt="venus" />
+								Venus. Amor. En su inferior modalidad de deseo.
+							</p>
+							<p>
+								<img src="images/mercury.jpg" alt="mercury" />
+								Mercurio. Mente; inteligencia.
+							</p>
+							<p>
+								<img src="images/moon.jpg" alt="moon" />
+								Luna. Espiritualidad.
+							</p>
+							<p>
+								Las cualidades de estas potencias difieren en su combinacion según el preponderante influjo de una sobre otra, y de aquí proviene que sean buenos o malos sus aspectos. Son malos en las condiciones siguientes:
+							</p>
+							<p>
+								Si la espiritualidad
+								<img src="images/moon.jpg" alt="moon" />
+								está avasallada por la materialidad.
+								<img src="images/saturn.jpg" alt="saturn" />.
+							</p>
+							<p>
+								Si la mente
+								<img src="images/mercury.jpg" alt="mercury" />
+								está dominada por la obcecación.
+								<img src="images/jupiter.jpg" alt="jupiter" />.
+							</p>
+							<p>
+								Si el amor
+								<img src="images/venus.jpg" alt="venus" />
+								está supeditado a la pasión.
+								<img src="images/mars.jpg" alt="mars" />.
+							</p>
+							<p>
+								En condiciones contrarias los aspectos serán <em>buenos</em>.
+							</p>
+							<p>
+								El sol
+								<img src="images/sun.jpg" alt="sun" />
+								ocupa el centro de estos planetas, puesto que es su padre y ninguno de ellos puede dominarlo.
+							</p>
+							<p>
+								<em>Juana Leade</em> <sup>[4]</sup> adopta una séptuple división de principios en orden inverso, conviene a saber:
+							</p>
+							<ol class="generic">
+								<li><em>Espíritu.</em> La palabra. El Creador. </li>
+								<li><em>Viento.</em> Aliento de vida. </li>
+								<li><em>Agua.</em> Viento condensado (alma). </li>
+								<li><em>Luz.</em> Inteligencia. </li>
+								<li><em>Cielo.</em> Mundo astral. </li>
+								<li><em>Aire.</em> Vida física. </li>
+								<li><em>Tierra.</em> Matriz o centro. </li>
+							</ol>
+							<p class="fnote">
+								[4. Mística cristiana (1624-1704) <a href="https://en.wikipedia.org/wiki/Jane_Leade">en.wikipedia.org/<wbr />wiki/<wbr />Jane_<wbr />Leade</a>&nbsp;]
+							</p>
+							<p>
+								A estos siete principios corresponden cuatro planos de existencia o estados de conciencia, que son:
+							</p>
+							<div>
+								<p>
+									I. <em>Mundo físico.</em>
+								</p>
+								<p>
+									II. <em>Mundo astral.</em>
+								</p>
+								<p>
+									III. <em>Mundo espiritual.</em>
+								</p>
+								<p>
+									IV. <em>Plano divino de existencia.</em>
+								</p>
+							</div>
+							<p>
+								Cada uno de estos mundos tiene su peculiar modalidad de ser y toda forma existente en cualquiera de ellos contiene los referidos siete principios fundamentales inseparablemente unidos, con la sola diferencia de que, segun el plano donde exista la forma, están unos activos y otros latentes.
+							</p>
+							<p>
+								Así, en una piedra o en un Arbol, los principios superiores están del todo latentes y como si no existieran, mientras que en una forma del plano superior sólo están manifiestos los principios superiores y ha cesado ya la actividad de los inferiores.
+							</p>
+							<p>
+								El cuadro siguiente da una idea aproximada de esta teoría. El principio <span class="active">activo en cada mundo está impreso en mayúsculas</span>; los <span class="lesser">menos activos en cursiva [itálica]</span> y los <span class="latent">latentes o los que han cesado en su actividad en redondo.*</span>
+							</p>
+							<p class="note80">* La original tiene 5 o 6 gradaciones; ver la imagen a continuación.</p>
+							<table style="text-align: center; vertical-align: top;">
+								<tbody>
+									<tr>
+										<th>
+											Mundo físico<span style="font-weight: normal;">&nbsp;</span>
+										</th>
+										<th>
+											Mundo emocional
+											<br />
+											<span style="font-weight: normal;">Astral</span>
+										</th>
+										<th>
+											Mundo mental<br />
+											<span style="font-weight: normal;">Devachan</span>
+										</th>
+									</tr>
+									<tr>
+										<td class="active">
+											MATERIA FISICA
+										</td>
+										<td class="latent">
+											Materia Fisica
+										</td>
+										<td class="latent">
+											Materia Fisica
+										</td>
+									</tr>
+									<tr>
+										<td class="active">
+											VIDA FISICA
+										</td>
+										<td class="latent">
+											Vida Fsica
+										</td>
+										<td class="latent">
+											Vida Fsica
+										</td>
+									</tr>
+									<tr class="has-top">
+										<td class="lesser">
+											<em>Vida astral</em>
+										</td>
+										<td class="active">
+											VIDA ASTRAL
+										</td>
+										<td class="latent">
+											Vida astral
+										</td>
+									</tr>
+									<tr>
+										<td class="lesser">
+											<em>Vida kámica</em>
+										</td>
+										<td class="active">
+											VIDA K&Aacute;MICA
+										</td>
+										<td class="latent">
+											Vida kámica
+										</td>
+									</tr>
+									<tr class="has-top">
+										<td class="lesser">
+											<em>Manas inferior</em>
+										</td>
+										<td class="lesser">
+											<em>Manas inferior</em>
+										</td>
+										<td class="latent">
+											Manas inferior
+										</td>
+									</tr>
+									<tr>
+										<td class="latent">
+											Manas superior
+										</td>
+										<td class="latent">
+											Manas superior
+										</td>
+										<td class="active">
+											MANAS SUPERIOR
+										</td>
+									</tr>
+									<tr class="has-top">
+										<td class="latent">
+											Buddhi
+										</td>
+										<td class="latent">
+											Buddhi
+										</td>
+										<td class="active">
+											BUDDHI
+										</td>
+									</tr>
+									<tr>
+										<td class="latent">
+											Atma
+										</td>
+										<td class="latent">
+											Atma
+										</td>
+										<td class="lesser">
+											<em>Atma</em>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="note80">
+								La edición en español usa una tipografía diferente a la del inglés.
+								<!--La tabla original es de un número de edición en inglés desconocido. (No aparece en la 3ra edición, ni en la 8va edición americana.)--> Enlace a la página en <a href="https://books.google.com.mx/books?id=2_M1E-h_ZR0C&pg=PA89#v=onepage&q&f=false">Google Books</a>. La original está aquí con la explicación, traducido de la edición inglesa, y la tipografía original:
+							</p>
+							<p class="note80">
+								&quot;La siguiente tabla puede dar una ilustración aproximada de esta teoría. Los principios prominentemente activos se imprimen en letra más grande y los menos activos en letra más pequeña; mientras que aquellos que aún están latentes, o se han vuelto así, están encerrados entre paréntesis.&quot;
+							</p>
+							<img src="images/chart-chapter-3-active-to-latent.jpg" alt="chart active and latent energies" />
+							<p>
+								Por supuesto, que el grado de actividad difiere según los individuos y hay muchas variaciones.
+							</p>
+							<p>
+								En la tierra pueden manifestarse los siete principios en el hombre capaz de vivir alternativa o sucesivamente en uno u otro de estos cuatro estados de conciencia. Su espíritu pertenece a Dios; su mente al cielo; sus deseos al alma del mundo y su cuerpo a la tierra. Después de la muerte cesa la actividad de los principios inferiores y el hombre asciende en la escala del ser, según como se haya armonizado con ella durante su vida.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="divine-state">&nbsp;</a>
+							<h4>
+								Estado divino del ser
+							</h4>
+							<p>
+								No conocemos ni queremos especular sobre las condiciones del divino estado de existencia. Nuestro propósito debe ser más bien alcanzarlo que conturbar nuestro cerebro con el intento de satisfacer una curiosidad científica en este punto. Cabe suponer que en el plano divino sólo están en actividad Atma, Buddhi y Manas superior; pero Jacobo Boehme nos dice que los &quot;siete Espíritus de Dios han nacido uno de otro sin que haya primero ni último, pues los siete son igualmente eternos.&quot;&nbsp;<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Vida y doctrina de Jacobo Boehme. p. 73.
+							</p>
+							<hr />
+							<p>
+								También dice que el tercer principio reaparece en el séptimo y que en esto consiste la &quot;resurrección de la carne&quot;, por lo cual un ser divino no es un espíritu insubstancial, sino que posee el &quot;cuerpo de Dios&quot;, &quot;En la séptima forma manifiestan su actividad todas las demás formas de la naturaleza&quot;. Por lo tanto, el elemento terreno se vuelve a manifestar en la octava superior; y esto nos descubre el verdadero significado de las palabras de San Pablo al hablar de &quot;un cuerpo sembrado en corrupción y levantado en gloria&quot;&nbsp;<sup class="asterisk">**</sup> que seguramente no es la forma astral de un fantasma.<sup class="asterisk">***</sup>
+							</p>
+							<hr />
+							<p class="note">
+								** Ibid. p. 84.
+							</p>
+							<p class="note">
+								*** 1 Cor. 15:42-44.
+								<!-- Spanish version says: I-Corintios-I-5., looks like an error: I-5=15?  -->
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="bodily-spheres">&nbsp;</a>
+							<h4>
+								Esferas corporales
+							</h4>
+							<p>
+								Todas las formas son expresión de uno o más de estos principios elementales y existen mientras sus respectivas potencias obran en ellas. No es necesario que sean visibles, porque su visibilidad depende de su capacidad de reflejar la luz. Los gases invisibles pueden solidificarse visible y tangiblemente por la presión y el frío, y las substancias sólidas pueden hacerse invisibles e intangibles por la acción del calor. Los productos del pensamiento cósmico no son todos visibles al ojo físico, y no vemos más que los que están en nuestro plano de existencia.
+							</p>
+							<p>
+								Todos los cuerpos tienen sus esferas invisibles. Las visibles están limitadas por la periferia de sus formas visibles; las invisibles se extienden más allá en el espacio. Aunque no siempre las descubren los instrumentos físicos, existen, sin embargo, y bajo ciertas condiciones pueden percibirlas los sentidos. La esfera de un cuerpo odorífero puede percibirse por el órgano del olfato; la de un imán por la aproximación del hierro; la de un hombre o de un animal por el delicadísimo instrumento del alma sensitiva.
+							</p>
+							<p>
+								Estas esferas son las auras magnéticas, caloríficas, odorantes, lumínicas, y demás emanaciones correspondientes a los objetos del espacio que se ven a veces como la aurora boreal en las regiones polares de nuestro planeta o como la fotosfera del sol durante un eclipse. El nimbo que rodea la cabeza de los santos no es meramente una ficción poética, como no lo es la esfera de luz que irradia de una piedra preciosa.
+							</p>
+							<p>
+								Así como todo sol tiene sus planetas que giran alrededor de él, así todo cuerpo está circundado de menores centros de energía que salen del centro común y participan de sus atributos. Por ejemplo, el cobre, carbón y arsénico tienen auras rojas: el plomo y azufre, azules; el oro, plata y antimonio, verdes: y el hierro, de todos los colores del iris.
+							</p>
+							<p>
+								Las plantas, animales y hombres emiten los colores correspondientes a sus caracteres; las personas de carácter elevado y espiritual tienen hermosa aura de variados matices, blanco, azul, oro y verde, mientras que los caracteres viles emiten principalmente emanaciones rojo-obscuras, que en las personas brutales, groseras o abyectas son casi negras. Las auras colectivas de grupos de hombres, plantas, animales, ciudades y países corresponden a sus caracteres más sobresalientes; y quien tenga la percepción bastante desarrollada colegirá la condición intelectual y moral de un lugar o país, de la esfera de sus emanaciones.
+							</p>
+							<p>
+								Estas esferas se extienden del centro, y su periferia crece en proporción a la intensidad de la energía que obra en el centro. Conocemos la esfera de una rosa por la fragancia que despide si tenemos el sentido del olfato, y conocemos el carácter mental de un individuo si penetramos en la esfera de sus pensamientos.
+							</p>
+							<p>
+								La calidad de las emanaciones psíquicas depende del estado de actividad del centro que las origina. Son símbolos de los estados del alma de cada forma e indican el estado de las emociones. A cada emoción corresponde determinado color: al amor corresponde el azul; al deseo el rojo; a la benevolencia el verde; y estos colores pueden despertar las correspondientes emociones en otras almas. EI azul tiene efecto calmante y puede tranquilizar a un demente o aliviar una fiebre; el rojo excita la pasión; un toro se enfurece al ver un paño colorado, y el populacho se irrita al ver sangre. Esta química del alma no es más maravillosa que los fenómenos de la química física, pues estos procesos obedecen a la misma ley por la cual el cloruro argéntico expuesto a la luz se vuelve negro.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ethereal-forms">&nbsp;</a>
+							<h4>
+								Formas etéreas
+							</h4>
+							<p>
+								Los pensamientos de la Mente universal expresados en materia del plano físico abarcan todas las formas de los reinos mineral, vegetal y animal de la tierra, descritos por las ciencias naturales. Toda forma material contiene en sí su duplicado etéreo, que bajo ciertas condiciones puede separarse de la parte densa o ser extraído por un Adepto. Estas partes astrales pueden replasmarse visiblemente en akasa condensado y de este modo puede duplicar un objeto quien sepa manejar las fuerzas invisibles.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* A. P. Sinnett: <em>El Mundo oculto.</em> <sup>[5]</sup>
+							</p>
+							<p class="fnote">
+								[5. Pdf en inglés, 226 páginas, 3.3 megs (<em>The Occult World</em>): <a href="https://blavatskyarchives.com/theosophypdfs/sinnett_the_occult_world_2nd_edition_1882.pdf">blavatskyarchives.com/<wbr />theosophypdfs/...</a>&nbsp;]
+							</p>
+							<hr />
+							<p>
+								Las formas astrales persisten después de muertas sus formas densas. El clarividente ve las formas astrales de los muertos, flotantes sobre las tumbas, con apariencia de vivos. A estas formas se les puede infundir artificialmente vida y conciencia por medio de prácticas necrománticas, así como también se las puede evocar en las reuniones espiritistas en simulación del espíritu de los muertos.
+							</p>
+							<p>
+								Hay personas en quienes el cuerpo astral, a consecuencias de ciertas peculiaridades de constitución, o por alguna enfermedad, no está bien ligado al cuerpo físico y puede separarse de él durante corto período.<sup class="asterisk">*</sup> Estas personas tienen aptitud mediumnímica en las llamadas materializaciones espiritistas, y sus contrapartes etéreas pueden aparecer separadas de sus cuerpos y tomar la semejanza de la forma visible de otra persona viva o muerta. Reciben una máscara por medio de los pensamientos inconscientes o conscientes de las personas que asisten a la reunión y por el reflejo de sus recuerdos y pensamientos, así como pueden representar otros personajes por medio de influencias invisibles para el ojo físico.
+							</p>
+							<hr />
+							<p class="note">
+								* La íntima relation entre los cuerpos astral y físico se demuestra frecuentemente en las Ilamadas comunicaciones de los mediums espiritistas. Si una forma materializada se mancha de tinta o de hollín, la materia colorante se encuentra después en la parte correspondiente del cuerpo del médium, porque al volver el astral al cuerpo físico deja la mancha en las correspondientes partes del último.
+							</p>
+							<hr />
+							<p>
+								Como el cerebro es el órgano central de la circulación del fluido nervioso, de la propia suerte que el corazón lo es de la circulación de la sangre, así también el bazo es el órgano del que toman su vitalidad los elementos astrales; y en ciertas enfermedades, cuando la función del bazo está impedida, el astral de una persona puede involuntariamente separarse del cuerpo. No es raro que un enfermo se sienta &quot;como si no fuera él mismo&quot;, o como si otro estuviera acostado con él, y el mismo fuera aquél otro. Estos casos de fantasmas, apariciones, espectros, etc., causados por la separación del cuerpo astral, se encuentran en muchas obras que tratan de los fenómenos místicos de la naturaleza.<sup class="asterisk">**</sup>
+							</p>
+							<hr />
+							<p class="note">
+								** Adolphe D'Assier, <em>La humanidad postuma.</em>
+							</p>
+							<hr />
+							<p>
+								Por lo general, estas formas astrales son inconscientes y sin vida propia; pero se les puede dar vida y conciencia, quitando la vida del cuerpo físico y concentrándola en el astral. Quien logra esto puede salir de su cuerpo físico y vivir independiente de él. Un adepto puede hallarse enteramente fuera de su cuerpo físico y seguir viviendo en su etéreo e invisible cuerpo.<sup class="asterisk">***</sup>
+							</p>
+							<hr />
+							<p class="note">
+								*** Aquí pudieran servir de ejemplo los relatos de faquires enterrados vivos durante meses y después resucitados. Son tan conocidos estos casos que no hay necesidad de repetirlos. Además, los fenómenos, por bien atestiguados que estén, jamás suplantan el conocimiento ni explican las misteriosas leyes de la naturaleza. Su realización no prueba más sino que ocurren. El verdadero conocimiento, jamás se adquirió por la observación de los fenómenos externos, sino por el conocimiento de la ley.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="invisible-beings">&nbsp;</a>
+							<h4>
+								Seres invisibles
+							</h4>
+							<p>
+								Pero también hay formas, cuya natural morada es el plano astral, que las ciencias físicas desconocen porque sólo pueden verse mediante la percepción astral que hoy día únicamente poseen escaso numero de gentes. El plano astral tiene, como el físico, sus reinos mineral, vegetal, animal y sus cuatro elementos; y así como en nuestro mundo están poblados la tierra, el aire y el mar, así también en el mundo astral hay habitantes, los espíritus de la naturaleza, que residen en los elementos tierra, aire, agua y fuego. Son producto de arrúpicas ideas de la Mente universal, plasmadas en formas organizadas por el poder creador de la Naturaleza y se ven objetivamente unas a otras mientras existen en el mismo plano.
+							</p>
+							<p>
+								Las formas individuales del plano astral pueden a menudo hacerse visibles a los hombres y a los animales pero son invisibles en circunstancias ordinarias, por más que las vean los clarividentes y en ciertas condiciones sean además tangibles. Sus cuerpos están constituidos por una substancia elástica y semimaterial, lo bastante etérea para que la vista física no pueda descubrirlos, y cambian de forma según ciertas leyes.
+							</p>
+							<div class="right-image-div">
+								<img src="images/edward-bulwer-lytton.jpg" alt="Edward Bulwer-Lytton" />
+								<p class="note">
+									Edward Bulwer-Lytton<br />
+									<span class="date">(1803-1873)</span>
+								</p>
+							</div>
+							<p>
+								Dice Bulwer Lytton:
+							</p>
+							<p class="blockquote">
+								&quot;La vida es un principio omnipenetrante, y lo que parece morir y descomponerse engendra vida nueva y toma nuevas formas de materia. Razonando por analogía, si no hay hoja ni gota de agua que no sea, como la más lejana estrella, un mundo habitable, el sentido común bastaría para enseñarnos que el Infinito que nos circunda, el impalpable e ilimitado espacio que separa a la tierra de la luna y de las estrellas, estará lleno también de correspondiente y apropiada vida.&quot;
+							</p>
+							<p class="blockquote">
+								&quot;En la gota de agua vemos diversidad de animálculos, algunos de ellos monstruosos y terribles en comparación con otros. Así sucede con los habitantes de la atmósfera. Unos son de sobresaliente sabiduría, otros de malevolencia horrorosa; los hay hostiles para el hombre como demonios y otros benignos como mensajeros entre tierra y cielo.&quot;&nbsp;<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Bulwer Lytton: "Zanoni." <sup>[6a, 6b]</sup>
+							</p>
+							<p class="fnote">
+								[6a. <a href="https://en.wikipedia.org/wiki/Edward_Bulwer-Lytton">en.wikipedia.org/wiki/<wbr />Edward_Bulwer-Lytton</a>&nbsp;]</p>
+							<p class="fnote">
+								[6b. <a href="https://www.gutenberg.org/files/2664/2664-h/2664-h.htm">www.gutenberg.org/files/2664/</a>&nbsp;]
+							</p>
+							<hr />
+							<p>
+								Nuestra escéptica época admira en estas descripciones la &quot;fantasía&quot; del autor, sin advertir que su intención fue declarar una verdad; pero muchos atestiguarían, si necesario fuese, la existencia de estos seres invisibles, aunque substanciales y de variadas formas, que la educada voluntad humana puede hacer conscientes, inteligentes, visibles y útiles al hombre. Esta afirmación está apoyada en el testimonio de los rosacruces, cabalistas, alquimistas y adeptos, así como los antiguos libros de la sabiduría oriental y la Biblia cristiana.
+							</p>
+							<p>
+								Sin embargo, tales entidades no son necesariamente seres personales, pues pueden ser fuerzas impersonales que adquieren vida, forma y conciencia por su contacto con la humanidad. Los gnomos, sílfides, ondinas y salamandras no pertenecen del todo al reino de la ficción, aunque son algo muy distinto de lo que creen los ignorantes. ¡Cuán insignificante y pequeño aparece el hombre en la infinidad del universo!; y sin embargo, los sentidos no le revelan más que una parte comparativamente mínima del universo. Si le fuera posible ver los mundos dentro de otros mundos, arriba, abajo, por todas partes, hormigueantes de seres cuya existencia ni siquiera sospecha, mientras ellos tal vez ignoran que él existe, se desmayaría de temor e impetraría la protección divina. Con todo, ninguno de aquellos seres aventaja en potencia o elevación al hombre espiritual consciente de sus poderes.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Teofrasto Paracelso, cp. v. <sup>[7]</sup>
+							</p>
+							<p class="fnote">
+								[7. Cita no encontrada. Vea Franz Hartmann <em>La vida de Paracelso</em> (Life of Paracelsus, en inglés) en este sitio: <a href="/magic/paracelsus/hartmann-life-of-paracelsus/">/magic/<wbr />paracelsus/<wbr />hartmann-life-of-paracelsus/</a>&nbsp;]
+							</p>
+							<hr />
+							<p>
+								Los seres del plano espiritual fueron antes hombres; pero su constitución no pueden comprenderla los que les son inferiores, y sus formas etéreas son de inconcebible perfección. Otros seres todavía más elevados han trascendido la necesidad de manifestarse en forma y pasan al estado arrúpico. Podemos considerar al ser humano como una nota de la Bran sinfonía universal, y aún Dhyan Chohan,<sup class="asterisk">*</sup> como una cuerda entera o como una agrupación de notas en la sinfonía de los dioses. Así como en música hay notas disonantes y las tinieblas son contrarias a la luz, así también hay entidades malévolas.
+							</p>
+							<hr />
+							<p class="note">
+								** Hijo de Sabiduría. Espíritu planetario.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="realm-of-the-soul">&nbsp;</a>
+							<h4>
+								Reino del alma
+							</h4>
+							<p>
+								El reino del alma es el reino de las emociones, que no provienen tan sólo de procesos fisiológicos cuyas causas derivan del plano Físico, sino que pertenecen a una forma de vida en el plano astral, y a menudo surgen y decaen sin causa aparente. Las condiciones atmosféricas o circunstancias sobre las cuales no tenemos dominio pueden causar ciertas emociones. Una persona que entra en una habitación donde otras se han echado a reír, es susceptible de participar de la alegría común sin conocer la causa; todo un concurso se conmueve por la intensa emoción de un orador, aunque no se entienda bien lo que dice; una sola mujer histérica, en una sala de hospital, puede provocar una epidemia de histerismo entre las demás enfermas; y todo un auditorio puede conmoverse por la arenga de un predicador vehemente, aunque diga necedades.
+							</p>
+							<p>
+								La repentina acumulación de energía emotiva en el plano astral puede matar tan prontamente coma una explosión de pólvora. Cuando, como suele decirse, queda alguien &quot;mudo de terror&quot;, o &quot;paralizado por el miedo&quot;, adquiere la conciencia astral una actividad anormal a expensas de la física y puede cesar la actividad de la vida en este plano determinando el desvanecimiento y aún la muerte.
+							</p>
+							<p>
+								Todas las formas surgen a la existencia con arreglo a ciertas leyes. El microscopio muestra que en una solución salina se forma un centro de materia que atrae y cristaliza a su alrededor las partículas análogas. Cada sal cristaliza siempre en determinado sistema geométrico peculiar a su índole. En el reino vegetal sabemos que la semilla de una planta atrae las fuerzas necesarias para producir otra planta de la misma especie; la semilla del manzano no produce otro árbol sino el manzano, y de la bellota solo nace el roble. Los caracteres principales de un animal serán los de sus padres, y el aspecto exterior de un hombre corresponde más o menos al de su raza y familia.
+							</p>
+							<p>
+								Así como todo punto matemático del espacio puede desarrollarse en un ser vivo, consciente y visible, luego de formado cierto centro de energía, así en el reino invisible del alma, las formas astrales pueden surgir a la existencia doquiera encuentren las condiciones necesarias para su crecimiento. De la misma manera que un germen viviente en el plano físico atrae materia para su desenvolvimiento, así un germen psíquico atrae en su torno en el plano astral la invisible pero substancial entidad del pensamiento. Y de la propia suerte que las formas del plano físico corresponden a los caracteres de sus gérmenes, así las formas del plano astral expresan los caracteres de las emociones prevalecientes en este plano y se manifiestan en formas hermosas o repulsivas, porque toda forma es símbolo o expresión del carácter que representa.
+							</p>
+							<p>
+								Las formas animales expresan las fuerzas que actúan en el plano animal. Algunas tienen peculiar conciencia y se percatan de su existencia, pero en las circunstancias ordinarias no son más inteligentes que los animales ni pueden obrar con inteligencia. Obedecen a una atracción ciega, como hierro atraído por el imán, doquiera encuentran condiciones apropiadas para su crecimiento. Así vemos que si no se domina una emoción en cuanto apunta, crece hasta ser ingobernable. Unas personas han muerto de pesar y otras de alegría.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="elemental-forms">&nbsp;</a>
+							<h4>
+								Formas elementales
+							</h4>
+							<p>
+								Pero si en estas ininteligentes formas se infunde la inteligencia humana, llegan a ser inteligentes y obran conforme a los dictámenes del maestro de quien reciben su voluntad e inteligencia y puede emplearlas indistintamente en el bien o el mal. Toda emoción nacida en el individuo puede combinarse con las fuerzas astrales de la naturaleza y crear un ser perceptible como entidad activa y viviente por quienes tengan facultades supernormales de percepción. Todo sentimiento expresado en palabra o acción puede engendrar una entidad viva en el plano astral. Algunas de estas formas pueden ser muy duraderas, según la intensidad y permanencia del pensamiento que las creó, mientras que otras son creaciones momentáneas que perecen al instante.
+							</p>
+							<p>
+								Varios casos dan a conocer como el que ha cometido algún crimen de ve perseguido durante años por un demonio vengativo, que se le aparece de cuando en cuando objetivamente. Aunque estos demonios estén involuntariamente engendrados por la imaginación de sus víctimas, siempre son verdaderos para ellas.<sup class="asterisk">*</sup> Se les puede engendrar por medio de la memoria y del remordimiento; y como sus imágenes existen en la mente, pueden hacerse objetivas por el temor, porque el temor es una em emoción repulsiva que instintivamente rechaza el objeto de terror, y la imagen se plasma al repelerla del centro a la periferia mental.
+							</p>
+							<hr />
+							<p class="note">
+								* Un vecino de París se volvió loco y fue encerrado en un manicomio de Italia, donde por haberle sobrevenido un acceso de furor le confinaron a una celda de castigo. Al cabo de algún tiempo recobró la razón repentinamente y se le permitió restituirse a París. Meses después supo que la celda que había ocupado en el manicomio estaba frecuentada por su propio espectro, visto por varias personas, que no cesaba de delirar y mover estrépito. Curioso de ver su propio espectro volviose nuestro hombre ai manicomio y quedó tan obsesionado por él que de nuevo le acometió la locura y murió orate.
+							</p>
+							<hr />
+							<p>
+								Algunos se han suicidado para evadir la persecución de estos demonios, que a veces toman forma tangible; séanlo o no, la substancia que los forma es solamente una proyección de la substancia de la persona a quien se aparecen. Son, por decirlo así, la misma persona.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* En <em>La Vida de los Santos</em> y en la historia de la hechicería se encuentran ejemplos de apariciones astrales en formas visibles y a veces tangibles. Esto les puede ocurrir a los médiums, si por emociones contrarias la voluntad se divide en dos direcciones y proyecta dos formas; porque la voluntad espiritual del hombre, consciente a inconscientemente, crea formas subjetivas que bajo ciertas condiciones pueden hacerse objetivas y visibles.
+							</p>
+							<p class="note">
+								Como ejemplo de esta ley entresacaremos del Acta Sanctorum <span class="note">[Actos de los santos. <a href="https://en.wikipedia.org/wiki/Acta_Sanctorum">Wikipedia, español</a>]</span> un episodio de 1a vida de Santo Domingo. Una vez fue llamado a la cabecera de un enfermo quien le participó que Cristo se le había aparecido. El santo respondió que eso era imposible, y que la aparición era obra del diablo, porque sólo los santos podían ver la aparición de Cristo. Al decir esto le asaltó una duda acerca de si la aparición sería o no verdadera, y en seguida se produjo una división de conciencia que ocasionó que el doble de Domingo apareciese al otro lado de la cama del enfermo. Los dos Domingos fueron vistos por el enfermo que los oyó disputar uno con otro, y mientras uno declaraba que la aparición era causada por el diablo, el otro sostenía que era el verdadero Cristo. Los dos Domingos eran tan idénticos, que el enfermo no sabía distinguir al verdadero santo de su imagen, y no podía determinarse a creer ni una ni otra cosa, hasta que por fin el santo rogó que Dios le ayudase, es decir, concentró de nuevo la potencia de su voluntad en sí mismo, y en consecuencia, recobró la unidad, desapareciendo el astral.
+							</p>
+							<p class="note">
+								Por absurdos que parezcan tales relatos en &quot;nuestra ilustrada época&quot;, dejan de serlo cuando se comprenden las leyes ocultas de la naturaleza y los hechos que evidencian el desdoblamiento de la conciencia.
+							</p>
+							<hr />
+							<p>
+								Un adepto dice en carta dirigida a Sinnett:
+							</p>
+							<p class="blockquote">
+								&quot;Todo pensamiento emanado de un individuo pasa a otro mundo y se convierte en entidad activa al asociarse o mejor dicho unirse con un elemental, o lo que es lo mismo, con una de las fuerzas semiinteligentes de los reinos. Sobrevive como inteligencia activa, coma criatura engendrada por la mente durante un período más o menos largo en proporción a la intensidad originaria de la acción cerebral que la engendró. Así es que un buen pensamiento se perpetúa como una activa y benéfica potencia y un mal pensamiento como una entidad maléfica. De este modo el individuo está siempre poblando una corriente en el espacio, de cuanto propagan sus fantasías, deseos, impulsos y pasiones; una corriente que, en proporción a su intensidad dinámica, reacciona sobre toda organización sensitiva con que se pone en contacto. El Adepto emana estas formas conscientemente; los demás hombres inconscientemente.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* A. P. Sinnett: <em>El Mundo Oculto.</em>
+							</p>
+							<hr />
+							<p>
+								Este testimonio está corroborado por otro de distinta procedencia, en prueba de que para crear formas subjetivas no es necesario proporcionar a nuestros pensamientos forma distinta por medio de la imaginación, sino que todo sentimiento o pensarniento puede tomar forma subjetiva, estemos o no conscientes de su existencia. La forma es condición mental, y también lo es el sentimiento; de modo que todo sentimiento estará expresado por la forma correspondiente.<sup class="asterisk">**</sup>
+							</p>
+							<hr />
+							<p class="note">
+								** El clarividente Whitworth relata que en su juventud, al estar un profesor alemán tocando el órgano, vio un ejército de apariciones que se movían sobre el teclado, verdaderos duendes liliputienses, hadas y gnomos asombrosamente pequeños, aunque tan perfectos de forma y rostro como las personas que se hallaban en la habitación. Los vio de ambos sexos y vestidos de una manera fantástica; pero su forma, aspecto y movimientos correspondían perfectamente al tema.
+							</p>
+							<p class="blockquote note">
+								"En los tiempos apresurados bailaron como locos agitando sus sombreros y abanicos, y pasando de uno a otro lado con rapidez inconcebible, llevando con los pies el compás en acordes movimientos, de sonido análogo al de la caída de la lluvia. Con la rapidez del relámpago al cambiarse el tono en marcha fúnebre, los seres etéreos desaparecieron y en su lugar acudieron gnomos vestidos con mantos negros como monjes de cogulla parecidos a puritanos de rostro agrio, o enlutados de entierro. Lo más asombroso fue que sus caritas expresaban el sentimiento de la música; así es que entendí en el acto la idea del tema musical. En una atronadora prorrupción de dolor, se arrojaron una porción de madres llorosas, con los cabellos en desorden, golpeándose los pechos y sollozando con piadosas lamentaciones por sus queridos muertos. Siguieron caballeros de sombrero emplumado, con escudos y lanzas y un ejército de tropas indómitas, montadas o a pie, con las manos teñidas en sangrienta batalla, al sonar la ruidosa música marcial en el teclado; y siempre, al cambiarse el tema, nueva clase de duendes acudían, desapareciendo los otros en el aire con la misma rapidez con que aparecían. Al resonar alguna discordancia se presentaba un duende enano y giboso, de miembros torcidos, vestido con desaliño, de voz gutural y cascajosa y movimientos rudos y desagradables."
+							</p>
+							<p class="note">
+								Después cuenta que habiendo llegado a la edad madura, vio duendes que salían de entre los labios de personas que hablaban, los cuales denotaban en todas sus acciones el mismo sentimiento expresado por las frases pronunciadas. Si las palabras estaban inspiradas en buenos sentimientos, los duendes aparecían soberanamente hermosos; si por malos sentimientos, nacían criaturas horrorosas. Vio expresado el odio por serpientes que silbaban y demonios negros y feroces; las palabras de engaño producían figuras hermosas de frente y de detestable fealdad por detrás; el cariño produjo formas blancas, argentinas y llenas de belleza y armonía.
+							</p>
+							<p class="blockquote note">
+								&quot;En una ocasión inolvidable presenciaba yo afligido una escena de viva fidelidad por una parte y de doblez por otra. Una linda joven se acercó a su amante para despedirse antes de partir él a un largo viaje. Las palabras de la joven engendraron duendes hermosos y resplandecientes; pero las del joven, si bien eran por el frente de igual belleza y sonreían con la radiante apariencia de cariño eterno, por detrás aparecían negras y diabólicas, con ígneas serpientes y lenguas ahorquilladas de color rojo, que salían de sus crueles labios, y sus ojos brillaban medio cerrados de soslayo con resplandores de malévola astucia. El tenebroso reverso de los duendes era de horrible aspecto y se encorvaban como si quisieran esconderse para sostener al exterior lo brillante y sincero hacia la joven confiada y mantener oculto el negro engaño. Y era de notar que mientras rodeaba un resplandor a las apariencias del anverso, un manto de vapor denso caía como pabellón de impenetrable obscuridad sobre el reverso.&quot;&nbsp;<sup class="asterisk">*</sup>
+							</p>
+							<p class="note">
+								* Religio-Philosophical Journal.
+							</p>
+							<hr />
+							<p>
+								Pero aunque las formas son manifestaciones de vida, no tienen vida por sí mismas, porque la vida es una fuerza universal, sino que son creaciones del pensamiento humano al actuar sobre el akasa. Las creaciones del hombre se mantienen vivas por medio de la fuerza que irradia del centro vital humano. Son como sombras que se desvanecen cuando se agota la fuente de luz de que se alimentan. Cuando cesa la acción psíquica del hombre que les proporcionó la vida, o cuando la acción obra de otra manera, se desvanecen más o menos pronto, como se desvanece también la forma humana en cuanto le falta la vida procedente de Dios.
+							</p>
+							<p>
+								Pero así como un cadáver no se descompone luego que pierde el principio vital, sino que se destruye más o menos rápidamente según su densidad y cohesión molecular, del mismo modo las formas astrales creadas por los deseos humanos requieren tiempo para disgregarse y siguen existiendo mientras el hombre les infunde vida y conciencia con su pensamiento y voluntad, y una vez adquirida fuerza, pueden unirse al hombre aunque éste no desee su compañía. Del hombre depende la vida de estas formas cuya lucha por la existencia las obliga a permanecer en el manantial de su vitalidad. Si se separaran de él, morirían, por lo que les es necesario quedarse, y como fantasma franconiano, persiguen a sus creadores con su importuna presencia.
+							</p>
+							<p>
+								Para evadir semejante compañía, el perseguido debe dirigir la fuerza de sus aspiraciones y pensamientos por más elevado rumbo, y matar los otros por falta de alimento. De este modo el principio espiritual de todo hombre le sirve de Redentor y por medio de la transformación del carácter le libra de las consecuencias de sus culpas y con su pura luz desvanece las ilusiones creadas por las atracciones inferiores, como se desvanece la nieve bajo la influencia del sol.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="thought-projection">&nbsp;</a>
+							<h4>
+								Proyección del pensamiento
+							</h4>
+							<p>
+								Puesto que las formas elementales son siervas de su creador y su propio ser, puede utilizarlas para buenos o malos fines. El amor o el odio pueden crear formas subjetivas hermosas o feas, e infundiéndoles conciencia, darles vida y emplearlas en el bien o el mal. Por su medio puede el mago mezclar su propia vida y conciencia con la persona a quien quiere afectar.
+							</p>
+							<p>
+								Una trenza de cabello, un pedacito de ropa o algún objeto que haya sido llevado por la persona en quien desee influir, puede servir de lazo. Lo mismo puede conseguirse si aquella persona posee algo perteneciente al mago, porque donde quiera que exista algo que haya estado en contacto con el mago, existirá parte de sus propios elementos como eslabón magnético entre él y la persona que posea la prenda. Si tiene desarrollados los sentidos astrales, no le impedirá la distancia observar a la persona con quien está ligado; si sabe proyectar su forma astral a distancia, puede estar presente ante la persona a que afecta, aunque ésta no pueda verle.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Lord Lytton, <em>Zanoni</em> y <em>Una historia extraña.</em>
+							</p>
+							<hr />
+							<p>
+								La imagen astral de una persona puede proyectarse consciente o inconscientemente a lo lejos. Si se fija intensamente en cierto lugar, su pensamiento estará allí, y en consecuencia, él mismo, porque el pensamiento de un hombre es su parte principal. Dondequiera que esté la conciencia de un hombre, allí estará el hombre mismo, esté allí o no su cuerpo físico.
+							</p>
+							<p>
+								La historia del espiritismo y del sonambulismo proporciona vehementes indicios de que una persona puede estar conscientemente en un lugar mientras su cuerpo físico está dormido en otra parte. Así Francisco Javier, Apolonio de Tiana y otros que se mencionan en la historia antigua y moderna fueron vistos a un mismo tiempo en dos lugares distintos.
+							</p>
+							<p>
+								El elemental enviado por un mago es parte esencial del mismo mago, y si la persona afectada por el es vulnerable por estar dotada de mediumnidad, o por no tener bien ligados sus propios principios con su razón y voluntad, puede recibir daño de aquél. Pero también una fuerza física puede dañar la forma astral del mago en cuyo cuerpo físico repercutirán los daños recibidos por la forma astral.
+							</p>
+							<p>
+								El mago que por la potencia de su voluntad logra dominar las fuerzas semiinteligentes de la Naturaleza, puede emplearlas en el bien o en el mal. El inconsciente médium en quien se manifiesta el poder oculto, no puede provocar ni regular estas manifestaciones ni tampoco dominar a los elementales, sino que está dominado por ellos. Los elementos de su cuerpo sirven de instrumento a la actuación de las entidades astrales, puesto que el médium rinde su voluntad y entrega el supremo albedrío de su alma. Se somete a una condición pasiva y espera lo que quieran hacer los elementales a quienes inconscientemente provee de vida y de facultad de pensar, por lo que sus pensamientos y los de los circunstantes pueden reflejarse en las formas astrales, capacitándolas para aparentar inteligencia.
+							</p>
+							<p>
+								Un medium espiritista es tan solo instrumento de fuerzas invisibles que no domina. A los mejores médiums se les ha inculpado injustamente de &quot;fraude&quot; voluntario, porque sería tan imposibie un médium sin &quot;fraude&quot;, como un espejo que no reflejara los objetos. El médium recibe y refleja los pensamientos en las personas que le rodean con el propósito de descubrir sus &quot;fraudes&quot;, y así no es el médium quien engaña, sino que los concurrentes se engañan por medio de él. Un espejo que no reflejara todos los objetos que se pusieran delante de él, sería engañoso; un médium que reflejara sólo aquellos pensamientos que le fueran agradables, sería un impostor como tal médium, porque siendo capaz de ejercitar su voluntad no estaría en la pasiva condición peculiar de la mediumnidad.
+							</p>
+							<p>
+								El mago adepto no es esclavo de las fuerzas ocultas, sino gobernador de ellas por la potencia de su voluntad. Conscientemente puede infundirles vida, conciencia e inteligencia y las hace obrar como quiere; le obedecen, porque forman parte de él mismo. El médium actúa inconscientemente, y en las reuniones espiritistas acostumbran los circunstantes a cantar en coro, creídos de que cuanto más armoniosas sean las condiciones establecidas, más perfectas serán las manifestaciones; pero la verdadera razón de esto es que cuanto más abstraído esté el pensamiento de los asistentes y menos dominio mental haya en ellos, más facil les será a los elementales obsesionarlos.
+							</p>
+							<p>
+								Los elementos astrales de que se valen los elementales en las reuniones espiritistas para producir fenómenos físicos, no son extraídos sólo del médium, sino de los circunstantes de constitución endeble y por lo tanto fáciles de vampirizar. En las sesiones de materialización, se extraen también elementos astrales de la ropa de los concurrentes, que así prestan materia adecuada para el ropaje de los &quot;espíritus&quot;, siendo de notar que dicha ropa se desgasta más pronto que de ordinario.
+							</p>
+							<p>
+								La sangre recién vertida intensifica en alto grado las &quot;materializaciones&quot;; y de aquí las horrorosas prácticas de magia negra todavía usuales en varias partes del mundo, aunque el público lo ignore, y los sacrificios de animales en las ceremonias religiosas. Un verdugo que desgraciadamente tenía clarividencia, después de ejecutar al reo veía a los &quot;espíritus&quot; de los muertos, a veces los que fueron amigos y parientes, echarse sobre la sangre fresca del ejecutado y alimentarse de su aura y emanaciones. También es cierto que cuando en Europa, por ignorancia de los médicos, cundió la manía de beber sangre, muchos enloquecieron y otros se desmoralizaron.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Uno de los medios más a propósito para la materialización de cascarones astrales es el <em>aura seminalis</em> que intensifica en forma material los fantasmas, elementales y vampiros. En las sesiones de materialización se emplean muy extraños procedimientos que nos está vedado describir. Véase: <em>Vida y doctrina de Teofrasto Paracelso.</em> pp. 66 y 90.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="apparitions">&nbsp;</a>
+							<h4>
+								Apariciones
+							</h4>
+							<p>
+								El residuo astral del hombre no tiene juicio ni razón y va por donde sus instintos lo atraen o por donde lo llevan deseos no satisfechos. Si deseáis que el &quot;espectro&quot; de un difunto acuda, atraedlo por la potencia del amor o del odio que tal o cual persona le inspiraba en vida. Dejad incumplida alguna promesa hecha al difunto, e instintivamente la forma astral del muerto vendrá en busca del cumplimiento, atraída por su deseo no satisfecho.
+							</p>
+							<p>
+								Si no advertimos la presencia de las formas astrales ni oímos su voz, es porque nuestros sentidos astrales están dormidos e inconscientes; pero su presencia puede causarnos inquietud mental y tal vez nos hablan en idioma que no entendemos. En los residuos elementarios permanece lo que constituía la naturaleza inferior del hombre, y si se les infunde temporalmente vida, manifestarán los caracteres inferiores del muerto, que no se hayan depurado lo bastante para unirse a su naturaleza superior.
+							</p>
+							<p>
+								Si se dispone una caja de música para que toque determinada melodía, no tocará ninguna otra, aunque no tenga conciencia propia. Los residuos de las potencias emotivas y mentales que se hallan en los cascarones astrales se manifestarán en el lenguaje peculiar del hombre en vida.
+							</p>
+							<p>
+								El cadáver de una persona asesinada de repente, puede tomar apariencias de vida por medio de una batería galvánica. Del mismo modo, el cadáver astral de una persona puede vivificarse artificialmente por la infusión de parte del principio vital del médium. Si el cadáver es de una persona muy inteligente, puede hablar con discreción; y si es de un mentecato, dirá necedades. La acción intelectual se asemeja a la acción mecánica en que si una vez empieza a actuar, seguirá sin que la impulse continuamente la voluntad, hasta que se agote o se pare.
+							</p>
+							<p>
+								Esto lo vemos todos los días. Hay quien tiene la costumbre de repetir algún cuento favorito que ha contado muchas veces y que recita a la menor oportunidad. Es de notar de cuando empieza a relatar el cuento, de nada vale advertirle que ya se conoce. Tiene que concluirlo a pesar de sí mismo.
+							</p>
+							<p>
+								Un orador o un predicador no ha de pensar ni razonar para dar expresión a cada palabra que pronuncia. Una vez que fluya la corriente de ideas, saldrán sin esfuerzo de voluntad. Si la fuerza vital de un médium anima el cerebro astral de un muerto, despertará en él las mismas ideas a que estaba acostumbrado en vida.
+							</p>
+							<p>
+								También razonamos soñando y hacemos conclusiones lógicas mientras dormimos; pero la razón está ausente, y aunque nuestros razonamientos parecen 1ógicos, al despertar, luego que la razón vuelve a la actividad, reconocemos su incongruencia.
+							</p>
+							<p>
+								El organismo mental del hombre se parece a la maquinaria de un reloj, que en cuanto empieza a funcionar continua hasta que se le acaba la cuerda; pero no hay maquinaria de reloj que tenga cuerda por sí misma, ni hay organismo mental capaz de pensar sin una fuerza que inicie el proceso intelectual.
+							</p>
+							<p>
+								Debemos llamar la atención hacia uno de los muchos peligros de las prácticas espiritistas.
+							</p>
+							<p>
+								El alma desencarnada sigue las atracciones del mal y del bien hasta que se separa finalmente la parte inferior de la superior. Puede obedecer a la atracción de los principios superiores de la. naturaleza y convertirse hacia lo espiritual, o por mediumnidad caer de nuevo en contacto con la materia, tomando parte otra vez en el tumulto de la vida, aunque sea con órganos supletorios y seguir nuevamente la seducción de los sentidos hasta perder de vista del si mismo inmortal.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="necromancy">&nbsp;</a>
+							<h4>
+								Necromancia
+							</h4>
+							<p>
+								Así no sólo es peligroso evocar los &quot;espíritus&quot; de los muertos, sino que es para ellos muy perjudicial mientras no se hayan separado los principios superiores de los inferiores. La necromancia es un arte vil y abominable. Puede interrumpir los dichosos sueños del alma que aspira a una condición más elevada de existencia, y es como violento ataque que recibiera un santo en horas de meditación, obligándole a interesarse en los asuntos de la vida inferior, que no pueden servirle en sus esfuerzos para elevarse a una condición superior. Es un paso hacia la degradación; y como todo impulso tiende a repetirse, pueden surgir funestísimas consecuencias de lo que a primera vista parece diversión inocente.
+							</p>
+							<p>
+								Los cascarones astrales pueden ser utilizados por el mago negro y por las fuerzas elementales de la naturaleza, con el fin de hacer mal. Si son inconscientes, sirven de instrumento a los elementales; si conscientes, pueden cooperar en alianza con ellos.
+							</p>
+							<p>
+								El que entra en semejante trato inespiritual, puede aliarse consciente o inconscientemente con una persona mal dispuesta y algún habitante muy malévolo del plano astral cuya conciencia se haya concentrado en sus principios inferiores.
+							</p>
+							<p>
+								Sabemos que muchos que poseen aptitudes de magos negros hacen el mal inconscientemente; es decir, si odian, no saben los efectos que produce su odio ni del modo con que tales fuerzas obran. La energía psíquica engendrada por su odio puede influir en el organismo de la persona odiada y causar enfermedades físicas, sin que la persona de quien sale este maligno poder sepa que su odio causó la enfermedad. Los magos negros suministran inconscientemente elementos por cuyo medio obra su maligno espíritu. Si la voluntad del mago negro no es bastante poderosa para realizar su mala intención, la fuerza empleada reaccionará mortalmente contra él. Indudablemente se infiere de esto que el suicidio por un arrebato de cólera o celos tiene por determinante la reacción producida por un anterior estado mental.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="strength-of-character">&nbsp;</a>
+							<h4>
+								Fuerza de caracter
+							</h4>
+							<p>
+								La más segura protección contra la magia negra, consciente o inconsciente, es la firmeza de carácter, esto es, la fe en el divino poder del alma.
+							</p>
+							<p>
+								Al ennoblecerse el hombre elimina los elementos inferiores de su constitución, siendo reemplazados por los superiores, y de la misma manera se opera la transmutación opuesta si le degradan sus bajos pensamientos y acciones. El hombre sensual atrae del akasa los elementos que necesita su sensualidad, porque los goces groseros sólo puede sentirlos la materia grosera. Un hombre de crecientes instintos brutales puede degradarse hasta llegar a ser un bruto en el carácter, si no en la forma; pero como la forma no es más que la expresión del carácter, puede tomar semejanza animal.
+							</p>
+							<p>
+								Prueba de ello nos dan todos los días los hombres cuyos animales instintos delatan su aspecto. Nos encontramos con hombres cuyos rasgos fisonómicos son de cerdos, lobos y serpientes, y otros que llevan el sello del alcohol, no siendo necesarias las instrucciones que proporcionan los libros que tratan de la fisonomía para que sea fácil leer más o menos correctamente en su aspecto exterior el carácter de ciertas personas.
+							</p>
+							<p>
+								En el plano físico la inercia de la materia es mayor que en el astral, y por consiguiente sus cambios son lentos. La materia astral es más activa y puede cambiar de forma con más rapidez. El cuerpo astral de un hombre de carácter brutal, puede aparecerse al mago con aspecto de animal.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* E. Swedenborg: <em>El Cielo y el Infierno.</em>
+							</p>
+							<hr />
+							<p>
+								La forma astral de un malvado puede tomar figura de bruto, si sus instintos se identifican en su imaginación con el animal que exprese tales instintos. También puede infundirse en un animal para obsesionarlo, o bien para protegerse contra la descomposición y la muerte.
+							</p>
+							<p>
+								Sería fácil pero inútil relatar anécdotas ejemplares de estos casos. El lector ha de conocer la constitución esencial del hombre y la ley que actúa en todas las formas. Una vez comprendida la manera de actuar de la ley, poco le importará saber en qué casos especiales se manifiesta su acción. La descripción de fenómenos nunca equivaldría al conocimiento de la ley.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Se citan casos de esta índole en ]as obras siguientes: Goerres: Misticismo cristiano; D'Assier: La humanidad postuma; Crowe: El aspecto tenebroso de la naturaleza; Britten: Historia del espiritismo; Blavatsky: Isis sin velo; Perty: Fenómenos místicos de la naturaleza.</p>
+							<p class="fnote">
+								[Títulos en inglés: Goerres: "Christian Mysticism"; Maximilian Perty: "Mystic phenomena in Nature"; D'Assier: "Post-humus Humanity"; Catharina Crowe: "Nightside of Nature"; Hardinge Britten: "History of Spritualism"; H. P. Blavatsky: "Isis Unveiled," &amp;c., &amp;c.]
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="capitulo-02-real-y-irreal.htm">&lt; 2, Lo Real y lo Irreal</a></li>
+									<li class="align-right"><a href="capitulo-04-la-vida.htm">4, La Vida &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

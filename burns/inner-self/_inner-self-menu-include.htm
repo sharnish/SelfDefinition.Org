@@ -1,0 +1,90 @@
+<!-- start of menu include file  update April 26, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/burns/">Burns index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/burns/">Burns index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="normal">
+				<img class="menu-image" src="images/jim-burns-bw.jpg" alt="Jim Burns" />
+			</li>
+			<li>Jim Burns <span class="normal note">(1931-2016)</span></li>
+			<li class="normal note80 tight">James J. Burns, III</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents/Foreword</a> </li>
+				<li><a href="1-introduction.htm">1. Introduction</a> </li>
+				<li><a href="2-success-mode.htm">2. The Success Mode</a> </li>
+				<li><a href="3-society.htm">3. Society</a> </li>
+				<li><a href="4-mental-illness.htm">4. "Mental Illness"</a> </li>
+				<li><a href="5-method.htm">5. Method</a> </li>
+				<li><a href="6-childhood.htm">6. Childhood</a> </li>
+				<li><a href="7-psychology.htm">7. Psychology</a> </li>
+				<li><a href="8-philosophy-mysticism.htm">8. Philosophy-Mysticism</a> </li>
+				<li><a class="note" href="full-text.htm">Full text for searching</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li><a href="/burns/articles/jim-burns-teacher-mystic-psychologist.htm">About Jim Burns: Teacher, Mystic and Psychologist </a></li>
+				<li>Jim Burns Memorial at <a href="https://tatfoundation.org/forum2017-01a.htm#2">TAT Foundation</a>
+				</li>
+				<li class="external-first-item">Book information at
+					<a href="https://tatfoundation.org/at_home_with_the_inner_self.htm">TAT Foundation</a>
+					<span class="note">(Kindle version available)</span>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">Richard Rose section:
+					<a href="/rose/">/rose/</a>
+				</li>
+				<li class="subhead-item">Psychology section:
+					<a href="/psychology/">/psychology/</a>
+				</li>
+				<li class="site-first-item">Blavatsky section:
+					<a href="/blavatsky/">/blavatsky/</a>
+				</li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

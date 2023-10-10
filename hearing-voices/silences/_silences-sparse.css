@@ -1,0 +1,316 @@
+/* file:  /hearing-voices/_silences-sparse.css 
+
+Converted from wide screen to 2022.css on May 6. 2022
+
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update May 6, 2022";
+	}
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffd;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with aebruary default color */
+/* color must contrast with body */
+/* This is default: #bde0ff - Blue, for selfdefinition-responsive.css
+	nice pink: #FFC0CB */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c0d4fc;
+	/* nice blue, goes with the green */
+}
+
+
+/* CSS3 columns adjustment */
+/* Width of .item is 120px but anchor is very narrow
+   so increase padding so more clickable. Default is 10px. */
+nav.contents .item a {
+	/* CAUTION, REVERT ON PAGES WITH WIDE ANCHORS. */
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+/* ovverride change in 2022.CSS made June 9 , 2022 */
+
+nav.contents .item {text-align:center;}
+
+
+/* test 
+
+
+https://www.w3schools.com/css/css3_multiple_columns.asp
+
+*/
+
+
+nav.contents {
+	column-rule: 1px solid #666;
+	/* column-rule-width: 1px; */
+	/* column-rule-color: green; */
+}
+
+/* no effect, not a column
+div.item {
+    column-rule: 1px solid red;
+}
+ */
+
+b {
+	font-size: 95%;
+}
+
+p.attribution {
+	text-align: right;
+	margin-right: 60px;
+	margin-top: 0;
+}
+
+/* replace with "center" */
+div.quotes {
+	text-align: center;
+}
+
+
+/* careful, border of 1px (not 0px) prevents margin collapse */
+.centering-container {
+	border: 0px solid green;
+}
+
+.centered-element {
+	border: 0px solid red;
+}
+
+quotes {
+	border: 0px solid blue;
+	background: #322;
+}
+
+
+.table-display {
+	border: 0px solid yellow;
+}
+
+/* prototype top of Chapter 1 */
+.center-left {
+	max-width: 360px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* dangerous, do not use 
+.centering-container {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+
+.centered-element {
+	float: left;
+	position: relative;
+	left: -50%;
+}
+
+.centering-clear {
+	clear: both;
+	height: 1px;
+	margin-top: -1px;
+}
+
+
+*/
+
+
+
+
+/* temp */
+ul.page-links {
+	border: 0px solid blue;
+}
+
+ul.page-links li {
+	border: 0px solid blue;
+}
+
+
+p.part-number {
+	text-align: center;
+}
+
+h3 span {
+	font-size: 85%;
+}
+
+
+
+/* adjust a width for each iinstance?
+div.centered-element {
+	width: 320px;
+}
+ */
+
+
+
+/* the definition list in Bibliography is styled on that page's head */
+/* this is the definition list used in chapter 8 */
+dl.table-display {
+	float: left;
+	padding: 0;
+}
+
+.table-display dt {
+	clear: left;
+	float: left;
+	margin: 0;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+.table-display dd {
+	float: left;
+	margin: 0;
+	padding: 5px;
+}
+
+
+ul.menu-section li.highlight {}
+
+/* collapsible menu areas
+https://www.w3schools.com/howto/howto_js_collapsible.asp
+
+First try from Site Map */
+
+/* testing */
+
+/*  ****
+
+
+#main-content {
+	border: 1px solid yellow;
+}
+
+#article {
+	border: 1px solid white;
+}
+
+#title-include-div {
+	border: 1px solid red;
+}
+
+#announce header {
+	border: 1px solid green;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header p {
+	border: 0px solid blue;
+}
+
+#menu-container {
+	border: 1px solid red;
+}
+
+#fixed-header-small-screen {
+	border: 1px solid blue;
+}
+
+#menu-site-small-screen {
+	border: 1px solid orange;
+}
+
+#menu-site-small-screen li {
+	border: 1px solid green;
+}
+
+#menu-section-group,
+div.optional-links,
+div.site-links,
+div.external-links {
+	border: 1px solid blue;
+}
+
+ul#menu-site,
+ul.menu-text,
+ul.menu-section {
+	border: 1px solid green;
+}
+
+#index-lists {
+	border: 1px solid red;
+}
+
+#index-lists ul {
+	border: 1px solid blue;
+}
+
+#index-lists ul li {
+	border: 1px solid green;
+}
+
+nav.contents {
+	border: 1px solid yellow;
+}
+
+
+nav.next-previous-item-nav {
+	border: 1px solid yellow;
+}
+
+ul.next-previous-item-list {
+	border: 1px solid red;
+}
+
+a.page-link-anchor:target {
+	border: 1px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+	a.page-link-anchor:target {
+		border: 1px solid green;
+	}
+}
+
+a.return-anchor,
+a.return-anchor:target {
+	border: 1px solid red;
+}
+
+a.endnote,
+a.endnote:target {
+	border: 1px solid red;
+}
+
+ol,
+ul {
+	border: 1px solid red;
+}
+
+ol li,
+ul.li {
+	border: 1px solid green;
+}
+
+***/
+
+
+
+
+/* end */

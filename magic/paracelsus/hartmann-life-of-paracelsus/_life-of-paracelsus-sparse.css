@@ -1,0 +1,82 @@
+/* file:  /magic/paracelsus/hartmann-life-of-paracelsus/_life-of-paracelsus-sparse.css
+
+Update Sep 7, 2019 for top menu reformat and fix top menu transpagency 
+
+Then updated Dec 24, 2019 to add progress bar, totop link and button, and tweak top menu, which still doesn't look good
+
+To 2022.CSS on June 21, 2022
+
+ */
+
+
+@media only print {
+	#article:after {
+		content: "Update June 21, 2022";
+	}
+}
+
+/* OLD TO DO LIST  << see if these were ever completed  
+
+Add "to top" links in Preface
+
+Already have in chapters 1, 1a, check others
+
+Check special formatting in Appendix 
+
+Definition of Terms <<<< will need "to top above anchors"
+
+Contents page appears to be ok.
+
+Organize new stylesheet
+
+Organize local stylesheet
+
+Don't worry about the background image trics, because the same image is 
+used for large and small screens, a 65K gif file.
+
+Edits have been made to celibacy-responsive.css. Need 
+  to test pages again, then upload it.
+*/
+
+/* recast Sep 2016 for new style sheet. Use /styles/selfdefinition-responsive.css 
+   which is based on celibacy responsive using the Quotes menu structure  */
+
+/* update Sept 13, 2019 */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffef;
+	color: black;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #d9d9ff;
+}
+
+header h3 span.block {
+	font-size: 80%;
+}
+
+/* very long footnotes, brighten them */
+html.dark sup,
+html.dark .maroon,
+html.dark .fnote,
+html.dark p.fnote {
+	/* current default dark styles */
+	color: #FA9473;
+	color: #FDA888;
+}
+
+
+
+/* end */

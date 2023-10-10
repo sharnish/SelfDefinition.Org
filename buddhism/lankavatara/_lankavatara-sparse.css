@@ -1,0 +1,37 @@
+/*     File:  /buddhism/lankavatara/_lankavatara-sparse.css:
+
+	 Updte April 7. 2022. CSS fix June 6, 2022 
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update April 7, 2022";
+    }
+}
+
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #e6ffef;
+}
+
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #c0d4fc;
+    /* nice blue, goes with the green */
+
+}
+
+
+/* end */

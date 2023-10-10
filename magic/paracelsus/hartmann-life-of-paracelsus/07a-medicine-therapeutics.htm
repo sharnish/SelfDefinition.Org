@@ -1,0 +1,915 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>7a Medicine part 2, Therapeutics - Life of Paracelsus</title>
+	<meta name="description" content="Therapeutics, Astral Causes, Poisonous Substances and Impurities, Man's Nature, Spiritual Causes, The Divine Cause. Signatures.">
+	<meta name="author" content="Franz Hartmann, M.D.">
+	<meta property="og:title" content="7a Medicine part 2, Therapeutics - Life of Paracelsus" />
+	<meta property="og:description" content="Therapeutics, Astral Causes, Poisonous Substances and Impurities, Man's Nature, Spiritual Causes, The Divine Cause. Signatures.">
+	<meta property="og:image" content="https://selfdefinition.org/magic/paracelsus/hartmann-life-of-paracelsus/images/paracelsus-full-size.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_life-of-paracelsus-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="07-medicine.htm">
+	<link rel="next" href="08-alchemy-and-astronomy.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+		}
+
+		/* removed */
+		ul.page-links li.indent {
+			margin-left: 0px;
+			width: calc(100% - 0px);
+		}
+
+		/*  MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		ol {
+			margin-left: 0;
+			/*same as chapter 5 except font size */
+		}
+
+		ol li {
+			margin: 5px 0;
+		}
+
+		@media only screen and (max-width: 560px) {
+			ol {
+				margin-left: -15px;
+			}
+		}
+
+
+		h5 {
+			font-style: normal;
+			font-size: 100%;
+		}
+
+		/* this page only, was #600  */
+		h5.cause {
+			color: inherit;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_paracelsus-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_paracelsus-title-include.htm"); ?>
+									<h3>
+										<span class="block">Chapter 7a</span>
+										Medicine, part 2 &ndash; Therapeutics
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="07-medicine.htm">&lt; 7. Medicine, part 1</a></li>
+									<li class="align-right"><a href="08-alchemy-and-astronomy.htm">8. Alchemy and Astrology &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#therapeutics">Therapeutics</a></li>
+									<li><a href="#the-five-causes">Paramirum, The Book of the Causes, Five Causes of Disease</a></li>
+									<li class="indent"><a href="#astral-causes">1. Astral Causes</a></li>
+									<li class="indent"><a href="#poison-impurities">2. Poisonous Substances and Impurities</a></li>
+									<li class="indent"><a href="#ens-naturea">3. Man's Nature, Psychological Causes</a></li>
+									<li class="indent"><a href="#signatures">Signatures</a></li>
+									<li class="indent"><a href="#spiritual-causes">4. Spiritual Causes</a></li>
+									<li class="indent"><a href="#divine-cause">5. The Divine Cause (Karma) </a></li>
+									<li><a href="#practice-of-medicine">The Practice of Medicine</a></li>
+									<li><a href="#three-substances">The Three Substances</a></li>
+									<li><a href="#arcana">Arcana (Mysteries)</a></li>
+								</ul>
+							</nav>
+							<!-- see new CSS for this class Aug 30, 2019 -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="therapeutics">&nbsp;</a>
+							<h4>
+								Therapeutics
+							</h4>
+							<p>
+								"If we wish to restore health, we should be able to use the virtues contained in all the four elements of the celestial and terrestrial realm. Man's organism is composed of many parts; if one part is diseased, all the other parts suffer, and one disease may be the death of the whole."
+							</p>
+							<p>
+								"Man has in him the whole <em>firmament</em>, the upper and lower spheres; if his organism is sick it calls for help to heaven and to the earth. As the soul must fight against the devil with all her strength, and call God to her aid with her whole heart, her whole mind, and all her powers; so the diseased physical organism calls to its aid all the celestial and terrestrial powers with which it has been invested by God to resist the cruel and bitter death." (<em>Paramir</em>., i. 2)
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="the-five-causes">&nbsp;</a>
+							<h4 class="toowide">
+								Paramirum; or, The Book of the Causes and the Beginning of Diseases
+							</h4>
+							<h5 class="cause">
+								The Five Causes
+							</h5>
+							<p>
+								"There is only one eternal and universal Cause of everything, which is God, and if we were to write in a true Christian spirit, we should not make any divisions; but for the sake of helping our finite understanding, which is not able to grasp the power of the Infinite, we are forced to accept the theory of a variety of causes, hoping thereby to sharpen our intellect for the comprehension of finite things, until by the illumination of Divine Wisdom we shall become able to behold with the eye of Faith the eternal Unity of the All."
+							</p>
+							<p>
+								"We have therefore divided the cause of all diseases into five classes, which are as follows: &ndash; <em>Ens Astrale, Ens Venenale, Ens Naturale, Ens Spirituale</em>, and <em>Ens Deale</em>; <sup>[20]</sup> but the latter is the fundamental cause of everything that exists."
+							</p>
+							<p class="fnote">
+								[20. This means: astral causes or origins, causes from poisons or impurities, causes that spring from morbid conditions in the body, spiritual causes, and such as come through the action of the moral law (<em>Karma</em>).]
+							</p>
+							<p>
+								"As there are five causes of disease, there are also five different methods of treating diseases, and five classes of faculties or sects of physicians which follow these methods. Each method is alone sufficient to treat all the five classes of diseases, and each physician should be well experienced in the methods of the sect to which he belongs, and he should not change from one system to another, but confine himself to the one he has chosen to adopt." <sup>[21]</sup>
+							</p>
+							<p class="fnote">
+								[21. Those who are Jacks of all systems are usually masters of none.]
+							</p>
+							<p>
+								"He should not be wavering and uncertain, but he should be firm and full of faith, and be able to know more by his own internal power of recognition than by external observation or by what the patient may tell him; for the patient, being only conscious of suffering, is not in a condition to judge his own case correctly, and the physician must be able to see things which are not seen by everyone."
+							</p>
+							<p>
+								"But the origin of some particular disease may be not in only one of these causes, but in two or more of them, and unless a person is able to recognise all the causes of such a disease he will be unable to prognosticate the time of its duration."
+							</p>
+							<p>
+								"An astrologer may calculate your horoscope correctly, and tell you by what diseases you are threatened and when they will end; but he takes only one of the five causes into consideration, and the chances are four to one that his predictions will prove to be wrong, and that he will be laughed at by those who have only a superficial knowledge, and who do not know the cause of his failure."
+							</p>
+							<!-- SUBSEQUENT HEADERS  h5 -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="astral-causes">&nbsp;</a>
+							<h5 class="cause">
+								1. Diseases caused by Astral Causes
+							</h5>
+							<p>
+								"The world is the Macrocosm and man the Microcosm, and the elements of all that exists in the former exist in the latter. All the influences that come from the sun, the planets, and stars act, therefore, invisibly upon man, and if these influences are evil they will produce evil effects. No vegetables would grow without the influence of the sun, but if that influence is too strong they will wither and perish."
+							</p>
+							<p>
+								"The world is surrounded by a vaporous sphere, like an egg surrounded by a shell. Through that shell the cosmic influences pass towards the centre, and on that occasion they may become poisoned by the miasmas in the air, and create epidemic diseases. An evil astral influence does not poison the whole world, but only those places where causes for infection exist. If no germs of disease exist in our atmosphere, the astral influences coming from the outside will cause no harm."
+							</p>
+							<p>
+								"If evil elements exist in the sphere of our soul, they attract such astral influences as may develop diseases. If the water in a lake freezes to the bottom the fish will die, and they will likewise die if the water gets too warm; and if certain evil elements exist in the water which attract certain correspondingly evil planetary influences, <sup>[22]</sup> a great many fish may die, and no one may know the cause." (<em>Paramirum)</em>
+							</p>
+							<p class="fnote">
+								[22. Such influences consist in certain states of electricity, magnetism, miasmas, <a class="note" href="https://en.wikipedia.org/wiki/Miasma_theory">[Wikipedia]</a> and other forces, for which modern science has no names and modern languages no words, but which we may call modifications of <em>Prana</em>.]
+							</p>
+							<p>
+								"The astral influences are the servants of man and not his ruler. A seed which is planted in the ground contains in itself all that is necessary for developing into a tree, if the conditions necessary for such a development are furnished. It has the <em>Ens Seminis </em>in itself; but if the sun did not exist, it would never grow."
+							</p>
+							<p>
+								"The seed needs a <em>Digest</em>, and this is furnished by the soil, but the soil would be useless without being warmed by the sunshine. A child in the womb of its mother contains in its <em>Ens Seminis</em> the power to grow, its <em>Digest</em> is the womb in which it lives, it requires neither planets nor stars; its planet and star is its mother."
+							</p>
+							<p>
+								"A child may be conceived or born during the best constellation of planets, and nevertheless have very bad qualities. In such a case the planets are not to blame; it is the <em>Ens Seminis</em>, which it has inherited in its blood."
+							</p>
+							<p>
+								"Man lives within the invisible world comparable to the yolk in an egg. The chicken grows from the white of the egg, which constitutes its <em>chaos</em>, and man is nourished by his<em> chaos</em>. Within man are the sun and moon, the planets and all the rest of the stars, and also the <em>chaos</em>." (<em>Paragran</em>., ii.)
+							</p>
+							<p>
+								"The outward influence of the stars on the sky avails nothing, if there is not a corresponding power in the organism of man upon which it can act; but if the germ of disease is present, the corresponding influence of the stars acts upon it. For instance, a man in whom
+								<img src="images/venus.gif" style="height: 20px;" alt="Venus" />
+								or
+								<img src="images/mars.gif" style="height: 20px;" alt="Mars" />
+								are the ruling powers may be rendered very passionate during a conjunction of Venice and Mars. Another born under the influence of
+								<img src="images/neptune.gif" style="height: 20px;" alt="Neptune" />
+								may be troubled with rheumatic pains whenever Neptune stands prominent on the sky. An observation of the contents of the astronomical almanac might often aid our physicians in making a correct prognosis."
+							</p>
+							<p>
+								"The moon exercises a very bad influence, especially at the time of the new moon, which may be very injurious for persons whose sidereal bodies possess magnetic elements that will attract that influence, and the conjunction of the moon with certain other planets will make her influence still more injurious." <sup>[23]</sup>
+							</p>
+							<p class="fnote">
+								[23. It is not the physical body of the planet that acts upon the physical body of man, but the astral influence of the planet acting upon the astral form.]
+							</p>
+							<p>
+								"For instance, a conjunction of the moon, Venus, and Mars may give rise to the plague; a conjunction with Saturn to certain acute diseases, &amp;c.; but no evil influence can develop a disease where the germ of that disease does not already exist. The seat of the sun in the Microcosm is in the heart, that of the moon is in the brain. The moon's influence is cold; and insane people have been called 'lunatics' because they are often injuriously affected by the moon, whose influence acts upon the brain and stimulates the sexual passions, and causes injurious dreams and hallucinations." <sup>[24]</sup>
+							</p>
+							<p class="fnote">
+								[24. What the noxious influence of the moonlight is in the external world, the same is the influence of a morbid imagination in man.]
+							</p>
+							<p>
+								"There are certain stars whose influence corresponds to the medical qualities of certain metals, and others that correspond to those of certain plants, and they will act for good or for evil if they are attracted by corresponding elements in the sidereal body of man."
+							</p>
+							<p>
+								"A physician should know the physiology and anatomy of heaven as well as that of man to understand the cause and cure of astralic diseases, because he will vainly try his remedies as long as his patient is under the ascending influence of an evil star; but after that evil influence ceases, the disease will also be changed or disappear."
+							</p>
+							<p>
+								"Every metal and every plant possesses certain qualities that can attract corresponding planetary influences, and if we know the influence of the star, the conjunctions of the planets, and the qualities of our drugs, we will know what remedy to give to attract such influences as will act beneficially upon the patient." <sup>[25]</sup>
+							</p>
+							<p class="fnote">
+								[25. Diseases often appear without any assignable cause. In acute diseases the patient often grows suddenly worse, or he may grow suddenly better, and no cause can be assigned to it. Such changes are usually attributed to catching cold where no cold has been caught, to mistakes in the diet where no such mistakes have been made, or they are attributed to meteorological changes, of whose action upon the human system therapeutic science knows less today than at the time of Paracelsus, because it is fashionable among certain people to reject everything which they cannot see, as being unworthy of their consideration.]
+							</p>
+							<p>
+								"If, for instance, a woman is deficient in the element of Mars, and consequently suffers from poverty of the blood and want of nervous strength (anaemia), we may give her iron, because the astral elements of iron correspond to the astral elements represented by Mars, and will attract them as a magnet attracts iron. But we should choose a plant which contains iron in an etherealised state, which is preferable to that of metallic iron." <sup>[26]</sup>
+							</p>
+							<p class="fnote">
+								[26. For instance, elder-berries (<em>Sambucus</em>).]
+							</p>
+							<p>
+								"In a case of dropsy it would be exceedingly injurious to give any remedy that would help to attract the evil influence of the moon; but the sun is opposed to the moon, and those remedies which attract the astral essences of the sun will counteract those of the moon, and thereby the cause of dropsy can be removed. The same mode of reasoning may be applied in all other astralic diseases.
+							</p>
+							<!-- SUBSEQUENT HEADERS  h5 -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="poison-impurities">&nbsp;</a>
+							<h5 class="cause toowide">
+								2. Diseases caused by Poisonous Substances and Impurities
+							</h5>
+							<p>
+								"Everything is perfect in itself and nothing is impure if it is what it ought to be; but if two things come together, then one may be a poison to the other." (<em>De Ente Veneni</em>)
+							</p>
+							<p>
+								"Impurities and injurious elements enter the human organism in various ways. They may be taken in the food or drink, inhaled with the air, or be absorbed by the skin. There are visible and invisible poisonous substances that are not injurious if they enter the organism alone, but will become poisonous if they come into contact with others."
+							</p>
+							<p>
+								"There are poisons and impurities of various kinds, and what is healthy food for one organism may be injurious if taken into another, and each thing contains hidden virtues that will be useful for some beings while they are evil for others. The salamander eats fire, the ox eats grass, the peacock can swallow snakes and the ostrich stones; but man requires a different kind of food."
+							</p>
+							<p>
+								Philosophy informs us that the world is made out of the will of God. If, then, all things are made out of will, it logically follows that the causes of all internal diseases are also originating within the will. All diseases, such as are not caused by any action coming from the outside, are due to a perverted action of the will in man, such as is not in harmony with the laws of Nature or God.
+							</p>
+							<p>
+								If his will begins to move in disharmony with these laws, then will a state of disharmony be created, which ultimately finds its expression on the external visible plane, and it is not necessary that the diseased person should be intellectually aware of the cause of such an inharmonious action, for the will in man produces the harmonious and inharmonious performances of his internal organs without man being aware of it and without the consent of his intellect.
+							</p>
+							<p>
+								A mere thought, an idea, a mental impression, may produce such an inharmonious action of will, and as the name Tartarus expresses that which is perverted, impure, or opposed to good, diseases of such an origin are called by Paracelsus <em>"Tartaric Diseases".</em>
+							</p>
+							<p>
+								"First of all should the physician know that there are three invisible substances which by their coagulation form the physical body of man, and which are symbolised as <em>'sulphur, mercury</em>, and <em>salt</em>.' The <em>'sulphur' </em>represents the auras and energies, the <em>'mercury</em>' the fluids, and the <em>'salt'</em> the material and substantial parts of the body; and in each organ these three substances are combined in certain proportions, differing from each other. These three substances are contained in all things, and the digestive power is the great solvent for these substances, of which each part of the body assimilates whatever it will require."
+							</p>
+							<p>
+								"Dew falls from the invisible air, corals grow in the water, and seeds draw their nutriment out of the soil; the earth is a great stomach, in which everything is dissolved, digested, and transformed, and each being draws its nutriment from the earth; and each living being is a stomach that serves as a tomb for other forms, and from which new forms spring into existence." (<em>Paramir</em>., i.)
+							</p>
+							<p>
+								Each organism requires that kind of food which is adapted to its own nature. The body cannot be nourished with theories, nor the mind with potatoes. The body requires material food, the mind mental knowledge; but the soul needs the nutriment that comes from the holy spirit of truth.
+							</p>
+							<p>
+								"Every living being requires that particular kind of food which is adapted to its species and to its individual organism, and Life, the great alchemist, transforms the food taken. In the alembic of the animal organism it extracts from it those substances which the various organs need."
+							</p>
+							<p>
+								"The lower class of animals are even better alchemists than man, because they can extract the essence of life out of things which he is forced to reject. Man extracts the more refined essences from food; but a hog, for instance, will extract nutriment out of substances that would act as poisons in the organism of man, but there is no animal known that will eat the excrements of a hog. Animals refuse to eat or drink things which are injurious to them, and they select by their natural instincts those things which they require; it is only given to intellectual man to disobey his natural instincts, and to eat or drink things which are injurious to him, but which may gratify some artificially acquired taste."
+							</p>
+							<p>
+								"Man is much more subject to diseases than animals in a state of liberty, because animals live in accordance with the laws of their nature, and man acts continually against the laws of his nature, especially in regard to his eating and drinking. As long as his body is strong it can expel or overcome the injurious influences which are continually caused in it by intemperance, gluttony, and morbid tastes; but such a continuous effort at resistance will imply a serious loss of vitality, and a time will come when disease will be the result, because the organism requires a period of rest and a renewal of strength to expel the accumulated poisonous elements."
+							</p>
+							<p>
+								"If the physician attempts to prevent such an expulsion of poisonous elements, he attempts a crime against Nature, and may cause the death of his patient. If he weakens in such cases the strength of his patient by abstracting blood, he will become his murderer. Rheumatism and gout, dropsy, and many other diseases are often caused by such accumulations of impure or superfluous elements, and Nature cannot recover until such elements are expelled and the vital power of the organs restored. While the organism is weakened and its vitality on the wane, the germs of other diseases may become developed by attracting injurious astral influences, because its power of resistance is enfeebled, and thus one kind of a disease grows out of another." (<em>De Ente Veneni</em>)
+							</p>
+							<!-- SUBSEQUENT HEADERS  h5 -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ens-naturea">&nbsp;</a>
+							<h5 class="cause">
+								3. Ens Naturae &ndash; Diseases arising from the Condition of Man's Nature; i.e., from Psychological Causes
+							</h5>
+							<p>
+								The world of corporeal forms is an external expression of the world of mind. Each thing represents an idea; each star in the sky is a visible symbol of a universal power or principle. A diseased state of the body is often caused by a diseased state of the mind. The majority of diseases are due to moral causes, and the treatment ought to be of a moral kind, and consist in giving instruction and in applying such remedies as correspond to those states of mind which we wish to induce in the patient.
+							</p>
+							<p>
+								Modern science knows almost nothing about the cause of the action of medicines, and for this reason the use of herbs and roots has been almost entirely abandoned. She has her purgatives, her <em>suporifica, diaphoretica</em>; she says that <em>Aloes </em>increases the peristaltic movements of the bowels, and that strychnine paralyses the nerves, &amp;c.; but why these remedies act thus and not otherwise, this she does not explain.
+							</p>
+							<p>
+								Modern medicine requires, so to say, a sledge-hammer for killing a fly; but the finer natural remedies, such as have not a merely mechanical, gross, immediate, and destructive action, have almost entirely disappeared from the pharmacopoeia, and, as harmless and useless, been remitted to the care of old women. Their action is not understood, because it is not so violent as that of the poisons used by the orthodox regular physician, and therefore the effects produced are not at once apparent to the eye; but while the finer forces of Nature silently and noiselessly act upon the body of the patient, the violent drugs administered by the modern practitioner usually serve only to drive away effects by shifting the seat of the disease to a still more interior and more dangerous place.
+							</p>
+							<p>
+								The doctrines of Paracelsus go to show that the same power which exists in the mind of the universe, and which produced a star on the sky, is also capable to become manifest as a plant; that the whole world consists of various states of spirit, having become embodied or corporified in forms in Nature, in which the qualities of the will, which produced them, is represented and made manifest; and that, all things originating primarily out of one will-spirit, they are all related together and may be made to act upon each other by the law of induction. Each thing, from the sun down to a tumour in the body of an animal, constitutes a certain state of vibration of the one original essence, and by applying a remedy which is in a near relation to a diseased organ (according to the quality of its spirit) we can induce a healthy action in that organ, and thus restore its normal condition.
+							</p>
+							<p>
+								"Many diseases are caused especially by the abuse of physiological powers, in consequence of which the organs lose their strength and vitality. Thus the stomach may be overloaded with food and irritated by stimulating drinks, which force it to perform more than its natural and legitimate amount of work; the kidneys may be inflamed by stimulating and poisonous drinks, and become weak, or enlarged, on account of their overwork; the same may be said of the liver; the sexual powers may become prematurely exhausted by excesses, and the health of women be destroyed by the unnatural frequency by which connubial acts are performed. Animals live according to their nature, and it is only given to reasoning man to act against his instincts, to neglect to listen to the warning voice of his nature, and to misuse the organism with which he has been entrusted by the creative power of God. In many cases of lost vitality the weakened organs will recover their strength after a time of rest and cessation of abuse. Nature is a patient mother that often forgives the sins committed against her, although she cannot forget them. We may therefore often trust to her recuperative powers, and Nature will be able to restore that which has not been irrevocably lost; for Nature is a great physician, and the dabblers in medicine and apothecaries are her enemies, and while the latter fill the graveyards of the country with corpses, Nature distributes the balsam of life."
+							</p>
+							<p>
+								"Every organ in the human body is formed by the action of certain principles that exist in the universe, and the former attract the corresponding activity in the latter. Thus the heart is in sympathy with the elements of the sun, the brain with the moon, the gall-bladder with Mars, the kidneys with Venus, the lungs with Mercury, the liver with Jupiter, the spleen with Saturn, &amp;c. There are many stars in the great firmament of the universe, and there are many germs hidden in the little world of man, and the high influences the low; and in the Microcosm and Macrocosm all things stand in intimate sympathetic relationship with each other, for all are the children of one universal father." <sup>[27]</sup>
+							</p>
+							<p class="fnote">
+								[27. We ought not to forget that each planet corresponds to a certain state of the mind. Thus
+								<img style="height: 25px;" src="images/saturn.gif" alt="Saturn" />
+								represents a melancholy,
+								<img style="height: 25px;" src="images/mars.gif" alt="Mars" />
+								a fiery temper,
+								<img style="height: 25px;" src="images/moon.gif" alt="Moon" />
+								a dreamy disposition,
+								<img style="height: 25px;" src="images/jupiter.gif" alt="Jupiter" />
+								ambition and pride,
+								<img style="height: 25px;" src="images/mercury.gif" alt="Mercury" />
+								intelligence,
+								<img style="height: 25px;" src="images/venus.gif" alt="Venus" />
+								love and desire,
+								<img style="height: 25px;" src="images/sun.gif" alt="Sun" />
+								wisdom.]
+							</p>
+							<div class="image-div">
+								<p class="note" style="margin-left: 20px;">
+									Key:</p>
+								<img src="images/symbol-list.jpg" alt="Symbols of the Zodiac" />
+
+							</div>
+
+
+							<p>
+								Not only is Man a compendium of invisible forces, having grown into corporeal shape; every animal, plant, and mineral is a corporified principle, a materialised power, or a combination of such; and the <em>Astronomy </em>of Paracelsus includes, therefore, not merely a knowledge of the stars, but also a knowledge of Zoology, Botany, and Mineralogy.
+							</p>
+							<p>
+								"What is <em>Mars</em> but the principle of Iron, which is found universally distributed in Nature and in the constitution of man? What is Venus but the power which excites the <em>Vasa Spermatica</em> in men and in animals? What is <em>Melissa</em> but a power which exists in the astral light and finds its material expression in the herb <em>Melissa</em>, which grows in our gardens? What are the animals but the personifications of those characters which they represent? Everything is an expression of the principle of life in a material form, and the life is the real thing; the external form is merely the house or <em>Corpus</em> in which it resides (<em>De Pestilitate</em>).
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="signatures">&nbsp;</a>
+							<h5 class="cause">
+								Signatures
+							</h5>
+							<p>
+								"All natural forms bear their signatures, which indicate their true nature. Minerals, vegetables, and animals remain true to their nature, and their forms indicate their character. Man, who has become unnatural, is the only being whose character often belies his form, because, while his character may have changed into that of an animal, his form has retained the human shape."
+							</p>
+							<p>
+								"If such men could re-enter the <em>Limbus</em> of Nature and be born again in forms which correspond to their true nature, and if this should take place, many of our Pharisees, strutting about in scarlet coats and pretending to be benefactors of mankind, while they in reality care for nothing but for the gratification of their ambition and lusts, would be born in the shape of monkeys, camels, and buffaloes." (<em>De Philosophia)</em>
+							</p>
+							<p>
+								"He is not a physician who can see only that which is visible to every boor. The experienced gardener can tell by looking at a seed what kind of a plant will grow from it, and likewise the physician should be able to perceive how a disease originates, and in what way it will develop."
+							</p>
+							<p>
+								"He who knows how the rain originates will also know the origin of dysentery; he who knows the origin of the winds knows how colic originates; he who knows the periodical changes of the seasons may know the origin of intermittent fevers; he who knows the ebbs and tides in the Macrocosm will know the cause of menorrhagias of the Microcosm, &amp;c."
+							</p>
+							<p>
+								"The quack studies diseases in the affected organs, where he finds nothing else but effects which have already taken place, and he will never arrive at an end; for if he were to kill a thousand people for the purpose of studying those effects, he would still be ignorant in regard to the causes. The true physician studies the causes of diseases by studying man as a whole. In him exist all the diseases that did exist in the past or will exist in the future. The destroyer is not a physician, but an executioner and murderer. Let the honest man ask his own conscience whether God meant that we should acquire wisdom by murder." <sup>[28]</sup> (<em>Paragran</em>., i)
+							</p>
+							<p class="fnote">
+								[28. Let the vivisectionists consider that question.]
+							</p>
+							<p>
+								"As the sunshine penetrates through a glass window into a room, so the influences of the astral light enter into the body of man, and as the rain is absorbed by the soil, while stones and rocks are impenetrable to it, so there are certain elements in man's organisation which absorb these influences, while other elements resist their action."
+							</p>
+							<p>
+								"To obtain a correct idea of the construction of the Microcosm, we should know how the Macrocosm is constructed; we mast look upon man as an integral part of universal Nature, and not as something separate or different from the latter."
+							</p>
+							<p>
+								"The earth nourishes the physical body, and the astral body is nourished by the astral light, and as the former hungers and thirsts for the elements of the earth, so the latter longs for the influences which come from the astral plane. There are many thousands of 'magnets' in the constitution of man; good attracts good, evil attracts evil; good improves the good, and causes it to be better; evil attracts evil, and is rendered worse thereby."
+							</p>
+							<p>
+								"Innumerable are the <em>Egos</em> in man; in him are angels and devils, heaven and hell, the whole of the animal creation, the vegetable and mineral kingdom; and as the individual little man may be diseased, so the great universal man has his diseases, which manifest themselves as the ills that affect humanity as a whole. Upon this fact is based the prediction of future events." (<em>Paragran</em>.)
+							</p>
+							<p>
+								"Those who merely study and treat the effects of disease are like persons who imagine that they can drive the winter away by brushing the snow from the door. It is not the snow which causes the winter, but the winter is the cause of the snow. Those people have departed from the light of reason and lost themselves in idle vagaries, to the great detriment of the welfare of humanity."
+							</p>
+							<p>
+								"Consider how great and how noble man is, and that his visible form is merely the outgrowth of invisible powers. As it is outside of man, so is it inside, and <em>vice versa</em>, for the outside and inside are essentially one thing, one constellation, one influence. It is the <em>Limbus</em> in which the whole of creation is hidden. He who knows only the external form of man, and not the power by which it is produced, knows nothing but an illusion; his science is illusive, only fit to impose upon the ignorant." (<em>De Astronomia</em>)
+							</p>
+							<p>
+								"Good or evil influence comes down from the sun, the moon, or the stars; the action of the macrocosmic influences stimulates the corresponding elements (the <em>Corpora Microcosmi Astralia</em>) existing in man into action. The same element which produces <em>Mars, Venus</em>, or <em>Jupiter</em> in the sky exists also in the body of man; because the latter is the son of the astral body of the Macrocosm in the same sense as the physical body of man is a son of the earth."
+							</p>
+							<p>
+								"To be a physician, it is not sufficient to know the anatomy of the physical body; you should also know that of the astral body; you should know not merely a part, but the whole constitution of the Macrocosm and the Microcosm of man."
+							</p>
+							<p>
+								"Adam is not the father of man, nor is Eve his mother; they were both human beings themselves. The first man was a product of creation, and all created things constitute together the <em>Limbus </em>(Nature)."
+							</p>
+							<p>
+								"Man is born from the <em>Limbus</em>, and still remains in it; the two, <em>i.e.</em>, Man and Nature, are one, and he who knows the anatomy of Nature knows also the constitution of man. If a man gets sick, it is not the eternal part in him which suffers, but it is his <em>Limbus</em>, which is composed of many hundreds of different elements, which are all related to their corresponding elements in the great <em>Limbus</em> of Nature."
+							</p>
+							<p>
+								"Nature (Heaven) is Man, and Man is Nature; all men are one universal Heaven, and Heaven is only one universal Man. Individual man is the individualised universal Man, and has his own individual heaven, which is a part of the universal Heaven. If all children were born at once and upon one point, they would all be constituted alike, and be sick or well at the same time; but at the time of conception a differentiation takes place, and each child receives his own individual nature, which, however, still remains an integral part of the universal nature of mankind."
+							</p>
+							<p>
+								"Thus, there are many points in a circle, and each point constitutes a circle of its own, and yet they all belong to the great circle, and as each little circle may expand so as to encompass the whole, so the heaven in man may grow so as to expand towards the whole, or contract into his own centre and disappear."
+							</p>
+							<p>
+								"Why does man want to eat, to drink, and to breathe but because he is related to the elements of earth, water, and air, and must attract these things to his constitution? Why does he need warmth but because he is related to the element of the fire and cannot do without it? And all these elements may produce diseases."
+							</p>
+							<p>
+								"There is no disease in the elements, but the disease starts from the centres. The origin of diseases is in man, and not outside of man; but outside influences act upon the inside and cause diseases to grow. Man is himself a cosmos. A physician who knows nothing about Cosmology will know little about disease. He should know what exists in heaven and upon the earth, what lives in the four elements and how they act upon man; in short, he should know what man is, his origin and his constitution; he should know the whole man, and not merely his external body. If man were in possession of a perfect knowledge of self he would not need to be sick at all."
+							</p>
+							<p>
+								"Diseases serve to teach man that he is made out of the universal <em>Limbus</em> and that he is like the animals and by no means better than they. He should study himself and the rest of creation, so that he may attain self-knowledge; and this self-knowledge should be above all obtained by the physician. Man is the highest of all animals, and the whole of the animal creation is contained in him, and, moreover, he has the power to attain self-knowledge, a faculty which the animals do not possess."
+							</p>
+							<p>
+								"Every star (faculty) in the nature of man is of a double nature, and he who knows the stars also knows the nature of the disease; but the Arcana of Nature are single. <sup>[29]</sup> If the two opposites in the constitution of man (heat and cold, love and hatred, &amp;c.) are at war with each other, each of them asks for help from their common mother (Nature), and the physician should, therefore, be well acquainted with the astronomy of the inner heaven of man, so as to know how to assist Nature in her work."
+							</p>
+							<p class="fnote">
+								[29. That which is divine in man is only one, and has only one aspect; all other things have two aspects, a material and an ethereal one.]
+							</p>
+							<p>
+								"To understand the laws of Nature we must love Nature. He who does not know Maria does not love her; he who does not know God does not love Him; his belly (his greed) is his god. He who does not understand the poor does not love them. The more knowledge we obtain, the stronger will be our love and the greater our power. He who knows God has faith in God; he who does not know Him can have no true faith."
+							</p>
+							<p>
+								"He who knows Nature will love her, and obtain the power to employ her forces. No one can be made into an artist or inventor if he has not the natural love and capacity for it; no one can be a good physician unless he is born to be one. The art to invent is a species of Magic, which cannot be taught, but which must be acquired. All Wisdom comes from the East; from the West we can expect nothing good; therefore, you who desire to be useful physicians, act according to the sun of true Wisdom, and not for the aggrandisement of the moonshine of self." (<em>Labyrinthus Medicorum</em>)
+							</p>
+							<p>
+								"It must not be supposed that a certain material element coming from the planets enters the organism of man and adds something to it which it does not already possess. The light of the sun does not contribute any corporeal substance to the organisms existing upon the earth, and a man does not become heavier if he stands in the sun; but the natural forces acting in the various organs are intimately related to similar forces acting in the organism of the world, and as the liver, the spleen, the heart, &amp;c., are the bodily representatives of certain organic activities, likewise the sun and the moon, Venus, Mars, &amp;c., are the visible representatives of the corresponding activities of the Cosmos."
+							</p>
+							<p>
+								"If a man gets angry, it is not because he has too much bile, but because the 'Mars,' the combative element in his body (the invisible power that guides the production of bile), is in a state of exaltation. If a man is amorous, it is not because his spermatic vessels are overloaded, but because the 'Venus' (the amorous element) in his body is in a state of exaltation."
+							</p>
+							<p>
+								"If in such cases a conjunction of the combative and amorous elements takes place in his body, an ebullition of jealousy will follow; and if such an internal conjunction should take place at a time when conjunction of the planets Mars and Venus takes place in the sky, the sympathetic relationship existing between the elements representing these planets in the Microcosm and the elements represented by those of the Macrocosm may lead to serious consequences unless counteracted by the superior power of reason and will." <sup>[30]</sup>
+							</p>
+							<p class="fnote">
+								[30. It would be interesting to collect statistics of crimes, showing exactly the time when they have taken place, comparing the latter with the time of the conjunctions of the planets existing at the same longitude and latitude, and also compare them with the constellations that ruled at the time of birth.]
+							</p>
+							<!-- end quote marks -->
+							<p>
+								There are a great many stars in the universe; there are a great many forces active in the organism of man. There are a great many giants which are the earthly representations of astral influences corresponding to the qualities of the stars, and which will attract the influences of the stars to which they are sympathetically related. By using such plants as medicine we attract the planetary life-influences needed to restore the vitality in diseased parts.
+							</p>
+							<p>
+								We give below a list of some principally useful herbs, the names of the planets to which they are sympathetically related, and the names of the principal diseases in which they may be used with advantage. It will, however, appear reasonable that it makes a vast difference whether such plants are fresh or whether they have been dried, and their occult properties are, moreover, to a great extent modified by the time of the day or night, and under what planetary conjunctions they have been gathered, and at what time they are used. Each plant should be gathered at a time when the planet to which it is related rules the hour, and its essence should be extracted as long as it is fresh. <sup>[31]</sup> [*]
+							</p>
+							<p class="fnote">
+								[31. Useless to say that our druggists know nothing about such things, and do not observe them.]<br />
+								* Hartman does not indicate whether the information in this chart is from Paracelsus or is his own.
+							</p>
+							<blockquote>
+								<p>
+									Sun. &ndash; Rosmarinus officinalis, Lavandula officinalis, Salvia officinalis, Satureja officinalis, Melissa officinalis. (Acute inflammations, diseases of the heart, rheumatism, &amp;c.)
+								</p>
+								<p>
+									Moon. &ndash; Thymus majorana, Helleborus niger, Ruta graveolens. (To be used in insanity, hysteria, nervous diseases, &amp;c.)
+								</p>
+								<p>
+									Mercury. &ndash; Pulmonaria off., Althaea off., Plantago laureola. (Pneumonia, catarrh, phthisis pulmonalis, inflammations of mucous membranes.)
+								</p>
+								<p>
+									Venus. &ndash; Ononis spinosa, Verbascum thapsus, Apium petroselinum. (Dropsical swellings, diseases of kidneys or bladder, &amp;c.)
+								</p>
+								<p>
+									Mars. &ndash; Carduus benedictus, Urticaria diocia, Erythraea centaurium. (Fevers, diseases of an acute and violent character; eruptive fevers, &amp;c.)
+								</p>
+								<p>
+									Jupiter. &ndash; Ruta graveolens, Hepatica nobilis, Adianthum veneris, Chelidonium magus, Linum usitatissimum, Cannabis sativa. (Jaundice, liver diseases.)
+								</p>
+								<p>
+									Saturn. &ndash; Chrysosplenium alternifolium, Scrophula nodosa, Teucrium Chamaedrys. (Hypochondria, piles, melancholia, &amp;c.) <sup>[32]</sup>
+								</p>
+							</blockquote>
+							<p class="fnote">
+								[32. The physician of the nineteenth century will hardly fail to recognise among these remedies many that are habitually used in modern medicine, although there is hardly any other reason for their employment known but that experience has taught that they are useful.]
+							</p>
+							<p>
+								There are a great many other plants whose essences correspond to the ethers radiating from other planets and stars, and if we knew all the qualities of the stars, we would find that the quality of each of them is represented on the earth by some plant. By the judicious use of plants beneficial astral activities may be attracted and evil influences neutralised; but to know what plants are required in each case it is necessary to know not only the anatomy of the human body and the functions of its organs, but also the constitution of the starry heavens, the qualities of the stars, and the time of the appearance and conjunctions of planets. The impossibility to grasp at once all these things intellectually shows that the power of spiritual perception is a most necessary qualification for the true physician.
+							</p>
+							<p>
+								It is not within the scope of this work to enter into a detailed account of the treatment of special diseases adopted by Paracelsus. It may suffice to say that the difference between the system of medicine of the present day and that of Paracelsus is a difference growing out of an entirely different apprehension of fundamental truths.
+							</p>
+							<p>
+								Modern science looks upon the universe as being a conglomeration of dead matter out of which, by some unexplainable process, life may become evolved in forms. The science of Paracelsus looks upon the whole of the universe as the manifestation of a universal principle of life, acting through the instrumentality of forms.
+							</p>
+							<p>
+								Modern science seems to regard the forms as the sources of life; the science of Paracelsus looks upon the forms as being the products of life. Forms are, so to say, condensed forces or crystallised space; but space itself is an aspect of the one life, and there is no dead matter in the universe, for that which dies returns again into the matrix of Nature, to be reborn into other forms, and to serve again as an instrument for the manifestation of life.
+							</p>
+							<p>
+								In the universe of Paracelsus there is life everywhere, and all beings are connected together by a common link. Some forms are in a close mutual sympathy, while between others an antipathy is prevailing. Some attract and others repel each other. During the ascendency of a planet <sup>[33]</sup> its essence will be especially attracted by plants and by animal organs that are in harmony with it; but what else is this radiating planetary essence but the <em>elixir of life</em>, the invisible vehicle of a quality peculiar to that power?
+							</p>
+							<p class="fnote">
+								[33. The ascendency of a star means the increase of a power.]
+							</p>
+							<p>
+								And therefore a patient may grow better or worse without any visible cause. A medicine that will do good at one time will be useless at another, and a system of medicine without understanding and without true knowledge of natural laws will remain a system of mere suppositions and superstitions, of passive observation and inactivity, and if it attempts to interfere with the cause of a disease, the probability is that it will do serious harm. Paracelsus says:
+							</p>
+							<p>
+								"Our physicians pay no attention to the position of the planets, <sup>[34]</sup> and therefore they kill more patients than they cure, because a medicine that may do good at one time may be injurious at another, according to the prevailing influence. That which is active in medicines is their astral elements acting upon the astral man, and they are produced by astral influences, and it makes the greatest difference whether a medicine is pervaded by one influence or by another." (<em>De Caducis</em>)
+							</p>
+							<p class="fnote">
+								[34. The quality of the influences acting upon the patient.]
+							</p>
+							<p>
+								It should always be remembered that astral influences do not act directly upon the physical bodies of men and animals, but upon their vital essence, in which all elements are contained. Love for a certain person may be created by a word or a touch, by a breath or a kiss, but only if the person who is touched or breathed upon has in his soul the elements that are capable to manifest that particular kind of love. The vehicle of life that contains the life-essence in the body of man (the Mumia) is the same as that which contains the universal life and forms the astral body of the world; but each energy may exist in various states and modifications, differing from each other.
+							</p>
+							<p>
+								"Even the ignorant knows that man has a heart and lungs, a brain and a liver and stomach; but he thinks that these organs are independent things, that have nothing to do with each other; and even our most learned doctors are not aware of the fact that these organs are only the material and bodily representatives of invisible energies that pervade and circulate in the whole system; so that, for instance, the real 'liver' is to be found in all parts of the body, and has its herd in that organ which we call the liver. All the members of the body are potentially contained in the centre of the vital fluid, which has its seat in the brain, while the activity which propels it comes from the heart." <sup>[35]</sup> (<em>De Viribus Membrorum</em>)
+							</p>
+							<p class="fnote">
+								[35. This doctrine is corroborated by modern discoveries. Amputations of limbs are followed by a state of atrophy of certain parts of brain-substance, which seems to indicate that the force which shapes the limbs has its centre in the brain. If certain parts of the brain were destroyed, the limbs would begin to atrophy. If we apply this mode of reasoning to the Macrocosm, we find that all the essences and ethers that go to make up the organs of the Macrocosm are also contained in its centre, the sun; and if a certain element were taken away from the sun, the planets could not continue to exist in their present condition. If a certain element that goes to form the legs of men were suddenly taken away from the universal storehouse of the Macrocosm (the <em>Limbus</em>), human beings would be born without legs; if no principle of reason existed, there would be no use for brains, &amp;c.]
+							</p>
+							<p>
+								Mind is not created by the brain, neither is love nor hate created by the heart; but mind acts through the brain, and love and hate have their origin in the heart. A man who is angry is not only angry in his head or in his fist, but all over; a person who loves does not only love with his eye, but with his whole being; in short, all the organs of the body, and the body itself, are only form-manifestations of previously and universally existing mental states.
+							</p>
+							<p>
+								"The body of a man is his house; the architect who builds it is the astral world. The carpenters are at one time Jupiter, at another Venus; at one time Taurus, at another Orion. Man is a sun and a moon and a heaven filled with stars; the world is a man, and the light of the sun and the stars is his body; the ethereal body cannot be grasped, and yet it is substantial, because substance (from <em>sub</em>, under, and <em>sto</em>, standing) means existence, and without substance nothing exists."
+							</p>
+							<p>
+								"If the life of the sun did not act in the world, nothing would grow. The human body is vapour materialised by sunshine mixed with the life of the stars. Four elements are in the world, and man consists out of four, and that which exists visibly in man exists invisibly in the ether pervading the world."
+							</p>
+							<p>
+								"Where is the workman that cuts out the forms of lilies and roses that grow in the field? and where is his workshop and tools? The characters of the lilies and roses exist in the astral light, and in the workshop of Nature they are made into forms. A blooming flower cannot be made out of mud, nor a man out of material clay; and he who denies the formative power of Nature, and believes that ready-made forms grow out of the earth, believes that something can be taken out of a body in which it does not exist." (<em>De Caducis</em>)
+							</p>
+							<p>
+								"The power of sight does not come from the eye, the power to hear does not come from the ear, nor the power to feel from the nerves; it is the spirit of man that sees through the eye, and hears with the ear, and feels by means of the nerves. Wisdom and reason and thought are not contained in the brain, but they belong to the invisible spirit which feels through the heart and thinks by means of the brain."
+							</p>
+							<p>
+								"All these powers are contained in the invisible universe, and become manifest through material organs, and the material organs are their representatives, and determine their mode of manifestation according to their material construction, because a perfect manifestation of power can only take place in a perfectly constructed organism, and if the organism is faulty the manifestation will be imperfect, but not the original power defective." (<em>De Viribus Membrorum</em>)
+							</p>
+							<p>
+								The animal intellect differs from the human intellect especially in that the animal can see only the vehicle, but the human intellect discovers the principle manifested therein. For this reason those of our would-be scientists who only see external effects, and cannot see the principles therein, have only an animal intellect, however well trained it may be.
+							</p>
+							<!-- SUBSEQUENT HEADERS  h5 -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="spiritual-causes">&nbsp;</a>
+							<h5 class="cause toowide">
+								4. Diseases originating from Spiritual Causes <span style="font-size: 100%; font-weight: normal;"><sup>[36]</sup></span>
+							</h5>
+							<p class="fnote">
+								[36. "That which is born from our thoughts is a spirit." (<em>Paramir</em>.,i.)]
+							</p>
+							<p>
+								This class of diseases includes all evils that are caused by an evil will, resulting from passions, evil desires, disordered thoughts, and a morbid imagination. Such psychological states produce physiological changes in the physical body. Shame produces a blush in the face, and terror produces a paleness. Fear causes diarrhoea; melancholy, obstructions; anger or envy gives rise to jaundice. Gaiety may cure, and grief may kill. Violent emotions produce miscarriages, apoplexy, spasms, hysterics, and cause malformations of the foetus, &amp;c., &amp;c.
+							</p>
+							<p>
+								Such things are known to all who have investigated such matters; but it is less generally known that the evil imagination of one person can affect the mind of another, poison his vitality, and injure or kill his body.
+							</p>
+							<p>
+								The reason why this is not generally known is that the imagination of the majority of men and women in our present state of civilisation is too weak, their will too feeble, and their faith too much pervaded by doubt to produce the desired effects; and it is fortunate that their imagination, however evil it may be, has not much power as long as the state of morality is not higher advanced than it is at present. <sup>[37]</sup>
+							</p>
+							<p class="fnote">
+								[37. To think is to act on the plane of thought, and if the thought is intense enough, it can produce an effect on the physical plane. It is very fortunate that few persons possess the power to make it act directly on the physical plane, because there are few persons who never have any evil thoughts entering into their mind.]
+							</p>
+							<p>
+								Nevertheless, there have been persons whose evil will was so strong as to project the products of their imagination instinctively or consciously upon a person whom they desired to injure, and such persons are still in existence, although they may not deem it prudent to boast of their gifts or to exhibit their powers in public.
+							</p>
+							<p>
+								Envy and hate produce an evil imagination, and create forces that are more active during sleep than during waking. The evil thoughts of a malicious person can affect another (sensitive) person, not only while the former is awake, but also during his sleep; because when the physical body is asleep, the sidereal body is free to go wherever it pleases or wherever it may be attracted.
+							</p>
+							<p>
+								"The life that is active in the organs is the<em> anima vegetiva</em> (the animal soul). It is an invisible fire (<em>sulphur</em>), that can easily be blown into a flame by the power of the imagination. Imagination creates hunger and thirst, produces abnormal secretions, and causes diseases; but a person who has no evil desires will have no evil imagination, and no diseases will spring from his thoughts."
+							</p>
+							<p>
+								"A person who has evil desires will have an evil imagination, and the forces created in the sphere of his mind can be projected by powerful will into the mental sphere of another. Thoughts are not empty nothings, but they are formed out of the substance that forms the element of the mind, in the same sense as a piece of ice is made out of the substance of water."
+							</p>
+							<p>
+								"The will is the power that concentrates the image formed in the mind, in the same way as the power of cold will cause a body of water to freeze into solid ice; and as an icicle may be thrown from one place to another, likewise an evil thought, formed into substantial shape by an intense will, may be hurled into the mental sphere of another, and enter his soul if it be not sufficiently protected."
+							</p>
+							<p>
+								"Imagination is the cause of many diseases; faith is the cure for all. If we cannot cure a disease by faith, it is because our faith is too weak; but our faith is weak on account of our want of knowledge; if we were conscious of the power of God in ourselves, we could never fail. The power of amulets does not rest so much in the material of which they are made as in the faith with which they are worn; the curative power of medicines often consists, not so much in the spirit that is hidden in them, as in the spirit in which they are taken. Faith will make them efficacious; doubt will destroy their virtues."
+							</p>
+							<!-- end quotes -->
+							<p>
+								The <em>Ens Spirituale</em> is the <em>Will.</em> The power of the true spiritual Will is known very little, because it is attained by very few. In our present civilisation, men of strong, determined, and enlightened Will are few and far between; men and women are ruled to a great extent by their instincts and desires, and have not sufficient will power to rise above and control them.
+							</p>
+							<p>
+								"The <em>Ens Spirituale</em> is a power which may affect the whole body and produce or cure all kinds of diseases; it is neither an angel nor a devil, but it is a spiritual power which in the living body is born from our thoughts."
+							</p>
+							<p>
+								"There are two principles active in man; one in the principle of Matter, which constitutes the corporeal visible body; the other one is the Spirit, intangible and invisible, and the spiritual principle may be vitiated and diseased as well as the body, and transmit its diseases to the body."
+							</p>
+							<p>
+								"The <em>Ens astrale, veneni</em>, and <em>naturale</em> act upon the body, but the <em>Ens spirituale </em>and <em>deale</em> belong to the spirit; if the body suffers, the spirit need not suffer; but if the spirit suffers the body suffers; the body cannot live without the spirit but the spirit is not confined by the body, and therefore is independent of it. The spirit in man sustains the body as the air supplies him with life; it is substantial, visible, tangible, and perceptible to other spiritual entities, and spiritual beings stand to each other in the same relationship as one corporeal being to another."
+							</p>
+							<p>
+								"I have a spirit and you have one, and our spirits communicate with each other in the same sense as our bodies; but while we need language to understand each other, our spirits understand each other without using words."
+							</p>
+							<p>
+								"If one spirit is angry at another it may injure him, and the injury received be transmitted upon his body. Spirits harmonise and associate with each other, or they repel or injure one another. Spirits are not born from the intellect, but from the soul, for the soul is the substance of life. Thought alone produces no spirit, but it determines the qualities of the will."
+							</p>
+							<p>
+								"There is no spiritual power in children, because they have no perfect will-power; he whose will is perfected gives birth to a spirit, as a pebble produces a spark, and this spiritual power partakes of the nature of his will. He who lives in the will, possesses the spirit &ndash; <em>i.e.</em>, the <em>Ens spirituale</em>."
+							</p>
+							<p>
+								"There is a corporeal world and a spiritual world, and the two are one, and the spiritual beings live in their own spiritual world as we live in ours. They have their likes and dislikes, their sympathies and antipathies, like ourselves, and they do not always correspond to the likes and dislikes of the bodily forms. Men may quarrel and fight with each other and their spirits nevertheless be in harmony, but if a spirit injures another spirit, the material body of the latter will become also affected."
+							</p>
+							<p>
+								"The spirits of a man may act upon another without the other man's consent or intention, unconsciously and involuntarily to him; but if man's will is in unity with his thought and desire, a spirit (force) will be produced which can be employed for good or for evil. If two such spiritual forces battle with each other, the weaker one, or the one which does not defend itself sufficiently, will be overcome, and bodily diseases may be the result."
+							</p>
+							<p>
+								"An evil-disposed person may throw the force of his will upon another person and injure him, even if the latter is stronger than the former, because the latter does not expect and is not prepared for the attack; but if the other is stronger and resists successfully, then a force will be kindled in him which will overcome his enemy and which may destroy him." <sup>[38]</sup> (<em>Repercussio</em>)
+							</p>
+							<p class="fnote">
+								[38. Here is the whole philosophy of what is now called “hypnotic suggestion outlined. Men's thoughts constantly act upon each other, be it knowingly or without their knowledge, and the stronger overcomes and overawes the weaker; but the strength of the thought depends upon the force of the will by which it is endowed, and the strength of will depends upon the amount of its consciousness.]
+							</p>
+							<p>
+								"Waxen images, figures, &amp;c., may be used to assist the imagination and to strengthen the will. Thus a necromancer will make a waxen image of a person and bury it, covering it with heavy stones, and if his will and imagination are powerful enough, the person whom it represents feels very miserable until that weight is removed. Likewise, if he breaks a limb of that figure, a limb will be broken in the person whom the figure represents, or he thus inflicts cuts, stabs, or other injuries upon an enemy."
+							</p>
+							<p>
+								"It is all done through the spirit acting upon the spirit. No necromancer can by his will act directly upon the body of a person, but he can act upon his astral spirit, and the spirit of the injured person reproduces the injury upon his own body. Thus a necromancer plants a tree, and he who cuts the tree cuts himself; that is to say, he does not cut his body, but the spirit, which has the same limbs as the body, and the cuts made upon the spirit are reproduced upon the body."
+							</p>
+							<p>
+								"Thus the spirit of a person may, without the assistance of his body and without a knife or sword, cut or stab or injure another person by the mere force of the imagination and will, and images can be cursed effectually, and fever, apoplexy, epilepsy, &amp;c., be caused thereby; but our scientists have no conception of what a power the will is, because they have no strong will, and they do not believe in such things, because they are beyond their comprehension."
+							</p>
+							<p>
+								"The will produces such spirits, and they can also act upon animals, and it is even easier to affect animals than to affect men, because the spirit of man is better able to defend itself than that of an animal." <sup>[39]</sup>
+							</p>
+							<p class="fnote">
+								[39. Here again is a glorious new field of activity for the enterprising vivisectionist; but unfortunately he in whom such evil forms of will-power (elementals or devils) have come into existence will not get rid of them easily, and he will be himself the greatest sufferer in the end.]
+							</p>
+							<p>
+								"Not only may a necromancer thus consciously injure another person by his evil will and imagination, but the spirit of envious, jealous, revengeful, and wicked persons can, even if they are ignorant of the practices of sorcery, injure those who are the objects of their evil will while the body is asleep; for dreams which come from the spirit are actually enacted, but dreams which do not come from the spirit are only plays of fancy."
+							</p>
+							<p>
+								"One poison will render another poison harmless, and thus the effect of the imagination of one person neutralises the effects of the imagination of another. If any one can make an image of wax to injure my body, I may make another image to attract the evil spell. His image obtains its power by the force of his faith, and my image obtains its virtue by the power of my faith; and the injuries inflicted by my enemy upon the image will leave me unharmed, and the curses that he heaps upon me will return to him and leave me unhurt."
+							</p>
+							<p>
+								"If a person is gloomy and despondent, he ought not to be left alone, but he ought to have some one to cheer him up and to explain to him that he must free himself of his own morbid thoughts. There are some who believe that it is possible for witches to pass through doors and to vampirise people; but no witch can bodily (physically) pass through a closed door in the way in which this is done by sylphs and pigmies; they do such things in their astral forms."
+							</p>
+							<p>
+								"O you doubtful man, you Peter of little faith, who are moved by each wind and sink easily! You are yourself the cause of all such diseases, because your faith is so little and feeble, and your own evil thoughts are your enemies. Moreover, you have hidden within yourself a magnet which attracts those influences which correspond to your will, and this celestial magnet is of such power that for more than a hundred or even thousands of miles, it attracts that which your spirit desires out of the four elements." (<em>Philos. Occulta</em>)
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="divine-cause">&nbsp;</a>
+							<h5 class="cause toowide">
+								5. Diseases originating from the Divine Cause (Karma). <span style="font-size: 100%; font-weight: normal; color: Black;"><sup>[40]</sup></span>
+							</h5>
+							<p class="fnote">
+								[40. The will of God.]
+							</p>
+							<p>
+								All diseases are the effects of previously existing causes. Some originate from natural and others from spiritual causes. Spiritual causes may have been created by a man during a former existence. For such cases there is no remedy but to wait patiently until the evil force is exhausted and the law of universal justice satisfied; for even if the just retribution for our sins can be evaded at one time, it will only be postponed, and the evil returns at another time with an accumulation of interest and with increased force.
+							</p>
+							<p>
+								"All diseases originating from the above-mentioned four causes may be cured by the power of the true Faith. All health and all disease come from God, and in God is the cure. Some diseases, however, do not directly come from God, but are natural (although they, too, come from God indirectly, because Nature is a manifestation of the power of God), but other diseases are directly sent by God as a punishment for our sins."
+							</p>
+							<p>
+								"Each disease is a purgatory, and no physician can know exactly when or how it will end; the physician is only a servant of God, who works to accomplish His will. If it is the will of Providence (<em>Karma</em>) that the patient should still remain in his purgatory, then will the physician not be able to help him out of it; but if his time for redemption has come, then will the patient find the physician through whom God will send him relief."
+							</p>
+							<p>
+								"The physician may cure the sick by using remedies, but it is God who makes the physician and the remedy. God does not perform miracles without man; He acts through the instrumentality of man, and restores the sick to health through the instrumentality of the physician, and therefore the physician should be in possession of faith (in harmony with God), so as to be a perfect instrument through which the will of God can be accomplished."
+							</p>
+							<p>
+								"He who expects help from medicine or from a physician is not a Christian, but he is a Christian who hopes to receive aid from God through the instrumentality of man. God is the first and most potent physician; human physicians are only His deputies. Call not for help to the personal self of any man, but ask it from God acting through man, and He will cause you to find the physician, if it is well for you that you should receive aid; or He may aid you through the power within yourself, provided you are holy or a physician yourself."
+							</p>
+							<p>
+								"Two kinds of punishment (<em>Karma</em>) are waiting for the sinner. One takes place during his life, the other one after his death. Those sins which are not expiated after death will produce certain effects in our next life. God is the master of Nature, and the physician is her servant, and let no physician fancy that he can be a master of Nature unless he is a servant of God."
+							</p>
+							<p>
+								"There are two ways of practising the medical art: the first is to employ art; the second is to employ fancy. The former means the employment of observation, reason, knowledge, experience, and wisdom; the latter is the product of speculation, self-conceit, preconceived opinions, and ignorance. Those who are wise will know which way to choose." (<em>De Ente Dei</em>)
+							</p>
+							<p>
+								"No physician should presume to know the hour of recovery in such cases, because it is not given to man to judge of the offence of another, and the inner temple contains mysteries in which no uninitiated stranger is permitted to pry. If the trial is over, God will send the physician. If a patient recovers by following the advice of a physician, it is a sign that the physician has been sent by God; but if no recovery takes place, God did not send the physician."
+							</p>
+							<p>
+								"Nothing in the world happens without a cause. The ignorant physicians are the servants of hell, sent by the devil to torment the sick; but the true physician is God. God does nothing in an unnatural manner, and if He produces wonders, He produces them through human agencies. God does not go about practising medicine or come to see a patient; if He comes to him, He comes in the shape of a man."
+							</p>
+							<p>
+								"If a town possesses a good physician, people may look upon him as a blessing from God; but the presence of an ignorant or greedy doctor is a public calamity and a curse to all. But all bodily diseases will be cured at the legitimate hour, when the battle of life is ended and the angel of death opens the portal to the eternal kingdom of rest." <sup>[41]</sup> <sup>[42]</sup>
+							</p>
+							<p class="fnote">
+								[41. The word eternal does not signify a time without end, but a state in which time is not measured, and in which it therefore does not exist.]
+							</p>
+							<p class="fnote">
+								[42. A misunderstanding of the doctrine of Karma may give rise to an erroneous belief, which may be productive of serious harm. There are great numbers of religious fanatics in the East, and some in the West, who would not make an attempt to pull a person out of a burning house, even if they could easily do so, because they believe that if it is the will of God, or his <em>Karma</em>, that he should perish in the fire, it would be wrong to interfere with that law, and to frustrate the purpose of God. They should remember that if it was the will of God which caused such a person to fall into danger, it must also have been the will of God which sent them near, and enabled them to save; and if they neglect to do their duty and suffer him to perish, they are arrogating to themselves the prerogatives of gods. They then act against the law, and will become responsible for their act. God acts through man, and a man who does not respond to His call, and refuses to obey the Divine command, spoken within his heart, is a useless instrument, and will be rejected.]
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="practice-of-medicine">&nbsp;</a>
+							<h4>
+								The Practice of Medicine
+							</h4>
+							<p>
+								As there are five causes of diseases, so there are five different ways of removing them, and therefore five classes of physicians:&mdash;
+							</p>
+							<p>
+								"1. <em>Naturales &ndash; i.e</em>., those who treat diseased conditions with opposite remedies; for instance, cold by warmth, dryness by moisture, &amp;c., according to the principle, <em>Contraria contrariis curantur</em>. To this class belonged <em>Avicenna, Galen, &amp;c.</em>". (<em>Allopathy, Hydrotherapie, &c</em>.)
+							</p>
+							<p>
+								"2. <em>Specifici.</em> &ndash; Such as employ specific remedies, of which it is known that they have certain affinities for certain morbid conditions. To this class belong the <em>Empirics</em>." (<em>Homoeopathy</em>)
+							</p>
+							<p>
+								"3. <em>Characterales</em>. &ndash; The physicians of this class have the power to cure diseases by employing their willpower." (<em>Magnetism, Suggestion, Mind-Cure</em>)
+							</p>
+							<p>
+								"4. <em>Spirituales</em>. &ndash; The followers of this system have the power to employ spiritual forces, in the same sense as a judge has power over a prisoner in the stocks, because he is in possession of the keys. Such a physician was <em>Hippocrates</em>." (<em>Hypnotism, &c</em>.)
+							</p>
+							<p>
+								"5. <em>Fideles. &ndash; i.e.</em>, those who cure by the power of Faith, such as Christ and the apostles." (<em>Magic</em>)
+							</p>
+							<p>
+								"Among these five classes, the first one is usually the most orthodox and narrow-minded, and rejects the other four for not being able to understand them."
+							</p>
+							<p>
+								"From each of the five causes of diseases all kinds of diseases may spring, and each kind of disease can therefore be divided into five classes, according to its cause. There are consequently five kinds of plague and five kinds of cholera, five kinds of dropsy or cancer, &amp;c."
+							</p>
+							<p>
+								"If, for instance, a plague appears, the <em>Naturales</em> will say it is caused by a disorganisation of the bodily structures, while the <em>Astrologer </em>will say it is caused by a certain constellation of planetary influences; but there may be three more causes which produced that epidemic, and which will determine its character."
+							</p>
+							<p>
+								"Moreover, each disease may manifest itself in two ways, one of which belongs to the department of Medicine, the other one to the department of Surgery. That which radiates from the centre (constitutional diseases) belongs to Medicine; that which is localised --<em> i.e</em>., circumscribed or confined to a certain locality &ndash; belongs to Surgery." <sup>[43]</sup>
+							</p>
+							<p class="fnote">
+								[43. The word surgery is here applied in a sense somewhat different from its modern acceptation.]
+							</p>
+							<p>
+								"Each physician, no matter to which sect he belongs, should know the five causes of diseases and the five methods of treatment; but each method is in itself sufficient to cure all diseases, no matter from what cause they originate." (<em>De Entibus Morbosom</em>)
+							</p>
+							<p>
+								"No knowledge is perfect unless it includes an understanding of the origin &ndash; <em>i.e.</em>, the beginning; and as all of man's diseases originate in his constitution, it is necessary that his constitution should be known, if we wish to know his diseases."
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="three-substances">&nbsp;</a>
+							<h4>
+								The Three Substances
+							</h4>
+							<p>
+								"The Bible tells us that Man is made out of nothing; that is to say, his spirit, the real man, is from God, who is not <em>a thing</em>, but the eternal reality; but he is made into three somethings or 'substances,' and these three constitute the whole of Man: they are himself, and he is they, and from them he receives all that is good or evil for him. Every state in which man can possibly enter is determined by <em>number, measure,</em> and <em>weight</em>."
+							</p>
+							<p>
+								The "Three Substances" are the three forms or modes of action in which the universal primordial Will is manifesting itself throughout Nature, for all things are a Trinity in a Unity. The <em>"Salt"</em> represents the principle of corporification, the astringent or contractive and solidifying quality, or, in other words, the <em>body</em>; the <em>"Sulphur"</em> represents the expansive power the centrifugal force, in contradistinction to the centripetal motion of the first quality &ndash; it is that which burns, <em>i.e.</em>, the <em>soul </em>or light in all things; and the <em>"Mercury"</em> is the <em>Life, i.e.</em>, that principle or form of will which manifests itself as life, or consciousness and sensation. Each of these forms of will is an individual power; <sup>[44]</sup> nevertheless they are substantial, for "matter" and "force" are one, and originate from the same cause. The three substances, held together in harmonious proportions, constitute health; their disharmony constitutes disease, and their disruption death.
+							</p>
+							<p class="fnote">
+								[44. So are light, heat, electricity, &amp;c. Each of them is an individual, and nevertheless universally existing, energy.]
+							</p>
+							<p>
+								"These three substances should be <em>practically</em> known to the physician, for his usefulness does not consist in merely possessing theoretical knowledge, but in his ability to restore health. He must learn to know these substances by studying the light of Nature, not by seeking them in his own imagination; he should become able to see Nature as she is, and not as he or others may imagine her to be. His art should be baptized in the fire; he must have himself been born from the fire, and tested in it seven times and more."
+							</p>
+							<p>
+								"No one is born a physician out of himself, but out of the light of Nature, and this light is the great world. He should pass through the examination of Nature and know her laws. He should not seek for wisdom in his own fancy, but in the light of Nature, and from the ability to recognise this light springs the true science. Not in the books, but in the light of Nature is to be found true wisdom and art, theory and practice; but those who cannot find wisdom in that light, and seek for it in their own fancy, will continually err." <sup>[45]</sup>
+							</p>
+							<p class="fnote">
+								[45. Sankaracharya says: The first necessary requisite for the attainment of real knowledge is the possession of the power to distinguish the enduring (spirit) from the non-enduring (matter). That which hinders man to see the truth is the delusion of self.]
+							</p>
+							<p>
+								"There is nothing in man which would naturally cause him to be a physician. He has the capacity to collect ideas intellectually, but this alone does not constitute art. This faculty is like an empty box, useful only to store up useful things."
+							</p>
+							<p>
+								"Let us look at two examples the glass-maker and the carpenter. The glass-maker did not learn his art from himself, he found it in the light of Nature, for Nature showed him how to melt the materials by means of the fire, and discovered the glass for him; but a carpenter who builds a house constructs it according to his own ideas, provided he has the necessary materials."
+							</p>
+							<p>
+								"A physician may have the necessary materials &ndash; <em>i.e</em>., the patient and the remedies &ndash; but he is not a true physician as long as he has not the true knowledge as to how and when and why they must be applied. The glass-maker is taught by Nature, the carpenter follows his own fancy; the former is taught by the fire, and the true physician receives from the fire of Nature his wisdom and his art &ndash; <em>i.e.</em>, his experience. This is his true <em>approbation</em>". <sup>[46]</sup>
+							</p>
+							<p class="fnote">
+								[46. The true physician acts in harmony with natural laws; the quack tries to oppose Nature by means of his own inventions. The true physician will aid Nature to throw off the germs of disease; the quack will try to force Nature to retain the poison and to prevent its outward manifestation. (Compare William Tebb, Leprosy and Vaccination. London, 1893.)]
+							</p>
+							<p>
+								"The ignorant refuse to follow Nature, and they follow their own fancies. Understanding is twofold. One understanding comes from experience, the other from aptitude; the former, again, is twofold, and is based either upon the understanding of the law or merely upon haphazard experiment. The former is the one upon which true medicine rests, and implies the knowledge of the three <em>substances</em>; the other is merely supposition and error, for a haphazard experiment may succeed once and fail at another time."
+							</p>
+							<p>
+								"We should not follow in the footsteps of persons, but in the footsteps of Nature; we should not act on account of hearsay, but on account of our own understanding. The first man who learned anything useful was taught by Nature; let Nature teach us as she taught him."
+							</p>
+							<p>
+								"If my art is to be based upon a firm foundation, it must be based upon my own understanding, not upon that of another man. A physician should have God before his eyes, visibly and tangible; he should see the truth, not shadowy or as in a dream, but tangible and without any doubt."
+							</p>
+							<p>
+								"Our science should be based upon our own perception of truth, not upon mere belief or opinion. Information received from men can only assist us in forming opinions, but it constitutes no knowledge. True knowledge consists in a direct recognition of the real, and is taught by Nature herself."
+							</p>
+							<p>
+								"As far as the patient is concerned, there are three things required of him to effect a cure: his disease should be a natural one, he should have a certain amount of will, and a certain amount of vital energy. If these conditions are not present, no cure can be effected; for even Christ could not benefit those who were not receptive of His power."
+							</p>
+							<p>
+								"This power is Faith, and it should be present in the patient as well as in the physician. Christ did not say to the sick, 'I cured thee,' but He said, 'Thy faith made thee whole.' It is not the physician who heals the sick, but it is God who heals him through Nature, and the physician is merely the instrument through which God acts upon the nature of the patient. The patient should therefore have faith in God and confidence in his physician."
+							</p>
+							<p>
+								"God acts according to universal law, and makes no exceptions in special cases; but all power comes from God, and may be guided properly or its action impeded by the physician. God kills no one; it is Nature which causes people to die. God is Life, and the physician in whom the power of God is manifest will be a fountain of life and health to the sick."
+							</p>
+							<p>
+								"To God belongs the praise, and to man the blame. Those who attempt to cure diseases by their own power, without recognising the eternal source of all power, will never know the deeper mysteries of Nature. They deal with lies, and do not perform the will of God; and if they murder their patients, it is they themselves who are responsible for it."
+							</p>
+							<p>
+								"Those who attempt to cure the sick by means of what they learn in books, and without using their own judgment, are like the foolish virgins mentioned in the Bible, who wasted the oil from their lamps, and tried to borrow light from others. Those whose minds are open for the reception of the truth, who are charitable to all, who love their art for its own sake, and seek to do the will of God, without any thought of self, they belong to my school, and are my disciples. They will be taught by the light of wisdom, and God will perform His miracles through their instrumentality." (<em>De Virtute Medici</em>)
+							</p>
+							<!-- stop quotes -->
+							<!-- page 235 of text -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="arcana">&nbsp;</a>
+							<h4>
+								Arcana (Mysteries)
+							</h4>
+							<p>
+								Why is the practice of medicine of Theophrastus Paracelsus almost incomprehensible to the modern practitioner? It is because the latter seeks to treat the diseased organs themselves, which are as such merely the external effects of internal causes, and he knows of no other way to act upon them except by mechanical or chemical means; while the method of treatment of Paracelsus, by means of which he made the most wonderful cures, is to change the interior spiritual causes from which the outward effects grow; to treat the very essences out of which corporeal organs become crystallised, and to supply them with the power of vitality of the quality which they require.
+							</p>
+							<p>
+								To accomplish this, deep insight into the causes of disease, spiritual perception, spiritual knowledge, and spiritual power are needed, and these qualities belong not to that which is human in man, but to the light of the spirit which shines into him.
+							</p>
+							<p>
+								For this reason the <em>Arcana </em>of Paracelsus have been universally misunderstood, and it is believed even to this day that his "secret remedies" were certain compounds which he concocted, and which might be prepared by any apothecary, if he were put in possession of the prescriptions for them.
+							</p>
+							<p>
+								This is, however, not the case. A prescription that might be learned from books is not an <em>Arcanum</em>; <sup>[47]</sup> a secret that might be communicated intellectually from one person to another is not a<em> divine</em> or spiritual mystery. A cow can give birth to nothing else but a calf, a monkey cannot produce a man; neither can he who has not himself been reborn in the spirit produce or endow things with spiritual power. Man must himself be that which he desires to produce.
+							</p>
+							<p class="fnote">
+								[47. "An Arcanum is incorporeal and indestructible of eternal life, superhuman and beyond Nature. In us is the <em>Arcanum Dei</em> and the <em>Arcanum Naturae</em>; the <em>Arcanum</em> is the virtue of a thing in its highest potency; the <em>Arcanum Hominis</em> is that power of man which is eternal in him." (<em>Archidoxes, De Arcanis</em>)]
+							</p>
+							<p>
+								We do not blame those who, not being spiritual, are unable to grasp spiritual truths; we only reject the conceit of those who, not being capable to see the true light, dogmatically deny its existence.
+							</p>
+							<p>
+								Even of the direct disciples of Paracelsus, few only were able to see the truth clearly. He says: "Twenty-one of my servants have become victims of the executioner (the illusions of this world, false reasoning). May God help them! Only a few have remained with me." (<em>Denfensio</em>, vi.)
+							</p>
+							<p>
+								"The first <em>Arcanum</em> is the <em>Mercurius vivus</em>; the second, the <em>Prima Materia</em>; the third is the <em>Lapis Philosophorum</em>; and the fourth, the <em>Tinctura</em>. These remedies are rather of an angelic than of a human character." (<em>Archidoxes</em>, iv.)
+							</p>
+							<p>
+								If the will of God acting within Nature could create a world, surely the same divine will, acting within man, can cure all diseases; but only that will which is active in man, not that which is outside of him, can act within his organisation; and before a man becomes able to send his soul within the soul of another person, his own will must become godlike and free.
+							</p>
+							<p>
+								A "hypnotiser" merely paralyses the will of a weak-minded person and induces a kind of dream; but the magic power of the true Adept is the power of God acting through him. Such powers do not belong to that which is mortal in man, but to that which is divine, and therefore those who wish to graduate in the school of Paracelsus and follow his example will have to outgrow their self-conceit and become regenerated in the spirit of divine wisdom, which is the realisation of truth.
+							</p>
+							<p>
+								"We are not intent upon showing our feelings and thoughts, mind and heart, to idiots and fools, and we protect ourselves, therefore, by a good wall, to whose door only the wise ones possess the key. If you have the proper understanding, you will comprehend it and act accordingly; but if you are deficient in your knowledge or in its practical application, you will also be without all the planets, stars, and signs." (<em>Coelum Philos</em>.)
+							</p>
+							<blockquote class="fnote">
+								<p>
+									NOTE. &ndash; The above-named Arcana may, although imperfectly, be described as follows:&mdash;
+								</p>
+								<p>
+									<em>Mercurius vivus</em>. &ndash; Spiritual Intelligence, Divine Self-consciousness, Wisdom.
+								</p>
+								<p>
+									<em>Prima Materia</em>. &ndash; The Logos in its aspect as the substance and essence of all things, the Word (Akasha).
+								</p>
+								<p>
+									<em>Lapis Philosophorum</em>. &ndash; The spiritual man himself, having attained self-knowledge.
+								</p>
+								<p>
+									<em>Tinctura</em>. &ndash; The power of divine love, it being identical with divine wisdom.
+								</p>
+							</blockquote>
+							<p>
+								_____
+							</p>
+							<!-- this is page 237 of text -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="07-medicine.htm">&lt; 7. Medicine, part 1</a></li>
+									<li class="align-right"><a href="08-alchemy-and-astronomy.htm">8. Alchemy and Astrology &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

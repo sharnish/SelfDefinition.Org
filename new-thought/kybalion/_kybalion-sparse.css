@@ -1,0 +1,127 @@
+/* file:  /new-thought/kybalion/_kybalion-sparse.css 
+
+Update June 5, 2020. May 18, 2022
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update May 18, 2022";
+	}
+}
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f9ffff;
+}
+
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #d0ebff;
+}
+
+.highlight {
+	padding: 3px;
+}
+
+html.dark p.highlight {
+	background: #3a3a3a;
+}
+
+.kybalion-quote {
+	font-style: italic;
+	text-align: center;
+	font-size: 95%;
+	margin-bottom: 25px;
+}
+
+/* header h3 {} <- WAS set to 0 on about line 189 below; now changed there to default 1em */
+header h3 span.block {
+	font-size: 90%;
+}
+
+h6 {
+	font-size: 95%;
+}
+
+p.kybalion-quote,
+p.kybalion-quote-axiom {
+	font-style: normal;
+	color: #600000;
+	font-size: 100%;
+	margin: 1em auto 1.5em;
+}
+
+html.dark p.kybalion-quote,
+html.dark p.kybalion-quote-axiom {
+	color: #f4f466;
+}
+
+
+/* SOURCE: https://www.w3schools.com/css/css_tooltip.asp *)/
+/* Tooltip container */
+
+.tooltip {
+	position: relative;
+	display: inline;
+	border-bottom: 2px dotted black;
+	/* If you want dots under the hoverable text */
+}
+
+html.dark .tooltip {
+	border-bottom: 2px dotted #ff7;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 180px;
+	font-size: 80%;
+	background: #ccffcc;
+	color: #000;
+	text-align: left;
+	padding: 15px 15px;
+	border-radius: 6px;
+	/* Position the tooltip text - see examples below!*/
+	position: absolute;
+	z-index: 9;
+	border: 0px solid #400;
+}
+
+html.dark .tooltip .tooltiptext {
+	background: #444;
+	color: #ff7;
+}
+
+/* position it below the span*/
+.tooltiptext {
+	top: 100%;
+	left: 50%;
+	margin-left: -60px;
+	/* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+/* HOW TO USE EXAMPLE
+
+<span class="tooltip">Hover over me<span class="tooltiptext">Tooltip text</span></span>
+
+*/
+
+
+/* end */

@@ -1,0 +1,217 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>In the Pronaos of the Temple of Wisdom, by Franz Hartmann MD</title>
+	<meta name="description" content="">
+	<meta name="author" content="Franz Hartmann MD">
+	<meta property="og:title" content="In the Pronaos of the Temple of Wisdom, by Franz Hartmann MD">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/hartmann/wisdom/images/franz-hartmann-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_wisdom-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this is first <link rel="prev" >-->
+	<link rel="next" href="preface.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Modeled on Magic White and Black, Contents page */
+		/* this page only */
+		p.link {
+			margin-top: 25px;
+			margin-bottom: 5px;
+			background: #ddd;
+		}
+
+		html.dark p.link {
+			background: #373737;
+		}
+
+
+		p.link a {
+			padding-left: 0;
+		}
+
+		p.contents {
+			margin-top: 5px;
+			font-size: 85%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_wisdom-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_wisdom-title-include.htm"); ?>
+									<!-- new format puts page title higher -->
+									<h3>
+										Chapter Descriptions
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents-Index</a></li>
+									<li class="align-right"><a href="preface.htm">Title Page and Preface &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="table" style="margin-top:40px;">
+								<div class="section">
+									<p class="link" style="margin-top: 0;">
+										<a href="preface.htm">Title Page, Preface by the Author</a>
+									</p>
+								</div>
+								<div class="section">
+									<p class="link">
+										<a href="1-introduction.htm">Chapter One—Introduction</a>
+									</p>
+									<p class="contents">
+										Occult Literature—Allegorical language of the Rosicrucian books—Its secret meaning
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="2-hermetic-philosophy.htm">Chapter Two—The Hermetic Philosophy</a>
+									</p>
+									<p class="contents">
+										The Neoplatonists—Ammonius Saccas—Plotinus—Malchus Porphyrius—Jamblichus—Proclus—Hierocles.
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="3-medieval-philosophers.htm">Chapter Three—Mediaeval Philosophers</a>
+									</p>
+									<p class="contents">
+										&quot;Magic,&quot; according to Cornelias Agrippa.
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="4-among-the-adepts.htm">Chapter Four—Among the Adepts</a>
+									</p>
+									<p class="contents">
+										&quot;The Brotherhood of the Golden and Rosy Cross&quot;—Occult and mysterious powers—Adepts and Sages—Alchymists and Goldmakers—The True History of Flamel—The Count de Saint Germain—Cagliostro—The art of making alchemical gold—Well-authenticated facts.
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="5-the-rosicrucian-orders.htm">Chapter Five—The Rosicrucian &quot;Orders&quot;</a>
+									</p>
+									<p class="contents">
+										&quot;History&quot; of the &quot;Rosicrucians&quot;—The &quot;Universal Reformation&quot;; the &quot;Fama Fraternitatis&quot; and the &quot;Confessio&quot;—Truth and Fiction—The &quot;Chemical Marriage of Christian Rosencruetz&quot;—Valentin Andreae—The &quot;Sphinx Rosaceae&quot;—Andreas von Carolstadt Theophrastus Paracelsus—Rosicrucian Literature.
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="6-pseudo-rosicrucians.htm">Chapter Six—Pseudo Rosicrucians. Imposters and Fools.</a>
+									</p>
+									<p class="contents">
+										Mysticism during the Middle Ages—&quot;Secret Societies&quot;—Schroepfer—J. C. Woellner and Bischofswerder—Political Influence—The &quot;Jesuits&quot; and the &quot;Illuminati&quot;—Weishaupt—King Frederic William II.
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="7-yoga-philosophy-rosy-cross.htm">Chapter Seven—Appendix: Yoga Philosophy -and- In the Pronaos of the Temple of the True Cross.</a>
+									</p>
+									<p class="contents">
+										The Principles of the Yoga-Philosophy of the Rosicrucians and Alchemists.
+									</p>
+									<p class="contents">
+										The Cross and the Rose—Rosicrucian Rules—The duties of a Rosicrucian—The Secret Signs of the Rosicrucians—Rosicrucian Jewels—Rosicrucian Symbols—Signs from the Heart of the celestial Mother—Signs referring to the Divine child.
+									</p>
+								</div>
+								<!-- end section -->
+								<div class="section">
+									<p class="link">
+										<a href="8-alchemy.htm">Chapter Eight—Alchemy</a>
+									</p>
+									<p class="contents">
+										The Science and Art of Alchemy—&quot;The Prima Materia&quot;—The &quot;Spiritus Universalis&quot;—The Secret Fire—The four alchemical rules—The five things necessary to observe in the practice of Alchemy—Axiomata Hermetica.
+									</p>
+								</div>
+								<!-- end section -->
+							</div>
+							<!-- end table -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents-Index</a></li>
+									<li class="align-right"><a href="preface.htm">Title Page and Preface &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

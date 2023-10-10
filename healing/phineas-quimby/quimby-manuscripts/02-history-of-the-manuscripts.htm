@@ -1,0 +1,375 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2. History of the Manuscripts - Quimby Manuscripts</title>
+	<meta name="description" content="History of the Manuscripts; First Published in 1921; Suppression by George Quimby; Notes Taken by George Quimby;
+     Mary Baker Eddy; Horatio Dresser Acquires the Documents">
+	<meta name="author" content="Phineas P. Quimby, Horatio Dresser">
+	<meta property="og:title" content="2. History of the Manuscripts - Quimby Manuscripts">
+	<meta property="og:description" content="History of the Manuscripts; First Published in 1921; Suppression by George Quimby; Notes Taken by George Quimby;
+     Mary Baker Eddy; Horatio Dresser Acquires the Documents">
+	<meta property="og:image" content="https://selfdefinition.org/healing/phineas-quimby/quimby-manuscripts/images/phineas-parkhurst-quimby-postcard.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_manuscripts-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="01-biographical-sketch.htm">
+	<link rel="next" href="03-quimbys-restoration-to-health.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 230px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+
+		/* The following goes ON PAGE, to avoid CSS stylesheet having to be refreshed
+        https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/   */
+		/* the only instance of this is in this chapter, chapter 2. */
+		label[for=element-toggle-6] {
+			cursor: pointer;
+		}
+
+		#element-toggle-6 {
+			display: none;
+		}
+
+		#element-toggle-6:not(:checked)~#toggled-element-6 {
+			display: none;
+		}
+
+		/* Template for code on the page
+
+		<label for="element-toggle-1">
+			[1. Toggle footnote.]</label>
+		<input id="element-toggle-1" type="checkbox" />
+		<div id="toggled-element-1" class="fnote hidden">
+			<p>
+			</p>
+		</div>
+        */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_manuscripts-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_manuscripts-title-include.htm"); ?>
+									<h3>
+										<span class="block">Chapter 2</span>History of the Manuscripts
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="01-biographical-sketch.htm">&lt; Chapter 1</a></li>
+									<li class="align-right"><a href="03-quimbys-restoration-to-health.htm">Chapter 3 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#first-published-1921">First Published in 1921</a></li>
+									<li><a href="#suppression-george-quimby">Suppression by George Quimby</a></li>
+									<li><a href="#notes-george-quimby">Notes Taken by George Quimby</a></li>
+									<li><a href="#mary-baker-eddy">Mary Baker Eddy</a></li>
+									<li><a href="#horatio-dresser-acquires">Horatio Dresser Acquires Documents</a></li>
+									<li><a href="#footnotes">Footnotes</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="first-published-1921">&nbsp;</a>
+							<h4>
+								First Published in 1921 <span style="font-size: unset;" class="note normal">*</span>
+							</h4>
+							<p class="fnote">
+								[ * Published by Horatio W. Dresser, editor of this volume, 55 years after the death of Phineas P. Quimby. Also see <a href="preface.htm#publishers-note">Publisher's Note</a> in the Preface. and <a href="20-appendix-list-of-writings.htm">Appendix, list of writings</a>&nbsp;]
+							</p>
+							<p>
+								<strong>Remarks by the Editor, Horatio W. Dresser</strong> <span style="font-size: unset;" class="note normal">**</span>
+							</p>
+							<p class="fnote">
+								[ ** (1866-1954) <a href="https://en.wikipedia.org/wiki/Horatio_Dresser">en.wikipedia.org/<wbr />wiki/<wbr />Horatio_Dresser</a>&nbsp;]
+							</p>
+							<div class="right-image-div">
+								<img src="images/horatio-dresser.jpg" alt="Horatio Dresser" /><br />
+								<p class="note">
+									Horatio Dresser (1866-1954)<br />
+									Editor, Quimby Manuscripts
+								</p>
+							</div>
+							<p>
+								To many it seems strange indeed that the publication of the Quimby manuscripts has been so long delayed. As far back as 1882, Mr. Julius Dresser <span class="note">[father of the editor]</span> <sup>[1]</sup> began to make it publicly known in Boston that the writings existed, and that when published they would disclose the real history of the discovery of spiritual healing. Naturally, there was a strong desire to have them published.
+							</p>
+							<p class="fnote">
+								[1. Julius Dresser and his wife Annetta Dresser were both cured by Quimby, from what sickness it is unclear. Their son, Horatio, wrote extensively on Quimby's theories, collecting many of Quimby's papers in his book <em>Health and the Inner Life: An Analytical and Historical Study of Spiritual Healing and Theories</em>, <a href="https://archive.org/details/healthandinnerl00quimgoog/page/n12/mode/2up">[Internet Archive]</a> and also in the book, <em>The Collected Manuscripts of P.P. Quimby.</em> Source: <a href="https://en.wikipedia.org/wiki/Phineas_Quimby">Wikipedia</a>&nbsp;]
+							</p>
+							<div class="right-image-div">
+								<img src="images/julius-a-dresser.jpg" alt="Julius Dresser" /><br />
+								Julius Dresser (1838-1893)<br />
+								student of P.P. Quimby
+							</div>
+							<p>
+								In his pamphlet, <em>"The True History of Mental Science"</em>, <span class="note" style="white-space: nowrap;">[&nbsp;<a href="http://www.ppquimby.com/jdresser/jdresser.htm">ppquimby.com</a>&nbsp;]</span> issued in 1887, Mr. [Julius] Dresser expressed the opinion that "no such depth of understanding has yet seen the light in print as those manuscripts contain," that is, on the subject of spiritual healing. It was not Mr. Dresser's privilege at that time to publish more than one of the articles, <sup>[2]</sup> and the best he could do was to give a good reason why Dr. Quimby had no opportunity to revise the writings before publication prior to his death.
+							</p>
+							<p class="fnote">
+								[2. Publication was blocked by Quimby's heirs as described below.]
+							</p>
+							<p>
+								"I think I see a wisdom in nearly everything," said Mr. Dresser <span class="note">[in the 1887 pamphlet]</span>. "If those writings had been published, as Dr. Quimby intended, or even at any time since, previous to now, they would have found a public unprepared for them. Therefore they are in the hands of a person whose sympathies are not stirred by a work in the truth, as some of ours are, to issue them before their time. But those manuscripts will be published at a future day."
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="suppression-george-quimby">&nbsp;</a>
+							<h4>
+								Suppression by George Quimby
+							</h4>
+							<p>
+								We had a copy of the manuscripts in the household until 1893, when by arrangement with Mr. George Quimby, the owner, this copy was sent to Belfast <span class="note">[Maine]</span> to be kept with the other copies. <span class="note">[i.e., confiscated by George Quimby]</span> The household copy was used in connection with instruction in classes, and from time to time portions of the articles were read in the classes on spiritual healing. But we were not permitted to give the writings further publicity. We frequently urged their owner to publish them, but Mr. Quimby did not believe the right time had come. When we compiled "The Philosophy of P. P. Quimby," <span class="note" style="white-space: nowrap;">[ <a href="http://www.ppquimby.com/adresser/contents.htm">ppquimby.com</a>&nbsp;]</span> in 1895, we were still unable to secure the right to print more than brief excerpts from two of the manuscript volumes, since Mr. Quimby did not wish any essay printed in full till all the chief writings should be published. Many efforts were made as the years passed to secure further privileges. Mr. Quimby was frequently besought by interested people, clergymen, writers, healers and editors, some of whom traveled to Belfast to argue the point. Mr. Quimby answered all letters courteously, sometimes giving his reasons at length, and explaining his father's ideas; but he stoutly refused to publish the writings.</p>
+							<p>
+								Many rumors could have been denied had he relented. For example, it could have been conclusively shown that nothing whatever was settled by a suit in court in 1883 concerning these writings, for the simple reason that the owner declined to have them taken into court. Ever since that suit took place rumors have been persistently started to the effect that the writings were proved not to exist. Again, it would have been shown once for all in what respects Mrs. Eddy was indebted to Dr. Quimby for ideas and methods. Many misunderstandings have arisen because the writings were not published, and all these must now gradually be cleared away, as matters are put in their true light by the publication of the present volume.
+							</p>
+							<p>
+								Mr. Quimby gave abundant evidence to honest inquirers to show that he actually possessed the writings, and that they were genuine. But it was still necessary for those of us who knew the facts at first hand to explain the matter to those who came to inquire. With one exception we had not seen any of the manuscript books between 1893 and 1921, and inquirers had to take our word for it that the writings existed.
+							</p>
+							<p>
+								Although there was a tacit understanding between us with regard to the publication of the writings when certain conditions should be fulfilled, Mr. Quimby died several years ago without making provision for the disposition of them. When <em>"A History of the New Thought Movement"</em> was published, in 1919,&nbsp;<sup>[3]</sup> I could do no more than express the hope that I might print the manuscripts at some future time.
+							</p>
+							<p class="fnote">
+								[3. Pdf at this link: <a href="http://selfdefinition.org/healing/">selfdefinition.org/<wbr />healing/</a>&nbsp; Also available in html at [broken link] SurrenderWorks.Com&nbsp;]
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="notes-george-quimby">&nbsp;</a>
+							<h4>
+								Notes Taken by George Quimby
+							</h4>
+							<p>
+								At last the way opened in December, 1920, for the publishing of those portions of the writings which have historical or permanent value. Mr. Quimby wished his father's Mss. to be published when their truth could be established without controversies or misstatements. He knew that I was acquainted with their history from the beginning, knew those who copied the writings, knew that they were authentic, and that they were not the "first scribblings" of any other person. It was the wish of the family that I should do the editing and annotating.</p>
+							<p>
+								As the statement has been made that some one else served as Dr. Quimby's secretary, revising and copying his manuscripts for him, or giving him her own writings, it is necessary to state once more that his son George was the secretary during the period in question, in Portland, 1859-60, while the copying was done either by him or by the Misses Ware, of Portland. George Quimby explained how this came about in his article in the New England Magazine, March, 1888. His statement is as follows:
+							</p>
+							<blockquote>
+								<p>
+									"Among his earlier patients in Portland were the Misses Ware, daughters of the late Judge Ashur Ware, of the United States Supreme Court; and they became much interested in 'the Truth,' as he called it. But the ideas were so new, and his reasoning so divergent from the popular conceptions, that they found it difficult to follow him or remember all he said; and they suggested to him the propriety of putting into writing the body of his thoughts.</p>
+								<p>
+									"From that time on he began to write out his ideas, which practice he continued until his death, the articles now being in the possession of the writer of this sketch. The original copy he would give to the Misses Ware; and it would be read to him by them, and, if he suggested any alteration, it would be made, after which it would be copied by the Misses Ware or the writer of this; and then reread to him, that he might see that all was just as he intended it. Not even the most trivial word or the construction of a sentence would be changed without consulting him. He was given to repetition; and it was with difficulty that he could be induced to have a repeated sentence or phrase out, as he would say, 'If that idea is a good one, and true, it will do no harm to have it in two or three times.'"&nbsp;<sup>[4]</sup></p>
+								<p class="fnote">
+									[4. See <a href="http://ppquimby.com/gquimby/biography.htm">ppquimby.com/gquimby/<wbr />biography.html </a>&nbsp;]
+								</p>
+							</blockquote>
+							<p>
+								It will be seen then with what care the exact wishes of Dr. Quimby were carried out. The manuscript books were loaned to some extent by the Misses Ware, Mrs. Sabine and Mr. Dresser, but only when they deemed it wise and under conditions. The copies were kept in security after Dr. Quimby's death so that their teachings should be given to people who appreciated them, and so that they should not be published before the right time. Thus the few came to know that they existed. From the Misses Ware we had abundant opportunity to learn the method of producing and copying the writings as above described.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="mary-baker-eddy">&nbsp;</a>
+							<h4>
+								Mary Baker Eddy
+							</h4>
+							<p>
+								Mr. A. J. Swarts, one of the pioneers of the movement now known as <strong>New Thought</strong>, took pains to investigate the facts in order to clear away misapprehensions which prevailed concerning the discovery of <strong>Christian Science</strong>. Mr. Swarts had nothing against Mrs. Eddy nor any reason for defending Dr. Quimby except to bring out the truth. After visiting Belfast, where he had opportunity to read excerpts from the press concerning Quimby's work and to hear portions of the manuscripts read by George Quimby, Mr. Swarts published his findings in the <em>Mental Science Magazine,</em> Chicago, April, 1888.&nbsp;<a id="return-note-1" class="return-anchor"></a><sup><a href="#footnotes">[footnote&nbsp;1]</a></sup>
+							</p>
+							<p>
+								Learning that the facts of her indebtedness to Quimby were becoming known through the endeavors of Mr. Swarts, Mrs. Eddy sent from Boston over her own signature to the Portland Daily Press, while Mr. Swarts was in Portland, a paid article called an "Important Offer." Among other things, Mrs. Eddy offered to pay the cost of printing the Quimby manuscripts, the qualification being, in Mrs. Eddy's own words, "provided that I am allowed first to examine said manuscripts, and that I find they were P. P. Quimby's own compositions, and not mine that were left with him many years ago, or that they have not since his death, in 1865, been stolen from my published works." Inasmuch as everything depended on her own decision, of course no attention was paid to this offer.
+							</p>
+							<p>
+								Readers interested to follow this controversy in detail will be able to do so by means of the summary in the Appendix. <sup>[5]</sup> They will then see that with the publication of this volume the matter has become one of "internal evidence," since the writings show plainly that they were produced by a mind of Dr. Quimby's type as that mind has been characterized by those who knew him intimately, hence that the manuscripts could not have been the products of the one who claimed to have written them.
+							</p>
+							<p class="fnote">
+								[5. Chapter <a href="21-the-quimby-eddy-controversy.htm">21-the-quimby-eddy-controversy.htm</a>&nbsp;]</p>
+							<p>
+								Most of the writings were produced prior to October 1862, the later articles being mostly repetitions of earlier statements and on the whole not so clear. All the significant terms and expressions such as <em>Science, Science or Christ, Science of Health, the Science of Life and Happiness,</em> were in regular use by 1861. No patient of Quimby's could have explained to him in 1862 that there was a "deeper principle" than magnetism or mesmerism underlying his cures, for he had come to that conclusion himself in 1847, when he gave up his former practice. Nor would this patient have undertaken to explain away his "manipulations," because she knew that the occasional rubbing of the head was no essential part of the treatment. In <em>The Evening Courier</em> and the <em>Portland Advertiser</em>, Mrs. Eddy committed herself publicly to the view that Quimby's works were wrought by the Christ-principle, in contrast with the idea that he healed as did spiritists, mesmerisers and magnetic healers. After Quimby's death she made good this view of his work by writing her <em>"Lines on the Death of Dr. P. P. Quimby, who healed with the Truth that Christ taught, in contradistinction to all isms"</em>&nbsp;<sup>[6]</sup> The internal evidences show that this estimate was the true one, and that every adverse opinion since circulated has been created since 1872.</p>
+							<!--  
+                            <label for="element-toggle-1">
+                                [1. Toggle footnote.]</label>
+                            <input id="element-toggle-1" type="checkbox" />
+                            <div id="toggled-element-1" class="fnote hidden">
+                                <p>
+                                </p>
+                            </div>
+                            -->
+							<label for="element-toggle-6">
+								[6. Toggle HERE to read/hide long footnote.]</label>
+							<input id="element-toggle-6" type="checkbox" />
+							<div id="toggled-element-6" class="fnote hidden">
+								<p id="lines-on-the-death">
+									(by Mary Baker Eddy)</p>
+								<p>
+									LINES ON THE DEATH OF DR. P.P. QUIMBY, WHO HEALED WITH THE TRUTH THAT CHRIST TAUGHT, IN CONTRADISTINCTION TO ALL ISMS.</p>
+								<p>
+									Did sackcloth clothe the sun, and day grow night, All matter mourn the hour with dewy eyes, When Truth, receding from our mortal sight, Had paid to error her last sacrifice?<br />
+									Can we forget the power that gave us life? Shall we forget the wisdom of its way? Then ask me not, amid this mortal strife, &ndash; This keenest pang of animated clay, &ndash; To mourn him less: to mourn him more were just, If to his memory 'twere a tribute given For every solemn, sacred, earnest trust, Delivered to us he rose to heaven.<br />
+									Heaven but the happiness of that calm soul, Growing in stature in the thrown of God: Rest should reward him who hath made us whole, Seeking, through tremblers, where his footsteps trod.
+								</p>
+								<p>
+									.... MARY M. PATTERSON (LYNN, FEB 22, 1866)</p>
+								<p class="tiny">
+									Source: <a href="http://marybakereddy.wwwhubs.com/">marybakereddy.<wbr />wwwhubs.com/</a></p>
+							</div>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="horatio-dresser-acquires">&nbsp;</a>
+							<h4>
+								Horatio Dresser Acquires Documents
+							</h4>
+							<p>
+								The most important date in the whole history might be called January 7, 1921, when there came into the editor's hands the entire collection of letters, original writings, copies, and the other material so carefully preserved since the death of Dr. Quimby. I went through the entire collection in the spirit of fresh investigation. Some of the material I had never seen, and the collection proved richer in valuable data than I had thought. The rest I had not seen for twenty-seven years, with the exception referred to above. I give the facts concerning all this material as thus found.</p>
+							<p>
+								The material consisted of the following:</p>
+							<p class="note">
+								Also see chapter: <a href="20-appendix-list-of-writings.htm">20-appendix-list-of-writings.htm</a></p>
+							<div class="list">
+								<p>
+									(1) Original manuscripts of articles and letters in P. P. Quimby's handwriting, with his own spelling,&nbsp;<a id="return-note-2" class="return-anchor"></a><sup><a href="#footnote-2">[footnote&nbsp;2]</a></sup> and no changes made by any other hand;</p>
+								<p>
+									(2) six manuscript books containing revised articles copied by the Misses Ware and George Quimby, with emendations made here and there by these writers under the direction of Dr. Quimby;</p>
+								<p>
+									(3) three sets of manuscript books containing the copies formerly belonging to Miss Sarah Ware, Mrs. Sabine (formerly Miss S. M. Deering, Dr. Quimby's patient), and Julius A. Dresser;</p>
+								<p>
+									(4) a manuscript book of pieces by Dr. Quimby prior to 1856, Dr. Quimby's letters to patients, 1860, and Miss Emma Ware's catalogue of all the articles, 1859-65;</p>
+								<p>
+									(5) the private journal of Lucius Burkmar, 1843, Quimby's "subject" in his mesmeric period;
+								</p>
+								<p>
+									(6) miscellaneous notes, letters and articles in separated sheets, copied from the originals on these sheets before being copied into books;</p>
+								<p>
+									(7) letters of patients to Dr. Quimby, including 14 by Mrs. Eddy, then Mrs. Patterson, and letters by Dr. Patterson;</p>
+								<p>
+									(8) Quimby's letters to patients after 1860;</p>
+								<p>
+									(9) 3 copies for circulation of Quimby's "Answers to Questions," 1862, with George Quimby's note on one of them that these were written before Mrs. Eddy visited Mr. Quimby as patient; and</p>
+								<p>
+									(10) newspaper scrapbook of articles about Dr. Quimby, 1840&#8209;65.</p>
+							</div>
+							<p>
+								There was also placed at my disposal the entire correspondence between George Quimby and inquirers and critics, as well as all newspaper and magazine articles on the Christian Science controversy to date. And the material put into my hands was all that had existed, save that it was customary to destroy articles in their first form after they had been revised in consultation with the Misses Ware and copied as before indicated. P. P. Quimby's handwriting is distinctive, unmistakable, as the facsimiles show. So too is that of Miss Emma Ware, Miss Sarah Ware and George Quimby.
+							</p>
+							<p>
+								Having all the material at hand, every page or line of it whatsoever, I am able not only to corroborate all statements made by George Quimby concerning the manuscripts, but to state facts which he did not mention in print. I have read carefully through all the original manuscripts, which were copied by George Quimby and the Misses Ware, and have taken note in conscientious detail to see if any revisions or changes were in the handwriting of Mrs. Eddy, then Mrs. Patterson: there is not a page, a sentence or word that bears evidence of any such thing, all revisions or changes having been made by the Misses Ware as already described.
+							</p>
+							<p>
+								There is not anywhere a page or even a line of her own by Mrs. Patterson-Eddy, no "first scribblings." Her name is not written on the back of any page. Nor is there any evidence of any idea that might have been suggested by her, had she been in a state to make any suggestions of value. Instead, there is an assemblage of writings that would have filled her mind with chagrin had she realized how fully Quimby's ideas were developed, long before she ever saw him.&nbsp;<a id="return-note-3" class="return-anchor"></a><sup><a href="#footnote-3">[footnote&nbsp;3]</a></sup> There is all the material any one could desire to make the argument irrefragable.</p>
+							<p>
+								The writings were plainly the work of one mind, with continuity of thought from first to last. Even the unfinished fragments are of interest, for they indicate the state of mind of their author. Dr. Quimby tells us that he frequently wrote when "excited" by learning how greatly his patients had suffered from bondage to priestcraft. Consequently at times he did not even capitalize the first personal pronoun, but started in at once with the main idea. Quimby wrote as he thought. If his thought comprised several subjects at once, he wrote so, seldom pausing to indicate paragraphs. The copyists would then suggest changes here and there to bring out his meaning, not to interpose any view of their own; for they knew his thought exceedingly well, his peculiar use of words, and whatever was part of his style. The titles were suggested in conference with the author, although some of the articles remained unnamed till after Quimby's death, and a few bear more than one title in different stages of revision. The dates were entered in the book when the articles were copied.</p>
+							<p>
+								With his characteristic humor, George Quimby sometimes wrote at the close of an article copied on detached pages, "Finished, thank the Lord; G. Q., scribe." If there were miscellaneous pages of notes or any other statement by herself or her sister, Miss Emma Ware was careful to write on the margin, "Not Dr. Quimby's." All these little matters are significant, for they show the fidelity of those who did their part to transmit these writings intact. A few of the articles were copied after Quimby's death, by Miss Emma Ware. In some of the copy-books a few alterations had been made, under Dr. Quimby's direction, with a view to preparing the articles for a book. Two pages from Vol. I as thus revised are reproduced in facsimile at the end of this volume.</p>
+							<p>
+								The originals and first copies were kept in his safe by George Quimby, and the other copies referred to above were returned to Mr. Quimby after the death of their sometime owners. Visitors and correspondents would labor to persuade him that he was keeping the truth from the world. But he believed he was faithful to the greater good in withholding the writings until the last echo of the controversy had died away. After his death the writings were kept in storage in a bank, and there they remained secure until January 1921.&nbsp;<a id="return-note-4" class="return-anchor"></a><sup><a href="#footnote-4">[footnote&nbsp;4]</a></sup></p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="footnotes">&nbsp;</a>
+							<h4>
+								Footnotes
+							</h4>
+							<div class="footnotes">
+								<p>
+									<a href="#return-note-1">[1]</a> Reprinted in "The True History of Mental Science," revised edition, 1899. <a href="http://www.ppquimby.com/jdresser/jdresser.htm">ppquimby.com/<wbr />jdresser/<wbr />jdresser.htm</a>
+								</p>
+								<p>
+									<a class="endnote" id="footnote-2"></a><a href="#return-note-2">[2]</a> See the facsimile of George Quimby's writing on the wrapper at the end of this volume. <span class="fnote">[not reproduced here]</span>
+								</p>
+								<p>
+									<a class="endnote" id="footnote-3"></a><a href="#return-note-3">[3]</a> See, for example, Chap. XIV, containing <span class="nowrap">Vol. I. <span class="note">[?]</span></span>
+								</p>
+								<p>
+									<a class="endnote" id="footnote-4"></a><a href="#return-note-4">[4]</a> For a complete list of the pieces and articles, see <a href="20-appendix-list-of-writings.htm">Appendix</a>. The package of articles and pieces on separate sheets mentioned above bears this inscription on the outside, "First copies from Father's original manuscripts, afterwards copied into blank books by Emma G. Ware, Sarah Ware, George A. Quimby. " This is written in George Quimby's hand. The complete list of the articles is in the handwriting of Miss Emma Ware.
+								</p>
+							</div>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="01-biographical-sketch.htm">&lt; Chapter 1</a></li>
+									<li class="align-right"><a href="03-quimbys-restoration-to-health.htm">Chapter 3 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

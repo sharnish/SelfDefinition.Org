@@ -1,0 +1,100 @@
+<!-- start of menu include file   Update March 23, 2022, Update July 3, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+            <li><a href="/liberty/">Liberty index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm">Contents</a></li>
+            <li class="menu-totop"><a href="javascript:toTopCleanUrl();" role="button">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below this disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/liberty/">Liberty index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center" style="margin-top:10px;">
+            <li>Constitution of No Authority <span class="normal">(1870)</span></li>
+            <li class="normal note">
+                <img class="menu-image" src="../images/lysander-spooner.jpg" alt="Lysander Spooner" />
+            </li>
+            <li>Lysander Spooner</li>
+            <li class="normal note tight">(1808-1887)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents </a></li>
+                <li><a href="title-page.htm">Title Page </a></li>
+                <li><a href="no-authority-01.htm">1. Introduction </a></li>
+                <li><a href="no-authority-02.htm">2. Voting and Taxation</a></li>
+                <li><a href="no-authority-03.htm">3. Your money, or your life</a></li>
+                <li><a href="no-authority-04.htm">4. Without any signature</a></li>
+                <li><a href="no-authority-05.htm">5. The law of contracts </a></li>
+                <li><a href="no-authority-06.htm">6. Absolute, irresponsible power </a></li>
+                <li><a href="no-authority-07.htm">7. Constitution is no contract </a></li>
+                <li><a href="no-authority-08.htm">8. On what authority?</a></li>
+                <li><a href="no-authority-09.htm">9. Motive to the secret ballot</a></li>
+                <li><a href="no-authority-10.htm">10. Alleged representatives</a></li>
+                <li><a href="no-authority-11.htm">11. Oaths are of no validity</a></li>
+                <li><a href="no-authority-12.htm">12. Oaths of agents also invalid </a></li>
+                <li><a href="no-authority-13.htm">13. Oaths of foreigners</a></li>
+                <li><a href="no-authority-14.htm">14. South and North</a></li>
+                <li><a href="no-authority-15.htm">15. Soldiers' Oaths </a></li>
+                <li><a href="no-authority-16.htm">16. Treaties </a></li>
+                <li><a href="no-authority-17.htm">17. Debts</a></li>
+                <li><a href="no-authority-18.htm">18. Who are the men that rob us?</a></li>
+                <li><a href="no-authority-19.htm">19. Lenders of blood money </a></li>
+                <li><a href="appendix.htm">Appendix &ndash; Summary </a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Lysander Spooner at <a href="https://en.wikipedia.org/wiki/Lysander_Spooner">
+                        Wikipedia</a> </li>
+                <li>Lysander Spooner at <a href="http://www.lysanderspooner.org/">LysanderSpooner.Org</a></li>
+                <li>Lysander Spooner library, <a href="http://www.lysanderspooner.org/works">
+                        free searchable texts</a> </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also in Liberty section</li>
+                <li class="first-item">Lysander Spooner: <a href="/liberty/spooner/articles/1873-forced-consent.htm">Forced Consent (1873)</a></li>
+                <li>Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+                <li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+                <li class="header-item">Psychology section</li>
+                <li class="site-first-item">Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+                <li>Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda, 1928</a></li>
+                <li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a> </li>
+                <li>Wilfred N. Caron: <a href="/psychology/caron/contents.htm">The Occult Significance of Hypnosis</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

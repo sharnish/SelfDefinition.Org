@@ -1,0 +1,230 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contents - Topga Rinpoche, rice seedling Course</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="og-image.jpg">
+	<!-- load external stylesheets before the menu scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_rice-seedling-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!--link rel="prev" -->
+	<link rel="next" href="introduction.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		.columns {
+			list-style: none;
+			padding-left: 0;
+			margin: 20px auto;
+		}
+
+		.columns li {
+			margin-top: 0;
+			margin-bottom: 20px;
+			width: 120px;
+		}
+
+		.columns li.wide {
+			width: 140px;
+		}
+
+		/* tutorial using "columns" property of CSS 3 
+        https://www.youtube.com/watch?v=IcekdG_bUTU
+        */
+
+		.columns {
+			clear: both;
+			width: 540px;
+			text-align: left;
+			column-count: 3;
+			column-gap: 10px;
+			column-fill: balance;
+
+			-moz-column-count: 3;
+			-moz-column-gap: 10px;
+			-moz-column-fill: balance;
+
+			-webkit-column-count: 3;
+			-webkit-column-gap: 10px;
+			-webkit-column-fill: balance;
+		}
+
+		@media only screen and (max-width:600px) {
+			.columns {
+				width: 100%;
+			}
+		}
+
+		@media only screen and (max-width:600px) {
+			.columns {
+				column-count: 2;
+				-moz-column-count: 2;
+				-webkit-column-count: 2;
+			}
+		}
+
+		/* memo only from course
+        .columns h1 {
+            column-span:all;
+            -moz-column-span:all;
+            -webkit-column-span:all;
+        } */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_rice-seedling-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_rice-seedling-title-include.htm"); ?>
+									<h3>
+										Contents
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="introduction.htm">Introduction &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div id="contents-columns">
+								<ul class="columns">
+									<li class="wide"><a href="introduction.htm">Introduction</a></li>
+									<li><a href="rice-seedling-01.htm">Part 1</a></li>
+									<li class="wide"><a href="rice-seedling-01-q-and-a.htm">Part 1 Q&amp;A</a></li>
+									<li><a href="rice-seedling-02.htm">Part 2</a></li>
+									<li><a href="rice-seedling-03.htm">Part 3</a></li>
+									<li><a href="rice-seedling-04.htm">Part 4</a></li>
+									<li><a href="rice-seedling-05.htm">Part 5</a></li>
+									<li><a href="rice-seedling-06.htm">Part 6</a></li>
+									<li><a href="rice-seedling-07.htm">Part 7</a></li>
+									<li><a href="rice-seedling-08.htm">Part 8</a></li>
+									<li><a href="rice-seedling-09.htm">Part 9</a></li>
+									<li><a href="rice-seedling-10.htm">Part 10</a></li>
+									<li><a href="rice-seedling-11.htm">Part 11</a></li>
+									<li><a href="rice-seedling-12.htm">Part 12</a></li>
+									<li><a href="rice-seedling-13.htm">Part 13</a></li>
+									<li><a href="rice-seedling-14.htm">Part 14</a></li>
+									<li><a href="rice-seedling-15.htm">Part 15</a></li>
+									<li><a href="rice-seedling-16.htm">Part 16</a></li>
+									<li><a href="rice-seedling-17.htm">Part 17</a></li>
+									<li><a href="rice-seedling-18.htm">Part 18</a></li>
+								</ul>
+
+							</div>
+							<!-- end #page-nav-container < no, contents column, needs work -->
+							<p class="note80">
+								Course taught by Topga Rinpoche, translated mainly by Kiki Ekselius, parts also by Hannah Nydahl. 1st course of Buddhism, 5 Year Programme in Europe (July/August 1994) in Dhagpo Kagyu Ling, France. Transcript, not corrected, not edited; for the students' personal use only.</p>
+							<p class="note80">Source at Scribd for course: <a href="https://www.scribd.com/document/111105657/The-Rice-Seedling-Sutra">Scribd.Com</a>
+							</p>
+							<p class="note80">Copyright: Attribution Non-Commercial (BY-NC)
+							</p>
+							<p class="note80">Course document on our site: link opens a <a href="/buddhism/Togpa-Rinpoche-Rice-Seedling-Sutra-course.pdf">70 page pdf</a>
+							</p>
+							<h4>
+								DESCRIPTION of the SUTRA
+							</h4>
+							<div class="fnote">
+								<p>
+									The following are cover notes from <em>THE SALISTAMBA SUTRA</em>, Tibetan Original, Sanskrit Reconstruction, English Translation, Critical Notes by N. Ross Reat. Copy of the book at Scribd here:
+									<a href="https://www.scribd.com/document/29421082/Salistamba-Sutra">scribd.com</a>
+								</p>
+								<p>Copy of the book on our site, PDF, 3.1 megs: <a href="/buddhism/Salistamba-Sutra-trans-N-Ross-Reat-1993.pdf">/buddhism/Salistamba-Sutra-trans-N-Ross-Reat-1993.pdf</a>
+								</p>
+							</div>
+							<p>
+								The Salistamba Sutra, a Mahayana text of great antiquity, has perished in its original Sanskrit form. It is, however, extensively quoted in Sanskrit commentarial literature which does survive in the original. Moreover, the Salistamba survives in several Chinese versions and in Tibetan, including a seventh-century manuscript which represents one of the earliest extant examples of the Tibetan language. As a result, surviving Sanskrit quotations of the Salistamba Sutra can be matched against the Tibetan and Chinese translations of an original Sanskrit version of the text. The resulting approximation of the Sanskrit text of the sutra <sup>[1]</sup> is of considerable historical importance with regard to the origins of Mahayana Buddhism and the early history of Buddhism in general.</p>
+							<p class="fnote">
+								[1. Applies to Reat's book, not this course by Topga Rinpoche.]
+							</p>
+							<p>
+								The Salistamba Sutra appears to represent a formative period in which there yet remained many points in common between incipient Mahayana Buddhism and what was to become Theravada Buddhism. <sup>[2]</sup> This situation suggests a gradual divergence between the two major streams of Buddhism rather than the radical schism depicted in traditional Buddhist history, and provides evidence for the contention that the Theravada suttas do indeed contain the earliest, most accurate version of the teachings of historical Buddha.
+							</p>
+							<p class="fnote">
+								[2. See <a href="https://en.wikipedia.org/wiki/Theravada">en.wikipedia.org/<wbr />wiki/<wbr />Theravada</a> and <a href="https://en.wikipedia.org/wiki/Mahayana">en.wikipedia.org/<wbr />wiki/<wbr />Mahayana</a>&nbsp;]</p>
+							<div class="hide-if-large-screen">
+								<!-- is in menu so not needed if large screen -->
+								<h4>
+									Other sources
+								</h4>
+								<p>
+									See full text (scan):</p>
+								<p>
+									<a href="https://www.scribd.com/document/29421082/Salistamba-Sutra">www.scribd.com</a>
+								</p>
+								<p>
+									Text of Sutra in Spanish (14 page pdf):</p>
+								<p>
+									<!-- a href="http://budadharmazen.org/tierra-del-buda/tripitaka/textos-tradiciones-principales/salistamba.pdf" -->
+									budadharmazen.org - broken link]
+								</p>
+								<p>
+									Dharmanet.Org:</p>
+								<p>
+									Twelve links of dependent arising as explained in the rice-seedling sutra:
+									<a href="https://dharmanet.org/coursesM/30/novideo/12links1b.htm">
+										dharmanet.org</a>
+								</p>
+							</div>
+							<p class="totop">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

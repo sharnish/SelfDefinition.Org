@@ -1,0 +1,64 @@
+/* file:  /zen/garma-chang/practice-of-zen/_practice-of-zen-update.css
+
+Update April 27, 2022
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update April 27, 2022";
+	}
+}
+
+/* HAS A THREE LINE TOP MENU, NO CONTENTS PAGE */
+/* HAS A THREE LINE TOP MENU, NO CONTENTS PAGE */
+/* HAS A THREE LINE TOP MENU, NO CONTENTS PAGE */
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffff6;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #f6d6ff;
+	background: #b3d9ff;
+}
+
+
+
+/* THREE-LINE MENU - NEEDED BECAUSE OF EXTRA ELEMENTS */
+
+@media only screen and (max-width: 450px) {
+
+	#fixed-header-small-screen,
+	#menu-site-small-screen {
+		height: 145px;
+	}
+
+	#main-content {
+		top: 146px;
+	}
+}
+
+/* testing */
+
+/*  *******/
+
+/* end */

@@ -1,0 +1,912 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La enseñanza zen de Huang Po, en la transmisión de la mente</title>
+    <meta name="description" content="The Chün Chou Record">
+    <meta name="author" content="Huang Po. Traducción John Blofeld y Rev. Yin Zhi Shakya">
+    <meta property="og:title" content="La enseñanza zen de Huang Po, en la transmisión de la mente">
+    <meta property="og:description" content="The Chün Chou Record">
+    <meta property="og:image" content="https://selfdefinition.org/zen/huang-po/transmision/images/huang-po-og-image.jpg">
+    <!-- load external stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_transmision-spanish-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="prefacio-pei-hsiu.htm">
+    <link rel="next" href="a2-archivos-chun-chou-cont.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* must translate note 8b */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_transmission-spanish-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include("_transmission-spanish-title-include.htm"); ?>
+                                    <h3 class="toowide">
+                                        <span class="normal block">Primera parte</span> Los Archivos Ch&uuml;n Chou del
+                                        Maestro Zen Huang Po (Tuan Chi)
+                                    </h3>
+                                    <p class="tiny">
+                                        This page in English: <a class="inline-block" href="../transmission/a1-chun-chou-record.htm">../a1-chun-chou-record.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="prefacio-pei-hsiu.htm">&lt; Prefacio de P&apos;ei
+                                            Hsiu</a></li>
+                                    <li class="align-right"><a href="a2-archivos-chun-chou-cont.htm">Archivos Ch&uuml;n
+                                            Chou parte 2 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p class="toowide">
+                                Una colección de sermones y diálogos archivados por P'ei Hsiu mientras se encontraba en
+                                la ciudad de Ch&uuml;n Chou
+                            </p>
+                            <header>
+                                <h3>
+                                    Párrafos 1 &ndash; 17 <span class="smaller">(de 36)</span>
+                                </h3>
+                            </header>
+                            <div class="to-center">
+                                <!-- items have :hover styling, color change -->
+                                <!-- these are CSS3 columns -->
+                                <!-- the uls don't float; they are display: inline-block -->
+                                <nav class="contents">
+                                    <div class="item">
+                                        <a href="#1">1</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#2">2</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#3">3</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#4">4</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#5">5</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#6">6</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#7">7</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#8">8</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#9">9</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#10">10</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#11">11</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#12">12</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#13">13</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#14">14</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#15">15</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#16">16</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#17">17</a>
+                                    </div>
+                                    <div class="item">
+                                        <a style="padding: 0; font-size: 80%;" href="#notas">Notas</a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- end of #to-center -->
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="1">&nbsp;</a>
+                            <h4>
+                                1
+                            </h4>
+                            <p>
+                                1. El Maestro me dijo: Todos los Buddhas y todos los seres sintientes son nada más que
+                                la Única Mente, además de la cual nada existe. Esta Mente que es sin principio, es
+                                no-nacida <a class="return-anchor" id="return-anchor-1"></a><sup><a href="#notas">[1]</a></sup> e
+                                indestructible. Ni es verde ni amarilla y no tiene forma ni apariencia. No pertenece a
+                                la categoría de las cosas que existen o no existen, ni puede ser pensada en términos de
+                                nuevo o viejo. Ni es larga ni corta, ni grande ni pequeña, porque transciende todos los
+                                límites, medidas, nombres, conjeturas y comparaciones. Es eso que ves ante ti &ndash;
+                                comienzas a razonar acerca de ello, e inmediatamente caes en el error. Es como el vacío
+                                sin límites que no puede ser medido o profundizado. Sólo la Mente Única es el Buddha, y
+                                no hay distinción entre el Buddha y las cosas sintientes, sino que los seres sintientes
+                                están apegados a las formas y por lo tanto buscan externamente la Budeidad. Por el sólo
+                                hecho de buscarla, ellos las pierden, porque eso es usar el Buddha para buscar el Buddha
+                                y usar la mente para asir la Mente. Incluso, aunque ellos hacen lo más posible por un
+                                Eón completo, no son capaces de lograrlo. Ellos no conocen que si detienen el
+                                pensamiento conceptual y olvidan su ansiedad, el Buddha aparecerá ante ellos, porque
+                                esta Mente es el Buddha y el Buddha es todos los seres vivientes. Eso no es lo menor
+                                para que sea manifestado en los seres ordinarios, ni lo mayor para que sea manifestado
+                                en los Buddhas.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="2">&nbsp;</a>
+                            <h4>
+                                2
+                            </h4>
+                            <p>
+                                2. En cuando a ejecutar las seis paramitas <a class="return-anchor" id="return-anchor-2"></a><sup><a href="#note-2">[2]</a></sup> y un extenso número de prácticas
+                                similares, o ganar méritos incontables como las arenas del Ganges, dado que vosotros
+                                sois fundamentalmente completos, en cada acatamiento, deberían no tratar de
+                                complementarle algo a esa perfección, a través de esas prácticas insignificantes. Cuando
+                                haya la ocasión para ellas, ejecútenlas; y, cuando la ocasión haya pasado, permanezcan
+                                en quietud. Si no están convencidos absolutamente de que la Mente es el Buddha, y si
+                                están apegados a las formas, las prácticas y las ejecuciones meritorias, vuestra forma
+                                de pensar es falsa e incompatible completamente con el Camino. La Mente es el Buddha, y
+                                no hay otros Buddhas ni ninguna otra mente. Es brillante e inmaculada como el vacío, y
+                                no tiene forma o apariencia sea lo que fuere. Usar sus mentes para pensar
+                                conceptualmente, es dejar la sustancia y apegarse a la forma. El Buddha
+                                Perpetuamente-Existente no es un Buddha de forma o apego. Practicar las seis paramitas y
+                                una miríada de prácticas similares con la intención de llegar a ser un Buddha, es
+                                avanzar por etapas, pero el Buddha Perpetuamente-Existente no es un Buddha de etapas.
+                                Sólo despierta a la Única Mente, y no hay nada que tenga que ser alcanzado. Este es el
+                                Buddha VERDADERO. El Buddha y todos los seres sintientes son la Única Mente y nada más.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="3">&nbsp;</a>
+                            <h4>
+                                3
+                            </h4>
+                            <p>
+                                3. La Mente es como el vacío, en él cual no hay confusión o maldad, como cuando el sol
+                                gira traspasando su brillantez sobre las cuatro esquinas de la tierra. Porque cuando el
+                                sol se levanta iluminando la tierra completa, el vacío no adquiere más brillantez; y
+                                cuando el sol se pone, el vacío no se hace más oscuro. Los fenómenos de la luz y la
+                                oscuridad alternan uno con el otro, pero la naturaleza del vacío permanece fija. Así
+                                mismo es con la Mente del Buddha y los seres sintientes. Si miras al Buddha como
+                                presentando una apariencia pura, brillante o Iluminada, o a los seres sintientes como
+                                presentando una apariencia impura, oscura o mortal, esas concepciones que resultan del
+                                apego a la forma, te mantendrán aparte del conocimiento supremo, incluso después del
+                                paso de muchos eones, tantos como arenas en el Ganges. Sólo hay la Única Mente y no hay
+                                ninguna partícula de nada más sobre la cual descansar o sostenerse, porque esa mente es
+                                el Buddha. Si ustedes, estudiantes del Camino, no despiertan a esta Mente-sustancia,
+                                cubrirán la Mente con el pensamiento conceptual, buscarán al Buddha fuera de ustedes
+                                mismos, y permanecerán apegados a las formas, a las prácticas devocionales y así
+                                sucesivamente, todo lo cual es dañino y de ninguna forma el camino al conocimiento
+                                supremo.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="4">&nbsp;</a>
+                            <h4>
+                                4
+                            </h4>
+                            <p>
+                                4. Hacer ofrendas a todos los Buddhas del universo no es igual que hacer ofrendas a un
+                                seguidor del Camino que ha eliminado el pensamiento conceptual. ¿Por qué? Porque ese en
+                                particular, no forma conceptos, sean los que fueren. La sustancia del Absoluto es
+                                internamente como la madera o la piedra, en el sentido de que es inmovible, y
+                                externamente como el vacío, en el sentido que no tiene límites ni obstrucciones. Ni es
+                                subjetiva ni objetiva, no tiene un lugar específico, no tiene forma, y no puede
+                                desvanecerse o suprimirse. Aquellos que se lanzan hacia ella no osan entrar, temiendo
+                                caer a través del vacío con nada a que agarrarse para detener su caída. Así que ellos
+                                miran desde la orilla y retroceden. Esto se refiere a todos aquellos que buscan esa meta
+                                a través del conocimiento. Por lo tanto, aquellos que buscan la meta a través del
+                                conocimiento son como los pelos de los animales (muchos), mientras que aquellos que
+                                obtienen el conocimiento intuitivo del Camino son como los cuernos del animal (pocos).&nbsp;<a class="return-anchor" id="return-anchor-4"></a><sup><a href="#note-4">[4]</a></sup>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="5">&nbsp;</a>
+                            <h4>
+                                5
+                            </h4>
+                            <p>
+                                5. Mañjusri representa la ley fundamental y Samanta&shy;bhadra, la actividad. A través
+                                del primero, está el significado de la ley del vacío verdadero e ilimitado, y a través
+                                del ultimo, las actividades interminables más allá de la esfera de la forma.
+                                Avalokitesvara representa la compasión ilimitada; Mahasthama, la gran sabiduría, y
+                                Vimalakirti, el nombre inmaculado. <a class="return-anchor" id="return-anchor-5a"></a><sup><a href="#note-5a">[5a]</a></sup> Inmaculado se refiere a la naturaleza verdadera
+                                de las cosas, mientras que el nombre significa la forma; sin embargo, la forma es
+                                realmente una con la naturaleza verdadera, de ahí el término combinado 'nombre
+                                inmaculado'. <a class="return-anchor" id="return-anchor-5b"></a><sup><a href="#note-5b">[5b]</a></sup> Todas las cualidades tipificadas por los grandes
+                                Bodhisattvas son inherentes en los hombres y no están separadas de la Única Mente.
+                                Despierten a eso, y estará ahí. Ustedes, estudiantes del Camino que no despiertan a esto
+                                en sus propias mentes, y que están apegados a las apariencias o que buscan por algo
+                                objetivo afuera de sus propias mentes, todos ustedes le han dado sus espaldas al Camino.
+                                ¡Las arenas del Ganges! El Buddha dijo de estas arenas: &quot;Si todos los Buddhas y
+                                Bodhisattvas con Indra <a class="return-anchor" id="return-anchor-5c"></a><sup><a href="#note-5c">[5c]</a></sup> y todos los dioses caminan a través de ellas, las
+                                arenas no se regocijan; y si los bueyes, las ovejas, los reptiles y los insectos trotan
+                                por su superficie, las arenas no se enojan. Ellas no tienen anhelos por joyas y
+                                perfumes, y no están renuentes a la inmundicia apestosa del estiércol y la orina.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="6">&nbsp;</a>
+                            <h4>
+                                6
+                            </h4>
+                            <p>
+                                6. Esta Mente no es una mente de pensamiento conceptual y es completamente despegada de
+                                la forma. Así que los Buddhas y los seres sintientes no difieren en absoluto. Si sólo
+                                pudieran desprenderse de vuestro pensamiento conceptual, lo habrían logrado todo. Pero
+                                si ustedes, estudiantes del Camino, no se desprenden de sus pensamientos conceptuales
+                                por ustedes mismos en un instante, aunque ustedes luchen por eones y eones, nunca lo
+                                lograran. Enredados en las prácticas meritorias de los Tres Vehículos, serán incapaces
+                                de lograr la Iluminación. A pesar de eso, la comprensión de la Única Mente puede llegar
+                                después de un período corto o largo. Están aquellos quienes, al oír esta enseñanza, se
+                                desprenden a sí mismos del pensamiento conceptual en un pestañear. Hay otros que hacen
+                                esto después de haber seguido las Diez Creencias, las Diez Etapas, las Diez Actividades
+                                y las Diez Dadivas de Mérito. Sin embargo, otros lo logran después de pasar a través de
+                                las Diez Etapas de Progreso del Bodhisattva. <a class="return-anchor" id="return-anchor-6a"></a><sup><a href="#note-6a">[6a]</a></sup> Pero ya sea que ellos
+                                transciendan el pensamiento conceptual a través de un camino largo o corto, el resultado
+                                es un estado de SER: no hay práctica pía ni acción de comprensión. Que no hay nada que
+                                pueda ser obtenido no es una charla inútil, es la verdad. Es más, ya sea si logras tu
+                                meta en un instante de pensamiento, o después de ir a través de las Diez Etapas de
+                                Progreso del Bodhisattva, el logro será el mismo; porque este estado de ser no admite
+                                grados, así que el método último simplemente perpetúa eones de sufrimiento y un afanar
+                                innecesario. <a class="return-anchor" id="return-anchor-6b"></a><sup><a href="#note-6b">[6b]</a></sup>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="7">&nbsp;</a>
+                            <h4>
+                                7
+                            </h4>
+                            <p>
+                                7. La acumulación del bien y el mal involucra el apego a la forma. <a class="return-anchor" id="return-anchor-7a"></a><sup><a href="#note-7a">[7a]</a></sup> Aquellos
+                                que están apegados a la forma, hacen que el mal, innecesariamente, se sobrelleve por
+                                varias encarnaciones; mientras que aquellos que, estando apegados a la forma, hacen el
+                                bien, se someten igualmente por sí mismos, a la pérdida y la privación sin ningún
+                                propósito. En cualquiera de los dos casos es mejor lograr la comprensión-propia
+                                repentina y agarrarse al Dharma fundamental. Este Dharma es la Mente, más allá donde no
+                                hay Dharma; y esta Mente es el Dharma, donde no hay mente. La Mente en sí misma es
+                                no-mente, sin embargo tampoco es no-mente. Decir que la Mente es no-mente implica algo
+                                existente. <a class="return-anchor" id="return-anchor-7b"></a><sup><a href="#note-7b">[7b]</a></sup> Dejemos que haya un entendimiento silente y nada
+                                más. Fuera con todos los pensamientos y explicaciones. Entonces podremos decir que el
+                                Camino de las Palabras ha sido cortado y los movimientos de la mente eliminados. Esta
+                                Mente es el puro Origen-del-Buddha inherente en todos los hombres. Todos los seres en
+                                movimiento poseídos de la vida sintiente y todos los Buddhas y Bodhisattvas son de esta
+                                única sustancia sin diferenciación alguna. Las diferencias surgen solamente del
+                                pensamiento-erróneo y guían a la creación de todas las clases de karma. <a class="return-anchor" id="return-anchor-7c"></a><sup><a href="#note-7c">[7c]</a></sup>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="8">&nbsp;</a>
+                            <h4>
+                                8
+                            </h4>
+                            <p>
+                                8. Nuestra Naturaleza-Búdica original es, en la verdad suprema, exenta de cualquier
+                                átomo de objetividad. Ella es vacía, omnipresente, silente y pura; es el júbilo
+                                apacible, glorioso y misterioso &ndash; y eso es todo. Entran profundamente en ella por
+                                ustedes mismos, a través de despertarse o estar conscientes de ella. Eso que está frente
+                                a ustedes es ella, en toda su plenitud, totalmente completa. No hay nada aparte. Incluso
+                                si van a través de todas las etapas, una por una, del progreso de un Bodhisattva hacia
+                                la Budeidad; cuando por fin, en un solo destello, obtienen la comprensión completa, sólo
+                                estarán comprendiendo la Naturaleza Búdica que ha estado con ustedes todo el tiempo; y a
+                                través de todas esas etapas previas no le han añadido nada en absoluto. <a class="return-anchor" id="return-anchor-8a"></a><sup><a href="#note-8a">[8a]</a></sup> Ustedes
+                                observarán esos eones de trabajo y logro, no mucho mejor que las acciones irreales
+                                ejecutadas en un sueño. Eso es por lo que el Tathagata dijo: 'Verdaderamente no logré
+                                nada completo ni excelso de la Iluminación. De haber habido cualquier cosa que lograr,
+                                el Buddha Dipamkara no habría hecho la profecía tocante a mí. <a class="return-anchor" id="return-anchor-8b"></a><sup><a href="#note-8b">[8b]</a></sup> Él también dijo: 'Este Dharma
+                                no tiene distinciones en absoluto, ni superioridad ni inferioridad, y su nombre es
+                                Bodhi'. Es la Mente pura, la cual es el origen de todo y que, ya sea si aparece como
+                                seres sintientes o como Buddhas, como los ríos y las montañas del mundo que tienen
+                                forma, como lo que no tiene forma, o como penetrando el universo completo, es &ndash; no
+                                tiene &ndash; sin distinciones en absoluto, no hay tales entidades como el 'yo' y los
+                                demás.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="9">&nbsp;</a>
+                            <h4>
+                                9
+                            </h4>
+                            <p>
+                                9. Esta Mente pura, el origen de todo, brilla por siempre y con toda su brillantez y
+                                perfección propia. Pero las personas del mundo no despiertan a ella, considerando sólo
+                                lo que ven, oyen, sienten y saben como la mente. Ciegos por su propia visión, audición,
+                                sentimiento y conocimiento, ellos no perciben la brillantez espiritual de la
+                                sustancia-origen. Si solamente ellos eliminaran todo pensamiento conceptual, en un
+                                pestañear, la sustancia-origen se manifestaría por sí misma al igual que el sol asciende
+                                a través del vacío e ilumina el universo completo sin obstáculo o límites. Por lo tanto,
+                                si ustedes, estudiantes del Camino, buscan el progreso a través de ver, oír, sentir y
+                                saber, cuando estén privados de sus percepciones, vuestro camino hacia la Mente será
+                                cortado y no encontrarán nada por donde entrar. Sólo comprendan que, aunque la Mente
+                                verdadera es expresada en esas percepciones, ella no forma parte [de esas percepciones]
+                                ni tampoco esta separada de ellas. No deben comenzar a razonar desde esas percepciones,
+                                ni permitirles que les hagan surgir el pensamiento conceptual; sin embargo, no deben
+                                buscar la Única Mente aparte de ellas ni abandonarlas en su búsqueda y empeño por el
+                                Dharma. No las mantengan ni las abandonen ni vivan en ellas ni las descarten. Arriba,
+                                debajo y alrededor de ustedes, todo existe espontáneamente, porque no hay algo que esté
+                                fuera de la Mente-Búdica.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="10">&nbsp;</a>
+                            <h4>
+                                10
+                            </h4>
+                            <p>
+                                10. Cuando las personas del mundo escuchan esto, dicen que los Buddhas transmiten la
+                                Doctrina de la Mente, ellas suponen que hay algo aparte de la Mente, para ser obtenido o
+                                comprendido, y por lo tanto usan la Mente para buscar el Dharma, no sabiendo que la
+                                Mente y el objeto de su búsqueda son uno. La Mente no puede ser usada para buscar algo
+                                de la Mente; porque entonces, después de pasar por millones de eones, el día del éxito
+                                todavía no habrá alboreado. Tal método no debe ser comparado con la eliminación
+                                repentina del pensamiento conceptual, que es el Dharma fundamental. Supongamos que un
+                                guerrero, olvidando que ya tenía su perla colocada en su penacho sobre la cabeza, fuera
+                                a buscarla en otra parte; él podría viajar todo el mundo sin encontrarla. Pero si
+                                alguien que sabía lo que estaba erróneo se lo hubiera señalado a él, el guerrero
+                                inmediatamente comprendería que la perla había estado allí todo el tiempo. Así que, si
+                                ustedes, estudiantes del Camino, están equivocados o desacertados acerca de cuál es su
+                                propia Mente verdadera, no reconociendo que ella es el Buddha, consecuentemente le
+                                buscarán en cualquier parte, gratificándose en varios logros y prácticas, y esperando
+                                lograr la comprensión a través de tales prácticas reguladas. Pero incluso, después de
+                                eones de una búsqueda diligente, no serán capaces de llegar al Camino. Estos métodos no
+                                pueden ser comparados con la eliminación repentina del pensamiento conceptual, con el
+                                irrefutable conocimiento de que no hay nada definitivo que tenga una existencia
+                                absoluta, nada sobre lo cual uno pueda descansar, nada sobre lo cual uno dependa, nada
+                                en lo cual uno habite, nada subjetivo u objetivo.
+                            </p>
+                            <p>
+                                Es a través de prevenir que surja el pensamiento conceptual que comprenderán al Bodhi;
+                                ¡y cuando lo hagan, simplemente estarán comprendiendo al Buddha que siempre ha existido
+                                en su propia Mente! Eones de lucha probarán tanto esfuerzo perdido; simplemente como
+                                cuando el guerrero encontró su perla, simplemente descubrió que había estado colgando en
+                                su frente todo el tiempo; e igualmente, el haberla encontrado no tenía nada que ver con
+                                sus esfuerzos de descubrirla en otras partes. Por lo tanto el Buddha dijo: 'Yo nunca
+                                logré nada de la Iluminación Completa e Insuperable. Fue por recelo que las personas no
+                                creían esto, que él se había dirigido a lo que estaba viendo con las cinco clases de
+                                visiones y habló con las cinco clases de habla. Así que esta cita es en ninguna forma,
+                                una platica vacía, sino que expresa la verdad suprema.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="11">&nbsp;</a>
+                            <h4>
+                                11
+                            </h4>
+                            <p>
+                                11. Los estudiantes del Camino deben asegurarse, que los cuatro elementos que componen
+                                el cuerpo no constituyen el 'yo', que el 'yo' no es una entidad; y que de eso puede ser
+                                inferido que el cuerpo ni es el 'yo' ni es una entidad. Es más, los cinco agregados con
+                                el compuesto de la mente (en el sentido común de la palabra mente) no constituyen ni un
+                                'yo' ni una entidad; de acuerdo a eso, puede ser deducido que la mente (la llamada
+                                individual) ni es el 'yo' ni una entidad. Los seis órganos sensoriales (incluyendo el
+                                cerebro) que juntos con sus seis tipos de percepción y las seis clases de objetos de
+                                percepción, constituyen el mundo sensorial, deben ser entendidos en la misma forma.
+                                Aquellos dieciocho aspectos de los sentidos son, ya sean juntos o separados, vacíos.
+                                Sólo hay una Mente-Fuente, ilimitada en su extensión y de pureza absoluta.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="12">&nbsp;</a>
+                            <h4>
+                                12
+                            </h4>
+                            <p>
+                                12. En estos términos, hay el comer sensualmente y comer sabiamente. Cuando el cuerpo
+                                compuesto de los cuatro elementos sufre el dolor del hambre y por lo tanto le proveen
+                                comida, pero sin voracidad o gula, a eso se le llama comer sabiamente. Por otra parte si
+                                ustedes glotonamente se deleitan en la pureza y el sabor, están permitiendo las
+                                distinciones que surgen del pensamiento erróneo. Meramente buscar la gratificación del
+                                órgano del gusto sin comprender cuando se ha comido lo suficiente, es llamado comer
+                                sensualmente. <a class="return-anchor" id="return-anchor-12"></a><sup><a href="#note-12">[12]</a></sup>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="13">&nbsp;</a>
+                            <h4>
+                                13
+                            </h4>
+                            <p>
+                                13. Los Sravakas alcanzan la Iluminación a través de escuchar el Dharma, así que son
+                                llamados Sravakas. <a class="return-anchor" id="return-anchor-13a"></a><sup><a href="#note-13a">[13a]</a></sup> Los Sravakas no comprenden su propia mente,
+                                sino que permiten que los conceptos surjan de escuchar la doctrina. Ya sea si ellos
+                                escuchan de la existencia del Bodhi y el Nirvana a través de poderes supranormales o de
+                                la buena fortuna o a través de la prédica, ellos obtendrán la Budeidad solamente después
+                                de tres eones de larga e infinita duración. Todo esto pertenece al camino de los
+                                Sravakas, así que a ellos se les llama Sravaka-Buddhas. Pero despertar repentinamente al
+                                hecho de que vuestra propia Mente es el Buddha, que no hay nada que ser obtenido o ni
+                                una sola acción para ejecutar &ndash; ese es el Camino Supremo; eso es verdaderamente
+                                ser como un Buddha. Sólo está el temor de que ustedes estudiantes del Camino, a través
+                                de traer a la existencia un solo pensamiento, puedan hacer surgir una barrera entre
+                                ustedes y el Camino. Del pensamiento instantáneo al pensamiento instantáneo, no hay
+                                FORMA; del pensamiento instantáneo al pensamiento instantáneo, no hay ACTIVIDAD &ndash;
+                                ¡eso es ser un Buddha! Si ustedes, estudiantes del Camino, desean llegar a ser <a class="return-anchor" id="return-anchor-13b"></a><sup><a href="#note-13b">[13b]</a></sup> un
+                                Buddha, no necesitan estudiar ninguna doctrina sea la que fuere, sino aprender solamente
+                                cómo evitar el buscar y el apegarse a cualquier cosa. Donde nada se busca, esto implica
+                                la Mente no nacida; donde no existe apego, esto implica la Mente no destruida; y eso que
+                                no es nacido ni destruido es el Buddha. Los cuarenta y ocho mil métodos para contar las
+                                cuarenta y ocho mil formas de engaño son meramente figuras del lenguaje para dirigir a
+                                las personas hacia el Portón. De hecho, ninguna de ellas tiene existencia verdadera. La
+                                renuncia de todo es el Dharma, y aquel que entiende esto es un Buddha, pero la renuncia
+                                de TODOS los engaños no deja ningún Dharma sobre el cual sostenerse o descansar. <a class="return-anchor" id="return-anchor-13c"></a><sup><a href="#note-13c">[13c]</a></sup>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="14">&nbsp;</a>
+                            <h4>
+                                14
+                            </h4>
+                            <p>
+                                14. Si ustedes estudiantes del Camino desean el conocimiento de este gran misterio, sólo
+                                eviten el apego a cualquier cosa más allá de la Mente. Decir que el Dhamakaya verdadero
+                                del Buddha, <a class="return-anchor" id="return-anchor-14a"></a><sup><a href="#note-14a">[14a]</a></sup> se asemeja al Vacío, es otra forma de decir que
+                                el Dhamakaya es el Vacío y que el Vacío es el Dhamakaya. Las personas frecuentemente
+                                sostienen que el Dhamakaya es el Vacío y que el Vacío contiene al Dhamakaya, no
+                                comprendiendo que ellos son uno y el mismo. Pero si ustedes definen el Vacío como algo
+                                existente, entonces no es el Dhamakaya; y si definen el Dhamakaya como algo existente,
+                                entonces no es el Vacío. Sólo absténganse de cualquier concepción objetiva del Vacío;
+                                entonces él es el Dhamakaya: y si sólo se abstiene de cualquier concepción objetiva del
+                                Dhamakaya, ¿por qué, entonces él es el Vacío? Estos dos no difieren uno del otro, ni hay
+                                ninguna diferencia entre los seres sintientes y los Buddhas, o entre el sámsara y el
+                                Nirvana, o entre el engaño y el Bodhi. Cuando todas esas formas se abandonan, hay el
+                                Buddha. Las personas ordinarias miran a su alrededor, mientras que los seguidores del
+                                Camino miran a la Mente, pero el Dharma verdadero es olvidar a ambos. El primero es
+                                suficientemente fácil, el último es muy difícil. Los hombres tienen miedo de olvidar sus
+                                mentes, temiendo caer a través del Vacío con nada que detenga su caída. Ellos no saben
+                                que el Vacío no es verdaderamente vacío, sino que es el dominio del Dharma verdadero.
+                                Esta naturaleza espiritualmente iluminada no tiene principio, es tan antigua como el
+                                Vacío, no está sujeta al nacimiento ni a la destrucción, ni existe ni no-existe, ni es
+                                pura ni impura, ni bullanguera ni silente, ni vieja ni joven, no ocupa espacio, ni tiene
+                                interior ni exterior, ni tamaño ni forma, ni color ni sonido. No puede ser mirada ni
+                                buscada, ni comprendida por la sabiduría o el conocimiento, ni explicada en palabras, ni
+                                contactada materialmente o alcanzada a través de logros meritorios. Todos los Buddhas y
+                                Bodhisattvas, juntos con todas las cosas en movimiento que poseen vida, comparten en
+                                esta naturaleza Nirvánica. Esta naturaleza es la Mente; la Mente es el Buddha, y el
+                                Buddha es el Dharma. Cualquier pensamiento aparte de esta verdad es completamente un
+                                pensamiento erróneo. Ustedes no pueden usar la Mente para buscar la Mente, el Buddha
+                                para buscar al Buddha, o el Dharma para buscar al Dharma. Así que, ustedes estudiantes
+                                del Camino deben inmediatamente refrenarse del pensamiento conceptual. ¡Dejemos que el
+                                entendimiento tácito <a class="return-anchor" id="return-anchor-14b"></a><sup><a href="#note-14b">[14b]</a></sup> sea todo! Cualquier proceso mental guiará
+                                definitivamente al error. Sólo hay una transmisión de Mente con Mente. Esta es la visión
+                                propia que se debe sostener. Sean cuidadosos en no mirar al exterior al entorno
+                                material. El equivocar el entorno material por la Mente es confundir a un ladrón por
+                                vuestro hijo. <a class="return-anchor" id="return-anchor-14c"></a><sup><a href="#note-14c">[14c]</a></sup>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="15">&nbsp;</a>
+                            <h4>
+                                15
+                            </h4>
+                            <p>
+                                15. Es sólo en contradicción con la avaricia, la cólera y la ignorancia que la
+                                abstinencia, la calma y la sabiduría existe. Sin la ilusión o el engaño, ¿cómo puede
+                                haber Iluminación? Por lo tanto Bodhidharma dijo: &quot;El Buddha enunció todos los
+                                Dharmas para poder eliminar cada vestigio de pensamiento conceptual. Si me refreno
+                                completamente del pensamiento conceptual, ¿cuál sería el uso de todos los Dharmas?' No
+                                se apeguen a nada más allá de la naturaleza-Búdica pura que es la fuente original de
+                                todas las cosas. Supongamos que vamos a adornar el Vacío con innumerables joyas, ¿cómo
+                                pueden ellas permanecer en posición? La Naturaleza-Búdica es como el Vacío; aunque
+                                fueran a adornarla con los méritos y la sabiduría más estimables, ¿cómo podrían ellos
+                                permanecer allí? <a class="return-anchor" id="return-anchor-15a"></a><sup><a href="#note-15a">[15a]</a></sup> Ellos servirían solamente para encubrir u
+                                ocultar su Naturaleza original y para hacerla invisible.
+                            </p>
+                            <p>
+                                A eso que se llama la Doctrina de los Orígenes Mentales (seguida por otras ciertas
+                                sectas) postula que todas las cosas se desarrollan en la Mente y que ellas se
+                                manifiestan por sí mismas al contacto con el ambiente externo, y cesan de manifestarse
+                                cuando el ambiente no está presente. Pero es erróneo concebir de un ambiente separado de
+                                la naturaleza invariable y pura de todas las cosas. <a class="return-anchor" id="return-anchor-15b"></a><sup><a href="#note-15b">[15b]</a></sup>
+                            </p>
+                            <p>
+                                Eso que se llama el Espejo de la Concentración y la Sabiduría (otra referencia a la
+                                doctrina Mahayana no-Zen) requiere el uso de la vista, el oído, el sentimiento y la
+                                cognición, que guían a los estados sucesivos de calma y agitación. Pero estos involucran
+                                concepciones basadas en los objetos ambientales; ellos son expedientes temporales que
+                                pertenecen o están relacionadas a una de las categorías inferiores de 'las raíces del
+                                bien'. <a class="return-anchor" id="return-anchor-15c"></a><sup><a href="#note-15c">[15c]</a></sup>
+                                Y esta categoría de 'raíces del bien' simplemente capacita a las personas a entender lo
+                                que se les dice. Si desean experimentar la Iluminación por ustedes mismos, no deben
+                                gratificarse en tales concepciones. Ellos son todos Dharmas ambientales concernientes a
+                                las cosas que son y las que no son, basados en la existencia y la no-existencia con
+                                referencia a todo en absoluto; entonces ustedes percibirán el DHARMA.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="16">&nbsp;</a>
+                            <h4>
+                                16
+                            </h4>
+                            <p>
+                                16. En el primer día de la novena luna, el Maestro me dijo: 'Desde el tiempo que el Gran
+                                Maestro Bodhidharma llegó a China, él habló sólo de una Mente y solamente transmitió el
+                                único Dharma. Él usó el Buddha para transmitir el Buddha, nunca hablando de cualquier
+                                otro Buddha. Él usó el Dharma para transmitir el Dharma, nunca hablando de cualquier
+                                otro Dharma. Ese Dharma era un Dharma sin palabras, y el Buddha era el Buddha
+                                intangible, dado que ellos eran de hecho esa Mente Pura que es el origen de todas las
+                                cosas. Esta es la única verdad; todo lo demás es falso. Prajña es la sabiduría; la
+                                sabiduría es la Mente-Fuente original sin forma. Las personas ordinarias no buscan el
+                                Camino, sino que simplemente gratifican sus seis sentidos que los guían de regreso a los
+                                seis dominios de la existencia. Un estudiante del Camino, a través de permitirse a sí
+                                mismo un solo pensamiento samsárico, cae en el medio de la maldad. Si se permite a sí
+                                mismo un solo pensamiento que guíe a la percepción discriminatoria, cae en la herejía.
+                                Sostener que hay algo que nace y tratar de eliminarlo, eso es caer entre los
+                                Sravakas.&nbsp;<a class="return-anchor" id="return-anchor-16a"></a><sup><a href="#note-16a">[16a]</a></sup>
+                                Sostener que las cosas son no-nacidas pero capaces de destruirse, es caer entre los
+                                Pratyekas. <a class="return-anchor" id="return-anchor-16b"></a><sup><a href="#note-16b">[16b]</a></sup> Nada es nacido, nada es destruido. Fuera del
+                                dualismo, sus gustos y sus disgustos. Cada una de las cosas es simplemente la Mente
+                                Única. Cuando hayan percibido esto, habrán montado la cuadriga de los Buddhas.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="17">&nbsp;</a>
+                            <h4>
+                                17
+                            </h4>
+                            <p>
+                                17. Todas las personas ordinarias se gratifican en el pensamiento conceptual basado en
+                                los fenómenos circunstanciales o ambientales, dado que ellos sienten deseo y odio. Para
+                                eliminar los fenómenos circunstanciales, simplemente finalicen su pensamiento
+                                conceptual. Cuando éste cesa, los fenómenos circunstanciales son nulos o vacíos; y
+                                cuando estos están vacíos, el pensamiento cesa. Pero si tratan de eliminar las
+                                circunstancias o el ambiente sin primero detener el pensamiento conceptual, no tendrán
+                                éxito, sino que meramente incrementarán su poder para que los perturbe. Así que todas
+                                las cosas son nada, sólo la Mente es &ndash; la Mente intangible; así que, ¿qué esperan
+                                obtener? Aquellos que son estudiantes del Prajña <a class="return-anchor" id="return-anchor-17a"></a><sup><a href="#note-17a">[17a]</a></sup> sostienen que no hay nada
+                                que sea tangible, así que dejan de pensar acerca de los Tres Vehículos. <a class="return-anchor" id="return-anchor-17b"></a><sup><a href="#note-17b">[17b]</a></sup> Sólo
+                                hay una realidad, pero no es para ser comprendida ni obtenida. Decir, &quot;soy capaz de
+                                comprender algo&quot; o &quot;soy capaz de obtener algo&quot; es colocarse ustedes
+                                mismos entre los arrogantes. Los hombres que cuelgan sus vestiduras y dejan las
+                                reuniones como el Loto Sütra los menciona, eran justamente como esas personas. <a class="return-anchor" id="return-anchor-17c"></a><sup><a href="#note-17c">[17c]</a></sup> Por lo
+                                tanto el Buddha dijo: 'Verdaderamente no he obtenido nada de la Iluminación.' Solamente
+                                hay un entendimiento misterioso y tácito, y nada más.'
+                            </p>
+                            <p class="note center" style="margin-top: 30px;">
+                                Continúa en la página siguiente: <a href="a2-archivos-chun-chou-cont.htm">Archivos Chun
+                                    Chou parte 2</a>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="notas">&nbsp;</a>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="prefacio-pei-hsiu.htm">&lt; Prefacio de P&apos;ei
+                                            Hsiu</a></li>
+                                    <li class="align-right"><a href="a2-archivos-chun-chou-cont.htm">Archivos Ch&uuml;n
+                                            Chou parte 2 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <h4>
+                                Notas
+                            </h4>
+                            <div class="endnote-section">
+                                <p class="center tiny" style="margin-top: -15px;">
+                                    Numerado por párrafo.</p>
+                                <p>
+                                    <a class="endnote" id="note-1"></a><a class="send-back" href="#return-anchor-1">[1]</a> No-nacida, no en
+                                    el sentido de eternidad, porque esto permite el contraste con su opuesto; sino
+                                    no-nacida en el sentido de que no pertenece a ninguna categoría que admita
+                                    alteración o antitesis.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-2"></a><a class="send-back" href="#return-anchor-2">[2]</a> Caridad,
+                                    moralidad, paciencia bajo la aflicción, aplicación de la atención, la diligencia y
+                                    el entusiasmo, control correcto de la mente, y la aplicación de la sabiduría
+                                    suprema.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-4"></a><a class="send-back" href="#return-anchor-4">[4]</a> Comparando ésto
+                                    con la declaración del Profesor Suzuki: &quot;Eso que es conocido como mente en el
+                                    razonamiento discursivo es no-mente, aunque sin esto, la Mente no puede ser
+                                    alcanzada.&quot;
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-5a"></a><a class="send-back" href="#return-anchor-5a">[5a]</a> Esta noción
+                                    abstracta de los Bodhisattvas, observada por algunas sectas, como entidades
+                                    espirituales individuales, es compartida por algunos budistas fuera de la Secta Zen.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-5b"></a><a class="send-back" href="#return-anchor-5b">[5b]</a> El Zen enseña
+                                    que, el mundo fenomenal basado en la experiencia sensorial tiene solamente
+                                    existencia relativa, es un error observarlo como algo separado de la Única Mente. Es
+                                    la Única Mente comprendida erróneamente. Como el Sutra Hridaya dice: &quot;La Forma
+                                    no es diferente del vacío ni el vacío de la forma; la forma es vacío y el vacío es
+                                    forma&quot;.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-5c"></a><a class="send-back" href="#return-anchor-5c">[5c]</a> Rev. Yin Zhi
+                                    Shakya: Señor de los Cielos o Swargaloka, una figura importante también, en las
+                                    tradiciones no-hinduistas.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-6a"></a><a class="send-back" href="#return-anchor-6a">[6a]</a> Esas
+                                    categorías variadas de diez, son todas partes de la doctrina que enseñan ciertas
+                                    sectas. Huang Po desea clarificar que, aunque esto puede ser útil en preparar la
+                                    base o fundamento, la mente debe, en cada caso, dar el salto repentino, y que
+                                    habiendo pasado a través de esas etapas, de ningún modo constituye la Iluminación
+                                    parcial.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-6b"></a><a class="send-back" href="#return-anchor-6b">[6b]</a> Sin embargo,
+                                    el mérito, excelente en sí mismo, no tiene nada que ver con la Iluminación.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-7a"></a><a class="send-back" href="#return-anchor-7a">[7a]</a> De acuerdo al
+                                    Zen, las acciones virtuosas deben ser ejecutadas por los adeptos, pero no con un
+                                    punto de vista de acumular mérito y tampoco como un medio para la Iluminación. El
+                                    hacedor
+                                    <!-- In English version "doer" was "door", then mistranslated as "puerta". Fixed hgere.-->
+                                    debe permanecer perfectamente desapegada a las acciones y a sus resultados.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-7b"></a><a class="send-back" href="#return-anchor-7b">[7b]</a> En otras
+                                    palabras, la Mente es un término arbitrario para algo que no puede ser expresado en
+                                    palabras propiamente.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-7c"></a><a class="send-back" href="#return-anchor-7c">[7c]</a> El karma,
+                                    incluso el buen karma, guía al renacimiento y prolonga el vagabundeo o extravío del
+                                    camino de la supuesta entidad individual; porque cuando el buen karma ha terminado
+                                    su trabajo con la consecuencia del disfrute, el 'individuo' está tan lejos, como
+                                    antes, de entender la Única Mente.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-8a"></a><a class="send-back" href="#return-anchor-8a">[8a]</a> La
+                                    Iluminación debe llegar en un instante, ya sea si han pasado a través de las etapas
+                                    preliminares o no, de forma que la última puede ser más bien dispensada con ella,
+                                    excepto que, por razones desconectadas con la Iluminación, el Zen requiere del
+                                    adepto una actitud gentil y servicial hacia todas las criaturas vivientes.
+                                </p>
+                                <!--
+                                <p class="yellow hide">
+                                    Rest of this missing in original (both the 119 page version and 128 version)&nbsp;<sup>27</sup>&nbsp;Esta declaración se refiere al Sütra Diamante, xxxxxxxxxxx <sup>27</sup>&nbsp;Esta declaración se refiere al Sütra Diamante,
+                                </p>
+                                <p class="yellow hide">translated by sh/google, see nex paragraph<br />
+                                    <a class="endnote" id=""></a><a href="">[8b]</a> This quotation refers to the Diamond Sūtra, as do many of the others either directly or indirectly. Dīpamkara Buddha, during a former life of Gautama Buddha, prophesied that he would one day attain to Buddhahood. Huang Po means that the prophecy would not have been made if Dīpamkara Buddha had supposed that Gautama Buddha&apos;s Enlightenment would lead to the actual attainment of something he had not already been from the very first; for then Enlightenment would not have led to Buddhahood, which implies a voidness of all distinctions such as attainer, attained, non-attainer and non-attained.
+                                </p>-->
+                                <p>
+                                    <a class="endnote" id="note-8b"></a><a class="send-back" href="#return-anchor-8b">[8b]</a> Esta cita se
+                                    refiere al Sūtra Diamante, al igual que muchos de los otros, ya sea directa o
+                                    indirectamente. Dīpamkara Buddha, durante una vida anterior de Gautama Buddha,
+                                    profetizó que algún día alcanzaría la Budeidad. Huang Po significa que la profecía
+                                    no se habría hecho si el Buda Dīpamkara hubiera supuesto que la Iluminación del Buda
+                                    Gautama conduciría al logro real de algo que no había sido desde el principio;
+                                    porque entonces la Iluminación no habría conducido a la Budeidad, lo que implica un
+                                    vacío de todas las distinciones, como alcanzador, alcanzado, no alcanzador y no
+                                    alcanzado.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-12"></a><a class="send-back" href="#return-anchor-12">[12]</a> Este es un
+                                    ejemplo simple del uso erróneo de los seis sentidos. Por supuesto que debemos
+                                    usarlos para tratar con el mundo ya que afectan nuestra vida diaria, pero nuestro
+                                    empleo de ellos deberá ser limitado a lo que es absolutamente necesario para nuestro
+                                    bienestar.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-13a"></a><a class="send-back" href="#return-anchor-13a">[13a]</a> Huang Po
+                                    algunas veces extiende este término para aplicarlo a los Hīnayānistas en general. El
+                                    significado literal de su equivalente en chino es 'aquellos que oyen' y Huang Po
+                                    implica que los Hīnayānistas ponen mucha atención al significado literal de las
+                                    Escrituras, en lugar de buscar el conocimiento intuitivo a través de eliminar el
+                                    pensamiento conceptual. Aquellos capaces de aplicar el método último no tienen
+                                    necesidad de las Escrituras.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-13b"></a><a class="send-back" href="#return-anchor-13b">[13b]</a> Rev. Yin
+                                    Zhi Shakya: Muchos libros budistas en español, prefieren la palabra 'devenir'; la
+                                    traductora se inclina a la frase 'llegar a ser' porque piensa que es mucho más
+                                    explícita.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-13c"></a><a class="send-back" href="#return-anchor-13c">[13c]</a> A los
+                                    budistas de la mayoría de las sectas se les enseña la renunciación a los apegos
+                                    sensuales y el asirse fijamente al Dharma. Huang Po va mucho más allá en demostrar
+                                    que cualquier forma de apego, incluso al apego al Dharma, nos guía en dirección
+                                    opuesta a la verdad.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-14a"></a><a class="send-back" href="#return-anchor-14a">[14a]</a> El
+                                    superior de los tres Cuerpos, sinónimo con el Absoluto.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-14b"></a><a class="send-back" href="#return-anchor-14b">[14b]</a> Rev. Yin
+                                    Zhi Shakya: Tácito: de acuerdo al Diccionario de Sinónimos de la Lengua Española
+                                    VERON: Callado. Sinónimos: reservado, silencioso.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-14c"></a><a class="send-back" href="#return-anchor-14c">[14c]</a> Hay una
+                                    historia de un hombre que confundió a un ladrón por el hijo que hacia tiempo había
+                                    perdido, y dándole caluroso recibimiento, le capacitó para salirse a hurtadillas con
+                                    la mayoría de sus posesiones. Aquellos que colocan su confianza en las cosas
+                                    materiales están en el peligro de perder la más valiosa de todas las posesiones
+                                    &ndash; la llave para el enigma de la vida que abre/revela el portón del Nirvana.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-15a"></a><a class="send-back" href="#return-anchor-15a">[15a]</a> Otras
+                                    sectas budistas le dan gran importancia a la adquisición de merito y sabiduría, pero
+                                    esto implica una concepción dualística de la realidad que el Zen considera un
+                                    obstáculo insuperable para comprender la Única Mente.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-15b"></a><a class="send-back" href="#return-anchor-15b">[15b]</a> Esto
+                                    constituye una alerta contra otro tipo de dualismo.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-15c"></a><a class="send-back" href="#return-anchor-15c">[15c]</a> Algunos
+                                    Mahayanistas creen que 'las raíces del bien' son potenciales-para-la-Iluminación de
+                                    varios grados de fortaleza con los cuales los individuos renacen de acuerdo con los
+                                    varios méritos ganados en vidas anteriores.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-16a"></a><a class="send-back" href="#return-anchor-16a">[16a]</a> Huang Po,
+                                    como de costumbre, está usando la palabra Sravaka para significar Hīnayānista. Los
+                                    Hīnayānistas son dualistas en el sentido de que buscan vencer su vida samsárica para
+                                    entrar en el Nirvana; mientras que el Zen percibe que el Samsara no es otro que el
+                                    Nirvana.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-16b"></a><a class="send-back" href="#return-anchor-16b">[16b]</a> Huang Po
+                                    habitualmente usa o usa incorrectamente esta palabra para significar los
+                                    Madhyamikistas o seguidores del Vehículo Medio.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-17a"></a><a class="send-back" href="#return-anchor-17a">[17a]</a> Aquí usado
+                                    para significar la Sabiduría en el sentido del Zen.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-17b"></a><a class="send-back" href="#return-anchor-17b">[17b]</a> Diríamos,
+                                    las Tres Grandes Escuelas que enseñan la Iluminación Gradual.
+                                </p>
+                                <p>
+                                    <a class="endnote" id="note-17c"></a><a class="send-back" href="#return-anchor-17c">[17c]</a> Esas
+                                    personas pensaron que habían entendido eran arrogantes y satisfecho de ellos mismos.
+                                </p>
+                            </div>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="prefacio-pei-hsiu.htm">&lt; Prefacio de P&apos;ei
+                                            Hsiu</a></li>
+                                    <li class="align-right"><a href="a2-archivos-chun-chou-cont.htm">Archivos Ch&uuml;n
+                                            Chou parte 2 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- spacer to accomadate footnotes -->
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!-- start of menu include file Update June 5, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li class="first-item"><a href="/new-thought/">New Thought<span class="conditional-hide-2"> index</span></a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm"><span class="conditional-hide-3">Table of </span>Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/new-thought/">New Thought index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center" style="margin-top:10px;line-height:1.8em;">
+            <li>Thought Vibration: <span class="block">The Law of Attraction in the Thought World</span></li>
+            <!--li class="normal note">(1906)</li-->
+            <li class="normal note">
+                <img class="menu-image" src="images/william-walker-atkinson.jpg" alt="William Walker Atkinson">
+            </li>
+            <li>William Walker Atkinson </li>
+            <li class="normal note tight">1862-1932</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="chapter-summaries.htm">Chapter Summaries</a></li>
+                <li><a href="preface.htm">Preface </a></li>
+                <li><a href="foreword.htm">Foreword </a></li>
+                <li><a href="my-working-creed.htm">My Working Creed </a></li>
+                <li><a href="01-law-of-attraction.htm">1. The Law of Attraction in&nbsp;the Thought World</a> </li>
+                <li><a href="02-thought-waves.htm">2. Thought-Waves &amp; Process of Reproduction</a> </li>
+                <li><a href="03-talk-about-the-mind.htm">3. A Talk About The Mind</a> </li>
+                <li><a href="04-mind-building.htm">4. Mind Building</a> </li>
+                <li><a href="05-secret-of-the-will.htm">5. The Secret of the Will</a> </li>
+                <li><a href="06-how-to-become-immune.htm">6. How to Become Immune</a> </li>
+                <li><a href="07-transmutation-of-negative-thoughts.htm">7. Transmutation of Negative Thought</a> </li>
+                <li><a href="08-law-of-mental-control.htm">8. The Law of Mental Control</a> </li>
+                <li><a href="09-asserting-the-life-force.htm">9. Asserting Life-Force</a> </li>
+                <li><a href="10-training-the-habit-mind.htm">10. Training the Habit-Mind</a> </li>
+                <li><a href="11-psychology-of-emotion.htm">11. The Psychology Of Emotion</a> </li>
+                <li><a href="12-developing-new-brain-cells.htm">12. Developing New Brain-Cells</a> </li>
+                <li><a href="13-attractive-power-desire-force.htm">13. The Attractive Power&ndash;Desire Force</a> </li>
+                <li><a href="14-great-dynamic-forces.htm">14. The Great Dynamic Forces</a> </li>
+                <li><a href="15-claiming-your-own.htm">15. Claiming Your Own</a> </li>
+                <li><a href="16-law-not-chance.htm">16. Law, Not Chance</a> </li>
+                <li style="margin-top:15px;"><a href="author-information.htm">Author Information</a> </li>
+            </ul>
+        </div>
+
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="subhead">Atkinson / DuMont</li>
+                <li class="first-item"><a href="/new-thought/kybalion/contents.htm">The Kybalion</a></li>
+                <li><a href="/new-thought/dumont-memory/contents.htm">Practical Memory Training</a></li>
+                <li class="subhead">Phineas Parker Quimby</li>
+                <li class="first-item"><a href="/healing/phineas-quimby/quimby-manuscripts/contents.htm">The Quimby Manuscripts </a></li>
+                <li class="subhead">Franz Hartmann</li>
+                <li class="first-item"><a href="/magic/hartmann/white-and-black/contents.htm">Magic White and Black</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

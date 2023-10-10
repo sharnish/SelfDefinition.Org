@@ -1,0 +1,166 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SelfDefinition.Org Site Search</title>
+	<meta name="description" content="Search this website">
+	<meta property="og:title" content="SelfDefinition.Org Site Search">
+	<meta property="og:description" content="Search this website">
+	<meta property="og:image" content="https://selfdefinition.org/rose/images/Richard-Rose-ABJ-1982.jpg">
+	<link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* default image width is 210px */
+		#image {}
+
+		@media only print {
+			#main-content:after {
+				content: "Page update April 17, 2022";
+			}
+		}
+
+		/* Copied from Rose multisite search June 23, 2022 
+		
+		Button color may be styled on Google search page itself. 
+		Button and background are blue, where in Riose search they are white
+		*/
+		html.dark .gsc-input {
+			background: none !important;
+			background: inherit !important;
+			color: lightgreen;
+			outline: 0px solid green;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		html.dark .gsc-input-box {
+			background: #555;
+			background: inherit;
+			color: lightgreen;
+			outline: 0px solid red;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.gsc-search-button {
+			background: red;
+			background: inherit;
+		}
+
+		.gsc-search-button-v2 {
+			background: green;
+			background: inherit;
+		}
+
+		.gsc-search-button svg {
+			background: orange;
+			background: inherit;
+			color: yellow;
+		}
+
+		/* search engines  June 23, 2022
+		
+		selfdef-rose ... ends 622770b		
+		Rose-multisite ... ends: gqmhfy		
+		SelfDefinitionAll ... ends: 79a4147
+		
+		*/
+
+		/* instructions
+		
+		Button color is in GCS console: Look and feel -> Customize
+		
+		https://developers.google.com/custom-search/docs/tutorial/implementingsearchbox
+
+		https://programmablesearchengine.google.com/controlpanel/all
+		
+        https://stackoverflow.com/questions/30843561/css-issue-with-styling-the-google-custom-search-box
+        */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper-index">
+		<div id="container">
+			<div id="fixed-header">
+				<ul id="menu-site">
+					<!-- these are floats -->
+					<li><a href="/">Site Root</a></li>
+					<li><a href="/sitemap.htm">Site Map</a></li>
+					<li><a href="/paginas-en-espanol.htm">Español</a></li>
+					<li><a href="/search/selfdefinition-search.htm">Search</a></li>
+					<li><a href="javascript:scroll(0,0)" role="button">Top of Page</a></li>
+				</ul>
+				<div style="clear: both;">
+				</div>
+			</div>
+
+			<div id="main-content">
+				<div id="style-gadget">
+					<label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+						Dark theme: <input type="checkbox" id="theme-checkbox">
+					</label>
+					<!-- Can't be in head. Can be in README -->
+					<script src="/scripts/set-theme-cookie-checkbox.js"></script>
+				</div>
+				<header>
+					<p class="logo">
+						Self<span style="margin-left: 1px;">Definition.Org</span>
+					</p>
+					<h1 class="title">
+						Search This Website
+					</h1>
+					<p>
+						<!-- anchor will not be styled unless you include attribute "href" -->
+						Return to <a href="#" onclick="history.back()">Prior Page</a>
+					</p>
+					<p>
+						Go to <a href="/sitemap.htm">Site Map</a></p>
+
+
+				</header>
+
+				<div id="announce">
+					<!-- no image div, no top links to clear -->
+					<div class="site-links">
+
+						<div class="custom-search-bar">
+							<!-- Search engine name June 23, 2022:  SelfDefinitionAll ... ends: 79a4147
+                        	 	 Search engine ID:   b5661bbfb079a4147   -->
+
+							<p class="tight">Please enter your search terms below:</p>
+							<p class="note80 tight">For search box to load, ad-blocker has to allow Google Ajax Search API</p>
+
+							<script async src="https://cse.google.com/cse.js?cx=b5661bbfb079a4147"> </script>
+
+							<div class="gcse-searchbox-only" data-resultsUrl="/search/selfdefinition-search-results.htm"></div>
+
+						</div><!-- end custom-search-bar -->
+					</div>
+
+				</div><!-- end announce -->
+
+				<div id="bottom-links">
+					<!-- there are no bottom links -->
+				</div>
+
+
+				<!--p class="totop">
+                    <a href="javascript:scroll(0,0)">top of page</a>
+                </p-->
+			</div><!-- end #main-content" -->
+		</div><!-- end #container -->
+	</div><!-- end #mainwrapper-index -->
+
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

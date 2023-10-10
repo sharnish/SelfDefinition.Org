@@ -1,0 +1,214 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Golden Chalice by Joseph Sadony</title>
+	<meta name="description" content="When in doubt you need but ask your questions 
+    and drink from the golden chalice, where the comforting spirit of truth moves you find your answer.">
+	<meta name="author" content="Joseph Sadony">
+	<meta property="og:title" content="The Golden Chalice by Joseph Sadony">
+	<meta property="og:description" content="When in doubt you need but ask your questions      and drink from the golden chalice, where the comforting spirit of truth moves you find your answer.">
+	<meta property="og:image" content="https://selfdefinition.org/joseph-sadony/golden-chalice/images/joseph-sadony-og-image-2.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_golden-chalice-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- start -->
+	<link rel="next" href="foreword.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* new class, doees not work on touch screens,
+        nice sub-menu item, from Dasboth selections */
+
+		div#contents .item:hover {
+			background-color: #bde0ff;
+		}
+
+		#contents .item {
+			margin-bottom: 10px;
+		}
+
+		/* CSS3 columns; see Garma Chang book index */
+
+		#contents {
+			-webkit-columns: 3;
+			-moz-columns: 3;
+			columns: 3;
+			width: 100%;
+			margin: 0 auto;
+			border: 1px solid yellow;
+		}
+
+		@media only screen and (max-width:450px) {
+			#contents {
+				-webkit-columns: 2;
+				-moz-columns: 2;
+				columns: 2;
+			}
+		}
+
+		#contents .item {
+			width: 120px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_golden-chalice-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_golden-chalice-title-include.htm"); ?>
+									<h3>
+										Title Page
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="foreword.htm">Foreword &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- items have :hover styling, color change -->
+							<!-- the uls don't float; they are display: inline-block -->
+
+							<div id="book-info" style="margin-top: 30px; text-align: center">
+								<p>
+									<strong>The Golden Chalice</strong>
+								</p>
+								<p>
+									<em>My Questions&mdash;His Answers</em>
+								</p>
+								<p>
+									<em>He came like a thief at night in my wishful-thinking vision and stole my heart away.</em>
+								</p>
+								<p>
+									by JOSEPH SADONY
+								<p class="note">
+									The Valley Press
+									<br /> Montague, Michigan
+								</p>
+							</div>
+							<div style="margin-top: 30px;">
+								<p>
+									THE GOLDEN CHALICE is privately printed as a gift to a specific list of individuals, 300 copies have been made up for this purpose. It is not for sale. It is not available to the public. It is not to be reproduced in whole or in part for commercial purposes.
+								</p>
+							</div>
+							<div style="margin-top: 30px; text-align: center;">
+								<p>
+									COPYRIGHT 1948
+									<br> BY JOSEPH SADONY
+								</p>
+								<p>
+									All rights reserved, including those of translation into foreign languages.
+								</p>
+								<p>
+									DEDICATED
+								</p>
+								<p>
+									TO GOD, THE MASTER AND THE TRUTH
+								</p>
+								<p>
+									WRITTEN DOWN
+								</p>
+								<p id="dedication">
+									ONLY FOR YOU WHO UNDERSTAND SO WELL THAT YOUR OWN SOUL MIGHT HAVE RECEIVED OR GIVEN THE SAME ANSWERS: YOU WHO WHEN IN DOUBT, NEED BUT ASK YOUR QUESTIONS AND DRINK FROM THE GOLDEN CHALICE WHERE THE COMFORTING SPIRIT OF TRUTH MOVES YOU TO OPEN IT TO FIND YOUR ANSWER.
+								</p>
+							</div>
+							<!--  end #book-info -->
+							<hr />
+							<div id="compilation-notes">
+								<p>
+									Compilation Notes</p>
+								<h4>
+									Joseph Sadony, documented gifted clairvoyant</h4>
+								<p>
+									THE GOLDEN CHALICE is empty and useless to those who cannot think both with reason and with spirit.
+								</p>
+								<p>
+									They see but the empty gold, not the spirit of truth it contains.
+								</p>
+								<p>
+									So waste not your few years of time by remaining as empty as you may think this Chalice to be. It would be well not to read too much of this little Book at one time. Rather open it only when and where the spirit moves you to do so.
+								</p>
+								<p>
+									This copy of THE GOLDEN CHALICE was made for you, with faith in your full understanding of this gift from your friend.</p>
+								<p>
+									It is for the purpose of exploring that state between what is more Real and what is very temporary that this web site is presented.
+								</p>
+								<p>
+									Here are most works of Joseph A. Sadony as unchanged and proofed as we can present them.
+								</p>
+								<p>
+									Richard Rose introduced me to the works of Joseph Sadony. This is offered in the spirit of 'passing it on'.
+								</p>
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="foreword.htm">Foreword &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

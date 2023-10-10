@@ -1,0 +1,183 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Kybalion</title>
+    <meta name="description" content="El universo es una creación mental sostenida en la mente del TODO.">
+    <meta name="author" content="'Tres Iniciados', William Walker Atkinson">
+    <meta property="og:title" content="El Kybalion">
+    <meta property="og:description" content="El universo es una creación mental sostenida en la mente del TODO.">
+    <meta property="og:image" content="https://selfdefinition.org/new-thought/el-kybalion/images/el-kybalion-og-image.jpg">
+    <!-- load stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_el-kybalion-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this is first <link rel="prev" href="capitulo-00.htm"> -->
+    <link rel="next" href="introduccion.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* this is new May 18, 2022 */
+        #index-contents-links {
+            width: 360px;
+        }
+
+        @media only screen and (max-width:440px) {
+            #index-contents-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_el-kybalion-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_el-kybalion-title-include.htm"); ?>
+                                    <h3>
+                                        Contenido
+                                    </h3>
+                                    <p class="tiny">
+                                        English: <a href="../kybalion/contents.htm">../kybalion/contents.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"></li>
+                                    <li class="align-right"><a href="introduccion.htm">Introducción &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p class="kybalion-quote toowide">
+                                «El universo es una creación mental sostenida en la mente del TODO.» <span class="nowrap">&ndash;<em>El Kybalion</em></span>
+                            </p>
+                            <nav class="index-lists">
+                                <ul id="index-contents-links">
+                                    <li><a href="introduccion.htm">Introducción</a> </li>
+                                    <li><a href="capitulo-01-la-philosophia-hermetica.htm">I. La filosofía hermética</a></li>
+                                    <li><a href="capitulo-02-los-siete-principios-hermeticos.htm">II. Los siete principios herméticos</a></li>
+                                    <li><a href="capitulo-03-transmutacion-mental.htm">III. Transmutación mental</a></li>
+                                    <li><a href="capitulo-04-el-todo.htm">IV. El TODO</a></li>
+                                    <li><a href="capitulo-05-universo-mental.htm">V. El universo mental</a></li>
+                                    <li><a href="capitulo-06-la-paradoja-divina.htm">VI. La paradoja divina</a></li>
+                                    <li><a href="capitulo-07-el-todo-en-todo.htm">VII. «El Todo» en todo</a></li>
+                                    <li><a href="capitulo-08-los-planos-de-correspondencia.htm">VIII. Los planos de correspondencia</a></li>
+                                    <li><a href="capitulo-09-vibracion.htm">IX. Vibración</a></li>
+                                    <li><a href="capitulo-10-polaridad.htm">X. Polaridad</a></li>
+                                    <li><a href="capitulo-11-ritmo.htm">XI. Ritmo</a></li>
+                                    <li><a href="capitulo-12-causalidad.htm">XII. Causalidad</a></li>
+                                    <li><a href="capitulo-13-genero.htm">XIII. Género</a></li>
+                                    <li><a href="capitulo-14-genero-mental.htm">XIV. Género mental</a></li>
+                                    <li><a href="capitulo-15-axiomas-hermeticos.htm">XV. Axiomas herméticos</a></li>
+                                </ul>
+                            </nav>
+                            <hr>
+                            <div id="frontispiece" class="center">
+                                <p class="strong center note80">
+                                    Página de título del original en inglés</p>
+                                <p>
+                                    A STUDY OF THE HERMETIC PHILOSOPHY OF <span class="block">ANCIENT EGYPT AND GREECE</span>
+                                </p>
+                                <p>
+                                    &quot;THE LIPS OF WISDOM ARE CLOSED, EXCEPT TO THE EARS OF UNDERSTANDING&quot; &ndash;THE KYBALION
+                                </p>
+                                <p>
+                                    TO HERMES TRIMESGISTUS, KNOWN BY THE ANCIENT EGYPTIANS AS &quot;THE GREAT GREAT&quot;, &quot;MASTER OF MASTERS&quot;, THIS LITTLE VOLUME OF HERMETIC TEACHINGS IS REVERENTLY DEDICATED.
+                                </p>
+                            </div>
+                            <nav class="index-lists" style="margin-top: 40px;">
+                                <ul class="index-links">
+                                    <li class="header-item">Enlaces externas </li>
+                                    <li><em>El Kybalión</em> <a href="https://es.wikipedia.org/wiki/Kybali%C3%B3n">Wikipedia en español</a></li>
+                                    <li><em>El Kybalion</em> <a href="https://en.wikipedia.org/wiki/The_Kybalion">Wikipedia (inglés)</a> </li>
+                                    <li>Hermes Trismegistus at <a href="https://en.wikipedia.org/wiki/Hermes_Trismegistus">Wikipedia (inglés)</a> </li>
+                                    <li>Hermeticism at <a href="https://en.wikipedia.org/wiki/Hermeticism">Wikipedia (inglés)</a></li>
+                                    <li>William Walker Atkinson at <a href="https://en.wikipedia.org/wiki/William_Walker_Atkinson">Wikipedia (inglés)</a> </li>
+                                    <li>Este libro en español en <a href="https://archive.org/details/ElKybalion_842">Archive.Org</a></li>
+                                    <li>This book (1912 ed., inglés) at <a href="https://www.sacred-texts.com/eso/kyb/">Sacred-Texts.Com</a></li>
+
+                                    <li class="header-item" style="margin-top: 40px;">También en este sitio en español</li>
+                                    <li class="first-item"></li>
+                                    <li class="subhead-item">Franz Hartmann:</li>
+                                    <li class="first-item"><a href="/magic/hartmann/blanca-y-negra/contenido.htm">Magia Blanca y Negra</a></li>
+                                    <li class="subhead-item">H. P. Blavatsky:</li>
+                                    <li class="first-item"><a href="/blavatsky/voz-del-silencio/voz-fragmento-1.htm">La Voz del Silenco</a></li>
+                                    <li class="subhead-item">Mabel Collins:</li>
+                                    <li class="first-item"><a href="/blavatsky/luz-en-el-sendero/contenido-y-titulo.htm">Luz en el Sendero</a></li>
+                                    <li class="subhead-item" style="font-weight:normal;">Todas las páginas en español: </li>
+                                    <li class="first-item">&nbsp;&nbsp;&nbsp;<a href="/paginas-en-espanol.htm">paginas-en-espanol.htm</a> </li>
+                                </ul>
+                            </nav>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"></li>
+                                    <li class="align-right"><a href="introduccion.htm">Introducción &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+# .htaccess file for selfdefinition.org/gurdjieff/real-world/
+
+
+# pages renamed April 26, 2020
+
+
+Redirect 301 "/gurdjieff/real-world/capitulo-07-como-podemos-ganar-atencion.htm"   "/gurdjieff/real-world/cap-07-como-podemos-ganar-atencion.htm"
+
+Redirect 301 "/gurdjieff/real-world/chapter-07-how-can-we-gain-attention.htm"      "/gurdjieff/real-world/ch-07-how-can-we-gain-attention.htm"
+
+
+
+# Redirect 301 "/gurdjieff/real-world/" "/gurdjieff/real-world/"
+
+# Redirect 301 "/gurdjieff/real-world/" "/gurdjieff/real-world/"
+
+
+# end
+

@@ -1,0 +1,98 @@
+<!-- start of menu include file   Update June 25, 2020, March 8, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="english"><a href="../transmission/contents.htm">English</a></li>
+			<li><a href="contenido.htm">Contenido</a></li>
+			<li id="menu-totop"><a href="javascript:toTopCleanUrl();" role="button">Arriba</a></li>
+		</ul>
+		<div style="clear: both;">
+		</div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplaza menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li style="font-size:15px;" class="offset"><span class="block">La enseñanza zen de Huang Po</span> En la transmisión <span class="nowrap">de la mente</span></li>
+			<li class="normal note offset tight">Traducido John Blofeld</li>
+			<li>
+				<img class="menu-image" style="width:190px;" src="images/huang-po.jpg" alt="Huang-po" />
+			</li>
+			<li class="offset">Huang-po <span class="normal note">(¿?&ndash;850)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top: 20px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contenido.htm">Contenido</a></li>
+				<li><a href="notas-de-publicacion.htm">Notas de publicación</a></li>
+				<li><a href="introduccion-blofeld.htm">Introducción del <span class="nowrap">traductor al ingles</span></a></li>
+				<li><a href="introduccion-yin-zhi-shakya.htm">Introducción del <span class="nowrap">traductora al español</span></a></li>
+				<li><a href="prefacio-pei-hsiu.htm">Prefacio de P&apos;ei Hsiu</a></li>
+				<li><a href="a1-archivos-chun-chou.htm">Archivos Ch&uuml;n Chou pt 1</a></li>
+				<li><a href="a2-archivos-chun-chou-cont.htm">Archivos Ch&uuml;n Chou pt 2</a></li>
+				<li><a href="b1-archivos-wan-ling.htm">Archivos Wan Ling-1</a></li>
+				<li><a href="b2-wan-ling-anecdotas.htm">Wan Ling&ndash;Anécdotas-2</a></li>
+				<li><a href="b3-wan-ling-anecdotas-cont.htm">Wan Ling&ndash;Anécdotas-3</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Huang-po (Huangbo Xiyun) at <a href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">Wikipedia</a></li>
+				<li>Más traducciones de textos zen por Rev. Yin Zhi Shakya: <a href="http://www.acharia.org/">http://www.acharia.org/</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">También por Huang Po - Inglés</li>
+				<li class="site-first-item">Traducido por Lok To: <a style="display: block" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">Doctrine of Mind Transmission</a></li>
+				<li class="site-first-item">Traducido D.T. Suzuki: <a style="display: block" href="/zen/huang-po/sermon/huang-po-sermon-suzuki.htm">Sermon of Huang Po</a></li>
+				<li class="site-links-item">También en Zen</li>
+				<li class="site-first-item"><a href="/zen/hui-neng/plataforma/contenido.htm">Sutra de Hui Neng<br />
+						(Sutra de la Plataforma)</a></li>
+				<li>Garma C.C. Chang <a style="display: block" href="/zen/garma-chang/practice-of-zen/contents.htm">The Practice of Zen</a></li>
+				<li class="site-first-item">Garma C.C. Chang <a style="display: block" href="/zen/garma-chang/la-practica-del-zen/contenido.htm">La Práctica del Zen</a></li>
+			</ul>
+			<div class="external-links">
+				<ul class="menu-section">
+					<li class="external-links-item">Enlaces externos</li>
+					<li class="external-first-item">Fuente: PDF de 128 páginas en <a href="http://www.acharia.org/downloads/la_ensenanza_zen_huang_po_completo.pdf">www.acharia.org</a>
+					</li>
+					<li>Biblioteca de <a href="http://www.acharia.org/publicaciones/publicaciones_recientes.htm">www.acharia.org</a></li>
+					<li>&nbsp;</li>
+				</ul>
+			</div>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,1279 @@
+/*     /magic/eliphas-levi/gran-arcano/_gran-arcano-sparse.css */
+
+@media only print {
+    #article:after {
+        content: "Update January 13, 2022";
+        font-size: 60%;
+    }
+}
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #f3fff9;
+}
+
+/* source for green pallets
+
+https://colorswall.com/palette/35901
+
+more
+
+https://colorswall.com/palettes
+
+*/
+
+
+
+/*    beautiful gren:  background: #e6ffef;
+
+        beautiful yellow, Santanelli: background: #001010;
+
+        */
+
+/*********** spanish version *****************/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+    background: #efe;
+}
+
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #c0d0ff;
+    /* nice blue, goes with the green */
+
+}
+
+
+/* CUSTOMIZABLE FEATURES. (also see MENU STYLING below; requires height adjustments) */
+
+/* sharing "Book Two" and "Book Three" */
+article header h2 {
+    font-size: 90%;
+}
+
+/* get rid of the above for #title-include */
+#title-include-div h2 {
+    font-size: 115% !important;
+}
+
+article h3 span.block {
+    margin-bottom: 0px;
+    margin-top: -15px;
+    font-size: 90%;
+}
+
+
+article header p:first-of-type {
+    margin-top: 5px;
+}
+
+
+p.alert {
+    background: #bbc;
+}
+
+
+html.dark p.alert {
+    background: #666;
+}
+
+
+ul.generic {
+    list-style: none;
+    margin-top: -10px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width:500px) {
+    ul.generic {
+        padding-left: 10px;
+    }
+}
+
+ul.generic li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* always custom, keep at top */
+header h3 span.block {}
+
+article p:first-of-type {
+    margin-top: 35px;
+}
+
+/* but remove from the title-include */
+#title-include-div p.logo {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:767px) {
+    #title-include-div p.logo {
+        margin-top: 8px;
+    }
+}
+
+/* MOVE THESE LOWER TO STANDARD, NEXT TIME */
+blockquote.tight p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p.first-para {
+    margin-top: 35px;
+}
+
+
+/* End of CUSTOMIZABLE FEATURES */
+
+/* GET RID OF SCROLLBAR ON FIREFOX
+https://stackoverflow.com/questions/15394065/firefox-scroll-bar-hidden */
+div {
+    scrollbar-width: none;
+}
+
+/* style switcher (version 1) in title include file if used
+   So far used: Quimby Manuscriops; Law of Attraction Eng/Span
+
+ */
+#style-gadget {
+    text-align: right;
+    margin: 0 0px 0px 0;
+}
+
+
+/*******************************************************
+THIS SECTION USES "ADD DARK CLASSES" METHOD
+ **** START EXPERIMENTAL - CLASS "DARK" IS ADDED WITH JSCRIPT
+    All elements have "dark" added. Jquery function
+    file:  _add-class-dark-and-cookie.js
+    */
+@media only screen {
+
+    /* do not include "span"
+       .progress-header.dark  */
+
+    html.dark,
+    html.dark body,
+    html.dark #fixed-header-small-screen,
+    html.dark #menu-site-small-screen,
+    html.dark .progress-container,
+    html.dark sup.black {
+        background: #000;
+        color: #fdfdff;
+    }
+
+    html.dark #nav .menu-section a.active,
+    html.dark #menu-scroll,
+    html.dark #menu-scroll a,
+    html.dark #toTopButton,
+    html.dark .item:hover,
+    html.dark nav.contents .item:hover {
+        background: #449;
+    }
+
+    /* lightblue = add8e6 is not bright enough    */
+    html.dark a,
+    html.dark a:visited,
+    html.dark a:link,
+    html.dark a:hover,
+    html.dark #toTopButton {
+        color: aqua;
+    }
+
+    /* gold is this: #FFD700  try #FF8362 */
+    html.dark .progress-bar {
+        background: aqua;
+    }
+
+    /* color:coral; color:#F88379; #F47F75 */
+    html.dark p.logo {
+        font-size: 90%;
+    }
+
+    html.dark label,
+    html.dark p.logo,
+    html.dark .fnote,
+    html.dark p.fnote,
+    html.dark sup,
+    html.dark .maroon {
+        color: #FF8362;
+    }
+
+
+    html.dark #index-lists ul li.external-links-item,
+    html.dark #index-lists ul li.site-links-item,
+    html.dark #index-lists ul li.optional-links-item,
+    html.dark .menu-section li.external-links-item,
+    html.dark .menu-section li.site-links-item,
+    html.dark .menu-section li.optional-links-item {
+        color: #FF8362;
+    }
+
+    html.dark h5 {
+        color: inherit;
+    }
+
+    /* lightblue = add8e6 is not bright enough    */
+    html.dark ul.next-previous-item-list li a:link,
+    html.dark ul.next-previous-item-list li a:visited {
+        color: lightblue;
+    }
+
+    /* chapter summmaries page */
+    html.dark ul.chapter-summaries li.link {
+        background: inherit;
+    }
+
+    html.dark p.question {
+        background: #202020;
+    }
+
+    /* from line about 420 default is 90% */
+    html.dark ul.next-previous-item-list,
+    html.dark ul.next-previous-item-list li.align-left,
+    html.dark ul.next-previous-item-list li.align-right {
+        font-size: 95%;
+    }
+
+    /* see _scrollbas-and-test.js for Ajax display/hide */
+    html.dark #menu-site li.ajax-menu-item {
+        color: pink;
+    }
+
+    html.dark label {
+        color: #FF8362;
+        background: #202020;
+    }
+
+    html.dark div.hidden,
+    html.dark p.hidden {
+        color: #fff;
+        background: inherit;
+    }
+}
+
+/*******************************************************
+ **** END EXPERIMENTAL *********/
+
+
+
+
+/* START COPY AND PASTE HERE */
+/* START COPY AND PASTE HERE */
+/* START COPY AND PASTE HERE */
+
+/* As of June 14, 2020 try this, lines look cramped. Default is 1.7em;
+Started with Chidananda */
+body {
+    line-height: 1.8em;
+}
+
+/* update May 6, 2020 */
+/* Make the left menu items wider. Started with Celibacy-Quotes **/
+#menu-section-group .menu-section li {
+    width: 190px;
+    border: 0px solid red;
+}
+
+
+
+
+/* DO NOT USE .HIDDEN. Reserved for collapsing footnotes. See Paradoxes and _drop-in-OLD.css  */
+.hide,
+.hide-this {
+    display: none;
+}
+
+/* adjust padding so selected item doesn't wrapped if not already wrapped */
+#nav ul li a.active {
+    margin-left: -8px;
+    padding-left: 10px;
+    padding-right: 2px;
+}
+
+/* section specific */
+
+/* Endnots page, don't wrap complicated endnotes */
+a.endnote {
+    white-space: nowrap;
+}
+
+
+#article hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+/* copy   here to bottom to Spanish version Nov 13, 2019 */
+
+/* for foonotes in <h3> which are 110% in selfdef-respon ; sup is 95% but too big */
+/* 85% still too big, try 80% */
+h3 sup {
+    font-weight: normal;
+    font-size: 80%;
+}
+
+sup.black {
+    color: Black;
+}
+
+/*  LEFT MENU EXPANSION - menu-testing */
+
+#menu-container {
+    border: 0px solid red;
+}
+
+#menu-site,
+ul.menu-section {
+    border: 0px solid green;
+}
+
+/* default is 220px
+
+#menu-panel     {}
+
+#menu-container {}  */
+
+/* expanding the left menu width because titles are long */
+
+ul.menu-section,
+ul.menu-text {
+    padding-left: 32px;
+    width: inherit;
+}
+
+ul.menu-section li {
+    width: 100%;
+}
+
+ul.menu-section li a {
+    width: 100%;
+}
+
+
+
+/* NOT #menu-container, screws up menu highlighting
+#menu-container a {display:inline;} */
+.optional-links a,
+.site-links a {
+    display: inline;
+}
+
+li.menu-header {
+    font-weight: bold;
+}
+
+
+h3,
+h4 {
+    line-height: 1.9;
+    border: 0px solid blue;
+}
+
+/* still overlapping in dev-tools, but this doesn't fix it
+WAS nav.in-page-nav {margin-top:5px;} updated Sep 3, 2020 */
+nav.in-page-nav {
+    margin-top: 20px;
+}
+
+
+/* recent tweaks */
+
+.hide {
+    display: none;
+}
+
+hr.menu-hr {
+    margin-left: 0;
+}
+
+div.image-div {
+    text-align: center;
+}
+
+p.first-paragraph {
+    margin-top: 40px;
+}
+
+/* or try:
+Adjacent sibling selectors have the following syntax:
+E1 + E2, where E2 is the subject of the selector.
+This works, :
+h4 +p {background:yellow;} */
+
+/* interesting:
+h4 {
+  border: 0px solid green;
+  border-radius: 5px;
+}
+*/
+
+
+a.inline {
+    display: inline;
+}
+
+img.menu-image {
+    max-width: 200px;
+    width: 200px;
+}
+
+/* new html5 element test, default is yellow */
+mark {
+    background: pink;
+}
+
+/* make hr a little weaker */
+hr {
+    color: #ccc;
+}
+
+
+/****** Start section top-bottom margin adjustments ******/
+/* agree margins for all h3, so consistent */
+/* keep wide headers from stretching full width on wide screens, then center them
+ These do not center properly in headers on small screen */
+header h3,
+header h3.toowide,
+header p.toowide {
+    margin-top: 1em;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* agree for h3 and h4 in articles, but with a top margin */
+h3,
+h4,
+h3.toowide,
+h4.toowide,
+p.toowide {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+header h3.toowide,
+h4.toowide,
+h5.toowide,
+p.toowide,
+span.toowide {
+    width: 80%;
+}
+
+span.toowide {
+    margin: 0 auto;
+}
+
+/* shrink for smaller screens */
+@media only screen and (max-width: 767px) {
+
+    header h3.toowide,
+    h4.toowide,
+    h5.toowide,
+    p.toowide {
+        width: 90%
+    }
+}
+
+/****** End section top-bottom margin adjustments ******/
+
+
+
+/* top to match paragraph (18px); Chrome is only giving 14px for an em
+  need first-of-type to overcome "article p:first-of-type"   */
+.right-image-div,
+.left-image-div {
+    margin-top: 18px;
+}
+
+.right-image-div p:first-of-type,
+.left-image-div p:first-of-type {
+    margin-top: 0;
+}
+
+.image-div {
+    margin-top: 20px;
+}
+
+.image-div p:first-of-type {
+    margin-top: 0;
+}
+
+
+h5 {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 95%;
+}
+
+p.fnote,
+div.fnote {
+    margin-left: 8px;
+}
+
+@media only screen and (max-width:500px) {
+
+    p.fnote,
+    div.fnote {
+        margin-left: 3px;
+    }
+}
+
+
+
+/* hide the scrollbar */
+#menu-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+#menu-scroll {
+    margin-top: 50px;
+}
+
+
+sup {
+    font-size: 90%;
+}
+
+/* test to get rid of scrollbar on MS phone
+body { overflow-y: hidden; } < identifies the element, but need to scroll
+Here's the fix:
+https://medium.com/@beraliv/scrollbar-customisation-31bd28652e9
+WINDOWS PHONE ONLY, OTHERWISE THERE IS NO SCROLLBAR */
+body {
+    scrollbar-width: thin;
+}
+
+
+/* add class */
+.strong {
+    font-weight: bold;
+}
+
+/* Deemphasize <strong> a little */
+strong,
+.strong {
+    font-size: 95%;
+}
+
+/* other font sizes - maroon od replace by #600 (not #800) */
+p.logo {
+    font-size: 85%;
+}
+
+p.logo,
+.fnote,
+h5 {
+    color: #600;
+}
+
+p.note,
+div.note,
+.note,
+a.wiki,
+.fnote a.note {
+    font-size: 90%
+}
+
+p.fnote,
+div.fnote,
+ul.fnote,
+.fnote {
+    font-size: 90%
+}
+
+/* do not double-hit "a" tags in a "fnote" */
+
+
+/* default chrome is 40px */
+ul.fnote {
+    padding-left: 30px;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+ul.fnote li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.note80 {
+    font-size: 80%
+}
+
+.tiny {
+    font-size: 70%;
+}
+
+blockquote,
+p.blockquote,
+div.blockquote {
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+p.link-to-spanish {
+    font-size: 70%
+}
+
+@media only screen and (max-width:500px) {
+
+    p.note,
+    div.note,
+    .note,
+    a.wiki,
+    .fnote a.note {
+        font-size: 95%
+    }
+
+    p.fnote,
+    div.fnote,
+    ul.fnote,
+    .fnote {
+        font-size: 95%
+    }
+
+    .note80 {
+        font-size: 90%
+    }
+
+    .tiny {
+        font-size: 80%;
+    }
+
+    blockquote,
+    p.blockquote,
+    div.blockquote {
+        margin-left: 4px;
+    }
+
+    p.link-to-spanish {
+        font-size: 80%;
+    }
+
+    sup {
+        font-size: 95%;
+    }
+
+}
+
+/* shrink the top elements a bit */
+@media only screen and (max-width: 767px) {
+    p.logo {
+        margin-bottom: 3px;
+    }
+
+    .title-image-div {
+        margin: 0 auto;
+    }
+
+    .title-image {
+        width: 80%;
+        max-width: 190px;
+    }
+
+    header h3 span.block {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/* This overrides selfdef-response line 166, which sets but top and bottom margins to zero. */
+h1.toowide,
+h2.toowide,
+h3.toowide,
+h4.toowide,
+p.toowide {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* INVERTED EXCLAMATION MARK-SPANISH ONLY
+For font sans-serif the character does not look like regular "i".
+Without positioning, it hangs too low. Need to test on phone. */
+.sans {
+    font-family: sans-serif;
+    position: relative;
+    top: -0.15ex;
+}
+
+/* already have this for "*" */
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* default .normal only has font-weight */
+.normal {
+    font-style: normal;
+    font-size: 100%;
+}
+
+/* make more room at top of page, first heading, new class "first-totop" */
+/* add class as follows:    Aug 30, 2019
+NOT IMPLEMENTED YET
+<p class="totop-above-anchor first-totop">
+*/
+p.first-totop {
+    top: 0;
+    margin-top: 0;
+}
+
+h4.top-heading {
+    margin-top: -20px;
+}
+
+
+/* this is the left-side menu */
+#menu-site {
+    margin-top: 20px;
+}
+
+/* has two items, 2nd refers to activating Ajax; default margin is already zero */
+#menu-site li.scroll-menu-item {
+    font-size: 11px;
+    padding-bottom: 0;
+}
+
+/* see _scrollbas-and-test.js for Ajax display/hide */
+#menu-site li.ajax-menu-item {
+    font-size: 11px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    color: red;
+}
+
+
+/* Big problem with next-item menu - overlapping with page-links list, something
+    is screwed up with the floats, never asaw it before today (Nov 1, 2019)
+    Is NOT (tested it) caused by moving h3 to "announce sec tion, formerly it was between them.  */
+
+/*
+        clear:both; << NOT WORKING
+
+        display:inline-block; << USE TO CLEAR FLOATS
+
+        https://stackoverflow.com/questions/18025818/clearboth-not-working-css-floats
+    */
+
+/* NEEDED because the elements rely on floats in the default  */
+nav.in-page-nav {
+    clear: both;
+}
+
+/* this doesn't do anything */
+nav.next-previous-item-nav,
+ul.next-previous-item-list {
+    clear: both;
+    display: inline-block;
+}
+
+nav.next-previous-item-nav {
+    border: 0px solid green;
+}
+
+
+/* MUST HAVE */
+nav.next-previous-item-nav,
+ul.next-previous-item-list {
+    width: 100%;
+}
+
+
+/* FIRST THE "NAV" THEN THW "LIST" */
+
+/* selfdef-response default is 20-20 */
+@media only screen and (min-width:768px) {
+    nav.next-previous-item-nav {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav.next-previous-item-nav {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* NOW THE LIST */
+
+ul.next-previous-item-list {
+    border: 0px solid red;
+}
+
+/* override selfdef-respons, default bottom is 30px */
+ul.next-previous-item-list {
+    margin-bottom: 10px;
+}
+
+ul.next-previous-item-list,
+ul.next-previous-item-list li.align-left,
+ul.next-previous-item-list li.align-right {
+    font-size: 90%;
+}
+
+
+
+/* can increase font size if titles are short; default is 80%
+ul.next-previous-item-list {font-size:85%;}*/
+/* darken the blue link as background is blue. Default is #2277dd*/
+
+ul.next-previous-item-list a:link,
+ul.next-previous-item-list a:visited {
+    color: #400000;
+}
+
+/* but shrink on phones  GENERALLY NOT NEEDED, NEED TO CHECK
+@media only screen and (max-width: 500px)
+{
+    ul.next-previous-item-list, ul.next-previous-item-list li.align-left, ul.next-previous-item-list li.align-right
+	{font-size:85%;}
+}
+*/
+/* NEEDED because the elements rely on floats in the default */
+li.align-left,
+li.align-right {
+    border: 0px solid green;
+}
+
+li.align-left {
+    text-align: left;
+}
+
+li.align-right {
+    text-align: right;
+}
+
+/* default is 5px but layout now puts them farther from the edges */
+@media only screen and (max-width:500px) {
+    .next-previous-item-list li.align-left {
+        margin-left: 0;
+    }
+
+    .next-previous-item-list li.align-right {
+        margin-right: 0;
+    }
+}
+
+/* this fixes the next-previous nav on very narrow screens */
+#article {
+    clear: both;
+}
+
+/* PAGE-LINKS */
+ul.page-links {
+    width: 240px;
+    margin: 0 auto 0px;
+    border: 0px solid red;
+}
+
+/* must have this or viewport will be screwed up on narrow screens
+   MUST be on a page if page-links width is specified on that page */
+@media only screen and (max-width:300px) {
+    ul.page-links {
+        width: 100%;
+    }
+}
+
+.page-links li {
+    width: inherit;
+    border: 0px solid blue;
+}
+
+.page-links li a {}
+
+
+
+/* PAGE-LINKS - margins */
+/* There is no default margin in selfdef-response
+   (default top and bottom padding is 5px)
+If spaced wide, don't need the extra height */
+ul.page-links li {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    ul.page-links li {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Added Apr 19, 2019, don't show left menu when printing
+	Added to selfdefinition-responsive, line 536.
+	Keep this in "drop-in" css template at least 6  months to avoid CSS cache problems */
+@media only print {
+    #menu-panel {
+        display: none;
+    }
+
+    #main-content {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 10px;
+    }
+
+    #article,
+    article,
+    #announce,
+    section,
+    aside {
+        width: 100%;
+    }
+
+    div.title-image-div,
+    img.title-image {
+        display: block;
+        margin: 10px auto;
+        width: 210px;
+    }
+
+    /* new Feb 25, 2020 < add to selfdef default */
+    nav.next-previous-item-nav {
+        display: none;
+    }
+
+    p.totop-above-anchor {
+        display: none;
+    }
+}
+
+/* TEXT SIZE */
+/* try to get more on phones reducing the font size from 18px to 17px */
+/* Pixl 2 = 411 ; Iphone X = 375px; Nexus 5 = 360 ;  */
+/* Iphone 4 = 320px */
+@media only screen and (max-width: 320px) {
+    article {
+        font-size: 17px;
+    }
+}
+
+
+/* Edge screen width adjustments */
+/* MUST PUT IN A MEDIA QUERY, or it SCREWS UP right edge of LARGE SCREENS */
+@media only screen and (max-width:540px) {
+    #main-content-relative {
+        padding-left: 18px;
+        padding-right: 16px;
+    }
+}
+
+/* Most but not all Edge screens have width of 360px, need to verify. So not needed if smaller. */
+@media only screen and (max-width: 359px) {
+    #main-content-relative {
+        padding-left: 13px;
+        padding-right: 10px;
+    }
+}
+
+/* this is new Aug 11, 2019 need to test more
+   For S7 Edge */
+@media only screen and (max-width: 767px) {
+    #menu-site-small-screen {
+        position: relative;
+    }
+
+    #menu-site-small-screen {
+        left: 10px;
+    }
+}
+
+
+/* TOP MENU ANOMALY FIX */
+/* NOTE: DIDN'T FIX THE ANOMALY - NOT ENOUGH TIME TO INVESTIGATE,
+   SO JUST SHORTENED THE LAST MENU ITEM. */
+/* large screen default, not actually needed because it's invisible there
+#menu-site-small-screen {position:relative;}     <<< was this necessary?
+#fixed-header-small-screen {position:relative;} << NO, CAUSES TOP MENU TO SCROLL */
+
+
+@media only screen and (max-width: 767px) {
+    #menu-panel {
+        width: 100%;
+    }
+
+    #fixed-header-small-screen,
+    #menu-site-small-screen {
+        width: 540px;
+    }
+
+    /* random test, get rid of max-width, I don't understand it
+        See above, already is the default max-width:initial; */
+
+    /* is this necessary? comment out sep 6 test
+    #menu-site-small-screen  {position:relative;} */
+    /* next is for Edge screens like S7 */
+    #menu-site-small-screen {
+        left: 10px;
+    }
+}
+
+/* now override the above media query for 600px; [now 540 Oct 10, 2020] a repeat of the default is necessary */
+/* Calc () added Aug 21, 2019 because left edge position is 10px;
+   Use on so far: Garma Chang, Shiva Sutras, Stuart Lachs  */
+/* anomaly fix changed from 600 to 570  Aug 19, 2020 with Quimby
+@media only screen and (max-width: 570px) {
+    #fixed-header-small-screen, #menu-site-small-screen
+    {width:520px;}
+}
+*/
+@media only screen and (max-width: 540px) {
+
+    #fixed-header-small-screen,
+    #menu-site-small-screen {
+        width: calc(100% - 10px);
+    }
+}
+
+
+/* TOP MENU FIX Sep 5, 2019 - update Dec 2019 */
+#fixed-header-small-screen {
+    border: 0px solid blue;
+}
+
+#menu-site-small-screen {
+    border: 0px solid red;
+}
+
+#main-content {
+    border: 0px solid maroon;
+}
+
+#menu-site-small-screen li {
+    border: 0px solid green;
+}
+
+#menu-site-small-screen li {
+    margin-right: 15px
+}
+
+#menu-site-small-screen li:last-child {
+    margin-right: 0;
+}
+
+
+/* With "totop" link, menu always has 2 lines - Reduce to 80/81 if one line */
+@media only screen and (max-width: 767px) {
+
+    /* NO - FORCES A 2ND LINE TOOL EARLY
+    #fixed-header-small-screen {width:auto;} */
+    #menu-site-small-screen {
+        width: calc(100% - 10px);
+    }
+
+    /* progress bar height is 5px, its container is set at 6px for overlap.
+	   MUST have overlap to avoid bleed through */
+    #fixed-header-small-screen {
+        top: 6px;
+        height: 110px;
+    }
+
+    #menu-site-small-screen {
+        top: 0;
+        height: 110px;
+    }
+
+    #main-content {
+        top: 111px;
+    }
+}
+
+@media only screen and (max-width:359px) {
+
+    .conditional-hide,
+    #menu-site-small-screen .conditional-hide {
+        display: none;
+    }
+}
+
+/*  .conditional-hide-2 is in title-include */
+@media only screen and (max-width:767px) {
+    .conditional-hide-2 {
+        display: none;
+    }
+}
+
+/* shrink the menu items a little */
+@media only screen and (max-width: 510px) {
+    #menu-site-small-screen li {
+        margin-right: 5px
+    }
+}
+
+/* TWO-LINE MENU - USED OR NOT
+   Test breakpoint with borders and without
+@media only screen and (max-width: 600px)
+{
+    #fixed-header-small-screen,
+    #menu-site-small-screen     {height:110px;}
+    #main-content               {top:111px;}
+}
+*/
+
+/* END MENU STYLING */
+/* END MENU STYLING */
+/* END MENU STYLING */
+
+
+
+
+
+/* START PROGRESS BAR AND TOTOP BUTTON */
+/* START PROGRESS BAR AND TOTOP BUTTON */
+/* START PROGRESS BAR AND TOTOP BUTTON */
+
+/* top progress initiated Nov 17, 2019 */
+/* How To Create a Scroll Indicator
+https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+*/
+
+/* AFTER TESTING remove display width testing (in title include file)
+#device-width-display {display:none;}   */
+
+
+/* progress bar experiment Nov 17, 2019
+   needs Divs, Script and this CSS */
+/* wide screens selfdef default width: 530px */
+.progress-header {
+    position: fixed;
+    top: 0;
+    /* fixed elements don't contribute height to the document
+    height:10px; NO */
+    z-index: 100;
+    width: 525px;
+}
+
+@media only screen and (max-width:767px) {
+    .progress-header {
+        left: 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+/* Progress bar height will affect fixed menu positioning */
+/* The progress container (grey background #ccc <- NO use html color, done at top) */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    z-index: 101;
+
+    /* cannot be "inherit" or it's see-through
+    background: inherit; < defined at top, same as html */
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 5px;
+    background: #4a5;
+    width: 0%;
+    z-index: 102;
+}
+
+
+/* to-top button:
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+*/
+/* Since large screen does not have top menu
+   only show on large screens, in media query below */
+#toTopButton {
+    display: none;
+}
+
+#toTopButton a {
+    outline: none !important;
+}
+
+#toTopButton a:active {
+    outline: none !important;
+}
+
+@media only screen and (min-width:768px) {
+    #toTopButton {
+        display: none;
+        /* Hidden by default, appears after scroll */
+        position: sticky;
+        /* Fixed/sticky position */
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        left: 100%;
+        /* Place the button 30px from the right */
+        z-index: 99;
+        /* Make sure it does not overlap */
+        border: none;
+        /* Remove borders */
+        outline: none;
+        /* Remove outline */
+        /* background:#;  Set a background color << is set at top */
+        color: #0000ff;
+        /* Text color */
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        padding: 14px;
+        /* Some padding */
+        border-radius: 5px;
+        /* Rounded corners */
+        font-size: 17px;
+        /* Increase font size */
+        border: 0px solid #00f;
+        /* pick a color to match */
+    }
+
+    #toTopButton:hover {
+        background: #aafff0;
+        /* use page color instead of gray */
+        text-decoration: underline;
+    }
+}
+
+/* the button is going to be within #main-content-relative,
+    but if page is wide, put it in the right margin */
+@media only screen and (min-width:900px) {
+    #toTopButton {
+        margin-right: -50px;
+    }
+}
+
+/* END PROGRESS BAR AND TOTOP BUTTON */
+/* END PROGRESS BAR AND TOTOP BUTTON */
+/* END PROGRESS BAR AND TOTOP BUTTON */
+
+
+
+
+
+
+/* end */

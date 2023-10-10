@@ -1,0 +1,100 @@
+<!-- start of menu include file Update July 22, 2020. May 22. 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container" class="hide-scrollbar">
+		<ul id="menu-site">
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>The Crowd &ndash; A Study of the Popular Mind</li>
+			<li class="normal tight">(1895)</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/gustave-le-bon.jpg" alt="Gustave Le Bon">
+			</li>
+			<li>Gustave Le Bon</li>
+			<li class="normal note tight">(1841-1931)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="chapters.htm">Chapter Topics</a></li>
+				<li><a href="preface.htm">Preface by the Author</a> </li>
+				<li><a href="introduction.htm">Introduction</a> </li>
+				<li>Book 1. The Mind Of Crowds </li>
+				<li><a href="1-1-general.htm">1. General Characteristics of Crowds</a> </li>
+				<li><a href="1-2-sentiments-and-morality.htm">2. Sentiments and Morality of Crowds</a> </li>
+				<li><a href="1-3-ideas-reasoning.htm">3. Ideas, Reasoning Power, Imagination</a> </li>
+				<li><a href="1-4-religious-convictions.htm">4. Religious Shape of Convictions</a> </li>
+				<li>Book 2. Opinions and Beliefs of Crowds</li>
+				<li><a href="2-1-remote-factors.htm">1. Remote Factors of the Opinions and Beliefs</a> </li>
+				<li><a href="2-2-immediate-factors.htm">2. Immediate Factors of the Opinions of Crowds</a> </li>
+				<li><a href="2-3-leaders-means.htm">3. Leaders of Crowds and Their Means of Persuasion</a> </li>
+				<li><a href="2-4-limitations-of-variability.htm">4. Limitations of The Variability of the Beliefs</a> </li>
+				<li>Book 3. The Different Kinds of Crowds </li>
+				<li><a href="3-1-classification.htm">1. The Classification of Crowds</a> </li>
+				<li><a href="3-2-criminal-crowds.htm">2. Criminal Crowds </a></li>
+				<li><a href="3-3-criminal-juries.htm">3. Criminal Juries</a> </li>
+				<li><a href="3-4-electoral-crowds.htm">4. Electoral Crowds</a> </li>
+				<li><a href="3-5-parliamentary.htm">5. Parliamentary Assemblies</a> </li>
+				<!--
+                <li><a href="gutenberg.htm">gutenberg</a> </li>
+                -->
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>Gustave Le Bon at <a href="https://en.wikipedia.org/wiki/Gustave_Le_Bon">Wikipedia</a> </li>
+				<li><em>The Crowd</em> at <a href="https://en.wikipedia.org/wiki/The_Crowd:_A_Study_of_the_Popular_Mind">Wikipedia</a> </li>
+				<li style="font-size:90%;">Source: <a class="inline" href="http://www.gutenberg.org/ebooks/445">Gutenberg.Org</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Psychology</li>
+				<li class="first-item">Edward L Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda</a></li>
+				<li><a href="/psychology/articles/article-index.htm">Psychology Articles</a></li>
+				<li class="site-links-item">Liberty section</li>
+				<li>Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+				<li>Coming soon:</li>
+				<li>Aldous Huxley, Brave<br> New World</li>
+				<li>George Orwell, 1984</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

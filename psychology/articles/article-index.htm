@@ -1,0 +1,149 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Articles Index Page</title>
+    <meta name="description" content="List of articles in the psychology section.">
+    <meta property="og:title" content="Psychology Articles Index Page">
+    <meta property="og:description" content="List of articles in the psychology section.">
+    <meta property="og:image" content="https://selfdefinition.org/psychology/articles/images/william-james.jpg">
+    <!-- load stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_psychology-articles-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* center the #toc section to match the centering of the title */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_psychology-articles-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <!-- end menu panel -->
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_psychology-articles-title-include.htm"); ?>
+                                    <h3>
+                                        Articles in this Section
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="steven-brier-archetypal-autism-faq.htm">Archetypal Autism &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <nav class="index-lists" style="margin-top:40px;">
+                                <ul class="index-contents-links">
+                                    <!--- deprecated must check -->
+                                    <li><a href="steven-brier-archetypal-autism-faq.htm">Steven Brier: Archetypal Autism FAQ</a></li>
+                                    <li><a href="robert-anton-wilson-free-your-mind.htm">Robert Anton Wilson: Free Your Mind (video, 9:27)</a> </li>
+                                    <li><a href="aldous-huxley-self-transcendence.htm">Aldous Huxley: Self Transcendence</a>
+                                    <li><a href="mantak-chia-kundalini-psychosis.htm">Mantak Chia: The Most Effective Cure for Kundalini Psychosis </a></li>
+                                    <li><a href="mantak-chia-psicosis-kundalini.htm">Mantak Chia: (español) La cura más efectiva para la psicosis Kundalini</a></li>
+                                    <li><a href="james-medical-materialism.htm">William James on Medical Materialism</a> </li>
+                                    <li><a href="james-review-anaesthetic-revelation-gist-of-philosophy.htm">William James on Experiments with Nitrous Oxide</a>
+                                    <li><a href="thomas-szasz-summary-statement-and-manifesto.htm">Thomas Szasz: Summary Statement and Manifesto</a></li>
+                                    <li><a href="lennard-davis-five-reasons-not-to-take-ssris.htm">Lennard Davis: Five Reasons Not to Take SSRIs</a> </li>
+                                    <li><a href="six-harsh-truths-that-will-make-you-a-better-person.htm">Six Harsh Truths That Will Make You a Better Person</a> </li>
+                                    <li><a href="yuri-bezmenov-socialist-subversion.htm">Former KGB Yuri Bezmenov, Warns America About Socialist Subversion</a></li>
+                                    <li><a href="the-CIA-mind-bending-disclosures.htm">The CIA: Mind-Bending Disclosures&ndash;Brainwashing Experiments</a></li>
+                                    <li><a href="skinner-on-taming-the-lions.htm">Notorious Quote by BF Skinner on Taming the Lions</a></li>
+                                </ul>
+
+                                <ul class="index-links">
+                                    <li class="header-item"> More Psychology</li>
+                                    <li class="first-item"><a href="/psychology/uncertain-science/lemon-psychiatry-part-1.htm">Richard Lemon: Psychiatry, the Uncertain Science</a> </li>
+                                    <li class="note80">Please feel free to suggest articles using the contact form for this site: <a href="/contact/">/contact/</a> </li>
+                                    <li class="header-item">Also on this site</li>
+                                    <li class="first-item">Psychology articles in the Hearing Voices section: <a href="/hearing-voices/">/hearing-voices/</a></li>
+                                    <li>Vernon Howard:</li>
+                                    <li class="first-item"><a href="/hearing-voices/articles/vernon-howard-freedom-from-harmful-voices.htm">Freedom From Harmful Voices</a> </li>
+                                    <li>Alan Fitzpatrick:</li>
+                                    <li class="first-item"><a href="/hearing-voices/articles/alan-fitzpatrick-the-voices-we-may-hear.htm">The Voices We May Hear </a></li>
+                                    <li style="margin-top: 10px;"><a href="/hearing-voices/articles/alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">The Surest Path to Mental Clarity</a> </li>
+                                    <li>For a scientific outline of positive psychological steps one can take, see Napoleon Hill, <em>Think and Grow Rich</em>, chapter 11, on this site: <a class="inline" href="/celibacy/quotes/napoleon-hill-sex-transmutation-part-1.htm">Sex Transmutation</a></li>
+                                    <!--<li>  
+                                        <br>
+                                        <a href="">&nbsp;</a></li>-->
+                                </ul>
+                            </nav>
+
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="steven-brier-archetypal-autism-faq.htm">Archetypal Autism &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </p>
+
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

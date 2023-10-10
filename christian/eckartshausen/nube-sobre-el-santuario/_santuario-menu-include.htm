@@ -1,0 +1,87 @@
+﻿<!-- start of menu include file  Update June 3, 2020. May 10, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/christian/">Christian index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contenido.htm">Contenido</a></li>
+            <li id="menu-totop"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver </span>Arriba</a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/christian/">Christian index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center">
+            <li class="normal note">
+                <img class="menu-image" src="images/karl-von-eckartshausen.jpg" alt="Karl von Eckartshausen" />
+            </li>
+            <li>La Nube Sobre el Santuario <span class="block">Karl von Eckartshausen</span></li>
+            <li class="normal note">(1752-1803)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contenido.htm">Contenido</a> </li>
+                <li><a href="prologo-frater-lucis-fiducius.htm">Prólogo</a></li>
+                <li><a href="carta-1.htm">Carta 1</a> </li>
+                <li><a href="carta-2.htm">Carta 2</a> </li>
+                <li><a href="carta-3.htm">Carta 3</a> </li>
+                <li><a href="carta-4.htm">Carta 4</a> </li>
+                <li><a href="carta-5.htm">Carta 5</a> </li>
+                <li><a href="carta-6.htm">Carta 6</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li>Eckartshausen en <a class="nowrap" href="https://es.wikipedia.org/wiki/Karl_von_Eckartshausen">
+                        Wikipedia (Español)</a></li>
+
+                <li>Eckartshausen at <a class="nowrap" href="https://en.wikipedia.org/wiki/Karl_von_Eckartshausen">
+                        Wikipedia (English)</a></li>
+
+                <li>Este documento en <a href="https://www.scribd.com/document/133451372/Eckarthausen-La-Nube-Sobre-El-Santuario">Scribd.Com (Español)</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">También en este sitio en español</li>
+                <li class="site-first-item">Jacob Boehme: <a href="/christian/jacob-boehme/confesiones/contenido.htm">Confesiones</a></li>
+
+                <li class="site-first-item">Franz Hartmann MD: <a href="/magic/hartmann/blanca-y-negra/introduccion-la-ley-espiritual.htm">Magia Blanca y Negra </a></li>
+                <li>H.P. Blavatsky: <a href="/blavatsky/voz-del-silencio/contenido.htm">La Voz del Silenco </a></li>
+                <li>Mable Collins: <a href="/blavatsky/luz-en-el-sendero/contenido-y-titulo.htm">Luz en el Sendero</a></li>
+                <li class="site-links-item">Todas las paginas en español: <a class="normal" href="/paginas-en-espanol.htm">/paginas-en-espanol.htm</a></li>
+
+            </ul>
+        </div>
+        <p>&nbsp; </p>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

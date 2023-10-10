@@ -1,0 +1,95 @@
+<!-- start of menu include file Update June 10, 2020. Update June 4, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="song-of-meditation.htm"><span class="conditional-hide">Song of </span>Meditation</a></li>
+			<li><a href="the-cicadas-wing.htm">Cicada's Wing</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-3"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text" style="margin-top:30px;">
+			<li>
+				<img class="menu-image" src="images/hakuin-ekaku-icon.jpg" alt="Hakuin Ekaku" />
+			</li>
+			<li>Hakuin Ekaku</li>
+			<li class="normal note tight offset">(1686-1786)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="song-of-meditation.htm">Song of Meditation</a> </li>
+				<li><a href="the-cicadas-wing.htm">The Cicada's Wing</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Hakuin Ekaku at <a href="https://en.wikipedia.org/wiki/Hakuin_Ekaku">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site</li>
+				<li class="site-first-item">Garma C. C. Chang:</li>
+				<li class="site-first-item"><a href="/zen/garma-chang/practice-of-zen/contents.htm">
+						The Practice of Zen</a></li>
+				<li><a href="/zen/garma-chang/la-practica-del-zen/contenido.htm">
+						La Práctica del Zen </a></li>
+				<li>Huang Po:</li>
+				<li class="site-first-item"><a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Dharma of Mind Transmission</a></li>
+				<li>Yongjia Xuanjue (Shodoka)</li>
+				<li><a href="/zen/song-of-enlightenment/shasta-abbey.htm">
+						Song of Enlightenment</a></li>
+				<!--
+				<li>Tōzan Ryōkai</li>
+				<li><a =href="/zen/dongshan/thomas-cleary-comments-on-five-ranks-etc.htm">Comments on the Five Ranks of Dongshan Liangjie</a></li>
+				-->
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links</li>
+				<li class="external-first-item">Zen Masters archives at Terebess.Hu<br />
+					<a href="https://terebess.hu/zen/zen.html">terebess.hu/zen/zen.html</a>
+				</li>
+				<li>Hakuin Ekaku page at <a href="https://terebess.hu/zen/hakuin.html">Terabess.Hu</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

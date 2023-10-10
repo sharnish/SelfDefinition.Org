@@ -1,0 +1,92 @@
+<!-- start of menu include file Update June 5, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/advaita/">Advaita index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm">Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/advaita/">Advaita index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="margin-top: 20px;">
+            <li>Vedanta Philosophy <span class="block normal">Lecture at Harvard, 1896</span></li>
+            <li class="normal note">
+                <img class="menu-image" src="images/vivekananda.jpg" alt="Swami Vivekananda" />
+            </li>
+            <li>Swami Vivekananda</li>
+            <li class="normal note">(1863-1902)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="1-introduction.htm">Introduction</a> </li>
+                <li><a href="2-vedanta-philosophy.htm">Vedanta Philosophy</a> </li>
+                <li><a href="3-discussion-q-and-a.htm">Discussion, Q&amp;A</a> </li>
+                <li><a href="4-answers-and-selections.htm">Answers and Selections, items 1-25</a> </li>
+                <li><a href="5-answers-and-selections-cont.htm">Answers and Selections, items 26-49</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Swami Vivekananda at <a href="https://en.wikipedia.org/wiki/Swami_Vivekananda">Wikipedia</a> </li>
+                <li>Bibliography at <a href="https://en.wikipedia.org/wiki/Bibliography_of_Swami_Vivekananda">Wikipedia</a> </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also in Advaita</li>
+                <li class="first-item">Sri Atmananda Krishna Menon:
+                    <!--a href="/advaita/atmananda/contents.htm"-->Atman Darshan and Atma Nirvritti [removed, copyright]
+                </li>
+                <li class="subhead">Adi Shankarya</li>
+                <li class="first-item"><a href="/advaita/shankara/crest-jewel/contents.htm">Crest-Jewel of Wisdom </a></li>
+                <li class="subhead">Parameshwar Maharaj</li>
+                <li class="first-item"><a href="/advaita/parameshwar/submerging-into-self/contents.htm">Submerging into Myself</a></li>
+                <li><a href="/advaita/parameshwar/hundiendome/indice.htm"><span class="normal">[español] </span>Hundiendome en mí mismo: El Advaita en la practica </a></li>
+                <li class="header-item">Also on this site</li>
+                <li>Ramana Maharshi index: <a href="/ramana/">/ramana/</a></li>
+                <li>Siddharameshwar: <a href="/siddharameshwar/">/siddharameshwar/</a></li>
+            </ul>
+        </div>
+        <div class="external-links">
+            <ul class="menu-section">
+                <li class="header-item">External links</li>
+                <li class="first-item">Source of this document: Link opens a 50 page PDF, 234 KB, at <br /><a href="https://www.vedanta.gr/wp-content/uploads/2012/03/SwVivek_The-Vedanta-Philosophy-Harvard_ENA5.pdf">www.vedanta.gr</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

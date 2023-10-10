@@ -1,0 +1,102 @@
+<!-- start of menu include file - update Nov 14, 2020. June 9, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/joseph-sadony/">Sadony index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm">Contents</a></li>
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/joseph-sadony/">Sadony index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="margin-top:20px;">
+            <li>The Golden Chalice</li>
+            <li class="normal note">Published 1948</li>
+            <li class="normal">
+                <img class="menu-image" src="images/joseph-sadony.jpg" alt="Joseph Sadony" />
+            </li>
+            <li>Joseph Sadony</li>
+            <li class="normal note tight">(1877-1960)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="title-page.htm">Title Page</a></li>
+                <li><a href="foreword.htm">Foreword</a></li>
+                <li><a href="chapter-01.htm">Chapter 1</a></li>
+                <li><a href="chapter-02.htm">Chapter 2</a></li>
+                <li><a href="chapter-03.htm">Chapter 3</a></li>
+                <li><a href="chapter-04.htm">Chapter 4</a></li>
+                <li><a href="chapter-05.htm">Chapter 5</a></li>
+                <li><a href="chapter-06.htm">Chapter 6</a></li>
+                <li><a href="chapter-07.htm">Chapter 7</a></li>
+                <li><a href="chapter-08.htm">Chapter 8</a></li>
+                <li><a href="chapter-09.htm">Chapter 9</a></li>
+                <li><a href="chapter-10.htm">Chapter 10</a></li>
+                <li><a href="chapter-11.htm">Chapter 11</a></li>
+                <li><a href="chapter-12.htm">Chapter 12</a></li>
+                <li><a href="chapter-13.htm">Chapter 13</a></li>
+                <li><a href="chapter-14.htm">Chapter 14</a></li>
+                <li><a href="chapter-15.htm">Chapter 15</a></li>
+                <li><a href="chapter-16.htm">Chapter 16</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">More Sadony this site</li>
+                <li id="obit-link" class="first-item"><a href="/joseph-sadony/gates-of-the-mind/joseph-sadony-obituary-1960.htm">Obituary (1960)</a></li>
+                <li id="gates-link"><a href="/joseph-sadony/gates-of-the-mind/contents.htm">Gates of the Mind (autobiography)</a></li>
+                <!-- this section
+                <li id="chalice-link"><a href="/joseph-sadony/golden-chalice/contents.htm">The Golden Chalice</a></li>
+                -->
+                <li><a href="/joseph-sadony/pine-needles/contents.htm">Pine Needles (aphorisms)</a></li>
+                <li><a href="/joseph-sadony/human-radio/contents.htm">The Human Radio</a></li>
+                <li><a href="/joseph-sadony/enlightening-flashes/contents.htm">Enlight'ning Flashes</a></li>
+            </ul>
+        </div>
+        <div class="external-links">
+            <ul class="menu-section">
+                <li class="header-item">External Links</li>
+                <!-- website has disappeared
+                <li><a href="http://www.gatesofthemind.com/">GatesOfTheMind.Com</a></li>
+                -->
+                <li class="first-item"><a href="http://www.valleyofthepines.com/">The Valley of the Pines</a></li>
+                <li class="header-item">Joseph Sadony at</li>
+                <li class="first-item"><a href="https://www.spiritualteachers.org/joseph-sadony/">SpiritualTeachers.Org (has links to several articles, videos)</a></li>
+                <li><a href="http://www.mysticmissal.org/sadony.htm">MysticMissal.Org</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="To top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,99 @@
+<!-- start of menu include file Update Sept. 3, 2020. June 1, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div" class="hide-scrollbar">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/tantra/">Tantra index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents-and-introduction.htm">Contents<span class="conditional-hide"> and Intro</span></a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/tantra/">Tantra index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Techniques of Transmission in Kashmir Saivism</li>
+			<li>
+				<img class="menu-image" src="images/shiva.jpg" alt="Siva seated, statue" />
+			</li>
+			<li>by Lilian Silburn</li>
+			<li class="normal note offset tight">(1908-1993)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents-and-introduction.htm">Contents, Introduction</a></li>
+				<li><a href="01-the-role-of-grace.htm">1. The Role of Grace</a></li>
+				<li><a href="02-the-masters.htm">2. The Masters</a></li>
+				<li><a href="03-methods-of-transmission.htm">3. Methods of Transmission</a></li>
+				<li><a href="04-the-initiations.htm">4. The Initiations</a></li>
+				<li><a href="05-manifestation-and-return.htm">5. Manifestation and Return to the Source</a></li>
+				<li><a href="06-the-liberating-paths.htm">6. The Liberating Paths</a></li>
+				<li><a href="07-grace-and-triple-absorption.htm">7. Grace and the Triple Absorption</a></li>
+				<li><a href="08-path-of-the-individual.htm">8. The Path of the Individual or of Activity</a></li>
+				<li><a href="09-the-path-of-cognitive-energy.htm">9. The Path of Cognitive Energy</a></li>
+				<li><a href="10-the-divine-path-or-path-of-will.htm">10. The Divine Path, or the Path of the Will</a></li>
+				<li><a href="11-the-absence-of-any-path.htm">11. Absence of Any Path</a></li>
+				<li><a href="endnotes.htm">Endnotes</a></li>
+				<li><a href="eight-stanzas-on-the-incomparable.htm">Appendix: Eight Stanzas on the Incomparable</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Kashmir Shaivism <span class="nowrap">(Trika) at <a href="https://en.wikipedia.org/wiki/Kashmir_Shaivism">Wikipedia</a></span></li>
+				<li>Abhinavagupta <span class="nowrap">at <a href="https://en.wikipedia.org/wiki/Abhinavagupta">Wikipedia</a></span></li>
+				<li><span class="nowrap">Tantraloka at</span> <a href="http://www.abhinavagupta.net/tantraloka/">abhinavagupta.net</a> (George Barselaar)</li>
+				<li>Lilian Silburn at <a href="https://en.wikipedia.org/wiki/Lilian_Silburn">Wikipedia</a></li>
+				<li><span class="nowrap">Tantrasara at</span> <a href="https://ia800306.us.archive.org/28/items/ShriTantraSara/ShriTantraSara-HemendraNathChakravarty.pdf">Archive.Org (294 page pdf, 23 megs)</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Tantra</li>
+				<li class="first-item"><a href="/tantra/shiva-sutras/shiva-sutras-index.htm">The Shiva Sutras (7&nbsp;versions, 3 en español)</a></li>
+				<li>Japanese Tantra:</li>
+				<li class="first-item"><a href="/tantra/articles/dsz-roshi-what-is-shingon-magic.htm">DSZ Roshi, <em>What is Shingon Magic?</em></a></li>
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">Mabel Collins, <a href="/blavatsky/light-on-the-path/contents-and-title.htm"><em>Light on the Path</em></a></li>
+				<li>Franz Hartmann, <a href="/magic/hartmann/white-and-black/contents.htm"><em>Magic White and Black</em></a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">This book at Archive.Org: <a href="https://archive.org/details/TechniquesOfTransmissionInKashmirSaivismLilianSilburn">Html and Other Formats</a></li>
+				<li>Also see: <a href="http://amritananda-natha-saraswati.blogspot.mx/p/of-all-indian-philosophical-systems.html">amritananda-natha-saraswati.<wbr />blogspot.com</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,92 @@
+<!-- start of menu include file Update June 13, 2022-->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents-introduction-preface.htm">Contents/Preface</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>
+				<img class="menu-image" src="images/huang-po.jpg" alt="Huang-po" />
+			</li>
+			<li>Huang-po <span class="normal note">(d. 850)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="contents-introduction-preface.htm">Contents, Intro, Preface <span class="nowrap">by P'ei Hsiu</span></a></li>
+				<li><a href="chung-ling-record.htm">The Chung-Ling Record</a></li>
+				<li><a href="wan-ling-record.htm">The Wan-Ling Record</a></li>
+				<li><a href="gatha-and-postscript-pei-hsiu.htm">Gatha and Postscript <span class="nowrap">by P'ei Hsiu</span></a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<!-- div.optional-links disappears when #menu-container disappears -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Huang-po<br />
+					(Huangbo Xiyun) at <a href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<!-- div.site-links disappears when #menu-container disappears -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Zen</li>
+				<li class="first-item">Huang Po: <a href="/zen/huang-po/transmission/contents.htm"> Transmission of Mind, Blofeld Version</a></li>
+				<li>Garma C.C. Chang: <a href="/zen/garma-chang/practice-of-zen/">The Practice of Zen</a> </li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External Links</li>
+				<li class="first-item">This document at Archive.Org (Wayback Machine) in html <a href="https://web.archive.org/web/20110614064626/http://www.ymba.org/transmission/main.html">
+						archive.org-ymba.org</a></li>
+				<li>Html version at <a href="https://www.abuddhistlibrary.com/Buddhism/C%20-%20Zen/Ancestors/The%20Zen%20Teachings%20of%20Huang%20Po/Zen%20Teachings%20of%20Huang-po.htm">
+						abuddhistlibrary.com</a></li>
+				<li>As a pdf (364K) at <a href="https://terebess.hu/zen/Huangbo-LokTo.pdf">Terebes.Hu</a></li>
+				<li class="external-first-item">Huang-po page at Terebess.Hu <a href="https://terebess.hu/zen/huangboBlofeld.html">
+						huangboBlofeld.html</a></li>
+
+				<li>Huang-po at <a href="https://www.selfdiscoveryportal.com/cmHuangPo.htm">SelfDiscoveryportal.Com</a></li>
+				<li>&nbsp;
+					<!-- spacer needed to separate links -->
+				</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

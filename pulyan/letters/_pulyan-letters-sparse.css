@@ -1,0 +1,152 @@
+/* file:  /pulyan/letters/_pulyan-letters-sparse.css
+
+update June 7, 2020. May 21, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update May 21, 2022";
+    }
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff
+NOT USED
+html, body, #fixed-header-small-screen, #menu-site-small-screen,
+.progress-header, .progress-container  {background: #ffffea;}
+*/
+
+/* old pulyan: {background:#fec;} */
+
+/* need to apply class to both html and body < no, don't do this, will complicate dark
+All pages are Pulyan
+html.pulyan,
+body.pulyan,
+body.pulyan #fixed-header-small-screen,
+body.pulyan #menu-site-small-screen {
+    background: #fffae6;
+}
+ */
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fffae6;
+}
+
+
+/* Rose letters are not included in this section
+html.rose, body.rose,
+body.rose #fixed-header-small-screen,
+body.rose #menu-site-small-screen
+{background:#fff6ff;} */
+
+header h3.date {
+    margin-top: 1em;
+}
+
+/* This matches default for menu scroll, which is #bde0ff */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #dfcfaf;
+}
+
+
+/* remove indentation of paragraph of class fnote */
+p.fnote {
+    margin-left: initial;
+}
+
+
+/* overcome definition on 2022.CSS */
+#salutation,
+.salutation {
+    font-size: 100%;
+    margin-left: 0;
+    font-style: normal;
+    color: inherit;
+}
+
+
+/* IMPORTANT: DO NOT CONVERT <i> TO <em> */
+/* in the Pulyan letters, the <em> tag is used for underlining, rather than the <u> tag, while "i" is used for italic. */
+/* using border allows for variable space between text and underline */
+em {
+    font-style: normal;
+    border-bottom: solid 1px #000;
+    display: inline;
+    padding-bottom: 0;
+}
+
+/* underline plus border as follows */
+em.double {
+    font-style: normal;
+    text-decoration: underline;
+    border-bottom: 0px solid;
+}
+
+
+/* styling at top and bottoms of letters */
+h3.date {
+    text-align: center;
+}
+
+/* get rid of address for clutter */
+p.address {
+    display: none;
+}
+
+p.salutation {
+    text-align: left;
+}
+
+p.signature {
+    text-align: left;
+}
+
+
+hr.dashed {
+    border-top: 2px dotted #000;
+    margin-bottom: 20px;
+}
+
+/* get rid of the green link, since green used elsewhere */
+a:hover {
+    color: Blue;
+}
+
+/* there are 160 of these. Pulyan letters only.
+   Green is #008000. Dark green is #006400
+*/
+div.left-margin-note,
+.pulyan-note {
+    font-size: 95%;
+    color: #080;
+}
+
+div.left-margin-note em {
+    border-bottom-color: #080;
+}
+
+html.dark div.left-margin-note,
+html.dark .pulyan-note {
+    color: #afa;
+}
+
+html.dark div.left-margin-note em {
+    border-bottom-color: #afa;
+}
+
+
+
+
+
+/* end */

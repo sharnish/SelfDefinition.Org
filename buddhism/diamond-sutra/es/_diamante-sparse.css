@@ -1,0 +1,150 @@
+/*     File:  /buddhism/diamond-sutra/es/_diamante-sparse.css:         */
+
+@media only print {
+    #article:after {
+        content: "Update July , 2021";
+        font-size: 60%;
+    }
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fff0ef;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contenido .item:hover {
+    background: #c0d4fc;
+    /* nice blue, goes with the green */
+
+}
+
+
+/* CUSTOMIZABLE FEATURES. (also see MENU STYLING below; requires height adjustments) */
+
+
+p.para-number {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* testing */
+
+/*  *******/
+
+
+#main-content {
+    border: 0px solid yellow;
+}
+
+#article {
+    border: 0px solid white;
+}
+
+#title-include-div {
+    border: 0px solid red;
+}
+
+#announce header {
+    border: 0px solid green;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header p {
+    border: 0px solid blue;
+}
+
+#menu-container {
+    border: 0px solid red;
+}
+
+#fixed-header-small-screen {
+    border: 0px solid blue;
+}
+
+#menu-site-small-screen {
+    border: 0px solid orange;
+}
+
+#menu-site-small-screen li {
+    border: 0px solid green;
+}
+
+#menu-section-group,
+div.optional-links,
+div.site-links,
+div.external-links {
+    border: 0px solid blue;
+}
+
+ul#menu-site,
+ul.menu-text,
+ul.menu-section {
+    border: 0px solid green;
+}
+
+#index-lists {
+    border: 1px solid red;
+}
+
+#index-lists ul {
+    border: 1px solid blue;
+}
+
+#index-lists ul li {
+    border: 1px solid green;
+}
+
+nav.contents {
+    border: 1px solid yellow;
+}
+
+
+nav.next-previous-item-nav {
+    border: 0px solid yellow;
+}
+
+ul.next-previous-item-list {
+    border: 0px solid red;
+}
+
+a.page-link-anchor:target {
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+    a.page-link-anchor:target {
+        border: 1px solid green;
+    }
+}
+
+a.return-anchor,
+a.return-anchor:target {
+    border: 1px solid red;
+}
+
+a.endnote,
+a.endnote:target {
+    border: 1px solid red;
+}
+
+
+/* end */

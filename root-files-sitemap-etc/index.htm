@@ -1,0 +1,746 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SelfDefinition.Org</title>
+	<meta name="description" content="Resources for spiritual seekers in many esoteric subject areas.">
+	<meta property="og:title" content="SelfDefinition.Org">
+	<meta property="og:description" content="Resources for spiritual seekers in many esoteric subject areas.">
+	<meta property="og:image" content="https://selfdefinition.org/images/great-ritual-of-the-initiations.jpg">
+	<!--link href="/styles/root-files-simple-responsive.css" rel="stylesheet" type="text/css"-->
+	<link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* nameserver ns1.Site5.com */
+
+		/* page specific */
+
+		/* default .conditional-hide from PROTOTYPE */
+		@media only screen and (max-width:650px) {
+
+			.conditional-hide,
+			#menu-site .conditional-hide {
+				display: none;
+			}
+		}
+
+		/* override default */
+		@media only screen and (max-width:500px) {
+
+			.conditional-hide-2,
+			#menu-site .conditional-hide-2 {
+				display: initial;
+			}
+		}
+
+
+		@media only screen and (max-width:400px) {
+
+			.conditional-hide-2,
+			#menu-site .conditional-hide-2 {
+				display: none;
+			}
+		}
+
+
+		#main-content {
+			max-width: 800px;
+		}
+
+		html,
+		body,
+		#fixed-header,
+		#menu-site {
+			background: #fff9ff;
+		}
+
+		#john-1-5 {}
+
+		#clear-light ol li {
+			margin: 0 0 0 -10px;
+		}
+
+		/* from the old "root-files.css" */
+		/* index.htm = 2 columns, 900/2 = 450px */
+		/* index.htm for tablets, columns are narrowed */
+		/* index.htm for phones (smaller than 600px) goes to single column */
+
+		#two-column-container {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		/*  900/2 = 450px */
+		/* 768/2 = 384px */
+
+		#index-page-left-column,
+		#index-page-right-column {
+			float: left;
+			padding: 0;
+			margin: 0;
+			border: 0px solid red;
+		}
+
+		#index-page-left-column {
+			width: 45%;
+			padding-right: 25px;
+		}
+
+		#index-page-right-column {
+			width: 54%;
+		}
+
+		/* wide screens are default as above, width 768px, includes Ipad */
+		/* shave column width for medium screens */
+		/* For screens smaller than Ipad, goes to single column
+           but the width of the single column expands */
+		/* this is for the two old-style columns at the top */
+
+		/* expand the column widths to 100% when there is only one column */
+
+		/* WAS @media only screen and (max-width: 599px) { */
+		@media only screen and (max-width: 700px) {
+			#index-page-left-column {
+				width: 100%;
+			}
+
+			#index-page-right-column {
+				width: 100%;
+			}
+		}
+
+		#index-page-links {
+			margin-top: 20px;
+		}
+
+		#index-page-links li {
+			margin-top: 20px;
+		}
+
+		.index-page-bullet-lists {
+			margin-top: 20px;
+		}
+
+		/* index page right column styles */
+
+		#poetry {
+			margin-top: 25px;
+			background: #e9e9ff;
+		}
+
+		html.dark #poetry {
+			background: #333;
+		}
+
+		#poetry p {
+			padding: 0 10px 0 15px;
+		}
+
+		/* get rid of the background color left and right */
+
+		@media only screen and (max-width:500px) {
+			#poetry {
+				margin-left: -5px;
+				margin-right: -5px;
+			}
+		}
+
+		/* list styling; index page */
+
+		.index-page-bullet-lists h4 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		/* ordered lists */
+
+		ol.index-page {
+			margin: 0 0 0 30px;
+			padding: 0;
+		}
+
+		ol.index-page li {
+			margin-bottom: 10px;
+		}
+
+		/* definition lists (one section only) */
+
+		dl.index-page {}
+
+		dl.index-page dt {
+			font-style: italic;
+		}
+
+		dl.index-page dd {
+			margin-left: 10px;
+		}
+
+		/* changelong styles; page is a single column */
+
+		dl.changelog-list {
+			/* WAS font-size:14px; */
+			font-size: 15px;
+		}
+
+		@media only screen and (max-width:500px) {
+			dl.changelog-list {
+				font-size: 16px;
+			}
+		}
+
+		/* this is for the CSS3 columns, same as in site map -->
+        /* in Site Map the column elements are divs, then paragraphs */
+		/* must use l-r margin auto or columns will not vertically align */
+
+		div.css3-columns {
+			margin-top: 30px;
+		}
+
+		div.css3-columns div.topic,
+		div.featured div.topic {
+			/* prevent break, but browser support limited */
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+			margin-bottom: 20px;
+			border: 0px solid maroon;
+		}
+
+		div.topic h4 {
+			margin-top: 0;
+			font-size: 95%;
+			width: 95%;
+			padding-left: 5px;
+		}
+
+		@media only screen and (max-width:500px) {
+			div.topic h4 {
+				font-size: 100%;
+			}
+		}
+
+
+		hr {
+			margin-left: 25px;
+			margin-right: 30px;
+		}
+
+
+		/* DEFAULT single line menu 
+           Menu is always 2 lines */
+
+		#fixed-header,
+		#menu-site {
+			top: 0;
+			height: 105px;
+		}
+
+		#main-content {
+			position: relative;
+			top: 106px;
+		}
+
+		.gold {
+			color: #d18000;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper-index">
+		<div id="container">
+			<div id="fixed-header">
+				<ul id="menu-site">
+					<!-- these are floats -->
+					<li><a href="sitemap.htm">Site Map</a></li>
+					<li class="conditional-hide-3"><a href="https://albigen.com">Albigen.Com</a></li>
+					<!-- do not include Albigen.Net on small screens -->
+					<li class="conditional-hide"><a href="http://www.albigen.net">Albigen.Net</a></li>
+					<li><a href="changelog.htm">Changelog</a></li>
+					<li><a href="paginas-en-espanol.htm">Español</a></li>
+					<li><a href="/search/selfdefinition-search.htm">Search</a></li>
+					<li><a href="javascript:scroll(0,0)" role="button">Top<span class="conditional-hide-3"> of Page</span></a></li>
+				</ul>
+				<div style="clear:both;"></div>
+			</div>
+			<div id="main-content">
+				<div id="style-gadget">
+					<label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+						Dark theme: <input type="checkbox" id="theme-checkbox">
+					</label>
+					<!-- Can't be in head. Can be in README -->
+					<script src="/scripts/set-theme-cookie-checkbox.js"></script>
+				</div>
+				<header>
+					<!-- NO LOGO THIS PAGE, KEEP &nbsp; FOR POSITION SIMILARITY -->
+					<p class="logo">
+						<!-- Self<span style="margin-left: 1px;">Definition.Org</span> -->
+					</p>
+					<!-- font-weight: 400 is supposed to be equal to normal , while 700 is equal to bold
+                            Couldn't get 500 to work -->
+					<h1 class="title" style="font-size:110%;color:#ededff;">
+						Self<span style="margin-left:1px;">Definition.Org</span>
+					</h1>
+				</header>
+				<div id="announce">
+					<header>
+						<!-- there is no announce -->
+					</header>
+				</div>
+				<!-- CSS is on this page. Tops of right and left columns will align here -->
+				<div id="two-column-container">
+					<div id="index-page-left-column">
+						<!-- always set a width for a floated item or the results are unpredictable -->
+						<div id="clear-light">
+							<p>
+								Clear Light Yoga</p>
+							<ol>
+								<li style="margin-top: -8px;">Commitment</li>
+								<li>Purification</li>
+								<li>Focus</li>
+								<li>Cutting through</li>
+								<li>Absorption</li>
+							</ol>
+							<p id="john-1-5" class="note">&quot;The light shines in the darkness, and the darkness has not overcome it.&quot; <span class="nowrap">&ndash; John 1:5</span></p>
+						</div>
+						<div id="index-page-links">
+							<p>
+								<a href="/rose/">Richard Rose: Transcriptions, Monitor Papers, Articles, Writings, Biography</a>
+							</p>
+							<p>
+								<a href="/rose/about/richard-rose-the-man-who-was-a-mirror.htm">
+									Richard Rose, the Man Who Was a Mirror by Michael Casari</a>
+							</p>
+							<p>
+								<a href="/pulyan/letters/1960-0820-pulyan.htm">Alfred Pulyan: Letters from a Zen Master,
+									or Why You're Still Suffering</a>
+							</p>
+							
+							<p>
+								<a href="/rose/retreat/contents.htm">
+									 Retreat from Untruth: The Teachings of Richard Rose, American Zen Master </a>
+							</p>
+
+							<p>
+								<a href="/van-der-leeuw/conquest-of-illusion/contents-and-preface.htm">J.J. van der Leeuw: Conquest of Illusion</a>
+							</p>
+
+							<p>
+								<a href="/awareness/awareness-home.htm">Awareness Watching Awareness</a>
+							</p>
+							<p>
+								<a href="/ramana/quotes/sadhu-om-self-inquiry.htm">Self Inquiry by Sri Sadhu Om </a>
+							</p>
+							<p>
+								<a href="/christian/cloud/unknowing/contents.htm">
+								Anonymous, 14th Century England: The Cloud of Unknowing</a>
+							</p>
+							<p>
+								<a href="/hearing-voices/articles/vernon-howard-freedom-from-harmful-voices.htm">Freedom
+									From Harmful Voices</a>
+							</p>
+
+							<p>
+								<a href="/celibacy/quotes/">Celibacy Section</a>
+							</p>
+							<p>
+								<a href="/hearing-voices/articles/alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">
+									The Surest Path To Mental Clarity</a>
+							</p>
+
+							<p>
+								<a href="/magic/hartmann/white-and-black/introduction-spiritual-law.htm">Franz Hartmann:
+									Magic White and Black</a>
+							</p>
+							<p>
+								<a href="/blavatsky/voice-of-the-silence/voice-contents.htm">H.P. Blavatsky: Voice of the Silence</a>
+							</p>
+							<p>
+								<a href="/blavatsky/voz-del-silencio/contenido.htm">H.P. Blavatsky: La Voz del Silencio [español]</a>
+							</p>
+
+							<p>
+								<a href="/magic/eliphas-levi/paradoxes/paradox-7-will-accomplishes-does-not-desire.htm">Éliphas Lévi: Paradox
+									VII: The Will Accomplishes Everything, Which It Does not Desire</a>
+							</p>
+							<p>
+								<a href="/new-thought/kybalion/contents.htm">Kybalion: Teachings of Hermes Trismegistus</a>
+							</p>
+							<p>
+								<a href="/new-thought/el-kybalion/contenido.htm">El Kybalion: Los Misterios de Hermes </a>
+							</p>
+							<p>
+								<a href="/blavatsky/light-on-the-path/contents-and-title.htm">Mabel Collins: Light on the Path</a>
+							</p>
+							<p>
+								<a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">
+									Zen Teachings of Huang Po - The Dharma of Mind Transmission</a>
+							</p>
+							<p>
+								<a href="/zen/huang-po/transmision/contenido.htm">
+									La enseñanza zen de Huang Po en la transmisión de la mente</a>
+							</p>
+							<p>
+								<a href="/tantra/transmission/contents-and-introduction.htm">
+									Techniques of Transmission in Kashmir Saivism</a>
+							</p>
+
+							<p>
+								<a href="/clara-llum/quotes/if-buddha-gets-in-your-way-kill-em.htm">
+									Clara Llum: If Buddha Gets In Your Way, Kill 'Em</a>
+							</p>
+							<p>
+								<a href="/tantra/articles/dsz-roshi-what-is-shingon-magic.htm">Dried Shit Zen Roshi: What Is Shingon Magic?</a>
+							</p>
+							<p>
+								<a href="/tantra/kukai/2-sokushin-jobutsu-gi-translation.htm">Kukai: Principle Of Attaining
+									Buddhahood With the Present Body</a>
+							</p>
+							<p>
+								<a href="/tao/chuang-tzu/all-things-equal/discussion-on-making-all-things-equal.htm">Chuang Tzu: Discussion On Making All Things
+									Equal</a>
+							</p>
+							<p>
+								<a href="/celibacy/sivananda/">Sivananda Saraswati: Celibacy-Bramacharya</a>
+							</p>
+							<p>
+								<a href="/rose/writings/states-of-mind-fifth-paper.htm">Richard Rose: States of Mind</a>
+							</p>
+							<p>
+								<a href="/advaita/articles/hedderman-lion-or-sheep.htm">Paul Hedderman: Are you a lion or a sheep?</a>
+							</p>
+							<p>
+								<a href="/advaita/articles/reaching-for-enlightenment.htm">Reaching For Enlightenment</a>
+							</p>
+
+
+						</div>
+						<!-- end index-page-links -->
+						<div id="links-to-site-map">
+							<hr />
+							<p>
+								See over 40 subjects: <a href="sitemap.htm">Site Map</a>
+							</p>
+							<p>
+								See updates: <a href="changelog.htm">changelog.htm</a>
+							</p>
+							<p>
+								Español: <a href="/paginas-en-espanol.htm">artículos en español</a>
+							</p>
+							<hr />
+						</div>
+					</div>
+					<!-- end index page left column -->
+					<div id="index-page-right-column">
+						<div id="poetry">
+							<p style="padding-top: 15px;">
+								The starry night sky, a massive bonfire of uncreated wisdom, blazes unceasingly between your ears. <span class="block">
+									(Dried Shit Zen Roshi)</span></p>
+							<p>
+								<a class="note blog-link" href="http://diamondsutrazen.blogspot.com/">diamondsutrazen.blogspot.com</a>
+							</p>
+
+							<p style="font-weight: bold;">
+								Kill Everything In You</p>
+							<p>
+								When you've killed everything in you
+								<br /> that might interfere with the Clear Sky (the Dark Expanse)
+								<br /> light and darkness are just the same nothing.
+							</p>
+							<p>
+								How could anything be different?
+								<br /> It's clearly the same.
+								<br /> How could anything be the same?
+								<br /> It's clearly different.
+							</p>
+							<p>
+								How could anyone suffer?
+								<br /> Who exists to have a mind
+								<br /> or to become a Buddha?
+								<br /> Cure yourself of sick thinking,
+								<br /> and the un-ease of life is gone.
+								<br /> Gone beyond, utterly beyond,
+								<br /> bo-ji so wa-ka!
+							</p>
+							<p>
+								Hearing all day long you hear nothing.
+								<br /> Seeing all day long you see nothing.
+								<br /> Laughing you don't laugh.
+								<br /> Crying you don't cry.
+							</p>
+							<p>
+								You're liberated, and can live as you want
+								<br /> and you don't understand the idea of "bondage"
+								<br /> or getting "caught up in something."
+							</p>
+							<p>
+								You're always a golden buddha.
+								<br /> You're always a temple in calm starlight.
+								<br /> A demon playing the bamboo flute,
+								<br /> a samurai hiding in the long grass --
+								<br /> whatever! you're always just THAT.
+							</p>
+							<p>
+								If the darkness comes cut it down.
+								<br /> If the brightness comes cut it away.
+								<br /> If people come don't answer them.
+								<br /> If the Clear Sky comes shatter it completely.
+								<br /> If the Void ever comes, slash it with your sword.
+							</p>
+							<p>
+								Destroy all thinking, let it go
+								<br /> and both objects and subjects disappear.
+								<br /> What's left can't even be imagined,
+								<br /> so how do you expect me to give it to you?
+							</p>
+							<p>
+								There isn't any one or any body left anywhere
+								<br /> to experience this,
+								<br /> to pretend or deny IT alone "exists"
+								<br /> or to ever say a single word about anything.
+							</p>
+							<p style="padding-bottom: 15px;">
+								&nbsp;&nbsp;&ndash; D.S.Z. Roshi</p>
+						</div>
+						<!-- end poetry -->
+
+						<!-- tried moving this here, don't like it, removed 
+                         <div class="index-page-bullet-lists">
+				            <div class="css3-columns">
+				                <div class="topic">
+				                    <h4>
+				                        The Six Bardos</h4>
+				                    <ol class="index-page">
+				                        <li>The bardo of the realm of life</li>
+				                        <li>The bardo of the dream state</li>
+				                        <li>The bardo of meditation</li>
+				                        <li>The bardo of the experience of death</li>
+				                        <li>The bardo of the experience of reality</li>
+				                        <li>The bardo of seeking rebirth</li>
+				                    </ol>
+				                </div> 
+				            </div>
+                    	</div> end index page bullet lists -->
+					</div>
+					<!-- end index-page right column -->
+					<div style="clear:both;"></div>
+				</div>
+				<!-- end two-column container -->
+
+				<div class="index-page-bullet-lists">
+					<div class="css3-columns">
+						<!-- tried to move to right column, moved back to here -->
+						<div class="topic">
+							<h4>
+								The Six Bardos</h4>
+							<ol class="index-page">
+								<li>The bardo of the realm of life</li>
+								<li>The bardo of the dream state</li>
+								<li>The bardo of meditation</li>
+								<li>The bardo of the experience of death</li>
+								<li>The bardo of the experience of reality</li>
+								<li>The bardo of seeking rebirth</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								Six Doctrines of Naropa</h4>
+							<ol class="index-page">
+								<li>The mystical heat (tummo)</li>
+								<li>The illusory body (mahamaya)</li>
+								<li>The dream state (svapnadarsana)</li>
+								<li>The clear light (abhasvara)</li>
+								<li>The intermediate state (antarabhava)</li>
+								<li>The transmission of consciousness (samkranti)</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								Knowledge required for the path through the six intermediate realms</h4>
+							<ol class="index-page">
+								<li>Knowledge of the former place of birth or realm of existence</li>
+								<li>Knowledge of dying, of the crossing over of awareness, and new rebirth</li>
+								<li>Knowledge of transcending spirit</li>
+								<li>Knowledge of all hidden appearances, in the realm of the non-visible</li>
+								<li>Knowledge of the six realms of existence</li>
+								<li>Knowledge of all liberating capabilities</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								The Six Perfections</h4>
+							<ol class="index-page">
+								<li>Dāna pāramitā: generosity, giving of oneself </li>
+								<li>Śīla pāramitā: virtue, morality, discipline </li>
+								<li>Kṣānti pāramitā: patience, tolerance </li>
+								<li>Vīrya pāramitā: energy, diligence, vigor </li>
+								<li>Dhyāna pāramitā: one-pointed concentration, contemplation </li>
+								<li>Prajñā pāramitā: wisdom, insight </li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								The Four Noble Truths</h4>
+							<ol class="index-page">
+								<li>Dukkha: The truth of suffering</li>
+								<li>Samudaya: The truth of the cause of suffering</li>
+								<li>Nirodha: The truth of the cessation of suffering</li>
+								<li>Magga: The truth of the path leading to the cessation of suffering</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								The Eightfold Path</h4>
+							<ol class="index-page">
+								<li>Right Understanding</li>
+								<li>Right Intent</li>
+								<li>Right Speech </li>
+								<li>Right Action </li>
+								<li>Right Livelihood </li>
+								<li>Right Effort </li>
+								<li>Right Mindfulness </li>
+								<li>Right Concentration (Samadhi) </li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								Doctrine of Trikaya - three bodies</h4>
+							<ol class="index-page">
+								<li>Dharmakaya</li>
+								<li>Sambhogakaya</li>
+								<li>Nirmanakaya</li>
+								<!-- no bullet on next, move to left -->
+								<li style="list-style-type: none; margin-left: -1.5em; font-size: 92%;">Vajrayana's "fourth body" = The indivisibility of the Trikaya</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								Sambhogakaya's Five Manifestations</h4>
+							<!-- They took this from SelfDefinition.Org
+                            	http://tibetanbuddhistencyclopedia.com/en/index.php/Sambhogakaya%27s_Five_Manifestations  -->
+							<ol class="index-page">
+								<li>Vajrasattva:
+									<br /> mirror-like awareness
+								</li>
+								<li>Ratnasambhava:
+									<br /> awareness of equanimity
+								</li>
+								<li>Amitaba:
+									<br /> discriminating awareness
+								</li>
+								<li>Amoghasiddhi:
+									<br /> spontaneously fulfilling action
+								</li>
+								<li>Vairocana:
+									<br /> all-encompassing emptiness
+								</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								The Five Tathagatas</h4>
+							<!-- https://en.wikipedia.org/wiki/Five_Tath%C4%81gatas -->
+							<p class="note">&nbsp; (Shingon Magic)</p>
+							<ol class="index-page">
+								<li>Vairocana, sovereignty (center, white)</li>
+								<li>Aksobhya, steadfastness, reflection (faces east, blue)</li>
+								<li>Ratnasambhava, equanimity and equality (faces south, yellow)</li>
+								<li>Amitabha, light, observation (faces west, red)</li>
+								<li>Amoghasiddhi, perfect practice, fearlessness (faces north, green)</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								The Five Pure Lights, pañca-jñāna</h4>
+							<!-- ref   https://en.wikipedia.org/wiki/Five_Wisdoms  -->
+							<ol class="index-page">
+								<li>Ādarśa-jñāna
+									<br /> Melong, mirror-like awareness
+								</li>
+								<li>Samatā-jñāna
+									<br /> Awareness of sameness, the non-dual method of upāya and prajñā
+								</li>
+								<li>Pratyavekṣaṇa-jñāna
+									<br /> Investigative awareness
+								</li>
+								<li>Kṛty-anuṣṭhāna-jñāna
+									<br /> Accomplishing activities, spontaneously
+								</li>
+								<li>Tathatā-jñāna
+									<br /> Suchness, dharmadātu, universal substrate
+								</li>
+							</ol>
+						</div>
+						<div class="topic">
+							<h4>
+								Nine designs of the Supreme Energy</h4>
+							<ol class="index-page">
+								<li>Vama
+									<br /> Energy flowing in ida nadi
+								</li>
+								<li>Ambika
+									<br /> Energy flowing in pingala nadi
+								</li>
+								<li>Jyestha
+									<br /> The supreme flow of energy in sushumna nadi
+								</li>
+								<li>Raudri
+									<br /> Protectress of space
+								</li>
+								<li>Iccha
+									<br /> Energy of will
+								</li>
+								<li>Jnana
+									<br /> Energy of knowledge
+								</li>
+								<li>Kriya
+									<br /> Energy of action
+								</li>
+								<li>Shanti
+									<br /> Energy of tranquility
+								</li>
+								<li>Para
+									<br /> Transcendental energy
+								</li>
+							</ol>
+						</div>
+						<!-- end topic -->
+					</div>
+					<!-- end css3-columns -->
+					<p class="totop">
+						<a href="javascript:scroll(0,0)">top of page</a>
+					</p>
+				</div>
+				<!-- end index-page bullet lists -->
+
+
+				<!-- test code Nov 30, 2019 NO GOOD GARBAGE DELETE
+						https://scanmyserver.com/registration.html
+
+						from: https://geekflare.com/online-scan-website-security-vulnerabilities/
+						
+						<br /><br /><br />
+						
+						<a href="https://seal.beyondsecurity.com/vulnerability-scanner-verification/selfdefinition.org"><img src="https://seal.beyondsecurity.com/verification-images/selfdefinition.org/vulnerability-scanner-2.gif" alt="Website Security Test" border="0"></a>
+						-->
+
+
+			</div>
+			<!-- end #main-content -->
+		</div>
+		<!-- end #container -->
+	</div>
+	<!-- end #mainwrapper-index -->
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

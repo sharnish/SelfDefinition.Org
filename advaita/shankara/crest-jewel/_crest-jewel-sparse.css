@@ -1,0 +1,48 @@
+/* file:  /advaita/shankara/crest-jewel/_crest-jewel-sparse.css
+
+Update Dec 28, 2020. June 15, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update June 15, 2022";
+    }
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fcfffb;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+
+
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+    background: #bde0ff;
+}
+
+
+p.verses-number {
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+
+/* end */

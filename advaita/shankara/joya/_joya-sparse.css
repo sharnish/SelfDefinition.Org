@@ -1,0 +1,93 @@
+/* file:  /advaita/shankara/joya/_joya-sparse.css
+
+Update Dec 28, 2020. June 4, 2022
+
+*/
+
+
+/*  To do:
+
+Preface: [ ABOUT 14 PAGES MISSING,
+way too long. - OMIT THE WHOLE THING? ] < -  try translating the  English-Theosophical
+
+
+Introduction - translate the English version.
+
+282 footnotes, hide them.
+
+
+The source PDF had no chapters. Chapters and headings were adopted based on the English  version published by the Theosophical Society. 
+The 14-page prefece in the Spanish version was replaced by the 1-page preface in the Theosophical version. All 262 footnotes were eliminated: 
+for a scholarly reading, please consult the original 
+here: <a href="https://www.mercaba.org/SANLUIS/ALiteratura/Antigua/Literatura%20asi%C3%A1tica/Sankara/LA%20JOYA%20DEL%20DISCERNIMIENTO.pdf">www.mercaba.org</a></p>
+
+Translation by Charles Johnson, published by William Quan Judge 1894-1896
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update June 15, 2022";
+	}
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fcfffb;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+
+
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #bde0ff;
+}
+
+sup {
+	display: none;
+}
+
+sup.show {
+	display: inline;
+}
+
+p + h5 {
+	margin-top: 30px;
+}
+
+p.verse-no {
+	text-align: center;
+	color: darkgreen;
+}
+
+html.dark p.verse-no {
+	color: lightblue;
+	/* lightblue is #ADD8E6, increase each by 1 letter */
+	color: #BDE8F6;
+}
+
+p.verses-number {
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -10px;
+}
+
+
+
+/* end */

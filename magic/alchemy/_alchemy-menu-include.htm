@@ -1,0 +1,84 @@
+<!-- start of menu include file  Update May 22, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <!-- these float, check where is it cleared? -->
+            <li class="first-item"><a href="/magic/">Magic index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <!-- do not use, so far only 1 page in this section
+			<li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+			-->
+            <li class="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/magic/">Magic index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center" style="margin-top:30px;">
+            <li>Alchemy</li>
+            <li class="normal note">
+                <img class="menu-image" src="images/alchemist.jpg" alt="Alchemist" />
+            </li>
+            <li>Articles</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <!--<li><a href="contents.htm">Contents</a></li>-->
+                <li><a href="dr-karl-shuker-grow-your-own-homunculus.htm">Grow Your Own Homunculus (this&nbsp;page)</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Alchemy at <a href="https://en.wikipedia.org/wiki/Alchemy">
+                        Wikipedia</a> </li>
+                <li>Western esotericism at <a href="https://en.wikipedia.org/wiki/Western_esotericism">
+                        Wikipedia</a> </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also on this site</li>
+                <li class="site-first-item">Alexandra David-Neel</li>
+                <li>Tulpa creation: <a href="/tibetan/tulpa-creation/alexandra-david-neel-tibetan-hermits.htm">Article Index</a></li>
+
+                <li class="site-first-item">Franz Hartmann MD</li>
+                <li><a href="/magic/paracelsus/hartmann-life-of-paracelsus/contents.htm">Life of Paracelsus</a></li>
+                <li><a href="/magic/hartmann/white-and-black/contents.htm">Magic White &amp; Black</a></li>
+                <li class="site-first-item">Eliphas Levi</li>
+                <li><a href="/magic/eliphas-levi/great-secret/contents.htm">The Great Secret, or Occultism Unveiled</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

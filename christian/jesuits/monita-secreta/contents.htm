@@ -1,0 +1,333 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="<?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monita Secreta: Secret Instructions of the Jesuits</title>
+    <meta name="description" content="The Secret Counsels of the Society of Jesus">
+    <meta name="author" content="Alleg. Claudio Acquaviva (1543-1615)">
+    <meta property="og:title" content="Monita Secreta: Secret Instructions of the Jesuits">
+    <meta property="og:description" content="The Secret Counsels of the Society of Jesus">
+    <meta property="og:image" content="https://selfdefinition.org/christian/jesuits/monita-secreta/images/claudius-aquaviva-og-image.jpg">
+    <!-- load external stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_secret-jesuits-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar and device testing -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- -->
+    <link rel="next" href="title-page.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* 
+        Social media:
+
+        Monita Secreta: Secret Instructions of the Jesuits
+
+        Claudio Acquaviva (1543-1615), 1835 edition by Robert Breckenridge
+        
+        An apparent insider reveals the Machiavellian techniques used by the Jesuit order, of politicians, noblemen, the rich widows whose estates they seek, in advancing the power and wealth of the Society. Also the techniques for recruiting young men into the organization, and even blackmailing their own members who have scruples about their activities. The language is somewhat archaic but the chapters are short.
+
+        "Kings and princes ought to be impressed with the truth that under present circumstances, the Catholic faith cannot exist without politism—but this demands great discretion; for which purpose our members must have rendered themselves acceptable to the great, and acquainted with their most secret purposes." [Chapter 17]
+                
+        Wikipedia:
+        Richard Frederick Littledale, Encyclopædia Britannica 1881: The work is "both caricature and libel", but nevertheless is substantially true, since its author, "a shrewd and keen observer", having noticed how Jesuits actually worked, deduced from his observations the rules by which they were guided.       
+        
+        https://selfdefinition.org/christian/jesuits/monita-secreta/contents.htm
+
+
+        Irony:  Wikipedia        
+        the fierce disputes that arose between the Jesuit theologians and the Dominicans on the subject of grace, Acquaviva managed, under Clement VIII and Paul V, to save his party from a condemnation that at one time seemed probable.
+        
+        */
+        /* this book only */
+        #index-lists ul li.description {
+            margin-top: -20px;
+            line-height: 1.5em;
+        }
+
+        /* #index-lists is a nav */
+        #index-lists {
+            margin-top: 30px;
+            border: 0px solid red;
+            margin-left: 40px;
+        }
+
+        #index-lists hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 75%;
+        }
+
+        @media only screen and (max-width:540px) {
+            #index-lists {
+                margin-left: 10px;
+            }
+        }
+
+        #index-lists ul {
+            list-style: none;
+            margin: 0 auto;
+            padding-left: 0;
+            border: 0px solid blue;
+            width: 450px;
+        }
+
+        /* adjust to agree with the above */
+        @media only screen and (max-width:450px) {
+            #index-lists ul {
+                width: 100%;
+            }
+        }
+
+        #index-lists ul li {
+            margin: 0 0 25px;
+            border: 0px solid green;
+        }
+
+        #index-lists a {
+            display: inline-block;
+        }
+
+        #index-lists .index-contents-links {}
+
+        ul.index-external-links,
+        ul.index-site-links,
+        ul.index-optional-links {
+            font-size: 90%;
+            padding-left: 0;
+        }
+
+
+        /* Color coding is replicated on dark stylesheet */
+
+        #index-lists ul li.external-links-item,
+        #index-lists ul li.site-links-item,
+        #index-lists ul li.optional-links-item {
+            color: maroon;
+        }
+
+        /* remove hard-coded color */
+        #index-lists ul li.external-links-item,
+        #index-lists ul li.site-links-item,
+        #index-lists ul li.optional-links-item {
+            font-weight: bold;
+            font-size: 95%;
+            /* color: maroon; */
+            margin-bottom: 3px;
+            padding-bottom: 0;
+        }
+
+        #index-lists ul li.external-first-item,
+        #index-lists ul li.site-first-item,
+        #index-lists ul li.optional-first-item {
+            margin-top: 3px;
+            padding-top: 0;
+        }
+
+        #index-lists ul li.external-subhead-item,
+        #index-lists ul li.site-subhead-item,
+        #index-lists ul li.optional-subhead-item {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            padding-top: 0;
+        }
+
+        /* this reduces left margin for this page only when screen size is small say try  360  */
+        @media only screen and (max-width:360px) {
+            #article {}
+
+            div#index-lists ul li {
+                margin-left: -30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_secret-jesuits-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_secret-jesuits-title-include.htm"); ?>
+                                    <!-- new format puts page title higher, here -->
+                                    <h3>
+                                        Contents and Chapter Descriptions
+                                    </h3>
+                                    <p class="chap-heading">
+
+                                    </p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="title-page.htm">Title Page &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <p class="tiny center" style="margin-top:-10px;">Source: <a href="https://www.gutenberg.org/files/59382/59382-h/59382-h.htm">Project
+                                    Gutenbrg</a></p>
+                            <!-- ALTERNATIVE CONTENTS This is the same as the left menu, with different styling -->
+                            <nav id="index-lists">
+                                <ul class="index-contents-links">
+                                    <li class="contents-first-item"><a href="title-page.htm">Title Page</a> </li>
+                                    <li><a href="preface.htm">Preface</a> </li>
+                                    <li><a href="chapter-01.htm">Chapter 1</a> </li>
+                                    <li class="description">How the Society ought to conduct itself when it commences a
+                                        settlement in a new place.</li>
+                                    <li><a href="chapter-02.htm">Chapter 2</a> </li>
+                                    <li class="description">By what method the Principal Persons of the Society may
+                                        acquire and preserve the familiarity of Princes, Noblemen, and persons of great
+                                        distinction.</li>
+                                    <li><a href="chapter-03.htm">Chapter 3</a> </li>
+                                    <li class="description">In what manner the society must act with those who have
+                                        great authority in the state: and how others.</li>
+                                    <li><a href="chapter-04.htm">Chapter 4</a> </li>
+                                    <li class="description">What things ought to be recommended to preachers, and
+                                        confessors, to the great.</li>
+                                    <li><a href="chapter-05.htm">Chapter 5</a> </li>
+                                    <li class="description">How to act towards religious orders, which perform the same
+                                        functions in the church, which we do.</li>
+                                    <li><a href="chapter-06.htm">Chapter 6</a> </li>
+                                    <li class="description">How to conciliate rich widows to the society.</li>
+                                    <li><a href="chapter-07.htm">Chapter 7</a> </li>
+                                    <li class="description">How widows are to be retained; and how to dispose of the
+                                        goods which they may leave.</li>
+                                    <li><a href="chapter-08.htm">Chapter 8</a> </li>
+                                    <li class="description">What must be done that the sons and daughters of widows may
+                                        embrace a religious or devoted life.</li>
+                                    <li><a href="chapter-09.htm">Chapter 9</a> </li>
+                                    <li class="description">Of increasing the revenues of our colleges.</li>
+                                    <li><a href="chapter-10.htm">Chapter 10</a> </li>
+                                    <li class="description">Of the secret strictness of this discipline in the society.
+                                    </li>
+                                    <li><a href="chapter-11.htm">Chapter 11</a> </li>
+                                    <li class="description">What we should all do against those dismissed from the
+                                        society.</li>
+                                    <li><a href="chapter-12.htm">Chapter 12</a> </li>
+                                    <li class="description">Who should be cherished and favored in the society.</li>
+                                    <li><a href="chapter-13.htm">Chapter 13</a> </li>
+                                    <li class="description">Of the selection of youths for admission into the society,
+                                        and the way to retain them.</li>
+                                    <li><a href="chapter-14.htm">Chapter 14</a> </li>
+                                    <li class="description">Of reserved cases, and of cause of dismission from the
+                                        society.</li>
+                                    <li><a href="chapter-15.htm">Chapter 15</a> </li>
+                                    <li class="description">Concerning the treatment of nuns and devotees.</li>
+                                    <li><a href="chapter-16.htm">Chapter 16</a> </li>
+                                    <li class="description">Of the outward exhibition of a contempt of riches.</li>
+                                    <li><a href="chapter-17.htm">Chapter 17</a> </li>
+                                    <li class="description">Of the method of advancing the interest of the society.</li>
+                                    <li><a href="discourse-authenticity.htm">Discourse on the Authenticity of the Monita
+                                            Secreta</a> </li>
+                                </ul>
+
+                                <hr />
+
+                                <ul class="index-external-links">
+                                    <li class="external-first-item">Monita Secreta at <a href="https://en.wikipedia.org/wiki/Monita_Secreta">
+                                            Wikipedia</a> </li>
+                                    <li>Claudio Acquaviva at <a href="https://en.wikipedia.org/wiki/Claudio_Acquaviva">
+                                            Wikipedia</a> </li>
+
+                                </ul>
+
+                                <ul class="index-site-links">
+                                    <li class="site-links-item">Also on this site</li>
+                                    <li>Liberty section</li>
+                                    <li class="site-first-item">Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of
+                                            Obedience: The Discourse of Voluntary Servitude</a></li>
+                                    <li>Xenophon on Tyranny: <a href="/liberty/xenofon/contents.htm">Hiero, or,
+                                            Tyrannicus</a></li>
+                                    <li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm ">Who Stole
+                                            Our Culture? Cultural Marxism and the Frankfurt School </a></li>
+
+                                    <li>Psychology section</li>
+                                    <li>Joost Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm"> Rape of
+                                            the Mind:
+                                            The Psychology of Thought Control, Menticide and Brainwashing</a></li>
+                                    <li>Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda</a></li>
+                                    <li> Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The
+                                            Crowd, A Study of the Popular Mind</a>
+                                    </li>
+                                    <li>James H. Loryea a.k.a. "Santanelli": <a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion: Is
+                                            Man a Free Agent?</a></li>
+
+                                    <li>Wilfred N. Caron: <a style="display:block;" href="/psychology/caron/contents.htm ">The Occult Significance of Hypnosis;
+                                            Why you are not in control of your life, how others exploit you, and what
+                                            you can do about it</a></li>
+
+                                    <li> L. Ron Hubbard: <a href="/psychology/hubbard/brainwashing/contents.htm">The
+                                            Brainwashing Manual</a></li>
+                                </ul>
+
+                            </nav>
+
+                            <p>&nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="title-page.htm">Title Page &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

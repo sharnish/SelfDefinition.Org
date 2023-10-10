@@ -1,0 +1,169 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vedanta Philosophy</title>
+    <meta name="description" content="Lecture given to Harvard University in 1896 by Swami Vivekananda.">
+    <meta name="author" content="Swami Vivekananda, 1896">
+    <meta property="og:title" content="The Vedanta Philosophy">
+    <meta property="og:description" content="Lecture given to Harvard University in 1896 by Swami Vivekananda.">
+    <meta property="og:image" content="https://selfdefinition.org/advaita/vivekananda/vedanta/images/swami-vivekananda-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_vedanta-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="prev" href="contents.htm">
+    <link rel="next" href="2-vedanta-philosophy.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 145px;
+            border: 0px solid blue;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_vedanta-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_vedanta-title-include.htm"); ?>
+                                    <!-- new format puts page title higher, here -->
+                                    <h3>
+                                        Introduction and Note
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="2-vedanta-philosophy.htm">Vedanta Philosophy &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#introduction">Introduction</a></li>
+                                    <li><a href="#note">Publishing Note</a></li>
+                                </ul>
+                            </nav>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="introduction">&nbsp;</a>
+                            <h4>
+                                Introduction
+                            </h4>
+                            <p class="note center">by Charles Carroll Everett</p>
+                            <p>
+                                THE SWAMI VIVEKANANDA was sent by his friends and co-religionists to present their belief at the Congress of Religions that was held in connection with the WorId's Fair in Chicago. This he did in a way to win general interest and admiration. Since then he has lectured on the same theme in different parts of our country. He has been in fact a missionary from India to America. Everywhere he has made warm personal friends; and his expositions of Hindu philosophy have been listened to with delight. It is very pleasant to observe the eager interest with which his own people in India follow his course, and the joy that they take in his success. I have seen a pamphlet filled with speeches made at a large and influential meeting in Calcutta, which was called together to express enthusiastic approval of the manner in which he has fulfilled his mission; and satisfaction at this invasion of the West by oriental thought. This satisfaction is well grounded. We may not be so near to actual conversion as some of these speakers seem to believe; but Vivekananda has created a high degree of interest in himself and his work. There are indeed few departments of study more attractive than the Hindu thought. It is a rare pleasure to see a form of belief that to most seems so far away and unreal as the Vedanta system, represented by an actually living and extremely intelligent believer. This system is not to be regarded merely as a curiosity, as a speculative vagary. Hegel said that Spinozism is the necessary beginning of all philosophising. This can be said even more emphatically of the Vedanta system. We occidentals busy ourselves with the manifold. We can, however, have no understanding of the manifold, if we have no sense of the One in which the manifold exists. The reality of the One is the truth which the East may well teach us; and we owe a debt of gratitude to Vivekananda that he has taught this lesson so effectively.
+                            </p>
+                            <p>
+                                C. C. EVERETT.
+                            </p>
+                            <p>
+                                Harvard University.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="note">&nbsp;</a>
+                            <h4>
+                                Publishing Note
+                            </h4>
+                            <p>
+                                This lecture and the discussion which followed were stenographically reported. They could receive from the Swami only a cursory revision, owing to his departure for England, but it is hoped no errors have crept in. Professor LANMAN and Professor WRIGHT of Harvard have kindly assisted in the final revision. In the reporting of the discussion, some of the questions were unavoidably lost. The first four notes were added by the Swami. In the original lecture, the quotations from Hindu writings were first given in the Sanskrit, and then translated; these offhand translations stand as given.
+                            </p>
+                            <p>
+                                Following the lecture and discussion, are the answers of the Swami to questions at two afternoon talks with some Harvard students, on March 22 and 24. These answers were stenographically reported, but the questi1ons were not. There have also been added a few selections from unpublished lectures. Some of the answers and selections cover the same general ground, but they have all been retained on account of the variety in treatment. While no adequate exposition of the Vedanta philosophy can be given in a single address, it is hoped that this, with the accompanying answers and selections, will be of value to those interested in the thought and life of the East.
+                            </p>
+                            <p>
+                                J. P. F.
+                            </p>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="2-vedanta-philosophy.htm">Vedanta Philosophy &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

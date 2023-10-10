@@ -1,0 +1,50 @@
+/* file:  /tibetan/quotes/_tibetan-quotes-refresh.css
+
+Update May 31, 2020. June 2, 2022
+
+ */
+@media only print {
+	#article:after {
+		content: "update June 5, 2020";
+	}
+}
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f9ffee;
+}
+
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #b0f0d0;
+}
+
+/* SPANISH bavground is inherited from 2022.CSS */
+
+
+/* upside down exclamation point */
+.sans {
+	font-family: sans-serif;
+	position: relative;
+	top: -0.15ex;
+}
+
+
+/* tweak to get first menu item "gampopa's instructions" to stay on one line */
+#nav ul.menu-section li a,
+#nav ul.menu-section li a.active {
+	width: 180px;
+}
+
+
+/* end */

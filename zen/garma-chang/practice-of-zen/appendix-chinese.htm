@@ -1,0 +1,214 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Romanized Chinese Characters for the Text and Notes- Practice of Zen</title>
+	<meta name="description" content="Romanized Chinese Characters for the Text and for the Notes (page images)">
+	<meta name="author" content="Garma C. C. Chang">
+	<meta property="og:title" content="Practice of Zen, Garma C. C. Chang">
+	<meta property="og:description" content="Romanized Chinese Characters for the Text and for the Notes (page images)">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load style sheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practice-of-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="bibliography.htm">
+	<link rel="next" href="book-index.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 140px;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		#scanned-images {
+			width: 100%;
+			text-align: center;
+		}
+
+		#scanned-images p.image {
+			text-align: left;
+			font-size: 85%;
+		}
+
+		#scanned-images p img {
+			width: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practice-of-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practice-of-zen-title-include.htm"); ?>
+									<h3>
+										Appendix &ndash; Chinese Characters
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="../la-practica-del-zen/apendice-chino.htm">..apendice-chino.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="bibliography.htm">&lt;&nbsp;Bibliography</a></li>
+									<li class="align-right"><a href="book-index.htm">Book Index&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<h4>
+								Page scan images
+							</h4>
+							<!-- new item Nov 1, 2019 -->
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#for-the-text">For the Text</a></li>
+									<li><a href="#for-the-notes">For the Notes</a></li>
+								</ul>
+							</nav>
+							<div id="scanned-images">
+								<p class="note">
+									<span class="block">This page is for <strong>lettered</strong> notes.</span> For <strong>numbered</strong> notes see the <a href="endnotes.htm">Endnotes</a> page.
+								</p>
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor" style="text-align: left;">
+									<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="for-the-text">&nbsp;</a>
+								<h4 style="margin-bottom: 0;">
+									Romanized Chinese Characters for the TEXT
+								</h4>
+								<p class="note80" style="margin-top: 0;">
+									Pages 239-242 extracted from the PDF:
+								</p>
+								<p class="image">
+									Page 239
+									<img src="images/scan-page-239-chinese-text.png" alt="Garma Chang page 239" />
+								</p>
+								<p class="image">
+									Page 240
+									<img src="images/scan-page-240.png" alt="Garma Chang page 240" />
+								</p>
+								<p class="image">
+									Page 241
+									<img src="images/scan-page-241.png" alt="Garma Chang page 241" />
+								</p>
+								<p class="image">
+									Page 242
+									<img src="images/scan-page-242.png" alt="Garma Chang page 242" />
+								</p>
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor" style="text-align: left;">
+									<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="for-the-notes">&nbsp;</a>
+								<h4 style="margin-bottom: 0;">
+									Romanized Chinese Characters for the NOTES
+								</h4>
+								<p class="note80" style="margin-top: 0;">
+									Pages 243-246 extracted from the PDF:
+								</p>
+								<p class="image">
+									Page 243
+									<img src="images/scan-page-243-chinese-notes.png" alt="Garma Chang page 243" />
+								</p>
+								<p class="image">
+									Page 244
+									<img src="images/scan-page-244.png" alt="Garma Chang page 244" />
+								</p>
+								<p class="image">
+									Page 245
+									<img src="images/scan-page-245.png" alt="Garma Chang page 245" />
+								</p>
+								<p class="image">
+									Page 246 last
+									<img src="images/scan-page-246.png" alt="Garma Chang page 246" />
+								</p>
+								<p class="image">
+									[There is no page of Chinese for Chapter 4]
+								</p>
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="bibliography.htm">&lt;&nbsp;Bibliography</a></li>
+									<li class="align-right"><a href="book-index.htm">Book Index&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p id="spacer">
+								<!-- stupid spacer is neded, I don't know why -->
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+﻿<!-- start of menu include file -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <!-- eliminate from top menu; too many links already
+            <li><a href="/">Site root</a></li> -->
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/celibacy/">Celibacy Index</a></li>
+            <li><a href="/celibacy/quotes/"><span class="conditional-hide">Celibacy </span>Quotes</a></li>
+            <li class="conditional-hide-2"><a href="/celibacy/articles/celibacy-articles-and-links.htm"><span class="conditional-hide">Celibacy </span>Links</a></li>
+            <li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+            <li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/celibacy/">Celibacy index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="margin-top:30px;">
+            <li>
+                <img id="menu-image" src="images/patanjali.jpg" alt="patanjali" style="" />
+            </li>
+            <li class="normal note">“When one is confirmed in celibacy, spiritual vigor is gained.”
+                <span class="nowrap">&nbsp;&ndash;Patañjali</span>
+            </li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="introduction.htm">Introduction</a></li>
+                <li><a href="comprehensive-guidance.htm">Comprehensive Guidance On How To Practice</a></li>
+                <li><strong>Quotes by:</strong></li>
+                <li><a href="quotes-by-swami-sivananda.htm">Swami Sivananda</a></li>
+                <li><a href="quotes-by-swami-vivekananda.htm">Swami Vivekananda</a></li>
+                <li><a href="quotes-by-ramakrishna-paramahamsa-part-1.htm">Ramakrishna <span class="nowrap">Paramahamsa, part 1</span></a></li>
+                <li><a href="quotes-by-ramakrishna-paramahamsa-part-2.htm">Ramakrishna <span class="nowrap">Paramahamsa, part 2</span></a></li>
+                <li><a href="quotes-by-sri-aurobindo.htm">Sri Aurobindo</a></li>
+                <li><a href="quotes-by-swami-chidananda.htm">Swami Chidananda</a></li>
+                <li><a href="quotes-from-spiritual-scriptures.htm">Spiritual Scriptures</a></li>
+                <li><a href="quotes-by-sri-sri-ravishankar.htm">Sri Sri Ravishankar</a></li>
+                <li><a href="quotes-by-mahatma-gandhi-part-1.htm">Mahatma Gandhi, <span class="nowrap">part 1</span></a></li>
+                <li><a href="quotes-by-mahatma-gandhi-part-2.htm">Mahatma Gandhi, <span class="nowrap">part 2</span></a></li>
+                <li><a href="quotes-christian-and-various.htm">Christian and Various Sources</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div id="optional-links">
+            <ul class="menu-section note">
+                <li class="spacer">
+                    Also in Celibacy section:
+                </li>
+                <li><a href="/celibacy/quotes/">Celibacy Quotes</a></li>
+                <li><a href="/celibacy/articles/celibacy-articles-and-links.htm">Celibacy Links</a></li>
+
+            </ul>
+        </div>
+        <!-- check the following -->
+        <div id="site-links">
+            <ul class="menu-section note">
+                <li class="spacer">
+                    <hr />
+                </li>
+
+                <li>Osho Quotes on Brahmacharya in: <a href="http://selfdefinition.org/osho/quotes/brahmacharya-sex-celibacy-page-1.htm">
+                        Osho Section</a></li>
+                <li class="spacer">
+                    <hr />
+                </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

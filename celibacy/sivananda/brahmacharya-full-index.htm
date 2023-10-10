@@ -1,0 +1,449 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="<?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Full Index - Practice of Brahmacharya</title>
+	<meta name="description" content="Brahmacharya means Achara or conduct that leads to the realization of Brahman or one's own Self.">
+	<meta name="author" content="Swami Sivananda Saraswati">
+	<meta property="og:title" content="Practice of Brahmacharya, Full Index">
+	<meta property="og:description" content="Brahmacharya means Achara or conduct that leads to the realization of Brahman or one's own Self.">
+	<meta property="og:image" content="https://selfdefinition.org/celibacy/sivananda/images/swami-sivananda.jpg">
+	<!-- load external stylesheets before the menu scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_brahmacharya-sparse.css" rel="stylesheet" type="text/css">
+	<!-- canonical added Dec 4, 2022 -->
+	<link rel="canonical" href="https://selfdefinition.org/celibacy/sivananda/brahmacharya-full-index.htm">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* a differnt color to distinguish from Contents page */
+		html,
+		body,
+		#fixed-header-small-screen,
+		#menu-site-small-screen,
+		.progress-header,
+		.progress-container {
+			background: #ffffe8;
+		}
+
+
+		/* CSS for this page AND abbrevited index page */
+		ul.page-links {
+			width: 360px;
+			border: 0px solid red;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens */
+		@media only screen and (max-width:360px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		/* contents and full index pages only, light theme same as menu highlight */
+		p.totop-above-anchor {
+			background: #e0e0f0;
+			padding-left: 8px;
+		}
+
+		html.dark p.totop-above-anchor {
+			background: #202020;
+		}
+
+
+		#quick-links {}
+
+		ul.page-links li.heading {
+			font-weight: bold;
+		}
+
+		ul.contents-links {
+			padding-left: 20px;
+			list-style: square;
+		}
+
+
+		@media only screen and (max-width:500px) {
+			ul.contents-links {
+				padding-left: 3px;
+			}
+		}
+
+		ul.contents-links li {
+			margin-top: 0px;
+			margin-bottom: 22px;
+		}
+
+		/* hiddden in most places; only shown in this page */
+		ul.contents-links li.main,
+		ul.contents-links li.heading {
+			list-style: none;
+		}
+
+		ul.contents-links li.subtopic {
+			display: block;
+			margin-left: 25px;
+			border: 0px solid green;
+		}
+
+		@media only screen and (max-width: 500px) {
+			#top-page-links {}
+		}
+
+		@media only screen and (max-width: 400px) {
+			#top-page-links {}
+		}
+
+		/* bottom section
+        #index-lists  is a nav */
+		#index-lists {
+			margin-top: 40px;
+		}
+
+		#index-lists li {
+			margin-top: 3px;
+			margin-bottom: 20px;
+		}
+
+		#index-lists ul li.site-links-item {
+			font-weight: bold;
+			color: maroon;
+			margin-bottom: 3px;
+			padding-bottom: 0;
+		}
+
+		#index-lists ul li.site-first-item {
+			margin-top: 3px;
+			padding-top: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_brahmacharya-main-menu-top-include.htm"); ?>
+					<?php include( "_brahmacharya-main-menu-bottom-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_brahmacharya-title-include.htm"); ?>
+									<h3>
+										Full Index
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="brahmacharya-contents.htm">&lt; Abbreviated Contents</a></li>
+									<li class="align-right"><a href="brahmacharya-title-page.htm">Title Page and Prayer &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav id="quick-links">
+								<p class="note center">
+									Quick Links to Areas of This Page
+								</p>
+								<ul class="page-links">
+									<li><a href="#title-page">Title Page</a></li>
+									<li><a href="#section-1">Section 1: The Phenomenon of Sex</a></li>
+									<li><a href="#section-2">Section 2: The Glory of Brahmacharya</a></li>
+									<li><a href="#section-3">Section 3: Techniques of Sex Sublimatiom</a></li>
+									<li><a href="#section-4">Section 4: Symposium</a></li>
+									<li style="margin-top: -10px; margin-bottom: -10px;">
+										<hr>
+									</li>
+									<li class=""><a href="brahmacharya-contents.htm">Go to Abbreviated Index Page</a></li>
+									<li style="margin-top: -10px; margin-bottom: -10px;">
+										<hr>
+									</li>
+									<li class="note80 to-return">After clicking a link below, which will take you to another page, use your Back button to return to this Full Index page.</li>
+								</ul>
+							</nav>
+							<nav id="contents-page-links">
+								<!-- PASTED FROM PAGE MENUS, NOT THE MAIN MENU -->
+								<!-- note id used in page menu, classes used in toc menu -->
+								<!-- start of SECTION "Title" menu include file -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="title-page">&nbsp;</a>
+								<ul class="contents-links">
+									<li class="heading"><a href="brahmacharya-title-page.htm">Title Page</a></li>
+									<li class="main"><a href="brahmacharya-title-page.htm#6933">Publishers' Note</a> </li>
+									<li class="main"><a href="brahmacharya-title-page.htm#6934">Prayer for Purity</a> </li>
+								</ul>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="section-1">&nbsp;</a>
+								<ul class="contents-links">
+									<li class="heading"><a href="brahmacharya-section-1-phenomenon.htm">Section 1: The Phenomenon of Sex</a><!-- id is 6935 -->
+									</li>
+									<li class="main"><a href="brahmacharya-section-1-phenomenon.htm#6936">1. Present Day Degradation</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6937">The world is all sexy</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6938">Spiritual Sadhana is the answer to sex attraction</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6939">Brahmacharya - the need of the hour</a></li>
+									<li class="main"><a href="brahmacharya-section-1-phenomenon.htm#6940">2. The Working of the Sex Impulse</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6941">The flowery bow of Cupid </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6942">The Samskaras in the subconscious mind</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6943">How to gauge your own mental purity </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6944">Eradication of lust is no easy task</a> </li>
+									<li class="main"><a href="brahmacharya-section-1-phenomenon.htm#6945">3. Intensity of Cravings in Different Persons</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6946">Passion in children, the youth and the aged </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6947">Sexual thought in sages, spiritual aspirants and householders</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6948">Lust in men and in women</a></li>
+									<li class="main"><a href="brahmacharya-section-1-phenomenon.htm#6949">4. Sex is in Imagination</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6950">Beauty is a mental concept</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6951">Misleading descriptions of a woman's beauty</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6952">Passion blinds the intellect</a></li>
+									<li class="main"><a href="brahmacharya-section-1-phenomenon.htm#6953">5. The Disastrous Effects of Sexual Indulgence</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6954">Wet dream and voluntary copulation - A vital difference </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6955">Youth with bloodless faces </a></li>
+									<li class="main"><a href="brahmacharya-section-1-phenomenon.htm#6956">6. The Value of Semen</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6957">Modern medical opinion </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-1-phenomenon.htm#6958">Mind, Prana and Veerya</a></li>
+								</ul>
+								<!-- end of section 1 -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="section-2">&nbsp;</a>
+								<!-- links are taken from Section 2 menu, then secondary items are hidden with class="subtopic" -->
+								<ul class="contents-links">
+									<li class="heading"><a href="brahmacharya-section-2-glory.htm">Section 2: The Glory of Brahmacharya</a><!-- id is 6959 -->
+									</li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6960">7. The Meaning of Brahmacharya</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6961">The eight breaks in Brahmacharya </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6962">Physical Brahmacharya and mental Brahmacharya </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6963">A common complaint </a></li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6964">8. The Glory of Brahmacharya</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6965">Secret of health and longevity </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6966">Celibacy promotes concentration </a></li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6967">9. Importance of Celibacy in Spiritual Life </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6968">Celibacy in the different religious orders </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6969">Brahmacharya - the foundation of spiritual life </a></li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6970">10. Brahmacharya for Householders</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6971">What is Brahmacharya in married life? </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6972">When the wife becomes the mother </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6973">Living a life of spiritual partnership </a></li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6974">11. Women and Brahmacharya</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6975">Brahmacharinis - ancient and modern </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6976">Loose life is not freedom </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6977">A call to spiritual life </a></li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6978">12. Brahmacharya and the Educational Curriculum</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6979">A vital drawback in the present educational system in India </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6980">Duty of teachers and parents </a></li>
+									<li class="main"><a href="brahmacharya-section-2-glory.htm#6981">13. Some Ideal Brahmacharyins</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6982">Hanuman </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6983">Sri Lakshmana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-2-glory.htm#6984">Bhishma</a></li>
+								</ul>
+								<!-- end of section 2 -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="section-3">&nbsp;</a>
+								<!-- start of section 3 -->
+								<ul class="contents-links">
+									<li class="heading"><a href="brahmacharya-section-3-techniques.htm">Section 3: Techniques of Sex Sublimation</a><!-- id is 6985>-->
+									</li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#6986">14. Suppression and Sublimation</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6987">From sex energy to spiritual energy </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6988">The secret of sex sublimation</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6989">Total sublimation is difficult, yet not impossible </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#6990">15. To Marry or Not to Marry</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6991">Is celibacy possible?</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6992">A foolish argument of the Epicureans </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6993">Nature of the love between husband and wife</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6994">To be a celibate? Or to be a householder? </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6995">The Akhanda Brahmachari </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#6996">16. The Dangers of Promiscous Mixing</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6997">Havoc played by mental images </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#6998">The forbidden fruit - God's test for the spiritual aspirant </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#6999">17. Stop that Lustful Look!</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7000">Mind the feeling behind the look!</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7001">How to counter impure thoughts </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#7002">18. The Role of Diet in Sex Control</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7003">Sattvic food</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7004">Forbidden food </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7005">Mitahara or moderation in diet </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7006">Fasting - a purificatory exercise </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#7007">19. Wet Dreams and Spermatorrhea</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7008">Difference between physiological pollution and pathological pollution </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7009">Causes and consequences</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7010">A warning against evil sex habits and outbursts of anger </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7011">Importance of proper food and evacuation </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7012">Get up before 4 a.m. </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7013">Take to the Name of the Lord </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7014">The benefits of a hip bath </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7015">Some helpful suggestions</a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#7016">20. Some Powerful Aids to the Practice of Celibacy</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7017">Control of the palate </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7018">Avoid bad company</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7019">Watch the thoughts </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7020">Seek Satsanga or good company</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7021">Cultivate Viveka and Vairagya</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7022">A note of clarification</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7023">A vow is a great help</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7024">Will culture and auto-suggestion </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7025">Change the Drishti or angle of vision</a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#7026">21. Hatha Yoga to the Rescue</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7027">Siddhasana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7028">Sirshasana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7029">Sarvangasana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7030">Matsyasana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7031">Padangushthasana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7032">Instruction on Asana practice </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7033">Mula Bandha </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7034">Jalandhara Bandha </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7035">Uddiyana Bandha </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7036">Nauli Kriya </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7037">Maha Mudra </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7038">Yoga Mudra </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7039">Easy and comfortable Pranayama </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7040">Bhastrika Pranayama </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7041">Hints on Pranayama practice </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7042">Vajroli Mudra </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#7043">22. Some Illustrative Stories</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7044">The power of lust. The example of Jaimini </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7045">Passion's hold over man's mind. Socrates and his disciple </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7046">Lust increases with enjoyment. Raja Yayati </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7047">Dawn of Viveka and Vairagya. Yogi Vemana </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7048">Beauty lies in imagination. The story of Hemachuda </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7049">Physical beauty is no beauty. Story of a prince </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-3-techniques.htm#7050">Being busy is the best way to control lust. Story of a ghost </a></li>
+									<li class="main"><a href="brahmacharya-section-3-techniques.htm#7051">23. Select Sayings on Sex and Celibacy</a></li>
+								</ul>
+								<!-- end of section 3 - Techniques -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="section-4">&nbsp;</a>
+								<!-- start of section 4 - Symposium -->
+								<ul class="contents-links">
+									<li class="heading"><a href="brahmacharya-section-4-symposium.htm">Section 4: Symposium</a><!-- section #7052">-->
+									</li>
+									<li class="main"><a href="brahmacharya-section-4-symposium.htm#7053">1. Commentary on Swami Shivananda's 8th Spiritual Instruction, by Chidananda</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7054">Perpetuation of the Species </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7055">Power of Brahmacharya </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7056">Duties of Householders </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7057">Brahmacharya in Modern Society</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7058">Advantages of Brahmacharya</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7059">Books on Brahmacharya</a></li>
+									<li class="main"><a href="brahmacharya-section-4-symposium.htm#7060">2. The Paramount Importance of Brahmacharya, by Chidananda</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7061">The Four Great Purusharthas </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7062">The Twofold importance of Dharma </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7063">Conservation of Energy in the Context of a Spiritual Life</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7064">Sex Energy-A Manifestation of Para Shakti </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7065">The Human Body Compared to a Mansion</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7066">How to Rise Above Sex </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7067">Voluntary Self-restraint Is No Suppression </a></li>
+									<li class="main"><a href="brahmacharya-section-4-symposium.htm#7068">3. Brahmacharya - An Outlook of Consciousness, by Krishnananda</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7069">How Our Energy Gets Diverted and Dissipated</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7070">Conservation of Energy for Brahma-Sakshatkara</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7071">The Individual - A Pressure Centre </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7072">Stresses and Strains - Their Cause and Cure</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7073">The Havoc Wrought by the Externalizing Senses</a> </li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7074">Desire - A Metaphysical Evil </a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7075">Varnashrama - An Aid to Free Ourselves from the Grip of Nature </a></li>
+									<li class="main"><a href="brahmacharya-section-4-symposium.htm#7076">3. Marriage: What Does it Mean? by Krishnananda</a></li>
+									<li class="main"><a href="brahmacharya-section-4-symposium.htm#7077">4. Birth Control, by Sivananda</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7078">Instructions for Householders</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7079">Population Should Be Checked</a></li>
+									<li class="subtopic"><a href="brahmacharya-section-4-symposium.htm#7080">Danger of Artificial Means</a></li>
+								</ul>
+								<!-- end of section 4 -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="full-index">&nbsp;</a>
+								<!-- start index, one link only -->
+								<ul class="contents-links">
+									<li class="heading"><a href="brahmacharya-contents.htm">Go to Abbreviated Brahmcharya Index Page</a></li>
+								</ul>
+							</nav>
+							<!-- end #contents-page-full-links -->
+							<!-- start other links -->
+							<!-- Model "prototype-contents-index-page" -->
+							<nav id="index-lists">
+								<ul class="index-site-links" style="list-style: none;">
+									<li class="site-links-item">Also on this site</li>
+									<li class="site-first-item"><strong>Celibacy Resources</strong>: <a href="/celibacy/articles/celibacy-articles-and-links.htm">Articles and Links</a></li>
+									<li class="heading"><strong>Celibacy Quotes</strong>: <a href="/celibacy/quotes/">/celibacy/quotes/contents.htm</a></li>
+									<li class="heading"><strong>Paracelsus</strong>: For Chastity, unchastity, imagination, astral effects, see Hartmann's <em>Life of Paracelsus</em> (Magic section): <a class="block" style="margin-left: 20px;" href="/magic/paracelsus/hartmann-life-of-paracelsus/05-pneumatology.htm#morbid-imagination">05-pneumatology<wbr>.htm<wbr>#morbid-imagination</a></li>
+								</ul>
+							</nav>
+							<p>
+								&nbsp;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="brahmacharya-contents.htm">&lt; Abbreviated Contents</a></li>
+									<li class="align-right"><a href="brahmacharya-title-page.htm">Title Page and Prayer &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/* file:  /zen/huang-po/transmission/_transmission-sparse.css
+
+Update  Update June 28, 2020. June 13, 2022 */
+
+@media only print {
+	#article:after {
+		content: "Update June 13, 2022";
+	}
+}
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffda;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color 
+    #style-gadget {
+        display: none;
+    }*/
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c9c9ff;
+}
+
+h3 span.smaller {
+	font-weight: normal;
+}
+
+/* CSS3 columns on 5 pages
+Copied from Xenophon
+*/
+
+nav.contents {
+	margin-top: 20px;
+	column-rule: 1px solid #666;
+}
+
+nav.contents .item {
+	text-align: center;
+}
+
+/* default padding is 10px */
+nav.contents .item a {
+	/* does nothing padding-left: 25px;
+	padding-right: 25px; */
+	width: 120px;
+}
+
+
+
+
+
+/* end */

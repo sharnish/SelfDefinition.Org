@@ -1,0 +1,21 @@
+# .htaccess file for selfdefinition.org/rose/rr-letters/
+
+# Got rid of ISO version Sep 25, 2022
+Redirect 301 "/rose/rr-letters/rose-papers-catalogue-ISO.htm"    "/rose/rr-letters/rose-papers-catalogue.htm"
+
+
+# Options -Indexes
+# Options +Indexes
+ 
+# apparently there is to no way to un-ignore without writinbg a custom handler
+ 
+Redirect 301 "/rose/rr-letters/rose-papers-catalogue-version-1.htm"    /rose/rr-letters/
+
+
+
+# September 2016 -- Add stylesheet for auto-indexing
+# Can't use with HEADER.html or you get two stylesheet links
+# ref: http://www.apachelounge.com/viewtopic.php?p=21759  
+IndexStyleSheet "/index-style-sheet.css" 
+
+

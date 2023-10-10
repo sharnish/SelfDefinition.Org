@@ -1,0 +1,55 @@
+/* file:  //joseph-sadony/enlightening-flashes/_flashes-with-dark.css
+
+Update November 11, 2020. Update June 8, 2022
+
+ */
+
+@media only print {
+	#article:after {
+		content: "Update June 8, 2022";
+	}
+}
+
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffea;
+}
+
+/*    beautiful green (alternating pges:  background: #e6ffef; 
+      for pages "flashes-101-to-200.htm" and "flashes-301-to-359.htm"
+ */
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c9fcd4;
+}
+
+
+/* #article ol.under-10 {padding-left:45px;}*/
+#article ol.under-100 {
+	padding-left: 40px;
+}
+
+#article ol {
+	padding-left: 47px;
+	border: 0px solid blue;
+}
+
+/* end */

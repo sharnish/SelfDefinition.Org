@@ -1,0 +1,46 @@
+/* file:  /advaita/vivekananda/_vedanta-minus-dark.css
+
+anomaly fix changed from 600 to 570  
+
+Originated Sep 30, 2019 as copy of White and Black, tweaked many times since then.
+
+        Aug 19, 2020 with Quimby. June 5, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update June 5, 2022";
+    }
+}
+
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #e6ffe6;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #c0d0ff;
+}
+
+
+
+/* end */

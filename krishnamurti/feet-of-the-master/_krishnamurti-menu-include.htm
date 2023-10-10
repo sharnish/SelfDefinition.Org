@@ -1,0 +1,88 @@
+<!-- start of menu include file Update Oct 16, 2020. June 11, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float, Don't forget Div below to clear -->
+			<li><a href="/krishnamurti/">Krishnamurti index</a></li>
+			<!-- clear left only when screen less than 500px -->
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-item clear-right"><a href="/">Site root</a></li>
+			<li><a href="contents-preface.htm">Contents<span class="conditional-hide">-Preface</span></a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/krishnamurti/">Krishnamurti index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Some features use ajax api</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li><em>At the Feet of the Master</em></li>
+			<li class="note normal tight">(pub. 1910)</li>
+			<li>
+				<img class="menu-image" src="images/krishnamurti.jpg" alt="Alcyone-Krishnamurti" />
+			</li>
+			<li>Jiddu Krishnamurti</li>
+			<li class="normal note tight" style="margin-left: 10px;">(1895&ndash;1986)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="contents-preface.htm">Contents-Preface</a></li>
+				<li><a href="foreword.htm">Foreword</a></li>
+				<li><a href="part-1.htm">Part 1&ndash;Discrimination</a></li>
+				<li><a href="part-2.htm">Part 2&ndash;Desirelessness</a></li>
+				<li><a href="part-3.htm">Part 3&ndash;Good conduct</a></li>
+				<li><a href="part-4.htm">Part 4&ndash;Love</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Jiddu Krishnamurti at <a href="https://en.wikipedia.org/wiki/Jiddu_Krishnamurti">
+						Wikipedia</a> </li>
+				<li>At the Feet of the Master, at <a href="https://en.wikipedia.org/wiki/At_the_Feet_of_the_Master">Wikipedia</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item"><a href="/blavatsky/voice-of-the-silence/voice-contents.htm">Blavatsky, <em>Voice of the Silence</em></a>
+				</li>
+				<li><a href="/blavatsky/light-on-the-path/contents-and-title.htm">Mabel Collins, <em>Light
+							on the Path</em></a></li>
+				<li><a href="/magic/hartmann/white-and-black/introduction-spiritual-law.htm">Hartmann,
+						<em>Magic White and Black</em></a></li>
+				<li><a href="/blavatsky/">Blavatsky section</a></li>
+				<li><a href="/magic/">Magic section</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

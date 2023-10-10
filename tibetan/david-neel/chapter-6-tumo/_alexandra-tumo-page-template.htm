@@ -1,0 +1,316 @@
+Steps to update:
+
+Update these items:
+
+a) Title include
+
+b) Menu include for Ajax, remove class="first-item", GET RID OF Clear-FLOAT,  update bottom of menu,
+removing color. Check behavior of top menu.
+
+c) CSS Sheets: change name to "sparse", add link for dark-theme-styes.css - string is below
+
+CSS to edit: Cut out old stuff including dark theme if any
+
+Check menu height of top menu, normally 100px and 101px.
+
+Look for instances of class="black" and color: black; in the section < search on the word "black" < adjust
+    dark-theme-styles.css if necessary UPDATE SCRIPT PATHS (older pages, see below) Strings to replace: 1. 
+	
+1. 	
+
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?> <!DOCTYPE html>
+
+
+2.
+
+<html lang="en" class="english <?php echo $themeClass; ?>">		English
+
+<html lang="es" class="spanish <?php echo $themeClass; ?>">		Spanish
+
+
+Add dark theme stylesheet after responsive
+
+Replace:
+
+<link href="/styles/selfdefinition-responsive.css" rel="stylesheet" type="text/css">
+
+With
+
+<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css"> <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+
+3.
+
+https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
+
+Replace google with
+Cloudflare and 3.2.1 with 3.5.1
+
+
+4. correct path and script name
+
+<!-- scrollbar, button, ajax test and device width testing; Ajax must be active --> <script src="/scripts/scrollbar-and-test.js"></script>
+
+5. Incorporate toTopButton code
+
+
+<!-- end div#article -->
+<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+
+
+6. AND CHANGE <div id="googlecode"> TO	<div id="andlytics">
+
+/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm
+
+        </div>
+    </div>
+
+    Testing
+    <!--?php include("_console-log.php"); ?>-->
+
+    Start of page
+
+
+    <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+    <!DOCTYPE html>
+    <html lang="en" class="english <?php echo $themeClass; ?>">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>NEED TITLE
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="og-image.jpg">
+        <!-- load stylesheets before the scripts -->
+        <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+        <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+        <link href="_drop-in-sparse.css" rel="stylesheet" type="text/css">
+        <!-- the following gives you the jquery library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+        <script src="/scripts/scrollbar-and-test.js"></script>
+        <!-- this highlights the menu item for the current page (non-essential) --> 
+		<script src="/scripts/menu-highlighter.js"></script>
+        <!-- keeps the menu position intact after page change (desktop layout) -->
+        <script src="/scripts/recoverdivscroll.js"></script>
+
+        <link rel="prev" href="">
+        <link rel="next" href="">
+        <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+        <style>
+            ul.page-links {
+                width: 300px;
+                border: 1px solid blue;
+            }
+
+            /* must have this or viewport will be screwed up on narrow screens
+MUST be on a page if page-links width is specified on that page */
+            @media only screen and (max-width:300px) {
+                ul.page-links {
+                    width: 100%;
+                }
+            }
+
+
+            /* this goes ON PAGE -- to avoid CSS stylesheet having to be refreshed
+https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/   */
+
+
+            label[for=element-toggle-1],
+            label[for=element-toggle-2] {
+                cursor: pointer;
+            }
+
+            #element-toggle-1,
+            #element-toggle-2 {
+                display: none;
+            }
+
+            #element-toggle-1:not(:checked)~#toggled-element-1,
+            #element-toggle-2:not(:checked)~#toggled-element-2 {
+                display: none;
+            }
+
+            /* Template for code on this page
+
+<label for="element-toggle-1">
+[1. Toggle footnote.]</label>
+<input id="element-toggle-1" type="checkbox" />
+<div id="toggled-element-1" class="fnote hidden">
+<p>
+</p>
+</div>
+
+<label for="element-toggle-3">
+[3. Toggle footnote.]</label>
+<input id="element-toggle-3" type="checkbox" />
+<div id="toggled-element-3" class="fnote hidden">
+<p>
+</p>
+</div>
+*/
+
+		#fixed-header-small-screen {
+			border: 0px solid blue;
+		}
+
+		#menu-site-small-screen {
+			border: 0px solid orange;
+		}
+
+		#menu-site-small-screen li {
+			border: 0px solid green;
+		}
+        </style>
+    </head>
+
+    <body>
+        <div id="mainwrapper">
+            <div id="container">
+                <div id="menu-panel">
+                    <nav id="nav">
+                        <?php include("_drop-in-menu-include.htm"); ?>
+                    </nav>
+                </div>
+                <div id="main-content">
+                    <!-- #main-content is absolutely positioned-->
+                    <!-- now reset relative positioning -->
+                    <div id="main-content-relative">
+                        <div class="progress-header">
+                            <div class="progress-container">
+                                <div class="progress-bar" id="myBar"> </div>
+                            </div>
+                        </div>
+                        <div id="article">
+                            <article>
+
+                                <!-- string for pasting for progress bar - must remove original "div=article" and "article" first.
+
+<div id="main-content-relative"> <div class="progress-header"> <div class="progress-container"> <div class="progress-bar" id="myBar"> </div>  </div> </div> <div id="article"> <article>
+
+-->
+
+
+
+                                <div id="announce">
+                                    <header>
+                                        <!-- image is shown in left menu for large screens, in title-y include for small screens -->
+                                        <?php include( "_drop-in-title-include.htm"); ?>
+                                        <!-- new format puts page title higher, here -->
+                                        <h3>
+                                            Page title
+                                        </h3>
+                                    </header>
+                                </div>
+								
+                                <!-- page nav is positioned within the article -->
+                                <nav class="next-previous-item-nav">
+                                    <ul class="next-previous-item-list">
+                                        <li class="align-left"><a href="">&lt; Previous</a></li>
+                                        <li class="align-right"><a href="">Next &gt;</a></li>
+                                        <li style="clear: both;"></li>
+                                    </ul>
+                                </nav>
+								
+								
+                                <header>
+                                    <h3>
+                                        Page sub title
+                                    </h3>
+                                </header>
+                                <div class="nav-spacer" style="line-height:1px;">&nbsp;
+                                </div>
+								
+                                <!-- extra hook added April 30, 2022 -->
+                                <div class="page-text">
+									<nav class="in-page-nav">
+										<ul class="page-links">
+											<li><a href="#">section</a></li>
+											<li><a href="#">section</a></li>
+											<li><a href="#">section</a></li>
+											<li><a href="#">section</a></li>
+											<li><a href="#">section</a></li>
+										</ul>
+									</nav>
+
+
+                                    <p class="totop-above-anchor first-totop">
+                                        <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                                    </p>
+                                    <!-- anchor element must not be empty -->
+                                    <a class="page-link-anchor" id="">&nbsp;</a>
+                                    <h4>
+                                        xx
+                                    </h4>
+
+
+
+
+
+                                    <!-- SUBSEQUENT HEADERS -->
+                                    <p class="totop-above-anchor">
+                                        <a href="javascript:toTopCleanUrl();">top of page</a>
+                                    </p>
+                                    <!-- anchor element must not be empty -->
+                                    <a class="page-link-anchor" id="">&nbsp;</a>
+                                    <h4>
+                                        xx
+                                    </h4>
+
+
+
+
+<!-- string to paste AFTER end div#article for REFORMAT OR just paste the entire
+
+Replace:  <!-- end div#article -->
+
+                                    With:
+
+<!-- end div#article -->  <!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton"  title="Top of Page">top</button>
+
+
+
+
+									
+									Move this up if not exist already
+									<!-- extra hook added April 30, 2022 -->
+									<div class="page-text">
+									
+									
+									
+									
+									
+									
+                                    <p class="totop-above-anchor">
+                                        <a href="javascript:toTopCleanUrl();">top of page</a>
+                                    </p>
+                                    <!-- anchor element must not be empty -->
+                                    <a class="page-link-anchor" id="end">&zwj;</a>
+                                </div><!-- end class="page-text -->
+                                <!-- page nav here if used -->
+                            </article>
+                        </div> <!-- end div#article -->
+                        <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                        <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+                    </div><!-- end #main-content-relative -->
+                </div><!-- end main-content -->
+            </div><!-- end container -->
+        </div><!-- end mainwrapper -->
+        <script>
+            RecoverDivScroll.init("", "menu-container");
+
+        </script>
+        <div id="analytics">
+            <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+        </div>
+    </body>
+
+    </html>
+    
+    
+    

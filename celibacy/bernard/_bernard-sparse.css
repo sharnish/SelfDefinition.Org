@@ -1,0 +1,38 @@
+/* file:  /celibacy/bernard/_bernard-light-only.css 
+
+Update Jan 18, 2020. Dark style added March 7, 2022, then April 26, 2022
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update April 26, 2022";
+	}
+}
+
+/* #ffffea nice yellow, or #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffce8;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #ecd0b0;
+}
+
+
+/* end */

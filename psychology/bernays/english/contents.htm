@@ -1,0 +1,160 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="<?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Propaganda, by Edward Bernays, 1928</title>
+	<meta name="description" content="Table of Contents">
+	<meta name="author" content="Edward Bernays">
+	<meta property="og:title" content="Propaganda, by Edward Bernays, 1928">
+	<meta property="og:description" content="Table of Contents">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/bernays/english/images/edward-bernays-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_propaganda-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" -->
+	<link rel="next" href="chapter-01.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/*
+            Do you think your thoughts are your own? Why are you thoughts the same as millions of other people? Bernays illustrates how business and governments use scientific principles to "guide" your mind and the minds of people around you. Even to the extent of creating in you a rationale and desire for the services they want to offer. Done on a massive scale throughout society. Groundbreaking work by "the father of public relations." See first comment for his devious history.
+
+        Wikipedia: Bernay's best-known campaigns include a 1929 effort to promote female smoking by branding cigarettes as feminist "Torches of Freedom", and his work for the United Fruit Company in the 1950s, connected with the CIA-orchestrated overthrow of the democratically elected Guatemalan government in 1954. He worked for dozens of major American corporations including Procter & Gamble and General Electric, and for government agencies, politicians, and non-profit organizations. ... he described the masses as irrational and subject to herd instinct—and outlined how skilled practitioners could use crowd psychology and psychoanalysis to control them in desirable ways.
+
+        https://en.wikipedia.org/wiki/Edward_Bernays
+
+
+        */
+		.contents .item {
+			width: 120px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_propaganda-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_propaganda-title-include.htm"); ?>
+									<h3>
+										Contents
+									</h3>
+									<p class="tiny">Español: <a href="../espanol/contenido.htm">Contenido</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="chapter-01.htm">Chapter 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav id="index-lists">
+								<ul class="index-contents-links">
+									<li class="contents-first-item"><a href="chapter-01.htm">
+											I. Organizing Chaos</a></li>
+									<li><a href="chapter-02.htm">
+											II. The New Propaganda</a></li>
+									<li><a href="chapter-03.htm">
+											III. The New Propagandists</a></li>
+									<li><a href="chapter-04.htm">
+											IV. The Psychology of Public Relations</a></li>
+									<li><a href="chapter-05.htm">
+											V. Business and the Public</a></li>
+									<li><a href="chapter-06.htm">
+											VI. Propaganda and Political Leadership</a></li>
+									<li><a href="chapter-07.htm">
+											VII. Women's Activities and Propaganda</a></li>
+									<li><a href="chapter-08.htm">
+											VIII. Propaganda for Education</a></li>
+									<li><a href="chapter-09.htm">
+											IX. Propaganda in Social Service</a></li>
+									<li><a href="chapter-10.htm">
+											X. Art and Science</a></li>
+									<li><a href="chapter-11.htm">
+											XI. The Mechanics of Propaganda</a></li>
+								</ul>
+
+								<hr>
+
+								<ul class="index-links">
+									<li class="header-item">Also in Psychology</li>
+									<li class="subhead">Gustave Le Bon</li>
+									<li class="first-item"> <a href="/psychology/gustave-le-bon/the-crowd/contents.htm"> The Crowd, A Study of the Popular Mind </a></li>
+									<li class="header-item">Liberty section</li>
+									<li class="subhead">Étienne de La Boétie</li>
+									<li class="first-item"> <a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+								</ul>
+							</nav>
+
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="chapter-01.htm">Chapter 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

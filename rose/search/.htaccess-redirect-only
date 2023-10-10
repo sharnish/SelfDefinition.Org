@@ -1,0 +1,6 @@
+# added April 18, 2022. Just using multisite page
+
+Redirect 301 "/rose/search/rose-search-results.htm"	"/rose/search/rose-search-multisite-results.htm"
+
+# end
+

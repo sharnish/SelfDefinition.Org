@@ -1,0 +1,628 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Twelve Links of Dependent Arising</title>
+	<meta name="description" content="Twelve Causes of Suffering: Dependent Origination, Causes and Conditions">
+	<meta name="author" content="">
+	<meta property="og:title" content="Twelve Links of Dependent Arising">
+	<meta property="og:description" content="Twelve Causes of Suffering: Dependent Origination, Causes and Conditions">
+	<meta property="og:image" content="https://selfdefinition.org/buddhism/articles/images/buddha-1-og-image.jpg">
+	<!-- load external stylesheets before the menu scripts -->
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_buddhism-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* important April 26, 2022		
+			#index-lists is a nav */
+
+		#index-lists ul {
+			width: auto;
+			max-width: 100%;
+		}
+
+		/*****************
+        table CSS was in separate file "_table.css" but is now in "sparse"
+        *****************/
+
+		#source {
+			font-size: 75%;
+		}
+
+		#footnotes {
+			font-size: 80%;
+		}
+
+		#footnotes ul {
+			list-style-type: none;
+			margin-left: 0;
+			padding: 0;
+		}
+
+		ol#sources {
+			padding-left: 20px;
+		}
+
+		ul.also-see-links {
+			list-style: none;
+			padding-left: 0;
+			border: 1px solid red;
+		}
+
+		ul.also-see-links li {
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		@media screen and (max-width: 500px) {
+
+			ul#sources li,
+			ol.also-see li {
+				margin-left: 0;
+			}
+		}
+
+		#mandala-div,
+		#mandala-description {
+			display: block;
+			margin: 0;
+		}
+
+		#mandala-image {
+			width: auto;
+			max-width: 500px;
+			margin: 0;
+			padding: 0;
+		}
+
+		@media screen and (max-width: 500px) {
+			#mandala-image {
+				width: 100%;
+				max-width: 100%;
+			}
+		}
+
+		.cause {
+			color: Red;
+		}
+
+		html.dark .cause {
+			color: #ffcccc;
+		}
+
+
+		.result {
+			color: Green;
+		}
+
+		html.dark .result {
+			color: #dfd;
+		}
+
+		.other {
+			color: Blue;
+		}
+
+		html.dark .other {
+			color: #ccf;
+		}
+
+		ul.cause-result,
+		ul.renumbered-cause-result {
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			columns: 2;
+			width: 100%;
+			margin: 20px auto 30px;
+			border: 0px solid yellow;
+			column-rule: 1px solid lightblue;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_buddhism-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned -->
+				<!-- now set relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_buddhism-articles-title-include.htm"); ?>
+									<!-- new format borrowed from mysterium magnum, puts page title higher -->
+									<h3>
+										Twelve Links of Dependent Arising
+									</h3>
+									<h3>
+										Twelve Causes of Suffering
+									</h3>
+									<p>
+										Dependent Origination, Causes and Conditions
+									</p>
+								</header>
+							</div>
+							<div class="page-text">
+								<div id="mandala-div" class="note80 center">
+									<img id="mandala-image" src="images/12-links-mandala.gif" alt="The 12 links of dependent arising mandala" />
+									<p>Image from <a href="https://www.dharmanet.org/coursesM/30/12links1f.htm">dharmanet.org</a>
+									</p>
+								</div>
+								<div id="mandala-description">
+									<p class="note">
+										Geshe Sonam Rinchen's comments on the mandala: [fair use, slightly different from the above mandala]</p>
+									<p>
+										The wheel is divided into sections of which the three lower ones show the realms of hell beings, hungry spirits, and animals. These segments signify the suffering of pain. There are three upper sections representing the human realm, the abodes of the gods belonging to the desire realm, and those of the gods belonging to the form realm. The first two represent the suffering of change, while the latter represents the pervasive suffering of conditioning.</p>
+									<p>
+										The different kinds of suffering have been caused by contaminated actions underlain by the disturbing emotions. To show how this happens, the twelve links of dependent arising - ignorance, formative action, consciousness, name and form, the six sources (senses), contact, feeling, craving, grasping, existence, existence, birth, and aging and death-are painted around the rim of the wheel.</p>
+									<p>
+										The scenes within each section show what living beings experience in that particular kind of rebirth. The fact that the Lord of Death holds the wheel of existence in his mouth signifies impermanence and that everything is subject to transience.
+									</p>
+									<p class="note80 maroon">[The following table is easier to read on a wide screen monitor.]</p>
+								</div>
+								<div class="table">
+									<div class="table-row">
+										<div class="number header">
+											<br class="removable" /> #
+										</div>
+										<div class="term header">Cause:
+											<br class="removable" />Pali / Skt
+										</div>
+										<div class="translation header">
+											Usual Translation
+										</div>
+										<div class="effect header">
+											Effect
+										</div>
+										<div class="remarks header">
+											Remarks
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div id="partial" class="table-row">
+										<div class="number">
+											<span class="removable">&nbsp;</span>
+										</div>
+										<div class="term">
+											<span class="removable">&nbsp;</span>
+										</div>
+										<div class="translation">
+											<span class="removable">&nbsp;</span>
+										</div>
+										<div class="effect">
+											<span class="removable">&nbsp;</span>
+										</div>
+										<div class="remarks">
+											See notes below on numbering
+										</div>
+										<!-- end table-row -->
+									</div>
+									<div class="table-row">
+										<div class="number">
+											1
+										</div>
+										<div class="term">
+											Avijja&nbsp;/
+											<br class="removable" /> Avidya
+										</div>
+										<div class="translation">
+											Ignorance
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span>Sankhara&nbsp;/
+											<br class="removable" /> Samskara
+										</div>
+										<div class="remarks">
+											Lack of wisdom, which is the root of all evils. Obscuration as to self of persons and self of phenomena.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											2
+										</div>
+										<div class="term">
+											Sankhara&nbsp;/
+											<br class="removable" /> Samskara
+										</div>
+										<div class="translation">
+											Karma formation, formative action
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Vinnana&nbsp;/
+											<br class="removable" /> Vijnana
+										</div>
+										<div class="remarks">
+											Wholesome or unwholesome thoughts, speech and bodily deeds.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											3
+										</div>
+										<div class="term">
+											Vinnana&nbsp;/
+											<br class="removable" /> Vijnana
+										</div>
+										<div class="translation">
+											Concious<span class="removable">- </span>ness
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Namarupa
+										</div>
+										<div class="remarks">
+											The 6 consciousnesses; taken as 8 in the Yogacara School.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											4
+										</div>
+										<div class="term">
+											Namarupa
+										</div>
+										<div class="translation">
+											Name &amp;
+											<br class="removable" /> form
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Salayatana&nbsp;/
+											<br class="removable" /> Shadayatana&nbsp;
+										</div>
+										<div class="remarks">
+											Mental &amp; physical existence. The 5 aggregates that make up name and form: Feeling, perception, intention, contact, attention.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											5
+										</div>
+										<div class="term">
+											Salyatana&nbsp;/
+											<br class="removable" /> Shadayatana&nbsp;
+										</div>
+										<div class="translation">
+											Six bases, six sources
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Phassa&nbsp;/
+											<br class="removable" /> Sparsha
+										</div>
+										<div class="remarks">
+											Eye, ear, nose, tongue, touch and mental faculty. These are empty.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											6
+										</div>
+										<div class="term">
+											Phassa&nbsp;/
+											<br class="removable" /> Sparsha
+										</div>
+										<div class="translation">
+											Contact, sense impression
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Vedana
+										</div>
+										<div class="remarks">
+											A mental factor and period in which the objects, sense power/
+											<wbr />organ and conciousness come together, causing one to distinguish an object as pleasurable, painful or neutral.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											7
+										</div>
+										<div class="term">
+											Vedana
+										</div>
+										<div class="translation">
+											Feeling, sensation
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Tanha&nbsp;/
+											<br class="removable" /> Trishna
+										</div>
+										<div class="remarks">
+											Posited as a mental factor that experiences pleasure, pain and neutral feeling. Pleasure leads to a strong desire for more while pain generates an avoidance desire.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											8
+										</div>
+										<div class="term">
+											Tanha&nbsp;/
+											<br class="removable" /> Trishna
+										</div>
+										<div class="translation">
+											Craving, attachment
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Upadana
+										</div>
+										<div class="remarks">
+											A mental factor that increases desire but without any satisfaction.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											9
+										</div>
+										<div class="term">
+											Upadana
+										</div>
+										<div class="translation">
+											Clinging, grasping
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Bhava&nbsp;/
+											<br class="removable" /> Bjava
+										</div>
+										<div class="remarks">
+											A stronger degree of desire. 4 basic varieties: desired objects, views of self, bad system of ethics and conduct, and other bad views.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											10
+										</div>
+										<div class="term">
+											Bhava&nbsp;/
+											<br class="removable" /> Bjava
+										</div>
+										<div class="translation">
+											Process of becoming, existence
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Jati
+										</div>
+										<div class="remarks">
+											A period lasting from the time of fully potentialised karma up to the beginning of next lifetime.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											11
+										</div>
+										<div class="term">
+											Jati
+										</div>
+										<div class="translation">
+											Birth, rebirth
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Jaramarana&nbsp;/
+											<br class="removable" /> Jaramaranam&nbsp;
+										</div>
+										<div class="remarks">
+											Birth is any coming-to-be or coming-forth. It refers not just to birth at the beginning of a lifetime.
+										</div>
+									</div>
+									<!-- end table-row -->
+									<div class="table-row">
+										<div class="number">
+											12
+										</div>
+										<div class="term">
+											Jaramarana / Jaramaranam&nbsp;
+										</div>
+										<div class="translation">
+											Aging &amp; death
+										</div>
+										<div class="effect">
+											<span class="not-for-wide">Effect:&nbsp;</span> Jati
+										</div>
+										<div class="remarks">
+											The inevitable end-of-life suffering of all beings prior to their rebirth.
+										</div>
+									</div>
+									<!-- end table-row -->
+								</div>
+								<!-- end table -->
+								<div id="footnotes">
+									<p class="maroon">
+										[Corrections welcome: <a href="/contact/">
+											selfdefinition.org/<wbr />contact/</a> ]</p>
+									<p>
+										The links are <strong>numbered 1-12</strong> to represent the <strong>causal relationships</strong>. <span class="note">(red=cause, green=result)</span> </p>
+									<div class="renumbered-list">
+										<ul class="cause-result">
+											<li class="cause">1. Ignorance</li>
+											<li class="cause">2. Karma formation</li>
+											<li class="result">3. Consciousness</li>
+											<li class="result">4. Name and form</li>
+											<li class="result">5. Six bases, six sources</li>
+											<li class="result">6. Contact, sense impression</li>
+											<li class="result">7. Feeling, sensation</li>
+											<li class="cause">8. Craving, attachment</li>
+											<li class="cause">9. Clinging, grasping</li>
+											<li class="cause">10. Process of becoming</li>
+											<li class="other">11. Birth, rebirth</li>
+											<li class="other">12. Aging and death</li>
+										</ul>
+									</div>
+									<p>
+										Links <span class="cause">1, 2, 8, 9 and 10 are the five karmic <strong>causes</strong> of rebirths</span>. Links <span class="result">3, 4, 5, 6 and 7 are the five karmic <strong>results</strong></span> in the rounds of rebirths.
+									</p>
+									<p>The <strong>order in which they occur</strong> is 1, 2, 3, 8, 9, 10, 4, 5, 6, 7, 11, 12, repositioned in a second list as follows:</p>
+									<div class="renumbered-list">
+										<ul class="renumbered-cause-result">
+											<li class="cause">1. Ignorance</li>
+											<li class="cause">2. Karma formation</li>
+											<li class="result">3. Consciousness</li>
+											<li class="cause">8. Craving, attachment</li>
+											<li class="cause">9. Clinging, grasping</li>
+											<li class="cause">10. Process of becoming</li>
+											<li class="result">4. Name and form</li>
+											<li class="result">5. Six bases, six sources</li>
+											<li class="result">6. Contact, sense impression</li>
+											<li class="result">7. Feeling, sensation</li>
+											<li class="other">11. Birth, rebirth</li>
+											<li class="other">12. Aging and death</li>
+										</ul>
+									</div>
+								</div><!-- end $footnotes" -->
+								<div class="more-notes">
+									<p>
+										This doctrine is interpreted in various ways and levels:
+									</p>
+									<p>
+										The Theravada tradition uses it to explain the arising of sufferings; that all composite existence is without substantiality. This doctrine is then used the basis for the negation of self.</p>
+									<p>
+										In the Mahayana, conditional arising is further interpreted to validate the unreality of existence by reason of its relativity.
+									</p>
+									<p>
+										Madhyamika School equates this doctrine with shunyata (emptiness). Conditional arising is taken to show that because of their relativity, appearances have only empirical validity and are ultimately unreal.</p>
+									<p>
+										In the Yogacara view, only true understanding of this doctrine can overcome the error of taking what does not exist for existent and what does exist for nonexistent.</p>
+									<p>
+										The Prajnaparamita Sutras stresses that this doctrine does not refer to a temporal succession but rather to the essential interdependence of all things.</p>
+									<hr style="text-align:center;margin-left:initial;" />
+									<p>
+										Source: <a href="http://www.buddhanet.net/e-learning/snapshot05.htm">www.buddhanet.net/<wbr /><span class="nowrap">e-learning/</span><wbr />snapshot05.htm</a>
+									</p>
+									<p>
+										Sources of compilation by Tan Swee Eng:
+									</p>
+									<ol id="sources">
+										<li><i>The Meaning of Life</i>; The Dalai Lama, Wisdom Pub.</li>
+										<li><i>The Shambhala Dictionary of Buddhism and Zen</i>; Shambhala Pub.
+											<br>
+										</li>
+										<li><i>Living Dharma;</i> Jack Kornfield, Shambhala Pub.</li>
+										<li><i>Buddhist Dictionary;</i> Nyanatiloka, Singapore Buddhist Meditation Centre</li>
+									</ol>
+
+
+									<nav id="index-lists">
+										<p>
+											Also see:</p>
+										<ul class="index-links">
+											<li>
+												Buddhism at <a class="inline" href="https://en.wikipedia.org/wiki/Buddhism">Wikipedia</a>
+											</li>
+											<li>
+												The 12 Nidanas at <a class="inline" href="https://en.wikipedia.org/wiki/Pratityasamutpada">en.wikipedia.org/<wbr />wiki/<wbr />Pratityasamutpada</a></li>
+											<li><i>How Karma Works: The Twelve Links of Dependent Arising</i>; Geshe Sonam Rinchen, Shambals Pub: <a class="inline" href="https://www.goodreads.com/en/book/show/8269007-how-karma-works">
+													www.goodreads.com
+												</a>
+
+											</li>
+											<li><a href="https://www.dharmanet.org/coursesM/30/12links2.htm">www.dharmanet.org/<wbr />coursesM/30/<wbr />12links2.htm</a>
+												<br />
+											</li>
+											<li>From www.newmandala.org:
+												<br />
+												<a href="https://www.newmandala.org/unpopular-facts-about-one-of-buddhist-philosophys-most-popular-doctrines/">
+													Unpopular facts, One of Buddhist Philosophy's Most Popular Doctines </a>
+											</li>
+											<li>Dalai Lama on Dependent Origination:
+												<br />
+												<a href="https://buddhismnow.com/2016/07/10/dependent-origination-by-dalai-lama/">buddhismnow.com</a>
+											</li>
+
+											<li class="header-item">Also on this site</li>
+
+											<li class="first-item">Mantak Chia, Taoist Master: <a class="inline" href="/psychology/articles/mantak-chia-kundalini-psychosis.htm">The Most Effective Cure for Kundalini Psychosis</a>
+											</li>
+
+											<li>Topga Rinpoche on: <a href="/buddhism/topga-rinpoche/contents.htm">Rice Seedling Sutra</a></li>
+
+											<li>E.J. Thomas (1917): <a href="/buddhism/scriptures/chain-of-causation.htm">The Chain of Causation</a></li>
+
+											<li class="header-item">Zen section</li>
+
+											<li class="first-item">Zen Teachings of Huang Po: <a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Dharma of Mind Transmission</a></li>
+
+											<li>Garma C.C. Chang
+												<a href="/zen/garma-chang/practice-of-zen/">The Practice of Zen</a>
+											</li>
+
+											<li class="header-item">Tibetan section</li>
+
+											<li class="first-item">Trungpa Rinpoche: <a class="inline" href="/tibetan/trungpa/trungpa-rinpoche-the-hard-way.htm">The Hard Way</a> and <a class="inline" href="/tibetan/trungpa/energy-and-emotional-transmutation.htm">Energy and Emotional Transformation</a></li>
+
+											<li class="header-item">External links</li>
+											<li class="first-item">Holybooks.Com (multitude of free pdfs on Buddhism)
+												<a href="https://holybooks.com/category/buddhism/">holybooks.com</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+
+								<p>&nbsp;</p>
+
+								<p class="note center">
+									[ end ]
+								</p>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="end">&zwj;</a>
+							</div><!-- end class="page-text -->
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+﻿<!-- start of menu include file  Update Aprr 25, 2020. May 16, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/gurdjieff/">Gurdjieff index</a></li>
+            <li><a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">G. Quotes Index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <!--
+			<li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+            -->
+            <li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/gurdjieff/">Gurdjieff index</a></li>
+            <li><a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">G. Quotes Index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li>The Reality of Being</li>
+            <li>&nbsp;La realidad del Ser</li>
+            <li>
+                <img class="menu-image" src="images/mme-de-salzmann-new-york.jpg" alt="Mme de Salzmann New York" />
+            </li>
+            <li>Jeanne de Salzmann</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+                <li><a href="05-where-our-attention-is.htm">
+                        Dónde está nuestra atención
+                        <br />
+                        <span class="block;">Where our attention is </span>
+                    </a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li style="padding-bottom:0;">Jeanne de Salzmann at <a href="https://en.wikipedia.org/wiki/Jeanne_de_Salzmann">
+                        Wikipedia</a> </li>
+                <li style="padding-top:0;">In NY 1988, 2.5 minute video at <a class="inline" href="https://www.youtube.com/watch?v=oexgqnyIqBI">Youtube</a>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="first-item"><a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">Gurdjieff Quotes Page</a></li>
+                <li><a href="../real-world/aphorisms.htm">Selections from <em>Views from the Real World</em></a></li>
+                <li class="strong">P.D. Ouspensky</li>
+                <li class="first-item"><a href="/gurdjieff/evolution/introduction.htm">Psychology of Man's Possible Evolution</a></li>
+                <li><a href="/gurdjieff/evolucion/introduccion.htm">Psicología de la Posible Evolución del Hombre <span class="normal">[Español]</span></a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

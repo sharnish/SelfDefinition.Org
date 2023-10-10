@@ -1,0 +1,87 @@
+<!-- start of menu include file Update Otober 19, 2020. May 31, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li class="first-item"><a href="/tantra/">Tantra index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="kukai-index.htm">Kukai Index</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/tantra/">Tantra index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Sokushin-Jobutsu-Gi</li>
+			<li class="normal" style="line-height: 1.7em">Principle Of Attaining Buddhahood With The Present Body</li>
+			<li>
+				<img class="menu-image" src="images/kobo-daishi.jpg" alt="NEED" />
+			</li>
+			<li>Kukai (Kobo Daishi)</li>
+			<li class="normal note offset tight">(774-835)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="kukai-index.htm">Kukai Index</a></li>
+				<li><a href="1-sokushin-jobutsu-gi-introduction.htm">1. Introduction</a></li>
+				<li><a href="2-sokushin-jobutsu-gi-translation.htm">2. Text-Translation</a></li>
+				<li><a href="3-sokushin-jobutsu-gi-exposition.htm">3. Exposition</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<!-- div.optional-links disappears when #menu-container disappears -->
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li>
+					<hr />
+				</li>
+				<li class="header-item">Also in this section</li>
+				<li class="first-item">Alex Wayman, <a href="/tantra/articles/kukai-and-shingon-alex-wayman.htm">Kukai and Shingon Magic</a></li>
+				<li>DSZ Roshi, <a href="/tantra/articles/dsz-roshi-what-is-shingon-magic.htm">What Is Shingon Magic?</a></li>
+				<li class="header-item">External links </li>
+				<li class="first-item">Shingon Buddhism at <a href="https://en.wikipedia.org/wiki/Shingon_Buddhism">Wikipedia</a> </li>
+				<li>Kukai (Kobo Daishi) at <a href="https://en.wikipedia.org/wiki/K%C5%ABkai">Wikipedia</a> </li>
+				<li>Mikkyō (&quot;secret teachings&quot;) at <a href="https://en.wikipedia.org/wiki/Mikky%C5%8D">Wikipedia</a></li>
+				<li>Esoteric Buddhism (Vajrayana) at <a href="https://en.wikipedia.org/wiki/Vajrayana">Wikipedia</a> </li>
+				<li>Nyorai (Tathagata)
+					<!-- refers to the image above -->
+					at <a href="https://en.wikipedia.org/wiki/Nyorai">Wikipedia</a>
+				</li>
+				<li>
+					<hr />
+				</li>
+				<li>Source [link opens 10-page pdf] at <a href="http://dharma-rain.org/wp-content/uploads/2016/04/Kukai-Sokushin-jobutsugi-Inagaki.pdf">dharma-rain.org</a> </li>
+				<li>
+					<hr />
+				</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

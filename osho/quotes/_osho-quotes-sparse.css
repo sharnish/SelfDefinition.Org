@@ -1,0 +1,77 @@
+/* file:  /osho/_osho-quotes-sparse.css
+
+Update April 20, 2022 on Oaxaca
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update Apr 20, 2022";
+		font-size: 65%;
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffe;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #fce;
+}
+
+/* #osho-list is a ul */
+#osho-list {
+	padding-left: 30px;
+	border: 0px solid blue;
+}
+
+#osho-list li {
+	border: 0px solid yellow;
+}
+
+#osho-list p {
+	margin-left: -8px;
+	border: 0px solid red;
+}
+
+#osho-list li p:first-child {
+	margin-left: 0;
+	border: 0px solid green;
+	margin-top: 25px;
+}
+
+#announce h4 {
+	font-size: 100%;
+	font-weight: normal;
+	;
+}
+
+/* 
+
+/* conditional hide as of Apr 20, 2022
+
+conditional hide	600px
+conditional hide 2	500px
+conditional hide 3	450px
+conditional hide 4	400px
+conditional hide 5	359px
+
+*/
+
+/* end */

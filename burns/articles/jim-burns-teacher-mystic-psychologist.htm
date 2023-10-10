@@ -1,0 +1,438 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="<?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jim Burns: Teacher, Mystic and Psychologist</title>
+	<meta name="description" content="Jim's life was one of struggle and subsequent triumph, from mental illness to great feats of insight into the human condition.">
+	<meta name="author" content="Jim Burns, Bob Fergeson, MysticMissal.Org">
+	<meta property="og:title" content="Jim Burns: Teacher, Mystic and Psychologist">
+	<meta property="og:description" content="Jim's life was one of struggle and subsequent triumph, from mental illness to great feats of insight into the human condition.">
+	<meta property="og:image" content="https://selfdefinition.org/burns/articles/images/jim-burns-grayscale-og-image-2.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_burns-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" -->
+	<link rel="next" href="jim-burns-method.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 145px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		/**********************************/
+
+		p.jb-quote {
+			font-family: Georgia, serif;
+			font-style: italic;
+			margin: 0 0;
+			/* padding: 10px 40px; */
+			padding: 10px 30px 10px 40px;
+			position: relative;
+			color: #181818;
+			border: 0px solid red;
+		}
+
+		p.jb-quote:before {
+			display: block;
+			padding-left: 10px;
+			content: "\201C";
+			font-size: 60px;
+			position: absolute;
+			left: -15px;
+			top: 15px;
+			color: #7a7a7a;
+		}
+
+		html.dark p.jb-quote,
+		html.dark p.jb-quote:before {
+			color: #fdfdfd;
+		}
+
+		/* don't use this, Annoying
+        p.jb-quote:after {
+            position: absolute;
+            display: block;
+            float: right;
+            font-size: 60px;
+            line-height: 1;
+            right: 20px;
+            bottom: -10px;
+            content: "\201D";
+            color: #7a7a7a;
+        }
+        */
+
+
+		div.article-image {
+			text-align: center;
+		}
+
+		div.tocenter {
+			text-align: center;
+			width: 280px;
+			margin: 0 auto;
+			border: 0px solid red;
+		}
+
+		ol.audio-files {
+			text-align: left;
+			margin: 0 auto;
+		}
+
+		ol.audio-files li {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+
+		ol.audio-files li a {
+			display: block;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_burns-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_burns-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										About Jim Burns
+									</h3>
+									<p class="note">by MysticMissal.Org</p>
+									<p class="tiny">Source: <a href="http://www.mysticmissal.org/jim_burns.htm">
+											www.mysticmissal<wbr />.org/<wbr />jim_<wbr />burns.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="jim-burns-method.htm">Method, by Jim Burns &gt;</a>
+									</li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<div class="nav-spacer" style="line-height:1px;">&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#jim-burns">Jim Burns Bio</a></li>
+									<li><a href="#teaching">Teaching</a></li>
+									<li><a href="#inner-work">Inner Work</a></li>
+									<li><a href="#dreams">Dreams</a></li>
+									<li><a href="#being-aware">Being Aware</a></li>
+									<li><a href="#jim-burns-audio">Audio Samples</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="jim-burns">&nbsp;</a>
+							<h4>
+								Jim Burns Bio
+							</h4>
+							<div class="right-image-div">
+								<img src="images/jim-burns-portrait-cropped.jpg" alt="Jim Burns, photo by Dan Mottsman" title="Jim Burns, photo by Dan Mottsman" />
+								<p class="note tight">Jim Burns <span class="block">(1931-2016)</span>
+									<span class="block note">Photo by Dan Mottsman</span>
+								</p>
+							</div>
+							<p>
+								This missal takes a look at a modern day teacher, mystic and psychologist:
+								<strong>Jim Burns</strong> (James J. Burns, III). Born in Pittsburgh, Pennsylvania in
+								1931 to Irish-American parents, Jim's life was one of struggle and subsequent triumph,
+								from mental illness to great feats of insight into the human condition. Suffering from a
+								withered arm as well as a profound disinterest in the games of life and society, Jim
+								struggled to gain understanding of himself, life, and his source. Realizing at an early
+								age that the only answers that satisfied him and relieved his angst where those he found
+								within, he devoted himself to a life in pursuit of self-understanding. These journeys
+								within gave fruit only after tremendous struggle, but Jim slowly found a system of
+								insight and self-knowledge, and in later life gave these insights to those who also
+								longed for real answers.
+							</p>
+							<p class="jb-quote">
+								If you've gotten to a point where you realize that the thing you would like most to find
+								in this world is a steady source of guidance, to help you become your own source of
+								guidance &ndash; then that's what you are after. You never find that stated anywhere in
+								simple language. The key to the whole process lies in the fact that there is a
+								fountain-spring of endless guidance and information within every human being. One only
+								has to learn to get out of its way, to let the consciousness generate in a stilled and
+								quiet mind.
+							</p>
+							<p>
+								Jim worked in his father's law office and as a service station attendant and mechanic,
+								and developed a love for motorcycles; but despite his astute intellect, he could not
+								hold a place in the working world. The stresses of mental illness and inner angst led
+								him to spend a good deal of his adult life in mental institutions. Despite his
+								afflictions, Jim was able to remain objective enough to his situation to gain an acute
+								understanding of psychology and the world of the mentally ill. In the 1960's Jim had the
+								good fortune to be introduced to A.R.E., (Association for Research and Enlightenment,
+								founded by America's &quot;sleeping prophet&quot; Edgar Cayce) by an understanding
+								psychiatrist, giving Jim an outlet for his insights into the mind. Later, an A.R.E.
+								member introduced him to Richard Rose and Rose's TAT Foundation, leading to a friendship
+								with like-minded fellows which lasts until this day. Jim has been invited to many TAT
+								gatherings, always an inspiration and light for those with an interest in their own
+								minds, and a path within.
+							</p>
+							<p class="jb-quote">
+								When you begin to have experiences of the information from within, you learn how
+								perfectly attuned the inner mind is to your immediate and momentary circumstances. It
+								can guide you exactly to the thinking required to deal with the outer circumstances or
+								other aspects of consciousness that is absorbing your attention. It is perfectly attuned
+								to the potential of expanding your total consciousness to its absolute maximum. It is
+								designed to do this. It is endlessly trying to do this. It can't stop doing it. The
+								fountainhead lies totally within.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="teaching">&nbsp;</a>
+							<h4>
+								Teaching
+							</h4>
+							<p style="margin-bottom:5px;">
+								Jim's association with TAT led to many of the conver&shy;sations being recorded. These
+								were painstakingly transcribed and edited, culminating in his insightful book, <a href="/burns/inner-self/contents.htm">At Home With the Inner Self <span class="note">(this website)</span></a>,<sup class="black">*</sup> published by
+								the TAT Foundation Press,<sup class="black">**</sup> a masterful work on psychology and
+								insight. Jim teaches three important techniques for reconnecting with the inner self:
+							</p>
+							<ol style="list-style:lower-roman;margin-top:-0px;">
+								<li>
+									free association</li>
+								<li> holding awareness through all states of consciousness (i.e., going to sleep slowly)
+								</li>
+								<li> dream analysis.
+								</li>
+							</ol>
+
+							<div style="margin-left:20px;">
+								<p class="note80 tight">* Hard copy at <a href="https://amzn.to/3aVB5rm">Amazon.Com
+										US</a></p>
+								<p class="note80 tight">** <a href="https://tatfoundation.org/tat_press.htm">tatfoundation.org/tat_press.htm</a>
+								</p>
+							</div>
+							<div class="article-image" style="margin-top:30px;">
+								<img src="images/jim-burns-tat-meeting.jpg" alt="Jim Burns at TAT" title="Jim Burns at TAT" />
+								<p class="note80" style="margin-top:0;">Jim Burns, center, TAT Foundation gathering
+								</p>
+							</div>
+							<p class="jb-quote">
+								Your internal system is entirely capable, given the opportunity, of teaching you what it
+								is trying to teach you. Try to place the problem mentally in front of you and let every
+								tension go out of your body. &nbsp;Gradually, a word will come to mind that will begin
+								to explain and alleviate the circumstances. The words form so long as you hold that
+								center. It is uncomfortable and miserable, and the only thing that is worse is that
+								which you're trying to escape. There is a free association part of the mind that is like
+								a citizen's band scanner, constantly going up and down the channels. Your inner mind is
+								constantly trying to get your outer self to be aware of what's going on within yourself
+								until you've answered to that need. It keeps throwing balls over the fence. As you drive
+								down the road your mind will constantly pick out this fence or that tree, or this sign.
+								You're accustomed to it and assume that everyone else's mind does the same thing. If you
+								analyzed why you pick this or that to see out of everything that is available, you'll
+								see that there's a definite reason and pattern to it. It follows very closely the things
+								that come in ordinary dreaming, which is another method of throwing balls over the
+								fence. The dream-maker uses these things in waking life. They are attempts to guide you
+								to what in you is unfulfilled.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="inner-work">&nbsp;</a>
+							<h4>
+								Inner Work
+							</h4>
+							<p>
+								Jim's life was one of hardship and separation, he spent many years in mental
+								institutions, and had few opportunities to work and have normal social relationships.
+								His success in spiritual endeavors can be directly related to his troubles: he had to
+								find solutions to the pressing emotional problems, and he had the time to do it. Having
+								a clear and calm mind is necessary to communicating with the inner self, and this
+								requires many long hours of solitude, something Jim could afford. He also stumbled on
+								the capacity to maintain his waking consciousness even in sleep, something he recommends
+								highly:
+							</p>
+							<p class="jb-quote">
+								In the beginning, you have to learn how to clear your mind of daily concerns. You have
+								to take them one at a time until they die a death of their own. This is what permits you
+								once you accomplish this. This permits you and brings you to the edge. And you realize
+								that if you try, you can take your daily consciousness once changed into sleep and not
+								lose track of it. Once you have accomplished this, you never leave the waking state
+								consciousness again. It carries into all things, fundamentally a clear-headed sharp
+								capacity into insight into all matters regardless of what they are in the mental aspect,
+								which is part of everything. That is the goal. It was built into you and buried by
+								misconception, but once you try to bring it back to life, it will have a life of its
+								own.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="dreams">&nbsp;</a>
+							<h4>
+								Dreams
+							</h4>
+							<p>
+								Once the ability to observe and remember the information and feelings of the dream state
+								is reached, Jim recommended using the material to find and understand what the inner
+								self is trying to communicate. These buried feelings and moods can be brought into full
+								consciousness, further clearing the mind, enabling deeper insight:
+							</p>
+
+							<p class="jb-quote">
+								When I was young, I learned that dreams were the source of all necessary information.
+								It's good to go to sleep slowly and to wake up slowly. If you have a nagging dream, just
+								lie in bed and be quiet. Try and be conscious of no-thing, which is different than
+								nothing. Just let it come to you. All the pictography of the dream is an attempt by the
+								inner stage master to throw things over the fence to key you in to what is happening in
+								your insides. Through dreams, you can repair the bridge to the inner self and again
+								become a whole person. Realizing something in a dream isn't enough &ndash; you have to
+								become aware of it in the waking state.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="being-aware">&nbsp;</a>
+							<h4>
+								Being Aware
+							</h4>
+							<p>
+								Jim's presence and astute sense of humor will be missed by all of those fortunate enough
+								to have spent time with him. His time was spent in understanding the problems of his own
+								life, and then communicating this universal insight to those around him. While he didn't
+								have the ability to communicate, work, and travel as much as some, he did find an
+								audience, one that keeps his work and insight alive and well.
+							</p>
+							<p class="jb-quote">
+								The goal is to be peacefully and rejoicefully aware and awake in common garden variety
+								consciousness. It is the goal we all seek to achieve. If you work at the things I am
+								saying, if you can find the time, you cannot miss getting there. If you don't have the
+								time, you are finished and it eats time. It is the biggest reason why no one ever said
+								much to anyone about it since once they realize that all the time they have and all the
+								effort they can stand to put out is eaten by paying the bills. I was carried along first
+								by my family and then by social security disability. There is where I got the time. I
+								knew one thing the whole way through: that I dare not waste one second.
+							</p>
+							<p class="note80 center toowide">
+								All the above quotes are by <strong>Jim Burns</strong>, from his book <em>At Home With
+									the Inner Self</em>
+							</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="jim-burns-audio">&nbsp;</a>
+							<h4>
+								Audio Samples
+							</h4>
+							<p>
+								Listen to Jim and friends during an afternoon's conversation:
+							</p>
+							<div class="tocenter">
+								<ol class="audio-files">
+									<li>
+										<a href="audio/Jim-Burns-1.mp3">Jim-Burns-1.mp3</a> Time 41:59, 40 megs
+									</li>
+									<li>
+										<a href="audio/Jim-Burns-2.mp3">Jim-Burns-2.mp3</a> Time 15:10, 15 megs
+									</li>
+									<li>
+										<a href="audio/Jim-Burns-3.mp3">Jim-Burns-3.mp3</a> Time 21:24, 21 megs
+									</li>
+									<li>
+										<a href="audio/Jim-Burns-4.mp3">Jim-Burns-4.mp3</a> Time 35:45, 34 megs
+									</li>
+								</ol>
+							</div>
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="jim-burns-method.htm">Method, by Jim Burns &gt;</a>
+									</li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

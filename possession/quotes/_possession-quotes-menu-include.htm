@@ -1,0 +1,85 @@
+<!-- start of menu include file Update May 18, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li class="first-item"><a href="/possession/">Possession index</a></li>
+            <!-- clear left only when screen less than 500px -->
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm"><span class="conditional-hide-3">Table of </span>Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/possession/">Possession index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="">
+            <li id="menu-image-item">
+                <img class="menu-image" src="images/st-catherine-torment.jpg" alt="St Catherine torment">
+            </li>
+            <!--
+            <li>drop-in</li>
+            <li class="normal note">(DATES)</li>
+            -->
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="torkom-saraydarian-obsession-and-possession.htm"><span class="block">Torkom
+                            Saraydarian:</span> Possession and Obsession</a></li>
+                <li><a href="maid-of-orlach-possession.htm">The Maid of Orlach Possession</a></li>
+                <li><a href="bob-larson-exorcism-veronica.htm"><span class="block">Bob Larson:</span>
+                        Exorcism of a Woman Named Veronica</a></li>
+                <li><a href="exorcism-of-anneliese-michel.htm">Exorcism of Anneliese Michel</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <!-- div.site-links disappears when #menu-container disappears -->
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="first-item">Vernon Howard: <a href="/hearing-voices/articles/vernon-howard-freedom-from-harmful-voices.htm">
+                        Freedom From Harmful Voices</a></li>
+                <li>Alan Fitzpatrick: <a href="/hearing-voices/articles/alan-fitzpatrick-the-voices-we-may-hear.htm">
+                        Voices We May Hear</a></li>
+                <li><a href="/hearing-voices/">Hearing Voices section</a></li>
+                <li><a href="/psychology/">Psychology section</a></li>
+            </ul>
+        </div>
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li class="header-item">External links</li>
+                <li class="first-item">Demonic possession<br> at <a href="https://en.wikipedia.org/wiki/Demonic_possession">
+                        Wikipedia</a></li>
+                <li>Spirit possession<br> at <a href="https://en.wikipedia.org/wiki/Spirit_possession">Wikipedia</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

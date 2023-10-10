@@ -1,0 +1,107 @@
+<!-- start of menu include file  Update August 24, 2021. June 13, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<li><a href="/liberty/">Liberty index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/liberty/">Liberty index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!-- comment out either the English or the Spanish -->
+			<!-- ajax has negative top and bottom margins in .CSS -->
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Hiero, or, Tyrannicus</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/xenophon.jpg" alt="Xenophon" />
+			</li>
+			<li><span class="note normal">by</span> Xenophon</li>
+			<li class="normal note tight">Military commander and philosopher </li>
+			<li class="normal note tight" style="margin-top:-5px;">(430-354 BC)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="part-01.htm">Part 1</a> </li>
+				<li><a href="part-02.htm">Part 2</a> </li>
+				<li><a href="part-03.htm">Part 3</a> </li>
+				<li><a href="part-04.htm">Part 4</a> </li>
+				<li><a href="part-05.htm">Part 5</a> </li>
+				<li><a href="part-06.htm">Part 6</a> </li>
+				<li><a href="part-07.htm">Part 7</a> </li>
+				<li><a href="part-08.htm">Part 8</a> </li>
+				<li><a href="part-09.htm">Part 9</a> </li>
+				<li><a href="part-10.htm">Part 10</a> </li>
+				<li><a href="part-11.htm">Part 11</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Xenophon at <a href="https://en.wikipedia.org/wiki/Xenophon">
+						Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Liberty section</li>
+				<li class="first-item">Étienne de La Boétie:
+					<a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience</a>
+				</li>
+				<li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+				<li class="header-item">Psychology section</li>
+				<li class="first-item">Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda</a></li>
+				<li>Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+				<li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a></li>
+				<li>Wilfred N. Caron: <a href="/psychology/caron/contents.htm">The Occult Significance of Hypnosis</a> </li>
+				<li>James H. Loryea, a.k.a. "Santanelli": <a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion</a></li>
+			</ul>
+		</div>
+
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">
+					Source of this document: <a href="https://anastaplo.wordpress.com/">George Anastaplo’s Blog</a>
+				</li>
+				<li>
+					Link to <a style="display:inline;" href="https://anastaplo.files.wordpress.com/2012/11/hiero.pdf">PDF, 10 pages</a>
+				</li>
+				<li>
+					Also see at <a href="https://books.google.vg/books?id=puxRXDxS5TMC&pg=PA22&source=gbs_toc_r&cad=2#v=onepage&q=kendrick&f=false">Google Books</a></li>
+
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

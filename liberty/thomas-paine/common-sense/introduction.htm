@@ -1,0 +1,189 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Common Sense, by Thomas Paine</title>
+	<meta name="description" content="Introduction">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Common Sense, by Thomas Paine">
+	<meta property="og:description" content="Introduction">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/paine-common-sense/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_common-sense-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="contents.htm">
+	<link rel="next" href="1-of-government.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_common-sense-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_common-sense-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Introduction <sup class="note" style="display:inline;font-size:70%;">[1]</sup>
+									</h3>
+									<p class="tiny">Español: <a href="../sentido-commun/introduccion.htm">introduccion.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="about-the-author.htm">&lt; About the Author</a></li>
+									<li class="align-right"><a href="1-of-government.htm">Of Government &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>Perhaps the sentiments contained in the following pages, are not yet sufficiently
+								fashionable to procure them general Favor; a long Habit of not thinking a Thing wrong,
+								gives it a superficial appearance of being right, and raises at first a formidable
+								outcry in defence of Custom. But the Tumult soon subsides. Time makes more Converts than
+								Reason.</p>
+							<p>As a long and violent abuse of power is generally the means of calling the right of it in
+								question, (and in matters too which might never have been thought of, had not the
+								sufferers been aggravated into the inquiry,) and as the King of England hath undertaken
+								in his own right, to support the Parliament in what he calls Theirs, and as the good
+								People of this Country are grievously oppressed by the Combination, they have an
+								undoubted privilege to enquire into the Pretensions of both, and equally to reject the
+								Usurpation of either.</p>
+							<p>In the following Sheets, the Author hath studiously avoided every thing which is personal
+								among ourselves. Compliments as well as censure to individuals make no part thereof. The
+								wise and the worthy need not the triumph of a Pamphlet; and those whose sentiments are
+								injudicious or unfriendly will cease of themselves, unless too much pains is bestowed
+								upon their conversions.</p>
+							<p>The cause of America is in a great measure the cause of all mankind. Many circumstances
+								have, and will arise, which are not local, but universal, and through which the
+								principles of all lovers of mankind are affected, and in the event of which their
+								affections are interested. The laying a country desolate with fire and sword, declaring
+								war against the natural rights of all mankind, and extirpating the defenders thereof
+								from the face of the earth, is the concern of every man to whom nature hath given the
+								power of feeling; of which class, regardless of party censure, is the
+								<!-- no missing words. "Is the Author" -->
+							</p>
+							<p> AUTHOR.</p>
+
+							<h4 style="margin-top:35px;">Postscript to Preface in the third edition.</h4>
+
+							<!-- COPIED FROM THE PDF Thomas-Paine-Common-Sense-1776.pdf  (22 pages) Edited by Edwin Larkin. 
+								page 2 of 22 of the PDF, page 45 of the book the PDF was scanned from	-->
+
+							<p>
+								P.S. The Publication of this new Edition hath been delayed, with a view of taking
+								notice (had it been necessary) of any attempt to refute the Doctrine of
+								Independence: As no answer hath yet appeared, it is now presumed that none will, the
+								time needful for getting such a Performance ready for the Public being considerably
+								past.</p>
+
+							<p>Who the Author of this Production is, is wholly unnecessary to the Public, as the
+								Object for Attention is the Doctrine itself, not the Man. Yet it may not be
+								unnecessary to say, That he is unconnected with any party, and under no sort of
+								Influence, public or private, but the influence of reason and principle.</p>
+
+							<p>&ndash; Philadelphia, February 14, 1776</p>
+
+							<!-- Where is this from? -->
+							<div class="note">
+								<p><sup>[1]</sup> This pamphlet, whose effect has never been paralleled in literary
+									history, was published January 10, 1776, with the following title :</p>
+								<p>Common Sense : Addressed to the Inhabitants of America, on the following
+									Interesting Subjects, viz.: I. Of the Origin and Design of Government in General
+									; with Concise Remarks on the English Constitution. II. Of Monarchy and
+									Hereditary Succession. III. Thoughts on the Present State of American Affairs.
+									IV. Of the Present Ability of America; with some Miscellaneous Reflections.</p>
+								<blockquote>
+									<p>Man knows no master save creating Heaven, <br>Or those whom choice and
+										common good ordain.</p>
+									<p class="signature" style="margin-right:100px;">&mdash; Thomson.</p>
+								</blockquote>
+								<p class="note">Philadelphia : Printed, and Sold, by R. Bell, in Third Street.
+									MDCCLXXVI</p>
+							</div>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="about-the-author.htm">&lt; About the Author</a>
+									</li>
+									<li class="align-right"><a href="1-of-government.htm">Of Government &gt;</a>
+									</li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

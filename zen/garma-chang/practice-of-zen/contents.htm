@@ -1,0 +1,185 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Table of Contents - The Practice of Zen, by Garma C. C. Chang</title>
+	<meta name="description" content="What is Zen? Zen Style &amp; Zen Art; Discourses and Histories of Notable Zen Masters; Zen and Bhuddism; Zen and Meditation; Samadhi.">
+	<meta name="author" content="Garma C. C. Chang">
+	<meta property="og:title" content="The Practice of Zen, by Garma C. C. Chang">
+	<meta property="og:description" content="What is Zen? Zen Style &amp; Zen Art; Discourses and Histories of Notable Zen Masters; Zen and Bhuddism; Zen and Meditation; Samadhi.">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load style sheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practice-of-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!--<link this is first page>-->
+	<link rel="next" href="foreword.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Social Media, American Zen
+
+Garma C.C. Chang (1920-1998) was a pioneer in introducing Zen and Tibetan tantra to the west. He was born in China, was recognized as a master in Tibet, and then immigrated to the United States in the 1950s. In the US he became a research fellow at the Bollingen Foundation in New York, and  wrote many books, beginning with The Practice of Zen, published in 1959, 
+
+Biography:
+https://www.tsemrinpoche.com/tsem-tulku-rinpoche/buddhas-dharma/professor-garma-cc-chang-the-illustrious-pioneer.html
+
+*/
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practice-of-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practice-of-zen-title-include.htm"); ?>
+									<h3>
+										Table of Contents&nbsp;
+										<!-- adjust to center -->
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="../la-practica-del-zen/contenido.htm">../../contenido.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a></a></li>
+									<li class="align-right"><a href="foreword.htm">Foreword&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="index-lists">
+								<!-- items have :hover styling, color change -->
+								<!-- from "protype-contents-index-page" Voice as updated -->
+								<ul class="index-contents-links">
+									<li><a href="foreword.htm">Foreword by the Author</a> </li>
+									<li class="menu-header">I. THE NATURE OF ZEN </li>
+									<li><a href="ch-1a1-nature-of-zen.htm">Zen Style and Zen Art</a> </li>
+									<li><a href="ch-1a2-nature-of-zen-koans.htm">Three Types of Koans</a> </li>
+									<li><a href="ch-1a3-nature-of-zen-special-art.htm">Zen as a Special Buddhist Art</a> </li>
+									<li><a href="ch-1b-core-of-zen.htm">The Core of Zen: Studies in the Three Main Aspects of Mind</a> </li>
+									<li><a href="ch-1c-four-vital-points.htm">Four Vital Points in Zen Buddhism</a> </li>
+									<li class="menu-header">II. THE PRACTICE OF ZEN </li>
+									<li><a href="ch-2-review-of-zen-practice.htm">A General Review of Zen Practice</a> </li>
+									<li class="menu-header">Discourses of Four Zen Masters </li>
+									<li><a href="ch-2b1-four-masters-discourses-hsu-yun.htm">1.&nbsp;Discourses of Master Hsu Yun</a> </li>
+									<li><a href="ch-2b2-discourses-tsung-kao.htm">2.&nbsp;Discourses of Master Tsung Kao</a> </li>
+									<li><a href="ch-2b3-discourses-po-shan.htm">3.&nbsp;Discourses of Master Po Shan</a> </li>
+									<li><a href="ch-2b4-discourse-han-shan.htm">4.&nbsp;Discourse of Master Han Shan</a> </li>
+									<li class="menu-header">Short Autobiographies of Five Zen Masters </li>
+									<li><a href="ch-2c1-autobiographies-han-shan.htm">1.&nbsp;Epitome of Zen Master Han Shan's Autobiography</a> </li>
+									<li><a href="ch-2c2-story-wu-wen.htm">2.&nbsp;Zen Master Wu Wen's Story</a> </li>
+									<li><a href="ch-2c3-story-hsueh-yen.htm">3.&nbsp;Zen Master Hsueh Yen's Story</a> </li>
+									<li><a href="ch-2c4-story-meng-shan.htm">4.&nbsp;Zen Master Meng Shan's Story</a> </li>
+									<li><a href="ch-2c5-story-kao-feng.htm">5.&nbsp;Zen Master Kao Feng's Story</a> </li>
+									<li class="menu-header">III. THE FOUR PROBLEMS OF ZEN BUDDHISM </li>
+									<li><a href="ch-3a-is-zen-unintelligible.htm">Is Zen Completely Unintelligible?</a> </li>
+									<li><a href="ch-3b-zen-enlightenment.htm">What is Zen &quot;Enlightenment&quot;?</a> </li>
+									<li><a href="ch-3c-zen-and-mahayana.htm">Zen and Mahayana Buddhism</a> </li>
+									<li><a href="ch-3d-four-distinctions-of-lin-chi.htm">The &quot;Four Distinctions&quot; of Lin Chi</a> </li>
+									<li class="menu-header">IV. BUDDHA AND MEDITATION </li>
+									<li><a href="ch-4a-meditation-three-aspects.htm">The Three Aspects of Buddhahood in Relation to the Six Patterns of Human Thinking</a> </li>
+									<li><a href="ch-4b-survey-practice-buddhist-meditation.htm">Survey of the Practice of Buddhist Meditation</a> </li>
+									<li><a href="ch-4b1-four-characteristics-samadhi.htm">1.&nbsp;The Four Basic Characteristics of Samadhi</a> </li>
+									<li><a href="ch-4b2-seven-types-meditation.htm">2.&nbsp;The Seven Different Types of Meditation Practice</a> </li>
+									<li><a href="ch-4b3-three-stages-meditation.htm">3.&nbsp;The Three Successive Stages of Meditation</a> </li>
+									<li class="menu-header">REFERENCE </li>
+									<li><a href="endnotes.htm">Numbered Endnotes</a> </li>
+									<li><a href="bibliography.htm">Bibliography</a> </li>
+									<li><a class="inline" href="appendix-chinese.htm">Appendix: Romanized Chinese Characters for the Text and for the Notes <span class="inline note">(page scan images)</span></a> </li>
+									<li><a href="book-index.htm">Book Index with page numbers</a> </li>
+								</ul>
+								<hr />
+								<ul class="index-links">
+									<li>Rinzai Zen at <a href="https://en.wikipedia.org/wiki/Rinzai_school">Wikipedia</a> </li>
+									<li>Chan Buddhism at <a href="https://en.wikipedia.org/wiki/Chan_Buddhism">Wikipedia</a></li>
+								</ul>
+								<ul class="index-links">
+									<li class="header-item">More Zen on this site</li>
+									<li class="first-item">Huang Po: <a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Dharma of Mind Transmission</a></li>
+									<li>Hubert Benoit: <a href="/zen/benoit/supreme-doctrine/contents.htm">The Supreme Doctrine</a></li>
+									<li>Yongjia Xuanjue: <a href="/zen/song-of-enlightenment/shasta-abbey.htm">Song of Enlightenment</a></li>
+									<li>Hsin-Hsin Ming: <a href="/zen/hsin-hsin-ming/faith-in-mind-dusan-pajin-translation.htm">On Faith In Mind</a></li>
+									<li>Hui-Neng: <a href="/zen/hui-neng/platform/contents.htm">Sutra of the Sixth Patriarch, Platform Sutra</a></li>
+								</ul>
+								<ul class="index-optional-links">
+									<li class="external-links-item">External links</li>
+									<li class="external-first-item">Zhang Chengji (1920-1988), aka Garma C. C. Chang at <a href="https://terebess.hu/zen/mesterek/GarmaChang.html">Terebess.Hu</a></li>
+									<li>Terebess.Hu: <a href="https://terebess.hu/zen/textindex.html">Zen Literature Index</a></li>
+									<li>TheZenSite: <a href="http://www.thezensite.com/index.html">thezensite.com</a></li>
+									<li>&nbsp;</li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a></a></li>
+									<li class="align-right"><a href="foreword.htm">Foreword&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- end #article -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+					<!-- stupid spacer is neded, I don't know why -->
+					<p id="spacer">
+						&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+					</p>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

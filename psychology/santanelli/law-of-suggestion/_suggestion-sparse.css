@@ -1,0 +1,52 @@
+/* file:  /psychology/santanelli/law-of-suggestion/_suggestion-sparse.css
+
+Last check Sep 21, 2019 then Mar 17, 2020. May 21, 2022
+
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update May 21, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffdee;
+	color: #001010;
+}
+
+/* div in title include file
+#title-include-div {margin:20px 0;} */
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/*  blue = #bde0ff; pink = #ffccee
+(Nice color: "morning sky" #cae4db, but has too much green for this background)*/
+
+/* this closely matches the portrait: #e9e0c0; */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #e6d6b0;
+}
+
+/* specific to this section */
+
+/* added Dec 4, 2018 */
+/* Note: images in 1-hypnosis-part-a have their CSS on page */
+
+
+
+/* end */

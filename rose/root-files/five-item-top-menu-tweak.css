@@ -1,0 +1,49 @@
+/* file /rose/five-line-top-menu-tweak.css 
+
+So far only usd in Rose section (for root and search files)
+    Copy to /etyles-2022/ if to be used elsewhere. 
+*/
+
+/* adding "search" link causes top menu to have 5 items.
+    must float "totop" item to left at width = 600px
+    while increasing hight of #fixed-menu
+    and increasing top of #main-content */
+
+/* from /styles-2022/section-index-2022.css */
+/* April 17, 2022 edit
+	Adding a "Search" list item (Rose section) to the top menu causes "to-top" to be 
+	a 5th item, so float any fifth item left so it won't overwrite style-gadget. 
+	See below for:   #menu-site li:nth-of-type(5)
+
+@media only screen and (max-width:610px) { 
+#menu-site li:nth-of-type(5) {
+  	float: left;
+  	border-bottom:0px solid green;
+	}
+}
+	 */
+
+/* default is 430px */
+
+@media only screen and (max-width:600px) {
+
+    #fixed-header,
+    #menu-site {
+        height: 95px;
+    }
+
+    #main-content {
+        top: 96px;
+    }
+
+    /* a little more clearance away from #style-gadget */
+    p.logo {
+        margin-top: 30px;
+    }
+
+    #menu-site li:last-of-type {
+        float: left;
+    }
+}
+
+/* end */

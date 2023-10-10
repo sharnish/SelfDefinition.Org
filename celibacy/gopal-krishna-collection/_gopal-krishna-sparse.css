@@ -1,0 +1,39 @@
+/* file:  /celibacy/gopal-krishna/_gopal-krishna-sparse.css
+
+Update june 12, 2020. Dark styles added March 7, 2022. Update April 27, 2022  .
+
+ */
+
+@media only print {
+	#article:after {
+		content: "Update April 27, 2022";
+	}
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f3fff3;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #afb;
+}
+
+
+
+
+/* end */

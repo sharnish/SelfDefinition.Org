@@ -1,0 +1,422 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1.2 The Los sentimientos y la moral de las masas </title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="1.2 The Los sentimientos y la moral de las masas ">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="1-1-general.htm">
+	<link rel="next" href="1-3-ideas.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 320px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:340px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		label[for=element-toggle-5],
+		label[for=element-toggle-7],
+		label[for=element-toggle-8] {
+			cursor: pointer;
+		}
+
+		#element-toggle-5,
+		#element-toggle-7,
+		#element-toggle-8 {
+			display: none;
+		}
+
+		#element-toggle-5:not(:checked)~#toggled-element-5,
+		#element-toggle-7:not(:checked)~#toggled-element-7,
+		#element-toggle-8:not(:checked)~#toggled-element-8 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3>
+										<span class="block">Libro 1 Capítulo 2</span> Los sentimientos y la moral de las masas
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/1-2-sentiments-and-morality.htm">..1-2-sentiments-and-morality.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="1-1-general.htm">&lt; Características generales</a></li>
+									<li class="align-right"><a href="1-3-ideas.htm">Ideas y razonamiento &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#impulsividad">1. Impulsividad, inestabilidad e irritabilidad de las masas</a></li>
+									<li><a href="#sugestionabilidad">2. La sugestionabilidad y la credulidad de las masas</a></li>
+									<li><a href="#exageracion">3. La exageración y la espontaneidad de los sentimientos de las masas</a></li>
+									<li><a href="#intolerancia">4. La intolerancia, la dictatorialidad y el conservativismo de las masas</a></li>
+									<li><a href="#moralidad">5. La moralidad de las masas</a></li>
+								</ul>
+							</nav>
+							<p>
+								Habiendo indicado de un modo general las características principales de las masas, nos queda el estudiar estas características en detalle.
+							</p>
+							<p>
+								Debe ser remarcado que entre las características especiales de las masas hay varias - tales como impulsividad, irritabilidad, incapacidad de razonar, la ausencia de juicio y de espíritu crítico, aparte de otras - que casi siempre se observan en seres pertenecientes a formas inferiores de la evolución. Sin embargo, meramente indico esta analogía al pasar; su demostración excede el marco de este trabajo. Además, sería inútil para personas familiarizadas con la psicología de seres primitivos y difícilmente aportaría convicción a los ignorantes de esta materia.
+							</p>
+							<p>
+								Procederé ahora a la consideración sucesiva de las diferentes características que pueden ser observadas en la mayoría de las masas.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="impulsividad">&nbsp;</a>
+							<h4 class="toowide">
+								1. Impulsividad, inestabilidad e irritabilidad de las masas
+							</h4>
+							<p>
+								Al estudiar las características fundamentales de una masa, afirmamos que ésta es guiada casi exclusivamente por motivos inconscientes. Sus acciones están por lejos más bajo la influencia de la médula espinal que bajo la del cerebro. En este sentido, una masa es muy similar a seres bastante primitivos. Las acciones pueden se perfectas en lo que respecta a su ejecución pero, puesto que no están dirigidas por el cerebro, el individuo se comporta de acuerdo con lo que pueden llegar a disponer los estímulos a los cuales está expuesto. Una masa está a merced de todos los estímulos externos y refleja las incesantes variaciones de los mismos. Es la esclava de los impulsos que recibe. El individuo aislado puede estar sometido a las mismas causas estimulantes que el hombre en una masa, pero, puesto que su cerebro le muestra lo poco aconsejable que sería ceder ante estas causas, se abstiene de seguirlas. Esta verdad puede ser expresada psicológicamente diciendo que el individuo aislado posee la capacidad de dominar sus actos reflejos mientras que una masa carece de esta capacidad.
+							</p>
+							<p>
+								Los impulsos variables a los cuales obedece la masa pueden ser, de acuerdo a sus estímulos causales, generosas o crueles, heroicas o cobardes, pero siempre serán tan imperiosos que el interés del individuo, incluso el interés de autoconservación, no las dominará. Siendo los estímulos que actúan sobre las masas tan variados y siendo que las masas siempre las obedecen, el resultado es que las masas son, por consecuencia, extremadamente inestables. Esto explica cómo es que las vemos pasar de un momento a otro, de la ferocidad más sanguinaria a la más extrema generosidad y al más extremo heroísmo. Una masa puede fácilmente hacer el papel de verdugo pero, con la misma facilidad, el de un mártir. Son las masas las que han suministrado el torrente de sangre que constituye el prerrequisito para el triunfo de todo credo.
+							</p>
+							<div class="right-image-div">
+								<img src="images/georges-ernest-boulanger.jpg" alt="General Boulanger" title="General Boulanger">
+								<p class="note">
+									General Boulanger
+									<span class="block">(1837-1891)</span>
+								</p>
+							</div>
+							<p> No es necesario retrotraerse a las eras heroicas para ver de qué son capaces las masas en esta última dirección. Nunca mezquinan sus vidas en una insurrección y, no hace mucho, un general, volviéndose súbitamente popular, podría haber fácilmente hallado cien mil hombres dispuestos a sacrificar sus vidas por su causa de habérselo demandado.&nbsp;<sup>[4]</sup>
+							</p>
+							<p class="fnote">
+								[4. El autor se refiere al General Boulanger.]
+							</p>
+							<p>
+								Cualquier manifestación de premeditación por parte de las masas está, por lo tanto, fuera de discusión. Pueden estar animadas sucesivamente por los sentimientos más contrarios, pero siempre estarán bajo la influencia de los estímulos del momento. Son como las hojas que una tempestad arremolina y desparrama en todas direcciones para luego dejarlas caer. Cuando más adelante estudiemos ciertas masas revolucionarias, daremos algunos ejemplos de la variabilidad de sus sentimientos.
+							</p>
+							<p>
+								La inestabilidad de las masas las hace muy difíciles de gobernar, especialmente cuando una medida de la autoridad pública ha caído en sus manos. Si las necesidades de la vida cotidiana no constituirían una suerte de regulador invisible de la existencia, las democracias apenas si podrían existir. Aún así, a pesar de que los deseos de las masas son frenéticos, no resultan durables. Las masas son tan incapaces de querer como de pensar por largo tiempo.
+							</p>
+							<p>
+								Una masa no es solamente impulsiva e inestable. Como un salvaje, no está preparada para admitir nada que pueda interponerse entre su deseo y la realización de este deseo. Menos todavía será capaz de entender un obstáculo de esa índole a causa del irresistible poder que le otorga su fuerza numérica. La noción de imposibilidad desaparece para el individuo que está en una masa. Un individuo aislado sabe muy bien que él solo no puede prenderle fuego a un palacio o desvalijar un negocio y, si fuera tentado a hacerlo, resistiría fácilmente la tentación. Haciéndose parte de una masa, percibirá el poder que le otorga el número y será suficiente con sugerirle ideas de muerte o de saqueo para hacerle ceder inmediatamente a la tentación. Un obstáculo inesperado será destruido con furia frenética. Si el organismo humano permitiese la perpetuidad de una pasión furiosa, podría decirse que la condición normal de una masa refrenada en sus deseos es justamente ese estado de pasión furiosa.
+							</p>
+							<p>
+								Las características fundamentales de la raza, que constituyen la fuente invariable de la cual surgen todos nuestros sentimientos, siempre ejercen una influencia sobre la irritabilidad de las masas, su impulsividad y su inestabilidad, al igual que sobre todos los sentimientos masivos que estudiaremos. Todas las masas son, indudablemente, siempre irritables e impulsivas, pero con grandes variaciones de grado. Por ejemplo, la diferencia entre una masa latina y una anglosajona es notable. Los hechos más recientes de la Historia de Francia arrojan una vívida luz sobre este punto. Hace veinticinco años, la mera publicación de un telegrama informando acerca del insulto que supuestamente habría ofendido a un embajador fue suficiente para producir una explosión de furia a la que siguió inmediatamente una guerra terrible. Algunos años más tarde, el anuncio telegráfico de un revés insignificante en Langdon provocó una nueva explosión que trajo consigo el derrocamiento instantáneo de un gobierno. Simultáneamente, un revés mucho más serio sufrido por la expedición inglesa en Khartoum produjo solamente una leve emoción en Inglaterra y ningún ministerio resultó afectado. En todas partes las masas se distinguen por tener características femeninas, pero las masas latinas son las más femeninas de todas. Quienquiera que confíe en ellas, puede rápidamente obtener un destino brillante, pero al hacerlo estará perpetuamente bailando al borde de un precipicio con la certeza de ser despeñado por él algún día.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="sugestionabilidad">&nbsp;</a>
+							<h4 class="toowide">
+								2. La sugestionabilidad y la credulidad de las masas
+							</h4>
+							<p>
+								Al definir a las masas dijimos que una de sus características generales era la de una excesiva sugestionabilidad y hemos mostrado hasta qué punto las sugestiones son contagiosas en toda aglomeración humana; un hecho que explica la rápida orientación de los sentimientos de una masa en una dirección definida. Por más indiferente que se la suponga, una masa, por regla general, se halla en un estado de atención expectante que facilita la sugestión. La primer sugestión que le sea formulada se implantará inmediatamente, por medio de un proceso de contagio, en los cerebros de todos los reunidos y la orientación idéntica de los sentimientos de la masa será inmediatamente un hecho consumado.
+							</p>
+							<p>
+								Al igual que en el caso de las personas bajo la influencia de la sugestión, la idea que ha penetrado en el cerebro tiende a transformarse en acción. Sea que la acción implique prenderle fuego a un palacio o involucre un autosacrificio, la masa se prestará a ella con la misma facilidad. Todo dependerá de la naturaleza del estímulo desencadenante y ya no, como en el caso del individuo aislado, de las relaciones existentes entre la acción sugerida y la suma total de las razones que pueden esgrimirse en contra de su realización.
+							</p>
+							<p>
+								En consecuencia, una masa perpetuamente balanceándose al borde de la inconciencia, pronta a ceder a todas las sugestiones, poseyendo toda la violencia de sentimiento propia de los seres que no pueden apelar a la influencia de la razón, desprovista de toda facultad crítica, no puede ser más que excesivamente crédula. Lo improbable no existe para una masa y es necesario tener esta circunstancia bien presente para comprender la facilidad con la cual las leyendas y las historias más improbables resultan creadas y propagadas.&nbsp;<sup>[5]</sup>
+							</p>
+							<label for="element-toggle-5">
+								[5. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-5" type="checkbox">
+							<div id="toggled-element-5" class="cfnote hidden">
+								<p>
+									[5. Las personas que pasaron por el sitio de París han visto numerosos ejemplos de esta credulidad de las masas. Una vela encendida en un piso superior era vista inmediatamente como una señal dada a los sitiadores, aún cuando resultaba evidente, después de un momento de reflexión, que era totalmente imposible ver la vela en cuestión a una distancia de varias millas de París.]
+								</p>
+							</div>
+							<p>
+								La creación de leyendas que tan fácilmente consiguen circular en las masas no es sólo consecuencia de su extrema credulidad. También es el resultado de las prodigiosas perversiones que los eventos sufren en la imaginación de una multitud. El evento más simple que cae bajo la observación de una masa muy pronto resulta totalmente transformado. Una masa piensa por medio de imágenes, y la imagen misma inmediatamente llama a otras imágenes que no tienen ninguna conexión lógica con la primera. Podemos fácilmente concebir este estado pensando en la fantástica sucesión de ideas que se nos ocurren a veces cuando traemos a la mente cualquier hecho. Nuestra razón nos muestra la incoherencia que hay entre esas imágenes, pero una masa es casi ciega para esta verdad y confunde el hecho real con la distorsión que su imaginación le ha sobreimpreso. Una masa apenas si percibe la diferencia entre lo subjetivo y lo objetivo. Acepta como reales las imágenes evocadas en su mente, aunque con gran frecuencia tengan una relación muy distante con el hecho observado.
+							</p>
+							<p>
+								Parecería ser que son innumerables las formas en que una masa distorsiona cualquier hecho del cual es testigo, desde el momento en que los individuos que componen el conjunto poseen muy distintos temperamentos. Pero no es éste el caso. Como resultado del contagio, las distorsiones son de la misma clase y toman la misma forma para todos los individuos congregados.
+							</p>
+							<p>
+								La primera distorsión de la verdad, cometida por uno de los individuos del conjunto constituye el punto de partida para la sugestión contagiosa. Antes de que San Jorge se apareciese a todos los Cruzados sobre los muros de Jerusalén, seguramente fue visto en primer lugar por uno de los presentes. Por la vía de la sugestión y el contagio, el milagro señalado por una única persona fue inmediatamente aceptado por todos.
+							</p>
+							<p>
+								Tal es siempre el mecanismo de las alucinaciones colectivas tan frecuentes en la Historia -alucinaciones que parecen tener todas las características exigidas de autenticidad desde el momento en que son fenómenos observados por miles de personas.
+							</p>
+							<p>
+								Para combatir lo que precede, la calidad mental de los individuos que componen la masa no debe ser esgrimido. Esta calidad no tiene importancia. Desde el momento en que forma parte de una masa, la persona instruida y el ignorante son igualmente incapaces de observar.
+							</p>
+							<p>
+								Esta tesis puede parecer paradójica. Para demostrarla más allá de toda duda sería necesario investigar un gran número de hechos históricos y varios volúmenes serían insuficientes para el propósito.
+							</p>
+							<p>
+								Aún así, como no quiero dejar al lector bajo la impresión de que estoy haciendo afirmaciones indemostradas, le daré algunos ejemplos tomados al azar del inmenso número de los que podrían ser citados.
+							</p>
+							<p>
+								El siguiente hecho, seleccionado entre las alucinaciones colectivas de las cuales la masa es la víctima, es uno de los más típicos porque se hallan en él individuos de toda clase, desde los más ignorantes hasta los más altamente educados. Dicho sea de paso, ha sido relatado por Julian Feliz, un teniente naval, en su libro &quot;Corrientes Oceánicas&quot; y previamente fue citado en la <em>Revue Cientifique.</em>
+							</p>
+							<p>
+								La fragata <em>Belle Poule</em> se encontraba navegando en mar abierto con el propósito de encontrar al crucero <em>Le Berceau</em> del cual había sido separada por una violenta tormenta. Era pleno día y a pleno sol. De pronto, el vigía dio la voz anunciando que había visto una embarcación precaria; la tripulación miró en la dirección señalada y todo el mundo, tanto oficiales como marineros, claramente vieron una balsa remolcada por botes, cubierta de hombres que estaban dando señales de pedir ayuda. Así y todo, esto no fue mas que una alucinación colectiva. El almirante Desfosses hizo bajar un bote para rescatar a los náufragos. Al irse aproximando al objeto avistado, los marineros y los oficiales a bordo del bote vieron &quot;masas de hombres en movimiento, estirando sus brazos pidiendo ayuda, y oyeron el sordo y confuso ruido de un gran número de voces&quot;. Cuando llegaron de hecho al objeto, se encontraron lisa y llanamente en presencia de algunas ramas de árboles cubiertas de hojas que habían sido arrastradas mar adentro desde la costa cercana. Ante una evidencia tan palpable, la alucinación se desvaneció.
+							</p>
+							<p>
+								El mecanismo de una alucinación colectiva del tipo que hemos explicado se ve claramente en acción a través de este ejemplo. Por un lado tenemos a una multitud en atención expectante. Por el otro lado tenemos una sugestión hecha por el vigía anunciando la vista de una embarcación de náufragos en el mar, una sugestión que, por un proceso de contagio, fue aceptada por todos los presentes, tanto oficiales como marineros.
+							</p>
+							<p>
+								No es necesario que una multitud sea numerosa para que se destruya la facultad de ver lo que está sucediendo ante sus propios ojos y para que los hechos reales sean sustituidos por alucinaciones no relacionadas con ellos. Ni bien algunos pocos individuos se reúnen ya constituyen una masa y, aún cuando sean hombres distinguidos y educados, asumen todas las características de las masas en relación con las cuestiones que se encuentren más allá de su profesión. La facultad de observación y el espíritu crítico que cada uno de ellos posee individualmente desaparecen al instante. Un ingenioso psicólogo, el Sr. Davey, nos ofrece un muy curioso ejemplo sobre el punto, recientemente citado en los <em>Annales des Sciences Psychiques</em> y que merece ser citado aquí. El Sr. Davey, luego de convocar a una reunión de distinguidos observadores, entre ellos uno de los más prominentes científicos de Inglaterra, el Sr. Wallace, ejecutó en su presencia y después de haberles permitido examinar los objetos y colocar sellos en los lugares que quisieran, todos los fenómenos espiritistas regulares como ser, la materialización de espíritus, la escritura sobre tablillas etc. Después de obtener de estos distinguidos observadores informes escritos admitiendo que los fenómenos observados solamente pudieron haber ocurrido por medios sobrenaturales, les reveló que habían sido el resultado de trucos muy simples.
+							</p>
+							<p class="blockquote">
+								&quot;El aspecto más sorprendente de la investigación de Monsieur Davey&quot; - escribe el autor de este informe - &quot;<em>no es lo maravilloso de los trucos en si mismos sino la extrema debilidad de los informes redactados sobre ellos por los testigos no iniciados. </em> Queda claro que testigos, incluso numerosos, pueden dar testimonios circunstanciales completamente erróneos pero cuyo resultado es que, si sus descripciones se aceptan como exactas, los fenómenos que describen resultan inexplicables por medio de trucos. Los métodos inventados por Mr. Davey fueron tan simples que uno se asombra de que haya tenido el atrevimiento de utilizarlos; pero tenía tal poder sobre la mente de la masa, que logró persuadir a los presentes de que vieron lo que no veían.&quot;
+							</p>
+							<p>
+								Aquí, como siempre, tenemos el poder del hipnotizador sobre el hipnotizado. Más aún, cuando se ve a este poder en acción sobre mentes de un nivel superior y expresamente invitadas a ser escépticas, se comprende cuan fácil es engañar a masas ordinarias.
+							</p>
+							<p>
+								Los ejemplos similares son innumerables. En el momento de escribir estas líneas, los diarios están llenos de la historia de dos pequeñas niñas halladas ahogadas en el Sena. Para comenzar, estas niñas fueron identificadas de la manera más irrefutable por media docena de testigos. Todas las afirmaciones fueron tan enteramente coincidentes que no quedó duda alguna en la mente del juez de instrucción. Éste funcionario hizo extender el certificado de defunción pero, justo en el momento en que se iba a proceder al entierro de las niñas, una simple casualidad reveló que las supuestas víctimas estaban vivas y que, más aún, las mismas tenían solamente una remota semejanza con las niñas ahogadas. Al igual que en varios de los ejemplos previamente citados, la afirmación del primer testigo - víctima de una ilusión él mismo - fue suficiente para influenciar a los demás.
+							</p>
+							<p>
+								En casos similares, el punto de partida para la sugestión es siempre la ilusión producida en un individuo por reminiscencias más o menos vagas, seguida del contagio como resultado de la afirmación de esta ilusión inicial. Si el primer observador es muy impresionable, frecuentemente será suficiente que el cadáver que cree reconocer presente - aparte de toda verdadera resemblanza - alguna peculiaridad, como ser una cicatriz, o algún detalle íntimo que pueda evocar la idea de otra persona. Esta idea evocada puede luego convertirse en el núcleo de una especie de cristalización que invade el entendimiento y paraliza toda facultad crítica. Lo que el observador ve luego ya no es el objeto mismo sino la imagen evocada en su mente. Es de esta manera que se explican el reconocimiento equivocado de un muerto por su propia madre, como ocurrió en el siguiente caso, algo antiguo pero recientemente reflotado por los diarios. En esta historia se pueden rastrear precisamente las dos especies de sugestiones cuyo mecanismo acabo de indicar.
+							</p>
+							<p>
+								&quot;El niño fue reconocido por otro niño que se equivocó. Así comenzó la serie de reconocimientos errados.&quot;
+							</p>
+							<p>
+								&quot;Ocurrió una cosa extraordinaria. Al día siguiente de que un escolar reconociese el cadáver una mujer exclamó: »¡Por Dios!¡Es mi hijo!« &quot;
+							</p>
+							<p>
+								&quot;La mujer fue llevada hasta el cuerpo, examinó las ropas y observó una cicatriz en la frente. »Ciertamente - dijo - es mi hijo que desapareció durante el pasado Julio. Me fue robado y ha sido asesinado.« &quot;
+							</p>
+							<p>
+								&quot;La mujer era portera en la Rue du Four y su nombre era Chavandret. Fue citado su cuñado y, al ser interrogado, respondió: »Ése es el pequeño Filibert«. Varias personas que viven en la misma calle reconocieron al niño hallado en La Villette como Filibert Chavandret. Entre ellas estuvo el maestro del niño que basó su identificación en una medalla que el chico llevaba.&quot; &quot;Sin embargo, los vecinos, el cuñado, el maestro y la madre estaban equivocados. Seis semanas más tarde fue establecida la verdadera identidad del niño. El chico, oriundo de Bordeaux, había sido asesinado allí y traído a París por una empresa de transportes.&quot;&nbsp;<sup>[6]</sup>
+							</p>
+							<p class="fnote">
+								[6. <em>L'Eclair,</em> Abril 21, 1895.]
+							</p>
+							<p>
+								Merece ser destacado que estas identificaciones en la mayoría de los casos resultan efectuadas por mujeres y niños - lo cual equivale a decir: por las personas más impresionables. Nos muestran, al mismo tiempo, el valor que tienen estos testigos en una corte judicial. En especial en lo que se refiere a los niños, sus declaraciones no deberían nunca ser admitidas. Los magistrados tienen el hábito de repetir que los niños no mienten. Si poseyesen una cultura psicológica tan sólo un poco menos rudimentaria de lo que es el caso sabrían que, por el contrario, los niños mienten invariablemente. La mentira es indudablemente inocente, pero sigue siendo una mentira a pesar de todo. Sería mejor decidir el destino de una persona tirando una moneda al aire - como con tanta frecuencia se ha hecho - que hacerlo basándose en la evidencia de un niño.
+							</p>
+							<p>
+								Retornando a la facultad de observación que poseen las masas, nuestra conclusión es que sus observaciones colectivas son tan erróneas como pueden serlo y que con mucha frecuencia representan la ilusión de un individuo quien, por un proceso de contagio, ha sugestionado a sus compañeros. Es posible multiplicar a placer los casos que demuestran lo aconsejable que es considerar con el más profundo escepticismo la evidencia suministrada por las masas. Hace veinticinco años miles de personas estuvieron presentes en la célebre carga de caballería de la batalla de Sedan y, sobre la base de los testimonios oculares contradictorios disponibles, todavía sigue siendo imposible determinar quien comandaba esa acción. El general inglés Lord Wolseley ha demostrado en un libro reciente que se han cometido gravísimos errores en la apreciación de los incidentes más importantes ocurridos durante la batalla de Waterloo -hechos que, no obstante, han sido atestiguados por cientos de testigos.&nbsp;<sup>[7]</sup>
+							</p>
+
+							<label for="element-toggle-7">
+								[7. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-7" type="checkbox">
+							<div id="toggled-element-7" class="cfnote hidden">
+								<p>
+									[7. ¿Sabemos de alguna batalla concreta exactamente cómo transcurrió? Lo dudo mucho. Sabemos quienes fueron los vencedores y quienes los vencidos; pero probablemente esto es todo. Lo que M. D'Harcourt ha dicho respecto de la batalla de Solferino que él presenció y en la que estuvo personalmente involucrado, puede ser aplicado a todas las batallas: &quot; <em>Los generales (informados, por supuesto, por la evidencia de cientos de testigos) entregan sus informes oficiales; los puntillosos oficiales modifican estos documentos y redactan una narración definitiva; el jefe del Estado Mayor hace objeciones y lo reescribe todo sobre una nueva base. El resultado es elevado al Mariscal quien exclama: ¡Están completamente equivocados! y confecciona una nueva edición que sustituye a la anterior. Del informe original apenas si queda algo.&quot;</em> M.D'Hancourt relata este hecho como prueba de la imposibilidad de establecer la verdad en relación con los hechos más patentes y mejor observados.]
+								</p>
+							</div>
+							<p>
+								Hechos como éstos nos muestran el valor del testimonio de las masas. Hay tratados que incluyen la unanimidad de numerosos testigos en la categoría de las pruebas más firmes que pueden ser invocadas para fundamentar la exactitud de un hecho. Sin embargo, lo que sabemos de la psicología de las masas nos muestra que los tratados tendrían que ser reescritos en este punto. Los hechos sobre los cuales existe la mayor cantidad de dudas son precisamente aquellos que han sido observados por el mayor número de personas. El decir que un hecho ha sido verificado simultáneamente por miles de testigos equivale a decir, por regla general, que el hecho real fue muy distinto del relato aceptado que de él se tiene.
+							</p>
+							<p>
+								De lo que precede resulta claro que las obras de Historia deben ser consideradas como un producto de la más pura imaginación. Constituyen relatos arbitrarios de hechos mal observados, acompañados de explicaciones que son el resultado de la reflexión. Escribir esta clase de libros implica la más absoluta pérdida de tiempo. Si el pasado no nos hubiera legado obras literarias, artísticas y arquitectónicas, en realidad no sabríamos absolutamente nada acerca de los tiempos idos. ¿Poseemos una sola palabra cierta concerniente a las vidas de los más grandes hombres que han desempeñado un papel preponderante en la Historia de la humanidad - hombre como Hércules, Buda o Mahoma? Con toda probabilidad, no la tenemos. De hecho y más aún, sus vidas reales poseen escasa importancia para nosotros. Nuestro interés consiste en saber cómo fueron nuestros grandes hombres tal como éstos nos son presentados por la leyenda popular. Son los héroes legendarios y de ninguna manera los héroes reales los que han impresionado las mentes de las masas.
+							</p>
+							<p>
+								Desafortunadamente, las leyendas - aún cuando hayan sido documentadas en libros de un modo preciso - no poseen estabilidad interna. La imaginación de la masa las transforma continuamente como resultado del transcurso del tiempo y especialmente como consecuencia de causas raciales. Existe un enorme abismo que separa al sanguinario Jehová del Antiguo Testamento, del Dios del Amor de Santa Teresa; y el Buda reverenciado en China no tiene rasgos en común con el venerado en la India.
+							</p>
+							<p>
+								No es necesario que los héroes se encuentren separados de nosotros por siglos enteros para que su leyenda se transforme debido a la imaginación de la masa. En ocasiones esta transformación tiene lugar en apenas algunos años. En nuestros días hemos visto como la leyenda de uno de los más grandes héroes de la Historia fue modificada varias veces en menos de cincuenta años. Bajo los borbones Napoleón se convirtió en una especie de idílico filántropo liberal, en un amigo de los humildes quien, de cuerdo a los poetas, habría de ser largamente recordado en los hogares modestos. Treinta años después, este héroe amable se convirtió en un sanguinario déspota quien, después de usurpar el poder y destruir la libertad, provocó la masacre de tres millones de hombres para satisfacer su ambición. Actualmente estamos asistiendo a una nueva transformación de la leyenda. Cuando haya soportado la influencia de algunas docenas de siglos, los hombres ilustrados del futuro, enfrentados a estos contradictorios relatos, quizás hasta lleguen a dudar de la existencia misma del héroe de la misma manera en que algunos de ellos hoy dudan de la de Buda, y no verán en él más que un mito solar o un desarrollo de la leyenda de Hércules. Sin duda se consolarán fácilmente por esta incertidumbre puesto que, mejor iniciados de lo que estamos hoy en día en las características y en la psicología de las masas, sabrán que la Historia es escasamente capaz de preservar la memoria de cualquier cosa que no sea un mito.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="exageracion">&nbsp;</a>
+							<h4 class="toowide">
+								3. La exageración y la espontaneidad de los sentimientos de las masas
+							</h4>
+							<p>
+								Tanto si los sentimientos exhibidos por una masa son buenos o malos, en todos los casos presentan el doble carácter de ser muy simples y muy exagerados. En este aspecto, como en tantos otros, un individuo en una masa se parece a los seres primitivos. Incapaz de distinciones sutiles, percibe las cosas como un todo y se vuelve ciego ante las gradaciones intermedias. La exageración de los sentimientos de una masa aumenta por el hecho de que cualquier sensación, una vez exhibida, se comunica muy rápidamente por un proceso de sugestión y contagio, aumentando considerablemente su fuerza por la evidente aprobación de la cual es objeto.
+							</p>
+							<p>
+								La simpleza y la exageración de los sentimientos de las masas tienen por resultado que una multitud no conoce ni duda ni incertidumbre. Al igual que las mujeres, inmediatamente se vuelca a extremos. Una sospecha, ni bien es anunciada, se transforma en evidencia incontrovertible. El inicio de una antipatía o desaprobación, que en el caso del individuo aislado no ganaría fuerza, se convierte en odio furioso cuando se trata del individuo dentro de la masa.
+							</p>
+							<p>
+								La violencia de los sentimientos de las masas también se incrementa, especialmente en masas heterogéneas, por la ausencia de todo sentido de responsabilidad. La certeza de impunidad -una certeza que se vuelve tanto más fuerte mientras más numerosa sea la masa - y la noción de una considerable fuerza impulsora debida al número, hacen posibles para las masas, sentimientos y acciones imposibles para el individuo aislado. Dentro de las masas, las personas estúpidas, ignorantes y envidiosas resultan liberadas de su sensación de insignificancia e impotencia volviéndose poseídas, por el contrario, de una noción de poderío brutal, temporal pero inmenso.
+							</p>
+							<p>
+								Desafortunadamente, esta tendencia de las masas a la exageración con frecuencia se manifiesta a través de malos sentimientos. Los mismos son un residuo atavístico de los instintos del hombre primitivo que, en el individuo aislado y responsable, el miedo al castigo obliga a reprimir. Es por esto que las masas resultan tan fácilmente inducidas a cometes los peores excesos.
+							</p>
+							<p>
+								Aún así, esto no significa que masas hábilmente influenciadas no sean capaces de heroísmo, o devoción, y de poner de manifiesto las más elevadas virtudes. Incluso son capaces de manifestar más de estas cualidades que el individuo aislado. Pronto tendremos ocasión de volver sobre este punto cuando estudiemos la moralidad de las masas.
+							</p>
+							<p>
+								Dada la exageración de sus sentimientos, una masa se impresiona solamente por sentimientos excesivos. Un orador que quiera movilizar a una masa deberá hacer un uso abusivo de afirmaciones violentas. El exagerar, el afirmar, el recurrir a repeticiones y el nunca intentar demostrar cosa alguna por medio de razonamientos, son los métodos de argumentación bien
+							</p>
+							<p>
+								Más aún, una masa exigirá una exageración similar en los sentimientos de sus héroes. Las cualidades visibles de los mismos deben ser siempre amplificadas. Ha sido certeramente observado que, sobre el escenario, una masa exige del héroe de la obra un grado de coraje, moralidad y virtud que nunca se encuentra en la vida real.
+							</p>
+							<p>
+								De un modo acertado se le ha dado importancia al punto de vista con que las cosas son vistas en el teatro. Tal punto de vista existe, sin duda, pero sus reglas en su mayor parte no tienen nada que ver con el sentido común ni con la lógica. El arte de apelar a las masas es indudablemente de un orden inferior pero requiere aptitudes bastante especiales. Muchas veces leyendo los guiones es imposible explicar el éxito de la obra. Los gerentes de los teatros, cuando aceptan las obras, por regla general están muy inseguros respecto de su éxito porque, para juzgar la cuestión, debería ser posible para ellos transformarse a si mismos en una masa.&nbsp;<sup>[8]</sup>
+							</p>
+							<label for="element-toggle-8">
+								[8. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-8" type="checkbox">
+							<div id="toggled-element-8" class="cfnote hidden">
+								<p>
+									[8. Se comprende por esta razón por qué a veces sucede que obras rechazadas por empresarios teatrales obtienen un éxito prodigioso cuando, en virtud de un golpe de suerte, son puestas sobre el escenario. El reciente éxito de la obra &quot;Pour la Couronne&quot; de Francois Coppee es bien conocido y sin embargo, a pesar del renombre del autor, fue rechazada durante diez años por los dueños de los principales teatros de París.]
+								</p>
+							</div>
+							<p>
+								&quot; <em>Charley's Aunt&quot;,</em> rechazada por todos los teatros y finalmente puesta en escena por un agente de bolsa, tuvo doscientas representaciones en Francia y más de mil en Londres. Sin la arriba citada explicación acerca de la imposibilidad de los empresarios teatrales de hacer mentalmente las veces de una masa, serían inexplicables los errores de juicio de parte de individuos competentes que están más que interesados en no cometer tales graves errores. Este es un tema que no puedo tratar aquí pero que podría tentar la pluma de algún escritor, familiarizado con los asuntos teatrales y que fuese al mismo tiempo un sutil psicólogo - un escritor como, por ejemplo, M. Francisque Sarcey.
+							</p>
+							<p>
+								Aquí, una vez más, si pudiésemos embarcarnos en consideraciones más extensas, mostraríamos la preponderante influencia de consideraciones raciales. Una obra que provoca el entusiasmo de la masa de un país a veces no tiene éxito en otro, o bien tiene un éxito sólo parcial y convencional, porque no pone en operación influencias capaces de actuar sobre un público alterado.
+							</p>
+							<p>
+								No necesito agregar que en las masas la tendencia a la exageración se presenta solamente en el caso de los sentimientos y no se presenta en absoluto en cuestiones de inteligencia. Ya he demostrado que, por el simple hecho de formar parte de una masa, el nivel intelectual de un individuo desciende inmediata y considerablemente. Un magistrado ilustre, M. Trade, también ha verificado este hecho en su investigación sobre crímenes cometidos por muchedumbres. Es, entonces, solamente respecto de los sentimientos que las masas pueden ascender a niveles muy altos o, por el contrario, descender a niveles muy bajos.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="intolerancia">&nbsp;</a>
+							<h4 class="toowide">
+								4. La intolerancia, la dictatorialidad y el conservativismo de las masas
+							</h4>
+							<p>
+								Las masas sólo conocen sentimientos simples y extremos; las opiniones, las ideas y las creencias que les son sugeridas resultan aceptadas o rechazadas por ellas como un todo. Las aceptan como verdades absolutas o bien como no menos absolutos errores. Este es siempre el caso de creencias inducidas por un proceso de sugestión en lugar de haber sido engendradas por razonamiento. Todos somos concientes de la intolerancia que acompaña a las creencias religiosas y del imperio despótico que éstas ejercen sobre la mente de las personas.
+							</p>
+							<p>
+								Existiendo la duda acerca de lo que constituye la verdad o el error y teniendo, por el otro lado, una clara noción de su fuerza, una masa estará tan dispuesta a otorgar una validez autoritaria a sus inspiraciones como lo estará a ser intolerante. Un individuo podrá aceptar la contradicción y la discusión; una masa no lo hará jamás. En una reunión pública la más leve contradicción de parte del orador será inmediatamente recibida con gritos de furia y violentas invectivas, muy pronto seguidas de golpes y expulsión si el orador persiste en su argumento. Sin la presencia de representantes de la autoridad, quien contradice a la masa sería, de hecho, muchas veces asesinado.
+							</p>
+							<p>
+								La dictatorialidad y la intolerancia son comunes a todas las categorías de masa, pero se presentan con variados grados de intensidad. Aquí, una vez más, reaparece la noción fundamental de raza que domina todos los sentimientos y todos los pensamientos de los hombres. Es especialmente en las masas latinas que el autoritarismo y la intolerancia se manifiestan en la mayor medida. De hecho, su desarrollo es tal en las masas de origen latino que han destruido por completo ese sentimiento de independencia del individuo tan poderoso en las anglosajonas. Las masas latinas se preocupan solamente de la independencia colectiva de la secta a la cual pertenecen y la característica típica de su concepción de independencia es la necesidad que experimentan de imponer sus creencias, de un modo inmediato y violento, a aquellos que están en desacuerdo. En las razas latinas, los jacobinos de todas las épocas, de los de la Inquisición para abajo, nunca han sido capaces de arribar a un concepto diferente de libertad.
+							</p>
+							<p>
+								El autoritarismo y la intolerancia son sentimientos de los cuales las masas tienen una noción muy clara; los conciben con facilidad, y los asumen con la misma espontaneidad con la que los ponen en práctica una vez que les han sido impuestas. Las masas exhiben un dócil respeto por la fuerza y se dejan impresionar tan sólo débilmente por la amabilidad que, para ellas, es escasamente algo más que una forma de debilidad. Sus simpatías nunca han sido concedidas a gobernantes benévolos sino a tiranos que los han oprimido vigorosamente. Es a estos últimos a quienes siempre han erigido las más imponentes estatuas. Es cierto que están prontas a pisotear al déspota despojado de su poder pero esto es porque, habiendo perdido su fuerza, ha vuelto a ocupar su puesto entre los débiles que son despreciados porque no deben ser temidos. El tipo de héroe amado por las masas siempre se parecerá a un César. Su insignia las atrae, su autoridad las impresiona y su espada les inspira temor.
+							</p>
+							<p>
+								Una masa siempre se rebelará contra una autoridad pusilánime y se inclinará servilmente ante una autoridad fuerte. Si la fuerza de una autoridad es intermitente, la masa, siempre obediente a sus propios sentimientos extremos, pasará alternativamente de la anarquía a la servidumbre y de la servidumbre a la anarquía.
+							</p>
+							<p>
+								Sin embargo, creer en el predominio de instintos revolucionarios en las masas sería malentender por completo su psicología. Es tan sólo su tendencia a la violencia lo que nos engaña en este punto. Sus explosiones de rebeldía y destrucción son siempre muy transitorias. Las masas están demasiado gobernadas por consideraciones inconscientes y, por consiguiente, demasiado sujetas a influencias hereditarias mundanas como para no ser extremadamente conservadoras. Abandonadas a si mismas, muy pronto se cansan del desorden e instintivamente se vuelcan hacia la servidumbre. Fue el más orgulloso y el más intransigente de los jacobinos el que aclamó a Bonaparte con la mayor de las energías cuando éste suprimió toda libertad e hizo sentir severamente su mano de hierro.
+							</p>
+							<p>
+								Es difícil entender a la Historia, y a las revoluciones populares en particular, si uno no tiene en cuenta suficientemente los instintos profundamente conservadores de las masas. Es cierto que pueden estar deseosas de cambiarle el nombre a las instituciones y, para lograr estos cambios, a veces hasta producen revoluciones extremadamente violentas. Pero la esencia de estas instituciones es demasiado la expresión de las necesidades hereditarias de la raza como para que invariablemente no la respeten. Su incesante movilidad sólo ejerce influencia sobre cuestiones bastante superficiales. De hecho poseen instintos conservadores tan indestructibles como los de todos los seres primitivos. Su respeto fetichista por todas las tradiciones es absoluta; su horror inconsciente ante toda novedad capaz de cambiar las condiciones esenciales de su existencia está muy profundamente arraigado. Si las democracias hubiesen tenido el poder que detentan en la actualidad en la época en que se inventaron los complejos dispositivos mecánicos, o la máquina de vapor y los ferrocarriles, la difusión concreta de estos inventos, o bien hubiera sido imposible, o bien hubiera sido lograda al costo de revoluciones y reiteradas masacres. Ha sido afortunado para el progreso de la civilización que el poder de las masas comenzara a producirse sólo una vez que los grandes descubrimientos de la ciencia y de la industria ya habían sido logrados.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="moralidad">&nbsp;</a>
+							<h4 class="toowide">
+								5. La moralidad de las masas
+							</h4>
+							<p>
+								Tomando la palabra &quot;moralidad&quot; en su sentido de constante respeto por determinadas convenciones sociales y la represión permanente de impulsos egoístas, se hace bastante evidente que las masas son demasiado impulsivas para ser morales. Sin embargo, si incluimos en el término &quot;moralidad&quot; el despliegue transitorio de ciertas cualidades tales como abnegación, autosacrificio, desinterés, devoción y la necesidad de equidad, podríamos decir que, por el contrario, las masas pueden llegar a exhibir a veces una muy alta moralidad.
+							</p>
+							<p>
+								Los escasos psicólogos que han estudiado a las masas sólo las han considerado desde el punto de vista de sus actos criminales y, al notar lo frecuentes que son estos actos, han llegado a la conclusión que el nivel moral de las masas es muy bajo.
+							</p>
+							<p>
+								Indudablemente, con frecuencia éste es el caso, pero ¿por qué? Simplemente porque nuestros instintos salvajes, destructivos, son una herencia adormecida en todos nosotros desde eras primitivas. En la vida del individuo aislado sería peligroso para él gratificar estos instintos, mientras que la absorción dentro una masa irresponsable, en la cual consecuentemente se le asegura la impunidad, le otorga entera libertad para seguirlos. En el curso ordinario de los acontecimientos, al ser incapaces de ejercer estos instintos destructivos sobre nuestro prójimo, nos limitamos a ejercerlos sobre animales. La pasión tan ampliamente difundida por las cacerías por un lado y los actos de ferocidad de las masas por el otro, proceden de la misma y única fuente. Una masa que lentamente sacrifica a una víctima indefensa demuestra tener una ferocidad muy cobarde; pero para el filósofo esta ferocidad esta muy estrechamente relacionada con la de los cazadores que se amontonan de a docenas por el placer de tomar parte en la persecución y en la matanza de un desgraciado zorro por parte de sus lebreles.
+							</p>
+							<p>
+								Una masa puede ser culpable de asesinato, incendio, y de cualquier otro tipo de crimen, pero también es capaz de muy elevados actos de devoción, sacrificio y desinterés; de actos mucho más elevados en verdad que aquellos de los cuales es capaz el individuo aislado. Las apelaciones a los sentimientos de gloria, honor y patriotismo son particularmente aptas para influenciar al individuo que forma parte de una masa y muchas veces al extremo de obtener de él el sacrificio de su vida. La Historia es rica en ejemplos análogos a los brindados por los Cruzados y los voluntarios de 1793. Sólo las colectividades son capaces de gran desinterés y de gran devoción. ¡Cuan numerosas son las masas que heroicamente enfrentaron la muerte por creencias, ideas y frases que apenas si entendieron! Las masas que van a la huelga lo hacen mucho más obedeciendo una órden que por obtener un aumento en el magro salario que perciben por su trabajo. El interés personal es muy raramente un motivo poderoso para las masas mientras que es casi el motivo exclusivo para la conducta del individuo aislado. Seguramente no ha sido el interés personal el que ha guiado a las masas a tantas guerras, incomprensibles por regla para su inteligencia - guerras en las que se han dejado masacrar tan fácilmente como la alondra hipnotizada por el espejo del cazador.
+							</p>
+							<p>
+								Incluso en el caso de malhechores con frecuencia sucede que el sólo hecho de estar en una muchedumbre los imbuye momentáneamente de muy estrictos principios de moralidad. Taine llama la atención sobre el hecho de que los perpetradores de las masacres de Septiembre depositaron sobre las mesas de los comités las billeteras y las joyas halladas sobre sus víctimas y con las cuales fácilmente se hubieran podido quedar. La masa aullante, hormigueante y harapienta que invadió las Tullerías durante la revolución de 1848 no tocó ninguno de los objetos que produjeron su asombro, siendo que uno solo de ellos le habría significado el pan de muchos días.
+							</p>
+							<p>
+								La moralización del individuo por la masa no es, ciertamente, una regla constante, pero es una regla frecuentemente observada. Se la observa incluso en circunstancias mucho menos graves que las recién citadas. He indicado que en el teatro la masa exige del héroe de la obra virtudes exageradas y es una observación común que una asamblea, aunque esté compuesta de elementos inferiores, se comporta por regla general de un modo muy formal. El desclasado, el mantenido y el rudo con frecuencia prorrumpen en murmullos ante una escena o ante una expresión levemente inconvenientes, aún cuando las mismas sean muy inofensivas en comparación con su conversación habitual.
+							</p>
+							<p>
+								Si, pues, las masas con frecuencia se abandonan a bajos instintos, también a veces dan el ejemplo de actos de elevada moralidad. Si el desinterés, la resignación, la devoción absoluta a ideas, reales o quiméricas, son virtudes morales, entonces puede decirse que las masas frecuentemente poseen estas virtudes en un grado raramente alcanzado por los más sabios filósofos. Es indudable que las practican inconscientemente, pero esto poco importa. No deberíamos quejarnos demasiado de que las masas estén más bien guiadas por consideraciones inconscientes y no dadas al razonamiento. Si en ciertos casos hubieran razonado y consultado sus intereses inmediatos, es posible que no hubiera surgido una civilización sobre nuestro planeta y la humanidad no tendría Historia.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="1-1-general.htm">&lt; Características generales</a></li>
+									<li class="align-right"><a href="1-3-ideas.htm">Ideas y razonamiento &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

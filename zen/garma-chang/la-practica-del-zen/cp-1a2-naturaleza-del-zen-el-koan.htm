@@ -1,0 +1,348 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tres tipos de koans - La práctica del zen</title>
+	<meta name="description" content="Asignamos temporal y arbitrariamente los numerosos tipos de koans zen en tres grupos.">
+	<meta name="author" content="Garma C. C. Chang">
+	<meta property="og:title" content="Tres tipos de koans - La práctica del zen, Garma C. C. Chang">
+	<meta property="og:description" content="Asignamos temporal y arbitrariamente los numerosos tipos de koans zen en tres grupos.">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load style sheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practica-del-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="cp-1a1-la-naturaleza-del-zen.htm">
+	<link rel="next" href="cp-1a3-zen-como-arte-especial.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 200px;
+			border: 0px solid red;
+		}
+
+		ul.page-links li {
+			border: 0;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width: 300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		.right-image-div img {
+			max-width: 190px;
+		}
+
+		@media only screen and (max-width: 500px) {
+			.right-image-div img {
+				width: auto;
+				max-width: 90%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practica-del-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practica-del-zen-title-include.htm"); ?>
+									<h3>
+										Tres tipos de koans
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="../practice-of-zen/ch-1a2-nature-of-zen-koans.htm">..nature-of-zen-koans.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="cp-1a1-la-naturaleza-del-zen.htm">&lt;&nbsp;La naturaleza del zen</a></li>
+									<li class="align-right"><a href="cp-1a3-zen-como-arte-especial.htm">El zen como arte especial&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- new item Nov 1, 2019 -->
+							<div class="nav-spacer" style="line-height: 1px;">
+							</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#koans-1">Koans - Primer tipo</a></li>
+									<li><a href="#koans-2">Koans - Segundo tipo</a></li>
+									<li><a href="#koans-3">Koans - Tercer tipo</a></li>
+								</ul>
+							</nav>
+							<p class="note">[Continuando con el <strong>punto 2</strong> de la página anterior, <em>formas diversas y desde diversos niveles</em>.]</p>
+							<p>
+								Zen puede explicarse de muchas maneras, porque no existen &quot;instrucciones&quot; definidas del Zen a seguir. Los grandes maestros del Zen rara vez siguieron un programa fijo en sus exposiciones o en la enseñanza a sus discípulos. Sin embargo, con el fin de facilitar un poco la comprensión del Zen, podemos por el momento y arbitrariamente clasificar las innumerables especies de expresiones Zen, que se encuentran en los koans, en tres grupos:
+							</p>
+							<blockquote>
+								<p>
+									1.&nbsp;Koans que aclaran la verdad-Zen mediante declaraciones simples y directas, de tipo &quot;afirmativo-explícito&quot;.
+								</p>
+								<p>
+									2.&nbsp;Koans que aclaran la verdad-Zen mediante formas negativas, de tipo &quot;negativo-implícito&quot;.
+								</p>
+								<p>
+									3.&nbsp;Koans que pueden ser considerados intermedios entre las dos previas categorías, o abarcando a ambas. Daremos algunos ejemplos del primer grupo:
+								</p>
+							</blockquote>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="koans-1">&nbsp;</a>
+							<h4>
+								Koans - Primer tipo
+							</h4>
+							<p>
+								Some examples of group 1 follow:
+							</p>
+							<blockquote>
+								<p>
+									A.&nbsp;<strong>Chao Chou</strong> <a class="note" href="https://en.wikipedia.org/wiki/Zhaozhou_Congshen">[Zhaozhou Congshen]</a> preguntó a <strong>Nan Chuan</strong>: &quot;¿Qué es el tao?&quot; Nan Chuan contestó: &quot;La mente de cualquier hombre es el tao&quot;. Chao Chou preguntó entonces: &quot;¿Cómo es posible llegar a ella?&quot; Nan Chuan contestó: &quot;Si quieres llegar a ella, no hay duda de que se te escapará&quot;. &quot;Si no llegas a ella, ¿cómo puedes saber que es el tao?&quot;. &quot;El tao no es un problema que consiste en saber, o en no saber. Conocer es una manera ilusoria de pensar, y no saber es una forma de insensibilidad. Si se realiza el tao correctamente, la mente será semejante a un gran espacio, vasto, vacío y claro. ¿Cómo es posible, pues, que esto nos parezca justo y aquello nos parezca erróneo?&quot; Al oír aquella observación Chao Chou fue iluminado, de súbito.
+								</p>
+							</blockquote>
+							<ul class="fnote">
+								<li>Ma Tsu <a class="note" href="https://en.wikipedia.org/wiki/Mazu_Daoyi">[Mazu Daoyi]</a> fue el maestro de Nan Chuan.</li>
+								<li>Nan Chuan <a class="note" href="https://en.wikipedia.org/wiki/Nanquan_Puyuan">[Nanquan Puyuan]</a> fue el maestro de Chao Chou. </li>
+								<li>Chao Chou <a class="note" href="https://en.wikipedia.org/wiki/Zhaozhou_Congshen">[Zhaozhou Congshen]</a> fue un maestro zen en la dinastía Tang.</li>
+							</ul>
+							<p>
+								Wu Men <a class="note" href="https://en.wikipedia.org/wiki/Wumen_Huikai">[Wumen Huikai]</a> hizo un comentario interesante sobre el koan citado: &quot;Aunque Chao Chou tuvo la iluminación, debió afanarse durante treinta años antes de alcanzar la meta&quot;.
+							</p>
+							<ul class="fnote">
+								<li>Ma Tsu fue también el maestro de Pai Chang.</li>
+								<li>Pai Chang <a class="note" href="https://en.wikipedia.org/wiki/Baizhang_Huaihai">[Baizhang Huaihai]</a> fue el maestro de Huang Po</li>
+								<li>Huang Po (m. 850) <a class="note" href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">[Huangbo Xiyun]</a> y Chao Chou (m. 897) eran contemporáneos, según una historia a continuación. Para obtener más información sobre Huang Po, consulte la sección Zen, Enseñanzas zen de Huang Po, [inglés] <a class="note" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">.. dharma-of-mind/contents-introduction-preface.htm</a> </li>
+							</ul>
+							<blockquote>
+								<p>
+									B.&nbsp;El maestro <strong>Huang Po</strong> dijo en su sermón: &quot;Todos los Budas, y los seres sensibles forman una sola mente. Desde el comienzo sin comienzo de los tiempos, esta Mente nunca llega a surgir, y nunca es extinguida. No es ni azul ni amarilla. No tiene ni forma ni molde. No es ni existente ni no existente, ni vieja ni nueva, ni larga ni corta, ni grande ni pequeña. Está más allá de toda limitación y toda medida, más allá de todas las palabras y los nombres, trasciende todas las huellas, toda relatividad. ¡Está aquí, ahora! Pero en cuanto surge un pensamiento (en la mente) ¡ya está perdida! Es como el espacio, que no tiene bordes, inconmensurable e impensable. Buda no es más que esto: ¡tu propia mente!&quot;
+								</p>
+								<p>
+									C.&nbsp;El Segundo Patriarca <a class="note" href="https://en.wikipedia.org/wiki/Dazu_Huike">[Dazu Huike]</a> preguntó al <strong>Bodhidharma</strong>, <a class="note" href="https://en.wikipedia.org/wiki/Bodhidharma">[Bodhidharma]</a> &quot;¿Cómo es posible alcanzar el tao?&quot; El Bodhidharma contestó:
+								</p>
+								<p>
+									Exteriormente, toda actividad cesa; interiormente, la mente deja de agitarse. Cuando la mente se ha convertido en un muro, entonces puede ingresar al tao.
+								</p>
+							</blockquote>
+							<p>
+								Esta significativa estrofa es uno de los koans esotéricos que los maestros Zen prefieren no comentar y no explayar. A pesar de su tono aparentemente &quot;místico&quot; y su profundo significado, es muy explícita y directa. Describe sencillamente la experiencia concreta del estado previo a la iluminación. Este koan, por lo tanto, pertenece al primer grupo.
+							</p>
+							<blockquote>
+								<p>
+									D.&nbsp;El maestro <strong>Shen Tsan</strong> <a class="note" href="https://en.wikipedia.org/wiki/Sheng-yen">[Sheng-yen]</a> llegó a la iluminación con la ayuda de <strong>Pai Chang</strong>. <a class="note" href="https://en.wikipedia.org/wiki/Baizhang_Huaihai">[Baizhang Huaihai]</a> Después regresó al monasterio en el cual había hecho sus votos ante su primer maestro, el monje que lo había educado desde la infancia y que, en ese entonces, era un hombre muy viejo. Un día Shen Tsan estaba bañando a su viejo maestro.
+								</p>
+								<p>
+									Mientras lavaba la espalda del viejo, le dijo: &quot;Este templo es muy hermoso, pero el Buda que lo habita no es, en absoluto, un santo&quot;. El viejo maestro se dio vuelta y lo miró, a lo cual comentó Shen Tsan:
+								</p>
+								<p>
+									&quot;Aunque el Buda no es santo, todavía puede irradiar luz&quot;. Otra vez, cierto día en que el viejo estaba leyendo un sutra junto a una ventana cubierta de papel, una abeja empezó a luchar desesperadamente, con todas sus fuerzas, por entrar a la habitación, pero el papel se lo impedía. Shen Tsan, al observar esto, dijo:
+								</p>
+								<blockquote class="2nd-level">
+									<p>
+										&quot;El mundo es tan vasto y tan anchuroso que bien puedes liberarte en él. ¿Por qué razón sigues golpeándote contra ese viejo y podrido papel?</p>
+									<p>
+										Cuando la puerta está abierta de par en par, ¡qué tonto es querer salir precipitándose sobre la ventana! ¡Ay! ¿cómo puedes tú, maestro, levantar tu cabeza sobre el pantano si hundes la nariz en papeles viejos y podridos desde hace cien años?&quot;
+									</p>
+								</blockquote>
+								<p>
+									Al escuchar esta observación, el viejo alejó la cara del libro y dijo a Shen Tsan: &quot;Desde hace algún tiempo estás haciendo comentarios desusados. ¿De quién has aprendido cuando estabas lejos de aquí?&quot; Shen Tsan contestó: &quot;He obtenido el estado de descanso apacible por la gracia del maestro Pai Chang. Ahora he vuelto a pagar la deuda de gratitud que tengo contigo&quot;. Entonces el viejo maestro preparó un gran banquete en honor de su joven discípulo, convocó a los monjes del monasterio a la reunión y rogó a Shen Tsan que predicara el dharma a todos ellos. Entonces Shen Tsan subió a un elevado sitial y siguiendo la tradición de Pai Chang, predicó del siguiente modo:
+								</p>
+								<blockquote class="2nd-level">
+									<p>
+										La maravillosa Luz es extrañamente irradiante: libre está de la servidumbre de la materia y los sentidos. No sujeta a palabras y letras la esencia se muestra desnuda en su eternidad pura. La Esencia Mental nunca es mancillada: existe en su perfección desde el principio. Basta con libraros de vuestras ilusiones para alcanzar el fundamento esencial del Buda.
+									</p>
+								</blockquote>
+								<p>
+									Tan pronto como el viejo maestro oyó esta estrofa, se despertó.
+								</p>
+								<p>
+									E. La observación del <strong>Sexto Patriarca [Hui Neng]</strong> <a class="note" href="https://en.wikipedia.org/wiki/Huineng">[Huineng]</a> es, asimismo, otro buen ejemplo: &quot;Si has venido aquí en busca del dharma, debes primero librarte de toda actividad mental y no permitir que ningún género de pensamientos surja en ti. Entonces te predicaré el dharma&quot;. Después de un largo silencio, el Sexto Patriarca continuó diciendo: &quot;No pienses en el bien, no pienses en el mal, justamente en este mimo instante, ése es tu rostro original&quot;. Hui Ming fue inmediatamente iluminado.
+								</p>
+								<p class="fnote"></p>
+							</blockquote>
+							<p>
+								Si se considera la frase &quot;no pienses en el bien, no pienses en el mal&quot;, este koan puede interpretarse fácilmente, como negativo o negativista. Pero el punto esencial de la observación del Sexto Patriarca está en las palabras que siguen: justamente en este mismo instante, ése es tu rostro original. Nada podría ser más directo y más afirmativo que esto.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="koans-2">&nbsp;</a>
+							<h4>
+								Koans - Segundo tipo
+							</h4>
+							<p>
+								Consideremos ahora unos pocos koans que pertenecen a nuestro segundo grupo, la clase &quot;negativa-implícita&quot; que da una idea de la verdad-Zen mediante expresiones &quot;nulificadoras&quot; o sustractivas.
+							</p>
+							<blockquote>
+								<p>
+									A. Dijo un maestro Zen: &quot;Si tienes un báculo te daré uno; si no tienes báculo, te quitaré uno&quot;.
+								</p>
+								<p>
+									B.&nbsp;<strong>Te Shan</strong> <sup>[1]</sup> <a class="note" href="https://en.wikipedia.org/wiki/Deshan_Xuanjian">[Deshan_Xuanjian]</a> dijo: &quot;Si no puedes contestar, te daré treinta azotes; si puedes contestar, también te daré treinta azotes&quot;.
+								</p>
+							</blockquote>
+							<p class="fnote">
+								[1. Para Te Shan (Deshan Xuanjin) t.c.c. Te-shan Hsüan-chien (780-865) vea (inglés) <a class="note" href="https://terebess.hu/zen/deshan.html">terebess.hu/zen/deshan.html</a>&nbsp;]
+							</p>
+							<p>
+								C.&nbsp;&quot;¿Qué es el Buda?&quot; &quot;Un bastón de estiércol seco&quot;.
+							</p>
+							<p>
+								D.&nbsp;Un monje le preguntó a Chao Chou: &quot;¿Qué es Chao Chou?&quot; Chao Chou contestó: &quot;El portón del este, el portón del oeste, el portón del sur y el portón del norte&quot;.
+							</p>
+							<p>
+								E.&nbsp;Un monje preguntó a <strong>Tung Shan</strong>: <sup>[2]</sup> <a class="note" href="https://en.wikipedia.org/wiki/Dongshan_Liangjie">[Dongshan Liangjie]</a> &quot;Cuando el frío invierno y el cálido verano llegan, ¿cómo puedes evitarlo?&quot; Tung Shan contestó: &quot;¿Por qué no huyes a un lugar en el cual no haya ni frío invierno ni cálido verano?&quot; Tung Shan agregó: &quot;En el invierno el maestro está congelado, y en el verano está mortalmente calcinado&quot;.
+							</p>
+							<p class="fnote">
+								[2. Vea en este sitio (inglés): <a href="/zen/dongshan/thomas-cleary-comments-on-five-ranks-etc.htm">../dongshan/thomas-cleary-comments-on-five-ranks-etc.htm</a>&nbsp;]
+							</p>
+							<p>
+								F.&nbsp;Un día I Shan, Wu Feng y algunos otros monjes estaban ante Pai Chang. Pai Chang preguntó a I Shan: &quot;¿Cómo puedes hablar sin la garganta, los labios y la lengua?&quot; I Shan contestó: &quot;En ese caso, maestro, dilo tú&quot;. Pai Chang replicó: &quot;No tengo inconveniente en decírtelo, pero no quiero asesinar mi posteridad&quot;.
+							</p>
+							<p>
+								G.&nbsp;Un monje preguntó a Nan Chuan: &quot;¿Hay alguna enseñanza que no deba impartirse al pueblo?&quot; &quot;Sí&quot;. &quot;¿Cuál?&quot;. &quot;No es la mente, no es e1 Buda y no es una cosa&quot;.
+							</p>
+							<p>
+								H.&nbsp;Un monje estaba recitando el Sutra del Diamante: &quot;...si uno ve que las formas no son las formas, entonces uno ve al Buda&quot;. El maestro pasaba casualmente y oyó esto. Entonces dijo al monje: &quot;Recitas erróneamente. El texto dice: Si uno ve que las formas son las formas, entonces uno ve al Buda.&quot;. El monje exclamó: &quot;¡Lo que acabas de decir es justamente lo contrario de las palabras del Sutra!&quot;. Entonces, el maestro contestó: &quot;¿Cómo puede un ciego leer el Sutra?&quot;.
+							</p>
+							<p>
+								I.&nbsp;Un día <strong>Lin Chi</strong> <sup>[3]</sup> <a class="note" href="https://en.wikipedia.org/wiki/Linji_Yixuan">[Linji Yixuan]</a> vio a un monje que se le acercaba. Lin Chi levantó su Fo Tzu (plumero); el monje, entonces, se inclinó ante él, pero Lin Chi lo golpeó. Al cabo de un rato pasó otro monje. Lin Chi volvió a levantar su Fo Tzu. Como este monje no diera muestras de respeto, Lin Chi lo golpeó igualmente.
+							</p>
+							<p class="fnote">
+								[3. El maestro de Lin Chi fue Huang Po (arriba). Ver también el Capítulo III: <a href="cp-3d-cuatro-distinciones-de-lin-chi.htm">Las "Cuatro Distinciones" de Lin Chi</a>&nbsp;]
+							</p>
+							<p>
+								J. Un día Lin Chi fue invitado por su protector a pronunciar un sermón. Cuando subió al púlpito y en el momento en que se disponía a hablar, Ma Ku se adelantó y le preguntó: &quot;El Todo-Misericordioso (Avalokitesvara) tiene mil brazos y mil ojos. ¿Cuál es el ojo principal?&quot; Lin Chi contestó: &quot;El Todo-Misericordioso tiene mil brazos y mil ojos. ¿Cuál es el ojo principal? ¡Dilo, dilo!&quot;. Entonces Ma Ku sacó a la fuerza a Lin Chi de su asiento y se sentó en él. Lin Chi se acercó a Ma Ku y dijo humildemente: &quot;No comprendo, señor&quot;. Ma Ku iba a contestar, cuando Lin Chi lo sacó del asiento y se sentó é1 en su lugar. Entonces Ma Ku salió del salón. Cuando Ma Ku ya se había ido, Lin Chi descendió también del asiento, y no se pronunció ningún sermón (Ver capitulo III &quot;Los cuatro problemas del budismo Zen&quot;.)
+							</p>
+							<p>
+								K. El Sexto Patriarca [<strong>Hui Neng</strong>] dijo en su famosa estrofa: <sup class="black">*</sup>
+							</p>
+							<p class="note80">* Ver en nuestro sitio: Sutra de la Platforma: <a href="/zen/hui-neng/plataforma/contenido.htm">/zen/hui-neng/<wbr />plataforma/<wbr />contenido.htm</a></p>
+							<blockquote>
+								<p>
+									El Bodhi no es como un árbol; el límpido espejo no brilla en ninguna parte; desde el comienzo, ninguna cosa existe. ¿Dónde puede uno encontrar el polvo que se junta?
+								</p>
+								<span class="note80">[Para más sobre Hui Neng, consulte las siguientes 2 páginas y la nota final Capítulo 1 Nota 8.]</span>
+							</blockquote>
+							<p>
+								Si ninguna cosa puede llegar a ser, desde el comienzo mismo, ¿cómo podemos acusar a los maestros Zen de ser negativos? El hecho es que ellos no han negado nada. Lo que han hecho es indicar nuestros errores, que nos llevan a pensar que lo no-existente es existente, y lo existente no-existente.
+							</p>
+							<p>
+								Esta clasificación más bien arbitraria de dos clases de expresiones Zen no es definitiva ni irrevocable y no implica que éstas sean plenamente afirmativas o absolutamente negativas. Pues en los koans de tipo afirmativo hay también un elemento negativo, y en el negativo, un elemento afirmativo. Ningún koan pertenece exclusivamente a una de las dos categorías. La verdad Zen que ambos tratan de aludir no ha sido modificada ni mutilada, a pesar de la aparente diferencia en la presentación.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="koans-3">&nbsp;</a>
+							<h4>
+								Koans - Tercer tipo
+							</h4>
+							<p>
+								Los koans de nuestro tercer grupo son algo difíciles de entender y explicar. Los monjes Zen los describen como de &quot;tipo impenetrable&quot;, como &quot;montañas de plata y paredes de hierro&quot;. Hablando estrictamente, sólo pueden ser comprendidos por personas adelantadas, cuyas profundas intuiciones corresponden a las de los actores, por lo cual están capacitadas para discernir en forma directa y clara el significado del koan, sin necesidad de recurrir a la adivinación o al análisis. Si uno está dispuesto a correr el riesgo de no captar el sentido, estos koans pueden no ser necesariamente ininteligibles o inexplicables, pero es dudoso que ésta sea una actitud recomendable. De todos modos, se dan aquí algunos ejemplos, con el fin de que el lector los interprete de acuerdo con su propio entendimiento y sus propias luces.
+							</p>
+							<blockquote>
+								<div class="right-image-div">
+									<img src="images/nan-chuan-kills-the-cat.jpg" alt="Chao Chou" />
+									<p class="note">
+										Nan Chuan (c.749-c.835)<br />
+										<a href="https://en.wikipedia.org/wiki/Nanquan_Puyuan">Nanquan Puyuan<br />
+											"Nansen mata al gato"</a>
+									</p>
+								</div>
+								<p>
+									A.&nbsp;Un día en el monasterio de <strong>Nan Chuan</strong>, los monjes del ala oriental tuvieron una pelea con los del ala occidental por la posesión de un gato. Todos acudieron a Nan Chuan para que oficiara de juez. Blandiendo un cuchillo en una mano y el gato en la otra, Nan Chuan dijo: &quot;Si alguno de vosotros puede acertar en decir lo que hay que decir el gato se salvará; de lo contrario, lo cortaré en dos&quot;. Ninguno de los monjes supo decir nada. Entonces Nan Chuan mató al gato. Esa noche, cuando Chao Chou volvió al monasterio, Nan Chuan le preguntó qué hubiera dicho en el caso de haber estado presente. Chao Chou se quitó las sandalias de paja, se las puso sobre la cabeza y se alejó. Entonces Nan Chuan comentó: &quot;¡Oh, si hubieras estado aquí, el gato se habría salvado!&quot;
+								</p>
+								<p>
+									B.&nbsp;Teng Yin Feng era un discípulo de <strong>Ma Tsu</strong>. <a class="note nowrap" href="https://en.wikipedia.org/wiki/Mazu_Daoyi">[Mazu Daoyi]</a> Un día decidió visitar al maestro Shih Tou (significa piedra, o peñasco). Cuando le dijo esto a Ma Tsu, el maestro dijo: &quot;Está bien. Puedes ir allá. Pero el camino es muy resbaladizo&quot;. Teng Yin Feng contestó: &quot;Llevo mi báculo conmigo. Puede desempeñar mi papel en cualquier drama en que la vida me meta&quot;; Y se dirigió a la morada de Shih Tou. Al entrar a la habitación, rodeó el diván en que meditaba Shih Tou, golpeó el suelo con el báculo y preguntó: &quot;¿Qué sentido tiene esto?&quot; Shih Tou exclamó: &quot;¡Oh, cielos, oh, cielos!&quot; Yin Feng no dijo nada y volvió a ver a Ma Tsu a pedirle consejo.
+								</p>
+								<p>
+									Ma Tsu propuso: &quot;Vuelve a verlo y repite exactamente las mismas palabras. Cuando te conteste, inmediatamente (con fuerza) sopla produciendo el sonido ¡jui, jui!&quot;. Yin Feng fue a ver a Shih Tou por segunda vez y le hizo la misma pregunta. Inesperadamente, Shih Tou no le contestó y se limitó a soplar dos veces, produciendo el sonido ¡jui, jui! (antes de que Yin Feng tuviera oportunidad de hacer lo mismo). Al no saber cómo reaccionar, Yin Feng volvió a Ma Tsu y le contó lo ocurrido. Ma Tsu dijo entonces: &quot;¡Ya te dije que el camino de Shih Tou es muy resbaladizo!&quot;
+								</p>
+								<p>
+									C.&nbsp;Un monje llamado Tien Jan fue a visitar al maestro Hui Chung. Al llegar preguntó a un monje ayudante si el Maestro Real estaba en casa. El monje contestó: &quot;Si, pero no recibe visitas&quot;. Tien Jan dijo: &quot;¡Oh, lo que dices es demasiado profundo y extraño!&quot; El monje ayudante contestó: &quot;Ni siquiera los ojos del Suda lo pueden ver&quot;. Entonces dijo Tien Jan: &quot;La hembra del dragón pare un dragoncito y la del fénix pare un pequeño fénix!&quot;. <a class="return-anchor" id="return-cp-1a2-nota-3"></a><sup><a href="notas.htm#capitulo-1-3">[Nota&nbsp;final&nbsp;1-3]</a></sup> Y se retiró. Más tarde, cuando Hui Chung se despertó de su sueño y se enteró de lo que había ocurrido, golpeó al monje asistente.
+								</p>
+								<p>
+									Cuando Tien Jan se enteró de esto, hizo este comentario: &quot;¡Este viejo merece ser llamado el maestro real!&quot; Al día siguiente Tien Jan volvió a visitar a Hui Chung. En cuanto divisó al maestro real, extendió sobre el suelo su manta (como disponiéndose a sentarse). Hui Chung dijo: &quot;No es necesario, no es necesario&quot;. Tien Jan retrocedió un poco y el maestro real dijo: &quot;Está bien; está bien&quot;. Pero, de repente, Tien Jan avanzó nuevamente unos cuantos pasos. Entonces, el maestro real dijo: &quot;No, no&quot;. Entonces Tien Jan dio una vuelta alrededor del maestro y se fue. Más tarde, el maestro comentó: &quot;Mucho tiempo ha pasado desde los días de los Bienaventurados. La gente es ahora muy holgazana. Dentro de treinta años será muy difícil encontrar un hombre como este&quot;.
+								</p>
+								<p>
+									D. Chao Chou fue a visitar a Huang Po. Cuando Huang Po lo vio, a la distancia, cerró la puerta. Entonces Chao Chou tomó una antorcha y gritó en el aula magna: &quot;¡Fuego, socorro, socorro!&quot; Al oír el grito, Huang Po abrió la puerta y salió. En cuanto vio a Chao Chou, lo tomó del brazo y dijo: ¡dilo, dilo!&quot; Chao Chou contestó: &quot;Empiezas a preparar el arco cuando el ladrón ya se ido&quot;.
+								</p>
+							</blockquote>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="cp-1a1-la-naturaleza-del-zen.htm">&lt;&nbsp;La naturaleza del zen</a></li>
+									<li class="align-right"><a href="cp-1a3-zen-como-arte-especial.htm">El zen como arte especial&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Volver arriba">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

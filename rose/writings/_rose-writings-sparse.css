@@ -1,0 +1,73 @@
+/* file:  /rose/writings/_rose-writings-refresh-2.css
+
+Update May 31, 2020. May 18, 2022
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update May 18, 2022";
+	}
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fff9f9;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #cce0ea;
+}
+
+/* Chapter number in page titles */
+#article h3 span.block {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 100%;
+}
+
+
+/* DIFFERENT SIZE TITLE IMAGE DEPENDING ON DEVICE */
+/* on a phone */
+@media only screen and (min-width:501px) and (max-width:767px) {
+	#title-image-tablet {
+		display: block;
+	}
+
+	#title-image-phone {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	#title-image-tablet {
+		display: none;
+	}
+
+	#title-imge-phone {
+		display: block;
+	}
+
+	.title-image {
+		max-width: 240px;
+	}
+}
+
+
+
+/* end */

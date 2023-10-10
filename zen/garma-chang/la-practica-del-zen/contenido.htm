@@ -1,0 +1,190 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Practica del Zen, por Garma C.C. Chang</title>
+	<meta name="description" content="¿Qué es el zen? Estilo Zen y Arte Zen; Discursos e historias de notables maestros zen; Zen y budismo; Zen meditación y samadhi.">
+	<meta name="author" content="Garma C.C. Chang">
+	<meta property="og:title" content="La Practica del Zen, por Garma C.C. Chang" />
+	<meta property="og:description" content="¿Qué es el zen? Estilo Zen y Arte Zen; Discursos e historias de notables maestros zen; Zen y budismo; Zen meditación y samadhi.">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/la-practica-del-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practica-del-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!--this is first <link rel="prev">-->
+	<link rel="next" href="prefacio.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Social Media, American Zen
+
+Garma C.C. Chang (1920-1998) was a pioneer in introducing Zen and Tibetan tantra to the west. He was born in China,
+ was recognized as a master in Tibet, and then immigrated to the United States in the 1950s. In the US he became 
+ a research fellow at the Bollingen Foundation in New York, and  wrote many books, beginning with 
+ The Practice of Zen, published in 1959, 
+
+Biography:
+https://www.tsemrinpoche.com/tsem-tulku-rinpoche/buddhas-dharma/professor-garma-cc-chang-the-illustrious-pioneer.html
+
+*/
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practica-del-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practica-del-zen-title-include.htm"); ?>
+									<h3>
+										Contenido
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="../practice-of-zen/contents.htm">../../contents.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="prefacio.htm">Prefacio del autor&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="index-lists">
+								<!-- items have :hover styling, color change -->
+								<!-- from "protype-contents-index-page" Voice as updated -->
+								<ul class="index-contents-links">
+									<li><a href="prefacio.htm">Prefacio del autor</a> </li>
+									<li class="menu-header">I. ¿Qué es el Zen?</li>
+									<li><a href="cp-1a1-la-naturaleza-del-zen.htm">Estilo Zen y arte Zen</a> </li>
+									<li><a href="cp-1a2-naturaleza-del-zen-el-koan.htm">Tres tipos de koan</a> </li>
+									<li><a href="cp-1a3-zen-como-arte-especial.htm">El Zen como arte budista especial</a> </li>
+									<li><a href="cp-1b-corazon-del-zen.htm">El corazón del Zen: estudios sobre los tres aspectos principales de la mente</a> </li>
+									<li><a href="cp-1c-cuatro-puntos-vitales.htm">Cuatro puntos vitales del buddism del Zen</a> </li>
+									<li class="menu-header">II. La práctica de Zen</li>
+									<li><a href="cp-2-analysis-general-de-la-practica-del-zen.htm">Análisis general de la práctica del Zen</a> </li>
+									<li class="menu-header">Discursos de cuatro maestros Zen</li>
+									<li><a href="cp-2b1-cuatro-maestros-discurso-hsu-yun.htm">1. Discursos del maestro Hsu Yun</a> </li>
+									<!-- same link -->
+									<li><a href="cp-2b2-discursos-tsung-kao.htm">2. Discursos del maestro Tsung Kao</a> </li>
+									<li><a href="cp-2b3-discursos-po-shan.htm">3. Discursos del maestro Po Shan</a> </li>
+									<li><a href="cp-2b4-discurso-han-shan.htm">4. Discurso del maestro Han Shan</a> </li>
+									<li class="menu-header">Breves autobiografías de cinco maestros Zen</li>
+									<li><a href="cp-2c1-autobiografias-cinco-maestros-han-shan.htm">1. Resumen de la autobiografía del Maestro Han Shan</a> </li>
+									<li><a href="cp-2c2-historia-wu-wen.htm">2. Historia del maestro Wu Wen</a> </li>
+									<li><a href="cp-2c3-historia-hsueh-yen.htm">3. Historia del maestro Hsueh Yen</a> </li>
+									<li><a href="cp-2c4-historia-meng-shan.htm">4. Historia del maestro Meng Shan</a> </li>
+									<li><a href="cp-2c5-historia-kao-feng.htm">5. Historia del maestro Kao Feng</a> </li>
+									<li class="menu-header">III. Los cuatro problemas del budismo Zen</li>
+									<li><a href="cp-3a-los-quatro-problemas-es-inintelligible.htm">¿Es completamente ininteligible el Zen?</a> </li>
+									<li><a href="cp-3b-iluminacion-de-tipo-zen.htm">¿Qué es la iluminación de tipo Zen?</a> </li>
+									<li><a href="cp-3c-zen-y-el-budismo-mahayana.htm">El Zen y el budismo mahayana</a> </li>
+									<li><a href="cp-3c-zen-y-el-budismo-mahayana.htm">Las &quot;cuatro distinciones&quot; de Lin Chi</a> </li>
+									<li class="menu-header">IV. Buda y la meditación</li>
+									<li><a href="cp-4a-buda-y-la-meditacion.htm">Los tres aspectos de la Budeidad en relación a los seis tipos de pensamiento</a> </li>
+									<li><a href="cp-4b-practica-de-la-meditacion.htm">Práctica de la meditación budista</a> </li>
+									<li><a href="cp-4b1-cuatro-characteristicas-del-samadhi.htm">1. Las cuatro características básicas del samadhi</a> </li>
+									<li><a href="cp-4b2-siete-clases-de-meditacion.htm">2. Las siete clases de meditación</a> </li>
+									<li><a href="cp-4b3-tres-etapas-de-la-meditacion.htm">3. Las tres etapas sucesivas de la meditación</a> </li>
+									<li class="menu-header">Referencia</li>
+									<li><a href="notas.htm">Notas al final numeradas</a> </li>
+									<li><a href="bibliografia.htm">Bbibliografía</a> </li>
+									<li><a href="apendice-chino.htm">Apéndice (notas finales con letras, caracteres chinos)</a> </li>
+									<!-- not used, only have for English version <li>
+                                        <a href="book-index.htm">Índice del libro</a>
+                                    </li> -->
+								</ul>
+								<p class="note80">
+									Traducción de Patricio Canto. Queda hecho el depósito que previene la ley 11.723 @ by Editorial la Pleyade - Sarandí 748 - Buenos Aires. Impreso en Argentina.
+								</p>
+								<p class="note">Este libro como pdf (117 pp., 2.9 meg): <a href="/zen/Garma-Chang-La-Practica-Del-Zen-en-espanol.pdf">/zen/Garma-Chang-La-Practica-Del-Zen-en-espanol.pdf</a></p>
+
+								<hr />
+								<ul class="index-links">
+									<li>Rinzai Zen at <a href="https://en.wikipedia.org/wiki/Rinzai_school">Wikipedia</a> </li>
+									<li>Chan Buddhism at <a href="https://en.wikipedia.org/wiki/Chan_Buddhism">Wikipedia</a></li>
+								</ul>
+								<ul class="index-links">
+									<li class="header-item">Más Zen en este sitio (inglés)</li>
+									<li class="first-item">Huang Po: <a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Dharma of Mind Transmission</a></li>
+									<li>Hubert Benoit: <a href="/zen/benoit/supreme-doctrine/contents.htm">The Supreme Doctrine</a></li>
+									<li>Yongjia Xuanjue: <a href="https://selfdefinition.org/zen/song-of-enlightenment/shasta-abbey.htm">Song of Enlightenment</a></li>
+									<li>Hsin-Hsin Ming: <a href="/zen/hsin-hsin-ming/faith-in-mind-dusan-pajin-translation.htm">On Faith In Mind</a></li>
+									<li>Hui-Neng: <a href="/zen/hui-neng/plataforma/contenido.htm">Sutra of the Sixth Patriarch, Sutra de la Platforma</a>
+									</li>
+								</ul>
+								<ul class="index-links">
+									<li class="header-item">Enlaces externos (inglés)</li>
+									<li class="first-item">Zhang Chengji (1920-1988), aka Garma C. C. Chang at <a href="https://terebess.hu/zen/mesterek/GarmaChang.html">Terebess.Hu</a></li>
+									<li>Terebess.Hu: <a href="https://terebess.hu/zen/textindex.html">Zen Literature Index</a></li>
+									<li>TheZenSite: <a href="http://www.thezensite.com/index.html">thezensite.com </a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="prefacio.htm">Prefacio del autor&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Volver arriba">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

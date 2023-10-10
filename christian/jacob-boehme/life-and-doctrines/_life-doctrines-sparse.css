@@ -1,0 +1,78 @@
+/* file:  /christian/jacob-boehme/life-and-doctrines/_life-doctrines-sparse.css    
+
+Update Feb 23, 2020 test April 1 2020. May 11, 2022 */
+
+
+@media only print {
+	#article:after {
+		content: "Update May 11, 2022";
+	}
+}
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffea;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #d2d2ff;
+}
+
+
+/* section specific */
+
+/* make "quote" same as blockquote 
+{margin-left:15px;margin-bottom:25px;}
+
+@media only screen and (max-width:500px)
+{
+    blockquote, p.blockquote, div.blockquote {margin-left:4px;}
+}
+*/
+p.quote,
+div.quote {
+	margin-left: 15px;
+	margin-bottom: 25px;
+}
+
+
+/* was #400, #fec
+p.quote, div.quote {color:inherit;background:#fec;}
+*/
+
+@media only screen and (max-width:500px) {
+
+	p.quote,
+	div.quote {
+		margin-left: 4px;
+	}
+}
+
+nav.in-page-nav + p {
+	margin-top: 40px;
+}
+
+p.asterisks {
+	text-align: center;
+}
+
+/* testing */
+
+
+/* end */

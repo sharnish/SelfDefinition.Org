@@ -1,0 +1,47 @@
+<!-- start of menu include file Section update April 20, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float <  check, where is it cleared? -->
+			<li><a class="replaceable-link" href="#"><span></span></a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="/search/selfdefinition-search.htm">Search</a></li>
+			<li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a class="replaceable-link" href="#"><span></span></a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!--
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            -->
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text" style="margin-top:10px;">
+			<li class="note" style="margin-left:10px;">How may we help?</li>
+			<li class="normal note" style="margin-left:10px;">404 Page Not Found</li>
+			<!--
+        <li><img src="images/science.jpg" alt="science" /></li>
+        -->
+			<li id="menu-image-item">
+				<!-- replace with jquery or with CSS, &nbsp; for fallback -->
+				<img id="menu-image" class="menu-image" src="" alt="" />&nbsp;
+			</li>
+		</ul>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

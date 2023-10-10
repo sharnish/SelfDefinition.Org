@@ -1,0 +1,161 @@
+/* file:  /celibacy/quotes/_amazon-modified-for-quotes.css
+
+a modified version of /redirect/_amazon.css
+
+Used in: Napoleon Hill 1 and 2, also Celibay Articles
+
+Update May 3, 2020  -- used with "recommended-books.htm" only  */
+
+
+div.amazon-section {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* modification 1 -- doesn't do anything
+div.amazon-section {line-height: 1.5x;} */
+
+.amazon-section h4 {
+    margin-bottom: 5px;
+}
+
+.amazon-section p.image-warning {
+    margin-top: 5px;
+}
+
+div.amazon-section header p {}
+
+
+/* styles copied from osho, but not used here yet */
+ul.amazon-list {
+    font-size: 90%;
+    padding-left: 25px;
+}
+
+ul.amazon-list li {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+ul.amazon-list li.header {
+    list-style: none;
+    padding-left: 0px;
+    margin-left: -15px;
+}
+
+/* see html prototype for this below */
+
+div.item-list {
+    border: 0px solid red;
+}
+
+div.item-container {
+    border: 0px solid blue;
+}
+
+div.image-link {
+    border: 0px solid green;
+}
+
+div.text-link,
+div.text-link-only {
+    border: 0px solid maroon;
+}
+
+
+div.item-list {
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.item-container {
+    width: 95%;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+}
+
+div.image-link,
+div.text-link {
+    float: left;
+    display: block;
+}
+
+div.image-link {
+    width: 30%;
+    margin-top: 0px;
+}
+
+div.image-link img {
+    width: 100%;
+    margin: 0;
+}
+
+div.text-link {
+    width: 60%;
+    margin-left: 20px;
+}
+
+/* modification 2 */
+div.text-link p {
+    margin-top: 5px;
+}
+
+div.text-link-only {
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width:500px) {
+    div.item-container {
+        width: 100%
+    }
+
+    div.image-link {
+        width: 30%;
+        margin-top: 5px;
+    }
+
+    div.text-link {
+        width: calc(70% - 12px);
+        margin-left: 10px;
+    }
+
+    div.text-link-only {
+        width: 100%;
+    }
+}
+
+
+/************** End Amazon CSS *****************/
+/************** Amazon html Prototype ***************
+
+
+<div class="item-list">
+
+    <div class="item-container">
+        <!-- Prototype, identify here -->
+        <div class="image-link">
+        </div>
+        <div class="text-link">
+
+            <p class="note80">
+            </p>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+And
+
+    <div class="item-container">
+        <!-- Prototype, identify here -->
+        <div class="text-link-only">
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+</div>
+
+
+*******************************************/

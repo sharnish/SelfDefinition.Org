@@ -1,0 +1,251 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listening to the Silences, Bibliography </title>
+	<meta name="description" content="Listening to the Silences, Bibliography">
+	<meta name="author" content="Roy Vincent">
+	<meta property="og:title" content="Listening to the Silences, Bibliography">
+	<meta property="og:description" content="Listening to the Silences, Bibliography">
+	<meta property="og:image" content="https://selfdefinition.org/hearing-voices/silences/images/roy-vincent-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_silences-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script> <!-- Jquery toggle chapter and essay menu items -->
+	<script src="_silences-show-hide-chapters.js"></script>
+	<link rel="prev" href="summary-of-ploys.htm">
+	<link rel="next" href="gallery.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		dt {
+			margin: 10px;
+			font-style: italic;
+		}
+
+		dd {
+			margin: 10px 0px 20px 40px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_silences-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, in title-include for small screens --> <?php include( "_silences-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Bibliography
+									</h3>
+								</header>
+							</div> <!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="summary-of-ploys.htm">&lt; Summary of Ploys</a></li>
+									<li class="align-right"><a href="gallery.htm">Gallery &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height:1px;">&nbsp;
+							</div>
+
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li class="item"><a href="#books">Books and Authors</a></li>
+									<li class="item"><a href="#acknowledgements">Further Acknowledgements</a></li>
+								</ul>
+							</nav>
+							<!-- extra hook added April 30, 2022 -->
+							<div class="page-text">
+
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="books">&nbsp;</a>
+								<h4>
+									References: Books and Authors</h4>
+								<p>
+								<dl>
+									<dt>Earth Radiation</dt>
+									<dd>
+										K&auml;the Bachler Wordmasters 0951415107
+									</dd>
+									<dt>The Body Electric</dt>
+									<dd>
+										Robert O. Becker &amp; Gary Selden 0-688-06971-1</dd>
+									<dt>Crosscurrents</dt>
+									<dd>
+										Robert O. Becker 0-87477-609-0</dd>
+									<dt>The Road to Ubar</dt>
+									<dd>
+										Nicholas Clapp 0-285-63476-3</dd>
+									<dt>Something in the Air</dt>
+									<dd>
+										Roger W. Coghill</dd>
+									<dt>Tracks</dt>
+									<dd>
+										Robyn Davidson 0-586-08392-8</dd>
+									<dt>Nutritional Medicine</dt>
+									<dd>
+										Dr. Stephen Davies &amp; Dr. Alan Stewart 0-330-28833-4</dd>
+									<dt>The Presence of Other Worlds</dt>
+									<dd>
+										Wilson Van Dusen Standard Book No 06- 080432-8</dd>
+									<dt>How to Survive Medical Treatment</dt>
+									<dd>
+										Dr. Stephen Fulder 0-85207-279-1</dd>
+									<dt>The Secret of the Ring Muscles</dt>
+									<dd>
+										Paula Garbourg 0-89529-762-0</dd>
+									<dt>Are You Sleeping in a Safe Place?</dt>
+									<dd>
+										Rolf Gordon 0-951401-0-X</dd>
+									<dt>Schizophrenia Genesis</dt>
+									<dd>
+										Irving I. Gottesman 0-7167-2147-3</dd>
+									<dt>Silent Music</dt>
+									<dd>
+										William Johnston S.J. Collins: Fontana and Fount</dd>
+									<dt>Chemical Victims</dt>
+									<dd>
+										Dr. Richard Mackarness 0-330-25937-7</dd>
+									<dt>Not All in the Mind</dt>
+									<dd>
+										Dr. Richard Mackarness</dd>
+									<dt>Deliverance From Evil Spirits</dt>
+									<dd>
+										Francis MacNutt</dd>
+									<dt>Healing the Family Tree</dt>
+									<dd>
+										Dr. Kenneth McAll 0-85969-532-8</dd>
+									<dt>Remarkable Healings</dt>
+									<dd>
+										Shakuntala Modi M.D. 1-57174-079-1</dd>
+									<dt>Mind as Healer, Mind as Slayer</dt>
+									<dd>
+										Kenneth R. Pelletier 0-385-28646-5</dd>
+									<dt>Mental Illness/Mental Health - The nutrition Connection</dt>
+									<dd>
+										Dr. Carl Pfeiffer, Patrick Holford &#8211; 1-870976-12-6</dd>
+									<dt>Earth Currents</dt>
+									<dd>
+										Gustav Freiherr Von Pohl 3-7724-94021-1</dd>
+									<dt>Self Healing</dt>
+									<dd>
+										Meir Schneider 014-01.9127.5</dd>
+									<dt>The Handbook of Self-Healing</dt>
+									<dd>
+										Meir Schneider, with Maureen Larkin &amp; Dror Schneider 0-14-019331-6
+									</dd>
+									<dt>Love Medicine and Miracles</dt>
+									<dd>
+										Bernie S. Siegel M.D. 0-7126-1264-5</dd>
+									<dt>The Ion Effect</dt>
+									<dd>
+										Fred Soyka with Alan Edmonds 0-553-20755-5</dd>
+									<dt>Renewal and the Power of Darkness</dt>
+									<dd>
+										Cardinal L&eacute;on-Joseph Suenens 0-232-51591-3</dd>
+									<dt>Medical Blunders</dt>
+									<dd>
+										Robert Youngson, Ian Schott 1-85487-259-1</dd>
+								</dl>
+								<!-- comment out - the referenced website appears to be defunct 
+                        <p>
+                            Several of the books are difficult to find now, but in obtaining many of the rest
+                            I have had much help from an excellent provider of books in a wide range of subjects
+                            relating to alternative and complementary practices, and I can fully recommend the website "The
+                            Tao of Books" at www.taobook.com</p>
+                            -->
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="acknowledgements">&nbsp;</a>
+								<h4>
+									Further Acknowledgements</h4>
+								<p>
+									I cannot close without making particular mention of two who have helped me practically
+									in overcoming the problems that a novice on a computer and the Internet can encounter.</p>
+								<p>
+									My tentative steps towards computer literacy were guided by Jim Hewitson, who also,
+									by being available on the end of a phone, has several times saved me from something
+									nasty that has happened inside my PC.</p>
+								<p>
+									You are actually reading this now as a result of the know-how and skills of Jamie
+									Millington &#8211; another who has inducted me into some of the minor mysteries
+									of the Internet and the World Wide Web.</p>
+								<p>
+									Thank you both, and thank you to everyone else who has contributed since I began
+									to write.</p>
+
+
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="end">&zwj;</a>
+
+
+							</div><!-- end class="page-text -->
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="summary-of-ploys.htm">&lt; Summary of Ploys</a></li>
+									<li class="align-right"><a href="gallery.htm">Gallery &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

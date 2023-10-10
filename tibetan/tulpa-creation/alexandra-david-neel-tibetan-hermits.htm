@@ -1,0 +1,453 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tibetan Buddhist Hermits</title>
+    <meta name="description" content="The term 'stay in tsams', to live in seclusion, applies to the non-material
+    world; the adepts need no material contrivances to isolate themselves while meditating.">
+    <meta name="author" content="Alexandra David-Neel">
+    <meta property="og:title" content="Tibetan Buddhist Hermits">
+    <meta property="og:description" content="The term 'stay in tsams', to live in seclusion, applies to the non-material
+    world; the adepts need no material contrivances to isolate themselves while meditating.">
+    <meta property="og:image" content="https://selfdefinition.org/tibetan/tulpa-creation/images/alexandra-david-neel-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_tulpa-creation-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        blockquote {
+            border-left: 1px solid maroon;
+            padding-left: 13px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        html.dark blockquote {
+            border-left: 1px solid #FF8968;
+        }
+
+        h5 {
+            font-weight: bold;
+            color: maroon;
+            margin-bottom: 0;
+        }
+
+        ul.page-links {
+            width: 245px;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_tulpa-creation-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_tulpa-creation-title-include.htm"); ?>
+                                    <h3>
+                                        <span class="block">On Tibetan Buddhist Hermits</span> Alexandra David-Neel
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="magic-creation-of-a-yidam.htm">&lt; Creation of a Yidam</a></li>
+                                    <li class="align-right"><a href="contents.htm">Article Index &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <header>
+                                <p class="tiny">
+                                    Source at: <a href="https://www.hermitary.com/articles/david-neel.html">www.hermitary.com</a></p>
+                                <!--ARTICLES: HOUSE OF HERMITS-->
+                            </header>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#introduction">Introduction</a></li>
+                                    <li><a href="#hermits-of-tibet">Hermits of Tibet</a></li>
+                                    <li><a href="#tsams">Tsams, or hermit solitude </a></li>
+                                    <li>&nbsp;&nbsp;Complete darkness</li>
+                                    <li>&nbsp;&nbsp;Hermitage</li>
+                                    <li>&nbsp;&nbsp;Solitude</li>
+                                    <li><a href="#conclusion">Conclusion</a></li>
+                                    <li><a href="#references">Bibliographical References</a></li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="introduction">&nbsp;</a>
+                            <h4 class="top-heading">
+                                Introduction
+                            </h4>
+                            <p class="fnote">
+                                This article is from a website featuring hermits in general, but is included here because David-Neel refers to the practice of <em>Tsams</em> (seclusion) in her comments on creating her own tulpa: <a href="alexandra-david-neel-comments.htm#david-neel-creates">alexandra-david-neel-comments.htm<wbr />#david-neel-creates</a> The website offers some introductory comments, but the majority of the text is from David-Neel's writings.
+                            </p>
+                            <p>
+                                During the years of the early twentieth century, the French-born Alexandra David-Neel (1868-1969) traveled throughout Asia, experiencing first-hand a culture that was not only unknown to the West but which was to fast disappear even among the peoples of the East. A solitary woman traveler, her many narratives comprise a colorful odyssey mingling the spiritual, the cultural, and the anthropological.
+                            </p>
+                            <p>
+                                Even so, she rued being unable to unearth the core of the more magical accretions in the primitive and popular Buddhism she discovered. Of her presence in Tibet, David-Neel writes:
+                            </p>
+                            <blockquote>
+                                <p>
+                                    I am far from having obtained even a glimpse of all the strange mystic doctrines and practices which are hidden from the profane in the hermitages of the "Land of Snow."
+                                </p>
+                            </blockquote>
+                            <p>
+                                More specifically:
+                            </p>
+                            <blockquote>
+                                <p>
+                                    Tibetans had accepted me as a lady-lama; they knew that I was a professed Buddhist and could not guess the difference existing between my philosophic conception of the Buddha's doctrine and lamaist Buddhism. ... So, in order to enjoy the confidence, respect and intimacy which my religious garb brought me, I was compelled to behave in close accordance with Tibetan customs, especially with religious ones. This was a serious hindrance, and often deprived my observations of a great part of their scientific interest, but it was the unavoidable price I had to pay for being admitted on ground still much more jealously guarded than the material territory of Tibet. ... I had to repress my desire for full investigation and remain satisfied ...
+                                </p>
+                            </blockquote>
+                            <p>
+                                Some of her more interesting observations are of hermits and their dwellings and practices. The following information is derived from her <em>Magic and Mystery in Tibet</em>, first published in 1929. <sup>[1]</sup>
+                            </p>
+                            <p class="fnote">
+                                [1. First published in French, then translated as <em>With Mystics and Magicians in Tibet</em>. There are significant differences among the different versions.]
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="hermits-of-tibet">&nbsp;</a>
+                            <h4>
+                                Hermits of Tibet
+                            </h4>
+                            <p>
+                                Some of David-Neel's encounters with hermits were anecdotal. She tells of finding the hermitage of a <em>gomchen</em> <sup>[2]</sup> or lama near Lake Mo-te-tong. "It consisted of a spacious cave, to which one room after another had been added, until it resembled a small fort," she writes.
+                            </p>
+                            <p class="fnote">
+                                [2. A non-monastic practitioner of Dzogchen. See <a class="inline" href="https://en.wikipedia.org/wiki/Ngagpa">en.wikipedia.org/<wbr />wiki/<wbr />Ngagpa</a>&nbsp;]
+                            </p>
+                            <blockquote>
+                                <p>
+                                    The hermit had inherited the cave-dwelling from three generations of lamas, so that it held an accumulation of many objects of comfort and assuage. Still, the hermit had never left the vicinity of his abode, and while he received visitors, he lived austerely, never lying down to sleep, for instance, using instead a gamti or meditation box in which he sat upright.
+                                </p>
+                            </blockquote>
+                            <p>
+                                David-Neel describes the dwelling:
+                            </p>
+                            <blockquote>
+                                <p>
+                                    One door only gave access to the hermitage enclosure, and this door the lama never approached. Two lower rooms under the rock&mdash;kitchen, store-room and servant's quarter all together&mdash;opened on an inner courtyard closed in, on the side which gave on to the precipice by a high wall. Above these rooms, an upper cave was the private apartment of the lama, which was reached by a ladder and a trap-door in the floor. This chamber stood on a small terrace, also closed by walls. So the recluse could take a little exercise or sun himself without being seen by anyone outside and without himself seeing anything but the sky overhead.
+                                </p>
+                            </blockquote>
+                            <p>
+                                Indeed, David-Neel was able to stay a week in one such cave-dwelling, well-appointed by the monks of a near-by monastery at Lachen. Here she found wooden chests and tables, a multi-colored curtain, beautiful religious scrolls and paintings, all overlooking a "romantic and absolutely solitary site."
+                            </p>
+                            <p>
+                                In another experiment, she stayed all winter in a cave with a wooden attachment, near a <em>gomchen's</em> own solitary dwelling, plus one for her adopted Tibetan son Yongden, and another for their servants, the latter accomplishing the labor and securing the provisions without which she would have been unable to maintain her solitude. David-Neel notes that she lived as the "Carthusians, without the diversion which they may find in attendance at religious services."
+                            </p>
+                            <p>
+                                The most valuable <span class="note">[to the source website]</span> passages of David-Neel's account concern the novitiate of a new disciple. All disciples receive a formal grounding in philosophical concepts, in symbolic understanding, and in the basics of meditation. Afterwards, two courses may be pursued, each involving three stages. The three stages of instruction are 1) tawa, involving the ability to examine reality, 2) gom, cultivating the ability to think and meditate, and <span class="nowrap">3) chyod pa,</span> the ability to practice or realize the imparted principles. In more perceptive disciples, the first stage may be a deeper <em>ton</em> or use of reason, followed by <em>lob</em> or formal study of various doctrines. To reflectively think and to meditate is essential to both classes of disciples, while the more advanced third stage may consist of <em>tog</em> or a deeper understanding of the principles.
+                            </p>
+                            <p>
+                                After these stages, the lama will usually have the novice enter tsams, or "<strong>stay in tsams</strong>," which means to live in seclusion. Tsams literally means barrier or border, and signifies a material boundary, in this case the hut or cave of seclusion.<em> However, the concept of tsams applies to the non-material world, so that the adept "need no material contrivances to isolate themselves while meditating."</em>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="tsams">&nbsp;</a>
+                            <h4>
+                                Tsams, or hermit solitude
+                            </h4>
+                            <p>
+                                At this point, entire passages from David-Neel's book convey first-hand information on the hermit practice of tsams and are reproduced here:
+                            </p>
+                            <blockquote>
+                                <p>
+                                    There exist several categories of <strong>tsams</strong>, each one being subdivided into a number of varieties.
+                                </p>
+                                <p>
+                                    Proceeding from the less austere towards the most severe forms, we find the following ones:
+                                </p>
+                                <p>
+                                    A lama or a lay devotee shuts himself in his room or private apartment. He does not go out or only does so at fixed time, to perform some devotional practices such as walking around religious edifices making repeated prostrations before sacred objects, or the like.
+                                </p>
+                                <p>
+                                    According to the rule which he has adopted, the tsamspa either may be seen or must remain invisible. In the first case, he is generally permitted to talk briefly with the members of the household, his relatives or servants, and even to receive a few visitors. In the second case, he may only be seen by those who attend him. If a visitor is admitted, he must remain within hearing outside the tsamspa's room. A curtain screens the entrance and the interlocutors remain invisible to each other as in some Roman Catholic contemplative orders of nuns.
+                                </p>
+                                <p>
+                                    A number of Tibetans resort occasionally to one or another of these mild forms of seclusion for non-religious motives, seeking merely to avoid disturbance while engaged in the study of any branch of Tibetan learning: grammar, philosophy, astrology, medicine, etc.
+                                </p>
+                                <p>
+                                    Next comes the recluse who sees but one attendant.
+                                </p>
+                                <p>
+                                    He who renounces speaking and makes known his needs by writing.
+                                </p>
+                                <p>
+                                    He who partly covers his window, so that he cannot see the surrounding landscape, nor any outside object except the sky.
+                                </p>
+                                <p>
+                                    He who renounces the sight of the sky, covering his window entirely, or living in a windowless room which, nevertheless, admits the daylight indirectly.
+                                </p>
+                                <p>
+                                    He who sees no one at all.
+                                </p>
+                                <p>
+                                    In this case, if the tsamspa enjoys the use of a suite of rooms, his meals are brought into one of them, while he retires into another. When he lives in a single room, food is placed next the entrance. Someone knocks at the door to inform the recluse that what he needs is ready, and then the inmates of the house leave the adjacent room or corridors for a moment to allow the tsamspa to come out without being seen. Any object is returned in the same way, the tsamspa calling attention by knocking at the door or ringing a bell.
+                                </p>
+                                <p>
+                                    Among those who practice this particular kind of tsams, some ask by writing for the things which they require, but others renounce this facility. Consequently, whatever may be their needs, they cannot make them known. Even if those who attend on them forgot to give them their meal, they ought to fast in silence.
+                                </p>
+                                <p>
+                                    Generally tsams in one's own house do not last long, especially of the strict kind. One year seems to be an exceptional period. One usually hears of people who live in seclusion for three months, one month and even a few days only. Laymen rarely shut themselves in their apartment for more than one month.
+                                </p>
+                                <p>
+                                    It is easy to understand that prolonged and severe tsams cannot be practiced in an ordinary residence. There, whatever care is taken, the moving about of people busy with worldly affairs and the noise inevitably reach the tsamspa, through the thin barrier of his closed door.
+                                </p>
+                                <p>
+                                    The silence and quiet surroundings which may be enjoyed to a high degree in the monasteries are not even deemed sufficient by some, and many gompas own special small houses built for the use of their members who wish to live in strict seclusion.
+                                </p>
+                                <p>
+                                    These houses are called tsamskhang, from mtshams and khang or house, thus: "a house where to live in seclusion." They are sometimes situated in an out-of-the-way spot, inside the monastery's walls, but more frequently stand aloof on some hill, at a little distance outside the walled enclosure. It is not unusual to find groups of these meditation houses standing in the solitude, at a few days' march from their parent monastery.
+                                </p>
+                                <p>
+                                    From the windows of some of them, the recluse may have sight of beautiful landscapes, while others are surrounded by walls that cut off the view on all sides. In that case, the enclosure often forms a small courtyard or terrace where the tsamspa may sit or walk in the open, without being seen, or himself seeing anything of the outside world.
+                                </p>
+                                <p>
+                                    Most tsams khangs are divided into two rooms. In one of them, the recluse sits and sleeps, the other one is the kitchen in which an attendant may live.
+                                </p>
+                                <p>
+                                    When the tsampa must see no one and keep the rule of silence, his attendant lives in a separate hut. A double wicket is then built in he wall or the door of the recluse's room, and through it meals are given to him.
+                                </p>
+                                <p>
+                                    Solid food is generally served only once a day, but buttered tea is brought several times. If the lama belongs to one or another of the "Red Cap" <sup>[3]</sup> sects, beer alternates with the tea. Tibetans having the custom of keeping a small bag of barley flour at hand, the recluse is at liberty to eat some with his tea or beer, whenever he likes.
+                                </p>
+                                <p class="fnote">
+                                    [3. The three oldest of the four main schools of Tibetan Buddhism, namely: Nyingma, Sakya, Kagyu. The fourth school is Gelug and is known as the Yellow Hat sect.]
+                                </p>
+                                <p>
+                                    Only members of the religious order retire in the cottages specially built to be used as meditation houses. Some remain in seclusion during several consecutive years. A canonic period is three years, three months, three weeks, and three days. Some repeat that long retreat twice or thrice in the course of their life, and a few shut themselves in tsams for life.
+                                </p>
+                                <h5>
+                                    Complete darkness
+                                </h5>
+                                <p>
+                                    There exists a still more austere form of tsams: that of dwelling in complete darkness.
+                                </p>
+                                <p>
+                                    Meditation in darkness is not a practice peculiar to Lamaism. It is known in all Buddhist countries. I have seen different kinds of rooms in Burma, specially built for the purpose, and made use of them myself during my stay on the Sagain hills. But while Burmese and other Buddhist monks only spend a few hours at a time there, certain Tibetan ascetics bury themselves for years, and even till death, in such grave-like dwellings. However, these extreme cases are rare.
+                                </p>
+                                <p>
+                                    When complete night is desired and the sojourn in the tsams khang is to be long, the latter is often established in a grotto or a partly underground building, ventilated by chimneys constructed in such a way that they do not allow the light to penetrate into the recluse's cell. This, however, is very seldom done. Usually the dark hermitage is aerated in a natural&mdash;and, indeed, very imperfect&mdash;way, through fissures and the like. Though these must, perforce, admit some light together with air, that light seems often of a purely theoretical kind, for in some of these obscure abodes it is impossible to distinguish any object. Yet, after a time, the eyes of the tsamspas get accustomed to dark, and succeed in vaguely seeing their surroundings.
+                                </p>
+                                <p>
+                                    According to what I have heard from men who have spent long periods of seclusion in darkness, these hermits enjoy, at times, wonderful illuminations. Their cell becomes bright with light or, in the darkness, every object is drawn with luminous outlines; or again, a phantasmagoria of shining flowers, landscapes and personages arises before them.
+                                </p>
+                                <p>
+                                    Optic phenomena of that kind are certainly common, for they have also been described to me in Burma, by bhikkhus who practiced meditation in darkness, and I suppose that everybody has seen something of the kind at night.
+                                </p>
+                                <p>
+                                    Tibetans see in this a way of testing the degree of fixity attained by the mind. The kaleidoscopic mirage is considered by them as entirely subjective. It is, they think, caused by the uncontrolled agitation of the mind. When the latter is brought near stillness, the phantasmagoria vanishes. There remains only a spot (thigle) which may be either dark colored or like a diminutive globe of light. At first that spot moves and the aim of the practice is to fix it.
+                                </p>
+                                <p>
+                                    The stage in which the spot remains motionless, without undergoing any change in size, color, etc., is the moment when the mystic is able to concentrate his thoughts on any object he chooses without any other ideas breaking his "one-pointedness" of mind. The next stage is marked by the disappearance of the spot which sinks in utter darkness. This however is not always attained; many continue to proudly enjoy the fairy-scene, thinking that they have obtained a glimpse of paradise.
+                                </p>
+                                <p>
+                                    Besides recreations of this kind, a number of subtler enchantments await the tsamspa in his hermitage. These, according to religious teachers, are traps which catch the unintelligent disciple who ventures on the mystic path.
+                                </p>
+                                <p>
+                                    When the tsamspa, who has spent a long time in darkness, is nearing the end of his retreat, he gradually accustoms his eyes to see the daylight again. For that purpose, a hole, the size of a pin's head, is pierced in a mud part of the wall and is enlarged each day till the aperture forms a small window. This operation may take several months and is either done by the recluse himself or by another person: his guru or a friend. The longer the time spent in obscurity the slower is the admission of light into the cell.
+                                </p>
+                                <h5>
+                                    Hermitage
+                                </h5>
+                                <p>
+                                    Novices who shut themselves up entirely for the first time, either in light or dark tsams khangs, generally receive instructions from their guru during their seclusion.
+                                </p>
+                                <p>
+                                    The lama speaks to them from outside, through the double wicket which is used to pass in the recluse's meal. The guru of a tsamspa who must see nobody, often shuts the entrance of the latter's cell with his own seal. A religious ceremony is performed on that occasion and another one when the master breaks the seal and the recluse steps out.
+                                </p>
+                                <p>
+                                    If the tsams is not of the severe kind, a flag may be placed at the recluse's door, on which are written the names of the persons who are allowed to enter his rooms: attendants or visitors allowed by the tsamspa's teacher.
+                                </p>
+                                <p>
+                                    A dry branch is sometimes driven in the earth or stuck in a pot, near the hermitage of a tsamspa who shuts himself up for life.
+                                </p>
+                                <p>
+                                    The term <strong>tsams khang</strong> is more generally applied to <strong>meditation-cottages</strong> built in the vicinity of a monastery. Those standing in more remote places are called <strong>ritöd.</strong>
+                                </p>
+                                <p>
+                                    <em>Ritöds</em> are never built at the bottom of a valley, they are always perched on a dominating spot, and the choice of the site is made in accordance with special rules. Two well-known Tibetan verses depict the main conditions required.
+                                </p>
+                                <p class="blockquote">
+                                    Gyab rii tag
+                                    <br />
+                                    Dun rii tso
+                                </p>
+                                <p class="blockquote">
+                                    The mountain rock, behind.<br />
+                                    The mountain lake in front.
+                                </p>
+                                <p>
+                                    That is to say that the hermitage should be built on the hillside with a background of rocks, or better still against the rock itself, looking down on a lake or, at least, a stream.
+                                </p>
+                                <p>
+                                    Various other regulations have been laid down, in accordance with the requirements of peculiar spiritual and psychic trainings. Thus, some dwellings must permit an extended view so that the anchorite can see the sun rising and setting. The noises produced by running water or wind must be muffled as far as possible. The vicinity of woodland is advised or a barren landscape deemed more suitable, etc.
+                                </p>
+                                <p>
+                                    Ritödpas do not remain continually shut in their houses. Outside the periods of strict tsams, most of them go out between the hours which they devote to meditation or other practices. According to the rule imposed by their guru, or self-imposed, they are either allowed, or forbidden, to talk with their neighbors while fetching water, collecting fuel or taking a walk around their cabin. Meditation in the open is sometimes advised by the ritödpa's spiritual guide or some practice it from their own inclination.
+                                </p>
+                                <p>
+                                    Though the term ritöd, properly speaking, means a "group of hermitages," current usage applies it to all single isolated anchorite abodes: huts or caves.
+                                </p>
+                                <p>
+                                    It is to such primitive dwellings far away from inhabited regions, that staunch naljorpas <sup>[4]</sup> who aim at climbing the rugged rocks of spiritual heights, retire.
+                                </p>
+                                <p class="fnote">
+                                    [4. "One who has attained perfect serenity", but in more general usage, a Tibetan ascetic possessing magic powers. <em>With Magicians and Masters in Tibet</em>, page 13. <em>Magic and Mystery in Tibet</em>, page&nbsp;19.]
+                                </p>
+                                <p>
+                                    Those who are still at the novice stage, tramp at long intervals to their guru's place to tell him about their psychic experiences, the ideas to which their meditation have given birth, and also to receive his advice and communication of spiritual power (angkur rite). Several years may elapse between such meetings.
+                                </p>
+                                <p>
+                                    As for the hermits who are teachers, some of them allow a few promising beginners to live in their vicinity. "Vicinity" is, however, a wide term. The disciple may stay on the same hill as his master at a spot situated lower down than the latter's dwelling, or at one or two days' march.
+                                </p>
+                            </blockquote>
+                            <h5>
+                                Solitude
+                            </h5>
+                            <p>
+                                David-Neel concludes this section with a summary about solitude.
+                            </p>
+                            <blockquote>
+                                <p>
+                                    The current idea in the West is that a man cannot maintain seclusion or absolute solitude for a considerable length of time. It is believed that these unavoidably bring in their train, brain disorders, finally leading to stupidity and madness.
+                                </p>
+                                <p>
+                                    This is perhaps true about the individuals on whom the effects of isolation have been studied: lighthouse guards, travelers thrown on to desert island after a shipwreck, explorers lost in uninhabited regions, prisoners in solitary confinement, etc. But such observations do not apply to Tibetan hermits. The latter after ten or twenty years, or even a longer time, in the wilderness or in tsams khangs, are far from being insane. One may dispute the theories which they have conceived during their protracted meditations, but it is impossible to question their sanity.
+                                </p>
+                                <p>
+                                    There is nothing really remarkable about this. These men are prepared for loneliness. Before shutting themselves in their tsams khang or settling in a ritöd, they have accumulated in their mind a store of ideas which keep them company. Moreover, they are not inactive during their retreat, long as it may be. Their days are occupied by methodical exercises in spiritual training, the search for occult knowledge or meditations on philosophic problems. And so, often passionately interested in these manifold investigations and introspections, they are actually very busy and hardly notice their solitude.
+                                </p>
+                                <p>
+                                    I have never heard a Tibetan hermit say that, even at the beginning of his retreat, he had suffered from lack of associations with men. Generally, those who have tasted the anchorite life find it difficult, if not impossible, to resume life among other people or to enjoy regular social intercourse.
+                                </p>
+                                <p>
+                                    Whatever those unacquainted with it may think, solitude and utter loneliness are far from being devoid of charm.
+                                </p>
+                                <p>
+                                    Words cannot convey the almost voluptuous sweetness of the feelings experienced when one closes the door of one's tsams khang, or when one looks down from the heights at the first wintry snow heaping up in the lower valleys, creating for months around the hermitage an impassable white and cold rampart.
+                                </p>
+                                <p>
+                                    But, most likely, only those who have lived through it themselves can understand the irresistible attraction that hermit life exerts on many Orientals.
+                                </p>
+                            </blockquote>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="conclusion">&nbsp;</a>
+                            <h4>
+                                Conclusion
+                            </h4>
+                            <p>
+                                David-Neel regretted being unable to discern not the why of reclusion but the what and how, the actual practices within the routine day and night of the recluse. She refers to prayer and meditation above, but, concludes that the practice of true seclusion must be an adjunct to the practices described by Padmasambhava for successfully pursuing the &quot;mystic path.&quot;
+                            </p>
+                            <p>
+                                These practices are within the grasp of all. They include reading widely on various religions and philosophies, listening to adepts on the different doctrines, and experimenting with, then choosing from among the doctrines studies, and&mdash;above all&mdash;maintaining the right virtues: humility, self-effacement, transcendence of worldly affairs, indifference to circumstances, equanimity, and what David-Neels can only describe as &quot;the realization of the Void, which in Lamaist terminology, means the Inexpressible reality.&quot;
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="references">&nbsp;</a>
+                            <div style="font-size: 90%">
+                                <h4>
+                                    Bibliographical References
+                                </h4>
+                                <p>
+                                    The translations are from Alexandra David-Neel's <em>Magic and Mystery in Tibet</em>, first published in 1929; English translation published by Kendall (New York) in 1932. Reprinted by Crown (1937), University Books (1958), Souvenir (London, 1967), Penguin and Dover (1971), Time-Life (1993) among others.
+                                </p>
+                            </div>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="magic-creation-of-a-yidam.htm">&lt; Creation of a Yidam</a></li>
+                                    <li class="align-right"><a href="contents.htm">Article Index &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

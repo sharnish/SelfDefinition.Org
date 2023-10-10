@@ -1,0 +1,501 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Norbu Chen, America's Tibetan Lama</title>
+	<meta name="description" content="Fate Magazine, August 1974: Norbu Chen, Healer">
+	<meta name="author" content="Thomas Valentine, Fate Magazine">
+	<meta property="og:title" content="Norbu Chen, America's Tibetan Lama">
+	<meta property="og:description" content="Fate Magazine, August 1974: Norbu Chen, Healer">
+	<meta property="og:image" content="https://selfdefinition.org/norbu-chen/images/norbu-chen-cropped-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_norbu-chen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="article-index.htm">
+	<link rel="next" href="norbu-chen-fate-magazine-cover.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 250px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+
+		div.inset,
+		p.inset {
+			text-align: center;
+			width: 85%;
+			margin: 25px auto 35px;
+		}
+
+		html.dark p.inset {
+			background: inherit;
+		}
+
+		/* https://stackoverflow.com/questions/3854199/eliminate-vertical-whitespace-between-images 
+        */
+		div.fate-scans img {
+			display: block;
+		}
+
+		div.image-div p,
+		div.right-image-div p {
+			margin-top: 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_norbu-chen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_norbu-chen-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Fate Magazine, August 1974 <span class="block">Norbu Chen, Healer</span>
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="norbu-chen-sanador-lama-tibetano-de-eu.htm">norbu-chen-sanador-lama-tibetano-de-eu.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="article-index.htm">&lt; Article Index</a></li>
+									<li class="align-right"><a href="norbu-chen-fate-magazine-cover.htm">Fate Magazine Cover &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#fate-article">America's Tibetan Lama</a></li>
+									<li><a href="#author">About the Author</a></li>
+									<li><a href="#fate-page-scans">Fate Magazine Page Scans</a></li>
+								</ul>
+							</nav>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="fate-article">&nbsp;</a>
+							<p>
+								For the connection of this article to the esoteric teacher Richard Rose, please see footnote #5e below: <a href="#richard-rose-connection">#richard-rose-connection</a>
+							</p>
+							<header>
+								<p class="note toowide">
+									Scientific laboratory experiments confirm that Chen's control of his vital energy has cured cancerous tumors in mice.
+								</p>
+								<h4>
+									America's Tibetan Lama
+								</h4>
+								<p class="note">
+									Fate Magazine, August 1974
+								</p>
+								<p>
+									By Tom Valentine
+								</p>
+								<p class="note">
+									Photos courtesy NATIONAL TATTLER
+								</p>
+							</header>
+							<p style="margin-top: 35px;">
+								NORBU CHEN is the only American citizen ever to qualify as a Tibetan <em>gelong</em> and earn the honorary title of lama. A former Kentucky farm boy, he studied under Lama Norbu Lampas in the tiny Asian nation of Sikkim, <sup>[1]</sup> where he earned the title which has now become his legal name.
+							</p>
+							<p class="fnote">
+								[1. Formerly a kingdom, as of 1950 a state in northeastern India, bordering Tibet, Nepal, Bhutan, and West Bengal. Norbu Chen did not visit there until 1960 or later. <a href="https://en.wikipedia.org/wiki/Sikkim">Wikipedia</a>. More below.]
+							</p>
+							<p>
+								Chen does not believe in &quot;faith&quot; and would prefer to have that term stricken from the nomenclature of healing. Healing is mind control over body functions, he maintains, and is brought about by the use of the vital energy which pervades the universe. Chen practices a particular version of Tibetan Buddhism called the <em>Dugpah</em> method or Way.&nbsp;<sup>[2]</sup>
+							</p>
+							<p class="fnote">
+								[2. <a href="https://theosophy.wiki/en/Dugpa">theosophy.wiki/<wbr>en/Dugpa</a>&nbsp;]
+							</p>
+							<p>
+								This is the Way of the &quot;red hats,&quot; a minority group of monks who practice an active form of Buddhism. The red hats are venerated but often feared in Tibet which is ruled by the middle-of-the-road Buddhist practitioners called &quot;yellow hats.&quot; The Dalai Lama is a yellow hat. The moderate monks are more popular with the people as they are passive, ritualistic and easygoing in their religion while the red hats are austere and secretive. Norbu Lampas was renowned as a &quot;magician&quot; which is common among the red hat monks.
+							</p>
+							<div class="image-div">
+								<img src="scans/1974-august-fate-magazine-p-38-norbu-chen-photo-only.jpg" alt="Norbu Chen chants ritual">
+								<p class="note">
+									Norbu Chen chants tantra prior to &quot;hitting&quot; mice in laboratory experiment at Trinity University, San Antonio, Tex.
+								</p>
+							</div>
+							<p style="margin-top: 25px;">
+								Chen, a small man with piercing eyes who now lives in Houston, Tex., once studied physical anthropology at the University of Kentucky after serving in the armed forces during the Korean War. &quot;After a while, I saw the uselessness of the American lifestyle and so-called Christianity,&quot; he says. &quot;So I quit school and became a seeker of knowledge in my own way.&quot;
+							</p>
+							<div class="right-image-div">
+								<img src="scans/1974-august-fate-magazine-p-39-medical-records-photo.jpg" alt="Medical Records verify">
+								<br>
+								<img src="scans/1974-august-fate-magazine-p-39-lama-with-hat.jpg" alt="Lama in hat">
+								<p class="note">
+									Medical records verify Walt Snyder's critical heart and kidney disorders were cured after only two healing sessions with Houston lama Chen.
+								</p>
+							</div>
+							<p>
+								His &quot;seeking&quot; led him to some strange bedfellows in the realm of politics. Using two aliases he became a special assistant to Gov. Bert Combs of Kentucky who defeated the renowned Happy Chandler for the office of that state's chief executive. Under the name Charles Vernon Alexander or Michael Lee Alexander,&nbsp;<sup class="black">*</sup> Chen volunteered to serve time inside a Kentucky state prison to obtain information valuable to the governor. <span class="note">[1959. See <a href="https://en.wikipedia.org/wiki/Bert_Combs#1959_gubernatorial_race">Wikipedia</a> on Combs, which has no mention of these alleged events.]</span> He not only smuggled &quot;data&quot; from within the prison which politically destroyed Lt. Gov. Harry Lee Waterfield but also, while serving as aide to the prison chaplain, he smuggled out records of dope peddling to Richard L. Conn, then publisher of the <em>Jefferson Reporter</em> in Louisville, Ky.
+							</p>
+							<p style="font-size: 90%; padding: 0 1em;">
+								* <span class="note black">[Footnote in original article.]</span> Research is underway into the background of Norbu Chen at the present time. But as this story goes to press there is still some confusion as to names and dates. It is thought Chen's parents live in Kentucky, that his real name is Carl Michael Johnson, that he attended the University of Kentucky in 1957 and '58, and served in the Kentucky State prison in 1960.
+							</p>
+							<p>
+								A governor's pardon <sup>[3]</sup> for this service covered his release from prison and he then continued to serve as a paid spy for Governor Combs until he got into deep trouble and had to flee for his life.
+							</p>
+							<p class="fnote">
+								[3. No follow-up investigation of said pardon is mentioned by Fate Magazine.]
+							</p>
+							<p>
+								He went to England in 1960 and it was there he saw the Tibetan exhibit of Madame Alexandra David-Neel. He wanted to meet the grand old lady so he traveled to her home in Bigne, Switzerland. There they talked of Tibet and philosophy and as a result Madame David-Neel gave him a letter of introduction to a Dilupa Lama and Chen went on to Asia, hoping to find new meaning in life. However, the Hindu practices of India turned him off and the Tibetan yellow hats didn't impress him much more. Chen was about to leave Sikkim, where many Tibetan refugees who were fleeing the Chinese communists were living, when he heard of the marvelous &quot;magician,&quot; Norbu Lampas. <sup>[4]</sup> He found that this austere monk held the yellow hats, who spin prayer wheels and worship the Dalai Lama, in disdain and this so impressed the American that he contracted to become a <em>trappa</em> (student) under the <em>gelong</em> (priest-teacher). The Kentucky farm boy paid his tuition and entered the <em>gompa</em> (monastery).
+							</p>
+							<p class="fnote">
+								[4. No information was located on "Norbu Lampas" other than a sentence or two on promotional web pages by Norbu Chen's former employee, patient, follower, now a professional healer, Joanne Parks, akin to this: &quot;Lama Norbu [Chen], an American trained to be a powerful healer of the Tibetan sect of Red Hat lamas, studied in the tiny Asian nation of Sikkim with his own teacher, <strong>Lama Norbu Lampas</strong> ...&quot; ]
+							</p>
+							<p>
+								&quot;My lama taught me the Dugpah way &ndash; the way of the red hats. Today I demonstrate that way of truth in action,&quot; he says.
+							</p>
+							<p>
+								Thus in 1961, after being accepted as a student, Chen was immediately placed in a cave where he remained alone for nine months. &quot;This was to teach me to meditate. They passed my food in through a window,&quot; Chen recalls. &quot;At times I thought I would go mad but in defense I did learn to meditate &ndash; and I lost 40 pounds.&quot;
+							</p>
+							<p>
+								After three and a half years in the <em>gompa</em> he was finally ready to take the tests to attain <em>gelong</em> status, to earn the title and veneration due a lama.
+							</p>
+							<p>
+								&quot;To prove we had learned to control our bodies with our minds we had to pass three simple tests. We had to pass a bodkin, or needle, through our hands without experiencing pain or bleeding. We had to hold hot coals in each hand but show no sign of burns; and finally we had to cut an artery at the wrist, bleed momentarily into a bowl, and then with the strength of our will stop the bleeding &ndash; or die.&quot;
+							</p>
+							<div class="right-image-div">
+								<img src="scans/1974-august-fate-magazine-cover-thumbnail.jpg" alt="Cover">
+
+								<p class="tiny"><a href="norbu-chen-fate-magazine-cover.htm">norbu-chen-fate-magazine-cover.htm</a></p>
+							</div>
+							<p>
+								Chen says, &quot;I encountered no problems and passed the tests easily.&quot;
+							</p>
+							<p>
+								These accomplishments, Chen states, are not gimmicks but are mind over body control &ndash; which has been demonstrated countless times by various practitioners around the world as well as by Tibetan monks. &quot;The big difference between the others and the teachers in Tibet is in knowing what is going on. The Tibetans understand the law and have advanced beyond the stage of hypnotic tricks,&quot; Chen claims.
+							</p>
+							<div class="inset">
+								<p class="note center">
+									<span class="block">(see image below, p. 40)</span> Norbu Chen named his foundation after Chakpori Ling Medical Center in Tibet.
+								</p>
+							</div>
+							<p>
+								By 1965 he was back in the United States and practicing healing in Houston, Tex. Norbu Chen has no peer as a healer. His busy practice, which is conducted under the auspices of his church and foundation &ndash; the Chakpori Ling Foundation <sup>[5a]</sup> &ndash; keeps him from doing any teaching at this time but he plans to prepare lessons for students and from among those who show a particular aptitude he hopes to develop other gelongs. The board of directors of the Chakpori Ling Foundation, which is named for the famed Lhasa medical school, is impressive. The men on this board have observed Chen's remarkable abilities for several years. They include C. V. Wood, Jr., president of the American Stock Exchange and the McCullouch Oil Company; Doris Duke, one of the world's richest women and a knowledgeable student of Eastern philosophies; Harry Saltzman, the film-maker famous for the James Bond productions, and <strong>Tom Slick, Jr.</strong>, <sup>[5b]</sup> son of the late Tom Slick, founder of Slick Airways, of the <strong>Southeast Research Institute</strong> <sup>[5c]</sup> and of the <strong>Mind Science Foundation</strong>.&nbsp;<sup>[5d, 5e]</sup>
+							</p>
+							<p class="fnote">
+								[5a. 1720 Marco Polo Way Ste A Burlingame, CA. Now inactive. ref: <a href="https://www.taxexemptworld.com/organization.asp?tn=1343871">taxexemptworld.com</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[5b. <a href="https://en.wikipedia.org/wiki/Tom_Slick">en.wikipedia.org/wiki/Tom_Slick</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[5c. <a href="https://en.wikipedia.org/wiki/Southwest_Research_Institute">en.wikipedia.org/wiki/Southwest_Research_Institute</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[5d. <a href="https://en.wikipedia.org/wiki/Mind_Science_Foundation">en.wikipedia.org/wiki/Mind_Science_Foundation</a>&nbsp;]
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="richard-rose-connection">&nbsp;</a>
+							<p class="fnote" style="margin-top: -30px;">
+								[5e. Esoteric teacher and healer Richard Rose put great faith in this article, despite its weaknesses, and used Norbu Chen's talents as an illustration of a type of healing Rose called transfer of energy. The references to Mind Science Foundation likely increased Rose's belief in this article, as Rose's friend Robert Martin was associated with the organization and with Tom Slick Jr. in the late 1950s. Martin had corresponded with Rose about Slick and Mind Science Foundation in 1958, some 16 years before this Fate Magazine article appeared. See Martin's book <em>Peace to the Wanderer, </em>[<a href="https://selfdefinition.org/rose/Bob-Martin-Peace-to-the-Wanderer%5bRichard-Rose%5d.pdf">PDF</a>] pages 77-81. Some of Rose's statements about the article can be seen in a search of his transcripts at <a href="https://www.direct-mind.org/index.php?title=Special%3ASearch&profile=advanced&search=norbu&fulltext=Search&ns0=1&ns1=1&profile=advanced">direct-mind.org</a>&nbsp;]<br>
+								[Return to <a href="javascript:toTopCleanUrl();">top of page</a>]
+							</p>
+							<p>
+								Chen's foundation is a tax-exempt research organization and at present is establishing the first Tibetan Monastery in the United States to be devoted to the healing of the sick. Norbu Chen, therefore, does not practice medicine but an active Buddhist religion which enables him to cure the ill &quot;through techniques which are perfectly natural but practically unknown to the Western world.&quot;
+							</p>
+							<p>
+								For the past two years Chen has performed about 20 healings each week. The strain of the ritual and rites may be taking a heavy toll. He himself says, &quot;I may burn out in about three more years at this pace. So much of my own vital energy is used when I work on others.&quot;
+							</p>
+							<p>
+								He works in a pine-paneled room which contains an &quot;operating&quot; table and his shrine. He wears a black work robe most of the time but occasionally dons the formal Tibetan red robes and high-crowned hat. When a patient is ushered into the chapel Chen first walks around the operating table then strides over to his shrine. On a small table he has butter lamps and the traditional sacred paraphernalia of the Tibetan monk. These include a 400-year-old trumpet made from a thighbone and a drum made from a skull.
+							</p>
+							<p>
+								He drinks from a sacred cup and, Tibetan fashion, begins to chant the &quot;om.&quot; These chants are designed to magnify the healing energy he transfers from his body to his patients'.
+							</p>
+							<p>
+								&quot;I call this buildup of energy 'shooting up' and when I deliver the energy to the patient I say I am making a 'hit',&quot; he explains.
+							</p>
+							<p>
+								Having completed the chants Chen turns to the table on which his patient lies, places his hand on the patient's body and exhales with great force. Many patients say they feel a sudden sense of well-being after being &quot;hit&quot; by this unexplained invisible energy.
+							</p>
+							<p>
+								&quot;I usually can tell if I get a good hit on an ailment,&quot; Chen told me. &quot;Sometimes I may only effect a partial cure, or even no cure at all, but often I can tell by the feel of what I've done that a second hit in about 21 days will be effective.&quot;
+							</p>
+							<p>
+								Chen has been known to ask patients to come back several times for additional hits and eventually to effect remarkable cures. He also has effected astounding cures or remissions with single hits.
+							</p>
+							<p>
+								This American lama does not socialize with his patients and many visitors complain that he is arrogant.
+							</p>
+							<p>
+								To this accusation he responds, &quot;I do not like to become emotionally involved with the people who want healing &ndash; it is more effective if I know little about them personally.&quot; Nor is he apologetic if he is misunderstood. &quot;I'm not responsible for other people's feelings &ndash; they are,&quot; he snapped.
+							</p>
+							<p>
+								Chen works on rich and poor alike. He has treated the wealthy and the famous and also many of the poor Mexican nationals who live in Texas or just across the border and who camp on the grounds of his monastery hoping he can help them.
+							</p>
+							<p>
+								Although he has worked on many persons without seeing their official medical records, he prefers his patients to come with well-documented records from their doctors. &quot;I try to document every case and now that I have nearly 1,000 solid cases on file I can see that I've maintained slightly better than a 70 percent remission rate. This is characteristic of a <em>gelong</em> and most gratifying because most of the cases who come to me are in serious if not critical condition.&quot;
+							</p>
+							<p>
+								One of Chen's typically astounding cases is that of Walt Snyder, formerly a Peoria, Ill. printer who now represents Amway Products in the Houston area. Snyder spent more than three years in veterans' hospitals where doctors said he required a &quot;bypass&quot; operation to remain alive. He came to Houston to be operated on by Dr. Michael E. DeBakey whose open-heart surgeries are world-renowned. When Dr. DeBakey visited Snyder a week before the operation was scheduled he agreed to do a &quot;total resection.&quot; He told the frightened patient not to worry.
+							</p>
+							<p>
+								But Snyder did worry. He spoke with some friends and with his policeman brother-in-law and it was suggested that he visit the unusual lama practitioner.
+							</p>
+							<p>
+								Norbu felt that Snyder's case was so serious that he could work on only one side of the patient's body at a time.
+							</p>
+							<p>
+								&quot;I figured one hit on the right side and one hit on the left side 21 days later would do the trick. I was wrong &ndash; the first hit fixed his heart, so on his second visit I worked on his kidneys,&quot; Norbu said.
+							</p>
+							<p>
+								Snyder instantly felt so much better than he stopped his medication. The next day he was due for another electrocardiogram and the technician thought the machinery was out of order for the patient's heart showed up normal. Two specialists were called in but there was nothing wrong with Snyder's heart.
+							</p>
+							<p>
+								Dr. DeBakey never operated. But today Snyder, hale and hearty, is working full time for the first time in years.
+							</p>
+							<p>
+								&quot;I might have done too good a job,&quot; Norbu chuckles. &quot;He's getting fatter than a pig.&quot;
+							</p>
+							<div class="article-image">
+								<img src="scans/1974-august-fate-magazine-p-43-attractive-stewardess.jpg" alt="Attractive airline stewardess Dee Jay Kimball credits Norbu Chen">
+								<p class="note">
+									Attractive airline stewardess Dee Jay Kimball credits Norbu Chen with stopping her severe uterine hemorrhages, thus making her planned hysterectomy unnecessary.
+								</p>
+							</div>
+							<p>
+								Attractive airline stewardess Dee Jay Kimball was referred to Chen by Dr. Karl Parker, one of the most respected chiropractors in the southeast. On the day before Miss Kimball was scheduled to have a complete hysterectomy, because of severe hemorrhaging and an infection in the uterus, Chen applied his healing technique.
+							</p>
+							<p>
+								&quot;I knew the instant I hit that I had got a good hit on her,&quot; he said later.
+							</p>
+							<p>
+								The 25-year-old woman says, &quot;I was terribly ill and desperate. I certainly didn't want that surgery but doctors said I could die if I didn't have the infection removed. Now, thanks to Norbu Chen, I'm a healthy normal woman looking forward to having children.&quot;
+							</p>
+							<p>
+								Such thoroughly diagnosed, clear-cut cases make it hard to dispute the efficacy of Chen's healings. However, unlike many another who claims healing ability, Chen has agreed to undergo extensive controlled laboratory testing.
+							</p>
+							<p>
+								Chen already has been the subject of a year-long series of tests under the auspices of the <strong>Mind Science Foundation</strong> headed by <strong>Tom Slick, Jr.</strong>, and <strong>Dr. J. W. Hahn</strong>, noted microbiologist. They used the facilities of <strong>Trinity University</strong> in San Antonio, Tex., and a skeptical <strong>Dr. Howell D. Cobb</strong> prepared the experimental mice for the unorthodox healer.
+							</p>
+							<p class="blockquote">
+								&quot;I cannot make a definitive statement at this time,&quot; Cobb says with typical scientific reluctance, but the results were astounding and there certainly should be more testing.&quot;
+							</p>
+							<p>
+								Chen evidently was able to effect healings on laboratory mice with cancerous tumors. He also affected tissue cultures and various algae during controlled tests. More tests are scheduled for this year.
+							</p>
+							<div class="inset">
+								<p class="note center" style="margin-bottom: -30px;">
+									<span class="block">(see image below, p. 40)</span> Florida surgeon Dr. E. Stanton Maxey verifies Chen's healing abilities.
+								</p>
+							</div>
+							<a class="page-link-anchor" id="mitchell">&zwj;</a>
+							<h5 class="black">
+								Edgar D. Mitchell
+							</h5>
+							<p>
+								One of the key figures responsible for Chen's <span class="strong">meteoric rise in scientific circles</span> <sup>[6a]</sup> is former astronaut Edgar D. Mitchell. <sup>[6b]</sup> Mitchell became sold on Chen's ability after witnessing a healing, together with two qualified medical people, Dr. Parker and Dr. E. Stanton Maxey, <sup class="nowrap">[6c, 6d]</sup> a Stuart, Fla., surgeon. The patient was Anita Rettig <sup>[6e]</sup> whose kidney infection had been thoroughly diagnosed.
+							</p>
+							<p class="fnote">
+								[6a. Norbu Chen was apparently a upcoming celebrity in the mid-1970s, but has now essentially disappeared from the public record.]
+							</p>
+							<p class="fnote">
+								[6b. See page in this section: <a href="edgar-mitchell-comments.htm">Comments by Edgar Mitchel</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[6c. E. Stanton Maxey, M.D., &quot;Wholistic Healing, EMF, Subtle Energies, EMF Hazards, Resonance, Mind Control, Psychic Surgery, Aether, Psychic Phenomena, Biopsychophysics, Geomagnetics,&quot; article at <a href="https://mankindresearchunlimited.weebly.com/e-stanton-maxey-md.html">mankindresearch<wbr>unlimited.<wbr>weebly.com</a>
+							</p>
+							<p class="fnote">
+								[6d. Dr. Maxey died in 2016. Memorial page at tcpalm.com <a href="https://www.tcpalm.com/story/news/local/martin-county/2016/05/27/family-remembers-stuarts-first-surgeon/89394914/">Family remembers Stuart's first surgeon</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[6e. Anita Rettig married Edgar Mitchel in 1973. Her case is mentioned in <a href="edgar-mitchell-comments.htm#part-2">Comments by Edgar Mitchel, part 2</a>&nbsp;]
+							</p>
+							<p class="blockquote">
+								&quot;Her condition was such that any improvement would be dramatic evidence of Chen's ability,&quot; Mitchell said. The astronaut wanted also to check Chen's ability to diagnose, so he was told nothing of the patient's ailment. &quot;It was a unique test,&quot; Mitchell added. &quot;We were going to verify his diagnosis by comparing it with those given by a chiropractor and a medical doctor.&quot;
+							</p>
+							<p class="blockquote">
+								&quot;I'm not sure how the others diagnosed,&quot; Chen said, &quot;but Dr. Parker (the chiropractor) came the closest to agreeing with me. She suffered from pyelonephritis, an inflammation of the kidney. I perceived that this infection and her spinal arthritis were both caused by imbalance, vitally and with her hormone system.&quot;
+							</p>
+							<p>
+								Parker and Maxey admitted that Chen had zeroed in on the ailment but of course neither could be certain he was correct about imbalance being the cause. &quot;I noticed the patient was in extreme pain when I touched her during my examination,&quot; Parker said. &quot;So when Chen pressed his hands hard against her body during his treatment I was surprised that she showed no sign of pain.&quot;
+							</p>
+							<p>
+								Within days Mrs. Rettig showed no signs of the disorder.
+							</p>
+							<p style="width: 90%; text-align: center;">
+								* * *
+							</p>
+							<p>
+								YES, there are ailments that Norbu Chen has not been able to heal. He is refreshingly frank and honest about this. &quot;Even though I am aware of the law and I know that which I do, there are reasons within every human becoming (he prefers the word <em>becoming</em> to <em>being</em>) that affect the body which are beyond my knowledge.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="author">&nbsp;</a>
+							<h4>
+								About the author
+							</h4>
+							<p class="note 80 center">
+								[From page 39 of article, below photo.]
+							</p>
+							<p>
+								TOM VALENTINE was born in San Luis Obispo, Calif., and educated at Long Beach State College and UCLA. After a variety of jobs &quot;from tire recapping to abalone pounding&quot; Tom became a journalist with the &quot;San Luis Obispo Telegram-Tribune&quot; in I960 and has remained in journalism ever since.
+							</p>
+							<p>
+								In 1969 he became acquainted with the Stelle Group <sup>[7a]</sup> through reading &quot;The Ultimate Frontier&quot; <sup>[7b]</sup> and moved to Illinois to live in the sect's village in Caberry near Kankakee. Currently <span class="note">[1974]</span> he is a writer and editor with &quot;National Tattler,&quot; a weekly family tabloid.
+							</p>
+							<p class="fnote">
+								[7a. See article at: <a href="https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/stelle-group">www.encyclopedia.com</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[7b. by Richard Kieninger, pseudonym Eklal Kueshana. <a href="https://amzn.to/34tN8uN">Amazon.com</a>&nbsp;]
+							</p>
+							<p>
+								He is the author of the books &quot;Psychic Mission&quot; with Joseph DeLouise and &quot;Psychic Surgery&quot; (1973) and presently is writing a book on healer Norbu Chen.
+							</p>
+							<p class="note80">
+								** Info from Google Books follows - Link: <a href="https://books.google.com/books/about/Norbu_Chen_the_Tibetan_Way.html?id=NtOyAAAACAAJ&redir_esc=y">Google Books</a>
+							</p>
+							<p>
+								<em>Norbu Chen, The Tibetan Way</em>, Hardcover, by Tom Valentine (Author). Simon &amp; Schuster (November 15, 1977)
+							</p>
+							<p class="note center">
+								ISBN-10: 0671225693<br>
+								ISBN-13: 978-0671225698
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="fate-page-scans">&nbsp;</a>
+							<h4>
+								Fate Magazine Page Scans
+							</h4>
+							<p class="note80 center">
+								These images are reduced. For larger sizes see here: <a href="scans/">scans/</a>
+							</p>
+							<div class="fate-scans">
+								<img src="scans/1974-august-fate-magazine-p-38-reduced.jpg" alt="Fate Magazine, August 1974, page 38">
+								<img src="scans/1974-august-fate-magazine-p-39-reduced.jpg" alt="Fate Magazine, August 1974, page 39">
+								<img src="scans/1974-august-fate-magazine-p-40-reduced.jpg" alt="Fate Magazine, August 1974, page 40">
+								<img src="scans/1974-august-fate-magazine-p-41-reduced.jpg" alt="Fate Magazine, August 1974, page 41">
+								<img src="scans/1974-august-fate-magazine-p-42-reduced.jpg" alt="Fate Magazine, August 1974, page 42">
+								<img src="scans/1974-august-fate-magazine-p-43-reduced.jpg" alt="Fate Magazine, August 1974, page 43">
+								<img src="scans/1974-august-fate-magazine-p-44-reduced.jpg" alt="Fate Magazine, August 1974, page 44">
+								<img src="scans/1974-august-fate-magazine-p-45-reduced.jpg" alt="Fate Magazine, August 1974, page 45">
+								<img src="scans/1974-august-fate-magazine-p-46-reduced.jpg" alt="Fate Magazine, August 1974, page 46">
+							</div>
+							<!--
+                    <div id="THUMBS">
+                        <img src="scans/1974-august-fate-magazine-p-38-thumbnail.jpg" alt="Fate Magazine, August 1974, page 38 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-39-thumbnail.jpg" alt="Fate Magazine, August 1974, page 39 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-40-thumbnail.jpg" alt="Fate Magazine, August 1974, page 40 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-41-thumbnail.jpg" alt="Fate Magazine, August 1974, page 41 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-42-thumbnail.jpg" alt="Fate Magazine, August 1974, page 42 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-43-thumbnail.jpg" alt="Fate Magazine, August 1974, page 43 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-44-thumbnail.jpg" alt="Fate Magazine, August 1974, page 44 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-45-thumbnail.jpg" alt="Fate Magazine, August 1974, page 45 thumbnail">
+                        <img src="scans/1974-august-fate-magazine-p-46-thumbnail.jpg" alt="Fate Magazine, August 1974, page 46 thumbnail">
+                    </div>
+                    -->
+							<!-- original file names - SAVE
+<div>
+    <img src="scans/1974-august-fate-magazine-p-38.jpg" alt="Fate Magazine, August 1974, page 38">
+    <img src="scans/1974-august-fate-magazine-p-39.jpg" alt="Fate Magazine, August 1974, page 39">
+    <img src="scans/1974-august-fate-magazine-p-40.jpg" alt="Fate Magazine, August 1974, page 40">
+    <img src="scans/1974-august-fate-magazine-p-41.jpg" alt="Fate Magazine, August 1974, page 41">
+    <img src="scans/1974-august-fate-magazine-p-42.jpg" alt="Fate Magazine, August 1974, page 42">
+    <img src="scans/1974-august-fate-magazine-p-43.jpg" alt="Fate Magazine, August 1974, page 43">
+    <img src="scans/1974-august-fate-magazine-p-44.jpg" alt="Fate Magazine, August 1974, page 44">
+    <img src="scans/1974-august-fate-magazine-p-45.jpg" alt="Fate Magazine, August 1974, page 45">
+    <img src="scans/1974-august-fate-magazine-p-46.jpg" alt="Fate Magazine, August 1974, page 46">
+</div>
+-->
+							<p>
+								&nbsp;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="article-index.htm">&lt; Article Index</a></li>
+									<li class="align-right"><a href="norbu-chen-fate-magazine-cover.htm">Fate Magazine Cover &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

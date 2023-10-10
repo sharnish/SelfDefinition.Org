@@ -1,0 +1,393 @@
+/*     File:  //_sparse.css:
+
+This will become section CSS when the rest is moved to main.
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update March 30, 2022";
+        /* KEEP THIS */
+        font-size: 65%;
+    }
+}
+
+
+/* nice yellow, or this, #f3fff3; a nice green
+        This is Chrome:  #DBE2E9;
+https://colorcodes.io/gray/chrome-color-codes/
+Nice green:  Rape of the Mind:	#efe;
+Beautiful yellw: Law of Suggestion	#fffdee;
+Nice color scheme"
+color:		#854262;  (dark reddisg, to adjust)
+background: #F1F2F3;		nice off white
+beautiful green:  background: #e6ffef;
+    beautiful yellow, Santanelli: background: #001010
+source for green pallets
+https://colorswall.com/palette/35901
+more
+https://colorswall.com/palettes
+*/
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #e6ffef;
+}
+
+
+*/
+
+/*********** spanish version color ***********/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+    background: #efe;
+}
+
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with aebruary default color */
+/* color must contrast with body */
+/* This is default: #bde0ff - Blue, for selfdefinition-responsive.css
+	nice pink: #FFC0CB */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #c0d4fc;
+    /* nice blue, goes with the green */
+
+}
+
+/* March 6, 2022
+THIS IS A HACK. IN CELIBACY-QUOTES #article IS TOO LOW, DON'T KNOW WHY
+-- COMPARE WITH CELIBACY-ARTICLES, WHICH IS CORRECT
+#article {
+    margin-top: -25px;
+}
+ */
+
+
+/* START CUSTOMIZABLE FEATURES */
+/* START CUSTOMIZABLE FEATURES */
+/* START CUSTOMIZABLE FEATURES */
+
+/* always custom, keep at top */
+header h3 span.block {}
+
+h3 span.smaller {}
+
+h5 {}
+
+p.spacer {}
+
+article p:first-of-type {}
+
+blockquote.tight p,
+div.tight p {}
+
+ul.generic {}
+
+@media only screen and (max-width:500px) {
+    ul.generic {}
+}
+
+ul.generic li {}
+
+/* END CUSTOMIZABLE FEATURES */
+/* END CUSTOMIZABLE FEATURES */
+/* END CUSTOMIZABLE FEATURES */
+
+
+/* Display width for testing if needed, (in title include file) */
+#device-width-display {
+    display: none;
+}
+
+
+/* do not double-hit "a" tags in a "fnote" */
+
+
+/* can decrease font size if page titles are long; default is 90%. */
+ul.next-previous-item-list {
+    font-size: 85%;
+}
+
+/* increase bottom margin at point where left and right items may overlap
+    leave option in project CSS
+    NOT NECESSARY BECAUSE OF "AFTER" PSEUDO-ELEMENT
+@media only screen and (max-width: 500px) {
+    .next-previous-item-list {margin-bottom: 25px;}
+} */
+
+/* TEMP SECTION TO ASSIST POSITION DEFAULTS */
+/* TEMP SECTION TO ASSIST POSITION DEFAULTS */
+/* TEMP SECTION TO ASSIST POSITION DEFAULTS */
+
+/* here's the scheme
+
+Huge screens                                    Width is 800px  < menu on left side
+Large screens between 768px and 900px           Width is 768px  < menu on left side
+Screens 767 and smaller (smaller than Ipad)     Width is 100%   < NO menu on left side
+
+
+/* From the first media query
+these are the defaults (above) -- none have max-width set. < need to verify
+
+    #mainwrapper    {width:800px;margin:0 auto;position:relative;}
+
+    #container is absolute within a relative   << No, not set to absolute
+    #container		{}
+
+    #menu-panel		{width:200px;position:absolute;top:0;left:0;}
+    #menu-container {width:200px;}
+    #main-content	{width:530px;position:absolute;top:0;left:240px;}
+    #announce		{width:530px; WAS width:100%;margin:0 auto;}
+    #article, article, section, aside {width:550px;}
+    */
+
+
+/* END TEMP SECTION TO ASSIST POSITION DEFAULTS */
+/* END TEMP SECTION TO ASSIST POSITION DEFAULTS */
+/* END TEMP SECTION TO ASSIST POSITION DEFAULTS */
+
+/* Contents-Index Page testing */
+
+div.to-center {
+    width: 300px;
+}
+
+/* override from Transmission, has 4 columns */
+nav.contents .item {
+    width: 65px;
+    /* times 4 columns gives 260 px */
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+/* padding on anchor does not affect highlighting (nav list item) but 
+    makes the anchor more easily clickable
+    increase padding if width of item is smaller */
+nav.contents .item a {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+/* CSS3 columns; see Transmission and Sadony examples */
+/* Large screens GREATER than 500 = 4 columns */
+@media only screen and (min-width:500px) {
+    .page-contents {
+        /* Deault 2022.CSS large screen is 4 columns */
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        columns: 4;
+
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        columns: 3;
+    }
+}
+
+/* Small screens = 3 columns */
+@media only screen and (max-width:499px) {
+    .page-contents {
+        /* Deault 2022.CSS small screen is 3 columns */
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        columns: 3;
+
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+    }
+}
+
+#index-lists {
+    border: 1px solid red;
+}
+
+#index-lists ul {
+    border: 1px solid blue;
+}
+
+#index-lists ul li {
+    border: 0px solid green;
+}
+
+
+/* return anchor and endnote testing */
+/* no top menu */
+sup.return-anchor:target {
+    border: 1px solid red;
+}
+
+a.endnote:target {
+    border: 1px solid red;
+}
+
+/* two line top menu */
+@media only screen and (max-width:767px) {
+    sup.return-anchor:target {
+        border: 1px solid green;
+    }
+
+    a.endnote:target {
+        border: 1px solid green;
+    }
+}
+
+/* three line top menu */
+@media only screen and (max-width: 340px) {
+    sup.return-anchor:target {
+        border: 1px solid blue;
+    }
+
+    a.endnote:target {
+        border: 1px solid blue
+    }
+
+}
+
+/* FROM TRANSMISSION TO TEST */
+/* FROM TRANSMISSION TO TEST */
+/* FROM TRANSMISSION TO TEST */
+
+
+
+/* END FROM TRANSMISSION TO TEST */
+/* END FROM TRANSMISSION TO TEST */
+/* END FROM TRANSMISSION TO TEST */
+
+
+
+/* START MENU OVERRIDES */
+/* START MENU OVERRIDES */
+/* START MENU OVERRIDES */
+
+
+
+/* START JUMP LINK STYLING */
+/* START JUMP LINK STYLING */
+/* START JUMP LINK STYLING */
+
+
+/* testing */
+
+/* testing */
+
+/*  *******/
+
+
+#main-content {
+    border: 0px solid yellow;
+}
+
+#article {
+    border: 0px solid white;
+}
+
+#title-include-div {
+    border: 0px solid red;
+}
+
+#announce header {
+    border: 0px solid green;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header p {
+    border: 0px solid blue;
+}
+
+#menu-container {
+    border: 0px solid red;
+}
+
+#fixed-header-small-screen {
+    border: 0px solid blue;
+}
+
+#menu-site-small-screen {
+    border: 0px solid orange;
+}
+
+#menu-site-small-screen li {
+    border: 0px solid green;
+}
+
+#menu-section-group,
+div.optional-links,
+div.site-links,
+div.external-links {
+    border: 0px solid blue;
+}
+
+ul#menu-site,
+ul.menu-text,
+ul.menu-section {
+    border: 0px solid green;
+}
+
+#index-lists {
+    border: 0px solid red;
+}
+
+#index-lists ul {
+    border: 0px solid blue;
+}
+
+#index-lists ul li {
+    border: 0px solid green;
+}
+
+nav.contents {
+    border: 0px solid yellow;
+}
+
+
+nav.next-previous-item-nav {
+    border: 0px solid yellow;
+}
+
+ul.next-previous-item-list {
+    border: 0px solid red;
+}
+
+a.page-link-anchor:target {
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+    a.page-link-anchor:target {
+        border: 0px solid green;
+    }
+}
+
+a.return-anchor,
+a.return-anchor:target {
+    border: 0px solid red;
+}
+
+a.endnote,
+a.endnote:target {
+    border: 0px solid red;
+}
+
+
+/* end */

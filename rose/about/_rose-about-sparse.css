@@ -1,0 +1,51 @@
+/* file:  /rose/about/_rose-about-refresh.css
+
+Update May 18, 2020. May 17, 2022
+
+*/
+@media only print {
+	#article:after {
+		content: "update May 17, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fff9f9;
+}
+
+/* contrasting color */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #ffccee;
+}
+
+/* upgrade Sep 20, 2019 copied from While and Black model */
+
+/* specific this secion */
+
+/* h3 is replaced by h1 in the rticles section  NEED TO DFIX THIS */
+
+
+#article article h1 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width:650px) {
+	#article article h1 {
+		margin-top: 25px;
+		margin-bottom: 30px;
+	}
+}
+
+
+
+/* end */

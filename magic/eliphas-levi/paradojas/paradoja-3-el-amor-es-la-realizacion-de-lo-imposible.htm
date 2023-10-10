@@ -1,0 +1,446 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="paradoja-2-la-libertad-es-obediencia-a-la-ley.htm">
+	<link rel="next" href="paradoja-4-el-conocimiento-es-la-ignorancia-del-mal.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* 
+            <span class="sans">¡</span>        
+        */
+
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/ 
+        
+        Kept on page rather than stylesheet to reduce complexity
+        and need to reload if a change is made.
+        On this page:
+        #element-toggle-35-1, 
+        #element-toggle-36-1
+        */
+
+		/* paradox 3 */
+		label[for=element-toggle-35-1],
+		label[for=element-toggle-36-1] {
+			cursor: pointer;
+		}
+
+		/* paradox 3 */
+		#element-toggle-35-1,
+		#element-toggle-36-1 {
+			display: none;
+		}
+
+		/* paradox 3 */
+		#element-toggle-35-1:not(:checked)~#toggled-element-35-1,
+		#element-toggle-36-1:not(:checked)~#toggled-element-36-1 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?>
+									<h3>
+										<span class="block">La Paradoja 3</span> <span class="h3-block">
+											El amor es la realización</span>
+										de lo Imposible
+									</h3>
+									<p class="tiny"><span class="block">This page in English:</span> <a href="../paradoxes/paradox-3-love-is-realization-of-the-impossible.htm">.. paradox-3-love-is-realization-of-the-impossible.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="paradoja-2-la-libertad-es-obediencia-a-la-ley.htm">&lt;
+											Paradoja 2</a></li>
+									<li class="align-right"><a href="paradoja-4-el-conocimiento-es-la-ignorancia-del-mal.htm">
+											Paradoja 4 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								EL AMOR es la omnipotencia del ideal. Por, el ideal el alma es exaltada; se hace
+								la naturaleza más grande, más vida que el mundo, más elevado que la Ciencia, más
+								inmortal que la vida.
+							</p>
+							<p>
+								Cuando Jesús el Cristo dijo: Dios de amor con todo su corazón y su prójimo como
+								vosotros mismos, esta es la ley de los profetas, tuvo la intención de significar:
+								amor, amor, por encima de todo; para Dios es el amor infinito; además, querer a
+								su prójimo como vosotros mismos , es decir, el amor a vosotros mismos en su semejante.
+							</p>
+							<p>
+								El egoísmo tan correctamente hecho se puede presenta con otros. <sup>[33.1]</sup>
+							</p>
+							<p class="fnote">
+								[33.1. el altruismo en otros términos es la forma más elevada del ser. &mdash;Trad.]
+							</p>
+							<p>
+								Amar es vivir, por amar es saber, por el amor es capaz, por amor el ora, por amor
+								se hace el Hombre-Dios.
+							</p>
+							<p>
+								La mujer se atrevió a arruinarse, con el fin de desplazar a la divinidad y ofrecérsela
+								al hombre, y al hombre, que no tuvo ninguna sed para la divinidad, porque tuvo la
+								mujer, el hombre la tomó como cosa simple para seguir a su compañero a la muerte.
+								Allí empezó la encarnación de Dios iracundo la Eva de Jehová para hacer al hombre,
+								porque se había hecho una madre.
+							</p>
+							<p class="center">
+								* * *
+							</p>
+
+							<p>
+								La muerte y el infierno se habían elevado, terribles con la amenaza eterna, y un
+								instante el amor los había vencido.
+							</p>
+							<p>
+								El amor es más fuerte que la muerte, indica el canto de los cantos. Es más invencible
+								que el infierno. Amar es el fuego eterno, y no hay ningún diluvio que pueda apagarle.
+							</p>
+							<p>
+								Dar por un poco de amor todo lo que tienes, todo lo que esperas, a ellos a todos
+								los que estimas, y a ellos todos tu eres. <span class="sans">¡</span> Su sangre, su corazón, su vida y su
+								alma, y tú lo habrás obtenido para - nada!
+							</p>
+							<p>
+								El que salva su alma del amor perderá su alma, y él que pierda su alma por el amor,
+								se salvará.
+							</p>
+							<p>
+								Muchos pecados serán perdonados al corazón que tiene mucho amor, es Jesús el Cristo
+								mismo el que lo dijo.
+							</p>
+							<p>
+								Y tuvo como una compañera y amiga la Magdalena, y pidió el agua para beber de la
+								mujer de Samaria, un pecador, y perdonó a la mujer agarrada en el adulterio, y dijo
+								que las mujeres pecadoras entraran al cielo antes de Fariseos y Doctores de la ley,
+								porque los errores del amor son más perdonables que los del orgullo, porque igual
+								es mejor que amar incorrectamente, que no amar todo.
+							</p>
+							<p>
+								En la moral absoluta y buena es el amor; el mal es odio. El amor debe ser amar y
+								solamente al odio detestar. Una palabra simple de odio, indican el evangelio, merecen
+								el infierno, y por consiguiente una palabra del cielo merece el amor dos veces más,
+								porque recompensa el amor más libremente que el odio que castiga. ¿ Pero el amor
+								mismo no es él su propia recompensa? ¿ Ama así quien, encontró la llave del cielo?
+							</p>
+							<p>
+								Santa Teresa, el ideal del infierno era la imposibilidad de amar, y esto pareció
+								sentir tan temible como compadeció a Satanás. &quot;El desgraciado,&quot; tenía
+								la costumbre de decir, &quot;a él puedo más amar.&quot;
+							</p>
+							<p>
+								<span class="sans">¡</span> La mujer compadeció al demonio, aquel qué una reforma del Cristianismo!
+							</p>
+							<p>
+								Cuando a la gente le habrá aprendido a amar, el mundo será salvado. <sup>[35:1]</sup>
+							</p>
+							<label for="element-toggle-35-1">
+								[35:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-35-1" type="checkbox" />
+							<div id="toggled-element-35-1" class="fnote hidden">
+								<p>
+									[35:1. es decir cuando el amor del individuo habrá dado el lugar al amor del prójimo
+									y de todos los semejantes <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									Hay una confusión aparente terrible en muchas partes de este discurso entre este
+									amor que es el espíritu, y lo que es la carne; el divino y terrestre, el amor que
+									es el egoísmo animal, y el que son la forma más elevada de altruismo. Pero es más
+									evidente que verdaderamente como se verá más tarde. &mdash;Trad.]
+								</p>
+							</div>
+							<p>
+								El hombre le sabe a quien ama atrae a todas las almas.
+							</p>
+							<p>
+								Ansiar no es amar. Exigir no es amar. Esclavizar no es amar.
+							</p>
+							<p>
+								Los celos son el egoísmo que asume la máscara del amor.
+							</p>
+							<p>
+								El deseo excesivo produce el asco: el exigir merece el engaño.
+							</p>
+							<p>
+								La tiranía excita la rebelión en los fuertes y la traición en los débiles.
+							</p>
+							<p>
+								Los celos son odiosos y ridículos. ¿ Por que detestar el corazón de quién no nos
+								quiere más, no es para castigar a quien nos quiso?
+							</p>
+							<p>
+								El furor celoso es la ingratitud furiosa.
+							</p>
+							<p>
+								Pero hay un celos de sublimación, que son pero el ardor del amor, y que mismos en
+								honor del amor desea el honor del amado. Para el amado jamás es el ideal supremo
+								del alma, es el espejismo de lo absoluto.
+							</p>
+							<p>
+								Las fantasías de la atracción y de la
+								pasión no son amor.
+							</p>
+							<p>
+								El amor verdadero es la aprensión de Dios en morada del hombre; es la esencia de
+								la religión, del honor, de la amistad y del matrimonio.
+							</p>
+							<p>
+								Es no sólo el amor inmortal, sino que es un amor que hace inmortal al alma. Envejece
+								no, ninguno de los dos cambia. Los corazones pueden girar lejos de él mientras que
+								la tierra gira lejos del sol cuando dormita, y es mientras la frialdad de noche
+								parezca caer sobre el alma.
+							</p>
+							<p>
+								En el plano de la prueba medica el amor es el principio de la vida: en el plano
+								espiritual o metafísico, es el principio de la inmortalidad.
+							</p>
+							<p>
+								Volviendo a crecer al principio de todas las cosas y de difundirse de ahí por encima
+								de todos los seres, se llama Piedad, caridad, y, calidad; cuando fuerza el respeto
+								al deber se llama Honor: es el magno florecer de la individualidad humana. Manifiestamente
+								es inmortal, porque no le produce nada a la muerte; valientes él, desprecia él y
+								a menudo marcas de él una bendición y una gloria; ¿ cuál es un martirio pero un
+								testigo que afirma la vida eterna a pesar de las torturas y a pesar de la muerte?
+							</p>
+							<p>
+								El amor absolutamente se afirma; allí dónde el amor está, allí el temor no es. Impone
+								sus propias condiciones la vida, y no puede ser acondicionado por ella.
+							</p>
+							<p>
+								El amor
+								debe ser libre en la morada del hombre: en especie es el niño del destino; <sup>[36.1]</sup> como
+								el imán, tiene dos fuerzas; atrae y rechaza, crea y destruye. Es el hermano de la
+								muerte, pero es el hermano de más edad. Es Dios cuya muerte es el sacerdote, El
+								Dios que ilumina a la muerte con su belleza, mientras que la muerte lo mejora por
+								sacrificios eternos.
+							</p>
+							<label for="element-toggle-36-1">
+								[36:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-36-1" type="checkbox" />
+							<p id="toggled-element-36-1" class="fnote hidden">
+								[36:1. aquí todavía no puedo encontrar ninguna traducción para la palabra &quot;fatal&quot;
+								que hecho contrastar con &quot;libre&quot;, los medios el resultado del destino
+								una cosa que se
+								efectúa sin opción del resultado sin visibilidad de inteligencia de las fuerzas
+								sin visibilidad, ininteligente, irresistibles. &mdash;Trad.]
+							</p>
+							<p>
+								Tiene una sombra que los hombres llaman odio, y esta sombra es necesaria para mostrar
+								adelante su esplendor.
+							</p>
+							<p>
+								La belleza es su sonrisa, la felicidad su alegría, error de forma su dolor, y hacer
+								sufrir su prueba.
+							</p>
+							<p>
+								La guerra es su fiebre feroz; las pasiones, su sabiduría de las enfermedades, su
+								triunfo y su descanso.
+							</p>
+							<p>
+								Es ciega, pero lleva una antorcha; es Lucifer, ángel y demonio, es maldición y despedida.
+							</p>
+							<p>
+								Es Eros equilibrado por Anteros; es San Miguel que se impone sobre Satanás como
+								potestad.
+							</p>
+							<p>
+								El gran Arcano de la magia es el misterio del amor. El amor que mata a ángeles y
+								demonios se inmortaliza.
+							</p>
+							<p>
+								Convierte en mujeres a las Sílfides, las Ondinas y los Gnomos, y proyecta a los
+								elementales <sup>[37:1]</sup> hacia a la tierra.
+							</p>
+							<p class="fnote">
+								[37:1. Egregores, en el original. &mdash;Trad.]
+							</p>
+							<p>
+								El amor le prometió a Pandora a Prometeo; es por Pandora que el corazón de Prometeo
+								renace sin cesar bajo las garras del buitre, y para Prometeo es que Pandora guarda
+								siempre la esperanza.
+							</p>
+							<p>
+								El cielo es una canción consumada del amor; el infierno, un aullido del amor engañado
+								pero, como dijo un gran poeta, las sombras del infierno son las tinieblas evidentes,
+								ya que hay siempre una luz cierta que lo perjudica.
+							</p>
+							<p>
+								Si el infierno no tuviera una causa válida de existencia en el amor, sería el crimen
+								de Dios.
+							</p>
+							<p>
+								El infierno es el laboratorio del rescate, y es eterno, de modo que la obra de la
+								redención pueda ser eterna, porque Dios siempre fue, y siempre será, lo que es él.
+								El dolor eterno es el grito del aborto eterno.
+							</p>
+							<p>
+								Al pie de la cruz del salvador, en las representaciones evangélicas, aparecen dos
+								mujeres. Una esta erguida y lo disimula, la otra inmóvil y pálida como estatua en
+								la majestad de su pena; esta, la Virgen intachable, la madre que concibió sin pecado.
+								La otra, se prosterna y llorando, sus cabellos y ropas en el desorden salvaje, ella
+								ojos rojos de llorar, al levantar su pecho con sollozos: es la pecadora, María Magdalena,
+								reprobada por el mundo, bendita por él que muere.
+							</p>
+							<p>
+								Por cada lado del Cristo contorsionado en la agonía dos hombres, dos malhechores
+								- el que se arrepiente, el otro se endureció.
+							</p>
+							<p>
+								Aun Jesús ha dicho, le perdono a el vos, pero al otro que no dijo, condeno a vos,
+								pero sufrió en el silencio con él y para él.
+							</p>
+							<p>
+								La maldición irrevocable es la reprobación eterna del odio; el dolor irremediable
+								debe ser jamás poder amar a alguien.
+							</p>
+							<p>
+								El amor involuntario no es un sentimiento singularmente humano; es el instinto universal
+								de toda la naturaleza.
+							</p>
+							<p>
+								El animal no elige simpatía; el hombre solo agarra en sus manos esta manzana de
+								oro destinada por Cielo para lo más bello. Lo que haria ser sabio, escogeria a Minerva;
+								lo haria el tiene el poder, Juno será su elección; pero si la satisfacción de los
+								sentidos a él saciele, será para Venus que ofrecerá la manzana.
+							</p>
+							<p>
+								Esto hizo el cobarde París. Agamemnon habría escogido a Juno, y ha sido asesinado
+								por Clytemnestra. Ulises admiró solamente a Minerva; tan tuvo por él a Penélope
+								por esposa, así triunfo él por encima de las sirenas, sobre Calipso y Circe, librado
+								de Polifemo y de Neptuno, pataleados bajo sus pies a sus enemigos y rivales, y recupero
+								así su lecho nupcial y su trono.
+							</p>
+							<p>
+								Las poesías de Homero son unas enseñanzas divinas, cuyos personajes son unos tipos.
+								Agamemnon y ambos Ajaxes son el orgullo triple de la fuerza, del Valor y de la rebelión.
+								Aquiles es la cólera, París es placer, Néstor es la experiencia que habla, Ulises
+								es la inteligencia que actúa. Sus trabajos son las pruebas del Adepto, correspondiente
+								a los de Hércules, pero Hércules cedió a un amor mortal, y murió víctima de Deyanira.
+								Ulises valora la posesión del Calipso y del Circe sin permitirles poseerlo; el ama
+								lo que debe, y lo que le quiere amar; su país es su esposo, y este amor simple -
+								lo anima lo sostiene atravesando victorioso todo.
+							</p>
+							<p>
+								El amor es la fuerza más grande del hombre, cuando no es la debilidad más indigna.
+								Es débil si es un egoísta; es fuerte si es un individuo consagrado. Hércules Compra
+								a los pies de Omphalo las alegrías voluptuosas de quién es el esclavo. Con sus ojos,
+								su honor, y su libertad, Sansón paga los besos desleales de Dalila; Orfeo no debe
+								echar una mirada a Eurídice el la destrozaria animicamente de las garras del infierno;
+								conquistado por la sed para esta belleza que aspira a considerar una vez más, gira,
+								y todo esta terminado - nunca jamás sera la apariencia sobre ella. El caso es que
+								el amor verdadero se enlaza no a la belleza que pasa lejos; la belleza para él es
+								eterna, y jamás puede escapar de él, ya que es bastante fuerte para crearle. El
+								sabio quiere a ninguna mujer porque es bella; es bella porque le ama, y porque tiene
+								una buena razón para amarle.
+							</p>
+							<p>
+								El amor animal es de mal presagio. El amor humano es una providencia. Ulises en
+								los brazos del Calipso y del Circe no era infiel a Penélope, porque solo pensó era
+								para escaparse de ellas para reunirse a su esposa; peco solo contra las delicadezas
+								del amor, y será castigado él por el hijo de Circe. El semilla de los niños ilegítimos
+								es la semilla de los parricidas.
+							</p>
+							<p>
+								Cuando no hay una fe, o por lo menos ilusión y el deseo de la eternidad, el amor
+								sexual se hartar de la animalidad o de la imaginación del desenfreno. El vicio es
+								un desacralización del amor que la naturaleza castiga y el amor herido se venga.
+								Tarde o temprano podra a Don Juan ha de encontrar la estatua terrible del comandante.
+								¿ Pero podemos siempre preservarnos de este amor enfermo presagiado? ¿ Podemos irrevocablemente
+								consagrar el corazón para amar libre y legítimamente? Podemos, por el conocimiento
+								y por la voluntad; cuando sabemos lo que debemos a la voluntad, entonces nos aman
+								lo que nos deben amar.
+							</p>
+							<p>
+								Notas
+							</p>
+							<p>
+
+							</p>
+
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="paradoja-2-la-libertad-es-obediencia-a-la-ley.htm">&lt;
+									Paradoja 2</a></li>
+							<li class="align-right"><a href="paradoja-4-el-conocimiento-es-la-ignorancia-del-mal.htm">
+									Paradoja 4 &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

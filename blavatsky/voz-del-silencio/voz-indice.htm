@@ -1,0 +1,146 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Índice - La Voz del Silencio</title>
+	<meta name="description" content="Fragmentos del Libro de los Preceptos Dorados,
+    para uso diario de los discípulos. Traducido y anotado por HPB.">
+	<meta name="author" content="H.P. Blavatsky">
+	<meta property="og:title" content="Índice - La Voz del Silencio">
+	<meta property="og:description" content="Fragmentos del Libro de los Preceptos Dorados,
+    para uso diario de los discípulos. Traducido y anotado por HPB.">
+	<meta property="og:image" content="https://selfdefinition.org/blavatsky/voz-del-silencio/images/blavatsky-young.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_voz-del-silencio-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- this is first <link rel="prev"> -->
+	<link rel="next" href="contenido.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* #index-lists is a nav. Relies on 2022.CSS */
+
+		#index-lists ul.index-contents-links {
+			width: 220px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_voz-del-silencio-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_voz-del-silencio-title-include.htm"); ?>
+									<h3>
+										Índice
+									</h3>
+									<p class="tiny">
+										This page in English: <a class="inline-block" href="../voice-of-the-silence/voice-index.htm">../../voice-index.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="contenido.htm">Contenido y Prefacio &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- This is the same as the left menu, with different styling -->
+							<div id="index-lists">
+								<ul class="index-contents-links">
+									<li><a href="contenido.htm">Contenido y Prefacio</a> </li>
+									<li><a href="voz-fragmento-1.htm">Fragmento 1</a> </li>
+									<li><a href="voz-fragmento-2.htm">Fragmento 2</a> </li>
+									<li><a href="voz-fragmento-3.htm">Fragmento 3</a> </li>
+								</ul>
+								<hr />
+								<ul class="index-links">
+									<li>Blavatsky en <a href="https://es.wikipedia.org/wiki/Helena_Blavatsky">Wikipedia-español</a></li>
+									<li>Blavatsky en <a href="https://en.wikipedia.org/wiki/Helena_Blavatsky">Wikipedia-inglés</a></li>
+									<li><em>Voice of the Silence</em> en <a href="https://en.wikipedia.org/wiki/The_Voice_of_the_Silence">Wikipedia-inglés</a></li>
+									<li>Mahayana en <a href="https://es.wikipedia.org/wiki/Mah%C4%81y%C4%81na">Wikipedia-español</a></li>
+								</ul>
+								<ul class="index-links">
+									<li class="header-item">También en este sitio</li>
+									<li class="first-item">Mabel Collins, <a href="/blavatsky/luz-en-el-sendero/contenido-y-titulo.htm"><em>Luz en el Sendero</em></a></li>
+									<li>Franz Hartmann, <a href="/magic/hartmann/blanca-y-negra/contenido.htm"><em>Magia Blanca y Negra</em></a></li>
+									<li>El Kybalion, <a href="/new-thought/el-kybalion/contenido.htm">Los Misterios de Hermes</a></li>
+								</ul>
+								<hr />
+								<ul class="index-links">
+									<li>Este documento (enlace abre un documento pdf de 65 páginas, 201 KB, español): <a style="display:inline;" href="/blavatsky/espanol-H.P.Blavatsky-Voz-del-Silencio.pdf">/blavatsky/<wbr />espanol-H.P.Blavatsky-<wbr />Voz-del-Silencio.pdf</a></li>
+									<li>&nbsp;</li>
+								</ul>
+							</div>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">principio de pagina</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="contenido.htm">Contenido y Prefacio &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

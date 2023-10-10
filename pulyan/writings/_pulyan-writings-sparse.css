@@ -1,0 +1,59 @@
+/* file:  /pulyan/writings/_pulyan-writings-sparse.css
+
+Update June 8, 2020. May 22, 2022. 
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update: May 22, 2022";
+    }
+}
+
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #f0fff0;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body LATEST: #f9c9d3 */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #d6d6ff;
+}
+
+
+
+/* overcone 2022.CSS */
+.salutation {
+    font-size: 85%;
+    color: maroon;
+    font-weight: bold;
+    margin: 35px 10px 30px 15px;
+}
+
+@media only screen and (max-width:414px) {
+    .salutation {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+
+
+/* end */

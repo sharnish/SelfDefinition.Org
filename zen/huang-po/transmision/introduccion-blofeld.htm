@@ -1,0 +1,381 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La enseñanza zen de Huang Po, en la transmisión de la mente</title>
+	<meta name="description" content="Introducción del traductor al inglés, John Blofeld">
+	<meta name="author" content="Huang Po. Traducción John Blofeld y Rev. Yin Zhi Shakya">
+	<meta property="og:title" content="La enseñanza zen de Huang Po, en la transmisión de la mente">
+	<meta property="og:description" content="Introducción del traductor al inglés, John Blofeld">
+	<meta property="og:image" content="https://selfdefinition.org/zen/huang-po/transmision/images/huang-po-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_transmision-spanish-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="notas-de-publicacion.htm">
+	<link rel="next" href="introduccion-yin-zhi-shakya.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 280px;
+			border: 0px solid blue;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		p.specified-unhide {
+			display: block;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_transmission-spanish-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include("_transmission-spanish-title-include.htm"); ?>
+									<h3>
+										Introducción del Traductor al Idioma Inglés
+									</h3>
+									<p class="tiny">
+										This page in English: <a class="inline-block" href="../transmission/introduction.htm">../introduction.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="notas-de-publicacion.htm">&lt; Notas de publicación</a></li>
+									<li class="align-right"><a href="introduccion-yin-zhi-shakya.htm">Introducción traductora al español &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#sobre-texto">Sobre el texto</a></li>
+									<li><a href="#lugar">El lugar de este texto en el budismo</a></li>
+									<li><a href="#origen">Origen, crecimiento y expansión del budismo zen (dhyana)</a></li>
+									<li><a href="#huang-po">El maestro zen Huang Po</a></li>
+									<li><a href="#doctrina">La doctrina del zen</a></li>
+									<li><a href="#la-unica-mente">El uso de Huang Po del término &quot;La Única Mente&quot;</a></li>
+									<li><a href="#dhyana">La Práctica Dhyāna</a></li>
+									<li><a href="#actitud">La actitud de Huang Po hacia otras escuelas y sectas del budismo</a></li>
+									<li><a href="#division">División en sermones, diálogos y anécdotas</a></li>
+									<li><a href="#autor-china">El autor de la versión china</a></li>
+									<li><a href="#traduccion">La traducción (al inglés)</a></li>
+								</ul>
+							</nav>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="sobre-texto">&nbsp;</a>
+							<h4>
+								Sobre el texto
+							</h4>
+							<div class="right-image-div">
+								<img src="images/john-blofeld.jpg" alt="John Blofeld" title="John Blofeld" />
+								<p class="note80">
+									John Blofeld (1913-1987) <a class="block" href="https://en.wikipedia.org/wiki/John_Blofeld">Wikipedia</a> <a class="block" href="https://alchetron.com/John-Blofeld">Alchetron.Com</a></p>
+							</div>
+							<p>
+								El presente volumen es una traducción completa del texto Budista Chino del siglo IX, de Huang Po Ch'uan Hsin Fa Yao, mucho de lo cual aparece ahora en inglés por primera vez. Este contiene un relato conciso de las enseñanzas sublimes del Gran Maestro de la Secta Dhyana, a la cual, de acuerdo a la práctica Occidental actual, en lo sucesivo me referiré por su nombre japonés de Zen. El Zen es frecuentemente observado como un desarrollo único del Budismo, del Oriente Lejano, pero sus seguidores sostienen que su Doctrina surge directamente del mismo Buddha Gautama. Este texto, que es uno de los trabajos principales del Zen, se sigue muy de cerca, a las enseñanzas proclamadas en el Sütra Diamante o la Joya de la Sabiduría Trascendental&nbsp;<sup>[1]</sup>, que ha sido traducido diestramente por Arnold Price y publicado por la Sociedad Budista de Londres. También, está muy cerca es su equivalencia, al Sütra de Wei Lang (Hui Neng)&nbsp;<sup>[2a, 2b]</sup>, otra de las publicaciones de la Sociedad Budista. Pero, me ha asombrado la similaridad de nuestro texto, en espíritu y terminología, con él del no muy lejano Oriente, del siglo VIII, El Libro Tibetano de la Gran Liberación, editado por Evans Wentz y publicado por Oxford University Press. En mi opinión, estos cuatro libros, están entre las más brillantes exposiciones de la Sabiduría suprema, que tienen existencia en nuestro lenguaje; y, de ellos todos, el texto presente y el Libro Tibetano de la Gran Liberación presentan la Doctrina en la forma más adecuada a las necesidades de los lectores Occidentales.
+							</p>
+							<p class="fnote">
+								[1. <a href="http://www.acharia.org/sutras/el_sutra_del_diamante.htm">www.acharia.org/<wbr />sutras/el_<wbr />sutra_<wbr />del_<wbr />diamante.htm</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[2a. <a href="/zen/hui-neng/plataforma/contenido.htm">/zen/hui-neng/<wbr />plataforma/<wbr />contenido.htm</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[2b. <a href="http://www.acharia.org/sutradehuineng/sutrahuinengtabladecontenido.htm">http://www.acharia.org/<wbr />sutrade<wbr />huineng/<wbr />sutra<wbr />huineng<wbr />tablade<wbr />contenido.htm</a>&nbsp;]
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="lugar">&nbsp;</a>
+							<h4>
+								El Lugar del Texto en el Budismo
+							</h4>
+							<p>
+								El Zen es una rama de la gran Escuela Mahayana que prevalece en China y en la mayoría de los países del norte de Asia Occidental, así que sus enseñanzas no son aceptadas como Budismo ortodoxo por los seguidores del HJnayana o de la Escuela del Sur. Sin embargo, los eruditos Occidentales no tienen una opinión unánime en cuanto al HJnayana, siendo el sólo guardián de las verdades proclamadas por los ilustres fundadores del Budismo, a pesar de las fechas tempranas de los textos principales HJnayanas. La división en dos escuelas tomó lugar hace unos dos mil años en el norte de la India, desde entonces los Mahayanistas han aceptado las enseñanzas de la escuela hermana como PARTE de la Doctrina verdadera; aunque la posterior, con menos tolerancia, repudia cualquiera de las doctrinas que son específicamente Mahayanas. El Zen, que salió a la luz mucho después, expone eso, mientras que todas las sectas budistas presentan la verdad en grados variados, el Zen solamente preserva las enseñanzas superiores mismas de todas ellas &ndash; enseñanzas basadas sobre la transmisión misteriosa de la Mente que tomó lugar entre el Buddha Gautama y MahaKashyapa, el único de los discípulos capaz de recibir esta transmisión. Opiniones en cuanto a la verdad de esta historia, varían naturalmente, pero, Maestros como Huang Po, obviamente hablan de alguna experiencia interna profunda. Él y sus seguidores estaban preocupados solamente con una percepción directa de la verdad, y no pudieron tener ni siquiera un interés tenue en argumentos acerca de la ortodoxia histórica de sus creencias. Los grandes místicos del mundo, tales como Plotinus y Ekhart, que han sondeado las profundidades de la consciencia y llegado a estar cara a cara con la Luz Interna, el Silencio todo penetrante, están tan cerca de estar de acuerdo unánimemente referente a sus experiencias de la Realidad, que yo personalmente, no tengo la menor duda en cuanto a la verdad de sus relatos. Huan Po, en su lenguaje casi corriente de cada día, describe claramente la misma experiencia de ellos, y yo asumo que la Iluminación mística del Buddha Gautama bajo el árbol Bo, no difiere de las de ellos, a menos QUIZÁS en intensidad y en su totalidad íntegra. ¡Suponiendo lo contrario, uno tendría que aceptar muchas formas de la verdad absoluta! O de otra forma, uno estaría dirigido a creer que algunos o todos estos Maestros estaban perdidos en las nubes del auto-engaño. Así que, por insuficiente o sutil que sea la evidencia que el Zen clama que el Buddha Gautama encontró, no dudo por un momento que Huang Po expresó en su propia forma la misma experiencia de la Verdad Eterna que el Buddha Gautama y otros, budistas y no-budistas han expresado de las suyas. Además, desde que comencé la traducción de este texto me asombré por su similaridad con la enseñanza contenida en 'El Libro Tibetano de la Gran Liberación' que se le atribuye al Loto-Nacido de Padma Sambhava. Dado que ambos libros son de la misma fecha aproximadamente, supongo que ellos PUDIERAN haberse derivado de la misma fuente literal u oral, pero parece mucho más probable que los dos textos incluyan dos diferentes percepciones intimas de las personas, de la verdad eterna. Sin embargo, hay muchos que miran las cosas de otra forma, y en todo caso, me es propio dar algún relato del origen tradicional del Zen y de las teorías modernas concernientes a él.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="origen">&nbsp;</a>
+							<h4 class="toowide">
+								Origen, Crecimiento y Expansión del Budismo Zen (Dhyana)
+							</h4>
+							<h5>
+								Origen Tradicional
+							</h5>
+							<p>
+								Se dice que el Buddha Gautama tuvo que modificar la exposición de su Doctrina para adaptarla a las diferentes capacidades de sus variados discípulos y de aquellos otros que escucharon sus discursos. Una vez, al final de un sermón, Él recogió una flor y la sostuvo en alto para que la asamblea de monjes la observara. MahaKashyapa, que fue el único que entendió el significado profundo de este gesto, respondió con una sonrisa. Más tarde, este Buddha llamó a este discípulo en privado y le transmitió místicamente la doctrina sin palabras, o 'Con la Mente transmitió la Mente'. MahaKashyapa, a su vez, transmitió místicamente la Doctrina a Ánanda, que así, llegó a ser el segundo en la línea de veintiocho Patriarcas Indios. El último de ellos fue Bodhidharma, quien viajó a la China en el siglo VI A.D. En la China, él llegó a ser el Primero de los Patriarcas Chinos, que continuó la transmisión hasta Hui Neng (Wei Lang), el Sexto y último Patriarca. De ahí, siguieron las divisiones dentro de la secta, y ningún Patriarca más se estableció.
+							</p>
+							<h5 class="toowide">
+								Teorías Concernientes al Origen y Desarrollo de la Secta
+							</h5>
+							<p>
+								El Budismo, introducido oficialmente en China en el año 61 A.D., alcanzó probablemente la costa de Shantung, tan temprano como en el siglo I o II A. D. El Budismo HJnayana no sobrevivió allí por mucho tiempo, pero el Mahayana floreció extremadamente; varias sectas de origen Indio se desarrollaron y nuevas sectas se crearon. Una de las últimas sectas que surgieron fue el Zen, que rápidamente logró gran influencia. Aunque se alegó que tenía origen Indio, muchas personas han dudado la verdad de esto; y otras muchas han ido mucho más lejos, dudando la existencia misma de Bodhidharma. Si, como prefiero pensar, hubo verdaderamente tal persona, probablemente llegó a la China desde el Sur de la India por el camino de Cantón, visitando los gobernantes de dos estados chinos &ndash; porque China estaba por ese entonces dividida, como tan frecuentemente lo estuvo en su larga historia.
+							</p>
+							<p>
+								El Profesor Daisetz Tairo Suzuki acepta la existencia de Bodhidharma, pero sugiere que sus enseñanzas fueron derivadas del Sütra Lankavatara, que aparece contener los gérmenes de la doctrina sin palabras. El Dr. Hu Shih&nbsp;<sup>[3]</sup> no acepta ni la realidad histórica de Bodhidharma ni la autenticidad de los trabajos tempranos del Zen, mirando incluso el famoso Sütra de Hui Neng (Wei Lang), el Sexto Patriarca, como una falsificación de una fecha posterior, aduciendo u ofreciendo como evidencia, varios manuscritos del siglo VIII descubiertos casi recientemente en las cuevas de Tun Huang, los cuales difieren ambos, en nombre y sustancia de los trabajos de los Maestros Zen, tradicionalmente aceptados.
+							</p>
+							<p class="fnote">
+								[3. <a href="https://en.wikipedia.org/wiki/Hu_Shih">en.wikipedia.org/<wbr />wiki/<wbr />Hu_Shih</a>&nbsp;]
+							</p>
+							<p>
+								El Dr. Hu Shih, incluso describe al Zen, como una rebelión China en contra del Budismo &ndash; mirándolo como una doctrina ajena o extranjera de la India.
+							</p>
+							<!-- ELIMINATE, NOT RELEVANT p>
+                              &nbsp;<sup>[3]</sup> Hu Shih (1891-1962) Resumen de la Enciclopedia Columbia &ndash; Edición Sexta &ndash; 2001. &ndash; Traducido al español por la Rev. Yin Zhi Shakya. &ndash; Hu Shih, [1891-1962], filósofo y ensayista chino líder de los intelectuales liberales en le Movimiento del Cuatro de Mayo (1917-23). Estudió bajo la dirección de John Dewey en la Universidad de Columbia, llegando a ser un defensor, de por vida, del cambio evolutivo pragmático. Mientras era profesor de filosofía en la Universidad de Beijing, escribió para la revista iconoclasta New Youth [La Nueva Juventud]. Su contribución más importante fue la promoción de la literatura vernácula para sustituir la escritura en el estilo clásico. Hu Shih también fue un importante crítico y analista de la cultura y pensamiento Chino tradicional. Fue embajador en los Estados Unidos (1938-42), Rector de la Universidad de Beijing (1946-48), y después de 1958 Presidente de la Academia Sinica en Taiwán
+                            </p -->
+							<p>
+								Yo no veo que el Zen se levante en oposición a otras formas de Budismo, incluyendo aquellas cuyo origen Indio es indudable; porque todas las sectas miran la práctica Dhyana como un medio importante hacia la Iluminación, diríamos, la práctica de girar la mente hacia delante y luchar por perforar los velos de la percepción sensorial y el pensamiento conceptual, para llegar a la percepción intuitiva de la realidad. Sin embargo, el Zen enfatiza esto para la exclusión o casi exclusión de cualquiera otra cosa más, y también difiere de la mayoría de las sectas en referencia a la Iluminación como proceso, que finalmente ocurre en menos tiempo de lo que toma un pestañear. Así que el Zen es una forma de Budismo acomodada para aquellos que prefieren la contemplación interna, al estudio de las escrituras o a la ejecución de los trabajos magnánimos. Sin embargo, el Zen no es único en darle un énfasis especial a un aspecto en particular de la doctrina completa &ndash; si nadie hubiera hecho eso, no habría sectas. Además, la Meditación Correcta (SAMMASAMADHI) constituye el paso final del Noble Camino Óctuplo, la cual es aceptada como la misma base o asiento del Budismo por los Mahayanistas y los HJnayanistas igualmente &ndash; y la práctica dhyana es dirigida precisamente para lograr esto.
+							</p>
+							<p>
+								De ahí, aunque hay muy poca evidencia para probar o desaprobar el origen Indio del Zen, no me parece improbable que Bodhidharma de hecho, llegó a la China, trayendo con él una doctrina de gran antigüedad heredada de sus propios maestros, una doctrina que infiere que los siete pasos precedentes del Noble Camino Óctuplo deben ser mirados como preparación para el Octavo. Y si el Octavo no es sostenido para que sea el resultado de los otros Siete, es difícil de entender por qué se emplearon términos como 'Camino' y 'pasos'.
+							</p>
+							<p>
+								El Venerable difunto T'ai Hsü, una vez, ejemplificando una actitud propia budista de amplia tolerancia, describió las varias sectas como cuentas ensartadas en un solo rosario. Los Budistas Mahayana se les anima a pensar por ellos mismos y son libres de escoger cualquier camino o pasaje que mejor les acomode a sus requerimientos individuales; el rencor sectario del Occidente es desconocido en China, En cuanto al chino, aunque raramente puritano, ha sido generalmente un pueblo sobrio, las sectas sobre todo, que enfatizan la observancia estricta de los preceptos morales &ndash; como lo hace el HJnayana &ndash; los invocan raramente, lo cual puede ser una de las razones principales por la que la Escuela Sureña del Budismo fracasó en enraizarse permanentemente en China. Es más, los intelectuales chinos, desde los tiempos antiguos se han inclinado hacia el escepticismo moderado; para esas personas, la 'simplicidad' austera del Zen y la carencia virtual de ritualismo le debe haber despertado una atención muy fuerte. En otra forma, también, el terreno en China había sido muy bien preparado para el Zen. Por una parte, siglos de Confucionismo había predispuesto a los eruditos en contra de la invención-sutil de la especulación metafísica en la cual, los budistas Indios se han gratificado con mucho entusiasmo; por otra parte, la enseñanza de Lao Tzü y Chuang Tzü, los sabios taoístas, en gran parte, anticipó la quietud Zen y preparó la mente china para la recepción de una doctrina que en muchas formas era notablemente similar a la propia. (Por algunas razones similares, el Zen ha comenzado a simpatizarles a esas personas en el Occidente que están divididas emocionalmente entre la tradición moderna del escepticismo y la necesidad por una doctrina profunda que le dé significado a su existencia.)
+							</p>
+							<p>
+								Así que, quizás, esa autenticidad histórica del Zen puede que sea de una importancia relativamente pequeña, excepto para un número limitado de eruditos. No pareciéndole seguramente de mucha importancia a esos que ven en la enseñanza de los Maestros Zen una brillante reflexión de alguna comprensión válida interna de la Verdad. El Zen ha florecido por mucho tiempo en la China y el Japón y ahora comienza a desarrollarse en el Occidente, porque aquellos que han puesto sus enseñanzas en una evaluación práctica prolongada, han descubierto que ellas ciertamente satisfacen las necesidades espirituales profundas.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="huang-po">&nbsp;</a>
+							<h5>
+								El Maestro Zen Huang Po
+							</h5>
+							<p>
+								Cuando Hui Neng (Wei Lang), el Sexto Patriarca, recibió la transmisión de Mente a Mente, la Secta Zen ya se había dividido en dos ramas. La Rama Norteña, que enseñaba que el proceso de Iluminación es gradual, floreció por un tiempo bajo el patrocinio imperial, pero no sobrevivió por mucho tiempo. Mientras tanto, la Rama Sureña, con su doctrina de la Iluminación Repentina, continuó expandiéndose, y más tarde, se subdividió. El más importante de los sucesores de los Seis Patriarcas fue Ma Tsu (Tao I) que murió en el 788 A.D. Huang Po, que muchos estimaron que era una o dos generaciones más joven que él, se cree que murió tarde como en el 850, después de transmitir la Doctrina Sin-Palabras a I Hsüan, el fundador de la Gran Secta Lin Chi (Rinzai) que todavía continúa en China y florece ampliamente en Japón. Así que Huang Po es, en algún sentido, observado como el fundador de esta gran Rama. Al igual que todos los monjes chinos, él tuvo varios nombres, siendo conocido en su vida como el Maestro Hsi Yün y como el Maestro T'uan Chi; su nombre póstumo es tomado de la Montaña Huang Po, donde residió por muchos años. En Japón es conocido generalmente como Obaku, que es la forma de pronunciar en japonés los caracteres chinos para Huang Po.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="doctrina">&nbsp;</a>
+							<h5>
+								La Doctrina del Zen
+							</h5>
+							<p>
+								El Zen es ya una doctrina familiar a muchas personas del Occidente, gracias a los trabajos comprensivos e iluminantes del Dr. Daisetz Tairo Suzuki, y a los libros de los eruditos Occidentales, tal como el muy atrayente libro llamado 'El Budismo Zen' del Sr. Christmas Humphrey. A primera vista, los trabajos Zen deben parecerles, a los lectores, tan paradójicos como confusos. En una página se nos dice que todo es la Mente indivisible, y en la otra, que la luna es la luna y que un árbol indudablemente es un árbol. Sin embargo es claro, que esto no es una paradoja por el simple hecho del entretenimiento, porque hay muchos millones de personas que miran al Zen como la cosa más seria en la vida.
+							</p>
+							<p>
+								Todos los budistas toman la Iluminación del Buddha Gautama como su punto de comienzo y su trabajo para lograr ese conocimiento trascendental que los traerá cara a cara con la Realidad, y de esa forma, los liberará del renacimiento en el dominio del espacio-tiempo para siempre. Los seguidores del Zen van más adelante. Ellos no están contentos de perseguir la Iluminación a través de eones de existencias variadas, atados al dolor y la ignorancia, acercándose a la Experiencia Suprema con la lentitud infinita, que los místicos cristianos han descrito como la 'unión con la Santísima Trinidad'. Ellos creen en la posibilidad de obtener la Iluminación completa aquí y ahora, a través de esfuerzos determinados para levantarse más allá del pensamiento conceptual y agarrar el Conocimiento Intuitivo que es el hecho central de la Iluminación. Es más, ellos insisten que la experiencia es repentina y completa. Mientras que la lucha puede llevar años, la recompensa se manifiesta ella misma, en un destello instantáneo. Pero para lograr esta recompensa, la práctica de la virtud y el desapasionamiento es insuficiente. Es necesario levantarse por encima de tales conceptos relativos como el bien y el mal, el buscar y encontrar, el Iluminado y el no-iluminado, y todo el resto.
+							</p>
+							<p>
+								Para aclarar este punto, consideremos algunas ideas cristianas de Dios. Dios es mirado como el Primer Principio, sin causa y no-engendrado, que por supuesto implica perfección; tal ser no puede ser descubierto a través de la relatividad del tiempo y el espacio. Entonces, llega el concepto de 'Dios es bueno', que como los místicos cristianos han señalado disminuye su perfección; porque el ser bueno, implica no ser malo &ndash; una limitación que inevitablemente destruye la unidad y lo salutífero o edificante inseparable de la perfección. Esto, por supuesto, no intenta implicar que 'Dios es malo', o que 'Dios es ambos, bueno y malo'. Para un místico, Él no es ninguna de estas cosas, porque Él las trasciende todas. De nuevo, la idea de Dios como el creador del universo sugiere un dualismo, una distinción entre el creador y lo creado. Esto, si es válido, coloca a Dios en un nivel inferior a la perfección, porque no puede haber unidad ni totalidad donde A excluye a B o B excluye a A.
+							</p>
+							<p>
+								Los seguidores del Zen (que tienen mucho en común con los místicos de otras fes) no usan el término 'Dios', por la preocupación de sus implicaciones dualísticas y antropomórficas. Ellos prefieren hablar del 'Absoluto' o de la 'Única Mente', por lo que emplean muchos sinónimos de acuerdo al aspecto a ser enfatizado con relación a algo finito. Así que la palabra 'Buddha' es usada como sinónimo para el Absoluto, como también en el sentido de Gautama, el Iluminado, porque se sostiene que los dos son idénticos. La Iluminación de un Buddha denota una comprensión intuitiva de su unidad con el Absoluto, desde el cual, después de la muerte de su cuerpo, nada permanece para ser dividido, incluso en apariencia. Del Absoluto, nada de nada, puede ser asumido; decir que existe excluye la no-existencia; decir que no existe excluye la existencia. Es más, los seguidores del Zen sostienen que el Absoluto, o la unión con el Absoluto, no es algo para obtenerse; uno no ENTRA en el Nirvana, porque la entrada a un lugar que uno nunca ha dejado, es imposible. La experiencia comúnmente llamada 'entrar en el Nirvana' es de hecho, una comprensión intuitiva de la Naturaleza-Propia que es la Naturaleza verdadera de todas las cosas. El Absoluto o la Realidad como teniendo dos aspectos para los seres sintientes. El único aspecto perceptible al no-iluminado, es la apariencia donde los fenómenos individuales tienen una existencia separada, aunque puramente transitoria dentro de los límites del espacio-tiempo. El otro aspecto no tiene espacio ni tiempo; es más, todos los opuestos, todas las distinciones, y todas las 'entidades' de cada clase, se ven aquí como el Uno. Sin embargo, tampoco es este segundo aspecto solamente, el fruto supremo de la Iluminación, como muchos de los contemplativos suponen; es sólo cuando ambos aspectos son percibidos y reconciliados, que el espectador puede ser mirado como verdaderamente Iluminado. No obstante, desde ese momento, él cesa de ser el espectador porque es consciente de la no-división entre el espectador y lo contemplado. Esto guía a más paradojas, a menos que el uso de las palabras se abandone completamente. Es incorrecto emplear tales terminologías místicas como 'yo vivo en el Absoluto', 'el Absoluto viven en mí', o 'Estoy penetrado por el Absoluto', etc. porque cuando el espacio es trascendido, los conceptos de entero y parte ya no son válidos; la parte es lo entero &ndash; Yo SOY el Absoluto, excepto que ya yo dejé de ser el 'yo'. Lo que observo entonces es mi verdadero Yo, que es la verdadera naturaleza de todas las cosas; el observador y lo observado son uno y el mismo, sin embargo, no hay vista, justamente como el ojo no puede mirar el mismo.
+							</p>
+							<p>
+								La única meta del verdadero seguidor Zen es entrenar su mente para que todos los procesos de pensamiento basados en el dualismo inseparable de la vida 'ordinaria', sean trascendidos, tomando su lugar el Conocimiento Intuitivo, que por primera vez le revela al hombre lo que él es realmente. Si Todo es Uno, entonces el conocimiento de la naturaleza verdadera de un ser &ndash; su Yo original &ndash; es igualmente al conocimiento de toda la naturaleza, la naturaleza de todo en el universo. Aquellos que han logrado igualmente esta tremenda experiencia, ya sean cristianos, budistas, o miembros de otras fes, están de acuerdo de la imposibilidad de comunicarla en palabras. Ellos las pueden emplear para señalarle el camino a otros, pero, mientras que esos otros, no hayan logrado la experiencia por ellos mismo, ellos solamente podrán tener el mero vislumbre de la verdad &ndash; un concepto intelectual pobre, de algo situado infinitamente más allá del punto más alto que jamás se haya alcanzado por el intelecto humano.
+							</p>
+							<p>
+								Ahora estará claro que los Maestros Zen no emplean paradojas de enigmas o misterios del amor, que no tienen valor de ninguna clase, aunque ellos ocasionalmente hacen uso humorístico de ellas cuando el humor parece necesitarse. Usualmente es la imposibilitad completa de describir la Experiencia Suprema, lo que explica la naturaleza paradójica de su plática. El afirmar o negar es limitar; el limitar es apagar la luz de la verdad; pero, como las palabras de alguna clase tienen ser usadas para preparar a los discípulos en el camino correcto, por supuesto naturalmente, surgen una serie de paradojas &ndash; algunas veces paradojas, dentro de las paradojas que a su vez parecen estar dentro de otras paradojas.
+							</p>
+							<p>
+								Quizás se debe añadir que las criticas frecuentes de Huang Po sobre esos budistas que siguen el pasaje más convencional, cultivando el conocimiento, los trabajos bondadosos y un corazón compasivo a través de las etapas sucesivas de la existencia, no intentan cuestionar el valor que tiene para la humanidad esas prácticas excelentes. Como Budista, Huang Po debe haber mirado esas prácticas, con toda seguridad, como necesarias para nuestra conducta propia de la vida diaria; P'ei Hsiu nos dijo, y claro está, que su forma de vida fue enaltecida; pero él estaba menos preocupado con los conceptos tales como la virtud, que guían a las personas hacia el dualismo, por temor a que sostuvieran la Iluminación como un proceso gradual obtenible por otros medio que no fuera el discernimiento intuitivo.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="la-unica-mente">&nbsp;</a>
+							<h5>
+								El Uso del Término &quot;La Única Mente&quot; por Huang Po
+							</h5>
+							<p>
+								El texto indica que Huang Po no estaba enteramente satisfecho con su selección de la palabra 'Mente' para simbolizar la Realidad inexpresable más allá del alcance del pensamiento conceptual, porque él, más de una vez explicó que la Única Mente no es verdaderamente MENTE en absoluto. Pero, él tenía que usar algún término, y 'Mente' había sido usado frecuentemente por sus antecesores. Como el término 'Mente' transmite intangibilidad, no hay duda que le pareció a él una buena selección, especialmente porque el uso de este término ayuda a clarificar que la parte de un hombre que usualmente se mira como una entidad individual habitando su cuerpo, es, de hecho, en absoluto, no de su propiedad, sino común a él, a todos y a cada cosa. (Se debe recordar, que en chino, 'hsin' significa no sólo 'mente', sino 'corazón' y en algún sentido por lo menos, 'espíritu' o 'alma' &ndash; en resumen, el así llamado hombre VERDADERO, el habitante de la casa-cuerpo.). Si nosotros preferimos sustituir la palabra 'Absoluto', que Huang Po ocasionalmente usa, debemos cuidar no leer el texto con ningunas nociones preconcebidas como la naturaleza del Absoluto. Y por supuesto, 'la Única Mente' no es la excepción, a menos que abandonemos todas las ideas preconcebidas, como Huang Po intentó.
+							</p>
+							<p>
+								En una traducción anterior de la primera parte de este libro, me aventuré a sustituir la 'Única Mente' por la 'Mente Universal', esperando que el significado de 'Mente Universal', se viera más claramente. Sin embargo, varios críticos objetaron esto, y he llegado a ver que mi término está expuesto a una clase de interpretación errónea diferente; por lo tanto, no hay mejora sobre el término 'la Única Mente', que por lo menos tiene el mérito de ser una traducción literal.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="dhyana">&nbsp;</a>
+							<h5>
+								La Práctica Dhyāna
+							</h5>
+							<p>
+								El libro nos dice muy poco acerca de la práctica de lo que, por traducirlo lo mejor posible, se le llama meditación o contemplación. Desgraciadamente, ambas de estas palabras nos conducen a conclusiones erróneas ya que ellas implican algún objeto de meditación o de contemplación; y, si sin ningún objetivo se establecen, entonces ellas pueden más bien ser tomadas para guiarnos a un trance entre blando o somnoliento, que no es en absoluto la meta del Zen. Huang Po parece haber asumido que esta audiencia conocía algo acerca de esta práctica &ndash; por supuesto, como los budistas más entusiastas lo hacen. Él dio algunas instrucciones en cuanto a 'meditar', pero no nos dijo que evitar. Si se concibe el mundo fenomenal como ilusión, nosotros lo tratamos de excluir, haciendo una distinción falsa entre lo 'real' y lo 'irreal'. Así que, no debemos de excluir nada, sino tratar de alcanzar el punto donde todas las distinciones son vistas como vacías, donde nada es visto como deseable o indeseable, existente o no-existente. Sin embargo, esto no significa de debemos poner nuestras mentes en blanco, porque entonces no seremos mejores que trozos de madera o terrones de piedra; es más, si permanecemos en este estado, no seremos capaces de bregar con las circunstancias del diario vivir o de observar el precepto Zen: 'Cuando tengan hambre, coman.' Preferentemente, debemos cultivar el desapasionamiento, comprendiendo que ninguno de los atributos atractivos o repulsivos de las cosas tiene existencia en absoluto.&nbsp;<sup>[4]</sup>
+							</p>
+							<p class="fnote">
+								[4. Comentario de Yin Zhi Shakya: 'Esta declaración es de suma importancia en el Zen. Y todos los estudiantes del Zen la deben tener siempre presente'.]
+							</p>
+							<p>
+								La Iluminación, cuando llega, lo hace en un abrir y cerrar de ojos. No puede haber Iluminación gradual ni parcial. Se puede decir que el adepto fervoroso y entrenado superiormente, se ha preparado él mismo para la Iluminación, pero de ninguna forma puede ser mirado como Iluminación Parcial &ndash; al igual que una gota de agua puede ir calentándose cada vez más y entonces, repentinamente, hervir; en ninguna etapa de este proceso estará hirviendo parcialmente, y hasta el mismo momento de hervir, ningún cambio, en su calidad, ha ocurrido. Sin embargo, en efecto, podemos ir a través de tres etapas -dos de no-Iluminación y una de Iluminación. Para la gran mayoría de las personas, la luna es la luna y los árboles son los árboles. La próxima etapa (realmente no mayor que la primera) es percibir que la luna y los árboles no son en absoluto lo que parecen ser, dado que 'todo es la Única Mente'. Cuando esta etapa se alcanza, tenemos el concepto de una uniformidad vasta en la que todas las distinciones están vaciás; y para algunos adeptos este concepto puede llegar como una percepción real, tan 'verdadera' para ellos como eran la luna y los árboles antes. Se dice que, cuando la Iluminación verdaderamente llega, la luna es otra vez la luna y los árboles exactamente los árboles; ¡pero con una diferencia, porque el hombre Iluminado es capaz de percibir ambas la unidad y la multiplicidad sin la menor contradicción entre ellas!
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="actitud">&nbsp;</a>
+							<h4 class="toowide">
+								La Actitud de Huang Po Hacia Otras Escuelas y Sectas del Budismo
+							</h4>
+							<p>
+								Como es probable que este libro sea leído por muchos budistas que pertenecen a los Theravadines (la Escuela HJnayana) o a las otras sectas Mahayanas que no son Zen, aquí se necesita alguna explicación para prevenir posibles malentendidos. Una ojeada descuidada a nuestro texto o algún otro trabajo Zen, bien puede dar la impresión que el Budismo No-Zen es tratado muy ligeramente. Debemos recordar que Huang Po estaba hablando principalmente a budistas firmes y serios en sus creencias. Él mismo nos dice que nada escrito debe ser entendido fuera de su contexto, o, sin observar las circunstancias bajo las cuales el sermón registrado fue pronunciado. Yo siento que si él hubiera estado hablando a una audiencia no-budista, sus referencias a los 'Tres Vehículos' habrían sido asentadas en un lenguaje diferente. Un estudio cuidadoso de sus trabajos me ha persuadido que Huang Po no sintió deseo de aminorar la virtud de esos budistas que no estaban de acuerdo con sus métodos, pero que sí se sintió muy seguro de que el método Zen produce resultados más rápidos. Él estaba muy preocupado en demostrar que el estudio de las escrituras y la ejecución de los trabajos bondadosos, no pueden guiar a la Iluminación, a menos que el proceso de la formación de conceptos de la mente finita, sea traído propiamente bajo control. En cuanto a los buenos trabajos y al modo de vida correcto, nosotros aprendemos de P'ei Hsiu y de los demás con su propia forma de vida era enaltecida; pero él constantemente combatió la noción de que 'los trabajos bondadosos en sí mismos nos pueden traer cerca de la Iluminación'. Es más, cuando el tiempo llega para que un budista discipline su mente, de manera que sobrepase la dualidad, él entra en una etapa en que las nociones de bueno y malo deben ser trascendidas como cualquier otra forma de dualismo. El Maestro estaba consciente de que muchos de los budistas a los que él había predicado, probablemente habían caído en el error tan común de ejecutar buenas acciones con el deseo consciente de almacenar méritos para ellos mismos &ndash; un deseo que es una forma de apego contraria a la Iluminación al igual que cualquiera otra forma de apego. (¡El traductor conoce a muchos budistas &quot;sinceros&quot; que llevan sus vidas muy lejos de ser nobles y que se gratifican en acciones que destruyen la felicidad de los demás, pero que creen firmemente que sus ofrendas regulares a la Sangha y su asistencia a los servicios del templo les acrecentarán el buen karma, suficientemente para cancelar los resultados de su desatino y mezquindad hacia los demás!)
+							</p>
+							<p>
+								En cuanto al estudio de los sütras y trabajos escritos de todas las clases de Budismo, Huang Po debe haber asumido, seguramente, que la mayoría de las personas que se habían tomado el trabajo de ir a la montaña a retirarse para tomar instrucción, eran ya completamente versados en la doctrina Budista, y que de lo que carecían era del conocimiento del control-de-la-mente. Se hace claro de las propias palabras del Maestro, que él comprendió la necesidad de los libros y las enseñanzas de las variadas clases, para las personas menos avanzadas. A menos que un hombre esté inicialmente atraído al Misticismo a través de las doctrinas escritas pronunciadas por el Señor Buddha o por otros grandes maestros, él estará menos propenso a ver la necesidad del control-de-la-mente, el objetivo central de las enseñanzas propias de Huang Po. Así que, la Doctrina de Palabras debe inevitablemente proceder de la Doctrina Sin-Palabras, excepto en ciertos casos extraordinarios. Estoy convencido que Huang Po no tenía intención de empequeñecer los 'Tres Vehículos'; pero que, dado que él estaba hablándole a una audiencia que ya tenía conocimiento de esas enseñanzas, él deseó enfatizar el control-de-la-mente (Sammasamadhi) que es la enseñanza superior de todas; y que sin ella todas las otras prácticas son en vano para aquellos que tienen por meta el ganar la intuición mística que guía a la experiencia inefable llamada Nirvana.
+							</p>
+							<p>
+								Los budistas de otras sectas han sido frecuentemente mucho menos caritativos que Huang Po hacia aquellas sectas con las cuales -usualmente a través de la ignorancia &ndash; ellos han estado en desacuerdo. Así que la Secta de la Tierra Pura o el Amidismo es frecuentemente presentado para desdeñar y etiquetar el 'no-Budismo', 'la antitesis del Budismo' y así sucesivamente. Esto es parcialmente porque muchos Amidistas malinterpretan la enseñanza de su propia secta, pero... ¿qué religión o secta no merecería nuestro desdeño si sus méritos fueran juzgados por la creencia popular del cuerpo general de sus seguidores? De hecho, como he comentado en el comentario del texto, el Amidismo en su forma pura es un Budismo excelente, porque el Buddha Amida simboliza el entendimiento intuitivo de nuestra propia unidad con la realidad. Es más, el Profesor Suzuki ha señalado, en alguna parte, que más Amidistas logran el Satori (Un repentino destello de la Iluminación) que adeptos Zen, porque su concentración en un punto fijo, mientras recitan la fórmula 'Namo Amida Buddha' es una forma excelente de control mental, obtenible incluso por una persona simple que no tiene idea del significado verdadero de 'Amida' y de 'Tierra Pura'.
+							</p>
+							<p>
+								Otra secta que ha tenido mucha censura, especialmente de los escritores Budistas Occidentales, es la que es comúnmente conocida en inglés como el Lamaísmo. Para aquellos que suponen que el Lamaísmo no tiene nada que ofrecer aparte de las concesiones a las supersticiones de los Tibetanos no-educados (iguales las supersticiones encontradas en los países 'más avanzados), la Serie Tibetana Oxford tan diestramente editada por el Dr. Evans-Wentz provee una prueba irrebatible de lo contrario. Las referencias aparentemente descorteses de Huang Po sobre otras sectas están justificadas por la urgencia y sinceridad de su deseo fijo de enfatizar la necesidad del control de la mente. La descortesía exhibida por muchos escritores sectarios parece tener menos justificación.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="division">&nbsp;</a>
+							<h4 class="toowide">
+								La División en Sermones, Diálogos y Anécdotas
+							</h4>
+							<p>
+								Los sermones presentan solamente la doctrina en su extensión completa; los diálogos y las anécdotas, aunque ofrecen poco de algo nuevo en el asunto, amplían grandemente nuestro entendimiento de lo que ha pasado antes. Esta división es completamente típica o normal en los trabajos Zen. Los Maestros Zen sostienen que un entendimiento completo del Zen en un individuo se precipita frecuentemente a través de oír una simple frase calculada exactamente para destruir su demonio-clase particular de ignorancia; así que ellos han favorecido siempre el diálogo paradójico breve como medio de instrucción, encontrándolo de gran valor para darle una sacudida repentina a la mente del alumno que lo pueda impulsar o estimular hacia la Iluminación.
+							</p>
+							<p>
+								Muchos de los diálogos archivados aquí tomaron lugar en asambleas públicas. No debemos suponer que el erudito y entendido P'ei Hsiu se hizo él mismo todas las preguntas; porque algunas de ellas indican una mediocridad de entendimiento inexplicables en un gran letrado.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="autor-china">&nbsp;</a>
+							<h4>
+								El autor de la versión china
+							</h4>
+							<p>
+								P'ei Hsiu fue un oficial-ilustrado de gran conocimiento, cuya caligrafía es todavía estimada e incluso usada por estudiantes como modelo. Su entusiasmo por el conocimiento era inmenso. Está registrado acerca de él, que en el intervalo entre sus nombramientos oficiales, algunas veces se encerró con sus libros por más de un año seguido. Tan grande fue su devoción hacia Huang Po que él representó a su hijo como un novicio, y se sabe que este joven vivió para llegar a ser un Maestro Zen de gran lustre.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="traduccion">&nbsp;</a>
+							<h4>
+								La Traducción (al inglés)
+							</h4>
+							<p>
+								La presente traducción de la Parte 1<sup class="black">a</sup> difiere un poco de la que hice hace años, y que fue publicada bajo el título de 'La Doctrina de la Mente Universal de Huang Po'; mientras que la Parte 2<sup class="black">a</sup> se ha publicado ahora por primera vez. Las palabras tácitamente implicadas en el original o agregadas por la consideración de la expresión en el idioma, no han sido encerradas en paréntesis angulares o corchetes, así que la traducción es interpretativa, pero el sentido es estrictamente él del original, a menos que algún error haya ocurrido en mi entendimiento del documento. Estos probables errores, por los cuales ahora pido disculpas son debidos a lo sucinto del texto chino y a la multiplicidad de significados que ciertos caracteres de ese idioma tienen. En estos términos, 'hsin' puede significar 'Mente' o 'mente' o 'pensamiento', de los cuales el último es, de acuerdo a Huang Po, el mayor obstáculo en el camino de nuestro entendimiento del primero. Similarmente, 'fa' (dharma) puede significar la Doctrina, un solo aspecto de la Doctrina, un principio, una ley, método, idea, cosa, o entidad de cualquier clase que sea. Es más, el texto en algunas partes está compuesto mayormente de diálogos, y en otras, emplea una clase de jerga de la Dinastía T'ang, teniendo que deducirse el significado de ella del contexto. Cuando les he referido los pasajes oscuros a los eruditos chinos, se me ha dado una amplia variedad de explicaciones diferentes de las cuales no he sabido qué escoger. A pesar de esto creo que mi interpretación por lo menos, en cuanto a la completa exactitud, en ninguna parte se ha apartado del espíritu de mi enseñanza. La división en párrafos numerados es mía propia.
+							</p>
+							<p>
+								Expreso mis agradecimientos al Diccionario Budista Chino del Sr. Ting Fu Pao, al Diccionario de Términos Budistas compilado por Soothill and Hodous, a muchos monjes budistas y laicos chinos, y sobre todo a mi esposa que ha ayudado grandemente en la preparación del manuscrito. Es una costumbre china ofrecer el mérito acumulado de la publicación de un trabajo Budista a alguien, y éste en especial se lo ofrezco felizmente a mi esposa, Meifang. ¡Sin embargo me temo, que Huang Po se habría reído en mi cara y quizás me hubiera dado uno de sus famosos golpes, si yo le hubiera comentado sobre 'ganar mérito' en esta forma!
+							</p>
+							<p class="strong" style="margin-top: 30px; margin-bottom: 5px;">
+								JOHN BLOFELD (CHU CH&apos;AN)
+							</p>
+							<p class="note" style="margin-top: 5px;">
+								The Bamboo Studio, Bangkok
+								<br />
+								Octubre de 1957
+							</p>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">hasta arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="notas-de-publicacion.htm">&lt; Notas de publicación</a></li>
+									<li class="align-right"><a href="introduccion-yin-zhi-shakya.htm">Introducción traductora al español &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<p>
+						&nbsp;</p>
+					<p>
+						&nbsp;</p>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

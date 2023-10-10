@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if IE]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Self Definition / Tao index</title>
+    <link href="/styles/selfdefinition.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        /* update 9/18/2016 */
+        #the-top-menu {margin: 10px;}
+        #the-top-menu li {display:inline-block;padding-left:20px;float:left;}
+        #mainwrapper
+        {
+            width: 500px;
+            margin: 0 auto;
+            font-size:14px;
+        }
+        #maincontent, #topmenu 
+        {
+            width: auto;
+        }
+        
+        @media only screen and (max-width:767px)
+        {
+            #mainwrapper
+            {
+                width: auto;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        @media only screen and (max-width:500px)
+        {
+            #mainwrapper
+            {
+                width: 95%;
+                padding: 0 10px;
+            }
+            p
+            {
+                padding: 0 3px;
+            }
+             
+        }
+    </style>
+</head>
+<body>
+    <div id="mainwrapper">
+        <ul id="the-top-menu">
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+        </ul>
+        
+        <div id="maincontent">
+            <div id="topmenu">
+                <!-- inset top menu -->
+                <?php include("_taotopmenu.htm"); ?>
+            </div>
+            <p>
+                This is: http://selfdefinition.org/tao/
+            </p>
+            <p>Go to "Discussion on Making All Things Equal" :</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="making-all-things-equal.htm">/tao/making-all-things-equal.htm</a></p>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div id="googleanalytics">
+        <?php include("/home/reversev/public_html/selfdefinition.org/includes/googlescript.htm"); ?>
+    </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vivekachudamani, La Joya del Discernimiento Vivekachudamanim</title>
+    <meta name="description" content="Tradicionalmente atribuido a Adi Shankaracharya, literalmente la 'joya de la cresta de la discriminación'. Expone la filosofía Advaita Vedanta en forma de manual de autoaprendizaje.">
+    <meta name="author" content="Tradicionalmente atribuido a Adi Shankaracharya">
+    <meta property="og:title" content="The Vivekachudamani, La Joya del Discernimiento  Vivekachudamanim">
+    <meta property="og:description" content="Tradicionalmente atribuido a Adi Shankaracharya, literalmente la 'joya de la cresta de la discriminación'. Expone la filosofía Advaita Vedanta en forma de manual de autoaprendizaje.">
+    <meta property="og:image" content="https://selfdefinition.org/advaita/shankara/joya/images/shankaracharya-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_joya-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- start -->
+    <link rel="next" href="prologo.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* Social media:
+
+        "Sankara's treatises appeal to reason in a way hardly ever equalled for clearness and simplicity by the sages of the earth." 
+        -- Theosophical scholar Charles Johnson
+
+        */
+        /* for links copied from side menu */
+        /* #index-lists is a nav */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_joya-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"></div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_joya-title-include.htm"); ?>
+                                    <h3>
+                                        Contenido
+                                    </h3>
+                                    <p class="tiny">This page in english: <a href="../crest-jewel/contents.htm">../crest-jewel/contents.htm</a></p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="prologo.htm">Prólogo &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <!-- same as the left menu, with different styling -->
+                            <nav class="index-lists">
+                                <ul class="index-contents-links">
+                                    <li class="contents-first-item"><a href="prologo.htm">Prólogo</a></li>
+                                    <li><a href="introductorio.htm">Introductorio</a></li>
+                                    <li><a href="01-primeros-pasos.htm">1. Primeros pasos en el camino</a> </li>
+                                    <li><a href="02-los-cuerpos.htm">2. Los cuerpos</a> </li>
+                                    <li><a href="03-el-testigo.htm">3. El Testigo</a> </li>
+                                    <li><a href="04-encontrar-el-yo-real.htm">4. El verdadero Yo</a> </li>
+                                    <li><a href="05-imagenes-mentales.htm">5. Imágenes mentales</a> </li>
+                                    <li><a href="06-libertad-incluso-en-la-vida.htm">6. Libertad en la vida</a> </li>
+                                    <li><a href="07-tres-clases-de-obras.htm">7. Tres clases de obras</a> </li>
+                                    <li><a href="08-maestro-y-discipulo.htm">8. Maestro y discípulo</a> </li>
+                                    <li><a href="09-el-sabio-perfecto.htm">9. El sabio perfecto</a> </li>
+                                    <li><a href="10-siempre-libre.htm">10. Siempre libre</a> </li>
+                                </ul>
+                                <hr />
+                                <ul class="index-external-links">
+                                    <li class="external-first-item">Adi Shankaracharya <span class="nowrap">en <a class="inline" href="https://en.wikipedia.org/wiki/Adi_Shankara">Wikipedia [español]</a></span></li>
+                                    <li class="external-first-item">Adi Shankaracharya <span class="nowrap">at <a class="inline" href="https://en.wikipedia.org/wiki/Adi_Shankara">Wikipedia [inglés]</a></span></li>
+                                    <li class="external-first-item">Advaita Vedanta <span class="nowrap">en <a href="https://en.wikipedia.org/wiki/Advaita">Wikipedia [español]</a></span></li>
+                                    <li class="external-first-item">Advaita Vedanta <span class="nowrap">at <a href="https://en.wikipedia.org/wiki/Advaita_Vedanta">Wikipedia [inglés]</a></span></li>
+                                    <li class="external-first-item">Crest-Jewel of Discrimination at <a href="https://en.wikipedia.org/wiki/Vivekachudamani">Wikipedia [inglés]</a></li>
+                                    <li>Fuente de este documento, PDF de 118 páginas, 429 KB, Enciclopedia Hispano-católica Universal: <a style="display:inline;" href="https://www.mercaba.org/SANLUIS/ALiteratura/Antigua/Literatura%20asi%C3%A1tica/Sankara/LA%20JOYA%20DEL%20DISCERNIMIENTO.pdf">mercaba.org/SANLUIS/</a></li>
+                                </ul>
+                                <ul class="index-site-links">
+                                    <li class="header-item">También en Advaita</li>
+                                    <li>Astavakra Gita: <span class="note">[español]</span> <a href="/advaita/ashtavakra/es/contenido.htm">Astavakra Samhita </a></li>
+                                    <li>Parameshwar Maharaj: <span class="note">[español]</span> <a href="/advaita/parameshwar/hundiendome/indice.htm">Hundiendome en mí mismo </a></li>
+                                    <li class="header-item">También en este sitio</li>
+                                    <li class="subhead">Siddharameshwar</li>
+                                    <li class="first-item"><span class="note">[inglés]</span> <a href="/siddharameshwar/dasbodh-selections/contents.htm">Selections from Amrut Laya</a></li>
+                                    <li><span class="note">[español]</span> <a href="/siddharameshwar/la-llave-maestra/el-cuerpo-causal-olvido.htm">La llave de la realización del ser: El cuerpo causal y el ovido</a></li>
+                                    <li class="header-item">Celibacy section</li>
+                                    <li class="first-item"><span class="note">[inglés]</span> <a href="/celibacy/quotes/shankaracharya-on-celibacy.htm"> Shankara on Celbacy</a></li>
+                                    <li class="subhead">Todas las páginas en español</li>
+                                    <li class="first-item"><a href="/paginas-en-espanol.htm">Páginas en español</a></li>
+                                </ul>
+                            </nav>
+                            <p>&nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">Volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="prologo.htm">Prólogo &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

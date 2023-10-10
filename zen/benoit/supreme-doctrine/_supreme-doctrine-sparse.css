@@ -1,0 +1,42 @@
+/* file:  /zen/benoit/supreme-doctrine/_supreme-doctrine.css */
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #eafff3;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#menu-section-group a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #cfd4b6;
+}
+
+
+/* customizable features */
+
+header h3 span {
+    font-size: 85%;
+}
+
+
+/* section specific holdovers CHECK THESE */
+
+.pagenum {
+    display: none;
+}
+
+
+
+/* end */

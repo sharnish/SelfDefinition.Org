@@ -1,0 +1,77 @@
+<!-- start of menu include file Update Mayy 16, 2020 -->
+<!-- HAS SUB-MENUS CALLED BY EACH PAGE -->
+<!-- THEN HAS A BOTTOM MENU            -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<!-- must not set width of top item at 100% because there are two top items -->
+			<li><a href="/celibacy/">Celibacy Index</a></li>
+			<li class="conditional-hide-3"><a href="/celibacy/quotes/contents.htm">Celibacy Quotes</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-2"><a href="/">Site root</a></li>
+			<li><a href="brahmacharya-contents.htm">Contents<span class="conditional-hide"> Page</span></a></li>
+			<li><a href="brahmacharya-full-index.htm"><span class="conditional-hide2">Full </span>Index</a></li>
+			<li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top <span class="conditional-hide-5">of page</span></a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/celibacy/">Celibacy Index</a></li>
+			<li><a href="/celibacy/quotes/contents.htm">Celibacy Quotes</a></li>
+			<li><a href="/celibacy/articles/celibacy-articles-and-links.htm">Celibacy Links</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Some features use ajax api</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent -->
+		<ul class="menu-text center" style="margin-top:30px;">
+			<li class="note80">
+				<img class="menu-photo" src="/celibacy/sivananda/images/swami-sivananda.jpg" alt="Swami Sivananda">
+			</li>
+			<li class="normal note">Sivananda Saraswati <span class="block">(1887-1963)</span>
+			</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id  -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-contents.htm">Contents Page</a></li>
+
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-full-index.htm">Full Index Page</a></li>
+
+				<li class="heading"></li>
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-title-page.htm">Title Page and Prayer</a></li>
+				<li class="spacer">
+					<hr>
+				</li>
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-section-1-phenomenon.htm">Section 1:<br>
+						Phenomenon of Sex</a></li>
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-section-2-glory.htm">Section 2:<br>
+						The Glory of Brahmacharya</a></li>
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-section-3-techniques.htm">Section 3:<br>
+						Techniques of Sex Sublimination</a></li>
+				<li class=""><a href="/celibacy/sivananda/brahmacharya-section-4-symposium.htm">Section 4:<br>
+						Symposium</a></li>
+				<li class="spacer">
+					<hr>
+				</li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group; the scope of the menu highlighter script  -->
+		<!-- -->
+		<!-- #menu-container is still open -->
+		<!-- #menu-include-file-div is still open -->
+		<!-- -->
+		<!-- Closing divs are in the "menu-botton" include file -->
+		<!-- end of menu top include file -->

@@ -1,0 +1,67 @@
+# selfdefinition.org/zen/garma-chang/.htaccess
+
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/practice-of-zen-table-of-contents.htm"               "/zen/garma-chang/practice-of-zen/contents.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/practice-of-zen-foreword.htm"                        "/zen/garma-chang/practice-of-zen/foreword.htm"
+
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-1a-nature-of-zen.htm"                             "/zen/garma-chang/practice-of-zen/ch-1a1-nature-of-zen.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-1b-nature-of-zen-the-core-of-zen.htm"             "/zen/garma-chang/practice-of-zen/ch-1b-core-of-zen.htm" 
+
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-1c-nature-of-zen-four-vital-points-in-zen.htm"    "/zen/garma-chang/practice-of-zen/ch-1c-four-vital-points.htm"  
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2-general-review-of-zen-practice.htm"              "/zen/garma-chang/practice-of-zen/ch-2-review-of-zen-practice.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2b1-discourses-of-four-zen-masters-master-hsu-yun.htm"  "/zen/garma-chang/practice-of-zen/ch-2b1-four-masters-discourses-hsu-yun.htm"
+
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2b2-discourses-of-master-tsung-kao.htm"           "/zen/garma-chang/practice-of-zen/ch-2b2-discourses-tsung-kao.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2b3-discourses-of-master-po-shan.htm"             "/zen/garma-chang/practice-of-zen/ch-2b3-discourses-po-shan.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2b4-discourse-of-master-han-shan.htm"             "/zen/garma-chang/practice-of-zen/ch-2b4-discourse-han-shan.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2c1-autobiographies-of-five-zen-masters-han-shan.htm"  "/zen/garma-chang/practice-of-zen/ch-2c1-autobiographies-han-shan.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2c2-autobiographies-zen-master-wu-wen-story.htm"     "/zen/garma-chang/practice-of-zen/ch-2c2-story-wu-wen.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2c3-autobiographies-zen-master-hsueh-yen-story.htm"  "/zen/garma-chang/practice-of-zen/ch-2c3-story-hsueh-yen.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2c4-autobiographies-zen-master-meng-shan-story.htm"  "/zen/garma-chang/practice-of-zen/ch-2c4-story-meng-shan.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-2c5-autobiographies-zen-master-kao-feng-story.htm"   "/zen/garma-chang/practice-of-zen/ch-2c5-story-kao-feng.htm"
+
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-3a-four-problems-of-zen-buddhism-is-zen-unintelligible.htm"  "/zen/garma-chang/practice-of-zen/ch-3a-is-zen-unintelligible.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-3b-four-problems-of-zen-buddhism-what-is-zen-enlightenment.htm" "/zen/garma-chang/practice-of-zen/ch-3b-zen-enlightenment.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-3c-four-problems-of-zen-zen-and-mahayana-buddhism.htm" "/zen/garma-chang/practice-of-zen/ch-3c-zen-and-mahayana.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-3d-four-problems-of-zen-four-distinctions-of-lin-chi.htm" "/zen/garma-chang/practice-of-zen/ch-3d-four-distinctions-of-lin-chi.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-4a-meditation-three-aspects-of-buddhood-six-patterns.htm" "/zen/garma-chang/practice-of-zen/ch-4a-meditation-three-aspects.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-4b-meditation-survey-of-the-practice-of-meditation.htm"  "/zen/garma-chang/practice-of-zen/ch-4b-survey-practice-buddhist-meditation.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-4b1-meditation-survey-four-characteristics-of-samadhi.htm" "/zen/garma-chang/practice-of-zen/ch-4b1-four-characteristics-samadhi.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-4b2-meditation-survey-seven-types-meditation-practice.htm"  "/zen/garma-chang/practice-of-zen/ch-4b2-seven-types-meditation.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/ch-4b3-meditation-survey-three-successive-stages-of-meditation.htm" "/zen/garma-chang/practice-of-zen/ch-4b3-three-stages-meditation.htm"
+
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/practice-of-zen-notes.htm"                            "/zen/garma-chang/practice-of-zen/endnotes.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/practice-of-zen-index.htm"                           "/zen/garma-chang/practice-of-zen/book-index.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/practice-of-zen-bibliography.htm"                    "/zen/garma-chang/practice-of-zen/bibliography.htm"
+
+Redirect 301 "/zen/garma-chang/practice-of-zen/practice-of-zen-appendix-romanized-chinese-characters.htm"  "/zen/garma-chang/practice-of-zen/appendix-chinese.htm"
+
+
+#
+

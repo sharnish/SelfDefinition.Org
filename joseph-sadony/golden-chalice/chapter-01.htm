@@ -1,0 +1,130 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Golden Chalice by Joseph Sadony</title>
+	<meta name="description" content="When in doubt you need but ask your questions 
+    and drink from the golden chalice, where the comforting spirit of truth moves you find your answer.">
+	<meta name="author" content="Joseph Sadony">
+	<meta property="og:title" content="The Golden Chalice by Joseph Sadony">
+	<meta property="og:description" content="When in doubt you need but ask your questions 
+    and drink from the golden chalice, where the comforting spirit of truth moves you find your answer.">
+	<meta property="og:image" content="https://selfdefinition.org/joseph-sadony/golden-chalice/images/joseph-sadony-og-image-2.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_golden-chalice-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="foreword.htm">
+	<link rel="next" href="chapter-02.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* this page only */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_golden-chalice-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_golden-chalice-title-include.htm"); ?>
+									<h3>
+										Chapter I
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="foreword.htm">&lt; Foreword </a></li>
+									<li class="align-right"><a href="chapter-02.htm">Chapter 2 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="center">
+								<em>The wisdom that is from above is first pure, then peaceable, gentle, and easy to be entreated, full of mercy and good fruits, without partiality, and without hypocrisy.</em> &ndash; James, III-17
+							</p>
+							<p class="first-para">
+								I was blindly groping my way through a world of dreams seeking for truth. The ceiling of my little room turned into a cloud; and from the cloud came an echo to my thoughts:
+							</p>
+							<p>
+								<em>"Give to me the Golden Chalice I gave thee at the last supper, so I may place the answer to thy prayer within it.</em>
+							</p>
+							<p>
+								<em>"Drink ye of my blood, eat ye of my deeds; then thou shalt know by experience what truth really is.</em> “
+							</p>
+							<p>
+								<em>"As much as thou givest of thyself to me, that much am I a part of thee.</em> “
+							</p>
+							<p>
+								After that I found that I needed only to think a thought, and listen for its echo in my imagination as an answer.
+							</p>
+							<p>
+								You will find here but a few of the answers that followed my questions. Accept them as you please. They made me happy, and I only want to share that happiness with those who do know the presence of Divinity and Truth. This is not for you if you do not know what it meant to me to experience and to record it.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="foreword.htm">&lt; Foreword </a></li>
+									<li class="align-right"><a href="chapter-02.htm">Chapter 2 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!-- start of menu include file Update Apr 20, 2020 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <!-- these float <  check, where is it cleared? -->
+            <li><a href="/hearing-voices/">Hearing Voices Index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="/hearing-voices/articles/articles-index.htm">Articles</a></li>
+            <li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/hearing-voices/">Hearing Voices index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="last-li"><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="margin-top: 30px;">
+            <li class="normal">
+                <img class="menu-image" src="images/hearing-voices-joan-of-arc.jpg" alt="Jon of Arc hearing voices">
+            </li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <li><a href="articles-index.htm">Articles Index</a></li>
+                <li><a href="vernon-howard-freedom-from-harmful-voices.htm">Vernon Howard: Freedom from Harmful Voices</a> </li>
+                <li><a href="alan-fitzpatrick-the-voices-we-may-hear.htm">Alan Fitzpatrick: The Voices We May Hear</a> </li>
+                <li><a href="alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">Alan Fitzpatrick: The Surest Path to Mental Clarity</a> </li>
+                <li><a href="alan-fitzpatrick-mind-parasites-fact-or-fiction.htm">Alan Fitzpatrick: Mind Parasites - Fact or Fiction? [lecture poster]</a> </li>
+                <li><a href="alcoholics-anonymous-252-slogans.htm">Alcoholics Anonymous: 252 Slogans</a> </li>
+                <li><a href="st-ignacius-loyola-rules-for-the-discernment-of-spirits.htm">St. Ignacius Loyola: Rules for the Discernment of Spirits</a> </li>
+                <li><a href="wilson-van-dusen-presence-of-spirits-in-madness.htm">Wilson Van Dusen: Presence of Spirits in Madness</a> </li>
+                <li><a href="wilson-van-dusen-hallucinations-as-the-world-of-spirits.htm">Wilson Van Dusen: Hallucinations as the World of Spirits</a> </li>
+                <li><a href="spirit-possession-and-how-to-avoid-it.htm">Spirit Possession and How to Avoid It</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div id="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="first-item">Psychology Section
+                    <a class="block" href="/psychology/">/psychology/</a>
+                </li>
+                <li>Possession Section
+                    <a class="block" href="/possession/">/possession/</a>
+                </li>
+                <li>Celibacy Articles
+                    <a class="block" href="/celibacy/quotes/">/celibacy/quotes/</a>
+                </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,81 @@
+<!-- start of menu include file  Updated June 6, 2020 May 21, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top:30px;">
+			<li>Developing Mental Power <span class="normal">(1922)</span></li>
+			<li class="normal">
+				<img class="menu-image" src="images/george-malcolm-stratton.jpg" alt="George Malcolm Stratton" />
+			</li>
+			<li>George Malcolm Stratton<br />
+				<span class="nowrap normal">1865&ndash;1957 </span>
+			</li>
+			<!-- don't use, duplicated at top
+            <li class="normal note">Published 1922</li>-->
+		</ul>
+		<!-- must have the next div-i.d. for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Table of Contents</a></li>
+				<li><a href="editors-introduction.htm">Editor's Introduction</a></li>
+				<li><a href="outline.htm">Outline</a></li>
+				<li><a href="01-is-the-mind-a-gymnasium-or-a-tool-chest.htm">1. Is the Mind a Gymnasium or a Tool-Chest?</a></li>
+				<li><a href="02-defects-in-the-rival-accounts.htm">2. Defects in the Rival Accounts</a></li>
+				<li><a href="03-the-interplay-of-mind-and-body.htm">3. The Interplay of Mind and Body</a></li>
+				<li><a href="04-influences-within-intelligence.htm">4. Influences Within Intelligence</a></li>
+				<li><a href="05-emotion-and-mental-energy.htm">5. Emotion and Mental Energy</a></li>
+				<li><a href="06-organization-of-impulses-and-will.htm">6. Organization of Impulses and Will</a></li>
+				<li><a href="07-care-of-the-emotions.htm">7. Care of the Emotions</a></li>
+				<li><a href="08-instincts-wild-and-tame.htm">8. Instincts Wild and Tame</a></li>
+				<li><a href="09-exercises-for-the-will.htm">9. Exercises for the Will</a></li>
+				<li><a href="10-establishing-government-in-the-mind.htm">10. Establishing Government in the Mind</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>George Malcolm Stratton at <a href="https://en.wikipedia.org/wiki/George_M._Stratton">Wikipedia</a> </li>
+				<li>This book at <a href="https://archive.org/details/developingmenta02stragoog">Archive.Org</a></li>
+				<li>This book at <a href="https://openlibrary.org/books/OL6642398M/Developing_mental_power">OpenLibrary.Org</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

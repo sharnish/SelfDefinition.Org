@@ -1,0 +1,53 @@
+# .htaccess file for selfdefinition.org/celibacy/quotes
+
+
+
+## must add rel conical for some pdfs in the root directory
+
+
+# recent name change April 2015
+
+redirect 301 /celibacy/quotes/freedom-is-a-gift.htm   /celibacy/quotes/lee-warfield-freedom-is-a-gift.htm
+
+redirect 301 /celibacy/quotes/vopus-gnosis-harm-of-masturbation.htm /celibacy/quotes/vopus-gnosis-negative-effects-of-masturbation.htm
+
+redirect 301  /celibacy/quotes/nofaplife-sexual-force-or-the-winged-dragon.htm   /celibacy/quotes/omraam-aivanhov-sexual-force-or-the-winged-dragon.htm
+
+
+# old changes
+
+# the first is the misspelling
+
+redirect 301 /celibacy/quotes/dhanajay.htm    /celibacy/quotes/dhananjay-on-brahmacharya.htm
+
+redirect 301 /celibacy/quotes/dhananjay.htm    /celibacy/quotes/dhananjay-on-brahmacharya.htm
+
+redirect 301 /celibacy/quotes/christian-celibacy.htm    /celibacy/quotes/father-samuel-medley-christian-celibacy-slideshow.htm
+
+redirect 301 /celibacy/quotes/comments-by-theosophist.htm    /celibacy/quotes/comments-by-anonymous.htm
+
+
+# added 4 Aug 2016 - correct misspelling in energy 
+Redirect 301 "/celibacy/quotes/dhananjay-sublimating-vital-evergy-prana.htm" "/celibacy/quotes/dhananjay-sublimating-vital-energy-prajna.htm"
+
+# 2nd fix to this page
+Redirect 301 "/celibacy/quotes/dhananjay-sublimating-vital-energy-prana.htm" "/celibacy/quotes/dhananjay-sublimating-vital-energy-prajna.htm" 
+
+#more misspellings
+Redirect 301 "/celibacy/quotes/swami-kripalvanada-illusion-of-conjugal-sadhana.htm" "/celibacy/quotes/swami-kripalvananda-illusion-of-conjugal-sadhana.htm"
+
+Redirect 301 "/celibacy/quotes/swami-kripalvanada-yoga-and-celibacy.htm"   "/celibacy/quotes/swami-kripalvananda-yoga-and-celibacy.htm"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

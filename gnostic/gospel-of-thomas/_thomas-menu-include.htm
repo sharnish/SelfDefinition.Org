@@ -1,0 +1,92 @@
+<!-- start of menu include file update Oct 5, 2020. June 8, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<!-- none yet li class="first-item"><a href="/gnostic/">Gnostic index</a></li-->
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="gospel-of-thomas-index.htm"><span class="conditional-hide-2">Version </span>Index</a></li>
+			<li><a href="gospel-of-thomas-lambdin.htm">Lambdin<span class="conditional-hide"> Trans</span></a></li>
+			<li><a href="gospel-of-thomas-patterson-meyer.htm">Patterson<span class="conditional-hide-2">-Meyer</span></a></li>
+			<!-- note special classes for eglish and spanish -->
+			<li class="menu-spanish-item"><a href="evangelio-segun-tomas.htm">Español</a></li>
+			<li id="menu-totop" class="menu-totop"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-2"> of Page</span></a></li>
+			<li id="menu-totop-spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide-3">Volver </span>Arriba</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/gnostic/">Gnostic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li class="normal">
+				<img class="menu-image" src="images/gospel-of-thomas-parchment.png" alt="Gospel of Thomas parchment" />
+			</li>
+			<li>The Gospel of Thomas</li>
+			<li class="normal note tight">Nag Hammadi</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="gospel-of-thomas-index.htm">Version Index</a></li>
+				<li><a href="gospel-of-thomas-lambdin.htm">Gospel of Thomas, Lambdin translation</a> </li>
+				<li><a href="gospel-of-thomas-patterson-meyer.htm">Gospel of Thomas, Patterson and Meyer Translation</a> </li>
+				<li><a href="evangelio-segun-tomas.htm">Evangelio según Tomás [español]</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li><span class="block">Gospel of Thomas</span> at <a class="inline" href="https://en.wikipedia.org/wiki/Gospel_of_Thomas">
+						Wikipedia</a> </li>
+				<li>Gnosticism at <a class="inline" href="https://en.wikipedia.org/wiki/Gnosticism">
+						Wikipedia</a> </li>
+				<li>Nag Hammadi library at <a href="https://en.wikipedia.org/wiki/Nag_Hammadi_library">
+						Wikipedia</a> </li>
+				<li>Evangelio de Tomás en <a href="https://es.wikipedia.org/wiki/Evangelio_de_Tom%C3%A1s">
+						Wikipedia [español]</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on our site</li>
+				<li class="subhead">Christian section</li>
+				<li class="first-item">Jacob Boehme: <a href="/christian/jacob-boehme/mysterium-magnum/contents.htm">The Mysterium Magnum</a></li>
+				<li>Christian index: <a href="/christian/">/christian/</a></li>
+				<li class="subhead">Magic section</li>
+				<li class="first-item">Franz Hartmann: <a href="/magic/hartmann/white-and-black/contents.htm">Magic White &amp; Black - The Science of Finite and Infinite Life </a></li>
+				<li>Éliphas Lévi: <a href="/magic/eliphas-levi/paradoxes/contents.htm">Paradoxes of the Highest Science</a></li>
+				<li>Magic index: <a href="/magic/">/magic/</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

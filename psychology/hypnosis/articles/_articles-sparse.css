@@ -1,0 +1,38 @@
+/* file:  /psychology/hypnosis/_articles-sparse.css  */
+
+@media only print {
+	#article:after {
+		content: "update May 21, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffff3;
+}
+
+/* div in title include file
+#title-include-div {margin:20px 0;} */
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #C2A46E;
+}
+
+
+
+/* end */

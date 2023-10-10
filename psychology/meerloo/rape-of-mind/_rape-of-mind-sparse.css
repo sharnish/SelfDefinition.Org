@@ -1,0 +1,65 @@
+/*     File:  /psychology/joost-meerloo/_rape-of-mind-sparse.css: 
+
+Update September 25, 2021. February 18, 2022. June 11, 2022
+
+
+To do: A few footnotes missing in source document. 
+Search there and here on * (_asterisk) then try to trace to a PDF.
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update June 11, 2022";
+	}
+}
+
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #e6ffef;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c0d4fc;
+}
+
+
+
+/* unique feature this section */
+/* in title include file */
+#menticide {
+	font-size: 80%;
+}
+
+@media only screen and (max-width:500px) {
+	#menticide {
+		font-size: 80%;
+	}
+}
+
+@media only screen and (max-width:360px) {
+	#menticide {
+		width: 100%;
+	}
+}
+
+
+
+/* end */

@@ -1,0 +1,226 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Voz del Silencio</title>
+	<meta name="description" content="Fragmentos del Libro de los Preceptos Dorados,
+    para uso diario de los discípulos. Traducido y anotado por HPB.">
+	<meta name="author" content="H.P. Blavatsky">
+	<meta property="og:title" content="La Voz del Silencio">
+	<meta property="og:description" content="Fragmentos del Libro de los Preceptos Dorados,
+    para uso diario de los discípulos. Traducido y anotado por HPB.">
+	<meta property="og:image" content="https://selfdefinition.org/blavatsky/voz-del-silencio/images/blavatsky-young.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_voz-del-silencio-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="voz-indice.htm">
+	<link rel="next" href="voz-fragmento-1.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* TO DO: Move Mabel Collins to Blavatsky section 
+        
+        */
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		.page-links li {
+			width: inherit;
+			margin: auto;
+			border: 1px solid red;
+		}
+
+		#contents-menu-div {
+			width: 420px;
+			margin: 0 auto;
+		}
+
+		@media only screen and (max-width:430px) {
+			#contents-menu-div {
+				width: 100%;
+				margin: 0 5px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_voz-del-silencio-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_voz-del-silencio-title-include.htm"); ?>
+									<h3>
+										Contenido
+									</h3>
+									<p class="tiny">
+										This page in English: <a class="inline-block" href="../voice-of-the-silence/voice-contents.htm">../../voice-contents.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a class="small-screen-only" href="voz-indice.htm">&lt; Índice</a></li>
+									<li class="align-right"><a href="voz-fragmento-1.htm">Fragmento 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header>
+								<p class="strong" style="margin-top: 15px; margin-bottom: 15px;">
+									Dedicado a los Pocos
+								</p>
+							</header>
+							<div id="contents-menu-div">
+								<p>
+									<a href="#prefacio">PREFACIO</a>&nbsp;<span class="note">(esta página)</span>
+								</p>
+								<p>
+									<a href="voz-fragmento-1.htm">FRAGMENTO I.</a> LA VOZ DEL SILENCIO
+								</p>
+								<p>
+									<a href="voz-fragmento-2.htm">FRAGMENTO II.</a> LOS DOS SENDEROS
+								</p>
+								<p>
+									<a href="voz-fragmento-3.htm">FRAGMENTO III.</a> LOS SIETE PORTALES
+								</p>
+							</div>
+							<p>
+								Fragmentos escogidos del &quot;Libro de los Preceptos de Oro&quot;, para el uso diario de los <em>Lanoos</em> (discipulos), traducido y anotado por H. P. Blavatsky
+							</p>
+							<!-- DO NOT USE
+                            <p class="note80 italic">
+                                Nota: Cada una de las 3 páginas siguientes a este Prefacio tiene un Glosario (referencias numeradas) en la parte inferior de la página. Haga clic en cualquier número de nota en el texto para navegar a su entrada del glosario. Luego haga clic en el número de entrada del glosario para regresar a la ubicación del texto, o simplemente use el botón Atrás en su navegador.
+                            </p>
+                            -->
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">principio de pagina</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="prefacio">&nbsp;</a>
+							<h4>
+								Prefacio
+							</h4>
+							<p>
+								Las siguientes páginas se han entresacado de: &quot;El Libro de los Preceptos de Oro&quot;, una de las obras colocadas en las manos de los estudiantes místicos orientales. En esa escuela, cuyas enseñanzas muchos teósofos aceptan, es obligatorio conocer estos preceptos. Entonces, como sé muchos de ellos de memoria, traducirlos ha sido relativamente fácil para mí.
+							</p>
+							<p>
+								Es consabido que en la India, los métodos de desarrollo psíquico difieren según los Gurús (maestros o instructores), no sólo por pertenecer a escuelas de filosofía diferentes, de las cuales existen seis, sino porque cada Gurú tiene su sistema que, por lo general, lo mantiene en riguroso silencio. Sin embargo, más allá de los Himalayas, el método en las Escuelas Esotéricas no difiere, a menos que el Gurú sea simplemente un Lama, con un conocimiento poco superior a los que se lo imparte.
+							</p>
+							<p>
+								La obra de la cual ahora traduzco, forma parte de la misma serie de la cual se entresacaron las &quot;Estancias&quot; de &quot;El Libro de Dzyan&quot;, sobre las cuales se basa &quot;La Doctrina Secreta.&quot; &quot;El Libro de los Preceptos de Oro&quot; reclama el mismo origen que la gran obra mística titulada &quot;Paramartha&quot; <sup>[1]</sup> que, según la leyenda de Nagarjuna, los Nagas o Serpientes (en realidad un nombre dado a los Iniciados antiguos) entregaron al gran Arhat.
+							</p>
+							<p class="fnote">
+								[1. <a href="https://en.wikipedia.org/wiki/Paramartha">en.wikipedia.org/wiki/Paramartha</a> ]
+							</p>
+							<p>
+								Las máximas y las ideas de &quot;El Libro de los Preceptos de Oro&quot;, por nobles y originales que sean, a menudo se encuentran bajo formas diferentes en las obras sánscritas como el &quot;Dnyaneshwari&quot;, <sup>[2]</sup> ese tratado místico maravilloso en el cual Krishna describe a Arjuna, de manera elocuente, la condición de un Yogui plenamente iluminado y también se hallan en ciertos Upanishads. Esto es simplemente natural pues la mayoría, sino todos los Arhats más grandes, los primeros seguidores de Gautama Buddha, eran hindúes y arios y no móngoles, especialmente los que emigraron al Tíbet. Ya sólo las obras dejadas por Aryasanga <sup>[3]</sup> son numerosísimas.
+							</p>
+							<p class="fnote">
+								[2. <a href="https://en.wikipedia.org/wiki/Dnyaneshwari">en.wikipedia.org/wiki/Dnyaneshwari</a> ]
+							</p>
+							<p class="fnote">
+								[3. <a href="https://en.wikipedia.org/wiki/Asanga">en.wikipedia.org/wiki/Asanga</a> ]
+							</p>
+							<p>
+								Los Preceptos originales están esculpidos en cuadrados oblongos y sutiles; las copias, a menudo, se encuentran en discos. Generalmente, a estos discos o láminas se les preserva sobre los altares de los templos, anexos a centros donde se establecen las llamadas escuelas &quot;contemplativas&quot; o Mahayana (Yogacharya). Están escritos en idiomas distintos, a veces en tibetano, aunque la mayoría de las veces son ideografías. <sup class="asterisk">*</sup>
+							</p>
+							<p class="blockquote note">
+								[* Representación directa de las ideas por medio de signos.]
+							</p>
+							<p>
+								El idioma sacerdotal (Senzar), además de ser un alfabeto propio, puede ser expresado en varios modos de escritura cifrada, cuyos caracteres comparten más la naturaleza de las ideografías que de las sílabas. Otro método (lug. en tibetano) consiste en usar los números y los colores, cada uno de los cuales corresponde a una letra del alfabeto tibetano (30 letras simples y 74 compuestas), formando, así, un alfabeto criptográfico completo.
+							</p>
+							<p>
+								Cuando se usan las ideografías, hay un modo definido de leer el texto. Por ejemplo: en este caso, los símbolos y los signos usados en astrología, los doce animales zodiacales y los siete colores primarios, siendo cada uno triple en matiz: claro, primario y oscuro, representan las treinta y tres letras del alfabeto simple, palabras y frases. Desde luego: en este método, los doce &quot;animales&quot; repetidos cinco veces y acoplados con los cinco elementos y los siete colores, proveen un alfabeto completo, constituido por sesenta letras sagradas y doce signos.
+							</p>
+							<p>
+								Un signo colocado al comienzo del texto determina si el lector debe deletrearlo según el modo indo, cuando cada palabra es simplemente una adaptación sánscrita o, según el principio chino de leer las ideografías. Sin embargo, la manera más fácil es la que permite al lector usar ningún idioma especial o cualquier idioma que le plazca; ya que los signos y los símbolos eran, como los números o las cifras arábigas, la propiedad común e internacional entre los iniciados, los místicos y sus seguidores. La misma peculiaridad es característica de uno de los modos chinos de escribir, pudiendo ser leído fácilmente por quienquiera que esté familiarizado con el carácter. Por ejemplo: un japonés puede leerlo en su idioma así como puede hacerlo un chino en el suyo.</p>
+							<p>
+								El Libro de los Preceptos de Oro, algunos de los cuales son pre-buddhistas, mientras que otros pertenecen a un periodo sucesivo, contiene casi noventa pequeños tratados distintos. De estos he aprendido 39 de memoria hace años. Para traducir el resto, volviéndolo una tarea fácil, debería recurrir a apuntes esparcidos entre una cantidad copiosa de documentos y cuadernos reunidos en los últimos veinte años sin haberlos nunca ordenado. Tampoco se pueden traducir todos, entregándolos a un mundo demasiado egoísta y excesivamente apegado a los objetos de los sentidos, para que esté preparado, de algún modo, a recibir esta ética tan sublime con el ánimo justo. Pues, si un ser humano no persevera seriamente en la búsqueda del conocimiento de sí, nunca prestará oído a los consejos de esta índole.</p>
+							<p>
+								Sin embargo, la literatura oriental está pletórica de esta ética, especialmente los Upanishads. Krishna dice a Arjuna: &quot;Mata el deseo de vivir.&quot; Ese deseo sólo radica en el cuerpo, el vehículo del Ser encarnado y no en el SER que es &quot;eterno, indestructible, que no mata ni puede ser matado&quot;. (&quot;Katha Upanishad&quot;) El &quot;Sutta Nipata&quot; enseña: &quot;Mata la sensación, considera de la misma forma el placer y el dolor, la ganancia y la pérdida, la victoria y la derrota [...] Busca refugio sólo en lo eterno.&quot; &quot;Destruye la sensación de separatividad&quot;, repite Krishna en toda manera. &quot;La Mente (Manas), que sigue los sentidos impetuosos, hace al Alma (Buddhi) tan impotente como el viento que arrastra la barquilla en las aguas.&quot; (Bhagavad-Gita, II., 70).</p>
+							<p>
+								Por lo tanto se ha considerado más oportuno hacer una selección juiciosa sólo de estos tratados que beneficiarán a los pocos místicos genuinos en la Sociedad Teosófica y que, seguramente, satisfacerán sus necesidades. Sólo ellos apreciarán las siguientes palabras de Krishna-Christos, el &quot;Ser Superior&quot;:</p>
+							<blockquote>
+								<p>
+									&quot;Los sabios no se apenan ni por los vivos ni por los muertos. Nunca hubo un periodo en que ni yo ni tú y ni siquiera estos regentes de los hombres no hemos existido; al mismo tiempo, cada uno de nosotros nunca cesará de ser en el más allá.&quot; (&quot;Bhagavad Gita&quot;, II., pag. 27).</p>
+							</blockquote>
+							<p>
+								En esta traducción he hecho lo mejor posible para preservar la belleza poética del lenguaje y las imágenes que caracterizan al original. Le corresponde al lector juzgar hasta que grado este esfuerzo ha sido un éxito.
+							</p>
+							<p class="blockquote">
+								&quot;H. P. B.&quot;
+							</p>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">principio de pagina</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a class="small-screen-only" href="voz-indice.htm">&lt; Índice</a></li>
+									<li class="align-right"><a href="voz-fragmento-1.htm">Fragmento 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

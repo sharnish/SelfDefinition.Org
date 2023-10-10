@@ -1,0 +1,89 @@
+<!-- start of menu include file -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float, check, where is it cleared? -->
+			<li class="first-item"> <a href="/celibacy/">Celibacy Index</a> </li>
+			<li> <a href="/celibacy/quotes/">Quotes</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide"><a href="/">Site root</a></li>
+			<li> <a href="celibacy-faq-links.htm"> Celibacy FAQ</a> </li>
+			<li><a href="celibacy-articles-and-links.htm">Articles</a></li>
+			<li><a href="recommended-books.htm">Books</a> </li>
+			<li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+			<!-- ??? <li style="clear: both;"></li> -->
+		</ul>
+	</div>
+	<div style="clear:both"></div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li class="first-item">
+				<a href="/celibacy/">Celibacy Index</a>
+			</li>
+			<li> <a href="/celibacy/quotes/">Celibacy Quotes</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text" style="margin-top:20px;">
+			<li>Celibacy Articles and Links</li>
+			<!-- no image 
+            <li class="normal">
+                <img class="menu-image" src="images/drop-in.jpg" alt="drop-in" /></li>
+                -->
+			<li class="normal note tight">(section in process)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top:10px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="celibacy-articles-and-links.htm">Articles and Links</a></li>
+				<li><a href="celibacy-faq-links.htm">Celibacy FAQ</a></li>
+				<li><a href="recommended-books.htm">Recommended Books</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="site-links" style="margin-top:10px;">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site
+
+				</li>
+				<li class="site-first-item">
+					<a href="/celibacy/quotes/napoleon-hill-sex-transmutation-part-1.htm">The Mystery of Sex: Transmutation, by Napoleon Hill</a>
+				</li>
+				<li><a href="/celibacy/quotes/lee-warfield-freedom-is-a-gift.htm">Freedom Is A Gift (Same-sex attraction overcome)</a>
+				</li>
+				<li>
+					<a href="/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-1.htm">The Truth About Masturbation, by <span class="nowrap">Bernarr McFadden</span></a>
+				</li>
+				<li>For chastity, unchastity, imagination, astral effects, see <strong>Paracelsus</strong>,
+					<a href="/magic/paracelsus/hartmann-life-of-paracelsus/05-pneumatology.htm#morbid-imagination">
+						ch. 5 in Hartmann's <em>Life of Paracelsus</em> (Magic section)</a>
+				</li>
+			</ul>
+		</div>
+
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

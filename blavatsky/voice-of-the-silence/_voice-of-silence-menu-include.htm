@@ -1,0 +1,92 @@
+<!-- start of menu include file Update Oct 13, 2020. May 25, 2022. -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/blavatsky/">Blavatsky index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="voice-index.htm"><span class="conditional-hide-5">Voice </span>Index</a></li>
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-4"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/blavatsky/">Blavatsky index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li><em>Voice of the Silence</em></li>
+            <li>
+                <img class="menu-image" src="images/blavatsky-young.jpg" alt="H.P. Blavatsky" />
+            </li>
+            <li>H. P. Blavatsky</li>
+            <li class="normal note offset tight">(1831-1891)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <li><a href="voice-index.htm">Index</a></li>
+                <li><a href="voice-contents.htm">Contents and Preface</a> </li>
+                <li><a href="voice-fragment-1.htm">Fragment 1</a></li>
+                <li><a href="voice-fragment-2.htm">Fragment 2</a></li>
+                <li><a href="voice-fragment-3.htm">Fragment 3</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li>Blavatsky at <a href="https://en.wikipedia.org/wiki/Helena_Blavatsky">Wikipedia</a></li>
+                <li><em>Voice of the Silence</em> at <a href="https://en.wikipedia.org/wiki/The_Voice_of_the_Silence">
+                        Wikipedia</a></li>
+                <li>Mahayana at <a href="https://en.wikipedia.org/wiki/Mahayana">Wikipedia</a></li>
+            </ul>
+        </div>
+        <!-- div.site-links disappears when #menu-container disappears -->
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="first-item">Mabel Collins, <a href="/blavatsky/light-on-the-path/contents-and-title.htm"><em>Light on the Path</em></a></li>
+                <li>Franz Hartmann, <a href="/magic/hartmann/white-and-black/contents.htm"><em>Magic White and Black</em></a></li>
+                <li>Franz Hartmann, <a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Life and Doctrines of Jacob Boehme</a></li>
+                <li>Blavatsky quotes on celibacy in the<a href="/celibacy/quotes/blavatsky-on-celibacy.htm"> Celibacy section</a> </li>
+                <li> Kybalion, the Teachings of <a href="/new-thought/kybalion/contents.htm"> Hermes Trismegistus</a></li>
+                <li class="header-item">Español</li>
+                <li class="first-item">Blavatsky, <a href="/blavatsky/voz-del-silencio/contenido.htm">La Voz del Silencio</a></li>
+                <li>El Kybalion, <a href="/new-thought/el-kybalion/contenido.htm">Los Misterios de Hermes</a></li>
+            </ul>
+        </div>
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li class="header-item">External Links</li>
+                <li>This document in html
+                    at&nbsp;<a class="inline" href="https://www.theosociety.org/pasadena/voice/voice.htm">TheoSociety.Org</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="To top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

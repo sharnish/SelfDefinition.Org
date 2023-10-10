@@ -1,0 +1,61 @@
+/* file:  /norbu-chen/_norbu-chen-sparse.css
+
+Theme and CSS update Feb 8, 2022
+
+ */
+
+@media only print {
+	#article:after {
+		content: "Update August 22, 2020";
+		font-size: 60%;
+	}
+}
+
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffee0;
+}
+
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c6c6ff;
+}
+
+/* apears on 2 pages: Edgar Mitchel nd Joann Parks Interview */
+
+.highlight {
+	font-weight: bold;
+	font-size: 95%;
+	color: Maroon;
+}
+
+html.dark strong.highlight {
+	color: #FF3040;
+}
+
+html.dark span.highlight {
+	font-size: 100%;
+	color: #FF3040;
+	background: inherit;
+}
+
+
+/* end */

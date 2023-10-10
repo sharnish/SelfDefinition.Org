@@ -1,0 +1,9 @@
+# .htaccess file for selfdefinition.org/gurdjieff/quotes/
+
+# page reformatted and renamed Dec 28, 2016
+
+Redirect 301 "/gurdjieff/quotes/gurdjieff's-idiots.htm" "/gurdjieff/quotes/toast-to-the-idiots.htm"
+
+
+# end
+

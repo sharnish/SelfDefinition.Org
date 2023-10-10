@@ -1,0 +1,201 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Self-Enquiry, Introduction</title>
+	<meta name="description" content="Self-realization is not something 
+    which is to be gained afresh. We are already the Self. The Self alone is." />
+	<meta name="author" content="Ramana Maharshi">
+	<meta property="og:title" content="Self-Enquiry, Introduction" />
+	<meta property="og:description" content="Self-realization is not something 
+    which is to be gained afresh. We are already the Self. The Self alone is." />
+	<meta property="og:image" content="https://selfdefinition.org/ramana/self-enquiry/images/ramana.jpg" />
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_self-enquiry-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="contents.htm">
+	<link rel="next" href="questions-01-to-10.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		h5 {
+			margin-top: 35px;
+		}
+
+		/* this goed ON PAGE -- to avoid CSS stylesheet having to be refreshed
+        /* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/
+
+        Keep THIS css on PAGE rather than stylesheet to reduce complexity
+        and need to reload if a change is made.
+        On this page:
+
+        #element-toggle-3-1,
+        #element-toggle-7-1
+		etc
+        */
+
+		/* paradox 1  */
+
+		label[for=element-toggle-3-1],
+		label[for=element-toggle-7-1] {
+			cursor: pointer;
+		}
+
+		#element-toggle-3-1,
+		#element-toggle-7-1,
+		#element-toggle-8-1 {
+			display: none;
+		}
+
+		/* paradox 1 */
+
+		#element-toggle-3-1:not(:checked)~#toggled-element-3-1,
+		#element-toggle-7-1:not(:checked)~#toggled-element-7-1 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_self-enquiry-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_self-enquiry-title-include.htm"); ?>
+									<h3>
+										Introduction
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="../autoindagacion/introduccion.htm">../autoindagacion/introduccion.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents</a> </li>
+									<li class="align-right"><a href="questions-01-to-10.htm">Questions 1-10 &gt;</a> </li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								The present work in prose consists of forty questions with answers covering the entire range of spiritual disciplines required for the gaining of release (<em>moksha</em>). The questioner was Gambhiram Seshayya, one of the early devotees of Bhagavan Sri Ramana Maharshi. He was a Municipal Overseer at Tiruvannamalai about 1900. Besides being an ardent Ramabhakta (worshipper of Rama) he was interested in the study and practice of Yoga. He used to read Swami Vivekananda's lectures on the different yoga's as also an English translation of the <em>Rama-gita.</em> For resolving the difficulties which he came across while studying these books and in his spiritual practices, he approached Bhagavan Sri Ramana from time to time.
+							</p>
+							<p>
+								Bhagavan, who was only twenty-one years old, was then living in Virupaksha cave on Arunachala Hill. As he was keeping silent at the time not because of any vow taken but because he was not inclined to talk, he wrote out his answers to Seshayya's questions on bits of paper. These writings over the period 1900-1902 were later copied in a note-book by Seshayya. The material thus gathered was published by Sri Ramanasramam under the little <em>Vichara-sangraham</em> which literally means 'A Compendium of Self-Enquiry.' A digest of the teaching contained in this work was later printed in English bearing the title 'Self-Enquiry'. In that English version, the questions were omitted and the substance of Bhagavan's teaching was given, classifying it in twelve short chapters with appropriate headings. The present English translation is of the entire original text <em>Vichara-sangraham</em> as it is in Tamil. The <em>Vichara-sangraham</em> has unique value in the sense that it constitutes the first set of instructions given by Bhagavan in his own handwriting.
+							</p>
+							<p>
+								A careful study of the instructions given by Bhagavan here will reveal that they are based on his own plenary experience as confirmed by the sacred texts which were brought to his notice by the early devotees and which he perused for the purpose of clearing the doubts that arose in the minds of the devotees. In the course of his instructions, Bhagavan makes use of such expressions as, 'the scriptures declare', 'thus say the sages,' etc.; he also cites passages from texts like the <em>Bhagavad Gita</em> and the <em>Vivekachudamani</em> and once he mentions by name the <em>Ribhu Gita.</em> But it is quite clear that these citations are offered only as confirmations of the truth discovered by Bhagavan himself in his own experience.
+							</p>
+							<p>
+								The basic teaching is that of Advaita-Vedanta. The plenary experience of the non-dual Self is the goal; enquiry into the nature of the self is the means. When the mind identifies the self with the not-self (the body, etc.), there is bondage; when this wrong identification is removed through the enquiry 'Who am I ?' there is release. Thus, Self-enquiry is the direct path taught by Bhagavan Ramana.
+							</p>
+							<p>
+								The 'I-experience' is common to all. Of all thoughts, the 'I-thought' is the first to arise. What one has to do is to enquire into the source of the 'I-thought'. This is the reverse process of what ordinarily happens in the life of the mind. The mind enquires into the constitution and source of everything else which, on examination, will be found to be its own projection; it does not reflect on itself and trace itself to its source.
+							</p>
+							<p>
+								Self-discovery can be achieved by giving the mind an inward turn. This is not to be confused with the introspection of which the psychologists speak. Self-enquiry is not the mind's inspection of its own contents; it is tracing the mind's first mode, the 'I-thought' to its source which is the Self. When there is proper and persistent enquiry, the 'I-thought' also ceases and there is the wordless illumination of the form 'I-I' which is the pure consciousness. This is release, freedom from bondage.
+							</p>
+							<p>
+								The method by which this is accomplished, as has been shown, is enquiry which, in Vedanta, is termed <em>jnana</em>, knowledge. True devotion (<em>bhakti</em>), meditation (<em>dhyana</em>), and concentration (<em>yoga</em>) are identical therewith. As Bhagavan makes it perfectly clear, not to forget the plenary Self-experience is real devotion, mind-control, knowledge, and all other austerities. In the language of devotion, the final goal may be described as the resolution of the mind in its source which is God, the Self; in that of technical yoga, it may be described as the dissolution of the mind in the Heart-lotus. These are only different ways of expressing the same truth.
+							</p>
+							<p>
+								The path of Self-enquiry is found difficult by those who have not acquired the necessary competence for it. The mind should first be rendered pure and one-pointed. This is done through meditation, etc. So, the various paths, in their secondary sense, are auxiliaries to the direct path which is Self-enquiry.
+							</p>
+							<p>
+								In this context, Bhagavan refers to three grades of aspirants: the highest, the medium, and the lowest. For the highest type of aspirants, the path prescribed is Vedanta enquiry; through this path, the mind becomes quiescent in the Self and finally ceases to be, leaving the pure Self-experience untarnished and resplendent. The path for the medium is meditation on the Self; meditation consists in directing a continuous flow of the mind towards the same object; there are several modes of meditation; the best mode is that which is of the form 'I am the Self'; this mode eventually culminates in Self-realization. For the lowest grade of aspirants, the discipline that is useful is breath-control which in turn results in mind control.
+							</p>
+							<p>
+								Bhagavan explains the difference between <em>jnana-yoga</em> (path of knowledge) and <em>dhyana-yoga</em> (path of meditation) thus: <em>jnana</em> is like subduing a self-willed bull by coaxing it with the help of a sheaf of green grass, while <em>dhyana</em> is like controlling it by using force. Just as there are eight limbs for <em>dhyana-yoga,</em> there are eight for <em>jnana-yoga.</em> The limbs of the latter are more proximate to the final stage than those of the former. For instance, while the <em>pranayama</em> of technical yoga consists in regulating and restraining breath, the <em>pranayama</em> that is a limb of <em>jnana</em> relates to rejecting the name-and-form world which is non-real and realizing the Real, which is Existence-Consciousness-Bliss.
+							</p>
+							<p>
+								Realization of the Self can be gained in this very life. In fact, Self-realization is not something which is to be gained afresh. We are already the Self; the Self alone is. It is ignorance that makes us imagine that we have not realized the Self. When this ignorance is removed through Self-knowledge, we realize our eternal Self-nature. One who has gained this realization is called a <em>jivan-mukta</em> (liberated while living). To others, he may appear to continue to tenant a body. For the benefit of those others it is stated that the body will continue so long as the residue of the <em>prarabdha-karma</em> (that karma of the past which has begun to fructify in the shape of the present body) lasts, and that when the momentum is spent the body will fall and the <em>jivan-mukta</em> will become a <em>videha-mukta.</em> But from the standpoint of the absolute truth, there is no difference in <em>mukti.</em> What needs to be understood is that <em>mukti</em> or release is the inalienable nature of the Self.
+							</p>
+							<p>
+								This, in substance, is Bhagavan Sri Ramana's teaching in the <em>Vichara-sangraham.</em>
+							</p>
+							<p class="note">
+								&mdash;University Of Madras. November 15, 1965.
+							</p>
+							<h5>
+								Note to the Eighth Edition
+							</h5>
+							<p>
+								The earliest edition of this work in Question-Answer form, I have come across, is dated 1930, published by A. Shivalinga Mudaliyar and V. Subrahmanya Achari and printed at Saravana Bava Press, Madras. This bears a foreword by Muruganar which is dated June 16th, 1930. It is mentioned in the foreword that it was Natanananda that edited the work in Question-Answer form.
+							</p>
+							<p>
+								In his preface, Natanananda observes that the work contains the teachings given in writing by Bhagavan Ramana to Gambhiram Seshayya in the years 1901-1902. It is in the Question-Answer form that this work is included in the 'Collected Works' in Tamil, in its early editions, published by the Asramam. In the third edition published in 1940, as well as in subsequent editions, the <em>Self-Enquiry</em> appears in the form of a digest. In the footnote that occurs at the end of the Publisher's Note, it is stated that the manuscript copy given by Gambhiram Seshayya's brother was edited by Shivaprakasam Pillai, and was put into Question-Answer form by Natanananda.
+							</p>
+							<p class="note">
+								&mdash;Madras January 18, 1971.
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents</a> </li>
+									<li class="align-right"><a href="questions-01-to-10.htm">Questions 1-10 &gt;</a> </li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

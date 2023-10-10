@@ -1,0 +1,1522 @@
+﻿<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Muruganar - Turning Inward</title>
+	<meta name="description" content="Sayings from Sri Muruganar's &quot;The Garland of Guru's Sayings&quot; on the subject of Turning Inward">
+	<meta property="og:title" content="Muruganar - Turning Inward">
+	<meta property="og:description" content="Sayings from Sri Muruganar's &quot;The Garland of Guru's Sayings&quot; on the subject of Turning Inward">
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/muruganar-ashram.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- START special stylesheets/scripts this page for bolding -->
+	<!--  The next style sheet tells <span> and <p> elements of
+          the class "instruct" (instructions) to be bolded (default).
+          Note: rel="stylesheet" and the link element has a title attribute -->
+	<link rel="stylesheet" type="text/css" href="styles/uarelove_bolding.css" title="preferred-bold" />
+	<!-- this is the same stylesheet, treated as an alternate.  -->
+	<link rel="alternate stylesheet" type="text/css" href="styles/uarelove_bolding.css" title="bold_instructions" />
+	<!-- this is the "toggel" stylesheet. Is an alternate stylesheet -->
+	<link rel="alternate stylesheet" type="text/css" href="styles/uarelove_no_bolding.css" title="no_bold_instructions" />
+	<!-- This file holds the javascript that toggles the stylesheets -->
+	<!-- to make the toggling persistent, use the script
+    in the file src="scripts/styleswitcher_cookie.js" << NOT USED, NO COOKIE IS SET -->
+	<script src="scripts/stylesheet-switcher-bolding.js"></script>
+	<!-- this gets rid of a link that appears as active (red) at #1 -->
+	<!-- END special stylesheets/scripts this page for bolding -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* special stylesheets for bolding, no bolding
+
+        1. muruganar-the-world.htm
+        2. muruganar-turning-inward.htm   << This page:
+
+        A script switches the two stylesheets
+        */
+
+		.comment {
+			font-weight: normal;
+		}
+
+		/* had to use for Awareness, Muruganar turning inward, July 21, 2022
+		bullet points would not align vertically "li" was not enough, had to use "li a"
+		but it worked ok in Albigen/uarelove without this   */
+		ol li,
+		ol li a,
+		ul li,
+		ul li a {
+			vertical-align: top;
+		}
+
+		/* 2022.CSS default is 2px 0; */
+		br {
+			margin: 2px 0;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2>
+										Turning Inward
+										<span class="block">Sri Muruganar</span>
+									</h2>
+								</header>
+							</div>
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="awa-discovery.htm">&lt; AWA Discovery</a></li>
+									<li class="align-right"><a href="muruganar-the-world.htm">Muruganar, The World &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="note center">
+								Sayings from Sri Muruganar's &quot;The Garland of Guru&apos;s (Sri Ramana Maharshi&apos;s) Sayings&quot; on the subject of Turning Inward
+							</p>
+							<p class="center" style="margin-top:30px;">
+								There are seven subcategories:
+							</p>
+							<nav class="in-page-nav" style="margin-top:0;">
+								<ol class="generic">
+									<li><a href="#1">Encouragement, the Goal, the Benefits</a> <span class="nowrap">- 25 sayings</span></li>
+									<li><a href="#2">The Awareness watching Awareness approach to Self-inquiry and Self-abidance</a>
+										<span class="nowrap">- 15 sayings</span>
+									</li>
+									<li><a href="#3">Practice, Ernestness, Effort and Zeal</a> <span class="nowrap">- 10 sayings</span></li>
+									<li><a href="#4">Ignoring and turning one's attention away from thought and towards
+											Awareness watching Awareness</a> <span class="nowrap">- 14 sayings</span></li>
+									<li><a href="#5">The Body</a> - 16 sayings</li>
+									<li><a href="#6">Turning Inward</a> - 21 sayings</li>
+									<li><a href="#7">Ignoring and turning one&apos;s attention away from the world and towards
+											Awareness watching Awareness</a> <span class="nowrap">- 108 Sayings</span> <!-- (separate page)-->
+									</li>
+								</ol>
+							</nav>
+							<p>
+								Sri Muruganar spent decades in the company of Sri Ramana Maharshi. Reading the Sayings very slowly helps to understand what Sri Ramana and Sri Muruganar are attempting to convey in these Sayings.
+							</p>
+							<p class="note">
+								I have put the actual practice instructions in <span class="instruct">bold</span>. You can toggle bolding on or off by clicking here:&nbsp;
+								<span class="nowrap"><a href="#" onclick="setActiveStyleSheet('bold_instructions'); return false;">
+										<img src="images/plus.gif" alt="See bolding" />&nbsp;&nbsp;on</a>&nbsp;&nbsp;
+									<a href="#" onclick="setActiveStyleSheet('no_bold_instructions'); return false;">
+										<img src="images/minus.gif" alt="Hide bolding" />&nbsp;off</a>.</span>
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="1">&nbsp;</a>
+							<h2>
+								START TURNING INWARD</h2>
+							<h4>
+								1. Encouragement, the Goal, the Benefits <span class="comment">(25 Sayings)</span>
+							</h4>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										393.
+									</td>
+									<td>
+										One who has wisely chosen the straight path of Self-inquiry
+										<br /> can never go astray;
+										<br /> for like the bright, clear Sun,
+										<br />
+										<span class="instruct">the Self-Awareness reveals itself to whomever turns towards it.</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										451.
+									</td>
+									<td>
+										<span class="instruct">The deeper into the Heart one dives,</span>
+										<br /> the greater grows the bliss enjoyed,
+										<br />
+										<span class="instruct">the intense bliss of the sole Self-Awareness</span>,
+										<br /> which once appeared in various forms.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										452.
+									</td>
+									<td>
+										<span class="instruct">Once you are well established in the Heart</span>,
+										<br /> true Awareness rises bright.
+										<br /> Then you live like an unsetting Sun,
+										<br /> Resplendent with the light of Truth,
+										<br />
+										<span class="instruct">enjoying the blissful peace of eternal Self-Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										500.
+									</td>
+									<td>
+										<span class="instruct">Worth pursuing is Self-inquiry</span>,
+										<br /> worth enjoying is the infinite Self-Awareness.
+										<br /> Worth giving up is the ego sense.
+										<br /> To end all sorrow, the final refuge is one&apos;s source,
+										<br />
+										<span class="instruct">the Self of pure Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										554.
+									</td>
+									<td>
+										The deeds we do in a dream do not touch our &quot;waking&quot; life,
+										<br /> and slip away when we &quot;awake&quot;.
+										<br /> Our deeds done in this clouded ego life, disappear and leave no trace,
+										<br /> when we <span class="instruct">wake up, in the divine white light of Self-Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										697.
+									</td>
+									<td>
+										They say that fate can never bind those heaven bound. What does this mean?
+										<br /> Not an iota of the past can touch those,
+										<br /> who <span class="instruct">dwell unceasingly<br />
+											in the firmament of vast, boundless, borderless, full Self-Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										884.
+									</td>
+									<td>
+										A woman with a necklace around her neck imagines it is lost,
+										<br /> and after a long search elsewhere,
+										<br /> touches her own neck and there finds it;
+										<br /> even so, <span class="instruct">the Self-Awareness is here within.<br />
+											Probe for it within and find it</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										885.
+									</td>
+									<td>
+										Except the path of <span class="instruct">Self-inquiry, probing the mysterious I-sense</span>,
+										<br /> no other effort or action, however strenuously pursued,
+										<br /> can take one to the fount of bliss,
+										<br /> the treasure shining in the heart,
+										<br />
+										<span class="instruct">forever as the Self-Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										924.
+									</td>
+									<td>
+										I shall assert with certainty,
+										<br /> that when <span class="instruct">the mind as thoughts has ceased to function</span>,
+										<br /> it remains as a temple of Awareness-Bliss,
+										<br /> hidden till then behind the veil of time.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										956.
+									</td>
+									<td>
+										<span class="instruct">The goal, the Truth, is Self-Awareness</span>.
+										<br /> Reaching it is the annihilation of the painful illusion of birth.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										974.
+									</td>
+									<td>
+										<span class="instruct">Unbroken Self-Awareness is the true bright path of devotion or
+											love</span>.
+										<br /> Knowledge of our inherent nature,
+										<br /> as indivisible supreme Bliss,
+										<br /> wells up as love.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										984.
+									</td>
+									<td>
+										<span class="instruct">The strong one who abides in Being</span>,
+										<br /> knows neither fear or doubt.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1029.
+									</td>
+									<td>
+										Bliss is the very nature of the Self-Awareness.
+										<br /> Self-Awareness is infinite Bliss.
+										<br /> Knowing this firmly,
+										<br />
+										<span class="instruct">abide in the Self-Awareness</span>,
+										<br /> enjoying bliss forever.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1059.
+									</td>
+									<td>
+										The Self, the home of <span class="instruct">blissful Awareness</span>,
+										<br /> is a vast ocean of serene peace.
+										<br /> He whose <span class="instruct">mind turns inward and dives deep within it</span>,
+										<br /> gains the infinite treasure of its grace.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1062.
+									</td>
+									<td>
+										<span class="instruct">The ever-present Self-Awareness</span>,
+										<br /> the radiant gem, this is the rarest, richest treasure.
+										<br />
+										<span class="instruct">Look within, and find and hold it fast</span>.
+										<br /> Your poverty, the grand illusion, source of every trouble on earth,
+										<br /> with vanish without delay.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1069.
+									</td>
+									<td>
+										The <span class="instruct">pure unflawed Awareness of Being</span>
+										<br /> is the transcendent state wherein both mind and breath find bliss.
+										<br /> This state of supreme grace,
+										<br /> surcharged with peace,
+										<br /> serves also as the medicine which to the sick, restless mind
+										<br /> restores healthful peace.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1077.
+									</td>
+									<td>
+										To those who <span class="instruct">dwell within the Heart,<br />
+											loving the Self-Awareness</span>,
+										<br /> bliss comes surging up,mounting ever higher,
+										<br /> as love, Self, grace, Awareness, peace and liberation.
+										<br /> Bliss is the real nature of the Self-Awareness.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1079.
+									</td>
+									<td>
+										<span class="instruct">Only when the Self-Awareness is gained</span>,
+										<br /> is permanent, perfect, blissful peace attained.
+										<br /> In this Self-sovereignty,
+										<br /> non-dual, heaven-like, all pervasive,
+										<br /> no desire and no fear can exist.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1091.
+									</td>
+									<td>
+										<span class="instruct">Abiding as Self-Being,<br />
+											living a life that is a steady unhindered flow of true love</span>
+										<br /> welling up in the heart,
+										<br /> this is the bright, joyous Selfhood,
+										<br /> which ends forever the inveterate, false, deceitful ego.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1093.
+									</td>
+									<td>
+										<span class="instruct">That Heart which truly knows the Self-Awareness,<br />
+											is full of love</span> whence supreme Bliss wells up forever.
+										<br /> There, desire and its shadow, sorrow, have no place.
+										<br /> Such a life, whose nature is pure,
+										<br /> flows serenely calm from Being.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1121.
+									</td>
+									<td>
+										The river that has merged in the ocean,
+										<br /> will never lapse again into separateness.
+										<br /> No more will <span class="instruct">he who has reached his Being as Awareness</span>,
+										<br /> forget the Self and be reborn.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1124.
+									</td>
+									<td>
+										If <span class="instruct">once the primal knot is cut</span>,
+										<br /> never again can one be bound,
+										<br />
+										<span class="instruct">for this is one&apos;s natural Being</span>.
+										<br /> This is the divine state,
+										<br /> this is the supreme power,
+										<br /> this is the serene peace.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1209.
+									</td>
+									<td>
+										When, the dense darkness of ignorance is gone,
+										<br /> the Heart&apos;s wide open firmament is filled with serene, clear, bright peace,
+										<br /> and an inner fount of love springs up,
+										<br /> which is true devotion,
+										<br />
+										<span class="instruct">the pure auspiciousness of Self-Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1222.
+									</td>
+									<td>
+										That which alone <span class="instruct">abides and shines as pure Awareness</span>,
+										<br /> perfect peace, is the eternal Self.
+										<br /> Egoless silence,
+										<br /> the supreme state of Being That,
+										<br /> this is the fullness of liberation.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										906.
+									</td>
+									<td>
+										The troubles that result from change,
+										<br />
+										<span class="instruct">can never touch the Self-Awareness</span>,
+										<br /> as changes and flaws in earth, water, fire and air,
+										<br /> do not affect the element ether,
+										<br /> which pervades and transcends them all.
+									</td>
+								</tr>
+							</table>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="2">&nbsp;</a>
+							<h4>
+								2. The Awareness watching Awareness approach to Self-inquiry and Self-Abidance <span class="comment">(15 Sayings)</span>
+							</h4>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										638.
+									</td>
+									<td>
+										If, instead of looking outward at objects,
+										<br />
+										<span class="instruct">you observe that looking</span>,
+										<br /> all things now shine as I, the seer.
+										<br /> Perception of objects is mere illusion.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										647.
+									</td>
+									<td>
+										If you refrain from looking at this, that, or any other object,
+										<br /> then by that overpowering <span class="instruct">look into Absolute Being</span>,
+										<br /> you become yourself the boundless space of pure Awareness,
+										<br /> which alone is real Being.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										418.
+									</td>
+									<td>
+										The only true and full Awareness is
+										<br />
+										<span class="instruct">Awareness of Awareness</span>.
+										<br /> Until <span class="instruct">Awareness is Awareness of itself</span>,
+										<br /> it knows no peace at all.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										432.
+									</td>
+									<td>
+										Is it not because you are yourself Awareness,
+										<br /> that you now perceive this universe?
+										<br />
+										<span class="instruct">If you observe Awareness steadily</span>,
+										<br /> this Awareness as Teacher, will reveal the Truth.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										52.
+									</td>
+									<td>
+										If <span class="instruct">mind turned towards Awareness and concentrating on Awareness</span>,
+										<br /> seeks the Self, the world made up of ether and other elements is real, as all things are Awareness,
+										<br /> the one sole substance of true Being.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										435.
+									</td>
+									<td>
+										True natural Awareness, which does not go after alien objects, is the Heart.
+										<br /> Since actionless <span class="instruct">Awareness</span> shines as real Being,
+										<br /> its joy consists in <span class="instruct">concentration on itself</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										742.
+									</td>
+									<td>
+										In the Self, he stands firm fixed who dwells
+										<br /> and truly <span class="instruct">meditates on himself as pure awareness</span>.
+										<br />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										389.
+									</td>
+									<td>
+										The method of Self-inquiry is:
+										<br /> to <span class="instruct">turn the outward-going mind back to its source,</span>
+										<br /> the Heart, <span class="instruct">the Self-Awareness, and fix it forever there</span>,
+										<br /> preventing the rising of the empty &quot;I&quot;.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1066.
+									</td>
+									<td>
+										True wealth is but the gracious silence
+										<br /> of <span class="instruct">steady, unswerving Self-Awareness</span>.
+										<br /> This bright, rare treasure can be gained
+										<br /> only by those who <span class="instruct">earnestly strive</span> for the extinction of all thoughts.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										862.
+									</td>
+									<td>
+										Losing the false ego in awareness,
+										<br /> and <span class="instruct">firm abidance as awareness</span>, is true clarity.
+										<br />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1068.
+									</td>
+									<td>
+										In that flawless state of Being the Self-Awareness,
+										<br /> without a sense of &quot;I&quot; or &quot;mine&quot;,
+										<br /> the still <span class="instruct">abidance in and as pure Awareness</span>,
+										<br /> this is the noblest victory worth winning.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										428.
+									</td>
+									<td>
+										Not like other things unreal, but always by its Being real,
+										<br /> the Self as permanent <span class="instruct">Awareness</span>, has no other <span class="instruct">dwelling</span> place, than <span class="instruct">in its own radiant
+											Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1039.
+									</td>
+									<td>
+										That which unaided shines within as &quot;<span class="instruct">I AM, I AM</span>&quot; without a break,
+										<br /> the strong, true Being free from all adjuncts,
+										<br />
+										<span class="instruct">this pure Awareness</span>, is our firm, authentic nature.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1038.
+									</td>
+									<td>
+										Awareness is not a quality of the Self. The Self is without qualities.
+										<br /> Awareness is not an action of the Self. The Self does nothing.
+										<br />
+										<span class="instruct">The Self, our Being, IS Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1194.
+									</td>
+									<td>
+										When one refrains from <span class="instruct">looking</span> out and noting outward objects,
+										<br /> and <span class="instruct">instead abides within the Heart in Self-Awareness</span>,
+										<br /> the ego disappears.
+										<br /> The pure silence that then shines forth is the goal of Knowledge.
+									</td>
+								</tr>
+							</table>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="3">&nbsp;</a>
+							<h4>
+								3. Practice, Earnestness, Effort and Zeal <span class="comment">(10 Sayings)</span>
+							</h4>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										755.
+									</td>
+									<td>
+										If <span class="instruct">without wasting time,<br />
+											one starts and keeps up steady self-inquiry</span>,
+										<br /> one&apos;s life becomes at once ennobled,
+										<br /> one is no more this wretched body,
+										<br /> and there wells up within one&apos;s heart,
+										<br /> a sea of supreme bliss.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										694.
+									</td>
+									<td>
+										Even in this worldly life,
+										<br /> one&apos;s labors bear no fruit without abundant faith.
+										<br /> Hence, till one merges in the boundless supreme bliss,
+										<br />
+										<span class="instruct">one&apos;s spiritual practice should never slacken</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										692.
+									</td>
+									<td>
+										Since it was one&apos;s own past effort,
+										<br /> that has now ripened into fate,
+										<br />
+										<span class="instruct">one can with greater present effort, change one&apos;s fate</span>.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1066.
+									</td>
+									<td>
+										True wealth is but the gracious silence of steady, unswerving Self-awareness.
+										<br /> This bright rare treasure, can be gained only by those who:
+										<br />
+										<span class="instruct">earnestly strive</span> for the extinction of all thoughts.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										826.
+									</td>
+									<td>
+										A superstructure raised, without a strong foundation,
+										<br /> soon collapses in disgrace.
+										<br /> Hence, <span class="instruct">earnest seekers first ensure by every means,<br />
+											their own stern self-discipline</span>
+										<br /> through devotion and detachment.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										612.
+									</td>
+									<td>
+										Undeluded by whatever may come and go,
+										<br />
+										<span class="instruct">unwinking, watch the Self-Awareness</span>,
+										<br /> because the little fault of forgetting for one moment,
+										<br /> one&apos;s true Being as Pure Awareness,
+										<br /> brings tremendous loss.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1063.
+									</td>
+									<td>
+										Not knowing the value of this treasure,
+										<br /> people perish through mere laziness.
+										<br /> The great ones who have found the clue and traced and gained it,
+										<br /> they enjoy eternal bliss.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1186.
+									</td>
+									<td>
+										<span class="instruct">Uninterrupted and whole minded concentration on Self-Awareness</span>,
+										<br /> our true, non-dual Being,
+										<br /> this is pure, supreme silence, the goal;
+										<br /> Not the lazy mind&apos;s inertia,
+										<br /> which is but a state of dark illusion.
+										<br />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										780.
+									</td>
+									<td>
+										<span class="instruct">Swerve not from your true state,<br />
+											thinking some thought,<br />
+											but if you do,<br />
+											do not commit the same foolishness again.<br />
+											Do nothing you may regret later,<br />
+											even if you did it once, never repeat it.</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										790.
+									</td>
+									<td>
+										To err is human.
+										<br /> When those strong in virtue err,
+										<br /> they do not hide it in their pride.
+										<br /> Instead, <span class="instruct">they own up to their lapse,<br />
+											and quickly reform themselves</span>.
+									</td>
+								</tr>
+							</table>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="4">&nbsp;</a>
+							<h4>
+								4. Ignoring and turning one&apos;s attention away from thoughts and towards Awareness watching Awareness <span class="comment">(14 Sayings)</span>
+							</h4>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										921.
+									</td>
+									<td>
+										None can confront and overcome <span class="instruct">the mind.<br />
+											Ignore it, then, as something false and unreal</span>.
+										<br /> Know the Self-Awareness as the real ground and stand firm rooted in it.
+										<br /> Then the mind&apos;s movements will gradually subside.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1192.
+									</td>
+									<td>
+										The ego image moves reflected in the <span class="instruct">mind&apos;s waves</span>.
+										<br /> How to stop this movement, how to regain the state of stillness?
+										<br />
+										<span class="instruct">Don&apos;t observe these movements, seek the Self instead</span>.
+										<br /> It is wisdom to gain and abide in silence.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1193.
+									</td>
+									<td>
+										The Seers declare that pure silence
+										<br /> is firm abidance in egoless, true Awareness.
+										<br /> For such thought-free silence,
+										<br />
+										<span class="instruct">the means is clinging to the Self-Awareness</span>
+										<br /> within the Heart.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										421.
+									</td>
+									<td>
+										<span class="instruct">The one true light there is, is pure Awareness</span>.
+										<br /> Other kinds of knowledge clinging to it, and claiming to be real,
+										<br /> are ego-born conceptual clouds.
+										<br /> To trust them is sheer foolishness.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										424.
+									</td>
+									<td>
+										What if one knows, the subtle secret, of manifold inscrutable mysteries?
+										<br /> Until one <span class="instruct">knows the Awareness</span> which reveals all other knowledge,
+										<br /> does one know the Truth?
+									</td>
+								</tr>
+								<tr>
+									<td>
+										529.
+									</td>
+									<td>
+										The individual&apos;s thirst will vanish,
+										<br /> only when the habits-predispositions-tendencies, of the frenzied mind, die,
+										<br /> and <span class="instruct">direct experience comes of pure Awareness</span>.
+										<br /> If mirage water could quench thirst,
+										<br /> then only would indirect knowledge satisfy the individual&apos;s longing.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										644.
+									</td>
+									<td>
+										Those who do not keenly <span class="instruct">seek and recognize<br />
+											the Being Awareness shinning incessant in the heart</span>,
+										<br /> sink deep into delusive illusion,
+										<br /> due to the denotative knowledge piled up by the mounting ego.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										750.
+									</td>
+									<td>
+										What we incessantly think of, that we become.
+										<br /> Hence, if we <span class="instruct">keenly seek the Self-Awareness,<br />
+											and think of nothing else</span>,
+										<br /> the malady of birth will cease,
+										<br /> and all thoughts will end.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1161.
+									</td>
+									<td>
+										What need is there for any thinking for those
+										<br /> who in the <span class="instruct">thought-free bliss of Self-Awareness</span>, live their lives?
+										<br /> All they experience is bright stillness.
+										<br /> In this supreme state, there is no &quot;other&quot; and nothing to gain.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1184.
+									</td>
+									<td>
+										Shining as the bright void,
+										<br /> devoid of concepts raised by the villainous ego,
+										<br /> this is the <span class="instruct">true experience of infinite Being-Awareness</span>,
+										<br /> the one non-dual bliss of pure silence.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1197.
+									</td>
+									<td>
+										When <span class="instruct">the ego, shaking off all tricky concepts</span>,
+										<br /> finally merges in the silence of the Heart,
+										<br />
+										<span class="instruct">the fullness of blissful, bright Self-Awareness</span>, this,
+										<br /> this is what the sages call transcendent speech.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1238.
+									</td>
+									<td>
+										The Self, <span class="instruct">who is pure Awareness</span>, transcending thought,
+										<br /> is only known to heroic seers,
+										<br /> who with minds extinct,
+										<br />
+										<span class="instruct">abide thought-free within the Heart</span>,
+										<br /> and not to those whose minds are still engaged in thought.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										917.
+									</td>
+									<td>
+										As in the sky covered with thick clouds,
+										<br /> no eye can see the glorious sun,
+										<br /> one fails to see one&apos;s Self-Awareness,
+										<br /> when the mind firmament is darkened by a dense cloud of thoughts.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										918.
+									</td>
+									<td>
+										He who has vanquished thought,
+										<br /> only he sits like an emperor on the neck of the majestic elephant, knowledge.
+										<br /> Know for certain that the mind&apos;s movements alone
+										<br /> give rise to birth and every cruel pain and sorrow.
+									</td>
+								</tr>
+							</table>
+
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="5">&nbsp;</a>
+							<h4>
+								5. The Body <span class="comment">(16 Sayings)</span>
+							</h4>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										97.
+									</td>
+									<td>
+										Only the mind deluded by illusion&apos;s might, and looking outward, sees the body.
+										<br />
+										<span class="instruct">The true Self knows no body.</span>
+										<br /> To call the Self of pure Awareness, the body&apos;s owner or indweller, is an error.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										125.
+									</td>
+									<td style="padding-bottom:10px;">
+										Like one who takes a crocodile for a boat,
+										<br /> and with its help tries to cross a river,
+										<br /> are those who, while they pamper the trivial flesh,
+										<br /> claim that they are earnest seekers of the living Self-Awareness.
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="note" style="padding-left:20px;padding-bottom:30px;">
+										(<span class="instruct">&quot;Give up the thought that this frail body is the Self-Awareness. Pursue the Self-Awareness</span>, which is eternal bliss. To seek It, while cherishing the perishable body, is like trying to cross a river, using a crocodile for a raft.&quot; <span class="nowrap">– Sri Ramana.)</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										615.
+									</td>
+									<td>
+										<span class="instruct">Except the Self-Awareness, nothing exists</span>.
+										<br /> But then the deep delusion that the body is one&apos;s self,
+										<br /> makes one let go the solid, non-dual bliss of immortality,
+										<br /> and fall into birth and death.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										657.
+									</td>
+									<td>
+										<span class="instruct">Worship of the Formless is for him alone<br />
+											who has left behind the notion &quot;I am this form, this body.&quot;</span>
+										<br /> One who is still identified mentally with his body-form, worships only form,
+										<br /> though he may think he is worshipping the Formless.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										682.
+									</td>
+									<td style="padding-bottom:10px;">
+										Those who love,
+										<br /> deeming they are this putrid body of flesh,
+										<br /> that in a brief while turns clean food to filth,
+										<br /> are baser than the swine that feast on filth as food.
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="note" style="padding-left:20px;padding-bottom:30px;">
+										(&quot;Those who deem themselves the body, that soon converts clean food to filth, are worse than swine that feed on filth.&quot; <span class="nowrap">– Sri Ramana)</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										688.
+									</td>
+									<td>
+										What is conquest of the elements?
+										<br />
+										<span class="instruct">Destroying the ego, the attachment to the body</span>,
+										<br /> made up of the five elements,
+										<br /> and <span class="instruct">scorning with contempt the flaws of the flesh</span>,
+										<br /> which have nothing to do with the true Self-Awareness,
+										<br /> but are only based on the five elements.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										775.
+									</td>
+									<td>
+										He who, being ignorant of <span class="instruct">the truth that he is &quot;I, I&quot;, the Self-Awareness</span>,
+										<br /> regards this body as himself,
+										<br /> can only perish with the perishing flesh,
+										<br /> caught in the web, the dreamlike web,
+										<br /> woven by his own illusions.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										847.
+									</td>
+									<td>
+										What is liberation, the bliss supreme attained by few?
+										<br /> And what is noble renunciation?
+										<br /> What is Death that brings immortality?
+										<br /> What is the highest achievement?
+										<br /> All are but this one thing:
+										<br />
+										<span class="instruct">the ending of the foolish, false illusion that &quot;I am the body&quot;</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										866.
+									</td>
+									<td>
+										When the sense that &quot;I am the body&quot; dies,
+										<br /> all troublesome illusions and confusions vanish once and for all.
+										<br />
+										<span class="instruct">Within the explored heart,<br />
+											the non-dual Self of pure Awareness appears as &quot;I, I&quot;</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										953.
+									</td>
+									<td>
+										<span class="instruct">Our real Being, the Sun that never can see the darkness of illusion,<br />
+											knows no trace of pain or suffering</span>.
+										<br /> Misery is what one brings upon one&apos;s self,
+										<br /> by fondly thinking that one is the body, not the Self-Awareness.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										954.
+									</td>
+									<td>
+										<span class="instruct">Blissful and auspicious is the Self-Awareness, our real Being</span>.
+										<br /> One who knows this, sees in life no trace of suffering or pain.
+										<br /> Misery is what one brings upon one&apos;s self,
+										<br /> by foolishly thinking that the body, not the Self-Awareness,
+										<br /> is one&apos;s true self.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										955.
+									</td>
+									<td>
+										Not seeing one&apos;s self as the One Self-Awareness,
+										<br /> one always suffers fear and aguish.
+										<br /> Destroy the &quot;I am the body&quot; thought,
+										<br />
+										<span class="instruct">and in Self-Awareness firmly fixed</span>,
+										<br /> abide in real non-dual Being.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1012.
+									</td>
+									<td>
+										When the false notion &quot;I am the body&quot; dies,
+										<br />
+										<span class="instruct">what abides is what&apos;s worth having</span>,
+										<br /> the vast, bright, silent void, <span class="instruct">the Self-Awareness</span>.
+										<br /> Why is it so? Because in truth,
+										<br />
+										<span class="instruct">the only state free from all pain and all desire is pure Self-Being</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1085.
+									</td>
+									<td>
+										<span class="instruct">The darkness of illusion never touches<br />
+											the seer who knows his true identity as pure Awareness</span>,
+										<br /> vast as the sky, bright as the sun.
+										<br /> Only the blind, who think they are bodies,
+										<br /> suffer from dark ignorance.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1088.
+									</td>
+									<td>
+										Why do you suffer in vain,
+										<br /> believing you are hemmed in by the body?
+										<br /> Even in sleep, when you are free from thoughts of separateness,
+										<br />
+										<span class="instruct">your being abides intact and whole</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1200.
+									</td>
+									<td>
+										<span class="instruct">True silence is the state of being Self-Awareness in the heart
+										</span>,
+										<br /> when the false, foolish sense that one is but the body, is no more.
+										<br /> Mere verbal silence, undertaken without inquiring &quot;Who am I?&quot;,
+										<br /> is no better than a mental trick.
+									</td>
+								</tr>
+							</table>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="6">&nbsp;</a>
+							<h4>
+								6. Turning Inward <span class="comment">(21 Sayings)</span>
+							</h4>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										17.
+									</td>
+									<td>
+										<span class="instruct">To those who look within,<br />
+											the highest good gained</span> by the Master&apos;s grace
+										<br /> is wakeful sleep, the fourth state,
+										<br /> the undying flame, the sweet, uncloying fruit, forever fresh.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										140.
+									</td>
+									<td>
+										True poetry, springs only from the calm heart&apos;s clarity,
+										<br /> which follows the elimination of the ego,
+										<br />
+										<span class="instruct">by inward search</span>, and finding out that none of the five sheaths is I.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										763.
+									</td>
+									<td>
+										<span class="instruct">Only a one-pointed mind, turned inward,<br />
+											succeeds in Self-inquiry.</span>
+										<br /> Weak, faltering minds, like green banana trees,
+										<br /> are not fit fuel to feed this fire.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										878.
+									</td>
+									<td>
+										Self-Awareness alone is the true Eye.
+										<br />
+										<span class="instruct">One has direct immediate knowledge, only of the Self-Awareness
+										</span>.
+										<br /> But minds averted from the Self-Awareness,
+										<br /> look through the senses at a world other than the Self-Awareness,
+										<br /> and mistakenly think it can be known directly.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										551.
+									</td>
+									<td>
+										Only those foolish folk,
+										<br /> who have not <span class="instruct">searched and found the Truth supreme, the Heart</span>,
+										<br /> flounder in fear, in the treacherous illusion.
+										<br /> Those who have known the supreme bliss,
+										<br /> the boundless flood of heavenly brightness,
+										<br /> fear no more.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										822.
+									</td>
+									<td>
+										The boat moves in the water,
+										<br /> but water should never enter into it.
+										<br /> Though one lives in the world,
+										<br />
+										<span class="instruct">the world should not occupy one&apos;s mind</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										191.
+									</td>
+									<td>
+										Not like a boat&apos;s sail, outspread wide and worn away by wind and weather,
+										<br /> but like the humble anchor, sunk in the vast ocean&apos;s depth,
+										<br />
+										<span class="instruct">the mind should plunge and settle in the heart of wisdom</span>.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table wide">
+								<tr>
+									<td>
+										1065.
+									</td>
+									<td>
+										Though one should win at one stroke all the powers people yearn for,
+										<br /> all one&apos;s learning is just wasted,
+										<br /> if one fails to <span class="instruct">undo the primal knot,<br />
+											and to reclaim the one sole, perfect Jewel,<br />
+											the Self-Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										594.
+									</td>
+									<td>
+										Non-existent illusion, this alone,
+										<br /> seeming to be real and powerful,
+										<br /> makes fools of even the cleverest folk,
+										<br /> and smiles inwardly, with wonder at its own success.
+										<br />
+									</td>
+								</tr>
+								<tr>
+									<td>
+										560.
+									</td>
+									<td>
+										&quot;A dream in a moment comes and goes. This &apos;waking&apos; life is enduring.&quot;
+										<br /> Such argument is but the trick played by mind and illusion conspiring.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1016.
+									</td>
+									<td>
+										The inner light, self-luminous, shines all the time as I, as I.
+										<br /> To go from place to place in search of That,
+										<br /> is like looking at noon, torch in hand, for the bright Sun
+										<br /> which hides the full moon from our sight.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1007.
+									</td>
+									<td>
+										You who in eager search of Truth,
+										<br /> roam over the world looking for saints,
+										<br /> when you examine what they teach as definitive,
+										<br /> it is only the <span class="instruct">empty sky of pure Awareness</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1008.
+									</td>
+									<td>
+										Seekers hurrying round the world in search of teachers,
+										<br /> find at last that their paternal gift
+										<br /> is only the marvelous sky of &apos;mere&apos; Awareness.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										804.
+									</td>
+									<td>
+										<span class="instruct">The true physician is one&apos;s Self-Awareness</span>.
+										<br /> Hence, people tell the would-be Teacher:
+										<br /> &quot;Before you start prescribing medicines for us,
+										<br /> first cure yourself (of blindness),
+										<br /> and then come to us.&quot;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										1234.
+									</td>
+									<td>
+										Reality is one and only one.
+										<br /> This permanent and perfect Being,
+										<br /> has been described variously by sages
+										<br /> who with <span class="instruct">keen minds have searched the Heart,<br />
+											and there experienced It</span>.
+									</td>
+								</tr>
+							</table>
+							<table class="numbered-table">
+								<tr>
+									<td>
+										115.
+									</td>
+									<td>
+										Though thus <span class="instruct">Reality is one</span>,
+										<br /> all schools concede at first, three primal entities, God, individual and world,
+										<br /> because the discursive, outward looking mind
+										<br /> cannot <span class="instruct">straightaway, face the unity of Being</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										108.
+									</td>
+									<td>
+										In the mere presence of the Lord, Himself free from all traces of thought,
+										<br /> individuals set out in numerous paths of action, work away,
+										<br /> and wearied, <span class="instruct">turn inward and return to freedom</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										966.
+									</td>
+									<td>
+										<span class="instruct">That which Is, forever shines in Grace as I,
+											<br />
+											the Self-Awareness, the Heart.</span>
+										<br /> Can that be blamed for lacking Grace?
+										<br /> The fault is theirs who do not <span class="instruct">turn within
+											<br />
+											and seek the Self-Awareness, in love</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										967.
+									</td>
+									<td>
+										<span class="instruct">Mind turned inward and ego dead,<br />
+											there shines the Self, the Being-Awareness</span>,
+										<br /> and though transcending form and feature,
+										<br /> It appears as Teacher.
+										<br /> Thus does God, <span class="instruct">the Self-Awareness</span>,
+										<br /> bestow as Teacher, His Grace.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										970.
+									</td>
+									<td>
+										Why should God&apos;s glance of Grace,
+										<br /> which falls on all alike, seem to avoid some &quot;sinners&quot;?
+										<br /> The universal Eye avoids no creature.
+										<br /> We are blind, for we <span class="instruct">look</span> outward, not <span class="instruct">
+											within</span>.
+									</td>
+								</tr>
+								<tr>
+									<td>
+										247.
+									</td>
+									<td>
+										What else is death, but straying from,
+										<br /> the perfect state of Being the immortal Self,
+										<br />
+										<span class="instruct">home of eternal love and supreme bliss,<br />
+											the heaven of true Awareness</span>?
+									</td>
+								</tr>
+							</table>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="7">&nbsp;</a>
+							<h4>
+								7. Ignoring, turning one&apos;s attention away from the world and towards Awareness watching Awareness <span class="comment nowrap">(108 Sayings)</span>
+							</h4>
+							<p>
+								This is such a large collection of quotes, I have given it its own web page. You can read the 108 Sayings on the subject of turning one&apos;s attention away from the world by clicking this link:
+							</p>
+							<p class="page-link">
+								<a href="muruganar-the-world.htm">
+									(Turning away from) The WORLD - <span class="nowrap">108 Sayings</span></a> &nbsp;This link takes you to the next page.
+							</p>
+							<hr />
+							<p>
+								The above quotes were for the purpose of showing the mind the need for and the beauty of turning inward. Practice instructions in Self-inquiry and Self-Abidance are at these links:
+							</p>
+							<p class="page-link">
+								<a href="inquiry-abidance.htm">
+									Inquiry-Abidance Instructions</a>
+							</p>
+							<p class="page-link">
+								<a href="awa-discovery.htm">
+									The Awareness Watching Awareness Discovery</a>
+							</p>
+							<p>
+								Reading, discussing, and thinking about spiritual teachings are examples of an outward turned mind. You can read quotes by Sri Ramana Maharshi on that subject by clicking this link:
+							</p>
+							<p class="page-link">
+								<a href="ramana-think-read-discuss.htm"> On Reading and Discussing</a>
+							</p>
+							<p>
+								If you would like to purchase a copy of the book &quot;The Garland of Guru&apos;s Sayings&quot; by Sri Muruganar, try here:
+							</p>
+							<p class="page-link">
+								<a href="https://amzn.to/3a3pydQ">Amazon, paperback</a>
+							</p>
+							<p class="page-link">
+								<a href="https://amzn.to/3nsgnXg">Amazon, hardcover</a>
+							</p>
+							<p class="page-link">Read for free online:
+								<a href="https://archive.arunachala.org/docs/garland-ogs/">Full text, Arunachala.Org</a>
+							</p>
+							<p>
+								You can find other Direct Path Teachings on the AWA home page:
+							</p>
+							<p class="page-link">
+								<a href="awareness-home.htm">AWA home page</a>
+							</p>
+							<p>
+								Take care,</p>
+							<p>
+								with Love,
+							</p>
+							<p>
+								in: Awareness watching Awareness
+							</p>
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="awa-discovery.htm">&lt; AWA Discovery</a></li>
+									<li class="align-right"><a href="muruganar-the-world.htm">Muruganar, The World &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

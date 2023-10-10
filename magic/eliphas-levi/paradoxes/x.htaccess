@@ -1,0 +1,48 @@
+# .htaccess file for selfdefinition.org/magic/eliphas-levi/paradoxes/
+
+
+# old version page names as of Jan 18, 2022, must include.
+
+
+# .htaccess file for selfdefinition.org/magic/eliphas-levi/paradoxes/
+# update Jan 3, 2019 for new version of paradoxes, new file names
+
+
+
+
+NO DON'T USE, KEEP OLD PAGE NAMES
+
+JAN 19, 2020 MAKE SURE HTACCESS ON SITE IS VALID
+
+
+Redirect 301 "/magic/eliphas-levi-paradoxes/levi-paradoxes-1.htm"     "/magic/eliphas-levi/paradoxes/paradox-1-religion-is-magic-sanctioned-by-authority.htm"
+
+Redirect 301 "/magic/eliphas-levi-paradoxes/levi-paradoxes-2.htm"     "/magic/eliphas-levi/paradoxes/paradox-2-liberty-is-obedience-to-the-law.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-3.htm"     "/magic/eliphas-levi/paradoxes/paradox-3-love-is-realization-of-the-impossible.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-4.htm"     "/magic/eliphas-levi/paradoxes/paradox-4-knowledge-ignorance-of-evil.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-5.htm"     "/magic/eliphas-levi/paradoxes/paradox-5-reason-is-god.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-6.htm"     "/magic/eliphas-levi/paradoxes/paradox-6-imagination-realizes-what-it-invents.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-7.htm"     "/magic/eliphas-levi/paradoxes/paradox-7-will-accomplishes-does-not-desire.htm"
+
+
+Redirect 301 "/magic/eliphas-levi-paradoxes/levi-the-great-secret.htm"     "/magic/eliphas-levi/paradoxes/the-great-secret.htm"
+
+
+## New page, no redirect needed:  "/magic/eliphas-levi/paradoxes/preface-foreword.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-contents-preface.htm"                          "/magic/eliphas-levi/paradoxes/contents.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-synthetic-recapitulation-magic-magism.htm"     "/magic/eliphas-levi/paradoxes/magic-and-magism.htm"
+
+Redirect 301 "/magic/eliphas-levi/paradoxes/levi-paradoxes-the-unalterable-principles.htm"                "/magic/eliphas-levi/paradoxes/unalterable-principles.htm"
+
+
+
+
+# END
+

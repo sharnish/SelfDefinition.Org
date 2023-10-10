@@ -1,0 +1,44 @@
+# .htaccess file for selfdefinition.org/celibacy/sivananda/
+
+# Pages renamed on reformat Sep 6, 2016
+
+
+Redirect 301 "/celibacy/sivananda/brahmacharya-section-1.htm" "/celibacy/sivananda/brahmacharya-section-1-phenomenon.htm" 
+
+Redirect 301 "/celibacy/sivananda/brahmacharya-section-2.htm" "/celibacy/sivananda/brahmacharya-section-2-glory.htm" 
+
+Redirect 301 "/celibacy/sivananda/brahmacharya-section-3.htm" "/celibacy/sivananda/brahmacharya-section-3-techniques.htm" 
+
+Redirect 301 "/celibacy/sivananda/brahmacharya-section-4.htm" "/celibacy/sivananda/brahmacharya-section-4-symposium.htm" 
+
+
+# memo only
+# no change this name:
+# brahmacharya-title-page.htm
+
+# these 2 are new pages:
+# brahmacharya-contents.htm
+# brahmacharya-full-index.htm
+
+# index page points to: brahmacharya-section-1-phenomenon.htm
+
+
+# end
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

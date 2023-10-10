@@ -1,0 +1,106 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <meta name="description" content="SelfDefinition.Org Contact Form">
+    <meta property="og:title" content="Contact Form">
+    <meta property="og:description" content="SelfDefinition.Org Contact Form">
+    <meta property="og:image" content="">
+    <link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* default image width is 210px */
+        #image {}
+
+        @media only print {
+            #main-content:after {
+                content: "Update April 13, 2022";
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper-index">
+        <div id="container">
+            <div id="fixed-header">
+                <ul id="menu-site">
+                    <!-- these are floats -->
+                    <li><a href="/">Site Root</a></li>
+                    <li><a href="/sitemap.htm">Site Map</a></li>
+                    <li><a href="/paginas-en-espanol.htm">Español</a></li>                    
+                    <li><a href="/search/selfdefinition-search.htm">Search</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+                <div style="clear: both;">
+                </div>
+            </div>
+
+            <div id="main-content">
+                <div id="style-gadget">
+                    <label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+                        Dark theme: <input type="checkbox" id="theme-checkbox">
+                    </label>
+                    <!-- Can't be in head. Can be in README -->
+                    <script src="/scripts/set-theme-cookie-checkbox.js"></script>
+                </div>
+                <header>
+                    <p class="logo">
+                        Self<span style="margin-left: 1px;">Definition.Org</span>
+                    </p>
+                    <h1 class="title">
+                        Contact Information
+                    </h1>
+                </header>
+                <div id="announce">
+
+                    <div id="image-div">
+
+                    </div>
+
+                    <div id="top-links">
+
+                        <p>&nbsp;</p>
+
+                        <div class="featured-links">
+                            <p>
+                                To reach us please send an email to:
+                            </p>
+                            <p>
+                                inquiry@selfdefinition.org
+                            </p>
+                            <p>
+                                Thank you.
+                            </p>
+                        </div>
+
+                        <div class="site-links">
+						&nbsp;
+                        </div>
+						<p>
+							<!-- anchor will not be styled unless you include attribute "href" -->
+							Return to <a class="inline"href="#" onclick="history.back()">Prior Page</a>
+						</p>
+                    </div>
+                    <!-- end top-links -->
+                    <div style="clear:both;"></div>
+                </div><!-- end announce -->
+            </div> <!-- end main-content -->
+        </div> <!-- container -->
+    </div> <!-- mainwrapper-index -->
+
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+
+</body>
+
+</html>
+

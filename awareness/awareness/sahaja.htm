@@ -1,0 +1,740 @@
+﻿<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SAHAJA</title>
+	<meta name="description" content="What is Liberation According to the 
+    Teachings of Sri Ramana Maharshi?">
+	<meta property="og:title" content="SAHAJA">
+	<meta property="og:description" content="What is Liberation According to the 
+    Teachings of Sri Ramana Maharshi?">
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-og-image-new.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* definition list, Q and A */
+
+		/* default selfdef-responsive is marginleft:15px */
+		@media only screen and (max-width:500px) {
+			dl.sahaja-list {
+				margin-left: 3px;
+			}
+
+			p.blockquote,
+			p.page-link {
+				margin-left: 4px;
+			}
+		}
+
+		/* the title at the top. Over ride the toowide class */
+		@media only screen and (max-width:500px) {
+			#liberation {
+				width: 95%;
+			}
+		}
+
+		dl.sahaja-list dt {
+			color: maroon;
+		}
+
+		html.dark dl.sahaja-list dt {
+			color: #FA9473;
+		}
+
+		/***** THE DEFINITION LIST *******/
+		/* default is 40px */
+
+		dl.sahaja-list dd {
+			margin-left: 12px;
+		}
+
+		dl.sahaja-list dd {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		/* dl is already at 3px left, so make dd zero */
+		@media only screen and (max-width:500px) {
+			dl.sahaja-list dd {
+				margin-left: 0;
+				/* default is 40px */
+			}
+		}
+
+		@media only screen and (max-width:360px) {
+			dl.sahaja-list dd {
+				margin-left: 0px;
+				/* default is 40px */
+			}
+
+			table.sahajachart {
+				margin-left: -3px;
+			}
+		}
+
+		/***** THE TABLE *******/
+		/* override testing in main CSS
+		
+		1st step, overcome this on awareness_sparse.css
+		
+		tr td:last-of-type {
+			width: 100%;
+		}
+		*/
+		tr td:last-of-type {
+			width: initial;
+		}
+
+
+		td,
+		th {
+			border: 0px solid blue;
+		}
+
+		table.sahajachart th,
+		table.sahajachart td {
+			text-align: left;
+		}
+
+		/* for the table on this page sahaja.htm */
+
+		table.sahajachart {
+			font-size: 16px;
+		}
+
+		@media only screen and (max-width:450px) {
+			table.sahajachart {
+				font-size: 15px;
+			}
+		}
+
+		table.sahajachart tr th {
+			padding-left: 10px;
+		}
+
+		table.sahajachart tr td {
+			padding-left: 5px;
+			padding-right: 1em;
+		}
+
+		table.sahajachart tr td:first-child {
+			padding-right: 8px;
+		}
+
+		table.sahajachart tr th:last-child,
+		table.sahajachart tr td:last-child {
+			padding-right: 0;
+		}
+
+		@media only screen and (max-width:500px) {
+
+			table.sahajachart tr th:first-child,
+			table.sahajachart tr td:first-child {
+				padding-left: 0;
+				padding-right: 5px;
+			}
+
+			table.sahajachart tr th:nth-child(2),
+			table.sahajachart tr td:nth-child(2) {
+				width: 60px;
+				padding-right: 1px;
+			}
+		}
+
+		/* Could not figure out how to put number on it's own line for small screens
+            to adapt "numbered-table" (2 cells wide) to this table, because of multiple cells.
+            Try again someday , wasting too much time.
+            Column widths are the ptroblem.
+            Might try it with a definition list. 
+        */
+		/* KEEP THESE - NOT FOR TESTING */
+
+		th,
+		td {
+			border-bottom: 1px solid blue;
+		}
+
+		html.dark th,
+		html.dark td {
+			border-bottom: 1px solid lightblue;
+		}
+
+		td:first-child,
+		td:nth-child(2),
+		td:nth-child(3) {
+			border-right: 1px solid blue;
+		}
+
+		html.dark td:first-child,
+		html.dark td:nth-child(2),
+		html.dark td:nth-child(3) {
+			border-right: 1px solid lightblue;
+		}
+
+
+
+
+		/* default paragraph is 20px */
+
+		div.liberation {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		div.liberation p {
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2 id="liberation" class="toowide">
+										What is Liberation According to the Teachings of Sri Ramana Maharshi?
+									</h2>
+								</header>
+							</div>
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="spiritual-business.htm">&lt; Spiritual Business</a></li>
+									<li class="align-right"><a href="nonduality-salon-403.htm">Meetings with Vernon Howard &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="strong toowide center top">
+								How can I know whether I have completed the spiritual search?
+							</p>
+							<p class="top">
+								In the teachings of Sri Ramana Maharshi, liberation is called Sahaja Samadhi. However, people who have experienced Kevala Samadhi are often fooled into thinking they are liberated.
+							</p>
+							<p>
+								Sri Ramana describes clearly the difference between kevala samadhi and sahaja samadhi in talk 187 from &quot;Talks with Sri Ramana Maharshi&quot;:
+							</p>
+							<dl class="sahaja-list">
+								<dt>The questioner says: </dt>
+								<dd>
+
+									&quot;I maintain that the physical body of the man sunk in samadhi as a result of unbroken contemplation of the Self, becomes motionless for that reason. It may be active or inactive. The mind fixed in such contemplation will not be affected by the body or the senses being restless. A disturbance of the mind is not always the forerunner of physical activity. Another man asserts that physical unrest certainly prevents nirvikalpa samadhi or unbroken contemplation. What is your opinion? You are the standing proof of my statement.&quot;
+								</dd>
+								<dt>Sri Ramana replied:</dt>
+								<dd>
+
+									&quot;Both of you are right, you refer to sahaja nirvikalpa and the other refers to kevala nirvikalpa. In the one case the mind lies immersed in the light of the Self (whereas the same lies in the darkness of ignorance in deep sleep). The subject discriminates one from the other – samadhi, stirring up from samadhi, and activity thereafter, unrest of the body, of the sight, of the vital force and of the mind, the cognizance of objects and activity, are all obstructions for him.
+								</dd>
+								<dd>
+									&quot;In sahaja, however, the mind has resolved itself into the Self and has been lost. Differences and obstructions mentioned above do not therefore exist here. The activities of such a being are like the feeding of a somnolent boy, perceptible to the onlooker (but not to the subject). The driver sleeping on his moving cart is not aware of the motion of the cart, because his mind is sunk in darkness. Similarly the sahaja jnani (liberated sage) <u>remains unaware of his bodily activities</u> because his mind is dead, having been resolved in the ecstasy of Awareness (Self).
+								</dd>
+								<dd>
+									&quot;The two words contemplation and samadhi have been used loosely in the question. Contemplation is a forced mental process, whereas samadhi lies beyond effort.&quot;
+								</dd>
+							</dl>
+							<table class="sahajachart">
+								<tr>
+									<th>
+										&nbsp;
+									</th>
+									<th>
+										SLEEP
+									</th>
+									<th>
+										KEVALA
+									</th>
+									<th>
+										SAHAJA
+									</th>
+								</tr>
+								<tr>
+									<td>
+										1.
+									</td>
+									<td>
+										Mind is alive;
+									</td>
+									<td>
+										Mind is alive;
+									</td>
+									<td>
+										Mind is dead;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2.
+									</td>
+									<td>
+										sunk in oblivion.
+									</td>
+									<td>
+										sunk in light;
+									</td>
+									<td>
+										resolved into the Self;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3.
+									</td>
+									<td>
+										&nbsp;--
+									</td>
+									<td>
+										like a bucket with the rope, left lying in the water in a well;
+									</td>
+									<td>
+										like a river discharged into the ocean and its identity lost;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										4.
+									</td>
+									<td>
+										&nbsp;--
+									</td>
+									<td>
+										to be drawn out by the other end of the rope.
+									</td>
+									<td>
+										a river cannot be redirected from the ocean.
+									</td>
+								</tr>
+							</table>
+							<p>
+								From the above talk by Sri Ramana we can see that the liberated sage is not aware of objects, the world, the body, the universe, activity, walking, talking, etc.
+							</p>
+							<p>
+								However, the onlooker who is still under the illusion of the ego imagines a sage with a body walking, talking, etc.
+							</p>
+							<p>
+								Those who have experienced kevala return to the experience of the perception of a world, a body, etc., because the mind-ego that creates such a delusion-perception is not dead. I have noticed that such people often imagine they are liberated and begin teaching.
+							</p>
+							<p>
+								That is unfortunate because according to Sri Ramana, only the liberated sage can be of genuine help, and others are the blind leading the blind. It is very rare that a human consciousness ever reaches the point where it truly wishes for the end of the ego.
+							</p>
+							<p>
+								Almost every &quot;spiritual student&quot; really would like the ego to continue while pretending to wish for the ego&apos;s end. Such false students seek out false teachers and both student and teacher are playing a game of pretend. Neither the student nor the teacher makes any progress towards ending the ego-illusion. This is true for almost all teachers and all students on almost every spiritual path. That includes the false teachers who claim some connection to Sri Ramana Maharshi or to Sri Nisargadatta Maharaj.
+							</p>
+							<p>
+								A fascinating account of the actual experience of the difference between kevala and sahaja can be found in the book &quot;No Mind – I Am the Self&quot;. It is interesting that Lakshmana turned the tape recorder on. That may be the first time in history where a persons words (Sarada&apos;s words) have been recorded while the person is first experiencing kevala samadhi and then the end of the experiencer and experience – sahaja samadhi.
+							</p>
+							<p>
+								When Sarada&apos;s mind was sunk in the Self – kevala, she thinks she is liberated and says so. However, Lakshmana knows that the mind is still alive and therefore continues to help guide her to the extinction. The ego makes some last minute attempts to escape, then finally the extinction does occur.
+							</p>
+							<dl class="sahaja-list">
+								<dt>The following is verse 40 of &quot;Reality in 40 Verses&quot; by Sri Ramana Maharshi:
+								</dt>
+								<dd>
+
+									&quot;If asked: &apos;Which of these three is final liberation: - with form, without form, or with and without form?&apos; I say, &apos;Liberation is the extinction of the ego which inquires &apos;With form, without form, or with and without form?&apos;&quot;
+								</dd>
+								<dd class="citation">
+									&mdash; from &quot;The Collected Works of Ramana Maharshi&quot;
+
+								</dd>
+							</dl>
+							<div class="liberation">
+								<p>
+									Liberation is the extinction of the ego.
+								</p>
+								<p>
+									Liberation is the extinction of the ego that inquires.
+								</p>
+								<p>
+									Liberation is the extinction of the ego that speculates about what liberation is or is not.
+								</p>
+								<p>
+									Liberation is the extinction of the ego that wonders if the experience it has had is liberation or not.
+								</p>
+								<p>
+									Liberation is the extinction of the ego that imagines the Self has parts or qualities or aspects or form.
+								</p>
+								<p>
+									Liberation is the end of the ego that experiences.
+								</p>
+								<p>
+									Liberation is the end of experience.
+								</p>
+								<p>
+									Liberation is the end of the experiencer.
+								</p>
+								<p>
+									According to the teachings of Sri Ramana Maharshi.
+								</p>
+							</div>
+							<p>
+								Sri Ramana Maharshi says that many fall prey to a false sense of liberation and only a few manage to reach the goal safely, as the following dialogue illustrates:
+							</p>
+							<dl class="sahaja-list">
+								<dt>Questioner: </dt>
+								<dd>
+
+									&quot;When I am engaged in inquiry as to the source from which the &apos;I&apos; springs, I arrive at a stage of stillness of mind beyond which I am unable to proceed further.
+								</dd>
+								<dd>
+									&quot;I have no thought of any kind and there is an emptiness, a blankness. A mild light pervades and I feel myself bodiless. I have neither cognition nor vision of body and form. The experience lasts nearly half an hour and is pleasing.
+								</dd>
+								<dd>
+									&quot;Would I be correct in concluding that all that was necessary to secure eternal happiness, that is freedom or salvation or whatever one calls it, was to continue the practice until this experience could be maintained for hours, days, and months together?&quot;
+
+								</dd>
+								<dt>Sri Ramana: </dt>
+								<dd>
+
+									&quot;This does not mean salvation. Such a condition is termed manolaya or temporary stillness of thought. Manolaya means concentration, temporarily arresting the movement of thoughts.
+								</dd>
+								<dd>
+									&quot;As soon as this concentration ceases, thoughts, old and new, rush in as usual; and even if this temporary lulling of mind should last a thousand years, it will never lead to total destruction of thought, which is what is called liberation from birth and death. The practitioner must therefore be ever on the alert and inquire within as to who has this experience, who realizes its pleasantness? Without this inquiry he will go into a long trance or deep sleep (yoga nidra).
+								</dd>
+								<dd>
+									&quot;Due to the absence of a proper guide at this stage of spiritual practice, many have been deluded and fallen a prey to a false sense of liberation and only a few have managed to reach the goal safely.&quot;
+
+								</dd>
+							</dl>
+
+							<p>
+								I wonder how many of these people who have fallen prey to a false sense of liberation begin teaching, thus creating spiritual paths that are detours and distractions, and nothing more, as Lao Tzu states in the Hua Hu Ching:
+							</p>
+							<p class="blockquote">
+								&quot;Not all spiritual paths lead to the Harmonious Oneness.
+								<br /> Indeed, most are detours and distractions, nothing more.&quot;
+							</p>
+							<p>
+								Or a maze of confusion as Sri Ramana Maharshi states:
+							</p>
+							<p class="blockquote">
+								&quot;The intricate maze of philosophy of different schools is said to clarify matters and reveal the Truth. But in fact they create confusion where no confusion need exist. Why should confusion be created and then explained away? Ah! Fortunate is the man who does not involve himself in this maze!&quot;
+							</p>
+							<p class="citation">
+								&ndash; from &quot;Talks with Sri Ramana Maharshi&quot;
+							</p>
+							<p>
+								Regarding spiritual teachers Sri Ramana Maharshi writes:
+							</p>
+							<p class="blockquote">
+								&quot;By him alone who has saved himself, can other folk be free; the help of others is as if the blind the blind would lead.&quot;
+							</p>
+							<p>
+								What is the end of the spiritual search, and who has saved himself according to Sri Ramana Maharshi?
+							</p>
+							<p>
+								The end of the ego-illusion is the end of the spiritual search according to Sri Ramana Maharshi.
+							</p>
+							<p>
+								According to Sri Ramana Maharshi, only the death of the ego, never to return, can be called liberation.
+							</p>
+							<p>
+								What does the end of the ego-illusion mean, and what is that experience like according to Sri Ramana Maharshi?
+							</p>
+							<p>
+								Is the perception of a liberated sage walking, eating, talking, etc. created by the state of the perceiver who is still under the ego illusion, or does a liberated sage have a perception of walking, talking, eating, etc.?
+							</p>
+							<p>
+								According to both Sri Ramana Maharshi and Sri Nisargadatta Maharaj the perception of a sage talking, walking, eating etc. is due to the state of the one who is perceiving it.
+							</p>
+							<p>
+								Someone once commented to Sri Nisargadatta about his smoking. Sri Nisargadatta said if you trace it out, you will see that it is your &apos;I am the body&apos; idea that causes your &apos;I see you smoking idea&apos;.
+							</p>
+							<p>
+								Sri Ramana Maharshi repeated thousands of times the importance of getting rid of the &apos;I am the body&apos; idea. However, the human tendency to identify with the body is so strong, that no matter now many times the sage stresses the importance of getting rid of the &apos;I am the body&apos; idea, a human consciousness still identifies with the body and even imagines that the sage has a body.
+							</p>
+							<p>
+								Sri Ramana Maharshi has said that the Self is not aware of a body.
+							</p>
+							<p>
+								Sri Ramana Maharshi has said when the ego-I arises, the world and God arise and when the ego-I disappears, God and the world disappear also.
+							</p>
+
+							<dl class="sahaja-list">
+								<dt>In the book &apos;Who am I?&apos;, which was the book most often recommended by Sri Ramana, the questioner asks: </dt>
+								<dd>
+
+									4. &quot;When will the realization of the Self be gained?&quot;
+								</dd>
+								<dt>Sri Ramana replies: </dt>
+								<dd>
+
+									&quot;When the world, which is what is seen, has been removed, there will be realization of the Self which is the seer.&quot;
+
+								</dd>
+								<dt>The questioner then asks:</dt>
+								<dd>
+
+									5. &quot;Will there not be realization of the Self even while the world is there?&quot;
+
+								</dd>
+								<dt>
+									Sri Ramana replies:
+								</dt>
+								<dd>
+
+									&quot;There will not be.&quot;
+								</dd>
+								<dd class="page-link note">
+									&ndash; <a href="ramana-who-am-i.htm">ramana-who-am-i.htm</a>
+								</dd>
+							</dl>
+							<p>
+								According to Sri Ramana Maharshi, all worlds, all universes, all beings, etc. are a delusion produced by the ego-illusion.
+							</p>
+							<p>
+								The Self, according to Sri Ramana Maharshi, is just Infinite empty Awareness that has no world, no universes, no beings, etc. and also no perception of a universe, or beings, or bodies, etc.
+							</p>
+							<p>
+								However, this is far too scary a thought for almost any human consciousness. Also the ego resents the idea of the world perception it created being taken away.
+							</p>
+							<p>
+								Therefore almost no human consciousness ever allows such a teaching by Sri Ramana Maharshi to be received.
+							</p>
+							<p>
+								Sri Ramana Maharshi has provided many other teachings and views to accommodate people who cannot accept the idea of no worlds, no beings, etc. and those other teachings allow for a world and beings etc.
+							</p>
+							<p>
+								The question may arise, what are we perceiving when we see a body named Sri Ramana Maharshi speaking and walking, and eating, etc.?
+							</p>
+							<p>
+								Sri Ramana Maharshi has said that the sage and the sage&apos;s teachings are a dream food to satisfy dream hunger.
+							</p>
+							<p>
+								Sri Ramana says that when one dreams one is hungry in a dream, only dream food will satisfy that dream hunger.
+							</p>
+							<p>
+								Sri Ramana Maharshi uses the example of using lint to pick up lint.
+							</p>
+							<p>
+								Sri Ramana said that the guru is like a lion who appears in your dream to wake you up.
+							</p>
+							<p>
+								After listening to Sri Nisargadatta Maharaj, a man said to him so, the sage is only a dream also? Sri Nisargadatta replied: Yes, but the sage is a dream that can wake you up.
+							</p>
+							<p>
+								What almost everyone does is to ignore these teachings of Sri Ramana, and select other teachings of Sri Ramana that they are more comfortable with and that the ego likes better.
+							</p>
+							<p>
+								The Self has never had a perception of an ego or a body or a world or a universe or a sage and never will have any such perceptions according to the teachings of Sri Ramana.
+							</p>
+							<p>
+								Where do such perceptions arise from? According to Sri Ramana, they do not arise. They never happened.
+							</p>
+							<p class="strong">
+								How can I know if the ego has really ended or not?
+							</p>
+							<p class="strong">
+								A great test is: If there is still the perception of a world, or a body, or a universe,
+								then the ego-illusion has not ended.
+							</p>
+							<p>
+								The Self is, according to Sri Ramana Maharshi, free of thought also.
+							</p>
+							<p>
+								Sri Ramana Maharshi has acknowledged that Self-Realization is a poor term being used for lack of a better term.
+							</p>
+							<p>
+								What we can speak of is the ending of the illusion-perception.
+							</p>
+							<p>
+								But to speak of Self-Realization is a bit silly.
+							</p>
+							<p>
+								The Self, according to Sri Ramana, remains the same, unchanged always.
+							</p>
+							<p>
+								There is no such thing as the Realization of the Self.
+							</p>
+							<p>
+								There is only the Self, remaining unchanged.
+							</p>
+							<p>
+								However, there is the ending of the illusion-perception.
+							</p>
+							<p>
+								That is also the ending of the perception of a world and of bodies, etc.
+							</p>
+							<p>
+								What remains is the Reality:
+							</p>
+							<p>
+								Formless empty awareness, with no borders or boundaries.
+							</p>
+							<p>
+								It has no name.
+							</p>
+							<p>
+								In the illusion it is called by many names, one of which is the Self.
+							</p>
+							<p>
+								Regarding sages like Sri Ramana Maharshi:
+							</p>
+							<p>
+								There is no name called Sri Ramana in the Self.
+							</p>
+							<p>
+								There is no body called Sri Ramana in the Self.
+							</p>
+							<p>
+								No words have been or ever will be spoken in the Self.
+							</p>
+							<p>
+								No bodies have been or ever will be perceived in the Self.
+							</p>
+							<p>
+								No beings have been or ever will be perceived in the Self.
+							</p>
+							<p>
+								No universes have been or ever will be perceived in the Self.
+							</p>
+							<p>
+								The appearance of a world, or a body, or a universe, or a word, or a thought, or a sage, is a non-existent illusion that has never happened, and never will happen.
+							</p>
+							<p>
+								All that is too difficult for most people to perceive, or too scary or too far out, too different from the usual perceptions in human consciousness, so they just ignore such teachings.
+							</p>
+							<p>
+								Sri Ramana Maharshi used to describe the Self as sleep with Awareness.
+							</p>
+							<p>
+								Sri Ramana Maharshi often would talk about the deep dreamless sleep state, and say the Self is like deep dreamless sleep with awareness.
+							</p>
+							<p>
+								In deep dreamless sleep, there is no perception of a world, or a universe, or a body or beings.
+							</p>
+							<p>
+								People say they just cannot conceive of a state with no world and no universe, and no bodies, and no beings, etc.; however, they experience such a state every night when they enter deep dreamless sleep.
+							</p>
+							<p>
+								Sri Ramana says the Self is like deep dreamless sleep with awareness.
+							</p>
+							<p>
+								The ego is not aware of awareness in deep dreamless sleep.
+							</p>
+							<p>
+								Take that same state of deep dreamless sleep and add awareness, not awareness of anything, just empty awareness without form, and that gives a clue as to what the Self is.
+							</p>
+							<p>
+								Just as there are no worlds, no beings, no universes and no bodies in deep dreamless sleep, so also there are no worlds, no beings, no universes and no bodies in the Self.
+							</p>
+							<p>
+								The Self is Infinite-Eternal-Being-Awareness-Love-Peace with no suffering, no sorrow, no universes, no worlds, no bodies, no dimensions, no time, no space, and no beings.
+							</p>
+							<p>
+								In the case of Sri Ramana, the ego ended in the experience in Madurai, and from that moment onwards, Sri Ramana says there was no change in his experience. That is consistent with Sri Ramana&apos;s description of Sahaja Samadhi.
+							</p>
+							<p>
+								The case of Sri Nisargadatta is quite different. Sri Nisargadatta continued until the end of his life to describe the changes that were occurring. For example he said that previously he thought he was free of the &apos;I am the body&apos; identification but that now he could see that some had remained, etc.
+							</p>
+							<p>
+								Also Sri Nisargadatta had the view that after Self-Realization there is an endless journey of discovering oneself. Both these are consistent with those who go in and out of kevala samadhi. However those descriptions are completely inconsistent with Sahaja Samadhi.
+							</p>
+							<p>
+								In Sahaja Samadhi there is no longer an entity that can undergo changes in the level of &apos;I am the body&apos; identification and there is no longer an entity that can go on learning about itself and there are no parts in the Self so that one part can be revealed to another part.
+							</p>
+							<p>
+								Thus the state that Sri Ramana Maharshi was in is called Sahaja Samadhi. The state that Sri Nisargadatta was in and out of and in and out of is called kevala samadhi.
+							</p>
+							<p>
+								Sri Muruganar reached the end of the spiritual search in the presence of Sri Ramana Maharshi. Sri Muruganar wrote the most beautiful, detailed and heart touching description of the experience of ego-death that I have ever read.
+							</p>
+							<p>
+								Therefore, this essay on the subject of &quot;What is Liberation according to Sri Ramana Maharshi&quot; or &quot;How can I know if I have successfully completed the spiritual search according to the teachings of Sri Ramana Maharshi and Sri Nisargadatta Maharaj&quot; would not be complete without providing the following link where you can read Sri Muruganar&apos;s description of the ego&apos;s end:
+							</p>
+							<p class="page-link">
+								<a href="muruganar-realization.htm">
+									REALIZATION by Muruganar</a>
+							</p>
+							<p>
+								Further information on this topic including sources and references can be found at these links:
+							</p>
+							<p class="page-link">
+								<a href="awareness-home.htm">AWA home page</a>
+							</p>
+							<p class="page-link">
+								<a href="most-rapid/contents.htm">
+									most-rapid/contents.htm</a>
+							</p>
+							<p>
+								Take care,
+							</p>
+							<p>
+								with Love
+							</p>
+
+							<p>&nbsp;</p>
+							<p class="note center">
+
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="spiritual-business.htm">&lt; Spiritual Business</a></li>
+									<li class="align-right"><a href="nonduality-salon-403.htm">Meetings with Vernon Howard &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

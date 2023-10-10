@@ -1,0 +1,50 @@
+/* file:  /new-thought/atkinson/ley-de-la-atraccion/_atraccion-sparse.css
+
+Update Sep 21, 2020. Dark theme update Feb 7, 2022, then Feb 28, 2022. June 6, 2022 
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update June 6, 2022";
+	}
+
+}
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #e9ffe9;
+}
+
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c9d2fc;
+}
+
+ul.chapter-summaries li.link {
+	background: #c9d2fc;
+}
+
+header h3 span.block {
+	font-size: 80%
+}
+
+
+
+/* end */

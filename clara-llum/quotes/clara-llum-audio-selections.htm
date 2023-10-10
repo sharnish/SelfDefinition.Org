@@ -1,0 +1,869 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clara Llum - Satsang Audio and Transcripts</title>
+	<meta name="description" content="Satsang with Clara Llum Ibañez @lux1008">
+	<meta name="author" content="Clara Llum">
+	<meta property="og:title" content="Clara Llum - Satsang Audio and Transcripts">
+	<meta property="og:description" content="Satsang with Clara Llum Ibañez @lux1008">
+	<meta property="og:image" content="https://selfdefinition.org/clara-llum/quotes/images/clara-llum-bw-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_clara-quotes-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- not used yet
+    <link rel="prev" href="">
+    <link rel="next" href="">
+    -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* styles don't work for Firefox, only Edge and */
+		audio::-webkit-media-controls-panel {}
+
+		audio::-webkit-media-controls-timeline-container {}
+
+
+		html.dark audio::-webkit-media-controls-panel {}
+
+		ul.page-links {
+			width: 70px;
+			text-align: center;
+			border: 0px solid blue;
+		}
+
+		div.talk {
+			display: block;
+			margin-bottom: 35px;
+			padding-bottom: 20px;
+			text-align: center;
+			border-bottom: 1px solid #666;
+		}
+
+		p.title {
+			font-weight: bold;
+		}
+
+		p.title span {
+			display: block;
+			font-weight: normal;
+		}
+
+		div.transcript {
+			width: 85%;
+			border: 0px solid yellow;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media only screen and (max-width:600px) {
+			div.transcript {
+				width: 100%;
+			}
+		}
+
+		.hide-this {
+			display: block;
+			display: none;
+			background: #333;
+		}
+
+		figure {
+			padding: 0;
+			margin: 20px auto 0;
+		}
+
+		.audio span.audio-info {
+			display: block;
+			margin-bottom: 0px;
+			font-size: 80%;
+		}
+
+		.transcript span.file-info {
+			display: block;
+		}
+
+		a.pdf-link {
+			font-size: 90%;
+		}
+
+		a.scribd-link {
+			display: block;
+			display: none;
+			margin-top: 10px;
+			font-size: 80%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_clara-quotes-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_clara-quotes-title-include.htm"); ?>
+									<h3> Satsang Audio and Transcripts </h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="clara-llum-index.htm">&lt; Contents &amp; Index</a>
+									</li>
+									<li class="align-right"><a href="clara-llum-video-selections.htm">Satsang Videos
+											&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#2008">2008</a></li>
+									<li><a href="#2009">2009</a></li>
+									<li><a href="#2010">2010</a></li>
+								</ul>
+							</nav>
+
+							<p class="center note80 toowide" style="margin-top:15px;">Audio files are hosted at
+								Archive.Org. If the player doesn't work for you, please check your ad blocker. For
+								transcripts that exist, PDF files are hosted on our site. Please contact us if you would
+								like to post a transcript. To download audio files go to
+								<a href="http://archive.org/search.php?query=creator:%22Clara%20Llum%20Ibañez%22">Archive.Org</a>.
+								Many more audio files are available there.
+							</p>
+
+							<!-- Clara Llum's uploads to Scribd.Com: 
+								
+								https://www.scribd.com/user/309181/Clara-Llum
+							
+							-->
+
+							<!-- AUDIO CONTROL AT W3 SCHOOLS:
+							https://www.w3schools.com/tags/tag_audio.asp
+							Preload:
+							https://www.w3schools.com/tags/att_audio_preload.asp
+
+							 <audio controls preload="none">
+							  <source src="horse.ogg" type="audio/ogg">
+							  <source src="horse.mp3" type="audio/mpeg">
+							  Your browser does not support the audio element.
+							</audio> 
+							-->
+
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="2008">&nbsp;</a>
+							<h4>2008</h4>
+
+							<div class="talk" id="2022-1013">
+								<p class="title">
+									<span class="date">
+										October 13, 2008
+									</span>
+									"Rest on your all-inclusive awareness"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">2 hrs, 3 minutes</span>
+									<span class="note80">(starts after introductions at 03:25)</span>
+									<!-- "Cory" is apparently Cory Bright
+										https://twitter.com/theopenway
+										
+										http://www.theopenway.org/
+									-->
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia600901.us.archive.org/12/items/satsang10132008_889/SatsangOct132008.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/satsang10132008_889">
+												https://archive.org/details/satsang10132008_889</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 21 pages, size 174 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2008-1013-Rest-on-your-all-inclusive-awareness.pdf">
+										pdf/Clara-Llum-2008-1013-Rest-on-your-all-inclusive-awareness.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/7718365/Rest-on-your-All-inclusive-Awareness">
+										https://www.scribd.com/document/7718365/Rest-on-your-All-inclusive-Awareness
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2008-1027">
+								<p class="title">
+									<span class="date">
+										October 27, 2008
+									</span>
+									"The true object of devotion"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 37 minutes</span>
+									<span class="note80">(starts at 00:45 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia804502.us.archive.org/33/items/satsang10272008/SatsangOct272008.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/satsang10272008">https://archive.org/details/satsang10272008</a>
+										</audio>
+									</figure>
+								</div>
+
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 17 pages, size 109 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2008-1027-The-true-object-of-devotion.pdf">
+										pdf/Clara-Llum-2008-1027-The-true-object-of-devotion.pdf
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2008-1103">
+								<p class="title">
+									<span class="date">
+										November 3, 2008
+									</span>
+									"Awakening is being free from the mind"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">2 hrs, 1 minute</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia802904.us.archive.org/32/items/satsang11032008/SatsangNov32008.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/satsang11032008">
+												https://archive.org/details/satsang11032008
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 21 pages, size 177 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2008-1103-Awakening-is-being-free-from-the-mind.pdf">
+										pdf/Clara-Llum-2008-1103-Awakening-is-being-free-from-the-mind.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/8032024/Awakening-is-being-free-from-the-mind">
+										https://www.scribd.com/document/8032024/Awakening-is-being-free-from-the-mind
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2008-1117">
+								<p class="title">
+									<span class="date">
+										November 17, 2008
+									</span>
+									"True bring is un-selfconscious"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">2 hrs, 20 minutes</span>
+									<span class="note80">(starts at 02:18 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia800901.us.archive.org/6/items/Satsang2008-11-17/SatsangNov172008.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2008-11-17">
+												https://archive.org/details/Satsang2008-11-17</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 22 pages, size 186 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2008-1117-True-being-is-unselfconscious.pdf">
+										pdf/Clara-Llum-2008-1117-True-being-is-unselfconscious.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/8700690/True-being-is-unselfconscious">
+										https://www.scribd.com/document/8700690/True-being-is-unselfconscious
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2008-1208">
+								<p class="title">
+									<span class="date">
+										December 8, 2008
+									</span>
+									"Nondual devotion is already realization"
+								</p>
+								<div class="audio">
+									<span class="audio-info">2 hrs, 19 minutes</span>
+									<span class="note80">(starts at 01:25 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia800704.us.archive.org/23/items/Satsang2008-12-08/SatsangDec82008.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2008-12-08">
+												https://archive.org/details/Satsang2008-12-08
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 16 pages, size 100 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2008-1208-Nondual-devotion-is-already-realization.pdf">
+										pdf/Clara-Llum-2008-1208-Nondual-devotion-is-already-realization.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/11564187/Nondual-Devotion-is-already-Realization">
+										https://www.scribd.com/document/11564187/Nondual-Devotion-is-already-Realization
+									</a>
+								</div>
+							</div>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="2009">&nbsp;</a>
+							<h4>2009</h4>
+
+							<div class="talk" id="2009-0323">
+								<p class="title">
+									<span class="date">
+										March 23, 2009
+									</span>
+									"Everything is the unfolding of perfection"
+								</p>
+								<div class="audio">
+									<span class="audio-info">2 hrs, 6 minutes</span>
+									<span class="note80">(starts at 00:47 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia600203.us.archive.org/21/items/Satsang2009-03-23/SatsangMarch232009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-03-23">
+												https://archive.org/details/Satsang2009-03-23
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-0330">
+								<p class="title">
+									<span class="date">
+										March 30, 2009
+									</span>
+									"In the total embrace of Reality, 'liberation' is forgotten"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">2 hrs, 3 minutes</span>
+									<span class="note80">(starts at 00:40 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia802606.us.archive.org/31/items/Satsang2009-03-30/SatsangMarch302009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-03-30">
+												https://archive.org/details/Satsang2009-03-30
+											</a>>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-0420">
+								<p class="title">
+									<span class="date">
+										April 20, 2009
+									</span>
+									"There's no way to get lost, since all destinies are&nbsp;Here"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 45 minutes</span>
+									<span class="note80">(starts at 01:00 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://archive.org/download/Satsang2009-04-20/SatsangApril202009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-04-20">
+												https://archive.org/details/Satsang2009-04-20
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE -Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-0714">
+								<p class="title">
+									<span class="date">
+										July 14, 2009
+									</span>
+									Interview by Ariel Bravy
+									<span class="note80">(no audio)</span>
+								</p>
+
+								<div class="audio hide-this">
+									<figure>
+										<audio controls preload="none">
+
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 5 pages, size 66 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2009-0714-Interview-by-Ariel-Bravy.pdf">
+										pdf/Clara-Llum-2009-0714-Interview-by-Ariel-Bravy.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/17391052/youaretrulyloved-com-interviews-Clara-Llum">
+										https://www.scribd.com/document/17391052/youaretrulyloved-com-interviews-Clara-Llum
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-0817">
+								<p class="title">
+									<span class="date">
+										August 17, 2009
+									</span>
+									"Take a firm stand on truth"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 40 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://archive.org/download/Satsang2009-08-17/SatsangAugust172009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-08-17">
+												https://archive.org/details/Satsang2009-08-17
+											</a>
+
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-0921">
+								<p class="title">
+									<span class="date">
+										September 21, 2009
+									</span>
+									"The place of restful awareness is where the relative meets the absolute"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 58 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia600201.us.archive.org/23/items/Satsang2009-09-21/SatsangSeptember212009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-09-21">
+												https://archive.org/details/Satsang2009-09-21
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 19 pages, size 122 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2009-0921-The-place-of-restful-awareness-is-where-the-relative-meets-the-absolute.pdf">
+										pdf/Clara-Llum-2009-0921-The-place-of-restful-awareness-is-where-the-relative-meets-the-absolute.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/27795408/The-place-of-restful-awareness-is-where-the-relative-meets-the-absolute">
+										https://www.scribd.com/document/27795408/The-place-of-restful-awareness-is-where-the-relative-meets-the-absolute
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-1019">
+								<p class="title">
+									<span class="date">
+										October 19, 2009
+									</span>
+									"Trust in the Divine overrides all paths and all attainments"
+								</p>
+								<div class="audio">
+									<span class="audio-info">1 hr, 55 minutes</span>
+									<span class="note80">(starts immeditely)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://archive.org/download/Satsang2009-10-19/SatsangOctober192009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-10-19">
+												https://archive.org/details/Satsang2009-10-19
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+										need pdf
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-1109">
+								<p class="title">
+									<span class="date">
+										November 9, 2009
+									</span>
+									"You are beyond both experience and knowledge." <span class="nomal">Only intrinsic intelligence reveals who you are.</span>
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 57 minutes</span>
+									<span class="note80">(starts at 00:11)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia600208.us.archive.org/21/items/Satsang2009-11-09/SatsangNovember92009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-11-09">
+												https://archive.org/details/Satsang2009-11-09
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 20 pages, size 127 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2009-1109-You-are-beyond-both-experience-and-knowledge.pdf">
+										pdf/Clara-Llum-2009-1109-You-are-beyond-both-experience-and-knowledge.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/28689253/You-are-beyond-both-experience-and-knowledge-only-intrinsic-intelligence-reveals-who-you-are">
+										https://www.scribd.com/document/28689253/You-are-beyond-both-experience-and-knowledge-only-intrinsic-intelligence-reveals-who-you-are
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2009-1228">
+								<p class="title toowide">
+									<span class="date">
+										December 28, 2009
+									</span>
+									"Intrinsic purity, your true nature, is always present"
+									<span class="normal">but you cannot see it while feeding an impure concept of yourself</span>
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 29 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia800202.us.archive.org/14/items/Satsang2009-12-28/SatsangDecember282009.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2009-12-28">
+												https://archive.org/details/Satsang2009-12-28
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 10 pages, size 113 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2009-1228-Intrinsic-purity-your-true-nature-is-always-present.pdf">
+										pdf/Clara-Llum-2009-1228-Intrinsic-purity-your-true-nature-is-always-present.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/26887710/Intrinsic-purity-your-true-nature-is-always-present">
+										https://www.scribd.com/document/26887710/Intrinsic-purity-your-true-nature-is-always-present
+									</a>
+								</div>
+							</div>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="2010">&nbsp;</a>
+							<h4>2010</h4>
+
+
+							<div class="talk" id="2010-0104">
+								<p class="title">
+									<span class="date">
+										January 4, 2010
+									</span>
+									"The journey of awakening begins when we are introduced to the inner guru"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 48 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://archive.org/download/Satsang2010-1-4/SatsangJanuary42010.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2010-1-4">
+												https://archive.org/details/Satsang2010-1-4
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2010-0111">
+								<p class="title toowide">
+									<span class="date">
+										January 11, 2010
+									</span>
+									"The idea of objective reality is the ultimate delusion"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 32 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia600201.us.archive.org/0/items/Satsang2010-1-11/2010-0111-Clara-Llum-Satsang-42-megs.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2010-1-11">
+												https://archive.org/details/Satsang2010-1-11
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 15 pages, size 126 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2010-0111-The-idea-of-objective-reality-is-the-ultimate-delusion.pdf">
+										pdf/Clara-Llum-2010-0111-The-idea-of-objective-reality-is-the-ultimate-delusion.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/26966483/The-idea-of-objective-reality-is-the-ultimate-delusion">
+										https://www.scribd.com/document/26966483/The-idea-of-objective-reality-is-the-ultimate-delusion
+									</a>
+								</div>
+							</div>
+
+							<div class="talk" id="2010-0118">
+								<p class="title toowide">
+									<span class="date">
+										January 18 2010
+									</span>
+									"Worship Consciousness, the ultimate and final&nbsp;deity"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 37 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://archive.org/download/Satsang2010-1-18/SatsangJanuary182010.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2010-1-18">
+												https://archive.org/details/Satsang2010-1-18
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+
+							<div class="talk" id="2010-0201">
+								<p class="title" style="width:95%;">
+									<span class="date">
+										February 1, 2010
+									</span>
+									"The enormity of nonduality is unthinkably at odds with all your learning"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 28 minutes</span>
+									<span class="note80">(starts immediately)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia800204.us.archive.org/7/items/Satsang2010-2-1/SatsangFebruary12010.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2010-2-1">
+												https://archive.org/details/Satsang2010-2-1
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript">
+									<span class="file-info note80">
+										Pdf 12 pages, size 73 KBs
+									</span>
+									<a class="pdf-link" href="pdf/Clara-Llum-2010-0201-The-enormity-of-nonduality-is-unthinkably-at-odds-with-all-your-learning.pdf">
+										pdf/Clara-Llum-2010-0201-The-enormity-of-nonduality-is-unthinkably-at-odds-with-all-your-learning.pdf
+									</a>
+									<a class="scribd-link" href="https://www.scribd.com/document/29926801/The-enormity-of-nonduality-is-unthinkably-at-odds-with-all-your-learning">
+										https://www.scribd.com/document/29926801/The-enormity-of-nonduality-is-unthinkably-at-odds-with-all-your-learning
+									</a>
+								</div>
+							</div>
+
+
+							<div class="talk" id="2010-0503">
+								<p class="title toowide">
+									<span class="date">
+										May 3 2010
+									</span>
+									"Take the Truth to your heart until the two are one and the same"
+								</p>
+
+								<div class="audio">
+									<span class="audio-info">1 hr, 48 minutes</span>
+									<span class="note80">(starts at 00:34 after silence)</span>
+									<figure>
+										<audio controls preload="none">
+											<source src="https://ia902701.us.archive.org/22/items/Satsang2010-5-3/SatsangMay32010.mp3" type="audio/mp3">
+											<a href="https://archive.org/details/Satsang2010-5-3">
+												https://archive.org/details/Satsang2010-5-3
+											</a>
+										</audio>
+									</figure>
+								</div>
+								<div class="transcript hide-this">
+									<span class="file-info note80">
+										NONE - Pdf pages, size KBs
+									</span>
+									<a class="pdf-link" href="">
+
+									</a>
+									<a class="scribd-link" href="">
+
+									</a>
+								</div>
+							</div>
+
+							<div class="body-text">
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="end">&zwj;</a>
+							</div><!-- end class="page-text -->
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="clara-llum-index.htm">&lt; Contents &amp; Index</a>
+									</li>
+									<li class="align-right"><a href="clara-llum-video-selections.htm">Satsang Videos
+											&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Apéndice, caracteres chinos - Practice of Zen</title>
+	<meta name="description" content="Caracteres chinos romanizados para el texto y las notas (imágenes de las páginas)">
+	<meta name="author" content="Garma C. C. Chang">
+	<meta property="og:title" content="Apéndice, caracteres chinos - Practice of Zen, Garma C. C. Chang">
+	<meta property="og:description" content="Caracteres chinos romanizados para el texto y las notas (imágenes de las páginas)">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load style sheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practica-del-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="bibliografia.htm">
+	<!-- no index spanish version -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 260px;
+			border: 0px solid red;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		#scanned-images {
+			width: 100%;
+			text-align: center;
+		}
+
+		#scanned-images p.image {
+			text-align: left;
+			font-size: 85%;
+		}
+
+		#scanned-images p img {
+			width: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practica-del-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practica-del-zen-title-include.htm"); ?>
+									<h3>
+										Apéndice, caracteres chinos
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="../practice-of-zen/appendix-chinese.htm">..appendix-chinese.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="bibliografia.htm">&lt;&nbsp;Bibliografía</a></li>
+									<li class="align-right"><a href="contenido.htm">Contenido&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<h4 style="margin-top:35px;">
+								Imágenes de escaneo de página
+							</h4>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#for-the-text">Figuras chinas en el texto</a></li>
+									<li><a href="#for-the-notes">Figuras chinas en las notas</a></li>
+								</ul>
+							</nav>
+							<div id="scanned-images">
+								<p class="note">
+									Esta página es para <strong>notas con letras</strong>. Para las <strong>notas numeradas</strong>, consulte la página <a href="notas.htm">Notas finales numeradas</a>.
+								</p>
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor" style="text-align: left;">
+									<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="for-the-text">&nbsp;</a>
+								<h4 style="margin-bottom: 0;">
+									Caracteres chinos romanizados para el TEXTO
+								</h4>
+								<p class="note80" style="margin-top: 0;">
+									Páginas 239-242 extraídas del PDF:
+								</p>
+								<p class="image">
+									P. 239
+									<img src="images/scan-page-239-chinese-text.png" alt="Garma Chang page 239" />
+								</p>
+								<p class="image">
+									P. 240
+									<img src="images/scan-page-240.png" alt="Garma Chang page 240" />
+								</p>
+								<p class="image">
+									P. 241
+									<img src="images/scan-page-241.png" alt="Garma Chang page 241" />
+								</p>
+								<p class="image">
+									P. 242
+									<img src="images/scan-page-242.png" alt="Garma Chang page 242" />
+								</p>
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor" style="text-align: left;">
+									<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="for-the-notes">&nbsp;</a>
+								<h4 style="margin-bottom: 0;">
+									Caracteres chinos romanizados para las NOTAS
+								</h4>
+								<p class="note80" style="margin-top: 0;">
+									Páginas 243-246 extraídas del PDF:
+								</p>
+								<p class="image">
+									P. 243
+									<img src="images/scan-page-243-chinese-notes.png" alt="Garma Chang page 243" />
+								</p>
+								<p class="image">
+									P. 244
+									<img src="images/scan-page-244.png" alt="Garma Chang page 244" />
+								</p>
+								<p class="image">
+									P. 245
+									<img src="images/scan-page-245.png" alt="Garma Chang page 245" />
+								</p>
+								<p class="image">
+									P. 246 last
+									<img src="images/scan-page-246.png" alt="Garma Chang page 246" />
+								</p>
+								<p class="image">
+									[No hay página de chino para el Capítulo 4.]
+								</p>
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="bibliografia.htm">&lt;&nbsp;Bibliografía</a></li>
+									<li class="align-right"><a href="contenido.htm">Contenido&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p id="spacer">
+								<!-- stupid spacer is neded, I don't know why -->
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Volver arriba">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+# .htaccess file for selfdefinition.org/celibacy/chidnanda/
+
+
+# 4 pages in the English version renamed June 15, 2020 (2 days after first posting)
+
+
+Redirect 301 "/celibacy/chidananda/celibacy-spiritual-life-part-1.htm"  "/celibacy/chidananda/celibacy-part-1.htm"
+
+Redirect 301 "/celibacy/chidananda/celibacy-spiritual-life-part-2.htm"  "/celibacy/chidananda/celibacy-part-2.htm"
+
+Redirect 301 "/celibacy/chidananda/celibacy-spiritual-life-part-3.htm"  "/celibacy/chidananda/celibacy-part-3.htm"
+
+Redirect 301 "/celibacy/chidananda/celibacy-spiritual-life-part-4.htm"  "/celibacy/chidananda/celibacy-part-4.htm"
+
+
+
+# end
+
+

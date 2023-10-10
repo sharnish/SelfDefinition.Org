@@ -1,0 +1,134 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Richard Rose &ndash; Mariner Card, 1947</title>
+	<meta name="description" content="Compare the card issue date with correspondance of 1947 in Robert Martin's book.">
+	<meta name="author" content="US Coast Guard">
+	<meta property="og:title" content="Richard Rose &ndash; Mariner Card, 1947">
+	<meta property="og:description" content="Compare the card issue date with correspondance of 1947 in Robert Martin's book.">
+	<meta property="og:image" content="https://selfdefinition.org/rose/articles/images/RR-ABJ-1982-rustic-retreat.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="/styles/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_rose-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_rose-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_rose-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3 class="toowide">
+										Photo in 1947 and Merchant Marine card (U.S. Coast Guard)
+									</h3>
+								</header>
+							</div>
+							<p class="note center">Return to: <a href="article-index.htm">Article Index</a></p>
+							<p>
+								Compare the card issue date with correspondance of 1947 in Robert Martin's book, <em>Peace to the Wanderer</em>:</p>
+							<p class=" note">
+								Link opens PDF, 137 pages, 601 KB:
+								<a href="/rose/Bob-Martin-Peace-to-the-Wanderer%5bRichard-Rose%5d.pdf">Bob Martin - Peace
+									to the Wanderer</a>
+							</p>
+							<h4>
+								Front
+							</h4>
+							<div class="article-image">
+								<img src="images/rr-mariner-card-front-reduced.jpg" alt="Richard Rose, Merchant Marine card photo front" />
+							</div>
+							<p class="note">Image before reduction: <a href="images/rr-mariner-card-front-reduced.jpg">Here</a></p>
+							<h4>
+								Back
+							</h4>
+							<div class="article-image">
+								<img src="images/rr-mariner-card-back-reduced.jpg" alt="Richard Rose, Merchant Marine card - back" />
+							</div>
+							<p class="note">Image before reduction: <a href="images/rr-mariner-card-back-reduced.jpg">Here</a></p>
+							<p class="note center">
+								All images (original and optimized): <a href="images/">images/</a></p>
+							<p>
+							<p class="note center">Return to: <a href="article-index.htm">Article Index</a></p>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

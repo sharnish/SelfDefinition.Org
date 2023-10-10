@@ -1,0 +1,90 @@
+<!-- start of menu include file Upday June 6, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li class="first-item"><a href="/new-thought/">New Thought index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contenido.htm"><span class="conditional-hide"></span>Contenido</a></li>
+			<li class="menu-totop-spanish"><a href="javascript:toTopCleanUrl();"> <span class="conditional-hide">Volver </span>Arriba</a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/new-thought/">New Thought index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top:10px;">
+			<li>La ley de la atracción en el mundo del pensamiento</li>
+			<!--li class="normal note">(1906)</li-->
+			<li class="normal note">
+				<img class="menu-image" src="images/william-walker-atkinson.jpg" alt="William Walker Atkinson">
+			</li>
+			<li>William Walker Atkinson</li>
+			<li class="normal note tight">(1862-1932)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contenido.htm">Contenido e índice</a></li>
+				<li><a href="capitulos.htm">Resúmenes de capítulos</a></li>
+				<li><a href="prefacio.htm">Prefacio por el editor</a></li>
+				<li><a href="prologo.htm">Prólogo del autor </a></li>
+				<li><a href="mi-credo.htm">Mi credo de vida </a></li>
+				<li><a href="01-ley-de-atraccion.htm">1. La ley de la atracción en el mundo del pensamiento</a> </li>
+				<li><a href="02-ondas-de-pensamiento.htm">2. Ondas de pensamiento y su reproducción</a> </li>
+				<li><a href="03-una-charla-sobre-la-mente.htm">3. Una charla sobre la mente</a> </li>
+				<li><a href="04-construir-la-mente.htm">4. Construir la mente</a> </li>
+				<li><a href="05-el-secreto-de-la-voluntad.htm">5. El secreto de la voluntad</a> </li>
+				<li><a href="06-como-inmunizarse-pensamiento-danina.htm">6. Cómo inmunizarse</a> </li>
+				<li><a href="07-transmutacion-del-pensamiento-negativo.htm">7. Transmutación del pensamiento negativo</a> </li>
+				<li><a href="08-la-ley-del-control-mental.htm">8. La ley del control mental</a> </li>
+				<li><a href="09-reafirmar-la-fuerza-vital.htm">9. Reafirmar la fuerza vital </a> </li>
+				<li><a href="10-formar-la-mente-del-habito.htm">10. Formar la mente del hábito</a> </li>
+				<li><a href="11-psicologia-de-la-emocion.htm">11. La psicología de la emoción</a> </li>
+				<li><a href="12-desarrollo-nuevas-celulas-cerebrales.htm">12. Desarrollo de nuevas células cerebrales</a> </li>
+				<li><a href="13-poder-atractivo-fuerza-de-deseo.htm">13. El poder atractivo: la fuerza del deseo</a> </li>
+				<li><a href="14-grandes-fuerzas-dinamicas.htm">14. Las grandes fuerzas dinámicas</a> </li>
+				<li><a href="15-reclamar-lo-que-te-pertenece.htm">15. Reclamar lo que te pertenece</a> </li>
+				<li><a href="16-ley-no-azar.htm">16. Ley, no azar</a> </li>
+				<li style="margin-top:15px;"><a href="informacion-del-autor.htm">Información del autor</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">También en este sitio</li>
+				<li class="subhead">Atkinson / DuMont</li>
+				<li class="first-item"><a href="/new-thought/el-kybalion/contenido.htm">El Kybalion (español)</a></li>
+				<li><a href="/new-thought/dumont-memory/contents.htm">Practical Memory Training (inglés)</a></li>
+				<li class="subhead">Phineas Parker Quimby</li>
+				<li class="first-item"><a href="/healing/phineas-quimby/quimby-manuscripts/contents.htm">The Quimby Manuscripts (inglés) </a></li>
+				<li class="subhead">Franz Hartmann</li>
+				<li class="first-item"><a href="/magic/hartmann/blanca-y-negra/contenido.htm">Magia Blanca y Negra (español)</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

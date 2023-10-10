@@ -1,0 +1,314 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Crowd: A Study of the Popular Mind</title>
+	<meta name="description" content="One of the most influential works of social psychology in history, instrumental in creating this field of study by analyzing mass behavior.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="The Crowd: A Study of the Popular Mind">
+	<meta property="og:description" content="One of the most influential works of social psychology in history, instrumental in creating this field of study by analyzing mass behavior.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/the-crowd/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_crowd-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- link rel="prev" first -->
+	<link href="preface.htm" rel="next">
+	<link href="/styles/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="/styles/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<style>
+		/* this page only     
+    Taken from White and Black  */
+		ul.chapters {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		ul.chapters li p {
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+
+		li.link {
+			margin-top: 20px;
+			background: #ddd;
+			text-align: center;
+		}
+
+		html.dark li.link {
+			background: #333;
+		}
+
+		li.link a {
+			/* must not be block, or centering is screwed up */
+			display: inline-block;
+		}
+
+		@media only screen and (max-width:500px) {
+			li.link {
+				text-align: left;
+				width: 100%;
+			}
+		}
+
+		li.link a {
+			padding-left: 8px;
+		}
+
+		li.contents {
+			font-size: 90%;
+		}
+
+		ul.chapters li.bookno {
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			font-size: 100%;
+			margin-top: 25px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_crowd-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned -->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div id="myBar" class="progress-bar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_crowd-title-include.htm"); ?>
+									<h3>
+										Chapter Topics
+									</h3>
+									<p class="tiny">Esta página en español: <a href="../las-masas/capitulos.htm">..capitulos.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">
+											&lt; Contents</a>
+									</li>
+									<li class="align-right"><a href="preface.htm">Preface ></a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav id="detailed-contents">
+								<ul class="chapters">
+									<li class="link"><a href="chapters.htm">Contents&ndash;Index</a></li>
+									<li class="link"><a href="preface.htm">Preface</a></li>
+									<li class="link"><a href="introduction.htm">Introduction: The Era of Crowds</a> </li>
+									<li class="contents">
+										<p>
+											The evolution of the present age&mdash;The great changes in civilisation are the consequence of changes in National thought&mdash;Modern belief in the power of crowds&mdash;It transforms the traditional policy of the European states&mdash;How the rise of the popular classes comes about, and the manner in which they exercise their power&mdash;The necessary consequences of the power of the crowd&mdash;Crowds unable to play a part other than destructive&mdash;The dissolution of worn-out civilisations is the work of the crowd&mdash;General ignorance of the psychology of crowds&mdash;Importance of the study of crowds for legislators and statesmen.
+										</p>
+									</li>
+									<li class="bookno">Book 1, The Mind Of Crowds</li>
+									<li class="link"><a class="toowide" href="1-1-general.htm">1. General Characteristics of Crowds – Psychological Law of Their Mental Unity </a></li>
+									<li class="contents">
+										<p>
+											What constitutes a crowd from the psychological point of view&mdash;A numerically strong agglomeration of individuals does not suffice to form a crowd&mdash;Special characteristics of psychological crowds&mdash;The turning in a fixed direction of the ideas and sentiments of individuals composing such a crowd, and the disappearance of their personality&mdash;The crowd is always dominated by considerations of which it is unconscious&mdash;The disappearance of brain activity and the predominance of medullar activity&mdash;The lowering of the intelligence and the complete transformation of the sentiments&mdash;The transformed sentiments may be better or worse than those of the individuals of which the crowd is composed&mdash;A crowd is as easily heroic as criminal.
+										</p>
+									</li>
+									<li class="link"><a href="1-2-sentiments-and-morality.htm">2. The Sentiments and Morality of Crowds </a></li>
+									<li class="contents">
+										<p>
+											1. IMPULSIVENESS, MOBILITY, AND IRRITABILITY OF CROWDS. The crowd is at the mercy of all exterior exciting causes, and reflects their incessant variations&mdash;The impulses which the crowd obeys are so imperious as to annihilate the feeling of personal interest&mdash;Premeditation is absent from crowds&mdash;Racial influence.
+										</p>
+										<p>
+											2. CROWDS ARE CREDULOUS AND READILY INFLUENCED BY SUGGESTION. The obedience of crowds to suggestions&mdash;The images evoked in the mind of crowds are accepted by them as realities&mdash;Why these images are identical for all the individuals composing a crowd&mdash;The equality of the educated and the ignorant man in a crowd&mdash;Various examples of the illusions to which the individuals in a crowd are subject&mdash;The impossibility of according belief to the testimony of crowds&mdash;The unanimity of numerous witnesses is one of the worst proofs that can be invoked to establish a fact&mdash;The slight value of works of history.
+										</p>
+										<p>
+											3. THE EXAGGERATION AND INGENUOUSNESS OF THE SENTIMENTS OF CROWDS. Crowds do not admit doubt or uncertainty, and always go to extremes&mdash;Their sentiments always excessive.
+										</p>
+										<p>
+											4. THE INTOLERANCE, DICTATORIALNESS, AND CONSERVATISM OF CROWDS. The reasons of these sentiments&mdash;The servility of crowds in the face of a strong authority&mdash;The momentary revolutionary instincts of crowds do not prevent them from being extremely conservative&mdash;Crowds instinctively hostile to changes and progress.
+										</p>
+										<p>
+											5. THE MORALITY OF CROWDS. The morality of crowds, according to the suggestions under which they act, may be much lower or much higher than that of the individuals composing them&mdash;Explanation and examples&mdash;Crowds rarely guided by those considerations of interest which are most often the exclusive motives of the isolated individual&mdash;The moralising role of crowds.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="1-3-ideas-reasoning.htm">3. The Ideas, Reasoning Power, and Imagination <span class="nowrap">of Crowds</span> </a></li>
+									<li class="contents">
+										<p>
+											1. Fundamental and accessory ideas&mdash;How contradictory ideas may exist simultaneously&mdash;The transformation that must be undergone by lofty ideas before they are accessible to crowds&mdash;The social influence of ideas is independent of the degree of truth they may contain.
+										</p>
+										<p>
+											2. THE REASONING POWER OF CROWDS. Crowds are not to be influenced by reasoning&mdash;The reasoning of crowds is always of a very inferior order&mdash;There is only the appearance of analogy or succession in the ideas they associate.
+										</p>
+										<p>
+											3. THE IMAGINATION OF CROWDS. Strength of the imagination of crowds&mdash;Crowds think in images, and these images succeed each other without any connecting link&mdash;Crowds are especially impressed by the marvellous&mdash;Legends and the marvellous are the real pillars of civilisation&mdash;The popular imagination has always been the basis of the power of statesmen&mdash;The manner in which facts capable of striking the imagination of crowds present themselves for observation.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="1-4-religious-convictions.htm">4. A Religious Shape Assumed by All the Convictions of Crowds </a></li>
+									<li class="contents">
+										<p>
+											What is meant by the religious sentiment&mdash;It is independent of the worship of a divinity&mdash;Its characteristics&mdash;The strength of convictions assuming a religious shape&mdash;Various examples&mdash;Popular gods have never disappeared&mdash;New forms under which they are revived&mdash;Religious forms of atheism&mdash;Importance of these notions from the historical point of view&mdash;The Reformation, Saint Bartholomew, the Terror, and all analogous events are the result of the religious sentiments of crowds and not of the will of isolated individuals.
+										</p>
+									</li>
+									<li class="bookno">Book 2, The Opinions and Beliefs of Crowds</li>
+									<li class="link"><a class="toowide" href="2-1-remote-factors.htm">1. Remote Factors of The Opinions and Beliefs of Crowds </a></li>
+									<li class="contents">
+										<p>
+											Preparatory factors of the beliefs of crowds&mdash;The origin of the beliefs of crowds is the consequence of a preliminary process of elaboration&mdash;Study of the different factors of these beliefs.
+										</p>
+										<p>
+											1. RACE. The predominating influence it exercises&mdash;It represents the suggestions of ancestors.
+										</p>
+										<p>
+											2. TRADITIONS. They are the synthesis of the soul of the race&mdash;Social importance of traditions&mdash;How, after having been necessary they become harmful&mdash;Crowds are the most obstinate maintainers of traditional ideas.
+										</p>
+										<p>
+											3. TIME. It prepares in succession the establishment of beliefs and then their destruction. It is by the aid of this factor that order may proceed from chaos.
+										</p>
+										<p>
+											4. POLITICAL AND SOCIAL INSTITUTIONS. Erroneous idea of their part&mdash;Their influence extremely weak&mdash;They are effects, not causes&mdash;Nations are incapable of choosing what appear to them the best institutions&mdash;Institutions are labels which shelter the most dissimilar things under the same title&mdash;How institutions may come to be created&mdash;Certain institutions theoretically bad, such as centralisation obligatory for certain nations.
+										</p>
+										<p>
+											5. INSTITUTIONS AND EDUCATION. Falsity of prevalent ideas as to the influence of instruction on crowds&mdash;Statistical indications&mdash;Demoralising effect of Latin system of education&mdash;Part instruction might play&mdash;Examples furnished by various peoples.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="2-2-immediate-factors.htm">2. The Immediate Factors of the Opinions of&nbsp;Crowds </a></li>
+									<li class="contents">
+										<p>
+											1. IMAGES, WORDS AND FORMULAE. The magical power of words and formulae&mdash;The power of words bound up with the images they evoke, and independent of their real sense&mdash;These images vary from age to age, and from race to race&mdash;The wear and tear of words&mdash;Examples of the considerable variations of sense of much-used words&mdash;The political utility of baptizing old things with new names when the words by which they were designated produced an unfavourable impression on the masses&mdash;variations of the sense of words in consequence of race differences&mdash;The different meanings of the word "democracy" in Europe and America.
+										</p>
+										<p>
+											2. ILLUSIONS. Their importance&mdash;They are to be found at the root of all civilisations&mdash;The social necessity of illusions&mdash;Crowds always prefer them to truths.
+										</p>
+										<p>
+											3. EXPERIENCE. Experience alone can fix in the mind of crowds truths become necessary and destroy illusions grown dangerous&mdash;Experience is only effective on the condition that it be frequently repeated&mdash;The cost of the experiences requisite to persuade crowds.
+										</p>
+										<p>
+											4. REASON. The nullity of its influence on crowds&mdash;Crowds only to be influenced by their unconscious sentiments&mdash;The role of logic in history&mdash;The secret causes of improbable events.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="2-3-leaders-means.htm">3. The Leaders of Crowds and Their Means of&nbsp;Persuasion </a></li>
+									<li class="contents">
+										<p>
+											1. THE LEADERS OF CROWDS. The instinctive need of all beings forming a crowd to obey a leader&mdash;The psychology of the leaders of crowds&mdash;They alone can endow crowds with faith and organise them&mdash;The leaders forcibly despotic&mdash;Classification of the leaders&mdash;The part played by the will.
+										</p>
+										<p>
+											2. THE MEANS OF ACTION OF THE LEADERS. Affirmation, repetition, contagion&mdash;The respective part of these different factors&mdash;The way in which contagion may spread from the lower to the upper classes in a society&mdash;A popular opinion soon becomes a general opinion.
+										</p>
+										<p>
+											3. PRESTIGE. Definition of prestige and classification of its different kinds&mdash;Acquired prestige and personal prestige&mdash;Various examples&mdash;The way in which prestige is destroyed.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="2-4-limitations-of-variability.htm">4. Limitations of The Variability of the Beliefs and Opinions of Crowds </a></li>
+									<li class="contents">
+										<p>
+											1. FIXED BELIEFS. The invariability of certain general beliefs&mdash;They shape the course of a civilisation&mdash;The difficulty of uprooting them&mdash;In what respect intolerance is a virtue in a people&mdash;The philosophic absurdity of a belief cannot interfere with its spreading.
+										</p>
+										<p>
+											2. THE CHANGEABLE OPINIONS OF CROWDS. The extreme mobility of opinions which do not arise from general beliefs&mdash;Apparent variations of ideas and beliefs in less than a century&mdash;The real limits of these variations&mdash;The matters effected by the variation&mdash;The disappearance at present in progress of general beliefs, and the extreme diffusion of the newspaper press, have for result that opinions are nowadays more and more changeable&mdash;Why the opinions of crowds tend on the majority of subjects towards indifference&mdash;Governments now powerless to direct opinion as they formerly did&mdash;Opinions prevented to-day from being tyrannical on account of their exceeding divergency.
+										</p>
+									</li>
+									<li class="bookno">Book 3, The Classification and Description of the Different Kinds of Crowds </li>
+									<li class="link"><a href="3-1-classification.htm">1. The Classification of Crowds</a> </li>
+									<li class="contents">
+										<p>
+											The general divisions of crowds&mdash;Their classification.
+										</p>
+										<p>
+											1. HETEROGENEOUS CROWDS. Different varieties of them&mdash;The influence of race&mdash;The spirit of the crowd is weak in proportion as the spirit of the race is strong&mdash;The spirit of the race represents the civilised state and the spirit of the crowd the barbarian state.
+										</p>
+										<p>
+											2. HOMOGENEOUS CROWDS. Their different varieties&mdash;Sects, castes, and classes.
+										</p>
+									</li>
+									<li class="link"><a href="3-2-criminal-crowds.htm">2. Crowds Termed Criminal Crowds</a> </li>
+									<li class="contents">
+										<p>
+											Crowds termed criminal crowds&mdash;A crowd may be legally yet not psychologically criminal&mdash;The absolute unconsciousness of the acts of crowds&mdash;Various examples&mdash;Psychology of the authors of the September massacres&mdash;Their reasoning, their sensibility, their ferocity, and their morality.
+										</p>
+									</li>
+									<li class="link"><a href="3-3-criminal-juries.htm">3. Criminal Juries</a></li>
+									<li class="contents">
+										<p>
+											Criminal juries&mdash;General characteristics of juries&mdash;statistics show that their decisions are independent of their composition&mdash;The manner in which an impression may be made on juries&mdash;The style and influence of argument&mdash;The methods of persuasion of celebrated counsel&mdash;The nature of those crimes for which juries are respectively indulgent or severe&mdash;The utility of the jury as an institution, and the danger that would result from its place being taken by magistrates.
+										</p>
+									</li>
+									<li class="link"><a href="3-4-electoral-crowds.htm">4. Electoral Crowds</a></li>
+									<li class="contents">
+										<p>
+											General characteristics of electoral crowds&mdash;The manner of persuading them&mdash;The qualities that should be possessed by a candidate&mdash;Necessity of prestige&mdash;Why working men and peasants so rarely choose candidates from their own class&mdash;The influence of words and formulas on the elector&mdash;The general aspect of election oratory&mdash;How the opinions of the elector are formed&mdash;The power of political committees&mdash;They represent the most redoubtable form of tyranny&mdash;The committees of the Revolution&mdash;Universal suffrage cannot be replaced in spite of its slight psychological value&mdash;Why it is that the votes recorded would remain the same even if the right of voting were restricted to a limited class of citizens&mdash;What universal suffrage expresses in all countries.
+										</p>
+									</li>
+									<li class="link"><a href="3-5-parliamentary.htm">5. Parliamentary Assemblies</a> </li>
+									<li class="contents">
+										<p>
+											Parliamentary crowds present most of the characteristics common to heterogeneous crowds that are not anonymous&mdash;The simplicity of their opinions&mdash;Their suggestibility and its limits&mdash;Their indestructible, fixed opinions and their changed opinions&mdash;The reason of the predominance of indecision&mdash;The role of the leaders&mdash;The reason of their prestige&mdash;They are the true masters of an assembly whose votes, on that account, are merely those of a small minority&mdash;The absolute power they exercise&mdash;The elements of their oratorical art&mdash;Phrases and images&mdash;The psychological necessity the leaders are under of being in a general way of stubborn convictions and narrow-minded&mdash;It is impossible for a speaker without prestige to obtain recognition for his arguments&mdash;The exaggeration of the sentiments, whether good or bad, of assemblies&mdash;At certain moments they become automatic&mdash;The sittings of the Convention&mdash;Cases in which an assembly loses the characteristics of crowds&mdash;The influence of specialists when technical questions arise&mdash;The advantages and dangers of a parliamentary system in all countries&mdash;It is adapted to modern needs; but it involves financial waste and the progressive curtailment of all liberty&mdash;Conclusion.
+										</p>
+									</li>
+								</ul>
+								<p>
+								</p>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a id="end" class="page-link-anchor">‍ </a>
+								<!-- page nav here if used -->
+								<nav class="next-previous-item-nav">
+									<ul class="next-previous-item-list">
+										<li class="align-left"><a href="contents.htm">
+												&lt; Contents</a>
+										</li>
+										<li class="align-right"><a href="preface.htm">Preface ></a></li>
+										<li style="clear: both;"></li>
+									</ul>
+								</nav>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!--
+          button is placed within #main-content-relative. Name must be ID and must agree with script
+        -->
+					<button id="toTopButton" onclick="javascript:toTopCleanUrl();" title="Go-to-top">
+						top
+					</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>

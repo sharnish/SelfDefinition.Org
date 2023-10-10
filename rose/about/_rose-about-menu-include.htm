@@ -1,0 +1,94 @@
+<!-- start of menu include file Update May 18, 2020. May 17, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float <  check, where is it cleared? -->
+			<li><a href="/rose/">Rose index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-3"><a href="/">Site root</a></li>
+			<li><a href="article-index.htm">"About RR" Index</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-X"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/rose/">Rose Index</a></li>
+			<li><a href="/rose/articles/">Rose Articles</a></li>
+			<li><a href="/rose/writings/">Rose Writings</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>
+				<img class="menu-image" src="images/richard-rose-about.jpg" alt="Richard Rose" />
+			</li>
+			<li style="margin-left:0;">Richard Rose <span class="normal note">(1917-2005)</span></li>
+		</ul>
+		<!-- must have the next div (id) for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top:10px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="article-index.htm">"About RR" Index</a></li>
+				<li><a href="richard-rose-the-man-who-was-a-mirror.htm">Michael Casari:
+						Richard Rose, the Man Who Was a Mirror</a></li>
+				<li><a href="michael-casari-about-richard-rose.htm">Michael Casari: About Richard Rose
+						- Interview, 2005, Interfaith Forums</a></li>
+				<li><a href="richard-rose-assimilation-enlightenment.htm">Alan
+						Fitzpatrick: Richard Rose and the Assimilation of his Enlightenment Experience</a></li>
+				<li><a href="gary-harmon-ashram-life-zen-master.htm">Gary Harmon: Memories of Ashram Life with a Zen Master</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Richard Rose at <a href="https://en.wikipedia.org/wiki/Richard_Rose_(mystic)">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item"><a href="/rose/articles/">Richard Rose, old newspaper articles</a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">
+					Richard Rose's seminal work <em>The Albigen Papers</em> at 
+                        	<a href="https://amzn.to/3yLxTfs">Amazon.Com</a>
+				</li>
+				<li >TAT Foundation<br />
+					<a href="https://tatfoundation.org">TAT home page</a>
+				</li>
+				<li><a href="https://tatfoundation.org/forum.htm">TAT Forum current edition</a></li>
+				<li><a href="https://tatfoundation.org/forum_index.htm#Rose">TAT Forum Archives</a></li>
+				<li><a href="https://www.searchwithin.org/">SearchWithin.Org</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

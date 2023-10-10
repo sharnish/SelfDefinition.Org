@@ -1,0 +1,216 @@
+/* file:  /pulyan-rosw/_pulyan-rose-sparse.css 
+
+Update Oct 7, 2019. May 24, 2022. Update June 14, 2022
+
+Try copying from Pullyan-Letters
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update June 14, 2022";
+	}
+}
+
+/* Step 1: set up default as pulyan */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f0faf0;
+}
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #ccc;
+}
+
+
+/* Step 2, change background for "Rose" but must include "light" */
+html.rose.light,
+html.rose.light body,
+html.rose.light #fixed-header-small-screen,
+html.rose.light #menu-site-small-screen,
+html.rose.light .progress-header,
+html.rose.light .progress-container {
+	background: #ffeae4;
+	background: #fff0ff;
+}
+
+/* Step 3, allow html.dark to take effect through dark-styles-2022.css 
+
+	this will be 
+	color:		#fdfdff;
+	background: #202020; 
+
+*/
+
+/* Step 4, allow html.dark to take effect through dark-styles-2022.css 
+
+	BUT: make the color yellow for Rose
+
+	this will be 
+	color:		#fed;
+	background: #202020; 
+
+
+*/
+
+body.rose div.page-text,
+body.rose p.salutation {
+	color: darkblue;
+	/* yellow */
+	/* Rose (color rose color: #fcd; */
+}
+
+
+html.dark body.rose div.page-text,
+html.dark body.rose p.salutation {
+	color: #ffc;
+	/* yellow */
+	/* Rose (color rose color: #fcd; */
+}
+
+
+/* But do not apply to #menu-include or title include */
+
+html.rose.dark #menu-include-file-div,
+html.rose.dark #title-include-div {
+	color: #fdfdff;
+}
+
+
+/* www.w3schools.com/css/css_attribute_selectors.asp */
+/* doesn't work if "li" and/or "a" tags are included */
+/* too pale: background:#fff6ff; try #ffe4e1 Misty RoseMisty Rose */
+#menu-section-group li [href$="rose.htm"],
+.index-contents-links li [href$="rose.htm"] {
+	background: #ffeae4;
+}
+
+html.dark #menu-section-group li [href$="rose.htm"],
+html.dark .index-contents-links li [href$="rose.htm"] {
+	background: inherit;
+	color: #ffc;
+}
+
+ul.index-contents-links li {
+	width: 200px;
+	border: 0px solid red;
+}
+
+/* must be block inorder to have a width */
+ul.index-contents-links li a {
+	display: inline-block;
+	width: 210px;
+}
+
+/****************
+IMPORTANT - SAVE ALL OF THE BELOW 
+****************/
+
+
+/* this also works
+#contents-menu [href$="rose.htm"]  {background:red;}  */
+/* this does nothing 
+#contents-menu li a [href$="rose.htm"]  {background:green;} */
+
+/* from old contents page. #contents-menu is a UL
+#contents-menu [href$="rose.htm"] {background:#fef;}
+*/
+
+/* the following is copied from  pulyan -> letters, recently updated */
+
+
+/* remove indentation of paragraph of class fnote */
+p.fnote {
+	margin-left: initial;
+}
+
+/* overcome definition on 2022.CSS */
+#salutation,
+.salutation {
+	font-size: 100%;
+	margin-left: 0;
+	font-style: normal;
+	color: inherit;
+}
+
+/* IMPORTANT: DO NOT CONVERT <i> TO <em> */
+/* in the Pulyan letters, the <em> tag is used for underlining, rather than the <u> tag, while "i" is used for italic. */
+/* using border allows for variable space between text and underline */
+em {
+	font-style: normal;
+	border-bottom: solid 1px #000;
+	display: inline;
+	padding-bottom: 0;
+}
+
+/* underline plus border as follows */
+em.double {
+	font-style: normal;
+	text-decoration: underline;
+	border-bottom: 1px solid;
+}
+
+
+/* styling at top and bottoms of letters */
+h3.date {
+	text-align: center;
+}
+
+/* get rid of address for clutter */
+p.address {
+	display: none;
+}
+
+p.salutation {
+	text-align: left;
+}
+
+p.signature {
+	text-align: left;
+}
+
+
+hr.dashed {
+	border-top: 2px dotted #000;
+	margin-bottom: 20px;
+}
+
+/* get rid of the green link, since green used elsewhere */
+a:hover {
+	color: Blue;
+}
+
+/* there are 160 of these. Pulyan letters only. 
+   Green is #008000. Dark green is #006400*/
+div.left-margin-note,
+.pulyan-note {
+	font-size: 95%;
+	color: #060;
+}
+
+div.left-margin-note em {
+	border-bottom-color: #080;
+}
+
+html.dark div.left-margin-note,
+html.dark .pulyan-note {
+	color: #afa;
+}
+
+html.dark div.left-margin-note em {
+	border-bottom-color: #afa;
+}
+
+
+
+
+/* end */

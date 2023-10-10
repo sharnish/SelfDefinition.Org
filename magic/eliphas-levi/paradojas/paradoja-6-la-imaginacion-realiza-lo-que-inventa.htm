@@ -1,0 +1,608 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+
+
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="paradoja-5-la-razon-es-dios.htm">
+	<link rel="next" href="paradoja-7-la-voluntad-realiza-todo-que-ella-no-desea.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		/*  
+        
+        https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/ 
+        
+        Kept on page rather than stylesheet to reduce complexity
+        and need to reload if a change is made.
+        */
+
+		/* paradox 6  */
+
+		label[for=element-toggle-76-1],
+		label[for=element-toggle-78-1],
+		label[for=element-toggle-80-1],
+		label[for=element-toggle-81-1],
+		label[for=element-toggle-82-1],
+		label[for=element-toggle-82-2],
+		label[for=element-toggle-84-1],
+		label[for=element-toggle-84-2],
+		label[for=element-toggle-85-1],
+		label[for=element-toggle-86-1],
+		label[for=element-toggle-86-2],
+		label[for=element-toggle-87-1],
+		label[for=element-toggle-87-2],
+		label[for=element-toggle-88-1] {
+			cursor: pointer;
+		}
+
+		/* paradox 6 */
+
+		#element-toggle-76-1,
+		#element-toggle-78-1,
+		#element-toggle-80-1,
+		#element-toggle-81-1,
+		#element-toggle-82-1,
+		#element-toggle-82-2,
+		#element-toggle-84-1,
+		#element-toggle-84-2,
+		#element-toggle-85-1,
+		#element-toggle-86-1,
+		#element-toggle-86-2,
+		#element-toggle-87-1,
+		#element-toggle-87-2,
+		#element-toggle-88-1 {
+			display: none;
+		}
+
+		/* paradox 6 */
+
+		#element-toggle-76-1:not(:checked)~#toggled-element-76-1,
+		#element-toggle-78-1:not(:checked)~#toggled-element-78-1,
+		#element-toggle-80-1:not(:checked)~#toggled-element-80-1,
+		#element-toggle-81-1:not(:checked)~#toggled-element-81-1,
+		#element-toggle-82-1:not(:checked)~#toggled-element-82-1,
+		#element-toggle-82-2:not(:checked)~#toggled-element-82-2,
+		#element-toggle-84-1:not(:checked)~#toggled-element-84-1,
+		#element-toggle-84-2:not(:checked)~#toggled-element-84-2,
+		#element-toggle-85-1:not(:checked)~#toggled-element-85-1,
+		#element-toggle-86-1:not(:checked)~#toggled-element-86-1,
+		#element-toggle-86-2:not(:checked)~#toggled-element-86-2,
+		#element-toggle-87-1:not(:checked)~#toggled-element-87-1,
+		#element-toggle-87-2:not(:checked)~#toggled-element-87-2,
+		#element-toggle-88-1:not(:checked)~#toggled-element-88-1 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?>
+									<h3>
+										<span class="block">La Paradoja 6</span> <span class="h3-block">La imaginación realiza</span>
+										lo que inventa
+									</h3>
+									<p class="tiny">
+										<span class="block">This page in English:</span> <a href="../paradoxes/paradox-6-imagination-realizes-what-it-invents.htm">
+											.. paradox-6-imagination-realizes-what-it-invents.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="paradoja-5-la-razon-es-dios.htm">&lt; Paradoja 5</a></li>
+									<li class="align-right"><a href="paradoja-7-la-voluntad-realiza-todo-que-ella-no-desea.htm">
+											Paradoja 7 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								<span class="sans">¡</span> VER! <span class="sans">¡</span> La magia más grande en el universo! Es a ella quien hace al rendimiento
+								de memoria su fruto, que realiza de antemano lo posible, y hasta inventa la imposible.
+								A sus milagros no costados nada. Transporta las casas y las montañas en el aire,
+								las ballenas de lugares en el cielo, y las estrellas en mar, les da el paraíso a
+								los comedores de hachish o de opio, reinos de dádivas embriaga, y hacer el baile
+								de Perette con alegría bajo el cubo de leche. Tal es imaginación.
+							</p>
+							<p>
+								Está en la imaginación que debemos a la poesía y a los sueños; es a ella quien adorna
+								fábulas y símbolos sobre los velos de los grandes misterios. Compone las historias
+								para los niños, y las leyendas para los campesinos. Hace a los dioses de trueno
+								y exterminio de los ángeles para aparecer sobre las colinas, y las damas y las vírgenes
+								inmaculadas cerca de las fuentes. Hace las previsiones que sean adaptadas a los
+								hechos, o reinterpretadas cuando no son realizadas. Es el consuelo de la esperanza
+								y cómplice de la desesperación. Dora la aureola de los santos, y broncea los cuernos
+								del diablo. cura y mata, salva de esto y condena a otros, es casta como virgen o
+								impura como Mesalina. Crea el entusiasmo y lo aumenta así, casi más allá de los
+								límites de lo posible, el imperio de la voluntad. Crea una creencia en la felicidad
+								y la da, a condición de que el sueño perdure.
+							</p>
+							<p>
+								La imaginación es el objeto cristalino de nuestro espíritu. Refracta los rayos de
+								luz de nuestros pensamientos y magnifica las imágenes de todas nuestras percepciones.
+								El alcance de nuestra visión por muy pequeña que sea como para ver correctamente
+								en este mundo estrecho debíamos ver cosas más grandes que en especie.
+							</p>
+							<p>
+								La gente, exentas de imaginación, jamás realizan cualquier cosa grande, porque todo
+								aparece en ellas en proporciones medias. El astrónomo contempla el universo e imagina
+								el infinito; el creyente contempla la naturaleza e imagina a Dios. En la verdad,
+								la imaginación es pensada más grande que. La Ciencia es rebasada por la fe, y sin
+								fe la ciencia permanecería incierta.
+							</p>
+							<p>
+								¿ Cuál es álgebra de la imaginación de las matemáticas puras, y que es la Kábala
+								pero es el álgebra de las ideas? La imaginación de los Cabalistas convirtió la filosofía
+								en la Ciencia exacta conectando otra vez las ideas a los números; la Ciencia de
+								las analogías es completamente la Ciencia de la imaginación, y las grandes naciones
+								son pero montón de los aficionados fríos, que imaginan el poderoso la gloria. Las
+								imaginaciones colectivas realizan los resultados del microscopio solar. Los héroes,
+								en particular, se desarrollan más grandes después de sus muertes, y las ficciones
+								que la opinión levantan sobre los pedestales soberbios las majestades elevadas de
+								la historia. ¿ Quién jamás conocerá la medida exacta de Alejandro el grande, o Napoleón
+								I? Marat y Napoleón eran dos pequeños hombres, enérgicos y ambiciosos de la fama;
+								el deseó liberar al mundo que el otro se propuso esclavizar; el primero deseando
+								un arroyo de sangre, el otro le hizo ríos de sangre, y entonces nos legó dos invasiones,
+								el reinado de su sobrino, y catástrofes abrumadores; el es abominado, adorado el
+								otro; para uno el cadalso, <sup>[76:1]</sup> para el otro la boveda y la columna
+								triunfal, y los dos son las exageraciones - la de la infamia, la otra de la gloria.
+							</p>
+							<label for="element-toggle-76-1">
+								[76:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-76-1" type="checkbox" />
+							<p id="toggled-element-76-1" class="fnote hidden">
+								[76:1 en el original, &quot;les gémonies,&quot; que es el lugar romano de la ejecución.
+								&mdash;Tyburn de Roma. &mdash;Trad.]
+							</p>
+							<p>
+								Es porque Marat, más desinteresados y más sinceros al corazón que Napoleón Primero,
+								era solamente un Tribuno chillón haciendo furor, mientras que Napoleón era un hombre
+								de genio, es decir un déspota de la imaginación humana. Es porque a la poesía de
+								las naciones le gustan mas los crímenes espléndidos que virtudes medias, porque
+								la máscara de Marat es una mueca que levantaría la risa si no evoca el horror, mientras
+								que la figura de Napoleón es una majestad que se impone el culto del porvenir. Son
+								razones concluyentes.
+							</p>
+							<p>
+								Si la imaginación encuentra un verdadero punto de apoyo, es la palanca de Arquímedes;
+								sin verdadera base, es solamente un palo sobre el cual los imbéciles suben.
+							</p>
+							<p>
+								Contando con hipótesis científicas y razonables, Cristóbal Colón imaginó América,
+								se atrevió a colocarla a lo lejos para descubrirle, y para fundarle. Cuando se conoce
+								y cuando quiere, debemos tener el poder de osar.
+							</p>
+							<p>
+								La imaginación es la fuerza creadora. Dios es la imaginación de la naturaleza. Ella
+								tiene sueños y sus pesadillas, pero éstas no impiden que sus Ecos sean gloriosos.
+								Los arquitectos de la edad Media esbozaron su contorno en sus catedrales magníficas
+								donde los picos recortados, el saliente y el ornamento florido sirven ponen en evidencia
+								las líneas puras ojivas y la tranquilidad de los santos. Estos grandes artistas
+								habían adivinado el enigma de bien y de mal; comprendieron la luz y sus sombras.
+								Es la imaginación que obra milagros; por un acto de la imaginación de niños causan
+								que hay que levantar algunas iglesias de la tierra, y para sacudir a las poblaciones
+								enteras; ser testigo del peregrinar de Lourdes y de la Salette. Por imaginación
+								Josué detuvo el sol, y derribo las paredes de Jericó al ruido de sus trompetas;
+								por imaginación el pan está bien a Dios, y el vino del cáliz es convertido en sangre
+								inmortal, y no profesamos para decir, como puede ser bien imaginado, lo que no es
+								también; pero es, mientras que lo imaginamos, según la palabra y sobre la fe de
+								Jesús el Cristo. <sup>[78:1]</sup>
+							</p>
+							<label for="element-toggle-78-1">
+								[78:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-78-1" type="checkbox" />
+							<p id="toggled-element-78-1" class="fnote hidden">
+								[78:1. muecas características de nuestro autor de &quot;grimaces,&quot; en el que
+								debe haber pensado lleno ingenio, porque podrían imponer a alguien, pero que exasperar
+								a los lectores ordinarios como en la fe también mala y el mal gusto. &mdash;Trad.]
+							</p>
+							<p>
+								La imaginación cura al enfermo y hace la fortuna de los médicos célebres; crea la
+								homeopatía de lo que tantos creyentes bien se curan: hace a las mesas hablar, y
+								dicta los medios de evocación, el estrépito de pelar, las páginas de la materia
+								instruida y de la ignorancia más bruta, a las oraciones y a las maldiciones. Le
+								da cuernos a Moisés, y en el engaño de los maridos, haciendo al primero parecerse
+								al diablo, y los últimos o los toros furiosos o pacientes y los dulces bueyes amanerados.
+								Amplía la sabiduría, exagera la locura, exige demasiado a la verdad, devuelve parecerle
+								de falsedad verídica; al mismo tiempo no es falso para la imaginación; ¿ acaso todos
+								lo que se considera verdadero como poesía, y es la poesía que jamás puede decirnos
+								falsedades?
+							</p>
+							<p>
+								Es que lo que inventa crea, y es que es lo creado existe. Imaginar la verdad es
+								adivinar, pero adivinar es ejercer la fuerza divina. En el latín se llaman al hombre
+								que adivina, divinus, el es decir al hombre divino, y el poeta es el vate llamado,
+								es decir, el profeta.
+							</p>
+							<p>
+								La fe tiene como su objeto solamente en las adivinaciones de los que imaginan las
+								verdades eternas. Moisés, Jehovah imaginado, y la nube que colgaron por encima del
+								tabernáculo. Salomón imaginó el templo universal, y este templo, destruido sucesivamente
+								por los asirios y romanos, se afirma siempre bajo el nombre de San Pedro de Roma.
+								Alejandro imaginó la unidad de las naciones, casi la realizó bajo Augusto, e imaginado
+								todavía más tarde por Pedro el grande y Napoleón Primero, cuyos antagonismos mantienen
+								siempre el equilibrio de la mundo.
+							</p>
+							<p>
+								La imaginación es el intermediario eterno en amores ligeros. Es por la imaginación
+								por regla general que mujeres impresionables y nerviosas son seducidas. Es a menudo
+								suficiente que un hombre sea extraño o hasta horrible con el fin de ser amado. Todos
+								el marques de Sade, Mirabeau, Marat, fueron amados; Cartuche y Mandril lo habían
+								sido así antes que ellos. Las mujeres del mundo se habían enamorado de Lacenaire,
+								y estamos seguros que en su prisión Troppmann recibía cartas de amor. Don Juan y
+								Lovelace deben la inmensa mayoría de sus éxitos a sus malas reputaciones; de Bluebeards
+								las víctimas nobles de falta jamás, y particularmente es cuando los puñales de Lanciottos
+								son aumentados por encima de ellas al desorden este el amor de Riminis de da a Francisca
+								para probar el fruto prohibido.
+							</p>
+							<p>
+								Lo que excita el más poderoso la imaginación, y por consiguiente el deseo, es la
+								conciencia del peligro: Por consiguiente el Dios de la Biblia, amando a la mujer
+								para hacerse una madre, le prohibió bajo el dolor de las penalidades más terribles
+								de tocar el fruto que haría su redención por amor. <sup>[80:1]</sup>
+							</p>
+							<label for="element-toggle-80-1">
+								[80:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-80-1" type="checkbox" />
+							<p id="toggled-element-80-1" class="fnote hidden">
+								[80:1. esto no es el significado oculto de la leyenda aludida, y esto E.L. naturalmente
+								supo. Parece constantemente temer que hubiera podido haber hablado en alguna parte
+								demasiado simplemente y sentirlo un deber para colocar a sus lectores a lo lejos
+								sobre un perfume falso. &mdash;Trad.]
+							</p>
+							<p>
+								Era solamente de hecho cuando supieron que habían sido condenados para morir que
+								el hombre y la mujer recordaron que se abastezca de sucesores. La muerte ara la
+								tierra del amor, y el amor siembra allí la semilla por la que es destinado para
+								desarrollar la cosecha de la muerte. Lo prohibimos sobre el dolor de la muerte de
+								entrar en la vida, ya que todo que nace es condenado a morir. Es lo que significa
+								el pecado original, y el pecado de nacimiento, de lo que podemos ser culpables solamente
+								entre las personas de nuestros padres, extendiéndose hacia a tras de uno a lo otro
+								hasta que alcancemos lo primero. El pecado del nacimiento es la consecuencia del
+								pecado del amor, esta naturaleza hace siempre una exposición de la interdicción
+								a la humanidad con el fin de estimular su ansia para él.
+							</p>
+							<p>
+								La imaginación es el Pegaso de los poetas, de Hipogrifo de los Paladines, del águila
+								de Ganímedes, y la paloma de Anacreon; es el carro del fuego de Elías y del ángel
+								que sostiene lejos a los profetas, teniéndolos por los pelos de la cabeza. Es el
+								ángel con la garra ardiente cauterizando el tartamudeo sobre los labios de temblor
+								de Elogiar, Proteo misterioso que debe estrechamente ser apretado en los reinos
+								de la razón para forzarle asumir una forma humana y para indicarle la verdad.
+							</p>
+							<p>
+								Justo como hay un calor latente que determina la polarización molecular de los cuerpos,
+								tanto hay una luz latente que se manifiesta en nosotros por un tipo de fosforescencia
+								interna. Es esto el que ilumina y colorea a los fantasmas de nuestras visiones y
+								de nuestros sueños, y nos muestra en ausencia de toda la luz externa de tales imágenes
+								fotográficas asombrosas. Está por medio de esta luz que leemos dentro la memoria
+								de la naturaleza, o en el depósito general de las impresiones y de las formas, los
+								gérmenes rudimentarios del futuro en los archivos del pasado. Sonambulismo es un
+								estado de inmersión del pensamiento en esta luz invisible que despierta ojos, y
+								en este baño universal, donde son reflejados todo el presentimiento y todas memorias,
+								los espíritus se reúnen y las inteligencias se interpenetración.
+							</p>
+							<p>
+								Así el caso es que se puede adivinar, traducir, y explicar las ideas de otras. Así
+								es como el cerebro de uno se hace para otros un libro abierto, sea puede leer a
+								lo lejos fácilmente. Las maravillas del sonambulismo lúcido no tienen ninguna otra
+								causa, y son explicadas por una serie de espejismos y de reflexiones. La luz interior
+								tiene la misma relación a la luz externa que la electricidad negativa sostiene a
+								la electricidad positiva, y es sobre la cuenta que los fantasmas particularmente
+								aparecen por la noche, <sup>[81:1]</sup> y el de los brujos exigen oscuridad para
+								ejecutar sus milagros fingidos; es por la razón que los espíritus y los medios de
+								comunicación no pueden producir sus fenómenos particulares antes de todo tipo de
+								personas; necesitan un pequeño círculo simpático, predispuesto a la influencia contagiosa
+								de este fosforescencia interior que hace uno juntos ver y juzgar lo que no sería
+								evidentemente ni sensiblemente a otras.
+							</p>
+							<label for="element-toggle-81-1">
+								[81:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-81-1" type="checkbox" />
+							<p id="toggled-element-81-1" class="fnote hidden">
+								[81:1 solamente parcialmente por esta razón. Hay muchos de otras razones. Las condiciones
+								magnéticas terrestres ampliamente difieren durante el día y por la noche. La energía
+								física está en el sonido más bajo durante la noche,
+								<!-- Spanish version garbled in footnote, next clause is translated w Google -->
+								y cuanto más vigorosos sean los poderes físicos, menor será el alcance de las percepciones
+								psíquicas, y hay muchos de otros factores. &mdash;Trad.]
+							</p>
+							<p>
+								Entonces uno se infiltra lentamente y progresivamente por la vida del sueño; <sup>[82:1]</sup>
+								los movimientos de muebles, plumas escriben sin ser tocado, elevación de hombres
+								de la tierra y permanecen suspendidos en el cielo.
+							</p>
+							<label for="element-toggle-82-1">
+								[82:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-82-1" type="checkbox" />
+							<p id="toggled-element-82-1" class="fnote hidden">
+								[82:1. E.L. aparentemente supo muy poco sobre esta rama del sujeto. Aparentemente
+								le gustó que todos los fenómenos eran subjetivos <span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								Entonces las realidades corren a loco, y las ideas locas parecen verdaderas; el
+								profeta y el adivinador son insensibles al dolor. Los convulsionarios de San Medardo
+								rogaron que ser golpeados con tablas de madera o de las barras de hierro; el sonámbulo
+								encuentran en el agua pura todos los sabores que el dispositivo de imantación escoge
+								imaginar. Los muertos aparecen, las manos sin cuerpo vienen tocarte: pero dejar
+								a un hombre en buena salud, o uno sobre la simpatía con círculo entran, los oráculos
+								son silenciosos, las manos desaparecen, los muebles deja de bailar, todo vuelve
+								a su orden normal, <sup>[82:2]</sup> y los miembros del círculo son así malhumorado
+								y contrariado como los soñadores que fueron repentinamente horrorizado fuera del
+								sueño.
+							</p>
+							<label for="element-toggle-82-2">
+								[82:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-82-2" type="checkbox" />
+							<p id="toggled-element-82-2" class="fnote hidden">
+								[82:2. todo esto naturalmente es una generalización precipitada, fundada sobre datos
+								insuficientes. Todo esto puede producirse, o no puede; dependerá (empleo la palabra
+								por falta de mejor) fuerzas magnéticas relativas del círculo y del intruso, incluyendo
+								en el círculo las influencias que han sido atraídas hacia él. La abundancia de tal
+								intruso, completamente escépticas y completamente hostiles hacia el lo engaña y
+								hacia las engañadas por supuesto, encontraron su presencia, y hasta voluntades,
+								completamente insatisfactorias para verificar el progreso de los fenómenos. <span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								Esta luz de los sueños, que podríamos llamar la luz oscura o negra, existe independientemente
+								del sol y las estrellas, lo mismo que la luz de las luciérnagas o del carbunco;
+								jamás se mezcla con la luz externa visible, sino puede dejar sus impresiones sobre
+								el cerebro&mdash;impresiones pasajeras en tenido alucinaciones, duradero en el loco.
+								El organismo nervioso atestados con la luz negra se hacen los imanes mal-ajustados,
+								y el producto a veces sobre las atracciones o las presiones inertes de objetos,
+								cuyos resultados parecen maravillosos, particularmente una vez exagerado y multiplicado,
+								mientras que casi son siempre, por la imaginación complaciente de los espectadores;
+								para la credulidad se presta jamás voluntariamente a los milagros. Los espíritus
+								débiles son naturalmente inclinados hacia lo maravilloso, y no son fáciles para
+								desengañar cuando insisten para ser engañado.
+							</p>
+							<p>
+								Un milagro jamás ha sido ejecutado para el triunfo de la ciencia y de la razón;
+								jamás tiene un producto en presencia de las personas prudentes e instruidas. Los
+								fenómenos extraños se redujeron a su expresión más simple pueden excitar la curiosidad
+								y estimular la búsqueda sobre los hombres de la ciencia, pero pueden demostrar de
+								ninguna manera la interposición de los seres sobrenatural. <sup>[84:1]</sup>
+							</p>
+							<label for="element-toggle-84-1">
+								[84:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-84-1" type="checkbox" />
+							<p id="toggled-element-84-1" class="fnote hidden">
+								[84:1. todo esto, aunque literalmente verdaderamente, es excesivamente grosero.
+								Así como Kabalista Éliphas Lévi supo todos respecto al elementales y el Elementarios.
+								Naturalmente esto no son sobrenatural, porque pertenecen a la naturaleza, de modo
+								que lo que dice sea verdad en la carta, sino es falso en el espíritu, porque supo
+								que todos sus lectores habían considerado tales seres sobrenaturales, y por consiguiente
+								comprendería que había negado su existencia. Así con milagros; naturalmente éstos
+								son pero los resultados de las leyes normales desconocidas, de modo que aquí demasiado
+								lo que dice sea verdad al pie de la letra pero mata al espíritu, como llevando al
+								lector que implica que negó el caso de lo que la gente llama los milagros. &mdash;Trad.]
+							</p>
+							<p>
+								Como hecho, Dios solamente es sobrenatural en el sentido que es el dueño de la naturaleza.
+								Todo lo que no es caídas de Dios necesariamente en la orden de la naturaleza.
+							</p>
+							<label for="element-toggle-84-2">
+								[84:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-84-2" type="checkbox" />
+							<p id="toggled-element-84-2" class="fnote hidden">
+								[84:2. Falacia y suposición, y él lo supieron <span class="nowrap">&mdash;O.E.]</span>
+							</p>
+							<p>
+								Debemos simultáneamente ignorar todas las leyes de naturaleza y de todas las reglas
+								de exégesis, si debemos aceptar literalmente y en significado normal las expresiones
+								dogmáticas y sacramentales de La Sagrada Escritura y de los Consejos. Así la fe
+								nos enseña que esto en el sacramento de la Eucaristía hay un transubstanciación.
+								¿ Este transubstanciación es normal? Claramente no es; es misterioso y sacramental.
+								Tú poco sustituir una sustancia a otros, pero una sustancia no se hace otra; es
+								siempre la misma sustancia, amalgamada o modificada. La química descompone y recompone
+								cuerpos, pero no transforma una cosa en otros, en este caso para ambas cosas, al
+								mismo tiempo, serían y no serían.
+							</p>
+							<p>
+								Para convertir literalmente y totalmente el agua en vino, sería necesario aniquilar
+								el agua y crear el vino - dos absurdidades. Para nada puede ser aniquilado, y por
+								vino no puede ser creado sin uvas. <sup>[85:1]</sup> para evaporar el agua y el
+								producto de sustitución para él el vino sería de un único la vuelta y ningún cambio
+								prestidigitador de las sustancias. El pan puede hacerse carne y el vino se hacen
+								sangre, pero solamente por los procesos de la asimilación y no por transubstanciación.
+							</p>
+							<label for="element-toggle-85-1">
+								[85:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-85-1" type="checkbox" />
+							<p id="toggled-element-85-1" class="fnote hidden">
+								[85:1. los negociantes de vino de Londres podrían decirle una historia diferente.
+								<span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								Estas expresiones dogmáticas deben, pues, permanecer restringidas el dominio del
+								dogma y de los símbolos. Tomado científicamente y en su sentido normal son absurdidades.
+								El dogma es la fórmula de las realidades imaginarias. Anotar bien que decimos sobre
+								realidades y ninguna ficciones. Las afirmaciones del dogma son unas realidades para
+								la fe, <sup>[85:2]</sup> pero ellos son imaginarios, porque podemos concebirles
+								solamente por la imaginación ya que eluden el análisis también de la Ciencia y de
+								la razón.
+							</p>
+							<p class="fnote">
+								[85:2. que es la fe ciega. &mdash;O.E.]
+							</p>
+							<p>
+								Es la imaginación solamente que ejecuta todos los milagros. ¿ Cuál es de hecho un
+								milagro? Es un fenómeno excepcional cuya causa es desconocida. La Ciencia entonces
+								tiene su paz y deja la imaginación para hablar, que todas procede inmediatamente
+								inventar y afirmar una causa ellos medida y proporción con efecto. La muchedumbre
+								aceptan esta afirmación porque el evangelio y el milagro es indiscutible. Todas
+								las personas instruidas saben que los milagros de la Biblia son unas exageraciones
+								orientales. <sup>[86:1]</sup> Moisés sacó provecho de la elevación y de la caída
+								del mar; Josué encontró un vado en el Jordán; al ser empleado para abrir una brecha
+								en las paredes de Jericó uno de estos compuestos explosivos de los cuales los sacerdotes
+								poseyeron el secreto; y el poeta nacional nos dicen que el mar se abrió, el Jordán
+								fluyeron hacia a tras, y que las paredes cayeron de su propia armonía. Es la misma
+								cosa con sol detenido en su curso para señalarse un día espléndido de victoria.
+							</p>
+							<label for="element-toggle-86-1">
+								[86:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-86-1" type="checkbox" />
+							<p id="toggled-element-86-1" class="fnote hidden">
+								[86:1. no saben nada de este modo; algunos pueden ser así; algunos probablemente
+								son unas tradiciones muy bastante precisas de los fenómenos ocultos, pero E.L. supo
+								aparente muy poco de la física del ocultismo. <span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								¿ No leemos dentro los salmos de David que las montañas saltaron como RAM y las
+								colinas como corderos? ¿ Necesitado tomamos esto literalmente? <sup>[86:2]</sup>
+							</p>
+							<label for="element-toggle-86-2">
+								[86:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-86-2" type="checkbox" />
+							<p id="toggled-element-86-2" class="fnote hidden">
+								[86:2. todo esto es sofismo puro. Naturalmente ambas cosas son completamente distintas;
+								en uno caso hay claramente una utilización de la metáfora, en otros, anteriormente
+								referida, hay también claro una afirmación de hecho; el último puede ser una ficción,
+								pero no puede ser rechazada criticada ni sobre los puntos que en otro lugar tropos
+								y las metáforas son utilizadas. <span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								El mismo poeta añade que piedras han sido convertidas en piscinas y balanzas en
+								fuentes. ¿ Tenemos aquí un transubstanciación? Los teólogos afirman que debemos
+								tomar literalmente las palabras de Jesús el Cristo cuando dice sobre el pan, &quot;esto
+								es mi cuerpo,&quot; y el vino, &quot;es mi sangre,&quot; pero entonces también debemos
+								tomar sus palabras en un sentido literal cuando dice que &quot;soy la vid verdadera
+								vosotros sois las ramas.&quot; ¿ Jesús era ahora el Cristo verdaderamente y literalmente
+								una vid? <sup>[87:1]</sup>
+							</p>
+							<label for="element-toggle-87-1">
+								[87:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-87-1" type="checkbox" />
+							<p id="toggled-element-87-1" class="fnote hidden">
+								[87:1. esto naturalmente es un argumento justo contra el dogma católico de la Transubstanciación.
+								<span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								¿ Debemos creer que el conocimiento de bien y del mal eran verdaderamente y verdaderamente
+								un árbol, y que los frutos amargos de esto duplicado rechazaron el árbol que produce
+								la vida y la muerte eran los melocotones o las manzanas? ¿ La serpiente de Edén
+								y del asno de Balaam, verdaderamente hablaron? La gente dejará de plantear tales
+								cuestiones cuando los hombres que profesan para enseñar otras dejan de ser tan estúpidas
+								como salvajes.
+							</p>
+							<p>
+								El sentido común imperturbable, unido con una imaginación poderosa, constituyen
+								lo que se llama Genio. El hombre que posee estas dos fuerzas puede volverse totalmente
+								independiente, y ejercicio a la voluntad una verdadera influencia sobre el rebaño
+								común. Creará para, si él así voluntad, servidores y amigos, a menos que devuelva
+								su genio subordinado a una debilidad cierta y secreta. Es posible tener el sentido
+								común dogmático, sin tener el sentido común practica. Los grandes hombres son a
+								menudo sus propias engañadas; les gusta la gloria como Orfeo quiso a su compañera;
+								van a buscarla por todas partes, hasta en el infierno, y están dando vueltas en
+								el mal momento de ver si Eurídice lo sigue.
+							</p>
+							<p>
+								Es la gloria verdadera lo que ninguno puede tomar de nosotros; consiste en mérito,
+								y no en aplausos de la multitud; <sup>[87:2]</sup> teme no los caprichos de destino,
+								porque no debe nada que hay que arriesgar; no le gusta ni el disturbio ni el ruido;
+								Está en el silencio de la tierra que apreciamos la paz del cielo. <sup>[88:1]</sup>
+							</p>
+							<label for="element-toggle-87-2">
+								[87:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-87-2" type="checkbox" />
+							<div id="toggled-element-87-2" class="fnote hidden">
+								<p>
+									[87:2. &quot;En valor es el océano, La fama es pero murmura que aúlla a lo largo
+									del la hace menos profunda.&quot; &mdash;Trad.
+								</p>
+								<blockquote>
+									[Nota: El comentario del traductor aparece (en inglés) en Unitarian Annual <span class="nowrap">Register, 1845:</span> "Remember aye the ocean deeps are mute,
+									The shallows roar. Worth is the ocean; Fame is but the bruit that roars along the
+									shore."]
+								</blockquote>
+							</div>
+							<label for="element-toggle-88-1" style="margin-top: 20px;">
+								[88:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-88-1" type="checkbox" />
+							<p id="toggled-element-88-1" class="fnote hidden">
+								[88:1. la convicción de la forma física particular de cada uno para saber mejor
+								su limpios naturaleza y las fuerzas particulares. La fuerza tiene su ilusión. Dejar
+								a cada uno desempeñar su misión. <span class="nowrap">&mdash;O.E.</span>
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="paradoja-5-la-razon-es-dios.htm">&lt; Paradoja 5</a></li>
+							<li class="align-right"><a href="paradoja-7-la-voluntad-realiza-todo-que-ella-no-desea.htm">
+									Paradoja 7 &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

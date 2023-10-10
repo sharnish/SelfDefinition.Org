@@ -1,0 +1,138 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearing Voices - Articles Index Page</title>
+    <meta name="description" content="List of articles in the Hearing Voices section.">
+    <meta name="author" content="">
+    <meta property="og:title" content="Hearing Voices Articles Index Page">
+    <meta property="og:description" content="List of articles in the Hearing Voices section.">
+    <meta property="og:image" content="https://selfdefinition.org/hearing-voices/articles/images/hearing-voices-joan-of-arc-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_hearing-voices-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /*
+        h4.list-header {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+*/
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_hearing-voices-articles-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <!-- end menu panel -->
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_hearing-voices-articles-title-include.htm"); ?>
+                                </header>
+                            </div>
+
+                            <!-- page nav is positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="vernon-howard-freedom-from-harmful-voices.htm">Freedom from Harmful Voices &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <nav id="index-lists">
+                                <h4 class="list-header">
+                                    Articles in this Section
+                                </h4>
+                                <ul class="index-contents-links">
+                                    <li><a href="vernon-howard-freedom-from-harmful-voices.htm">Vernon Howard: Freedom from Harmful Voices</a> </li>
+                                    <li><a href="alan-fitzpatrick-the-voices-we-may-hear.htm">Alan Fitzpatrick: The Voices We May Hear</a> </li>
+                                    <li><a href="alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">Alan Fitzpatrick: The Surest Path to Mental Clarity</a> </li>
+                                    <li><a href="alan-fitzpatrick-mind-parasites-fact-or-fiction.htm">Alan Fitzpatrick: Mind Parasites - Fact or Fiction? <span class="note">[lecture poster]</span></a> </li>
+                                    <li><a href="alcoholics-anonymous-252-slogans.htm">Alcoholics Anonymous: 252 Slogans</a> </li>
+                                    <li><a href="st-ignacius-loyola-rules-for-the-discernment-of-spirits.htm">St. Ignacius Loyola: Rules for the Discernment of Spirits</a> </li>
+
+                                    <li><a href="wilson-van-dusen-presence-of-spirits-in-madness.htm">Wilson Van Dusen: Presence of Spirits in Madness</a> </li>
+                                    <li><a href="wilson-van-dusen-hallucinations-as-the-world-of-spirits.htm">Wilson Van Dusen: Hallucinations as the World of Spirits</a> </li>
+                                    <li><a href="spirit-possession-and-how-to-avoid-it.htm">Spirit Possession and How to Avoid It</a> </li>
+                                </ul>
+                                <p class="note80 center" style="margin-top:-3px;">
+                                    Suggest articles using the contact form: <a href="/contact/">/contact/</a>
+                                </p>
+                                <ul class="index-site-links">
+                                    <li class="header-item">Also on this Site</li>
+                                    <li class="site-first-item">Psychology: <a href="/psychology/">/psychology/</a></li>
+                                    <li>Possession: <a href="/possession/">/possession/</a></li>
+                                    <li>Celibacy Articles: <a href="/celibacy/quotes/">/celibacy/quotes/</a></li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="vernon-howard-freedom-from-harmful-voices.htm">Freedom from Harmful Voices &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

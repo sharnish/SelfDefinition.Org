@@ -1,0 +1,82 @@
+<!-- start of menu include file - Real World: Update Apr 25, 2020.  Copied to Henri Tracol Jue 9, 2020-->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<!-- This has a Contents page so use the contents button -->
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/gurdjieff/">Gurdjieff index</a></li>
+			<li><a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">Quotes index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="english" id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+			<li class="spanish" id="menu-totopES"><a href="javascript:toTopCleanUrl();">Inicio de p&aacute;gina</a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/gurdjieff/">Gurdjieff index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="english">Taste for Things That Are True</li>
+			<li class="spanish">Gusto por las cosas que son verdaderas </li>
+			<li>
+				<img style="width: 160px;" src="images/tracol-logo.jpg" alt="gurdjieff" />
+			</li>
+			<li>Henri Tracol</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<li>Espa&ntilde;ol:</li>
+				<li class="site-first-item"><a href="gusto-por-las-cosas-que-son-verdaderas.htm">Gusto por las cosas <span class="nowrap">que son verdaderas</span></a></li>
+				<li>English:</li>
+				<li><a href="taste-for-things-that-are-true.htm">Taste for Things That <span class="nowrap">Are True</span></a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="english header-item">Also on this site</li>
+				<li class="spanish header-item">También en este sitio</li>
+				<li class=" strong">Espa&ntilde;ol:</li>
+				<li class="first-item"><a href="/gurdjieff/real-world/cap-07-como-podemos-ganar-atencion.htm">&iquest;C&oacute;mo podemos ganar atención?</a></li>
+				<li><a href="/gurdjieff/real-world/cap-09-constitucion-y-como-pensar.htm">Constitución, y Como Pensar</a></li>
+				<li><a href="/gurdjieff/real-world/aforismos.htm">Los Aforismos de Gurdjieff</a></li>
+				<li class="strong">English:</li>
+				<li class="first-item"><a href="/gurdjieff/real-world/ch-07-how-can-we-gain-attention.htm">How Can We Gain Attention?</a></li>
+				<li><a href="/gurdjieff/real-world/ch-09-constitution-and-how-to-think.htm">Constitution, and How to&nbsp;Think</a></li>
+				<li><a href="/gurdjieff/real-world/aphorisms.htm">The Gurdieff Aphorisms</a></li>
+				<li class="english site-first-item"><a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">Gurdjieff Quotes Page</a></li>
+				<li class="english strong">P.D. Ouspensky</li>
+				<li class="english first-item"><a href="/gurdjieff/evolution/introduction.htm">Psychology of Man's Possible Evolution</a></li>
+				<li class="spanish first-item"><a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">Índice de citas de Gurdjieff (inglés español)</a></li>
+				<li class="spanish strong">P.D. Ouspensky</li>
+				<li class="spanish first-item"><a href="/gurdjieff/evolucion/introduccion.htm">Psicología de la Posible Evolución del Hombre </a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

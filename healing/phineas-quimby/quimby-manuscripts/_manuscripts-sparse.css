@@ -1,0 +1,59 @@
+/* file:  /healing/phineas-quimby/quimby-manuscripts/_manuscripts-sparse.css
+
+Update Aug 19, 2020.  Has experimental dark stylesheet:  _dark-styles.css << OLD method
+
+Update Oct 27, 2020 Switched to "add dark cclass" method. Feb 9, 2020 move scripts to /scripts/
+
+Update June 7, 2022
+
+   */
+
+
+@media only print {
+	#article:after {
+		content: "Update June 7, 2022";
+	}
+}
+
+/* Positioning: update Sep 2, 2019 see below */
+/* nice yellow, or this, #f3fff3; a nice green */
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fafff0;
+	color: #000;
+}
+
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #bde0ff;
+}
+
+
+
+article h3 span.block {
+	background: inherit;
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+
+article header {
+	margin-bottom: 30px;
+}
+
+div.footnotes {
+	font-size: 90%;
+}
+
+
+/* end */

@@ -1,0 +1,336 @@
+/* file:  /siddharameshwar/master-key/_the-master-key.css */
+
+/*** ENCODING info here
+
+SEE: https://www.w3.org/International/questions/qa-css-charset
+
+***/
+
+/* Breakpoints This Section, depends on top menu
+768 and above
+510-767
+360-514
+
+*/
+
+
+
+/* Positioning:  Copied from Kybalion
+
+DEFAULTS main-content for "top"
+
+Ipad is same as default; accommodates a 1-line top menu
+
+Line in
+main css       range            top
+
+524            Large screens    0px
+
+764            max 767          121px   << Smaller than Ipad, 2-line menu, standard phones
+
+869            max 320          140px	<< find breakpoint for 3 line menu, old phones
+*/
+
+/* Page headings (Title Include File, etc)
+Make sure that info aat top is small enough so that pages can be seen to have changed.
+*/
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html, body, #fixed-header-small-screen, #menu-site-small-screen {background:#fffff3;}
+
+/* div in title include file
+#title-include-div {margin:20px 0;} */
+
+ /* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+ /* color must contrast with body */
+ /* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+ #nav .menu-section a.active, #menu-scroll, #menu-scroll a  {background: #eeeed3;}
+
+/* SCRIPTS MUST BE HTTPS NOT HTTP, OR THEY WILL NOT LOAD */
+
+
+/* narrow width a little. Copied from Law of Suggestion.
+   Default wide screen is 530 which
+ends up producing width of 525px Do NOT include "body", messes up the margins */
+@media only screen and (min-width:520px) {
+	#main-content, announce, article, section {width:513px;}
+}
+
+
+/* can increase font size due to short titles; default is 80% */
+ul.next-previous-item-list {font-size:90%;}
+/* COLOR: darken the blue link as background is blue. Default is #2277dd*/
+ul.next-previous-item-list a:link,
+ul.next-previous-item-list a:visited {color: #400000;}
+
+/*  updates from NEW-THOUGHT pages */
+
+/* why is this necessary???? These are default, but margins are zero when stacked.*/
+p.toowide {margin-top:1em;margin-bottom:1em;}
+
+.strong {font-weight:bold;}
+
+/* TESTING ONLY */
+p.fnote, div.fnote, sup {background:inherit;;}
+div.fnote {border:0px solid blue;}
+label {background: inherit;}
+/* end testing */
+
+
+/* Page titles are short, don't make the menu highlighting
+so wide, apply to all, not just the highlighted item */
+#nav .menu-section a {width:140px;}
+
+
+/* can increase font size due to short titles; default is 80% */
+ul.next-previous-item-list, ul.next-previous-item-list li {font-size:90%;}
+ul.next-previous-item-list li a {font-size:inherit;}
+/* but shrink on phones */
+@media only screen and (max-width: 500px)
+{
+    ul.next-previous-item-list, ul.next-previous-item-list li {font-size:85%;}
+}
+
+
+/* from mystic christianity */
+ul.generic-list {list-style:none; margin-left:-30px;background:inherit;}
+ul.generic-list  li {margin-top:13px; margin-bottom:10px;}
+
+/* Deemphasize <strong> a little */
+strong {font-size:95%;}
+
+p.blockquote, div.blockquote {margin-left:12px;background:inherit;}
+
+/* COLOR: darken the blue link as background is blue. Default is #2277dd*/
+ul.next-previous-item-list a:link,
+ul.next-previous-item-list a:visited {color: #400000;}
+
+/********** the following section is a collection of
+features to be incorporated into the new stylesheet ***/
+/* add these to default css sheet when satisfied */
+
+#menu-site li.scroll-menu-item {font-size: 11px;}
+
+p.fnote, div.fnote {font-size:80%}
+
+/* FOR PHONES ONLY (less than Ipad) ; NEED TO SHRINK SPACE AT TOP
+   SO THAT THE NAV MENU CAN BE SEEN TO HAVE CHANGED */
+/* shrink the next-page Nav, default is 40px */
+@media only screen and (max-width: 767px)
+{
+    #menu-site-small-screen {top:11px;}
+
+    p.logo {margin-bottom:3px;}
+
+    .title-image-div {margin:0 auto;}
+
+    .title-image {width: 80%;max-width: 140px;}
+
+    nav.next-previous-item-nav {margin-top:0;margin-bottom:0;}
+
+    ul.next-previous-item-list {margin-top:5px;margin-bottom:5px;}
+
+    header h3 span.block {margin-bottom:0;}
+}
+
+.tiny {font-size:70%;}
+
+/* try to get more on phones reducing the font size from 18px to 17px */
+/* Pixl 2 = 411 ; Iphone X = 375px; Nexus 5 = 360 ;  */
+/* Did not use */
+@media only screen and (max-width: 415px)
+{
+ article {font-size:18px;}
+}
+/* Iphone 4 = 320px */
+@media only screen and (max-width: 320px)
+{
+ article {font-size:17px;}
+}
+
+/* Added Apr 19, 2019, don't show left menu when printing 
+	Added to selfdefinition-responsive, line 536.
+	Keep this in "drop-in" css template at least 6  months to avoid CSS cache problems */
+@media only print {
+	#menu-panel {display:none;}
+	#main-content {width:100%; position:absolute; top:0; left:10px;} 
+	#article, article, #announce, section, aside {width:100%;}
+	div.title-image-div, img.title-image  {display:block; margin:10px auto; width:210px;}
+}
+
+
+/* See below for COLLAPSING FOOTNOTES */
+
+
+/* new jump note style
+JUMP- LINKS, RETURN LINKS
+FIRST USED ON PARADOXES, chapter Magic and Magism only
+
+http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/
+
+	#method-B:before {
+		display: block;  << he uses block, I used inline-block
+		content: "";
+		height: 50px;
+		margin: -50px 0 0;  << article uses -30px, example uses -50px  so EXPERIMENT
+	}
+
+Examples from the following source not successful:
+-- see paradoxes.cs and chapter: magic and magism footnotes
+https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/
+
+*/
+
+/* background color needed to test breakpoints */
+
+/* default wide screen */
+a.return-anchor:before {
+    display: inline-block;
+    content: "";
+    height: 50px;
+    margin: -50px 0 0;
+}
+a.return-anchor {
+    background:inherit;
+}
+
+
+@media only screen and (max-width:767px){
+    a.return-anchor:before {
+		height: 100px;
+		margin-top:-100px;
+	}
+	a.return-anchor {
+		background:inherit;
+	}
+}
+
+@media only screen and (max-width:515px){
+    a.return-anchor:before {
+		height: 160px;
+		margin-top:-160px;
+    }
+    a.return-anchor {
+		background:inherit;
+	}
+}
+
+
+/* END OF UPDATES */
+#menu-site {margin-top:30px;}
+
+article h3 span.block {background:inherit;font-size:90%;margin-bottom:10px;}
+
+ul.page-links {width:inherit; border:1px solid blue;}
+
+.page-links li {width:inherit; margin:5px auto 0;}
+
+.page-links li a {width:auto; margin:auto;}
+
+@media only screen and (max-width: 500px)
+{
+    ul.page-links {}
+}
+@media only screen and (max-width: 360px)
+{
+    ul.page-links {width:100%; border:1px solid red;}
+}
+/* EXAMPLE page-links width page specific
+    center better for short headers on this page
+        ul.page-links {width:200px; border:1px solid yellow;}
+*/
+
+
+p.fnote {font-size:80%;}
+
+
+/* shrink the next-page Nav, default is 40px */
+@media only screen and (max-width: 767px)
+{
+    #menu-site-small-screen {top:11px;}
+
+    #main-content {top:100px;}
+
+    p.logo {margin-bottom:3px;}
+
+    #title-include-div h1 {width:80%;margin:20px auto;}
+
+    #title-include-div h2 {width:80%;margin:0 auto;}
+
+    #title-include-div p {margin:0 auto;}
+
+    .title-image-div {margin:10px auto 0;}
+
+    .title-image {width: 80%;max-width: 240px;}
+
+    nav.next-previous-item-nav {margin-top:0;margin-bottom:0;}
+
+    ul.next-previous-item-list {margin-top:5px;margin-bottom:5px;}
+
+    header h3 span.block {margin-bottom:0;}
+}
+
+
+/*  TEST THESE */
+@media only screen and (max-width: 399px) {
+    #main-content {top:105px;}
+}
+@media only screen and (max-width: 309px) {
+    #main-content {top:171px;}
+}
+
+
+/* Collapsing footnote styles if neded, from Paradoxes */
+/* FOR COLLAPSING FOOTNOTES, CODE IS ON EACH PAGE, see example below */
+
+label {margin-left:10px; color:maroon; background: inherit; font-size: 80%;display:block;width:auto;}
+
+div.fnote, p.fnote {font-size:80%;margin-left:10px;margin-right:5px;padding-left:2px;}
+
+div.hidden, p.hidden {font-size:90%; color:maroon; background:inherit;}
+
+
+/* this goes ON PAGE -- to avoid CSS stylesheet having to be refreshed
+
+/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/
+
+        Keep THIS css on PAGE rather than stylesheet to reduce complexity
+        and need to reload if a change is made.
+        On this page:
+
+		footnotes are numbered 3-1, 7-1 8-1, etc in Paradoxes
+
+        #element-toggle-3-1,
+        #element-toggle-7-1,
+        #element-toggle-8-1
+		etc
+        */
+
+          /* paradox 1  */
+        label[for=element-toggle-3-1],
+        label[for=element-toggle-7-1],
+        label[for=element-toggle-8-1]
+        {
+            cursor: pointer;
+        }
+        #element-toggle-3-1,
+        #element-toggle-7-1,
+        #element-toggle-8-1
+        {
+            display: none;
+        }
+        /* paradox 1 */
+        #element-toggle-3-1:not(:checked) ~ #toggled-element-3-1,
+        #element-toggle-7-1:not(:checked) ~ #toggled-element-7-1,
+        #element-toggle-8-1:not(:checked) ~ #toggled-element-8-1
+        {
+            display: none;
+        }
+
+
+/* end */
+
+

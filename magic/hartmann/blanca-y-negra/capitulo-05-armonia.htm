@@ -1,0 +1,1472 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>V. Armonía &ndash; Magia Blanca y Negra</title>
+	<meta name="description" content="El Universo está lleno de armonía, y un alma en plena armonía con el alma del universo puede escuchar esa música y comprenderla.">
+	<meta name="author" content="Franz Hartmann, MD">
+	<meta property="og:title" content="V. Armonía &ndash; Magia Blanca y Negra">
+	<meta property="og:description" content="El Universo está lleno de armonía, y un alma en plena armonía con el alma del universo puede escuchar esa música y comprenderla.">
+	<meta property="og:image" content="https://selfdefinition.org/magic/hartmann/blanca-y-negra/images/frontispiece-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_blanca-y-negra-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="capitulo-04-la-vida.htm">
+	<link rel="next" href="capitulo-06-ilusiones.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 180px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		td {
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		/* this page only */
+		.reduced-line-height p {
+			margin-top: 3px;
+			margin-bottom: 3px;
+		}
+
+		#table1,
+		#table5,
+		#table6,
+		#table7,
+		#table8 {
+			margin: 0 auto;
+			border: 1px solid #aaa;
+		}
+
+		td {
+			padding: 2px 6px;
+			border: 1px solid #aaa;
+		}
+
+		#table1 td {
+			width: 25%;
+		}
+
+		#table6 td,
+		#table7 td,
+		#table8 td {
+			padding: 5px 2px;
+		}
+
+		@media only screen and (max-width:500px) {
+
+			/* defaulty font for tables 1 and 5 */
+			table {
+				margin: 0 auto;
+			}
+
+			#table1 td {}
+
+			#table5 td {}
+
+			#table6 td {
+				padding: 0 7px;
+				font-size: 15px;
+			}
+
+			#table7 td {
+				padding: 2px 6px;
+				font-size: 15px;
+			}
+
+			#table8 td {
+				padding: 2px 3px;
+				font-size: 15px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_blanca-y-negra-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_blanca-y-negra-title-include.htm"); ?>
+									<h2>
+										Capitulo V - Armonía
+									</h2>
+									<p class="tiny this-page">
+										This page in English: <a href="../white-and-black/chapter-05-harmony.htm">..chapter-05-harmony.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="capitulo-04-la-vida.htm">&lt; 4, La Vida</a></li>
+									<li class="align-right"><a href="capitulo-06-ilusiones.htm">6, Ilusiones &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header class="chapter-header">
+								<p class="center">
+									<img class="chapter-image" src="images/chapter-05.jpg" alt="a circle in the center of 6 circles, making a hexagram of circles">
+								</p>
+								<p>
+									<em>&quot;Que nadie entre aquí que no esté muy versado en matemáticas y música.&quot;</em> <span class="nowrap">&ndash; Pythagoras</span>
+								</p>
+							</header>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#laws-of-harmony">Leyes de armonía</a></li>
+									<li><a href="#cause-and-effect">Causa y efecto</a></li>
+									<li><a href="#unity">Unidad</a></li>
+									<li><a href="#magic-numbers">Números mágicos</a></li>
+									<li><a href="#the-number-seven">El número siete</a></li>
+									<li><a href="#love">Amor</a></li>
+									<li><a href="#vibration">Vibración</a></li>
+									<li><a href="#vice-and-virtue">Vicio y virtud</a></li>
+									<li><a href="#suffering">Sufrimiento</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="laws-of-harmony">&nbsp;</a>
+							<h4>
+								Leyes de armonía
+							</h4>
+							<p>
+								&quot;La música de las esferas&quot; es una frase poética que expresa una gran verdad, porque el Universo rebosa armonía, y toda alma acorde con el alma del Universo puede escuchar y comprender la música de las esferas. El mundo y el hombre son como instrumentos musicales cuyas cuerdas deben estar en perfecto temple a fin de que no haya discordancia alguna. Podemos considerar la materia física en la vibración más lenta y el espíritu en la más rápida vibración de la vida. Entre estos dos polos están los principios intermediarios que completan la gran octava llamada hombre.
+							</p>
+							<div class="right-image-div">
+								<img src="images/plato.jpg" alt="Plato" />
+								<p class="note">
+									Plato<br />
+									<span class="date">(c. 427-347 a.C.)</span>
+								</p>
+							</div>
+							<p>
+								Dícese que <strong>Platón</strong> mandó inscribir sobre la puerta de su academia este letrero: &quot;No entre aquí nadie que no esté muy versado en matemáticas&quot;. A este letrero añadió más tarde <strong>Pitágoras</strong>: &quot;y en música&quot;, significando con ello la necesidad de que el alumno fuese capaz de mantener su alma en armonía con la divina ley de existencia y de sentir la belleza de la verdad; porque sin esta elevación de alma, sin espiritualidad, todo anhelo de conocer cuanto trasciende los dominios de la sensación será vano y como insana apetencia de satisfacer la curiosidad con resultado contrario al fin propuesto, pues tanto más se alejará el hombre del Uno que contiene al Todo, cuanto más se empeñe en investigarlo objetivamente, y más tardará en comprender la única, eterna, omnipotente e infinita verdad.
+							</p>
+							<p>
+								La personalidad no puede abarcar lo impersonal. Si el hombre quiere conocer a Dios ha de substraerse a su naturaleza inferior y compenetrarse con la de Dios, lo cual equivale a suprimir las discordancias procedentes de la ilusión de separatividad, echando de ver la unidad del todo.
+							</p>
+							<div class="left-image-div">
+								<img src="images/pythagoras.jpg" alt="Pythagoras" />
+								<p>
+									Pythagoras<br />
+									<span class="date">(c. 570-495 a.C.)</span>
+								</p>
+							</div>
+							<p>
+								En la unidad está basado el universo. Dios es uno. Es la Ley que no necesita legislador, pues está siempre por doquiera presente en la naturaleza, por Sí mismo existente; suficiente y absoluto. En todas partes rige la Ley y todas las cosas existen en la Ley, pues nada hay que no esté sujeto a la ley de existencia.
+							</p>
+							<p>
+								Pero como por el acto de la creación y la consiguiente evolución surgen a la existencia variedad de formas con innumerables seres capaces de querer, pensar y obrar contrariamente a la divina sabiduría, de aquí las muchas discordancias en el que debiera ser armonioso conjunto.
+							</p>
+							<p>
+								Así tenemos que aún cuando la ley siempre es la misma, se le puede dar torcida aplicación y perverso uso. A la ley está sujeto todo ser individual y cuanto más pronto reconozca el individuo la suprema y fundamental ley de su verdadera naturaleza, tanto más rápidamente se restablecerá la primitiva armonía.
+							</p>
+							<p>
+								El hombre es por sí mismo un resultado de la acción de la ley y la ley está en él como centro y manantial de su verdadero ser y él es expresión de la ley. El mismo es la ley y así lo reconocerá cuando conozca su verdadero ser. Todos los elementos del hombre que no reconozcan esta ley universal ni actúen de conformidad con ella no pertenecen a su naturaleza divina ni constituyen su verdadero ser, sino que producen Ia discordancia existente en el mundo. Tan sólo cuando todos los habitantes de su reino individual acaten la superioridad de la ley reinará en él perfecta armonía.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="cause-and-effect">&nbsp;</a>
+							<h4>
+								Causa y efecto
+							</h4>
+							<p>
+								En todos los dominios de la Naturaleza todo efecto tiene su causa y cada causa produce efecto adecuado a sus condiciones de manifestación. Si conociéramos bien las causas, nos sería fácil calcular sus efectos. Cada pensamiento, palabra y obra crea una causa que actúa directamente en el plano a que pertenece, promoviendo en este plano nuevas causas que reaccionan sobre los otros planos.
+							</p>
+							<p>
+								Un motivo o pensamiento no expresado en acción, no tendrá resultado directo en el plano físico; pero puede causar gran emoción en el mental, y desde éste reaccionar en aquél. Las mejores intenciones no producirán efecto visible si no se convierten en acto; pero determinan ciertos estados mentales de que pueden derivar acciones futuras.
+							</p>
+							<p>
+								Una acción producirá efecto, sea premeditada o no; pero una acción sin motivo no obrará directamente en el plano mental, pues resulta de la locura y entraña responsabilidad moral para su autor, aunque en el plano físico producirá efectos que pueden reaccionar en ei mental.
+							</p>
+							<p>
+								De las causas creadas en los planos físico, astral y mental, dimanan innumerables combinaciones de efectos que crean nuevas causas también seguidas de efectos; y toda fuerza operante en un plano, continúa obrando hasta transmutarse en otra modalidad de acción, al mudar el tono de sus vibraciones y cesar los antecedentes efectos.
+							</p>
+							<p>
+								La trina acción de esta ley en sus aspectos de pensamiento, voluntad y acción, en los planos físico, emocional, mental y espiritual, determina numerosísimas condiciones que a su vez engendran un sin fin de variedades y modificaciones que de nuevo producen innumerables causas secundarias con sus correspondientes resultados, hasta que por último llega a ser tan intrincada la acción de la ley kármica que no es posible desmenuzar todos sus pormenores.
+							</p>
+							<p>
+								La kármica es ley de justicia y tiene por objeto el restablecimiento de la armonía, pues entraña compensación en forma de premio y castigo, sin que para nada intervenga la venganza ni reconozca influencias personales. Opera por sí misma según su propia naturaleza y no con arreglo a tales o cuales consideraciones. Por virtud de la ley kármica la suma de causas engendradas por el individuo en una encarnación producirán determinados efectos en la próxima, ocasionándole gozo o pena lo que consciente o inconscientemente creó el mismo.
+							</p>
+							<p>
+								Todo ser de la naturaleza que haya alcanzado la individualidad tiene karma individual que determinará el curso de su futura evolución. Cada uno de los elementos individuales que constituyen el hombre tiene su propio karma y cuando el hombre se identifica con su naturaleza inferior participa del karma de los principios que la constituyen; pero así como Dios es superior a la naturaleza y por lo tanto no está sujeto a ella, así también el hombre que subyuga su naturaleza inferior y se sobrepone a ella, identificándose con la ley, quedará libre del karma propio de su naturaleza inferior. Eliminando su naturaleza inferior y sacrificándose enteramente a la ley del divino ser se le perdonan los pecados.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="unity">&nbsp;</a>
+							<h4>
+								Unidad
+							</h4>
+							<p>
+								Las discordancias causadas en la naturaleza por la acción del ilusorio yo y de los pervertidos deseos de la personalidad no pueden cesar de otro modo que por el restablecimiento de la unión de la voluntad individual con la voluntad de la ley básica del todo. Esta unión existe, y el hombre no ha de crearla sino tan sólo reconocerla y si prácticamente la reconoce la realizará en sí mismo. El hombre personal no puede reconocerse en esta unión porque está dividido contra sí mismo y su yo es una ilusión y la ilusión impide el reconocimiento de la verdad. Una vez reconocida la verdad, cesa la ilusión.
+							</p>
+							<p>
+								Todos los números proceden de la unidad. En todos los números está contenido el uno y sin el uno por fundamento no podría existir ningún número. El uno permanece inalterable y no varía aunque se le divida o multiplique por sí mismo. Todas las matemáticas se basan en la inmutabilidad del número uno. Sin embargo, no tenemos ninguna prueba positiva de su inmutabilidad, sino tan sólo la negativa prueba consistente en que nunca lo hemos visto variar. De la propia suerte es negativo nuestro conocimiento intelectual de Dios cuya eterna inmutabilidad no podemos demostrar con argumentos científicos. Creemos en Dios sin más prueba que la inmutabilidad de nuestra íntima conciencia una vez adquirida. Esta prueba es suficiente para el sabio, aunque de nada le vale al necio.
+							</p>
+							<p>
+								La unidad es el fundamento de la naturaleza, pero el número de sus manifestaciones es infinito. Sin embargo, todo en la naturaleza esta recíprocamente relacionado por virtud de la unidad en que radica su existencia.
+							</p>
+							<p>
+								Todo está sujeto a peso, número y medida y nada hay en la Naturaleza que no esté regido por leyes matemáticas. Soles y plantas tienen sus revoluciones periódicas. Las moléculas de los cuerpos se combinan en proporciones definidas por la química, y en todos los sucesos, tanto en el plano físico como en el reino de las emociones, se ha observado cierta regularidad periódica. El día y la noche tienen determinadas horas; en intervalos fijos se suceden la primavera, el verano, el otoño y el invierno; el flujo y reflujo del mar y las mareas del alma.
+							</p>
+							<p>
+								En períodos regulares ocurren los cambios fisiológicos y anatómicos de las formas animales, y aún los sucesos de la vida obedecen también a ciertas leyes ocultas; porque aunque parece ser libre la voluntad del hombre, sus acciones están condicionadas por ciertas circunstancias y aún el relativo albedrío de su voluntad es el resultado de la acción de su ley evolutiva.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="magic-numbers">&nbsp;</a>
+							<h4>
+								Números mágicos
+							</h4>
+							<p>
+								Los discípulos de Pitágoras supusieron que toda operación de la Naturaleza está regulada por los números siguientes:
+							</p>
+							<table id="table1">
+								<tbody>
+									<tr>
+										<td>
+											3
+										</td>
+										<td>
+											9
+										</td>
+										<td>
+											15
+										</td>
+										<td>
+											45
+										</td>
+									</tr>
+									<tr>
+										<td>
+											4
+										</td>
+										<td>
+											16
+										</td>
+										<td>
+											34
+										</td>
+										<td>
+											136
+										</td>
+									</tr>
+									<tr>
+										<td>
+											5
+										</td>
+										<td>
+											25
+										</td>
+										<td>
+											65
+										</td>
+										<td>
+											325
+										</td>
+									</tr>
+									<tr>
+										<td>
+											6
+										</td>
+										<td>
+											36
+										</td>
+										<td>
+											111
+										</td>
+										<td>
+											666
+										</td>
+									</tr>
+									<tr>
+										<td>
+											7
+										</td>
+										<td>
+											49
+										</td>
+										<td>
+											175
+										</td>
+										<td>
+											1225
+										</td>
+									</tr>
+									<tr>
+										<td>
+											8
+										</td>
+										<td>
+											64
+										</td>
+										<td>
+											260
+										</td>
+										<td>
+											2080
+										</td>
+									</tr>
+									<tr>
+										<td>
+											9
+										</td>
+										<td>
+											81
+										</td>
+										<td>
+											369
+										</td>
+										<td>
+											3321
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>
+								Los números de esta tabla resultan de la construcción de los tetragramas o cuadrados mágicos, y creyeron los pitagóricos que por el uso de estos números podría calcularse cualquier efecto, conocido el número original correspondiente a la causa. Si todas las cosas tienen cierto número de vibraciones que aumentan o disminuyen con cierta proportion en períodos regulares, el conocimiento de estos números nos permitiría predecir un evento futuro.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<p class="note">
+								* Los cuadrados mágicos de numeros impares se forman, según indican las figuras, escribiendo sucesivamente sus segundas potencias, separando su &quot;corazón&quot; y transponiendo a los lugares opuestos los números que se han dejado fuera. El siguiente cuadrado mágico es el del número 3 cuya segunda potencia es 9.
+							</p>
+							<div class="center">
+								<img src="images/square-3.jpg" alt="Magic square, diamond shape, 3 x 3 with 4 blank squares">
+							</div>
+							<p>
+								Vemos aquí los números 1, 3, 7, 9, dejados en la parte exterior del cuadrado. Si se colocan ordenadamente en las opuestas casillas en blanco, resultará la siguiente figura:
+							</p>
+							<p>
+							</p>
+							<div class="center">
+								<img src="images/square-3-filled.jpg" alt="Magic square, diamond shape, 3 x 3, with 1, 3, 7 and 9 inserted in blank areas">
+							</div>
+							<p>
+								Sumados estos numeros en columnas inclinadas de tres dan 15 por suma constante, a saber:
+							</p>
+							<p>
+								2 + 7 + 6 = 15 ; 9 + 5 + 1 = 15 ; 4 + 3 + 8 = 15
+							</p>
+							<p>
+								La siguiente figura, que es la misma anterior; colocada en posición horizontal, dará más clara idea de como se han de inscribir los números en las casillas.
+							</p>
+							<div class="center">
+								<img src="images/square-3-upright.jpg" alt="samne magic square rotated 45 degrees clockwise so diamond looks like upright square">
+							</div>
+							<p>
+								De conformidad con esta regla se forma el cuadrado mágico de cualquier otro número impar.
+							</p>
+							<p>
+								He aquí ahora el tetragrama del número siete:
+							</p>
+							<p>
+							</p>
+							<div class="center">
+								VII.
+							</div>
+							<table id="table5">
+								<tbody>
+									<tr>
+										<td style="font-weight: bold;">
+											22
+										</td>
+										<td style="">
+											47
+										</td>
+										<td style="font-weight: bold;">
+											16
+										</td>
+										<td style="">
+											41
+										</td>
+										<td style="font-weight: bold;">
+											10
+										</td>
+										<td style="">
+											35
+										</td>
+										<td style="font-weight: bold;">
+											4
+										</td>
+									</tr>
+									<tr>
+										<td style="">
+											5
+										</td>
+										<td style="font-weight: bold;">
+											23
+										</td>
+										<td style="">
+											48
+										</td>
+										<td style="font-weight: bold;">
+											17
+										</td>
+										<td style="">
+											42
+										</td>
+										<td style="font-weight: bold;">
+											11
+										</td>
+										<td style="">
+											29
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											30
+										</td>
+										<td style="">
+											6
+										</td>
+										<td style="font-weight: bold;">
+											24
+										</td>
+										<td style="">
+											49
+										</td>
+										<td style="font-weight: bold;">
+											18
+										</td>
+										<td style="">
+											36
+										</td>
+										<td style="font-weight: bold;">
+											12
+										</td>
+									</tr>
+									<tr>
+										<td style="">
+											13
+										</td>
+										<td style="font-weight: bold;">
+											31
+										</td>
+										<td style="">
+											7
+										</td>
+										<td style="font-weight: bold;">
+											25
+										</td>
+										<td style="">
+											43
+										</td>
+										<td style="font-weight: bold;">
+											19
+										</td>
+										<td style="">
+											37
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											38
+										</td>
+										<td style="">
+											14
+										</td>
+										<td style="font-weight: bold;">
+											32
+										</td>
+										<td style="">
+											1
+										</td>
+										<td style="font-weight: bold;">
+											26
+										</td>
+										<td style="">
+											44
+										</td>
+										<td style="font-weight: bold;">
+											20
+										</td>
+									</tr>
+									<tr>
+										<td style="">
+											21
+										</td>
+										<td style="font-weight: bold;">
+											39
+										</td>
+										<td style="">
+											8
+										</td>
+										<td style="font-weight: bold;">
+											33
+										</td>
+										<td style="">
+											2
+										</td>
+										<td style="font-weight: bold;">
+											27
+										</td>
+										<td style="">
+											45
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											46
+										</td>
+										<td style="">
+											15
+										</td>
+										<td style="font-weight: bold;">
+											40
+										</td>
+										<td style="">
+											9
+										</td>
+										<td style="font-weight: bold;">
+											34
+										</td>
+										<td style="">
+											3
+										</td>
+										<td style="font-weight: bold;">
+											28
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>
+								Cada columna sumada produce 175.
+							</p>
+							<p>
+							</p>
+							<div class="center">
+								IX.
+							</div>
+							<!-- end class center -->
+							<table id="table6">
+								<tbody>
+									<tr>
+										<td style="font-weight: bold;">
+											37
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											29
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											21
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											13
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											5
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											38
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											30
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											22
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											14
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											47
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											39
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											31
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											23
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											15
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											48
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											40
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											32
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											24
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											57
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											49
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											41
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											33
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											25
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											58
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											50
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											42
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											34
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											67
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											49
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											51
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											43
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											35
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											68
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											60
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											52
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											44
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+									</tr>
+									<tr>
+										<td style="font-weight: bold;">
+											77
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											69
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											61
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											53
+										</td>
+										<td style="font-weight: bold;">
+											&nbsp;
+										</td>
+										<td style="font-weight: bold;">
+											45
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<!-- can't find this in the English version, doesn't make snse here
+                            <p>
+                                Sumando las columnas en sentido vertical u horizontal d Tetragrama del número nueve:
+                            </p>
+                            -->
+							<p>
+								N.B. &ndash; El estudiante podrá llenar debidamente las casillas vacías.
+							</p>
+							<p>
+								La construcción de tetragramas de números pares resulta más complicada: pero los siguientes ejemplos darán a entender los principios en que se funda.
+							</p>
+							<p>
+								Del número 6:
+							</p>
+							<div class="center">
+								VI.
+							</div>
+							<table id="table7">
+								<tbody>
+									<tr>
+										<td>
+											<span style="font-weight: bold;">6</span>
+										</td>
+										<td>
+											(32)
+										</td>
+										<td>
+											(3)
+										</td>
+										<td>
+											(43)
+										</td>
+										<td>
+											(35)
+										</td>
+										<td>
+											<span style="font-weight: bold;">1</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(7)
+										</td>
+										<td>
+											<span style="font-weight: bold;">11</span>
+										</td>
+										<td>
+											(27)
+										</td>
+										<td>
+											(28)
+										</td>
+										<td>
+											<span style="font-weight: bold;">8</span>
+										</td>
+										<td>
+											(30)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(24)
+										</td>
+										<td>
+											(14)
+										</td>
+										<td>
+											<span style="font-weight: bold;">16</span>
+										</td>
+										<td>
+											<span style="font-weight: bold;">15</span>
+										</td>
+										<td>
+											(23)
+										</td>
+										<td>
+											(19)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(13)
+										</td>
+										<td>
+											(20)
+										</td>
+										<td>
+											<span style="font-weight: bold;">22</span>
+										</td>
+										<td>
+											<span style="font-weight: bold;">21</span>
+										</td>
+										<td>
+											(17)
+										</td>
+										<td>
+											(18)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(25)
+										</td>
+										<td>
+											<span style="font-weight: bold;">29</span>
+										</td>
+										<td>
+											(10)
+										</td>
+										<td>
+											(9)
+										</td>
+										<td>
+											<span style="font-weight: bold;">26</span>
+										</td>
+										<td>
+											(12)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span style="font-weight: bold;">36</span>
+										</td>
+										<td>
+											(5)
+										</td>
+										<td>
+											(33)
+										</td>
+										<td>
+											(4)
+										</td>
+										<td>
+											(2)
+										</td>
+										<td>
+											<span style="font-weight: bold;">31</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="center">
+								<em>Summa</em> = 111.
+							</div>
+							<p>
+								Del número 8:
+							</p>
+							<div class="center">
+								VIII.
+							</div>
+							<table id="table8">
+								<tbody>
+									<tr>
+										<td>
+											<span style="font-weight: bold;">8</span>
+										</td>
+										<td>
+											(58)
+										</td>
+										<td>
+											(62)
+										</td>
+										<td>
+											(4)
+										</td>
+										<td>
+											(5)
+										</td>
+										<td>
+											(59)
+										</td>
+										<td>
+											(63)
+										</td>
+										<td>
+											<span style="font-weight: bold;">1</span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(9)
+										</td>
+										<td>
+											<span style="font-weight: bold;">15</span>
+										</td>
+										<td>
+											(51)
+										</td>
+										<td>
+											(53)
+										</td>
+										<td>
+											(52)
+										</td>
+										<td>
+											(54)
+										</td>
+										<td>
+											<span style="font-weight: bold;">10</span>
+										</td>
+										<td>
+											(16)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(48)
+										</td>
+										<td>
+											(18)
+										</td>
+										<td>
+											<span style="font-weight: bold;">22</span>
+										</td>
+										<td>
+											(44)
+										</td>
+										<td>
+											(45)
+										</td>
+										<td>
+											<span style="font-weight: bold;">19</span>
+										</td>
+										<td>
+											(23)
+										</td>
+										<td>
+											(41)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(25)
+										</td>
+										<td>
+											(39)
+										</td>
+										<td>
+											(35)
+										</td>
+										<td>
+											<span style="font-weight: bold;">29</span>
+										</td>
+										<td>
+											<span style="font-weight: bold;">28</span>
+										</td>
+										<td>
+											(38)
+										</td>
+										<td>
+											(34)
+										</td>
+										<td>
+											(32)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(33)
+										</td>
+										<td>
+											(31)
+										</td>
+										<td>
+											(27)
+										</td>
+										<td>
+											<span style="font-weight: bold;">37</span>
+										</td>
+										<td>
+											<span style="font-weight: bold;">36</span>
+										</td>
+										<td>
+											(30)
+										</td>
+										<td>
+											(26)
+										</td>
+										<td>
+											(40)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(24)
+										</td>
+										<td>
+											(42)
+										</td>
+										<td>
+											<span style="font-weight: bold;">46</span>
+										</td>
+										<td>
+											(20)
+										</td>
+										<td>
+											(21)
+										</td>
+										<td>
+											<span style="font-weight: bold;">43</span>
+										</td>
+										<td>
+											(47)
+										</td>
+										<td>
+											(17)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											(49)
+										</td>
+										<td>
+											<span style="font-weight: bold;">55</span>
+										</td>
+										<td>
+											(11)
+										</td>
+										<td>
+											(13)
+										</td>
+										<td>
+											(12)
+										</td>
+										<td>
+											(14)
+										</td>
+										<td>
+											<span style="font-weight: bold;">50</span>
+										</td>
+										<td>
+											(56)
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span style="font-weight: bold;">64</span>
+										</td>
+										<td>
+											(2)
+										</td>
+										<td>
+											(6)
+										</td>
+										<td>
+											(60)
+										</td>
+										<td>
+											(61)
+										</td>
+										<td>
+											(3)
+										</td>
+										<td>
+											(7)
+										</td>
+										<td>
+											<span style="font-weight: bold;">57</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="center">
+								<em>Summa</em> = 260.
+							</div>
+							<p>
+								Cada persona tiene un cierto número que expresa su carácter, y si conocemos ese número, podemos, mediante el uso de los cuadrados mágicos, calcular ciertos cambios periódicos en sus estados mentales y emocionales, que lo inducen a hacer ciertos cambios en su exterior. condiciones, y de esta manera calcular aproximadamente el tiempo en que algunos cambios importantes pueden tener lugar en su carrera.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="the-number-seven">&nbsp;</a>
+							<h4>
+								El número siete
+							</h4>
+							<p>
+								La periodicidad es una manifestación de la ley universal, y su estudio puede llevarnos a descubrimientos importantes. Hace tiempo que se conoció su acción en las vibraciones luminosas y acústicas, y posteriormente se ha reconocido en la química por experimentos comprobatorios de que los llamados elementos simples son variadas vibraciones de un elemento primordial que se manifiesta en siete modalidades de acción, cada una de las cuales puede subdividirse en otras siete. La diferencia entre las llamadas substancias simples no es por lo tanto de substancia o materia, sino sólo de función de materia, según su vibración atómica.
+							</p>
+							<p>
+								La periodicidad se advierte asimismo en el Macrocosmos. El flujo de la civilización crece y decrece con arreglo a ciertas leyes, por lo que a épocas de ignorancia espiritual suceden otras de espiritual iluminación. Al yuga Kali seguirá el yuga Satyo edad de sabiduría con tanta seguridad como a la noche sigue el día.<sup class="asterisk">*</sup>
+							</p>
+							<hr />
+							<div class="reduced-line-height note">
+								<p>
+									* La periodicidad macrocósmica se establece como sigue:
+								</p>
+								<p>
+									<em>Satya Yuga</em> = 4.800 años divinos.
+								</p>
+								<p>
+									<em>Treta Yuga</em> = 3.600 años divinos.
+								</p>
+								<p>
+									<em>Dwapara Yuga</em> = 2.400 años divinos.
+								</p>
+								<p>
+									<em>Kali Yuga</em> = 1.200 años divinos.
+								</p>
+								<p>
+									El año divino equivale a 360 años ordinarios.
+								</p>
+								<p>
+									Véase: Blavatsky, <em>Glosario Teosófico</em>
+								</p>
+							</div>
+							<hr />
+							<p>
+								El número 7 representa la Escala de Naturaleza, pues está representado en toda ella, desde el radiante sol, cuya luz blanca se quiebra a través de una gota de rocío en los siete colores del iris, hasta el copo de nieve que cristaliza en estrellas de seis puntas alrededor del centro invisible. La ley septenaria opera en el desarrollo y crecimiento de los organismos vegetales y animales, en la constitución del universo y en la constitución del hombre.
+							</p>
+							<p>
+								Siete es la regla a que se ajusta la totalidad de la existencia, pero Cinco es el número de la Armonía. Si la quinta nota de la escala musical consuena con la primera y la tercera, el resultado será un acorde perfecto. Hay otros acordes armónicos, pero el más perfecto está formado por la armonía de la primera, tercera y quinta notas. Dos sonidos pueden ser armoniosos, pero el acorde perfecto requiere la tercera nota.
+							</p>
+							<p>
+								La misma ley rige la constitución del hombre. Si su cuerpo (el primer principio) está de acuerdo con sus instintos (tercero), puede experimentar sensaciones agradables; pero la completa armonía y felicidad sólo puede lograrla cuando el quinto principio (sabiduría) concuerda plenamente con los primero y tercero. Se pueden tomar otras analogías entre la escala musical y la escala de los principios humanos, para ver que ambas tienen sus respectivos acordes en gradación ascendente y descendente. La vida de cada hombre es una sinfonía, en la que prevalecen tonos armónicos o disonantes.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="love">&nbsp;</a>
+							<h4>
+								Amor
+							</h4>
+							<p>
+								El amor es la fuerza productora de armonía. El amor produce unión y armonía; el odio, separación y discordancia. El amor es la potencia del mutuo reconocimiento; el reconocimiento es una manifestación de la conciencia; la conciencia es una manifestación de la vida. Vida, Amor, Conciencia y Armonía son esencialmente unas. Amor es el poder por el cual un ser existente en una forma se reconoce en la forma de otro ser. ¿Por qué unas notas que vibran a la vez producen armonía, si no porque sus elementos tienen una similitud de que es consciente nuestra mente? El mutuo reconocimiento de los amigos causa gozo y gozo significa armonía, felicidad y contento.
+							</p>
+							<p>
+								Si dos o más notas iguales suenan al mismo tiempo, no producirán armonía ni discordancia; sólo aumentarán su intensidad. Son ya unas en forma y espíritu; pero si suenan otras notas que cada una contenga un elemento de las otras, cada cual reconocerá su duplicado en el espejo de las otras, y este reconocimiento es gozo. Si escuchamos una hermosa música, nos parecerá que el aire esta lleno de vida. Si el principio de la armonía existe en nosotros, lo reconoceremos en la música y se avivará en nuestra alma. Un ser discordante puede escuchar la música más sublime sin sentir goce alguno por falta de armonía en su alma.
+							</p>
+							<p>
+								Si un principio llega a ser consciente de su propia existencia en otra forma y en ella reconoce su hermosura con toda su pureza, sin adulteración ni mezcla, el resultado será la armonía perfecta. Si dos o más cosas contienen el mismo elemento, se adaptarán recíprocamente y procurarán unirse, porque siendo de igual constitución vibran como si fuesen uno.
+							</p>
+							<p>
+								Esta tendencia a la unidad es la atracción que se manifiesta en todos los planos de existencia. Los planetas están atraídos por el sol y también se atraen entre sí, porque todos contienen iguales elementos que procuran reunirse, y la fuerza de la gravitación no es más que la fuerza del amor. El hombre está atraído por la mujer y la mujer por el hombre, porque si los dos descubren uno en el otro los elementos de su más elevado ideal, se amarán y serán dichosos. Sólo pueden quererse verdaderamente el hombre y la mujer, cuando a los dos atrae consciente o inconscientemente el mismo ideal. Este ideal puede ser elevado o vulgar; pero cuanto más elevado sea tanto más durará y mayor será su mutua felicidad.
+							</p>
+							<p>
+								El hombre fue originariamente una unidad, un ser etéreo en quien se identificaban el pensamiento y la voluntad; pero extraviado por los halagos de la existencia sensual, empezó a soñar con olvido de su divina naturaleza, hasta convertirse en gusano de la tierra. Al abrir los ojos vio ante sí a la mujer. La originaria unidad se había dividido en dos, lo cual significa que la voluntad se había separado de la razón, discordantes una de otra, y ambas en inarmonía con la ley.
+							</p>
+							<p>
+								El hombre representa la imaginación; la mujer la voluntad. Si se hubiesen separado de la ley, como se separaron uno de otro, la mujer no tendría entendimiento ni el hombre voluntad; pero afortunadamente, algo quedó en ellos de la prístina naturaleza constitutiva del hombre originario. Todavía son ambos, hasta cierto punto, encarnaciones de la ley, y para armonizarse de nuevo con la ley se han de unir la voluntad y el entendimiento en la sabiduría, la cabeza ha de unirse con el corazón y el verdadero hombre y la verdadera mujer han de constituir una sola entidad. Este es el celestial matrimonio del alma con el espíritu, de la belleza con la fuerza, de que los matrimonios externos no son más que símbolos y generalmente caricaturas.
+							</p>
+							<p>
+								La humanidad sólo es una, aunque ofrezca millones de variadas máscaras. Esta máscara es la personalidad de cada hombre, el instrumento por el cual actúa su humanidad llena de imperfecciones. Pero quien ha dado conciencia a su humanidad, ve en todo hombre no solamente un hermano, sino su propio Yo. El que daña a otro se daña a sí mismo, porque cada hombre es una fuerza actuante en la humanidad, y el bien o e1 mal que practica recae sobre él, porque todo cuanto ocurre en la humanidad ocurre en su propia naturaleza, ya que su verdadera naturaleza es la de la humanidad a cuyo cuerpo pertenece.
+							</p>
+							<p>
+								Amor es auto-reconocimiento. Nadie puede amar una cosa ni reconocerse en ella, a menos que esté relacionado con ella. No podrá amar a la humanidad quien no tenga vivo en sí el principio de humanidad. No seremos capaces de amar a Dios si continuamos siendo el Fulano o Mengano de la vida mundana, pues sólo Dios puede amar a Dios, y así para amar a Dios debemos progresar hasta llegar a ser verdaderamente divinos. Quien se jacta de amar a Dios sin tener espiritual conocimiento de El es hipócrita o mentecato.
+							</p>
+							<p>
+								Amor es el conocimiento de la interna divinidad. Es un principio espiritual existente y suficiente por sí mismo, que para existir le basta su propio ser, aunque para manifestarse necesita un objeto de cuya calidad depende la calidad de su manifestación. Quien se ama a sí mismo no ama. El amor actúa elevadamente en lo alto, bajamente en lo abyecto. Cuanto más universal sea el objeto, mayor será la expansión que el amor dé a la mente; mas para que la mente se dilate de este modo ha de ser robusta, porque una mente débil no tiene poder alguno.
+							</p>
+							<p>
+								El amor vivo ha de ser puro, inteligente y sin miramientos egoístas. Si amamos algo porque nos es útil, en verdad no lo amamos, sino a nosotros mismos. El amor puro sólo atiende al bien del objeto amado, no calcula el provecho ni teme los perjuicios. La inteligencia calcula, pero el amor es ley de sí mismo.
+							</p>
+							<p>
+								El amor impuro es débil y no penetra en su objeto. Acaso rozará el alma de otra persona, pero no llegará al centro. El amor puro sí llega y es irresistible. El más eficaz filtro de amor que uno puede dar a otro es amarle inegoístamente.
+							</p>
+							<p>
+								Si queréis progresar en el camino de perfección, aprended a amar. Aprended a amar lo superior y os atraerá. Amad en el hombre su humanidad, no su persona. Si murmuráis de otro, recaerá en vosotros la maledicencia, porque quien claramente advierte las faltas ajenas, ha de tener en sí mismo los elementos de estas faltas. La vanidad de uno vitupera la vanidad de otro; el embustero pretende que todos digan la verdad; el ladrón no tolera que le roben.
+							</p>
+							<p>
+								Cada hombre es un espejo en el que los demás pueden ver reflejada su imagen tal como es o como será, porque toda alma humana tiene los mismos elementos en varios grados de evolución, con frecuencia dependientes de condiciones exteriores que el hombre no acierta a gobernar.
+							</p>
+							<p>
+								El amor es el elemento más necesario para la continuación de la vida. No hay vida sin amor, y si el hombre cesara de amar, la vida cesaría de vivir. El amor a más alta vida pondrá al hombre en condiciones superiores; el amor a lo inferior le llevará a la vulgaridad. A menudo sucede que si el amor de una persona por un ideal no halla el objeto de su anhelo, lo convierte a un objeto inferior. Las viejas sin hijos ponen frecuentemente su amor en un gato o perro favorito, y hombres hay que compran apariencias del amor cuando no logran el amor genuino.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="vibration">&nbsp;</a>
+							<h4>
+								Vibración
+							</h4>
+							<p>
+								Siempre que una vibración inferior no esté del todo discorde con otra superior, ésta puede acelerar la acción de la inferior y atraerla a su nivel, de la propia manera que en una varilla de hierro, rodeada de un alambre eléctrico aislado, se puede inducir la electricidad. Por medio de la poderosa y duradera acción de las vibraciones superiores sobre las inferiores pueden sujetarse a la voluntad del individuo los movimientos orgánicos, aunque sean reflejos, como los latidos del corazón.
+							</p>
+							<p>
+								Dos cuerdas musicales, no enteramente destempladas, pueden vibrar armónicamente después de tañerlas juntas durante algún tiempo. Así también el que vive en una sociedad algo superior a él intelectual y moralmente, afinará más sus cualidades. Los criados imitan a los amos; los animales toman algo de las características inferiores de quien los cuida; y los amigos o los esposos, por su continuo trato, llegan a parecerse hasta cierto punto.
+							</p>
+							<p>
+								Si los respectivos grados de vibración de dos substancias son enteramente discordantes, pueden rechazarse, ocasionando una actividad o agitación anormal. Por ejemplo, el cuerpo animal puede estar expuesto, sin peligro, a un calor relativamente alto, si la temperatura se eleva gradualmente; mientras que un grado inferior puede perjudicarle si se le somete de repente a él. No sin razón se abstiene el ocultista de alcohol y de alimentos animales.
+							</p>
+							<p>
+								&quot;Lo que alimenta a un hombre envenena a otro&quot;, tanto en el orden físico como en el emotivo. Las complexiones robustas soportan alimentos fuertes; las mentes débiles se asustan de verdades que no comprenden. Nadie ha llegado a ser adepto tan solo por vivir de legumbres; pero el régimen vegetariano es preferible de mucho al carnívoro, por varias razones, pues además de ser contrario a la teosofía y opuesto también a la divina ley de justicia, quien aspire a más alta vida no debe destruir la vida animal ni tolerar que los otros la destruyan para satisfacer su apetito.
+							</p>
+							<p>
+								Quienes anhelen espiritualizarse y refinarse, no deben nutrir sus cuerpos con groserías; y los que traten de dominar sus pasiones no deben alimentarse de substancias que contengan elementos pasionales.
+							</p>
+							<p>
+								Una gran variedad de manjares ensucia la sangre y provoca un entrechoque de diversas auras de que resultan agitación, fiebre y enfermedades. Esta misma ley explica el origen de las enfermedades venéreas y cutáneas; y múltiples emociones despertadas en el plano astral en poco tiempo, pueden ocasionar la locura.
+							</p>
+							<p>
+								Se sabe que muchos casos de enfermedades crónicas graves se han curado por ayunos voluntarios u obligados. El hombre, realmente, necesita de poco alimento. La glotonería es una costumbre, no una necesidad.
+							</p>
+							<p>
+								Si se encuentran dos fuerzas de distinta índole producirán discordancia; y como cada cual tiene sus emanaciones y auras que transmite a los demás, todos recibimos las auras magnéticas de otros o del lugar en que se hallen, y como estas emanaciones pueden ser sanas o pestíferas, cada uno puede curar o envenenarse con sus emanaciones, y por lo tanto conviene seguir el consejo que Gautama dio a sus discípulos de comer y dormir solos.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="vice-and-virtue">&nbsp;</a>
+							<h4>
+								Vicio y virtud
+							</h4>
+							<p>
+								Muchos cuidan escrupulosamente de tener comida bien preparada para no ingerir alimentos perniciosos, mientras que no reparan en la índole de los pensamientos invaden su mente, sin advertir que la pureza de pensamientos y emociones es muchísimo más importante que la de los alimentos. No sólo el cuerpo sino también la mente y la voluntad del hombre pueden envenenarse. El alimento que requiere la mente llega de los planos superiores del pensamiento; el alimento del alma viene de la luz de la sabiduría divina. Únicamente lo que desciende del cielo puede ascender al cielo.
+							</p>
+							<p>
+								No hay &quot;pecado&quot; en el sentido vulgar de esta palabra ni tampoco hay castigo por él, pues nuestros yerros son nuestros maestros, nuestros vicios suelen ser la base de nuestras virtudes y nuestras pasiones los peldaños con que disponemos la escala para subir al cielo. El vicio y la virtud son manifestaciones de una energía que podemos emplear según nuestro grado de saber; pero quien no tenga poder para el mal tampoco lo tendrá para el bien.
+							</p>
+							<p>
+								Podemos gastar en altos o bajos objetos el tesoro que nos confió la naturaleza, pues cosa es de nuestra incumbencia; pero no podremos gastarlo dos veces. La vida puramente animal dará contento al que con ella se satisfaga. Quien no tenga mira más elevada que comer, beber, dormir y propagar la especie, podrá ser por ello feliz, pues nada de malo entraña, pero el que aspira a la inmortalidad no ha de malgastar su energía.
+							</p>
+							<p>
+								Sólo lo puro puede ser armónico.
+							</p>
+							<p>
+								La sencillez de propósito purifica el motivo; pero la doblez engendra impureza. Si alguien se dedica a cierto género de vida porque todos sus deseos propenden a este fin, su motivo será puro; pero si lleva segundas intenciones, su motivo será impuro y puede desbaratar su propósito.
+							</p>
+							<p>
+								Continuamente se tergiversa el sentido de la palabra &quot;ascetismo&quot;. El hombre que vive en un convento o eremíticamente en el desierto, no es &quot;asceta&quot; si no apetece la vida mundana, porque no es abnegación evitar lo que no se desea. Ascetismo equivale a disciplina, y el disgustado del mundo se disciplina mucho más si, en lugar de huir de él, vive en su ambiente, alejándose de donde puede gozar de paz.
+							</p>
+							<p>
+								El verdadero &quot;asceta&quot; es, por lo tanto, quien vive en medio de la sociedad cuyas costumbres le enojan y cuyos gustos son contrarios a los suyos, manteniendo siempre su integridad de carácter a despecho de cuantas tentaciones le rodean.
+							</p>
+							<p>
+								La fuerza sólo aumenta por medio de la resistencia. Nuestros enemigos son nuestros amigos si sabemos utilizarlos. Un ermitaño que vive en el bosque, libre de tentaciones, no adquiere fuerzas. El aislamiento sólo es conveniente para el adepto; el neófito ha de pasar por las pruebas de la vida.
+							</p>
+							<p>
+								El tigre no peca cuando devora a un hombre; tan solo obedece a la ley de su naturaleza. Quien sigue los dictados de su naturaleza no delinque; pero lo que es virtud en el animal puede ser vicio en el hombre, porque tiene dos naturalezas: animal y espiritual. Si conoce su naturaleza superior la obedecerá y para conocerla ha de pecar y sufrir las consecuencias. El verdadero pecado es la obstinada repugnancia de la manifestación de la verdad divina.
+							</p>
+							<p>
+								Dice el santo Eckhart:
+							</p>
+							<div class="right-image-div">
+								<img src="images/meister-eckhart.jpg" alt="Meister Eckhart" title="Meister Eckhart" />
+								<p class="note">
+									Meister Eckhart<br />
+									<span class="date">(c. 1260-1328)</span>
+								</p>
+							</div>
+							<p class="blockquote">
+								&quot;Dios hizo grandes pecadores de quienes habían de cumplir grandes obras, de modo que pudieron alcanzar superior sabiduría por medio de su amor. Si Dios creyera necesario que yo hubiese de pecar y sufrir con objeto de adquirir experiencia, no rehuiría yo pecar ni me pesaría de haber pecado, porque Su voluntad se ha de cumplir así en la tierra como en el cielo. Un hombre verdaderamente honrado tampoco hubiera querido eludir el pecado porque sin pecar no lo venciera. No hay victoria sin batalla ni verdadero conocimiento del bien sin experiencia del mal.&quot;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="suffering">&nbsp;</a>
+							<h4>
+								Sufrimiento
+							</h4>
+							<p>
+								El sufrimiento es absolutamente necesario para el hombre mientras no alcance la perfección; tan necesario para su naturaleza material como para la espiritual es convencerse de la presencia de Dios. No hay otro Redentor del género humano que el interno conocimiento adquirido por la experiencia. Si de pronto se aboliese artificiosamente la pobreza en el mundo entero, perecerían los hombres en la indolencia. No puede verdaderamente disfrutarse lo que no ha costado el propio esfuerzo. Si hubiese un maestro a quien supusiéramos infalible cuyas decisiones obligaran a todo el mundo, nadie sentiría estímulos de buscar la verdad por sí mismo, pues todos aceptarían satisfechos las enseñanzas del infalible maestro. Es como si mantuviéramos a un mendigo haragán en la ociosidad robándole las ocasiones de ganar por experiencia el conocimiento que tiene derecho a reclamar.
+							</p>
+							<p>
+								El fuego purifica los metales, y el sufrimiento acrecienta los conocimientos del corazón. Los deseos inferiores han de perecer inanes para nutrir los superiores y las pasiones animales han de morir crucificadas; pero el Angel de Amor removerá la piedra del sepulcro y libertará las energías superiores, separándolas de la esfera de egoísmo y tinieblas, y entonces las resucitadas virtudes vivirán activamente en un nuevo mundo de luz y de armonía.
+							</p>
+							<p>
+								Para mejor comprender el proceso de purificación espiritual, hemos de tener en cuenta que cada uno de nosotros es un mundo creado por un sueño, lleno con el producto de la imaginación de la naturaleza y desordenado por ausencia de la luz de sabiduría divina, o sea el reconocimiento de la divina ley, la verdadera conciencia íntima que no poseemos. Somos comparables a una vacía nonada, a una desvanecente pompa de jabón sobre cuya lustrosa superficie juguetean diversos colores, pero en la que no hay verdadera vida ni substancia hasta que la verdad llega a ser una fuerza viva en nosotros.
+							</p>
+							<p>
+								En este mundo se refleja perpetuamente como en un espejo, la invisible imagen del divino Adonai cuyo poder late en nosotros. Si por virtud de la obediencia y el conocimiento ya recibido podemos subyugar los turbulentos elementos de nuestro mundo y restaurar el orden en el caos, cesando de vivir entre deseos e ilusiones, entonces aparecerá visible en nosotros la imagen del Señor de todas las cosas que está en todas partes, y su poder despertará en nuestro interior.
+							</p>
+							<p>
+								En este principio, la voluntad, el pensamiento y la ley son uno sin división. Si conocemos la ley nos conducirá a la unidad y al restablecimiento de la armonía; el divino ideal quedará realizado en nuestro interior y entonces reconoceremos que es nuestro Yo inmortal.
+							</p>
+							<p>
+								Huesos, músculos, nervios, etc., son los elementos de la constitución física del hombre; ilusiones, errores, sueños, teorías, opiniones y dogmas son los habitantes de su mente; verdad, amor, justicia, pureza, conocimiento íntimo, libertad, armonía y felicidad son los elementos y atributos de su organismo espiritual; y cuanto mayor universalidad manifiesten estos principios en él, tanto más se aproximará al estado divino.
+							</p>
+							<p>
+								AI reconocer la divinidad en la humanidad nos divinizamos. Contemplar la realización del supremo ideal en nuestra alma es adoración divina. No desear la posesión de criatura alguna, sino adorar al Creador en todas ellas, incluyendo uno mismo, es culto. Reconocer y gozar las armonías del universo manifestado en la naturaleza es divina alabanza. Restaurar en nuestra alma la unidad de voluntad, pensamiento y ley es verdadera meditación. Alzarnos sobre la ilusión del yo y sacrificarse al Dios de todas las cosas es verdadera oración. Reconocer la verdad en nuestro propio corazón es disipar las tinieblas del error. Anonadarse uno mismo es entrar en la conciencia superior que constituye el divino estado del hombre.
+							</p>
+							<p>
+								No hay en la historia ni un solo ejemplo contrario a la eficacia de la verdadera oración. Si alguien no recibió lo pedido, prueba de que no supo orar. La verdadera oración no consiste en palabras, sino en acciones, y los dioses ayudan a quien se ayuda a sí mismo; pero el que espera que los dioses cumplan lo que él debe cumplir, no sabe como orar y se desalienta. La oración significa elevar el pensamiento y la aspiración hacia el supremo ideal, y si así no lo hacemos, no oramos. Esperar a que nuestro supremo ideal descienda a nosotros, es un absurdo imposible.
+							</p>
+							<p>
+								Para alcanzar lo supremo, el espíritu ha de ser dueño y las pasiones siervas. Un lisiado desvalido es esclavo de su criado; el que pone en manos de sirvientes ignorantes las tareas que él mismo puede llevar a cabo, ha de sufrir sus caprichos y torpezas, y aunque cambie de criados, no mudará de situación. Quien tenga deseos y gustos vulgares será esclavo de ellos, y tiene que esforzarse en satisfacer sus exigencias; pero libre es quien no tiene innobles deseos a que servir. Ha triunfado del mundo que él mismo creó y que le pertenece, y por lo tanto cesa de luchar con los elementos astrales. Para él ya no hay discordia, y descansando con su corazón en el centro, es el sol que ilumina su mundo y goza de las armonías que creó en su divina naturaleza.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">volver arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="capitulo-04-la-vida.htm">&lt; 4, La Vida</a></li>
+									<li class="align-right"><a href="capitulo-06-ilusiones.htm">6, Ilusiones &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

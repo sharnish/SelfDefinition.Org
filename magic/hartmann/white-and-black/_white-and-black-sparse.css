@@ -1,0 +1,79 @@
+/* file:  /magic/hartmann/white-and-black/_white-and-black-sparse.css 
+
+Update Sep 7, 2019 for top menu reformat and ix top menu transpagency 
+
+Update Jan 6, 2020 for progress bar, totop link and button. Update May 19, 2022 
+
+ */
+
+@media only print {
+	#article:after {
+		content: "Update May 20, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffff0;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #ffbde0;
+}
+
+
+/* test these holdovers */
+
+header h3 {
+	width: 80%;
+}
+
+/* every chapter at top */
+header.chapter-header {
+	margin-top: 35px;
+}
+
+header.chapter-header p {
+	width: 80%;
+}
+
+/* 
+	Important, table with colored squares, CSS on Chapter 3, "Form"
+*/
+
+
+/* KEEP THIS May 19, 2022
+    for small image at top of chapters 1 thru 11
+   overrides default for images selfdefinition.org about line 400 
+   defaults art 99% and 600px */
+@media only screen and (max-width: 500px) {
+	img.chapter-image {
+		width: auto;
+		max-width: 100px;
+	}
+
+	header h3,
+	header p {
+		width: 90%;
+	}
+}
+
+
+
+
+
+/* end */

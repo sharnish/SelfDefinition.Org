@@ -1,0 +1,933 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>III. Form &ndash; Magic White and Black</title>
+	<meta name="description" content="According to Plato the primordial essence is an emanation 
+    of the Demiurgic Mind, which contains from eternity the idea of the natural world within itself">
+	<meta name="author" content="Franz Hartmann, MD">
+	<meta property="og:title" content="III. Form &ndash; Magic White and Black">
+	<meta property="og:description" content="According to Plato the primordial essence is an emanation 
+    of the Demiurgic Mind, which contains from eternity the idea of the natural world within itself">
+	<meta property="og:image" content="https://selfdefinition.org/magic/hartmann/white-and-black/images/frontispiece-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_white-and-black-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="chapter-02-real-and-unreal.htm">
+	<link rel="next" href="chapter-04-life.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 220px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		/* this page only */
+		ol#seven-principles-list {
+			width: 90%;
+		}
+
+		ol#seven-principles-list li {
+			padding-left: 5px;
+		}
+
+		@media only screen and (max-width:500px) {
+			ol#seven-principles-list {
+				width: 98%;
+			}
+		}
+
+		/* this page only */
+		table {
+			width: 100%;
+		}
+
+		td,
+		th {
+			vertical-align: top;
+			text-align: center;
+		}
+
+		th {
+			border-bottom: 1px solid black;
+		}
+
+		.active {
+			background: #d3ffd3;
+		}
+
+		html.dark .active {
+			background: #252;
+		}
+
+		.lesser {
+			background: #ccccff;
+		}
+
+		html.dark .lesser {
+			background: #225;
+		}
+
+		.latent {
+			background: #ffffaa;
+		}
+
+		html.dark .latent {
+			background: #4a4a4a;
+		}
+
+		tr.has-top td {
+			border-top: 1px solid black;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_white-and-black-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_white-and-black-title-include.htm"); ?>
+									<h3>
+										Chapter III - Form
+									</h3>
+									<p class="tiny this-page">
+										Esta pagina en español: <a href="../blanca-y-negra/capitulo-03-forma.htm">..capitulo-03-forma.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="chapter-02-real-and-unreal.htm">&lt; Ch. 2, The Real and the Unreal</a></li>
+									<li class="align-right"><a href="chapter-04-life.htm">Ch. 4, Life &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header class="chapter-header">
+								<p>
+									<img class="chapter-image" src="images/chapter-03.jpg" alt="Triangle, isosceles" />
+								</p>
+								<p>
+									<em>"The Universe is a thought of God."</em> <span class="nowrap">&ndash; Paracelsus</span>
+								</p>
+							</header>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#primordial-essence">Primordial Essence</a></li>
+									<li><a href="#seven-principles">Seven Principles</a></li>
+									<li><a href="#divine-state">Divine State of Being</a></li>
+									<li><a href="#bodily-spheres">Bodily Spheres</a></li>
+									<li><a href="#ethereal-forms">Ethereal Forms</a></li>
+									<li><a href="#invisible-beings">Invisible Beings</a></li>
+									<li><a href="#realm-of-the-soul">Realm of the Soul</a></li>
+									<li><a href="#elemental-forms">Elemental Forms</a></li>
+									<li><a href="#thought-projection">Thought Projection</a></li>
+									<li><a href="#apparitions">Apparitions</a></li>
+									<li><a href="#necromancy">Necromancy</a></li>
+									<li><a href="#strength-of-character">Strength of Character</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="primordial-essence">&nbsp;</a>
+							<h4>
+								Primordial Essence
+							</h4>
+							<div class="right-image-div">
+								<img src="images/plato.jpg" alt="Plato" title="Plato" />
+								<p class="note">
+									Plato<br />
+									<span class="date">4th century BC</span>
+								</p>
+							</div>
+							<p>
+								According to Plato the primordial essence is an emanation of the <em>Demiurgic Mind,</em> which contains from eternity the idea of the natural world within itself, and which idea is thrown into objectivity by the power of the divine self-conscious will. This doctrine seems to be almost as old as the existence of reasoning man on this globe. It contains essentially the same truth which has been taught by the ancient Rishis, and has been expressed by the deepest thinkers of all ages, apparently from the first <em>planetary spirit,</em> that made his appearance on this earth, down to the modern philosophers who teach that the world is a product of ideation and will.*
+							</p>
+							<hr />
+							<p class="note">
+								* Schopenhauer: "Die Welt als Wille und Vorstellung." <span class="note">[The World as Will and Representation.]</span>
+							</p>
+							<hr />
+							<p>
+								The great Christian Mystic, <em>Jacob Boehme</em> describes the Great First Cause as a trinity of will, intelligence and action. His doctrine corresponds to that which is taught in the East, regarding the three emanations of Brahm, and of which that German shoemaker could at that time hardly have known anything, if he had not been an <em>Illuminate.</em> He says in his book on <em>"The Three Principles,"</em> [of the Divine Essence] <sup calss="maroon">[1]</sup> that by the activity of the <em>Will-Fire</em> at the <em>Centre</em> the eternal consciousness of the latter was reflected in Space as in a mirror, and from this activity <em>Light</em> and <em>Life</em> were born.
+							</p>
+							<p class="fnote">
+								[1. Written 1619, translated to English 1648 by John Sparrow. Pdf (400 pages, 1.8 meg) at <a href="http://jacobboehmeonline.com/yahoo_site_admin/assets/docs/three_principles_jbo_vers.69170922.pdf">jacobboehmeonline.com</a>&nbsp;]
+							</p>
+							<div class="left-image-div">
+								<img src="images/jacob-boehme.jpg" alt="Jacob Boehme" title="Jacob Boehme" />
+								<p>
+									Jacob Boehme
+									<br />
+									<span class="date">(1575-1624)</span>
+								</p>
+							</div>
+							<p>
+								He then describes, how by the action radiating from the incomprehensible centre, radiating into the element of Matter, and the subsequent reaction from the periphery toward the centre rotation was caused, and how in the <em>Ether,</em> the world of forms came into existence, and grew into material density. Thus through the action of the Father in the Son, the <em>"Holy Ghost"</em> became manifest, and its manifestation is the visible and invisible universe in one, with all its suns, stars, planets, their forms and inhabitants, with all the angels and demons, devas, elementals, men and animals, or in other words, with all the energies and powers and forms of the visible and invisible side of nature.
+							</p>
+							<p>
+								This trinity manifests itself on three different <em>planes</em> or <em>modes of action,</em> that have been termed <em>Matter, Soul,</em> and <em>Spirit,</em> or according to the symbolism of ancient occult science, <em>Earth, Water,</em> and <em>Fire.</em> The <em>One</em> becomes manifest in the <em>Three,</em> but the Three is a whole and does not consist of three parts, of which one comes into succession after another, it springs into existence at once. <em>Reaction</em> cannot exist without <em>Action,</em> and both are due to a co-existing <em>Potency</em> or <em>Cause.</em>
+							</p>
+							<p>
+								<em>Spirit</em> or "Fire" is immaterial, formless, and universal, manifesting its power in forms. It is the "creator," the great "carpenter" of the universe, the "stepfather of Christ," whose wife is Maja (Nature), the ever immaculate virgin. <sup calss="maroon">[2]</sup>
+							</p>
+							<p class="fnote">
+								[2. In the 8th edition, where paragraphs have been added, this is described as "the matrix" and "the Will itself". Hartmann writes: "No magical process has ever been accomplished without the magic fire; and to learn to know the true nature of that fire is the great desideratum of every occultist."]
+							</p>
+							<p>
+								<em>Soul</em> or "Water" is a semi-material element, formless in its original state. It is the organising element of corporeal forms. It penetrates and surrounds the planets as it surrounds and penetrates the bodies of men and animals and all other bodies and forms, and all material forms will soon perish after the soul-principle has ceased to be active in them.
+							</p>
+							<p>
+								<em>Matter</em> or "Earth," or (as it is called in its primordial state) <em>Aakaasa,</em> is an invisible material element pervading all space. Condensed by the organising power of the soul, it clothes the forms of the latter and renders them visible on the physical plane.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="seven-principles">&nbsp;</a>
+							<h4>
+								Seven Principles
+							</h4>
+							<p>
+								By the interaction of the three primordial elements, Spirit, Soul, and Matter, four intermediate links become manifest, and these four added to the three former represent seven principles.
+								These three, respectively seven principles, must not be supposed to exist separately; they are seven aspects of one element, in the same sense as the seven notes of one octave are seven modifications of one vibration producing sound.
+							</p>
+							<p>
+								Man is a unity; but also a trinity of expression, capable to enter four distinct states of consciousness and existence, a compound of four elements joined to the fifth <em>One</em> Element, making him a harmonious accord of five notes.
+							</p>
+							<p>
+								He may also be regarded as a manifestation of three higher and three lower powers, in which the unmanifested seventh is to become manifest. All these divisions are legitimate and not arbitrary; because they are based upon the action of natural certain laws.
+							</p>
+							<ol id="seven-principles-list">
+								<li><strong>A.</strong> The element of <em>Matter, Aakaasa,</em> represented by <em>"Earth."</em> </li>
+								<li><strong>AB.</strong> A combination of Matter and Soul, known as the <em>Astral Body,</em> a mixture of "Earth and Water." </li>
+								<li><strong>B.</strong> The <em>Soul,</em> known as the animal principle in man, represented by "Water." </li>
+								<li><strong>ABC.</strong> The <em>Essence of Life,</em> a combination of Matter, Soul, and Spirit, "Earth, Water, and Fire." </li>
+								<li><strong>AC.</strong> The <em>Mind,</em> a combination of Matter and Spirit, or "Earth and Fire" (the principle of Intellectuality). </li>
+								<li><strong>BC.</strong> The <em>Spiritual Soul,</em> a combination of Soul and pure Spirit, or "Water and Fire" (the principle of Spiritual Intelligence). </li>
+								<li><strong>C.</strong> Pure <em>Spirit</em> or "Fire."* </li>
+							</ol>
+							<hr />
+							<p class="note">
+								* The Sanscrit terms for the seven principles are: 1, Pracriti; 2, Lingasarira; 3, Kamarupa; 4, Jiva; 5, Manas; 6, Buddhi; 7, Atma. &ndash; See "Five Years of Theosophy," p. 153. <span class="maroon">[ <a href="http://www.phx-ult-lodge.org/five-years.htm">www.phx-ult-lodge.org/<wbr />five-years.htm</a>&nbsp;]</span>
+							</p>
+							<hr />
+							<p>
+								The divisions adopted by Paracelsus and in "Esoteric Buddhism"&nbsp;<sup calss="maroon">[3]</sup> are nearly identical with the above: 1. The physical body. 2. Vitality (Mumia). 3. Astral Body (Sidereal body). 4. Animal Soul. 5. Intellectual Soul. 6. Spiritual Soul. (The man of the new olympus). 7. Spirit.
+							</p>
+							<p class="fnote">
+								[3. By A.P. Sinnett. 223 page pdf, 3.8 megs, <a href="https://blavatskyarchives.com/theosophypdfs/sinnett_esoteric_buddhism_first_edition_1883.pdf">download link</a> at blavatskyarchives.com&nbsp;]
+							</p>
+							<p>
+								It is said that this division was also known to the ancient Jews, and that the Hebrew Alphabet, consisting of 22 letters, was made with reference to it; because the <em>three</em> in <em>seven</em> states produces <em>twelve</em> symbols, and 3 + 7 + 12 = 22.
+							</p>
+							<p class="fnote">
+								[In the 3rd edition a passage from Boehme (two paragraphs) is inserted here, but is omitted in the 8th. See page 90 of the 3rd edition.]
+							</p>
+							<p>
+								This sevenfold division of principles, representing the constitution of man as well as that of the universe as a whole, was also known to the ancient Egyptians, and described as follows &ndash;
+							</p>
+							<p>
+								I. <em>chat.</em> The material body.
+							</p>
+							<p>
+								II. <em>bas.</em> (heart) and <em>nif.</em> (breath) Physical life.
+							</p>
+							<p>
+								III. <em>Ka.</em> The astral body (Personality).
+							</p>
+							<p>
+								IV. <em>ab.</em> Will. (Kama) The centre.
+							</p>
+							<p>
+								V. <em>ba.</em> Soul (Manas).
+							</p>
+							<p>
+								VI. <em>chaib.</em> The shadow of the spirit (Buddhi).
+							</p>
+							<p>
+								VII. <em>chu.</em> The spirit (Atma).
+							</p>
+							<p>
+								The ancient Alchemists represented the same ideas by the symbols of the seven planets &ndash;
+							</p>
+							<p>
+								<img src="images/saturn.jpg" alt="saturn">
+								Saturn. The material element.
+							</p>
+							<p>
+								<img src="images/jupiter.jpg" alt="jupiter">
+								Jupiter. Power or Life.
+							</p>
+							<p>
+								<img src="images/mars.jpg" alt="mars">
+								Mars. Will, Strength.
+							</p>
+							<p>
+								<img src="images/sun.jpg" alt="sun" />
+								Sun. The centre; the source of all planets.
+							</p>
+							<p>
+								<img src="images/venus.jpg" alt="venus" />
+								Venus. Love. In its lower aspect desire.
+							</p>
+							<p>
+								<img src="images/mercury.jpg" alt="mercury" />
+								Mercury. Mind, Intelligence.
+							</p>
+							<p>
+								<img src="images/moon.jpg" alt="moon" />
+								Moon. Spirituality.
+							</p>
+							<p>
+								The qualities of these powers differ in their combination according to the preponderating influence of one over another; and this causes their aspects to be either good or evil. Thus these aspects are <em>bad</em> as follows &ndash;
+							</p>
+							<p>
+								If spirituality
+								<img src="images/moon.jpg" alt="moon" />
+								is overruled by materiality
+								<img src="images/saturn.jpg" alt="saturn" />.
+							</p>
+							<p>
+								If the mind
+								<img src="images/mercury.jpg" alt="mercury" />
+								is dominated by blind force
+								<img src="images/jupiter.jpg" alt="jupiter" />.
+							</p>
+							<p>
+								If love
+								<img src="images/venus.jpg" alt="venus" />
+								overruled by passion
+								<img src="images/mars.jpg" alt="mars" />.
+							</p>
+							<p>
+								If the contrary is the case, their aspects are <em>good</em>.
+							</p>
+							<p>
+								The sun
+								<img src="images/sun.jpg" alt="sun" />
+								occupies the centre of these planets; it is their parent, and not dominated by any of them.
+							</p>
+							<p>
+								<em>Jane Leade</em> <sup calss="maroon">[4]</sup> also adopts a sevenfold division of principles; but in a reversed order &ndash;
+							</p>
+							<ol>
+								<li><em>Spirit.</em> The word. The creator. </li>
+								<li><em>Wind.</em> The breath or the life. </li>
+								<li><em>Water.</em> Coagulated wind (soul). </li>
+								<li><em>Light.</em> Intelligence. </li>
+								<li><em>Heaven.</em> The astral world. </li>
+								<li><em>Air.</em> Physical life. </li>
+								<li><em>Earth.</em> The matrix or centre. </li>
+							</ol>
+							<p class="fnote">
+								[4. Christian mystic (1624-1704) <a href="https://en.wikipedia.org/wiki/Jane_Leade">
+									en.wikipedia.org/<wbr />wiki/<wbr />Jane_<wbr />Leade</a>&nbsp;]
+							</p>
+							<p>
+								To these seven principles correspond four planes of existence or states of consciousness; namely &ndash;
+							</p>
+							<p>
+								I. <em>The physical world.</em>
+							</p>
+							<p>
+								II. <em>The astral world.</em>
+							</p>
+							<p>
+								III. <em>The spiritual world.</em>
+							</p>
+							<p>
+								IV. <em>The divine plane of existence.</em>
+							</p>
+							<p>
+								Each of these worlds has its own state of being, and each form in either of them contains all the above-named seven principles, which are fundamentally one and inseparable; only with this difference, that according to the plane in which a form exists, some of these principles are active while others are latent.
+							</p>
+							<p>
+								Thus in a stone or a tree the higher principles are entirely latent and as if non-existent, while in one of the higher plane the higher principles are alone manifest while the lower ones have ceased to manifest any activity.
+							</p>
+							<p>
+								The following table may give an approximate illustration of this theory. The prominently <span class="active">active principles are printed in larger</span>, and the <span class="lesser">less active ones in smaller</span>, type; while those that are <span class="latent">still latent, or have become so, are enclosed in brackets.*</span>
+							</p>
+							<table>
+								<tbody>
+									<tr>
+										<th>
+											Physical Nature
+										</th>
+										<th>
+											Astral Plane
+										</th>
+										<th>
+											Devachan
+										</th>
+									</tr>
+									<tr>
+										<td class="active">
+											PHYSICAL MATTER
+										</td>
+										<td class="latent">
+											(Physical Matter)
+										</td>
+										<td class="latent">
+											(Physical Matter)
+										</td>
+									</tr>
+									<tr>
+										<td class="active">
+											PHYSICAL LIFE
+										</td>
+										<td class="latent">
+											(Physical Life)
+										</td>
+										<td class="latent">
+											(Physical Life)
+										</td>
+									</tr>
+									<tr class="has-top">
+										<td class="lesser">
+											Astral Life
+										</td>
+										<td class="active">
+											ASTRAL LIFE
+										</td>
+										<td class="latent">
+											(Astral Life)
+										</td>
+									</tr>
+									<tr>
+										<td class="lesser">
+											Kama Life
+										</td>
+										<td class="active">
+											KAMA LIFE
+										</td>
+										<td class="latent">
+											(Kama Life)
+										</td>
+									</tr>
+									<tr class="has-top">
+										<td class="lesser">
+											Lower Manas
+										</td>
+										<td class="lesser">
+											Lower Manas
+										</td>
+										<td class="latent">
+											(Lower Manas)
+										</td>
+									</tr>
+									<tr>
+										<td class="latent">
+											(Higher Manas)
+										</td>
+										<td class="latent">
+											(Higher Manas)
+										</td>
+										<td class="active">
+											HIGHER MANAS
+										</td>
+									</tr>
+									<tr class="has-top">
+										<td class="latent">
+											(Buddhi)
+										</td>
+										<td class="latent">
+											(Buddhi)
+										</td>
+										<td class="active">
+											BUDDHI
+										</td>
+									</tr>
+									<tr>
+										<td class="latent">
+											(Atma)
+										</td>
+										<td class="latent">
+											(Atma)
+										</td>
+										<td class="lesser">
+											Atma
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="note80">* The original has 5 or 6 gradations. Table is from an unknown edition number.
+								<!--(Does not appear in the 3rd edition. Nor in the 8th American edition)--> Link to page with the original typeface at <a href="https://books.google.com.mx/books?id=2_M1E-h_ZR0C&pg=PA89#v=onepage&q&f=false">Google Books</a>.
+							</p>
+
+							<img src="images/chart-chapter-3-active-to-latent.jpg" alt="chart active and latent energies" title="chart active and latent energies" />
+
+							<p>
+								The proportion of activities of course differ in individual cases. There are many variations.
+							</p>
+							<p>
+								Upon this earth all the seven principles may become manifested in man; he may live alternatively or successively, in either one of these four states of consciousness; his spirit belongs to God, his mind to heaven, his desires to the soul of the world, and his body to earth. After death the lower principles become inactive and he moves upwards on the scale of being in proportion as he has become attuned to it during his life.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="divine-state">&nbsp;</a>
+							<h4>
+								Divine State of Being
+							</h4>
+							<p>
+								What are the conditions of the <em>divine</em> state of being, we do not know nor care to speculate about it. Our object ought to be to attain it rather than to worry our brains in seeking to gratify our scientific curiosity in regard to it. It might be supposed that in this plane only the <em>Buddhi, Atma,</em> and the highest essence of the <em>Manas</em> is active; but Jacob Boehme tells us, that "all the <em>Seven Spirits of God</em> are born one in another; one gives birth to the other and there is neither first nor last.
+							</p>
+							<p>
+								They are all seven equally eternal";* and furthermore he describes that the third principle reappears in the seventh; and that therein consists the "resurrection of the flesh,"** which causes a <em>divine</em> being to be &ndash; not an unsubstantial spirit &ndash; but possessing the "Body of God." "In the seventh form all the other forms of nature manifest their activity"; the element of earth therefore manifests itself again on a higher octave, and this will give us a key to the understanding of the meaning of the words of St Paul, when he speaks of a body "that has been sowed in corruption and is raised in glory"; but which is surely not the astral form of a ghost.***
+							</p>
+							<hr />
+							<p class="note">
+								* "The life and doctrines of Jacob Boehme," p. 73.
+							</p>
+							<p class="note">
+								** Ibid. p. 84.
+							</p>
+							<p class="note">
+								*** 1 Cor. 15:42-44.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="bodily-spheres">&nbsp;</a>
+							<h4>
+								Bodily Spheres
+							</h4>
+							<p>
+								All forms are the expression of either one or more of these elementary principles, and exist as long as their respective powers are active in them. They are not necessarily visible, because their visibility depends on their power to reflect light. Invisible gases may be solidified by pressure and cold, and rendered visible and tangible, and the most solid substances may be made invisible and intangible by the application of heat. The products of cosmic thought are not all visible to the physical eye, we see only those which are on our plane of existence.
+							</p>
+							<p>
+								All bodies have their invisible spheres. Their visible spheres are limited by the periphery of their visible forms; their invisible spheres extend farther into space. Their spheres cannot be always detected by physical instruments, but they nevertheless exist, and under certain conditions their existence can be proved to the senses. The sphere of an odoriferous body can be perceived by the organ of smell, the sphere of a magnet by the approach of iron, the sphere of a man or an animal by that most delicate of all instruments, the sensitive soul.
+							</p>
+							<p>
+								These spheres are the magnetic, caloric, odic, luminous auras and other emanations belonging to every object in space. Such an emanation may sometimes be seen as the <em>Aurora Borealis</em> in the polar regions of our planet, or as the photosphere of the sun during an eclipse. The "glory" around the head of a saint is no poetical fiction, no more than the sphere of life radiating from a precious stone.
+							</p>
+							<p>
+								As each sun has its system of planets revolving around it, so each body is surrounded by smaller centres of energy evolving from the common centre, and partaking of the attributes of that centre. Copper, Carbon, and Arsenic, for instance, send out auras of red; Lead and Sulphur emit blue colours; Gold, Silver, and Antimony, green; and Iron emits all the colours of the rainbow.
+							</p>
+							<p>
+								Plants, animals, and men emit similar colours according to their characteristics; persons of a high and spiritual character have beautiful auras of white and blue, gold and green, in various tints; while low natures emit principally dark red emanations, which in brutal and vulgar or villainous persons darken almost to black, and the collective auras of bodies of men or plants or animals, of cities and countries, correspond to their predominant characteristics, so that a person whose sense of perception is sufficiently developed may see the state of the intellectual and moral development of a place or a country by observing the sphere of its emanations.
+							</p>
+							<p>
+								These spheres expand from the centre, and their periphery grows in proportion to the intensity of the energy acting within the centre. We know the sphere of a rose by the odour that proceeds from the latter if we have the power to smell, we know the character of the mind of a man if we enter the sphere of his thoughts.
+							</p>
+							<p>
+								The quality of psychic emanations depends on the state of activity of the centre from which they originate. They are symbols of the states of the soul of each form, they indicate the state of the emotions. Each emotion corresponds to a certain colour. Love corresponds to blue, Desire to red, Benevolence to green, and these colours may induce corresponding emotions in other souls. Blue has a soothing effect, and may tranquillise a maniac or subdue a fever; Red excites to passion, a steer will become furious at the sight of a red cloth, and an unreasoning mob become infuriated at the sight of blood. This chemistry of the soul is not any more wonderful than the facts known in physical chemistry, and these processes take place according to the same law which causes Chloride of Silver to turn from white into black if exposed to light.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ethereal-forms">&nbsp;</a>
+							<h4>
+								Ethereal Forms
+							</h4>
+							<p>
+								The thoughts of the Universal Mind expressed in matter on the <em>physical plane</em> comprise all the forms of the mineral, vegetable, and animal kingdoms on Earth, described by physical science. Each material form contains within itself its ethereal counterpart, which will, under certain conditions, separate itself from the more material part, or be extracted therefrom by the hands of an Adept. These astral parts may be reclothed with condensed Aakaasa and be rendered visible, and in this way an object can be duplicated by him who knows how to manipulate these invisible forces.*
+							</p>
+							<hr />
+							<p class="note">
+								* A. P. Sinnett: "The Occult World." <sup calss="maroon">[5]</sup>
+							</p>
+							<p class="fnote">
+								[5. Pdf (210 pages, 3.2 megs) at <a href="https://blavatskyarchives.com/theosophypdfs/sinnett_the_occult_world_2nd_edition_1882.pdf">blavatskyarchives.com/<wbr />theosophypdfs/</a>&nbsp;]
+							</p>
+							<hr />
+							<p>
+								Such astral forms exist after their material forms have decayed; the astral forms of the dead may be seen by the clairvoyant hovering over the graves, bearing the resemblance of the once living man. They may be artificially infused with life and with a borrowed consciousness, and made use of in the practices of <em>Necromancy</em> and <em>Black Magic,</em> or be attracted to "spiritual seances" to represent the spirits of the dead.
+							</p>
+							<p>
+								There are persons in whom this principle &ndash; either in consequence of constitutional peculiarities or in consequence of disease &ndash; is not very firmly united with the physical body, and may become separated from it for a short period.* Such persons are suitable <em>"mediums"</em> for so-called <em>spirit-materialisations,</em> their ethereal counterparts appear separated from their bodies and assume the visible form of some person either living or dead. It receives its new mask by the unconscious or conscious thoughts of the persons present, by the reflections thrown out from their memories and minds, or it may be made to represent other characters by influences invisible to the physical eye.
+							</p>
+							<hr />
+							<p class="note">
+								* This intimate relation of the astral form and the physical body is often illustrated at so-called exposures of "spiritual mediums." If a materialised form is soiled by ink or soot, the colouring matter will afterwards be found on the corresponding part of the medium's body, because, when the astral form re-enters that body, it will leave the soiling matter on the corresponding parts of the latter.
+							</p>
+							<hr />
+							<p>
+								As the brain is the central organ for the circulation of nerve-fluid, and as the heart is the organ for the circulation of the blood, so the spleen is the organ from which the astral elements draw their vitality, and in certain diseases, where the action of the spleen is impeded, this "double" of a. person may involuntarily separate itself from the body. It is nothing very unusual that a sick person feels "as if he were not himself," or as if another person was lying in the same bed with him, and that he himself were that other. Such cases of "Doppel-gaengers," Wraiths, Apparitions, Ghosts, &amp;c., caused by the separation of the Lingasarira from the physical form can be found in many works treating of mystic phenomena occurring in nature.**
+							</p>
+							<hr />
+							<p class="note">
+								** Adolphe D'Assier; "L'humanite posthume."
+							</p>
+							<hr />
+							<p>
+								Usually these astral forms are without consciousness and without any life of their own; but they may be made to be the seat of life and consciousness, by withdrawing life from the material form and concentrating it into the astral body. A person who has succeeded in doing this may step out of his physical form and live independent of the latter, and an Adept even entirely remain outside his physical body and continue to live in his ethereal and invisible form.*
+							</p>
+							<hr />
+							<p class="note">
+								* The stories of fakirs who have been buried alive for months and resurrected afterwards might here be used as illustration. They are too well known to need repetition in this place. Moreover, phenomena, however well attested they may be. can never stand in the place of knowledge; they furnish no explanation of the mysterious laws of nature. The occurrence of phenomena proves nothing but that they occur. Real knowledge is never attained by the observation of external phenomena, it can only be attained by understanding the law.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="invisible-beings">&nbsp;</a>
+							<h4>
+								Invisible Beings
+							</h4>
+							<p>
+								But there are also many forms whose natural home is the astral plane, of which physical science does not know, because they can be seen only by means of the astral perception, a faculty which is at present in possession of only comparatively few persons. The astral plane has, like the physical plane, its mineral, vegetable, and animal kingdom, its four elements; and as in our world the earth, the air, and the sea have their inhabitants, so in the astral world there are inhabitants, the <em>Spirits of Nature,</em> to be found in the elements of the earth, air, water, and fire. They are all the product of originally shapeless ideas, existing in the Universal Mind, condensed into organised forms by the creative power of nature; visible and objective to each other as long as they exist on the same plane.
+							</p>
+							<p>
+								Individual forms on that plane often make their presence felt to men or animals, but under ordinary circumstances they cannot be seen. They may, however, be seen by the clairvoyant, and under certain conditions, even assume visible and tangible shapes. Their bodies are of an elastic semi-material essence, ethereal enough so as not to be detected by the physical sight, and they change their forms according to certain laws.
+							</p>
+							<div class="right-image-div">
+								<img src="images/edward-bulwer-lytton.jpg" alt="Edward Bulwer-Lytton" title="Edward Bulwer-Lytton" />
+								<p class="note">
+									Edward Bulwer-Lytton<br />
+									<span class="date">(1803-1873)</span>
+								</p>
+							</div>
+							<p>
+								Bulwer Lytton says: &quot;Life is one all-pervading principle, and even the thing that seems to die and putrefy but engenders new life and changes to new forms of matter. Reasoning then by analogy &ndash; if not a leaf, if not a drop of water, but is no less than yonder star &ndash; a habitable and breathing world &ndash; common sense would suffice to teach that the circumfluent Infinite, which you call space &ndash; the boundless Impalpable which divides the earth from the moon and stars &ndash; is filled also with its correspondent and appropriate life.&quot;
+							</p>
+							<p>
+								And further on he says: &quot;In the drop of water you see animalculae vary; how vast and terrible are some of these monster-mites as compared with others. Equally so with the inhabitants of the atmosphere. Some of surpassing wisdom, some of horrible malignity; some hostile as fiends to man; others gentle as messengers between Earth and Heaven.&quot;&nbsp;*
+							</p>
+							<hr />
+							<p class="note">
+								* Bulwer Lytton: "Zanoni." <sup calss="maroon">[6a, 6b]</sup>
+							</p>
+							<p class="fnote">
+								[6a. <a href="https://en.wikipedia.org/wiki/Edward_Bulwer-Lytton">en.wikipedia.org/wiki/<wbr />Edward_Bulwer-Lytton</a>&nbsp;]</p>
+							<p class="fnote">
+								[6b. <a href="http://www.gutenberg.org/files/2664/2664-h/2664-h.htm">www.gutenberg.org/files/2664/</a>&nbsp;]
+							</p>
+							<hr />
+							<p>
+								Our ignorant and therefore sceptical age is accustomed to admire in such descriptions the fancy of the writer, never suspecting that they were intended to convey a truth; but there are many witnesses to testify that such invisible but substantial and variously shaped beings exist, and that they, by the educated will of man, can be made conscious, intelligent, visible, and even useful to man. This assertion is supported by the testimony found in the writings of Rosicrucians, Cabbalists, Alchemists, and Adepts, as well as in the ancient books of wisdom of the East and in the Bible of the Christians.
+							</p>
+							<p>
+								Such existences are, however, not necessarily personal beings. They may be impersonal forces, acquiring form, and life, and consciousness by their contact with man. The <em>Gnomes</em> and <em>Sylphes,</em> the <em>Undines</em> and <em>Salamanders,</em> do not entirely belong to the realm of fable, although they are something very different of what the ignorant believe them to be. How insignificant and little appears individual man in the infinity of the universe ! and yet there is only a comparatively insignificant part of the universe revealed to him by the senses. Could he see the worlds within worlds above, beneath, and everywhere, swarming with beings whose existence he does not suspect, while they, perhaps, know nothing of his existence, he would be overwhelmed with terror and seek for a god to protect him; and yet there are none of these beings higher or as powerful as the spiritual man who has learned to know his powers.*
+							</p>
+							<hr />
+							<p class="note">
+								* See "Theophrastus Paracelsus," chap. v. <sup calss="maroon">[7]</sup>
+							</p>
+							<p class="fnote">
+								[7. Quote not found. See Hartmann's <em>Life of Paracelsus</em> on this site: <a href="/magic/paracelsus/hartmann-life-of-paracelsus/">/magic/<wbr />paracelsus/<wbr />hartmann-life-of-paracelsus/</a>&nbsp;]
+							</p>
+							<hr />
+							<p>
+								The beings of the <em>spiritual</em> plane are such as have once been men, their constitution is beyond the comprehension of those that are not their equals, and their ethereal forms in a state of perfection we cannot conceive. Still higher beings, having outgrown the necessity of manifesting themselves in a form, enter the state of the formless. We may look upon a personal man as a single note in the great orchestra composing the world, and upon a <em>Dhyan Chohan</em>** as a full accord or a compound of notes in the symphony of the gods. There may be unharmonious compositions of notes in music, and there are evil spiritualities as there is darkness in contradistinction to light.
+							</p>
+							<hr />
+							<p class="note">
+								** Son of Wisdom (Planetary spirit).
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="realm-of-the-soul">&nbsp;</a>
+							<h4>
+								Realm of the Soul
+							</h4>
+							<p>
+								The surface realm of the Soul is the realm of the emotions. Emotions are not merely the results of physiological processes depending on causes coming from the physical plane, but they belong to a form of life on the astral plane, they come and go without any known cause. The state of the weather, or circumstances over which we have no control, cause certain emotions. A person entering a room where every one is laughing is liable to participate in the laughter without knowing the cause of the hilarity; a whole crowd may be swayed by the intense emotion of a speaker, although they may not even understand what he says; one hysterical woman may create an epidemic of hysteria among other women, and a whole congregation may become excited by the harangue of an emotional exhorter, no matter whether his language is foolish or wise.
+							</p>
+							<p>
+								A sudden accumulation of emotion or energy on the astral plane can kill a person as quickly as a sudden explosion of powder. We hear of persons who were "transfixed by terror" or "paralysed by fear." In such cases the astral consciousness having become abnormally active at the expense of the consciousness on the physical plane, the activity of life on the physical plane ceases when the affected person faints or dies.
+							</p>
+							<p>
+								All forms come into existence according to certain laws. The solar microscope shows how, in a solution of salt, a centre of matter is formed, and how to that centre its kindred forces are attracted, crystallising around it, and becoming solid and firm. Each kind of salt produces the peculiar crystals that belong to its class and no other, however often the process may be repeated. In the vegetable kingdom the seed of one plant attracts to itself those forces which it requires to produce a plant resembling its parent; the seed of an apple-tree can produce nothing else but an apple-tree, and an acorn can grow into nothing else but an oak. The principal characteristics of an animal will be those that belong to its parents, and the external appearance of a man will correspond more or less to that of the race and family in which he was born.
+							</p>
+							<p>
+								As every mathematical point in space may develop into a living and conscious and visible being, after once a certain centre of energy (a germ) has been formed, so in the invisible realm of the soul astral forms may come into existence, wherever the necessary conditions for their growth exist. In the same manner as a living germ on the physical plane attracts matter for its growth, a psychic germ on the astral plane causes to crystallise around a thought an invisible but nevertheless substantial entity. As the forms on the physical plane correspond to the characters of the germs, so the forms on the astral plane are expressions of the characteristics of the prevailing emotions on that plane. They manifest themselves either in beautiful or in horrible shapes, because every form is only the symbol or the expression of the character which it represents.
+							</p>
+							<p>
+								The animal forms are expressions of forces acting on the animal plane. Some have a consciousness of their own and realise their existence, but under ordinary circumstances they have no more intelligence than animals, and cannot act intelligently. They follow their blind attraction, as iron is attracted to a magnet, and wherever they find suitable conditions for their development, they are attracted thither. We therefore see that if an emotion is not controlled in the beginning it grows and becomes uncontrollable. Some people have died of grief and some others of joy.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="elemental-forms">&nbsp;</a>
+							<h4>
+								Elemental Forms
+							</h4>
+							<p>
+								But if these unintelligent forms are infused with the principle of intelligence proceeding from man, they become intelligent and act in accordance with the dictates of the master from which they receive their will and intelligence, and who may employ them for good or for evil. Every emotion that arises in man may combine with the astral forces of nature and create a being, which may be perceived, by persons possessing higher faculties of perception, as an active and living entity. Every sentiment which finds expression in word or action calls into existence a living entity on the astral plane. Some of these forms are very enduring, according to the intensity and duration of the thought that created them, while others are the creations of one moment and vanish in the next.
+							</p>
+							<p>
+								There are numerous cases on record in which some person or other having committed some crime is described as having been persecuted for years by some avenging demon, who would appear objectively and disappear again. Such demons are the products of the involuntary action of the imagination of their victims; but they are nevertheless real to them.* They may be called into existence by memory and remorse, and their images existing in the mind, become objective by fear, because fear is a repulsive function; it instinctively repulses the object of which a man is afraid, and by repelling the image from the centre towards the periphery of the sphere of mind, that image is rendered objective.
+							</p>
+							<hr />
+							<p class="note">
+								* A person in Paris became insane and was removed to an insane asylum in Italy, where he raged and had to be confined to a solitary cell. After a while he became suddenly well and was permitted to return to Paris. Some months afterwards a report reached him, that the cell which he had occupied in the asylum was still haunted by his "ghost," which continued raving and making a noise, and that this ghost had been seen by many persons. Curious to see his own "ghost" the man returned to Italy, went to the asylum, saw his ghost, and becoming again obsessed with it, remained insane to the end of his life.
+							</p>
+							<hr />
+							<p>
+								Instances are known in which persons have been driven to suicide, hoping thereby to escape these persecuting demons. Such demons are said to have in some cases taken even a tangible form. But whether tangible or intangible, the substance of which they are formed is merely a projection of substance of the person to whom they thus appear. They are, so to say, that person himself.*
+							</p>
+							<hr />
+							<p class="note">
+								* In the "Lives of the Saints," and in the history of witchcraft, we often find instances of the appearance of "doubles" in visible and even tangible forms. Such phenomena take place in medium-istic persons, if by contrary emotions the Will becomes divided, acting in two different directions, and projecting thereby two forms; for it is the Will of man that creates subjective forms, consciously or unconsciously, and under certain conditions they become objective and visible.
+							</p>
+							<p class="note">
+								As an illustration of this law we may cite from the <em>Acta Sanctorum</em> <span class="note">[Acts of the Saints. <a href="https://en.wikipedia.org/wiki/Acta_Sanctorum">Wikipedia</a>]</span> an episode in the life of Saint Dominic. He was once called to the bedside of a sick person, who told him that Christ had appeared to him. The saint answered that this was impossible, and that the apparition had been produced by the devil, because only holy persons could have an apparition of Christ. As he said so, a doubt as to whether the apparition seen may not have been a true one after all, entered his mind, and immediately a division of consciousness was produced, which caused the double of Dominic to appear at the other side of the patient's bed. The two Dominies were seen by the patient, and heard to dispute with each other, and while one Dominic asserted that the apparition had been the work of the devil, the other one maintained that it was the true Christ. The two Dominics were so exactly identical, that the patient did not know which of them was the true saint and which one his image, and he could not make up his mind what to believe; until at last the saint called upon God to assist him, &ndash; that is to say he concentrated his willpower again within himself; his consciousness became again a unity, and the "double" disappeared from view.
+							</p>
+							<p class="note">
+								Absurd as such stories may appear to our "enlightened age," their absurdity ceases when the occult laws of nature, and the fact of the possibilities of a <em>double consciousness</em> are understood.
+							</p>
+							<hr />
+							<p>
+								An Adept in a letter to Mr Sinnett says: "Every thought of man upon being evolved passes into another world and becomes an active entity by associating itself &ndash; coalescing, we might term it &ndash; with an Elemental &ndash; that is to say, with one of the semi-intelligent forces of the kingdoms. It survives as an active intelligence &ndash; a creature of the mind's begetting &ndash; for a longer or shorter period, proportionate with the original intensity of the cerebral action which generated it. Thus, a good thought is perpetuated as an active, beneficent power, an evil one as a maleficent demon. And so man is continually peopling his current in space with the offspring of his fancies, desires, impulses, and passions; a current which re-acts upon any sensitive or nervous organisation which comes in contact with it, in proportion to its dynamic intensity.... The Adept evolves these shapes consciously, other men throw them off unconsciously."*
+							</p>
+							<hr />
+							<p class="note">
+								* A. P. Sinnett: "The Occult World,"
+							</p>
+							<hr />
+							<p>
+								This testimony is corroborated by one coming from another source, and proving that to create subjective forms it is not necessary to give a distinct shape to our thoughts by the power of imagination, but that each state of feeling or sentiment may find expression in subjective forms, whether or not we may be conscious of their existence. A form is a state of mind, and a sentiment is a state of mind; a sentiment expressed will be represented by a corresponding form.**
+							</p>
+							<hr />
+							<p class="note">
+								** Mr Whitworth, a clairvoyant, describes how in his youth, while seeing a German professor perform on an organ, he noticed a host of appearances moving about the keyboard &ndash; veritable Lilliputian sprites, fairies, and gnomes, astonishingly minute in size, yet as perfect in form and features as any of the larger people in the room. He described them as being divided into sexes and clothed in a most fantastic manner; in form, appearance, and movement they were in perfect accord with the theme:
+							</p>
+							<p class="note blockquote">
+								"In the quick measures, how madly they danced, waving their plumed hats and fans in very ecstasy, and darting to and fro in inconceivable rapidity, with feet beating time in rain-like patter of accord ! Quick as a flash, when the music changed to the solemn cadence of a march for the dead, the airy things vanished, and in their place came black-robed gnomes, dressed like cowled monks, sour-faced Puritans, or mutes in the black garb of a funeral procession ! Strangest of all, on every tiny face was expressed the sentiment of the music, so that I could instantly understand the thought and feeling that was intended to be conveyed. In a wild burst of sounding grief came a rush of mothers, tear-eyed and with dishevelled hair, beating their breasts and wailing pious lamentations over their dead loved ones. These would be followed by plumed knights with shield and spear, and host of fiery troops, mounted or foot, red-handed in the fiery strife of bloody battle, as the clang of martial music came leaping from the keyboard, and ever, as each change brought its new set of sprites, the old ones would vanish into the air as suddenly as they had come. Whenever a discord was struck, the tiny sprite that appeared was some misshappen creature, with limbs and dress awry, usually a humpbacked dwarf, whose voice was guttural and rasping, and his every movement ungainly and disagreeable."
+							</p>
+							<p class="note">
+								He then describes how in his riper age he saw such fairy-like beings coming from the lips of persons talking, and which seemed in every action the very counterpart of the feeling conveyed in the uttered speech. If the words were inspired by good sentiments, these figures were transcendentally beautiful; bad sentiments produced horrid-looking creatures; hate was expressed by hissing snakes and dark, fiery devils; treacherous words produced figures beautiful in front and disgusting and horrid behind; while love produced forms silvery, white, and full of beauty and harmony.
+							</p>
+							<p class="note blockquote">
+								"On one never-to-be-forgotten occasion I was a pained witness to a scene of living faithlessness on one side and a double-faced, treacherous duplicity on the other. A fair young girl and her departing lover had met to exchange greetings ere he went on a distant journey. Each word of hers gave forth beautiful, radiant fairies; but while the front half of each that was turned to the girl was equally fair to look upon, and smiled with all the radiant seeming of undying affection, the rear half of each was black and devilish, with fiery snakes and red forked tongues protruding from their cruel lips, as gleams of wicked cunning danced in sneaking, side-long glances from the corners of the half-closed eyes. These dark backgrounds of the little figures were horrible to look at, ever shifting, dodging, and seeming to shut up within themselves, as they sought to keep only bright and honest toward the trusting girl, and hold the black deception out of sight. And it was noticeable that while a halo of cloudless radiance surrounded the good outside seeming, a pall of thick vapour hung like a canopy of unbroken gloom above the other."*
+							</p>
+							<p class="note">
+								* Religio-Philosophical Journal.
+							</p>
+							<hr />
+							<p>
+								All forms are manifestations of life, they have no life of their own; for life is a universal power. They are the creations of thought-power, acting upon the Aakaasa. The creations of man are kept alive by the life-power that radiates into them from the life-centre in man who is a god in that world which he creates in his mind; his creatures are like shadows, vanishing when the fountain of light from which they drink is exhausted. When the psychical action of man, that gave them life, ceases to act, or acts in another direction, they will disappear sooner or later, and in the same way the forms of men disappear, when the life coming from God is withdrawn.
+							</p>
+							<p>
+								However, as the corpse of a man does not dissolve immediately as soon as the principle of life is departed, but decays slowly or rapidly according to their molecular density and cohesion, likewise the astral forms and memories created by the thoughts and sentiments of man require time for their dissolution. They continue to exist as long as man infuses life and consciousness into them by his thought and his will, and if they have once gained a certain amount of power, they may still cling to him, although he may not desire their companionship. They depend on him for their life, and the struggle for existence forces them to remain with the source from which they draw their vitality. If they depart from that fountain they die; they are therefore forced to remain, and, like the phantom created by "Frankenstein," they persecute their creators with their unwelcome presence.
+							</p>
+							<p>
+								To rid oneself of such a presence, he who is persecuted should direct the full power of his aspirations and thoughts into another and higher direction, and thereby starve them to death. In this way the spiritual priniciple of every man becomes his special <em>Redeemer,</em> who by the transformation of character saves him from the effects of his sin, and before whose pure light the illusions created by the lower attractions will melt like the snow under the influence of the sun.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="thought-projection">&nbsp;</a>
+							<h4>
+								Thought Projection
+							</h4>
+							<p>
+								Elemental forms being the servants of their creator &ndash; in fact, his own self &ndash; may be used by him for good or for evil purposes. Love and hate creates subjective forms of beautiful or of horrid shapes, and being infused with consciousness, obtain life, and they may be sent on some errand for good or for evil. Through them the magician blends his own life and consciousness with the person he desires to affect.
+							</p>
+							<p>
+								A lock of hair, a piece of clothing, or some object that has been worn by the person he desires to affect, forms a connecting link. The same object can be attained if that person is put into possession of an article belonging to the magician, because wherever a portion of anything with which the magician was connected exists, there will a part of his own elements exist, which will form a magnetic link between him and the person whom he wishes to affect. If he projects his astral form at a distance, his personality will be present with his victim, although the latter may not be able to see it.*
+							</p>
+							<hr />
+							<p class="note">
+								* Lord Lytton, "Zanoni" and "Strange Story."
+							</p>
+							<hr />
+							<p>
+								The astral image of a person may be projected consciously or unconsciously to a distance. If he intensely thinks of a certain place, his thought will be there, and if his thought is spiritual and Consequently self-conscious he will be there himself. Wherever a man's consciousness is, there is the man himself, no matter whether his physical body is there or not.
+							</p>
+							<p>
+								The history of spiritualism and somnambulism furnishes abundant evidence that a person may be consciously and knowingly in one place, while his physical body lies dormant in another. Franciscus Xavier was thus seen in two different places at one and the same time. Likewise Apollonius of Tyana, and innumerable others mentioned in ancient and modern history.
+							</p>
+							<p>
+								The <em>Elemental</em> sent by a magician is a constituting part of the magician himself, and if the victim is vulnerable or mediumistic, the latter may be injured by the former, But the astral form of the magician may also be injured by physical force, and as the astral form re-enters the physical body, the latter will partake of the injuries inflicted upon the former.
+							</p>
+							<p>
+								The magician, who, by the power of his will, has obtained control over the semi-intelligent forces of Nature, can make use of these forces for the purposes of good or evil. The helpless medium, through whom manifestations of occult power take place, can neither cause nor control such manifestations. He cannot control the elementals, but is controlled by them. The elements of his body serve as instruments through which these astral existences act, after the Medium has surrendered his will and given up the supreme command over his soul. He sits passively and waits for what these elementals may do; he unconsciously furnishes them with his life and power to think, and his thoughts and the thoughts of those that are present become reflected in these astral forms, enabling them to manifest apparently an intelligence of their own.
+							</p>
+							<p>
+								A medium for spirit-manifestations is merely an instrument for the manifestation of invisible forces over which he has no control. The best of such mediums have been very unjustly blamed for <em>"cheating."</em> The thoughts of the person visiting a Medium, are reflected by him. It is therefore not the Medium's person that cheats purposely, but his visitors are cheating themselves through his instrumentality. A mirror that would not reflect <em>all</em> the objects that are brought before it, would be a very unnatural and deceptive thing; a <em>Medium</em> who would only reflect such thoughts as he or she chooses to reflect would be an impostor, for exercising an intelligence of his own, he would not be in that passive condition which constitutes his mediumship.
+							</p>
+							<p>
+								The Adept in Magic is not the slave of these forces, but controls them by the power of his will. He consciously infuses life and consciousness and intelligence into them, and makes them act as he pleases; they obey his command, because they are a part of himself. The spiritualists do this unconsciously; they sing at their seances, thinking that the more the conditions are harmonious the better will be the manifestations. The true reason for this is, that the more the thoughts of the sitters are in a state of abstraction, the more they are "absent-minded," the easier it will be for the Elementals to take possession of them.
+							</p>
+							<p>
+								The astral elements used by the Elementals in spiritual seances for the purpose of producing physical phenomena, are not only taken from the <em>medium,</em> but from all present, whose constitution is not strong, and who may therefore be easily vampirized for the purpose of furnishing the required elements. In seances for <em>materialisations,</em> they are also taken from the clothing of those present, and furnish material for the drapery of the "spirits," and it has been observed, that the clothing worn by people who frequently attend to such seances, wears out sooner than usual.
+							</p>
+							<p>
+								To bring fresh-spilled blood into such "spiritual seances," increases the strength of the "materialisations" very much, and a knowledge of such facts has given rise to some abominable practices of <em>black magic,</em> which are still going on in many parts of the world, although secretly and unknown to the public. This knowledge has also undoubtedly given rise to the sacrifice of animals in the performance of religious ceremonies. A certain executioner was unfortunately gifted with clairvoyance, and every time after having decapitated a person he could see the "spirits" of dead people &ndash; sometimes even his friends and relatives &ndash; pounce upon the fresh-spilled blood of the criminal, and feed on its emanation and aura. It is also a fact that, at a time when the blood-drinking mania in Europe was started by medical ignorance, some people who practised it became insane, and many became demoralised by it.*
+							</p>
+							<hr />
+							<p class="note">
+								* One of the favourite aids for the materialism of spooks is the <em>aura seminalis,</em> which increases the power of ghosts, elementals and vampires for assuming a substantial form. There are many curious practices going on at such seances, which we must forbear to describe. See <em>"The Life and Doctrines of Theophrastus Paracelsus,"</em> pp. 66 and 90.
+							</p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="apparitions">&nbsp;</a>
+							<h4>
+								Apparitions
+							</h4>
+							<p>
+								The astral remnant of man is without judgment and reason, it goes wherever his instincts attract it, or wherever any unsatisfied craving impels it to go. If you wish to be haunted by the "ghost" of a man, attract him by the power of desire. Leave some promise you made to him unfulfilled, and instinctively the astral form of the deceased will be attracted to you to seek its fulfilment, drawn to you by its own unsatisfied desire.
+							</p>
+							<p>
+								It is not his fault if you do not perceive his presence and hear his voice, it is because your astral senses are asleep and unconscious; you may feel his presence and it may cause a feeling of depression in your mind; he speaks to you, but in a language which you have not yet learned to understand. In those elementary remnants remains that which constituted the lower nature of man, and if they are temporarily infused with life, they will manifest the lower characteristics of the deceased, such as have not been sufficiently refined to join his immortal part.
+							</p>
+							<p>
+								If a music-box is set to play a certain melody and made to start, it will produce that same melody and no other, although it has no consciousness of its own. The remnant of emotional and intellectual powers in the astral remnant of man will, if this remnant is made to speak, become manifest in the same kind of language which the man during his life used to speak.
+							</p>
+							<p>
+								The fresh corpse of a person who has suddenly been killed, may be galvanised into a semblance of life by the application of a galvanic battery. Likewise the astral corpse of a person may be brought back into an artificial life by being infused with a part of the life principle of the medium. If that corpse is one of a very intellectual person, it may talk very intellectually; and if it was that of a fool, it will talk like a fool. The intellectual action resembles mechanical motion in so far, that if it is once set into action, it will continue without any special effort of the will, until impulse is exhausted.
+							</p>
+							<p>
+								We often see this in daily life. There are old and young people frequently seen, who are in the habit of telling some favourite story, which they have already told many times, and which they repeat on every occasion. It may be noticed, that when such an one begins to tell his story, it is of no use to tell him that one knows it already. He has to finish the story nevertheless.
+							</p>
+							<p>
+								An orator or a preacher does not need to think and reason about each word he utters. When the stream of ideas once flows, it flows without any effort of will. If life from a medium flows into the astral brain of a deceased person, that brain will elaborate its latent ideas in the same way it was accustomed to do during life.
+							</p>
+							<p>
+								We also reason while we dream; we draw logical conclusions during our sleep; but reason is absent, and although, while we dream, our logic seems to be reasonable, nevertheless we often see that it was foolish, when we awake and our reason returns.
+							</p>
+							<p>
+								The mental organism of man resembles a clockwork, which if it is once set into operation will continue to run until its force is exhausted; but there is no clockwork which winds itself up without extraneous assistance, and there is no mental organism able to think without a power that causes it to begin the process of intellectuation.
+							</p>
+							<p>
+								But here we must draw the attention to one of the many dangers of that amusement called the practice of spiritism.
+							</p>
+							<p>
+								In a departed soul the attraction of good and evil still continues to act, until the final separation of the higher and the lower takes place. It may follow the attraction of the higher principles and be attracted to "heaven," or again come into contact with matter through the instrumentality of mediumship, take again part in the whirling dance of life, though by vicarious organs; follow once more the seduction of the senses, and lose entirely sight of the immortal self.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="necromancy">&nbsp;</a>
+							<h4>
+								Necromancy
+							</h4>
+							<p>
+								It is therefore not merely dangerous to a person to hold intercourse with the "spirits of the departed"; but it is especially injurious to the latter, &ndash; as long as the final separation of their lower principles from the higher ones has not yet taken place. <em>Necromancy</em> is a vile art, and so has therefore always been abhorred. It may disturb the blissful dreams of the sleeping soul, which aspires to a higher state of existence. It is like disturbing the peace of a saint during his hours of meditation, or to seduce a child. It is a step towards degradation; and as every impulse has a tendency to repeat itself, the most terrible consequences may follow after what seemed to be at first merely some innocent amusement.
+							</p>
+							<p>
+								These astral remnants are used by the black magician and by the elemental forces in nature for the purpose of evil. If they are unconscious, they will only serve as the blind instruments of the latter; if they are conscious he may enter into an alliance and co-operate with them.
+							</p>
+							<p>
+								Such alliance, either consciously or unconsciously on the part of him who enters into such an <em>unspiritual</em> intercourse, may take place between an evil-disposed person and a very evil inhabitant of the spiritual plane.
+							</p>
+							<p>
+								Many people who are in actual possession of powers to work <em>black magic</em> work evil unconsciously; that is to say, they are unconscious of the effects which their will produces, and of the mode in which it acts. The spiritual force created by hate enters the organism of another, and the person from whom the evil power proceeds may be entirely ignorant of it. Such <em>black magicians</em> unconsciously furnish the elements by which their own evil spirit acts. If the will of a black magician is not strong enough to effect his evil purpose, the force will return and kill the magician. This is undoubtedly true, and the grossest illustration of it is, if a person by a fit of rage or jealousy is induced to kill himself. It is the reaction following an unfulfilled desire, which induces the rash act; the act is merely a result of his previous mental state.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="strength-of-character">&nbsp;</a>
+							<h4>
+								Strength of Character
+							</h4>
+							<p>
+								The surest protection against all the practices of black magic, whether they are caused consciously or unconsciously, is to acquire strength of character &ndash; in other words, <em>faith</em> in the divine power within one's own soul.
+							</p>
+							<p>
+								As man becomes ennobled, the lower elements in his constitution are thrown off and replaced by higher ones, and in a similar manner a transformation takes place in the opposite way if he degrades himself by his thoughts and acts. Sensual man attracts from the Aakaasa those elements that his sensuality requires, for gross pleasures can only be felt by gross matter. A man with brutal instincts growing and increasing degrades himself into a brute in character, if not in external form. But as the form is only an expression of character, even that form may come to approach an animal in resemblance.
+							</p>
+							<p>
+								The proof of this assertion is seen every day, for we meet every day in the streets brutish men, whose animal instincts are only too well expressed in their external forms. We meet with human snakes, hogs, wolves, and those upon whom alcohol has stamped his seal, and it does not need the instructions given in book on physiognomy to enable almost anybody to read the character of certain persons more or less correctly expressed in their exterior forms.
+							</p>
+							<p>
+								In the physical plane the inertia of matter is greater than in the astral plane, and consequently its changes are slow. Astral matter is more active, and changes its form more rapidly. The astral body of a man whose character resembled an animal will therefore appear to the seer as an animal in its outward expression.*
+							</p>
+							<hr />
+							<p class="note">
+								* E. Swedenborg: "Heaven and Hell."
+							</p>
+							<hr />
+							<p>
+								The astral form of an evil person may appear in an animal shape if it is so filled with brutish instincts as to become identified with the image of that animal which is the expression of such instincts. It may even enter the form of an animal and obsess it, and it sometimes happens that it enters such forms for its own protection against immediate decomposition and death.
+							</p>
+							<p>
+								It would be easy to give anecdotes illustrating instances in which such things took place.* The principal object of the reader should be to learn to know the nature of his own constitution and the law which rules in all forms. If he once understands the modes in which the law acts, it will be a matter of little importance to know in what particular cases it has manifested itself in such modes. Accounts of phenomena can never supply the place of the understanding of the law.
+							</p>
+							<hr />
+							<p class="note">
+								* For examples, see Goerres: "Christian Mysticism"; Maximilian Perty: "Mystic phenomena in Nature"; D'Assier: "Post-humus Humanity"; Catharina Crowe: "Nightside of Nature"; Hardinge Britten: "History of Spritualism"; H. P. Blavatsky: "Isis Unveiled," &amp;c., &amp;c.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="chapter-02-real-and-unreal.htm">&lt; Ch. 2, The Real and the Unreal</a></li>
+									<li class="align-right"><a href="chapter-04-life.htm">Ch. 4, Life &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

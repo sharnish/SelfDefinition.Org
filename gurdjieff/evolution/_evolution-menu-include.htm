@@ -1,0 +1,77 @@
+<!-- start of menu include file  Update Mar 12, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/gurdjieff/">Gurdjieff index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="introduction.htm">Contents<span class="conditional-hide">-Intro</span></a></li>
+			<li><a href="javascript:toTopCleanUrl();">
+					Top <span class="menu-conditional-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/gurdjieff/">Gurdjieff index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li class="normal">
+				<img class="menu-image" src="images/pd-ouspensky.jpg" alt="PD Ouspensky" />
+			</li>
+			<li>PD Ouspensky</li>
+			<li class="normal note">(1878-1947)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="introduction.htm">Contents/Introduction</a></li>
+				<li><a href="lecture-1.htm">First Lecture</a></li>
+				<li><a href="lecture-2.htm">Second Lecture</a></li>
+				<li><a href="lecture-3.htm">Third Lecture</a></li>
+				<li><a href="lecture-4.htm">Fourth Lecture</a></li>
+				<li><a href="lecture-5.htm">Fifth Lecture</a></li>
+				<li><a href="lecture-in-1937.htm">Lecture in 1937</a></li>
+			</ul>
+		</div>
+		<p class="tiny" style="margin-left:15px;">ocr by sh</p>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>PD Ouspensky at <a href="https://en.wikipedia.org/wiki/P._D._Ouspensky">Wikipedia</a></li>
+				<li>George Gurdjieff at <a href="https://en.wikipedia.org/wiki/George_Gurdjieff">Wikipedia</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also in this section</li>
+				<li class="site-first-item">Gurdjieff <a href="/gurdjieff/quotes/index-gurdjieff-quotes.htm">Quotes Index</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

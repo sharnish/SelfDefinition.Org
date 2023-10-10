@@ -1,0 +1,103 @@
+<!-- start of menu include file  Updated Oct 27, 2020. June 7, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/healing/">Healing index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm"><span class="conditional-hide-3">Table of </span>Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/healing/">Healing index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Quimby Manuscripts</li>
+			<li class="normal">
+				<img class="menu-image" src="images/phineas-parkhurst-quimby.jpg" alt="Phineas Parkhurst Quimby" />
+			</li>
+			<li>Phineas Parker Quimby <span class="normal note nowrap">(1802&ndash;1866)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top:15px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="preface.htm">Preface</a></li>
+				<li><a href="01-biographical-sketch.htm">1. Biographical Sketch</a></li>
+				<li><a href="02-history-of-the-manuscripts.htm">2. History of the Manuscripts</a></li>
+				<li><a href="03-quimbys-restoration-to-health.htm">3. Quimby's Restoration to Health</a></li>
+				<li><a href="04-the-mesmeric-period.htm">4. The Mesmeric Period</a></li>
+				<li><a href="05-the-principles-discovered.htm">5. The Principles Discovered</a></li>
+				<li><a href="06-the-intermediate-period.htm">6. The Intermediate Period</a></li>
+				<li><a href="07-early-writings.htm">7. Early Writings</a></li>
+				<li><a href="08-contemporary-testimony.htm">8. Contemporary Testimony</a></li>
+				<li><a href="09-letters-from-patients.htm">9. Letters from Patients</a></li>
+				<li><a href="10-letters-to-patients.htm">10. Letters to Patients</a></li>
+				<li><a href="11-letters-to-patients-and-inquirers.htm">11. Letters to Patients and Inquirers</a></li>
+				<li><a href="12-mrs-eddy-1862-1875.htm">12. Mrs Eddy 1862-1875</a></li>
+				<li><a href="13-questions-and-answers.htm">13. Questions and Answers</a></li>
+				<li><a href="14-christ-or-science.htm">14. Christ or Science</a></li>
+				<li><a href="15-the-world-of-the-senses.htm">15. The World of the Senses</a></li>
+				<li><a href="16-disease-and-healing.htm">16. Disease and Healing</a></li>
+				<li><a href="17-god-and-man.htm">17. God and Man</a></li>
+				<li><a href="18-religious-questions.htm">18. Religious Questions</a></li>
+				<li><a href="19-science-life-death.htm">19a. Science, Life, Death</a></li>
+				<li><a href="19b-editors-summary.htm">19b. Editor's Summary</a></li>
+				<li><a href="20-appendix-list-of-writings.htm">20. Appendix, List of Writings
+						<span style="white-space:nowrap;">(1859-1865)</span></a></li>
+				<li><a href="21-the-quimby-eddy-controversy.htm">21. The Quimby-Eddy Controversy</a></li>
+				<li style="margin-top:-10px;margin-bottom:-10px;">Addendum:</li>
+				<li><a href="biography-by-george-a-quimby.htm">Phineas Parkhurst Quimby Biography by George A. Quimby</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li>Phineas P Quimby at<br />
+					<a href="https://en.wikipedia.org/wiki/Phineas_Quimby">Wikipedia</a>
+				</li>
+				<li>PDF available here: <a href="/healing/">
+						/healing/</a></li>
+				<li>and <a class="inline" href="https://sacred-texts.com/nth/qm/index.htm">sacred-texts.com</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">New Thought Index: <a class="nowrap" href="/new-thought/">/new-thought/</a></li>
+				<li><a href="/new-thought/kybalion/contents.htm">The Kybalion</a></li>
+				<li class="header-item">External links</li>
+				<li class="first-item">
+					<a href="http://ppquimby.com/">PhineasQuimby.Com [Now PPQuimby.Com]</a>
+				<li><a href="http://www.ppquimby.com/">PPQuimby.Com</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

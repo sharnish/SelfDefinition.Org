@@ -1,0 +1,148 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterium Magnum - Jacob Boehme</title>
+    <meta name="description" content="An Exposition of the First Book of Moses 
+    called Genesis, written Anno 1623 by Jacob Boehme, Translated by John Sparrow" />
+    <meta name="author" content="Jacob Boehme">
+    <meta property="og:title" content="Mysterium Magnum - Jacob Boehme" />
+    <meta property="og:description" content="An Exposition of the First Book of Moses 
+    called Genesis, written Anno 1623 by Jacob Boehme, Translated by John Sparrow" />
+    <meta property="og:image" content="https://selfdefinition.org/christian/jacob-boehme/mysterium-magnum/images/mysterium-magnum-frontpiece.jpg" />
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_mysterium-magnum-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- FIRST PAGE <link rel="prev" href="/christian/jacob-boehme/mysterium-magnum/">-->
+    <link rel="next" href="/christian/jacob-boehme/mysterium-magnum/contents.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include( "_mysterium-magnum-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_mysterium-magnum-title-include.htm"); ?>
+                                    <h3>
+                                        Cover Page</h3>
+                                </header>
+                            </div>
+                            <!-- end announce -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="chapter-33.htm">
+                                            <!-- nothing-->
+                                        </a></li>
+                                    <li class="align-right"><a href="contents.htm">Table of Contents &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <header>
+                                <h3>
+                                    Mysterium Magnum
+                                </h3>
+                            </header>
+                            <div class="center">
+                                <img src="images/mysterium-magnum-frontpiece.jpg" alt="Mysterium Magnum Frontpiece" style="width: 100%; max-width: 500px;" />
+                                <p>
+                                    Mysterium Magnum
+                                </p>
+                                <p>
+                                    PART ONE
+                                </p>
+                                <p>
+                                    An Exposition of the First Book of Moses called Genesis
+                                </p>
+                                <p>
+                                    Written Anno 1623 by Jacob Boehme (1575-1624)
+                                </p>
+                                <p>
+                                    Translated by John Sparrow (1615-1670)
+                                </p>
+                                <p class="note">
+                                    <a href="https://en.wikipedia.org/wiki/John_Sparrow_(translator)">en.wikipedia.org/wiki/<wbr />John_Sparrow_<wbr />(translator) </a>
+                                </p>
+                            </div>
+                            <div class="no-class">
+                                <p>
+                                    &nbsp;
+                                </p>
+                                <p>
+                                    Go to <a href="contents.htm">Table of Contents</a>
+                                </p>
+                                <p>
+                                    &nbsp;
+                                </p>
+                            </div>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="chapter-33.htm">
+                                            <!-- nothing-->
+                                        </a></li>
+                                    <li class="align-right"><a href="contents.htm">Table of Contents &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

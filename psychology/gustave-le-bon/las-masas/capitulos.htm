@@ -1,0 +1,375 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Psicología de las Masas: Estudio sobre la psicología de las multitudes</title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="Psicología de las Masas: Estudio sobre la psicología de las multitudes">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- link rel="prev" first -->
+	<link href="prologo.htm" rel="next">
+	<link href="/styles/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="/styles/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<style>
+		/* this page only     
+    Taken from White and Black  */
+		ul.chapters {
+			list-style: none;
+			padding-left: 0;
+		}
+
+		ul.chapters li p {
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+
+		li.link {
+			margin-top: 20px;
+			background: #ddd;
+			text-align: center;
+		}
+
+		html.dark li.link {
+			background: #333;
+		}
+
+		li.link a {
+			width: 90%;
+			display: block;
+		}
+
+		@media only screen and (max-width:500px) {
+			li.link {
+				text-align: left;
+				width: 100%;
+			}
+		}
+
+		li.link a {
+			padding-left: 8px;
+		}
+
+		li.contents {
+			font-size: 90%;
+		}
+
+		ul.chapters li.bookno {
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			font-size: 100%;
+			margin-top: 25px;
+		}
+
+	</style>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned -->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div id="myBar" class="progress-bar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3>
+										Temas por capitulo
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/chapters.htm">..chapters.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contenido.htm">&lt; Contenido</a> </li>
+									<li class="align-right"><a href="prologo.htm">Prólogo &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav id="detailed-contenido">
+								<ul class="chapters">
+									<li class="link"><a href="capitulos.htm">Contenido-Índice</a></li>
+									<li class="link"><a href="prologo.htm">Prólogo</a></li>
+									<li class="link"><a href="introduccion.htm">Introducción: La era de las masas</a> </li>
+									<li class="contents">
+										<p>
+											La evolución de la época actual - Los grandes cambios en la civilización son la consecuencia de cambios en el pensamiento nacional - La fe moderna en el poder de las masas - Transformación de la política tradicional de los Estados europeos - Cómo se produce el surgimiento de las clases populares y la forma en que éstas ejercen el poder - Las consecuencias necesarias del poder de las masas - Las masas, incapaces de desempeñar otro papel que el destructivo - La disolución de civilizaciones agotadas es obra de la masa - Ignorancia general acerca de la psicología de las masas - Importancia del estudio de las masas para legisladores y estadistas.
+										</p>
+									</li>
+									<li class="bookno">Libro 1, La mente de las masas</li>
+									<li class="link"><a class="toowide" href="1-1-general.htm">1. Características generales de las masas - Ley psicológica de su unidad mental </a></li>
+									<li class="contents">
+										<p>
+											¿Qué constituye una masa desde el punto de vista psicológico? - Una aglomeración numéricamente grande de individuos no es suficiente para formas una masa - Características especiales de masas psicológicas - La orientación hacia una dirección fija de las ideas y sentimientos de los individuos que componen una masa así, y la desaparición de su personalidad individual - La masa siempre está dominada por consideraciones de las que no tiene conciencia - La desaparición de la actividad cerebral y el predominio de la actividad medular - La depreciación de la inteligencia y la completa transformación de los sentimientos - Los sentimientos transformados pueden ser mejores o peores que los de los individuos de los cuales la masa se compone - Una masa es tan fácilmente heroica como criminal.
+										</p>
+									</li>
+									<li class="link"><a href="1-2-sentimentos-y-moral.htm">2. Los sentimientos y la moral de las masas </a></li>
+									<li class="contents">
+										<p>
+											1)&nbsp;Impulsividad, inestabilidad e irritabilidad de las masas.
+										</p>
+										<p>
+											La masa está a merced de todas las causas estimulantes exteriores y refleja sus incesantes variaciones - Los impulsos a los cuales la masa obedece son tan imperiosos que aniquilan el sentido para el interés personal - La premeditación está ausente de las masas - Influencias raciales.
+										</p>
+										<p>
+											2)&nbsp;Las masas son crédulas y fácilmente influenciables por sugestión.
+										</p>
+										<p>
+											La obediencia de las masas a las sugestiones - Las imágenes evocadas en la mente de las masas son aceptadas por ellas como realidades - Por qué estas imágenes son idénticas para todos los individuos que componen una masa - Varios ejemplos de ilusiones a las que están sujetos los individuos de una masa - La imposibilidad de dar crédito al testimonio de las masas - La unanimidad de numerosos testigos es una de las peores pruebas que pueden ser invocadas para establecer un hecho - El escaso valor de las obras de historia.
+										</p>
+										<p>
+											3)&nbsp;La exageración y la espontaneidad de los sentimientos de las masas.
+										</p>
+										<p>
+											Las masas no admiten dudas o incertidumbres y siempre recurrirán a extremos - Sus sentimientos son siempre excesivos.
+										</p>
+										<p>
+											4)&nbsp;La intolerancia, la dictatorialidad y el conservativismo de las masas.
+										</p>
+										<p>
+											Las razones para estos sentimientos - La servilidad de las masas frente a una autoridad fuerte - Los instintos momentáneamente revolucionarios de las masas no les impiden ser extremadamente conservadoras - Masas instintivamente hostiles al cambio y al progreso.
+										</p>
+										<p>
+											5)&nbsp;La moralidad de las masas.
+										</p>
+										<p>
+											La moralidad de las masas, de acuerdo a las sugestiones bajo las cuales actúan, puede ser muy inferior o muy superior que la de los individuos que las componen - Explicaciones y ejemplos -Masas raramente guiadas por aquellas consideraciones de intereses que son muy frecuentemente los motivos exclusivos del individuo aislado - El papel moralizador de las masas.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="1-3-ideas.htm">3. Las ideas, el poder de raciocinio y la imaginación de <span class="nowrap">las masas</span> </a></li>
+									<li class="contents">
+										<p>
+											1)&nbsp;Las ideas de las masas.
+										</p>
+										<p>
+											Ideas fundamentales y accesorias - Como ideas contradictorias pueden existir simultáneamente - La transformación que las ideas elevadas deben sufrir antes de ser accesibles para las masas - La influencia social de las ideas es independiente del grado de verdad que puedan contener.
+										</p>
+										<p>
+											2)&nbsp;El poder de raciocinio de las masas.
+										</p>
+										<p>
+											Las masas no son influenciables mediante el razonamiento - El razonamiento de las masas es siempre de un orden muy inferior -Existe solamente una apariencia de analogía o sucesión en las ideas que asocian.
+										</p>
+										<p>
+											3)&nbsp;La imaginación de las masas
+										</p>
+										<p>
+											La fuerza de la imaginación de las masas - Las masas piensan en imágenes, y estas imágenes se suceden sin ningún vínculo de conexión - Las masas están especialmente interesadas en lo maravilloso - Las leyendas y lo maravilloso son los verdaderos pilares de la civilización - La imaginación popular ha sido siempre la base del poder de los estadistas - La manera en que los hechos son capaces de impactar en la imaginación de las masas se presentan para ser observadas.
+										</p>
+									</li>
+									<li class="link"><a href="1-4-forma-religiosa.htm">4. La forma religiosa que toman todas las convicciones de las masas</a></li>
+									<li class="contents">
+										<p>
+											Qué se entiende por sentimiento religioso - Es independiente de la adoración de una divinidad - Sus características - La fuerza de las convicciones que adoptan una forma religiosa - Varios ejemplos -Los dioses populares nunca desaparecieron - Las nuevas formas bajo las cuales se las revive - Formas religiosas de ateísmo -Importancia de estas nociones desde el punto de vista histórico -La Reforma, San Bartolomé, el Terror y todos los eventos análogos son el resultado de los sentimientos religiosos de las masas y no de la voluntad de individuos aislados
+										</p>
+									</li>
+									<li class="bookno"><span class="toowide">Libro 2, Las Opiniones y las Creencias de las Masas</span></li>
+									<li class="link"><a class="toowide" href="2-1-factores-remotos.htm">1. Factores Remotos of The Opinions and Beliefs de las masas </a></li>
+									<li class="contents">
+										<p>
+											Factores preparatorios de las creencias de las masas - El Origen de las creencias de las masas es la consecuencia de un proceso preliminar de elaboración - Estudio de los diferentes factores de estas creencias.
+										</p>
+										<p>
+											1)&nbsp;Raza
+										</p>
+										<p>
+											La influencia predominante que ejerce - Represente las sugestiones de los ancestros.
+										</p>
+										<p>
+											2)&nbsp;Tradiciones
+										</p>
+										<p>
+											Son la síntesis del espíritu de la raza - La importancia social de las tradiciones - Cómo, después de haber sido necesarias, se vuelven nocivas - Las masas son las mantenedoras más obstinadas de ideas tradicionales.
+										</p>
+										<p>
+											3)&nbsp;Tiempo
+										</p>
+										<p>
+											Prepara sucesivamente el establecimiento de las creencias y luego su destrucción. Es a través de la ayuda de este factor que el orden puede surgir del caos.
+										</p>
+										<p>
+											4)&nbsp;Instituciones políticas y sociales
+										</p>
+										<p>
+											Ideas erróneas de su parte - Su extremadamente débil influencia - Son efectos y no causas - Las naciones son incapaces de elegir lo que les parecen ser las mejores instituciones - Las instituciones son etiquetas que cubren las cosas más disímiles bajo un mismo título - Cómo las instituciones llegan a ser creadas - Para ciertas naciones algunas instituciones, tales como la centralización obligatoria, son teóricamente malas.
+										</p>
+										<p>
+											5)&nbsp;Instituciones y educación
+										</p>
+										<p>
+											Falsedad de las ideas predominantes acerca de la influencia de la instrucción sobre las masas - Indicaciones estadísticas - El efecto desmoralizador del sistema latino de educación - La parte que la instrucción puede desempeñar - Ejemplos suministrados por varios pueblos.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="2-2-factores-inmediatos.htm">2. Los factores inmediatos de la opinión de las&nbsp;masas </a></li>
+									<li class="contents">
+										<p>
+											1)&nbsp;Imágenes, palabras y fórmulas
+										</p>
+										<p>
+											El poder mágico de palabras y fórmulas - El poder de las palabras ligadas a las imágenes que evocan, independientemente de su verdadero significado - Estas imágenes varían de época en época y de raza en raza - El uso y abuso de las palabras - Ejemplos de las considerables variaciones en el sentido de palabras usualmente empleadas - La utilidad política de bautizar cosas viejas con nombres nuevos cuando las palabras que las designaban causan una impresión desfavorable sobre las masas - Variaciones del sentido de las palabras como consecuencia de diferencias raciales - Los diferentes significados de la palabra &quot;democracia&quot; en Europa y en América.
+										</p>
+										<p>
+											2)&nbsp;Ilusiones.
+										</p>
+										<p>
+											Su importancia - Se las halla en la raíz de todas las civilizaciones - La necesidad social de las ilusiones - Las masas siempre las prefieren antes que a las verdades.
+										</p>
+										<p>
+											3)&nbsp;Experiencia.
+										</p>
+										<p>
+											Solamente la experiencia puede fijar en la mente de las masas las verdades que se han vuelto necesarias y destruir las ilusiones que se han hecho peligrosas - La experiencia sólo es efectiva bajo la condición de que sea frecuentemente repetida - El costo del requisito de la experiencia para persuadir a las masas.
+										</p>
+										<p>
+											4)&nbsp;Razón.
+										</p>
+										<p>
+											La nulidad de su influencia sobre las masas - Las masas sólo pueden ser influenciadas por sus sentimientos inconscientes - El papel de la lógica en la Historia - Las causas secretas de los eventos improbables.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="2-3-conductores-y-su-medios.htm">3. Los conductores de masas y sus medios de&nbsp;persuasión </a></li>
+									<li class="contents">
+										<p>
+											1)&nbsp;Los conductores de masas.
+										</p>
+										<p>
+											La necesidad instintiva de todos los seres que forman una masa de obedecer a un conductor - La psicología de los conductores de masas - Sólo ellos pueden conferirle fe a las masas y organizarlas - Los conductores forzosamente despóticos - Clasificación de los conductores - La parte desempeñada por la voluntad.
+										</p>
+										<p>
+											2)&nbsp;Los medios de acción de los conductores.
+										</p>
+										<p>
+											Afirmación, repetición, contagio - La parte respectiva de estos diferentes factores - La forma en que el contagio puede expandirse desde las clases inferiores a las superiores en una sociedad - Una opinión popular pronto se convierte en una opinión general.
+										</p>
+										<p>
+											3)&nbsp;Prestigio.
+										</p>
+										<p>
+											Definición de prestigio y clasificación de sus diferentes tipos -Prestigio adquirido y prestigio personal - Varios ejemplos - La forma en que el prestigio es destruido.
+										</p>
+									</li>
+									<li class="link"><a class="toowide" href="2-4-limitaciones-de-la-variabilidad.htm">4. Limitaciones de la variabilidad de las creencias y las opiniones de las masas </a></li>
+									<li class="contents">
+										<p>
+											1)&nbsp;Creencias fijas.
+										</p>
+										<p>
+											La invariabilidad de ciertas creencias generales - Dan forma al curso de la civilización - La dificultad de desarraigarlas - En qué sentido la intolerancia es una virtud en un pueblo.
+										</p>
+										<p>
+											2)&nbsp;Las opiniones variables de las masas.
+										</p>
+										<p>
+											La extrema movilidad de las opiniones que no surgen de creencias generales - Aparentes variaciones de ideas y creencias en menos de un siglo - Los verdaderos límites de estas variaciones - Las materias afectadas por la variación - La desaparición en la actualidad en el progreso de creencias generales y la extrema difusión de la prensa diaria tienen por resultado que las opiniones son hoy en día más y más cambiantes - Por qué las opiniones de las masas tienden, en la mayoría de los asuntos, hacia la indiferencia - Los gobiernos, actualmente sin el poder de dirigir la opinión como antes lo hacían - Las opiniones, impedidas de volverse tiránicas actualmente debido a su excesiva divergencia.
+										</p>
+									</li>
+									<li class="bookno">Libro 3, La clasificación y descripción de las diferentes clases de masas</li>
+									<li class="link"><a href="3-1-clasificacion.htm">1. La clasificación de las masas</a> </li>
+									<li class="contents">
+										<p>
+											La división general de las masas - Su clasificación
+										</p>
+										<p>
+											1)&nbsp;Masas heterogéneas.
+										</p>
+										<p>
+											Diferentes variedades de las mismas - La influencia de la raza - El espíritu de la raza es débil en la proporción en que el espíritu de la raza es fuerte - El espíritu de la raza representa el estado civilizado y el espíritu de la masa al estado bárbaro.
+										</p>
+										<p>
+											2)&nbsp;Masas homogéneas
+										</p>
+										<p>
+											Sus diferentes variedades - Sectas, castas y clases.
+										</p>
+									</li>
+									<li class="link"><a href="3-2-masas-criminales.htm">2. Masas denominadas criminales</a> </li>
+									<li class="contents">
+										<p>
+											Masas denominadas criminales - Una masa puede ser legalmente pero no psicológicamente criminal - La absoluta inconsciencia de las acciones de las masas - Varios ejemplos - Psicología de los autores de las masacres de Septiembre - Su razonamiento, su sensibilidad, su ferocidad y su moralidad.
+										</p>
+									</li>
+									<li class="link"><a href="3-3-jurados-penales.htm">3. Jurados penales</a></li>
+									<li class="contents">
+										<p>
+											Jurados penales - Características generales de los jurados - Las estadísticas demuestran que sus decisiones son independientes de su composición - La forma en que se puede impresionar a los jurados - El estilo y la influencia de la argumentación - Los métodos de persuasión - La naturaleza de los crímenes ante los cuales los jurados son indulgentes o severos respectivamente - La utilidad del jurado como institución y el peligro que resultaría de que su lugar fuese ocupado por magistrados.
+										</p>
+									</li>
+									<li class="link"><a href="3-4-masas-electorales.htm">4. Masas electorales</a></li>
+									<li class="contents">
+										<p>
+											Características generales de las masas electorales - La manera de persuadirlas - Las cualidades que debería poseer un candidato -Necesidad de prestigio - Por qué trabajadores y campesinos tan raramente eligen a candidatos de su propia clase - La influencia de palabras y fórmulas sobre el elector - El aspecto general de la oratoria electoral - Cómo se forman las opiniones del elector - El poder de los comités políticos - Representan la más formidable forma de tiranía - Los comités de la Revolución - El sufragio universal no puede ser reemplazado a pesar de su escaso valor psicológico - Por qué es que los votos registrados permanecerían siendo los mismos aún si el derecho del sufragio fuese restringido a una limitada clase de ciudadanos - Lo que el sufragio universal expresa en todos los países.
+										</p>
+									</li>
+									<li class="link"><a href="3-5-asembleas-parlamentaras.htm">5. Asambleas parlamentarias</a> </li>
+									<li class="contents">
+										<p>
+											Las masas parlamentarias presentan la mayoría de las características propias de las masas heterogéneas no anónimas -La simplicidad de sus opiniones - Su sugestionabilidad y sus límites - Sus opiniones fijas indestructibles y sus opiniones cambiantes - La razón del predominio de la indecisión - El papel de los líderes - La razón de su prestigio - Son los verdaderos amos de una asamblea cuyos votos, además, son meramente los de una pequeña minoría - El poder absoluto que ejercen - Los elementos de su arte oratorio - Frases e imágenes - La necesidad psicológica que padecen sus líderes de ser, en un sentido general, de mente estrecha y de convicciones obstinadas - Para un orador sin prestigio, es imposible obtener el reconocimiento de sus argumentos - La exageración de los sentimientos, tanto malos como buenos, en que caen las asambleas - En cierto momento se vuelven automáticas - Las sesiones de la Convención - Casos en los que una asamblea pierde las características de una masa - La influencia de los especialistas cuando surgen cuestiones técnicas -Las ventajas y los peligros de un sistema parlamentario en todos los países - Está adaptado a las necesidades modernas, pero implica un despilfarro financiero y el progresivo cercenamiento de todas las libertades - Conclusión.
+										</p>
+									</li>
+								</ul>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">encima de página</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="end">&zwj;</a>
+								<!-- page nav here if used -->
+								<nav class="next-previous-item-nav">
+									<ul class="next-previous-item-list">
+										<li class="align-left"><a href="contenido.htm">&lt; Contenido</a> </li>
+										<li class="align-right"><a href="prologo.htm">Prólogo &gt;</a></li>
+										<li style="clear: both;"></li>
+									</ul>
+								</nav>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!--  button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button id="toTopButton" onclick="javascript:toTopCleanUrl();" title="Go-to-top">
+						top
+					</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>

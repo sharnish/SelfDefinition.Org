@@ -1,0 +1,86 @@
+/* file:  /celibacy/sivananda/_sinananda-refresh.css 
+
+Update May 16, 2020. Dark styles added March 7, 2022. 2022.css on April 29, 202
+
+*/
+@media only print {
+	#article:after {
+		content: "update April 29, 2022";
+	}
+
+}
+
+/* was #f6ffff -- too much like Quotes section. Thy this */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #eeffea;
+}
+
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #e0e0f0;
+}
+
+
+/* March 6, 2022    Encoding fixed April 29, 2022  
+THIS IS A HACK. IN CELIBACY-QUOTES #article IS TOO LOW, DON'T KNOW WHY
+-- COMPARE WITH CELIBACY-ARTICLES, WHICH IS CORRECT 
+
+#article {
+    margin-top: -25px;
+}
+
+
+ */
+
+
+/* Some info here:
+http://alistapart.com/article/taminglists  */
+#sivananda-section-menu li {
+	list-style: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+#sivananda-section-menu li.heading {
+	list-style: none;
+}
+
+/* anchor MUST be inline1 or line will break */
+#sivananda-section-menu li a {
+	display: inline;
+}
+
+/* override default of normal and italic */
+h5 {
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/* sivananda only */
+/* sivananda-section-menu = a sub-menu in the 2nd include file.
+Sructure:
+1. php include("_brahmacharya-main-menu-top-include.htm"); 
+2. php include("_section-1-menu-include.htm"); 
+3. php include("_brahmacharya-main-menu-bottom-include.htm"); 
+This is a ul */
+#sivananda-section-menu {
+	font-size: 13px;
+	margin-left: -35px;
+	list-style: none;
+}
+
+#sivananda-section-menu li {}
+
+/* end */

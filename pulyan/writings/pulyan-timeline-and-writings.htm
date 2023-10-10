@@ -1,0 +1,351 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred Pulyan Timeline and Writings</title>
+    <meta name="description" content="Some sparse details on the life and writings of the little-known Zen master from Connecticut.">
+    <meta name="author" content="Alfred Pulyan, Zen Master">
+    <meta property="og:title" content="Alfred Pulyan Timeline and Writings">
+    <meta property="og:description" content="Some sparse details on the life and writings of the little-known Zen master from Connecticut.">
+    <meta property="og:image" content="https://selfdefinition.org/pulyan/images/Alfred-Pulyan-Zen-Master-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_pulyan-writings-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* https://www.w3schools.com/howto/howto_css_two_columns.asp  */
+        em.conditional {
+            font-style: normal;
+        }
+
+        .aberree-link {
+            font-size: 75%;
+            display: block;
+        }
+
+        .title {
+            display: block;
+            font-style: italic;
+        }
+
+        .mytitle,
+        .mytitle a {
+            font-style: normal;
+            font-weight: bold;
+            display: block;
+        }
+
+        @media only screen and (max-width:360px) {
+            .mytitle a {
+                display: inline;
+            }
+
+            .mytitle a:before {
+                content: " : ";
+            }
+        }
+
+        .mytitle>a {
+            font-weight: normal;
+        }
+
+        .table {
+            margin-top: 45px;
+        }
+
+        .row {
+            margin-bottom: 20px;
+        }
+
+        .column {
+            float: left;
+            margin-right: 20px;
+            vertical-align: text-top;
+        }
+
+        .column:first-child {
+            width: 70px;
+            font-weight: bold;
+            font-size: 90%;
+        }
+
+        .column:last-child {
+            width: calc(100% - 120px);
+            background: transparent;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .column:first-child,
+            .column:last-child {
+                width: 100%;
+            }
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_pulyan-writings-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_pulyan-writings-title-include.htm"); ?>
+                                    <h3>
+                                        Pulyan Timeline &amp; Published Writings
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="worlds-ill-health-whats-back-of-it.htm">&lt; Wold's Ill Health</a></li>
+                                    <li class="align-right"><a href="pulyan-writings-index.htm">Writings Index &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p class="note center">
+                                Source: <a href="https://www.selfdiscoveryportal.com/PulyanPubs.htm">selfdiscoveryportal.com/<wbr />PulyanPubs.htm</a>
+                            </p>
+                            <p class="tiny motto center">
+                                The Aberree Is Copyright-Free: <a href="https://www.aberree.com/copyright.html">www.aberree.com/<wbr />copyright.html</a> <span class="block">Credits/contact <a href="https://www.aberree.com/credits.html">www.aberree.com/credits.html</a></span></p>
+                            <div class="table">
+                                <div class="row header">
+                                    <div class="column">
+                                        Date
+                                    </div>
+                                    <div class="column">
+                                        Event / Publication
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1896 Nov.
+                                    </div>
+                                    <div class="column">
+                                        Alfred R. Pulyan born (New York City?) November 11th
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1930
+                                    </div>
+                                    <div class="column">
+                                        Listed in Federal Census: living in New York City, age 32
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1958 June
+                                    </div>
+                                    <div class="column">
+                                        First (?) letter to <em>Aberree</em> editor, from New York, NY <span class="title"><em class="conditional">A name means nothing....</em></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v05/n03p11.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1959 April
+                                    </div>
+                                    <div class="column">
+                                        Letter to <em>Aberree</em> editor, from So. Kent, CT <span class="title"><em class="conditional">The Second Coming</em></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v06/n01p16.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1959 June
+                                    </div>
+                                    <div class="column">
+                                        Article for <em>The Aberree</em> <span class="title mytitle"><em class="conditional">The Penny That Blots Out the Sun</em><a href="the-penny-that-blots-out-the-sun.htm"> the-penny-that-blots-out-the-sun.htm</a></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v06/n03p03.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1959 Jul-Aug
+                                    </div>
+                                    <div class="column">
+                                        Article for <em>The Aberree</em> <span class="title mytitle"><em class="conditional">The Chessboard: Is It Black or White?</em><a href="chessboard-is-it-black-or-white.htm">chessboard-is-it-black-or-white.htm</a></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />vv06/n04p07.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 March
+                                    </div>
+                                    <div class="column">
+                                        Letter to <em>Aberree</em> editor <span class="title"><em class="conditional">Awakening....</em></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v06/n10p14.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 April
+                                    </div>
+                                    <div class="column">
+                                        Article for <em>The Aberree</em> <span class="title mytitle"><em class="conditional">What Is It We Fear in Visitors from Space? That They Might Be Like Us?</em><a href="why-fear-visitors-outer-space.htm">why-fear-visitors-outer-space.htm</a></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v07/n01p05.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 June
+                                    </div>
+                                    <div class="column">
+                                        Article for <em>The Aberree</em> <span class="title mytitle"><em class="conditional">The World's Ill-Health: What's Back of It?</em><a href="worlds-ill-health-whats-back-of-it.htm">worlds-ill-health-whats-back-of-it.htm</a></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v07/n03p04.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 Jul/Aug
+                                    </div>
+                                    <div class="column">
+                                        Letter to <em>Aberree</em> editor <span class="title"><em class="conditional">To hell with me....<span class="note">[fragment]</span></em> </span><span class="aberree-link">Ref: https://www.aberree.com/<wbr />v07/n04p18.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 August
+                                    </div>
+                                    <div class="column">
+                                        Began corresponding with Richard Rose <span class="title mytitle"><em class="conditional">Letters from a Zen Master</em> <a href="/pulyan/letters/1960-0820-pulyan.htm">/pulyan/letters/1960-0820-pulyan.htm</a></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 Sept.
+                                    </div>
+                                    <div class="column">
+                                        Article for <em>The Aberree</em> <span class="title mytitle"><em class="conditional">Life's Pretty Forlorn, as Some See It</em><a href="life-pretty-forlorn-as-some-see-it.htm">life-pretty-forlorn-as-some-see-it.htm</a></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v07/n05p03.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1960 Nov.
+                                    </div>
+                                    <div class="column">
+                                        Article for <em>The Aberree</em> <span class="title"><em class="conditional">&amp; God Disposes</em></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v07/n07p05.html </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1961 Jan/Feb
+                                    </div>
+                                    <div class="column">
+                                        Letter to <em>Aberree</em> editor <span class="title"><em class="conditional">Nose of the camel....</em></span> <span class="aberree-link">Ref: https://www.aberree.com/v07/<wbr />n09p18.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1961 May
+                                    </div>
+                                    <div class="column">
+                                        Last letter to Richard Rose <span class="title mytitle"><em class="conditional">Letters from a Zen Master</em> <a href="/pulyan/letters/1960-0820-pulyan.htm">/pulyan/letters/1961-0517-pulyan.htm</a></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1962 March
+                                    </div>
+                                    <div class="column">
+                                        Letter to <em>Aberree</em> editor; <span class="title"><em class="conditional">Calories don't count....</em></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v08/n10p14.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1964 Jan/Feb
+                                    </div>
+                                    <div class="column">
+                                        Last (?) letter to <em>Aberree</em> editor; <span class="title"><em class="conditional">Surprisingly bad....</em></span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v10/n09p21.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1964 Jul/Aug
+                                    </div>
+                                    <div class="column">
+                                        Letter from reader to <em>Aberree</em> editor re Pulyan: <em class="conditional">bugged by recent letters from Pulyan.... </em><span class="note">[fragment]</span> <span class="aberree-link">Ref: https://www.aberree.com/<wbr />v11/n04p22.html</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="column">
+                                        1966 April
+                                    </div>
+                                    <div class="column">
+                                        Died, South Kent, CT 06785
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end #table -->
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="worlds-ill-health-whats-back-of-it.htm">&lt; Wold's Ill Health</a></li>
+                                    <li class="align-right"><a href="pulyan-writings-index.htm">Writings Index &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

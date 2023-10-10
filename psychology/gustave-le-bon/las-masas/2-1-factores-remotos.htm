@@ -1,0 +1,421 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2.1 Factores remotos de la opinión y de las creencias de las masas</title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="2.1 Factores remotos de la opinión y de las creencias de las masas">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="1-4-forma-religiosa.htm">
+	<link rel="next" href="2-2-factores-inmediatos.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 310px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:320px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		/* in Spanish version these are notes 10, 11, 12, 13, 14 */
+		label[for=element-toggle-10],
+		label[for=element-toggle-11],
+		label[for=element-toggle-12],
+		label[for=element-toggle-13],
+		label[for=element-toggle-14] {
+			cursor: pointer;
+		}
+
+		#element-toggle-10,
+		#element-toggle-11,
+		#element-toggle-12,
+		#element-toggle-13,
+		#element-toggle-14 {
+			display: none;
+		}
+
+		#element-toggle-10:not(:checked)~#toggled-element-10,
+		#element-toggle-11:not(:checked)~#toggled-element-11,
+		#element-toggle-12:not(:checked)~#toggled-element-12,
+		#element-toggle-13:not(:checked)~#toggled-element-13,
+		#element-toggle-14:not(:checked)~#toggled-element-14 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3>
+										<span class="block">Libro 2</span> Las Opiniones y las Creencias de las masas
+									</h3>
+									<h3 class="toowide">
+										<span class="block">Capítulo 1</span> Factores remotos de la opinión y de las creencias de las masas
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/2-1-remote-factors.htm">..2-1-remote-factors.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="1-4-forma-religiosa.htm">&lt; La forma religiosa</a></li>
+									<li class="align-right"><a href="2-2-factores-inmediatos.htm">Los factores inmediatos &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#introduccion">Introducción</a></li>
+									<li><a href="#raza">1. Raza</a></li>
+									<li><a href="#tradiciones">2. Tradiciones</a></li>
+									<li><a href="#tiempo">3. Tiempo</a></li>
+									<li><a href="#politicas">4. Instituciones políticas y sociales</a></li>
+									<li><a href="#instruccion">5. Instrucción y educación</a></li>
+								</ul>
+							</nav>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="introduccion">&nbsp;</a>
+							<h4>
+								Introducción
+							</h4>
+							<p>
+								Habiendo estudiado la constitución mental de las masas y habiéndonos familiarizado con sus modos de sentir, pensar y razonar, procederemos ahora a examinar cómo surgen y se establecen sus opiniones y creencias.
+							</p>
+							<p>
+								Los factores que determinan estas opiniones y creencias son de dos clases: remotos e inmediatos.
+							</p>
+							<p>
+								<em>Factores remotos</em> son aquellos que vuelven a las masas capaces de adoptar ciertas convicciones y ser absolutamente refractarias a aceptar otras. Estos factores preparan el terreno sobre el cual se verán germinar ciertas ideas cuya fuerza y consecuencias causan asombro, aunque sean espontáneas sólo en apariencia. El estallido y la puesta en práctica de ciertas ideas entre las masas presenta a veces un carácter súbito que sorprende. Pero éste es tan sólo un efecto superficial detrás del cual hay que buscar una acción preliminar y preparatoria de larga duración.
+							</p>
+							<p>
+								Los <em>factores inmediatos</em> son aquellos que, apareciendo sobre la superficie de este largo trabajo preparatorio y sin el cual permanecerían sin efecto, actúan como el origen de la acción persuasiva que es ejercida sobre las masas; esto es, son los factores por los cuales la idea toma forma y es liberada con todas sus consecuencias. Las resoluciones por las cuales las colectividades son súbitamente arrastradas surgen de estos factores inmediatos; es debido a ellos que estalla un disturbio, o se decide una huelga, o enormes mayorías invisten a un hombre con el poder de derrocar a un gobierno.
+							</p>
+							<p>
+								La acción sucesiva de estas dos clases de factores puede ser rastreada en todos los grandes hechos históricos. La Revolución Francesa - tanto como para citar sólo uno de los más sobresalientes - tuvo entre sus factores remotos los escritos de los filósofos, las imposiciones de la nobleza, y el progreso del pensamiento científico. La mente de las masas, preparada de esta manera, fue luego fácilmente despertada por factores inmediatos tales como los discursos de los oradores, y la resistencia del partido monárquico a reformas insignificantes.
+							</p>
+							<p>
+								Entre los factores remotos hay algunos de naturaleza general que encontramos subyaciendo a todas las creencias y opiniones de las masas. Son la raza, las tradiciones, el tiempo, las instituciones y la educación.
+							</p>
+							<p>
+								Procederemos, pues, a estudiar la influencia de estos diferentes factores.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="raza">&nbsp;</a>
+							<h4>
+								1. Raza
+							</h4>
+							<p>
+								Este factor, la raza, debe ser puesto en primer término porque sobrepasa, por lejos, en importancia a todos los demás. Lo hemos estudiado suficientemente en otro trabajo, por lo que no es necesario volver a tratarlo. En un volumen previo mostramos qué es una raza histórica y cómo los caracteres que posee - una vez formados como resultado de las leyes de la herencia - tienen tal poder, que sus creencias, sus instituciones, sus artes - en una palabra: todos los elementos de su civilización - son meramente la expresión manifiesta de su genio. Demostramos cómo el poder de la raza es tal que ningún elemento puede pasar de un pueblo a otro sin sufrir las más profundas transformaciones.&nbsp;<sup>[10]</sup>
+							</p>
+							<label for="element-toggle-10">
+								[10. Mostrar/ocultar nota.]</label>
+							<input id="element-toggle-10" type="checkbox">
+							<div id="toggled-element-10" class="cfnote hidden">
+								<p>
+									[10. Siendo la novedad de esta proposición todavía considerable, y siendo la historia bastante incomprensible sin ella, dediqué cuatro capítulos a demostrarla en mi último libro <em>&quot;Las Leyes Psicológicas de la Evolución de los Pueblos&quot;.</em> Del mismo, el lector podrá apreciar que, a pesar de apariencias falaces, ni el lenguaje, ni la religión, ni las artes, ni, en una palabra, elemento alguno de una civilización puede pasar intacto de un pueblo a otro.]
+								</p>
+							</div>
+							<p>
+								El medioambiente, las circunstancias y los eventos representan las sugestiones sociales del momento. Pueden tener una influencia considerable pero la misma es siempre momentánea si resulta contraria a las sugestiones de la raza, es decir: contraria a las que hereda una nación por la serie completa de sus antepasados.
+							</p>
+							<p>
+								En varios capítulos de este trabajo tendremos ocasión de referirnos nuevamente a esta influencia racial y a mostrar que la misma es tan grande que domina las características peculiares del genio de las masas. De este hecho se concluye que las masas de diferentes países muestran diferencias muy considerables en cuanto a creencias o conductas y no pueden ser influenciadas de la misma manera.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="tradiciones">&nbsp;</a>
+							<h4>
+								2. Tradiciones
+							</h4>
+							<p>
+								Las tradiciones representan las ideas, las necesidades y los sentimientos del pasado. Son la síntesis de la raza y pesan sobre nosotros con inmensa fuerza.
+							</p>
+							<p>
+								Las ciencias biológicas se han transformado desde que la embriología ha demostrado la influencia del pasado en la evolución de los seres vivos; y las ciencias históricas no sufrirán un cambio menor cuando esta concepción se vuelva más generalizada. Por el momento, no es suficientemente general y muchos estadistas siguen sin estar más avanzados que los teóricos del siglo pasado quienes creían que una sociedad podía romper con su pasado y ser completamente reconstruida siguiendo los lineamientos sugeridos solamente por la luz de la razón.
+							</p>
+							<p>
+								Un pueblo es un organismo creado por el pasado y, al igual que cualquier otro organismo, sólo puede ser modificado por lentas acumulaciones hereditarias.
+							</p>
+							<p>
+								Es la tradición la que guía a los hombres, y más especialmente cuando están en una muchedumbre. Los cambios que se pueden hacer en sus tradiciones con facilidad, sólo afectan, como he repetido varias veces, algunos nombres y algunas formas externas.
+							</p>
+							<p>
+								No hay que lamentar esta circunstancia. Ni un genio nacional ni una civilización serían posibles sin tradiciones. Consecuentemente, las dos grandes preocupaciones del hombre desde que existe han sido crear una red de tradiciones para después dedicarse a destruirla cuando sus efectos benéficos se han gastado. La civilización es imposible sin tradiciones y el progreso es imposible sin la destrucción de esas tradiciones. La dificultad - y es una dificultad enorme -consiste en hallar el adecuado equilibrio entre estabilidad y variabilidad. Si un pueblo permite que sus costumbres arraiguen demasiado profundamente, ya no podrá cambiar y se vuelve como China, incapaz de mejorar. Las revoluciones violentas, en este caso, son inútiles porque lo que sucederá es que, o bien los eslabones rotos de la cadena volverán a ser unidos y el pasado reanudará su imperio sin cambios, o bien los fragmentos de la cadena permanecerán sueltos y la decadencia pronto seguirá a la anarquía.
+							</p>
+							<p>
+								Lo ideal para un pueblo, por consiguiente, será preservar las instituciones del pasado, cambiándolas meramente poco a poco. Este ideal es difícil de realizar. En tiempos antiguos los romanos, y en los modernos los ingleses, son casi los únicos que lo han conseguido.
+							</p>
+							<p>
+								Son precisamente las masas las que se apegan más tenazmente a las ideas tradicionales y se oponen a su cambio con la mayor obstinación. Este es probablemente el caso de las masas que constituyen castas. Ya he insistido sobre el espíritu conservador de las masas y mostrado que la rebelión más violenta simplemente termina en un cambio de palabras y de términos. A fines del siglo pasado, en presencia de iglesias destruidas, de sacerdotes expulsados del país o guillotinados, podría haberse pensado que las viejas ideas religiosas habían perdido toda su fuerza. Sin embargo, apenas pasaron algunos años y el abolido sistema del culto público tuvo que ser reestablecido en atención a una demanda universal.&nbsp;<sup>[10a]</sup>
+							</p>
+							<p class="fnote">
+								[10a. El informe del ex-Convencional Fourcroy, citado por Taine, es muy claro sobre este punto.]
+							</p>
+							<p>
+								&quot;Lo que se ve por todas partes respecto del mantenimiento del Domingo y la concurrencia a las iglesias demuestra que la mayoría de los franceses desea volver a sus viejas costumbres y que ya no es oportuno resistir esta tendencia natural ... La gran mayoría de los hombres se encuentra en necesidad de tener religión, culto público y sacerdotes. Es un error cometido por algunos filósofos modernos, por quienes yo mismo he sido confundido, el creer que la posibilidad de la instrucción sea tan general como para destruir prejuicios religiosos que, para un gran número de personas desdichadas, constituye una fuente de consuelo ... A la masa del pueblo, por lo tanto, debe permitírsele tener sus sacerdotes, sus altares y su culto público.&quot;
+							</p>
+							<p>
+								Bloqueadas por un momento, las antiguas tradiciones habían retomado su impulso.
+							</p>
+							<p>
+								No hay ejemplo que demuestre mejor el poder de la tradición sobre la mente de las masas. Los ídolos más poderosos no moran en templos, ni los déspotas más tiranos en palacios; ambos, tanto los unos como los otros, pueden romperse en un instante. Pero los señores invisibles que reinan en nuestro más íntimo ser están protegidos de todo intento de revuelta y sólo ceden ante el lento desgaste de los siglos.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="tiempo">&nbsp;</a>
+							<h4>
+								3. Tiempo
+							</h4>
+							<p>
+								En los problemas sociales, al igual que en los biológicos, el tiempo es uno de los factores más enérgicos. Es el único gran creador y el único gran destructor. Es el tiempo el que ha hecho montañas con granos de arena y elevado la oscura célula de las eras geológicas a la dignidad humana. La acción de los siglos es suficiente para transformar cualquier fenómeno dado. Ha sido observado con acierto que una hormiga, disponiendo del tiempo suficiente, podría hacer desaparecer el Mount Blanc. Un ser que poseyera la fuerza mágica de variar el tiempo a voluntad tendría el poder atribuido por los creyentes a Dios.
+							</p>
+							<p>
+								Aquí, sin embargo, sólo tendremos que ocuparnos de la influencia del tiempo sobre la génesis de las opiniones de las masas. Desde este punto de vista, su acción sigue siendo inmensa. Dependen de ella fuerzas tales como la raza, que no pueden formarse sin él. Causa el nacimiento, el crecimiento y la muerte de creencias. Es por la acción del tiempo que adquieren su fuerza y es también por su acción que la pierden.
+							</p>
+							<p>
+								Es especialmente el tiempo el que prepara las opiniones y las creencias de las masas, o por lo menos el suelo en el cual habrán de germinar. Es por esto que ciertas ideas resultan realizables en una época y no en otra. Es el tiempo el que acumula ese inmenso detritus de creencias y pensamientos sobre el cual las ideas de un período dado emergen. No crecen aleatoriamente o por casualidad; las raíces de cada una de ellas se prolongan hacia un largo pasado. Cuando florecen, es el tiempo el que ha preparado su florecimiento y para llegar a obtener una noción de su génesis siempre es necesario buscar hacia atrás, en el pasado. Son hijas del pasado y madres del futuro, pero completamente esclavas del tiempo.
+							</p>
+							<p>
+								Consecuentemente, el tiempo es nuestro auténtico amo y es suficiente con dejarlo en libertad de acción para ver como todas las cosas se transforman. En la actualidad nos sentimos muy inseguros respecto de las amenazantes aspiraciones de las masas y las destrucciones y alzamientos que las mismas anuncian.
+							</p>
+							<p>
+								&quot; <em>Ninguna forma de gobierno</em> - apunta muy apropiadamente M. Lavisse - fue fundada en un día. Las organizaciones políticas y sociales son obras que requieren siglos. El sistema feudal existió por siglos en un estado informe, caótico, antes de encontrar sus leyes; la monarquía absoluta también existió durante siglos antes de alcanzar métodos regulares de gobierno, y estos períodos de expectativa fueron extremadamente problemáticos.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="politicas">&nbsp;</a>
+							<h4>
+								4. Instituciones políticas y sociales
+							</h4>
+							<p>
+								La idea de que las instituciones pueden remediar los defectos de las sociedades, que el progreso nacional es la consecuencia del perfeccionamiento de las instituciones y los gobiernos, y que los cambios sociales pueden conseguirse por decreto - esta idea, es todavía generalmente aceptada. Fue el punto de partida de la Revolución Francesa y las teorías sociales de la actualidad se basan en ella.
+							</p>
+							<p>
+								Las experiencias más reiteradas han sido incapaces de destruir este grave delirio. Filósofos e historiadores han tratado en vano de probar su absurdidad y no han tenido dificultad alguna en demostrar que las instituciones son el resultado de ideas, sentimientos y costumbres, y que las ideas, los sentimientos y las costumbres no pueden ser cambiadas reformando códigos legislativos. Una nación no elige sus instituciones a voluntad, de la misma manera en que no elige el color de su pelo o de sus ojos. Las instituciones y los gobiernos son el producto de la raza. No son los creadores de una época sino que son creadas por ella. Las personas no son gobernadas de acuerdo a sus caprichos momentáneos sino como su carácter determina que deben ser gobernados. Se requieren siglos para formar un sistema político y hacen falta siglos para cambiarlo. Las instituciones no tienen una virtud intrínseca: en si mismas no son ni buenas ni malas. Las que son buenas en un momento dado para un pueblo dado pueden ser extremadamente dañinas para otra nación.
+							</p>
+							<p>
+								Más aún, de ninguna manera está en el poder de un pueblo la posibilidad de cambiar realmente sus instituciones. Sin duda, al costo de violentas revoluciones puede llegar a cambiar sus nombres; pero en su esencia permanecerán inmodificadas. Los nombres son meras etiquetas triviales con las cuales un historiador que va al fondo de las cosas apenas si debe ocuparse. Es de esta forma, por ejemplo, que Inglaterra, el país más democrático del mundo, vive a pesar de todo en un régimen monárquico mientras que los países en los que impera el despotismo más opresivo son las repúblicas hioamericanas, a pesar de sus constituciones republicanas.&nbsp;<sup>[11]</sup> Los destinos de los pueblos están determinados por su carácter y no por sus gobiernos. He intentado establecer este criterio en una de mis anteriores obras, ofreciendo ejemplos categóricos.
+							</p>
+							<label for="element-toggle-11">
+								[11. Mostrar/ocultar nota.]</label>
+							<input id="element-toggle-11" type="checkbox">
+							<div id="toggled-element-11" class="cfnote hidden">
+								<p>
+									[11. Las repúblicas más avanzadas, incluso los Estados Unidos, reconocen este hecho. La revista americana <em>The Forum,</em> recientemente ha expresado manifiestamente la misma opinión en términos que reproduzco aquí tomados del <em>Review of Reviews</em>, de Diciembre de 1894:&mdash;
+								</p>
+								<p class="blockquoote">
+									&quot;No debería olvidarse nunca, ni por los más ardientes enemigos de una aristocracia, que Inglaterra es en la actualidad el país más democrático del universo; el país en el cual los derechos del individuo son más respetados y en el cual el individuo posee la mayor libertad.&quot; ]
+								</p>
+							</div>
+							<p>
+								Perder el tiempo con constituciones prefabricadas es, en consecuencia, una tarea pueril; es el esfuerzo inútil de un retórico ignorante. La necesidad y el tiempo se encargan de elaborar constituciones si somos lo suficientemente sabios como para permitir que estos dos factores actúen. Este es el plan que han adoptado los anglosajones, como nos lo enseña su gran historiador, Macaulay, en un pasaje que todos los políticos de países latinos deberían aprender de memoria. Después de exponer todo el bien que puede ser logrado por leyes que, desde el punto de vista de la razón pura, parecen ser un caos de absurdidades y contradicciones, este autor compara la totalidad de las constituciones que fueron sacudidas por las convulsiones de los pueblos latinos con la de Inglaterra y señala que esta última sólo ha cambiado muy lentamente, parte por parte, bajo la influencia de necesidades inmediatas y nunca debido a razonamientos especulativos.
+							</p>
+							<p class="blockquote">
+								&quot;El pensar nada en simetrías y mucho en conveniencias; no remover nunca una anomalía solamente porque es una anomalía; no innovar nunca excepto cuando aparece una injusticia; no innovar nunca excepto en la extensión necesaria para deshacerse de la injusticia; no presentar nunca un proyecto de envergadura mayor al del caso particular que es necesario tratar; estas son las reglas que han guiado las deliberaciones en nuestros doscientos cincuenta parlamentos, desde las épocas de Juan hasta la era de Victoria.&quot;
+							</p>
+							<p>
+								Sería necesario tomar una por una las leyes y las instituciones de cada pueblo para exponer hasta qué punto son la expresión de las necesidades de cada raza siendo que, por ese motivo, resulta imposible transformarlas violentamente. Es posible, por ejemplo, enredarse en disertaciones filosóficas sobre las ventajas y desventajas de la centralización; pero cuando vemos a un pueblo compuesto por razas muy diferentes dedicar mil años a esfuerzos tendientes a lograr esta centralización; cuando observamos que una gran revolución, que ha tenido por objetivo la destrucción de todas las instituciones del pasado, ha sido forzada a respetar esta centralización y que incluso la ha fortalecido; bajo estas circunstancias deberíamos admitir que constituye el resultado de necesidades imperiosas, que es una condición para la existencia de la nación en cuestión, y que deberíamos sentir lástima por el pobre alcance mental de los políticos que hablan de destruirla. Si por alguna casualidad tuviesen éxito en su intento, éste éxito sería inmediatamente la señal para una terrible guerra civil <sup>[12]</sup> la cual, incluso, volvería inmediatamente a restaurar un nuevo sistema de centralización aún más opresivo que el antiguo.
+							</p>
+							<label for="element-toggle-12">
+								[12. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-12" type="checkbox">
+							<div id="toggled-element-12" class="cfnote hidden">
+								<p>
+									[12. Si se hiciese una comparación de las profundas divergencias religiosas y políticas que separan a los diferentes partidos en Francia, y que son más especialmente el resultado de cuestiones sociales, con las tendencias separatistas que se manifestaron por la época de la Revolución y que comenzaron a mostrarse otra vez hacia el fin de la guerra franco-prusiana, se vería que las razas representadas en Francia se encuentran lejos de haberse amalgamado por completo. La vigorosa centralización de la Revolución y la creación de departamentos artificiales destinada a producir la fusión de antiguas provincias fue ciertamente su obra más útil. Si fuese posible lograr esa descentralización que hoy preocupa a mentes carentes de previsión, el logro rápidamente tendría por consecuencia los más sanguinarios desórdenes. El no ver este hecho implica dejar de considerar la totalidad de la historia de Francia.]
+								</p>
+							</div>
+							<p>
+								La conclusión a extraer de lo que precede es que no debe buscarse en las instituciones el medio para influenciar profundamente el genio de las masas. Cuando vemos a ciertos países, como los Estados Unidos, alcanzar un alto grado de prosperidad bajo instituciones democráticas mientras que otros, como las repúblicas hioamericanas, se encuentran existiendo en un lamentable estado de anarquía bajo instituciones absolutamente similares, deberíamos admitir que estas instituciones son tan extrañas a la grandeza de las primeras como a la decadencia de las otras. Las personas son gobernadas por su carácter y todas las instituciones que no estén íntimamente modeladas sobre este carácter representan meramente una vestimenta prestada, un disfraz transitorio. No hay duda de que se han producido, y se seguirán produciendo, guerras sanguinarias y violentas revoluciones para imponer instituciones a las cuales se les atribuye - como a las reliquias de los santos - el poder sobrenatural de crear el bienestar. Se puede decir, entonces, que las instituciones accionan sobre la mente de la masa en la medida en que engendran estos levantamientos. Pero, en realidad, no son las instituciones las que accionan de esta manera desde que sabemos que, triunfantes o derrotadas, no posen virtud alguna por si mismas. Son sus ilusiones y sus palabras las que han influenciado la mente de la masa, y especialmente las palabras - palabras que son tan poderosas como quiméricas y cuyo sorprendente ímpetu pronto demostraremos.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="instruccion">&nbsp;</a>
+							<h4>
+								5. Instrucción y educación
+							</h4>
+							<p>
+								En un lugar destacado entre las ideas predominantes de la época presente se encuentra la noción de que la instrucción es capaz de cambiar a los hombres de forma considerable y tiene por infalible consecuencia el mejorarlos y hasta el de hacerlos iguales. Por el simple hecho de ser constantemente repetida, esta afirmación ha terminado por convertirse en uno de los más firmes dogmas democráticos. Hoy sería tan difícil atacarlo como otrora lo hubiera sido el atacar los dogmas de la Iglesia.
+							</p>
+							<p>
+								Sin embargo, sobre este punto, al igual que en muchos otros casos, las ideas democráticas se encuentran en profundo desacuerdo con los resultados de la psicología y la experiencia. Muchos eminentes filósofos, Herbert Spencer entre ellos, no tienen ninguna dificultad en demostrar que la instrucción ni hace a los hombres más morales ni tampoco más felices; que no cambia ni sus instintos ni sus pasiones hereditarias y que a veces - y para que esto suceda sólo necesita estar mal dirigida - resulta más perniciosa que útil. Las estadísticas han confirmado este criterio al mostrarnos que la criminalidad aumenta con la generalización de la instrucción, o bien y en todo caso, con cierto tipo de instrucción, y que los peores enemigos de la sociedad, los anarquistas, se reclutan entre los abanderados de los colegios; mientras que en un reciente trabajo, un distinguido magistrado como M. Adolphe Guillot, ha hecho la observación que actualmente hay 3.000 criminales educados por cada 1.000 iletrados y que en cincuenta años el porcentaje de criminales en la población subió de 227 a 552 por cada 100.000 habitantes, lo cual constituye un aumento del 133 porciento. Junto con sus colegas, también ha notado que la criminalidad aumenta particularmente entre las personas jóvenes para quienes, como es sabido, la escolaridad gratuita y obligatoria ha reemplazado - en Francia - el aprendizaje de oficios.
+							</p>
+							<p>
+								Seguramente no es que - y nadie ha mantenido jamás esta proposición - una instrucción bien dirigida no pueda brindar resultados prácticos muy útiles, si bien no en el sentido de elevar el nivel moral, por lo menos en el de desarrollar una capacidad profesional. Desafortunadamente los pueblos latinos, especialmente durante los últimos veinticinco años, han basado sus sistemas de instrucción sobre principios muy equivocados y, a pesar de las observaciones de las mentes más eminentes tales como Breal, Fustel de Coulanges, Taine y muchos otros, persisten en sus lamentables errores. Yo mismo, en un trabajo publicado hace algún tiempo, demostré que el sistema de educación francés transforma a la mayoría de los que han pasado por él en enemigos de la sociedad y recluta numerosos discípulos para las peores formas de socialismo.
+							</p>
+							<p>
+								El principal peligro de este sistema de educación - muy apropiadamente calificado como latino - consiste en el hecho de que está basado sobre el error psicológico fundamental de que la inteligencia se desarrolla mediante la memorización de libros de texto. Adoptando este punto de vista, se ha hecho el intento de forzar el conocimiento de la mayor cantidad posible de libros de texto. Desde la escuela primaria, hasta que abandona la universidad, un joven no hace más que almacenar libros en su memoria sin que alguna vez su juicio o su iniciativa personal entren en juego. Para él, la educación consiste en recitar de memoria y en obedecer.
+							</p>
+							<p class="blockquote">
+								&quot;<em>Aprender lecciones. Sabiendo de memoria una gramática o un compendio, repitiendo bien e imitando bien</em> - escribe un ex-Ministro Público de Educación, M. Jules Simon - <em>es una forma ridícula de educación en la cual cada esfuerzo es un acto de fe que admite tácitamente la infalibilidad del maestro y cuyos resultados son un menoscabo de nosotros mismos volviéndonos impotentes.</em>&quot;
+							</p>
+							<p>
+								Si esta educación fuese meramente inútil, uno podría limitarse a expresar su compasión por los desgraciados niños que, en lugar de cursar estudios útiles en la escuela primaria, resultan instruidos en la genealogía de los hijos de Clotaire, los conflictos entre Neustria y Austrasia, o las clasificaciones zoológicas. Pero el sistema presenta un peligro por lejos mayor. Les otorga a quienes han sido sometidos a él un violento desagrado por la clase de vida en la que nacieron y un intenso deseo de escapar de ella. El trabajador ya no desea seguir siendo trabajador, ni el campesino continuar siendo campesino, mientras los más humildes miembros de la clase media no admiten ninguna carrera posible para sus hijos excepto la de funcionarios pagados por el Estado. En lugar de preparar hombres para la vida, las escuelas francesas solamente los preparan para ocupar funciones públicas en las cuales el éxito puede ser obtenido sin ninguna necesidad de auto-dirección o la más mínima chispa de iniciativa personal. En el fondo de la escala social, el sistema crea un ejércitos de proletarios descontentos con su suerte y siempre listos para la revuelta mientras que en la cúspide instituye una burguesía frívola, escéptica y crédula al mismo tiempo, que tiene una supersticiosa confianza en el Estado al cual considera como una especie de Divina Providencia pero sin olvidarse de exhibir hacia ella una incesante hostilidad, siempre poniendo las faltas propias ante la puerta del gobierno, e incapaz de la más mínima empresa sin la intervención de las autoridades.
+							</p>
+							<p>
+								El Estado que, a la par de los libros de texto, fabrica a todos estos portadores de diplomas, sólo puede utilizar una pequeña parte de ellos, y está forzado a dejar a los demás sin empleo. Por consiguiente, está obligado a resignarse a alimentar a los primeros y a tener a los otros como enemigos. Desde la cúspide hasta la base de la pirámide social, desde el empleado más humilde hasta el profesor y el prefecto, esta inmensa masa esgrimiendo diplomas pone sitio a las profesiones. Mientras un hombre de negocios tiene la mayor de las dificultades en encontrar un agente que lo represente en las colonias, miles de candidatos solicitan los más modestos puestos oficiales. Tan sólo en el departamento de Seine hay 20.000 maestros y maestras sin empleo; todas personas que, despreciando los campos y los talleres, miran hacia el Estado para ganarse la vida. Al ser restringido el número de elegidos, el de los descontentos es forzosamente inmenso. Los últimos están listos para cualquier revolución, quienesquiera que sean sus jefes y sean cuales fueren sus objetivos. La adquisición de un conocimiento que no consigue ser empleado es el método seguro de empujar a una persona hacia la revuelta.&nbsp;<sup>[13]</sup>
+							</p>
+							<label for="element-toggle-13">
+								[13. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-13" type="checkbox">
+							<div id="toggled-element-13" class="cfnote hidden">
+								<p>
+									[13. Este fenómeno, además, no es peculiar de los pueblos latinos. Se observa igualmente en China que también es un país en manos de una sólida jerarquía de mandarines o funcionarios y dónde, como en Francia, se obtiene un puesto por medio de exámenes competitivos en los cuales la única prueba es la recitación imperturbable de gruesos manuales. El ejército de personas educadas sin empleo se considera actualmente en China como una verdadera calamidad nacional. Es lo mismo en la India en dónde, desde que los ingleses han abierto escuelas, no con propósitos educativos como en la propia Inglaterra, sino para proveer instrucción a los habitantes indígenas, se ha formado una clase especial de personas educadas, los Baboos, quienes - cuando no consiguen trabajo - se vuelven por regla general enemigos irreconciliables de los ingleses. En el caso de todos los Baboos, ya sea provistos de empleo o no, el primer efecto de su instrucción ha sido el de bajar su nivel de moralidad. Este es un hecho sobre el cual he insistido extensamente en mi libro <em>&quot;La Civilización en la India&quot;</em> - y es un hecho que también ha sido observado por todos los demás autores que han visitado aquella gran península.]
+								</p>
+							</div>
+							<p>
+								Evidentemente es demasiado tarde para volver sobre nuestros pasos. Solamente la experiencia, esa suprema educadora de los pueblos, se encargará de mostrarnos nuestro error. Sólo ella será lo suficientemente poderosa como para demostrar la necesidad de reemplazar nuestros odiosos libros de texto y nuestros lamentables exámenes por una instrucción industrial capaz de inducir a nuestros jóvenes a volver a los campos, a los talleres, y a la empresa colonial que hoy rehuyen a toda costa.
+							</p>
+							<p>
+								La instrucción profesional que todas las mentes ilustradas están hoy demandando fue la instrucción recibida en el pasado por nuestros ancestros. Sigue vigente en la actualidad en las naciones que gobiernan al mundo por su fuerza de voluntad, su iniciativa y su espíritu de empresa. En una serie de notables páginas cuyos pasajes principales reproduciré más adelante, un gran pensador. M. Taine, ha expuesto claramente que nuestro anterior sistema de educación fue aproximadamente el que está de moda hoy en día en Inglaterra y en América, y haciendo un notable paralelo entre el sistema latino y el anglosajón, ha destacado claramente las consecuencias de ambos métodos.
+							</p>
+							<p>
+								Uno podría consentir, quizás forzadamente, en continuar aceptando todas las desventajas de nuestra educación clásica - aún a pesar de que no produce más que personas descontentas y hombres no aptos para sus puestos en la vida - si la adquisición superficial de tanto conocimiento, la pulcra repetición de memoria de tantos libros de texto, elevara el nivel de inteligencia. Pero ¿realmente eleva este nivel? ¡He aquí que no! Las condiciones para triunfar en la vida son la posesión de un juicio certero, experiencia, iniciativa y carácter - todas cualidades que no otorgan los libros. Los libros son diccionarios a los cuales es útil consultar pero de los cuales es perfectamente inútil guardar grandes porciones en el cerebro.
+							</p>
+							<p>
+								¿Cómo es posible para la instrucción profesional desarrollar la inteligencia en una medida bastante superior al alcance de la instrucción clásica? Esto ha sido muy bien expuesto por M. Taine.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Las ideas&quot; - dice - &quot;se forman solamente en su entorno natural y normal; la promoción del crecimiento se efectúa por las innumerables impresiones que solicitan los sentidos que el joven recibe diariamente en el taller, en la mina, en los tribunales, en el estudio, en la obra en construcción; a la vista de las herramientas, los materiales y las operaciones; en la presencia de clientes, trabajadores y labor, del trabajo bien o mal hecho, costoso o lucrativo. De este modo se obtienen esas sutiles percepciones del ojo, los oídos, las manos y hasta el sentido del olfato que, adquiridas involuntariamente y elaboradas en silencio, toman forma dentro del que aprende y le sugieren tarde o temprano ésta o aquella nueva combinación, simplificación, economía, mejora o invento. El joven francés está privado, precisamente a una edad en la que serían más fructíferos, de todos estos preciosos contactos, de todos estos indispensables elementos de asimilación. Durante siete u ocho años interminables, se lo encierra en una escuela y se lo segrega de esa experiencia personal directa que le daría una clara y exacta noción de las personas y de las cosas, y de las múltiples maneras de manejarlas.&quot;
+								</p>
+								<p>
+									&quot;... Por lo menos nueve de cada diez han perdido su tiempo y sus esfuerzos durante varios de los años de sus vidas - años importantes, incluso decisivos. Entre ellos hay que contar, en primer lugar, la mitad o las dos terceras partes de quienes se presentan a los exámenes - y me refiero a los que son rechazados; y después, entre quienes tienen éxito en obtener una graduación, un certificado o un diploma, todavía queda una mitad o dos tercios - y me refiero a los que son explotados. Se les ha exigido demasiado al requerirles que en un día determinado, sobre una silla o delante de un pizarrón, sean por dos horas consecutivas y respecto de un grupo de ciencias, repertorios vivientes de todo el saber humano. De hecho, fueron eso, o casi, por cerca de dos horas ese día en particular; pero un mes más tarde ya no lo serán. Ya no pasarían otra vez el examen. Sus adquisiciones, demasiado numerosas y demasiado pesadas, constantemente se escapan de sus cerebros y no resultan reemplazadas. Su vigor mental ha declinado, su fértil capacidad para crecer se ha secado, aparece el hombre plenamente desarrollado y con frecuencia es un hombre gastado. Asentado, casado, resignado a andar en círculos, e indefinidamente en el mismo círculo, se encierra en la limitada función con la que cumple adecuadamente; pero nada más. El balance final es que, con seguridad, los ingresos no justificarán los gastos. En Inglaterra o en América dónde, como en Francia antes de 1789, se adoptó el procedimiento contrario, el balance es equilibrado o superior.&quot;
+								</p>
+							</blockquote>
+							<p>
+								El ilustre psicólogo nos muestra a continuación la diferencia entre nuestro sistema y el de los anglosajones. Éstos no poseen nuestras innumerables escuelas especiales. Entre ellos la instrucción no está basada en el aprendizaje de libros sino en lecciones sobre objetos. El ingeniero, por ejemplo, se entrena en un taller y nunca en una escuela; un método que permite a cada individuo alcanzar el nivel que le permite su inteligencia. Se convierte en trabajador o en capataz si no puede seguir adelante, en ingeniero si sus aptitudes lo llevan tan lejos. Esta forma de proceder es mucho más democrática y de un beneficio mucho mayor para la sociedad que el hacer que toda la carrera de un individuo dependa de un examen que dura un par de horas, rendido a la edad de diecinueve o veinte años.
+							</p>
+							<blockquote>
+								<p>
+									&quot;En el hospital, la mina, la fábrica, la oficina del arquitecto o del abogado, el estudiante, que comienza muy joven, transita su aprendizaje paso a paso, de la misma manera en que lo hace un jurista o un artista en su estudio. En forma previa, antes de hacer un comienzo práctico, ha tenido la oportunidad de hacer algún curso resumido de instrucción tanto como para disponer de una estructura preparada para almacenar las observaciones que pronto hará. Más allá de eso y por regla general, podrá beneficiarse de una variedad de cursos técnicos que puede seguir en sus horas libres de manera de coordinarlos, paso a paso, con la experiencia diaria que está juntando. Bajo un sistema así, las capacidades prácticas aumentan y se desarrollan en la exacta proporción de las facultades del estudiante y en la dirección requerida por su futura tarea y por el trabajo en especial para el cual desea estar preparado de allí en más. De esta manera, en Inglaterra o en los Estados Unidos un hombre joven pronto llega a una posición en la que puede desarrollar su capacidad al máximo. A los veinticinco años de edad, y mucho antes si el material y las partes están allí, ya no es simplemente un ejecutor útil sino que es capaz, también, de iniciativas espontáneas; no es solamente la parte de una máquina sino también su motor. En Francia, dónde impera el sistema contrario - en Francia que con cada generación se está pareciendo cada vez más a China - la suma total de las fuerzas perdidas es enorme.&quot;
+								</p>
+							</blockquote>
+							<p>
+								El gran filósofo llega a la siguiente conclusión respecto de la creciente incongruencia entre nuestro sistema latino de educación y los requerimientos de la vida práctica:
+							</p>
+							<blockquote>
+								<p>
+									&quot;En las tres etapas de la instrucción que comprenden la niñez, la adolescencia y la juventud, la preparación teórica y pedagógica por medio de libros en los bancos de la escuela se ha prolongado y se ha sobrecargado en vista del examen final, la graduación, el diploma y el certificado, y solamente en vista de ello, y por los peores métodos, por la aplicación de un régimen antinatural y antisocial, por la postergación excesiva del aprendizaje práctico, por nuestro sistema de colegios pupilos, por entrenamiento artificial y amontonamiento mecánico, por sobrecarga de trabajo, sin pensar en el tiempo que habrá de seguir, sin pensar en la edad adulta y en las funciones del hombre, sin consideraciones por el mundo real al cual el joven pronto será arrojado, por la sociedad en la que nos movemos y a la cual deberá adaptarse o resignarse a ella de antemano, por la lucha en la que se halla envuelta la humanidad y en la cual, para defenderse y mantenerse de pié, tiene que haber sido previamente equipado, armado, entrenado y endurecido. Este equipamiento indispensable, esta adquisición de mayor importancia que cualquier otra, este fuerte sentido común, fibra y fuerza de voluntad, es lo que nuestras escuelas no le ofrecen al joven francés. Por el contrario, lejos de calificarlo para su futuro y definitivo estado, lo descalifican. En consecuencia, su entrada al mundo y sus primeros pasos en el campo de la acción son muy frecuentemente una sucesión de penosas caídas cuyo efecto es que permanece herido y lastimado por mucho tiempo, a veces inhabilitado de por vida. La prueba es severa y peligrosa. En su transcurso, el equilibrio mental y moral se ve afectado y corre el riesgo no ser restablecido. Una desilusión demasiado súbita y demasiado completa ha sobrevenido. Las decepciones han sido demasiado grandes, las desilusiones demasiado intensas.&quot;&nbsp;<sup>[14]</sup>
+								</p>
+							</blockquote>
+							<label for="element-toggle-14">
+								[14. Mostrar/ocultar nota.]</label>
+							<input id="element-toggle-14" type="checkbox">
+							<div id="toggled-element-14" class="cfnote hidden">
+								<p>
+									[14. Taine, <em>&quot;Le Regime Moderne&quot;</em> - Vol. II - 1894. - Estas páginas están entre las últimas que Taine escribió. Resumen admirablemente los resultados de la larga experiencia del filósofo. Por desgracia, en mi opinión resultan totalmente incomprensibles para esos profesores universitarios que no han vivido en el extranjero. La educación es el único medio a nuestra disposición para influir en alguna medida sobre la mente de una nación y es profundamente triste tener que pensar que apenas si hay alguien en Francia que puede llegar a comprender que nuestro actual sistema de enseñanza es grave causa de una rápida decadencia, siendo que, en lugar de elevar a nuestra juventud, la rebaja y la pervierte.]
+								</p>
+							</div>
+							<p>
+								Una comparación útil puede hacerse entre las páginas de Taine y las observaciones sobre la educación americana recientemente hechas por M. Paul Bourget en su excelente libro, &quot;<em>Outre-mer</em>&quot;. Él también, después de haber observado que nuestra educación meramente produce burgueses de mente estrecha carentes de iniciativa y fuerza de voluntad, o bien anarquistas - &quot;esos igualmente dañinos tipos de hombre civilizado que degeneran ya sea en banalidad impotente o en destructividad demencial&quot; - el también, decía, establece una comparación, que no puede ser objeto de mucha controversia, entre nuestros liceos franceses (escuelas públicas), esas fábricas de degeneración, y las escuelas americanas que preparan admirablemente a un hombre para la vida. La brecha existente entre naciones verdaderamente democráticas y aquellas que tienen la democracia en sus discursos pero de ningún modo en sus pensamientos, surge claramente en esta comparación.
+							</p>
+							<p>
+								Con lo que precede ¿nos hemos desviado de la psicología de las masas? Seguramente no. Si deseamos comprender las ideas y las creencias que están germinando en las masas de la actualidad y que surgirán mañana, es necesario saber cómo ha sido preparado el terreno. La instrucción dada a la juventud de un país permite conocer lo que ese país será algún día. La educación conferida a la generación actual justifica las previsiones más pesimistas. Es parcialmente por la instrucción y la educación que la mente de las masas resulta mejorada o deteriorada. En consecuencia, era necesario mostrar cómo esta mente ha sido modelada por el sistema de moda y cómo la masa de los indiferentes y los neutrales se ha convertido progresivamente en un ejército de los descontentos, listos a obedecer todas las sugestiones de los utopistas y los retóricos. Es en las aulas que los socialistas y los anarquistas pueden ser hallados hoy en día, es allí en dónde se está pavimentando el camino del período de decadencia que se aproxima para los pueblos latinos.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="1-4-forma-religiosa.htm">&lt; La forma religiosa</a></li>
+									<li class="align-right"><a href="2-2-factores-inmediatos.htm">Los factores inmediatos &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

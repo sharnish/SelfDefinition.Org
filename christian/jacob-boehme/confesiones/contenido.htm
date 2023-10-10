@@ -1,0 +1,220 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Confesiones de Jacob Boehme</title>
+	<meta name="description" content="No es el arte el que ha escrito esto, pero todo fue ordenado de acuerdo al Espíritu.">
+	<meta name="author" content="Jacob Boehme">
+	<meta property="og:title" content="Confesiones de Jacob Boehme">
+	<meta property="og:description" content="No es el arte el que ha escrito esto, pero todo fue ordenado de acuerdo al Espíritu.">
+	<meta property="og:image" content="https://selfdefinition.org/christian/jacob-boehme/confessions/images/jacob-boehme-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_confesiones-spanish-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this is first <link rel="prev" href=""> -->
+	<link rel="next" href="titulo-y-notas.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* TO DO: Do this chapter by Bucke and link it from this footnote in the Introducción:
+        [1. Ver Conciencia Cósmica por Richard M. Bucke, el capitulo 10, sobre Boehme (deletreado &quot;Behmen&quot;) que comienza en la página 97: <a href="/christian/espanol-Richard-M-Bucke-Conciencia-Cosmica.pdf">PDF (español, 204 páginas, 1.4 meg)</a>&nbsp;]
+        
+        */
+		/* only for the  chapters, nt for Title Page and Introduction */
+		#chapters .item a {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+
+		/* contents page only */
+		#chapters {
+			column-rule: 1px solid #666;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_confesiones-spanish-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_confesiones-spanish-title-include.htm"); ?>
+									<h3>
+										Contenido</h3>
+									<p class="tiny">
+										This page in English: <a href="../confessions/contents.htm">../confessions/contents.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="titulo-y-notas.htm">Título y Notas &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- this is titled "Index" in original -->
+							<!-- Two paragraphs were moved from here to the Title page -->
+							<div class="to-center">
+								<!-- items have :hover styling, color change -->
+								<!-- these are CSS3 columns -->
+								<!-- the uls don't float; they are display: inline-block -->
+								<nav class="contents">
+									<div class="item">
+										<a class="conditional-format" href="titulo-y-notas.htm">Título y notas</a>
+									</div>
+									<div class="item">
+										<a href="introduccion.htm">Introducción</a>
+									</div>
+								</nav>
+
+								<div class="center" style="margin:10px auto;">Capítulos</div>
+
+								<nav class="contents" id="chapters">
+									<div class="item">
+										<a href="capitulo-01.htm">I</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-02.htm">II</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-03.htm">III</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-04.htm">IV</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-05.htm">V</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-06.htm">VI</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-07.htm">VII</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-08.htm">VIII</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-09.htm">IX</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-10.htm">X</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-11.htm">XI</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-12.htm">XII</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-13.htm">XIII</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-14.htm">XIV</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-15.htm">XV</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-16.htm">XVI</a>
+									</div>
+									<div class="item">
+										<a href="capitulo-17.htm">XVII</a>
+									</div>
+								</nav>
+							</div>
+							<hr />
+							<p class="note80">
+								Traducción al español por Sra. Alicia Duprat, publicado 1970 por Ernesto Sabato, Santos Lugares, Buenos Aires.
+							</p>
+							<hr />
+							<nav id="index-lists">
+								<ul class="index-external-links">
+									<li class="external-first-item">Jacob Boehme en <a href="https://es.wikipedia.org/wiki/Jakob_B%C3%B6hme">Wikipedia, español</a></li>
+									<li>Este libro en formato <a href="/christian/espanol-Jacobo-Boehme-Confesiones.pdf">Pdf (68 paginas, 268K)</a></li>
+									<li>Confessions (inglés) en <a class="inline" href="https://sacred-texts.com/eso/cjb/index.htm">SacredTexts.Org</a> </li>
+								</ul>
+								<ul class="index-site-links">
+									<li class="site-links-item">También por Jacob Boehme en este sitio <span class="normal">(inglés)</span>:</li>
+									<li class="site-first-item"><a href="/christian/jacob-boehme/mysterium-magnum/contents.htm">Mysterium Magnum</a></li>
+									<li>Franz Hartmann: <a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Life and Doctrines de Jacob Boehme</a></li>
+									<li>Otras obras, PDF y libros de mobi en la página índice cristiana: <a href="/christian/">/christian/</a></li>
+								</ul>
+								<ul class="index-external-links">
+									<li class="external-links-item">Enlaces externos</li>
+									<li class="external-first-item">Jacob Boehme Biblioteca (PDF/Mobi, inglés): <a class="inline" href="http://www.jacobboehmeonline.com/library">www.<wbr />jacobboehme<wbr />online.com</a></li>
+									<li>Manuscritos en línea, inglés: <a href="http://www.passtheword.org/Jacob-Boehme/">www.passtheword.org</a></li>
+									<li>Imágenes alquímicas y otras, Boehme (inglés): <a href="https://alchemywebsite.com/prints_series_boehme.html">alchemywebsite.com</a></li>
+								</ul>
+							</nav>
+							<p>
+								&nbsp;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"></li>
+									<li class="align-right"><a href="titulo-y-notas.htm">Título y Notas &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* file:  /psychology/gustave-le-bon/crowd.css
+
+Update October 4, 2020  */
+
+@media only print {
+	#article:after {
+		content: "Update: May 22, 2022";
+	}
+}
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffea;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c9d4fc;
+}
+
+
+/* end */

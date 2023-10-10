@@ -1,0 +1,100 @@
+<!-- start of menu include file Update September 19, 2022-->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li class="first-item"><a href="/new-thought/">New Thought<span class="conditional-hide-3"> index</span></a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-5x"><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/new-thought/">New Thought index</a></li>
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Some features use ajax api</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>
+				<img class="menu-image" src="images/mystic-christianity-logo.jpg" alt="Mystic Christianity">
+			</li>
+			<li>Mystic Christianity</li>
+			<li class="normal note80 tight">by William Walker Atkinson</li>
+			<li class="normal note80 tight">as "Yogi Ramacharaka" (published 1908)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="contents.htm">Contents and Index</a></li>
+				<li><a href="01-the-coming-of-the-master.htm">1. Coming of the Master</a> </li>
+				<li><a href="02-the-mystery-of-the-virgin-birth.htm">2. Mystery of Virgin&nbsp;Birth</a> </li>
+				<li><a href="03-the-mystic-youth-of-jesus.htm">3. Mystic Youth of Jesus</a> </li>
+				<li><a href="04-the-beginning-of-the-ministry.htm">4. Beginning of Ministry</a> </li>
+				<li><a href="05-the-foundation-of-the-work.htm">5. Foundation of the Work</a> </li>
+				<li><a href="06-the-work-of-organization.htm">6. Work of Organization</a> </li>
+				<li><a href="07-the-beginning-of-the-end.htm">7. Beginning of the End</a> </li>
+				<li><a href="08-the-end-of-the-life-work.htm">8. End of the Life Work</a> </li>
+				<li><a href="09-the-inner-teachings.htm">9. The Inner Teachings</a> </li>
+				<li><a href="10-the-secret-doctrine.htm">10. The Secret Doctrine</a> </li>
+				<li><a href="11-the-ancient-wisdom.htm">11 .The Ancient Wisdom</a> </li>
+				<li><a style="width:205px;" href="12-the-message-of-the-master.htm">12. Message of the Master</a> </li>
+				<li class="note"><a href="publisher-book-list.htm">Publisher Book List, Links</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>William Walker Atkinson
+					at <a href="https://en.wikipedia.org/wiki/William_Walker_Atkinson">
+						Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in New Thought</li>
+				<li class="first-item"><a href="/new-thought/kybalion/contents.htm">Kybalion: Teachings of Hermes Trismegistus</a></li>
+				<li><a href="/new-thought/atkinson/law-of-attraction/contents.htm">W.W. Atkinson, Thought Vibration: The Law of Attraction in the Thought World</a></li>
+				<li class="header-item">Christian section</li>
+				<li class="first-item"><a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Franz Hartmann, Life and Doctrines of Jacob Boehme </a></li>
+				<li><a href="/christian/eckartshausen/cloud-upon-the-sanctuary/contents.htm">Karl von Eckartshausen: The Cloud Upon the Sanctruary</a></li>
+				<li class="header-item">Blavatsky section</li>
+				<li class="first-item"><a href="/blavatsky/voice-of-the-silence/voice-index.htm">Blavatsky's Voice of the Silence</a></li>
+				<li><a href="/blavatsky/light-on-the-path/contents-and-title.htm">Mabel Collins, Light on the Path</a></li>
+				<li class="header-item">Magic section</li>
+				<li class="first-item"><a href="/magic/hartmann/white-and-black/contents.htm">Franz Hartmann, Magic White &amp; Black - The Science of Finite and Infinite Life</a></li>
+				<li><a href="/magic/hartmann/wisdom/chapter-08-alchemy.htm#axiomata-hermetica">Franz Hartmann, "The 43 Axioms of Alchemy" </a></li>
+				<li><a href="/magic/eliphas-levi/paradoxes/contents.htm">Éliphas Lévi, Paradoxes of the Highest Science</a></li>
+				<li class="subhead">Todas las páginas en español</li>
+				<li class="first-item"><a href="/paginas-en-espanol.htm">Páginas en español</a></li>
+
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

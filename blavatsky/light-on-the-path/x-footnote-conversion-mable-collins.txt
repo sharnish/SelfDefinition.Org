@@ -1,0 +1,98 @@
+footnote-conversion-mable-collins.txt
+
+
+
+
+Light on the Path
+
+IN TEXT
+
+As is:	<sup><a href="#n1" id="rule-I-1" class="fn-anchor">Note Rule I-1</a></sup>
+
+Should be (to match Lachs):	
+
+	<a id="rule-I-1" class="return-anchor"></a>    <sup><a href="#n1" >Note Rule I-1</a></sup>
+
+Step 1:	Convert href="#n1"   to href="note-1"  etc			< did in endnotes first, now do for <sups>
+
+Replace 	<a href="#n1"
+With 		<a href="#note-1"
+
+After that we have this:
+
+<sup><a href="#note-1" id="rule-I-1" class="fn-anchor">Note Rule I-1</a></sup>
+
+<a href="#note-1" id="rule-I-1" class="fn-anchor">Note Rule I-1</a></sup>
+
+Replace		class="fn-anchor">
+
+With		class="return-anchor"></a><sup><a>
+
+NOW HAVE:
+
+<a href="#note-1" id="rule-I-1" class="return-anchor"></a><sup><a>Note Rule I-1</a></sup>
+
+NEED TO MOVE THE HREF FROM THE FIRST ANCHOR TO THE SECOND ANCHOR
+
+
+Endnote
+
+From Lachs must be these two:
+
+<p> <a class="endnote" id="note-1"></a>
+    <a href="#return-anchor-1">[1]</a> 
+
+
+Currently (bad)
+
+<li><a class="endnote" id="note-5">Note on <a href="#rule-I-5">Rule I-5</a>
+
+Try
+
+<li><a class="endnote" id="note-5"></a>Note on <a href="#rule-I-5">Rule I-5</a>
+
+
+Endnotes CSS, example note -- the anchor is too high above the following paragraph. 
+
+<ul class="references-list">
+
+<li><a class="endnote" id="note-5"></a>Note on <a href="#rule-I-5">Rule I-5</a>
+									<p>
+										Do not fancy you can stand aside from the bad man or the foolish man. They are yourself, though in a less degree than your friend or your master. But if you allow the idea of separateness from any evil thing or person to grow up within you, by so doing you create Karma, which will bind you to that thing or person till your soul recognizes that it cannot be isolated.
+									</p>
+									
+So try on page
+
+ul.reference-list li + p {margin-top:-10px;}
+==================================================================
+
+Luz en el sendero
+
+At beginning, text example
+
+
+<sup><a href="#n1" id="rule-I-1" class="fn-anchor">Nota Regla I-1</a></sup>
+
+Must be:
+
+<a id="rule-I-1" class="return-anchor"></a><sup><a href="#nota-t">Nota Regla I-1</a></sup>
+
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end

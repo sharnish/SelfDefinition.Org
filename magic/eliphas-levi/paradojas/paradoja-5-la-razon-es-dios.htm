@@ -1,0 +1,730 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="paradoja-4-el-conocimiento-es-la-ignorancia-del-mal.htm">
+	<link rel="next" href="paradoja-6-la-imaginacion-realiza-lo-que-inventa.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		/* paradox 5 hidden notes
+        57:2, 58:1 (long), 61:1, 68:2, 71:1, 74:1 */
+
+		/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/  */
+
+		/* paradox 5  */
+
+		label[for=element-toggle-57-2],
+		label[for=element-toggle-58-1],
+		label[for=element-toggle-59-1],
+		label[for=element-toggle-60-1],
+		label[for=element-toggle-61-1],
+		label[for=element-toggle-64-1],
+		label[for=element-toggle-68-2],
+		label[for=element-toggle-70-1],
+		label[for=element-toggle-71-1],
+		label[for=element-toggle-71-2],
+		label[for=element-toggle-72-1],
+		label[for=element-toggle-74-1] {
+			cursor: pointer;
+		}
+
+		/* paradox 5 */
+
+		#element-toggle-57-2,
+		#element-toggle-58-1,
+		#element-toggle-59-1,
+		#element-toggle-60-1,
+		#element-toggle-61-1,
+		#element-toggle-64-1,
+		#element-toggle-68-2,
+		#element-toggle-70-1,
+		#element-toggle-71-1,
+		#element-toggle-71-2,
+		#element-toggle-72-1,
+		#element-toggle-74-1 {
+			display: none;
+		}
+
+		/* paradox 5 */
+
+		#element-toggle-57-2:not(:checked)~#toggled-element-57-2,
+		#element-toggle-58-1:not(:checked)~#toggled-element-58-1,
+		#element-toggle-59-1:not(:checked)~#toggled-element-59-1,
+		#element-toggle-60-1:not(:checked)~#toggled-element-60-1,
+		#element-toggle-61-1:not(:checked)~#toggled-element-61-1,
+		#element-toggle-64-1:not(:checked)~#toggled-element-64-1,
+		#element-toggle-68-2:not(:checked)~#toggled-element-68-2,
+		#element-toggle-70-1:not(:checked)~#toggled-element-70-1,
+		#element-toggle-71-1:not(:checked)~#toggled-element-71-1,
+		#element-toggle-71-2:not(:checked)~#toggled-element-71-2,
+		#element-toggle-72-1:not(:checked)~#toggled-element-72-1,
+		#element-toggle-74-1:not(:checked)~#toggled-element-74-1 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?>
+									<h3>
+										<span class="block">La Paradoja 5</span> <span class="h3-block">La razón es Dios</span>
+									</h3>
+									<p class="tiny">
+										<span class="block">This page in English:</span> <a href="../paradoxes/paradox-5-reason-is-god.htm">
+											.. paradox-5-reason-is-god.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="paradoja-4-el-conocimiento-es-la-ignorancia-del-mal.htm">
+											&lt; Paradoja 4</a></li>
+									<li class="align-right"><a href="paradoja-6-la-imaginacion-realiza-lo-que-inventa.htm">
+											Paradoja 6 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								Esta debería estar colocada primero. Es ante todo: el ser existente, hasta existe
+								para los que no lo saben, porque el sol alto, pero para verlo, lo sienten, lo comprenden,
+								esto es el triunfo de la comprensión en morada del hombre; es el resultado definido
+								de todo el trabajo del pensamiento y de todas las aspiraciones de la fe.
+							</p>
+							<p>
+								En el principio de la razón, y la razón esta en Dios, y Dios es la razón. 2 ellos
+								todos son creados por ella, y por fuera él no ha creado nada. Es la luz verdadera
+								que nos alumbra desde nuestro nacimiento: hasta brilla en la oscuridad, pero la
+								oscuridad no la oculta.
+							</p>
+							<label for="element-toggle-57-2">
+								[57:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-57-2" type="checkbox" />
+							<p id="toggled-element-57-2" class="fnote hidden">
+								[57:2. que nuestra versión lee dentro en el principio era la palabra, &quot; etc.,
+								pero ninguna de las dos lectura da la proporción justa el sentido oculto del pasaje.
+								El arche es la espiral primordial, que de EL emana inconscientemente, el comienzo
+								de todas las cosas. Los logotipos es la ley de la evolución, de la razón de todas
+								las cosas, la causa misma de sus relaciones inter complejas, de la palabra, p. 58
+								la fuerza o la energía que por todas partes y en cada hora, ajustar, y, al mismo
+								tiempo, es el mayor camino del universo. &mdash;Trad.]
+							</p>
+							<p>
+								Estas palabras son el oráculo de la razón misma, y se reproducen, como ellos todos
+								conocen, a principios del evangelio de San Juan.
+							</p>
+							<p>
+								Sin esta razón nada existe; todo tiene su razón para existir, hasta sin razón, 1
+								que sirve un fondo para la razón como sombra hace a la luz.
+							</p>
+							<label for="element-toggle-58-1">
+								[58:1 Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-58-1" type="checkbox" />
+							<div id="toggled-element-58-1" class="fnote hidden">
+								<p>
+									[58:1 esto es un ejemplo habitualmente persistente de Eliphas Levi al mismo tiempo
+									de emplear palabras en sus sentidos ocultos, y a otras, posiblemente en la misma
+									frase, en sus sentidos populares, con el fin de llevar el un prudente a la conclusión
+									que los emplea por todas partes en estos últimos. Naturalmente no hay ningún logos,
+									ninguno tal cosa como el &quot;desatino&quot;, si razón debe ser interpretada en
+									su sentido oculto. Todo por sus escrituras coge a cualquiera antítesis aparente
+									ordenada, de cualquier modo guadaña puede ser, o cuánto arriesga de este hecho de
+									engañar al estudiante más digno en cuanto a su verdadero significado. Un pensamiento
+									que actúa como un fondo que hay que revelar razonan{piensan} es disparate, si la
+									razón sea tomada en su sentido oculto en el cual lo había empleado en las líneas
+									precedentes, a saber, de la fuerza o de la ley o del impulso o de la concepción,
+									o totalmente vueltos a elevar, sin la nada puede haberse creado, y lo que explica
+									todo que existe, porque un deducir no tiene ningún sentido oculto, y en su sentido
+									popular es tanto un espiral de los logotipos, lo mismo que razón, en significado
+									ordinario de la palabra; pero E.L. p. 59 no podría resistir al tintineo de la razón
+									y del Un pensar, y así sin advertir en medio de la frase él emplea la &quot;razón&quot;,
+									por primera vez en el discurso, en su significado exotérico limitado. Por otra parte
+									después de haber establecido una ley cierta o la verdad en las palabras sustente,
+									y entendido por sostenerle, cierto arche se siente oculto, continúa constantemente
+									para discutir parte superior o juego con estos últimos en sus significados comunes
+									limitados, presentando de este hecho una confusión de las ideas, ser completamente
+									sorprendente al lector, aunque el autor no, como sospecho, frecuentemente él mismo
+									pierden el contacto con la doctrina más elevada. Si estas debilidades de nuestro
+									autor sean mantenidas en el espíritu, muchas dificultades aparentes en todos sus
+									trabajos desaparecerán. &mdash;Trad.]
+								</p>
+							</div>
+							<p>
+								El creyente razonable le es que cree en conocimiento más grande que de razón; por
+								la razón, o para hablar más correctamente el raciocinio de cada uno, no es sabiduría
+								absoluta.
+							</p>
+							<p>
+								Cuando razono defectuoso, me vuelvo poco razonable; <sup>[59:1]</sup> esto no es
+								luego razón para la cual debería disfrutar, por mi propio juicio.
+							</p>
+							<label for="element-toggle-59-1">
+								[59:1 Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-59-1" type="checkbox" />
+							<p id="toggled-element-59-1" class="fnote hidden">
+								[59:1. (Nota original de la traducción del francés al inglés:)<br />
+								el original es, <em>Quand je raisonne mal, je n'ai point raison</em>, un juego de
+								palabras que pueden ser acercadas solamente en inglés como más arriba.]
+							</p>
+							<p>
+								Voluntariamente debería volverme entonces hacia los que mas saben, para igualarme
+								entonces debo tener la razón para creer en su superioridad.
+							</p>
+							<p>
+								Conjeturar, al azar, lo que no se conoce, y luego creer ciegamente en sus propias
+								conjeturas, o las de otros, que no saben más que yo mismo, es comportarse como locos.
+								Cuando hemos dichos que Dios exige el sacrificio de nuestra razón, es haber divinizado,
+								el ídolo despotrico, o ideal de la locura.
+							</p>
+							<p>
+								La razón da la convicción, pero la creencia impetuosa produce solamente la infatuación.
+							</p>
+							<p>
+								Es completamente razonable creer en las cosas que no se ven, contactos, ni las medidas,
+								porque manifestado el infinito existe, y pueden indicar que no sólo creo, sino que
+								sé que un infinito de las cosas existen quiénes están más allá de mi extensión.
+								Al ser indefinidamente progresivo el conocimiento, puedo creer que un día sabré
+								que de lo que ahora soy ignorante. No tengo ninguno duda con vistas a lo que sé
+								completamente; puedo no fiarme de mi conocimiento si sé insuficientemente, pero
+								no puedo tener dudas en cuanto a una cosa sobre la cual no sé nada, ya que es imposible
+								que las formule.
+							</p>
+							<p>
+								El que dice allí no es ningún Dios, sin haber definido a Dios de modo completo y
+								absoluto, simplemente habla el disparate. Espero su definición, y cuando me colocó
+								esto adelante después de su propia manera, estoy seguro, de antemano, de poder decirle,
+								&quot;estoy de acuerdo contigo, allí no es ninguno tal Dios;&quot; pero este Dios
+								ciertamente no es mi Dios. Si me dice: &quot;definir a su Dios,&quot; debería responder
+								yo, &quot;hará buena atención para no hacer nada de este modo, porque Dios definido
+								es Dios destronado.&quot; <sup>[60:1]</sup>
+							</p>
+							<label for="element-toggle-60-1">
+								[60:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-60-1" type="checkbox" />
+							<p id="toggled-element-60-1" class="fnote hidden">
+								[60:1. el juego original sobre las palabras, &quot;un Dieu défini est un Dieu fini&quot;
+								(el remate del este un Dios definido de un Dios) no puede ser exactamente reproducido
+								en inglés. &mdash;Trad.]
+							</p>
+							<p>
+								Cada definición positiva es objetable, el infinito es el lo no definido. &quot;
+								¿ Creo solamente en la materia, &quot; otros me señalarán, pero cuál es materia?
+								En la cirugía dan este nombre a las excreciones, y tenemos podría indicar en filosofía,
+								ligeramente paradójicamente, que la materia es la excreción del pensamiento. El
+								materialista merecen totalmente ser pagados a lo lejos con esta definición un poco
+								cruda de Carnivallic, ellos los que declaran el pensamiento la excreción del cerebro
+								material, sin darse cuenta que este instrumento excelente y pasivo de los funcionamientos
+								del alma humana es el jefe de obra de un pensamiento, que no nos pertenece.
+							</p>
+							<p>
+								Se podría definir a Dios, en un cierto y el modo positivo, dejo de creer en Dios,
+								debería saber lo que el es, pero que no puedo saber esto, simplemente creo que existe,
+								porque es imposible que no conciba un pensamiento directivo, en esta sustancia eternamente
+								de vida este espacio infinito de pueblos. <sup>[61:1]</sup>
+							</p>
+							<label for="element-toggle-61-1">
+								[61:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-61-1" type="checkbox" />
+							<div id="toggled-element-61-1" class="fnote hidden">
+								<p>
+									61:1 en esta sustancia, en cada átomo de él, pero no fuera de él. No hay ninguna
+									deidad suplementaria-cósmica. Toda la materia es Dios, y Dios es materia, o no hay
+									ningún Dios. <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									Nota por Traductor:<br />
+									Esto me parece que ruego la cuestión. ¿ Hubo aparte del cosmos que hay que mirar?
+									O.E. puede responder el cosmos es infinito, allí puede no estar nada aparte de esto
+									que es infinito, olvidando, parece el tomo, que lo que puede ser infinito todo a
+									acondicionado en él, todavía puede irse de la pieza para tiene allá en No condicionado.
+									Admite la cuarta dimensión del espacio, y afirma más lejos arriba, como será visto,
+									y como creo con la buena razón, sea todavía hay quinto, sexto y las séptimas dimensiones
+									del espacio que hay que descubrir, sin embargo desea insistir en el hecho de que
+									las concepciones de las inteligencias (lo doy en los espíritus planetarios y ellos
+									todos) acondicionaron en el cosmos, en el cual podemos pensar solamente como infinito,
+									son absoluto; Considerando que someto, lo que son necesariamente relativos, y lo
+									que el hecho que las inteligencias más elevadas acondicionadas en el universo piensan
+									en ello para ser infinito y pueden no trazar en él nada pero las leyes, prueba de
+									ninguna manera esto a más alto todavía y no condicionado inteligencia allí puede
+									no ser algo el exterior que infinito, y en esta algo la inteligencia la que las
+									leyes descubiertas representará. No, además, someto que la inteligencia puede ser
+									interior e infiltrándose el cosmos, pero sé inimaginable por sus propias buenas
+									razones por todas sus inteligencias emanadas. A mí pues: la afirmación que o &quot;
+									Dios es materia &quot; (en el sentido de la sustancia ininteligente inconsciente)
+									&quot; o no hay ningún Dios, &quot; parece también impetuosa y un filosófico. Comprendo
+									totalmente la negativa para reconocer o creer en el esto, de del cual ningún conocimiento
+									existe, y de lo que ninguna evidencia puede ser obtenida, pero esto me parece completamente
+									diferente de negar su existencia, que implica la aceptación de la omnisciencia.
+								</p>
+							</div>
+							<p>
+								Si los creyentes en religiones exclusivas me dicen que Dios se manifesto y que habló,
+								me respondo no lo creas, lo sé. Sé que Dios se manifiesta al corazón humano en las
+								bellezas de la naturaleza; sé que habló por las voces de todo sabio y a los corazones
+								de todo justo. Leí sus palabras, en los himnos de Cleanthus y de Orfeo, como en
+								los salmos de David; admiro las páginas grandes de los Vedas y de Corán, y encuentra
+								la leyenda de Krishna tan emocionante como evangelio, pero empero escribí contra
+								Júpiter que tortura a Prometeo y sirve de pretexto de la muerte de Sócrates. Tirito
+								cuando escucho a el Cristo criticar, en sus últimos sollozos de muerte, por Jehovah
+								para haberle abandonado él, y yo pongo los velos en mi cara cuando Alejandro VI
+								profesa para representar a Jesús el Cristo. Los verdugos y el torturador de la conciencia
+								humana están como odiosos a mí bajo el reinado sacerdotal de Pio VI como bajo el
+								de Nerón. La religión verdadera y cristiana es la humanidad, sobrehumana en la fuerza
+								de la redención, y del sacrificio del individuo para otros. Los dioses a los que
+								pertenecen los hombres sacrificados son unos demonios. La razón debería para siempre
+								el empuje lejos el culto de estos demonios, y el ídolo del diablo, que se volvió
+								ridículo por él, es monstruosidad. Los que creen diabólicamente, adoran al diablo,
+								porque adoran su creador y cómplice. Ya dijimos, Dios del diablo, que reprende al
+								diablo pero permitamos siempre al consejo funcionar arriba para nuestra destrucción
+								es una ficción horrible de maldad y de cobardía humanas; dios del diablo estado
+								dando vueltas se haría un diablo de Dios habla así la razón, pero la superstición
+								inmóvil impondría el silencio, y es por eso que mucha gente, bastante excusablemente,
+								permiso, compadeciendo ellas, al supersticioso su Dios y su diablo, y ellos mismas
+								cree desde entonces en el nada.
+							</p>
+							<p>
+								Pero hasta la superstición tiene razón de estar en los infinitos del intelecto humano.
+								El sacerdocio consiguió convertirla en fuerza, sometiéndola a la obediencia sin
+								visibilidad. Llevarse la superstición de las almas, estrecho pero ardiente, y callado
+								los conversos en fanáticos de impiedad. Debemos detener a los imbéciles por su locura,
+								<sup>[64:1]</sup> ya que están dispuestos a ser prudentes.
+							</p>
+							<label for="element-toggle-64-1">
+								[64:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-64-1" type="checkbox" />
+							<p id="toggled-element-64-1" class="fnote hidden">
+								[64:1. y yo debamos indicar que pone en práctica este precepto admirablemente; riéndose
+								imbéciles con un rincón de la boca, refuerza su locura con otro <span class="nowrap">
+									&mdash;O.E.</span>]
+							</p>
+							<p>
+								Les enseñamos la moralidad a los niños diciéndoles historias, y las enfermeras toman
+								a buen cuidado en no desengañar sus espíritus cuando son asustados en casa del fantasma.
+								Es verdad que ciertas madres realistas amenazan a sus niños por el lobo o el policía,
+								pero el lobo ni el policía no puede estar por todas partes, y el niño, convencido
+								de su ausencia, se reirá de la amenaza, mientras que se piensa que el fantasma,
+								que es dondequiera visto, como el diablo, jamás está en todo, y el niño es empujado
+								más para creer en ella porque es una ficción, una ilusión poética, tiene historia
+								en una palabra como algo que tome la toma sobre la imaginación, y la imaginación,
+								el poderoso entre los hombres, es suprema entre los niños.
+							</p>
+							<p>
+								El fantasma es el diablo de los niños, justo como el diablo de la edad media era
+								el fantasma de los hombres.
+							</p>
+							<p>
+								Por otra parte no hay ninguna ficción que no sirva de velo o de máscara a una realidad
+								cierta. El fantasma existe, y el pobre niño le conocerá pronto fruncira las cejas
+								pedante con la voz dura y el bastón más o menos justo amenazante.
+							</p>
+							<p>
+								Entonces le señalarán respecto a Dios y respecto a el diablo en tales términos que
+								podría fácilmente confundir a uno con otro. ¿ Voluntad que continúa entonces satisface
+								con conclusión del drama de Polichinela? Polichinela le causa la risa, el diablo
+								quiso hacerle gritar; ¿ acaso él no desearía esto al fin, Polichinela, tan a menudo
+								llevado a lo lejos por el diablo, debería a su vuelta llevar a lo lejos al diablo?
+								Esto sería una cuestión de temperamento y temeridad.
+							</p>
+							<p>
+								Hierofante antiguo siempre sostuvieron que sería el crimen más grande para admitir
+								la multitud en las Iniciaciones porque sería dejar vilmente a los lobos, abriría
+								el prado de los ciervos, y sumergiría a todos los hombres en la guerra una con otro
+								bajo el pretexto de la igualdad.
+							</p>
+							<p>
+								Jesús el Cristo animado sobre sus discípulos para no moldear sus perlas antes el
+								cerdo. Francmasones este día juran para preservarle a la muerte los secretos que
+								no poseen más. La igualdad entre los hombres puede existir solamente por categorías
+								de Jerárquico; jamás puede ser absoluta, porque la naturaleza la rechaza. Debe tener
+								allí mucho y poco, de modo que los hombres puedan mutuamente ayudar, y necesita
+								de.
+							</p>
+							<p>
+								Nada es difícil más para la camino común de los hombres que para vivir según la
+								razón, y es grato para el bien. Su motivo casi es siempre deseo o temor, y deben
+								ser llevados por esperanza o temor. Necesitan, por otra parte, la coacción para
+								impedir caerles en la inercia o el desorden. Marchan mejor cuando en los regimientos
+								y cargado; el monje y el soldado se regocijan bajo una disciplina de hierro; está
+								por austeridades y silencio que la inconsistencia de la mujer desaparece. Un hombre
+								vive valientemente la vida de Trapense que sería un ladrón, él no desean ardientemente
+								por infierno el cielo y el temor. ¿ Es el mejor para esto? Posiblemente no, pero
+								ciertamente es menos peligroso para la sociedad.
+							</p>
+							<p>
+								Esto es todo el muy perfecto para decirles la verdad a los hombres, pero no la comprenderán
+								a menos que ellos mismos ya hubieran buscado casi la hubieran encontrado. La gente
+								de Tiberios quiso expiaciones y austeridades. La edad del platónico y del Estoico
+								de Séneca y de Epictetus, ha sido encadenada para abrazar la moralidad cristiana.
+								<span class="sans">¡</span> Virgilio casi parece cantar a comer del Hombre-dios, y los libros de Sibilina
+								prometieron el Cristo para unir a la tierra!
+							</p>
+							<p>
+								Lutero no ha sido llevado por su propio impulso contra Roma; ha indignado y empujado
+								adelante por una corriente que barrió por encima de toda la Europa. Voltaire no
+								hizo el decimoctavo siglo, era el decimoctavo siglo que hizo a Voltaire. El reinado
+								de Señora de Maintenon y los escándalos de Jansenismo había dado asco y Francia
+								cansada al último grado; la oración fúnebre de Bossuet parecieron tener interés
+								en la monarquía cristiana, y siguió allí a cardenales como Bernel y quiere a Dubois.
+								Voltaire se mofo de todo e incitó a personas que se rían. Rousseau, sin embargo,
+								profesó que había algo en ella, y la gente admiró totalmente de allí al perseguidor,
+								porque a sus corazones el mundo ligeramente era con su manera del pensamiento. El
+								tachar - Rousseau'd Rousseau de revolucionario, y el sentido común del país que
+								desbastaron con Chateaubriand,, sin embargo al aplaudir cada momento la insolencia
+								Volteriana de Béranger: Es un progreso que aporta a los grandes hombres a enfrentarse,
+								y el mundo les atribuye incorrectamente el movimiento que les hizo notables.
+							</p>
+							<p>
+								La revolución francesa presentó un espectáculo extraño y ridículo en el mundo, cuando
+								inauguró el culto de la razón, personificado por un danzante de ópera. Podría al
+								menos gustado que la nación misma hacía el entretenimiento, y haber deseado reconocer
+								a otras naciones que la razón del francés casi es siempre locura. Entonces el caso
+								era que Robespierre, para destronar esta razón indecente, inventó a su ser supremo,
+								pero la opinión pública no ratificaría el cambio; recordó a Dios y se dio cuenta
+								que la revolución movía su tierra. Bonaparte, que siguió, comprendió que la religión
+								no había muerto, pero religión para él podría ser católica, en otros términos, bien
+								fundada solamente; reabrió las iglesias, y trató de extender su mano sobre el papa,
+								pero el papa deslizó de él con la gente.
+							</p>
+							<p>
+								El caso es que la razón de la religión es superior a razón de la política, porque
+								es solamente en la religión que de buenas tomas el hilo de la fuerza. Para que una
+								derecha sea inviolable debe ser proclamado como divino. Derecho y son por encima
+								del hombre, conservas de Dios el, imponiéndole el otro; dios es la razón suprema.
+								Un cuerpo no puede vivir sin cabeza, y el jefe del cuerpo social es Dios. Un cuerpo
+								cambia pero no muere, si su principio es inmortal. Dios es la verdad y juzgarlo
+								que jamás cambian; es con la causa que el estado debería llevar a las razones religiosas.
+							</p>
+							<p>
+								La iglesia es el prototipo de la patria; es la patria universal, y la unidad del
+								mundo cristiano <sup>[68:1]</sup> es algo más grande que la unidad de Alemania o
+								de Italia.
+							</p>
+							<p class="fnote">
+								[68:1. ¿ pero cuándo o dónde tiene tal unidad jamás existió? &mdash;Trad.]
+							</p>
+							<p>
+								La fuerza moral es superior a la fuerza física, y a la fuerza espiritual obtiene
+								la parte superior de la fuerza temporal. Si San Pedro jamás hubiera empuñado su
+								espada, Jesús jamás le habría dicho, &quot;When thou shalt be old, thou shalt stretch
+								forth thy hands, and another shall gird thee, and carry thee whither thou wouldest
+								not.&quot;. <sup>[A]</sup> El rey de Italia tomó Roma del santo padre, porque San
+								Pedro tomó por la fuerza la oreja de Malchus. Malchus o varón significa, en el hebreo,
+								al rey.
+							</p>
+							<p class="fnote">
+								[A. "Cuando seas viejo, extenderás las manos y otro te vestirá y te llevará adonde
+								no quieras ir." &mdash;Juan 21:18.]
+							</p>
+							<p>
+								Sea como fuere, el capital del mundo cristiano no debe pertenecer exclusivamente
+								a Italia. El representante supremo de la humanidad divina debe ser un sacerdote
+								que hay que bendecir y un rey que hay que perdonar. Es lo que la razón nos señala,
+								y si el papa cree que un padre de una familia debe ser infalible para sus niños,
+								que la cabeza de la religión debe no tener ninguno informe de asuntos con impiedad;
+								esta libertad de opinión no debe ser autorizada; si se cree que obligó a tornar
+								la sociedad al revés; <span class="sans">¡</span> se protesta, en una palabra, contra cada uno y todo qué
+								aparecen en él contrario al dogma, por qué, poniendo a un lado la justicia del dogma,
+								el papa es mil veces bueno! <sup>[68:2]</sup>
+							</p>
+							<label for="element-toggle-68-2">
+								[68:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-68-2" type="checkbox" />
+							<p id="toggled-element-68-2" class="fnote hidden">
+								[68:2. es apenas necesario decirle a la inmensa mayoría de los lectores que todo
+								es las lentejuelas refinadas. La costumbre siempre persistente de nuestro autor
+								de decir, aparente seriamente, lo que no cree y quién no quiere decir ninguno sino
+								&quot; los locos &quot; para creer, es susceptible demasiado a menudo de volverse
+								seriamente falaz con esta última grande y respetable clasifica. &mdash;Trad.]
+							</p>
+							<p>
+								Al lado de las pasiones, los enemigos más grandes de la razón humana son los perjuicios.
+								No examinamos cómo las cosas son; nosotros simplemente voluntad que deberían ser
+								en tales y tal manera. Nos negamos a cambiar nuestra opinión, porque esto humilla
+								nuestro orgullo, como si el hombre fuera infalible, y no debe el día al día instruir
+								y mejorar. &quot; Cuando era un niño, &quot; dijo San Pablo, &quot; razone I como
+								niño, comprendí como niño, pensé como niño: pero cuando me hice un hombre, puse
+								cosas infantiles. &quot; El apóstol aquí proclama la ley del progreso y hasta se
+								aplica la iglesia, pero es lo que los teólogos niegan obstinadamente comprender.
+							</p>
+							<p>
+								Debemos disfrutar perjuicios devotos tanto como perjuicios impíos. La piedad verdadera
+								es esencialmente independiente, pero se somete razonablemente a las costumbres y
+								a las leyes, cuando no puede confiar, y lo iguala a menudo cuando espera, para cambiarlas.
+							</p>
+							<p>
+								Jesús decia que no deberia arrancarse las cizañas que habián sido mezcladas al trigo,
+								para el temor por temor de que al mismo tiempo deberían desarraigar el buen grano;
+								pero esto deberían esperar la cosecha, y luego separar el trigo de las malas hierbas.
+								Hay unas épocas del bien probado y de la síntesis, en las cuales la crítica debe
+								distinguir la verdad de la guadaña. Estamos en una de tales épocas en las cuales
+								los perjuicios deben tiernamente no ser manipulados más. Sin embargo, no debemos
+								ser duros con pueblo que los tienen. Mostremos, despacio y pacientemente, la verdad,
+								y las falsedades caerán por si mismas. <sup>[70:1]</sup>
+							</p>
+							<label for="element-toggle-70-1">
+								[70:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-70-1" type="checkbox" />
+							<p id="toggled-element-70-1" class="fnote hidden">
+								[70:1. esto es verdad, pero solamente la mitad de la verdad. En cambio recordar que
+								más dejas las malas hierbas cogerse mucho tiempo, más ancho la voluntad para que
+								sus semillas sean diseminadas, y más grande y el arrancar resistido el crecimiento
+								deberás tratar. &mdash;Trad.]
+							</p>
+							<p>
+								Los perjuicios son las malas costumbres del espíritu; brotan de la educación, del
+								apatía de ignorancia o de intelectual, intereses de la posición, de la reputación
+								o de la fortuna. Creemos fácilmente de verdad de lo que nos satisface y siempre
+								más fácilmente en lo que nos agrada; los mejores sentimientos, hasta cuando exagerado,
+								se hacen fuentes de perjuicio; el amor de la familia produce el orgullo y la intolerancia
+								de la casta; el amor del país da lugar a la arrogancia nacional; la gente piensa
+								que deberían ser franceses, o ingleses, más bien que deberían ser hombres: el entusiasmo
+								religioso introduce luego muchos de otros excesos. Las edades de éxito desprecian,
+								condenan y abominar; ¿ los cristianos son unos perros para el seguidor de Muhammad,
+								los judíos son seres obscenos para el cristiano, los protestantes son unos herejes,
+								los católicos son papistas dónde están los hombres razonables?
+							</p>
+							<p>
+								La razón está como
+								la verdad; choca cuando desnudo visto.
+							</p>
+							<p>
+								Estar demasiado en el derecho debe estar en el mal. La razón debería persuadir y
+								no imponerse. Tiene escasas fuerza por encima de los niños, y casi contraria siempre
+								a mujeres.
+							</p>
+							<p>
+								Es una fuerza, pero es una fuerza oculta; debería regir sin mostrar su mano. <sup>[71:1]</sup>
+							</p>
+							<label for="element-toggle-71-1">
+								[71:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-71-1" type="checkbox" />
+							<div id="toggled-element-71-1" class="fnote hidden">
+								<p>
+									[71:1. parece dibujar pero una línea débil entra &quot;el ocultista&quot; y &quot;el
+									Jesuita.&quot; <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									Sin duda alguna porque él mismo, como muchos de otro ocultista, ligeramente fue
+									comprobado Jesuita en sus informe de asuntos con no lanza. &mdash;Trad.]
+								</p>
+							</div>
+							<p>
+								Exige un espíritu muy poderoso y firme el consagrarse sin peligro a las ciencias
+								ocultas, y sobre todo a las experiencias que confirman sus teorías; el magnetismo,
+								la adivinación y el espiritualismo pueblan siempre el manicomio, y la filosofía
+								hermética puede añadir a otras víctimas. El experto los más celebrados en estas
+								ciencias tuvieron sus momentos de aberración. Pitágoras recordó que haya sido Euphorbius.
+								Apollonius de Tyana causó a un viejo mendigo de ser lapidado para quedar la peste.
+								Paracelso creyó que había tenido un espíritu familiar escondido en el pomo de su
+								espada larga. Cardán <sup>[71:2]</sup> se permitió a la matriz del hambre justificar
+								la astrología.</p>
+							<label for="element-toggle-71-2">
+								[71:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-71-2" type="checkbox" />
+							<p id="toggled-element-71-2" class="fnote hidden">
+								[71:2. Eliphas, como de costumbre, le incita aquí el entretenimiento a su público.
+								Perfectamente se da cuenta para que todas estas lineas fingidas de locura tuvieran
+								un significado oculto. &mdash;Trad.]
+							</p>
+							<p>
+								Duchenteau, <sup>[B]</sup> que reconstruyó y cumplió el calendario mágico de Tycho-Brahe, también
+								murió desgraciado probando una experiencia exagerada. Cagliostro se comprometió
+								con un conjunto de arrogantes, en materia del collar de la reina, y se fue para morir en las cárceles
+								de Roma. El interior del arca no debe estar con la impunidad mirada, y los que la
+								tocan corren el riesgo de ser chocado como Moza por el rayo. No hablo del temor,
+								la envidia, el odio de los vulgares quiénes persiguen por todas partes al iniciado,
+								que no sabe esconder su conocimiento. Las verdades prudentes se escapan de este
+								peligro. <sup>[72:1]</sup>
+							</p>
+
+							<p class="fnote">
+								[B. Vea Lévi, <em>La Doctrina y Ritual de la Alta Magia.</em>]
+							</p>
+							<label for="element-toggle-72-1">
+								[72:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-72-1" type="checkbox" />
+							<div id="toggled-element-72-1" class="fnote hidden">
+								<p>
+									[72:1 que soy feliz admite el principio <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									¿ El principio &quot; de disimular &quot;? Temo sea un principio que todo está dispuesto
+									solamente demasiado a admitir. <span class="nowrap">&mdash;<em>Trad.</em>.]</span>
+								</p>
+							</div>
+							<p>
+								El Abad Trithemus <sup>[C]</sup> vivió y murió apaciblemente mientras que Agripa, <sup>[D]</sup>
+								su discípulo imprudente, estaba encerrado prematuramente en un hospital por la vida de
+								inquietud y de tormenta. Agripa, antes de su muerte, blasfemo contra
+								la Ciencia, como Bruto en casa de Philippi tuvo blasfemia contra la virtud, pero
+								a pesar de la desesperación de Bruto, la virtud es más que un nombre vacío, y a
+								pesar del desaliento de Agripa, la Ciencia <sup>[72:2]</sup> es la verdad.
+							</p>
+							<p class="fnote">
+								[C. inglés: <a href="https://en.wikipedia.org/wiki/Johannes_Trithemius">en.wikipedia.org/wiki/Johannes_Trithemius</a>
+								]
+							</p>
+							<p class="fnote">
+								[D. inglés: <a href="https://en.wikipedia.org/wiki/Heinrich_Cornelius_Agrippa">en.wikipedia.org/wiki/Heinrich_Cornelius_Agrippa</a>
+								]
+							</p>
+							<p class="fnote">
+								[72:2. naturalmente quiere decir aquí la Ciencia <em>oculta.</em> <span class="nowrap">&mdash;Trad.]</span>
+							</p>
+							<p>
+								A hoy, las ciencias ocultas son apenas estudiadas excepto por el ignorante presuntuoso
+								o los sabios excéntricos; las mujeres abastecen su tierra necesaria, en las patatas
+								fritas a la inglesa histerica y el sonambulismo dudoso. La gente quiere sobre todo
+								prodigios de cosas; al diente las matrices de la fortuna, para pegar las cartas
+								del destino, para tener filtros y amuleto, para encantar a sus enemigos, para poner
+								a los maridos celosos a dormir, para descubrir la panacea universal de todos los
+								vicios, para no reformar ellos, pero para preservarlos de dos grandes enfermedades
+								que las matan &ndash;decepción y cansancio&ndash; animar tales arreglos, y uno está seguro
+								de viajar rápidamente sobre el alto camino de la locura.
+							</p>
+							<p>
+								Si Aquiles precipitado de Homero hubiera sido completamente invulnerable, habría
+								sido solamente el asesino cobarde, y el hombre que estaba seguro de ganar siempre
+								al juego se arruinaría pronto, y deben ser estigmatizados como estafador. Que por
+								un acto simple a él la voluntad podría necesitar sobre otros la enfermedad o la
+								muerte, sería un parásito público, de quien la sociedad debe desembarazarse; ganar
+								el amor, economizar por medios normales, es cometer una tipo de violación; evocar
+								espectros es acudir hacia abajo a las sombras eternas. <sup>[73:1]</sup>
+							</p>
+							<p class="fnote">
+								[73:1. muy derecho <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								Estar en relación con los demonios uno debe ser un demonio. El diablo es el espíritu
+								del mal, la corriente mortal de mis excesos y voluntades malas. Escribir esta corriente
+								es zambullirse en el abismo. Por otra parte el espíritu del mal responde solamente
+								a la curiosidad impetuosa y malsana. Las visiones son los fenómenos de la embriaguez
+								o de la demencia. ¿ Para ver espíritus (fantasmas)? <span class="sans">¡</span> Qué quimera! Es como si se
+								profesase para tocar el pensamiento de música y de botella. Si los espíritus de
+								los muertos salieron de entre nosotros, es porque aquí podrían más vivir. ¿ Cómo
+								se supone deben volver? <sup>[73:2]</sup>
+							</p>
+							<p class="fnote">
+								[73:2. todo esto es verdad, en un sentido pero, como el pozo de E.L. supo, no es
+								toda la verdad. <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								¿ Pero entonces será dicha, aquel quién puede ser la utilización de la magia? Les
+								permite a hombres comprender mejor la verdad, y desear el bien de modo más sano
+								y más eficaz. Ayuda a curar almas y cuerpos. No confiere los medios de hacer daño
+								con la impunidad, sino eleva al hombre por encima de las codicias animales. Devuelve
+								al hombre inaccesible a las agonías del deseo y del temor. Constituye un centro
+								divinamente de luz, echando lejos antes de que él fantasmas y oscuridad, porque
+								le sepa, quiere, PUEDE, y tiene su paz. Es la magia verdadera, no la del Nigromántico
+								y del Encantador, pero si la del Adepto y del mago.
+							</p>
+							<p>
+								La magia verdadera es una fuerza científica colocada en el servicio de la razón.
+								La magia falsa es una fuerza sin visibilidad suplementaria a las mesas y a los desórdenes
+								de la locura. <sup>[74:1]</sup>
+							</p>
+							<label for="element-toggle-74-1">
+								[74:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-74-1" type="checkbox" />
+							<div id="toggled-element-74-1" class="fnote hidden">
+								<p>
+									[74:1. la oscuridad, el mal o el mal de, como dado en el Códice Nazaret, <sup>[E]</sup> simplemente
+									son un debilitamiento progresivo de Pleroma o luz akasic. (Caligo ubi exstiterat
+									etiam exstitisse decrementum et detrimentum.) el brujo emplea más la materia, los
+									principios físicamente más potenciales del akasa. Pleroma de los autores griegos
+									del Cristianismo es nuestro akasa. &quot;Airear, el éter, es Pleroma, lo espacia
+									obligado de la eternidad por UNO existente.&quot; (Onomasticon, 13) &quot;To
+									Pan Pleroma ton aionon&ndash;universum pleroma aconum &quot; (Irenaeus, I, i., p. 15.)
+									&quot;en él ángulos de saturación todo el Pleroma carnalmente.&quot; (Vers. Ingl.)
+									&quot;para en él viví toda la plenitud de la divinidad físicamente.&quot;
+									&mdash;(Coloss., 2, 9.) <span class="nowrap">&mdash;O.E.]</span></p>
+								<p>
+									[E. también conocido como El libro de Adán en inglés: <a href="https://en.wikipedia.org/wiki/Ginza_Rba">
+										en.wikipedia.org/wiki/Ginza_Rba</a> <br /> y
+									<a href="http://theosophy.ph/encyclo/index.php?title=Codex_Nazaraeus">
+										theosophy.ph/encyclo/index.php?title=Codex_Nazaraeus</a> ]
+								</p>
+							</div>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="paradoja-4-el-conocimiento-es-la-ignorancia-del-mal.htm">
+									&lt; Paradoja 4</a></li>
+							<li class="align-right"><a href="paradoja-6-la-imaginacion-realiza-lo-que-inventa.htm">
+									Paradoja 6 &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

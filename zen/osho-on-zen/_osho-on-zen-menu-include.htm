@@ -1,0 +1,80 @@
+<!-- start of menu include file Update April 7, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <!-- these float, Don't forget Div below to clear -->
+            <li class="first-item"><a href="/zen/">Zen index</a></li>
+            <!-- clear left only when screen less than 500px -->
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/zen/">Zen index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="last-li"><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Some features use ajax api</li>
+        </ul>
+        <!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="margin-top:20px;">
+            <li>
+                <img class="menu-image" src="images/osho-young.jpg" alt="Osho, young" />
+            </li>
+            <li>Osho</li>
+            <li class="normal note">(1931&ndash;1990)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+                <li><a href="osho-on-zen-and-hubert-benoit.htm">Osho On Zen and Hubert Benoit (this page)</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <!-- div.optional-links disappears when #menu-container disappears -->
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li>Osho/Rajneesh at <a href="https://en.wikipedia.org/wiki/Rajneesh">Wikipedia</a></li>
+                <li>Hubert Benoit at <a href="https://en.wikipedia.org/wiki/Hubert_Benoit_(psychotherapist)">
+                        Wikipedia</a> </li>
+            </ul>
+        </div>
+        <!-- div.site-links disappears when #menu-container disappears -->
+        <div class="site-links">
+            <ul class="menu-section">
+                <li>Also on this site:<br />
+                    Osho section:<br />
+                    <a href="/osho/">/osho/</a>
+                </li>
+                <li>Hubert Benoit, The Supreme Doctrine<br />
+                    <a href="/zen/benoit/supreme-doctrine/contents.htm">/zen/benoit/<wbr />supreme-doctrine/<wbr />/contents.htm</a>
+                </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,36 @@
+# .htaccess file for selfdefinition.org/colin-wilson/
+
+
+# Files renamed Jan 1, 2023
+
+Redirect 301 "/colin-wilson/Colin-Wilson-Lifeforce.pdf"		"/colin-wilson/Colin-Wilson-Lifeforce-aka-The-Space-Vampires.pdf" 
+ 
+
+# Files renamed Feb 2, 2017
+
+Redirect 301 "/colin-wilson/Colin Wilson - A Criminal History of Mankind 1984.pdf"        "/colin-wilson/Colin-Wilson-A-Criminal-History-of-Mankind.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - Decrypted.pdf"                                 "/colin-wilson/Colin-Wilson-Decrypted.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - G.I. Gurdjieff - The War Against Sleep.pdf"    "/colin-wilson/Colin-Wilson-G-I-Gurdjieff-The-War-Against-Sleep.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - Lifeforce.pdf"                                 "/colin-wilson/Colin-Wilson-Lifeforce.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - The Glass Cage.pdf"                            "/colin-wilson/Colin-Wilson-The-Glass-Cage.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - The Mind Parasites.pdf"                        "/colin-wilson/Colin-Wilson-The-Mind-Parasites.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - The Occult.pdf"                                "/colin-wilson/Colin-Wilson-The-Occult.pdf"
+
+Redirect 301 "/colin-wilson/Colin Wilson - War In Heaven.pdf"                             "/colin-wilson/Colin-Wilson-War-In-Heaven.pdf"
+
+
+
+Redirect gone "/colin-wilson/audio/"
+
+Redirect gone "/colin-wilson/video/"
+
+
+
+# end 
+

@@ -1,0 +1,194 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>New Thought</title>
+	<meta name="description" content="New Thought Article Index">
+	<meta name="author" content="Quimby, Goddard">
+	<meta property="og:title" content="New Thought">
+	<meta property="og:description" content="New Thought Article Index">
+	<meta property="og:image" content="https://selfdefinition.org/new-thought/articles/images/phineas-quimby-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_new-thought-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" >
+    <link rel="next" -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* social medis:
+        */
+
+	</style>
+	<script>
+		/* see /redirect/magic-404-redirect for full implementation
+		
+		replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/new-thought/articles/images/phineas-quimby.jpg");
+
+			$('#menu-image').attr("src", "/new-thought/articles/images/phineas-quimby.jpg");
+
+			$('#title-image').attr("alt", "Phineas Quimby");
+
+			$('#menu-image').attr("alt", "Phineas Quimby");
+
+			$('#swap-menu-author').text("Phineas Quimby");
+
+			$('#swap-menu-dates').text("(1802-1866)");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_new-thought-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_new-thought-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3 class="toowide">
+										Article Index
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="positive-thinking-history.htm">History of Positive Thinking &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- extra hook added April 30, 2022 -->
+							<div class="page-text">
+								<!-- ALTERNATIVE CONTENTS This is the same as the left menu, with different styling -->
+								<nav class="index-lists">
+
+									<ul class="index-contents-links">
+										<li class="first-item"><a href="positive-thinking-history.htm">The History of Positive Thinking</a></li>
+										<li><a href="consciousness-is-the-only-reality.htm">Consciousness Is the Only Reality</a></li>
+										<li><a href="goddard-God-and-I-are-one.htm">Goddard: God And I Are One <span class="note">(audio, 1972)</span></a></li>
+									</ul>
+
+									<hr>
+
+									<ul class="index-links">
+										<li>New Thought movement at&nbsp;<a href="https://en.wikipedia.org/wiki/New_Thought">
+												Wikipedia</a> </li>
+										<li>Phineas Parkhurst Quimby at <a href="https://en.wikipedia.org/wiki/Phineas_Parkhurst_Quimby">
+												Wikipedia</a> </li>
+										<li>William Walker Atkinson at <a style="display:inline;" href="https://en.wikipedia.org/wiki/William_Walker_Atkinson">
+												Wikipedia</a> </li>
+										<li>Neville Goddard at <a style="display:inline;" href="https://en.wikipedia.org/wiki/Neville_Lancelot_Goddard">
+												Wikipedia</a> </li>
+										<li class="header-item">Also In New Thought</li>
+										<li class="first-item"><a href="/new-thought/kybalion/contents.htm">The Kybalion, Teachings of Hermes Trismegistus by "Three Initiates" (1908) Attrib. W.W. Atkinson</a></li>
+										<li><a href="/new-thought/ramacharaka/mystic-christianity/contents.htm ">Mystic Christianity, The Inner Teachings of the Master (1908) by "Yogi Ramacharaka", William Walker Atkinson</a></li>
+										<li><a href="/new-thought/atkinson/law-of-attraction/contents.htm">W.W. Atkinson, Thought Vibration: The Law of Attraction in the Thought World</a></li>
+										<li><a href="/new-thought/atkinson/ley-de-la-atraccion/contenido.htm">[español] W.W. Atkinson, La ley de la atracción en el mundo del pensamiento</a></li>
+
+										<li class="header-item">Also on this site</li>
+										<li class="subhead">Phineas Quimby in the Healing section </li>
+										<li class="first-item"><a href="/healing/phineas-quimby/quimby-manuscripts/contents.htm">Phineas Parker Quimby: <em>The Quimby Manuscripts </em></a></li>
+										<li class="subhead">Celibacy section</li>
+										<li><a href="/celibacy/quotes/napoleon-hill-sex-transmutation-part-1.htm">Napoleon Hill - The Mystery of Sex: Transmutation, The Tenth Step toward Riches (parts 1 and 2) </a></li>
+										<li class="subhead">Magic section</li>
+										<li><a href="/magic/hartmann/white-and-black/contents.htm">Franz Hartmann, <em>Magic White &amp; Black - The Science of Finite and Infinite Life</em></a></li>
+										<li class="subhead">Christian section</li>
+										<li><a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Franz Hartmann, <em>Life and Doctrines of Jacob Boehme</em></a></li>
+										<li class="subhead">Blavatsky section</li>
+										<li><a href="/blavatsky/voice-of-the-silence/voice-index.htm"><em>Voice of the Silence</em></a></li>
+										<li class="subhead">Todas las paginas en español</li>
+										<li><a href="/paginas-en-espanol.htm">/paginas-en-espanol.htm</a></li>
+									</ul>
+
+								</nav>
+
+
+								<p>
+									&nbsp;
+								</p>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+							</div><!-- end #page-text -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="positive-thinking-history.htm">History of Positive Thinking &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

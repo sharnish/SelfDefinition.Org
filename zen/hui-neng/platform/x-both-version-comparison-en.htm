@@ -1,0 +1,258 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+<!-- ENGLISH VERSION -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hui Neng Version Comparison</title>
+    <meta name="description" content="Comparing the English and Spanish versions on this website">
+    <meta name="author" content="">
+    <meta property="og:title" content="Hui Neng Version Comparison">
+    <meta property="og:description" content="Comparing the English and Spanish versions on this website">
+    <meta property="og:image" content="https://selfdefinition.org/zen/platform/images/Huineng-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_huineng-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!--link rel="prev" Out of document flow, not used-->
+    <!--link rel="next"-->
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 110px;
+            border: 1px solid blue;
+        }
+
+        .column-container h5 {
+            text-align: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav" role="navigation" aria-label="Main">
+                    <?php include("_huineng-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- as of Oct 9, 2019 moving "article" to here -->
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_huineng-title-include.htm"); ?>
+                                    <!-- new format borrowed from mysterium magnum, puts page title higher -->
+                                    <h3 class="english">
+                                        Version Compaison
+                                    </h3>
+                                    <p class="tiny english">
+                                        Esta pagina en español: <a href="../plataforma/version-comparison-es.htm">..version-comparison-es.htm</a>
+                                    </p>
+
+                                    <h3 class="spanish">
+                                        Comparación de versiones
+                                    </h3>
+                                    <p class="tiny spanish">
+                                        This page in English: <a href="../platform/version-comparison-en.htm">..version-comparison-en.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left english"><a href="../platform/contents.htm">&lt; Contents</a></li>
+                                    <li class="align-left spanish"><a href="../plataforma/contenido.htm">&lt; Contenido</a></li>
+                                    <li class="align-right english"><a href="../platform/01-autobiography.htm">1. Autobiography of Hui Neng
+                                            &gt;</a></li>
+                                    <li class="align-right spanish"><a href="../plataforma/01-autobiografia.htm">1. Autobiografia de Hui Neng
+                                            &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-spacer" style="line-height:1px;">&nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li class="english"><a href="#versions">Versions</a></li>
+                                    <li class="spanish"><a href="#versiones">Versiones</a></li>
+                                    <li class="english"><a href="#chapters">Chapters</a></li>
+                                    <li class="spanish"><a href="#capitulos">Capítulos</a></li>
+                                </ul>
+                            </nav>
+                            <p class="tiny"></p>
+
+                            <!-- SUBSEQUENT HEADERS
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button"><span class="english">top of page</span> <span class="spanish">arriba</span></a>
+                            </p>
+                            -->
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="versiones">&nbsp;</a>
+                            <a id="versions"></a>
+
+                            <h4 class="english">Versions</h4>
+                            <h4 class="spanish">Versiones</h4>
+
+                            <h4 class="english">English Version</h4>
+                            <div class="english">
+                                <p>English: Source, Buddhist Bible by Dwight Goddard, 1932 (copyright not renewed) based on the translation by Mr. Wong Mou-lam.</p>
+                                <p class="tiny">Link: <a href="https://www.sacred-texts.com/bud/bb/index.htm">https://www.sacred-texts.com/bud/bb/index.htm</a></p>
+
+                                <p>The English version was 9 chapters and was extracted from <em>The Buddhist Bible</em>. The Spanish version was 10 chapters and was apparently based on a different source, although they are very similar. The Spanish version has been rearranged on this websiteso so that the chapters correspond to the English version. No material was excluded. The Spanish version has a much more lengthy preface.</p>
+                            </div>
+
+                            <h4 class="spanish">Versión inglesa</h4>
+                            <div class="spanish">
+                                <p>Inglés: Fuente, Biblia budista de Dwight Goddard, 1932 (derechos de autor no renovados) basado en la traducción del Sr. Wong Mou-lam.</p>
+                                <p class="tiny">Enlace: <a href="https://www.sacred-texts.com/bud/bb/index.htm">https://www.sacred-texts.com/bud/bb/index.htm</a></p>
+
+                                <p>La versión en inglés tenía 9 capítulos y fue extraída de La Biblia Budista. La versión en español tenía 10 capítulos y aparentemente estaba basada en una fuente diferente, aunque son muy similares. La versión en español ha sido reorganizada en este sitio web para que los capítulos correspondan a la versión en inglés. No se excluyó ningún material. La versión en español tiene un prefacio mucho más extenso.</p>
+                            </div>
+
+                            <h4 class="english" style="margin-top:30px;">
+                                Spanish Version
+                            </h4>
+
+                            <div class="english">
+                                <p>Translated to Spanish by Rev. Yin Zhi Shakya, OHY. Also based on the translation by Mr. Wong Mou-lam, nerly verbatum to the English version but contains additional material and the chapters are reordered.</p>
+                                <p>They are re-positioned here on SelfDefinition.Org in order to faciliate comparision with the English version</p>
+                                <p class="note80">Link opens 88-page PDF: <a href="http://librosbudistas.com/descargas/sutra-hui-neng.pdf">http://librosbudistas.com/descargas/sutra-hui-neng.pdf</a></p>
+                            </div>
+
+                            <h4 class="spenish" style="margin-top:30px;">
+                                Versión en Español
+                            </h4>
+                            <div class="spanish">
+                                <p>Traducido al Español por Rev. Yin Zhi Shakya, OHY. También basado en la traducción del Sr. Wong Mou-lam, casi literalmente a la versión en inglés, pero contiene material adicional y los capítulos están reordenados.</p>
+                                <p>Están presentados aquí en selfdefinition.org para facilitar la comparación con la versión en inglés.</p>
+                                <p class="note80">El enlace abre un PDF de 88 páginas: <a href="http://librosbudistas.com/descargas/sutra-hui-neng.pdf">http://librosbudistas.com/descargas/sutra-hui-neng.pdf</a></p>
+                            </div>
+
+
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button"><span class="english">top of page</span> <span class="spanish">volver arriba</span></a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="chapters">&nbsp;</a>
+                            <a id="capitulos"></a>
+
+                            <h4 class="english">Chapter comparison</h4>
+                            <h4 class="spanish">Comparación de capítulos</h4>
+
+                            <!-- these are CSS3 columns -->
+                            <div class="column-container" text-align:left;>
+                                <!-- items have :hover styling, color change -->
+                                <!-- the uls don't float; they are display: inline-block -->
+                                <div class="note80 block" style="width:45%;display:inline-block;vertical-align:top;">
+
+                                    <h5>Sutra of the Sixth Patriarch</h5>
+                                    <p>Preface</p>
+                                    <p>1. Autobiography of Hui-Neng</p>
+                                    <p>2. Discourse on Prajna</p>
+                                    <p>3. Discourse on Dhyana and Samadhi</p>
+                                    <p>4. Discourse on Repentance</p>
+                                    <p>5. Discourse on the Three-Bodies of Buddha</p>
+                                    <p>6. Dialogues Suggested by Various Temperaments and Circumstances</p>
+                                    <p>7. Sudden Enlightenment and Gradual Attainment</p>
+                                    <p>8. Royal Patronage</p>
+                                    <p>9. Final Words and Death of the Patriarch</p>
+
+                                </div>
+                                <div class="note80 block" style="width:45%;display:inline-block;vertical-align:top;">
+                                    <h5>El Sutra de Hui-Neng.</h5>
+                                    <p>Prefacio </p>
+                                    <p>1. Autobiografía</p>
+                                    <p>2. Sobre prajna</p>
+                                    <p>3. Preguntas y respuestas</p>
+                                    <p>4. El samadhi y el prajna</p>
+                                    <p>5. Dhyana</p>
+                                    <p>6. Sobre el arrepentimiento</p>
+                                    <p>7. El temperamento y las circunstancias</p>
+                                    <p>8. La escuela de la inmediatez y</p>
+                                    <p>9. El patrocinio real</p>
+                                    <p>10. Sus instrucciones finales</p>
+                                    <p>Final del sutra</p>
+                                    <p>Apéndice por Ling To</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- CLEARY VERION - DON'T SHOW
+                            <p>Enlace: <a href="http://www.acharia.org/sutradehuineng/sutrahuinengtabladecontenido.htm">http://www.acharia.org/sutradehuineng/sutrahuinengtabladecontenido.htm</a></p>
+                            <p>NO, this is Cleary? Version</p>
+                            <p>Introducción</p>
+                            <p>1. Historia Personal</p>
+                            <p>2. Praina</p>
+                            <p>3. Preguntas</p>
+                            <p>4. La Estabilización y el Discernimiento</p>
+                            <p>5. Meditación Sentada
+                            </p>
+                            <p>6. El Arrepentimiento</p>
+                            <p>7. Sucesos Claves</p>
+                            <p>8. Lo Inmediato y lo Gradual</p>
+                            <p>9. Los Mandatos Imperiales</p>
+                            <p>Los Comentarios de Hui-neng sobre el Sutra Diamante</p>
+                            <p>Comentarios de Hui-neng sobre el Sutra Diamante Totra versiónl</p>
+                            <p>[ end ]</p>
+                            -->
+
+
+
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button"><span class="english">top of page</span> <span class="spanish">volver arriba</span></a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- OLD page nav position -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go to top"><span class="english">top of page</span> <span class="spanish">arriba</span></button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

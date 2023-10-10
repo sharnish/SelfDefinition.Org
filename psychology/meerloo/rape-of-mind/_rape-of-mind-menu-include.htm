@@ -1,0 +1,108 @@
+<!-- start of menu include file   Update August 27, 2021. February 18, 2022. June 11, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!-- comment out either the English or the Spanish -->
+			<!-- ajax has negative top and bottom margins in .CSS -->
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Rape of the Mind</li>
+			<li class="normal note tight" style="margin-top:-8px;">(1956)</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/joost-meerloo.jpg" alt="Joost Meerlo">
+			</li>
+			<li>Joost A.M. Meerloo</li>
+			<li class="normal note tight" style="margin-top:-5px;">(1903-1976)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="foreword.htm">Foreword</a></li>
+				<li class="part">Part 1 &ndash; Techniques of Individual Submission</li>
+				<li><a href="chapter-01.htm">Chapter 1</a> </li>
+				<li><a href="chapter-02.htm">Chapter 2</a> </li>
+				<li><a href="chapter-03.htm">Chapter 3</a> </li>
+				<li><a href="chapter-04.htm">Chapter 4</a> </li>
+				<li class="part">Part 2 &ndash; Techniques of Mass Submission</li>
+				<li><a href="chapter-05.htm">Chapter 5</a> </li>
+				<li><a href="chapter-06.htm">Chapter 6</a> </li>
+				<li><a href="chapter-07.htm">Chapter 7</a> </li>
+				<li><a href="chapter-08.htm">Chapter 8</a> </li>
+				<li><a href="chapter-09.htm">Chapter 9</a> </li>
+				<li class="part">Part 3 &ndash; Unobtrusive Coercion</li>
+				<li><a href="chapter-10.htm">Chapter 10</a> </li>
+				<li><a href="chapter-11.htm">Chapter 11</a> </li>
+				<li><a href="chapter-12.htm">Chapter 12</a> </li>
+				<li><a href="chapter-13.htm">Chapter 13</a> </li>
+				<li><a href="chapter-14.htm">Chapter 14</a> </li>
+				<li class="part">Part 4 &ndash; In Search of Defenses</li>
+				<li><a href="chapter-15.htm">Chapter 15</a> </li>
+				<li><a href="chapter-16.htm">Chapter 16</a> </li>
+				<li><a href="chapter-17.htm">Chapter 17</a> </li>
+				<li><a href="chapter-18.htm">Chapter 18</a> </li>
+				<li><a href="bibliography.htm">Bibliography </a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>Joost Meerloo at <a href="https://en.wikipedia.org/wiki/Joost_Meerloo">
+						Wikipedia</a> </li>
+				<li>Psychological warfare at <a href="https://en.wikipedia.org/wiki/Psychological_warfare">Wikipedia</a></li>
+				<li>Political warfare at <a href="https://en.wikipedia.org/wiki/Political_warfare">Wikipedia</a></li>
+				<li>Brainwashing at <a href="https://en.wikipedia.org/wiki/Brainwashing">Wikipedia</a></li>
+				<li>This book at <a href="https://www.google.com/books/edition/The_Rape_of_the_Mind_The_Psychology_of_T/oThwCwAAQBAJ?hl=en&gbpv=0">Google Books</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Psychology</li>
+				<li class="first-item">Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda</a></li>
+				<li>Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+				<li>James H. Loryea a.k.a. "Santanelli": <a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion: Is Man a Free Agent?</a> </li>
+				<li><a href="/psychology/articles/article-index.htm">More Articles on Psychology</a></li>
+				<li class="site-links-item">Liberty section</li>
+				<li>Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+				<li>Xenophon: <a href="/liberty/xenofon/contents.htm">Hiero, or, Tyrannicus</a></li>
+				<li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+			</ul>
+		</div>
+
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

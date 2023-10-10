@@ -1,0 +1,32 @@
+/* file:  /gurdjieff/_evolution-refresh.css
+
+Updated Jan 2, 2020 o add progress bar and totop button. Dark theme May 12, 2022
+
+*/
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fdfdf0;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+The structure of menu must conform to specs of script.  */
+/* color must contrast with body */
+/* this is default Blue for for selfdefinition-responsive.css
+ #nav .menu-section a.active {background: #bde0ff;} */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #def;
+}
+
+
+
+
+/* end */

@@ -1,0 +1,155 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Gospel of Thomas version index</title>
+	<meta name="description" content="&quot;Therefore I say, if he is destroyed, he will be filled with light, but if he is divided, he will be filled with darkness.&quot;">
+	<meta name="author" content="Nag Hammadi Library">
+	<meta property="og:title" content="The Gospel of Thomas">
+	<meta property="og:description" content="&quot;Therefore I say, if he is destroyed, he will be filled with light, but if he is divided, he will be filled with darkness.&quot;">
+	<meta property="og:image" content="https://selfdefinition.org/gnostic/gospel-of-thomas/images/gospel-of-thomas-og-image.png">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_thomas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- First link rel="prev"-->
+	<link rel="next" href="gospel-of-thomas-lambdin.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Social media:
+        
+        Coptic Gospel of Thomas. Part of the Nag Hammadi Library, discovered in Egypt in 1945.
+        
+        
+        Evangelio Coptico de Tomás, parte de Biblioteca Nag Hammadi que se encontraron en Egipto en 1945
+        
+        */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_thomas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_thomas-title-include.htm"); ?>
+									<h3>
+										Index Page
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="gospel-of-thomas-lambdin.htm">Lambdin Translation &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- This is the same as the left menu, with different styling -->
+							<nav class="index-lists">
+								<ul class="index-contents-links">
+									<li class="subhead">Three versions:</li>
+									<li class="first-item"><a href="gospel-of-thomas-lambdin.htm">Gospel of Thomas, Lambdin translation</a> </li>
+									<li><a href="gospel-of-thomas-patterson-meyer.htm">Gospel of Thomas, Patterson and Meyer Translation</a> </li>
+									<li><a href="evangelio-segun-tomas.htm">Evangelio según Tomás [español]</a></li>
+								</ul>
+
+
+								<hr />
+
+								<ul class="index-external-links">
+									<li>Gospel of Thomas at <a class="inline" href="https://en.wikipedia.org/wiki/Gospel_of_Thomas">
+											Wikipedia</a> </li>
+									<li>Gnosticism at <a class="inline" href="https://en.wikipedia.org/wiki/Gnosticism">
+											Wikipedia</a> </li>
+									<li>Nag Hammadi library at <a href="https://en.wikipedia.org/wiki/Nag_Hammadi_library">
+											Wikipedia</a> </li>
+									<li>Evangelio de Tomás at <a href="https://es.wikipedia.org/wiki/Evangelio_de_Tom%C3%A1s">
+											Wikipedia [español]</a> </li>
+								</ul>
+
+								<ul class="index-site-links">
+									<li class="site-links-item">Also on our site</li>
+									<li class="subhead">Christian section</li>
+									<li class="first-item">Jacob Boehme: <a href="/christian/jacob-boehme/mysterium-magnum/contents.htm">The Mysterium Magnum</a></li>
+									<li>Christian index: <a href="/christian/">/christian/</a></li>
+									<li class="subhead">Magic section</li>
+									<li class="first-item">Franz Hartmann: <a style="display:inline" href="/magic/hartmann/white-and-black/contents.htm">Magic White &amp; Black - The Science of Finite and Infinite Life </a></li>
+									<li>Éliphas Lévi: <a style="display:inline" href="/magic/eliphas-levi/paradoxes/contents.htm">Paradoxes of the Highest Science</a></li>
+									<li>Magic index: <a href="/magic/">/magic/</a></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="gospel-of-thomas-lambdin.htm">Lambdin Translation &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								<!-- spacer STILL needed to fill out width on a narrow page -->
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

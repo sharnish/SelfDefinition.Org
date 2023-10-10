@@ -1,0 +1,97 @@
+<!-- start of menu include file   Update November 2, 2020. May 31, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/tantra/">Tantra index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-3"><a href="/">Site root</a></li>
+			<li><a href="shiva-sutras-index.htm">Versions<span class="conditional-hide-3"> index</span></a></li>
+			<li class="if-spanish-hide"><a href="3-shiva-sutras-pradipaka-espanol.htm">Español</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+			<li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide-3">Volver
+					</span>Arriba</a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/tantra/">Tantra index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="offset tight">Kasmir Shaivism</li>
+			<li class="offset tight">The Shiva Sutras</li>
+			<li class="normal">
+				<img class="menu-image" src="images/kashmir-shaivism.jpg" alt="Kasmir Shaivism" />
+			</li>
+			<li class="offset">Vasugupta <span class="normal note80 block">~800-850 A.D.</span></li>
+		</ul>
+		<!-- must have the next div-i.d. for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top: 20px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="shiva-sutras-index.htm">Shiva Sutras Index</a></li>
+				<li><a href="1-shiva-sutras-lakshmanjoo.htm">1. Lakshmanjoo version</a></li>
+				<li><a href="2-shiva-sutras-pradipaka.htm">2. Pradipaka&ndash;English</a></li>
+				<li><a href="3-shiva-sutras-pradipaka-espanol.htm">3. Pradipaka&ndash;Español</a></li>
+				<li><a href="4-shiva-sutras-feuerstein.htm">4. Feuerstein version</a></li>
+				<li><a href="5-shiva-sutras-dyczkowski.htm">5. Dyczkowski version</a></li>
+				<li><a href="6-shiva-sutras-theosofica-espanol.htm">6. Teosofica&ndash;Español</a></li>
+				<li><a href="7-shiva-sutras-IMSS-espanol.htm">7. I.M. Shiva Spirit at ShivaBhakti&ndash;Español</a></li>
+				<li><a href="shivaismo-tantrico-de-cachemira.htm">Shivaismo Tántrico de Cachemira</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Shiva Sutras <a class="inline" href="https://en.wikipedia.org/wiki/Shiva_Sutras_of_Vasugupta">Wikipedia</a> </li>
+				<li>Vasugupta <a href="https://en.wikipedia.org/wiki/Vasugupta">Wikipedia</a></li>
+				<li>Kasmir Shaivism at <a href="https://en.wikipedia.org/wiki/Kashmir_Shaivism">Wikipedia</a> </li>
+				<li>Tantra at <a class="inline" href="https://en.wikipedia.org/wiki/Tantra">Wikipedia</a> </li>
+				<li class="spanish">Español (muy breve):</li>
+				<li class="spanish">Vasugupta <a href="https://es.wikipedia.org/wiki/Vasugupta">es.Wikipedia</a></li>
+				<li class="spanish">Shivaísmo de Cachemira <a href="https://es.wikipedia.org/wiki/Shiva%C3%ADsmo_de_Cachemira">es.Wikipedia</a></li>
+				<li class="spanish">Tantra <a href="https://es.wikipedia.org/wiki/Tantra">es.Wikipedia</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">Lilian Silburn: <a class="inline" href="/tantra/transmission/contents-and-introduction.htm">Techniques of Transmission in Kashmir Saivism</a> </li>
+				<li>Kukai: <a class="inline" href="/tantra/kukai/1-sokushin-jobutsu-gi-introduction.htm">Principle Of Attaining Buddhahood With The Present Body</a> </li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links</li>
+				<li class="external-first-item">Kashmir Shaivism and Universal Fraterniti <a href="https://www.esamskriti.com/e/Spirituality/Philosophy/KASHMIR-SHAIVISM-AND-UNIVERSAL-FRATERNITY-1.aspx">www.esamskriti.com</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<!-- link color is needed here for some reason -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

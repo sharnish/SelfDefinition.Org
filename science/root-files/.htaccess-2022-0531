@@ -1,0 +1,80 @@
+# .htaccess file for selfdefinition.org/science/   
+
+
+# file moved to "articles" directory May 31, 2022
+
+Redirect 301 "/science/robert-anton-wilson-explains-quantum-physics.htm"   "/science/articles/robert-anton-wilson-explains-quantum-physics.htm
+
+# Redirect the 25-Book list + honorable mentions - files removed Dec 19, 2016 - htaccess updated Dec 20, 2016
+
+# removed:     ErrorDocument 404 "http://selfdefinition.org/science/greatest-science-book-redirect-page.htm"
+########### ALL REDIRECTS REMOVED AND LISTS REMOVED
+
+########### JAN 22, 2017
+
+
+# long time ago name change:
+
+Redirect 301 "/science/Joseph%20Chilton%20Pearce%20-%20The%20Crack%20in%20The%20Cosmic%20Egg.pdf"  "/science/Joseph-Chilton-Pearce-Crack-in-the-Cosmic-Egg.pdf"
+
+Redirect 301 "/science/Joseph Chilton Pearce - The Crack in The Cosmic Egg.pdf"  "/science/Joseph-Chilton-Pearce-Crack-in-the-Cosmic-Egg.pdf"
+
+
+# correct old missplling fixed Jan 23, 2017
+
+Redirect 301 "/science/Frifjof-Capra-The-Tao-of-Physics.pdf"    "/science/Fritjof-Capra-The-Tao-of-Physics.pdf" 
+
+# did this for 25 greatest science books and mentalism 
+
+# try redirect-gone Jan 25 2017
+
+# http://www.quickonlinetips.com/archives/2014/11/http-410-error-pages-htaccess/
+
+# Redirect gone /path/path/folder/
+
+# test with this:
+
+#  curl -I selfdefinition.org/science/25-greatest-science-books-of-all-time/
+
+# WAS Redirect gone /science/25-greatest-science-books-of-all-time/ 
+
+
+# try DOES NOT WORK, ADDS 
+
+#Redirect 301 "/science/25-greatest-science-books-of-all-time/honorable-mentions/"  "/redirect/science-redirect.htm"
+
+
+#Redirect 301 "/science/25-greatest-science-books-of-all-time/honorable-mentions/6.%20Jared%20Diamond%20-%20Guns,%20Germs%20and%20Steel%20(1997).pdf"  "/redirect/science-redirect.htm" [R=301,L]
+
+# RedirectMatch 301 ^/myDir/(.*) http://www.example.com/myNewDir/
+
+# RedirectMatch 301 ^/science/25-greatest-science-books-of-all-time/honorable-mentions/(.*) "/redirect/science-redirect.htm"
+
+# no, because it adds the file name at the end 
+
+# RedirectMatch 301 ^/science/25-greatest-science-books-of-all-time/honorable-mentions/ "/redirect/science-redirect.htm"
+
+#############################################
+
+#RewriteEngine on#RewriteCond %{REQUEST_URI} "/honorable-mentions/"
+
+#RewriteRule (.*) /redirect/science-redirect.htm
+
+# RewriteCond %{REQUEST_URI} "/science/25-greatest-science-books-of-all-time/honorable-mentions/"
+
+# RewriteRule (.*) /redirect/science-redirect.htm# no RewriteRule (.*) /redirect/science-redirect.htm [R=301,L]
+
+# was RewriteCond %{REQUEST_URI} "/25-greatest-science-books-of-all-time/honorable-mentions/"
+
+#############################################
+
+# REPLACED Apr 22, 2020
+
+Redirect 301 "/science/25-greatest-science-books-of-all-time/" "/redirect/science-redirect.htm"
+
+# still can't get subdirectory to work
+ 
+# end
+
+
+

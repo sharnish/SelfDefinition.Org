@@ -1,0 +1,966 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song of Enlightenment - Yung-chia Hsüan-chüeh (Yoka Genkaku) </title>
+    <meta name="description" content="R. Aitken, Diamond Sangha translation">
+    <meta name="author" content="Yung-chia Hsüan-chüeh (Yongjia Xuanjue)">
+    <meta property="og:title" content="Song of Enlightenment - Yung-chia Hsüan-chüeh (Yoka Genkaku) ">
+    <meta property="og:description" content="R. Aitken, Diamond Sangha translation">
+    <meta property="og:image" content="https://selfdefinition.org/zen/song-of-enlightenment/images/yongjia-xuanjue-large.jpg" />
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_song-of-enlightenment-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* different color this page  */
+        html,
+        body,
+        #fixed-header-small-screen,
+        #menu-site-small-screen,
+        .progress-header,
+        .progress-container {
+            background: #fcfeff;
+        }
+
+        ul.aitken-links {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul.aitken-links li {
+            margin: 1.3em 0 0 0;
+        }
+
+        /* paragraph styles are different on this page
+            See CSS */
+        @media only screen and (max-width:500px) {
+            ul.aitken-links {
+                padding-left: 10px;
+            }
+        }
+
+    </style>
+    <script>
+        /* SAVE - script for inserting/rotating elements on the page, #version is in title-include */
+        $(document).ready(function() {
+            $("#version").html("Diamond Sangha Translation");
+            /* OLD WAY $("#version").css("color", "maroon"); */
+            $("#version").addClass("maroon");
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include( "_song-of-enlightenment-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_song-of-enlightenment-title-include.htm"); ?>
+
+                                    <h3>
+                                        SHODOKA</h3>
+                                </header>
+                                <p class="note center">
+                                    Translation by R. Aitken &amp; the Diamond Sangha
+                                </p>
+                                <p class="tiny center">
+                                    (fair use; see <a href="#references">references</a>)
+                                </p>
+                            </div>
+                            <div id="special-paragraph-formatting">
+                                <p>
+                                    There is the leisurely one,
+                                    <br />
+                                    Walking the Tao, beyond philosophy,
+                                    <br />
+                                    Not avoiding fantasy, not seeking truth.
+                                    <br />
+                                    The real nature of ignorance is the Buddha-nature itself;
+                                    <br />
+                                    The empty delusory body is the very body of the Dharma.
+                                </p>
+                                <p>
+                                    When the Dharma body awakens completely,
+                                    <br />
+                                    There is nothing at all.
+                                    <br />
+                                    The source of our self-nature
+                                    <br />
+                                    Is the Buddha of innocent truth.
+                                    <br />
+                                    Mental and physical reactions come and go
+                                    <br />
+                                    Like clouds in the empty sky;
+                                    <br />
+                                    Greed, hatred, and ignorance appear and disappear
+                                    <br />
+                                    Like bubbles on the surface of the sea.
+                                </p>
+                                <p>
+                                    When we realize actuality,
+                                    <br />
+                                    There is no distinction between mind and thing
+                                    <br />
+                                    And the path to hell instantly vanishes.
+                                    <br />
+                                    If this is a lie to fool the world,
+                                    <br />
+                                    My tongue may be cut out forever.
+                                </p>
+                                <p>
+                                    Once we awaken to the Tathagata-Zen,
+                                    <br />
+                                    The six noble deeds and the ten thousand good actions
+                                    <br />
+                                    Are already complete within us.
+                                    <br />
+                                    In our dream we see the six levels of illusion clearly;
+                                    <br />
+                                    After we awaken the whole universe is empty.
+                                </p>
+                                <p>
+                                    No bad fortune, no good fortune, no loss, no gain;
+                                    <br />
+                                    Never seek such things in eternal serenity.
+                                    <br />
+                                    For years the dusty mirror has gone uncleaned,
+                                    <br />
+                                    Now let us polish it completely, once and for all.
+                                </p>
+                                <p>
+                                    Who has no-thought? Who is not-born?
+                                    <br />
+                                    If we are truly not-born,
+                                    <br />
+                                    We are not un-born either.
+                                    <br />
+                                    Ask a robot if this is not so.
+                                    <br />
+                                    How can we realize ourselves
+                                    <br />
+                                    By virtuous deeds or by seeking the Buddha?
+                                </p>
+                                <p>
+                                    Release your hold on earth, water, fire, wind;
+                                    <br />
+                                    Drink and eat as you wish in eternal serenity.
+                                    <br />
+                                    All things are transient and completely empty;
+                                    <br />
+                                    This is the great enlightenment of the Tathagata.
+                                </p>
+                                <p>
+                                    Transience, emptiness and enlightenment &ndash;
+                                    <br />
+                                    These are the ultimate truths of Buddhism;
+                                    <br />
+                                    Keeping and teaching them is true Sangha devotion.
+                                    <br />
+                                    If you don't agree, please ask me about it.
+                                    <br />
+                                    Cut out directly the root of it all, &ndash;
+                                    <br />
+                                    This is the very point of the Buddha-seal.
+                                    <br />
+                                    I can't respond to any concern about leaves and branches.
+                                </p>
+                                <p>
+                                    People do not recognize the Mani-jewel.
+                                    <br />
+                                    Living intimately within the Tathagata-garbha,
+                                    <br />
+                                    It operates our sight, hearing, smell, taste, sensation, awareness;
+                                    <br />
+                                    And all of these are empty, yet not empty.
+                                </p>
+                                <p>
+                                    The rays shining from this perfect Mani-jewel
+                                    <br />
+                                    Have the form of no form at all.
+                                    <br />
+                                    Clarify the five eyes and develop the five powers;
+                                    <br />
+                                    This is not intellectual work, &ndash; just realize, just know.
+                                    <br />
+                                    It is not difficult to see images in a mirror,
+                                    <br />
+                                    But who can take hold of the moon in the water?
+                                </p>
+                                <p>
+                                    Always working alone, always walking alone,
+                                    <br />
+                                    The enlightened one walks the free way of Nirvana
+                                    <br />
+                                    With melody that is old and clear in spirit
+                                    <br />
+                                    And naturally elegant in style,
+                                    <br />
+                                    But with body that is tough and bony,
+                                    <br />
+                                    Passing unnoticed in the world.
+                                </p>
+                                <p>
+                                    We know that Shakya's sons and daughters
+                                    <br />
+                                    Are poor in body, but not in the Tao.
+                                    <br />
+                                    In their poverty, they always wear ragged clothing,
+                                    <br />
+                                    But they have the jewel-of-no-price treasured within.
+                                </p>
+                                <p>
+                                    This jewel-of-no-price can never be used up
+                                    <br />
+                                    Though they spend it freely to help people they meet.
+                                    <br />
+                                    Dharmakaya, Sambogakaya, Nirmanakaya,
+                                    <br />
+                                    And the four kinds of wisdom
+                                    <br />
+                                    Are all contained within.
+                                    <br />
+                                    The eight kinds of emancipation and the six universal powers
+                                    <br />
+                                    Are all impressed on the ground of their mind.
+                                </p>
+                                <p>
+                                    The best student goes directly to the ultimate,
+                                    <br />
+                                    The others are very learned but their faith is uncertain.
+                                    <br />
+                                    Remove the dirty garments from your own mind;
+                                    <br />
+                                    Why should you show off your outward striving?
+                                </p>
+                                <p>
+                                    Some may slander, some may abuse;
+                                    <br />
+                                    They try to set fire to the heavens with a torch
+                                    <br />
+                                    And end by merely tiring themselves out.
+                                    <br />
+                                    I hear their scandal as though it were ambrosial truth;
+                                    <br />
+                                    Immediately everything melts
+                                    <br />
+                                    And I enter the place beyond thought and words.
+                                </p>
+                                <p>
+                                    When I consider the virtue of abusive words,
+                                    <br />
+                                    I find the scandal-monger is my good teacher.
+                                    <br />
+                                    If we do not become angry at gossip,
+                                    <br />
+                                    We have no need for powerful endurance and compassion.
+                                </p>
+                                <p>
+                                    To be mature in Zen is to be mature in expression,
+                                    <br />
+                                    And full-moon brilliance of dhyana and prajna
+                                    <br />
+                                    Does not stagnate in emptiness.
+                                    <br />
+                                    Not only can I take hold of complete enlightenment by myself,
+                                    <br />
+                                    But all Buddha-bodies, like sands of the Ganges,
+                                    <br />
+                                    Can become awakened in exactly the some way.
+                                </p>
+                                <p>
+                                    The incomparable lion-roar of doctrine
+                                    <br />
+                                    Shatters the brains of the one hundred kinds of animals.
+                                    <br />
+                                    Even the king of elephants will run away, forgetting his pride;
+                                    <br />
+                                    Only the heavenly dragon listens calmly, with pure delight.
+                                </p>
+                                <p>
+                                    I wandered over rivers and seas, crossing mountains and streams,
+                                    <br />
+                                    Visiting teachers, asking about the Way in personal interviews;
+                                    <br />
+                                    Since I recognized the Sixth Founding Teacher at Ts'ao Ch'i, <span class="note80">[i.e., Hui Neng]</span>
+                                    <br />
+                                    I know what is beyond the relativity of birth and death.
+                                </p>
+                                <p>
+                                    Walking is Zen, sitting is Zen;
+                                    <br />
+                                    Speaking or silent, active or quiet, the essence is at peace.
+                                    <br />
+                                    Even facing the sword of death, our mind is unmoved;
+                                    <br />
+                                    Even drinking poison, our mind is quiet.
+                                </p>
+                                <div class="right-image-div">
+                                    <img id="dipankara-image" src="images/dipankara-buddha.jpg" alt="Dipankara Buddha, stone" title="Dipankara Buddha" />
+                                    <p class="note80" style="margin-top:-5px;">Dipankara Buddha</p>
+                                </div>
+                                <p>
+                                    Our teacher, Shakyamuni, met Dipankara Buddha
+                                    <br />
+                                    And for many eons he trained as Kshanti, the ascetic.
+                                    <br />
+                                    Many births, many deaths;
+                                    <br />
+                                    I am serene in this cycle,&ndash; there is no end to it.
+                                </p>
+                                <p>
+                                    Since I abruptly realized the unborn,
+                                    <br />
+                                    I have had no reason for joy or sorrow
+                                    <br />
+                                    At any honor or disgrace.
+                                </p>
+                                <p>
+                                    I have entered the deep mountains to silence and beauty;
+                                    <br />
+                                    In a profound valley beneath high cliffs,
+                                    <br />
+                                    I sit under the old pine trees.
+                                    <br />
+                                    Zazen in my rustic cottage
+                                    <br />
+                                    Is peaceful, lonely, and truly comfortable.
+                                </p>
+                                <p>
+                                    When you truly awaken,
+                                    <br />
+                                    You have no formal merit.
+                                    <br />
+                                    In the multiplicity of the relative world,
+                                    <br />
+                                    You cannot find such freedom.
+                                    <br />
+                                    Self-centered merit brings the joy of heaven itself,
+                                    <br />
+                                    But it is like shooting an arrow at the sky;
+                                    <br />
+                                    When the force is exhausted, it falls to the earth,
+                                    <br />
+                                    And then everything goes wrong.
+                                </p>
+                                <p>
+                                    Why should this be better
+                                    <br />
+                                    Than the true way of the absolute,
+                                    <br />
+                                    Directly penetrating the ground of Tathagata?
+                                </p>
+                                <p>
+                                    Just take hold of the source
+                                    <br />
+                                    And never mind the branches.
+                                    <br />
+                                    It is like a treasure-moon
+                                    <br />
+                                    Enclosed in a beautiful emerald.
+                                    <br />
+                                    Now I understand this Mani-jewel
+                                    <br />
+                                    And my gain is the gain of everyone endlessly.
+                                </p>
+                                <p>
+                                    The moon shines on the river,
+                                    <br />
+                                    The wind blows through the pines,&ndash;
+                                    <br />
+                                    Whose providence is this long beautiful evening?
+                                    <br />
+                                    The Buddha-nature jewel of morality
+                                    <br />
+                                    Is impressed on the ground of my mind,
+                                    <br />
+                                    And my robe is the dew, the fog, the cloud, and the mist.
+                                </p>
+                                <p>
+                                    A bowl once calmed dragons
+                                    <br />
+                                    And a staff separated fighting tigers;
+                                    <br />
+                                    The rings on this staff jingle musically.
+                                    <br />
+                                    The form of these expressions is not to be taken lightly;
+                                    <br />
+                                    The treasure-staff of the Tathagata
+                                    <br />
+                                    Has left traces for us to follow.
+                                </p>
+                                <p>
+                                    The awakened one does not seek truth &ndash;
+                                    <br />
+                                    Does not cut off delusion.
+                                    <br />
+                                    Truth and delusion are both vacant and without form,
+                                    <br />
+                                    But this no-form is neither empty nor not empty;
+                                    <br />
+                                    It is the truly real form of the Tathagata.
+                                </p>
+                                <p>
+                                    The mind-mirror is clear, so there are no obstacles.
+                                    <br />
+                                    Its brilliance illuminates the universe
+                                    <br />
+                                    To the depths and in every grain of sand.
+                                    <br />
+                                    Multitudinous things of the cosmos
+                                    <br />
+                                    Are all reflected in the mind,
+                                    <br />
+                                    And this full clarity is beyond inner and outer.
+                                </p>
+                                <p>
+                                    To live in nothingness is to ignore cause and effect;
+                                    <br />
+                                    This chaos leads only to disaster.
+                                    <br />
+                                    The one who clings to vacancy, rejecting the world of things,
+                                    <br />
+                                    Escapes from drowning but leaps into fire.
+                                </p>
+                                <p>
+                                    Holding truth and rejecting delusion &ndash;
+                                    <br />
+                                    These are but skillful lies.
+                                    <br />
+                                    Students who do zazen by such lies
+                                    <br />
+                                    Love thievery in their own children.
+                                </p>
+                                <p>
+                                    They miss the Dharma-treasure;
+                                    <br />
+                                    They lose accumulated power;
+                                    <br />
+                                    And this disaster follows directly upon dualistic thinking.
+                                    <br />
+                                    So Zen is the complete realization of mind,
+                                    <br />
+                                    The complete cutting off of delusion,
+                                    <br />
+                                    The power of wise vision penetrating directly to the unborn.
+                                </p>
+                                <p>
+                                    Students of vigorous will hold the sword of wisdom;
+                                    <br />
+                                    The prajna edge is a diamond flame.
+                                    <br />
+                                    It not only cuts off useless knowledge,
+                                    <br />
+                                    But also exterminates delusions.
+                                </p>
+                                <p>
+                                    They roar with Dharma-thunder;
+                                    <br />
+                                    They strike the Dharma-drum;
+                                    <br />
+                                    They spread clouds of love, and pour ambrosial rain.
+                                    <br />
+                                    Their giant footsteps nourish limitless beings;
+                                    <br />
+                                    Sravaka, Pratyeka, Bodhisattva &ndash; all are enlightened;
+                                    <br />
+                                    Five kinds of human nature all are emancipated.
+                                </p>
+                                <p>
+                                    High in the Himalayas, only fei-ni grass grows.
+                                    <br />
+                                    Here cows produce pure and delicious milk,
+                                    <br />
+                                    And this food I continually enjoy.
+                                    <br />
+                                    One complete nature passes to all natures;
+                                    <br />
+                                    One universal Dharma encloses all Dharmas.
+                                </p>
+                                <p>
+                                    One moon is reflected in many waters;
+                                    <br />
+                                    All the water-moons are from the one moon.
+                                    <br />
+                                    The Dharma-body of all Buddhas has entered my own nature,
+                                    <br />
+                                    And my nature becomes one with the Tathagata.
+                                </p>
+                                <p>
+                                    One level completely contains all levels;
+                                    <br />
+                                    It is not matter, mind nor activity.
+                                    <br />
+                                    In an instant eighty-thousand teachings are fulfilled;
+                                    <br />
+                                    In a twinkling the evil of eons is destroyed.
+                                </p>
+                                <p>
+                                    All categories are no category;
+                                    <br />
+                                    What relation have have these to my insight?
+                                    <br />
+                                    Beyond praise, beyond blame, &ndash;
+                                    <br />
+                                    Like space itself it has no bounds.
+                                </p>
+                                <p>
+                                    Right here it is eternally full and serene,
+                                    <br />
+                                    If you search elsewhere, you cannot see it.
+                                    <br />
+                                    You cannot grasp it, you cannot reject it;
+                                    <br />
+                                    In the midst of not gaining,
+                                    <br />
+                                    In that condition you gain it.
+                                </p>
+                                <p>
+                                    It speaks in silence,
+                                    <br />
+                                    In speech you hear its silence.
+                                    <br />
+                                    The great way has opened and there are no obstacles.
+                                    <br />
+                                    If someone asks, what is your sect
+                                    <br />
+                                    And how do you understand it?
+                                    <br />
+                                    I reply, the power of tremendous prajna.
+                                </p>
+                                <p>
+                                    People say it is positive;
+                                    <br />
+                                    People say it is negative;
+                                    <br />
+                                    But they do not know.
+                                    <br />
+                                    A smooth road, a rough road &ndash;
+                                    <br />
+                                    Even heaven cannot imagine.
+                                    <br />
+                                    I have continued my zazen for many eons;
+                                    <br />
+                                    I do not say this to confuse you.
+                                </p>
+                                <p>
+                                    I raise the Dharma-banner and set forth our teaching;
+                                    <br />
+                                    It is the clear doctrine of the Buddha
+                                    <br />
+                                    Which I found with my teacher, Hui Neng;
+                                    <br />
+                                    Mahakashyapa became the Buddha-successor,
+                                    <br />
+                                    Received the lamp and passed it on.
+                                    <br />
+                                    Twenty-eight generations of teachers in India,
+                                    <br />
+                                    Then over seas and rivers to our land
+                                    <br />
+                                    Bodhidharma came as our own first founder,
+                                    <br />
+                                    And his robe, as we all know, passed through six teachers here,
+                                    <br />
+                                    And how many generations to come may gain the path,
+                                    <br />
+                                    No one knows.
+                                </p>
+                                <p>
+                                    The truth is not set forth;
+                                    <br />
+                                    The false is basically vacant.
+                                    <br />
+                                    Put both existence and non-existence aside,
+                                    <br />
+                                    Then even non-vacancy is vacant,
+                                    <br />
+                                    The twenty kinds of vacancy have no basis,
+                                    <br />
+                                    And the oneness of the Tathagata-being
+                                    <br />
+                                    Is naturally sameness.
+                                </p>
+                                <p>
+                                    Mind is the base, phenomena are dust;
+                                    <br />
+                                    Yet both are like a flaw in the mirror.
+                                    <br />
+                                    When the flaw is brushed aside,
+                                    <br />
+                                    The light begins to shine.
+                                    <br />
+                                    When both mind and phenomena are forgotten,
+                                    <br />
+                                    Then we become naturally genuine.
+                                </p>
+                                <p>
+                                    Ah, the degenerate materialistic world!
+                                    <br />
+                                    People are unhappy; they find self-control difficult.
+                                    <br />
+                                    In the centuries since Shakyamuni, false views are deep,
+                                    <br />
+                                    Demons are strong, the Dharma is weak, disturbances are many.
+                                </p>
+                                <p>
+                                    People hear the Buddha's doctrine of immediacy,
+                                    <br />
+                                    And if they accept it, the demons will be crushed
+                                    <br />
+                                    As easily as a roofing tile.
+                                    <br />
+                                    But they cannot accept, what a pity!
+                                </p>
+                                <p>
+                                    Your mind is the source of action;
+                                    <br />
+                                    Your body is the agent of calamity;
+                                    <br />
+                                    No pity nor blame to anyone else.
+                                    <br />
+                                    If you don't seek an invitation to hell,
+                                    <br />
+                                    Never slander the Tathagata's true teaching.
+                                </p>
+                                <p>
+                                    In the sandalwood forest, there is no other tree.
+                                    <br />
+                                    Only the lion lives in such deep luxuriant woods,
+                                    <br />
+                                    Wandering freely in a state of peace.
+                                    <br />
+                                    Other animals and birds stay far away.
+                                </p>
+                                <p>
+                                    Just baby lions follow the parent,
+                                    <br />
+                                    And three-year-olds already roar loudly.
+                                    <br />
+                                    How can the jackal pursue the king of the Dharma
+                                    <br />
+                                    Even with a hundred-thousand demonic arts?
+                                </p>
+                                <p>
+                                    The Buddha's doctrine of directness
+                                    <br />
+                                    Is not a matter for human emotion.
+                                    <br />
+                                    If you doubt this or feel uncertain,
+                                    <br />
+                                    Then you must discuss it with me.
+                                    <br />
+                                    This is not the free rein of a mountain monk's ego.
+                                    <br />
+                                    I fear your training may lead to wrong views
+                                    <br />
+                                    Of permanent soul or complete extinction.
+                                </p>
+                                <p>
+                                    Being is not being; non-being is not non-being;
+                                    <br />
+                                    Miss this rule by a hair,
+                                    <br />
+                                    And you are off by a thousand miles.
+                                    <br />
+                                    Understanding it, the dragon-child abruptly attains Buddhahood;
+                                    <br />
+                                    Misunderstanding it, the greatest scholar falls into hell.
+                                </p>
+                                <p>
+                                    From my youth I piled studies upon studies,
+                                    <br />
+                                    In sutras and sastras I searched and researched,
+                                    <br />
+                                    Classifying terms and forms, oblivious to fatigue,
+                                    <br />
+                                    I entered the sea to count the sands in vain.
+                                    <br />
+                                    And then the Tathagata scolded me kindly
+                                    <br />
+                                    As I read "What profit in counting your neighbor's treasure?"
+                                    <br />
+                                    My work had been scattered and entirely useless,
+                                    <br />
+                                    For years I was dust blown by the wind.
+                                </p>
+                                <p>
+                                    If the seed-nature is wrong, misunderstandings arise,
+                                    <br />
+                                    And the Buddha's doctrine of immediacy cannot be attained.
+                                    <br />
+                                    Shravaka and Pratyeka students may study earnestly
+                                    <br />
+                                    But they lack aspiration.
+                                    <br />
+                                    Others may be very clever,
+                                    <br />
+                                    But they lack prajna.
+                                </p>
+                                <p>
+                                    Stupid ones, childish ones,
+                                    <br />
+                                    They suppose there is something in an empty fist.
+                                    <br />
+                                    They mistake the pointing finger for the moon.
+                                    <br />
+                                    They are idle dreamers lost in form and sensation.
+                                </p>
+                                <p>
+                                    Not supposing something is the Tathagata.
+                                    <br />
+                                    This is truly called Kwan-Yin, the Bodhisattva who sees freely.
+                                    <br />
+                                    When awakened we find karmic hindrances fundamentally empty.
+                                    <br />
+                                    But when not awakened, we must repay all our debts.
+                                </p>
+                                <p>
+                                    The hungry are served a king's repast,
+                                    <br />
+                                    And they cannot eat.
+                                    <br />
+                                    The sick meet the king of doctors;
+                                    <br />
+                                    Why don't they recover?
+                                    <br />
+                                    The practice of Zen in this greedy world &ndash;
+                                    <br />
+                                    This is the power of wise vision.
+                                    <br />
+                                    The lotus lives in the midst of the fire;
+                                    <br />
+                                    It is never destroyed.
+                                </p>
+                                <p>
+                                    Pradhanashura broke the gravest precepts;
+                                    <br />
+                                    But he went on to realize the unborn.
+                                    <br />
+                                    The Buddhahood he attained in that moment
+                                    <br />
+                                    Lives with us now in our time.
+                                </p>
+                                <p>
+                                    The incomparable lion roar of the doctrine!
+                                    <br />
+                                    How sad that people are stubbornly ignorant;
+                                    <br />
+                                    Just knowing that crime blocks enlightenment,
+                                    <br />
+                                    Not seeing the secret of the Tathagata teaching.
+                                </p>
+                                <p>
+                                    Two monks were guilty of murder and carnality.
+                                    <br />
+                                    Their leader, Upali, had the light of a glow-worm;
+                                    <br />
+                                    He just added to their guilt.
+                                    <br />
+                                    Vimalakirti cleared their doubts at once
+                                    <br />
+                                    As sunshine melts the frost and snow.
+                                </p>
+                                <p>
+                                    The remarkable power of emancipation
+                                    <br />
+                                    Works wonders innumerable as the sands of the Ganges.
+                                    <br />
+                                    To this we offer clothing, food, bedding, medicine.
+                                    <br />
+                                    Ten thousand pieces of gold are not sufficient;
+                                    <br />
+                                    Though you break your body
+                                    <br />
+                                    And your bones become powder, &ndash;
+                                    <br />
+                                    This is not enough for repayment.
+                                    <br />
+                                    One vivid word surpasses millions of years of practice.
+                                </p>
+                                <p>
+                                    The King of the Dharma deserves our highest respect.
+                                    <br />
+                                    Tathagatas, innumerable as sands of the Ganges,
+                                    <br />
+                                    All prove this fact by their attainment.
+                                    <br />
+                                    Now I know what the Mani-jewel is:
+                                    <br />
+                                    Those who believe this will gain it accordingly.
+                                </p>
+                                <p>
+                                    When we see truly, there is nothing at all.
+                                    <br />
+                                    There is no person; there is no Buddha.
+                                    <br />
+                                    Innumerable things of the universe
+                                    <br />
+                                    Are just bubbles on the sea.
+                                    <br />
+                                    Wise sages are all like flashes of lightning
+                                </p>
+                                <p>
+                                    However the burning iron ring revolves around my head,
+                                    <br />
+                                    With bright completeness of dhyana and prajna
+                                    <br />
+                                    I never lose my equanimity.
+                                    <br />
+                                    If the sun becomes cold, and the moon hot,
+                                    <br />
+                                    Evil cannot shatter the truth.
+                                    <br />
+                                    The carriage of the elephant moves like a mountain,
+                                    <br />
+                                    How can the mantis block the road?
+                                </p>
+                                <p>
+                                    The great elephant does not loiter on the rabbit's path.
+                                    <br />
+                                    Great enlightenment is not concerned with details.
+                                    <br />
+                                    Don't belittle the sky by looking through a pipe.
+                                    <br />
+                                    If you still don't understand,
+                                    <br />
+                                    I will settle it for you.
+                                </p>
+                            </div>
+                            <!-- end special formatting -->
+                            <br />
+                            <p class="note center">
+                                [ end of text ]</p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="references">&nbsp;</a>
+                            <h4>
+                                References
+                            </h4>
+                            <p>
+                                English translation 1991 by R. Aitken &amp; the Diamond Sangha, Hawaii. <span class="note">Source: <a href="https://www.sacred-texts.com/bud/zen/shodoka.txt">sacred-texts.com/<wbr />bud/zen/<wbr />shodoka.txt</a></span></p>
+                            <p>
+                                CHENG-TAO-KO [Zhengdaoge] (C.); (J. Shodoka (J.); Song of Enlightenment, Song of Immediate Satori, Song of Realization, Song of the Realization of the Way, Odes on Enlightenment is a Zen Buddhist didactical poem in 64 verses basic tenets of the Ch'an (Zen).
+                            </p>
+                            <p>
+                                Its authorship is traditionally attributed to Yung-chia Hsuan-chueh [Yongjia Xuanjue] - one of the most gifted teachers of the Ch'an (Zen) school during the T'ang Dynasty China.
+                            </p>
+                            <p>
+                                Yung-chia Hsuan-chueh [also known under the names of Yung-chia Hsuan-chio, Great Master Chen-chio, Yoka Genkaku (J.), Yoka Daishi (J.)] was a scholar and a monk who lived in the years 665-713. He was a Dharma heir of the 6th Zen Patriarch, Hui-neng (J. Eno) and Dharma brother to such personalities as Ch'ing-yuan Hsing-ssu (J. Seigen Gyoshi), Nan-yueh Huai-jang (J. Nangaku Ejo), Nan-yang Hui-chung (J. Nan'yo Echu) and Ho-tse Shen-hui (J. Kataku Jinne).
+                            </p>
+                            <p>
+                                The Cheng-tao-ko poem was published 1924-1934 in Japan as a part of the Taisho Shinshu Daizokyo (Buddhist Canon Published in The Taisho Era) [ No. 2014, Vol. 48].
+                            </p>
+                            <p>
+                                It was also translated from the Chinese into English and given extensive commentaries by the Ch'an Master Sheng-Yen in his 1990 book The Sword of Wisdom: Lectures on 'The Song of Enlightenment'. Elmhurst, N.Y.: Dharma Drum Publications.
+                            </p>
+                            <p>
+                                This translation from Japanese was prepared in the 1960s by Mr Robert Aitken and Eido Shimano Sensei for the Diamond Sangha Zen Buddhist Society, Koko An, 2119 Kaloa Way, Honolulu, Hawaii, USA 96822. Their translation was subsequently re-printed in a book: Daily Sutras for Chanting and Recitation. n.d. New York: New York Zendo of the Zen Studies Society Inc.
+                            </p>
+                            <p>
+                                In December 1991 the Aitken-Shimano's translation was revised by Robert Aitken Roshi and incorporated (under its japanese title 'Shodoka') into a collection of the Daily Zen Sutras in use by the Diamond Sangha itself as well as by other affiliated Zen centers and communities, including the California Diamond Sangha; Sydney Zen Center and the Zen Group of Western Australia.
+                            </p>
+                            <p>
+                                The text above has been also used to construct a "ANU-Cheng-Tao-Ko-Verses" WAIS database accessible world-wide via the standard WAIS client software and the Coombsquest gopher at coombs.anu.edu.au port 70
+                            </p>
+                            <p>
+                                &ndash; T. Matthew Ciolek: tmciolek "at" coombs.anu.edu.au
+                            </p>
+                            <p class="note">
+                                19 November 1993
+                            </p>
+                            <!-- end #references -->
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="author-links">&nbsp;</a>
+                            <h5>
+                                Works by By Robert Aitken at Sacred-Texts.Com:
+                            </h5>
+                            <ul class="aitken-links">
+                                <li><a href="https://www.sacred-texts.com/bud/zen/ait-futr.txt">Envisioning The Future</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/aitken-0.txt">Some words about Sesshin for newcomers to Zen practice </a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/aitken-k.txt">On Zen Teaching</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/aitken-o.txt">The Future of Zen Buddhism in the West</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/aitken-t.txt">The Second Paramita </a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/aitknbib.txt">A Draft Bibliography Of Zen Writings of Robert Aitken</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/dailyzen.txt">Diamond Sangha Sutras</a> (link 1)</li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/diamond-.txt">Diamond Sangha Sutras</a> (link 2)</li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/shodoka.txt">Cheng-Tao-Ko</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/shodoka.txt">Shodoka</a> (this document) </li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/zen-shod.txt">Shodoka</a> (link 2)</li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/zen-prec.txt">The Three Pure Precepts</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/daily-ze.txt">Daily Zen Buddhist Sutras</a></li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/meals-ze.txt">Zen Buddhist Meal Sutras</a></li>
+                                <li>Zen at Sacred-Texts.Com: </li>
+                                <li><a href="https://www.sacred-texts.com/bud/zen/">sacred-texts.com/bud/zen/</a> </li>
+                            </ul>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

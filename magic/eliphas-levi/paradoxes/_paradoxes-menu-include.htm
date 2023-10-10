@@ -1,0 +1,105 @@
+<!-- start of menu include file Update January 18, 2020. May 27, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Paradoxes of the Highest Science</li>
+			<li>
+				<img class="menu-image" src="images/eliphas-levi-1872.jpg" alt="Éliphas Lévi in 1872" />
+			</li>
+			<li class="offset tight">Éliphas Lévi</li>
+			<li class="offset normal note tight">(1810-1875)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="preface-foreword.htm">Preface, Foreword</a></li>
+				<li><a href="paradox-1-religion-is-magic-sanctioned-by-authority.htm">I. Religion is
+						magic, sanctioned by authority</a></li>
+				<li><a href="paradox-2-liberty-is-obedience-to-the-law.htm">II. Liberty is obedience
+						to the Law</a></li>
+				<li><a href="paradox-3-love-is-realization-of-the-impossible.htm">III. Love is the realisation
+						of the impossible</a></li>
+				<li><a href="paradox-4-knowledge-ignorance-of-evil.htm">IV. Knowledge is the ignorance
+						or negation of Evil</a></li>
+				<li><a href="paradox-5-reason-is-god.htm">V. Reason is God</a></li>
+				<li><a href="paradox-6-imagination-realizes-what-it-invents.htm">VI. The Imagination
+						realises what it invents</a></li>
+				<li><a href="paradox-7-will-accomplishes-does-not-desire.htm">VII. The Will accomplishes
+						everything which it does not desire</a></li>
+				<li style="margin-top: 0px;"><a href="magic-and-magism.htm"><span class="block">Synthetic
+							Recapitulation:</span> Magic and Magism</a></li>
+				<li><a href="magic-and-magism-footnotes.htm">Magic and Magism Footnotes</a></li>
+				<li><a href="unalterable-principles.htm">The Unalterable Principles</a> </li>
+				<li><a href="the-great-secret.htm">The Great Secret **</a></li>
+				<li>
+					<hr />
+				</li>
+				<li><span class="note">** Also see the book by the same name by Éliphas Lévi:</span> <a class="inline" href="/magic/eliphas-levi/great-secret/contents.htm"><span class="nowrap">The Great Secret</span></a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li>Éliphas Lévi at <a href="https://en.wikipedia.org/wiki/%C3%89liphas_L%C3%A9vi">Wikipedia</a>
+				</li>
+				<li>Western Esotericism at <a href="https://en.wikipedia.org/wiki/Western_esotericism">
+						Wikipedia</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="subhead-item" style="padding-bottom:0;">Franz Hartmann</li>
+				<li class="first-item"><a href="/magic/hartmann/white-and-black/contents.htm">Magic
+						White and Black</a></li>
+				<li><a href="/magic/paracelsus/hartmann-life-of-paracelsus/contents.htm">Life
+						of Paracelsus</a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links</li>
+				<li class="first-item">This document at: <a href="https://www.sacred-texts.com/eso/levi/phs/index.htm">Sacred-Text.Com</a>
+				</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

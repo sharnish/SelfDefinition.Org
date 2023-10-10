@@ -1,0 +1,103 @@
+<!-- start of menu include file Update June 21, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- for small screens, #menu-container is swapped with #fixed-header-small-screen  -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of #menu-site below; 
+                 the sections are swapped for small screens -->
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>Life of Paracelsus </li>
+			<li class="normal tight">(1493-1541)</li>
+			<li class="normal">
+				<img src="images/paracelsus.jpg" alt="Paracelsus (1493-1541)" />
+			</li>
+			<li class="tight">by Franz Hartmann</li>
+			<li class="normal tight">(1838-1912)</li>
+		</ul>
+		<!-- must have the next div-i.d. for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Table of Contents</a> </li>
+				<li><a href="title-page.htm">Title Page</a></li>
+				<li><a href="preface.htm">Preface</a> </li>
+				<li><a href="01-life-of-paracelsus.htm">1. Life of Paracelsus</a> </li>
+				<li><a href="01a-writings-of-paracelsus.htm">1a. Writings of Paracelsus</a> </li>
+				<li><a href="02-explanation-of-terms.htm">2. Explanation of Terms</a> </li>
+				<li><a href="03-cosmology.htm">3. Cosmology</a> </li>
+				<li><a href="04-anthropology.htm">4. Anthropology</a> </li>
+				<li><a href="05-pneumatology.htm">5. Pneumatology</a> </li>
+				<li><a href="06-magic-and-sorcery.htm">6. Magic and Sorcery</a> </li>
+				<li><a href="07-medicine.htm">7. Medicine - part 1</a> </li>
+				<li><a href="07a-medicine-therapeutics.htm">7a. Medicine part 2 - Therapeutics</a> </li>
+				<li><a href="08-alchemy-and-astronomy.htm">8. Alchemy and Astrology</a> </li>
+				<li><a href="09-philosophy-and-theosophy.htm">9. Philosophy and Theosophy</a> </li>
+				<li><a href="appendix.htm">Appendix</a></li>
+			</ul>
+		</div>
+		<!-- end of #menu-section-group -->
+		<div id="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Franz Hartman at<br />
+					<a href="https://en.wikipedia.org/wiki/Franz_Hartmann">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<!-- check the following -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li>More Hartmann our site<br />
+					<a href="/magic/hartmann/wisdom/chapter-08-alchemy.htm#axiomata-hermetica">43 Axioms of Alchemy</a>
+				</li>
+				<li><a href="/magic/hartmann/white-and-black/contents.htm">Magic White and Black</a></li>
+				<li>Pdf's in the Christian section (re Jakob Boehme)<br />
+					<a href="/christian/">selfdefinition.org/christian/</a>
+				</li>
+				<li class="spacer">
+					<hr />
+				</li>
+				<li>Pdf for Life of Paracelsus is in <a href="/magic/">/magic/</a></li>
+				<li>Sources:<br />
+					<a href="https://www.scribd.com/search?page=1&content_type=tops&query=hartmann%20paracelsus">Scribd.Com</a><br />
+					<a href="https://archive.org/details/lifeofphilippust00hartuoft">Archive.Org</a>
+				</li>
+
+				<li>Thanks to <a href="https://www.american-buddha.com/novadonnasitemap.htm">American-Buddha.Com</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

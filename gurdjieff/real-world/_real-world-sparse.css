@@ -1,0 +1,99 @@
+/* file:  /gurdjieff/real-world/_real-world-sparse.css 
+
+Update Apr 25, 2020. May 15, 2020
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update May 15, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fcfcff;
+}
+
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with aebruary default color */
+/* color must contrast with body */
+/* This is default: #bde0ff - Blue, for selfdefinition-responsive.css
+	nice pink: #FFC0CB */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #d0d0ff;
+}
+
+
+/******* spanish version color *******/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+	background: #efe;
+}
+
+/* need this hack to combine 2 classes (english-english forces display, 
+	must turn it off to get rid of site map menu item on coditional hide) */
+@media only screen and (max-width:450px) {
+
+	html.spanish #menu-site-small-screen li.spanish.conditional-hide-3,
+	html.english #menu-site-small-screen li.english.conditional-hide-3 {
+		display: none;
+	}
+
+	#menu-site-small-screen li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+/* Too many items, squeeze a little more, as with padding above */
+@media only screen and (max-width:365px) {
+
+	#menu-site-small-screen li {
+		margin-right: 2px;
+	}
+}
+
+
+/* pick a color complimentary to background */
+em.answer,
+em.question {
+	background: #ffdfff;
+}
+
+/* dark theme version of above */
+html.dark em.answer,
+html.dark em.question {
+	color: #dd0;
+	background: inherit;
+}
+
+
+@media only screen and (max-width:330px) {
+	#menu-site-small-screen span.conditional-hide-6 {
+		display: none;
+	}
+}
+
+/* testing */
+
+
+
+/* end */

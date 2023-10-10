@@ -1,0 +1,82 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?> <!DOCTYPE html>
+<html lang="en" class="<?php echo $themeClass; ?>">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title> TITLE
+    <meta name="description" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta name="author" content="">
+    <meta property="og:image" content="NEED-IMAGE-URL ">
+    <!-- load external stylesheets before the menu scripts --> <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css"> <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">  <link href="_quotes-sparse.css" rel="stylesheet" type="text/css">  <!-- the following gives you the jquery library -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script  src="/scripts/menu-highlighter.js"></script>
+    <script  src="/scripts/recoverdivscroll.js"></script>
+    <link href="/styles/quotes-responsive.css" rel="stylesheet" type="text/css">
+    
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include( "_quotes-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">  <!-- #main-content is absolutely positioned--><!-- to reset relative positioning --><div id="main-content-relative"> <div class="progress-header"> <div class="progress-container"> <div class="progress-bar" id="myBar"> </div>  </div> </div> <div id="article"> <article> 
+                <div id="announce">
+                    <header>
+                        <?php include( "_quotes-title-include.htm"); ?>
+                    </header>
+                </div>
+                
+                    
+                        <nav class="pagenav">
+                            <ul>
+                                <li class="left"><a href="">&lt; Previous</a></li>
+                                <li class="center"><a href="">Contents</a></li>
+                                <li class="right"><a href="">Next &gt;</a></li>
+                            </ul>
+                            <div style="clear:both;"></div>
+                        </nav>
+                        <header>
+                            <h2>
+                                Article Title Here</h2>
+                        </header>
+
+
+
+
+
+
+
+                        <p class="totop">
+                            <a href="javascript:toTopCleanUrl();">top of page</a>
+                        </p>
+                        <!-- page nav here if used -->
+                    </article>
+                </div>
+                <!-- end div#article -->  </div>  <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script type='text/javascript'>
+        RecoverDivScroll.init("", "menu-container"); 
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include("/home/reversev/public_html/selfdefinition.org/includes/googlescript.htm"); ?>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿
+/* file:  selfdefinition.org/rose/styles/rose.css */
+
+html, body { height:100%; padding:0px; }
+
+body   {font-family: verdana, tahoma, ariel, sans-serif;
+        font-size: 12pt; line-height: 1.7em; }
+
+
+/******  IE hack 
+http://www.yourhtmlsource.com/stylesheets/csslayout.html#centering  
+Has to be an ID and not a class
+********/
+	
+/* Center and left justify the page in the browser window. */
+body {text-align:center;}
+#firstdivofskin {margin-left:20px;}
+#mainwrapper {text-align:left; margin:0 auto; /* need "auto" */ }
+/****** end of IE hack *******/
+
+img {margin:0;padding:0;border:0;}
+img {display:block;} /* this (by itself) removes space from between adjacent images */
+
+
+
+div {margin:0;padding:0;border:0;}
+p   {margin-top:0px;padding-top:0px;}
+
+.note, .notes   {font-size:90%;}
+
+h1, h2, h3      {margin-top: 2em}
+h2.secondary, h3.secondary {margin-top:0;}
+
+/* new Mov 2012 */
+#mainwrapper        {width:1000px;}
+
+#top {font-size:90%;margin-top:20px;}
+#announce {}
+
+
+#float-container    {width:1000px;}
+
+#left-column, #maincontent, #right-column {float:left;}
+
+#left-column    {width:200px;padding-right:20px;font-size:90%;}
+#maincontent    {width:600px;margin-left:20px;border-bottom:100px solid transparent;}
+#right-column   {width:100px;} /* default is "right column not used". Make wider if used */
+
+
+a:link    { color: blue; text-decoration: none; }
+a:active  { color: red;  text-decoration: none }
+a:visited { color: blue; text-decoration: none;}
+a:hover   { color: green; text-decoration: none;}
+						
+h1 { font-size: 125%;  }
+h2 { font-size: 110%;  }
+h3 { font-size: 100%;  }
+
+
+
+hr {margin-left:25px; }
+
+td { text-align:left; vertical-align:top;}
+
+

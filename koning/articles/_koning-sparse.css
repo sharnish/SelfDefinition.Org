@@ -1,0 +1,45 @@
+/* css for /koning/articles/_koning-sparse.css 
+
+Update November 14, 2020. June 10, 2022 
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update June 10, 2022";
+	}
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #eaffea;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #d0e9d0;
+}
+
+#title-image-link {
+	display: none;
+}
+
+@media only screen and (max-width:767px) {
+	#title-image-link {
+		display: none;
+	}
+}
+
+/* end */

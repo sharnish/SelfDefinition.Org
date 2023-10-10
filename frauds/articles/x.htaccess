@@ -1,0 +1,14 @@
+# File /frauds/.htaccess   < already have, so add this to existing
+
+# Already have root redirects. Put in root, not articles directory
+
+# page name change June 8, 2022
+
+Redirect 301 "/frauds/fraud-links.htm"	"/frauds/articles/article-index.htm"
+
+Redirect 301 "/frauds/articles/fraud-links.htm"	"/frauds/articles/article-index.htm"
+
+
+# Added to main .htaccess and tested ok June 8, 2022
+
+# end

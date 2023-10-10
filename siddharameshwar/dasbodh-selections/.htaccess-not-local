@@ -1,0 +1,11 @@
+# file /siddharameshwar/dasbodh-selections/.htaccess
+# Upgrade html Nov 8, 2019
+
+# page is split into 2: contents and intro
+
+Redirect 301 "/siddharameshwar/dasbodh-selections/contents-introduction.htm"  "/siddharameshwar/dasbodh-selections/contents.htm"
+
+
+# should put a canonical link for the PDF, not done yet
+
+# end 

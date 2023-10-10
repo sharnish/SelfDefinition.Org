@@ -1,0 +1,31 @@
+# .htaccess file for selfdefinition.org/science/   
+# Redirect the 25-Book list + honorable mentions - files removed Dec 19, 2016 - htaccess updated Dec 20, 2016
+
+
+# removed:     ErrorDocument 404 "http://selfdefinition.org/science/greatest-science-book-redirect-page.htm"
+
+########### ALL REDIRECTS REMOVED AND LISTS REMOVED
+########### JAN 22, 2017
+
+
+# correct old missplling fixed Jan 23, 2017
+
+Redirect 301 "/science/Frifjof-Capra-The-Tao-of-Physics.pdf"    "/science/Fritjof-Capra-The-Tao-of-Physics.pdf"
+
+
+# did this for 25 greatest science books and mentalism 
+
+# try redirect-gone Jan 25 2017
+# http://www.quickonlinetips.com/archives/2014/11/http-410-error-pages-htaccess/
+# Redirect gone /path/path/folder/
+# test with this:
+#  curl -I selfdefinition.org/science/25-greatest-science-books-of-all-time/
+Redirect gone /science/25-greatest-science-books-of-all-time/
+
+
+
+ 
+# end
+
+
+

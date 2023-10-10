@@ -1,0 +1,97 @@
+<!-- start of menu include file updat Apr 20, 2020. June 19, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/advaita/">Advaita index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/advaita/">Advaita index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>The Crest-Jewel of Discrimination</li>
+			<li class="normal note tight">Vivekachudamani</li>
+			<li class="normal">
+				<img class="menu-image" src="images/shankaracharya.jpg" alt="Adi Shankaracharya" />
+			</li>
+			<li>Adi Shankaracharya</li>
+			<li class="normal note tight">8th Century</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="preface.htm">Preface</a></li>
+				<li><a href="introductory.htm">Introductory</a></li>
+				<li><a href="01-first-steps.htm">1. First Steps on the Path</a> </li>
+				<li><a href="02-self-potencies-vestures.htm">2. Self, Potencies, Vestures</a> </li>
+				<li><a href="03-the-witness.htm">3. The Witness</a> </li>
+				<li><a href="04-finding-the-real-self.htm">4. Finding the Real Self</a> </li>
+				<li><a href="05-power-of-mind-images.htm">5. Power of Mind-Images</a> </li>
+				<li><a href="06-free-even-in-life.htm">6. Free Even in Life</a> </li>
+				<li><a href="07-three-kinds-of-works.htm">7. Three Kinds of Works</a> </li>
+				<li><a href="08-master-and-pupil.htm">8. Master and Pupil</a> </li>
+				<li><a href="09-the-perfect-sage.htm">9. The Perfect Sage</a> </li>
+				<li><a href="10-for-ever-free.htm">10. For Ever Free</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="external-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li class="first-item">Adi Shankaracharya <span class="nowrap">at <a class="inline" href="https://en.wikipedia.org/wiki/Adi_Shankara">Wikipedia</a></span></li>
+				<li class="external-first-item">Advaita Vedanta <span class="nowrap">at <a class="inline" href="https://en.wikipedia.org/wiki/Advaita_Vedanta">Wikipedia</a></span></li>
+				<li class="first-item">Crest-Jewel of Wisdom <span class="block">at <a class="inline" href="https://en.wikipedia.org/wiki/Vivekachudamani">Wikipedia</a></span></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Advaita</li>
+				<li class="first-item">Adi Shankara: <a href="/advaita/shankara/writings/drik-drishya-viveka.htm">Vakya Sudha a.k.a Drik-drishya-viveka</a></li>
+				<li>Swami Vivekananda: <a href="/advaita/vivekananda/vedanta/contents.htm">The Vedanta Philosophy </a></li>
+				<li>Astavakra Gita: <a href="/advaita/ashtavakra/en/contents.htm">Astavakra Samhita <span class="note">[English, Spanish]</span></a></li>
+				<li class="subhead first-item">Parameshwar Maharaj</li>
+				<li class="first-item"><a href="/advaita/parameshwar/submerging-into-self/contents.htm">Submerging into Myself </a></li>
+				<li><a href="/advaita/parameshwar/hundiendome/indice.htm">Hundiendome en mí mismo </a></li>
+				<li class="header-item">Also on our site</li>
+				<li class="subhead first-item">Celibacy section</li>
+				<li class="first-item"><a href="/celibacy/quotes/shankaracharya-on-celibacy.htm">Shankara on Celbacy</a></li>
+				<li class="subhead">Siddharameshwar</li>
+				<li class="first-item"><a href="/siddharameshwar/dasbodh-selections/contents.htm">Selections from Amrut Laya</a></li>
+				<li><a href="/siddharameshwar/master-key/causal-body-forgetfulness.htm">Master Key to Self Realization: Causal Body and Forgetfulness</a></li>
+				<li class="first-item"><a href="/siddharameshwar/la-llave-maestra/el-cuerpo-causal-olvido.htm">La llave de la realización del ser: El cuerpo causal y el ovido</a></li>
+
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

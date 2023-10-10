@@ -1,0 +1,187 @@
+/* file /zen/song-of-enlightenment/_song-of-enlightenment-refresh.css 
+
+Update April 8, 2022  */
+
+/* requires special styling for paragraph indentings */
+
+/* background selfdefinition-responsive default is #fcfeff */
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #f3fff3;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #ddeeff;
+}
+
+/* don't show title-include #version on large pages */
+/* small screens is positioned above the title image */
+@media only screen and (min-width:768px) {
+    #version {
+        display: none;
+    }
+}
+
+
+/*  Customizable features */
+
+/* hanging indent on all paragraphs in article */
+#special-paragraph-formatting p {
+    padding-left: 22px;
+    padding-right: 22px;
+    text-indent: -22px;
+}
+
+@media only screen and (max-width:500px) {
+    #special-paragraph-formatting p {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-indent: -15px;
+    }
+}
+
+/* this reverses the effect of the hanging indent (above) */
+article p.totop {
+    text-indent: 0;
+}
+
+/* for Diamond Sangha special styling */
+#special-paragraph-formatting article p {
+    margin: 0.3em 0;
+}
+
+#special-paragraph-formatting p.newparagraph {
+    margin-top: 2em;
+}
+
+
+
+@media only screen and (min-width:500px) {
+    #dipankara-image {
+        max-width: 150px;
+    }
+}
+
+/* End customizable features */
+
+
+/* testing */
+
+/*  ******
+
+
+#main-content {
+    border: 1px solid yellow;
+}
+
+#article {
+    border: 1px solid white;
+}
+
+#title-include-div {
+    border: 1px solid red;
+}
+
+#announce header {
+    border: 1px solid green;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header p {
+    border: 0px solid blue;
+}
+
+#menu-container {
+    border: 1px solid red;
+}
+
+#fixed-header-small-screen {
+    border: 1px solid blue;
+}
+
+#menu-site-small-screen {
+    border: 1px solid orange;
+}
+
+#menu-site-small-screen li {
+    border: 1px solid green;
+}
+
+#menu-section-group,
+div.optional-links,
+div.site-links,
+div.external-links {
+    border: 1px solid blue;
+}
+
+ul#menu-site,
+ul.menu-text,
+ul.menu-section {
+    border: 1px solid green;
+}
+
+#index-lists {
+    border: 1px solid red;
+}
+
+#index-lists ul {
+    border: 1px solid blue;
+}
+
+#index-lists ul li {
+    border: 1px solid green;
+}
+
+nav.contents {
+    border: 1px solid yellow;
+}
+
+
+nav.next-previous-item-nav {
+    border: 1px solid yellow;
+}
+
+ul.next-previous-item-list {
+    border: 1px solid red;
+}
+
+a.page-link-anchor:target {
+    border: 1px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+    a.page-link-anchor:target {
+        border: 1px solid green;
+    }
+}
+
+a.return-anchor,
+a.return-anchor:target {
+    border: 1px solid red;
+}
+
+a.endnote,
+a.endnote:target {
+    border: 1px solid red;
+}
+*/
+
+
+/* end */

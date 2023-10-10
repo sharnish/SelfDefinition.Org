@@ -1,0 +1,666 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Osho Book List and Download Sources</title>
+	<meta property="description" content="Links to sources of Osho free ebook downloads">
+	<meta property="og:title" content="Osho Book List and Download Sources">
+	<meta property="og:description" content="Links to sources of Osho free ebook downloads">
+	<meta property="og:image" content="https://selfdefinition.org/osho/images/osho.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="/redirect/_redirect-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+		}
+
+		h4 {
+			margin-top: 30px;
+			margin-bottom: 8px;
+		}
+
+		h4+p {
+			margin-top: 8px;
+		}
+
+	</style>
+	<script>
+		/* replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/redirect/images/osho.jpg");
+
+			$('#menu-image').attr("src", "/redirect/images/osho.jpg");
+
+			$('.replaceable-link span').text('Osho Index');
+
+			$('.replaceable-link').attr("href", "/osho/");
+
+			$('.replaceable-link').attr("style", "display:block");
+
+		})
+
+	</script>
+
+
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<!-- keep osho menu -->
+					<?php include( "_redirect-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- keep osho title include -->
+									<?php include( "_redirect-title-include.htm"); ?>
+									<h3>
+										Osho Book List
+									</h3>
+								</header>
+							</div>
+							<p>
+								Due to capacity constraints we had to move the collection of Osho PDFs off this server. The books are freely available at other websites, listed below, which are easy to search. If you wish to recommend other Osho resources, please use the Contact form
+								on this site to have a link added: <a href="/contact/">/contact/</a>
+							</p>
+							<p class="note tight">
+								Return to Osho Index : <a href="/osho/">/osho/</a></p>
+							<p class="note80 tight" style="margin-top:10px;">
+								Return to Redirect index page: <a href="/redirect/redirect-index.htm">redirect-index.htm</a>
+							</p>
+							<div class="nav-spacer" style="line-height:1px;">&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#resources">Osho Resources</a></li>
+									<li><a href="#amazon">Physical Copies and Streaming Video</a></li>
+									<li><a href="#book-list">Book List</a></li>
+								</ul>
+							</nav>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="resources">&nbsp;</a>
+							<h3>
+								Osho Resources</h3>
+							<h4 class="maroon">
+								OshoWorld.Com</h4>
+							<p class="note center">[ server is often slow ]</p>
+
+							<p>Osho Books – Discourse Series
+								<a href="https://oshoworld.com/osho-books-discourse-series-english-a/">https://oshoworld.com/osho-books-discourse-series-english-a/</a>
+							</p>
+
+							<p>Search Archive of Osho Books
+								<a href="https://oshoworld.com/osho-book-search/">
+									https://oshoworld.com/osho-book-search/</a>
+
+							</p>
+
+							<h4 class="maroon">
+								OshoSearch.Net
+							</h4>
+							<p>
+								<a href="http://oshosearch.net/Convert/index_Convert_Osho.html">oshosearch.net/Convert/<wbr />index_<wbr />Convert_<wbr />Osho.html</a>
+							</p>
+							<p>
+								<a href="http://oshosearch.net/Convert/Osho_Downloads.html#Osho_torrent_collections">oshosearch.net/Convert/<wbr>Osho_<wbr />Downloads.html<wbr />#Osho_torrent_<wbr />collections</a>
+							</p>
+							<h4 class="maroon">
+								OZenRajneesh.Com</h4>
+							<p>
+								<a href="https://ozenrajneesh.com/books/">ozenrajneesh.com/books/</a>
+							</p>
+							<h4 class="maroon">
+								OshoRajneesh.Com - Home page
+							</h4>
+							<p>
+								<a href="https://oshorajneesh.com/go.htm">oshorajneesh.com/go.htm</a>
+							</p>
+							<h4 class="maroon">
+								OshoRajneesh.Com - Download directories</h4>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-free-download/">oshorajneesh.com/<wbr />osho-books-free-download/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-on-indian-mystics/">oshorajneesh.com/<wbr />osho-books-on-indian-mystics/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-meditations/">oshorajneesh.com/<wbr />osho-meditations/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-on-sufi/">oshorajneesh.com/<wbr />osho-books-on-sufi/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-tantra-book/">oshorajneesh.com/<wbr />osho-tantra-book/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-tao/">oshorajneesh.com/<wbr />osho-books-tao/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-upanishads/">oshorajneesh.com/<wbr />osho-books-upanishads/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-yoga/">oshorajneesh.com/<wbr />osho-books-yoga/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-on-buddha/">oshorajneesh.com/<wbr />osho-books-on-buddha/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-darshan-diaries/">oshorajneesh.com/<wbr />osho-darshan-diaries/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-on-hindi-translations/">oshorajneesh.com/<wbr />osho-books-on-hindi-translations/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-personal-glimpses/">oshorajneesh.com/<wbr />osho-personal-glimpses/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-discourses/">oshorajneesh.com/<wbr />osho-discourses/ (responses to questions)</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-books-on-western-mystics/">oshorajneesh.com/<wbr />osho-books-on-western-mystics/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-world-tour-discourses/">oshorajneesh.com/<wbr />osho-world-tour-discourses/</a>
+							</p>
+							<p>
+								<a href="https://oshorajneesh.com/osho-zen-books/">oshorajneesh.com/<wbr />osho-zen-books/</a>
+							</p>
+
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="amazon">&nbsp;</a>
+							<h3 style="margin-bottom:0;">
+								Physical Copies and Streaming Video
+							</h3>
+							<p class="center note80" style="margin-top:0;margin-bottom:0;">Amazon.Com, US </p>
+
+							<p class="center tiny" style="margin-top:0;">international links coming soon</p>
+
+							<p></p>
+							<ul class="amazon-list">
+
+								<li class="header">Popular titles at Amazon</li>
+
+								<li><a target="_blank" href="https://amzn.to/2yb877H">Living Dangerously: Ordinary Enlightenment for Extraordinary Times</a></li>
+
+								<li><a target="_blank" href="https://amzn.to/2VvmX0F">Courage: The Joy of Living</a></li>
+
+								<li><a target="_blank" href="https://amzn.to/3ciilBT">Tantra: The Supreme Understanding</a></li>
+
+								<li><a target="_blank" href="https://amzn.to/2xt0h9m">Love, Freedom, Aloneness: The Koan of Relationships</a></li>
+
+								<li class="header">General categories:</li>
+								<li>
+									<a target="_blank" href="https://www.amazon.com/s?k=osho+video&amp;i=instant-video&amp;ref=nb_sb_noss_1&_encoding=UTF8&tag=selfdefinitio-20&linkCode=ur2&linkId=b0d81175b939ae6d1047c64ecc1d2cbe&camp=1789&creative=9325">Osho Videos</a>
+								</li>
+
+								<li>
+									<a target="_blank" href="https://www.amazon.com/s?k=Osho+Books&amp;ref=nb_sb_noss_2&_encoding=UTF8&tag=selfdefinitio-20&linkCode=ur2&linkId=1cc70711734ac795a45e0cc43e56544b&camp=1789&creative=9325">Osho Books</a>
+
+								</li>
+
+							</ul>
+
+							<p class="tiny center">Amazon affiliate commissions help defray our costs.</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="book-list">&nbsp;</a>
+							<h4 class="maroon">
+								Osho Book List (pdfs now removed)</h4>
+							<p>
+								A Cup of Tea.pdf</p>
+							<p>
+								A Rose is a Rose is a Rose.pdf</p>
+							<p>
+								Above All Don't Wobble.pdf</p>
+							<p>
+								And Now, And Here.pdf</p>
+							<p>
+								Be Realistic. Plan for a Miracle.pdf</p>
+							<p>
+								Believing the Impossible Before Breakfast.pdf</p>
+							<p>
+								Beloved of My Heart.pdf</p>
+							<p>
+								Blessed Are the Ignorant.pdf</p>
+							<p>
+								Bodhidharma.pdf</p>
+							<p>
+								Books I Have Loved.pdf</p>
+							<p>
+								Come Follow To You vol1.pdf</p>
+							<p>
+								Come Follow To You vol2.pdf</p>
+							<p>
+								Come Follow To You vol3.pdf</p>
+							<p>
+								Come Follow To You vol4.pdf</p>
+							<p>
+								Dance Your Way to God.pdf</p>
+							<p>
+								Death is Divine.pdf</p>
+							<p>
+								Dhammapad.pdf Vol 1 through 12</p>
+							<p>
+								Dimensions Beyond the Known.pdf</p>
+							<p>
+								Dogen, the Zen Master. A Search and a Fulfillment.pdf</p>
+							<p>
+								Don't Bite My Finger, Look Where I'm Pointing.pdf</p>
+							<p>
+								Don't Just Do Something, Sit There.pdf</p>
+							<p>
+								Don't Let Yourself Be Upset by the Sutra, rather Upset the Sutra Yourself.pdf</p>
+							<p>
+								Don't Look Before You Leap.pdf</p>
+							<p>
+								Early Talks.pdf</p>
+							<p>
+								Ecstasy-The Forgotten Language.pdf</p>
+							<p>
+								Far Beyond the Stars.pdf</p>
+							<p>
+								Finger Pointing to the Moon.pdf</p>
+							<p>
+								For Madmen Only(Price of Admission. Your Mind.pdf</p>
+							<p>
+								From Bondage to Freedom.pdf</p>
+							<p>
+								From Darkness to Light.pdf</p>
+							<p>
+								From Death to Deathlessness.pdf</p>
+							<p>
+								From Ignorance to Innocence.pdf</p>
+							<p>
+								From Misery to Enlightenment.pdf</p>
+							<p>
+								From Sex to Superconsciousness.pdf</p>
+							<p>
+								From Unconciousness to Consciousness.pdf</p>
+							<p>
+								From the False to the Truth.pdf</p>
+							<p>
+								Get Out of Your Own Way.pdf</p>
+							<p>
+								Glimpses of a Golden Childhood.pdf</p>
+							<p>
+								God Is Not For Sale.pdf</p>
+							<p>
+								God is Dead, Now Zen is the Only Living Truth.pdf</p>
+							<p>
+								God's Got a Thing About you.pdf</p>
+							<p>
+								Guida Spirituale.pdf</p>
+							<p>
+								Hallelujah!.pdf</p>
+							<p>
+								Hammer on the Rock.pdf</p>
+							<p>
+								Hari Om Tat Sat.pdf</p>
+							<p>
+								Hidden Mysteries.pdf</p>
+							<p>
+								Hsin Hsin Ming. The Book of Nothing.pdf</p>
+							<p>
+								Hyakujo. The Everest of Zen, with Basho's Haikus.pdf</p>
+							<p>
+								I Am That.pdf</p>
+							<p>
+								I Say Unto You, Vol 02.pdf</p>
+							<p>
+								I Say Unto You, Vol 1.pdf</p>
+							<p>
+								In Search of the Miraculous Vol 02.pdf</p>
+							<p>
+								In Search of the Miraculous Vol 1.pdf</p>
+							<p>
+								Jokes of Mulla Nasrudin.pdf</p>
+							<p>
+								Just Around the Corner.pdf</p>
+							<p>
+								Just Like That.pdf</p>
+							<p>
+								Krishna The Man and His Philosophy.pdf</p>
+							<p>
+								Kyozan. A True Man of Zen.pdf</p>
+							<p>
+								Let Go!.pdf</p>
+							<p>
+								Light on the Path.pdf</p>
+							<p>
+								Live Zen.pdf</p>
+							<p>
+								My Way. The Way of the White Clouds.pdf</p>
+							<p>
+								Nansen. The Point of Departure.pdf</p>
+							<p>
+								Nirvana. The Last Nightmare.pdf</p>
+							<p>
+								No Mind. The Flowers of Eternity.pdf</p>
+							<p>
+								No Water, No Moon.pdf</p>
+							<p>
+								Om Shantih Shantih Shantih.pdf</p>
+							<p>
+								Osho-TheGreatZenMasterTaHui.pdf</p>
+							<p>
+								Returning to the Source.pdf</p>
+							<p>
+								Revolution in Education.pdf</p>
+							<p>
+								Sat Chit Anand.pdf</p>
+							<p>
+								Satyam Shivam Sundram.pdf</p>
+							<p>
+								Seeds of Wisdom.pdf</p>
+							<p>
+								Sermons in Stones.pdf</p>
+							<p>
+								Sex Matters - talk given 1968.pdf</p>
+							<p>
+								Silent Period.pdf</p>
+							<p>
+								Snap Your Fingers, Slap Your Face and Wake Up!.pdf</p>
+							<p>
+								Socrates Poisoned Again After 2025 Centuries.pdf</p>
+							<p>
+								Sufis. The People of the Path, Vol 02.pdf</p>
+							<p>
+								Sufis.The People of the Path, Vol 01.pdf</p>
+							<p>
+								Sun of Consciousness.pdf</p>
+							<p>
+								Take It Easy, Vol 01.pdf</p>
+							<p>
+								Take It Easy,Vol 02.pdf</p>
+							<p>
+								Tantra. The Supreme Understanding.pdf</p>
+							<p>
+								Tao. The Golden Gate, Vol 02.pdf</p>
+							<p>
+								Tao. The Golden Gate, Vol 1.pdf</p>
+							<p>
+								Tao. The Pathless Path, Vol 02.pdf</p>
+							<p>
+								Tao. The Pathless Path, Vol 01.pdf</p>
+							<p>
+								Tao. The Three Treasures, Vol 1.pdf</p>
+							<p>
+								Tao. The Three Treasures, Vol 4.pdf</p>
+							<p>
+								Tao. The Three Treasures,Vol 3.pdf</p>
+							<p>
+								Tao.The Three Treasures, Vol 2.pdf</p>
+							<p>
+								That Art Thou.pdf</p>
+							<p>
+								The 99 Names of Nothingness.pdf</p>
+							<p>
+								The Beginning of the Beginning.pdf</p>
+							<p>
+								The Buddha Disease.pdf</p>
+							<p>
+								The Discipline of Transcendence vol1.pdf</p>
+							<p>
+								The Discipline of Transcendence vol2.pdf</p>
+							<p>
+								The Discipline of Transcendence vol3.pdf</p>
+							<p>
+								The Discipline of Transcendence vol4.pdf</p>
+							<p>
+								The Earthen Lamps.pdf</p>
+							<p>
+								The Empty Boat.pdf</p>
+							<p>
+								The Eternal Quest.pdf</p>
+							<p>
+								The Further Shore.pdf</p>
+							<p>
+								The Great Challenge.pdf</p>
+							<p>
+								The Great Nothing.pdf</p>
+							<p>
+								The Great Path.pdf</p>
+							<p>
+								The Great Secret.pdf</p>
+							<p>
+								The Great Transcendence.pdf</p>
+							<p>
+								The Guest.pdf</p>
+							<p>
+								The Heartbeat of the Absolute.pdf</p>
+							<p>
+								The Inner Journey.pdf</p>
+							<p>
+								The Long the Short and the All.pdf</p>
+							<p>
+								The Madman's Guide to Enlightenment.pdf</p>
+							<p>
+								The Mahageeta,Vol 01.pdf</p>
+							<p>
+								The Messiah, Vol 01.pdf</p>
+							<p>
+								The Mustard Seed. My Most Loved Gospel on Jesus.pdf</p>
+							<p>
+								The New Alchemy. To Turn You On.pdf</p>
+							<p>
+								The New Dawn.pdf</p>
+							<p>
+								The No Book (No Buddha No Teaching, No Discipline).pdf</p>
+							<p>
+								The Osho Upanishad.pdf</p>
+							<p>
+								The Perfect Master, Vol 1.pdf</p>
+							<p>
+								The Perfect Master, Vol 2.pdf</p>
+							<p>
+								The Perfect Way.pdf</p>
+							<p>
+								The Psychology of the Esoteric.pdf</p>
+							<p>
+								The Rainbow Bridge.pdf</p>
+							<p>
+								The Razor's Edge.pdf</p>
+							<p>
+								The Rebel.pdf</p>
+							<p>
+								The Rebellious Spirit.pdf</p>
+							<p>
+								The Revolution.pdf</p>
+							<p>
+								The Sacred Yes.pdf</p>
+							<p>
+								The Search.pdf</p>
+							<p>
+								The Secret of Secrets, Vol 01.pdf</p>
+							<p>
+								The Secret of Secrets, Vol 02.pdf</p>
+							<p>
+								The Secret.pdf</p>
+							<p>
+								The Shadow of the Bamboo.pdf</p>
+							<p>
+								The Sun Behind the Sun Behind the Sun.pdf</p>
+							<p>
+								The Sun Rises in the Evening.pdf</p>
+							<p>
+								The Supreme Doctrine.pdf</p>
+							<p>
+								The Sword and the Lotus.pdf</p>
+							<p>
+								The Tantra Vision, Vol 01.pdf</p>
+							<p>
+								The Tantra Vision, Vol 02.pdf</p>
+							<p>
+								The Tongue-Tip Taste of Tao.pdf</p>
+							<p>
+								The Transmission of the Lamp.pdf</p>
+							<p>
+								The True Name, Vol 01.pdf</p>
+							<p>
+								The True Name, Vol 02.pdf</p>
+							<p>
+								The True Sage.pdf</p>
+							<p>
+								The Ultimate Alchemy, Vol 01.pdf</p>
+							<p>
+								The Ultimate Alchemy, Vol 02.pdf</p>
+							<p>
+								The Way of Tao, Volume 01.pdf</p>
+							<p>
+								The Way of Tao, Volume 02.pdf</p>
+							<p>
+								The White Lotus.pdf</p>
+							<p>
+								The Wild Geese and the Water.pdf</p>
+							<p>
+								The Wisdom of the Sands, Vol 1.pdf</p>
+							<p>
+								The Wisdom of the Sands, Vol 2.pdf</p>
+							<p>
+								The Zen Manifesto. Freedom From Oneself.pdf</p>
+							<p>
+								The Zero Experience.pdf</p>
+							<p>
+								Theologia Mystica.pdf</p>
+							<p>
+								This Is It.pdf</p>
+							<p>
+								This Very Body the Buddha.pdf</p>
+							<p>
+								This, This, A Thousand Times This. The Very Essence of Zen.pdf</p>
+							<p>
+								Turn On, Tune In and Drop the Lot.pdf</p>
+							<p>
+								Turning In.pdf</p>
+							<p>
+								Unio Mystica, Vol 01.pdf</p>
+							<p>
+								Unio Mystica, Vol 02.pdf</p>
+							<p>
+								Until You Die.pdf</p>
+							<p>
+								Vedanta. Seven Steps to Samadhi.pdf</p>
+							<p>
+								Vigyan Bhairav Tantra, Vol 1.pdf</p>
+							<p>
+								Vigyan Bhairav Tantra, Vol 2.pdf</p>
+							<p>
+								Walk Without Feet, Fly Without Wings and Think Without Mind.pdf</p>
+							<p>
+								Walking in Zen, Sitting in Zen.pdf</p>
+							<p>
+								What Is, Is, What Ain't, Ain't.pdf</p>
+							<p>
+								What is Rebellion.pdf</p>
+							<p>
+								When the Shoe Fits.pdf</p>
+							<p>
+								Where are the Gandhians.pdf</p>
+							<p>
+								Wisdom of Folly.pdf</p>
+							<p>
+								Won't You Join the Dance.pdf</p>
+							<p>
+								Yakusan. Straight to the Point of Enlightenment.pdf</p>
+							<p>
+								Yoga 1.pdf through Yoga 10.pdf</p>
+							<p>
+								You Ain't Seen Nothin Yet.pdf</p>
+							<p>
+								Zarathustra. A God That Can Dance.pdf</p>
+							<p>
+								Zarathustra. The Laughing Prophet.pdf</p>
+							<p>
+								Zen. The Diamond Thunderbolt.pdf</p>
+							<p>
+								Zen. The Mystery and The Poetry of the Beyond.pdf</p>
+							<p>
+								Zen. The Quantum Leap From Mind to No-Mind.pdf</p>
+							<p>
+								Zen. The Solitary Bird, Cuckoo of the Forest.pdf</p>
+							<p>
+								Zen. The Special Transmission.pdf</p>
+							<p>
+								Zen. Zest, Zip, Zap and Zing.pdf</p>
+
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Willing Slaves of the Welfare State, by C. S. Lewis</title>
+	<meta name="description" content="Technocracy and tyranny: Government in the Name of Science">
+	<meta name="author" content="C.S. Lewis">
+	<meta property="og:title" content="Willing Slaves of the Welfare State, by C. S. Lewis">
+	<meta property="og:description" content="Technocracy and tyranny: Government in the Name of Science">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/articles/images/C.S.Lewis-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_liberty-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" >
+    <link rel="next" -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* social medis:
+		
+		C.S. Lewis, 1958
+		
+		Willing Slaves of the Welfare State
+		
+		The question about progress has become the question whether we can discover any way of submitting to the worldwide paternalism of a technocracy without losing all personal privacy and independence. ... What assurance have we that our masters will or can keep the promise which induced us to sell ourselves?
+		
+		
+        */
+
+		ul.page-links {
+			width: 255px;
+			border: 0px solid blue;
+		}
+
+		label[for=element-toggle-b] {
+			cursor: pointer;
+		}
+
+
+		#element-toggle-b {
+			display: none;
+		}
+
+
+		#element-toggle-b:not(:checked)~#toggled-element-b {
+			display: none;
+		}
+
+	</style>
+	<script>
+		/* see /redirect/magic-404-redirect for full implementation
+		
+		replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/liberty/articles/images/C.S.Lewis-menu.jpg");
+
+			$('#menu-image').attr("src", "/liberty/articles/images/C.S.Lewis-menu.jpg");
+
+			$('#title-image').attr("alt", "C.S. Lewis");
+
+			$('#menu-image').attr("alt", "C.S. Lewis");
+
+			$('#swap-menu-author').text("C.S. Lewis");
+
+			$('#swap-menu-dates').text("(1898-1963)");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_liberty-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_liberty-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3 class="toowide">
+										Willing Slaves of the Welfare State
+									</h3>
+									<h4>C. S. Lewis</h4>
+									<p>On Technocracy and Tyranny</p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="cs-lewis-learning-in-war-time.htm">&lt; Learning In War Time</a></li>
+									<li class="align-right"><a href="the-jones-plantation.htm">The Jones Plantation &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<p class="note80 center tight">First published in <em>The Observer</em> on July 20, 1958</p>
+							<p class="tiny center tight">Source: <a href="http://liberty-tree.ca/research/willing_slaves_of_the_welfare_state">liberty-tree.ca</a></p>
+
+							<!-- extra hook added April 30, 2022 -->
+							<div class="page-text">
+								<nav class="in-page-nav">
+									<ul class="page-links">
+										<li><a href="#progress">Progress</a></li>
+										<li><a href="#government">Science and Government</a></li>
+										<li><a href="#rulers-owners">Rulers Have Become Owners</a></li>
+										<li><a href="#real-dilemma">Our Real Dilemma, Planned Society</a></li>
+										<li><a href="#government-name-of-science">Government in the Name of Science</a></li>
+										<li class="note"><a href="#reference">Reference</a></li>
+									</ul>
+								</nav>
+
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="progress">&nbsp;</a>
+								<h4>
+									Progress
+								</h4>
+
+								<p>PROGRESS MEANS MOVEMENT IN A DESIRED direction, and we do not all desire the same things for our species. In &quot;Possible Worlds" Professor Haldane&nbsp;<sup>[1]</sup> pictured a future in which Man, foreseeing that Earth would soon be uninhabitable, adapted himself for migration to Venus by drastically modifying his physiology and abandoning justice, pity and happiness. The desire here is for mere survival. Now I care far more how humanity lives than how long. Progress, for me, means increasing goodness and happiness of individual lives. For the species, as for each man, mere longevity seems to me a contemptible ideal.</p>
+
+								<p class="fnote">1. One essay in J. B. S. Haldane&apos;s <em>Possible Worlds and Other Essays</em> (London, 1927). See also &quot;The Last Judgment&quot; in the same book. [Numbered footnotes are by the publisher.]</p>
+
+
+								<p>I therefore go even further than C. P. Snow <span class="note">[in a previous article, in this series on "Progrss"]</span> in removing the H-bomb from the centre of the picture. Like him, I am not certain whether if it killed one-third of us (the one-third I belong to), this would be a bad thing for the remainder; like him, I don&apos;t think it will kill us all. But suppose it did? As a Christian I take it for granted that human history will some day end; and I am offering Omniscience no advice as to the best date for that consummation. I am more concerned by what the Bomb is doing already. One meets young people who make the threat of it a reason for poisoning every pleasure and evading every duty in the present. Didn&apos;t they know that, Bomb or no Bomb, all men die (many in horrible ways)? There&apos;s no good moping and sulking about it.</p>
+
+								<p>Having removed what I think a red herring, I return to the real question. Are people becoming, or likely to become, better or happier? Obviously this allows only the most conjectural answer. Most individual experience (and there is no other kind) never gets into the news, let alone the history books; one has an imperfect grasp even of one&apos;s own. We are reduced to generalities. Even among these it is hard to strike a balance. Sir Charles <span class="note">[Snow, see above]</span> enumerates many real ameliorations. Against these we must set Hiroshima, Black and Tans,<sup>[a]</sup> Gestapo, Ogpu,<sup>[b]</sup> brain-washing, the Russian slave camps. Perhaps we grow kinder to children; but then we grow less kind to the old. Any G.P.&nbsp;<sup>[2]</sup> will tell you that even prosperous people refuse to look after their parents. &quot;Can&apos;t they be got into some sort of Home?&quot; says Goneril.&nbsp;<sup>[3]</sup>
+
+								<p class="fnote">a. Former British soldiers recruited to fight the Irish Republican Army.</p>
+								<p class="fnote">b. Soviet secret police, 1923-1934.</p>
+								<p class="fnote">2. A general practitioner (doctor)</p>
+								<p class="fnote">3. In Shakespeare&apos;s King Lear</p>
+
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="government">&nbsp;</a>
+								<h4>Science and Government</h4>
+
+								<p>More useful, I think, than an attempt at balancing, is the reminder that most of these phenomena, good and bad, are made possible by two things. These two will probably determine most of what happens to us for some time.</p>
+
+								<p>The first is the advance, and increasing application, of science. As a means to the ends I care for, this is neutral. We shall grow able to cure, and to produce, more diseases &ndash; bacterial war, not bombs, might ring down the curtain &ndash; to alleviate, and to inflict, more pains, to husband, or to waste, the resources of the planet more extensively. We can become either more beneficent or more mischievous. My guess is we shall do both; mending one thing and marring another, removing old miseries and producing new ones, safeguarding ourselves here and endangering ourselves there.</p>
+
+								<p>The second is the changed relation between Government and subjects. Sir Charles mentions our new attitude to crime. I will mention the trainloads of Jews delivered at the German gas-chambers. It seems shocking to suggest a common element, but I think one exists. On the humanitarian view all crime is pathological; it demands not retributive punishment but cure. This separates the criminal&apos;s treatment from the concepts of justice and desert; a &quot;just cure&quot; is meaningless.</p>
+								<p>On the old view public opinion might protest against a punishment (it protested against our old penal code) as excessive, more than the man &quot;deserved&quot;; an ethical question on which anyone might have an opinion. But a remedial treatment can be judged only by the probability of its success; a technical question on which only experts can speak.</p>
+								<p>Thus the criminal ceases to be a person, a subject of rights and duties, and becomes merely an object on which society can work. And this is, in principle, how Hitler treated the Jews. They were objects; killed not for ill desert but because, on his theories, they were a disease in society. If society can mend, remake, and unmake men at its pleasure, its pleasure may, of course, be humane or homicidal. The difference is important. </p>
+
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="rulers-owners">&nbsp;</a>
+								<h4>Rulers Have Become Owners</h4>
+
+								<p> But, either way, rulers have become owners. Observe how the &quot;humane&quot; attitude to crime could operate. If crimes are diseases, why should diseases be treated differently from crimes? And who but the experts can define disease? One school of psychology regards my religion as a neurosis. If this neurosis ever becomes inconvenient to Government, what is to prevent my being subjected to a compulsory &quot;cure&quot;? It may be painful; treatments sometimes are. But it will be no use asking, &quot;What have I done to deserve this?&quot; The Straightener will reply: &quot;But, my dear fellow, no one&apos;s blaming you. We no longer believe in retributive justice. We&apos;re healing you.&quot;</p>
+								<p>This would be no more than an extreme application of the political philosophy implicit in most modern communities. It has stolen on us unawares. Two wars necessitated vast curtailments of liberty, and we have grown, though grumblingly, accustomed to our chains. The increasing complexity and precariousness of our economic life have forced Government to take over many spheres of activity once left to choice or chance. Our intellectuals have surrendered first to the slave-philosophy of Hegel, then to Marx, finally to the linguistic analysts.</p>
+								<p>As a result, classical political theory, with its Stoical, Christian, and juristic key-conceptions (natural law, the value of the individual, the rights of man), has died. The modern State exists not to protect our rights but to do us good or make us good &ndash; anyway, to do something to us or to make us something. Hence the new name &quot;leaders&quot; for those who were once &quot;rulers&quot;. We are less their subjects than their wards, pupils, or domestic animals. There is nothing left of which we can say to them, &quot;Mind your own business.&quot; Our whole lives are their business.</p>
+								<p>I write &quot;they&quot; because it seems childish not to recognize that actual government is and always must be oligarchical. Our effective masters must be more than one and fewer than all. But the oligarchs begin to regard us in a new way.</p>
+
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="real-dilemma">&nbsp;</a>
+								<h4>Our Real Dilemma, Planned Society</h4>
+
+								<p>Here, I think, lies our real dilemma. Probably we cannot, certainly we shall not, retrace our steps. We are tamed animals (some with kind, some with cruel, masters) and should probably starve if we got out of our cage. That is one horn of the dilemma. But in an increasingly planned society, how much of what I value can survive? That is the other horn.</p>
+								<p>I believe a man is happier, and happy in a richer way, if he has &quot;the freeborn mind&quot;. But I doubt whether he can have this without economic independence, which the new society is abolishing. For economic independence allows an education not controlled by Government; and in adult life it is the man who needs, and asks, nothing of Government who can criticise its acts and snap his fingers at its ideology. Read Montaigne;&nbsp;<sup>[b]</sup> that&apos;s the voice of a man with his legs under his own table, eating the mutton and turnips raised on his own land. Who will talk like that when the State is everyone&apos;s schoolmaster and employer? Admittedly, when man was untamed, such liberty belonged only to the few. I know. Hence the horrible suspicion that our only choice is between societies with few freemen and societies with none.</p>
+
+
+								<label for="element-toggle-b">
+									[b. Toggle footnote.]</label>
+								<input id="element-toggle-b" type="checkbox">
+								<div id="toggled-element-b" class="cfnote hidden">
+									<p>
+										** E.g., "Such people as have been bred up to liberty, and subject to no other dominion but the authority of their own will, look upon all other form of government as monstrous and contrary to nature. Those who are inured to monarchy do the same; and what opportunity so ever fortune presents them with to change, even then, when with the greatest difficulties they have disengaged themselves from one master, that was troublesome and grievous to them, they presently run, with the same difficulties, to create another; being unable to take into hatred subjection itself."
+										<span class="block">&nbsp;&ndash;&nbsp;Michael Montaigne, Essays, On Custom, and of Not Changing a Received Law (1575) <a class="inline" href="https://history.hanover.edu/courses/excerpts/212mont2.html">history.hanover.edu</a></span>
+									</p>
+								</div>
+
+
+								<p>Again, the new oligarchy must more and more base its claim to plan us on its claim to knowledge. If we are to be mothered, mother must know best. This means they must increasingly rely on the advice of scientists, till in the end the politicians proper become merely the scientists&apos; puppets. <strong>Technocracy</strong> is the form to which a planned society must tend. Now I dread specialists in power because they are specialists speaking outside their special subjects. Let scientists tell us about sciences. But government involves questions about the good for man, and justice, and what things are worth having at what price; and on these a scientific training gives a man&apos;s opinion no added value. Let the doctor tell me I shall die unless I do so-and-so; but whether life is worth having on those terms is no more a question for him than for any other man.</p>
+								<p>Thirdly, I do not like the pretensions of Government &ndash; the grounds on which it demands my obedience &ndash; to be pitched too high. I don&apos;t like the medicine-man&apos;s magical pretensions nor the Bourbon&apos;s Divine Right. This is not solely because I disbelieve in magic and in Bossuet&apos;s Politique.&nbsp;<sup>[4]</sup></p>
+
+								<p class="fnote">4. Jacques Benigne Bossuet, <em>Politique tiree des propres paroles de L&apos;Ecriture-Sainte</em> (Paris, 1709).</p>
+
+								<p>I believe in God, but I detest theocracy. For every Government consists of mere men and is, strictly viewed, a makeshift; if it adds to its commands &quot;Thus saith the Lord&quot;, it lies, and lies dangerously.</p>
+
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="government-name-of-science">&nbsp;</a>
+								<h4>
+									Government in the Name of Science
+								</h4>
+
+								<p>On just the same ground I dread government in the name of science. That is how tyrannies come in. In every age the men who want us under their thumb, if they have any sense, will put forward the particular pretension which the hopes and fears of that age render most potent. They &quot;cash in&quot;. It has been magic, it has been Christianity. Now it will certainly be science. Perhaps the real scientists may not think much of the tyrants&apos; &quot;science&quot; &ndash; they didn&apos;t think much of Hitler&apos;s racial theories or Stalin&apos;s biology. But they can be muzzled.</p>
+								<p>We must give full weight to Sir Charles&apos;s reminder that millions in the East are still half starved. To these my fears would seem very unimportant. A hungry man thinks about food, not freedom. We must give full weight to the claim that nothing but science, and science globally applied, and therefore unprecedented Government controls, can produce full bellies and medical care for the whole human race: nothing, in short, but a world Welfare State. It is a full admission of these truths which impresses upon me the extreme peril of humanity at present.</p>
+								<p>We have on the one hand a desperate need; hunger, sickness, and the dread of war. We have, on the other, the conception of something that might meet it: omnicompetent global technocracy. Are not these the ideal opportunity for enslavement? This is how it has entered before; a desperate need (real or apparent) in the one party, a power (real or apparent) to relieve it, in the other. In the ancient world individuals have sold themselves as slaves, in order to eat. So in society. Here is a witch-doctor who can save us from the sorcerers; a war-lord who can save us from the barbarians; a Church that can save us from Hell. Give them what they ask, give ourselves to them bound and blindfold, if only they will! Perhaps the terrible bargain will be made again. We cannot blame men for making it. We can hardly wish them not to. Yet we can hardly bear that they should.</p>
+								<p>The question about progress has become the question whether we can discover any way of submitting to the worldwide paternalism of a technocracy without losing all personal privacy and independence. Is there any possibility of getting the super Welfare State&apos;s honey and avoiding the sting?</p>
+								<p>Let us make no mistake about the sting. The Swedish sadness [?] is only a foretaste. To live his life in his own way, to call his house his castle, to enjoy the fruits of his own labour, to educate his children as his conscience directs, to save for their prosperity after his death &ndash; these are wishes deeply ingrained in civilised man. Their realization is almost as necessary to our virtues as to our happiness. From their total frustration disastrous results both moral and psychological might follow.</p>
+								<p>All this threatens us even if the form of society which our needs point to should prove an unparalleled success. But is that certain? What assurance have we that our masters will or can keep the promise which induced us to sell ourselves? Let us not be deceived by phrases about &quot;Man taking charge of his own destiny&quot;. All that can really happen is that some men will take charge of the destiny of the others. They will be simply men; none perfect; some greedy, cruel and dishonest. The more completely we are planned the more powerful they will be. Have we discovered some new reason why, this time, power should not corrupt as it has done before?</p>
+								<p>
+									&nbsp;
+								</p>
+								<p class="note center">[ end ] </p>
+								<!-- SUBSEQUENT HEADERS -->
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="reference">&nbsp;</a>
+								<h4>
+									Reference
+								</h4>
+								<p>Publisher's remarks:</p>
+
+								<p class="note">From the French Revolution to the outbreak of the First World War in 1914, it was generally assumed that progress in human affairs was not only possible but inevitable. Since then two terrible wars and the discovery of the hydrogen bomb have made men question this confident assumption. <em>The Observer </em> invited five well-known writers to give their answers to the following questions: &quot;Is man progressing today?&quot; &quot;Is progress even possible?&quot; This second article [by C.S. Lewis] in the series is a reply to the opening article by C.P. Snow, &quot;Man in Society&quot;, &ndash;<em>The Observer</em> (13 July 1958).</p>
+
+								<p>
+									&nbsp;
+								</p>
+
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+							</div><!-- end #page-text -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="cs-lewis-learning-in-war-time.htm">&lt; Learning In War Time</a></li>
+									<li class="align-right"><a href="the-jones-plantation.htm">The Jones Plantation &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,541 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>¿Quién Soy Yo?</title>
+	<meta name="description" content='Nan Yar? El formato original de preguntas y respuestas para el libro "¿Quién soy?"'>
+	<meta property="og:title" content="¿Quién Soy Yo? &ndash; Ramana Maharshi">
+	<meta property="og:description" content='Nan Yar? El formato original de preguntas y respuestas para el libro "¿Quién soy?"'>
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-green.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Special color for pages in Spanish */
+
+		html,
+		body {
+			background: #e0fff6;
+		}
+
+		#ramana-float-container {
+			margin-top: 30px;
+		}
+
+		/* No styling other than the above is used for this element.
+            Just relies on html.
+            Was constructed originally for the Engglish version of this page */
+
+		/* Ordered list is copied from ramana 40 verses on reality
+           using class "who-am-i" in places of class "verses" */
+		/* This spanish version styling, very simplified,
+            was then copied from English version, */
+
+		ol.who-am-i li {
+			border: 0px solid blue;
+		}
+
+		/* defaults for chrome browser
+
+            ol {
+                display: block;
+                list-style-type: decimal;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+            }
+        */
+		/* in CSS style sheeet, about line 57, I remove numbering for numbered lists
+        for widths 500 and less, to makes the content fuller width
+        (pobably only on the Muruganar pages so far)
+        This is only appropriate for short lists.
+
+        /* SS = get rid of Disk/Numbering for small screens
+        @media only screen and (max-width:500px){
+            ul {padding-left:33px;}
+            ol {padding-left:33px;}
+            ul li {margin-left:-35px;list-style:none;}
+            ol li {margin-left:-25px;list-style:none;}
+        }
+
+        The following restores numbering on small
+        screens for this page */
+
+		@media only screen and (max-width:500px) {
+			ol.who-am-i li {
+				list-style: inside decimal;
+				margin-left: -30px;
+			}
+
+			ol.who-am-i li:before {
+				display: inline-block;
+				content: "";
+				height: 5px;
+			}
+
+			/* In combination with inline-block (instead of block) above,
+            put the question, i.e., the first <p> on the same line as the bullet number */
+			ol.who-am-i li p:nth-child(n+2) {}
+		}
+
+		/* spacing below item */
+
+		ol.who-am-i li {
+			margin-bottom: 30px;
+		}
+
+		/* all screens
+        to color the bullet number and the question only */
+
+		ol.who-am-i {
+			color: inherit;
+			border: 0px solid red;
+		}
+
+		html.dark ol.who-am-i {
+			color: inherit;
+		}
+
+		ol.who-am-i li p:nth-child(n+2) {
+			color: inherit;
+		}
+
+		ol.who-am-i li p:first-child {
+			display: inline;
+		}
+
+		/* LARGE SCREENS
+        select all but the first paragraph, which is the question
+        and move to the left on large screens. "n+2" is selector
+        Use minimuum 501 because 500 is the breakpoint as above */
+
+		@media only screen and (min-width:501px) {
+			ol.who-am-i li p:nth-child(n+2) {
+				margin-left: -20px;
+			}
+		}
+
+		/* redefined this page, default is 75%  */
+
+		.tiny {
+			font-size: 70%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2 class="toowide">
+										¿Quién Soy Yo? <span class="block normal" style="margin-top:5px;">Nan Yar?</span>
+									</h2>
+									<h3>
+										Sri Ramana Maharshi
+									</h3>
+									<p class="tiny" style="margin-bottom:5px;">
+										English: <a href="ramana-who-am-i.htm">ramana-who-am-i.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="sadhu-om-technique.htm">&lt; Sadhu Om: Technique</a></li>
+									<li class="align-right"><a href="ramana-40-verses-on-reality.htm">40 Verses on Reality &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="note80 center">También en español: <a href="ramana-40-versos-sobre-la-realidad.htm">
+									ramana-40-versos-sobre-la-realidad.htm</a></p>
+							<div id="ramana-float-container">
+								<div class="right-image-div">
+									<img style="margin-top:10px; max-width:200px;" src="images/ramana-green.jpg" alt="Ramana Maharshi" />
+								</div>
+								<p>
+									Puesto que todos los seres vivos desean ser felices siempre, sin sufrimientos, y que en el caso de cada uno se observa que hay un amor supremo por el propio ser, y puesto que sólo la felicidad es la causa del amor, con el fin de obtener esa felicidad que es la propia naturaleza y que se experimenta en el estado de sueño profundo, donde no hay mente, se debería conocer el propio ser. Para ello, el medio principal es la senda del conocimiento, la indagación que toma la forma de la pregunta "¿Quién soy yo?"
+								</p>
+								<div style="clear:both;"></div>
+							</div>
+							<ol class="who-am-i">
+								<li>
+									<p>
+										¿Quién soy yo?</p>
+									<p>
+										El cuerpo burdo, que se compone de los siete humores (dhatus), eso no soy; los cinco órganos sensoriales cognoscitivos, a saber, los sentidos del oído, el tacto, la vista, el gusto y el olfato, que aprehenden sus respectivos objetos, a saber, el sonido, la textura, el color, el sabor y el olor, eso no soy; los cinco órganos sensoriales conativos, a saber, los órganos del habla, de la locomoción, del asimiento, de la excreción y de la procreación, que tienen como sus funciones respectivas hablar, moverse, asir, excretar y disfrutar, eso no soy; los cinco aires vitales, el prana, etc., que desempeñan respectivamente las cinco funciones de la inhalación, etc., eso no soy; no soy siquiera la mente que piensa, y tampoco la nesciencia, que sólo está dotada con las impresiones residuales de los objetos, y en la cual no hay objetos ni funcionamientos.</p>
+								</li>
+								<li>
+									<p>
+										Si no soy nada de eso, entonces ¿quién soy yo?
+									</p>
+									<p>
+										Tras haber negado todo lo arriba mencionado diciendo "eso no", "eso no", esa Conciencia que es lo único que permanece, eso soy.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es la naturaleza de la Conciencia?
+									</p>
+									<p>
+										La naturaleza de la Conciencia es Sat-Chit-Ananda, existencia-conciencia-beatitud.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuándo se obtendrá la realización del Ser?
+									</p>
+									<p>
+										Cuando el mundo, que es lo-que-se-ve, haya sido eliminado, habrá realización del Ser, que es el que ve.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿No habrá realización del Ser mientras el mundo esté ahí (y se lo tome como real)?
+									</p>
+									<p>
+										No la habrá.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Por qué?
+									</p>
+									<p>
+										El que ve y el objeto visto son como la cuerda y la serpiente. Así como el conocimiento de la cuerda, que es el sustrato, no surgirá a menos que desaparezca el falso conocimiento de la serpiente ilusoria, tampoco se obtendrá la realización del Ser, que es el sustrato, mientras no se elimine la creencia de que el mundo es real.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuándo será eliminado el mundo, que es el objeto visto?
+									</p>
+									<p>
+										Cuando la mente, que es la causa de toda cognición y de todas las acciones, se aquiete, el mundo desaparecerá.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es la naturaleza de la mente?
+									</p>
+									<p>
+										Lo que se llama "mente" es un poder asombroso que reside en el Ser. Es la causa de que surjan todos los pensamientos.
+									</p>
+									<p>
+										Aparte de los pensamientos, no hay nada a lo que se pueda llamar mente. Por consiguiente, el pensamiento es la naturaleza de la mente. Aparte de los pensamientos, no hay una entidad independiente que se llame el mundo. En el sueño profundo no hay pensamientos y no hay mundo. En el estado de vigilia y cuando se sueña, hay pensamientos, y también hay mundo. Así como la araña emite el hilo (de la telaraña) sacándolo de sí misma y vuelve a recogerlo dentro de sí misma, así la mente proyecta el mundo de sí misma y vuelve a disolverlo dentro de sí misma. Cuando la mente sale del Ser, aparece el mundo. Por consiguiente, cuando el mundo aparece (como real), el Ser no aparece; y cuando el Ser aparece (brilla) el mundo no aparece.
+									</p>
+									<p>
+										Cuando uno indaga persistentemente cuál es la naturaleza de la mente, la mente terminará por dejar (como residuo) al Ser. Aquello que denominamos el Ser es el <em>Atman</em>. La mente existe siempre sólo en dependencia de algo burdo; no puede mantenerse sola. Es la mente la que es llamada el cuerpo sutil o el alma (jiva).
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es el sendero de indagación para comprender la naturaleza de la mente?
+									</p>
+									<p>
+										Eso que surge como "yo" en este cuerpo es la mente. Si uno indaga dónde surge primero en el cuerpo el pensamiento "yo", descubrirá que surge en el corazón. Ese es el lugar donde se origina la mente. Incluso si uno piensa constantemente "yo" "yo", será conducido a ese lugar.
+									</p>
+									<p>
+										De todos los pensamientos que surgen en la mente, el pensamiento "yo" es el primero. Sólo después que ha surgido este pensamiento surgen todos los demás. Después de la aparición del pronombre de primera persona aparecen los pronombres de segunda y de tercera persona; sin el pronombre de primera persona, el de segunda y el de tercera no existirían.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cómo hacer que la mente se aquiete?
+									</p>
+									<p>
+										Mediante la indagación de "¿Quién soy yo?". El pensamiento "¿quién soy yo?" destruirá todos los otros pensamientos y, al igual que el palo que se usa para atizar una pira ardiendo, finalmente terminará por destruirse. Entonces surgirá la realización del Ser.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es el medio para aferrarse constantemente al pensamiento "¿Quién soy yo?"
+									</p>
+									<p>
+										Cuando surgen otros pensamientos, no se debe ir detrás de ellos, sino que debe uno indagar: "¿A quién surgen?". No importa cuántos pensamientos surjan; a medida que aparecen, uno debe indagar con diligencia: "¿A quién surge este pensamiento?".
+									</p>
+									<p>
+										La respuesta que emergerá será: "A mí". Por consiguiente si uno indaga "¿quién soy yo?", la mente regresará a su fuente; y el pensamiento que había surgido se aquietará. Con la práctica repetida de esta manera, la mente adquirirá la habilidad de permanecer en su fuente.
+									</p>
+									<p>
+										Cuando la mente que es sutil sale a través del cerebro y de los órganos sensoriales, aparecen las formas y los nombres burdos; cuando permanece en el corazón, las formas y los nombres desaparecen.
+									</p>
+									<p>
+										No dejar que la mente salga y retenerla en cambio en el Corazón es lo que se llama "interiorización" (antar-mukha). Dejar que la mente salga del Corazón es lo que se conoce como "externalización" (bahir-mukha).
+									</p>
+									<p>
+										Así pues, cuando la mente permanece en el Corazón, el "yo" que es la fuente de todos los pensamientos se irá y resplandecerá el Ser que siempre existe. Todo lo que uno haga, debe hacerse sin la egoidad "yo". Si se actúa de esta manera, todo aparecerá como si fuera de la naturaleza de Siva (Dios).
+									</p>
+								</li>
+								<li>
+									<p>
+										¿No hay otros medios para aquietar la mente?
+									</p>
+									<p>
+										Aparte de la indagación, no hay otro medio adecuado. Si por algún otro medio se intenta controlar la mente, ésta parecerá estar controlada, pero volverá a funcionar. La mente se aquietará también mediante el control de la respiración, pero sólo se mantendrá en silencio mientras se tenga la respiración controlada, ya que cuando ésta vuelva a su movimiento natural, también la mente empezará a moverse y a divagar como impelida por impresiones residuales.
+									</p>
+									<p>
+										Para la mente y para la respiración, la fuente es la misma. En verdad, el pensamiento es la naturaleza de la mente. El pensamiento "yo" es el primer pensamiento de la mente; y eso es "egoidad". De donde se origina la egoidad se origina también la respiración. Por consiguiente, cuando la mente se aquieta la respiración está controlada, y cuando la respiración está controlada, la mente se aquieta.
+									</p>
+									<p>
+										Pero en el sueño profundo, aunque la mente está en silencio, la respiración no se detiene. Esto se debe a la voluntad de Dios, para que se pueda preservar el cuerpo y otras personas no tengan la impresión de que está muerto.
+									</p>
+									<p>
+										En el estado de vigilia y en el de samadhi, cuando la mente se aquieta la respiración está controlada. La respiración es la forma burda de la mente. Hasta el momento de la muerte, la mente mantiene la respiración en el cuerpo; y cuando el cuerpo muere, la mente se lleva consigo la respiración. Por consiguiente, ejercitar el control de la respiración no es más que una ayuda en el empeño de aquietar la mente (manonígraha); pero no destruirá la mente (manonasa).
+									</p>
+									<p>
+										Al igual que la práctica del control de la respiración, también la meditación en las formas de Dios, la repetición de mantras, la restricción en la alimentación, etc., no son más que ayudas para aquietar la mente.
+									</p>
+									<p>
+										Por medio de la meditación en las formas de Dios y mediante la repetición de mantras, la mente se vuelve unidireccional. La mente siempre quiere andar vagando. Así como cuando se da una cadena a un elefante para que la sostenga en su trompa, seguirá sosteniendo la cadena y nada más, también así cuando la mente está ocupada con un nombre o una forma se aferrará a eso y nada más. Cuando la mente se expande y toma la forma de innumerables pensamientos, cada pensamiento se debilita; pero cuando los pensamientos se disuelven, la mente se vuelve unidireccional y fuerte; para una mente así, la indagación del Ser deviene fácil. De todas las reglas restrictivas, la mejor es la que se relaciona con el consumo de alimentos sátvicos en cantidades moderadas; si se observa esta regla, se incrementará la cualidad sátvica de la mente, y eso será útil para la indagación del Ser.
+									</p>
+								</li>
+								<li>
+									<p>
+										Las impresiones residuales (pensamientos) de los objetos parecen avanzar como las olas en el océano. ¿Cuándo serán destruidas todas ellas?
+									</p>
+									<p>
+										A medida que la meditación sobre el Ser vaya elevándose, los pensamientos serán destruidos.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Es posible que las impresiones residuales de los objetos que vienen, por así decirlo, desde más allá del tiempo, se disuelvan, y que uno permanezca como el puro Ser?
+									</p>
+									<p>
+										Sin ceder a la duda "¿Es posible, o no?", uno debe atenerse persistentemente a la meditación sobre el Ser. Aun si fuera un gran pecador, no debe uno preocuparse y gemir "¡Oh!, soy un pecador, ¿cómo puedo ser salvado?", uno debe renunciar completamente al pensamiento "soy un pecador", para concentrarse intensamente en la meditación sobre el Ser; entonces, seguramente uno tendrá éxito.
+									</p>
+									<p>
+										No hay dos mentes, una buena y otra mala; la mente no es más que una. Son las impresiones residuales las que son de dos tipos, propicias y no propicias. Cuando la mente está bajo la influencia de impresiones propicias, se dice que es buena, y cuando sufre la influencia de impresiones poco propicias, se la considera mala.
+									</p>
+									<p>
+										No se ha de permitir que la mente se extravíe entre los objetos mundanos y los asuntos de otras personas. Por malas que puedan ser otras gentes, no se ha de albergar odio hacia ellas. Hay que renunciar tanto al odio como al deseo. Todo lo que uno da a los otros, se lo da a sí mismo. Si se comprende esta verdad, ¿quién no daría a los demás? Cuando nuestro yo surge, todo surge; cuando nuestro yo se aquieta, todo se aquieta.
+									</p>
+									<p>
+										En la medida en que nos comportemos con humildad, en esa misma medida resultará bien. Si logra aquietar la mente, uno puede vivir en cualquier parte.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Durante cuánto tiempo se ha de practicar la indagación?
+									</p>
+									<p>
+										Mientras haya impresiones de los objetos en la mente, será necesario seguir indagando "¿Quién soy yo?". A través de la indagación a medida que los pensamientos surgen, deben ser destruidos inmediatamente en el mismo lugar de origen. Si uno recurre a la contemplación incesante del Ser, hasta conseguirlo, con eso solo bastaría. Mientras haya enemigos en el interior de la fortaleza, continuarán defendiéndola; si se los destruye a medida que van saliendo, la fortaleza caerá en nuestras manos.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es la naturaleza del Ser?
+									</p>
+									<p>
+										Lo que en verdad existe no es más que el Ser. El mundo, el alma individual y Dios son sus apariencias, como la plata en la madreperla; estos tres aparecen al mismo tiempo y desaparecen al mismo tiempo. El Ser es eso donde no hay en absoluto ningún pensamiento "yo". A eso se le llama "Silencio". El Ser es el mundo; el Ser es "yo"; el Ser es Dios; Todo es Siva, el Ser.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Acaso no es todo la obra de Dios?
+									</p>
+									<p>
+										Sin deseo, decisión ni esfuerzo, el sol sale; y en su mera presencia la piedra solar emite fuego, el loto florece, el agua se evapora; los humanos desempeñan sus diversas actividades y después descansan.
+									</p>
+									<p>
+										Así como en presencia del imán la aguja se mueve, en virtud de la mera presencia de Dios, las almas regidas por las tres funciones (cósmicas) o por la quíntuple actividad divina realizan sus acciones y después descansan, de acuerdo con sus respectivos karmas.
+									</p>
+									<p>
+										Dios no tiene ningún propósito; a Él no se adhiere karma alguno. Lo mismo sucede con las acciones mundanas que no afectan al sol, o como los méritos y deméritos de los otros cuatro elementos, que no afectan al espacio que todo lo penetra.
+									</p>
+								</li>
+								<li>
+									<p>
+										De los devotos, ¿quién es el más grande?
+									</p>
+									<p>
+										El que se entrega al Ser, que es Dios, es el más excelente de los devotos. Entregarse uno mismo a Dios significa permanecer constantemente en el Ser, sin dar margen a que surja ningún otro pensamiento más que el pensamiento del Ser. Sean cuales fueren las cargas que sobre Dios recaen, Él las soporta.
+									</p>
+									<p>
+										Puesto que el poder supremo de Dios hace que todas las cosas se muevan, ¿por qué nosotros, sin someternos a él, hemos de preocuparnos constantemente pensando lo que se ha de hacer y cómo, y sobre lo que no se debe hacer y de qué manera? Si sabemos que el tren transporta todas las cargas, ¿por qué cuando subimos en él hemos de llevar nuestro pequeño equipaje en la cabeza y viajar incómodos, en vez de ponerlo en el tren y sentirnos cómodos?
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Qué es el desapego?
+									</p>
+									<p>
+										A medida que los pensamientos surgen, destruirlos por completo sin dejar residuo alguno en el mismo lugar donde se originan, eso es desapego. De la misma manera que el pescador de perlas se ata una piedra a la cintura y se hunde hasta el fondo del mar para allí recoger las perlas, así cada uno de nosotros debe armarse de desapego, zambullirse en el interior de uno mismo y obtener la Perla del Ser.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿No es posible que Dios y el Gurú efectúen la liberación de un alma?
+									</p>
+									<p>
+										Dios y el Gurú no harán más que mostrar el camino hacia la liberación; no serán ellos quienes conduzcan al alma al estado de liberación.
+									</p>
+									<p>
+										En verdad, Dios y el Gurú no son diferentes. Así como la presa que ha caído en las garras de un tigre no tiene escapatoria, así aquellos que han penetrado en el ámbito de la graciosa mirada del Gurú serán salvados por él y no se perderán; y sin embargo, cada uno, por su propio esfuerzo, deberá proseguir por la senda que le ha mostrado Dios, o el Gurú, y alcanzar la liberación. Uno sólo puede conocerse a sí mismo con el ojo de su propio conocimiento, y no con el de nadie más. ¿Acaso necesita Rama la ayuda de un espejo para saber que él es Rama?
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Es necesario para el que anhela la liberación indagar la naturaleza de las categorías (tattvas)?
+									</p>
+									<p>
+										Lo mismo que el que quiere tirar la basura no necesita analizarla y ver lo que es, así también el que quiere conocer el Ser no necesita contar el número de categorías ni indagar cuáles son sus características; lo que tiene que hacer es rechazar absolutamente las categorías que ocultan el Ser. El mundo debe ser considerado como un sueño.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿No hay ninguna diferencia entre la vigilia y los sueños?
+									</p>
+									<p>
+										La vigilia es larga y un sueño es corto; aparte de eso, no hay diferencia. Así como los acontecimientos de la vigilia parecen reales mientras estamos despiertos, así también parecen reales los de un sueño mientras soñamos. En el sueño, la mente asume otro cuerpo. Tanto en el estado de vigilia como en el del sueño ocurren simultáneamente pensamientos, nombres y formas.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Es de alguna utilidad la lectura de libros para aquellos que anhelan la liberación?
+									</p>
+									<p>
+										Todos los textos dicen que con el fin de alcanzar la liberación uno debe aquietar la mente; por consiguiente, se ha de concluir que lo que enseñan es que hay que aquietar la mente; una vez entendido esto, no es necesario seguir leyendo interminablemente.
+									</p>
+									<p>
+										Con el fin de aquietar la mente, basta con indagar dentro de uno mismo lo que es el propio Ser; ¿cómo se podría hacer en libros una búsqueda tal? Uno debe conocer su propio Ser con su propio ojo de la sabiduría. El Ser está dentro de las cinco envolturas; pero los libros están fuera de ellas. Como la indagación en el Ser ha de hacerse desechando las cinco envolturas, de nada sirve buscarlo en los libros. Llegará un momento en que uno tendrá que olvidar todo lo que ha aprendido.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Qué es la felicidad?
+									</p>
+									<p>
+										La felicidad es la naturaleza misma del Ser; la felicidad y el Ser no son diferentes. No hay felicidad en ningún objeto del mundo. En nuestra ignorancia, imaginamos que obtenemos la felicidad de los objetos.
+									</p>
+									<p>
+										Cuando la mente sale, experimenta desdicha. En verdad, cuando sus deseos están satisfechos, regresa a su propio lugar y se regocija en la felicidad que es el Ser.
+									</p>
+									<p>
+										De modo similar, en los estados de sueño profundo, samadhi, desmayo, y cuando se obtiene el objeto deseado o se elimina el que causa disgusto, la mente se orienta hacia dentro y disfruta de la pura Felicidad del Ser. De tal manera, la mente se mueve sin descanso, alternando las salidas del Ser y el regreso a él.
+									</p>
+									<p>
+										Bajo el árbol, la sombra es grata; en el campo abierto el calor es abrasador. Quien ha andado caminando al sol siente fresco cuando llega a la sombra. El que sigue yendo de la sombra al sol y después vuelve a la sombra es un tonto. Un sabio se queda permanentemente a la sombra.
+									</p>
+									<p>
+										De la misma manera, la mente de quien conoce la verdad no se aparta de Brahman. La mente del ignorante, por el contrario, da vueltas por el mundo y se siente desdichada.
+									</p>
+									<p>
+										En verdad, aquello que llamamos mundo no es más que pensamiento. Cuando el mundo desaparece, es decir, cuando no hay pensamiento, la mente experimenta felicidad; y cuando el mundo aparece, se hunde en la desdicha.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Qué es la sabiduría intuitiva (jnana-drsti)?
+									</p>
+									<p>
+										Permanecer en quietud es lo que se llama sabiduría intuitiva. Permanecer en quietud es disolver la mente en el Ser. La telepatía, el conocimiento de los hechos pasados, presentes y futuros y la clarividencia no constituyen sabiduría intuitiva.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es la relación entre la ausencia de deseos y la sabiduría?
+									</p>
+									<p>
+										La ausencia de deseos es sabiduría. No son dos cosas diferentes; son la misma. La ausencia de deseos es abstenerse de conducir la mente hacia ningún objeto. La sabiduría significa la no aparición de objeto alguno. En otras palabras, no buscar lo que es diferente del Ser es desapego o ausencia de deseos; no dejar el Ser es sabiduría.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Cuál es la diferencia entre indagación y meditación?
+									</p>
+									<p>
+										La indagación consiste en mantener la mente en el Ser. La meditación consiste en pensar que uno mismo es Brahman, existencia-conciencia-beatitud.
+									</p>
+								</li>
+								<li>
+									<p>
+										¿Qué es la liberación?
+									</p>
+									<p>
+										Indagar en la naturaleza del propio yo que está esclavizado, y realizar la verdadera naturaleza de uno es liberación.
+									</p>
+								</li>
+							</ol>
+
+							<p>&nbsp;</p>
+
+							<p class="note">
+								Traducción del Dr. T. M. P. MAHADEVAN, estudiante de Advaita, del original Tamil al inglés, publicado en inglés como: <em>Who Am I? (Nan Yar?) The Teachings of Bhagavan Sri Ramana Maharshi.</em> Traducción del inglés al español desconocido. Fuente: <a href="https://www.nodualidad.info/dialogos/quien-soy-yo.html">www.nodualidad.info</a>
+							</p>
+							<p>&nbsp;</p>
+							<p class="note center">
+
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="sadhu-om-technique.htm">&lt; Sadhu Om: Technique</a></li>
+									<li class="align-right"><a href="ramana-40-verses-on-reality.htm">40 Verses on Reality &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

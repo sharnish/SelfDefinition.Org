@@ -1,0 +1,86 @@
+<!-- start of menu include file   Update October 17, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<li class="first-item"><a href="/liberty/">Liberty index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="spanish"><a href="contenido.htm">Contenido</a></li>
+			<li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver
+					</span>Arriba</a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/liberty/">Liberty index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text" style="margin-top:10px;">
+			<li>Sentido Común <span class="normal">(1776)</span></li>
+			<li class="normal note">
+				<img class="menu-image" src="images/thomas-paine-portrait.jpg" alt="Thomas Paine image" />
+			</li>
+			<li>Thomas Paine</li>
+			<li class="normal note tight" style="margin-top:-5px;">(1737-1809)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contenido.htm">Contenido</a></li>
+				<li><a href="introduccion.htm">Introducción</a> </li>
+				<li><a href="1-del-gobierno.htm">1. Del Gobierno </a></li>
+				<li><a href="2-de-la-monarquia.htm">2. De la Monarquia</a> </li>
+				<li><a href="3-asuntos-americanos.htm">3. Asuntos Americanos</a> </li>
+				<li><a href="3b-asuntos-americanos-cont.htm">3b. Asuntos Americanos-cont</a> </li>
+				<li><a href="3c-american-affairs-end.htm">3c. Asuntos Americanos-final</a> </li>
+				<li><a href="4-capacidad-actual-de-america.htm">4. Capicidad actual de America</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Thomas Paine <a href="https://en.wikipedia.org/wiki/Thomas_Paine">
+						Wikipedia</a> </li>
+				<li>Thomas Paine <a href="https://www.history.com/topics/american-revolution/thomas-paine">History.Com</a></li>
+				<li>Common Sense <a href="https://en.wikipedia.org/wiki/Common_Sense">
+						Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="site-first-item">Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+				<li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+				<li class="header-item">Psychology section</li>
+				<li class="site-first-item">Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+				<li>Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda, 1928</a></li>
+				<li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a> </li>
+				<li>Wilfred N. Caron: <a href="/psychology/caron/contents.htm">The Occult Significance of Hypnosis</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

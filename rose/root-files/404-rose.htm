@@ -1,0 +1,165 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Rose 404</title>
+    <meta name="description" content="404, file not found, suggestions and search">
+    <meta property="og:title" content="Richard Rose 404">
+    <meta property="og:description" content="404, file not found, suggestions and search">
+    <meta property="og:image" content="https://selfdefinition.org/rose/images/Richard-Rose-ABJ-1982.jpg">
+    <link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+
+
+    <style>
+        /* default image width is 210px */
+        #image {}
+
+        @media only print {
+            #main-content:after {
+                content: "Page update April 17, 2022";
+            }
+        }
+
+        #mainwrapper-index {
+            width: 740px;
+        }
+
+        /* from old   removed, no watermark */
+        /* gets rid of google watermark  
+        .gsc-input {
+            background: none !important;
+        }
+*/
+        html.dark .gsc-input {
+            background: #555 !important;
+            color: lightgreen;
+            outline: none;
+        }
+
+        /* instructions
+        https://developers.google.com/custom-search/docs/tutorial/implementingsearchbox
+        */
+
+        /* Also see
+        https://stackoverflow.com/questions/30843561/css-issue-with-styling-the-google-custom-search-box
+        */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper-index">
+        <div id="container">
+            <div id="fixed-header">
+                <ul id="menu-site">
+                    <!-- these are floats -->
+                    <li><a href="/">Site Root</a></li>
+                    <li><a href="/sitemap.htm">Site Map</a></li>
+                    <li><a href="/paginas-en-espanol.htm">Español</a></li>
+                    <li><a href="/rose/search/rose-search-multisite.htm">Search RR</a></li>
+                    <li><a href="javascript:scroll(0,0)" role="button">Top of Page</a></li>
+                </ul>
+                <div style="clear: both;">
+                </div>
+            </div>
+
+            <div id="main-content">
+                <div id="style-gadget">
+                    <label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+                        Dark theme: <input type="checkbox" id="theme-checkbox">
+                    </label>
+                    <!-- Can't be in head. Can be in README -->
+                    <script src="/scripts/set-theme-cookie-checkbox.js"></script>
+                </div>
+                <header>
+                    <p class="logo">
+                        Self<span style="margin-left: 1px;">Definition.Org</span>
+                    </p>
+                    <h1 class="title">
+                        Richard Rose
+                    </h1>
+                    <h3 class="tight">
+                        404, File Not Found
+                    </h3>
+                </header>
+
+                <div id="announce">
+                    <!-- no image or floats this page -->
+                    <div id="image-div">
+                    </div>
+                    <div id="top-links">
+                    </div><!-- end top-links -->
+                    <div style="clear:both;"></div>
+                    <!-- floats are clered now so width is 100% -->
+
+                    <div class="site-links">
+
+                        <h3>Sorry!</h3>
+
+                        <p>Looks like a file or page has been removed or renamed. This link will take you back to the Richard Rose index page (has a search box):
+                            <a class="inline" href="/rose/">
+                                selfdefinition.org/rose/</a>
+                        </p>
+
+                        <p>Also see:</p>
+
+                        <p>
+                            Rose writings
+                            <a href="/rose/writings/richard-rose-the-mind.htm">
+                                /rose/writings/richard-rose-the-mind.htm</a>
+                        </p>
+
+                        <p>
+                            About Richard Rose
+                            <a href="/rose/about/article-index.htm">/rose/about/article-index.htm</a>
+                        <p>
+                            Article Index
+                            <a href="/rose/articles/article-index.htm">/rose/articles/article-index.htm</a>
+                        </p>
+
+                        <p>
+                            Wheeling newspaper, 1968
+                            <a class="indent" href="/rose/articles/richard-rose-farm-1968.htm">
+                                "McCreary Ridge Hippies Live Quietly in Hills Meditating"</a>
+                        </p>
+
+                        <p>
+                            Richard Rose Multisite Search
+                            <a href="/rose/search/rose-search-multisite.htm">
+                                /rose/search/rose-search-multisite.htm</a>
+                        </p>
+                    </div>
+
+                </div>
+                <!-- end announce -->
+                <div id="bottom-links">
+
+                    <div class="featured-links">
+                    </div>
+
+                    <div class="site-links">
+                    </div>
+
+                    <div class="external-links">
+                    </div>
+
+                </div> <!-- end bottom-links -->
+                <p class="totop center">
+                    <a href="javascript:scroll(0,0)" role="button">top of page</a>
+                </p>
+                <!-- this tag preceeds the autogenerated section -->
+                <div id="maincontentpre">
+                    <!-- not used -->
+                </div>
+            </div><!-- end #main-content -->
+        </div><!-- end #container -->
+    </div><!-- end #mainwrapper-index -->
+</body>
+
+</html>

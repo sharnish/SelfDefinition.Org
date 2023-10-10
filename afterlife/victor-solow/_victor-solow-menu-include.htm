@@ -1,0 +1,81 @@
+<!-- start of menu include file Updarte May 18, 2020 nd April 25, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/afterlife/">Afterlife index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="victor-solow-article-index.htm">Solow Index<span class="conditional-hide"></span></a></li>
+			<li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page<span class="conditional-hide"></span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/afterlife/">Afterlife index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>After Death Experience of <span class="nowrap">Victor Solow</span> </li>
+			<li class="normal note">
+				<img class="menu-image" src="images/victor-solow.jpg" alt="Victor Solow" />
+			</li>
+			<li class="normal note">(1917-1977)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="victor-solow-article-index.htm">Solow Article Index</a></li>
+				<li><a href="victor-solow-i-died-at-1052-am.htm">&quot;I Died at 10:52&quot;</a></li>
+				<li><a href="dead-man-lives-another-dimension.htm">Dead Man Lives: Another Dimension</a></li>
+				<li><a href="dead-23-minutes-saved-by-crews.htm">&quot;Dead&quot; 23 Minutes, Man Saved by Crews</a></li>
+				<li><a href="brought-back-to-life.htm">Brought Back to Life</a></li>
+				<li><a href="victor-solow-4-part-series.htm">Four-Part Series</a></li>
+				<li><a href="victor-solow-obituary-and-personal.htm">Biographical Information</a></li>
+				<li><a href="victor-solow-wartime-service.htm">Wartime Service</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr>
+			<!-- external links removed -->
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="subhead-item">Richard Rose section</li>
+				<li class="first-item">Richard Rose articles and transcriptions: <a href="/rose/">/rose/</a></li>
+				<li>The Mind: <a href="/rose/writings/richard-rose-the-mind.htm">/rose/writings/richard-rose-the-mind.htm</a></li>
+				<li class="subhead-item">Afterlife section</li>
+				<li class="first-item">John Wren-Lewis, <a href="/afterlife/articles/john-wren-lewis-dazzling-dark.htm">The Dazzling Dark</a></li>
+				<li>J. Krishnamurti, <a href="/afterlife/articles/krishnamurti-conversation-on-afterlife.htm">Conversation on the Afterlife </a></li>
+				<li class="subhead-item">Christian section</li>
+				<li class="first-item">Leon Paul Wood, Enlightened Christian Mystic, <a href="/christian/paul-wood/paul-wood-story.htm">The Story of Paul Wood</a></li>
+				<li>Francis Thompson, <a href="/christian/articles/francis-thompson-hound-of-heaven.htm">The Hound of Heaven</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

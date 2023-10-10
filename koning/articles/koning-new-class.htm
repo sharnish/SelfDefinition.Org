@@ -1,0 +1,135 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dr. Harold Koning, QiGong Class Announcement</title>
+	<meta name="description" content="Dynamic Wellness Strategies">
+	<meta name="author" content="Dr Harold Koning">
+	<meta property="og:title" content="Dr. Harold Koning, QiGong Class Announcement">
+	<meta property="og:description" content="Dynamic Wellness Strategies">
+	<meta property="og:image" content="https://selfdefinition.org/koning/articles/images/dr-harold-koning-qi-gong-master.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_koning-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		span.maroon {
+			color: #993366;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_koning-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, in title-y include for small screens -->
+									<?php include( "_koning-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Class Announcement
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="dr-koning-qigong.htm">&lt; Instructions</a></li>
+									<li class="align-right"><a href="koning-silat-demo-videos.htm">Silat Demonstration &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<h4 class="toowide">Qi Gong for Wellness and Longevity</h4>
+
+							<p class="center note80">Website: <a href="http://mind-bodystrategies.com/">mind-bodystrategies.com</a></p>
+
+							<p>Learn the basics of Qigong with Life/Wellness Coach, Dr. Harold Koning who has taught and practiced Qi Gong for 25 years. He is a Reiki Master, an instructor of Indonesian Martial Arts and a Master Drummer in the Afro-Caribbean tradition. Dr. Koning completed his postgraduate training at the prestigious Harvard Medical School Mind/Body Institute.
+							</p>
+
+							<p>In the following quote Ken Cohen, one of the outstanding Qigong Masters in the U.S.A, states:</p>
+							<blockquote class="maroon">"Qigong is a holistic system of self healing exercise and meditation, an ancient, evolving practice that includes healing posture, movement, self massage, breathing techniques and meditation. The student uses intent to move the qi throughout the body."</blockquote>
+
+							<p class="question">Who can benefit from Qigong?</p>
+
+							<p>People of any age and medical condition. Martial Artists use it to enhance effortless power and higher precision in their Martial Arts style.</p>
+
+
+							<p class="question">The main benefits of Qigong are?</p>
+
+							<p>Prevention of disease and improved health, increased energy and strengthening of the immune system, improved
+								concentration, flexibility, balance, accelerated healing of sports and other injuries, stress release, improved breathing, and oxygen intake, slowing down the aging process. Continuous practice results in a clear, calm mind, a strong body and assists in fighting diseases of modern society. Dr. Koning will be teaching an 8 session training
+								module, the information is listed below.</p>
+							<blockquote>
+								<p class="note">Contact information:</p>
+
+								<p class="tight">dynamicwellness@bellsouth.net</p>
+
+								<p>Harold Koning Ph.D., or Ita Koning, AP</p>
+
+								<p>Linked In: <a href="https://www.linkedin.com/in/harold-koning-ph-d-39b751b/">harold-koning-ph-d</a></p>
+							</blockquote>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="dr-koning-qigong.htm">&lt; Instructions</a></li>
+									<li class="align-right"><a href="koning-silat-demo-videos.htm">Silat Demonstration &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

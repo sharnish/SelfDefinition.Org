@@ -1,0 +1,80 @@
+/* file:  /christian/articles/_christian-articles-light-only.css
+
+Created Oct 22, 2019, copy from white and black model 
+
+Update August 4, 2020. Dark style update March 3, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update May 8, 2020";
+    }
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+/* Bucke chart special page */
+/* Bucke chart special page */
+/* Bucke chart special page */
+#borrowed-fixed-header-small-screen,
+#borrowed-menu-site-small-screen,
+#fixed-header-small-screen,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #ffffe3;
+}
+
+/* See special Zebra striping and dark zebra striping on Bucke chart page */
+
+html.dark #borrowed-fixed-header-small-screen,
+html.dark #borrowed-menu-site-small-screen {
+    background: #202020;
+    /* NO background: inherit; */
+    /* Can't be iherit or it will be transparent */
+    color: #fdfdff;
+}
+
+/* End Bucke chart special page */
+/* End Bucke chart special page */
+/* End Bucke chart special page */
+
+/*********** spanish version color *****************/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+    background: #efe;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #e0e0ff;
+}
+
+nav.in-page-nav {
+    margin-top: 35px;
+}
+
+
+/* testing */
+
+/*  *******/
+
+/* end */

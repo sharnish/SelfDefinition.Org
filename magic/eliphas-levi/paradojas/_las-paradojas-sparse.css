@@ -1,0 +1,73 @@
+/*     File:  /magic/eliphas-levi/paradojas/_las-paradojas-sparse.css:  
+
+		Update May 30, 2022 */
+
+@media only print {
+	#article:after {
+		content: "Update May 30, 2022";
+		font-size: 60%;
+	}
+}
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffdee;
+}
+
+/* source for green pallets
+
+https://colorswall.com/palette/35901
+
+more
+
+https://colorswall.com/palettes
+
+*/
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c0d4fc;
+	/* nice blue, goes with the green */
+
+}
+
+p.page-number {
+	display: none;
+}
+
+/* default is #E9EFFF; - bluish
+need green, and darker */
+label {
+	background: #CFD;
+}
+
+html.dark label {
+	background: #353535;
+}
+
+/* default is 80% */
+html.dark sup {
+	font-size: 90%;
+}
+
+p.hidden,
+div.hidden {
+	color: #050;
+}
+
+/* end */

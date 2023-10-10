@@ -1,0 +1,146 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sentido Común por Thomas Paine</title>
+	<meta name="description" content="Introducción">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Sentido Común por Thomas Paine">
+	<meta property="og:description" content="Introducción">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/thomas-paine/sentido-comun/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_sentido-comun-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="contenido.htm">
+	<link rel="next" href="1-del-gobierno.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_sentido-comun-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_sentido-comun-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Introducción <sup class="note" style="display:inline;font-size:70%;">[1]</sup>
+									</h3>
+									<p class="tiny">English: <a href="../common-sense/introduction.htm">introduction.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contenido.htm">&lt; Contenido</a></li>
+									<li class="align-right"><a href="1-del-gobierno.htm">Del gobierno &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>TAL VEZ los sentimientos contenidos en las páginas siguientes, aún no están lo suficientemente de moda para adquirir a favor en general, una larga costumbre de no pensar nada malo, le da una apariencia superficial de estar en lo correcto, y plantea en un primer momento una protesta formidable en la defensa de la costumbre . Pero tumulto pronto desaparece. El tiempo hace más conversos que la razón.</p>
+							<p>Como un abuso de larga y violenta del poder es en general el medio de convocatoria el derecho de que se trate, (y en materia también que nunca podría haber sido pensado, si no los enfermos ha agravado en la investigación), y como el rey de Inglaterra ha realizado en su propio derecho, con el apoyo del Parlamento en lo que él llama los suyos, y como la buena gente de este país están gravemente oprimidos por la combinación, tienen un indudable privilegio para investigar las pretensiones de ambos, e igualmente rechazar las usurpaciones de cualquiera.</p>
+							<p>En las hojas siguientes, el autor ha evitado todo lo que es personal entre nosotros. Cumplidos, así como la censura para que las personas no forman parte del mismo. El sabio y digno de la no necesidad de triunfo de un panfleto, y aquellos cuyos sentimientos son imprudentes o antipático, dejarán de sí mismos, a menos dolores demasiado es otorgado a su conversión.</p>
+							<p>La causa de América es, en gran medida, la causa de toda la humanidad. Muchas circunstancias han, y se levantará, que no son locales, sino universal, ya través del cual los principios de todos los amantes de la humanidad son afectados, y en el caso de que, sus afectos interesadas. La colocación de un país desolado a sangre y fuego, declarando la guerra contra los derechos naturales de toda la humanidad, y extirpar a los defensores del mismo de la faz de la tierra, es la preocupación de todo hombre a quien la naturaleza ha dado el poder de sentir, de los cuales clase, independientemente de censura del partido, es</p>
+
+							<p style="font-variant: small-caps">EL AUTOR.</p>
+
+							<p>Philadelphia, Feb. 14, 1776</p>
+
+							====================================================
+							<div class="note alert">
+								<p>[1] This pamphlet, whose effect has never been paralleled in literary history, was published January 10, 1776, with the following title :</p>
+								<p>Common Sense : Addressed to the Inhabitants of America, on the following Interesting Subjects, viz.: I. Of the Origin and Design of Government in General ; with Concise Remarks on the English Constitution. II. De la monarquia and Hereditary Succession. III. Thoughts on the Present State of Asuntos Americanos. IV. Of the Capicidad actual de America ; with some Miscellaneous Reflections.</p>
+								<blockquote class="center">
+									<p>Man knows no master save creating Heaven, <br />Or those whom choice and common good ordain.</p>
+									<p> &mdash; Thomson.</p>
+								</blockquote>
+								<p class="note">Philadelphia : Printed, and Sold, by R. Bell, in Third Street. MDCCLXXVI</p>
+							</div>
+							<h4 style="margin-top:35px;">Postscript to Preface in the third edition.</h4>
+							<p>P. S. The Publication of this new Edition hath been delayed, with a view of taking notice (had it been necessary) of any attempt to refute the Doctrine of Independence: As no answer hath yet appeared, it is now presumed that none will, the time needful for getting such a Performance ready for the Public being considerably past.</p>
+							<p>Who the Author of this Production is, is wholly unnecessary to the Public, as the Object for Attention is the Doctrine itself, not the Man. Yet it may not be unnecessary to say, That he is unconnected with any party, and under no sort of Influence, public or private, but the influence of reason and principle.</p>
+							<p>Philadelphia, February 14, 1776.</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contenido.htm">&lt; Contenido</a></li>
+									<li class="align-right"><a href="1-del-gobierno.htm">Del gobierno &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,975 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Himno de la Iluminación - Yung-chia Hsüan-chüeh (Yoka Genkaku) </title>
+    <meta name="description" content="Maestro Zen Hsuan Chuen de Yung Chia, el Sucesor del Dharma de Hui-Neng. Traducido al Español por la Rev. Yin Zhi Shakya">
+    <meta name="author" content="Yung-chia Hsüan-chüeh (Yoka Genkaku)">
+    <meta property="og:title" content="El Himno de la Iluminación">
+    <meta property="og:description" content="Maestro Zen Hsuan Chuen de Yung Chia, el Sucesor del Dharma de Hui-Neng. Traducido al Español por la Rev. Yin Zhi Shakya">
+    <meta property="og:image" content="https://selfdefinition.org/zen/song-of-enlightenment/images/yongjia-xuanjue-large.jpg" />
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_song-of-enlightenment-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /*  Social media:
+
+Expresión clara, concisa y poética de la perspectiva zen. Famoso poema de 65 versos del siglo 8vo en China.
+        
+El origen de nuestra propia naturaleza
+Es el Buda de la verdad inocente.
+Las reacciones físicas y mentales vienen y van
+Como nubes en el espacio vacío;
+El egoísmo, el odio, y la ignorancia aparecen y desaparecen
+Como burbujas en la superficie del océano. 
+
+        */
+
+        /*  different color this page  
+        
+        Nice beige but too dark. Same as photo background:  #E3DBC8
+        
+        */
+
+        html,
+        body,
+        #fixed-header-small-screen,
+        #menu-site-small-screen,
+        .progress-header,
+        .progress-container {
+            background: #fffff0;
+        }
+
+        ul.yin-zhi-links {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        ul.yin-zhi-links li {
+            margin: 1.3em 0 0 0;
+        }
+
+        /* Modeled on Diamond Sangha but NOT paragraph STYLES
+        i.e., not using hanging indent. 
+            See CSS */
+
+        @media only screen and (max-width:500px) {
+            ul.yin-zhi-links {
+                padding-left: 10px;
+            }
+        }
+
+        /* let main and dark CSS sheet take over 
+        ul.yin-zhi-links li.external-links-item,
+        ul.yin-zhi-links li.site-links-item {
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 3px;
+            padding-bottom: 0;
+        }
+    */
+        ul.yin-zhi-links li.external-first-item,
+        ul.yin-zhi-links li.site-first-item {
+            margin-top: 3px;
+            padding-top: 0;
+        }
+
+    </style>
+    <script>
+        /* SAVE - script for inserting/rotating elements on the page, #version is in title-include */
+        $(document).ready(function() {
+            $("#version").html("Versión Aitken, traducido Rev. Yin Zhi Shakya");
+            /* OLD WAY $("#version").css("color", "maroon"); */
+            $("#version").addClass("maroon");
+            /* OR $("#version").addClass("none"); */
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include( "_song-of-enlightenment-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_song-of-enlightenment-title-include.htm"); ?>
+                                    <p style="margin: 2em 0 0px;" class="note">
+                                        Versión R. Aitken, traducido al Español por<br />
+                                        la Rev. Yin Zhi Shakya
+                                    </p>
+                                    <p class="tiny">
+                                        Fuente: <a href="http://xuyun.zatma.org/Spanish/common/downloads/Himno_Iluminacion.pdf">xuyun.zatma.org Himno_Iluminacion.pdf</a>
+                                    </p>
+                                    <p class="tiny">
+                                        (uso justo; ver <a href="#referencias">referencias</a>)
+                                    </p>
+                                </header>
+                                <!-- Traducido al Español por la Rev. Yin Zhi Shakya.
+                                    The Spanish is almost word-for-word of the bel;ow, but paragraphing is a little different. Translation by R. Aitken &amp; the Diamond Sangha -->
+                            </div>
+                            <header>
+                            </header>
+                            <div id="NOT-special-paragraph-formatting">
+                                <p>
+                                    Hay un bienestar,
+                                    <br />
+                                    Caminar en el Tao, más allá de la filosofía,
+                                    <br />
+                                    Sin evitar la fantasía, sin buscar la verdad.
+                                </p>
+                                <p>
+                                    La naturaleza real de la ignorancia es la naturaleza búdica en sí;
+                                    <br />
+                                    El cuerpo vacío de la ilusión es el mismo cuerpo del Dharma.
+                                    <br />
+                                    Cuando el cuerpo del Dharma se despierta completamente,
+                                    <br />
+                                    No hay nada en absoluto.
+                                </p>
+                                <p>
+                                    El origen de nuestra propia naturaleza
+                                    <br />
+                                    Es el Buda de la verdad inocente.
+                                    <br />
+                                    Las reacciones físicas y mentales vienen y van
+                                    <br />
+                                    Como nubes en el espacio vacío;
+                                    <br />
+                                    El egoísmo, el odio, y la ignorancia aparecen y desaparecen
+                                    <br />
+                                    Como burbujas en la superficie del océano.
+                                </p>
+                                <p>
+                                    Cuando realmente lo realizamos,<br />
+                                    No hay distinción entre la mente y la cosa
+                                    <br />
+                                    Y el camino al infierno instantáneamente se desvanece.
+                                    <br />
+                                    Si esto es una mentira para engañar al mundo,
+                                    <br />
+                                    Mi lengua puede ser cortada para siempre.
+                                </p>
+                                <p>
+                                    Una vez que nos despertamos al Zen del Tathagata,<br />
+                                    Las seis actividades nobles y las diez mil acciones buenas
+                                    <br />
+                                    Están ya completas en nosotros.
+                                    <br />
+                                    En nuestro sueño vemos los seis niveles de ilusión claramente;
+                                    <br />
+                                    Después que despertamos el universo entero está vacío.
+                                    <br />
+                                    No hay mala fortuna, no hay buena fortuna, no hay pérdida, no hay ganancia;
+                                    <br />
+                                    Nunca busques tales cosas en la serenidad eterna.<br />
+                                </p>
+                                <p>
+                                    Por años el espejo polvoriento ha continuado sucio,
+                                    <br />
+                                    Ahora, lustrémoslo completamente, de una vez por todas.
+                                    <br />
+                                    ¿Quién no tiene pensamientos? ¿Quién es no-nacido?
+                                    <br />
+                                    Si verdaderamente somos no-nacidos,
+                                    <br />
+                                    No somos no-nacidos tampoco.
+                                    <br />
+                                    Pregúntale a un robot si esto no es así.
+                                </p>
+                                <p>
+                                    Cómo podemos realizarnos a nosotros mismos
+                                    <br />
+                                    A través de acciones virtuosas y buscando al Buda?
+                                    <br />
+                                    Libera lo que has aprehendido sobre al tierra, el agua, el fuego, el viento;
+                                    <br />
+                                    Bebe y come como desees en eterna serenidad.
+                                    <br />
+                                    Todas las cosas son temporales y completamente vacías;<br />
+                                    Esta es la gran iluminación del Tathagata.
+                                </p>
+                                <p>
+                                    Lo temporal, lo vacío y la iluminación –
+                                    <br />
+                                    Estas son las verdades finales del Budismo;
+                                    <br />
+                                    Guardarlas y enseñarlas es la verdadera devoción de la Sangha.
+                                    <br />
+                                    Si no estás de acuerdo por favor pregúntame.
+                                    <br />
+                                    Arranca directamente la raíz de todo, –
+                                    <br />
+                                    Este es el mismo pináculo del sello del Buda.
+                                </p>
+                                <p>
+                                    No puedo responder a ninguna inquietud en relación con las hojas y a las ramas.
+                                    <br />
+                                    Las personas no reconocen la Joya-que-es-y-no-es [Mani].
+                                    <br />
+                                    Viviendo íntimamente con el Tathagata-garba,
+                                    <br />
+                                    Él opera nuestra vista, nuestro oído, nuestro olor, nuestro sabor, nuestra sensación y nuestra atención alerta;
+                                    <br />
+                                    Y todos ellos están vacíos, sin embargo no lo están.
+                                </p>
+                                <p>
+                                    Los rayos que brillan desde la Joya-que-es-y-no-es [Mani]
+                                    <br />
+                                    Tienen la forma completa de la no-forma.
+                                    <br />
+                                    Clarifica los cinco ojos y desarrolla los cinco poderes;
+                                    <br />
+                                    Este no es un trabajo intelectual – sólo realízalo, sólo conócelo.
+                                    <br />
+                                    No es difícil mirar las imágenes en un espejo,
+                                    <br />
+                                    Pero ¿quién puede sostener la luna en el agua?
+                                </p>
+                                <p>
+                                    Siempre trabajando solo, siempre caminando solo,
+                                    <br />
+                                    El iluminado va por el camino libre al Nirvana
+                                    <br />
+                                    Con la melodía que es antigua y clara en espíritu
+                                    <br />
+                                    Y naturalmente elegante en estilo,
+                                    <br />
+                                    Pero con un cuerpo que es fuerte y prominente,
+                                    <br />
+                                    Pasando por el mundo desapercibido.
+                                </p>
+                                <p>
+                                    Sabemos que los hijos e hijas de Shakya
+                                    <br />
+                                    Son pobres en cuerpo, pero no en el Tao.
+                                    <br />
+                                    En su pobreza, ellos siempre usan harapos,
+                                    <br />
+                                    Pero ellos tienen el tesoro de la joya inapreciable en su interior.
+                                    <br />
+                                    Esta joya inapreciable nunca puede gastarse
+                                    <br />
+                                    Aunque ellos la den libremente para ayudar a las personas con que se encuentran.
+                                </p>
+                                <p>
+                                    Dharmakaya, Sambogakaya, Nirmanakaya,
+                                    <br />
+                                    Y las cuatro clases de sabidurías
+                                    <br />
+                                    Todas están contenidas en ella.
+                                    <br />
+                                    Las ocho clases de emancipaciones y los seis poderes universales
+                                    <br />
+                                    Todos son expresados sobre el fundamento de su mente.
+                                </p>
+                                <p>
+                                    El mejor estudiante va directamente al final,
+                                    <br />
+                                    Los otros son muy aprendidos pero su fe es incierta.<br />
+                                    Remueve la vestimenta sucia de tu propia mente;
+                                    <br />
+                                    ¿Por qué debes hacer gala de tus esfuerzos externos?
+                                </p>
+                                <p>
+                                    Algunos pueden difamar, algunos pueden abusar;
+                                    <br />
+                                    Ellos tratan de encender fuego en el cielo con una antorcha<br />
+                                    Y terminan meramente extenuándose a sí mismos.
+                                    <br />
+                                    Escucho su escándalo como si eso fuera la ambrosía de la verdad;
+                                    <br />
+                                    Inmediatamente todo se derrite
+                                    <br />
+                                    Y entro en el lugar que está más allá de los pensamientos y las palabras.
+                                </p>
+                                <p>
+                                    Cuando considero la virtud de las palabras abusivas,
+                                    <br />
+                                    Encuentro que el escándalo-revoltoso es mi buen maestro.
+                                    <br />
+                                    <!-- following might be a bad translation,
+                                    ORIGINAL: If we do not become angry at gossip,
+                                    We have no need for powerful endurance and compassion.
+                                    HER ORIGINAL:
+                                    Nosotros no llegamos a enojarnos con el chisme, 
+                                    Y no tenemos necesidad de la paciencia y la compasión poderosas.
+                                    I CHANGED IT TO:-->
+
+                                    Si nosotros no llegamos a enojarnos con el chisme,
+                                    <br />
+                                    No tenemos necesidad de la paciencia y la compasión poderosas.
+                                    <br />
+                                    Ser maduro en el Zen es ser maduro en expresión,
+                                    <br />
+                                    Y la brillantez de la luna llena de dhyana y de prajna
+                                    <br />
+                                    <!-- ORIGINAL: Does not stagnate in emptiness. 
+                                    SHE EXPANDS IT TO THIS: -->
+                                    No declina ni languidece ni se paraliza en el vacío.
+                                </p>
+                                <p>
+                                    No solamente puedo yo sostener la iluminación completa por mí mismo,
+                                    <br />
+                                    Sino que todos los cuerpos de los Budas, como las arenas del Ganges,
+                                    <br />
+                                    Pueden llegar a despertarse exactamente de alguna forma.
+                                    <br />
+                                    El rugido-del-león incomparable de la doctrina
+                                    <br />
+                                    Hace añicos los cerebros de las cien clases de animales.
+                                    <br />
+                                    Incluso el rey de los elefantes huirá, olvidando su orgullo;
+                                    <br />
+                                    Solamente el dragón celestial escucha calmadamente, con pura delicia.
+                                </p>
+                                <p>
+                                    He vagado sobre ríos y mares, he cruzado montañas y arroyuelos,
+                                    <br />
+                                    He visitado maestros, preguntado acerca del Camino en entrevistas personales;
+                                    <br />
+                                    Dado que he reconocido al Sexto Maestro Fundador del Ts’ao Ch’i, <span class="note80">[es decir, Hui Neng]</span>
+                                    <br />
+                                    Sé lo que está más allá de la relatividad del nacimiento y la muerte.
+                                </p>
+                                <p>
+                                    Caminar es Zen, sentarse es Zen;
+                                    <br />
+                                    Hablando o silente, activo o quieto, la esencia está en paz.
+                                    <br />
+                                    Hasta enfrentándose a la espada de la muerte, nuestra mente es inmovible;
+                                    <br />
+                                    Hasta tomando veneno, nuestra mente está quieta.
+                                </p>
+                                <div class="right-image-div">
+                                    <img id="dipankara-image" src="images/dipankara-buddha.jpg" alt="Dipankara Buddha, stone" title="Dipankara Buddha" />
+                                    <p class="note">Dipankara Buddha</p>
+                                </div>
+                                <p>
+                                    Nuestro maestro Shakyamuni, conoció al Buda Dipankara
+                                    <br />
+                                    Y por muchos eones él se entrenó como Kshanti el ascético.
+                                    <br />
+                                    Muchos nacimientos, muchas muertes;
+                                    <br />
+                                    Estoy sereno en este ciclo, – no hay fin para él.
+                                    <br />
+                                    Dado que abruptamente realicé lo no-nacido,
+                                    <br />
+                                    No tengo razón para la felicidad o la angustia
+                                    <br />
+                                    En el honor o el deshonor.
+                                </p>
+                                <p>
+                                    He entrado al silencio y la belleza de las montañas recónditas;
+                                    <br />
+                                    En el valle profundo subyacente a los elevados precipicios,
+                                    <br />
+                                    Me he sentado bajo los viejos árboles de pino.
+                                    <br />
+                                    El zazen es mi cabaña rústica
+                                    <br />
+                                    En paz, solo, y verdaderamente cómodo.
+                                </p>
+                                <p>
+                                    Cuando verdaderamente despiertas,
+                                    <br />
+                                    No tienes un mérito formal.
+                                    <br />
+                                    En la multiplicidad del mundo relativo,
+                                    <br />
+                                    No puedes encontrar tal libertad.<br />
+                                    El mérito centrado en el yo trae el júbilo del mismo cielo,
+                                    <br />
+                                    Pero es como tirar una flecha al cielo;
+                                    <br />
+                                    Cuando la fuerza se agota, ella cae a la tierra,
+                                    <br />
+                                    Y entonces todo va mal.
+                                </p>
+                                <p>
+                                    ¿Por qué esto debe ser mejor
+                                    <br />
+                                    Que el camino verdadero de lo absoluto,
+                                    <br />
+                                    Directamente penetrando el fundamento del Tathagata?
+                                    <br />
+                                    Simplemente sostén la base
+                                    <br />
+                                    Y no te ocupes de las ramas.
+                                </p>
+                                <p>
+                                    Es como la luna de plata
+                                    <br />
+                                    Encerrada en una bella esmeralda.
+                                    <br />
+                                    Ahora entiendo esa joya-que-es-y-no-es
+                                    <br />
+                                    Y mi logro es el logro sin final de cada uno.<br />
+                                    La luna brilla sobre el río,
+                                    <br />
+                                    El viento sopla a través de los pinos –
+                                    <br />
+                                    ¿La providencia de quién es este largo y bello atardecer?
+                                </p>
+                                <p>
+                                    La joya de la naturaleza-Búdica de la moralidad
+                                    <br />
+                                    Está impresa en el fundamento de mi mente,
+                                    <br />
+                                    Y mi manto es el rocío, la rana, la nube, y la bruma.
+                                    <br />
+                                    Una vez una escudilla fue suficiente para calmar los dragones
+                                    <br />
+                                    Y una vara separaba los tigres hostiles;
+                                    <br />
+                                    Los aros de la vara cascabeleaban musicalmente.
+                                </p>
+                                <p>
+                                    La forma de esas expresiones no debe tomarse a la ligera;
+                                    <br />
+                                    La vara-atesorada del Tathagata
+                                    <br />
+                                    Tiene sugerencias radicales para que nosotros las sigamos.
+                                    <br />
+                                    El despierto no busca la verdad –
+                                    <br />
+                                    No arranca la ilusión.
+                                </p>
+                                <p>
+                                    La verdad y la ilusión son ambas vacantes y sin forma,
+                                    <br />
+                                    Pero esta no-forma ni está vacía ni no está vacía;
+                                    <br />
+                                    Es la verdaderamente real forma del Tathagata.
+                                    <br />
+                                    La mente-espejo es clara, así que no hay obstáculos.
+                                    <br />
+                                    Su brillantez ilumina al universo
+                                    <br />
+                                    En sus profundidades y en cada grano de arena.
+                                </p>
+                                <p>
+                                    Las cosas incontables del cosmos
+                                    <br />
+                                    Son todas reflejos en la mente,
+                                    <br />
+                                    Y esta claridad total está más allá de lo interno y lo externo.
+                                    <br />
+                                    El vivir en la nada es ignorar la causa y el efecto;
+                                    <br />
+                                    Este caos solamente guía al desastre.
+                                </p>
+                                <p>
+                                    Él que se agarra a lo vacante, rehusando las cosas del mundo,
+                                    <br />
+                                    Escapa de hundirse pero salta en el fuego.
+                                    <br />
+                                    El sostener la verdad y rehusar la ilusión –
+                                    <br />
+                                    Estas son mentiras diestras.
+                                </p>
+                                <p>
+                                    Los estudiantes que hacen zazen por tales mentiras
+                                    <br />
+                                    Aman el robo en sus propios hijos.
+                                    <br />
+                                    Ellos pierden el tesoro del Dharma;
+                                    <br />
+                                    Pierden el poder acumulado;
+                                    <br />
+                                    Y este desastre los guía directamente hacia el pensamiento dualístico.
+                                </p>
+                                <p>
+                                    Por lo tanto el Zen es la realización completa de la mente,
+                                    <br />
+                                    El corte completo de la ilusión,
+                                    <br />
+                                    El poder de la visión inteligente penetrando directamente a lo no-nacido.
+                                </p>
+                                <p>
+                                    Los estudiantes virtuosos sostendrán la espada de la sabiduría;
+                                    <br />
+                                    El filo de prajna es una llama diamantina.
+                                    <br />
+                                    No solamente corta el conocimiento inútil,
+                                    <br />
+                                    Sino que también extermina la ilusión.
+                                </p>
+                                <p>
+                                    Ellos rugen con el trueno-del-Dharma;
+                                    <br />
+                                    Ellos golpean el tambor-del-Dharma;
+                                    <br />
+                                    Ellos esparcen las nubes de amor, y vierten la lluvia nectarina.
+                                    <br />
+                                    Sus huellas gigantescas nutren ilimitadamente los seres;
+                                    <br />
+                                    Sravaka, Pratyeka, Bodhisattva – todos están iluminados;
+                                    <br />
+                                    Cinco clases de naturalezas humanas todas están emancipadas.
+                                </p>
+                                <p>
+                                    En lo alto de los Himalayas, solamente crece la hierba fei-ni.
+                                    <br />
+                                    Aquí las vacas producen una leche pura y deliciosa,
+                                    <br />
+                                    Y yo disfruto esta comida continuamente.
+                                    <br />
+                                    Una naturaleza completa pasa a todas las naturalezas;
+                                    <br />
+                                    Un Dharma universal encierra todos los Dharmas.
+                                </p>
+                                <p>
+                                    Una luna se refleja en muchas aguas;
+                                    <br />
+                                    Todas las lunas-en-el-agua llegan de una luna.
+                                    <br />
+                                    El cuerpo del Dharma de todos los Budas ha entrado en mi propia naturaleza,
+                                    <br />
+                                    Y mi naturaleza llega a ser una con el Tathagata.
+                                    <br />
+                                    Un nivel contiene completamente todos los niveles;
+                                    <br />
+                                    No es materia, mente ni actividad.
+                                </p>
+                                <p>
+                                    En un instante ochenta mil enseñanzas son logradas;
+                                    <br />
+                                    En un pestañar la maldad de eones es destruida.
+                                    <br />
+                                    Todas las categorías no son categorías;
+                                    <br />
+                                    ¿Qué relación tienen ellas con mi discernimiento?
+                                    <br />
+                                    Más allá del tributo, más allá de la culpa, –
+                                    <br />
+                                    Como el espacio mismo que no tiene fronteras.
+                                </p>
+                                <p>
+                                    Aquí y ahora mismo está la eternidad completa y serena,
+                                    <br />
+                                    Si buscas en cualquier otra parte, no la verás.
+                                    <br />
+                                    No puedes asirla, no puedes rehusarla;
+                                    <br />
+                                    En el medio de la no-ganancia,
+                                    <br />
+                                    En esa condición estás ganando.
+                                    <br />
+                                    Ella habla en silencio,
+                                    <br />
+                                    En el hablar le oyes su silencio.
+                                    <br />
+                                    El gran camino se ha abierto y no hay obstáculos.
+                                </p>
+                                <p>
+                                    Si alguien te pregunta, ¿cuál es tu secta
+                                    <br />
+                                    Y cómo la entiendes?
+                                    <br />
+                                    Yo respondo, el poder del tremendo prajna.
+                                    <br />
+                                    Las personas dicen que eso es positivo;
+                                    <br />
+                                    Las personas dicen que eso es negativo;
+                                    <br />
+                                    Pero ellos no saben, no conocen.
+                                </p>
+                                <p>
+                                    Un camino suave, un camino duro –
+                                    <br />
+                                    Incluso el cielo no lo puede imaginar.
+                                    <br />
+                                    He continuado mi zazen por muchos eones;
+                                    <br />
+                                    No digo esto para confundirte.
+                                    <br />
+                                    Levanto la bandera-del-Dharma y presento nuestra enseñanza;
+                                    <br />
+                                    Es la doctrina clara del Buda
+                                    <br />
+                                    Que la encontré con mi maestro Hui-Neng.
+                                    <br />
+                                    Mahakashyapa llegó a ser el sucesor del Buda,
+                                    <br />
+                                    Recibió la lámpara y la pasó.
+                                </p>
+                                <p>
+                                    Veintiocho generaciones de maestros en India,
+                                    <br />
+                                    Entonces hacia extranjero a través de los mares y los ríos hasta nuestra tierra
+                                    <br />
+                                    Bodhidharma llegó como nuestro primer fundador,
+                                    <br />
+                                    Y su manto, como todos sabemos, pasó a través de seis maestros aquí,
+                                    <br />
+                                    ¿Y cuántas generaciones han de venir que puedan obtener el camino?
+                                </p>
+                                <p>
+                                    Nadie sabe.
+                                </p>
+                                <p>
+                                    La verdad no se propone;
+                                    <br />
+                                    Lo falso es básicamente vacante.
+                                    <br />
+                                    Aparta a ambas, la existencia y la no-existencia,
+                                    <br />
+                                    Entonces, incluso lo no-vacante está vacante.
+                                    <br />
+                                    Las veinte clases de vacío no tienen bases,
+                                    <br />
+                                    Y la unidad del ser del Tathagata
+                                    <br />
+                                    Es naturalmente la semejanza.
+                                </p>
+                                <p>
+                                    La mente es la base, el fenómeno es el polvo;
+                                    <br />
+                                    Sin embargo ambos son como una mancha en un espejo.
+                                    <br />
+                                    Cuando la mancha es limpiada,
+                                    <br />
+                                    La luz comienza a brillar.
+                                    <br />
+                                    Cuando ambos, la mente y el fenómeno son olvidados,
+                                    <br />
+                                    Entonces, llegamos a ser naturalmente genuinos.
+                                </p>
+                                <p>
+                                    ¡Ah, el mundo materialista degenerado!
+                                    <br />
+                                    Las personas son infelices; ellas encuentran difícil el auto-controlarse.
+                                    <br />
+                                    Desde los siglos, desde Shakyamuni, los puntos de vista falsos son profundos,
+                                    <br />
+                                    Los demonios son fuertes, el Dharma es débil, los conflictos son muchos.
+                                    <br />
+                                    Las personas escuchan la doctrina del Buda de la inmediatez,
+                                    <br />
+                                    Y, si ellas la aceptan, los demonios serán aplastados
+                                    <br />
+                                    Tan fácil como una teja.
+                                </p>
+                                <p>
+                                    Pero ellos no pueden aceptarla, ¡qué pena!
+                                </p>
+                                <p>
+                                    Tu mente es el origen de la acción;
+                                    <br />
+                                    Tu cuerpo es el agente de la calamidad;
+                                    <br />
+                                    Ni te apenes ni culpes a nadie más.
+                                </p>
+                                <p>
+                                    Si no buscas una invitación al infierno,
+                                    <br />
+                                    Nunca difames la enseñanza verdadera del Tathagata.
+                                    <br />
+                                    En la arboleda de sándalo, no hay otros árboles.
+                                    <br />
+                                    Sólo el león vive en ese bosque lujoso y profundo,
+                                    <br />
+                                    Rondando libremente en un estado de paz.
+                                    <br />
+                                    Otros animales y las aves permanecen alejados.
+                                </p>
+                                <p>
+                                    Sólo el leoncito sigue a sus padres,
+                                    <br />
+                                    Y a los tres años de edad ruge vociferadamente.
+                                    <br />
+                                    ¿Cómo puede el chacal perseguir el rey del Dharma
+                                    <br />
+                                    Incluso con cientos de miles de artificios demoníacos?
+                                    <br />
+                                    La doctrina del Buda de la honestidad
+                                    <br />
+                                    No es un asunto para la emoción humana.
+                                    <br />
+                                    Si dudas esto o sientes la incertidumbre,
+                                    <br />
+                                    Entonces debes discutirlo conmigo.
+                                </p>
+                                <p>
+                                    Este no es un reino libre de la montaña del ego de un monje.
+                                    <br />
+                                    Me temo que tu entrenamiento te pueda guiar a puntos de vista erróneos
+                                    <br />
+                                    De un alma permanente o una extinción completa.
+                                </p>
+                                <p>
+                                    Ser es no ser; no-ser es no no-ser;
+                                    <br />
+                                    Pierde la regla por un pelo,
+                                    <br />
+                                    Y te has alejado cientos de millas.
+                                    <br />
+                                    Entendiéndolo, el niño-dragón abruptamente logra la Budeidad;
+                                    <br />
+                                    Confundiéndolo, el gran escolar cae en el infierno.
+                                </p>
+                                <p>
+                                    Desde mi juventud compilé estudios tras estudios,
+                                    <br />
+                                    En sutras y sastras busqué y rebusqué,
+                                    <br />
+                                    Clasificando términos y formas, absorto hasta la fatiga.
+                                    <br />
+                                    Entré en el mar para contar en vanos las arenas
+                                    <br />
+                                    Y entonces el Tathagata me reprendió gentilmente
+                                    <br />
+                                    A medita que leí "¿Qué beneficio hay en contar el tesoro de tu vecino?"
+                                </p>
+
+                                <p>
+                                    Mi trabajo ha sido disperso y enteramente inútil,
+                                    <br />
+                                    Por años fui polvo soplado por el viento.
+                                    <br />
+                                    Si la naturaleza-semilla es errónea, surge la confusión,
+                                    <br />
+                                    Y la doctrina de Buda de la inmediatez no puede ser obtenida.
+                                    <br />
+                                    Los estudiantes Shravaka y Pratyeka pueden estudiar intensamente
+                                    <br />
+                                    Pero ellos carecen de aspiración.
+                                </p>
+                                <p>
+                                    Otros pueden ser muy listos,
+                                    <br />
+                                    Pero ellos carecen de prajna.
+                                    <br />
+                                    Estúpidos, inmaduros,
+                                    <br />
+                                    Ellos suponen que hay algo en un puño vacío.
+                                    <br />
+                                    Ellos confunden el dedo índice con la luna.
+                                    <br />
+                                    Ellos son soñadores inoperantes perdidos en la forma y la sensación.
+                                </p>
+                                <p>
+                                    Sin suponer nada, vemos claramente el Tathagata.
+                                    <br />
+                                    Esto es llamado verdaderamente Kwan Yin, el Bodhisattva que ve libremente.
+                                    <br />
+                                    Cuando hemos despertado encontramos los obstáculos kármicos fundamentalmente vacíos.
+                                    <br />
+                                    Pero cuando no hemos despertado, debemos pagar todas nuestras deudas.
+                                </p>
+                                <p>
+                                    A los hambrientos se les sirve un banquete de rey,<br />
+                                    Y ellos no pueden comer.
+                                    <br />
+                                    El enfermo encuentra al rey de los doctores;
+                                    <br />
+                                    ¿Por qué ellos no pueden recuperarse?
+                                </p>
+                                <p>
+                                    La práctica del Zen en este mundo egoísta –
+                                    <br />
+                                    Este es el poder de la visión sabia.
+                                    <br />
+                                    El loto vive en el medio del fuego;
+                                    <br />
+                                    Él nunca es destruido.
+                                </p>
+                                <p>
+                                    Pradhanashura rompió los preceptos más solemnes;
+                                    <br />
+                                    Pero continuó para realizar lo no-nacido.
+                                    <br />
+                                    La Budeidad que obtuvo en ese momento
+                                    <br />
+                                    Vive con nosotros ahora en nuestro tiempo.
+                                </p>
+                                <p>
+                                    ¡El incomparable rugido del león de la doctrina!
+                                    <br />
+                                    Qué triste es que las personas son obstinadamente ignorantes;
+                                    <br />
+                                    Simplemente sabiendo que la ofensa obstruye la iluminación,
+                                    <br />
+                                    Sin mirar el secreto de la enseñanza del Tathagata.
+                                </p>
+                                <p>
+                                    Dos monjes fueron culpables de asesinato y carnalidad.
+                                    <br />
+                                    Su líder, Upali, tenía la luz de un gusano-brillante;
+                                    <br />
+                                    Él simplemente añadió eso a sus culpas.
+                                    <br />
+                                    Vimalakirti clarificó sus dudas inmediatamente
+                                    <br />
+                                    A medida que el sol derretía el hielo y la nieve.
+                                    <br />
+                                    El poder extraordinario de la emancipación
+                                    <br />
+                                    Trabaja maravillas innumerables como las arenas del Ganges.
+                                    <br />
+                                    A esto le ofrecemos ropa, comida, cama y medicina.
+                                </p>
+                                <p>
+                                    Diez mil piezas de oro no son suficiente;
+                                    <br />
+                                    Aunque destroces tu cuerpo
+                                    <br />
+                                    Y tus huesos lleguen a ser polvo, –
+                                    <br />
+                                    Eso no es pago suficiente para recompensar.
+                                </p>
+                                <p>
+                                    Una palabra vívida sobrepasa a millones de años de práctica.
+                                    <br />
+                                    El Rey del Dharma merece nuestro mayor respeto.
+                                    <br />
+                                    Los Tathagatas, innumerables como los granos de arena del Ganges,
+                                    <br />
+                                    Todos prueban este hecho por su realización o logro.
+                                </p>
+                                <p>
+                                    Ahora sé lo que la Joya-Mani es:
+                                    <br />
+                                    Aquellos que creen en esto lo obtendrán como resultado.
+                                </p>
+                                <p>
+                                    Cuando verdaderamente vemos, no hay nada.
+                                    <br />
+                                    No hay persona, no hay Buda.<br />
+                                    Las cosas innumerables del universo
+                                    <br />
+                                    Son simplemente burbujas sobre el mar.
+                                </p>
+                                <p>
+                                    Los sabios sagaces son como destellos de relámpagos
+                                    <br />
+                                    De cualquier modo que el hierro candente rote alrededor de mi cabeza,
+                                    <br />
+                                    Con la totalidad brillante de dhyana y prajna
+                                    <br />
+                                    Nunca pierdo mi ecuanimidad.
+                                </p>
+                                <p>
+                                    Si el sol llega a enfriarse, y la luna a calentarse,
+                                    <br />
+                                    La maldad no puede quebrantar la verdad.
+                                    <br />
+                                    El carruaje del elefante se mueve como una montaña,
+                                    <br />
+                                    ¿Cómo la mantis puede obstaculizar el camino?
+                                </p>
+                                <p>
+                                    El gran elefante no vagabundea en el camino del conejo.
+                                    <br />
+                                    La gran iluminación no se preocupa con detalles.
+                                    <br />
+                                    No deprecies el cielo mirándolo a través de un tubo.
+                                    <br />
+                                    Si todavía no entiendes,
+                                    <br />
+                                    Te lo estableceré.
+                                </p>
+                            </div>
+                            <!-- end special formatting -->
+                            <br />
+                            <p class="note center">
+                                [ fin ]</p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="referencias">&nbsp;</a>
+                            <h4>
+                                Referencias
+                            </h4>
+                            <p>
+                                Traducido al español por la Rev. Yin Zhi Shakya, aparentemente de la traducción al inglés (1991) de R. Aitken/<wbr />Diamond Sangha. (La versión en español es casi palabra por palabra, pero la división en párrafos es un poco diferente.)
+                            </p>
+                            <p class="note">
+                                La fecha de la traducción se indica como 19 de enero de 2002
+                            </p>
+                            <p class="note">
+                                Fuente: <a href="http://xuyun.zatma.org/Spanish/common/downloads/Himno_Iluminacion.pdf">xuyun.zatma.org Himno_Iluminacion.pdf</a>
+                            </p>
+                            <h4 style="margin-top: 30px; margin-bottom: -10px;">
+                                Mas por Rev. Yin Zhi Shakya
+                            </h4>
+                            <ul class="yin-zhi-links">
+                                <li class="site-links-item">En este sitio </li>
+                                <li class="site-first-item">La enseñanza zen de Huang Po: <a href="/zen/huang-po/transmision/contenido.htm">/zen/huang-po/transmision/contenido.htm</a></li>
+                                <li><a href=""></a></li>
+                                <!-- STILL IN PROCESS
+                                <li>Sutra del sexto patriarca, Hui Neng: <a href="/zen/hui-neng-espanol/contenido.htm">
+                                /zen/hui-neng-espanol/contenido.htm</a></li>
+                                -->
+                                <li class="external-links-item">Enlaces externos</li>
+                                <li class="external-first-item">Libros sobre Zen de Maestra Yin Zhi Shakya en <a href="http://www.acharia.org/publicaciones/publicaciones_recientes.htm">www.acharia.org</a> &ndash; biblioteca tremenda </li>
+                                <li class="site-links-item">Más Zen en este sitio en español</li>
+                                <li class="site-first-item">Garma C.C. Chang <a style="display: inline;" href="/zen/garma-chang/la-practica-del-zen/contenido.htm">La Práctica del Zen</a> &ndash; traducción de Patricio Canto</li>
+                            </ul>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

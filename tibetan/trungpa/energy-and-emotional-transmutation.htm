@@ -1,0 +1,554 @@
+﻿<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Energy and Emotional Transmutation</title>
+	<meta name="description" content="Vajrayana speaks of looking properly, directly at the emotion
+    and feeling it, its naked quality.">
+	<meta name="author" content="Trungpa Rimpoche">
+	<meta property="og:title" content="Energy and Emotional Transmutation">
+	<meta property="og:description" content="Vajrayana speaks of looking properly, directly at the emotion
+    and feeling it, its naked quality.">
+	<meta property="og:image" content="https://selfdefinition.org/tibetan/trungpa/images/trungpa-rinpoche-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_trungpa-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* top menu */
+		#menu-site-small-screen li.english {
+			display: inline-block;
+		}
+
+		#menu-site-small-screen li.spanish {
+			display: none;
+		}
+
+		h5 {
+			color: Maroon;
+			font-weight: bold;
+		}
+
+		nav.in-page-nav {
+			border: 0px solid green;
+		}
+
+		ul.nav-column {
+			padding-left: 0;
+			list-style: none;
+			margin: 25px auto 0;
+			width: 290px;
+			border: 0px solid red;
+		}
+
+		/* COLUMNS ONLY */
+		ul.nav-column {
+			column-count: 2;
+			-webkit-column-count: 2;
+			/* Chrome, Safari, Opera */
+			-moz-column-count: 2;
+			/* Firefox */
+			column-gap: 5px;
+			-webkit-column-gap: 5px;
+			/* Chrome, Safari, Opera */
+			-moz-column-gap: 5px;
+			/* Firefox */
+		}
+
+		/* do not set width */
+		ul.nav-column li {
+			text-align: left;
+			margin-bottom: 25px;
+			border: 0px solid blue;
+		}
+
+		/* default image max is 250px */
+		.right-image-div img {
+			max-width: 180px;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.nav-column {
+				width: 100%;
+			}
+
+			.nav-column li {}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_trungpa-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_trungpa-title-include.htm"); ?>
+									<h3>
+										Energy and Emotional Transformation
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="energia-y-transmutacion-emocional.htm">Energía y transmutación emocional </a>
+									</p>
+									<p class="note" style="margin-bottom: 0;">
+										Discovering one's emotional state.
+									</p>
+								</header>
+							</div>
+							<header>
+								<p class="note80 toowide">
+									Also see: <a href="trungpa-rinpoche-the-hard-way.htm">The Hard Way</a>
+								</p>
+								<p class="note80 toowide">
+									Excerpt from "Cutting through Spiritual Materialism" <span class="nowrap">Chapter 15, Tantra</span>
+								</p>
+							</header>
+
+							<div class="to-center">
+								<!-- Items too wide for 3 column, using 2  -->
+								<nav class="contents">
+									<div class="item"><a href="#energy">1. Energy</a></div>
+									<div class="item"><a href="#tantra">2. Tantra</a></div>
+									<div class="item"><a href="#vajra">3. Vajra</a></div>
+									<div class="item"><a href="#ratna">4. Ratna</a></div>
+									<div class="item"><a href="#padma">5. Padma</a></div>
+									<div class="item"><a href="#karma">6. Karma</a></div>
+									<div class="item"><a href="#buddha">7. Buda</a></div>
+									<div class="item"><a href="#divinities">8. Divinities</a></div>
+									<div class="item"><a href="#q-and-a">9. Q. &amp; A. </a></div>
+									<div class="item"><a href="#milarepa">10. Milarepa</a></div>
+								</nav>
+							</div>
+
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="energy">&nbsp;</a>
+							<h4 class="top-heading">
+								Energy
+							</h4>
+							<p>
+								While the basic teaching of mahayana buddhism is concerned with developing <em>prajna</em>&mdash;transcendental knowledge&mdash;the basic teaching of tantra is connected with working with energy. Energy is described in the <em>Kriyayoga Tantra of Vajramala</em>&nbsp;<sup>[1, 2]</sup> as &quot;that which abides in the heart of all beings, self-existing simplicity, that which sustains wisdom. This indestructible essence is the energy of great joy; it is all-pervasive, like space. This is the dharma body of nondwelling.&quot;
+							</p>
+							<p class="fnote">
+								[1. <a href="https://en.wikipedia.org/wiki/Outer_Tantras">en.wikipedia.org/<wbr />wiki/<wbr />Outer_Tantras</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[2. <a href="http://www.rigpawiki.org/index.php?title=Kriya_Tantra">www.rigpawiki.org/.../<wbr />Kriya_Tantra</a>&nbsp;]
+							</p>
+							<p>
+								According to this tantra, &quot;This energy is the sustainer of the primordial intelligence which perceives the phenomenal world. This energy gives impetus to both the enlightened and the confused states of mind. It is indestructible in the sense of being constantly ongoing. It is the driving force of emotion and thought in the confused state, and of compassion and wisdom in the enlightened state.&quot; ...
+							</p>
+							<!--
+                            <p>
+                                ...
+                            </p>
+                            -->
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="tantra">&nbsp;</a>
+							<h4>
+								Tantra
+							</h4>
+							<p>
+								Tantra is synonymous with dharma, the path. The function of tantric practice is to transmute ego, enabling the primordial intelligence to shine through. The word <em>tantra</em> means &quot;continuity.&quot; It is like the thread which strings beads together. The thread is the path. The beads are the working basis of tantric practice: that is, the five skandhas or the five constituents of ego as well as the primordial potential of the Buddha within oneself, the primordial intelligence. ...
+							</p>
+							<!--
+                            <p>
+                                ...
+                            </p>
+                            -->
+							<p>
+								The teaching must connect with the day-to-day lives of its practitioners. We are confronted with the thoughts, emotions, and energies of our relationships with other people and the world. How are we going to relate our understanding of <em>shunyata</em> <sup>[3]</sup> to everyday events unless we recognize the energy aspect of life? If we cannot dance with life’s energies, we will not be able to use our experience of <em>shunyata</em> to unite <em>samsara</em> and <em>nirvana.</em>
+							</p>
+							<p class="fnote">
+								[3. Emptiness. <a href="https://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">en.wikipedia.org/<wbr />wiki/<wbr />Sunyata</a>&nbsp;]
+							</p>
+							<p>
+								Tantra teaches not to suppress or destroy energy but to transmute it; in other words, go with the pattern of energy. When we find balance going with the energy, we begin to get acquainted with it. We begin to find the right path with the right direction. This does not mean that a person has to become a drunken elephant, a wild yogi in the pejorative sense. ...</p>
+							<!--
+                            <p>
+                                ...
+                            </p>
+                            -->
+							<!-- At page 121 (of 152) of docx file -->
+							<p>
+								It is important to remember that the practice of meditation begins with the penetration of the neurotic thought pattern which is the fringe of ego. As we proceed further, we see through not only the complexity of the thought processes but also the heavy &quot;meaningfulness&quot; of concepts expressed in names and theories. Then at last we create some space between <em>this</em> and <em>that</em>, which liberates us tremendously.
+							</p>
+							<p>
+								Having created space, we then go on to the vajrayana practice of creating a direct link with life experience. These three steps are, in essence, the three yanas: <sup>[4, 5]</sup> the hinayana, the vehicle of method; the mahayana, the vehicle of <em>shunyata</em> or space; and the vajrayana or tantra, the vehicle of direct energy.
+							</p>
+							<p class="fnote">
+								[4. <a href="http://www.rigpawiki.org/index.php?title=Three_yanas">www.rigpawiki.org/.../<wbr />Three_yanas</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[5. <a href="http://www.rigpawiki.org/index.php?title=Vajrayana">www.rigpawiki.org/<wbr />.../Vajrayana</a>&nbsp;]
+							</p>
+							<p>
+								In the tantric tradition energy is categorized in five basic qualities or <span class="italic">buddha families: vajra, ratna, padma, karma</span>, and <span class="italic">buddha</span>. Each buddha family has an emotion associated with it which is transmuted into a particular &quot;wisdom&quot; or aspect of the awakened state of mind. The buddha families are also associated with colors, elements, landscapes, directions, seasons, with any aspect of the phenomenal world.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="vajra">&nbsp;</a>
+							<h4>
+								Vajra
+							</h4>
+							<p>
+								Vajra is associated with anger, which is transmuted into mirrorlike wisdom. We sense something beyond the cloudy, possessive, and aggressive qualities of anger and this intuitive insight enables us to automatically transmute the essence of anger into precision and openness, rather than deliberately changing it.
+							</p>
+							<div class="right-image-div">
+								<a target="_blank" href="https://www.amazon.com/gp/product/1570629579/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1570629579&linkCode=as2&tag=selfdefinitio-20&linkId=2759c370081c7bb701706df8206be18b">
+									<img id="image-book-cover" src="images/trungpa-cover-web.jpg" alt="spiritual materialism cover" />
+									<p class="note">Cutting through Spiritual<br /> Materialism (Amazon.Com)</p>
+								</a>
+							</div>
+							<p>
+								Vajra is also associated with the element of water. Cloudy, turbulent water symbolizes the defensive and aggressive nature of anger while clear water suggests the sharp, precise, clear reflectiveness of mirrorlike wisdom.
+							</p>
+							<p>
+								Vajra is the color white. Anger is the very blunt and direct experience of defending oneself; therefore it is like a sheet of white paper, very flat and opaque. But it also has the potential of luminosity, of the brilliance of reflection which is mirrorlike wisdom.
+							</p>
+							<p>
+								Vajra is connected with the east, the dawn, winter. It is a winter morning, crystal clear, icicles sharp and glittering. The landscape is not empty or desolate but is full of all sorts of thought-provoking sharpness. There are many things to intrigue the observer. For example, the ground, trees, plants all have their own way of freezing. Different trees have different ways of carrying snow and different ways of relating to temperature.
+							</p>
+							<p>
+								Vajra deals with objects in terms of their textures and their relations to each other. Everything is analyzed in its own terms. The intelligence of vajra never leaves any unexplored areas or hidden corners. It is like water flowing over a flat surface, completely covering the surface but remaining transparent.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ratna">&nbsp;</a>
+							<h4>
+								Ratna
+							</h4>
+							<p>
+								Ratna is associated with pride and earth—solidity, mountains, hills, pyramids, buildings. &quot;I am completely secure. I am what I am.&quot; It is a <em>very proud</em> way of looking at oneself. This means that one is afraid to loosen up, is continually piling up defenses, building a fortress. Equally, ratna is the wisdom of equanimity, which is all-pervading. Whether you construct buildings out of earth or whether you simply leave the earth as it is, it is the same thing. The earth remains as it is. You do not feel defeated or threatened at all.
+							</p>
+							<p>
+								If you are a proud person, you feel yourself constantly challenged by the possibility of failure and defeat. In the enlightened mind, the anxiety of maintaining oneself is transmuted into equanimity. There is still awareness of the solidity and stability of earth but there is no fear of losing it. Everything is open, safe, and dignified; there is nothing to fear.
+							</p>
+							<p>
+								Ratna is related to the south and autumn, fertility, richness in the sense of continual generosity. When fruit is ripe, it automatically falls to the ground, asking to be eaten up. Ratna has this kind of giving away quality. It is luscious and open with the quality of midmorning. It is yellow, connected with the sun’s rays. Where vajra is associated with crystal, ratna is gold, amber, saffron. It has a sense of depth, real earthiness rather than texture, whereas vajra is purely texture, a crispy quality rather than fundamental depth. ...
+							</p>
+							<!--
+                            <p>
+                                ...
+                            </p>
+                             -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="padma">&nbsp;</a>
+							<h4>
+								Padma
+							</h4>
+							<p>
+								Padma is connected with passion, a grasping quality, a desire to possess. In the background of passion there is the instinct toward union, wanting to be completely one with something. But passion has a hysterical quality, a neurotic quality which ignores the real state of being united, and instead wants to possess in order to <em>become</em> united.
+							</p>
+							<p>
+								Passion defeats its own purpose automatically. In the case of discriminating awareness, which is the wisdom aspect of passion, one sees the quality of &quot;this&quot; and &quot;that&quot; precisely and sharply. In other words, communication takes place. If you are going to communicate with someone, you must respect the existence of the other person as well as your process of communication.
+							</p>
+							<p>
+								Discriminating-awareness wisdom recognizes the fact of union, which is quite different from dualistically separating &quot;that&quot; from &quot;this&quot; in order to maintain oneself. The consuming quality of burning fire, desire, is transmuted into the wisdom of binding together through communication. You may be completely caught up with possessiveness in a spiritual or material sense. You may want something more than you can have. You may be so fascinated by the exotic qualities of the thing you want that you are blind to the world around you. You are completely wrapped up in desire, which produces an automatic sort of stupidity and ignorance. This ignorance in desire is transcended in discriminating-awareness wisdom.
+							</p>
+							<p>
+								Padma is linked with the west and the color red. Red stands out from any other color, is very provocative, draws you toward it. It is also connected with the element of fire. In the confused state fire does not discriminate among the things that it grasps, burns, and destroys. In the awake state the heat of passion is transmuted into the warmth of compassion. ...
+							</p>
+							<!--
+                            <p>
+                                ...
+                            </p>
+                             -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="karma">&nbsp;</a>
+							<h4>
+								Karma
+							</h4>
+							<p>
+								Karma is associated with the emotion of jealousy, envy, and the element of wind. However, the terms <em>jealousy</em> and <em>envy</em> are not powerful and precise enough to describe the quality of karma. &quot;Absolute paranoia&quot; probably is a good phrase. You feel that you are not going to achieve any of your goals. You become irritated by the accomplishments of other people. You feel left behind and cannot bear to see others surpass you. This fear, this distrust of oneself, is connected with the element of wind. Wind never blows in all directions but it blows in one direction at a time. This is the one-way view of paranoia or envy.
+							</p>
+							<p>
+								Karma is connected with the wisdom of all-accomplishing action. The quality of paranoia falls away but the qualities of energy, keenness to action, and openness remain. In other words, the active aspect of wind is retained so that one’s activity touches everything in its path. One’s action is appropriate because it does not involve self-conscious panic or paranoia anymore. It sees the possibilities inherent in situations and automatically takes the appropriate course. It fulfills the purpose.
+							</p>
+							<p>
+								Karma suggests summer in the north. It is the efficiency of karma which connects it with this season, for it is a summer in which all things are active, growing, fulfilling their function. Millions of interconnected actions take place: living things grow, plants, insects, animals. There are thunderstorms and hailstorms. There is the sense that you are never left to enjoy the summer because something is always moving in order to maintain itself. It is a bit like late spring, but it is more fertile because it sees that all things are fulfilled at the right moment. ...
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="buddha">&nbsp;</a>
+							<h4>
+								Buddha
+							</h4>
+							<p>
+								Buddha is associated with dullness and has an all-pervading quality because it contains and goes with all the rest of the emotions. The active factor in this dullness is the action of ignoring. Ignoring does not want to see. It just ignores and overcrowds itself. You are completely relaxed, completely careless. You would rather maintain your stupor than search or struggle for anything, and a slothful, stupid quality is brought to all the other emotions.
+							</p>
+							<p>
+								The wisdom connected with buddha is that of all-encompassing space. The all-pervading quality of dullness is kept as the foundation, but the flicker of doubt and sloth in this dullness is transformed into wisdom. This wisdom contains tremendous energy and intelligence which run right through all the other elements, colors, and emotions, which activate all the rest of the five wisdoms.
+							</p>
+							<p>
+								Buddha is the foundation or the &quot;basic ground.&quot; It is the environment or oxygen which makes it possible for the other principles to function. It has a sedate, solid quality. Ratna is very solid and earthy as well, but it is not as earthy as buddha which is dull-earthy, uninteresting-earthy. Buddha is somewhat desolate, too spacious. It is a campsite where only the stones from campfires are left. The place has a sense of having been inhabited for a long time, but at present no one is there. The inhabitants were not killed or forced to move violently; they simply left. The mood is like that of the caves where American Indians used to live. They have a feeling of the past, but at the same time there are no outstanding characteristics. The tone is very dull, quite possibly in the plains, very flat. Buddha is connected with the color blue, the cool, spacious quality of sky. ...
+							</p>
+							<!--
+                            <p>
+                            …</p>
+                            -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="divinities">&nbsp;</a>
+							<h4>
+								Divinities
+							</h4>
+							<p>
+								In <em>maha ati</em>, <sup>[6]</sup> the highest tantra, the sense of identification falls away and one merges into one’s true nature. Only the energies and colors remain. Previously you saw through forms and images and sounds, saw their empty quality. Now you see the forms, images, and sounds in their true quality. It is the idea of returning to <em>samsara</em> which is expressed in the Zen tradition by the ox-herding pictures: you have no man and no ox, and then at the end, you have return to the world.
+							</p>
+							<p class="fnote">
+								[6. Chogyam Trungpa coined the term Maha Ati for Dzogchen. See: <a href="https://en.wikipedia.org/wiki/Dzogchen">en.wikipedia.org/<wbr />wiki/<wbr />Dzogchen</a>&nbsp;]
+							</p>
+							<p>
+								Thirdly, there is the iconography of the &quot;protective divinities.&quot; &mdash; &quot;Protection&quot; does not mean securing your safety, but it signifies a reference point, a guideline which reminds you, keeps you in your place, in the open. For instance, there is a <em>mahakala</em> <sup>[7]</sup> protective divinity called Six-Armed Mahakala who is black in color and stands on Ganesha, the elephant-headed god who here symbolizes subconscious thoughts.
+							</p>
+							<p class="fnote">
+								[7. Consort of Kali. <a href="https://en.wikipedia.org/wiki/Mahakala">en.wikipedia.<wbr />org/<wbr />wiki/<wbr />Mahakala</a>&nbsp;]
+							</p>
+							<p>
+								This subconscious gossip is an aspect of slothfulness that automatically distracts you from being aware and invites you back to being fascinated by your thoughts and emotions. It especially plays upon the survey nature of your thoughts—intellectual, domestic, emotional thoughts, whatever they may be. The mahakala brings you back to openness. The intent of the symbolism is that the mahakala overpowers subconscious gossip by standing on it. The mahakala represents the leap into penetrating awareness. ...
+							</p>
+							<!--
+                            <p>
+                                …</p>
+                            -->
+							<p>
+								The wrathful yidams <sup>[8]</sup> are always associated with what is known in tantric terms as <em>vajra anger</em>, the anger which has the <em>tathata</em> quality; <sup>[9]</sup> in other words, it is anger without hatred, a dynamic energy. This particular energy, whatever wisdom it may belong to, is invincible. It is completely indestructible, imperturbable, because it is not created but is discovered as an original quality. It is, therefore, not subject to birth and death. It is always depicted as angry, wrathful, and warriorlike.
+							</p>
+							<p class="fnote">
+								[8. Lesser divinities. <a href="https://en.wikipedia.org/wiki/Yidam">en.wikipedia.<wbr />org/<wbr />wiki/<wbr />Yidam</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[9. "Suchness." The ultimate inexpressible nature of all things. <a href="https://en.wikipedia.org/wiki/Tath%C4%81t%C4%81">en.wikipedia.<wbr />org/<wbr />wiki/<wbr />Tathata</a>&nbsp;]
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="q-and-a">&nbsp;</a>
+							<h4>
+								Q and A
+							</h4>
+							<h5>
+								Transmutation</h5>
+							<p class="question">
+								Q: How does transmutation take place?
+							</p>
+							<p>
+								A: Transmutation takes place with the understanding of <em>shunyata</em> and then the sudden discovery of energy. You realize that you no longer have to abandon anything. You begin to see the underlying qualities of wisdom in your life situation, which means that there is a kind of leap. If you are highly involved in one emotion such as anger, then by having a sudden glimpse of openness, which is <em>shunyata</em>, you begin to see that you do not have to suppress your energy. You do not have to keep calm and suppress the energy of anger, but you can transform your aggression into dynamic energy.
+							</p>
+							<p>
+								It is a question of how open you are, how much you are really willing to do it. If there is less fascination and satisfaction with the explosion and release of your energy, then there is more likelihood of transmuting it. Once we become involved with the fascination and satisfaction of energy, then we are unable to transmute it. You do not have to completely change yourself, but you can use part of your energy in an awakened state.
+							</p>
+							<h5>
+								Jnana and prajna</h5>
+							<p class="question">
+								Q: What is the difference between jnana and prajna?
+							</p>
+							<p>
+								A: One cannot regard wisdom as an external experience. That is the difference between wisdom and knowledge, jnana and prajna. Prajna is knowledge in terms of relativity, and jnana is wisdom beyond any kind of relativity. You are completely one with wisdom; you do not regard it as something educational or something experiential.
+							</p>
+							<h5>
+								Transmuting emotion</h5>
+							<p class="question">
+								Q: How do you transmute emotion? How do you deal with it?
+							</p>
+							<p>
+								A: Well, that is a very personal question rather than an intellectual one. The whole point is that we have not actually experienced our emotions, although we think we have. We have only experienced emotions in terms of me and my anger, me and my desire. This &quot;me&quot; is a kind of central governing structure. The emotions play the part of messengers, bureaucrats, and soldiers. Instead of experiencing emotions as being separate from you, your rather unruly employees so to speak, you must actually feel the texture and real living quality of the emotions.
+							</p>
+							<p>
+								Expressing or acting out hatred or desire on the physical level is another way of trying to escape from your emotions, just as you do when you try to repress them. If one actually feels the living quality, the texture of the emotions as they are in their naked state, then this experience also contains ultimate truth. And automatically one begins to see the simultaneously ironical and profound aspects of the emotions, as they are.
+							</p>
+							<p>
+								Then the process of transmutation, that is, transmuting the emotions into wisdom, takes place automatically. But, as I have said, it is a personal question; we really have to do it. Until we actually do it, no words can describe it. We have to be brave enough to actually encounter our emotions, work with them in a real sense, feel their texture, the real quality of the emotions as they are.
+							</p>
+							<p>
+								We would discover that emotion actually does not exist as it appears, but it contains much wisdom and open space. The problem is that we never experience emotions properly. We think that fighting and killing express anger, but these are another kind of escape, a way of releasing rather than actually experiencing emotion as it is. The basic nature of the emotions has not been felt properly.
+							</p>
+							<p class="question">
+								Q: When emotions are transmuted, that doesn’t mean they disappear, does it?
+							</p>
+							<p>
+								A: Not necessarily, but they are transmuted into other forms of energy. If we are trying to be good or peaceful, trying to suppress or subdue our emotions, that is the basic twist of ego in operation. We are being aggressive toward our emotions, trying forcefully to achieve peace or goodness. Once we cease being aggressive toward our emotions, cease trying to change them, once we experience them properly, then transmutation may take place. The irritating quality of the emotions is transmuted once you experience them as they are. Transmutation does not mean that the energy quality of the emotions is eliminated; in fact it is transformed into wisdom, which is very much needed. ...
+							</p>
+							<!--
+                            <p>
+                                …</p>
+                            -->
+							<p class="question">
+								Q: Does this principle of transmutation apply to <em>sattvic</em> and <em>rajasic</em> and <em>tamasic</em> energy as described in the Hindu tradition? You don’t want to take tamasic energy and turn it into rajasic, but you take it and use it.
+							</p>
+							<p>
+								A: That’s right, yes. It is very practical, actually. Generally we tend to prepare too much. We say, &quot;Once I make a lot of money, then I will go somewhere to study and meditate and become a priest,&quot; or whatever it is we would like to become. But we never do it on the spot. We always speak in terms of, &quot;Once I do something, then...&quot; We always plan too much. We want to change our lives rather than use our lives, the present moment, as part of the practice, and this hesitation on our part creates a lot of setbacks in our spiritual practice. Most of us have romantic ideas—&quot;I’m bad now but one day, when I change, I’ll be good.&quot; ...
+							</p>
+							<!--
+                            <p>
+                                …</p>
+                            -->
+							<h5>
+								Transmuting Fear</h5>
+							<p class="question">
+								Q: How is the fear or paranoia that interferes with spontaneity transmuted into action?
+							</p>
+							<p>
+								A: There are no special tricks involved in overcoming this and overcoming that in order to achieve a certain state of being. It is a question of leaping. When a person actually understands that he is in a state of paranoia, then that implies an underlying deep subconscious understanding of the other side, some feeling of the other aspect of it in his mind. Then he has to really take the leap. How to take the leap is very difficult to explain in words; one simply has to do it. It is rather like suddenly being pushed overboard into a river and discovering that you can swim; you just swim across the river. However, if you were to go back to the river and attempt to practice, you probably would not be able to swim at all. It is a question of spontaneity, of using the current intelligence. One cannot explain taking the leap in words; it is beyond words. But it is something that you will be able to do if you really are willing to do it, if you put yourself in the situation to leap and somehow surrender.</p>
+							<p class="question">
+								Q: If you are frightened and have a strong reaction to the fear, you are aware of the reaction but don’t want to get lost in it, you want to remain conscious. How do you do it?
+							</p>
+							<p>
+								A: It is a question of first acknowledging that such energy is there, which is the energy to leap, as well. In other words, instead of running away from fear, one must become completely involved in it and begin to feel the rough and rugged quality of the emotion.
+							</p>
+							<p class="question">
+								Q: Become a warrior?
+							</p>
+							<p>
+								A: Yes. At the beginning one might be satisfied with seeing the absurdity of the emotion, which would disperse it. But this is still not enough to effect the transmutation principle of vajrayana. One must see the &quot;form is form&quot; <sup>[10]</sup>
+								quality of the emotions. Once you are able to look at the emotions properly, from the point of view of &quot;form is form, emotion is emotion,&quot; without your preconceptions attached, once you see the naked quality of the emotions as they are, then you are ready to leap. It does not need much effort. You are already delivered to the leap, so to speak. This does not mean of course that, if you are angry, you go out and commit murder.
+							<p class="fnote">
+								[10. Contrast &quot;form is emptiness.&quot;]
+							</p>
+							<p class="question">
+								Q: In other words, see the emotion as it is instead of involving yourself in a scattered, penetrating reaction to a situation.
+							</p>
+							<p>
+								A: Yes. You see, <strong>we do not actually see emotion properly, although we are completely filled with it.</strong> If we follow our emotions and escape them by doing something, that is not experiencing them properly. We try to escape or repress our emotions because we cannot bear to be in such a state. But the vajrayana speaks of looking properly, directly at the emotion and feeling it, its naked quality. You do not actually have to transmute. In fact, you see the already transmuted quality in the emotions: &quot;form is form.&quot; It is very subtle and quite dangerous to just throw about. ...
+							</p>
+							<!--
+                            <p>
+                                …
+                            </p>
+                            -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="milarepa">&nbsp;</a>
+							<h4>
+								Milarepa</h4>
+							<div class="right-image-div center">
+								<img src="images/milarape-statue-icon.jpg" style="max-width: 150px;" alt="Milarepa statue" /><br />
+								Milarepa
+							</div>
+							<p>
+								Milarepa <sup>[11]</sup> was tremendously involved with the process of transmutation of energies and emotions. In fact, when we read <em>The Hundred Thousand Songs of Milarepa</em>, the whole first part of the book is dealing with Milarepa’s experience of this process. In &quot;The Tale of Red Rock Jewel Valley&quot; Milarepa had only recently left Marpa to go off and meditate alone. This might be called his &quot;adolescent stage,&quot; because he was still involved with reliance upon a personal guru. Marpa was still his &quot;daddy.&quot; Having opened and surrendered to Marpa, Milarepa still had to learn to transmute the emotions. He was still clinging to the notions of &quot;good&quot; and &quot;bad,&quot; and so the world was still appearing to him in the guise of gods and demons.
+							</p>
+							<p class="fnote">
+								[11. <a href="https://en.wikipedia.org/wiki/Milarepa">en.wikipedia.org/<wbr />wiki/<wbr />Milarepa</a>
+								]
+							<p>
+								In &quot;The Tale of Red Rock Jewel Valley,&quot; when Milarepa went back into his cave after having a comforting vision of Marpa, he was confronted with a gang of demons. He tried every way he could think of to get rid of them, all kinds of tactics. He threatened them, cajoled them, he even preached the dharma to them. But they would not leave until he ceased regarding them as &quot;bad&quot; and opened to them, saw them as they were. This was the beginning of Milarepa’s period of learning how to subjugate the demons, which is the same thing as transmuting the emotions. It is with our emotions that we create demons and gods: those things which we don’t want in our lives and world are the demons; those things which we would draw to us are the gods and goddesses. The rest is just scenery.
+							</p>
+							<p>
+								By being willing to accept the demons and gods and goddesses as they are, Milarepa transmuted them. They became <em>dakinis</em>, or the energies of life. The whole first part of <em>The Hundred Thousand Songs</em> deals with Milarepa’s mastery of transmutation, his growing ability to open to the world as it is, until he finally conquered all the demons. In the chapter &quot;The Goddess Tserinma’s Attack&quot;, thousands of demons assemble to terrify and attack Milarepa while he is meditating, but he preaches to them, is open and accepting, willing to offer them his whole being, and they are subjugated. At one point five demonesses, beginning to realize that they cannot frighten Milarepa, sing to him.
+							</p>
+							<blockquote>
+								<p>
+									If the thought of demons<br />
+									Never rises in your mind,<br />
+									You need not fear the demon hosts around you.<br />
+									It is most important to tame your mind within.<br />
+									On the steep path of fear and hope<br />
+									They lie in ambush ... <sup>[12]</sup>
+								</p>
+							</blockquote>
+							<p class="fnote">
+								[12. Trungpa's reference: Garma C. C. Chang, <em>The Hundred Thousand Songs of Milarepa</em> (New York, 1962), p. 306.]
+							</p>
+							<p>
+								And later Milarepa himself says, &quot;Insofar as the Ultimate, or the true nature of being is concerned, there are neither Buddhas nor demons. He who frees himself from fear and hope, evil and virtue, will realize the insubstantial and groundless nature of confusion. <em>Samsara</em> will then appear to be the Mahamudra itself. ...
+							</p>
+							<p>
+								The rest of <em>The Hundred Thousand Songs</em> deals with Milarepa’s development as a teacher and his relationships with his students. Toward the end of his life he had completely perfected the transmutation process to the point where he could be called the <span class="italic">vidyadhara</span>, or &quot;holder of the crazy wisdom.&quot; No longer could he be swayed by the winds of hope and fear. The gods and goddesses and demons, his passions and their external projections, had been completely subjugated and transformed. Now his life was a continual dance with the dakinis.
+							</p>
+							<p>
+								Finally Milarepa reached the &quot;old dog&quot; stage, his highest attainment. People could tread on him, use him as a road, as earth; he would always be there. He transcended his own individual existence so that, as we read his last teachings, there is a sense of the universality of Milarepa, the example of enlightenment.</p>
+							<p class="note center" style="margin-top: 30px;">
+								[ end of selection ]</p>
+
+							<p class="note center">
+								Also see: <a href="trungpa-rinpoche-the-hard-way.htm">The Hard Way</a>
+							</p>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

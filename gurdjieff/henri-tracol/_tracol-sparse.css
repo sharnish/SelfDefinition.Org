@@ -1,0 +1,72 @@
+/* file:  /gurdjieff/henri-tracol/_tracol.css 
+
+From Real World (Update Apr 25, 2020) copied top Tracol on June 9, 2020
+
+Has different coloring for Eng and for Span
+
+*/
+
+@media only print {
+	#article:after {
+		content: "update Apr 25, 2020";
+		font-size: 60%;
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffff0;
+}
+
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #d0d0ff;
+}
+
+/* MUST HAVE -- HIDES OPPOSITE LANGUAGE  LIST ITEM ON PAGE
+
+no, moved to 2022.css */
+/* MUST HAVE -- or menu will be screwed up.*/
+/* MUST HAVE -- both languages share same menu include file */
+/* need #menu-site-small-screen due to specificity in menu styles */
+/* top menu anchors
+body.en #menu-site-small-screen li.spanish,
+body.en #menu-site-small-screen li.spanish a {
+	display: none;
+	background: lightblue;
+}
+
+body.es #menu-site-small-screen li.english,
+body.es #menu-site-small-screen li.english a {
+	display: none;
+	background: lightgreen;
+}
+
+
+body.en .menu-text li.spanish,
+body.en .site-links li.spanish,
+body.en .site-links li.spanish a {
+	display: none;
+	background: lightblue;
+}
+
+body.es .menu-text li.english,
+body.es .site-links li.english,
+body.es .site-links li.english a {
+	display: none;
+	background: lightgreen;
+}
+ */
+
+/* end MUST HAVE */
+
+
+/* end */

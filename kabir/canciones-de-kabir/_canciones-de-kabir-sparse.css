@@ -1,0 +1,60 @@
+/* file:  /kabir/songs-of-kabir/_canciones-de-kabir-refresh.css 
+
+Update May 13, 2020. May 16, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "update May 14, 2020";
+        font-size: 60%;
+    }
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff ENGLISH VERSION IS #f4f4e4;*/
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #f4ffff;
+}
+
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #c9d6df;
+}
+
+/* START NARROW WIDTH FOR KABIR POEMS */
+/* make the poems more narrow; default is 530px < NO, leave as is. May 16, 2022
+INTRODUCTION.htm IS DEFAULT*/
+.page-text {
+    /* width: 480px;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+h5.poem {
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+
+
+header p.tiny {
+    line-height: 1.75em;
+}
+
+
+
+/* end */

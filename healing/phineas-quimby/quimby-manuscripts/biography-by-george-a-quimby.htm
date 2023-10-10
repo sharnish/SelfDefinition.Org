@@ -1,0 +1,284 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography of Phineas Parkhurst Quimby</title>
+    <meta name="description" content="Biography of Quimby published in 1888 by his son, George A. Quimby,
+    father of the editor of the Quimby Manuscripts.">
+    <meta name="author" content="George A. Quimby">
+    <meta property="og:title" content="Biography of Phineas Parkhurst Quimby" />
+    <meta property="og:description" content="Biography of Quimby published in 1888 by his son, George A. Quimby,
+    father of the editor of the Quimby Manuscripts.">
+    <meta property="og:image" content="https://selfdefinition.org/healing/phineas-quimby/quimby-manuscripts/images/phineas-parkhurst-quimby-postcard.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_manuscripts-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* different color this page (not part of book) */
+
+        html,
+        body,
+        #fixed-header-small-screen,
+        #menu-site-small-screen,
+        .progress-header,
+        .progress-container {
+            background: #e6ffe6;
+            /*book is #f9ffee */
+        }
+
+        ul.page-links {
+            width: 280px;
+        }
+
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_manuscripts-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_manuscripts-title-include.htm"); ?>
+                                    <h3>
+                                        Biography of Phineas Parkhurst Quimby <span class="block" style="margin-top: 10px;">by George A. Quimby (son)</span>
+                                    </h3>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="21-the-quimby-eddy-controversy.htm">&lt; Quimby-Eddy Controversy </a></li>
+                                    <li class="align-right"><a href="contents.htm">Contents &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <header>
+                                <p class="tiny toowide" style="margin-top:30px;">
+                                    Source, PhineasQuimby.Com: [Now PPQuimby.Com] <a href="http://ppquimby.com/gquimby/biography.htm">ppquimby.com/<wbr />gquimby/<wbr />biography.htm</a></p>
+                                <p class="note80">
+                                    First published in <em>The New England Magazine</em>, 1888
+                                </p>
+                                <p class="note">
+                                    Return to Chapter 1: <a href="01-biographical-sketch.htm">01-biographical-sketch.htm</a></p>
+                            </header>
+                            <div class="note italic">
+                                <p class="blockquote">
+                                    The great interest evinced during the last ten years in the treatment of disease through the mind, and the growing desire of a large number of students of the science, and others, to know in what manner the late P.P. Quimby was connected with this principle of curing, and what was his mode of treatment, has induced the writer to present, in a brief article, a sketch of the man, his life, and ideas. It is not the intention to make the article other than a plain statement of facts, based on personal knowledge.
+                                </p>
+                                <p class="blockquote">
+                                    In his capacity of secretary for Mr. Quimby during the last and most active years of his profession, in which he was finishing his life's work, the writer is enabled to give a correct account of what passed during those years, and to publish - in the doctor's own words - what his ideas were.
+                                </p>
+                            </div>
+                            <div style="margin: 30px 0;">
+                                <hr style="width: 50%;" />
+                            </div>
+                            <p>
+                                Phineas Parkhurst Quimby was born in the town of Lebanon, New Hampshire, February 16, 1802. When about two years of age, his parents emigrated to Maine and settled in the town of Belfast. His father was a blacksmith, and the subject of this sketch was one of a family of seven children.
+                            </p>
+                            <p>
+                                Owing to his father's scanty means, and to the meagre chances for schooling, his opportunity for acquiring an education was limited. During his boyhood he attended the town school a part of the time, and acquired a brief knowledge of the rudimentary branches; but his chief education was gained in after life, from reading and observation. He always regretted his want of education, which was his misfortune, rather than any fault of his.
+                            </p>
+                            <p>
+                                When he became old enough to go to work, he learned the trade of watch and clock making, and for many years after engaged in that pursuit. Later, before photography was known, he for several years made a business of taking a style of portrait picture known as daguerreotype. He had a very inventive mind, and was always interested in mechanics, philosophy, and scientific subjects. During his middle life, he invented several devices on which he obtained letters patent. He was very argumentative, and always wanted proof of anything, rather than an accepted opinion. Anything which could be demonstrated he was ready to accept; but he would combat what could not be proved with all his energy, rather than admit it as a truth.
+                            </p>
+                            <p>
+                                With a mind of this combination, it is not strange that, when a gentleman visited Belfast, about the year 1838, and gave lectures and experiments in mesmerism, Mr. Quimby should feel deeply interested in the subject. Here was a new, to him at least, phenomenon; and he at once began to investigate the subject; and on every occasion when he could find a person who would allow him to try, he would endeavor to put him into a mesmeric sleep. He met with many failures, but occasionally would find a person whom he could influence.
+                            </p>
+                            <p>
+                                At that time Mr. Quimby was of medium height, small in stature, his weight being about one hundred and twenty-five pounds; quick motioned and nervous, with piercing black eyes, black hair and whiskers; a well-shaped, well-balanced head; high, broad forehead, and a rather prominent nose, and a mouth indicating strength and firmness of will; persistent in what he undertook, and not easily defeated or discouraged.
+                            </p>
+                            <p>
+                                In the course of his trials with subjects, he met with a young man named Lucius Burkmar, over whom he had the most wonderful influence; and it is not stating it too strongly to assert that with him he made some of the most astonishing exhibitions of mesmerism and clairvoyance that have been given in modern times. At the beginning of these experiments, Mr. Quimby firmly believed that the phenomenon was the result of animal magnetism, and that electricity had more or less to do with it. Holding to this, he was never able to perform his experiments with satisfactory results when the "conditions" were not right, as he believed they should be.
+                            </p>
+                            <p>
+                                For instance, during a thunder storm his trials would prove utter failures. If he pointed the sharp end of a steel instrument at Lucius, he would start as if pricked by a pin; but, when the blunt end was pointed toward him, he would remain unmoved.
+                            </p>
+                            <p>
+                                One evening, after making some experiments with excellent results, Mr. Quimby found that during the time of the tests there had been a severe thunder storm; but, so interested was he in his experiments, he had not noticed it.
+                            </p>
+                            <p>
+                                This led him to further investigate the subject; and the results reached were that, instead of the subject being influenced by any atmospheric disturbance, the effects produced were brought about by the influence of one mind on another. From that time he could produce as good results during a storm as in pleasant weather, and could make his subject start by simply pointing a finger at him as well as by using a steel instrument.
+                            </p>
+                            <p>
+                                Mr. Quimby's manner of operating with his subject, was to sit opposite to him, holding both his hands in his, and looking him intently in the eye for a short time, when the subject would go into that state known as the mesmeric sleep, which was more properly a peculiar condition of mind and body, in which the natural senses would or would not, operate at the will of Mr. Quimby. When conducting his experiments, all communications on the part of Mr. Quimby with Lucius were mentally given, the subject replying as if spoken to aloud.
+                            </p>
+                            <p>
+                                For several years, Mr. Quimby traveled with young Burkmar through Maine and New Brunswick, giving exhibitions, which at the time attracted much attention and secured notices through the columns of the newspapers.
+                            </p>
+                            <p>
+                                It should be remembered that at the time Mr. Quimby was giving these exhibitions, over forty-five years ago, the phenomenon was looked upon in a far different light from that of the present day. At that time it was a deception, a fraud, and a humbug; Mr. Quimby was vilified and frequently threatened with mob violence, as the exhibitions smacked too strongly of witchcraft to suit the people.
+                            </p>
+                            <p>
+                                As the subject gained more prominence, thoughtful men began to investigate the matter, and Mr. Quimby was often called upon to have his subject examine the sick. He would put Lucius into the mesmeric state, who would then examine the patient, describe his disease, and prescribe remedies for its cure. After a time Mr. Quimby became convinced that whenever the subject examined a patient his diagnosis of the case would be identical with what either the patient himself or someone present believed, instead of Lucius really looking into the patient, and giving the true condition of the organs; in fact, that he was reading the opinion in the mind of some one, rather than stating a truth acquired by himself.
+                            </p>
+                            <p>
+                                Becoming firmly satisfied that this was the case, and having seen how one mind could influence another, and how much there was that had always been considered as true, but was merely some one's opinion, Mr. Quimby gave up his subject, Lucius, and began the developing of what is now known as mental healing, or curing disease through the mind.
+                            </p>
+                            <p>
+                                In accomplishing this he spent years of his life fighting the battle alone and laboring with an energy and steadiness of purpose that shortened it many years. To reduce his discovery to a science, which could be taught for the benefit of suffering humanity, was the all-absorbing idea of his life. To develop his "theory," or "the Truth," as he always termed it, so that others than himself could understand and practice it, was what he labored for. Had he been of a sordid and grasping nature, he might have acquired unlimited wealth; but for that he seemed to have no desire. He used to say: "Wait till I get my theory reduced to a science, so that I can teach the Truth to others, and then I can make money fast enough."
+                            </p>
+                            <p>
+                                In a magazine article, it is impossible to follow the slow stages by which he reached his conclusions; for slow they were, as each step was in opposition to all the established ideas of the day, and was ridiculed by the whole medical faculty and the great mass of the people. In the sick and suffering he always found staunch friends, who loved him and believed in him, and stood by him; but they were but a handful compared with those on the other side.
+                            </p>
+                            <p>
+                                While engaged in his mesmeric experiments, Mr. Quimby became more and more convinced that disease was an error of the mind, and not a real thing; and in this he was misunderstood by others, and accused of attributing the sickness of the patient to the imagination, which was the very reverse of the fact. No one believed less in the imagination than he. "If a man feels a pain, he knows he feels it, and there is no imagination about it," he used to say.
+                            </p>
+                            <p>
+                                But the fact that the pain might be a state of the mind, while apparent in the body, he did believe. As one can suffer in a dream all that it is possible to suffer in a waking state, so Mr. Quimby averred that the same condition of mind might operate on the body in the form of disease, and still be no more of a reality than was the dream.
+                            </p>
+                            <p>
+                                As the truths of his discovery began to develop and grow in him, just in the same proportion did he begin to lose faith in the efficacy of mesmerism as a remedial agent in the cure of the sick; and after a few years he discarded it altogether.
+                            </p>
+                            <p>
+                                Instead of putting the patient into a mesmeric sleep, Mr. Quimby would sit by him; and, after giving him account of what his troubles were, he would simply converse with him, and explain the causes of the troubles, and thus change the mind of the patient, and disabuse it of its errors and establish the truth in its place; which, if done, was the cure.
+                            </p>
+                            <p>
+                                He sometimes, in cases of lameness and sprains, manipulated the limbs of the patient, and often rubbed the head with his hands, wetting them with water. He said it was so hard for the patient to believe that his mere talk with him produced the cure, that he did this rubbing simply that the patient would have more confidence in him; but he always insisted that he possessed no "power" nor healing properties different from any one else, and that his manipulations conferred no beneficial effect upon his patient.
+                            </p>
+                            <p>
+                                He never went into any trance, and was a strong disbeliever in Spiritualism, as understood by that name. He claimed, and firmly held, that his only power consisted in his wisdom, and in his understanding the patient's case and being able to explain away the error and establish the truth, or health, in its place. Very frequently the patient could not tell how he was cured, but it did not follow that Mr. Quimby himself was ignorant of the manner in which he performed the cure.
+                            </p>
+                            <p>
+                                Suppose a person should read an account of a railroad accident, and see in the list the name of his son who was killed. The shock on the mind would cause a deep feeling of sorrow on the part of the parent, and possibly a severe sickness, not only mental, but physical.
+                            </p>
+                            <p>
+                                Now, what is the condition of the patient? Does he imagine his trouble? Is it not real? Is his body not affected, his pulse quick, and has he not all the symptoms of a sick person, and is he not really sick?
+                            </p>
+                            <p>
+                                Suppose you can go and say to him that you were on the train, and saw his son alive and well after the accident, and prove to him that the report of his death was a mistake. What follows? Why, the patient's mind undergoes a change immediately, and he is no longer sick.
+                            </p>
+                            <p>
+                                It was on this principle that Mr. Quimby treated the sick. He claimed that "mind was spiritual matter and could be changed," that we were made up of "truth and error;" that "disease was an error, or belief, and that the Truth was the cure." And upon these premises he based all his reasoning, and laid the foundation of what he asserted to be the "science of curing the sick" without other remedial agencies than the mind.
+                            </p>
+                            <p>
+                                In the year 1859 Mr. Quimby went to Portland, where he remained until the summer of 1865, treating the sick by his peculiar method. It was his custom to converse at length with many of his patients, who became interested in his method of treatment, and to try to unfold to them his ideas.
+                            </p>
+                            <p>
+                                Among his earlier patients in Portland were the Misses Ware, daughters of the late Judge Ashur Ware, of the U.S. Court, and they became much interested in "The Truth," as he called it. But the ideas were so new, and his reasoning was so divergent from the popular conceptions, that they found it difficult to follow him or remember all he said; and they suggested to him the propriety of putting into writing the body of his thoughts.
+                            </p>
+                            <p>
+                                From that time he began to write out his ideas, which practice he continued until his death, the articles now being in the possession of the writer of this sketch. The original copy he would give to the Misses Ware, and it would be read to him by them; and, if he suggested any alteration, it would be made, after which it would be copied either by the Misses Ware or the writer of this and then re-read to him, that he might see that all was just as he intended it. Not even the most trivial word or the construction of a sentence would be changed without consulting him.
+                            </p>
+                            <p>
+                                He was given to repetition, and it was with difficulty that he could be induced to have a repeated sentence or word stricken out, as he would say, "If that idea is a good one and true, it will do no harm to have it in two or three times." He believed in the "hammering process" and of throwing an idea or truth at the reader till it would be finally firmly fixed in his mind.
+                            </p>
+                            <p>
+                                The first article he wrote was entitled, "Mind is Spiritual Matter," and he thus explains what he means: He says: "I found that I could change the mind of my patient, and produce thereby a chemical change in the body.... The world makes mind intelligence. I put no intelligence in it, but make it subject to intelligence.... I call the power that governs the mind, spirit, in this piece, not using the word wisdom; but you will see that I recognize a wisdom superior to the word mind, for I always apply the word mind to matter, but never to the first cause."
+                            </p>
+                            <p>
+                                In a circular to the sick, which he distributed while in Portland, he says that, "as my practice is unlike all other medical practice, it is necessary to say that I give no medicines and make no outward applications, but simply sit by the patient, tell him what he thinks is his disease, and my explanation is the cure. And if I succeed in correcting his errors, I change the fluids of the system, and establish the truth, or health. 'The Truth is the cure.'"
+                            </p>
+                            <p>
+                                In an article over his own signature, published in the Portland Advertiser of February 13, 1862, he says:
+                            </p>
+                            <p class="blockquote">
+                                "As you have given me the privilege of answering the article in your paper of the 11th inst., wherein you classed me with spiritualists, mesmerizers, clairvoyants, etc., I take this occasion to state where I differ from all classes of doctors, from the allopathic physician to the healing medium. All of these admit disease as an independent enemy of mankind.... Now I deny disease as a truth, but admit it as a deception, without any foundation, handed down from generation to generation, till the people believe it, and it has become a part of their lives.... My way of curing convinces him that he has been deceived; and, if I succeed the patient is cured. My mode is entirely original."
+                            </p>
+                            <p>
+                                Mr. Quimby, although not belonging to any church or sect, had a deeply religious nature, holding firmly to God as the first cause, and fully believing in immortality and progression after death, though entertaining entirely original conceptions of what death is. He believed that Jesus' mission was to the sick, and that he performed his cures in a scientific manner, and perfectly understood how he did them. Mr. Quimby was a great reader of the Bible, but put a construction upon it thoroughly in harmony with his train of thought.
+                            </p>
+                            <p>
+                                His greatest desire was that the writer of this sketch should become interested in his work, and learn to heal the sick as he did. He always asserted that it was a science that he could teach, but that, if it were not communicated by him, others would take up the work and complete it. He wished the writer, after becoming conversant with the principles by which he cured, to fit himself for the lecture platform, and, as he expressed it, "You lecture and then we will call the sick on the stage, and cure them by wholesale, right in public."
+                            </p>
+                            <p>
+                                It may not be out of place to state here that the writer did not attempt to learn to practice as Mr. Quimby did; not because he could not, but for the reason that he was not at that time interested in the matter, and his tastes led him to adopt other pursuits.
+                            </p>
+                            <p>
+                                Mr. Quimby's idea of happiness was to benefit mankind, especially the sick and suffering; and to that end he labored, and gave his life and strength. His patients not only found in him a doctor, but a sympathizing friend, and he took the same interest in treating a charity patient that he did a wealthy one. Until the writer went with him as secretary, he kept no accounts and made no charges. He left the keeping of books entirely with his patients; and although he pretended to have a regular price for visits and attendance, he took at settlement whatever the patient chose to pay him.
+                            </p>
+                            <p>
+                                The last five years of his life were exceptionally hard. He was overcrowded with patients, and greatly overworked, and could not seem to find an opportunity for relaxation. At last, nature could no longer bear up under the strain; and, completely tired out, he took to his bed, from which he never rose again. While strong, he had always been able to ward off any disease that would have affected another person; but, when tired out and weak, he no longer had the strength of will nor the reasoning powers to combat the sickness which terminated his life.
+                            </p>
+                            <p>
+                                An hour before he breathed his last, he said to the writer: "I am more than ever convinced of the truth of my theory. I am perfectly willing for the change myself, but I know you all will feel badly, and think I am dead; but I know that I shall be right here with you, just as I always have been. I do not dread the change any more than if I were going on a trip to Philadelphia."
+                            </p>
+                            <p>
+                                His death occurred January 16, 1866, at his residence in Belfast, at the age of sixty-four years, and was the result of too close application to his profession and of overwork. A more fitting epitaph could not be accorded him than in these words:
+                            </p>
+                            <p>
+                                "<em>Greater love hath no man than this, that a man lay down his life for his friends.</em>" For if ever a man did lay down his life for others - that man was Phineas Parkhurst Quimby.
+                            </p>
+                            <!--
+                            <p class="tiny">
+                                *Purchase The Complete Collected Works of Dr. Phineas Parkhurst Quimby at: www.Seed-Of-Life-Publishing.com [broken link]
+                            </p>
+							-->
+                            <p class="note">
+                                Return to Chapter 1: <a href="01-biographical-sketch.htm">01-biographical-sketch.htm</a></p>
+                            <!-- end div#article -->
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="21-the-quimby-eddy-controversy.htm">&lt; Quimby-Eddy Controversy </a></li>
+                                    <li class="align-right"><a href="contents.htm">Contents &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

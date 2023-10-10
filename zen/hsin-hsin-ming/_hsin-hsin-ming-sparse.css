@@ -1,0 +1,193 @@
+/*  file:  /zen/hsin-hsin-ming/_hsin-hsin-ming-sparse.css
+
+CSS update Sept. 12,. 2019 ; Update June 11, 2020. Apdate April 8, 2022
+Old stuff here:
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update April 8, 2020";
+        font-size: 60%;
+    }
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fff9f9;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #d0e0ff;
+}
+
+/* DARK */
+
+@media only screen {
+
+    html.dark,
+    html.dark body,
+    html.dark #fixed-header-small-screen,
+    html.dark #menu-site-small-screen,
+    html.dark .progress-container,
+    html.dark p.black,
+    html.dark span.black,
+    html.dark sup.black {
+        background: #201918;
+    }
+}
+
+
+/* adjust as needed */
+@media only screen and (max-width:359px) {
+
+    .conditional-hide-3,
+    #menu-site-small-screen .conditional-hide-3 {
+        display: none;
+    }
+}
+
+
+/* spacing above first paragraph of article */
+#article header + p {
+    margin-top: 40px;
+}
+
+/* get rid of alternative Chinese but leave for search enines */
+.hide {
+    display: none;
+    ;
+}
+
+/* adjust as needed */
+@media only screen and (max-width:380px) {
+
+    .conditional-hide-4,
+    #menu-site-small-screen .conditional-hide-4 {
+        display: none;
+    }
+}
+
+/* testing */
+
+/*  *******/
+
+
+#main-content {
+    border: 0px solid yellow;
+}
+
+#article {
+    border: 0px solid white;
+}
+
+#title-include-div {
+    border: 0px solid red;
+}
+
+#announce header {
+    border: 0px solid green;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header p {
+    border: 0px solid blue;
+}
+
+#menu-container {
+    border: 0px solid red;
+}
+
+#fixed-header-small-screen {
+    border: 0px solid blue;
+}
+
+#menu-site-small-screen {
+    border: 0px solid orange;
+}
+
+#menu-site-small-screen li {
+    border: 0px solid green;
+}
+
+#menu-section-group,
+div.optional-links,
+div.site-links,
+div.external-links {
+    border: 0px solid blue;
+}
+
+ul#menu-site,
+ul.menu-text,
+ul.menu-section {
+    border: 0px solid green;
+}
+
+#index-lists {
+    border: 0px solid red;
+}
+
+#index-lists ul {
+    border: 0px solid blue;
+}
+
+#index-lists ul li {
+    border: 0px solid green;
+}
+
+nav.contents {
+    border: 0px solid yellow;
+}
+
+
+nav.next-previous-item-nav {
+    border: 0px solid yellow;
+}
+
+ul.next-previous-item-list {
+    border: 0px solid red;
+}
+
+a.page-link-anchor:target {
+    border: 0px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+    a.page-link-anchor:target {
+        border: 0px solid green;
+    }
+}
+
+a.return-anchor,
+a.return-anchor:target {
+    border: 0px solid red;
+}
+
+a.endnote,
+a.endnote:target {
+    border: 0px solid red;
+}
+
+
+
+
+
+
+
+/* end */

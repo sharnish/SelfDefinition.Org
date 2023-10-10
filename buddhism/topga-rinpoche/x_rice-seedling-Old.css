@@ -1,0 +1,314 @@
+/* file:  /buddhism/togpa-rinpoche/_rice-seedling-sparse.css 
+
+CSS file accidentally deleted, replaced with this
+
+Copied fresh from White and Black Oct 14, 2019
+
+Old stuff here:
+*/
+/* background selfdefinition-responsive default is #fcfeff */
+html, body, #fixed-header-small-screen, #menu-site-small-screen {background:#fff9f9;}
+
+ /* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+ /* color must contrast with body */
+ #nav .menu-section a.active, #menu-scroll, #menu-scroll a  {background: #dedeff;}
+
+
+
+
+
+/* there are no "return--anchor" positioning in the following. Find these in "_drop-in.css" if needed
+	Successful models are Transmission and Stuart Lachs
+*/
+
+
+
+/* October 2019 update, model is White and Black, start copy here */
+
+/* tweaks */
+
+header p {line-height:1.9em;}
+
+/* hide the scrollbar */
+#menu-container::-webkit-scrollbar { display: none; }
+ 
+
+#menu-scroll {margin-top:50px;}
+
+
+/* test to get rid of scrollbar on MS phone
+body { overflow-y: hidden; } < identifies the element, but need to scroll
+Here's the fix:
+https://medium.com/@beraliv/scrollbar-customisation-31bd28652e9
+WINDOWS PHONE ONLY, OTHERWISE THERE IS NO SCROLLBAR */
+body {scrollbar-width: thin;}
+
+
+/* add class */
+.strong {font-weight:bold;}
+
+/* Deemphasize <strong> a little */
+strong, .strong {font-size:95%;}
+
+/* other font sizes */
+p.logo {font-size:85%;color:maroon;}
+
+p.note, div.note, .note {font-size:90%}
+
+p.fnote, div.fnote, .fnote {font-size:90%}
+
+.note80 {font-size:80%}
+
+.tiny {font-size:70%;}
+
+blockquote, p.blockquote, div.blockquote {margin-left:12px;margin-right:8px;}
+
+@media only screen and (max-width:500px)
+{
+    p.note, div.note, .note {font-size:95%}
+
+	p.fnote, div.fnote, .fnote {font-size:95%}
+
+	.note80 {font-size:90%}
+
+    .tiny {font-size:80%;}
+
+    blockquote, p.blockquote, div.blockquote {margin-left:4px;margin-right:4px;}
+}
+@media only screen and (max-width:360px)
+{
+    blockquote, p.blockquote, div.blockquote {margin-left:2px;margin-right:0;}
+}
+
+
+/* shrink the top elements a bit */
+@media only screen and (max-width: 767px)
+{
+    p.logo {margin-bottom:3px;}
+
+    .title-image-div {margin:0 auto;}
+
+    .title-image {width: 80%;max-width: 140px;}
+
+    header h3 span.block {margin-bottom:0;}
+}
+@media only screen and (max-width: 600px)
+{
+    nav.next-previous-item-nav {margin-top:0; margin-bottom:20px;}
+}
+
+/* why is this necessary? These are default, but margins are zero when stacked.*/
+p.toowide {margin-top:1em;margin-bottom:1em;}
+
+
+/* INVERTED EXCLAMATION MARK-SPANISH ONLY
+For font sans-serif the character does not look like regular "i".
+Without positioning, it hangs too low. Need to test on phone. */
+.sans {font-family:sans-serif; position: relative; top: -0.15ex; }
+
+/* already have this for "*" */
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+/* default .normal only has font-weight */
+.normal {font-style:normal}
+
+/* make more room at top of page, first heading, new class "first-totop" */
+/* add class as follows:    Aug 30, 2019
+NOT IMPLEMENTED YET
+<p class="totop-above-anchor first-totop">
+*/
+p.first-totop {top:0;margin-top:0;}
+
+h4.top-heading {margin-top:-20px;}
+
+
+/* this is the left-side menu */
+#menu-site {margin-top:30px;}
+
+#menu-site li.scroll-menu-item {font-size: 11px;}
+
+/* NEXT-PAGE NAV */
+/* Need to specify align-left and align-right because of default CSS sheet
+   Discovered Aug 9, 2019
+*/
+ul.next-previous-item-list, ul.next-previous-item-list li.align-left, ul.next-previous-item-list li.align-right
+	{font-size:90%;}
+
+ul.next-previous-item-list {margin-top:0;margin-bottom:0;}
+
+/* can increase font size if titles are short; default is 80%
+ul.next-previous-item-list {font-size:85%;}*/
+/* darken the blue link as background is blue. Default is #2277dd*/
+ul.next-previous-item-list a:link,
+ul.next-previous-item-list a:visited {color: #400000;}
+/* but shrink on phones  GENERALLY NOT NEEDED, NEED TO CHECK
+@media only screen and (max-width: 500px)
+{
+    ul.next-previous-item-list, ul.next-previous-item-list li.align-left, ul.next-previous-item-list li.align-right
+	{font-size:85%;}
+}
+*/
+/* NEEDED because the elements rely on floats in the default */
+li.align-left, li.align-right {border:0px solid green;}
+li.align-left {text-align:left;}
+li.align-right {text-align:right;}
+
+/* default is 5px but layout now puts them farther from the edges */
+@media only screen and (max-width:500px){
+.next-previous-item-list li.align-left {margin-left:0;}
+.next-previous-item-list li.align-right {margin-right:0;}
+}
+
+/* this fixes the next-previous nav on very narrow screens */
+#article {clear:both;}
+
+/* PAGE-LINKS */
+ul.page-links {width:300px; margin:0 auto; border:1px solid blue;}
+
+.page-links li {width:inherit;}
+
+.page-links li a {width:auto;}
+
+/* must have this or viewport will be screwed up on narrow screens
+   MUST be on a page if page-links width is specified on that page */
+@media only screen and (max-width:320px)
+{
+	ul.page-links {
+		width: 100%;
+	}
+}
+/* PAGE-LINKS - margins */
+/* There is no default margin in selfdef-response
+   (default top and bottom padding is 5px)
+If spaced wide, don't need the extra height */
+ul.page-links li {margin-top:5px; margin-bottom:5px;}
+
+@media only screen and (max-width: 767px)
+{
+    ul.page-links li {margin-top:10px; margin-bottom:10px;}
+}
+
+
+/* Added Apr 19, 2019, don't show left menu when printing
+	Added to selfdefinition-responsive, line 536.
+	Keep this in "drop-in" css template at least 6  months to avoid CSS cache problems */
+@media only print {
+	#menu-panel {display:none;}
+	#main-content {width:100%; position:absolute; top:0; left:10px;}
+	#article, article, #announce, section, aside {width:100%;}
+	div.title-image-div, img.title-image  {display:block; margin:10px auto; width:210px;}
+}
+
+/* TEXT SIZE */
+/* try to get more on phones reducing the font size from 18px to 17px */
+/* Pixl 2 = 411 ; Iphone X = 375px; Nexus 5 = 360 ;  */
+/* Iphone 4 = 320px */
+@media only screen and (max-width: 320px)
+{
+ article {font-size:17px;}
+}
+
+
+/* Edge screen width adjustments */
+/* MUST PUT IN A MEDIA QUERY, or it SCREWS UP right edge of LARGE SCREENS */
+@media only screen and (max-width:540px) {
+    #main-content-relative {padding-left:18px;padding-right:16px;}
+}
+
+/* Most but not all Edge screens have width of 360px, need to verify. So not needed if smaller. */
+@media only screen and (max-width: 359px) {
+    #main-content-relative {padding-left:13px; padding-right:10px;}
+}
+/* this is new Aug 11, 2019 need to test more
+   For S7 Edge */
+@media only screen and (max-width: 767px) {
+	#menu-site-small-screen {position:relative;}
+	#menu-site-small-screen {left:10px;}
+}
+
+
+/* TOP MENU ANOMALY FIX */
+/* NOTE: DIDN'T FIX THE ANOMALY - NOT ENOUGH TIME TO INVESTIGATE,
+   SO JUST SHORTENED THE LAST MENU ITEM. */
+/* large screen default, not actually needed because it's invisible there 
+#menu-site-small-screen {position:relative;}     <<< was this necessary?  
+#fixed-header-small-screen {position:relative;} << NO, CAUSES TOP MENU TO SCROLL */
+
+
+@media only screen and (max-width: 767px) {
+    #menu-panel {width:100%;}
+    #fixed-header-small-screen, #menu-site-small-screen
+        {width:540px;}
+        /* random test, get rid of max-width, I don't understand it
+        See above, already is the default max-width:initial; */
+
+    /* is this necessary? comment out sep 6 test
+    #menu-site-small-screen  {position:relative;} */
+    /* next is for Edge screens like S7 */
+    #menu-site-small-screen {left:10px;}
+}
+/* now override the above media query for 600px; a repeat of the default is necessary */
+/* Calc () added Aug 21, 2019 because left edge position is 10px;
+   Use on so far: Garma Chang, Shiva Sutras, Stuart Lachs  */
+@media only screen and (max-width: 600px) {
+    #fixed-header-small-screen, #menu-site-small-screen
+    {width:520px;}
+}
+@media only screen and (max-width: 540px) {
+    #fixed-header-small-screen,
+    #menu-site-small-screen
+    {width: calc(100% - 10px);}
+}
+
+
+/* TOP MENU FIX Sep 5, 2019 */
+#fixed-header-small-screen   {border:0px solid blue;}
+#menu-site-small-screen      {border:0px solid red;}
+#main-content                {border:0px solid maroon;}
+#menu-site-small-screen li   {border:0px solid green;}
+
+#this-page-test-link {display:none;}
+
+#menu-site-small-screen li              {margin-right:15px}
+#menu-site-small-screen li:last-child   {margin-right:0;}
+
+@media only screen and (max-width:330px) 
+{
+    #menu-site-small-screen .conditional-hide {display:none;}
+}
+
+/* With "totop" link, menu always has 2 or 3 lines, or with single line use 75/76 px */
+@media only screen and (max-width: 767px)
+{
+	/* NO - FORCES A 2ND LINE TOOL EARLY
+    #fixed-header-small-screen {width:auto;} */
+    #menu-site-small-screen {width:calc(100% - 5px);}
+
+	#fixed-header-small-screen,
+    #menu-site-small-screen {top:0px;height:105px;}
+    #main-content           {top:106px;}
+}
+
+/* shrink the menu items a little */
+@media only screen and (max-width: 510px)
+{
+    #menu-site-small-screen li {margin-right:5px}
+}
+/* RICE SEEDLING
+not used, top menu is always 2 lines 
+@media only screen and (max-width: 470px)
+{
+    #fixed-header-small-screen,
+    #menu-site-small-screen {height:105px;}
+    #main-content           {top:106px;}
+}
+*/
+
+
+/* end */
+
+

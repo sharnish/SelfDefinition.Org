@@ -1,0 +1,34 @@
+# .htaccess file for selfdefinition.org/celibacy/bernard/ 
+
+######################## 
+# ref: http://www.htaccesstools.com/hotlink-protection/
+# ref: https://hostingcanada.org/hotlink-prevention-techniques/
+# https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html
+# guy stealing image
+# article on Bernard  https://www.realismofantastico.net/search/label/Raymond%20Bernard
+#RewriteEngine On
+#RewriteCond %{HTTP_REFERER} !^$
+# the following means www or subdomain: (.+\.)?
+#RewriteCond %{HTTP_REFERER} !^http(s)?://(.+\.)?selfdefinition\.org/ [NC]
+#RewriteRule .*\.(jpeg|jpg|gif|bmp|png)$ /images/dont-hotlink-asshole.png [L]
+
+# or: RewriteRule \.(gif|jpg)$ http://www.yourdomainname.com/hotlink.jpg [R,L]
+# or: RewriteCond %{HTTP_REFERER} !^http://(www\.)?yourdomainname.com/.*$ [NC]
+# or just:  RewriteRule \.(gif|jpg|css)$ - [F]
+
+
+Redirect 301 "/celibacy/bernard/physiological-value-of-continence-part-1-opinion-vs-evidence.htm"  "/celibacy/bernard/continence-1-opinion-vs-evidence.htm"
+
+Redirect 301 "/celibacy/bernard/physiological-value-of-continence-part-2-neurosis-psychosis.htm"  "/celibacy/bernard/continence-2-neurosis-psychosis.htm"
+
+Redirect 301 "/celibacy/bernard/physiological-value-of-continence-part-3-chemistry.htm"  "/celibacy/bernard/continence-3-chemistry.htm"
+
+Redirect 301 "/celibacy/bernard/physiological-value-of-continence-more-information.htm"  "/celibacy/bernard/contents.htm"
+
+# do hotlink trick
+# Redirect 301 "/celibacy/bernard/dr-raymond-w-bernard-1943.jpg"  "/celibacy/bernard/images/dr-raymond-w-bernard-1943.jpg"
+
+
+# end
+
+

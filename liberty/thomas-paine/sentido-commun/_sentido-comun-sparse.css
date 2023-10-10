@@ -1,0 +1,52 @@
+/*     File:  /liberty/thomas-paine/sentido-commun/_sentido-comun-sparse.css:     
+
+	Update July 27, 2022, incomplete. Update October 17, 2022	
+*/
+
+@media only print {
+	#article:after {
+		content: "Update October 17, 2022";
+	}
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #e6ffef;
+}
+
+
+/*********** spanish version *****************/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+	background: #efe;
+}
+
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c0d4fc;
+	/* nice blue, goes with the green */
+
+}
+
+
+
+/* end */

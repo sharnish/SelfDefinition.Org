@@ -1,0 +1,403 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2.3 Los conductores de masas y sus medios de persuasión</title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="2.3 Los conductores de masas y sus medios de persuasión">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="2-2-factores-inmediatos.htm">
+	<link rel="next" href="2-4-limitaciones-de-la-variabilidad.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 375px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:380px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		label[for=element-toggle-20],
+		label[for=element-toggle-21],
+		label[for=element-toggle-22] {
+			cursor: pointer;
+		}
+
+		#element-toggle-20,
+		#element-toggle-21,
+		#element-toggle-22 {
+			display: none;
+		}
+
+		#element-toggle-20:not(:checked)~#toggled-element-20,
+		#element-toggle-21:not(:checked)~#toggled-element-21,
+		#element-toggle-22:not(:checked)~#toggled-element-22 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3 class="toowide">
+										<span class="block">Libro 2 Capítulo 3</span> Los conductores de masas y sus medios de persuasión
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/2-3-leaders-means.htm">..2-3-leaders-means.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="2-2-factores-inmediatos.htm">&lt; Los factores inmediatos</a></li>
+									<li class="align-right"><a href="2-4-limitaciones-de-la-variabilidad.htm">Limitaciones de la variabilidad &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#conductores">1. Los conductores de masas</a></li>
+									<li><a href="#medios">2. Los medios de acción de los conductores: afirmación, repetición, contagio</a></li>
+									<li><a href="#prestigio">3. Prestigio</a></li>
+								</ul>
+							</nav>
+							<p>
+								Estamos ahora familiarizados con la constitución mental de las masas y también sabemos cuales son los motivos capaces de impresionar sus mentes. Queda por investigar cómo estos motivos pueden ser puestos en acción y por quiénes pueden ser útilmente puestos en práctica.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="conductores">&nbsp;</a>
+							<h4>
+								1. Los conductores de masas
+							</h4>
+							<p>
+								Ni bien se junta cierto número de seres vivientes, tanto sean animales como seres humanos, instintivamente se colocan bajo la autoridad de un jefe.
+							</p>
+							<p>
+								En el caso de las masas humanas el jefe con frecuencia no es nada más que un pandillero o un agitador, pero como jefe juega un papel importante. Su voluntad es el núcleo alrededor del cual obtienen identidad y se agrupan las opiniones de la masa. Constituye el primer elemento para la organización de masas heterogéneas y allana el camino para su organización en sectas. En el ínterin, las dirige. Una masa es un rebaño servil, incapaz de estar sin un amo.
+							</p>
+							<p>
+								El conductor con mucha frecuencia ha comenzado siendo uno de los conducidos. Él mismo ha sido hipnotizado por la idea en cuyo apóstol se ha convertido. Ha tomado posesión de él en tal grado que todo lo que está fuera de ella desaparece y toda opinión en contrario le parece un error o una superstición. Un ejemplo que hace al caso es el de Robespierre, hipnotizado por las ideas filosóficas de Rousseau y empleando los métodos de la Inquisición para propagarlas.
+							</p>
+							<p>
+								Los conductores de los cuales estamos hablando son con mayor frecuencia hombres de acción que pensadores. No están provistos de una clara capacidad de previsión, ni podrían estarlo ya que esta cualidad por lo general conduce a la duda y a la inactividad. Resultan reclutados especialmente de las filas de aquellas personas eternamente nerviosas, excitables, medio degeneradas que bordean la locura. Por más absurda que sea la idea que sustentan o la meta que persiguen, sus convicciones son tan fuertes que todo razonamiento es tiempo perdido con ellos. El rechazo y la persecución no los afectan, o bien sólo sirven para excitarlos aún más. Sacrifican su interés personal, su familia - todo. El mismo instinto de autoconservación está completamente bloqueado en ellos, y a tal punto que con frecuencia la única recompensa que solicitan es la del martirio. La intensidad de su fe le otorga un gran poder de sugestión a sus palabras. La multitud está siempre dispuesta a escuchar al hombre de fuerte voluntad que sabe como imponérsele. Las personas reunidas en una masa pierden toda fuerza de voluntad y se dirigen instintivamente hacia la persona que posee la cualidad de la que ellos carecen.
+							</p>
+							<p>
+								Las naciones nunca han carecido de conductores pero de ninguna manera la totalidad de ellos ha estado animada por aquellas firmes convicciones que son las propias de los apóstoles. Estos conductores son con frecuencia sutiles retóricos, que buscan solamente su propio interés personal tratando de persuadir mediante el halago a los bajos instintos. La influencia que pueden ejercer de esta manera puede ser muy grande pero es siempre efímera. Los hombres de ardiente convicción que han inspirado el alma de las masas, los Pedro el Ermitaño, los Lutero, los Savonarola, los hombres de la Revolución Francesa, sólo han ejercido su fascinación después de haber sido ellos mismos fascinados en primer lugar por un credo. Después de ello han sido capaces de hacer emerger en las almas de sus congéneres esa formidable fuerza conocida como fe que convierte al hombre en un absoluto esclavo de su sueño.
+							</p>
+							<p>
+								El despertar la fe - ya sea religiosa, política o social, ya sea la fe en una tarea, una persona o una idea - ha sido siempre la función de los grandes conductores de masas y es por ello que su influencia ha sido siempre muy grande. De todas las fuerzas a disposición de la humanidad, la fe ha sido siempre una de las más tremendas y el Evangelio con justa razón le atribuye el poder de mover montañas. El dotar a una persona con fe es multiplicar su fuerza por diez. Los grandes acontecimientos de la historia fueron producidos por oscuros creyentes quienes, aparte de su fe, tenían muy poco a su favor. No es con la ayuda de los instruidos, o de los filósofos, y menos aún de los escépticos, que surgieron las grandes religiones que convirtieron al mundo o los vastos imperios que se extendieron de un hemisferio a otro.
+							</p>
+							<p>
+								Sin embargo, en los casos citados tenemos a grandes conductores y éstos son tan escasos que la Historia los puede reconocer con facilidad. Forman la cúspide de una serie continua que se extiende desde estos poderosos amos de hombres hasta el trabajador que en la brumosa atmósfera de una posada lentamente fascina a sus camaradas martilleándole incesantemente en los oídos un conjunto reducido de frases, cuyo propósito apenas si comprende, pero cuya aplicación, de acuerdo con él, tiene que traer consigo seguramente la realización de todos los sueños y de todas las esperanzas.
+							</p>
+							<p>
+								En toda esfera social, desde la alta hasta la más baja, ni bien una persona deja de estar aislada, rápidamente cae bajo la influencia de un conductor. La mayoría de las personas, especialmente entre las masas, no posee ideas claras y razonadas sobre cualquier asunto, aparte de las relacionadas con su especialidad. El conductor les sirve de guía. Es tan sólo posible que pueda ser reemplazado por las publicaciones periódicas que fabrican opiniones para sus lectores proveyéndolos de frases hechas que les evitan el trabajo de razonar.
+							</p>
+							<p>
+								Los conductores de masas ostentan una autoridad muy despótica y este despotismo es, verdaderamente, una condición para obtener un séquito. Con frecuencia se ha destacado la facilidad con la que imponen obediencia de la sección más turbulenta de las clases trabajadoras a pesar de carecer de todo medio que respalde su autoridad. Fijan las horas de trabajo y los salarios, y decretan huelgas que comienzan y terminan a la hora que ellos ordenan.
+							</p>
+							<p>
+								En la actualidad, estos líderes y agitadores tienden más y más a usurpar el lugar de las autoridades públicas en la misma medida en que estas últimas permiten ser cuestionadas y disminuidas en fuerza. La tiranía de estos nuevos amos tiene por resultado que las masas los obedecen con mucha mayor docilidad que la que han tenido para con cualquier gobierno. Si, por cualquier accidente, los conductores son removidos de la escena, la masa retorna a su estado original de colectividad sin cohesión o fuerza de resistencia. Durante la última huelga de los empleados de los ómnibus de París, el arresto de los dos líderes que la dirigían fue instantáneamente suficiente para terminarla. No es la necesidad de libertad sino la de servidumbre la que siempre predomina en el alma de las masas. Están tan inclinadas a la obediencia que instintivamente se someten a quienquiera que declare ser su amo.
+							</p>
+							<p>
+								Estos pandilleros y agitadores pueden ser claramente divididos en dos clases. La primera incluye a los hombres enérgicos que poseen, aunque sólo intermitentemente, mucha fuerza de voluntad; la otra a aquellos, por lejos más escasos que los anteriores, cuya fuerza de voluntad es duradera. Los primeros son violentos, bravíos y audaces. Son especialmente más útiles para dirigir una empresa violenta decidida de improviso, para arrastrar consigo a las masas a pesar del peligro y a transformar en héroes a los hombres que hasta ayer no más eran reclutas. Hombres de este tipo fueron Ney y Murat bajo el Primer Imperio y un hombre así en nuestro tiempo fue Garibaldi, un aventurero sin talento pero enérgico que consiguió, con un puñado de hombres, hacerse del antiguo reino de Nápoles a pesar de que estaba defendido por un ejército disciplinado.
+							</p>
+							<p>
+								Aún así, a pesar de que la energía de los conductores de esta clase es una fuerza a tener en cuenta, resulta transitoria y apenas si sobrevive a la causa incitante que la ha puesto en juego. Una vez que han retornado al curso natural de sus vidas, los héroes animados por esta clase de energía frecuentemente evidencian, como fue el caso de quienes acabo de citar, la más asombrosa debilidad de carácter. Parecen ser incapaces de reflexión y de conducirse bajo las circunstancias más simples a pesar de que fueron capaces de conducir a otros. Estos hombres son conductores que no pueden ejercer su función excepto bajo la condición de ser conducidos ellos mismos y continuamente estimulados, teniendo siempre por inspiración a otro hombre, o a una idea, para poder seguir teniendo una línea de conducta claramente trazada. La segunda categoría de conductores, la de los hombres con una perdurable fuerza de voluntad, tiene, a pesar de un aspecto menos brillante, una influencia mucho más considerable. En esta categoría es dado hallar a los verdaderos fundadores de religiones y grandes empresas: San Pablo, Mahoma, Cristóbal Colón y de Lesseps, por ejemplo. Que sean inteligentes o de mente estrecha no tiene importancia; el mundo les pertenece. La persistente fuerza de voluntad que poseen es una facultad tremendamente rara y tremendamente poderosa ante la cual todo cede. No siempre se aprecia adecuadamente lo que una voluntad fuerte y continua es capaz de lograr. Nada se le resiste; ni la naturaleza, ni los dioses, ni los hombres.
+							</p>
+							<p>
+								El ejemplo más reciente de lo que puede lograrse por medio de una voluntad fuerte y continua nos lo ofrece el ilustre hombre que separó los mundos Occidental y Oriental, logrando lo que durante tres mil años había sido intentado en vano por los más grandes soberanos. Más tarde falló en una empresa idéntica, pero allí ya intervino la avanzada edad ante la cual todo, incluso la voluntad, sucumbe.
+							</p>
+							<p>
+								Cuando se desea mostrar lo que puede ser logrado a pura fuerza de voluntad, todo lo que se necesita hacer es relatar en detalle la historia de las dificultades que tuvieron que ser vencidas durante la construcción del Canal de Suez. Un testigo ocular, el Dr. Cazalis, ha resumido en algunas impactantes líneas toda la historia de esta gran trabajo citando las palabras de su inmortal autor.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Día por día, episodio por episodio, relató la estupenda historia del canal. Relató todo lo que tuvo que vencer, lo imposible que tuvo que hacer posible, la oposición que encontró, la coalición que se formó en su contra y los desencantos, los reveses y las derrotas que no consiguieron descorazonarlo o deprimirlo. Recordó como Inglaterra lo había combatido atacándolo sin cesar, como Egipto y Francia habían vacilado, cómo el Cónsul francés se había destacado por su oposición durante las primeras etapas de la obra y la naturaleza de la oposición con la cual se encontró; del intento de hacer que sus obreros desertaran negándoles el agua fresca; cómo el Ministro de Marina y los ingenieros - todos hombres responsables y con entrenamiento científico - habían sido todos naturalmente hostiles, convencidos sobre bases científicas que el desastre era inminente, calculando su ocurrencia, prediciéndolo como se prevé el día y la hora de un eclipse.&quot;
+								</p>
+							</blockquote>
+							<p>
+								El libro que relatase la vida de todos estos grandes conductores no contendría muchos nombres, pero estos nombres se conectan con los sucesos más importantes de la historia de la civilización.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="medios">&nbsp;</a>
+							<h4 class="toowide">
+								2. Los medios de acción de los conductores: afirmación, repetición, contagio.
+							</h4>
+							<p>
+								2. Los medios de acción de los conductores: afirmación, repetición, contagio.
+							</p>
+							<p>
+								Cuando se quiere exaltar a una masa por un corto período de tiempo, inducirla a cometer un acto de cualquier naturaleza - saquear un palacio, o morir en defensa de una fortaleza o una barricada, por ejemplo - hay que actuar sobre la masa por medio de sugestiones rápidas entre las cuales el ejemplo es el de más poderoso efecto. Para lograr este fin, sin embargo, es necesario que la masa haya sido previamente preparada por ciertas circunstancias y, sobre todo, que quien desea operar sobre ella posea la cualidad que se estudiará más adelante y a la cual le he dado el nombre de prestigio.
+							</p>
+							<p>
+								Sin embargo, cuando el propósito es el de imbuir la mente de una masa con ideas y creencias - por ejemplo, con teorías sociales modernas - los conductores recurren a expedientes diferentes. Los principales de ellos son tres y se definen claramente: afirmación, repetición, contagio. Su acción es algo lenta, pero sus efectos, una vez producidos, resultan muy duraderos.
+							</p>
+							<p>
+								La afirmación pura y simple, mantenida libre de todo razonamiento y de toda prueba, es uno de los medios más seguros de hacer que una idea entre en la mente de las masas. Mientras más concisa sea la afirmación, mientras más carente de cualquier apariencia de prueba y demostración, mayor peso tendrá. Los libros religiosos y los códigos legales de todas las épocas siempre recurrieron a la afirmación simple. Estadistas en tren de defender una causa política y comerciantes promoviendo la venta de sus productos mediante anuncios, están todos familiarizados con el valor de la afirmación.
+							</p>
+							<p>
+								Sin embargo, la afirmación no tiene influencia real a menos que sea constantemente repetida y, en la medida de lo posible, en los mismos términos. Creo que fue Napoleón quien dijo que hay una sola figura en retórica que tiene verdadera importancia: la repetición. La cosa afirmada se fija por repetición en la mente de tal manera que al final es aceptada como si fuese una verdad demostrada.
+							</p>
+							<p>
+								La influencia de la repetición sobre las masas se hace comprensible cuando se ve el poder que ejerce sobre las mentes más ilustradas. Este poder se debe a al hecho que la afirmación repetida se incrusta a la larga en aquellas profundas regiones de nuestro ser inconsciente en las cuales se forjan las motivaciones de nuestros actos. Al cabo de cierto tiempo ya hemos olvidado quién fue el autor de la afirmación repetida y terminamos por creerla. A esta circunstancia obedece el asombroso poder de los avisos. Cuando hemos leído cien, mil veces que el chocolate X es el mejor, nos imaginamos haberlo oído en muchos lugares y terminamos adquiriendo la certeza de que así es. Después de haber leído mil veces que el polvo de Y ha curado a las personas más ilustres de las enfermedades más agudas, nos sentimos tentados por lo menos a probarlo si sufrimos una enfermedad de características similares. Si siempre leemos en los mismos diarios que A es un corrupto total y que B es un hombre absolutamente honesto, terminamos convencidos de que es verdad, a menos que, por supuesto, se nos dé a leer otro diario de tendencia contraria en el cual las calificaciones se hallen invertidas. Sólo la afirmación y la repetición son lo suficientemente poderosas como para combatirse mutuamente.
+							</p>
+							<p>
+								Cuando una afirmación ha sido suficientemente repetida y hay unanimidad en esta repetición -como ha ocurrido en el caso de ciertas famosas operaciones financieras lo suficientemente ricas como para comprar todo apoyo - se forma lo que se llama una opinión establecida e interviene el poderoso mecanismo del contagio. Ideas, sentimientos, emociones y creencias poseen en las masas un poder de contagio tan intenso como el de los microbios. Este fenómeno es muy natural, ya que es observable hasta en animales cuando están juntos en gran número. Si en un establo un caballo comienza a morder a su dueño, los demás caballos lo imitarán. El pánico que ha atacado a unas pocas ovejas pronto se contagiará a todo el rebaño. En el caso de seres humanos apiñados en una muchedumbre, todas las emociones son fuertemente contagiosas, lo cual explica el carácter súbito de los pánicos. Desórdenes mentales, como la locura, son en si mismos contagiosos. Es notoria la frecuencia de la locura entre médicos que son especialistas en demencia. Más aún, hay formas de desorden mental recientemente descriptas - la agorafobia por ejemplo - que son transmisibles del hombres a los animales.
+							</p>
+							<p>
+								Para que los individuos sucumban al contagio no es indispensable su presencia simultánea en el mismo lugar. La acción del contagio puede hacerse sentir a la distancia bajo la influencia de eventos que le otorgan a todas las mentes una tendencia precisa y las características peculiares de las masas. Este es especialmente el caso cuando las mentes de las personas han sido preparadas para someterse a la influencia en cuestión por aquellos factores remotos que he estudiado más arriba. Un ejemplo de ello es el movimiento revolucionario de 1848 el cual, después de estallar en París, se extendió rápidamente por gran parte de Europa y sacudió a numerosos tronos.
+							</p>
+							<p>
+								La imitación, a la que tanta influencia se le atribuye en los fenómenos sociales, no es, en realidad, más que un simple efecto del contagio. Habiendo expuesto su influencia en otro lugar, me limitaré a reproducir lo que manifesté sobre el tema hace quince años. Desde entonces, mis observaciones han sido desarrolladas por otros autores en publicaciones recientes.
+							</p>
+							<blockquote>
+								<p>
+									&quot;El hombre, como los animales, posee una tendencia natural a la imitación. La imitación es una necesidad para él, siempre que la imitación sea bastante fácil. Es esta necesidad lo que hace tan poderosa la influencia de lo que se llama la moda. Tanto si es cuestión de opiniones, ideas, manifestaciones literarias, o simplemente de vestimentas, ¿cuántas personas son lo suficientemente audaces para ir en contra de la moda? Las masas son guiadas por ejemplos y no por argumentos. En todo período existe un pequeño número de individualidades que actúan sobre el resto y son imitados por la masa inconsciente. Es necesario, sin embargo, que estas individualidades no se hallen en un desacuerdo demasiado pronunciado con las ideas preexistentes. Si lo estuviesen, el imitarlas sería demasiado difícil y su influencia sería nula. Por esta misma razón también los europeos, a pesar de todas las ventajas de su civilización, tienen una influencia tan insignificante sobre los pueblos orientales; se diferencian de ellos en una medida demasiado grande. (Los orientales copiaron nuestra tecnología y no nuestra cultura sencillamente porque nuestra tecnología era más útil y más fácil de copiar. Ahora algunas modas en Occidente tratan de copiar la cultura de ellos porque, en nuestra decadencia cultural, la de ellos nos resulta más simple, más sencilla y más fácil a nosotros. (N. del T.))
+								</p>
+								<p>
+									&quot;La acción dual del pasado y la imitación recíproca hacen, en el largo plazo, tan similares a todas las personas de un país y de una misma época que, incluso en el caso de individuos que parecerían destinadas a escapar de esta influencia, tales como filósofos, personas instruidas y hombres de letras, el pensamiento y el estilo presentan un aire familiar que permite reconocer inmediatamente la época a la cual pertenecen. No es necesario hablar durante mucho tiempo con un individuo para obtener un conocimiento exhaustivo sobre qué es lo que lee, sus ocupaciones habituales y el entorno en el cual vive.&quot; <sup>[19]</sup>
+								</p>
+								<p class="fnote">
+									[19. Gustave Le Bon, &quot;L'Homme et les Societes&quot; (El Hombre y las Sociedades) 1881 - Vol II pág. 116.]
+								</p>
+							</blockquote>
+							<p>
+								El contagio es tan poderoso que impone a ciertos individuos no solamente determinadas opiniones sino también ciertas modas en el sentimiento. El contagio es la causa del rechazo que determinadas obras producen en cierto momento - el caso de &quot;Tannhauser&quot; puede ser citado - las cuales, unos pocos años más tarde, son admiradas por la misma razón y por los mismos que más las criticaban.
+							</p>
+							<p>
+								Las opiniones y las creencias de las masas son especialmente propagadas por contagio, pero nunca por razonamiento. Las concepciones actualmente predominantes entre las clases trabajadoras han sido adquiridas en las tabernas y son el resultado de afirmaciones, repeticiones y contagios siendo que, en realidad, el modo en que surgen las creencias de las masas de todas las épocas apenas si ha sido jamás distinto. Renan instituye con certeza una comparación entre los primeros fundadores del cristianismo y &quot;los trabajadores socialistas difundiendo sus ideas de taberna en taberna&quot;; mientras que Voltaire ya había observado en relación con la religión cristiana que &quot;por más de cien años sólo fue abrazada por la chusma más vil.&quot;
+							</p>
+							<p>
+								Se observará que en los casos análogos a los que acabo de citar, el contagio, después de haber operado sobre las clases populares, se extendió a las clases más altas de la sociedad. Esto es lo que vemos ocurrir actualmente con las doctrinas socialistas que están empezando a ser sostenidas por quienes serán sus primeras víctimas. El contagio es una fuerza tan poderosa que hasta el sentido del interés personal desaparece bajo su influencia.
+							</p>
+							<p>
+								Esta es la explicación al hecho de que toda opinión adoptada por el populacho siempre tiende a implantarse con gran vigor en los estratos sociales más altos, por más obvia que sea la absurdidad de la opinión triunfante. Esta reacción de las clases bajas sobre las altas es tan curiosa por la circunstancia de que las creencias de la masa siempre tienen su origen, en mayor o en menor medida, en alguna idea superior que muchas veces ha quedado sin influencia en la esfera en la cual ha surgido. Líderes y agitadores, subyugados por esta idea, se aferran a ella, la distorsionan y crean una secta que la distorsiona de nuevo, luego de lo cual la propagan entre las masas que llevan la deformación aún más lejos. Una vez convertida en verdad popular, la idea en cierto modo vuelve a sus fuentes y ejerce una influencia sobre la clase superior de una nación. A la larga es la inteligencia la que le da forma al destino del mundo, pero de un modo muy indirecto. Los filósofos que desarrollan ideas se can convertido en polvo hace rato para cuando, como resultado del proceso que acabo de describir, el fruto de sus reflexiones termina por triunfar.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="prestigio">&nbsp;</a>
+							<h4>
+								3. Prestigio
+							</h4>
+							<p>
+								Las ideas propagadas por afirmación, repetición y contagio reciben un gran poder debido a la circunstancia que, con el tiempo, adquieren esa misteriosa fuerza conocida como prestigio.
+							</p>
+							<p>
+								Todo lo que ha tenido poder de gobierno en el mundo, ya fuesen ideas u hombres, ha impuesto su autoridad mayormente por medio de esa fuerza irresistible expresada por la palabra &quot;prestigio&quot;. El término es uno de ésos cuyo significado puede ser comprendido por cualquiera, pero la palabra resulta empleada de maneras demasiado diferentes como para que sea fácil definirla. El prestigio puede involucrar sentimientos tales como admiración o temor. Ocasionalmente incluso estos sentimientos constituyen su base, pero puede perfectamente existir sin ellos. La mayor medida de prestigio es la que poseen los muertos, esto es, seres a los que no tememos -Alejandro, César, Mahoma o Buda, por ejemplo. Por el otro lado, existen seres ficticios a los cuales no admiramos - las monstruosas divinidades de los templos subterráneos de la India, por ejemplo - pero que no obstante nos impactan con un gran prestigio.
+							</p>
+							<p>
+								El prestigio, en realidad, es una suerte de dominio ejercido sobre nuestra mente por un individuo, una obra, o una idea. Este dominio paraliza enteramente nuestra facultad crítica y llena nuestro espíritu con asombro y respeto. El sentimiento provocado es inexplicable, como todos los sentimientos, pero parecería ser del mismo tipo que la fascinación ejercida sobre una persona hipnotizada. El prestigio es la fuente principal de toda autoridad. Ni dioses, ni reyes, ni mujeres han jamás reinado sin él.
+							</p>
+							<p>
+								Las distintas clases de prestigio pueden ser agrupadas bajo dos encabezamientos principales: prestigio adquirido y prestigio personal. El prestigio adquirido es el que resulta del nombre, la fortuna y la reputación. Puede ser independiente del prestigio personal. Por el contrario, el prestigio personal es algo esencialmente peculiar del individuo; puede coexistir con reputación, gloria y fortuna, o ser reforzada por ellas, pero es perfectamente capaz de existir en su ausencia.
+							</p>
+							<p>
+								El prestigio adquirido o artificial es, por mucho, el más común. El simple hecho de que un individuo ocupe una posición, posea cierta fortuna, u ostente ciertos títulos, lo imbuye de prestigio por más ínfimo que sea su valía personal. Un soldado uniformado, un juez con su túnica, siempre gozarán de prestigio. Pascal muy acertadamente ha notado la necesidad de que los jueces tengan túnicas y pelucas. Sin ellas estarían privados de la mitad de su autoridad. El socialista más recalcitrante siempre está algo impresionado a la vista de un príncipe o de un marqués y la usurpación de esos títulos siempre ha hecho de la estafa a los comerciantes una cuestión fácil.&nbsp;<sup>[20]</sup>
+							</p>
+							<label for="element-toggle-20">
+								[20. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-20" type="checkbox">
+							<div id="toggled-element-20" class="cfnote hidden">
+								<p>
+									[20. La influencia de títulos, decoraciones y uniformes sobre las masas se puede rastrear en todos los países, incluso en aquellos en los que el sentimiento de la independencia personal está más fuertemente desarrollada. En relación a esto, cito un curioso pasaje de un reciente libro de viajes, respecto del prestigio que gozan en Inglaterra los personajes importantes.&ndash;
+								</p>
+								<blockquote>
+									<p>
+										&quot;He observado bajo circunstancias variadas la peculiar suerte de intoxicación que se produce en los ingleses más razonables ante el contacto o la vista de un &quot;peer&quot; inglés.
+									</p>
+									<p>
+										&quot;Siempre y cuando su fortuna le permita mantener su rango, está seguro de su afecto de antemano y puestos en contacto con él se muestran tan encantados como para hacer cualquier cosa que esté a su alcance. Puede vérselos enrojecer de placer cuando se acerca y, si les habla, su gozo reprimido aumenta su rubor ocasionando que sus ojos resplandezcan con inusual brillo. El respeto por la nobleza está en sus sangres, por decirlo así, al igual que entre los españoles el amor a la danza, entre los alemanes el amor a la música y entre los franceses el gusto por las revoluciones. Su pasión por los caballos y por Shakespeare es menos violenta. La satisfacción y el orgullo que obtienen de estas fuentes es menos una parte integral de su ser. Hay una considerable venta de libros que tratan sobre los &quot;peers&quot; y vaya uno adónde vaya se los encuentra, como la Biblia, en todas las manos.&quot;]
+									</p>
+								</blockquote>
+							</div>
+							<p>
+								El prestigio del cual acabo de hablar es el ejercido por personas. En forma paralela se puede considerar el ejercido por opiniones, obras literarias y artísticas, etc. El prestigio de esta última clase es muchas veces tan sólo el resultado de repeticiones acumuladas. La Historia, especialmente la Historia literaria y artística, al no ser más que la reiteración de juicios idénticos que nadie se atreve a verificar, termina siendo lo que todo el mundo repite porque lo aprendió en la escuela, con nombres y cosas con las que nadie se atreve a meterse. Es innegable que, para el lector moderno, un estudio sobre Homero resulta tremendamente aburrido; pero ¿quién se atrevería a confesarlo? El Partenón en su estado actual es una ruina desolada, completamente carente de interés, pero está revestido de tal prestigio que no se nos aparece como realmente es sino con todo su cortejo de memorias históricas. La característica especial del prestigio es impedirnos ver las cosas como son y el paralizar por completo nuestro juicio. Las masas siempre, y los individuos por regla general, tienen necesidad de opiniones preestablecidas sobre todas las materias. La popularidad de estas opiniones es independiente de la medida de verdad o error que puedan contener y está regulada solamente por su prestigio.
+							</p>
+							<p>
+								Y llegamos ahora al prestigio personal. Su naturaleza es muy diferente del prestigio artificial o adquirido al que me acabo de referir. Es una facultad independiente de todos los títulos, de toda autoridad, y la posee un reducido número de personas a las cuales les permite ejercer una fascinación magnética sobre quienes las rodean, aún cuando socialmente sean sus iguales y carezcan de todos los usuales medios de dominación. Estas personas fuerzan la aceptación de sus ideas y sentimientos sobre quienes las rodean y resultan obedecidas como lo es la más mansa de las bestias salvajes por el animal que fácilmente podría devorarla.
+							</p>
+							<p>
+								Los grandes líderes de masas como Buda, Jesús, Mahoma, Juana de Arco y Napoleón poseyeron esta forma de prestigio en un alto grado y la posición que adquirieron se debe muy particularmente a este don. Los dioses, los héroes y los dogmas se abren camino en el mundo por su propia fuerza interior. No están para ser discutidos. Incluso desaparecen ni bien se los discute.
+							</p>
+							<p>
+								Los grandes personajes que acabo de mencionar poseyeron su poder de fascinación mucho antes de convertirse en ilustres y nunca se hubieran convertido en ilustres sin este poder. Es evidente, por ejemplo, que Napoleón, en la cumbre de su gloria, gozó de un enorme prestigio por el simple hecho de su poder, pero ya estaba imbuido de este prestigio cuando se hallaba sin poder y era completamente desconocido. Cuando, en calidad de oscuro general y gracias a la influencia de sus contactos, fue enviado a comandar el Ejército de Italia, se encontró con rudos generales que estaban predispuestos a darle una recepción hostil a ese joven intruso que les había sido endosado por el Directorio. Desde el mismo principio, desde la primer entrevista, sin recurrir a discursos, gestos o amenazas, a la primera vista del hombre que habría de ser grande, quedaron derrotados. Taine suministra un curioso relato de esta entrevista, tomado de memorias contemporáneas.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Los generales de división, entre otros Augereu - especie de bucanero, incivil y heroico, orgulloso de su altura y de su coraje - arriban al cuartel general muy mal predispuestos en contra del pequeño arribista que les ha sido despachado desde París. Sobre la base de la descripción que les ha sido dada, Augereau está inclinado a ser insolente e insubordinado; es un favorito de Barras, un general que debe su rango a los eventos del Vendimiario, alguien que se ha ganado el grado con peleas callejeras, alguien que es considerado parecido a un oso porque siempre está pensando en soledad, es de pobre aspecto y tiene reputación de matemático y de soñador. Se presentan y Bonaparte los hace esperar. Por fin aparece, espada al cinto, se pone su sombrero, explica las medidas que ha tomado, da sus órdenes y los despide. Augereau ha permanecido en silencio. Sólo cuando está afuera es que vuelve en si y es capaz de proferir sus acostumbradas maldiciones. Le admite a Massena que este pequeño demonio de general lo ha llenado de pavor; no puede comprender la causa por la cual, desde el primer momento, se ha sentido apabullado.&quot;
+								</p>
+							</blockquote>
+							<p>
+								Una vez convertido en gran hombre, su prestigio aumentó en la misma proporción en que crecía su gloria y al final terminó siendo al menos igual al de una divinidad en los ojos de quienes le eran devotos. El general Vandamme, un rudo, típico soldado de la Revolución, aún más brutal y enérgico que Augereau, le dijo al mariscal d'Arnano en 1815 cuando en una ocasión subían juntos las escaleras de las Tullerías: &quot;Ese demonio de hombre ejerce sobre mi una fascinación que no puedo explicarme ni siquiera a mi mismo y en tal medida que, incluso no teniéndole miedo ni a Dios ni al diablo, cuando estoy en su presencia estoy a punto de temblar como un niño y él podría hacerme pasar por el ojo de una aguja haciendo que me arroje al fuego.&quot;
+							</p>
+							<p>
+								Napoleón ejercía una fascinación similar sobre todos los que entraban en contacto con él.&nbsp;<sup>[21]</sup>
+							</p>
+							<label for="element-toggle-21">
+								[21. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-21" type="checkbox">
+							<div id="toggled-element-21" class="cfnote hidden">
+								<p>
+									[21. Profundamente consciente de su prestigio, Napoleón tenía en claro que lo aumentaba tratando a los grandes personajes que lo rodeaban de un modo casi peor que si fuesen peones de establo. Y eso que entre estos personajes figuraban algunos de aquellos celebrados hombres de la Convención que habían aterrorizado a Europa. Los chismes de la época abundan en ilustraciones de este hecho. Un día, en medio de un Consejo de Estado, Napoleón insulta groseramente a Beugnot, tratándolo como uno trataría a un valet mal educado. Una vez logrado el efecto, se le acerca y le dice: &quot;Y bien, estúpido, ¿has vuelto a encontrar tu cabeza?&quot;. Ante lo cual Beugnot, alto como un tambor mayor, hace una reverencia muy profunda y el pequeño hombre alza su mano, toma al larguirucho por la oreja con un &quot;intoxicante signo de favor, - escribe Beugnot - &quot;el gesto familiar de un Señor que derrama gracia&quot;. Estos ejemplos dan una clara idea del grado de vulgar banalidad que el prestigio puede provocar. Nos permiten comprender el inmenso desprecio del gran déspota por las personas de su entorno -personas a las cuales consideraba meramente como &quot;carne de cañón&quot;.]
+								</p>
+							</div>
+							<p>
+								Davoust solía decir, hablando de la devoción de Maret y de la suya propia:
+							</p>
+							<blockquote>
+								<p>
+									&quot;Si el Emperador nos hubiera dicho: 'Es importante en el interés de mi política que París sea destruida sin dejar escapar o salir a una sola persona' Maret y yo seguramente hubiéramos mantenido el secreto, pero él no se hubiera abstenido de comprometerlo haciendo que su familia dejase la ciudad. Por el contrario yo, por miedo a dejar filtrar la verdad, hubiera dejado que mi mujer y mis hijos se quedaran&quot;.
+								</p>
+							</blockquote>
+							<p>
+								Es necesario tener presente el extraordinario poder ejercido por una fascinación de este orden para comprender ese maravilloso regreso de la isla de Elba, esa conquista relampagueante de Francia por un hombre aislado enfrentando todas las fuerzas organizadas de un gran país que podía suponerse cansado de su tiranía. Tuvo solamente que echar una mirada a los generales enviados para detenerlo y que habían jurado cumplir con su misión. Todos se sometieron sin discusión.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Napoleón&quot; - escribe el general inglés Wolseley - &quot;desembarcó en Francia casi solo, como fugitivo de la pequeña isla de Elba que era su reino, y consiguió en unas pocas semanas, sin derramamientos de sangre, subvertir toda autoridad en la Francia organizada bajo su legítimo rey. ¿Es posible para el ascendiente personal de un hombre el afirmarse de una manera más asombrosa? Pero, desde el principio hasta el final de su campaña, que fue la última, ¡qué notable que es también el ascendiente que ejerció sobre los Aliados, obligándolos a seguir su iniciativa, y qué cerca estuvo de aplastarlos!&quot;
+								</p>
+							</blockquote>
+							<p>
+								Su prestigio le sobrevivió y continuó creciendo. Fue su prestigio que convirtió en emperador a su oscuro sobrino. El poder que su memoria tiene todavía puede verse en la resurrección de su leyenda que sigue aumentando aún al día de hoy. Maltrata a los hombres como quieras, masácralos por millones, conviértete en causa de invasión sobre invasión, todo te estará permitido si posees prestigio en un grado suficiente y el talento necesario para sostenerlo.
+							</p>
+							<p>
+								He invocado, sin duda, un ejemplo bastante excepcional de prestigio, pero uno que fue útil para dejar en claro la génesis de grandes religiones, grandes doctrinas y grandes imperios. Si no fuera por el poder ejercido sobre las masas por el prestigio, esos crecimientos serían incomprensibles.
+							</p>
+							<p>
+								Sin embargo, el prestigio no se basa solamente sobre el ascendiente personal, la gloria militar o el terror religioso. Puede tener un origen más modesto y aún así ser considerable. Nuestro siglo ofrece varios ejemplos. Uno de los más impactantes, que la posteridad recordará de época en época, será el ofrecido por la historia del ilustre hombre que modificó la cara del globo y las relaciones comerciales separando a dos continentes. Tuvo éxito en esta empresa gracias a su fuerza de voluntad, pero también debido a la fascinación que ejerció sobre todos los que lo rodeaban. Para sobreponerse a la unánime oposición que enfrentó, sólo tenía que mostrarse. Hablaría brevemente y, ante el encanto que ejercía, sus oponentes se convertían en sus amigos. Particularmente los ingleses se opusieron fuertemente a sus planes y sólo tuvo que aparecerse por Inglaterra para cosechar todos los votos. En años posteriores, cuando pasó por Southampton, se hicieron sonar las campanas a su paso y hasta el día de hoy existe un movimiento en Inglaterra para erigir una estatua en su honor.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Habiendo vencido todo lo que hay para vencer, personas y cosas, pantanos, rocas y desiertos arenosos&quot; dejó de creer en obstáculos y deseó repetir a Suez otra vez en Panamá. Comenzó de nuevo con los mismos métodos de antaño, pero había envejecido y, aparte de ello, la fe que mueve montañas no las mueve si son demasiado altas. Las montañas resistieron y la catástrofe que sobrevino destruyó la brillante aureola de gloria que envolvía al héroe. Su vida enseña como el prestigio puede crecer y cómo puede desvanecerse. Después de rivalizar con los más grandes héroes de la Historia, fue rebajado por los magistrados de su país al nivel de los más viles criminales. Cuando murió, su féretro, desatendido, pasó por una muchedumbre indiferente. Sólo soberanos extranjeros rinden homenaje a su memoria como a uno de los más grandes hombres que la Historia ha conocido.&nbsp;<sup>[22]</sup>
+								</p>
+							</blockquote>
+							<label for="element-toggle-22">
+								[22. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-22" type="checkbox">
+							<div id="toggled-element-22" class="cfnote hidden">
+
+								<p>
+									[22. Un diario austríaco, el <em>Neue Freie Presse</em> de Viena, se ha dedicado al tema del destino de Lesseps con reflexiones caracterizadas por una muy certera comprensión psicológica. Debido a ello las reproduzco aquí:&mdash;]
+								</p>
+								<blockquote>
+									<p>
+										&quot;Después de la condena de Ferdinand de Lesseps uno ya no tiene derecho a asombrarse del triste fin de Cristóbal Colón. Si Ferdinad de Lesseps fue un criminal, entonces toda noble ilusión es un crimen. La antigüedad hubiera coronado la memoria de de Lesseps con una aureola de gloria y le habría hecho beber de la fuente de néctar en medio del Olimpo, porque ha alterado el rostro de la tierra y logrado obras que han hecho más perfecta a la Creación. El Presidente de la Corte de Apelación se ha inmortalizado condenando a Ferdinand de Lesseps porque las naciones siempre demandarán saber el nombre del hombre que no tuvo miedo de humillar su siglo imponiéndole la capa de convicto a un anciano cuya vida redundó en la gloria de sus contemporáneos.
+									</p>
+									<p>
+										&quot;Que en el futuro no se hable más de justicia inflexible allí en dónde reina el odio burocrático por las conquistas audaces. Las naciones necesitan de hombres audaces que tienen fe en si mismos y se sobreponen a todo obstáculo sin consideraciones por su seguridad personal. Los genios no pueden ser prudentes. Por medio de la prudencia jamás se podrá agrandar la esfera de la actividad humana.
+									</p>
+									<p>
+										&quot;... Ferdinand de Lesseps conoció la intoxicación del triunfo y la amargura de la desilusión -Suez y Panamá. En este punto el corazón se rebela ante la moral del éxito. Cuando de Lesseps tuvo éxito en juntar dos mares, príncipes y naciones le rindieron su homenaje. Hoy, cuando se encuentra con el fracaso entre las rocas de las Cordilleras, no es más que un vulgar canalla... En este resultado vemos una guerra entre las clases de la sociedad, el descontento de los burócratas y empleados que se toman su venganza con la ayuda del código penal sobre quienes se alzarían por sobre sus semejantes ... Los legisladores modernos se llenan de embarazo cuando deben enfrentarse con las elevadas ideas propias del genio humano. El público comprende aún menos esas ideas, y es fácil para cualquier abogado haciendo de fiscal, probar que Stanley es un asesino y que de Lesseps es un estafador.&quot;
+									</p>
+								</blockquote>
+							</div>
+							<p>
+								Aún así, los diversos ejemplos que acaban de ser mencionados siguen representando casos extremos. Para fijar en detalle la psicología del prestigio, sería necesario ubicarlos en el extremo de una serie que abarcaría desde los fundadores de las religiones e imperios hasta el individuo privado que consigue asombrar a sus vecinos con un nuevo sobretodo o una nueva decoración.
+							</p>
+							<p>
+								Entre estos límites extremos de la serie tendrían su lugar todas las formas de prestigio que resultan de los diferentes elementos que componen una civilización - ciencias, artes, literatura, etc. - y se vería que el prestigio constituye un elemento fundamental de la persuasión. Conscientemente o no, el ser, la idea o la cosa que posee prestigio es inmediatamente imitada como consecuencia del contagio y obliga a toda una generación a adoptar ciertos modos de sentir o de expresar su pensamiento. Esta imitación es, además y por regla, inconsciente, lo cual explica que sea perfecta. Los pintores modernos que copian la pálida coloración y las rígidas actitudes de algunos primitivos son escasamente conscientes de las fuentes de su inspiración. Creen en su propia sinceridad mientras que, si un maestro famoso no hubiera revivido esta forma de arte, las personas hubieran permanecido ciegas a todo excepto a sus aspectos pueriles e inferiores. Aquellos artistas que, a la manera de otro ilustre maestro, inundan sus telas con sombras violetas no ven en la naturaleza más violeta que el que fue detectado en ella hace cincuenta años; pero están influenciados, &quot;sugestionados&quot;, por las impresiones personales y especiales de un pintor que, a pesar de su excentricidad, tuvo éxito en adquirir un gran prestigio. Ejemplos similares podrían ser traídos a colación en relación con todos los elementos de la civilización.
+							</p>
+							<p>
+								De lo que antecede se ve que son varios los factores que pueden estar relacionados con la génesis del prestigio; entre ellos el éxito ha sido siempre uno de los más importantes. Toda persona exitosa, toda idea que se impone, cesa, <em>ipso facto,</em> de ser cuestionada. La prueba de que el éxito es uno de los principales peldaños al prestigio es que la desaparición de uno casi siempre es seguida de la desaparición del otro. El héroe a quien la masa aclamó ayer es insultado hoy si ha sido víctima del fracaso. Más aún, la reacción será proporcionalmente tanto más grande mientras más alto haya sido el prestigio. En este caso la masa considera al héroe como a un igual y se toma su venganza por haberse inclinado ante una superioridad cuya existencia ya no admite más. Mientras Robespierre impulsó la ejecución de sus colegas y la de un gran número de sus contemporáneos, poseyó un inmenso prestigio. Cuando la transposición de unos pocos votos le quitó el poder, inmediatamente perdió su prestigio y la masa lo siguió a la guillotina con exactamente las mismas imprecaciones con las que poco antes había perseguido a sus víctimas. Los creyentes siempre rompen las estatuas de sus dioses anteriores con cada síntoma de furia.
+							</p>
+							<p>
+								El prestigio perdido por falta de éxito desaparece en poco tiempo. También puede gastarse, pero más lentamente, por quedar sujeto a discusión. Este último poder, sin embargo, es extremadamente seguro. Desde el momento en que el prestigio se cuestiona, deja de ser prestigio. Los dioses y los hombres que han mantenido su prestigio durante mucho tiempo jamás han tolerado la discusión. Para que la masa admire, hay que mantenerla a distancia.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="2-2-factores-inmediatos.htm">&lt; Los factores inmediatos</a></li>
+									<li class="align-right"><a href="2-4-limitaciones-de-la-variabilidad.htm">Limitaciones de la variabilidad &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sentido Común por Thomas Paine</title>
+	<meta name="description" content="Del origen y designio del gobierno en general, con unas breves observaciones sobre la constitución inglesa">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Sentido Común por Thomas Paine">
+	<meta property="og:description" content="Del origen y designio del gobierno en general, con unas breves observaciones sobre la constitución inglesa">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/thomas-paine/sentido-commun/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_sentido-comun-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="introduccion.htm">
+	<link rel="next" href="2-de-la-monarquia.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_sentido-comun-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_sentido-comun-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Del Gobierno
+									</h3>
+									<p class="tiny">English: <a href="../common-sense/1-of-government.htm">1-of-government.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduccion.htm">&lt; Introducción</a></li>
+									<li class="align-right"><a href="2-de-la-monarquia.htm">De la monarquia &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p style="font-variant: small-caps" class="center">On the origin and design of government in general, with concise remarks on the English Constitution</p>
+
+
+							<p><a></a>del origen y designio del gobierno en general, con unas breves observaciones sobre la constitución inglesa</p>
+
+							<p>Algunos escritores han confundido de tal modo la sociedad con el gobierno, que hacen muy poca o casi ninguna distinción entre ambas cosas, cuando no solamente son diferentes entre sí, sino que tienen también distinto origen. La sociedad es el resultado de nuestras necesidades, y el gobierno el de nuestras iniquidades: la primera promueve nuestra felicidad positivamente, uniendo nuestras afecciones, y el segundo negativamente, restringiendo nuestros vicios: la una activa el trato de los hombres, el otro cría las distinciones: aquélla es un protector, y éste un azote de la humanidad.</p>
+							<p>La sociedad en todos casos ofrece ventajas, al paso que el gobierno siendo un mal necesario en su mejor estado en su estado peor es intolerable; porque cuando nosotros sufrimos o estamos expuestos por causa del gobierno, a las mismas miserias que podíamos experimentar sin él, nuestras calamidades se aumentan con la reflexión de que hemos causado nuestros padecimientos, por los mismos medios con que pretendíamos evitarlos.</p>
+							<p>El gobierno es como el vestido, la divisa de la inocencia perdida; los palacios de los reyes están edificados sobre las ruinas del paraíso. Si el hombre obedeciera uniformemente los impulsos de la recta conciencia, no necesitaría de otro legislador; pero no siendo esto así, le es necesario sacrificar una parte de su propiedad para proveer a la seguridad y protección de las otras, siguiendo el dictamen de la prudencia, que le aconseja en este caso escoger de dos males el menor. Por tanto, siendo la seguridad el verdadero objeto y fin de los gobiernos, es consecuencia clara que será preferible a todas, aquella forma de gobierno que pueda garantirnos tan inapreciable bien, con el menor gravamen posible.</p>
+							<p>Para adquirir una clara y exacta idea del objeto del gobierno, supongamos un pequeño número de personas establecidas en un lugar apartado y desprendido del resto de la tierra; ellas representarán entonces a los primeros pobladores de un país, o del mundo. En este estado de natural libertad, la sociedad será su primer pensamiento; mil motivos inducirán a ello: las fuerzas de un hombre son tan desiguales a sus necesidades, y su espíritu tan incapaz de una perpetua soledad, que muy pronto se verá obligado a solicitar la asistencia y ayuda de otro que recíprocamente necesitará lo mismo de él, en igualdad de circunstancias. Cuatro o cinco individuos así reunidos podrán edificar una mediana choza en medio de un desierto; pero un hombre solo emplearía casi toda en vida en esta faena: cuando éste ya hubiese cortado la madera, no podría levantarla, ni transportarla a su antojo; el hambre entretanto le obligaría a dejar su trabajo, y sus diversas necesidades le llamarían a diferentes tareas. Las enfermedades y las desgracias serian para él todas mortales; porque aunque ni unas ni otras fuesen graves en realidad, le inhabilitarían con todo para vivir, y le reducirían a un estado, que más bien se puede llamar de muerte que de vida.</p>
+							<p>La necesidad, pues, reuniría en sociedad a estos primeros pobladores, los que permaneciendo siempre fieles a la virtud y a la justicia, vivirían felices sin el apoyo del gobierno, haciendo inútiles las obligaciones de la ley. Pero como la perfección solo se encuentra en el cielo, y los hombres son tan propensos al vicio, resultaría inevitablemente que a medida que fuesen superando las dificultades de la naturaleza, objeto de su unión, se irían desentendiendo de sus deberes, y relajando los vínculos de recíproca benevolencia, hasta hallarse en la necesidad de establecer una forma de gobierno, que supliese el defecto de virtudes morales.</p>
+							<p>Un árbol les serviría de casa consistorial, bajo cuyas ramas podría juntarse la población entera para deliberar sobre los asuntos</p>
+							<p>públicos. Es más que probable que sus primeras leyes tuviesen solamente el título de reglamentos, y que la única pena de su infracción seria la del descrédito público. En este primer parlamento todos los hombres tendrían asiento por derecho natural.</p>
+							<p>Pero a medida que la sociedad fuese prosperando, los negocios públicos se irían aumentando igualmente: los miembros de la comunidad se separarían con el aumento de la población; y la distancia seria un obstáculo para que en todas circunstancias se juntasen todos ellos como al principio, cuando su número era más pequeño, sus habitaciones mas vecinas y sus negocios públicos de corta entidad. Entonces se conocería la ventaja de consentir en que la parte legislativa fuese dirigida por un número de individuos escogidos en todo el cuerpo, los cuales tuviesen el mismo interés que los restantes, y obrasen del mismo modo que obraría el cuerpo todo, si estuviese presente. Continuando el aumento de la población, sería necesario aumentar también el número de representantes, y para bien atender al interés de cada parte de la comunidad, se haría indispensable dividir el todo en partes proporcionales, encomendando a cada representante un número competente: la prudencia indicaría igualmente la necesidad de hacer frecuentes elecciones, a fin de que los elegidos nunca pudiesen tener un interés diferente del de los electores; pues de este modo, pudiendo aquellos volver a entrar en la clase de estos, serían fieles al público por la imposibilidad de perpetuarse en el mando; y como esta frecuente permuta debe establecer un interés igual entre todas las partes de la comunidad, estas se sostendrían mutua y recíprocamente unidas. En esta unión es, pues, en lo que consiste la fuerza de un gobierno y la felicidad de los gobernados, no en el detestable nombre de rey.</p>
+							<p>He aquí el origen y nacimiento del gobierno, que solo es necesario en el mundo a falta de virtudes morales; su objeto y fin es la libertad y seguridad; y estos principios de justicia, dictados por la naturaleza y confirmados por la razón, serán eternos, por más que una brillante y pomposa apariencia deslumbre un momento nuestros ojos, por más que la armonía lisonjee nuestro oído, que las preocupaciones extravíen nuestra voluntad, y el interés particular ofusque nuestro entendimiento.</p>
+							<p>De un principio natural incontrovertible deduzco yo mi idea acerca del gobierno, y es: que la maquina más sencilla es la que está menos expuesta a descomponerse, y la que, una vez descompuesta, se repara con mayor facilidad guiado por esta máxima, haré unas breves observaciones sobre la famosa y decantada constitución inglesa. Convengamos en que fue buena, respecto a los tiempos de tinieblas y esclavitud en que se formó; porque cuando el mundo todo gemía agobiado bajo el peso de la tiranía, la menor mudanza hacia el bien era dar un paso a la libertad: pero es fácil demostrar que esta constitución es imperfecta, sujeta a convulsiones, e incapaz de producir lo que parece prometer.</p>
+							<p>Los gobiernos absolutos (aunque son una vergüenza de la naturaleza humana) tienen en sí la ventaja de ser sencillos; si el pueblo sufre, conoce bien la raíz de donde dimana su pena, y no está expuesto a confundirse y perderse en la variedad de causas y de remedios. Pero la constitución de Inglaterra está tan extremadamente complicada, que la nación puede sufrir por muchos años, sin poder descubrir en qué parte está el mal que le aqueja; unos dirán aquí, y otros acullá, y cada médico político recetará un emplasto diferente.</p>
+							<p>Yo bien conozco cuán difícil es desterrar las preocupaciones locales y arraigadas; con todo, si examinamos las partes de que se compone la constitución inglesa, hallaremos que sus cimientos son los escombros de dos antiguas tiranías, y que solo está compuesta de retazos, enmendada con algunas formas republicanas.</p>
+							<p>Primero: los restos de una monarquía tiránica en la persona del Rey.</p>
+							<p>Segundo: los restos de una monarquía aristocrática en las de los pares.</p>
+							<p>Tercero: las nuevas partes republicanas en las personas de la cámara de los Comunes, de cuya virtud pende la libertad de Inglaterra. Las dos primeras por ser hereditarias son independientes del pueblo; por cuya razón y en sentido constitucional, no contribuyen en nada a la felicidad del Estado.</p>
+							<p>Decir que la constitución inglesa es una unión de tres poderes, que se reprimen uno a otro, es una farsa, es cometer un círculo vicioso de ideas contradictorias. Decir que la cámara de los</p>
+							<p>Comunes coarta la facultad del rey, es suponer dos cosas. Primera: que no se debe fiar absolutamente del rey, sin recelar el abuso de su autoridad, y que el deseo vehemente de un poder absoluto es la enfermedad natural de la monarquía. Segunda: que la cámara de los Comunes, teniendo por objeto poner límites al poder absoluto, se considera o más sabia, mas digna de la confianza que la corona. Pero como la misma constitución que da a la cámara de los Comunes el poder de coartar las facultades del rey, negándole los auxilios que necesite, concede después a este otro poder para coartar a la cámara de los Comunes, autorizándole para rechazar sus proyectos de ley, se supone segunda vez que el rey es más sabio que aquellos a quienes antes se suponía más sabios que él: ¡que absurdo!</p>
+							<p>Hay cosas sumamente ridículas en la composición de la monarquía: Primero, se excluye a un hombre de los medios de instruirse en general, y en particular de los de informarse de asuntos en que debe deliberar; con todo se le autoriza para fallar en materias que requieren la mayor sabiduría el estado de un rey lo separa del mundo, y sin embargo, los negocios de un rey exigen que él conozca perfectamente a los hombres; por lo cual oponiéndose singularmente las diferentes acciones de su vida, y distinguiéndose unas a otras, se prueba que su carácter es absurdo e inútil.</p>
+							<p>Algunos escritores han explicado la constitución inglesa del modo siguiente: el rey, dicen ellos, es uno, y el pueblo es otro: los Pares forman una cámara a favor del primero, y los Comunes otra a favor del segundo; pero esto mismo prueba que el gobierno tiene todas las distinciones de una casa dividida interiormente; y aunque estas expresiones parezcan agradables al oído, en vano se pretendería desentrañarles el sentido por un análisis exacto de las complicadas ideas que contienen; porque dicho análisis incluye una previa cuestión, a saber: ¿Cómo pudo el rey obtener un poder, que el pueblo teme confiar, y que siempre está obligado a coartar? Un poder semejante no puede ser el don de un pueblo sabio, ni tampoco lo puede ser de Dios, siendo un poder que necesita de restricciones; con todo, la constitución lo concede y supone existir semejante poder.</p>
+							<p>Pero como este poder tiene unas fuerzas superiores a las que su objeto necesita, los medios que emplea para conseguirlo son desproporcionados y por consecuencia inútiles; la siguiente comparación aclarará más la materia. Puestas en movimiento todas las ruedas de una máquina a impulsos de otra, en quien resida la fuerza motriz; aunque alguna o algunas de aquellas pueda estorbar, o como es la palabra, coartar la rapidez del movimiento de esta, mientras no puedan detenerla, sus esfuerzos serán infructuosos; el primer poder que se mueva seguirá al fin su curso, y lo que pierda en velocidad lo ganará en tiempo. Y como el peso mayor hace siempre subir al menor, resta pues, conocer a que individuo concede la constitución inglesa este mayor peso o este poder; porque éste será el que gobernará al fin.</p>
+							<p>Es claro que la corona es esta parte opresiva en la constitución inglesa, y también es evidente que tiene el mayor influjo y transcendental consecuencia, por ser la única distribuidora de gracias, empleos y pensiones; pues aunque los ingleses fueron bastante sabios para cerrar la puerta a monarquía absoluta, fueron al mismo tiempo bastante locos para entregar la llave a la Corona.</p>
+							<p>La preocupación de los ingleses a favor de su gobierno, por el Rey, Lores y Comunes nace mas bien de un orgullo nacional, que de la ilustrada razón. Los individuos gozan sin duda de mayor seguridad en Inglaterra que en ningún otro país; pero la voluntad del Rey es una ley tan suprema en la Gran Bretaña como en Francia; con esta diferencia, que en vez de manar directamente de su boca, es anunciada al pueblo bajo la formidable forma de un decreto del Parlamento. La desgraciada suerte de Carlos I, ha hecho reyes más sutiles; pero no más justos.</p>
+							<p>Dejando, pues, a un lado todo el orgullo y preocupación nacional a favor del sistema inglés, la pura verdad es, que si la corona no es tan opresiva en Inglaterra como en Francia, se debe a la constitución individual de aquellos naturales, mas bien que a la de su gobierno.</p>
+							<p>Es indispensable en este tiempo hacer un análisis de los errores constitucionales en la forma del gobierno inglés; porque así como nosotros nunca estamos en aptitud de hacer justicia a otros, mientras continuamos bajo el influjo de un partido dominante; así</p>
+							<p>también somos incapaces de hacérnosla a nosotros mismos, mientras estamos dominados de una ciega pasión: y así; también, como un hombre aficionado a mujeres prostituidas es incapaz de conocer la felicidad que promete una esposa virtuosa; así una preocupación a favor de la constitución podrida de un gobierno, nos inhabilita para distinguir y juzgar el mérito de otra buena.</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduccion.htm">&lt; Introducción</a></li>
+									<li class="align-right"><a href="2-de-la-monarquia.htm">De la monarquia &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+pdf on website needs Canonical link
+
+Try this
+
+
+Google says PDF is not mobile friendly. 
+
+
+<Files 'Theron-Q-DuMont-Practical-Memory-Training-ocr.pdf'>
+	Header add Link '<https://selfdefinition.org/new-thought/dumont-memory/contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+
+Example from Magic section
+
+
+<Files 'Franz-Hartmann-The-Life-of-Paracelsus.pdf'>
+	Header add Link '<http://selfdefinition.org/magic/paracelsus/hartmann-life-of-paracelsus/contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+.

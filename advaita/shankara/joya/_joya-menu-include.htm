@@ -1,0 +1,95 @@
+<!-- start of menu include file updat Apr 20, 2020. June 15, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/advaita/">Advaita index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contenido.htm">Contenido</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Arriba</a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/advaita/">Advaita index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li>La Joya del Discernimiento</li>
+            <li class="normal note tight">Vivekachudamani</li>
+            <li class="normal">
+                <img class="menu-image" src="images/shankaracharya.jpg" alt="Adi Shankaracharya" />
+            </li>
+            <li>Adi Shankaracharya</li>
+            <li class="normal note tight">(Siglo octavo)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contenido.htm">Contenido</a></li>
+                <li><a href="prologo.htm">Prólogo</a></li>
+                <li><a href="introductorio.htm">Introductorio</a></li>
+                <li><a href="01-primeros-pasos.htm">1. Primeros pasos en el camino</a> </li>
+                <li><a href="02-los-cuerpos.htm">2. Los cuerpos</a> </li>
+                <li><a href="03-el-testigo.htm">3. El Testigo</a> </li>
+                <li><a href="04-encontrar-el-yo-real.htm">4. El verdadero Yo</a> </li>
+                <li><a href="05-imagenes-mentales.htm">5. Power of Mind-Images</a> </li>
+                <li><a href="06-libertad-incluso-en-la-vida.htm">6. Libertad en la vida</a> </li>
+                <li><a href="07-tres-clases-de-obras.htm">7. Three Kinds of Works</a> </li>
+                <li><a href="08-maestro-y-discipulo.htm">8. Maestro y discípulo</a> </li>
+                <li><a href="09-el-sabio-perfecto.htm">9. El sabio perfecto</a> </li>
+                <li><a href="10-siempre-libre.htm">10. Siempre libre</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <!-- -->
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">También en Advaita</li>
+                <li>Astavakra Gita: [español] <a href="/advaita/ashtavakra/es/contenido.htm">Astavakra Samhita </a></li>
+                <li>Parameshwar Maharaj: <a href="/advaita/parameshwar/hundiendome/indice.htm">Hundiendome en mí mismo </a></li>
+                <li class="header-item">También en este sitio</li>
+                <li class="subhead">Siddharameshwar</li>
+                <li class="first-item">[inglés] <a href="/siddharameshwar/dasbodh-selections/contents.htm">Selections from Amrut Laya</a></li>
+                <li>[español] <a href="/siddharameshwar/la-llave-maestra/el-cuerpo-causal-olvido.htm">La llave de la realización del ser: El cuerpo causal y el ovido</a></li>
+                <li class="header-item">Celibacy section</li>
+                <li class="first-item">[inglés] <a href="/celibacy/quotes/shankaracharya-on-celibacy.htm"> Shankara on Celbacy</a></li>
+                <li class="subhead">Todas las páginas en español</li>
+                <li class="first-item"><a href="/paginas-en-espanol.htm">Páginas en español</a></li>
+            </ul>
+        </div>
+        <div class="external-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li class="first-item">Adi Shankaracharya <span class="nowrap">en <a class="inline" href="https://en.wikipedia.org/wiki/Adi_Shankara">Wikipedia [español]</a></span></li>
+                <li>Advaita Vedanta <span class="nowrap">en <a href="https://en.wikipedia.org/wiki/Advaita">Wikipedia [español]</a></span></li>
+                <li>Crest-Jewel of Discrimination at <a href="https://en.wikipedia.org/wiki/Vivekachudamani">Wikipedia [inglés]</a></li>
+                <li>Fuente de este documento PDF 118 páginas, 429 KB: <a style="display:inline;" href="https://www.mercaba.org/SANLUIS/ALiteratura/Antigua/Literatura%20asi%C3%A1tica/Sankara/LA%20JOYA%20DEL%20DISCERNIMIENTO.pdf">mercaba.org/SANLUIS/</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="To top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

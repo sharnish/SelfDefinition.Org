@@ -1,0 +1,26 @@
+# raw image directory for solo article:  /afterlife/victor-solow/images-florida-sun/
+
+# let people see imagelinks full width of the device
+
+# test mobility issue reported by Google on /celibacy/
+# https://www.askapache.com/htaccess-file/htaccess/meodai-mod_autoindexoh-master-htaccess/
+# META VIEWPORT
+# NO   IndexHeadInsert "<meta name="viewport" content="width=device-width, initial-scale=1">"
+# MUST ESCAPE " MARKS
+
+IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+
+# Example from the Apache docs
+# https://httpd.apache.org/docs/2.4/mod/mod_autoindex.html
+# this works, have to put on single line, otherwise the 2nd overwrites the first.
+# must escape the \" quote marks
+# IndexHeadInsert "<link rel=\"sitemap\" href=\"/sitemap.html\">\" \"<!-- this is a comment inserted by IndexHeadInsert -->"
+
+
+# page move
+
+Redirect 301 "/afterlife/victor-solow/victor-solow-biographical-information.htm"  "/afterlife/victor-solow/victor-solow-obituary-and-personal.htm"
+
+
+
+# end

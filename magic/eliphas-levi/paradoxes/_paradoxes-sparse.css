@@ -1,0 +1,71 @@
+/*     File:  /magic/eliphas-levi/paradoxes/_paradoxes-sparse.css:         */
+
+@media only print {
+	#article:after {
+		"May 29, 2022";
+	}
+}
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #e6ffef;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c0d4fc;
+	/* nice blue, goes with the green */
+
+}
+
+p.page-number {
+	display: none;
+}
+
+/* default is #E9EFFF; - bluish
+need green, and darker */
+label {
+	background: #CFD;
+}
+
+html.dark label {
+	background: #444;
+}
+
+/* default is 80% */
+html.dark sup {
+	font-size: 90%;
+}
+
+p.hidden,
+div.hidden {
+	color: #050;
+}
+
+
+/************ important  **********
+has collapsing footnotes, 100+ instances.
+
+Magic and Magism has separate footnotes page 
+
+magic-and-magism-footnotes.htm
+
+**********************/
+
+
+
+/* end */

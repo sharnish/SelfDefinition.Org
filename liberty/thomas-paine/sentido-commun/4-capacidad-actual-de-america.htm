@@ -1,0 +1,129 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sentido Común por Thomas Paine</title>
+	<meta name="description" content="">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Sentido Común por Thomas Paine">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/thomas-paine/sentido-comun/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_sentido-comun-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="3c-asuntos-americanos-final.htm">
+	<!-- last link -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_sentido-comun-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_sentido-comun-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										De la capicidad actual de America
+										<span class="block normal" style="font-size:90%;">With Some Miscellaneous Reflections</span>
+									</h3>
+									<p class="tiny">English: <a href="../common-sense/4-present-ability-of-america.htm">4-present-ability-of-america.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3c-asuntos-americanos-final.htm">&lt; Asuntos Americanos-final</a></li>
+									<li class="align-right"><a href="contenido.htm">Contenido &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>I HAVE never met with a man, either in England or America, who hath not confessed his opinion, that a separation between the countries would take place one time or other: And there is no instance in which we have shown less judgment, than in endeavoring to describe, what we call, the ripeness or fitness of the Continent for independance.</p>
+							<p>As all men allow the measure, and vary only in their opinion of the time, let us, in order to remove mistakes, take a general survey of things, and endeavor if possible to find out the very time. But I need not go far, the inquiry ceases at once, for the time hath found us. The general concurrence, the glorious union of all things, proves the fact.</p>
+							<p>'Tis not in numbers but in unity that our great strength lies: yet our present numbers are sufficient to repel the force of all the world. The Continent hath at this time the largest body of armed and disciplined men of any power under Heaven: and is just arrived at that pitch of strength, in which no single colony is able to support itself, and the whole, when united, is able to do any thing. Our land force is more than sufficient, and as to Naval affairs, we cannot be insensible that Britain would never suffer an American man of war to be built, while the Continent remained in her hands. Wherefore, we should be no forwarder an hundred years hence in that branch than we are now; but the truth is, we should be less so, because the timber of the Country is every day diminishing, and that which will remain at last, will be far off or difficult to procure.</p>
+							<p class="note blockquote" styl="margin-top:30px;"><a name="bookmark1"><sup><a href="#footnote1">1</a>&nbsp;</sup></a> Thomas Anello, otherwise Massanello, a fisherman of Naples, who after spiriting up his countrymen in the. public market place, against the oppression of the Spaniards, to whom the place was then subject, prompted them to revolt, and in the space of a day became King.—Author.</p>
+							<p>vol. i.—7</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3c-asuntos-americanos-final.htm">&lt; Asuntos Americanos-final</a></li>
+									<li class="align-right"><a href="contenido.htm">Contenido &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

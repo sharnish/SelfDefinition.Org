@@ -1,0 +1,858 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychogenesis of Man, One in a Million, Richard M. Bucke</title>
+    <meta name="description" content="Chart of the development of consciousness in man, from simple awareness to cosmic consciousness.">
+    <meta name="author" content="Richard M. Bucke">
+    <meta property="og:title" content="Psychogenesis of Man, by Richard M. Bucke">
+    <meta property="og:description" content="Chart of the development of consciousness in man, from simple awareness to cosmic consciousness.">
+    <meta property="og:image" content="https://selfdefinition.org/christian/articles/images/cosmic-consciousness-cover.jpg">
+    <!-- load external stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_christian-articles-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /******* Start wide screen modification ******/
+
+        /* get rid of left column for wide screens, must keep access to top menu
+        #menu-container is the left menu. Never to show */
+        #menu-container {
+            display: none;
+        }
+
+        #main-content {
+            max-width: 800px;
+            top: 56px;
+        }
+
+        #main-content,
+        #article,
+        #announce,
+        article,
+        section,
+        aside {
+            width: 100%;
+        }
+
+        /* for large screen browsers that don't respect media queries 
+        #main-content {
+            left: 0;
+        }
+        */
+
+        /* This version of the top menu will show on wide screens
+			replaced by regular menu at 767px and below
+			Specs copied from 2022.CSS  */
+        #borrowed-fixed-header-small-screen {
+            display: block;
+            position: fixed;
+            width: 100%;
+            max-width: 800px;
+            top: 6px;
+            height: 55px;
+            margin: 0;
+        }
+
+
+        #borrowed-menu-site-small-screen {
+            display: block;
+            position: relative;
+            left: 6px;
+            margin: 0;
+            padding: 0;
+            width: calc(100% - 10px);
+            width: 100%;
+            top: 6px;
+            height: 55px;
+        }
+
+        #borrowed-menu-site-small-screen li {
+            list-style: none;
+            display: inline-block;
+            margin: 0px 15px 4px 2px;
+            padding: 5px;
+            /* line-height: 1.8em; x 18 = 32.4 */
+            line-height: 32px;
+        }
+
+
+        #borrowed-menu-site-small-screen li {
+            font-size: 90%;
+            margin-right: 15px;
+            padding: 3px;
+        }
+
+
+        /* must have or scrolloing shows underneath */
+        .progress-header,
+        .progress-container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Must be zero until 767px */
+        /* MOVE TO LEFT (I.E. TO ZERO) BECAUSE THERE IS NO LEFT MENU */
+        /* at 767px we go to 2 columns only, so must center then */
+        @media only screen and (min-width: 768px) {
+            #main-content {
+                left: 0;
+            }
+        }
+
+
+        @media only screen and (max-width: 767px) {
+
+            /* Must be zero until 767px */
+            /* at 767px we go to 2 columns only, so must center then */
+            #main-content {}
+
+            #container {
+                max-width: 100%;
+            }
+
+        }
+
+
+        /* Let the title image appear, since the left menu is erased 
+          Override selfef--response line 913 
+        */
+        .title-image,
+        .title-image-div {
+            display: block;
+            max-width: 200px;
+        }
+
+
+        /* leave untouched:  #mainwrapper width:800px; }
+        /* remove max-width:540 on #container */
+        #container {
+            max-width: 100%;
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            #container {
+                /* No, prohibits expansion of progress bar 
+                comment out but didn't help, leave in '*/
+                max-width: 530px;
+            }
+
+            #main-content,
+            #article,
+            #announce,
+            article,
+            section,
+            aside {
+                width: 100%
+                    /* NO width: auto;
+                max-width: 100%; */
+            }
+
+
+
+        }
+
+        /* Make the top row of the chart sticky
+         https://css-tricks.com/position-sticky-2/  
+        BUT chrome does  not support sticky positioning for table header or row
+        https://stackoverflow.com/questions/15646747/why-doesnt-position-sticky-work-in-chrome
+        So I created a separate table for the neader and put it in a sticky div        
+        */
+        #pseudo-table-row {
+            position: -webkit-sticky;
+            position: -moz-sticky;
+            position: -ms-sticky;
+            position: -o-sticky;
+            position: sticky;
+            top: 55px;
+        }
+
+        /******* END wide screen modification ******/
+
+
+        /**** begin responsive table styles
+        https://css-tricks.com/responsive-data-tables/
+        */
+
+        table {
+            line-height: 1.9em;
+            font-size: 80%;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        html.dark table {
+            background: inherit;
+            color: #ccffcc;
+            color: inherit;
+        }
+
+        /* Zebra striping */
+        tr:nth-of-type(odd) {
+            background: #ffffd2;
+        }
+
+        html.dark tr:nth-of-type(odd) {
+            background: #131316;
+            color: #fdfddd;
+        }
+
+
+        th {
+            font-weight: bold;
+            font-size: 90%;
+        }
+
+        td,
+        th {
+            vertical-align: top;
+            padding: 3px 3px 16px 3px;
+            border: 1px solid #bbf;
+            text-align: left;
+        }
+
+        #key-label {
+            color: blue;
+            font-weight: bold;
+        }
+
+        html.dark #key-label {
+            color: lightblue;
+        }
+
+        /* now the responsive stuff - the second group targets ipads, supposedly, but not tested
+        His example, I didn't use all, could not test
+        His breakpoint was 760px
+        @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)
+        */
+
+        /* now the responsive stuff - Wide screen Works on Ipad (768), nothing less - this is my normal breakpoint
+           for appearannce of the top menu. Any smaller and you have top menu width problems.  */
+        @media only screen and (max-width: 767px) {
+
+            /* Force table to not be like tables anymore */
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            #key-label {
+                display: initial;
+                margin-left: 10px;
+                font-size: 80%;
+                font-weight: bold;
+            }
+
+            #pseudo-table-row {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            #borrowed-fixed-header-small-screen,
+            #borrowed-menu-site-small-screen {
+                display: none;
+            }
+
+
+            tr {
+                border: 1px solid #ccf;
+            }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                padding-left: 50%;
+                width: 100%;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                /* no, let it wrap ? */
+                white-space: nowrap;
+            }
+
+            td:nth-child(6),
+            th:nth-child(6) {
+                border-bottom: 1px solid maroon;
+            }
+
+            /* Label the data */
+            td:nth-of-type(1):before {
+                content: "Faculty";
+            }
+
+            td:nth-of-type(2):before {
+                content: "Appearance Man";
+            }
+
+            td:nth-of-type(3):before {
+                content: "Absent % now";
+            }
+
+            td:nth-of-type(4):before {
+                content: "Appearance Race";
+            }
+
+            td:nth-of-type(5):before {
+                content: "Prehuman forms";
+            }
+
+            td:nth-of-type(6):before {
+                content: "How Easily Lost";
+            }
+        }
+
+
+        /* https://stackoverflow.com/questions/41654751/html-table-column-width-percentage  */
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        /* 6 columns */
+        .faculty {
+            width: 15%;
+        }
+
+        .appearance {
+            width: 15%;
+        }
+
+        .absent {
+            width: 15%;
+        }
+
+        .race {
+            width: 15%;
+        }
+
+        .prehuman {
+            width: 18%;
+        }
+
+        .lost {
+            width: 20%;
+        }
+
+        /* TOP MENU SMALL SCREEN BUCKE CHART  */
+        @media only screen and (max-width: 767px) {
+
+            /* make the top menu go full width */
+            #fixed-header-small-screen {
+                width: 100%;
+            }
+
+            #menu-site-small-screen {
+                width: calc(100% - 5px);
+            }
+
+            #fixed-header-small-screen,
+            #menu-site-small-screen {
+                top: 0px;
+                height: 100px;
+            }
+
+            #main-content {
+                top: 101px;
+            }
+        }
+
+
+        #menu-panel,
+        #menu-panel-2 {
+            top: 0;
+            left: 0;
+        }
+
+        @media only screen and (max-width: 567px) {
+
+            #fixed-header-small-screen,
+            #menu-site-small-screen {
+                height: 105px;
+            }
+
+            #main-content {
+                top: 106px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            #menu-panel,
+            #menu-panel-2,
+            #nav,
+            #nav-2 {
+                position: relative;
+                width: 100%;
+                max-width: 530px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <!-- THIS PAGE HAS NO SIDE MENU -->
+                    <!-- BORROW TOP MENU FOR WIDE SCREEN, REMOVE IT FOR SMALL SCREEN -->
+                    <!-- SEE HARDCODED MENU BELOW -->
+                    <?php include("_christian-articles-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <!-- THIS PAGE HAS NO SIDE MENU -->
+                            <!-- Below is BORROWED FROM THE TOP MENU FOR WIDE SCREEN, REMOVED FOR SMALL SCREEN, when normal top menu is shown -->
+                            <div id="menu-panel-2">
+                                <nav id="nav-2">
+                                    <div id="borrowed-fixed-header-small-screen">
+                                        <ul id="borrowed-menu-site-small-screen">
+                                            <li class="first-item"><a href="/christian/">Christian index</a></li>
+                                            <li><a href="/sitemap.htm">Site map</a></li>
+                                            <li><a href="/">Site root</a></li>
+                                            <li class="english"><a href="articles-index.htm">Article list</a></li>
+                                            <!-- don't need top-of-page on large screens 
+											<li class="english"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+-->
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- as of Oct 9, 2019 moving "article" to here -->
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_christian-articles-title-include.htm"); ?>
+                                    <h3>
+                                        <span class="block">Richard M. Bucke</span> <span class="block">Psychogenesis of Man</span>
+                                    </h3>
+                                    <p class="tight">
+                                        Illustrated by a few faculties
+                                    </p>
+                                </header>
+                                <p class="note80 tight">
+                                    Extracted from chart on page 43 of <em>Cosmic Consciousness</em></p>
+                                <p class="tiny tight">
+                                    Link to book page scan on this site: <a href="https://selfdefinition.org/christian/images/Bucke-Chart-p43-One-in-a-Million-horizontal.pdf">1 page pdf</a> (open with Acrobat to read clearly)</p>
+                                <p class="note tight">
+                                    Also see <a href="richard-bucke-personal-experience-cosmic-consciousness.htm">Bucke's personal experience</a>
+                                </p>
+                                <p class="note tight">
+                                    Return to <a href="articles-index.htm">Article List</a>
+                                </p>
+                            </div>
+                            <!-- page nav is positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="richard-bucke-personal-experience-cosmic-consciousness.htm">&lt; Cosmic Consciousness</a></li>
+                                    <li class="align-right"><a href="original-christianity.htm">Originial Christianity &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <div id="pseudo-table-row">
+                                <table>
+                                    <colgroup>
+                                        <col class="faculty" />
+                                        <col class="appearance" />
+                                        <col class="absent" />
+                                        <col class="race" />
+                                        <col class="prehuman" />
+                                        <col class="lost" />
+                                    </colgroup>
+                                    <tr id="key">
+                                        <th>
+                                            Faculty
+                                        </th>
+                                        <th>
+                                            Appearance in a Man
+                                        </th>
+                                        <th>
+                                            <i>Absent</i> in proportion now
+                                        </th>
+                                        <th>
+                                            Appearance in the Race
+                                        </th>
+                                        <th>
+                                            How Far Back Prehuman forms
+                                        </th>
+                                        <th>
+                                            How Easily Lost
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p id="key-label">
+                                key:</p>
+                            <table>
+                                <colgroup>
+                                    <col class="faculty" />
+                                    <col class="appearance" />
+                                    <col class="absent" />
+                                    <col class="race" />
+                                    <col class="prehuman" />
+                                    <col class="lost" />
+                                </colgroup>
+                                <tr>
+                                    <td>
+                                        Name of Faculty
+                                    </td>
+                                    <td>
+                                        Approxi&shy;mate Average Age of Appearance in Man
+                                    </td>
+                                    <td>
+                                        <i>Absent</i> in what proportion of Adult Members of Race at Present Time
+                                    </td>
+                                    <td>
+                                        Time of Appearance of Faculty in Race
+                                    </td>
+                                    <td>
+                                        How far back does Faculty Reach into Prehuman forms?
+                                    </td>
+                                    <td>
+                                        With what Degree of Facility is the Faculty Lost in Man?
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Memory
+                                    </td>
+                                    <td>
+                                        Few days after birth
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        To the Echinodermata
+                                    </td>
+                                    <td>
+                                        Only lost in deep sleep and coma; present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Simple Conscious&shy;ness
+                                    </td>
+                                    <td>
+                                        Few days after birth
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        To the Echinodermata
+                                    </td>
+                                    <td>
+                                        Only lost in deep sleep and coma; present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Curiosity
+                                    </td>
+                                    <td>
+                                        Ten weeks
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        Insects and spiders
+                                    </td>
+                                    <td>
+                                        Only lost in deep sleep and coma; present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Use of Tools
+                                    </td>
+                                    <td>
+                                        Twelve months
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        Monkeys
+                                    </td>
+                                    <td>
+                                        Present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Shame
+                                    </td>
+                                    <td>
+                                        Fifteen months
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        Anthropoid apes and dogs
+                                    </td>
+                                    <td>
+                                        Present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Remorse
+                                    </td>
+                                    <td>
+                                        Fifteen months
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        Anthropoid apes and dogs
+                                    </td>
+                                    <td>
+                                        Present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sense of Ludicrous
+                                    </td>
+                                    <td>
+                                        Fifteen months
+                                    </td>
+                                    <td>
+                                        None
+                                    </td>
+                                    <td>
+                                        Prehuman
+                                    </td>
+                                    <td>
+                                        Anthropoid apes and dogs
+                                    </td>
+                                    <td>
+                                        Present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Self
+                                        <br />
+                                        Conscious&shy;ness
+                                    </td>
+                                    <td>
+                                        Three years
+                                    </td>
+                                    <td>
+                                        In 1 in 1,000
+                                    </td>
+                                    <td>
+                                        300,000 years ago
+                                    </td>
+                                    <td>
+                                        Peculiar to man
+                                    </td>
+                                    <td>
+                                        Lost in coma, delirium, often in mania ; never present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Color Sense
+                                    </td>
+                                    <td>
+                                        Four years
+                                    </td>
+                                    <td>
+                                        In 1 in 47
+                                    </td>
+                                    <td>
+                                        30,000 or 40,000 years ago
+                                    </td>
+                                    <td>
+                                        Not in man's progenitors
+                                    </td>
+                                    <td>
+                                        Seldom present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sense of Fragrance
+                                    </td>
+                                    <td>
+                                        Five years
+                                    </td>
+                                    <td>
+                                        ?
+                                    </td>
+                                    <td>
+                                        ?
+                                    </td>
+                                    <td>
+                                        Not in man's progenitors
+                                    </td>
+                                    <td>
+                                        Not present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Human Moral Nature
+                                    </td>
+                                    <td>
+                                        Fifteen years
+                                    </td>
+                                    <td>
+                                        In 1 in 20 or 25
+                                    </td>
+                                    <td>
+                                        10,000 years ago
+                                    </td>
+                                    <td>
+                                        Peculiar to man
+                                    </td>
+                                    <td>
+                                        Unstable—easily and constantly lost; not present in dreams
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Musical Sense
+                                    </td>
+                                    <td>
+                                        Eighteen years
+                                    </td>
+                                    <td>
+                                        In more than half
+                                    </td>
+                                    <td>
+                                        Less than 5,000 years ago
+                                    </td>
+                                    <td>
+                                        Not in man's progenitors
+                                    </td>
+                                    <td>
+                                        Only occasionally present; hardly ever present in dreams, even in case of musicians
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Cosmic Conscious&shy;ness
+                                    </td>
+                                    <td>
+                                        Thirty-five years
+                                    </td>
+                                    <td>
+                                        In all but one in many millions
+                                    </td>
+                                    <td>
+                                        Just dawning now
+                                    </td>
+                                    <td>
+                                        Peculiar to man
+                                    </td>
+                                    <td>
+                                        Only present few seconds to few hours in any case; then passes away of itself
+                                    </td>
+                                </tr>
+                            </table>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="richard-bucke-personal-experience-cosmic-consciousness.htm">&lt; Cosmic Consciousness</a></li>
+                                    <li class="align-right"><a href="original-christianity.htm">Originial Christianity &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

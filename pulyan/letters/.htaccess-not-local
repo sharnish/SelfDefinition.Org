@@ -1,0 +1,29 @@
+# .htaccess file for selfdefinition.org/pulyan/
+
+####### Added this June 8, 2020#########
+
+# Done with /frauds/ on May 19, 2020
+# test mobility issue reported by Google on /celibacy/
+# https://www.askapache.com/htaccess-file/htaccess/meodai-mod_autoindexoh-master-htaccess/
+# META VIEWPORT
+# NO   IndexHeadInsert "<meta name="viewport" content="width=device-width, initial-scale=1">"
+# MUST ESCAPE the quote ( " ) MARKS
+
+IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+
+# Example Apache docs
+# https://httpd.apache.org/docs/2.4/mod/mod_autoindex.html
+# this works, have to put on single line, otherwise the 2nd overwrites the first.
+# must escape the \" quote marks
+# IndexHeadInsert "<link rel=\"sitemap\" href=\"/sitemap.html\">\" \"<!-- this is a comment inserted by IndexHeadInsert -->"
+
+
+# NOTES:
+
+# This is not an HTTP header, can't be seen in Dev Tools
+# It creates an HTML element that can be seen in the Source of the HTML page, in the hEAD section 
+
+####  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+# end
+

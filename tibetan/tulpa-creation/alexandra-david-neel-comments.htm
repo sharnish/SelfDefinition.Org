@@ -1,0 +1,446 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulpa Creation - Alexandra David-N&eacute;el</title>
+    <meta name="description" content="A Bodhisatva, by the power of his perfect concentration,
+    may create a tulpa, which is a phantom creature in human form, or any other any forms he chooses.">
+    <meta name="author" content="Alexandra David-N&eacute;el">
+    <meta property="og:title" content="Tulpa Creation - Alexandra David-N&eacute;el">
+    <meta property="og:description" content="A Bodhisatva, by the power of his perfect concentration,
+    may create a tulpa, which is a phantom creature in human form, or any other any forms he chooses.">
+    <meta property="og:image" content="https://selfdefinition.org/tibetan/tulpa-creation/images/alexandra-david-neel-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_tulpa-creation-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 270px;
+        }
+
+
+        article h4 {
+            margin-bottom: 10px;
+        }
+
+        article h5 {
+            color: maroon;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_tulpa-creation-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_tulpa-creation-title-include.htm"); ?>
+                                    <h3>
+                                        <span class="block normal">Comments by</span> Alexandra David-N&eacute;el
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="walter-evans-wentz-comments.htm">Comments by Evans-Wentz &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <header>
+                                <p class="tiny">
+                                    Also see: <a href="walter-evans-wentz-comments.htm">Comments by Walter Evans-Wentz</a></p>
+                                <p class="note toowide">
+                                    Excerpts from <em>With Magicians and Mystics in Tibet</em>, also published as <em>Magic and Mystery in Tibet</em>
+                                </p>
+                                <!--
+                                <h4>
+                                    <span class="block">Excerpts from</span> <em>With Magicians and Mystics in Tibet</em></h4>
+                                <p class="note80">
+                                    Source at Google Books: <span class="block"><a href="https://books.google.com/books/about/With_Mystics_and_Magicians_in_Tibet.html?id=pAUbAAAAIAAJ&redir_esc=y">
+                                        <em>With Magicians and Mystics in Tibet</em></a></span> (search on "tulpa")</p>
+                                <p class="note80">
+                                    <span class="block">Alternative translation at Google Books:</span> <a href="https://books.google.com.mx/books/about/Magic_and_Mystery_in_Tibet.html?id=6SwA8wvzfVIC">
+                                        <em>Magic and Mystery in Tibet</em></a></p>
+-->
+                            </header>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#creation">Visualization and Creation</a></li>
+                                    <li>&nbsp;&nbsp;The Dalai Lama, 1912</li>
+                                    <li><a href="#calling-up-demons">Calling Up Demons</a></li>
+                                    <li><a href="#tulpas">Tulpas</a></li>
+                                    <li>&nbsp;&nbsp;Thought-Created Phantoms</li>
+                                    <li><a href="#three-accounts">Three accounts</a></li>
+                                    <li>&nbsp;&nbsp;The Servant Wangdu</li>
+                                    <li>&nbsp;&nbsp;The Painter</li>
+                                    <li>&nbsp;&nbsp;The Hermit Lama</li>
+                                    <li><a href="#protective-yidams">Protective Yidams</a></li>
+                                    <li>&nbsp;&nbsp;A Life of its Own</li>
+                                    <li><a href="#david-neel-creates">David-N&eacute;el Creates a Tulpa</a></li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="creation">&nbsp;</a>
+                            <h4 class="top-heading">
+                                Visualization and Creation
+                            </h4>
+                            <h5 style="margin-bottom: 0;">
+                                The Dalai Lama, 1912
+                            </h5>
+                            <p class="note" style="margin: 0;">
+                                Magicians and Mystics version; Chapter 3, page 115</p>
+                            <p>
+                                As I have related it in the first chapter of the present book, I met the Dalai Lama in 1912 when he was living in the Himalayas, and asked him several questions regarding lamaist doctrine to which he first answered orally. Afterward, in order to avoid misunderstandings he told me to write a list of new questions on the points which still appeared to me obscure. To these he gave written answers. The present quotation is taken from the document with which the Dalai Lama favoured me.</p>
+                            <blockquote>
+                                <p>
+                                    &quot;A Bodhisatva (A being who has attained the high degree of spiritual perfection immediately below that of a Buddha.) is the basis of countless magic forms. By the power generated in a state of perfect concentration of mind he may, at one and the same time show a phantom (<strong>tulpa</strong>&mdash;written <em>sprulpa</em>) of himself in thousands millions of worlds. He may create not only human forms, but any forms he chooses, even those of inanimated objects such as hills, enclosures, houses, forests, roads, bridges, etc. He may produce atmospheric phenomena as well as the thirst quenching beverage of immortality.&quot; (The latter expression I have been advised to take in both a literal and a symbolic sense.) &quot;In fact,&quot; reads the conclusion, &quot;there is no limit to his power of phantom creation.&quot;</p>
+                            </blockquote>
+                            <p>
+                                The theory sanctioned in these lines by the highest authority of official Lamaism is identical with that expounded in the mahâyânist literature, where it is said that an accomplished Bodhisatva is capable of effecting ten kinds of magic creations. The power of producing magic formations, tulkus, or less lasting and materialized <strong>tulpas</strong>, does not, however, belong exclusively to such mystic exalted beings. Any human, divine, or demoniac being may be possessed of it. The only difference comes from the degree of power, and this depends on the strength of the concentration and the quality of the mind itself. (...)</p>
+                            <p class="note">
+                                [David-N&eacute;el goes on for several pages about tulkus, which are reincarnating gurus.]</p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="calling-up-demons">&nbsp;</a>
+                            <h4 style="margin-bottom: 0;">
+                                Calling Up Demons
+                            </h4>
+                            <!--page 138-->
+                            <p>
+                                I had the opportunity of talking with a <em>gomchen</em> <sup>[1]</sup> of Ga (Eastern Tibet) called Kushog Wanchen about sudden deaths which occurred while calling up demons. This lama did not appear inclined towards superstition and I thought he would agree with my opinion on the matter.
+                            </p>
+                            <p class="fnote">
+                                [1. A non-monastic practitioner of Dzogchen. See <a class="inline wiki" href="https://en.wikipedia.org/wiki/Ngagpa">en.wikipedia.org/<wbr />wiki/<wbr />Ngagpa</a>&nbsp;]
+                            </p>
+                            <blockquote>
+                                <p>
+                                    &quot;Those who died were killed by fear. Their vision were the creation of their own imagination. He who does not believe in demons would never be killed by them.&quot; I was much astonished when the anchorites replied in a peculiar tone of voice.
+                                </p>
+                                <p>
+                                    &quot;According to that, it must also follow that a man who does not believe in the existence of tigers may feel confident that none of them would ever hurt him if he were confronted by such a beast.&quot; ...
+                                </p>
+                            </blockquote>
+                            <p>
+                                And he continued:
+                            </p>
+                            <blockquote>
+                                <p>
+                                    &quot;Visualizing mental formations, either voluntarily or not, is a most mysterious process. What becomes of these creations? May it not be that like children born of our flesh, these children of our mind separate their lives from ours, escape our control, and play parts of their own? ...
+                                </p>
+                                <p>
+                                    &quot;Must we not also consider that we are not the only ones capable of creating such formations? And if such entities exist in the world, are we not liable to come into touch with them, either by the will of their maker or from some other cause? Could one of these causes not be that, through our mind or through our material deeds we bring about the conditions in which these entities are capable of manifesting some kind of activity?&quot;
+                                </p>
+                            </blockquote>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="tulpas">&nbsp;</a>
+                            <h4>
+                                Tulpas
+                            </h4>
+                            <h5>
+                                Thought-Created Phantoms
+                            </h5>
+                            <p class="note" style="margin: 0;">
+                                Magicians and Mystics version; Chapter 8, page 278</p>
+                            <p>
+                                It is to be noted that believers in the &quot;translation&quot; of an ethereal self or &quot;double,&quot; generally depict the body from which it withdraws, as remaining inanimate. <sup>[2]</sup> Here lies the essential <em>difference</em> between <em>that</em> supposed phenomenon, and the apparitions, voluntary or unconsciously created, of a <strong>tulpa</strong> (spelt <em>sprulpa</em>: "magic, illusory creations"), either alike or different from its creator.
+                            </p>
+                            <p class="fnote">
+                                [2. David-N&eacute;el is apparently speaking to Theosophists. Blavatsky lived 1831-1891. David-N&eacute;el lived 1868-1969. <span class="block"><a class="wiki" href="https://en.wikipedia.org/wiki/Helena_Blavatsky">en.wikipedia.org/wiki/<wbr />Helena_<wbr />Blavatsky</a></span> <span class="block"><a class="wiki" href="https://en.wikipedia.org/wiki/Alexandra_David-N%C3%A9el">en.wikipedia.org/wiki/<wbr />Alexandra_<wbr />David-N&eacute;el</a>&nbsp;]</span>
+                            </p>
+                            <p>
+                                In fact, while the "translation" as related in Indian or Tibetan stories may well be regarded as a fable, the creation of tulpas seems worthy of investigation.
+                            </p>
+                            <p>
+                                Phantoms, as Tibetans describe them, and those that I have myself seen do not resemble the apparitions which are said to occur during spiritualist seances.
+                            </p>
+                            <p>
+                                In Tibet, the witnesses of these phenomena have not been especially invited to endeavour to produce them, or to meet a medium known for producing them. Consequently, their minds are not prepared and intent on seeing apparitions. There is no table upon which the company lay their hands nor any medium in trance, nor a dark closet in which the latter is shut up. Darkness is not required; sun and open air do not keep away the phantoms.
+                            </p>
+                            <p>
+                                As I have said, some apparitions are created on purpose either by a lengthy process resembling that described in the former chapter on the visualization of Yidam <sup>[3, 4]</sup> or, in the case of proficient adepts, instantaneously or almost instantaneously.
+                            </p>
+                            <p class="fnote">
+                                [3. <em>With Mystics and Magicians in Tibet</em>, Chapter VII, &quot;Mystic Theories and Spiritual Training&quot;, page 256-260. The relevant excerpt is here: &quot;Magic Creation of a Yidam&quot;: <a href="magic-creation-of-a-yidam.htm">magic-creation-of-a-yidam.htm</a>&nbsp;]
+                            </p>
+                            <p class="fnote">
+                                [4. Tutelary deity. See the page in the prior note, and the section below: <a href="#protective-yidams">#protective-yidams</a>&nbsp;]
+                            </p>
+                            <p>
+                                In other cases, apparently the author of the phenomenon generates it unconsciously, and is not even in the least aware of the apparition being seen by others.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="three-accounts">&nbsp;</a>
+                            <h4>
+                                Three accounts
+                            </h4>
+                            <p>
+                                In connection with this kind of visualization or thought-form creation, I may relate a few phenomena which I have witnessed myself.
+                            </p>
+                            <h5>
+                                1. The Servant Wangdu
+                            </h5>
+                            <p>
+                                A young Tibetan who was in my service went to see his family. I had granted him three weeks' leave, after which he was to purchase a food supply, engage porters to carry the loads across the hills, and come back with the caravan.
+                            </p>
+                            <p>
+                                Most likely the fellow had a good time with his people. Two months elapsed and still he did not return. I thought he had definitely left me.
+                            </p>
+                            <p>
+                                Then I saw him one night in a dream. He arrived at my place clad in a somewhat unusual fashion, wearing a sun hat of foreign shape. He had never worn such a hat. The next morning, one of my servants came to me in haste. &quot;Wangdu has come back,&quot; he told me. &quot;I have just seen him down the hill.&quot;</p>
+                            <p>
+                                The coincidence was strange. I went out of my room to look at the traveller. The place where I stood dominated a valley. I distinctly saw Wangdu. He was dressed exactly as I had seen him in my dream. He was alone and walking slowly up the path that wound up the hill slope.
+                            </p>
+                            <p>
+                                I remarked that he had no luggage with him and the servant who was next me answered: &quot;Wangdu has walked ahead, the load-carriers must be following.&quot; We both continued to observe the man. He reached a small chörten, <span class="note">[stupa]</span> walked behind it and did not reappear.
+                            </p>
+                            <p>
+                                The base of this chörten was a cube built in stone, less than three feet high, and from its needle-shaped top to the ground, the small monument was no more than seven feet high. There was no cavity in it. Moreover, the chörten was completely isolated: there were neither houses, nor trees, nor undulations, nor anything that could provide a hiding in the vicinity.
+                            </p>
+                            <p>
+                                My servant and I believed that Wangdu was resting for a while under the shade of the chörten. But as time went by without his reappearing, I inspected the ground round the monument with my field-glasses, but discovered nobody.
+                            </p>
+                            <p>
+                                Very much puzzled I sent two of my servants to search for the boy. I followed their movements with the glasses but no trace was to be found of Wangdu nor of anybody else.
+                            </p>
+                            <p>
+                                That same day a little before dusk the young man appeared in the valley with his caravan. He wore the very same dress and the foreign sun hat which I had seen in my dream, and in the morning vision.
+                            </p>
+                            <p>
+                                Without giving him or the load-carriers time to speak with my servants and hear about the phenomenon, I immediately questioned them. From their answers I learned that all of them had spent the previous night in a place too far distant from my dwelling for anyone to reach the latter in the morning. It was also clearly stated that Wangdu had continually walked with the party.
+                            </p>
+                            <p>
+                                During the following weeks I was able to verify the accuracy of the men's declarations by inquiring about the time of the caravan's departure, at the few last stages where the porters were changed. It was proved that they had all spoken the truth and had left the last stage together with Wangdu, as they said.
+                            </p>
+                            <h5>
+                                2. The painter
+                            </h5>
+                            <p>
+                                A Tibetan painter, a fervent worshipper of the wrathful deities, who took a peculiar delight in drawing their terrible forms, came one afternoon to pay me a visit.
+                            </p>
+                            <p>
+                                I noticed behind him the somewhat nebulous shape of one of the fantastic beings which often appeared in his paintings.
+                            </p>
+                            <p>
+                                I made a startled gesture and the astonished artist took a few steps towards me, asking what was the matter.
+                            </p>
+                            <!--page 208-->
+                            <p>
+                                I noticed that the phantom did not follow him, and quickly thrusting my visitor aside, I walked to the apparition with one arm stretched in front of me. My hand reached the foggy form. I felt as if touching a soft object whose substance gave way under the slight push, and the vision vanished.
+                            </p>
+                            <p>
+                                The painter confessed in answer to my questions that he had been performing a <em>dubthab</em> <sup>[5]</sup> rite during the last few weeks, calling on the deity whose form I had dimly perceived, and that very day he had worked the whole morning on a painting of the same deity. In fact, the Tibetan's thoughts were entirely concentrated on the deity whose help he wished to secure for a rather mischievous undertaking.
+                            </p>
+                            <p class="fnote">
+                                [5. Magic rite of invocation or conjuration. Can have a beneficial or harmful purpose. See <em>With Mystics and Magicians in Tibet</em>, referenced on pages 68, 145, 158, 241 and 281 in the Penguin Books edition.]
+                            </p>
+                            <p>
+                                He himself had not seen the phantom.
+                            </p>
+                            <p>
+                                In these two cases, the phenomenon was produced without the conscious co-operation of its author. Or, as a mystic lama remarked, Wangdu and the painter could hardly be termed the authors of the phenomena. They were but one cause — may be the principal one — amongst the various causes which had brought them about.
+                            </p>
+                            <h5>
+                                3. The Hermit Lama
+                            </h5>
+                            <p>
+                                The third strange occurrence I have to relate belongs to the category of phenomena which are voluntarily produced. (The fact that the apparition appeared in the likeness of the lama who caused it, must not lead us to think that he projected a subtle double of himself. This is not the opinion of advanced adepts in Tibetan secret lore.) According to them such phantoms are <strong>tulpas</strong>, magic formations generated by a powerful concentration of thought. As it had been repeatedly stated in the preceding chapters, any forms may be visualized through that process.
+                            </p>
+                            <p>
+                                At that time I was camping near Punag ritöd in Kham. One afternoon, I was with my cook in a hut which we used as a kitchen. The boy asked me for some provisions. I answered, &quot;Come with me to my tent, you can take what you need out of the boxes.&quot;
+                            </p>
+                            <p>
+                                We walked out and when nearing my tent, we both saw the hermit lama seated on a folding chair next my camp table. This did not surprise us because the lama
+                                <!--  page 282 -->
+                                often came to talk with me. The cook only said &quot;Rimpoche is there, I must go and make tea for him at once, I will take the provisions later on.&quot;
+                            </p>
+                            <p>
+                                I replied: &quot;All right. Make tea and bring it to us.&quot; The man turned back and I continued to walk straight toward the lama, looking at him all the time while he remained seated motionless.
+                            </p>
+                            <p>
+                                When I was only a few steps from the tent, a flimsy veil of mist seemed to open before it, like a curtain that is pulled aside. And suddenly I did not see the lama any more. He had vanished.
+                            </p>
+                            <p>
+                                A little later, the cook came, bringing tea. He was surprised to see me alone. As I did not like to frighten him I said: &quot;Rimpoche only wanted to give me a message. He had no time to stay to tea.&quot;</p>
+                            <p>
+                                I related the vision to the lama, but he only laughed at me without answering my questions. Yet, upon another occasion he repeated the phenomenon. He utterly disappeared as I was speaking with him in the middle of a wide bare track of land, without tent or houses or any kind of shelter in the vicinity.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="protective-yidams">&nbsp;</a>
+                            <h4>
+                                Protective Yidams
+                            </h4>
+                            <p>
+                                The creation of a phantom Yidam <sup>[6]</sup> as we have seen it described in the previous chapter, <sup>[7]</sup> has two different objects. The higher one consists in teaching the disciples that there are no gods or demons other than those which his mind creates. The second aim, less enlightened, is to provide oneself with a powerful means of protection.
+                            </p>
+                            <p class="fnote">
+                                [6. <a class="wiki" href="http://www.rigpawiki.org/index.php?title=Yidam">www.rigpawiki.org/<wbr />.../Yidam</a>]
+                            </p>
+                            <p class="fnote">
+                                [7. See page in this section: &quot;Magical Creation of a Yidam&quot;: <a href="magic-creation-of-a-yidam.htm">magic-creation-of-a-yidam.htm</a>&nbsp;]
+                            </p>
+                            <p>
+                                How does the phantom of the deity protect its creator? By appearing instead of the latter. It is the custom in Tibet that the lamas who are initiated to that peculiar practice &quot;put on&quot; each morning the personality of their Yidam. This being done, the evil spirits who happen to meet these lamas do not see them as men, but under the frightful shape of the terrible deities; a sight which of course prevents them from attempting any mischief.
+                            </p>
+                            <p>
+                                Expert magicians in this art can, it is said, hide their own real appearance under any illusory form they choose.
+                            </p>
+                            <p>
+                                Among the many who, each morning, gravely take on the shape of their Yidam, probably very few are really capable of showing themselves as such. I do not know if they succeed in duping the demons, but they certainly do not create any illusion to human eyes. Yet I have heard that some lamas have been seen in the appearance of certain deities of the lamaist pantheon.
+                            </p>
+                            <p>
+                                Incited by many wonderful legends regarding the power of ancient tubthobs to create tulpas, a small number of ngagspas and lamas endeavour, in great secrecy, to succeed in that peculiar branch of esoteric lore.
+                            </p>
+                            <p>
+                                However, the practice is considered as fraught with danger for every one who has not reached a high mental and spiritual degree of enlightenment, and is not fully aware of the nature of the psychic forces at work in the process.
+                            </p>
+                            <h5>
+                                A Life of its Own</h5>
+                            <p>
+                                Once the tulpa is endowed with enough vitality to be capable of playing the part of a real being, it tends to free itself from its maker's control. This, say Tibetan occultists, happens nearly mechanically, just as the child, when his body is completed and able to live apart, leaves its mother's womb. Sometimes the phantom becomes a rebellious son and one hears of uncanny struggles that have taken place between magicians and their creatures, the former being severely hurt or even killed by the latter.
+                            </p>
+                            <p>
+                                Tibetan magicians also relate cases in which the tulpa is sent to fulfil a mission, but does not come back and pursues its peregrinations as a half-conscious, dangerously mischievous puppet. The same thing, it is said, may happen when the maker of the tulpa dies before having dissolved it. Yet, as a rule, the phantom either disappears suddenly at the death of the magician or gradually vanishes like a body that perishes for want of food.
+                            </p>
+                            <p>
+                                On the other hand, some tulpas are expressly intended to survive their creator and are specially formed for that purpose. These may be considered as veritable tulkus <span class="note">[reincarnating gurus]</span> (See Chapter III) and, in fact, the demarcation between tulpas and tulkus is far from being clearly drawn. The existence of both is grounded on the same theories.
+                            </p>
+                            <p>
+                                Must we credit these strange accounts of rebellious "materializations," phantoms which have become real beings, or must we reject them all as mere fantastic tales and wild products of imagination? — Perhaps the latter course is the wisest. I affirm nothing. I only relate what I have heard from people whom, in other circumstances, I had found trustworthy, but they may have deluded themselves in all sincerity.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="david-neel-creates">&nbsp;</a>
+                            <h4>
+                                David-N&eacute;el Creates a Tulpa
+                            </h4>
+                            <p>
+                                Nevertheless, allowing for a great deal of exaggeration and sensational addition, I could hardly deny the possibility of visualizing and animating a tulpa. Besides having had few opportunities of seeing thought-forms, my habitual incredulity led me to make experiments for myself, and my efforts were attended with some success. In order to avoid being influenced by the forms of the lamaist deities, which I saw daily around me in paintings and images, I chose for my experiment a most insignificant character: a monk, short and fat, of an innocent and jolly type.
+                            </p>
+                            <p>
+                                I shut myself <strong>in tsams</strong> <sup>[8]</sup> and proceeded to perform the prescribed concentration of thought and other rites. After a few months the phantom monk was formed. His form grew gradually fixed and life-like looking. He became a kind of guest, living in my apartment. I then broke my seclusion and started for a tour, with my servants and tents.
+                            </p>
+                            <p class="fnote">
+                                [8. A term for a period of seclusion. See remarks by David-Neel in this section at: <a href="alexandra-david-neel-tibetan-hermits.htm">alexandra-david-neel-tibetan-hermits.htm</a>&nbsp;]
+                            </p>
+                            <p>
+                                The monk included himself in the party. Though I lived in the open riding on horseback for miles each day, the illusion persisted. I saw the fat trapa, now and then it was not necessary for me to think of him to make him appear. The phantom performed various actions of the kind that are natural to travellers and that I had not commanded. For instance, he walked, stopped, looked around him. The illusion was mostly visual, but sometimes I felt as if a robe was lightly rubbing against me and once a hand seemed to touch my shoulder.
+                            </p>
+                            <p>
+                                The features which I had imagined, when building my phantom, gradually underwent a change. The fat, chubby-cheeked fellow grew leaner, his face assumed a vaguely mocking, sly, malignant look. He became more troublesome and bold. In brief, he escaped my control.
+                            </p>
+                            <p>
+                                Once, a herdsman who brought me a present of butter saw the tulpa in my tent and took it for a live lama.
+                            </p>
+                            <!--page 285-->
+                            <p>
+                                I ought to have let the phenomenon follow its course, but the presence of that unwanted companion began to prove trying to my nerves; it turned into a "daynightmare." Moreover, I was beginning to plan my journey to Lhasa and needed a quiet brain devoid of other preoccupations, so I decided to dissolve the phantom. I succeeded, but only after six months of hard struggle. My mind-creature was tenacious of life.
+                            </p>
+                            <p>
+                                There is nothing strange in the fact that I may have created my own hallucination. The interesting point is that in these cases of materialization, others see the thought-forms that have been created.
+                            </p>
+                            <p>
+                                Tibetans disagree in their explanations of such phenomena; some think a material form is really brought into being, others consider the apparition as a mere case of suggestion, the creator's thought impressing others and causing them to see what he himself sees.
+                            </p>
+                            <p>
+                                In spite of the clever efforts made by the Tibetans to find rational explanations for all prodigies, a number remain unexplained, perhaps because they are pure inventions, or perhaps for other reasons.
+                            </p>
+                            <p class="note center">
+                                [ end ]
+                            </p>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="walter-evans-wentz-comments.htm">Comments by Evans-Wentz &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

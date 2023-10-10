@@ -1,0 +1,95 @@
+<!-- start of menu include file  pdate  June 2, 2020. June 2, 2022 wow, 2 years to the day -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/tibetan/">Tibetan index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-4"><a href="/">Site root</a></li>
+			<li class="english"><a href="energy-and-emotional-transmutation.htm">Energy</a> </li>
+			<li class="english"><a href="trungpa-rinpoche-the-hard-way.htm"><span class="conditional-hide">The </span>Hard Way</a> </li>
+			<li class="spanish"><a href="energia-y-transmutacion-emocional.htm">Energía</a> </li>
+			<li class="spanish"><a href="trungpa-rinpoche-la-via-dificil.htm">La via difícil</a> </li>
+			<!--
+			<li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+            -->
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+			<li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide-3">Volver
+					</span>Arriba</a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/tibetan/">Tibetan index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="normal note">
+				<img class="menu-image" src="images/trungpa-rinpoche-web.jpg" alt="Chögyam Trungpa" />
+			</li>
+			<li>Trungpa Rinpoche</li>
+			<li class="normal note80">Chögyam Trungpa</li>
+			<li class="normal note">(1939-1987)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="trungpa-rinpoche-the-hard-way.htm">The Hard Way</a></li>
+				<li><a href="trungpa-rinpoche-la-via-dificil.htm">La Via Dificil</a></li>
+				<li><a href="energy-and-emotional-transmutation.htm">Energy and Emotional Transmutation</a></li>
+				<li><a href="energia-y-transmutacion-emocional.htm">Energía y transmutación emocional</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Chögyam Trungpa at <a href="https://en.wikipedia.org/wiki/Ch%C3%B6gyam_Trungpa">Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="subhead-item">Tibetan section</li>
+				<li class="first-item"><a href="/tibetan/articles/mindfulness-anger-management.htm">Tibetan Buddhist Understanding of Anger</a></li>
+				<li><a href="/tibetan/quotes/gampopa-instructions.htm">Gampopa's Instructions to the First Karmapa</a></li>
+				<li>Karma Chakme Rinpoche</li>
+				<li class="first-item"><a href="/tibetan/mahamudra-dzogchen/karma-chakme-rinpoche-union-of-mahamudra-and-dzokchen.htm">The Union of Mahamudra and Dzokchen</a></li>
+				<li class="subhead-item">Buddhism section</li>
+				<li class="first-item"><a href="/buddhism/articles/twelve-links-of-dependent-arising.htm">Twelve Links of Dependent Arising</a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">Trungpa Chronicles <a href="https://www.chronicleproject.com/">www.chronicleproject.com</a> </li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,92 @@
+﻿/* css for /celibacy/quotes/_quotes_reformat.css -
+
+Prior update Nov 2, 2016. Current update May 5, 2020. 
+
+AddED dark styles March 6, 2022    Update to 2020.CSS April 27, 2022  */
+
+@media only print {
+	#article:after {
+		content: "update April 27, 2022";
+	}
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffd0;
+}
+
+/* menu-highlighter.js -- override default background */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #dae3da;
+	background: #c0cada;
+}
+
+
+.comment {
+	/* michael-shelton-paraphilia only */
+	font-size: 100%;
+	color: Maroon;
+	text-align: left;
+}
+
+html.dark .comment {
+	color: #f33;
+}
+
+/*********************** important !! **********************/
+
+/* IMPORTANT contents page has unique structure and classes
+	LEFT MENU: remove bolding left menu */
+ul.menu-section li.subhead-item {
+	font-weight: normal;
+}
+
+div.right-image-div-top {
+	margin-top: 35px;
+}
+
+/* There is no h2 in title include
+	h2 are used as page titles, shrink to the size 
+	of h3 rather than replacing all the h2 with h3
+	default h2 id 115% */
+h2 {
+	font-size: 110%;
+}
+
+h3 {
+	font-size: 100%;
+}
+
+#announce header h3.tight {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* almost every page has a right-image-div-top at the top
+	so get rid of 35px top margin
+article div + p:first-of-type {
+	margin-top: 18px
+}
+ */
+
+
+/*************************************************************/
+
+
+
+
+/* testing */
+
+/*  *******/
+
+
+/* end */

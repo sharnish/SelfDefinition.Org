@@ -1,0 +1,239 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sentido Común, Escrito Por Thomas Paine</title>
+	<meta name="description" content="">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Sentido Común, Escrito Por Thomas Paine">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/thomas-paine/sentido-comun/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_sentido-comun-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" -->
+	<link rel="next" href="introduccion.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* #index-lists is a nav */
+		#index-lists {
+			margin-top: 30px;
+			border: 0px solid red;
+			margin-left: 40px;
+		}
+
+		#index-lists hr {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			width: 75%;
+		}
+
+		@media only screen and (max-width:540px) {
+			#index-lists {
+				margin-left: 10px;
+			}
+		}
+
+		#index-lists ul {
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+			border: 0px solid blue;
+			width: 400px;
+		}
+
+		/* adjust to agree with the above */
+		@media only screen and (max-width:400px) {
+			#index-lists ul {
+				width: 100%;
+			}
+		}
+
+		#index-lists ul li {
+			margin: 0 0 25px;
+			border: 0px solid green;
+		}
+
+		#index-lists a {
+			display: inline-block;
+		}
+
+		#index-lists .index-contents-links {}
+
+		ul.index-external-links,
+		ul.index-site-links,
+		ul.index-optional-links {
+			font-size: 90%;
+			padding-left: 0;
+		}
+
+
+		/* Color coding is replicated on dark stylesheet */
+
+		#index-lists ul li.external-links-item,
+		#index-lists ul li.site-links-item,
+		#index-lists ul li.optional-links-item {
+			color: maroon;
+		}
+
+		/* remove hard-coded color */
+		#index-lists ul li.external-links-item,
+		#index-lists ul li.site-links-item,
+		#index-lists ul li.optional-links-item {
+			font-weight: bold;
+			font-size: 95%;
+			/* color: maroon; */
+			margin-bottom: 3px;
+			padding-bottom: 0;
+		}
+
+		#index-lists ul li.external-first-item,
+		#index-lists ul li.site-first-item,
+		#index-lists ul li.optional-first-item {
+			margin-top: 3px;
+			padding-top: 0;
+		}
+
+		/* this reduces left margin for this page only when screen size is small say try  360  */
+		@media only screen and (max-width:360px) {
+			#article {}
+
+			div#index-lists ul li {
+				margin-left: -30px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_sentido-comun-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_sentido-comun-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Contentido
+									</h3>
+									<p class="tiny">English: <a href="../common-sense/contents.htm">../common-sense/contents.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="introduccion.htm">Introducción &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<nav id="index-lists">
+
+								<ul class="index-contents-links">
+									<li class="contents-first-item"><a href="introduccion.htm">Introducción</a> </li>
+									<li><a href="1-del-gobierno.htm">1. Del gobierno </a></li>
+									<li><a href="2-de-la-monarquia.htm">2. De la monarquia</a> </li>
+									<li><a href="3-asuntos-americanos.htm">3. Asuntos Americanos</a> </li>
+									<li><a href="3b-asuntos-americanos-cont.htm">3b. Asuntos Americanos-cont</a> </li>
+									<li><a href="3c-asuntos-americanos-final.htm">3c. Asuntos Americanos-final</a> </li>
+									<li><a href="4-capacidad-actual-de-america.htm">4. Capicidad actual de America</a> </li>
+								</ul>
+
+								<hr />
+
+								<ul class="index-external-links">
+									<li class="external-first-item">
+									<li>Thomas Paine at <a href="https://en.wikipedia.org/wiki/Thomas_Paine">
+											Wikipedia</a> </li>
+									<li>Thomas Paine at <a href="https://www.history.com/topics/american-revolution/thomas-paine">History.Com</a></li>
+									<li>Common Sense at <a href="https://en.wikipedia.org/wiki/Common_Sense">
+											Wikipedia</a> </li>
+								</ul>
+
+								<ul class="index-site-links">
+									<li class="site-links-item">Also on this site</li>
+									<li class="site-first-item">Psychology Section</li>
+									<li>Étienne de La Boétie: <a href="/psychology/etienne-de-la-boetie/contents.htm">The Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+									<li> Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+									<li>Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda, 1928</a></li>
+									<li>William S. Lind: <a href="/psychology/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+									<li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a> </li>
+									<li>Wilfred N. Caron: <a href="/psychology/caron/contents.htm">The Occult Significance of Hypnosis</a></li>
+								</ul>
+
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="introduccion.htm">Introducción &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								<!-- spacer STILL needed to fill out width on a narrow page
+                                    Needed here but not in Spanish page - weird
+                                    need to figure out why -->
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

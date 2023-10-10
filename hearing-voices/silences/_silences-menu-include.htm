@@ -1,0 +1,139 @@
+<!-- start of menu include file   Update /styles-2022/  May 5, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<!-- these float, Don't forget Div below to clear -->
+			<li><a href="/hearing-voices/">Hearing Voices index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-2"><a href="/">Site root</a></li>
+			<li><a href="contents.htm"><span class="conditional-hide"></span>Contents</a></li>
+			<li><a href="home.htm"><span class="conditional-hide-4">Silences </span>Home</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-4"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<!-- #menu-container is targeted by the script RecoverDivScroll  -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/hearing-voices/">Hearing Voices index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<!-- "offset" allows you to center but remove a little space at left. -->
+		<ul class="menu-text center">
+			<li class="offset">Listening to the Silences </li>
+
+			<li class="normal note">
+				<img id="menu-image" class="menu-image" src="images/roy_profile.jpg" alt="Roy Vincent" />
+			</li>
+			<li class="offset">Roy Vincent</li>
+		</ul>
+
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li> <a href="home.htm">Silences Home</a>
+				<li><a href="prologue.htm">Prologue</a></li>
+				<li><a href="introduction.htm">Synopsis and Introduction</a></li>
+			</ul>
+			<!-- Collapseable: https://www.w3schools.com/howto/howto_js_collapsible.asp  -->
+
+
+			<ul class="menu-section" id="collapsible-chapters">
+
+				<li id="toggle-for-chapters"><a href="#" class="highlight">CHAPTERS <br /><span>&nbsp;(click to show/hide)</span></a> </li>
+				<!-- start chapter area to expand 
+				#collapsible-chapters li:nth-child(n+2)   -->
+				<li><a href='chapter-01.htm'>Chapter 1</a> </li>
+				<li><a href='chapter-02.htm'>Chapter 2</a> </li>
+				<li><a href='chapter-03.htm'>Chapter 3</a> </li>
+				<li><a href='chapter-04.htm'>Chapter 4</a> </li>
+				<li><a href='chapter-05.htm'>Chapter 5</a> </li>
+				<li><a href='chapter-06.htm'>Chapter 6&nbsp;&nbsp;*</a> </li>
+				<li><a href='chapter-07.htm'>Chapter 7</a> </li>
+				<li><a href='chapter-08.htm'>Chapter 8</a> </li>
+				<li><a href='chapter-09.htm'>Chapter 9</a> </li>
+				<li><a href='chapter-10.htm'>Chapter 10</a> </li>
+				<li><a href='chapter-11.htm'>Chapter 11</a> </li>
+				<li><a href='chapter-12.htm'>Chapter 12</a> </li>
+				<li><a href='chapter-13.htm'>Chapter 13</a> </li>
+				<li><a href='chapter-14.htm'>Chapter 14</a> </li>
+				<li><a href='epilogue.htm'>Epilogue</a> </li>
+				<li><a href='loose-ends.htm'>Loose Ends</a> </li>
+				<!-- end area to expand -->
+
+			</ul>
+			<ul class="menu-section">
+				<li><a href='epilogue.htm'>Epilogue</a> </li>
+				<li><a href='loose-ends.htm'>Loose Ends</a> </li>
+				<li><a href='summary-of-ploys.htm'>Summary of Ploys</a> </li>
+				<li><a href='bibliography.htm'>Bibliography</a> </li>
+				<li><a href='gallery.htm'>Gallery</a> </li>
+			</ul>
+
+
+			<ul class="menu-section" id="collapsible-essays">
+				<li id="toggle-for-essays"><a href="#">ESSAYS<br /> <span>&nbsp;(click to show/hide)</span></a></li>
+				<!-- start essay area to expand
+				#collapsible-essays li:nth-child(n+2)   -->
+				<li><a href='essay-01.htm'>1. You must listen to those who hear voices</a></li>
+				<li><a href='essay-02.htm'>2. Seek the beginnings </a></li>
+				<li><a href='essay-03.htm'>3. Je suis moi-même la matière de mon Essai</a></li>
+				<li><a href='essay-04.htm'>4. Paranoia</a></li>
+				<li><a href='essay-05.htm'>5. "What I tell you three times is true!"</a></li>
+				<li><a href='essay-06.htm'>6. "Away with the fairies" </a></li>
+				<li><a href='essay-07.htm'>7. Without Apology</a></li>
+				<li><a href='essay-08.htm'>8. Earth Currents: The Cause of "Geopathic" Illness
+					</a></li>
+				<li><a href='essay-09.htm'>9. J's Story</a></li>
+				<li><a href='essay-10.htm'>10. Two fools</a></li>
+				<li><a href='essay-11.htm'>11. All fur coat</a></li>
+				<li><a href='essay-12.htm'>12. Poem: Early Closing Thursday </a></li>
+				<!-- end essay area to expand -->
+
+
+			</ul>
+			<ul class="menu-section">
+				<li><a href="download.htm">Download the PDFs</a> </li>
+			</ul>
+			<p class="note80">Used with permission</p>
+		</div>
+		<!-- end #menu-section-group -->
+
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item">Vernon Howard, <a href="/hearing-voices/articles/vernon-howard-freedom-from-harmful-voices.htm">Freedom From Harmful Voices</a></li>
+				<li>Alan Fitzpatrick, <a href="/hearing-voices/articles/alan-fitzpatrick-the-voices-we-may-hear.htm">The Voices We May Heaar</a></li>
+				<li>Alan Fitzpatrick, <a href="/hearing-voices/articles/alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">Surest Path to Mental Clarity</a></li>
+				<li>Celibacy Section: <a href="/celibacy/">/celibacy/</a></li>
+				<li>Psychology Section: <a href="/psychology/">/psychology/</a></li>
+				<li>Possession Section: <a href="/possession/">/possession/</a></li>
+			</ul>
+		</div>
+
+
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

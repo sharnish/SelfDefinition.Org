@@ -1,0 +1,102 @@
+<!-- start of menu include file   Update 2021. Feb 8, 2022. Update June 3, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<!-- these float, Don't forget Div below to clear -->
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!-- comment out either the English or the Spanish -->
+			<!-- ajax has negative top and bottom margins in .CSS -->
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top:10px;">
+			<li style="margin-left:10px;text-align:left;">The Brainwashing Manual <span class="normal">(1955)</span></li>
+			<li style="margin-left:10px;text-align:left;" class="normal note80">Purported communist text on psychopolitics</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/l-ron-hubbard.jpg" alt="L. Ron Hubbard">
+			</li>
+			<li>L. Ron Hubbard</li>
+			<li class="normal note" style="margin-top:-5px;">(1911-1986)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="editorial-note.htm">Editorial Note</a></li>
+				<li><a href="address-by-beria.htm">An Address by Beria</a></li>
+				<li><a href="chapter-01.htm">1. The History and Definition of Psychopolitics</a></li>
+				<li><a href="chapter-02.htm">2. The Constitution of Man as a Political Organism</a></li>
+				<li><a href="chapter-03.htm">3. Man as an Economic Organism</a></li>
+				<li><a href="chapter-04.htm">4. State Goals for the Individual and Masses</a></li>
+				<li><a href="chapter-05.htm">5. An Examination of Loyalties</a></li>
+				<li><a href="chapter-06.htm">6. The General Subject of Obedience</a></li>
+				<li><a href="chapter-07.htm">7. Anatomy of Stimulus-Response Mechanisms of Man</a></li>
+				<li><a href="chapter-08.htm">8. Degradation, Shock and Endurance</a></li>
+				<li><a href="chapter-09.htm">9. The Organization of Mental Health Campaigns</a></li>
+				<li><a href="chapter-10.htm">10. Conduct Under Fire</a></li>
+				<li><a href="chapter-11.htm">11. Use of Psychopolitics in Spreading Communism</a></li>
+				<li><a href="chapter-12.htm">12. Violent Remedies</a></li>
+				<li><a href="chapter-13.htm">13. Recruiting of Psychopolitical Dupes</a></li>
+				<li><a href="chapter-14.htm">14. The Smashing of Religious Groups</a></li>
+				<li><a href="chapter-15.htm">15. Proposals Which Must Be Avoided</a></li>
+				<li><a href="chapter-16.htm">16. In Summary</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>L. Ron Hubbard at <a href="https://en.wikipedia.org/wiki/L._Ron_Hubbard">Wikipedia</a></li>
+				<li>The communists don't like this book at<a href="https://en.wikipedia.org/wiki/Brain-Washing_(book)">
+						Wikipedia</a> </li>
+				<li>Psychological warfare at <a href="https://en.wikipedia.org/wiki/Psychological_warfare">Wikipedia</a></li>
+				<li>Political warfare at <a href="https://en.wikipedia.org/wiki/Political_warfare">Wikipedia</a></li>
+				<li>Brainwashing at <a href="https://en.wikipedia.org/wiki/Brainwashing">Wikipedia</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Psychology</li>
+				<li class="first-item">Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm"> The Crowd, A Study of the Popular Mind </a></li>
+				<li>Joost Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind</a></li>
+				<li>Edward Bernays: <a href=" /psychology/bernays/english/contents.htm">Propaganda</a></li>
+				<li>James H. Loryea a.k.a. "Santanelli", <a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion</a></li>
+				<li class="header-item">Liberty section</li>
+				<li>Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+			</ul>
+		</div>
+
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

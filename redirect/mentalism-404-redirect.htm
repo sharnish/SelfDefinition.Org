@@ -1,0 +1,587 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mentalism redirect page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content="Mentalism redirect page">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/redirect/images/mentalism.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="/redirect/_redirect-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/***********************************************/
+		/***********************************************/
+		/** To do: get PDF names and create 301 redirects
+        /** to avoid signaling 404 errors
+            and get 404 errors                        **/
+		/***********************************************/
+		/***********************************************/
+		/* colors from Ramana quotes */
+		html,
+		body,
+		#fixed-header-small-screen,
+		#menu-site-small-screen,
+		.progress-header,
+		.progress-container {
+			background: #f6fffc;
+		}
+
+		#nav .menu-section a.active,
+		#menu-scroll,
+		#menu-scroll a,
+		#toTopButton {
+			background: #c9e7d0;
+		}
+
+	</style>
+	<script>
+		/* replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/redirect/images/mentalism.jpg");
+
+			$('#menu-image').attr("src", "/redirect/images/mentalism.jpg");
+
+			$('.replaceable-link span').text('Psychology Index');
+
+			$('.replaceable-link').attr("href", "/psychology/");
+
+			$('.replaceable-link').attr("style", "display:block");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_redirect-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_redirect-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Mentalism Book List
+									</h3>
+									<p class="note">
+										Due to capacity constraints we had to move the collection of Mentalism PDFs off this server. The following links may be helpful to you.
+									</p>
+									<p class="note">Return to Psychlogy section: <a href="/psychology/">/psychology/</a></p>
+									<p class="note">Return to Redirect index: <a href="/redirect/redirect-index.htm">redirect-index.htm</a></p>
+									<p class="note">Contact us for more information: <a href="/contact/">/contact/</a></p>
+
+								</header>
+							</div>
+							<div class="hidden">
+								<!-- Try this:
+                                1 – 13 Steps to Mentalism. Corinda. ...
+                                2 – Tricks of the Mind.  Derren Brown. ...
+                                3 – Confessions of a Conjuror. Derren Brown ...
+                                4 – 9 Steps to Influence: A Mentalist's Guide For Everyman. ...
+                                5 – Pure Effect. Derren Brown ...<< $ hundreds OF DOLLARS.
+                                6 – Practical Mental Magic. ...
+                                7 – Naked Mentalism. ...
+                                8 – Prism The Color Series of Mentalism.
+                            -->
+							</div>
+							<!-- next-previous-item-nav not used -->
+							<div class="amazon-section">
+								<p class="tiny tight" style="margin-top:30px;">
+									At Amazon.Com USA. International links coming soon.</p>
+
+								<p class="tiny tight">
+									No images? Your browser settings may be blocking them.</p>
+								<div class="item-list">
+									<div class="item-container">
+										<!-- 13 Steps to Mentalism. Author: Corinda  version 1-->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B00168B6QM/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00168B6QM&linkCode=as2&tag=selfdefinitio-20&linkId=1f01fe24448e9deaa1df24b5683c9009">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00168B6QM&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20">
+											</a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B00168B6QM/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00168B6QM&linkCode=as2&tag=selfdefinitio-20&linkId=da2ac3891d93d53dead142f5b9819c00">13 Steps to Mentalism by Corinda (1)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B00168B6QM" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												Source #1. Hardcover, 1996, 424 pages. New and used.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<div class="item-container">
+										<!-- 13 Steps to Mentalism. Author: Corinda version 2 -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B0007EVG1G/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0007EVG1G&linkCode=as2&tag=selfdefinitio-20&linkId=023f44333ab8108376d5c67f3c4cfbf3">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0007EVG1G&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B0007EVG1G/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0007EVG1G&linkCode=as2&tag=selfdefinitio-20&linkId=629a2847b01165b1a1c5f1495d670959">13 steps to mentalism by Corinda (2)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B0007EVG1G" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												Source #2. Hardcover, 1996, 424 pages. New and used.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<hr />
+									<div class="item-container">
+										<!-- Prototype -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/0486244261/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0486244261&linkCode=as2&tag=selfdefinitio-20&linkId=16be6b5ce6d7975e3159236a551cbff9">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0486244261&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/0486244261/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0486244261&linkCode=am2&tag=selfdefinitio-20&linkId=8e5c89474385e7e53cf4eed1bc59411b">Practical Mental Magic</a>
+											<p class="note80">
+												By Theodore Annemann. Dover Magic Book. Kindle and paperback.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<div class="item-container">
+										<!-- Methods of Persuasion: How to Use Psychology to Influence Human Behavior Kindle Edition  -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B00G1743XG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00G1743XG&linkCode=as2&tag=selfdefinitio-20&linkId=bff358d31fb90bd32726a3cc90eedc1e">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00G1743XG&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B00G1743XG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00G1743XG&linkCode=am2&tag=selfdefinitio-20&linkId=9b49908a2b0a1ce188c065f60c95ad15">Methods of Persuasion, by Nick Kolenda </a>
+											<img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B00G1743XG" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												How to Use Psychology to Influence Human Behavior. Kindle, audiobook and paperback. Print length 242 pages.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<div class="item-container">
+										<!-- The James Bond Cold Reading: A Re-Imagining of the 'Classic' Reading (Speed Learning) (Volume 2)
+                                           https://www.amazon.com/gp/product/1479394351
+                                             -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/1479394351/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1479394351&linkCode=as2&tag=selfdefinitio-20&linkId=24ec65318085308c26caf8748f908706"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1479394351&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/1479394351/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1479394351&linkCode=am2&tag=selfdefinitio-20&linkId=3d1fb04af79280664ffedd67bb9a2544">The James Bond Cold Reading: A Re-Imagining of the 'Classic' Reading </a>
+											<p class="note80">
+												Speed Learning. Volume 2
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+
+									<div class="item-container">
+										<!-- Prism The Color Series of Mentalism
+                                        https://www.amazon.com/gp/product/B00FM0HO20
+                                        -->
+										<div class="image-link">
+											<a href="https://www.amazon.com/gp/product/B00FM0HO20/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=ab5d1dc70b1728f9efab4fd8f5dd42d8&language=en_US" target="_blank"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00FM0HO20&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
+
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B00FM0HO20/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00FM0HO20&linkCode=am2&tag=selfdefinitio-20&linkId=d855b1ee8ad53ca80b9f437bca55a1b8">Prism The Color Series of Mentalism by Max Maven</a>
+											<p class="note80">
+												Hardcover, beautifully illustrated. A.k.a Phil Goldstein
+											</p>
+
+
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<hr />
+									<p>
+										Derren Brown</p>
+									<div class="item-container">
+										<!-- Tricks of the Mind.  Derren Brown. -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B01NH0311M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01NH0311M&linkCode=as2&tag=selfdefinitio-20&linkId=952fc64dc14740ab468c896fd1283528">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B01NH0311M&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20">
+											</a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B01NH0311M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B01NH0311M&linkCode=am2&tag=selfdefinitio-20&linkId=ecb4433c632456eee4bcc1d98e8f111c">Tricks of the Mind by Derren Brown</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B01NH0311M" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												December 2006. New and used.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+
+									<div class="item-container">
+										<!-- Absolute Magic Hardcover – January 1, 2003
+                                        https://www.amazon.com/gp/product/B0010W8CWU -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B0010W8CWU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0010W8CWU&linkCode=as2&tag=selfdefinitio-20&linkId=fe930ede828ff91e686628c9dd371858"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0010W8CWU&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B0010W8CWU/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0010W8CWU&linkCode=as2&tag=selfdefinitio-20&linkId=46fbc1133bd53a0c4b6dad3b6730ca82">Absolute Magic by Derren Brown</a>
+											<p class="note80">
+												Hardcover. Expensive.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+
+									<div class="item-container">
+										<!-- Confessions of a Conjuror -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/1905026595/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1905026595&linkCode=as2&tag=selfdefinitio-20&linkId=de99b398715c7da5bb375e6955dd7ede">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1905026595&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/1905026595/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1905026595&linkCode=am2&tag=selfdefinitio-20&linkId=bf319b221eed47e76e5e03efb2583ebe">Confessions of a Conjuror, by Derren Brown</a>
+											<p class="note80">
+												Enter the mind and hear the thoughts of this master mentalist.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<div class="item-container">
+										<!-- Derren Brown -
+                                        Pure effect: Direct mind reading and magical artistry, Colltctible -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B0006RIRF2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0006RIRF2&linkCode=as2&tag=selfdefinitio-20&linkId=fca9cbe0c877e2f87239b1d91b81fc1e">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0006RIRF2&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B0006RIRF2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0006RIRF2&linkCode=am2&tag=selfdefinitio-20&linkId=22f898a6a35a0925918b989e13a7836e">Pure effect, by Derren Brown, Collectible</a>
+											<p class="note80">
+												Direct mind reading and magical artistry. Very expensive collectible.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<hr />
+									<div class="item-container">
+										<!--
+                                        Naked Mentalism Paperback – 2011
+                                        by Jon Thompson THREE eDITIONS -->
+										<div class="image-link" style="height: 250px; border: 0px solid red;">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B00262OZZG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00262OZZG&linkCode=as2&tag=selfdefinitio-20&linkId=a2175006dbaadf114fdccb11f8f8cedd">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00262OZZG&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20">
+											</a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B00262OZZG/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00262OZZG&linkCode=am2&tag=selfdefinitio-20&linkId=db4d5422be8155f451bda73523359efa">Naked Mentalism, by Jon Thompson</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B00262OZZG" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												ASIN: B00262OZZG
+											</p>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B004JBCKX6/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004JBCKX6&linkCode=am2&tag=selfdefinitio-20&linkId=6191d87bef2aaafdee6294acd8fd0b89">Naked Mentalism Volume 2</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B004JBCKX6" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												ASIN: B004JBCKX6
+											</p>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B06XXLSPJR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XXLSPJR&linkCode=am2&tag=selfdefinitio-20&linkId=46c4e454b47f6d697eae5b2b765bed7c">Naked Mentalism, Volume 3</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B06XXLSPJR" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												ASIN: B06XXLSPJR
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<hr />
+									<div class="item-container">
+										<!-- What Every BODY Is Saying
+                                        https://www.amazon.com/What-Every-BODY-Saying-Speed-Reading/dp/B006ZNFEKW/
+                                         -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/B006ZNFEKW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B006ZNFEKW&linkCode=as2&tag=selfdefinitio-20&linkId=d87d486617ec48dd7f268a0d6d0e528c">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B006ZNFEKW&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/B006ZNFEKW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B006ZNFEKW&linkCode=am2&tag=selfdefinitio-20&linkId=895b4c228f2eb3bea29211466c72fd1a">What Every BODY Is Saying</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B006ZNFEKW" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												An Ex-FBI Agent's Guide to Speed-Reading People. Kindle, paperback, hardcover, audiobook.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<div class="item-container">
+										<!--
+                                        Encyclopedia of Mentalism & Mentalists Hardcover – 2011
+                                        by Corinda (Author), William Rauscher (Author)  -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/1450765955/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1450765955&linkCode=as2&tag=selfdefinitio-20&linkId=391c670500a3008bca81a0fa6e38a620">
+												<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1450765955&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20">
+											</a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/1450765955/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1450765955&linkCode=am2&tag=selfdefinitio-20&linkId=b13844a9884ca1b3d6a7e60068ea7e14">Encyclopedia of Mentalism &amp; Mentalists</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=1450765955" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
+											<p class="note80">
+												By Corinda and William Rauscher. 600 pages, essential information.
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+									<!--
+                                    <div class="item-container">
+                                       <!--
+                                        <div class="image-link">
+                                            <img src="/redirect/images/" alt="" title="" />
+                                        </div>
+                                        <div class="text-link">
+                                            <p class="note80">
+                                            </p>
+                                        </div>
+                                        <div style="clear: both;">
+                                        </div>
+                                    </div>
+                                    <div class="item-container">
+                                       <!--
+                                        <div class="image-link">
+                                            <img src="/redirect/images/" alt="" title="" />
+                                        </div>
+                                        <div class="text-link">
+                                            <p class="note80">
+                                            </p>
+                                        </div>
+                                        <div style="clear: both;">
+                                        </div>
+                                    </div>
+
+                                    <div class="item-container">
+                                       <!--
+                                        <div class="image-link">
+                                            <img src="/redirect/images/" alt="" title="" />
+                                        </div>
+                                        <div class="text-link">
+                                            <p class="note80">
+                                            </p>
+                                        </div>
+                                        <div style="clear: both;">
+                                        </div>
+                                    </div>
+                                     -->
+									<header class="tiny">
+										<!-- not a header, but using for formatting-->
+										<p class="toowide">
+											Amazon affiliate commissions help defray our costs.</p>
+									</header>
+								</div>
+								<!-- end item list -->
+							</div>
+							<!-- end amazon-section -->
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="book-list">&nbsp;</a>
+							<h4>
+								Mentalism Book List (pdfs now removed)
+							</h4>
+							<div class="pdf-list" style="margin-top: 25px;">
+								<p>
+									Basil Horfitz - Mental Magic IV.pdf
+								</p>
+								<p>
+									Ben Rayot - Deadly Mentalism.pdf
+								</p>
+								<p>
+									Body Language - Allan Pease.pdf
+								</p>
+								<p>
+									Body Language.pdf
+								</p>
+								<p>
+									Chuck Hickok - Mentalism Incorporated.pdf
+								</p>
+								<p>
+									Corinda - 13 Steps To Mentalism (Complete).pdf
+								</p>
+								<p>
+									Encyclopedic Dictionary of Mentalism - Volume 1.pdf
+								</p>
+								<p>
+									Encyclopedic Dictionary of Mentalism - Volume 3.pdf
+								</p>
+								<p>
+									George B. Anderson - Dynamite Mentalism.pdf
+								</p>
+								<p>
+									How to Tell if Someone is Lying.pdf
+								</p>
+								<p>
+									Impromptu Mind Reading Effect.pdf
+								</p>
+								<p>
+									Jas Jakutsch - Completely Mental - Vol 2.pdf
+								</p>
+								<p>
+									Joseph R. Plazo - PhD of Persuasion.pdf
+								</p>
+								<p>
+									Juan Tamariz - Mental Blockbuster Prediction.pdf
+								</p>
+								<p>
+									Katz - mentalism in linguistics.pdf
+								</p>
+								<p>
+									Larry Becker - Bold Business.pdf
+								</p>
+								<p>
+									Larry Becker - Book Test 4 Dummies.pdf
+								</p>
+								<p>
+									Larry Becker - Out of Body.pdf
+								</p>
+								<p>
+									Larry Becker - World Of Super Mentalism, II.pdf
+								</p>
+								<p>
+									Larry Becker - World of Super Mentalism I.pdf
+								</p>
+								<p>
+									Making Manifestations (Building the Commercial Seance) by Lee Earle.pdf
+								</p>
+								<p>
+									Marc Spelmann - Glimpse.pdf
+								</p>
+								<p>
+									Mark Timon - Triple Impact Design Duplication - Mentalism.pdf
+								</p>
+								<p>
+									Master Of Body Language.pdf
+								</p>
+								<p>
+									Mastering Hypnosis.pdf
+								</p>
+								<p>
+									Max Maven - Flaunting Five Fanciful Formulae.pdf
+								</p>
+								<p>
+									Nick Trost - Mental Card Miracles.pdf
+								</p>
+								<p>
+									Ormond McGill - Psychic Magic - Vol 2.pdf
+								</p>
+								<p>
+									Ormond McGill - Psychic Magic - Vol 4.pdf
+								</p>
+								<p>
+									Patrick Page - Entertaining ESP.pdf
+								</p>
+								<p>
+									Phil Goldstein - The Blue, Red, And Green Books Of Mentalism.pdf
+								</p>
+								<p>
+									Phil Goldstein - The Blue-green and red Book Of Mentalism.pdf
+								</p>
+								<p>
+									Phil Goldstein - The Violet Book of Mentalism.pdf
+								</p>
+								<p>
+									Phil Goldstein - The Yellow Book Of Mentalism.pdf
+								</p>
+								<p>
+									Psychokinesis Magic Book.pdf
+								</p>
+								<p>
+									Ralph W Read - One Man Mind Reading Secrets.pdf
+								</p>
+								<p>
+									Robert Nelson - Deluxe Club Mind Reading.pdf
+								</p>
+								<p>
+									Sealed Vision - Will Dexters.pdf
+								</p>
+								<p>
+									Using Playing Cards in Mentalism.pdf
+								</p>
+								<p>
+									William Walker Atkinson - Practical Mind Reading.pdf <span class="note80 block">was moved to here:</span> <a href="/new-thought/William-Walker-Atkinson-Practical-Mind-Reading.pdf">/new-thought/William-Walker-Atkinson-Practical-Mind-Reading.pdf</a>
+								</p>
+							</div>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

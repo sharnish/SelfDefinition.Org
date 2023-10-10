@@ -1,0 +1,92 @@
+# .htaccess file for selfdefinition.org/celibacy/quotes/
+
+# hotlink protection generator
+# https://www.htaccesstools.com/hotlink-protection/
+# BLOCK SITE REFERRERS
+# this works, from:  https://incredibill.me/htaccess-block-referer
+# Flags:  F=forbidden ; L=last ; NC=case insensitive, 
+#         N=next, continue processing ; C=chained, continue with next rule
+
+# added Feb 25, 2017 for porn site stealing image
+# just banned him instead: root htaccess 
+# https://doremin.com/bhavana-sex-interview.html   
+# RewriteCond %{HTTP_REFERER}      doremin\.com                 [NC,OR]
+#RewriteEngine On
+#RewriteCond %{HTTP_REFERER} doremin\.com [NC]
+#RewriteRule .* /images/goatse.jpg [L]
+
+
+# Feb 1, 2017 weird Urls from logs, get rid of them: 
+Redirect gone "/celibacy/quotes/dhananjay-harm-of-masturbation.htm/gurdjieff-on-kundalini-and-transmutation.htm"
+Redirect gone "/celibacy/quotes/dhananjay-harm-of-masturbation.htm/richard-rose-prostaglandins-and-morality.htm"
+
+# Another Feb 24, 2017 - tested, works ok 
+Redirect gone "/celibacy/quotes/dhananjay-harm-of-masturbation.htm/bennar-mcfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"
+
+Redirect gone "/celibacy/quotes/christian-celibacy.htm"
+Redirect gone "/celibacy/quotes/father-samuel-medley-christian-celibacy-slideshow.htm" 
+Redirect gone "/celibacy/quotes/slideshow/"
+
+## must add rel conical for some pdfs in the root directory
+
+ 
+# old names 404 discovered Jan 3, 2017
+Redirect 301 "/celibacy/quotes/abdullah-ismail-stop-masturbation-an-islamic-solution.htm"  "/celibacy/quotes/abdullah-ismail-masturbation-disasterous-problem-faced-by-youth.htm"
+
+# another old one found Jan 29, 2017
+Redirect 301 "/celibacy/quotes/hare-krishna-devotee.htm"  "/celibacy/quotes/hare-krishna-devotee-on-celibacy.htm"
+
+# recent name change April 2015 
+# get rid of these Feb 1 2017 has been 2 years
+# redirect 301 /celibacy/quotes/freedom-is-a-gift.htm                              /celibacy/quotes/lee-warfield-freedom-is-a-gift.htm
+# redirect 301 /celibacy/quotes/vopus-gnosis-harm-of-masturbation.htm              /celibacy/quotes/vopus-gnosis-negative-effects-of-masturbation.htm
+# redirect 301 /celibacy/quotes/nofaplife-sexual-force-or-the-winged-dragon.htm   /celibacy/quotes/omraam-aivanhov-sexual-force-or-the-winged-dragon.htm
+
+# these are old, removed Feb 1, 2017
+# redirect 301 /celibacy/quotes/dhanajay.htm                   /celibacy/quotes/dhananjay-on-brahmacharya.htm
+# redirect 301 /celibacy/quotes/dhananjay.htm                  /celibacy/quotes/dhananjay-on-brahmacharya.htm
+# redirect 301 /celibacy/quotes/comments-by-theosophist.htm    /celibacy/quotes/comments-by-anonymous.htm
+
+
+# Strange, getting a bad redirect from someplace, to the 2nd, need the 2nd statement to fix:
+
+Redirect 301 "/celibacy/quotes/dalai-lama-on-celibacy.htm"             "/celibacy/quotes/dalai-lama-interview-celibacy.htm"  
+Redirect 301 "/celibacy/quotes/dalai-lama-interview-on-celibacy.htm"   "/celibacy/quotes/dalai-lama-interview-celibacy.htm"  
+
+######## same thing with the next --- Stackoverflow says browser may be caching the page redirects
+
+# added 4 Aug 2016 - correct misspelling in energy. Also checked Jan 10, 2017.
+# somehow the first redirect is going to dhananjay-sublimating-vital-energy-prana.htm so the
+# second redirect is needed. Can't find what is causing it.
+Redirect 301 "/celibacy/quotes/dhananjay-sublimating-vital-evergy-prana.htm" "/celibacy/quotes/dhananjay-sublimating-vital-energy-prajna.htm"
+Redirect 301 "/celibacy/quotes/dhananjay-sublimating-vital-energy-prana.htm" "/celibacy/quotes/dhananjay-sublimating-vital-energy-prajna.htm"  
+
+#more misspellings
+Redirect 301 "/celibacy/quotes/swami-kripalvanada-illusion-of-conjugal-sadhana.htm"   "/celibacy/quotes/swami-kripalvananda-illusion-of-conjugal-sadhana.htm"
+
+Redirect 301 "/celibacy/quotes/swami-kripalvanada-yoga-and-celibacy.htm"              "/celibacy/quotes/swami-kripalvananda-yoga-and-celibacy.htm"
+
+# change made Aug 19, 2016
+# get rid of these Feb 1, 2017
+# Redirect 301 "/celibacy/quotes/franz-hartman-on-chastity.htm"                          "/celibacy/quotes/franz-hartmann-on-chastity.htm"
+# Redirect 301 "/celibacy/quotes/john-paul-2-chastity-for-the-sake-of-the-kingdom.htm"   "/celibacy/quotes/john-paul-2-chastity-for-the-sake-of-the-kingdom-1994.htm"
+
+# variuous mispellings
+# These were made about Dec 2016
+# google's 
+Redirect 301 "/celibacy/quotes/bernarr-mcfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"  "/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"
+
+Redirect 301 "/celibacy/quotes/bernar-macfadden-manhood-and-marriage-truth-about-masturbation-part-1.htm" "/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-1.htm"
+
+Redirect 301 "/celibacy/quotes/bernar-macfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"  "/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"
+
+Redirect 301 "/celibacy/quotes/bennar-mcfadden-manhood-and-marriage-truth-about-masturbation-part-1.htm"  "/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-1.htm"
+
+Redirect 301 "/celibacy/quotes/bennarr-mcfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"  "/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"  
+
+Redirect 301 "/celibacy/quotes/bennar-mcfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"   "/celibacy/quotes/bernarr-macfadden-manhood-and-marriage-truth-about-masturbation-part-2-treatment.htm"  
+
+ 
+# end
+
+

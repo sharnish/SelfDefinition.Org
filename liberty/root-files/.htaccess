@@ -1,0 +1,27 @@
+# .htaccess file for selfdefinition.org/liberty/
+# update July 26, 202
+
+# syntax
+#<Files 'Franz-Hartmann-Magic-White-and-Black-3rd-edit-not-ocr.pdf'>
+#	Header add Link '<http://selfdefinition.org/magic/hartmann/magic-hartmann-contents.htm>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+
+<Files 'Etienne-de-la-Boetie-Politics-of-Obedience-von-Mises.pdf'>
+	Header add Link '<https://selfdefinition.org/liberty/etienne-de-la-boetie/contents.htm>; rel="canonical"'
+	Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+#temporary until finished
+
+IndexIgnore thomas*
+
+# name change July 26, 2022
+
+#Redirect 301 "Citizens-Rule-Book-Jury-Handbook.pdf"		"Lysander-Spooner-Citizens-Rule-Book-Jury-Handbook.pdf"
+
+
+# end
+

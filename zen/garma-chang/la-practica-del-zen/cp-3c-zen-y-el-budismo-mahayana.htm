@@ -1,0 +1,353 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Zen y el budismo mahayana - La Práctica del Zen</title>
+    <meta name="description" content="¿Cómo se compara la enseñanza del zen con la de las dos escuelas principales de Mahayana, a saber, Yogacara y Madhyamika?">
+    <meta name="author" content="Garma C.C. Chang">
+    <meta property="og:title" content="El Zen y el budismo mahayana - La Práctica del Zen">
+    <meta property="og:description" content="¿Cómo se compara la enseñanza del zen con la de las dos escuelas principales de Mahayana, a saber, Yogacara y Madhyamika?">
+    <meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/la-practica-del-zen/images/Ma-Tsu-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_practica-del-zen-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="cp-3b-iluminacion-de-tipo-zen.htm">
+    <link rel="next" href="cp-3d-cuatro-distinciones-de-lin-chi.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 180px;
+            border: 0px solid red;
+        }
+
+        ul.page-links li {
+            border: 0px solid blue;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width: 300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+        .right-image-div img {
+            max-width: 190px;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .right-image-div img {
+                width: auto;
+                max-width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_practica-del-zen-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_practica-del-zen-title-include.htm"); ?>
+                                    <h3>
+                                        El Zen y el budismo mahayana
+                                    </h3>
+                                    <p class="tiny">
+                                        This page in English: <a href="../practice-of-zen/ch-3c-zen-and-mahayana.htm">..zen-and-mahayana.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="cp-3b-iluminacion-de-tipo-zen.htm">&lt; ¿Qué es la iluminación Zen?</a></li>
+                                    <li class="align-right"><a href="cp-3d-cuatro-distinciones-de-lin-chi.htm">Cuatro distinciones Lin Chi &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#yogachara">Yogachara y Zen</a></li>
+                                    <li><a href="#madhyamika">Madhyamika y Zen</a></li>
+                                </ul>
+                            </nav>
+                            <p class="pagenum">
+                                my pdf - English - p 167
+                            </p>
+                            <p class="pagenum">
+                                Spanish pdf page 87
+                            </p>
+                            <p class="top">
+                                ¿Qué relación media entre las enseñanzas del Zen y las escuelas principales del mahayana, a saber, el yogachara y el madhyamika? <sup>[1, 2, 3]</sup>
+                            </p>
+                            <p class="fnote wiki">
+                                [1. <a href="https://en.wikipedia.org/wiki/Mahayana">en.wikipedia.org/wiki/<wbr />Mahayana</a>&nbsp;]
+                            </p>
+                            <p class="fnote wiki">
+                                [2. <a href="https://en.wikipedia.org/wiki/Yogachara">en.wikipedia.org/wiki/<wbr />Yogachara</a>&nbsp;]
+                            </p>
+                            <p class="fnote wiki">
+                                [3. <a href="https://en.wikipedia.org/wiki/Madhyamaka">en.wikipedia.org/wiki/<wbr />Madhyamaka</a>&nbsp;]
+                            </p>
+                            <div class="right-image-div">
+                                <img src="images/vasubandhu-as-chan-patriarch.jpg" alt="vasubandhu-as-chan-patriarch" />
+                                <p class="note"><a href="https://en.wikipedia.org/wiki/Vasubandhu">Vasubandhu</a><br />
+                                    Un fundador de Yogacarya<br /> y un Patriarca Zen.</p>
+                            </div>
+                            <p>
+                                Desde el punto de vista mahayana, las únicas diferencias reales entre el budismo corriente y el budismo Zen consisten en las técnicas peculiares utilizadas y las expresiones no convencionales usadas por el Zen para ilustrar la verdad-prajna de la esencia de la mente. E1 Zen concuerda con la filosofía básica del yogachara y el madhyamika, y abarca la esencia de ambas enseñanzas. En primer término, veamos la forma en que el Zen se parece al yogachara.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="yogachara">&nbsp;</a>
+                            <h4>
+                                Yogachara y Zen
+                            </h4>
+                            <p>
+                                La filosofía de la Mente-sola (vijnaptimatra) de yogachara es resumida por Hsuan Chuang <sup>[4]</sup> en su traducción-composición del Chen Wei Shih Lung: <sup>[5]</sup> &quot;En el samsara o en el nirvana no se encuentran dharmas <a class="return-anchor" id="return-cp-3c-nota-8"></a><sup><a href="notas.htm#capitulo-3-8">[Nota&nbsp;final&nbsp;3-8]</a></sup> aparte de la conciencia. Algunos dharmas pueden ser atribuidos a las formas de la conciencia, otros son réplicas y objetos transformados por la conciencia; otros corresponden a las divisiones, reinos y esencia de la conciencia&quot;. <a class="return-anchor" id="return-cp-3c-nota-9"></a><sup><a href="notas.htm#capitulo-3-9">[Nota&nbsp;final&nbsp;3-9]</a></sup> El primer grupo y el Último constituyen los puntos más importantes de la filosofía de la Mente-sola. Por medio de ellos podemos apreciar los paralelos entre el Zen y el yogachara.
+                            </p>
+                            <p class="fnote wiki">
+                                [4. Hsüan-tsang (c. 602-664) <a href="https://en.wikipedia.org/wiki/Xuanzang">en.wikipedia.org/<wbr />wiki/<wbr />Xuanzang</a>&nbsp;]
+                            </p>
+                            <p class="fnote wiki">
+                                [5. &quot;Discurso sobre la perfección de la conciencia-solamente&quot;. <a href="https://en.wikipedia.org/wiki/Cheng_Weishi_Lun">en.wikipedia.org/<wbr />wiki/<wbr />Cheng_<wbr />Weishi_Lun</a>&nbsp;]
+                            </p>
+                            <p>
+                                Según el yogachara, cada una de las Ocho Conciencias <a class="return-anchor" id="return-cp-3c-nota-10"></a><sup><a href="notas.htm#capitulo-3-10">[Nota&nbsp;final&nbsp;3-10]</a></sup> tiene tres divisiones funcionales: <a class="return-anchor" id="return-cp-3c-nota-11"></a><sup><a href="notas.htm#capitulo-3-11">[Nota&nbsp;final&nbsp;3-11]</a></sup> en primer lugar, la parte objetiva o vista (laksana-bhaga), equivalente a lo que los epistemologistas llaman los datos de los sentidos; en segundo término, la parte subjetiva o vidente (darsana-bhaga) la facultad cognoscente que muchos filósofos toman, erróneamente, por la mente en sí; en tercer lugar, la parte auto-consciente (saksatkari-bhaga).
+                            </p>
+                            <p>
+                                Esta parte &quot;auto-consciente&quot; es considerada por el yogachara la conciencia pura propiamente dicha, mientras que las otras dos partes son tenidas por vagas imaginaciones, creadas por la conciencia mediante sus caminos habituales. Este énfasis en la parte auto consciente tiene mucha importancia, y tiene efectos considerables, especialmente desde el punto de vista práctico. También esto se encuentra en el Zen.
+                            </p>
+                            <p>
+                                El maestro Shen Hui (668-770) <sup>[6]</sup> decía: &quot;La palabra conocimiento (chih) es la puerta que lleva a todos los misterios&quot;. <a class="return-anchor" id="return-cp-3c-nota-12"></a><sup><a href="notas.htm#capitulo-3-12">[Nota&nbsp;final&nbsp;3-12]</a></sup> Por chih entendía él aquí la autoconciencia profunda o intuición-prajna, como ha señalado acertadamente el Dr. Suzuki en su &quot;Respuesta a Hu Shih&quot;. <a class="return-anchor" id="return-cp-3c-nota-13"></a><sup><a href="notas.htm#capitulo-3-13">[Nota&nbsp;final&nbsp;3-13]</a></sup>
+                            </p>
+                            <p class="fnote wiki">
+                                [6. <a href="https://en.wikipedia.org/wiki/Shenhui">en.wikipedia.org/wiki/<wbr />Shenhui</a>&nbsp;]
+                            </p>
+                            <p>
+                                Este chih, o autoconciencia, es intrínsecamente no-dualista. Puede ser consciente de sí misma y también puede ser consciente en sí, sin necesidad de que medie un objeto exterior como estímulo o apoyo indispensable para que el sistema dualista de pensamiento pueda funcionar. Es así que el mantenimiento de la autoconciencia detendrá automáticamente el funcionamiento de la primera parte (lo objetivo conocido) y la segunda parte (lo subjetivo que conoce). El cultivo de la autoconciencia o de la pura conciencia suprimirá de esta manera todos los pensamientos dualistas y llevará a la Iluminación. Este es el fondo del yogachara, y la razón por la cual el yogachara y el Zen insisten en la importancia de contemplar la propia esencia-mente mediante la supresión del sistema dualista de pensamiento.
+                            </p>
+                            <p class="pagenum">
+                                Spanish pdf page 88
+                            </p>
+                            <p>
+                                Tanto el Zen como el yogachara sostienen que no existen dharmas fuera de la mente, de la cual sólo son manifestaciones e imágenes. La única diferencia entre el Zen y el yogachara consiste en sus maneras de aproximarse a y expresar una misma verdad. Por ejemplo, el yogachara explica los estados de la mente por medio de un análisis, en forma más bien pedante y cansadora. Pacientemente, da toda clase de detalles y de clasificaciones de los estados de la mente mientras que el Zen expresa lo mismo en forma vivaz y dramática. En contraste con las detalladas descripciones del yogachara sobre la forma en que la conciencia del alaya (depósito) evoca al mundo exterior, proyecta sus propias imágenes, mantiene los gérmenes de los nombres y las formas, los gérmenes de los pensamientos habituales, etc., el Zen explica estas verdades en forma sencilla y esclarecedora.
+                            </p>
+                            <p>
+                                El arte de elucidar la Verdad profunda y oscura por medio de palabras simples y vivaces se encuentra en muchas historias Zen. La observación de Hui Neng (638-713) <sup>[7a, 7b]</sup> sobre la bandera que ondea y el viento es un ejemplo típico: &quot;Dos monjes discutían sobre si era el viento o la bandera que se estaba moviendo. Por largo tiempo no pudieron resolver el problema. Entonces tomó la palabra Hui Neng y dijo: &quot;No es el viento ni es la bandera: es la mente que se mueve&quot;. <a class="return-anchor" id="return-cp-3c-nota-14"></a><sup><a href="notas.htm#capitulo-3-14">[Nota&nbsp;final&nbsp;3-14]</a></sup> En contraste con el yogachara, el Zen explica las verdades más profundas con el lenguaje más simple y del modo más sencillo.
+                            </p>
+                            <p class="fnote wiki">
+                                [7a. <a href="https://en.wikipedia.org/wiki/Huineng">en.wikipedia.org/wiki/<wbr />Huineng</a>&nbsp;]
+                            </p>
+                            <p class="fnote">
+                                [7b. <a href="/zen/hui-neng/plataforma/01-autobiografia.htm">/zen/hui-neng/<wbr />plataforma/<wbr />01-autobiografia.htm</a>&nbsp;]
+                            </p>
+                            <p>
+                                Otro contraste fuerte entre el yogachara y el Zen consiste en que el primero adopta una actitud gradual en relación a la Iluminación, mientras que el segundo avanza directamente y quiere posesionarse de golpe. La actitud gradual del yogachara está dada por el proceso de meditación llamado &quot;Observación sobre la doctrina de la Mente-sola en cinco etapas&quot;, sistematizado por Kuei Chi (632-682). La tercera etapa es la decisiva. Se designa como la &quot;reducción de los brotes a la conciencia principal&quot;. En esta etapa el estudiante debe despojarse de sus partes primera y segunda y llegar a la autoconciencia. La cuarta etapa se llama &quot;control de la conciencia inferior y desenvolvimiento de la conciencia superior&quot;. En esta etapa al estudiante se le enseña a recogerse en la conciencia pura y a disociarse de las actividades funcionales. La quinta etapa se llama &quot;abandono de las formas, y realización de la naturaleza de la conciencia&quot;, entendiendo por &quot;formas&quot; la &quot;sombra&quot; o la &quot;adherencia&quot; de la conciencia pura. En otras palabras, no es posible comprender la naturaleza de la Realidad última hasta no haber aniquilado todas las tendencias innatas o adquiridas, incluso las del yo y las de los dharmas. Estas etapas progresivas del desenvolvimiento de la conciencia pura nos recuerdan la observación del famoso maestro Te Shan: &quot;Si no entiendes, te daré treinta golpes, y si entiendes, te daré, de todos modos, treinta golpes&quot;. <a class="return-anchor" id="return-cp-3c-nota-15"></a><sup><a href="notas.htm#capitulo-3-15">[Nota&nbsp;final&nbsp;3-15]</a></sup>
+                            </p>
+                            <p>
+                                Es fácil entender la justificación de los golpes si uno no entiende la verdad. Pero, ¿por qué merece uno golpes después de la Iluminación? Superficialmente, parece que el maestro quisiera probar al discípulo, pero si pensamos en ello, nos damos cuenta de que los golpes que vienen después de la Iluminación tienen el propósito de llevar al discípulo a un estado superior de Iluminación, arrancándolo de su adhesión a la experiencia superficial que ya ha alcanzado. Los maestros Zen rara vez explican claramente sus intenciones, si pueden. Prefieren actuar y no explicar, demostrar y no exponer. Es en este punto que el Zen difiere esencialmente del yogachara.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="madhyamika">&nbsp;</a>
+                            <h4>
+                                El Madhyamika y el Zen
+                            </h4>
+                            <p class="pagenum">
+                                Spanish pdf page 89
+                            </p>
+                            <p>
+                                La notable y valiosa contribución del budismo a la filosofía es su amplia y profunda enseñanza del Vacío (Sunyata). <sup>[8]</sup> Examinando la historia de la filosofía, tanto en Oriente como en Occidente, es difícil encontrar una escuela de pensamiento que pueda igualar al budismo en este sentido.
+                            </p>
+                            <p class="fnote wiki">
+                                [8. <a href="https://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">en.wikipedia.org/wiki/<wbr />Sunyata</a>&nbsp;]
+                            </p>
+                            <div class="right-image-div">
+                                <img src="images/nagarjuna.jpg" alt="Nagarjuna" />
+                                <p class="note">
+                                    <a href="https://en.wikipedia.org/wiki/Nagarjuna">Nagarjuna,</a> fundador de<br /> <a href="https://en.wikipedia.org/wiki/Madhyamaka">Madhyamaka</a><br /> (camino del medio)
+                                </p>
+                            </div>
+                            <p>
+                                Al parecer, uno de los motivos principales que ha inspirado a los filósofos y teólogos de Occidente a buscar la Verdad, es éste: ¿qué es la existencia y cómo existen las cosas? Podemos llegar a decir que éste es el resorte básico de las filosofías occidentales. En contraste con esta concentración en el estudio de la existencia, el budismo pone el acento en el estudio de la Vaciedad, de la no existencia. Los pensadores occidentales actuales no han visto tal vez claramente la importancia y el significado de Sunyata, pues es tan sólo recientemente que esta filosofía ha sido presentada al Occidente, salvo algunos fragmentos a través de traducciones parciales de los textos budistas. Si bien todo el campo de los estudios Sunyata está por ser explorado aún por el Occidente, la filosofía del Vacío ha tenido una influencia incalculable sobre los pensadores budistas y no budistas en el Asia, como lo demuestra la historia.
+                            </p>
+                            <p>
+                                En los primeros tiempos de la historia del budismo, cuando se practicaba y se especulaba con la doctrina Sunyata, la teoría del no-yo (anatman) <sup>[9]</sup> y la idea del &quot;nirvana sin residuos&quot; (nirupadhi-sesanivanam) fueron expuestas y surgieron muchos Arhats cuando los intelectuales analíticos de la escuela Yogachara examinaron el problema del Vacío.
+                            </p>
+                            <p class="fnote wiki">
+                                [9. <a href="https://en.wikipedia.org/wiki/Anatman_(Hinduism)">en.wikipedia.org/wiki/<wbr />Anatman_<wbr />(Hinduism)</a>&nbsp;]
+                            </p>
+                            <p>
+                                Quedó fundada la filosofía de la Mente-sola y la teoría de los dos Vacíos, junto con un complejo sistema de psicología budista. Junto con el Tantra, <sup>[10]</sup> surgió el Vehículo del Diamante (Vajrayana). <sup>[11]</sup>
+                            </p>
+                            <p class="fnote wiki">
+                                [10. <a href="https://en.wikipedia.org/wiki/Tantra">en.wikipedia.org/wiki/<wbr />Tantra</a>&nbsp;]
+                            </p>
+                            <p class="fnote wiki">
+                                [11. <a href="https://en.wikipedia.org/wiki/Vajrayana">en.wikipedia.org/wiki/<wbr />Vajrayana</a>&nbsp;]
+                            </p>
+                            <p>
+                                Cuando asimilado completamente por las mentes de los piadosos y cándidos tibetanos; esta doctrina los dominó y finalmente reemplazó al tantrismo tibetano de tipo ritual, dando origen a la enseñanza popular llamada &quot;Práctica de la Esencia de la Mente&quot;, (Tibetano, <em>sems ngo</em>) de las escuelas rNyin-ma y bKar-gyud. <sup>[12, 13]</sup>
+                            </p>
+                            <p class="fnote wiki">
+                                [12. <a href="https://en.wikipedia.org/wiki/Nyingma">en.wikipedia.org/wiki/<wbr />Nyingma</a>&nbsp;]
+                            </p>
+                            <p class="fnote wiki">
+                                [13. <a href="https://en.wikipedia.org/wiki/Kagyu">en.wikipedia.org/wiki/Kagyu</a>&nbsp;]
+                            </p>
+                            <p>
+                                Cuando el Sunyata es tratado no como un ejercicio especulativo sino como el campo en el cual pueden resolverse todos los problemas básicos del budismo, uno se siente inclinado a buscar los aspectos prácticos y no los teóricos de las enseñanzas Sunyata. Este impulso fue tan fuerte y tan serio que, al conjugarse con la mente práctica de los chinos, produjo el Chan (Zen). Por lo tanto es imposible entender ninguna forma de budismo, especialmente el Zen, sin una comprensión plena de la filosofía del Vacío.
+                            </p>
+                            <p>
+                                No tenemos aquí lugar para tratar exhaustivamente la relación entre el Zen y el Prajnaparamita <sup>[14]</sup> de la filosofía Madhyamika, de tal manera que me limitaré a reproducir aquí algunas anécdotas Zen y algunas frases del Prajnaparamita para ilustrar las semejanzas entre ambos.
+                            </p>
+                            <p class="fnote wiki">
+                                [14. <a href="https://en.wikipedia.org/wiki/Prajnaparamita">en.wikipedia.org/wiki/<wbr />Prajnaparamita</a>&nbsp;]
+                            </p>
+                            <p>
+                                Madhyamika (el Camino del Medio) es llamada también la Doctrina del Vacío. Su filosofía central es el estudio del Vacío, pero el Vacío es difícil de describir o definir en su sentido directo e inequívoco. La mente humana está total y desesperadamente ligada a la creencia en la existencia. Las formas del pensamiento humano -buenas o malas, superficiales o profundas, sintéticas o analíticas- son todas producidas por el &quot;aferrarse a los dharmas&quot;, lo que vuelve el Vacío in-adhesible a la mente. Con consecuencia, el uso de cualquier palabra o idea para definir o para describir el Vacío fracasará seguramente.
+                            </p>
+                            <p>
+                                Podemos describirlo mejor sólo por intermedio de las implicaciones. Por ejemplo, &quot;vacío&quot; significa &quot;no contener ninguna cosa&quot;, etc. Por mucho que nos empeñemos o procuremos hacerlo, podremos describir o definir al Vacío sólo por medio de la anulación de la existencia, aunque evidentemente ésta es una aproximación indirecta e inútil. La definición obtenida de esta manera nunca podrá tener un significado positivo y satisfactorio. La ausencia misma de una definición positiva del Vacío refleja la verdad y el valor práctico de las &quot;Ocho Negaciones&quot; del Madhyamika.
+                                <a class="return-anchor" id="return-cp-3c-nota-16"></a><sup><a href="notas.htm#capitulo-3-16">[Nota&nbsp;final&nbsp;3-16]</a></sup>
+                            </p>
+                            <p>
+                                Aunque el Vacío puede ser alcanzado por la negación y por la afirmación por igual, como lo demuestran muchas historias Zen, el mejor camino de aproximación para la mayoría de la gente es por medio de la negación. La negación es el mejor antídoto para la abrumadora tendencia heredada hacia el yo y las adherencias dharma de la mente. Así, estas Ocho Negaciones dadas en el Madhyamika Sastra, no deben ser tratadas como filosofía negativa, sino como instrucciones con valor práctico para la meditación Prajna. La Verdad última es expresada aquí por medio de la negación absoluta. Esto se llama &quot;ilustrar por medio de la negación&quot;, método favorito y ampliamente usado por los maestros Zen. Hasta podemos llegar a decir que la mayoría de los koans Zen se basan en esta aproximación.
+                            </p>
+                            <p class="pagenum">
+                                Spanish pdf page 90
+                            </p>
+                            <p>
+                                Los ingeniosos maestros Zen usan coloridas frases para ilustrar la verdad-Prajna. <sup>[w]</sup> Tou-to es un buen ejemplo. Tou significa &quot;penetrar o romper&quot;, to significa &quot;librar o pelar&quot;. Romper las paredes de las adherencias y liberar las concepciones dualísticas es el único camino de obtener la Iluminación.
+                            </p>
+                            <p class="fnote">
+                                [Las letras se refieren al <a href="apendice-chino.htm">Apéndice </a> de los caracteres chinos.]
+                            </p>
+                            <p>
+                                El propósito de predicar las Ocho Negaciones, los Dieciocho Vacíos, etc. en sastras y sutras, es simplemente para que rompamos y liberemos. Pero notad cuán fácil y simple es la expresión Zen: ¡la abundante literatura Prajnaparamita y Madhyamika es expresada en dos palabras! En una palabra, la enseñanza de Madhyamika es en esencia idéntica a la del Zen, y la única diferencia es que el Zen se expresa de manera más práctica y vivaz. Los golpes y las inesperadas respuestas del Zen, &quot;que nos dejan atónitos&quot;, son un método más directo y práctico que las Ocho Negaciones y los Dieciocho Vacíos, etc. Nos llevan directamente al corazón de la verdad-Prajna.
+                            </p>
+                            <p>
+                                El Sexto Patriarca preguntó a Huai Jang (?-775): &quot;¿De dónde vienes?&quot; Huai Jang replicó: &quot;Vengo del monte Su&quot;. El Patriarca dijo: ¿qué es eso y de dónde viene?&quot; Huai Jang contestó: &quot;Cualquier cosa que diga estará lejos de la verdad&quot;. <a class="return-anchor" id="return-cp-3c-nota-17"></a><sup><a href="notas.htm#capitulo-3-17">[Nota&nbsp;final&nbsp;3-17]</a></sup>
+                            </p>
+                            <p>
+                                En contraste con las Ocho Negaciones esta observación es más explícita e ilustra directamente el carácter indefinible e incomprensible de Prajna.
+                            </p>
+                            <p class="note center">
+                                * * *
+                            </p>
+                            <p>
+                                Un monje le preguntó a Chao Chou (778-896): <sup>[15]</sup> &quot;Todas las cosas pueden reducirse a lo uno, ¿a qué es reducible ese uno?&quot;
+                            </p>
+                            <p class="fnote">
+                                [15. <a href="https://en.wikipedia.org/wiki/Zhaozhou_Congshen">en.wikipedia.org/wiki/<wbr />Zhaozhou_<wbr />Congshen</a>&nbsp;]
+                            </p>
+                            <div class="right-image-div">
+                                <img src="images/chao-chou.jpg" alt="Chao Chou" />
+                                <p class="note">
+                                    Chao Chou (778-897)</p>
+                            </div>
+                            <p>
+                                ¿No refleja acaso típicamente esta pregunta el aspecto profundo de la &quot;totalidad del Vacío&quot;, que trasciende todos los principios monoteísticos y caracteriza al budismo como a una súper-religión? Pero Chao Chou replicó: &quot;Cuando estaba en Chin Chou, me hice un traje de tela que pesaba siete chin&quot;.
+                                <a class="return-anchor" id="return-cp-3c-nota-18"></a><sup><a href="notas.htm#capitulo-3-18">[Nota&nbsp;final&nbsp;3-18]</a></sup>
+                            </p>
+                            <p>
+                                Nada más lógico que esta contestación, o más estúpido que el hecho de hacerse un traje que pesa nueve libras. Esta declaración, que no tiene ningún sentido para un intelectual, parece ser muy estúpida aun para el hombre corriente. Pero si la analizamos cuidadosamente, esta declaración pedestre y aparentemente estúpida demuestra claramente las limitaciones del pensamiento humano, moldeado por formas derivadas y estereotipadas. La declaración sugiere que debemos ir más allá de los conceptos para lograr la respuesta a la pregunta incontestable. Chao Chou era un maestro notable, pero a veces demasiado profundo y no se le podía entender.
+                            </p>
+                            <p>
+                                El mismo Huang Po (?-850) <sup>[16]</sup> no lograba entenderlo <a class="return-anchor" id="return-cp-3c-nota-19"></a><sup><a href="notas.htm#capitulo-3-19">[Nota&nbsp;final&nbsp;3-19]</a></sup> aunque Hsueh Feng (822-908) <sup>[17]</sup> dijo que era el antiguo Buda y se prosternaba ante él a la distancia, cuando lo veía. <a class="return-anchor" id="return-cp-3c-nota-20"></a><sup><a href="notas.htm#capitulo-3-20">[Nota&nbsp;final&nbsp;3-20]</a></sup>
+                            </p>
+                            <p class="fnote wiki">
+                                [16. Huang Po: <a href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">en.wikipedia.org/wiki/<wbr />Huangbo_<wbr />Xiyun</a>&nbsp;]
+                            </p>
+                            <p class="fnote wiki">
+                                [17. Hsüeh-feng I-ts'un: <a href="https://en.wikipedia.org/wiki/Xuefeng_Yicun">en.wikipedia.org/wiki/<wbr />Xuefeng_<wbr />Yicun</a>&nbsp;]
+                            </p>
+                            <p>
+                                Por otra parte, las historias y los dichos Zen no desconciertan a los adeptos Madhyamika. Estos encuentran que el punto de vista Zen es interesante y tiene sus lados buenos y malos. Asimismo, piensan que hay un gran peligro en la conversación sin sentido cuando no hay una comprensión interior del tema. Esto es lo que ha sucedido realmente en el Zen, cuyos maestros llaman a esta clase de imitación indigna &quot;el Zen de la boca&quot;. Para los adeptos Madhyamika la declaración Zen de que Buda es un bastón de estiércol seco no es ni sacrílega ni sorprendente, pues saben que en el Sutra Prajnaparamita-hrdaya <sup>[18]</sup> se dice claramente: &quot;La naturaleza vacía de todos los dharmas no surge y no se extingue, no es pura ni impura, no crece y no decrece...&quot; Al entender que la realidad no es pura ni impura, se logra ver al Buda tanto en el estiércol como en el cielo. <a class="return-anchor" id="return-cp-3c-nota-21"></a><sup><a href="notas.htm#capitulo-3-21">[Nota&nbsp;final&nbsp;3-21]</a></sup>
+                            </p>
+                            <p class="fnote wiki">
+                                [18. Sutra del corazón. <a href="https://en.wikipedia.org/wiki/Heart_Sutra">en.wikipedia.org/wiki/<wbr />Heart_<wbr />Sutra</a>&nbsp;]
+                            </p>
+                            <p>
+                                Terminando nuestra comparación entre la doctrina Madhyamika y el Zen podemos extraer la siguiente conclusión: el estudio del Zen lleva a una mayor comprensión de la doctrina Madhyamika y el estudio de ésta lleva a una mejor comprensión del Zen.
+                            </p>
+                            <p class="pagenum">
+                                Spanish pdf page 91 - end of section
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="cp-3b-iluminacion-de-tipo-zen.htm">&lt; ¿Qué es la iluminación Zen?</a></li>
+                                    <li class="align-right"><a href="cp-3d-cuatro-distinciones-de-lin-chi.htm">Cuatro distinciones Lin Chi &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Volver arriba">
+                        arriba</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

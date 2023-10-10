@@ -1,0 +1,805 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Awareness Watching Awareness</title>
+	<meta name="description" content="&quot;Only the liberated one can save the world. The blind cannot guide the blind.&quot; – Sri Ramana Maharshi">
+	<meta property="og:title" content="Awareness Watching Awareness">
+	<meta property="og:description" content="&quot;Only the liberated one can save the world. The blind cannot guide the blind.&quot; – Sri Ramana Maharshi">
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-portrait.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- for the cookie that says whether "#migration-notice" has already been shown
+		See bottom of this page for page load-->
+	<script src="/scripts/get-and-save-cookies-2022.js"></script>
+	<link rel="prev" href="choice-a-quotes.htm">
+	<link rel="next" href="awa-instructions.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style> 
+	/* script windows.onload is at bottom of this page. Now commented out */
+	
+		.migration {
+			color: black;
+		}
+
+		html.dark .migration {
+			color: lightsteelblue;
+		}
+
+		/* normally hidden */
+		#mirror {
+			display: none;
+			width: 60%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		div.table {}
+
+		h2.title {
+			margin-top: 35px;
+		}
+
+		div.cell {
+			vertical-align: top;
+		}
+
+		/* photo and quote at top, WIDE screen,
+           2 column table centered */
+		#ramana-picture-div {
+			margin-right: 20px;
+		}
+
+		#intro-quotes-div {
+			width: 290px;
+			font-size: 85%;
+		}
+
+		#authentic {
+			font-size: 90%;
+		}
+
+
+
+		@media only screen and (max-width:600px) {
+			#intro-quotes-div {
+				font-size: 90%;
+			}
+
+			#authentic {
+				font-size: 95%;
+			}
+
+
+		}
+
+
+
+		/* photo and quote at top, NARROW screen */
+		@media only screen and (max-width:540px) {
+			#ramana-picture-div {
+				display: block;
+				width: auto;
+				margin: 0 auto 15px;
+				text-align: center;
+			}
+
+			#intro-quotes-div {
+				display: block;
+				width: auto;
+				margin: 0 3px;
+			}
+		}
+
+		#intro-quotes-div p {
+			margin-top: 0;
+			margin-bottom: 8px;
+			width: 100%;
+		}
+
+		#book-table {
+			margin-top: 45px;
+		}
+
+		div.photo-container {
+			margin-top: 35px;
+			text-align: center;
+			display: block;
+		}
+
+		div.guru-photos {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		p.caption {
+			display: block;
+			margin-top: 0;
+			text-align: center;
+		}
+
+
+		.description {
+			margin-top: 6px;
+			margin-bottom: 6px;
+			font-size: 85%;
+		}
+
+		.page-name {
+			margin-bottom: 6px;
+		}
+
+		.broken {
+			font-size: 80%;
+		}
+
+
+
+		@media only screen and (max-width:450px) {
+			#mirror {
+				width: 80%;
+			}
+
+			p.page-link {
+				margin-left: 5px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_awareness-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2>
+										Awareness Home
+									</h2>
+								</header>
+
+								<!-- p id="migration-notice" class="tiny migration">Note: These pages were migrated here from our sister site Albigen.Com as a better fit, because Albigen.Com is dedicated to the Albigen System taught by Richard Rose.</p -->
+							</div>
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Awareness Contents</a></li>
+									<li class="align-right"><a href="awa-instructions.htm">AWA Instructions &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p style="margin-top:45px;">
+								&quot;Not all spiritual paths lead to the Harmonious Oneness. Indeed, most are detours and distractions, nothing more.&quot;
+							</p>
+							<p style="text-align:right;margin-top:-10px;margin-right:40px;">
+								&ndash; Lao Tzu from the Hua Hu Ching
+							</p>
+							<p style="margin-top:20px;">
+								&quot;Only the liberated one can save the world. The blind cannot guide the blind.&quot;
+							</p>
+							<p style="text-align:right;margin-top:-10px;margin-right:40px;">
+								&ndash; Sri Ramana Maharshi
+							</p>
+							<div class="table" id="book-table">
+
+								<h2 class="toowide" style="margin-bottom:5px;">
+									Book: The Most Rapid and Direct Means to Eternal Bliss
+								</h2>
+								<p class="tiny center" style="margin-top:5px;">
+									Former title: The Impostor
+								</p>
+								<p style="margin-bottom:8px;">
+									"The ego controls all thinking."
+								</p>
+								<p style="margin-top:8px;"> "The ego creates arguments against the Direct Path as a preservation strategy."
+								</p>
+								<p class="page-link" style="margin-bottom:5px;">
+									<a href="most-rapid/contents.htm"><span class="nowrap">most-rapid/contents.htm</span></a>
+								</p>
+								<p class="tiny page-link" style="margin-top:5px;">
+									(See below for more direct-path links.)
+								</p>
+								<p id="author" class="note">
+									The author of these pages does not claim to have invented the awareness-watching-awareness method. Rather, after many years of searching, he intuitively discovered the method while on a visit to the Ramana Maharshi ashram in India. Before applying the method, he sought support for it in the teachings of Ramana and other realized teachers, and indeed found support for it there. Many of these supporting sources are referenced below. He then applied himself diligently to the practice, and in a little over two years time experienced the disappearance of the ego and realized his real Self. He considers this method to be the most rapid and direct means to self-realization. The writings on these pages are intended to explain this simple practice, thereby saving the aspirant many years of vain searching, the result of using less direct means.
+								</p>
+							</div>
+							<!-- end div.table -->
+							<p id="authentic">
+								Authentic spiritual teachers never accept monetary donations, never charge any fees, and never have a collection plate or donation box. When money changes hands, that is business, not spirituality. &quot;Spiritual teachers&quot; who accept money are really just business people. Beware of them.
+							</p>
+							<h2 class="title">
+								Other Pages</h2>
+							<p class="note80">
+								Pages marked * have been superseded by chapters in the book above.
+							</p>
+							<p class="page-name">
+								* Awareness Watching Awareness - Practice Instructions
+							</p>
+							<p class="page-link">
+								<a href="awa-instructions.htm">awa-instructions.htm</a>
+							</p>
+							<p class="page-name">
+								* Awareness Watching Awareness - Further Clarification
+							</p>
+							<p class="page-link">
+								<a href="awa-clarification.htm">awa-clarification.htm</a>
+							</p>
+							<p class="page-name">
+								* The Abandon Release Method
+							</p>
+							<p class="page-link">
+								<a href="abandon-release.htm">abandon-release.htm</a>
+							</p>
+							<p class="page-name">
+								* The Reminder Page - Read This Every Day
+							</p>
+							<p class="page-link">
+								<a href="reminder-page.htm">reminder-page.htm</a>
+							</p>
+							<p class="page-name">
+								Five Sages Teaching the Direct Path
+							</p>
+							<p class="description">
+								The original index for many of these pages, providing an overview
+								of Direct Path Teachings. A good starting point or "home base" for the teachings on this site, with links to the other pages.
+							</p>
+							<p class="page-link">
+								<a href="five-sages.htm">five-sages.htm</a>
+							</p>
+
+							<div class="photo-container">
+
+								<div class="guru-photos">
+									<img alt="Sri Muruganar" height="245" src="images/muruganar.jpg" width="163" />
+									<p class="caption">
+										Sri Muruganar
+									</p>
+								</div>
+
+								<div class="guru-photos">
+									<img alt="Annamalai Swami" height="245" src="images/annamalai.jpg" width="178" />
+									<p class="caption">
+										Annamalai Swami
+									</p>
+								</div>
+								<div class="guru-photos">
+									<img alt="Sadhu Om" height="245" src="images/sri_sadhu_om.jpg" />
+									<p class="caption">
+										Sri Sadhu Om
+										<br />
+										<span class=" note80 block">Sadhu Om Swamigal</span>
+									</p>
+								</div>
+
+							</div>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+
+							<hr />
+							<h3 style="margin-bottom:0;">
+								The 6 Rings
+							</h3>
+							<p class="center" style="margin-top:0;">The most direct and the less direct paths</p>
+
+							<h4 class="title">
+								First Ring - Most Direct Means
+							</h4>
+							<p class="page-name">
+								* How I Discovered the Awareness Watching Awareness Method
+							</p>
+							<p class="page-link">
+								<a href="awa-discovery.htm">awa-discovery.htm</a>
+							</p>
+							<p class="page-name">
+								Turning Inward - How to Look Within - How to Practice
+							</p>
+							<p class="description">
+								From Garland of Guru's (Ramana Maharshi's) Sayings by Sri Muruganar
+							</p>
+							<p class="page-link">
+								<a href="muruganar-turning-inward.htm">muruganar-turning-inward<wbr>.htm</a>
+							</p>
+							<p class="page-name">
+								The World - 108 sayings - On ignoring and turning one's attention away from the world and towards Awareness watching Awareness.
+							</p>
+							<p class="description">
+								Also from Garland of Guru's Sayings
+							</p>
+							<p class="page-link">
+								<a href="muruganar-the-world.htm">muruganar-the-world.htm</a>
+							</p>
+							<p class="page-name">
+								Sri Ramana Maharshi's Teachings on the topics of Thinking About,
+								Reading and Discussing Spiritual Teachings
+							</p>
+							<p class="description">
+								Quotes by Sri Muruganar and by Ramana Maharshi (various sources)
+							</p>
+							<p class="page-link">
+								<a href="ramana-think-read-discuss.htm">ramana-think-read-discuss.htm</a>
+							</p>
+							<p class="page-name">
+								Choice "A" - Quotes
+							</p>
+							<p class="description">
+								Encouraging descriptions of realization by Ramana, Muruganar, others. Choice A is Infinite-Eternal-Awareness-Love-Bliss with no sorrow and no suffering. Choice B is being identified with a body subject to suffering, sorrow, disease, death, violence, fear, anger, etc.
+							</p>
+							<p class="page-link">
+								<a href="choice-a-quotes.htm">choice-a-quotes.htm</a>
+							</p>
+							<p class="page-name">
+								Realization ("Sri Ramana Experience") - by Sri Muruganar
+							</p>
+							<p class="description">
+								One of the most detailed, clearly communicated, profound and heart touching descriptions of the experience of Self-Realization ever written.
+							</p>
+							<p class="page-link">
+								<a href="muruganar-realization.htm">muruganar-realization.htm</a>
+							</p>
+							<p class="page-name">
+								Experiences and Comments</p>
+							<p class="description">
+								The end of the illusion of the ego.
+							</p>
+							<p class="page-link">
+								<!-- needs 401 redirect. Former mage name: experiences_m_l.htm -->
+								<a href="experiences.htm">experiences.htm</a>
+							</p>
+							<p class="page-name">
+								* Inquiry-Abidance
+							</p>
+							<p class="description">
+								How to Practice Self Awareness - The Awareness Watching Awareness practice is best described as ""abidance in self-awareness"".
+							</p>
+							<p class="page-link">
+								<a href="inquiry-abidance.htm">inquiry-abidance.htm</a>
+							</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+
+							<hr />
+							<h4 class="title">
+								Second Ring
+							</h4>
+							<p class="description">
+								The journals of Sri Sadhu Om have been called the most detailed and clearly expressed instructions ever written on the practice of Self-inquiry as advocated by Ramana Maharshi. The following are from his book: <strong>The Path of Sri Ramana</strong>, which is available at Michael James' website (see below).
+							</p>
+							<p class="page-name">
+								Self-Inquiry - Sri Sadhu Om <span class="nowrap">(chapter 7)</span>
+							</p>
+							<p class="description">
+								Self-inquiry is only an aid to Self-Awareness; only Self-Awareness is the True Direct Path. ...
+								Although we formally refer to [Self-attention] as &apos;directed&apos;, in truth it is not of the nature of a &apos;doing&apos; in the form of directing or being
+								directed; it is of the nature of &apos;being&apos; or &apos;existing&apos;.
+							</p>
+							<p class="page-link">
+								<a href="sadhu-om-self-inquiry.htm">sadhu-om-self-inquiry.htm</a>
+							</p>
+							<p class="page-name">
+								The Technique of Self-Inquiry - Sri Sadhu Om <span class="nowrap">(chapter 8)</span>
+							</p>
+							<p class="description">
+								Penetrating insight and detailed instructions on how to apply the principles of Self-inquiry.
+							</p>
+							<p class="page-link">
+								<a href="sadhu-om-technique.htm">sadhu-om-technique.htm</a>
+							</p>
+							<p class="page-name">
+								Sri Annamali Swami
+							</p>
+							<p class="description">
+								Sri Annamali Swami was closely associated with Ramana Maharshi for many years. There are currently no writings by him linked on this page. A copy of a very small (pocket edition) book "Annamalai Swami: Final Talks," edited by David Godman, published by AHAM, can be obtained via an internet search.
+							</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+
+							<hr style="margin-top:30px;" />
+
+							<h4 class="title">
+								Third Ring
+							</h4>
+							<p class="page-name">
+								Who Am I? - by Ramana Maharshi
+							</p>
+							<p class="page-link">
+								<a href="ramana-who-am-i.htm">ramana-who-am-i.htm</a>
+							</p>
+							<p class="page-name">
+								Español:
+							</p>
+							<p class="page-link">
+								<a href="ramana-quien-soy-yo.htm">ramana-quien-soy-yo.htm</a>
+							</p>
+
+							<p class="page-name">
+								Truth Revealed - 40 Verses on Reality - by Ramana Maharshi
+							</p>
+							<p class="description">
+								"The Divine gives light to the mind and shines within it. Except by turning the mind inward and fixing it in the Divine, there is no other way to know Him through the mind."
+							</p>
+							<p class="page-link">
+								<a href="ramana-40-verses-on-reality.htm">ramana-40-verses-on-reality.htm</a>
+							</p>
+							<p class="page-name">
+								Español:
+							</p>
+							<p class="page-link">
+								<a href="ramana-40-versos-sobre-la-realidad.htm">ramana-40-versos-sobre-la-realidad.htm</a>
+							</p>
+
+							<hr style="margin-bottom:20px;" />
+
+
+							<h4 class="title">
+								Fourth Ring
+							</h4>
+							<p class="page-name">
+								Instructions and Encouragement by Nisargadatta Maharaj
+							</p>
+							<p class="description">
+								Selected comments on how to practice from I AM THAT
+							</p>
+							<p class="page-link">
+								<a href="nisargadatta-practice.htm">nisargadatta-practice.htm</a>
+							</p>
+							<div class="photo-container">
+
+								<div class="guru-photos">
+									<img alt="Nisargadatta" height="245" src="images/nisargadatta.jpg" />
+									<p class="caption">
+										Nisargadatta
+										<br /> Maharaj
+									</p>
+								</div>
+
+								<div class="guru-photos">
+									<img alt="Siddharameshwar" height="245" src="images/siddharameshwar.jpg" />
+									<p class="caption">
+										Siddharameshwar
+										<br /> Maharaj
+									</p>
+								</div>
+
+							</div>
+
+							<hr />
+
+							<h4 class="title">
+								Fifth Ring
+							</h4>
+
+							<p class="page-name">
+								Direct Path - by Mouni Sadhu
+							</p>
+							<p class="description">
+								Whoever knows of the hidden Direct Path will not waste time following lesser ways.
+							</p>
+							<p class="page-link">
+								<a href="direct-path-mouni-sadhu.htm">direct-path-mouni-sadhu<wbr>.htm</a>
+							</p>
+
+							<p class="page-name">
+								Brief Biography of Ramana Maharshi
+							</p>
+							<p class="description">
+								By T.M.P. Mahadevan, 1959, published by the Ramana Maharshi ashram.
+							</p>
+							<p class="page-link">
+								<a href="ramana-biography.htm">ramana-biography.htm</a>
+							</p>
+							<p class="page-name">
+								"Sri Muruganar and Sri Sadhu Om" - by Michael James
+							</p>
+							<p class="description">
+								A somewhat devotional tribute to these two "poet-saints" by the scholar/<wbr>translator Michael James, but one that offers interesting background information on their working relationship with Sri Ramana, as they recorded and helped to explain his teachings.
+							</p>
+							<p class="page-link">
+								<a href="michael-james-muruganar-sadhu-om.htm">michael-james-muruganar-sadhu-om.htm</a>
+							</p>
+
+							<hr />
+
+							<h4 class="title">
+								Sixth Ring
+							</h4>
+							<p class="page-name">
+								Ceasing to Pretend One Wishes to be Liberated
+							</p>
+							<p class="description">
+								A look at tricks the ego uses to preserve its imaginary self.
+							</p>
+							<p class="page-link">
+								<a href="ceasing-to-pretend.htm">ceasing-to-pretend.htm</a>
+							</p>
+
+							<p class="page-name">
+								Spiritual Business - Why spiritual Truth is distorted into lies
+							</p>
+							<p class="page-link">
+								<a href="spiritual-business.htm">spiritual-business.htm</a>
+							</p>
+							<p class="page-name">
+								Sahaja - What is Liberation according to Sri Ramana Maharshi?
+							</p>
+							<p class="description">
+								Avoiding a false sense of liberation.
+							</p>
+							<p class="page-link">
+								<a href="sahaja.htm">sahaja.htm</a>
+							</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<p>
+								&nbsp;
+							</p>
+
+							<hr />
+
+							<h2 class="title">
+								THE FREEDOM RELIGION, INC
+							</h2>
+							<p class="description">
+								Recommended books on the Direct Path teachings.
+							</p>
+							<p class="page-link">
+								<a href="http://thefreedomreligionpress.com">http://thefreedom<wbr>religionpress.com</a>
+							</p>
+
+							<p class="description">
+								Also see the Author's Page
+							</p>
+							<p class="page-link">
+								<a class="block" href="authors-page.htm">authors-page.htm</a>
+								<span class="note80"></span>
+							</p>
+
+							<hr />
+
+							<h3 class="title" style="margin-bottom:5px;">
+								Other Writings
+							</h3>
+							<p class="page-name">
+								Comments on meetings with Vernon Howard
+							</p>
+							<p class="page-link">
+								<a href="nonduality-salon-403.htm">nonduality-salon-403.htm</a>
+							</p>
+							
+							<h3 class="title">
+								Videos
+							</h3>
+							<p class="description">
+								Michael Langford's channel at Youtube:								
+								<a href="https://www.youtube.com/channel/UCTWQ0-QxiCGt3soVsLYHO7Q/videos">
+								https://www.youtube.com/channel/UCTWQ0-QxiCGt3soVsLYHO7Q/videos</a>							
+							</p>
+							
+							<p class="description">
+								 Satsang with Tom Das:  help with the awareness watching awareness (AWA) method
+								<a href="https://www.youtube.com/watch?v=xUddPk4lb2M">
+								https://www.youtube.com/watch?v=xUddPk4lb2M</a>
+							</p>
+							
+							<!-- to do: add videos page
+							Michael Langford channel at Youtube
+							Also try 
+							Q. I need help with the awareness watching awareness (AWA) method | Nonduality | Advaita Vedanta
+							https://www.youtube.com/watch?v=xUddPk4lb2M
+							
+							--> 
+							
+							<h3 class="title">
+								Groups</h3>
+							<p class="description">
+								SRI RAMANA COMMUNITY PAGE: Links to Sri Ramana groups around the world.
+
+								<a href="https://uarelove1.tripod.com/SRC.htm">https://uarelove1.tripod.com/<wbr>SRC.htm</a>
+							</p>
+
+							<h3 class="title">
+								Yahoo Groups (Historical)
+							</h3>
+
+							<p class="note">
+								Yahoo shut down all groups in 2020. The links remain below because with some diligence you may be able to find archives at the wayback machine or other places on the web. You may have success at <a href="https://archive.org/details/archiveteam_yahoogroups">Archive.Org Archive Team: Yahoo! Groups</a> or <a href="https://archive.org/search.php?query=subject%3A%22yahoo+groups%22">Archive.Org Search: Yahoo Groups</a>
+
+							<p class="page-link">
+								Eternal Bliss<br />
+								https://groups.yahoo.com/neo/<wbr />groups/<wbr />eternalbliss/<wbr />info
+							</p>
+							<p class="page-link">
+								First Ring Info<br />
+								https://groups.yahoo.com/neo/<wbr />groups/<wbr />FirstRing/<wbr />info
+							</p>
+							<p class="page-link">
+								The Path of Sri Ramana<br />
+								https://groups.yahoo.com/neo/<wbr />groups/<wbr />Pathof<wbr />SriRamana/<wbr />info
+							</p>
+
+							<p>Or try: How to recover your Yahoo! Groups from the Internet Archive at
+								<a href="https://datahorde.org/how-to-recover-your-yahoo-groups-from-the-internet-archive/">
+									DataHorde.Org</a>
+							</p>
+
+							<h2 class="title">
+								Arunachala - Ashram in India
+							</h2>
+							<p class="description">
+								Interesting information about Arunachala, the Ashram and the people associated with it.
+
+								<a href="https://uarelove1.tripod.com/TRAVELTIRU.htm">https://uarelove1.tripod.com/<wbr>TRAVELTIRU.htm</a>
+							</p>
+							<p class="description">
+								Maps and directions - This link opens a 5-page Word document file that will be downloaded to your computer or device [please exercise security precautions when downloading Doc files]:
+								<a href="http://uarelove1.tripod.com/MAP_RAMANASRAMAM.doc">http://uarelove1.tripod.com/<wbr />MAP_<wbr />RAMANASRAMAM.doc</a>
+							</p>
+
+							<h3 class="title">
+								Translations
+							</h3>
+							<p class="description">
+								<strong>Michael James</strong> translated the material by Sri Sadhu Om linked on this page above. His translations of <strong>Who Am I? (Nan Yar?)</strong> and <strong>Forty Verses (Ulladu Narpadu)</strong> by Ramana Maharshi can be found in a copy of his book: <em>Happiness and the Art of Being</em>.
+							</p>
+
+							<p class="page-name">
+								Happiness and the Art of Being by Michael James</p>
+							<p class="page-link">
+								<a href="https://www.happinessofbeing.com/happiness_art_being">
+									Main page for the book</a>
+							</p>
+							<p class="description">
+								Free eBook, PDF, 500 pages, 2.0 megabytes</p>
+							<p class="page-link">
+								<a href="https://www.happinessofbeing.com/wp-content/uploads/2020/09/Happiness_and_the_Art_of_Being-4.pdf">
+									Direct link to PDF file</a>
+							</p>
+							<p class="description">
+								His website, dedicated to teachings of Ramana Maharshi
+							</p>
+							<p class="page-link">
+								<a href="https://www.happinessofbeing.com/">https://www.happinessofbeing<wbr>.com</a>
+							</p>
+							<p class="page-name">
+								<em>Guru Vachaka Kovai</em> (Garland of Guru's sayings) by Ramana, Muruganar, Sri Sadhu Om, edited by Michael James:
+							</p>
+							<p class="description">
+								PDF of 472 pages, 1.2 meg, 2013 edition, free download
+							</p>
+							<p class="page-link">
+								<a href="https://www.happinessofbeing.com/wp-content/uploads/2020/09/Guru_Vachaka_Kovai-4.pdf">
+									Direct link to PDF: Guru Vachaka Kovai</a>
+							</p>
+							<p class="description">
+								Web page for the book for more information:
+							</p>
+							<p class="page-link">
+								<a href="https://www.happinessofbeing.com/guru_vachaka_kovai-5">
+									https://www.happinessofbeing.<wbr />com/<wbr>guru_<wbr>vachaka_kovai-5</a>
+							</p>
+
+							<p class="page-name">
+								<em>The Path of Sri Ramana (Part One)</em> by Sri Sadhu Om, edited by Michael James
+							</p>
+							<p class="description">
+								PDF of 626 KB, 233 pages:
+							</p>
+							<p class="page-link">
+								<a href="https://www.happinessofbeing.com/wp-content/uploads/2020/09/The_Path_of_Sri_Ramana_Part_One-4.pdf">
+									Direct link to PDF: The Path of Sri Ramana Part One</a>
+							</p>
+
+
+							<p>
+								&nbsp;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Awareness Contents</a></li>
+									<li class="align-right"><a href="awa-instructions.htm">AWA Instructions &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!--
+	<script>
+		window.onload = function() {
+			// Called functions are in /scripts/get-and-save-cookies.js
+			// Have we already shown the migration notice, according to a cookie?
+			var name = "migration";
+			var migrationshown = getCookie(name);
+			// if so, hide the migration notice
+			if (migrationshown) {
+				const migration = document.querySelector("#migration-notice");
+				migration.style.display = ('none');
+			}
+			// if not (i.e., if no cookie), this is the first time shown,
+			//	so create cookie "migration" with value "shown"
+			// time to expire is one day = 1
+			else {
+				setCookie("migration", "shown", 1);
+				// testing, set for 1 minute. 1 day div by 1 minutes = 1/24/60 = 0.00069
+				// setCookie("migration", "shown", 0.00069); //  << this works
+			}
+
+		};
+
+	</script>
+	-->
+	<!-- menu-container is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

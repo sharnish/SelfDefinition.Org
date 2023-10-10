@@ -1,0 +1,106 @@
+<!-- start of menu include file Update Feb 19, 2020. May 11, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contenido.htm">Contenido</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Inicio<span class="conditional-hide-4"> de página</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li class="offset">Confesiones</li>
+			<li>
+				<img class="menu-image" src="images/jacob-boehme.jpg" alt="Jacob Boehme" />
+			</li>
+			<li class="offset">Jacob Boehme</li>
+			<li class="offset normal note tight">(1575-1624)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contenido.htm">Contenido</a> </li>
+				<li><a href="titulo-y-notas.htm">Título y notas</a> </li>
+				<li><a href="introduccion.htm">Introducción por<br>
+						Evelyn Underhill</a></li>
+				<li><a href="capitulo-01.htm">Capitulo 1</a></li>
+				<li><a href="capitulo-02.htm">Capitulo 2</a></li>
+				<li><a href="capitulo-03.htm">Capitulo 3</a></li>
+				<li><a href="capitulo-04.htm">Capitulo 4</a></li>
+				<li><a href="capitulo-05.htm">Capitulo 5</a></li>
+				<li><a href="capitulo-06.htm">Capitulo 6</a></li>
+				<li><a href="capitulo-07.htm">Capitulo 7</a></li>
+				<li><a href="capitulo-08.htm">Capitulo 8</a></li>
+				<li><a href="capitulo-09.htm">Capitulo 9</a></li>
+				<li><a href="capitulo-10.htm">Capitulo 10</a></li>
+				<li><a href="capitulo-11.htm">Capitulo 11</a></li>
+				<li><a href="capitulo-12.htm">Capitulo 12</a></li>
+				<li><a href="capitulo-13.htm">Capitulo 13</a></li>
+				<li><a href="capitulo-14.htm">Capitulo 14</a></li>
+				<li><a href="capitulo-15.htm">Capitulo 15</a></li>
+				<li><a href="capitulo-16.htm">Capitulo 16</a></li>
+				<li><a href="capitulo-17.htm">Capitulo 17</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Jacob Boehme en <a href="https://es.wikipedia.org/wiki/Jakob_B%C3%B6hme">Wikipedia, español</a></li>
+				<li>Este libro en formato <a href="/christian/espanol-Jacobo-Boehme-Confesiones.pdf">Pdf (68 paginas, 268K)</a></li>
+				<li>Confessions (inglés) en <a class="inline" href="https://sacred-texts.com/eso/cjb/index.htm">SacredTexts.Org</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">También por Jacob Boehme en este sitio <span class="normal">(inglés)</span>:</li>
+				<li><a href="/christian/jacob-boehme/mysterium-magnum/contents.htm">Mysterium Magnum</a></li>
+				<li>Franz Hartmann: <a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Life and&nbsp;Doctrines de Jacob Boehme</a></li>
+				<li>Otras obras, PDF y libros de mobi en la página índice cristiana:
+					<a href="/christian/">/christian/</a>
+				</li>
+			</ul>
+		</div>
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="external-links-item">Enlaces externos</li>
+				<li class="external-first-item">Jacob Boehme Biblioteca (PDF/Mobi, inglés): <a class="inline" href="http://www.jacobboehmeonline.com/library">www.<wbr />jacobboehme<wbr />online.com</a></li>
+				<li>Manuscritos en línea, inglés: <a href="http://www.passtheword.org/Jacob-Boehme/">www.passtheword.org</a></li>
+				<li>Imágenes alquímicas y otras, Boehme (inglés): <a href="https://alchemywebsite.com/prints_series_boehme.html">alchemywebsite.com</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

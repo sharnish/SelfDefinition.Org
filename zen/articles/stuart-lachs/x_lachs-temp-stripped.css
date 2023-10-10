@@ -1,0 +1,385 @@
+/* file:  /zen/articles/stuart-lachs/_lachs-temp-stripped.css pdate Sept. 27, 2020 */
+@media only print {
+    #article:after {
+        content: "Update Sept. 27, 2020";
+        font-size: 60%;
+    }
+}
+
+/*
+  <p class="alert">CSS has jump link version attempts commented out.</p>
+*/
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen {
+    background: #fafaff;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a {
+    background: #bde0ff;
+}
+
+
+
+/* Image-Div ---to investigate */
+/* 500px is breakpoint, for new line. Default is top = 10px;  */
+@media only screen and (min-width:501px) {
+    div.right-image-div {
+        margin-top: 18px;
+    }
+}
+
+
+/* This element/class is unique to Lachs */
+@media only screen and (min-width:768px) {
+    #permission-title {
+        display: block;
+    }
+
+    #permission-index {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    #permission-title {
+        display: none;
+    }
+
+    #permission-index {
+        display: block;
+    }
+}
+
+
+
+/* JUMP LINK TRIAL 5 VERSIONS
+   new with Stuart Lachs */
+/* note: a.page-link-anchor are not affected by this.
+   but the anchor is positioned Above the destination element.
+   default selfdef-respons is
+line 387   default, large     .page-link-anchor    padding-top: 40px;
+line 451   max-width:767px    .page-link-anchor    padding-top:160px
+
+/* MUST ADJUSTT FOR EVERY TOP MENU CHANGE */
+/* Default: Left Menu disappears and Top Menu appears at 767px */
+/* single line top menu becomes two-line at 412px, so set breakpoint at 420px */
+/* there never is a three-line menu */
+
+/* first, the default jump links */
+/* testing
+a.endnote        {background:pink;}   CHANGED TO p.endnote
+a.endnote::before {background:pink;}
+
+sup.return-anchor {background:pink;}
+sup.return-anchor::before {background:pink;}
+*/
+/* end testing */
+
+/*******************************
+TEST FROM TRANSMISSSION
+
+TRY:  USE DISPLAY BLOCK BUT LINK W ZWJ IN TEXT SO AS NOT TO BREAK.
+
+1. Endnotes CSS from Transmission = #references-list li
+2. Return Anchor from Transmission = NOPE, IF INLINE BLOCK DOESN'T POSITION
+                                           IF BLOCK, CREATES SPACE
+
+*********************************/
+
+/* default, and large screen */
+/* "endnote" is an anchor tag */
+/* endnote is Display:BLOCK. Is at begining of a paragraph.
+   Works fine on Chrome, Firefox and Android.
+Format:
+<p>
+    <a href="#return-note-1" class="endnote" id="note-1">[1.]</a>
+    text here.
+</p>
+OLD, THIS WORKS I CHROME FF AND ANDROID BUT TRY NEW
+a.endnote::before
+{
+    content: "";
+    display: block;
+    padding-top:0;
+    height: 80px;
+    margin:0;
+    margin-top: -80px;
+}
+*/
+/* display must be inline-block; << "block" works in emulation but not on android */
+/* .return-anchor is a <sup> tag inside an anchor tag.
+Format:
+<a href="#note-1"><sup class="return-anchor normal" id="return-note-1">[1]</sup></a>
+OLD METHOD, WORKS CHROME, NOT FIREF OR ANDROID:
+
+sup.return-anchor::before
+{
+    content: "";
+	display:inline-block;
+    padding-top:80px;
+    height: 80px;
+    margin:0;
+    margin-top: -80px;
+}
+TRY METHOD FROM ARTICLE AS FOLLOWS
+METHOD A
+http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-A
+#method-B:before {          << makes huge gap in chrome if "block"
+    display: block;            Works fine in Chrome if inline-block, but DOES NOTHING in FF,
+    content: "";
+    height: 50px;
+    margin: -50px 0 0;
+}
+
+USING THIS ONE VVVV
+#method-C {                   << "not ::before" << GOOD Works on Chrome and FF
+    padding-top: 50px;
+    margin-top: -50px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+USING METHOD C:   Use padding to create the space, a negative margin to
+close the unwanted space between elements on the page, and background-clip
+to avoid issues with background-bleed.
+
+Known support: Firefox 4.0+, Opera 10.6+, Safari 3+, Chrome
+Drawbacks
+
+    Requires browser support for background-clip content-box (if using a background)
+    Interferes with standard use of margins (inc. margin-collapse)
+    Prevents use of padding-top in element styling
+
+http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-C
+
+
+Dammit, overlaps
+Try this
+
+https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors
+
+or this
+
+https://css-tricks.com/hash-tag-links-padding/
+
+
+TY THIS - USES BORDER, NOT PADDING, SEE IF ANCHOR IS NOT TRIGGERED. <<<<<< start here
+
+DID NOT TRY
+#method-D {
+    border-top: 50px solid transparent;
+    margin-top: -50px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+*/
+
+/* DEFAULT JUMP LINK wide screen, METHOD C */
+/* NOT ::before  */
+/* border not used or needed here, as it is w endnote */
+
+sup.return-anchor:target {
+    display: inline;
+    padding-top: 50px;
+    margin-top: -50px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 0px solid red;
+}
+
+/* STRANGE the next must be Block to work, while the above is INLINE
+OTHERWISE it works for endnotes that are only a single line.*/
+a.endnote:target {
+    display: block;
+    padding-top: 20px;
+    margin-top: -20px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    /* if INLINE MUST have border, or the positioning breaks on Chrome (not FF), weird */
+    border: 0px solid red;
+}
+
+
+
+
+/* LACH JUMP LINK STYLING WAS USED AS BASIS FO DROP-IN CSS */
+/* LACH JUMP LINK STYLING WAS USED AS BASIS FO DROP-IN CSS */
+/* LACH JUMP LINK STYLING WAS USED AS BASIS FO DROP-IN CSS */
+
+/* TOP MENU FIX Sep 5, 2019 */
+
+/* BREAKPOINT 1 - less than Ipad, single line menu and main-content position*/
+
+
+/* NO - FORCES A 2ND LINE TOOL EARLY
+    #fixed-header-small-screen {width:auto;} */
+
+/* Comment out for 2022.CSS testing
+@media only screen and (max-width: 767px) {
+
+    #menu-site-small-screen {
+        width: calc(100% - 10px);
+    }
+
+    #fixed-header-small-screen,
+    #menu-site-small-screen {
+        top: 0px;
+        height: 100px;
+    }
+
+    #main-content {
+        top: 101px;
+    }
+}
+*/
+
+
+/* default is margin-right:20px */
+/* The following 2 lines keep the top menu at 2 lines for Microsoft Edge on phone
+    necessary?
+    #menu-site-small-screen li {margin-right:15px;}
+    #menu-site-small-screen li.last-item {margin-right:0;}   */
+
+
+
+
+
+/* JUMP LINKS -- BREAKPOINT 767PX
+   ONE-line top menu */
+/* now the jump links for this screen width */
+@media only screen and (max-width: 767px) {
+    sup.return-anchor:target {
+        padding-top: 120px;
+        margin-top: -120px;
+    }
+    #text,
+    #notes,
+    a.endnote:target {
+        padding-top: 115px;
+        margin-top: -115px;
+    }
+}
+
+
+/* shrink the top list items a little to delay line break
+comment out while testing main CSS
+@media only screen and (max-width: 600px) {
+    #menu-site-small-screen li {
+        margin-right: 8px;
+    }
+}
+*/
+
+
+/* BREAKPOINT 2 - top menu becomes two lines */
+/* becomes two-line at 412px, so set breakpoint at 420px */
+
+/* Must coordinate with jump link positioning below */
+
+
+
+
+/* JUMP LINK BREAKPOINT 425PX
+   two-line top menu */
+/* here #main-content is positioned at 100px */
+@media only screen and (max-width: 425px) {
+
+    sup.return-anchor:target {
+        /* Still OVERLAPs, BAD */
+        padding-top: 160px;
+        margin-top: -160px;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+    }
+
+    /* a.page-link-anchor id="notes"  */
+    #notes,
+    a.endnote:target {
+        padding-top: 125px;
+        margin-top: -125px;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+    }
+
+}
+
+
+/* background color is used to test breakpoints */
+/* default wide screen */
+
+
+
+/* these are from Voice of the Silence. */
+/* SEEMS TO WORK */
+@media only screen and (max-width: 767px) {
+    @-ms-viewport {
+        width: device-width;
+        zoom: auto;
+    }
+
+    #article,
+    #menu-site-small-screen {
+        background: inherit;
+    }
+}
+
+@media screen and (max-width:400px) {
+    @-ms-viewport {
+        width: 320px;
+    }
+}
+
+
+
+#fixed-header-small-screen {
+    border: 1px solid blue;
+}
+
+#menu-site-small-screen {
+    border: 1px solid red;
+}
+
+#main-content {
+    border: 1px solid maroon;
+}
+
+#menu-site-small-screen li {
+    border: 1px solid green;
+}
+
+#this-page-test-link {
+    display: none;
+}
+
+#menu-site-small-screen li {
+    margin-right: 15px
+}
+
+#menu-site-small-screen li:last-child {
+    margin-right: 0px;
+}
+
+/* Contents-Index Page testing */
+
+#index-lists {border: 1px solid red;}
+
+#index-lists ul {border: 1px solid blue;}
+
+#index-lists ul li {border: 0px solid green;}
+
+
+a.page-link-anchor:target {border: 1px solid red;}
+
+/* end */

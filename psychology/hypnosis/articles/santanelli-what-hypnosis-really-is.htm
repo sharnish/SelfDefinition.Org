@@ -1,0 +1,967 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Santanelli - What Hypnosis Really Is</title>
+	<meta name="description" content="Man is not a free agent; his every act and
+	thought is entirely controlled by suggestion.">
+	<meta name="author" content="Santanelli, James H. Loryea">
+	<meta property="og:title" content="Santanelli - What Hypnosis Really Is">
+	<meta property="og:description" content="Man is not a free agent; his every act and
+	thought is entirely controlled by suggestion.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/hypnosis/really-is/images/santanelli-og-image.jpg">
+	<!-- load stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		div.frontispiece {
+			text-align: center;
+			border: 3px solid green;
+		}
+
+		nav.in-page-nav {
+			margin: 15px auto 0;
+			border: 0px solid blue;
+		}
+
+		ul.page-links {
+			width: 230px;
+			border: 0px solid red;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_articles-title-include.htm"); ?>
+									<h3>
+										What Hypnosis Really Is
+									</h3>
+									<h4>
+										James H. Loryea<span class="block">a.k.a. "Satanelli"</span>
+									</h4>
+									<p class="note">
+										A Complete and Lucid Explanation of the Art
+									</p>
+								</header>
+							</div>
+
+							<nav class="in-page-nav">
+								<p class="tiny center">Single-page document.
+									Sections of this page:
+								</p>
+								<ul class="page-links">
+									<li><a href="#preface">Preface</a></li>
+									<li><a href="#introduction">Introduction</a></li>
+									<li><a href="#suggestion">Suggestion</a></li>
+									<li><a href="#associated-ideas">Associated Ideas</a></li>
+									<li><a href="#hypnotism">Hypnotism</a></li>
+									<li><a href="#crime">Crime</a></li>
+									<li><a href="#sleeper">The Seven Day Sleeper</a></li>
+									<li><a href="#alleged-exposes">Alleged Exposes</a></li>
+									<li><a href="#newspapers">What The NY Newspapers Say About Santanelli</a></li>
+									<li><a href="#frontispiece">Book Frontispiece</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a class="" href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="preface">&nbsp;</a>
+							<h4 class="top-heading">
+								Preface
+							</h4>
+							<div class="right-image-div">
+								<img src="images/santanelli-cover.jpg" alt="Santanelli: What Hypnosis Really Is, book cover">
+								<p class="tiny">Source: <a href="https://archive.org/details/whathypnosisreal00lory">Archive.Org</a></p>
+							</div>
+							<p>
+								My investigations having proven to me that ninety-seven per cent of sane mankind,
+								provided they are willing, can in time be hypnotized, that all the functions of
+								the body respond to "suggestion", and that within the next five years all functional
+								disorders will be cured through "suggestion", that the mental scientists, who as
+								yet have no science, but who prove every day that mind controls matter, will merge
+								their principles into the scientific working's of hypnotism, and thereby spread
+								this great truth, I am desirous that the public may thoroughly understand the principles
+								of this art. For that reason I offer them, free of charge, this little brochure,
+								hoping that many will become interested, will investigate, and take up nature's
+								own curative power &ndash; "suggestion".
+							</p>
+							<p>
+								As "all work and no play makes Jack a dull boy", my exhibitions will consist of
+								a short but interesting explanation of what hypnosis really is, illustrated in the
+								plainest manner possible with blackboard drawings and diagrams. These talks will
+								not be long enough to be tiresome, after which I shall give an instructive entertainment
+								with subjects of both sexes.
+							</p>
+							<p>
+								AS AN ENTERTAINING EXHIBITION CAN BE GIVEN WITHOUT HUMILIATING OR MAKING FOOLS OF
+								PEOPLE, I desire the co-operation of both old and young of both sexes, and ask them
+								to meet me each evening at seven o'clock on the stage at the theatre with this understanding,
+								that if I succeed in hypnotizing them, they will come on the stage, and I will pledge
+								them my word of honor as a man that I will cause them to do nothing that they or
+								their friends will object to. It will be my endeavor to bring out all their good
+								points, so they will be pleased when their friends tell them of the clever things
+								I have caused them to do.
+							</p>
+							<p>
+								I have no desire to give my exhibitions with the rougher element. A hypnotist cannot
+								put a thought in the mind; he can only bring out and intensify what is there. If
+								my subjects lack brains, I cannot give the exhibition that it is possible to do
+								with intelligent people.
+							</p>
+							<p>
+								A portion of my entertainment is devoted to what I call an EXHIBITION OF STATUARY,
+								something exceedingly pleasing to both subjects and audience, and which is extremely
+								wonderful. It is for this portion of the entertainment that I so greatly desire
+								bright-minded ladies and gentlemen. Every afternoon from two to four I can be found
+								at the parlors of my hotel, ready to receive all who are interested in this art,
+								and to discuss it with them. Those desiring a lesson, for which the fee is only
+								ten dollars, and which consists of only one, must make appointments the day before
+								with my manager, who can be found by addressing him at the box office of the theater.
+							</p>
+							<p>
+								Hoping that hypnotism will soon become so common that professional hypnotists will
+								have to give up the business, I remain,
+							</p>
+							<p>
+								Yours hypnotiquely,
+							</p>
+							<div class="signature-div" style="margin-left:50px;text-align:left;">
+								<img src="images/santanelli-signature.jpg" style="width: 240px;" alt="Santanelli's signature">
+
+								<p>
+									[signature] Santanelli
+								</p>
+								<p>
+									Master of Hypnotism,
+								</p>
+								<p>
+									Lansing, Michigan, August 25, 1896.
+								</p>
+							</div>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="introduction">&nbsp;</a>
+							<h4>
+								Introduction
+							</h4>
+							<p>
+								Before one can understand the principles of hypnotism, it is necessary to fully
+								comprehend the meaning of "suggestion". That once understood, hypnotism becomes
+								a very simple matter.
+							</p>
+							<p>
+								MAN IS NOT A FREE AGENT; HIS EVERY ACT AND THOUGHT IS ENTIRELY CONTROLLED BY "SUGGESTION".
+							</p>
+							<p>
+								Man has TWO BRAIN SYSTEMS, one of which I call the abdominal brain which controls
+								the entire mechanical actions and functions of man. This brain is known to anatomists
+								as the sympathetic system, and for which they know no use. The memory brain, which
+								is situated in the head, known as the cerebral, is simply the receptacle of memory.
+								Man's mind, or thoughts, are also double, i. e., ideas, and "associated ideas".
+							</p>
+							<p>
+								The center of this abdominal brain is situated directly back of the stomach and
+								consists of what is known as the two semi-lunar ganglia connected by the solar plexus.
+								Situated in all parts of the body are a number of small ganglia, or brains; as we
+								might say, sub-stations, in direct communication with this center. Each ganglion,
+								sub-station, or brain, has a specific duty to perform. Certain parts of the body
+								are directly under its supervision.
+							</p>
+							<p>
+								All functional diseases lie in the mechanical, or abdominal brain. Fundamental diseases
+								are not caused primarily by the organs themselves, but by an irritation or disarrangement
+								of the power of intelligence that controls their action, i. e., the abdominal brain.
+								To better explain the action of these two brains, we will use the phonograph as
+								a simile. The wax cylinder on which the indentations that produce the sound waves
+								are made, can be compared to the cerebral brain, i. e., the brain in the head. If
+								a cylinder of wax that has received no indentations be placed on a machine and
+								it is started, no sound is heard, but if one with indentations is so placed, and
+								the machine be in proper working order, we hear the sound reproduced from the engraven
+								wax. If we do not, we know there is something out of order with the mechanical portion
+								(the abdominal brain of the instrument). Any manipulation of the wax will injure,
+								instead of improving, yet, if we adjust the mechanical fault, the sound is reproduced
+								perfectly. Thus, in insanity, the trouble does not lie in the head, in the cerebral
+								brain, except when there is a pronounced lesion, but in the mechanical arrangement
+								or abdominal brain of the unfortunate being.
+							</p>
+							<p>
+								If one should take a healthy child at birth and keep it isolated in a room for twenty-one
+								years, at the end of the period one would have an adult in physique, yet mentally
+								an infant. Because on the wax of the memory of this being no impressions have been
+								made.
+							</p>
+							<p>
+								It is very plain to all who have studied man that outside of the natural working
+								of the abdominal brain, his knowledge must be all acquired, or in other words, nature
+								supplies the mechanical portion of the phonograph in perfect order, but man must
+								engrave on the mind of his fellow man, through instruction and experience, indentations
+								that are called "intelligence".
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="suggestion">&nbsp;</a>
+							<h4>
+								Suggestion
+							</h4>
+							<p>
+								The doctors will tell you that should an infant take hold of a hot tea cup, it would
+								immediately drop it from what they call "reflex action". But observation teaches
+								that the first time a babe takes hold of a hot object, it will grasp the tighter,
+								not let go until it has been taught to do so. After it has learned to associate
+								the idea of relaxation, or the removal of the body when coming in contact with a
+								hot object, it will then for the first time have learned the practical meaning of
+								"suggestion". In time the idea of withdrawal of any portion of the body from any
+								object that produces an unpleasant sensation becomes so closely allied that the
+								thought does not become necessary. Then the act is an "associated idea", suggested
+								by the contact.
+							</p>
+							<p>
+								After producing anaesthesia in a hypnotized subject, slight punctures fail to produce
+								blood, the reason being a contraction of the tissue around the place where the puncture
+								is made. The tissues also contract when going into the cold. All nerves communicating
+								with the memory brain can only be irritated at the end (the periphery). If the tissues
+								close over them they are protected and no communication is possible, as pain in
+								itself is only an idea, a telegram, a communication of injury done, nature's method
+								of stopping this communication is to contract the tissue, i. e., make a covering
+								over the ends of these nerves or wires. This being the case it can very readily
+								be seen why a child, knowing no action from memory, naturally continues the "suggestion"
+								caused by the ganglion or brain in contracting the tissue, and naturally contracts
+								the fingers, or grasp.
+							</p>
+							<p>
+								All animals under like conditions act in the same way until they have engraven on
+								the wax of their memory the proper "suggestion".
+							</p>
+							<p>
+								Words originally were labial pantomime; no sound was given to thought, but as time
+								passed on, the sound became the thought or "suggestion" for the object, the pantomime
+								was no longer necessary, and words now "suggest" thoughts.
+							</p>
+							<p>
+								"Suggestion" may be defined as A HINT WHICH UNCONSCIOUSLY AROUSES AND PUTS INTO
+								OPERATION A THOUGHT, OR SERIES OF THOUGHTS; AN ACTION OR SERIES OF ACTIONS.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="associated-ideas">&nbsp;</a>
+							<h4>
+								Associated Ideas
+							</h4>
+							<p>
+								The mind, like the brain, is divided into two parts, ideas, and "associated ideas".
+								An understanding of their relationship ends the mystery of hypnosis.
+							</p>
+							<p>
+								Around every idea is grouped a series of "associated ideas", the size of the group
+								depending on the person's experience, education, etc. When once associated around
+								a predominant thought, they follow up that thought, and become part of it, as the
+								background to a picture.
+							</p>
+							<p>
+								When a ganglion of a limb has engraven on its memory the "associated idea" of the
+								withdrawal of that limb from contact with anything that produces a disagreeable
+								sensation, no action of the brain in the head, the cerebral brain, is necessary.
+								The brain was placed by nature in the limb to care for it, and, as soon as it learns
+								what to do, it will always act the same way by the same "suggestion". This we prove
+								after decapitating a frog and irritating any point; we always find that it goes
+								through the usual normal action.
+							</p>
+							<p>
+								This is what the doctors have called "reflex action". The cause of the action they
+								have never been able to explain. Yet they find that these ganglia are composed of
+								white and gray matter, the same as in the head, yet because they are not in the
+								head, the doctors have failed to appreciate that they are brains. It is a well known
+								fact that the ends of the fingers of the blind have a greatly increased amount of
+								gray matter, which very plainly shows that when a sub-brain is kept constantly in
+								action the gray matter increases, i. e., the brain enlarges, and it can be easily
+								understood how the blind can use their fingers in place of their normal sight.
+							</p>
+							<p>
+								In our cerebral brain is impressed memory, or thoughts, around which are grouped
+								different "associated ideas", according to the different experiences in relationship
+								to ideas. Thus, in the general mind, around the thought of doctor, is associated
+								the idea of pain, expense, nauseating drugs, confinement to the house, etc. In each
+								separate mind are further grouped individual experiences differing in many ways.
+								To further explain, we will take the idea of dinner, and follow it and its "associated
+								ideas" in the mind of a king, a merchant, an ignorant laborer, and a beggar. The
+								predominating thought, "dinner", carries with it common to each, a picture or vision
+								of something that will satisfy the hunger. The "associated idea" in the mind of
+								the king is that of a magnificent banqueting hall, liveried servants, fine wines,
+								a company of gorgeously dressed guests, an elaborate menu, music, and perhaps the
+								gout. In the mind of the merchant, a meeting at the door, a loving kiss from a devoted
+								wife, the greeting of happy children, a tastily arrayed table, smiling faces of
+								his family, a modest fare, and a peaceful evening. Those in the mind of the laborer,
+								a quantity of coarse food, beer, a dirty wife, still more dirty children, damaged
+								table service, a quarrel, and an eager desire to reach the corner saloon. With the
+								beggar, the scowling face of some good housewife, apt to set the dog on him, or
+								some sympathetic old lady who will hand him from the back door a piece of cold bread
+								and meat.
+							</p>
+							<p>
+								It can thus be readily seen how different may be the "associated ideas" that in
+								different people surround the predominating one. The king sitting at his regal board,
+								seeing happy faces and rich costumes, will, through his eye, have "suggested" to
+								him the thought of gaiety, which in itself will "suggest" entertainment, which in
+								turn would "suggest" music, dancing, and the drama. The merchant, if he found a
+								bountiful repast of some delicacy would "suggest" his wife's having spent something
+								extra for the meal, which of itself if business was good would "suggest" prosperity,
+								or vice versa, and naturally the topic for conversation would be as to the state
+								of business, confidences would be exchanged between husband and wife as to money
+								matters at the store or in their domestic economy. With the laborer, the broken
+								furniture and the broken dishes would immediately "suggest" previous quarrels, which
+								in itself would "suggest" and put one in action. With the beggar, the being turned
+								away from the door would "suggest" scarcity, which of itself would "suggest " hard
+								times, and whoever yet has met a beggar who could not glibly discuss the times of
+								the day?
+							</p>
+							<p>
+								Three commercial men having just met the first time for several months, are sitting
+								in the lobby of a hotel. The first talks of a divorce proceeding of a mutual friend;
+								the second of horse racing; and the third tells of the defalcation of the clerk
+								of a mutual friend. These three topics are not chosen at random, but by "suggestion".
+								The first traveler on meeting his friend had "suggested" to him. (that is an "associated
+								idea" aroused), of a lady acquaintance with whom his friend had been somewhat smitten.
+								The idea of this lady acquaintance was an "associated idea; "associated with her
+								was the knowledge that she was getting a divorce from her husband; then came the
+								"associated idea" that his friend would be interested to hear something concerning
+								it. Now this entire series of "associated thoughts" after having once been grouped,
+								unconsciously came into predominance by the appearance, that is, the "suggestion"
+								of the mutual friend. When a divorce was spoken of, that raised in the mind of the
+								second party the "associated idea" concerning a friend who had "gone broke" on the
+								races, and lost his wife through the connivance of a race-course friend. The idea
+								of races aroused "in the mind of the third party the picture of a young man who
+								"played" the races, and purloined from a merchant to pay his debts. Knowing those
+								present were acquainted with the merchant, that "suggested" to him to give the name
+								and full particulars, and the conversation was thus entirely controlled by "suggestion",
+								and in fact all conversation is controlled in the same manner and will be as long
+								as new "associated ideas" appear.
+							</p>
+							<p>
+								If a man should meet an Indian who had seen nothing of civilization, how could he
+								describe to him comprehensively the strength and power of a locomotive? It would
+								be necessary to surround an idea common to the Indian with an association of ideas
+								of which he had never dreamed; thus, as the Indian is thoroughly familiar with the
+								horse and its strength, surround in that Indian's mind an idea that the pale-face
+								had a horse twenty times larger than his, a thousand times stronger, that it ate
+								wood, that the breath came in clouds from its nostrils, that it traveled in a carefully
+								arranged pathway, and that it drew twenty large tepees, and although you would not
+								have formed in the Indian's eye a correct picture of a locomotive, he still would
+								have a conception of a locomotive's power and strength. A drawing made of a locomotive
+								would produce an impression on the mind, which, with the Indian's comprehension
+								of its power and strength, would leave an idea and an "association of ideas" that
+								would enable the Indian when he first saw a locomotive, to recognize it. First,
+								by its form, or the "suggestion" produced by seeing the escape of steam or smoke,
+								or the drawing of the cars. Or, if he had never seen the form, seeing it move on
+								the pathway or track would "suggest" to the Indian the story of the big horse as
+								told by the pale-face.
+							</p>
+							<p>
+								If a man had always lived in a perfectly level country and
+								would suddenly come to a precipice, not knowing what it was, he would be most apt
+								to walk over it. A man going home at night stumbles into a hole left by a plumber,
+								the next night when he comes to that place, seemingly without thought he steps over
+								it. This action being "suggested" by the surrounding objects which were unconsciously
+								"associated" with his falling down on the previous evening.
+							</p>
+							<p>
+								Ofttimes you read in the papers of an engineer having felt that a certain bridge
+								was unsafe and, on reaching it, stopping his train, finding upon investigation that
+								the bridge had been washed away, he claiming to know of no reason for his surmise
+								other than when he was within five miles of the bridge, a peculiar nervousness took
+								possession of him which very rapidly developed into a feeling that the bridge was
+								insecure. The explanation is very simple. From long association and habit, a locomotive
+								engineer unconsciously recognizes the peculiar sound caused by the train passing
+								over the rails when everything is in perfect order; the break in the bridge caused
+								a sound different from the one he was accustomed to hear. This unconscious noting
+								of the change naturally "suggested" something out of order with the track, and as
+								the bridges are a very pronounced idea in an engineer's mind, they will be the first
+								thing that the disturbance of the rhythm would "suggest".
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="hypnotism">&nbsp;</a>
+							<h4>
+								Hypnotism
+							</h4>
+							<p>
+								The mind will hold but one idea at a time. When a person is doing one thing it is
+								impossible for him to do another until he has stopped doing the first; thus, if
+								you are pushing on a cane, you cannot pull until you have stopped pushing, otherwise
+								you would push forever. In mechanics this stopping point is known as the "dead center".
+								The mind, muscles and body, like all machinery, work on mechanical principles. When
+								a person is thinking of one thing, he cannot think of the second until he has stopped
+								thinking of the first. If in that "dead center" of the mind a thought be introduced,
+								it would be the one predominating in the mind.
+							</p>
+							<p>
+								Let us imagine that the mind is the hub of a wheel filled with spokes, each spoke
+								an idea, and the space between the spokes the "dead centers". If we cause this hub
+								to revolve, and hold our fingers where the spokes would touch, there would be a
+								space between the touching of our fingers by the spokes. So it is with our ideas,
+								always a space on either side.
+							</p>
+							<p>
+								When a man is in his normal condition, we may say that this wheel is revolving or,
+								by "suggestion" new ideas keep appearing. When his mind is on one subject the wheel
+								is inactive, and one spoke is in predominance. When a man is in hypnosis the spoke
+								or idea predominant is transparent. It occupies the space of the solid spoke, but
+								is a blank and of no use; it is a mind with the thought of sleep which is in itself
+								a blank.
+							</p>
+							<p>
+								After a "suggestion" has been accepted by a subject, he is no longer in hypnosis
+								but is laboring under an illusion or predominant thought, normal in every manner
+								excepting as to the "suggestion" received. If he accepts the "suggestion" of "no
+								feeling" he labors under that predominant thought with his other senses normal.
+							</p>
+							<p>
+								Hypnosis proper IS A SIMULATED SLEEP, differing from sleep proper, thus: in sleep
+								the condition is a blank space each side of the spoke and the spoke out, making
+								one continuous blank space, a measurement, we will say, of six inches. In hypnosis
+								we have the blank space, a blank idea or spoke in the place of the spoke, and then
+								another blank space, or in other words, the six inch blank space is divided into
+								three sections of two inches each, equal to six inches of blank space yet still
+								divided into three parts, the two natural or outside ones being immovable, and the
+								center blank occupying the space of the spoke, being changeable at the operator's
+								will.
+							</p>
+							<p>
+								When a person is asleep an idea cannot be aroused in his mind because the blank
+								space is a solid, but in hypnosis the movable space is changeable at the operator's
+								will, into which only ideas or spokes which the subject in his normal state has
+								fitted (accepted) to the hub can be placed. The wheel is thus perfected, and the
+								last inserted spoke the pronounced one; so it can readily be seen that only old
+								ideas or fitted spokes can be placed into the hub. New ideas cannot be brought to
+								the surface. The hypnotist cannot put a new thought in the mind, but may reverse
+								or change any idea that the subject when awake desires or is indifferent to.
+							</p>
+							<p>
+								As a man is controlled by "suggestion" he will, if surrounded by every "suggestion"
+								of sleep, be led into the condition of sleep. After surrounding a subject with all
+								the physiological conditions of sleep, if the activity of his mind be stopped, i.e.,
+								the wheel stopped revolving all that will be necessary is to substitute for the
+								single thought in the subject's mind, the blank thought of sleep, then we have the
+								blank, the blank thought, and the blank, WHICH IS HYPNOSIS.
+							</p>
+							<p>
+								Every experienced operator should know these conditions, or "suggestions". The fewer
+								he knows, the fewer he will be able hypnotize, and vice versa. Those who know all
+								of the "suggestions" in time can hypnotize ninety-seven per cent of those who are
+								willing to assist the hypnotist and go into hypnosis.
+							</p>
+							<p>
+								No person can be hypnotized against his or her will. It is necessary that the subject
+								follow the condition or "suggestions" of the hypnotist, and by so doing he will
+								unconsciously be led but not forced into hypnosis. After being guided a few times,
+								he will learn how to go to "sleep" at his own or the hypnotist's suggestion". Hypnosis
+								is really self-induced. The hypnotist simply guides, or leads by means of "suggestion".
+								The subject after having learned the conditions can go there of his own accord,
+								it may be with a "self-suggestion" or with the intention or "suggestion" of receiving
+								no idea excepting through the voice of the hypnotist. Many people have marveled
+								how it is possible for me to hypnotize sixty people at one time, which I have repeatedly
+								done. The majority believing that a hypnotist possesses some supernatural power,
+								yet they cannot conceive of him exerting it over sixty people at once. The truth
+								is that those sixty people know how to go into hypnosis; are willing to accept any
+								"suggestion" I may offer that is not repulsive to their natures, and when I "suggest"
+								"sleep" I have done my part, if they are willing, well and good, if not I am helpless.
+								To illustrate, standing at the edge of the river are sixty people who know how to
+								swim. I, the swimming teacher, call to them to jump, they knowing how to swim, and
+								not afraid, willing to obey my commands, do so.</p>
+							<p>
+								If I call up in the mind of a hypnotized subject the idea that he is a public singer,
+								he is perfectly free then, excepting that he is laboring under the illusion that
+								he is a public singer, having the "associated ideas" that he has formed concerning
+								a public singer, it is perfectly safe to allow him freedom, only he will always
+								accept an invitation to sing, and will make an effort to show his skill; otherwise
+								he is perfectly normal. If, on the stage, I should give a "suggestion" to a subject
+								that he were a fisherman, and point out a stream to him, he would not see the audience
+								or theater; would speak to no one, unless one should appear with a fishing pole,
+								which would attract his attention and then he would talk with him. He would remain
+								fishing until he became tired, and then go home. The reason of this is when I bring
+								up in his mind the predominating thought of being a fisherman, and show him the
+								stream of water, the associated picture to which he is accustomed immediately arises,
+								and everything takes on the transformation. On seeing a man with a pole, which belongs
+								to the idea or picture of fishing, he naturally talks to the other fisherman.
+							</p>
+							<p>
+								The doctors of Europe and all traveling hypnotists awaken (?) their subjects by
+								telling them that they are awake; or, in other words, slip in the idea that they
+								are awake just the same as they slip in the idea that a man is a public singer or
+								a fisherman. The subject is then laboring under the "suggestion" or illusion that
+								he is awake. In most cases this is all that is necessary, but not the safest way
+								with impressionable people. ' My subjects "fall over themselves" as the public expresses
+								it, when I awaken them. Why? Because in hypnosis the brain is anaemic, and a subject
+								cannot be awakened unless he be startled, the circulation re-established, or, in
+								other words, the hub once more set spinning. THIS I DO.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="crime">&nbsp;</a>
+							<h4>
+								Crime
+							</h4>
+							<p>
+								Much has appeared in the newspapers, magazines, and novels, as to the ability of
+								the hypnotist to instigate crime. If you look at this seriously, you can readily
+								see how foolish is the claim.
+							</p>
+							<p>
+								If I should tell A while in hypnosis, to kill B, why would he refuse? Answer: I
+								arouse in A's mind the idea of murder, which carries with it the "associated ideas"
+								of blood, death, disgrace, trial, conviction, punishment, and either hanging or
+								confinement in a penitentiary. This picture, naturally, causes A to refuse. If I
+								tell him he should, he will ask why, and as I can put no thought in the mind, am
+								able only to bring to the surface something that is there, there is no story that
+								I can tell him that he will accept; but if, while in his waking-state, I can persuade
+								him to kill B, which means, to be able to cause him to "associate" around the thought
+								of killing B, the "associated ideas" of gain to himself, a way of committing the
+								deed without discovery, no chance for punishment, I then can hypnotize him and put
+								in place the spoke which he has fitted to the hub, but if this has to be done, why
+								need I hypnotize him ?
+							</p>
+							<p>
+								Now as to the violation of women through hypnosis; first, the passions are aroused
+								by congestion of certain organs; an idea causes this congestion, but there is no
+								passion only memory, until this congestion has taken place. If very powerful, the
+								mind loses control and this congestion or irritation has full sway. This may be
+								laid down as an axiom. The passions control the mind, and not the mind the passions.
+								One of the greatest proofs of it is the actions of the rapist, who nearly always
+								attempts the assault upon a child, which act to any sane man is both abhorrent and
+								impossible.
+							</p>
+							<p>
+								The only pronounced physiological change that is noticeable in hypnosis is the relaxed
+								condition of all the muscles. Therefore, the woman being in hypnosis is free of
+								all congestions and being thus free there is no possible passion. Then if the thought
+								be "suggested" to her, all her moral "associated ideas" would be aroused and indignation
+								would predominate. Again if the hypnotist should so place a woman in a position
+								to accomplish his purpose, and then "suggest" to her rigidity (catalepsy), the position
+								alone would arouse ideas to prevent her accepting such "suggestion". Thus it can
+								be readily seen that no advantage can be taken of a person while in hypnosis. For
+								if in a person's mind are associated ideas in a normal state not to reveal a thing
+								or do an act the hypnotist has no power to force them to obey his commands.
+							</p>
+							<p>
+								Many experimenters have hypnotized subjects, given them the "suggestion" of purloining
+								from an associate experimenter some article of small value and the subject has done
+								so. They have also placed in a subject's hand a paper dagger, instructed him to
+								stab a person and he has also done this. On this slight premise they have made the
+								claim that crime can be induced through hypnosis.
+							</p>
+							<p>
+								When I "suggest" to a subject that the first time he finds Dr. Cooper out of his
+								office, he will steal his lancet and bring it to me, I bring to the surface in the
+								mind of the subject the thought of stealing, and this "associated idea"; Dr. Cooper
+								is a confrere of Santanelli, Santanelli is making an experiment, Santanelli can't
+								steal from Dr. Cooper because he is welcome to any instrument that the doctor possesses;
+								this is a farce. Why should not the subject respond to the "suggestion?"
+							</p>
+							<p>
+								With the stabbing experiment, the subject is perfectly conscious through his "associated
+								ideas" that it is an experimental farce, that Santanelli dare not let him kill some
+								one. But if I should "suggest" to the subject that he go down to the jewelry store,
+								break in the. show case and steal a handful of diamonds, the reader can readily
+								see that an entirely different series of "associated ideas" would be aroused, and
+								the subject refuse receiving such a "suggestion".
+							</p>
+							<p>
+								I have found that the constant arousal of certain vicious thoughts are beneficial
+								rather than detrimental to subjects. Thus, the first time I accuse a hypnotized
+								subject of killing a person I arouse only a brief series of "suggested" thoughts
+								if he never had actually committed such an act. The oftener I repeat the "suggestion",
+								the more pronounced become the "associated ideas" of fear and I have done the subject
+								a favor.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="sleeper">&nbsp;</a>
+							<h4>
+								The Seven Day Sleeper
+							</h4>
+							<p>
+								Much interest has been manifested over the entire country concerning my "sleeper".
+								All kinds of foolish doubts have been raised, yet in every city where I have reproduced
+								this act, I have had no trouble in thoroughly convincing the citizens of its truth.
+								Often some wise (?) reporter starts the story that I feed the boy. This seems to
+								be the chief point of interest, and the story circulated is always that I fed him
+								sandwiches. The wise (?) people seem to overlook the fact that it would be much
+								easier to smuggle capsules containing liquid food to him than to give him indigestible
+								sandwiches.
+							</p>
+							<p>
+								The subject is not hungry for the reason that the stomach greatly contracts, which
+								seems to be nature's way of causing a suspension of its desires. It is generally
+								sixteen hours after he is awakened before he will eat a hearty meal.
+							</p>
+							<p>
+								The wonderful part of the act they all overlook. That is the suspension of thirst,
+								the system must have water when it can do without everything else, this seems never
+								to have entered the minds of the wiseacres. I made sixteen attempts, and failures,
+								before I found why it was I did not stop the thirst. A remark passed by a student
+								in Detroit, who was one of the watchers of the "sleeper", gave me a hint which I
+								followed up and discovered where my error lay. Again, many people keep wondering
+								if the boy is really asleep and whether he ever wakes up. Now the entire act from
+								a scientific and interesting point of view, is simply to show that hunger, thirst,
+								and bowel action, are not involuntary, and are controlled by an intelligence, which
+								is reached through hypnotic "suggestion"; that these functions can be suspended
+								for seven days, and the patient suffer no inconvenience. Once for seven days I succeeded
+								in suspending hunger, thirst, bowel and kidney action, but it was next to impossible
+								to convince the physicians that the kidney action was suspended, they claiming that
+								uremic poisoning could not be avoided. I allowed the kidneys to do their work, and
+								proved to the physicians, by giving them the urine to analyze that I did exactly
+								what I claimed, having learned that accomplishing a partial wonder was more satisfactory
+								than a great one.
+							</p>
+							<p>
+								The doctors judge of uremic poisoning on a deduction based on experiments made on
+								sick people. I prove my cases on well, or normal people; prove that MIND CONTROLS
+								MATTER, and know that when nature, or the body intelligence respond to a "suggestion",
+								that no ill can come; otherwise that intelligence would not act on the "suggestion".
+							</p>
+							<p>
+								There is no danger in suspending any or all of the functions of the body by "suggestion".
+								As to the subject waking up, it is necessary for me to keep him in that state to
+								accomplish a result to my "suggestions. "It would be far more satisfactory to me,
+								and far more beneficial to mankind, if I could produce these results, and yet have
+								the subject awake. Up to date, eight days has been the longest I have ever succeeded,
+								or tried, to keep a subject in hypnosis with the functions suspended. My imitators
+								have only succeeded in carrying the experiment for twenty-four hours.
+							</p>
+							<p>
+								I now have a subject asleep in a private hospital, hoping to produce trance, in
+								event of which he will remain there twenty-one days, during which time I will suspend
+								hunger, thirst, bowel and kidney action, and I have every reason to believe that
+								the experiment will succeed.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="alleged-exposes">&nbsp;</a>
+							<h4>
+								Alleged Exposes
+							</h4>
+							<p>
+								Several times a year a long article appears in the papers purporting to be an expose
+								(?) of some hypnotist, by what is known as the hypnotic "horse"; i. e., a subject
+								who has been hypnotized so often that he can instantly accept a "suggestion" and
+								is as much at home under "suggestion" as an expert swimmer in the water, and is
+								one who makes his living by traveling with a professional hypnotist.
+							</p>
+							<p>
+								As hypnotism is self induced, there are a certain number of startling tests that
+								the subject in a short time can learn to reproduce, such as being insensible to
+								feeling, being rigid, raising or lowering the pulse, suspending hunger, thirst,
+								or bowel action for twenty-four hours. The limit is twenty-four hours on a suspension
+								of the functions inasmuch as the "suggestion" has to be renewed.
+							</p>
+							<p>
+								The alleged expose consists in the subject, or "horse", who has been discharged
+								by the hypnotist, going to some newspaper, and for a consideration reproducing these
+								tests, and claiming, or asserting that he himself is the wonder, and hypnosis is
+								not used. The newspapers, eager for a sensation, overlook the point that these wonderful
+								tests are produced by the hypnotist with hundreds of different people through the
+								year, and call it what they may, there must be a science at the bottom of it, for
+								no one but the hypnotist seems to have the good luck to find these wonders. (?)
+								The doctors operating in the hospitals and having a large practice, fail to find
+								people who can reproduce these tests. Yet, as I said before, these fake (?) hypnotists
+								find them in every town they go into, in fact every hypnotist finds them without
+								the least trouble. As our doctors can't do so the hypnotist must either have an
+								art or some miraculous discriminating ability.
+							</p>
+							<p>
+								These "horses" begin their story by telling how they wish to expose (?) the hypnotist
+								in revenge for some alleged wrong, which, on its face, pronounces them unworthy
+								of belief. They ask someone to give them the command to sleep, and then reproduce
+								the test. A bewildered look appears on the face, or in other words they go into
+								hypnosis by "suggestion", act on and awaken through auto-"suggestion".
+							</p>
+							<p>
+								In all the alleged exposes in the metropolitan papers, the reporters have noted
+								this. Yet the desire for sensation has been so great that they have devoted more
+								space to the claims of the "horse" than to the protection of the art. A few weeks
+								ago a "horse" submitted to a twenty-four hours' sleep in one of our large cities
+								claiming the sleep to be a "fake". During his test the wise (?) physicians, to prove
+								that it wasn't hypnosis, submitted him to the most horrible torture, and when at
+								the end of twenty-four hours the subject awakened, none offered an intelligent opinion.
+								First, because none of them knew hypnosis when they saw it, and secondly, they tried
+								to form opinions, based on their own theories formulated on the spur of the moment,
+								having no premise whatever. All that they could prove by the tests made, was anaesthesia,
+								and if anaesthesia is the test for hypnosis, there is no hypnosis. As before stated,
+								HYPNOSIS IS A SIMULATED SLEEP, and carries with it no condition other than a certain
+								relaxation of the muscles, the extent of which differs in different subjects.
+							</p>
+							<p>
+								A twenty-four hours' sleep could not be an expose because the object of the sleep
+								is to prove the suspension of certain functions. Anyone with a little will power
+								could suspend them for twenty-four hours, but no man in his normal state can go
+								five or seven days without water and not suffer severely, neither could he simulate
+								sleep for that length of time. To a certain extent hunger would act in the same
+								way and no man in his normal state could voluntarily keep his bowels inactive for
+								a week without injury. But the "horse" gets his money, the newspapers a sensation,
+								a doubt has been raised in the mind of the unthinking public, and science indirectly
+								benefited inasmuch as the first time a hypnotist offers the test to the public they
+								will be skeptical, watch the sleeper with the eye of a hawk, become convinced of
+								the genuineness of the claims of the hypnotist, and many are interested who would
+								not otherwise have been had they not read the alleged "expose".
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="newspapers">&nbsp;</a>
+							<h4>
+								What The NY Newspapers Say of Santanelli
+							</h4>
+							<p>
+								These illustrations, reproduced from photographs, show different emotions evoked
+								at will, by Santanelli, in his subjects. He places them in hypnosis, and tells them
+								that when they open their eyes they will see the funniest thing they have ever looked
+								upon. When they are convulsed with laughter, with a word he throws them into complete
+								catalepsy, and they become as rigid as marble. They cannot move, or change their
+								expressions until Santanelli awakens them, nor can any other human agency release
+								or relieve them. No living creature could train himself to retain such inflexibility.
+								The same system of suggestion is followed in producing the emotions of fear, hatred,
+								pity and joy. If Santanelli could teach people to act with the realistic effect
+								made known by his untutored subjects, there would be plenty of better actors than
+								Booth or Salvini on our boards. He is a wonder. - New York Dramatic News.
+							</p>
+							<p>
+								Svengali is outdone. His glory has departed with the advent of a western rival.
+								He came, he saw, and he conquered yesterday at the Herald Square Theatre. His name
+								is Santanelli. - New York Morning Advertiser.
+							</p>
+							<p>
+								The doctors testified to the genuineness of the experiments. - New York Herald.
+							</p>
+							<p>
+								Santanelli is a master of the art of hypnotism. There can be no doubt of that. He
+								accomplishes many wonderful feats that on their face would appear to be scientific
+								impossibilities. - New York Recorder.
+							</p>
+							<p>
+								The audience realized that they had a very remarkable man before them. - New York
+								Mercury.
+							</p>
+							<p>
+								His actual performance before the astonished faces and eyes of the doctors are more
+								amazing than anything in Du Maurier's "Trilby". - New York Morning Journal.
+							</p>
+							<p>
+								Santanelli performed some really remarkable feats. - New York Morning Advertiser.
+							</p>
+							<p>
+								The doctors declared that this exhibition was the most remarkable thing of the kind
+								that they had ever seen. - New York Tribune.
+							</p>
+							<p>
+								The numerous experiments made by Santanelli only added to the conviction of his
+								audience that the hypnotist could produce results never before witnessed. (Translated.)
+								New York Staats-Zeitung.
+							</p>
+							<p class="note80">
+								End
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="frontispiece">&nbsp;</a>
+							<h4 class="center">
+								Book Frontispiece
+							</h4>
+							<div class="frontispiece">
+								<p>
+									Santanelli</p>
+								<p>
+									What Hypnostsm Really Is
+								</p>
+								<p>
+									A Complete and Lucid Explanation of the Art
+								</p>
+								<p>
+									by Santanelli
+								</p>
+								<p>
+									Master of Hypnotism
+								</p>
+								<p>
+									Copyright, 1896, by James H. Loryea
+								</p>
+								<p>
+									Plagiarists Take warning!
+								</p>
+								<p>
+									As the entire contents of this pamphlet have been duly copyrighted, I will prosecute
+									to the full extent of the law, anyone reproducing it in part, or entirety, without
+									my written permission.
+								</p>
+								<p>
+									Master of Hypnotism.
+								</p>
+								<p>
+									Lansing, Michigan, September 1st, 1896.
+								</p>
+								<p>
+									SANTANELLI
+								</p>
+								<p class="toowide">
+									IT COMES DIRECT FROM HIS TRIUMPHAL ENGAGEMENTS AT THE
+								</p>
+								<p>
+									HERALD SQUARE THEATRE
+								</p>
+								<p>
+									and
+								</p>
+								<p>
+									HAMMERSTEIN'S OLYMPIA,
+								</p>
+								<p>
+									NEW YORK
+								</p>
+								<p class="toowide">
+									He first puzzled, then completely won the endorsement of the most
+								</p>
+								<p>
+									EMINENT METROPOLITAN PHYSICIANS
+								</p>
+								<p>
+									HIS LECTURE AND SEANCE IS A BRILLIANT
+								</p>
+								<p>
+									SUCCESSION OF WONDERS AND DELIGHTS
+								</p>
+								<p>
+									DON'T FAIL TO ATTEND!
+								</p>
+								<p>
+									When he Lectures Here
+								</p>
+								<p>
+									IT WILL BE SOON
+								</p>
+								<p class="note">
+									ROBERT SMITH PRINTING CO., LANSING, MICH.
+								</p>
+								<p>
+									SANTANELLI
+								</p>
+								<p>
+									IS THE
+								</p>
+								<p>
+									ONLY HYPNOTIST
+								</p>
+								<p class="note">
+									Before the public today who is recognized by the scientific world, and he is known
+									to scientists as the most
+								</p>
+								<p>
+									ORIGINAL
+								</p>
+								<p>
+									DARING and
+								</p>
+								<p>
+									MASTERFUL
+								</p>
+								<p>
+									Exponent of the art ever known.
+								</p>
+								<p>
+									DONT FAIL to ATTEND
+								</p>
+								<p>
+									His Seances and Lectures.
+								</p>
+							</div>
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xenophon: Hiero, or, Tyrannicus</title>
+	<meta name="description" content="Dialogue between Hiero, tyrant of Syracuse, and the poet Simonides">
+	<meta name="author" content="Xenophon">
+	<meta property="og:title" content="Xenophon: Hiero, or, Tyrannicus">
+	<meta property="og:description" content="Dialogue between Hiero, tyrant of Syracuse, and the poet Simonides">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/xenofon/images/xenophon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_xenofon-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- -->
+	<link rel="next" href="part-01.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Social media:
+        Hiero, by Xenophon, is set as a dialogue between Hiero, tyrant of Syracuse, and the lyric poet Simonides. The dialogue is a response to the assumption that a tyrant's life is more pleasant than a commoner's. Having lived as both, Hiero breaks down this misconception, arguing that a tyrant does not have any more access to happiness than a private person.
+
+        The dialogue was the nominal subject of Leo Strauss' treatise "On Tyranny".    
+        
+        */
+		nav.contents {
+			column-rule: 1px solid #666;
+			margin-top: 35px;
+		}
+
+		nav.contents .item {
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_xenofon-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_xenofon-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Contents
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="part-01.htm">Part 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<!-- these are CSS3 columns -->
+							<div class="to-center">
+								<!-- items have :hover styling, color change -->
+								<!-- the uls don't float; they are display: inline-block -->
+								<nav class="contents">
+									<div class="item">
+										<a href="part-01.htm">Part 1</a>
+									</div>
+									<div class="item">
+										<a href="part-02.htm">Part 2</a>
+									</div>
+									<div class="item">
+										<a href="part-03.htm">Part 3</a>
+									</div>
+									<div class="item">
+										<a href="part-04.htm">Part 4</a>
+									</div>
+									<div class="item">
+										<a href="part-05.htm">Part 5</a>
+									</div>
+									<div class="item">
+										<a href="part-06.htm">Part 6</a>
+									</div>
+									<div class="item">
+										<a href="part-07.htm">Part 7</a>
+									</div>
+									<div class="item">
+										<a href="part-08.htm">Part 8</a>
+									</div>
+									<div class="item">
+										<a href="part-09.htm">Part 9</a>
+									</div>
+									<div class="item">
+										<a href="part-10.htm">Part 10</a>
+									</div>
+									<div class="item">
+										<a href="part-11.htm">Part 11</a>
+									</div>
+								</nav>
+							</div>
+							<!-- end of #to-center -->
+							<hr />
+							<nav id="index-lists">
+
+								<ul class="index-links">
+									<li>Xenophon, military commander and philosopher at <a href="https://en.wikipedia.org/wiki/Xenophon">
+											Wikipedia</a> </li>
+								</ul>
+
+								<ul class="index-links">
+									<li class="header-item">Also in Liberty section</li>
+									<li class="first-item">Étienne de La Boétie:
+										<a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience</a>
+									</li>
+									<li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+									<li class="header-item">Psychology section</li>
+									<li class="first-item">Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda</a></li>
+									<li>Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+									<li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a></li>
+									<li>Wilfred N. Caron: <a href="/psychology/caron/contents.htm">The Occult Significance of Hypnosis</a> Why you are not in control of your life, how others exploit you, and what you can do about it. </li>
+									<li>James H. Loryea, a.k.a. "Santanelli": <a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion</a></li>
+								</ul>
+
+								<ul class="index-links">
+									<li class="header-item">External links</li>
+									<li class="first-item">
+										Source of this document: <a href="https://anastaplo.wordpress.com/">George Anastaplo’s Blog</a>
+									</li>
+									<li>George Anastaplo at <a href="https://en.wikipedia.org/wiki/George_Anastaplo">Wikipedia</a></li>
+									<li>
+										Direct link to <a href="https://anastaplo.files.wordpress.com/2012/11/hiero.pdf">PDF, 10 pages, double-sided</a>
+									</li>
+									<li>
+										Extracted from Leo Strauss, On Tyranny, ed. Gourevitch &amp; Roth (1991), translation of Xenophon by Marvin Kendrick.</li>
+									<li>
+										Also see at <a href="https://books.google.vg/books?id=puxRXDxS5TMC&pg=PA22&source=gbs_toc_r&cad=2#v=onepage&q=kendrick&f=false">Google Books</a></li>
+								</ul>
+
+							</nav>
+
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="part-01.htm">Part 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								<!-- spacer STILL needed to fill out width on a narrow page
+                                    Needed here but not in Spanish page - weird
+                                    need to figure out why -->
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

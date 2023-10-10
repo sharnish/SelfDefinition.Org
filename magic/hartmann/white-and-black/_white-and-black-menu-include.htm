@@ -1,0 +1,96 @@
+<!-- start of menu include file Updated Sep 7, 2019. Update May 19, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/magic/">Magic index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm"><span class="conditional-hide-3">Table of </span>Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/magic/">Magic index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="last-li"><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <ul class="menu-text">
+            <li><em>Magic White and Black</em> <span class="normal">(1888) 4th&nbsp;edition</span></li>
+            <li class="normal">
+                <img class="menu-image" src="/magic/hartmann/white-and-black/images/franz-hartmann-md.jpg" alt="Franz Hartmann, MD" />
+            </li>
+            <li>Franz Hartmann</li>
+            <li class="normal note">(1838-1912)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Table of Contents</a> </li>
+                <li><a href="preface.htm">Preface by the Author</a> </li>
+                <li><a href="introduction-spiritual-law.htm">Introduction: Spiritual Law in the Natural World</a></li>
+                <li><a href="chapter-01-the-ideal.htm">I: The Ideal</a> </li>
+                <li><a href="chapter-02-real-and-unreal.htm">II: The Real and the<br />
+                        Unreal</a> </li>
+                <li><a href="chapter-03-form.htm">III: Form</a> </li>
+                <li><a href="chapter-04-life.htm">IV: Life</a> </li>
+                <li><a href="chapter-05-harmony.htm">V: Harmony</a> </li>
+                <li><a href="chapter-06-illusions.htm">VI: Illusions</a> </li>
+                <li><a href="chapter-07-consciousness.htm">VII: Consciousness</a> </li>
+                <li><a href="chapter-08-unconsciousness.htm">VIII: Unconsciousness</a> </li>
+                <li><a href="chapter-09-transformations.htm">IX: Transformations</a> </li>
+                <li><a href="chapter-10-creation.htm">X: Creation</a> </li>
+                <li><a href="chapter-11-light.htm">XI: Light</a> </li>
+                <li><a href="chapter-12-theosophy.htm">XII: Theosophy, Conclusion</a> </li>
+                <li><a href="appendix-a-new-guide.htm">Appendix: New Guide on the Path</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Franz Hartman at <a href="https://en.wikipedia.org/wiki/Franz_Hartmann">Wikipedia</a> </li>
+                <li><em>Magic White &amp; Black</em> 8th edition <a class="inline" href="https://archive.org/details/magicwhiteandbl00unkngoog">Archive.Org</a> </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also by Hartmann</li>
+                <li class="first-item"><a class="inline" href="/magic/hartmann/wisdom/chapter-08-alchemy.htm#axiomata-hermetica">43 Axioms of Alchemy</a></li>
+                <li><a href="/magic/paracelsus/">Life of Paracelsus</a></li>
+                <li><a class="inline" href="/magic/hartmann/wisdom/">Pronaos of the Temple of Wisdom</a></li>
+                <li>
+                    <hr class="menu-hr" />
+                </li>
+                <li>Link to pdf's in Christian section (Jakob Boehme) <a href="/christian/">/christian/</a></li>
+                <li>Paperback at:<br />
+                    <a href="https://tatfoundation.org/magic.htm">TAT Foundation</a>
+                    <br />
+                    <img class="menu-image" style="margin-top:10px;" src="images/franz-hartmann-cover-lightening-small.jpg" alt="Franz Hartmann, Magic White and Black, book cover" />
+                </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,190 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hsin-Hsin Ming, On Faith in Mind</title>
+    <meta name="description" content="Hsin-Hsin Ming, On Trust in the Heart, by Seng-ts’an, Third Patriarch of Zen">
+    <meta name="author" content="Chien-chih Seng-ts'an ">
+    <meta property="og:title" content="Hsin-Hsin Ming, On Faith in Mind">
+    <meta property="og:description" content="Hsin-Hsin Ming, On Trust in the Heart, by Seng-ts’an, Third Patriarch of Zen">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_hsin-hsin-ming-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <meta property="og:image" content="https://selfdefinition.org/zen/hsin-hsin-ming/jianzhi-sengcan-large.jpg" />
+    <style>
+        html,
+        body,
+        #fixed-header-small-screen,
+        #menu-site-small-screen,
+        .progress-header,
+        .progress-container {
+            background: #fcffff;
+        }
+
+    </style>
+    <script>
+        /* SAVE - script for inserting/rotating elements on the page, #version is in title-include */
+        $(document).ready(function() {
+            $("#version").html("Version Index Page");
+            /* OLD WAY $("#version").css("display", "none"); */
+            /* OLD WAY $("#version").css("color", "maroon"); */
+            $("#version").addClass("maroon");
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include( "_hsin-hsin-ming-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_hsin-hsin-ming-title-include.htm"); ?>
+                                    <h3>
+                                        Version Index
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- This is the same as the left menu, with different styling -->
+                            <div id="index-lists">
+                                <ul class="index-contents-links">
+                                    <li><a href="faith-in-mind-dusan-pajin-translation.htm">Dusan Pajin translation</a></li>
+                                    <li><a href="faith-in-mind-richard-clark-translation.htm">Richard Clark translation</a></li>
+                                    <li><a href="faith-in-mind-dt-suzuki-translation.htm">D.T. Suzuki translation</a></li>
+                                    <li><a href="faith-in-mind-eric-putkonen-interpretation.htm">Eric Putkonen interpretation</a> </li>
+                                    <li><a href="faith-in-mind-arthur-waley-translation.htm">Arthur Waley translation</a></li>
+                                    <li><span style="display: block;">Espa&ntilde;ol:</span> <a href="canto-al-corazon-de-la-confianza.htm">Canto al Corazon de la Confianza</a> </li>
+                                </ul>
+                                <hr />
+                                <ul class="index-external-links">
+                                    <li>Xinxin Ming at <a href="https://en.wikipedia.org/wiki/Xinxin_Ming">Wikipedia</a> </li>
+                                    <li>Jianzhi Sengcan (Seng-ts'an) at <a href="https://en.wikipedia.org/wiki/Sengcan">Wikipedia</a></li>
+                                    <li>Additional versions at: <a href="https://terebess.hu/english/hsin.html">Terebess.Hu</a></li>
+                                    <li>For scholarship, Chinese characters and biography of Seng-ts'an: <a href="https://www.sacred-texts.com/bud/zen/fm/fm.htm">Sacred Text Archive</a></li>
+                                    <li>Also see:</li>
+                                    <li>The Zen Site <a href="http://www.thezensite.com/ZenTeachings/Translations/HsinHsinMingTranslation.html">Translation and Analysis of the Hsin-Hsin Ming</a></li>
+                                </ul>
+                                <ul class="index-site-links">
+                                    <li class="site-links-item">More Zen on this site</li>
+                                    <li class="site-first-item"><a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Zen Teachings of Huang Po - The Dharma of Mind Transmission</a></li>
+                                    <li><a href="/zen/garma-chang/practice-of-zen/contents.htm">Garma C. C. Chang - The Practice of Zen</a></li>
+                                    <li><a href="/zen/garma-chang/la-practica-del-zen/contenido.htm">Garma C. C. Chang - La Práctica del Zen</a></li>
+                                    <li><a href="/zen/song-of-enlightenment/yongjia-xuanjue-song-of-enlightenment-shasta-abbey.htm">Yongjia Xuanjue, &quot;Song of Enlightenment&quot; <span class="note nowrap">[3 translations]</span></a> </li>
+                                </ul>
+                                <ul class="index-external-links">
+                                    <li class="external-links-item">External links</li>
+                                    <li>Osho commentary: Hsin Hsin Ming, The Book of Nothing, oshorajneesh.com <a href="https://www.oshorajneesh.com/download/osho-books/zen/Hsin_Hsin_Ming_The_Book_of_Nothing.pdf">172 page pdf</a> </li>
+                                </ul>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="titles">&zwj;</a>
+                                <h5 style="margin-top: 0;">
+                                    Various Translations of the Title:
+                                </h5>
+                                <p>
+                                    Trust Mind Inscription (Hae Kwang)
+                                    <br />
+                                    Inscription on Trust in the Mind (Burton Watson)
+                                    <br />
+                                    Inscribed On the Believing Mind (Daisetsu Teitaro Suzuki)
+                                    <br />
+                                    On Believing in Mind (Daisetsu Teitaro Suzuki)
+                                    <br />
+                                    Words Inscribed on the Believing Mind (Heinrich Dumoulin)
+                                    <br />
+                                    Verses On the Faith Mind (Richard B. Clarke)
+                                    <br />
+                                    On Faith in Mind (Dusan Pajin)
+                                    <br />
+                                    Faith in Mind (Sheng-yen)
+                                    <br />
+                                    Trusting In Mind (Hae Kwang)
+                                    <br />
+                                    On Trust in the Heart (Christmas Humphreys)
+                                    <br />
+                                    Trust in the Heart (Thomas Cleary)
+                                    <br />
+                                    Poem on the Trust in the Heart (Thomas Cleary)
+                                    <br />
+                                    Trusting In Mind (Stanley Lombardo)
+                                    <br />
+                                    Song of Trusting the Heart (translator unknown)
+                                    <br />
+                                    A Poetical Manuscript on Belief in the Mind (Katsuki Sekida)
+                                    <br />
+                                    The Mind of Absolute Trust (Stephen Mitchell)
+                                    <br />
+                                    The Mind of Absolute Trust (Robert F. Olson)
+                                    <br />
+                                    The Perfect Way (translator unknown)
+                                </p>
+                            </div>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <p>
+                                <!-- spacer STILL needed to fill out width on a narrow page
+                                    Needed here but not in Spanish page - weird
+                                    need to figure out why -->
+                                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                            </p>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

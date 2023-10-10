@@ -1,0 +1,89 @@
+<!-- start of menu include file - Update May 12, 2020. May 18, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float <  check, where is it cleared? -->
+			<li><a href="/shaman/">Shaman index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!--<li class="english"><a href="contents.htm"><span class="conditional-hide-3">Table of </span>Contents</a></li>
+            -->
+			<li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<div style="clear:both"></div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/shaman/">Shaman index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>Australian Aborigines</li>
+			<li class="normal">
+				<img class="menu-image" src="images/contemplation.jpg" alt="Australian Aborigines, Contemplation" />
+			</li>
+			<li>Articles</li>
+			<!--
+            <li class="normal note">(DATES)</li>
+            -->
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work 
+                <li><a href="contents.htm">Contents</a></li> -->
+				<li><a href="jaqua-magical-world-australian-aborigines.htm">Mark Jaqua: Magical World of the Australian Aborigines (this page) </a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Aboriginal Australians at <a href="https://en.wikipedia.org/wiki/Aboriginal_Australians">
+						Wikipedia</a> </li>
+				<li>
+					Dreamtime at
+					<a href="https://en.wikipedia.org/wiki/Dreamtime">Wikipedia</a>
+				</li>
+				<li>
+					Two Brothers at <a href="https://en.wikipedia.org/wiki/Bagadjimbiri">Wikipedia (Bagadjimbiri)</a>
+				</li>
+			</ul>
+		</div>
+		<div class=" site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also by Mark Jaqua<br /> on this site </li>
+				<li class="first-item">
+					<a href="/celibacy/quotes/mark-jaqua-conservation-therapy.htm">Celibacy section: Conservation Therapy</a>
+				</li>
+				<li class="header-item">Huna Section</li>
+				<li class="subhead-item">Max Freedom Long</li>
+				<li class="first-item"><a href="/huna/huna-bulletin/contents.htm">Huna: The Workable Psycho-Religious System of the Polynesians</a></li>
+				<li><a href="/huna/secret-science/contents.htm">The Secret Science Behind Miracles</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

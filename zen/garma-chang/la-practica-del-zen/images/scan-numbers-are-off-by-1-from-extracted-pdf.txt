@@ -1,0 +1,8 @@
+
+E.g., Page 238 of the extracted PDG ("convert" using ImageMagic) is actually page 239 of the printed book.
+
+So 238 is now renumbered 239, etc.
+
+
+
+

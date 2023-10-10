@@ -1,0 +1,383 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3.5 Asambleas parlamentarias</title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="3.5 Asambleas parlamentarias">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="3-4-masas-electorales.htm">
+	<!--link rel="next" last -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		label[for=element-toggle-30],
+		label[for=element-toggle-32] {
+			cursor: pointer;
+		}
+
+		#element-toggle-30,
+		#element-toggle-32 {
+			display: none;
+		}
+
+		#element-toggle-30:not(:checked)~#toggled-element-30,
+		#element-toggle-32:not(:checked)~#toggled-element-32 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3>
+										<span class="block">Libro 3 Capítulo 5</span> Asambleas parlamentarias
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/3-5-parliamentary.htm">..3-5-parliamentary.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3-4-masas-electorales.htm">&lt; Masas electorales</a></li>
+									<li class="align-right"><a href="contenido.htm">Contenido &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								En las asambleas parlamentarias tenemos un ejemplo de masas heterogéneas que no son anónimas. A pesar de que el modo de elegir a sus miembros varía de época en época, y de nación en nación, las asambleas presentan características muy similares. En este caso, la influencia de la raza se hace sentir, para debilitar o para exagerar las características comunes a todas las masas, pero no impide su manifestación. Las asambleas parlamentarias de los países más diversos, tales como Grecia, Portugal, España, Francia y América presentan grandes analogías en sus debates y en sus votos, dejando a sus respectivos gobiernos cara a cara con las mismas dificultades.
+							</p>
+							<p>
+								Más aún, el sistema parlamentario representa el ideal de todos los pueblos civilizados modernos. Este sistema es la expresión de la idea, psicológicamente errada pero generalmente admitida, que una gran reunión de personas es mucho más capaz que una pequeña de arribar a una decisión sabia e independiente sobre un asunto determinado.
+							</p>
+							<p>
+								Las características generales que se pueden encontrar en las asambleas parlamentarias son: simplicidad intelectual, irritabilidad, sugestionabilidad, la exageración de los sentimientos y la influencia preponderante de unos pocos líderes. Sin embargo, como consecuencia de su especial composición, las masas parlamentarias presentan algunos caracteres distintivos que veremos brevemente.
+							</p>
+							<p>
+								La simplicidad de sus opiniones es una de sus más importantes características. En todos los partidos, y más especialmente entre los pueblos latinos, en masas de esta clase existe una tendencia invariable a resolver los más complicados problemas sociales con los principios abstractos más simples y con leyes genéricas aplicables a todos los casos. Naturalmente, los principios varían con el partido; pero puesto que los miembros individuales son parte de una masa, siempre están inclinados a exagerar el valor de sus principios y a llevarlos al extremo. En consecuencia, los parlamentos son más bien representantes de opiniones extremas.
+							</p>
+							<p>
+								El ejemplo más perfecto de la ingenua simplificación de las opiniones características de las asambleas lo ofrecen los jacobinos de la Revolución Francesa. Dogmáticos y consecuentes hasta el último hombre, con sus cerebros repletos de vagas generalidades, se concentraron en la aplicación de ideas fijas sin ocuparse de los acontecimientos. Se ha dicho de ellos, con razón, que pasaron por la Revolución sin darse cuenta de ella. Con la ayuda de dogmas muy simples que les servían de guía, se imaginaron que podrían transformar a la sociedad de arriba hacia abajo y conseguir que una civilización altamente refinada regresara a una fase muy anterior de la evolución social. Los métodos a los que recurrieron para realizar su sueño llevaron el sello de una absoluta ingenuidad. En realidad, se limitaron a destruir lo que encontraron a su paso. Más aún, todos ellos - girondinos, los hombres de la Montaña, los termidorianos, etc - estuvieron animados por el mismo espíritu.
+							</p>
+							<p>
+								Las masas parlamentarias se hallan muy abiertas a la sugestión y, como es el caso en todas las masas, la sugestión proviene de líderes que poseen prestigio; pero la sugestionabilidad de las asambleas parlamentarias tiene límites muy claramente definidos que es importante señalar.
+							</p>
+							<p>
+								Sobre todas las cuestiones de interés local o regional, cada miembro de una asamblea tiene opiniones fijas e inalterables que no pueden ser conmovidas por ningún argumento. El talento de un Demóstenes sería impotente para cambiar el voto de un diputado sobre cuestiones tales como el proteccionismo o el privilegio de destilar alcohol, es decir, cuestiones en las que están involucrados los intereses de electores influyentes. La sugestión emanada de estos electores y hecha sentir antes de que se proceda a votar, es suficiente para contrabalancear y anular sugestiones de cualquier otra fuente, manteniéndose así una absoluta invariabilidad en la opinión.&nbsp;<sup>[30]</sup>
+							</p>
+							<label for="element-toggle-30">
+								[30. Mostrar/ocultar nota.]</label>
+							<input id="element-toggle-30" type="checkbox">
+							<div id="toggled-element-30" class="cfnote hidden">
+								<p>
+									[30. La siguiente reflexión de un parlamentario inglés de larga experiencia es, sin duda, aplicable a estas opiniones prefijadas de antemano y convertidas en inalterables por necesidades electorales: &quot;Durante los cincuenta años que estuve sentado en Westminster, he escuchado miles de discursos; pero muy pocos de ellos consiguieron hacerme cambiar de opinión y ni uno solo consiguió cambiar mi voto.&quot;]
+								</p>
+							</div>
+							<p>
+								Frente a cuestiones generales - el derrocamiento del Gabinete, la imposición de un impuesto, etc. - ya no hay invariabilidad en las opiniones y las sugestiones de los líderes puede ejercer cierta influencia, aunque no exactamente en la misma medida que en una masa ordinaria. Cada partido tiene sus líderes quienes, ocasionalmente, poseen una influencia semejante. El resultado es que el diputado se encuentra colocado entre dos sugestiones contrarias e, inevitablemente, cae en la vacilación. Esto explica cómo es que con frecuencia se lo puede ver votar de distintas maneras dentro del lapso de un cuarto de hora, o agregarle a una ley un artículo que la anula; por ejemplo, quitarle a los empleadores el derecho de elegir y despedir a sus obreros, y luego, agregar una enmienda que casi anula esta medida.
+							</p>
+							<p>
+								Es por la misma razón que toda cámara, durante cualquier período electoral, siempre tiene algunas opiniones muy estables y otras que varían en gran medida. En promedio, al ser las cuestiones generales las más numerosas, lo que predomina en la Cámara es la indecisión -alimentada por el siempre presente miedo al elector, cuya sugestión se halla siempre latente, y que tiende a ser contrabalanceado por la influencia de los líderes.
+							</p>
+							<p>
+								Sin embargo, aún así, son los líderes quienes definitivamente dominan las discusiones que tienen que ver con asuntos sobre los cuales los miembros de una asamblea no tienen fuertes opiniones preconcebidas.
+							</p>
+							<p>
+								La necesidad de estos líderes es evidente desde el momento en que, bajo la denominación de jefes de bancada o jefes de fracción, se los encuentra en las asambleas de todos los países. Son los verdaderos gobernantes de una asamblea. Las personas que forman una masa no pueden estar sin un jefe, de lo cual resulta que los votos de una asamblea sólo representan, por regla general, las opiniones de una ínfima minoría.
+							</p>
+							<p>
+								La influencia de los líderes se debe en una muy pequeña medida a los argumentos que emplean y en una medida muy grande a su prestigio. La mejor prueba de esto es que, cuando por cualquier circunstancia pierden su prestigio, su influencia desaparece.
+							</p>
+							<p>
+								El prestigio de estos líderes políticos es individual e independiente de su nombre o celebridad; un hecho del que M. Jules Simon nos ofrece algunos ejemplos muy curiosos en sus comentarios sobre los hombres prominentes de la Asamblea de 1848 de la cual fue miembro:
+							</p>
+							<blockquote>
+								<p>
+									&quot;Dos meses antes de ser todopoderoso, Luis Napoleón no tenía la más mínima importancia.
+								</p>
+								<p>
+									&quot;Víctor Hugo subió a la tribuna. Fracasó. Se lo escuchó tanto como a Felix Pyat, pero no obtuvo tantos aplausos. No me gustan sus ideas' - me dijo Vaulabelle refiriéndose a Felix Pyat - 'pero es uno de los más grandes escritores y el mejor orador de Francia'. Edgar Quinet, a pesar de su excepcional y poderosa inteligencia, no gozaba de ninguna estima en absoluto. Había sido popular por un tiempo antes de la apertura de la Asamblea; en la Asamblea no gozaba de popularidad alguna.
+								</p>
+								<p>
+									&quot;El esplendor del genio se hace sentir en asambleas políticas menos que en cualquier otro lado. Éstas sólo rinden culto a la elocuencia apropiada al tiempo y lugar, y a servicios partidarios; no a los servicios prestados al país. Para rendirle homenaje a Lamartine en 1848 y a Thiers en 1871 hizo falta el estímulo de un interés urgente, inexorable. Ni bien pasó el peligro, el mundo parlamentario olvidó al instante tanto su gratitud como su miedo.&quot;
+								</p>
+							</blockquote>
+							<p>
+								He citado el pasaje precedente por los hechos que contiene, no por las explicaciones que ofrece, siendo que su psicología es algo pobre. Una masa perdería inmediatamente su carácter de tal si le concediera crédito a sus líderes sobre la base de sus servicios, ya fuesen éstos de naturaleza partidaria o patriótica. La masa que obedece a un líder se halla bajo la influencia de su prestigio y su sumisión no está dictada por ningún sentimiento de interés ni de gratitud.
+							</p>
+							<p>
+								En consecuencia, el líder provisto de suficiente prestigio detenta un poder casi absoluto. La inmensa influencia ejercida, gracias a su prestigio, durante una larga serie de años por un célebre diputado, <sup>[31]</sup> derrotado en la última elección general como consecuencia de ciertos hechos financieros, es bien conocida. Sólo tenía que dar la señal y caían los Gabinetes. Un escritor ha claramente indicado los alcances de su acción con las siguientes líneas:
+							</p>
+							<p class="fnote">
+								[31. El autor se refiere a Clemenceau (N. del T.)]
+							</p>
+							<p class="blockquote">
+								&quot;Es mayormente gracias a M. C--- que pagamos por Tonkin el triple de lo que debíamos haber pagado; que quedamos en una posición tan precaria en Madagascar; que nos dejamos robar un imperio en la región del bajo Niger y que hemos perdido la posición preponderante que solíamos tener en Egipto. Las teorías de M. C--- nos han costado más territorios que los desastres de Napoleón I.&quot;
+							</p>
+							<p>
+								No debemos guardar un rencor demasiado amargo en contra de este líder en cuestión. Es evidente que nos ha costado muy caro pero una gran parte de su influencia se debió al hecho que seguía a la opinión pública la cual, en materia de cuestiones coloniales, estaba lejos de ser en aquél tiempo lo que se va vuelto hoy. Un líder sólo rara vez se halla por delante de la opinión pública; casi siempre todo lo que hace es seguirla y abrazar todos sus errores.
+							</p>
+							<p>
+								Los medios de persuasión de los líderes que estamos tratando, aparte de su prestigio, consisten en los factores que ya hemos enumerado varias veces. Para hacer un empleo hábil de estos recursos un líder tiene que haber llegado a comprender, aunque sea inconscientemente, la psicología de las masas y debe saber cómo dirigirse a ellas. Tendría que conocer, en particular, la influencia fascinadora de las palabras, las frases y las imágenes. Debería poseer una forma especial de elocuencia, compuesta de enérgicas afirmaciones - sin la carga de la prueba - e impresionantes imágenes, acompañadas de argumentos muy resumidos. Esta es la clase de elocuencia que se puede encontrar en todas las asambleas, el Parlamento inglés incluido, por más que se piense que es el más serio de todos.
+							</p>
+							<p class="blockquote">
+								&quot;Es posible leer debates en la Cámara de los Comunes&quot; - dice el filósofo inglés Maine - &quot;en los cuales toda la discusión se resume a un intercambio de generalidades más bien débiles, proferidas por personalidades más bien violentas. Fórmulas generales de esta clase ejercen una influencia prodigiosa sobre la imaginación de una democracia pura. Siempre será fácil hacerle aceptar a una masa afirmaciones genéricas, presentadas en términos impactantes, a pesar de que nunca fueron verificadas y, quizás, ni siquiera son susceptibles de verificación.&quot;
+							</p>
+							<p>
+								No se puede exagerar la importancia de los &quot;términos impactantes&quot; mencionados en la cita arriba indicada. Hemos insistido ya en varias ocasiones sobre el especial poder de palabras y fórmulas. Deben ser elegidas de tal modo que evoquen imágenes muy vívidas. La siguiente frase, tomada del discurso de uno de los líderes de nuestras asambleas nos ofrece un excelente ejemplo:
+							</p>
+							<p class="blockquote">
+								&quot;Cuando el mismo barco transporte a las pantanosas regiones de nuestras cárceles tanto al político corrupto como al anarquista asesino, los dos podrán sentarse a conversar y se darán cuenta de que no son sino las dos caras del mismo sistema social.&quot;
+							</p>
+							<p>
+								El cuadro que de esta manera se evoca es claro y certero, y todos los adversarios del orador se darán por aludidos. Ha conjurado una doble visión de la prisión en el pantano y el barco que puede llegar a transportarlos por cuanto ¿no sería posible que se los incluya en la algo indefinida categoría de políticos mencionada? Habrán experimentado el miedo cerval que debieron sentir los hombres de la Convención ante los nebulosos discursos con los que Robespierre amenazaba con la guillotina y quienes, bajo la influencia de este miedo, invariablemente se le doblegaban.
+							</p>
+							<p>
+								Es del más alto interés de los líderes el lanzarse a las más improbables exageraciones. El orador de quien acabo de citar tan sólo unas palabras fue capaz de afirmar, sin provocar violentas protestas, que banqueros y sacerdotes habían subsidiado a los tirabombas y que los directores de las grandes compañías financieras merecían el mismo castigo que los anarquistas. Afirmaciones de este tipo siempre son efectivas para con las masas. La afirmación nunca será demasiado violenta, la declamación nunca demasiado amenazadora. Nada intimida más a la audiencia que esta clase de elocuencia. Los presentes tienen miedo de que, si protestan, se los eliminará por traidores y cómplices.
+							</p>
+							<p>
+								Como ya he señalado, este peculiar estilo de elocuencia ha tenido siempre un efecto soberano en todas las asambleas. Los discursos de los grandes oradores de las asambleas de la Revolución Francesa constituyen una lectura muy interesante desde este punto de vista. A cada instante se creían obligados a detenerse, a fin de denunciar el crimen y exaltar a la virtud, después de lo cual seguían profiriendo imprecaciones contra los tiranos y jurando que vivirían como hombres libres o sucumbirían. Los presentes se ponían de pié y aplaudían furiosamente y luego, ya calmados, volvían a tomar asiento.
+							</p>
+							<p>
+								En ocasiones, el líder puede ser inteligente y altamente educado, pero la posesión de estas cualidades, por regla, le hace más daño que bien. Mostrando lo complejas que son las cosas, permitiéndose explicaciones y promoviendo la comprensión, la inteligencia siempre hace que su dueño se vuelva indulgente y así, bloquea en gran medida esa intensidad y violencia de convicción que necesitan los apóstoles. Los grandes líderes de masas de todos los tiempos, y los de la Revolución en particular, han sido personas de un intelecto lamentablemente estrecho y precisamente quienes tuvieron la inteligencia más restringida fueron los que lograron la mayor influencia.
+							</p>
+							<p>
+								Los discursos del más célebre entre ellos, Robespierre, frecuentemente asombran por su incoherencia. Al leerlos simplemente, no se encuentra ninguna explicación plausible para el gran papel desempeñado por este poderoso dictador:
+							</p>
+							<p class="blockquote">
+								&quot;Los lugares comunes y las redundancias de elocuencia pedagógica y cultura latina al servicio de una mente más infantil que vulgar, y limitada en sus nociones de ataque y defensa, recuerda la postura desafiante de colegiales. Ni una idea; ni un giro feliz; ni una ocurrencia sagaz: una tempestad de declamaciones que nos deja aburridos. Después de una dosis de esta lectura tediosa uno está tentado de exclamar &quot;¡Oh!' con el simpático Camille Desmoulins.&quot;
+							</p>
+							<p>
+								A veces es terrible pensar en el poder que le otorga a un hombre con prestigio, una fuerte convicción combinada con una estrechez mental extrema. Sin embargo, es necesario que se satisfagan estas condiciones para que un hombre ignore los obstáculos y haga gala de una alta medida de fuerza de voluntad. Las masas instintivamente reconocen en los hombres enérgicos y convencidos a los amos que siempre necesitan.
+							</p>
+							<p>
+								En una asamblea parlamentaria, el éxito de un discurso depende casi exclusivamente del prestigio que posee el orador y en absoluto de los argumentos que esgrime. La mejor prueba de esto es que, cuando por una causa u otra un orador pierde su prestigio, simultáneamente pierde también toda su influencia, es decir: el poder de influir en los votos a voluntad.
+							</p>
+							<p>
+								Cuando un orador desconocido se levanta con un discurso conteniendo buenos argumentos, pero sólo argumentos, las chances son que ni siquiera será escuchado. M. Desaubes, un diputado que también es un psicólogo sagaz, ha dibujado en las siguientes líneas el retrato del diputado que carece de prestigio:
+							</p>
+							<blockquote>
+								<p>
+									&quot;Al ocupar su lugar en la tribuna, extrae un documento de su portafolios, lo despliega metódicamente ante si y comienza a hablar con seguridad.
+								</p>
+								<p>
+									&quot;Se halaga a si mismo creyendo que implantará en las mentes de su audiencia la misma convicción que le anima. Ha sopesado y revisado sus argumentos; está bien equipado de cifras y pruebas; está seguro de que convencerá a su audiencia. En vista de la evidencia que presentará, toda resistencia sería en vano. Comienza, confiado en la justicia de su causa y confiando en la atención de sus colegas cuya preocupación, por supuesto, es la de apoyar a la verdad.
+								</p>
+								<p>
+									&quot;Habla e inmediatamente se sorprende de la inquietud que se manifiesta en la sala y un poco molesto por el ruido que se está haciendo.
+								</p>
+								<p>
+									&quot;¿Cómo es que no se mantiene silencio? ¿Por qué esta general falta de atención? ¿Qué se piensan esos diputados enzarzados en una conversación privada? ¿Qué motivo urgente ha inducido a éste o aquél diputado a dejar su asiento?
+								</p>
+								<p>
+									&quot;Una expresión de inseguridad cruza su rostro. Frunce el ceño y se detiene. Alentado por el Presidente, comienza de nuevo, levantando la voz. Se lo escucha menos todavía. Le imprime énfasis a sus palabras, y gesticula: el ruido a su alrededor sólo aumenta. Ya no puede escucharse ni a si mismo y vuelve a detenerse. Finalmente, temeroso de que su silencio pueda provocar el temido anuncio de <sup>y</sup>iSe cierra la sesión!' vuelve a comenzar otra vez. El bullicio se vuelve insoportable.&quot;
+								</p>
+							</blockquote>
+							<p>
+								Cuando las asambleas parlamentarias alcanzan cierto grado de excitación, se vuelven idénticas a las masas heterogéneas comunes y, por consiguiente, sus sentimientos presentan la peculiaridad de ser siempre extremos. Se las verá cometer actos del mayor heroísmo o del mayor de los excesos. El individuo ya no es él mismo, y tanto es así que votará las medidas más contrarias a sus propios intereses personales.
+							</p>
+							<p>
+								La historia de la Revolución Francesa muestra hasta qué extremos las asambleas son capaces de perder la conciencia de si mismas y de obedecer a las sugestiones más contrarias a sus intereses. Fue un enorme sacrificio para la nobleza el renunciar a sus privilegios. Sin embargo, lo hizo sin vacilar una famosa noche durante las sesiones de la Asamblea Constituyente. Al renunciar a su inviolabilidad, los hombres de la Convención se colocaron bajo una perpetua amenaza de muerte y, a pesar de ello, dieron ese paso sin estarse de diezmar sus propias filas aunque fuesen perfectamente concientes de que el patíbulo al cual estaban enviando a sus colegas hoy podría ser su propio destino mañana. La verdad es que habían llegado a ese estado completamente automático que he descripto en otra parte, y no había consideración que les impidiera obedecer a las sugestiones que los hipnotizaban. El siguiente pasaje de las memorias de uno de ellos, Billaud-Varennes, es absolutamente típico en este sentido: &quot; <em>Las decisiones que tanto se nos han reprochado</em> - nos dice - <em>no fueron deseadas por nosotros dos días, ni un solo día antes de ser tomadas: fue la crisis y sólo ella lo que las hizo surgir.&quot;</em> Nada más cierto.
+							</p>
+							<p>
+								El mismo fenómeno de inconsciencia se observó durante todas las tumultuosas sesiones de la Convención.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Aprobaban y decretaban medidas - dice Taine - que consideraban horrorosas -medidas que no sólo eran estúpidas y torpes, sino hasta criminales - el asesinato de hombres inocentes, el asesinato de amigos. La izquierda, apoyada por la derecha, unánimemente y en medio de grandes aplausos, envió al patíbulo a Dantón, su jefe natural y gran promotor y conductor de la Revolución. Unánimemente y en medio del mayor de los aplausos, la derecha, apoyada por la izquierda, vota los peores decretos del gobierno revolucionario. Unánimemente y en medio de gritos de admiración y entusiasmo, en medio de demostraciones de apasionada simpatía por Collot d'Herbois, Couthon y Robespierre, la Convención, por medio de reiteradas reelecciones mantiene en funciones al gobierno homicida que el Llano detesta porque es homicida y la Montaña detesta porque es diezmada por él. El Llano y la Montaña, la mayoría y la minoría, terminan por consentir en ayudar a su propio suicidio. El 22 de Prairial, <sup>[a]</sup> la totalidad de la Convención se ofreció al verdugo y el 8 de Termidor, durante el primer cuarto de hora que siguió al discurso de Robespierre, hizo lo mismo de nuevo.&quot;
+								</p>
+								<p class="cfnote">
+									[a. Ver: Loi de la Grande Terreur: <a href="https://en.wikipedia.org/wiki/Law_of_22_Prairial">en.wikipedia.org/wiki/<wbr>Law_<wbr>of_22_<wbr>Prairial</a>&nbsp;]
+								</p>
+							</blockquote>
+							<p>
+								Este cuadro puede parecer sombrío. Sin embargo, es exacto. Las asambleas parlamentarias, suficientemente excitadas e hipnotizadas, presentan justamente esas características. Se convierten en un rebaño inestable, obediente a cualquier impulso. La siguiente descripción de la Asamblea de 1848 es de M. Spuller, un parlamentario cuya fe en la democracia está más allá de toda sospecha. La tomo aquí de la <em>Revue Litteraire</em> y es absolutamente típica. Ofrece un ejemplo de todos los exagerados sentimiento que he descripto como característicos de las masas y de esa excesiva inestabilidad que le permite a las asambleas pasar, de un momento a otro, de una serie de sentimientos a otra serie totalmente opuesta.
+							</p>
+							<blockquote>
+								<p>
+									&quot;El <em>partido Republicano fue llevado a su perdición por sus divisiones, sus celos, sus sospechas y, a la vez, por su ciega confianza y sus ilimitadas esperanzas. Su ingenuidad y candor sólo se equipararon con su desconfianza universal. Una ausencia de todo sentido de legalidad, de toda comprensión por la disciplina, junto con ilimitados terrores e ilusiones; el campesino y el niño están al mismo nivel a este respecto. Su calma es tan grande como su impaciencia; su ferocidad es igual a su docilidad. Esta condición es la consecuencia natural de un temperamento que no ha sido formado y de la carencia de educación. Nada asombra a tales personas y todo las desconcierta. Temblando de miedo o valientes hasta el heroísmo, serían capaces de pasar por el fuego o huir de una sombra.</em>
+								</p>
+								<p>
+									&quot; <em>Ignoran causas y efectos, y el vínculo que conecta las cosas entre si. Se descorazonan tan rápidamente como se exaltan, son presa de toda clase de pánico, están siempre ya sea demasiado tensos o demasiado abatidos pero nunca del ánimo o de la medida que la situación requeriría. Más fluidos que el agua, reflejan cualquier línea y adoptan cualquier forma. ¿Qué clase de base se puede esperar que ofrezcan para un gobierno?&quot;</em>
+								</p>
+							</blockquote>
+							<p>
+								Por fortuna, todas estas características que pueden encontrarse en asambleas parlamentarias, de ninguna manera se encuentran exhibidas constantemente. Estas asambleas sólo constituyen masas en ciertos momentos. Los individuos que las componen retienen su individualidad en un gran número de casos, lo cual explica cómo es que una asamblea es capaz de producir excelentes leyes técnicas. Es cierto que el autor de estas leyes es un especialista que las ha preparado en la calma de su estudio, y que en realidad la ley votada es el trabajo de un individuo y no de una asamblea. Naturalmente, estas leyes son las mejores. Sólo están expuestas a producir resultados desastrosos cuando una serie de enmiendas las ha convertido en el resultado de un esfuerzo colectivo. El trabajo de una masa, cualquiera que sea su naturaleza, es siempre inferior al de un individuo aislado. Son los especialistas los que salvan a las asambleas de aprobar medidas desaconsejables o inviables. La asamblea no tiene influencia sobre ellos pero ellos tienen influencia sobre la asamblea.
+							</p>
+							<p>
+								A pesar de todas las dificultades de su funcionamiento, las asambleas parlamentarias son la mejor forma de gobierno que la humanidad ha descubierto hasta el presente y, más especialmente, el mejor medio que ha encontrado para escapar del yugo de las tiranías personales. Constituyen seguramente el gobierno ideal para los filósofos, pensadores, escritores, artistas y hombres instruidos - en una palabra: para todos los que forman la mejor parte de la civilización.
+							</p>
+							<p>
+								Más aún, en realidad presentan sólo dos peligros serios: el primero es el inevitable despilfarro financiero y el segundo, la progresiva restricción de la libertad individual.
+							</p>
+							<p>
+								El primero de estos peligros es la consecuencia necesaria de las exigencias y de la falta de previsión de las masas electorales. Si el miembro de una asamblea propusiera una medida satisfaciendo aparentemente las ideas democráticas, si, por ejemplo, propusiera una ley para asegurar la jubilación de todos los obreros ancianos y aumentar el sueldo de todos los empleados estatales, los demás diputados, víctimas de la sugestión y del temor a sus electores, no se atreverían a aparecer como desinteresándose de los intereses de sus mandantes aún cuando estuviesen bien conscientes de que estarían imponiendo una nueva carga al presupuesto con lo que necesitarían crear nuevos impuestos. Les sería imposible vacilar al momento de dar sus votos. Las consecuencias del aumento de gastos son remotas y no traerán consecuencias desagradables para ninguno de ellos personalmente, mientras que un voto negativo puede claramente ser expuesto el día que se presenten a la reelección.
+							</p>
+							<p>
+								Además de esta primera causa de gastos exagerados hay otra no menos imperativa: la necesidad de votar partidas para propósitos locales. Un diputado es impotente para oponerse a partidas de este tipo porque, una vez más, representan las exigencias de los electores y porque cada diputado sólo puede obtener lo que requiere para su propio distrito con la condición de acceder a demandas similares de parte de sus colegas.&nbsp;<sup>[32]</sup>
+							</p>
+							<label for="element-toggle-32">
+								[32. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-32" type="checkbox">
+							<div id="toggled-element-32" class="cfnote hidden">
+								<p>
+									[29. En su ejemplar del 6 de Abril de 1895, el <em>Economiste</em> publicó una curiosa reseña de las cifras a las que se puede llegar por gastos ocasionados puramente por consideraciones electorales; específicamente con la construcción de vías férreas. Para poner a Langayes (un pueblo de 3.000 habitantes, ubicado sobre una montaña) en comunicación con Puy, se vota un ferrocarril que costará 15 millones de francos. Siete millones se gastarán para comunicar Beaumont (3.500 habitantes) con Caste-Sarrazin; 7 millones para comunicar Oust (un villorrio de 523 habitantes) con Seix (1.200 habitantes); 6 millones para poner a Prade en comunicación con la comunidad de Olette (747 habitantes), etc. Tan sólo en 1895, se votaron unos 90 millones de francos para ferrocarriles de utilidad exclusivamente local.
+								</p>
+								<p>
+									Hay otro gasto no menos importante que también obedece a consideraciones electorales. La ley que instituye pensiones para los obreros pronto implicará una erogación anual mínima de 165 millones, de acuerdo con el Ministro de Finanzas y de 800 millones de acuerdo con el académico M. Leroy-Beaulieu. Es evidente que el continuo crecimiento de los gastos de este tipo tiene que terminar en bancarrota. Muchos países europeos - Portugal, Grecia, España, Turquía - ya han llegado a esta situación o otros, tales como Italia, pronto se verán reducidos al mismo extremo. Sin embargo, no hay que alarmarse demasiado ante este estado de cosas ya que el público ha progresivamente consentido en una reducción de 80% del valor de los papeles públicos de estos gobiernos. La bancarrota, bajo estas ingeniosas condiciones, se pueden equilibrar presupuestos difíciles de balancear en forma instantánea. Además, las guerras, el socialismo y los conflictos económicos nos aseguran una profusión de otras catástrofes en este período de desintegración universal por el que estamos atravesando y será necesario resignarse a vivir al día, sin demasiadas preocupaciones por un futuro que no podemos controlar.]
+								</p>
+							</div>
+							<p>
+								El segundo peligro arriba mencionado - las inevitables restricciones de la libertad consumadas por las asambleas parlamentarias - es aparentemente menos obvio pero no por ello menos real. Las restricciones son el resultado de las innumerables leyes - que siempre tienen un efecto restrictivo - que los parlamentos se consideran obligados a votar y ante cuyas consecuencias son ciegos en gran medida debido a su miopía.
+							</p>
+							<p>
+								El peligro ciertamente debe ser por demás inevitable ya que hasta Inglaterra misma, que por cierto ofrece el tipo de régimen parlamentario más popular, el tipo en el cual el representante es más independiente del elector, ha sido incapaz de escapar de él. Herbert Spencer ha mostrado, en una obra ya vieja, que el incremento de libertad aparente, por fuerza debe ser seguido de una merma en la libertad real. Volviendo sobre el argumento en su reciente libro <em>&quot;El Individuo versus el Estado&quot;</em> se expresa de este modo respecto del parlamento inglés:
+							</p>
+							<blockquote>
+								<p>
+									&quot;La legislación desde este período ha seguido el curso que yo había señalado. Medidas dictatoriales rápidamente multiplicadas han tendido continuamente a restringir las libertades individuales, y esto de dos maneras. Cada año se han establecido regulaciones en cantidades crecientes, imponiendo una restricción sobre el ciudadano en cuestiones en las que sus acciones antes habían sido completamente libres, y forzándolo a realizar acciones que antes era libre de realizar - o no - a su voluntad. Al mismo tiempo, cargas públicas, especialmente locales, cada vez más pesadas, han restringido aún más su libertad disminuyendo la porción de las ganancias que puede gastar como le plazca y aumentando la porción que le es quitada para ser gastada como le place a las autoridades.&quot;
+								</p>
+							</blockquote>
+							<p>
+								Esta restricción progresiva de las libertades emerge en todos los países también de una forma especial que Herbert Spencer no ha señalado. La promulgación de estas innumerables series de medidas legislativas, todas ellas de un orden restrictivo en general, conduce necesariamente a aumentar el número, el poder, y la influencia de los funcionarios encargados de su aplicación. De esta forma, dichos funcionarios tienden a convertirse en los verdaderos amos de los países civilizados. Su poder es tanto más grande cuanto que, en medio de esta incesante transferencia de autoridad, la casta administrativa es la única que permanece intocada por las modificaciones, es la única que posee irresponsabilidad, impersonalidad y perpetuidad. No hay forma más opresiva de despotismo que la que se presenta bajo esta triple forma.
+							</p>
+							<p>
+								Esta incesante creación de leyes y regulaciones restrictivas que rodean las más pequeñas acciones de la existencia con las formalidades más complejas, tiene inevitablemente por resultado el confinamiento dentro de límites más y más estrechos a la esfera en la cual el ciudadano puede moverse con libertad. Víctimas de la fantasía según la cual la igualdad y la libertad estarían mejor garantizadas por medio de la multiplicación de leyes, las naciones consienten todos los días en imponer cargas cada vez más pesadas. No aceptan esta legislación impunemente. Acostumbradas a ponerse cualquier yugo, pronto terminan por desear la servidumbre y pierden toda espontaneidad y energía. Con lo que se convierten en sólo vanas sombras, autómatas pasivos, inermes e impotentes.
+							</p>
+							<p>
+								Una vez que se ha llegado a este punto, el individuo está obligado a buscar fuera de si las fuerzas que ya no encuentra en si mismo. Las funciones de los gobiernos necesariamente aumentan en la proporción en que aumentan la indiferencia y la impotencia de los ciudadanos. Son los gobiernos los que, necesariamente, deben exhibir el espíritu de iniciativa, de empresa y de liderazgo que no tienen las personas privadas. Es sobre los gobiernos que recae el peso de emprenderlo todo, dirigirlo todo y ponerlo todo bajo su protección. El Estado se convierte en un dios todopoderoso. Y aún así, la experiencia demuestra que el poder de tales dioses jamás ha sido ni duradero, ni muy fuerte.
+							</p>
+							<p>
+								La progresiva restricción de todas las libertades en el caso de ciertos pueblos, a pesar de la licencia aparente que les otorga la ilusión de que aún poseen estas libertades, parece ser por lo menos tan consecuencia de su avanzada edad como de cualquier sistema en particular. Constituye uno de los primeros síntomas de esa fase decadente de la cual hasta ahora ninguna civilización ha escapado.
+							</p>
+							<p>
+								A juzgar por las lecciones del pasado, y por los síntomas que llaman la atención desde todas partes, varias de nuestras civilizaciones modernas ha llegado a la fase de esa extrema ancianidad que precede a la decadencia. Parece ser inevitable que todos los pueblos pasen por idénticas fases de existencia, desde el momento en que con tanta frecuencia la Historia parece repetir su curso.
+							</p>
+							<p>
+								Es fácil anotar brevemente estas fases comunes de la evolución de las civilizaciones y terminaré esta obra con un resumen de ellas. Este rápido esquema quizás arroje alguna luz sobre las causas del poder que actualmente detentan las masas.
+							</p>
+							<p>
+								Si examinamos en sus grandes líneas generales la génesis de la grandeza y de la caída de las civilizaciones que precedieron a la nuestra ¿qué vemos?
+							</p>
+							<p>
+								En los albores de la civilización un enjambre de seres humanos de diversos orígenes, agrupados por el azar de las migraciones, invasiones y conquistas. De diferente sangre y de lenguas y credos igualmente diferentes, el único lazo común de unión entre estos hombres es la ley de un jefe reconocida a medias. Las características psicológicas de las masas están presentes en alto grado en estas confusas aglomeraciones. Tienen la cohesión transitoria de las masas, su heroísmo, sus debilidades, su impulsividad y su violencia. Nada es estable en relación a ellos. Son bárbaros.
+							</p>
+							<p>
+								A la larga, el tiempo hace su trabajo. La identidad del medio, el reiterado entrecruzamiento de razas, las necesidades de la vida en común ejercen su influencia. El ensamblaje de unidades disímiles comienza a amalgamarse en un todo, a formar una raza; esto es, un conjunto que posee características y sentimientos comunes a todo lo cual la heredabilidad dará mayor y mayor firmeza. La masa se ha convertido en un pueblo y este pueblo es capaz de emerger de su estado bárbaro. Sin embargo, emergerá por completo de ese estado cuando, luego de largos esfuerzos, luchas necesariamente reiteradas e innumerables recomienzos, haya adquirido un ideal. La naturaleza de este ideal tiene poca importancia; ya sea el culto de Roma, la grandeza de Atenas, o el triunfo de Alá, será suficiente para otorgarle a todos los individuos de la raza en formación una perfecta unidad de sentimiento y pensamiento.
+							</p>
+							<p>
+								En esta etapa, puede nacer una civilización, con sus instituciones, sus creencias y sus artes. En la persecución de su ideal, la raza adquirirá sucesivamente las cualidades necesarias para darle esplendor, vigor y grandeza. A veces, sin duda, seguirá siendo una masa, pero de allí en más, bajo las características inestables y cambiantes de las masas, se encuentra un sustrato sólido, el genio de la raza que confina dentro de límites estrechos las transformaciones de una nación y sustituye el papel del azar.
+							</p>
+							<p>
+								Después de haber ejercido su acción creativa, el tiempo comienza su trabajo de destrucción del cual no pueden escapar ni los dioses ni los hombres. Habiendo alcanzado cierto nivel de poder y complejidad, una civilización cesa de crecer y, habiendo cesado de crecer, está condenada a una rápida declinación. Ha llegado la hora de la edad avanzada.
+							</p>
+							<p>
+								Esta hora siempre está marcada por el debilitamiento del ideal que fuera el fundamento de la raza. En la medida en que este ideal empalidece, todas las estructuras religiosas, políticas y sociales inspiradas en él comienzan a resquebrajarse.
+							</p>
+							<p>
+								Con la progresiva desaparición de su ideal, la raza pierde más y más las cualidades que le otorgaban su cohesión, su unidad, y su fuerza. La personalidad y la inteligencia del individuo pueden aumentar, pero al mismo tiempo el egoísmo colectivo de la raza es reemplazado por un excesivo desarrollo del egoísmo del individuo acompañado por un debilitamiento de su carácter y una merma de su capacidad de acción. Lo que constituía un pueblo, una unidad, un todo, se convierte al final en una aglomeración de individualidades carentes de cohesión, artificialmente mantenidas juntas por un tiempo gracias a sus tradiciones e instituciones. Es en esta etapa que los hombres, divididos por sus intereses y aspiraciones, y ya incapaces de autogobernarse, requieren una dirección para hasta el más pequeño de sus actos y el Estado ejerce una influencia absorbente.
+							</p>
+							<p>
+								Con la definitiva pérdida de su antiguo ideal, el genio de la raza desaparece por completo; queda un mero enjambre de individuos aislados que regresa a su estado original - el de una masa. Sin consistencia y sin futuro, posee todas las características transitorias de la masa. Su civilización carece ahora de estabilidad y queda a merced de cualquier azar. El populacho es soberano y la marea de la barbarie sube. La civilización todavía puede parecer brillante porque posee una fachada externa, fruto del trabajo de un largo pasado, pero en realidad es un edificio derrumbándose, con nada que lo sostenga, y destinado a caer con la primer tormenta.
+							</p>
+							<p>
+								El pasar del estado de barbarie al de la civilización en la persecución de un ideal y luego, cuando este ideal ha perdido su virtud, declinar y morir, ése es el ciclo vital de un pueblo.
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p class="note center">
+								[ fin ]
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3-4-masas-electorales.htm">&lt; Masas electorales</a></li>
+									<li class="align-right"><a href="contenido.htm">Contenido &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

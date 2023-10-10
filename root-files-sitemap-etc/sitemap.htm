@@ -1,0 +1,1196 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head> 
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SelfDefinition.Org site map</title>
+	<meta name="description" content="Site map: Over 35 subject areas in esoteric philosophy, psychology and religion.">
+	<meta property="og:title" content="SelfDefinition.Org site map">
+	<meta property="og:description" content="Site map: Over 35 subject areas in esoteric philosophy, psychology and religion.">
+	<meta property="og:image" content="https://selfdefinition.org/images/great-ritual-of-the-initiations.jpg">
+	<!-- load stylesheet before scripts -->
+	<link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- Need this to enable the TOGGLE button -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* mentalism PDF list for search engines, text color same as background, at bottom
+
+        no longer hidden
+        div.hidden,
+        div.hidden p,
+        div.hidden p a,
+        div.hidden li a {
+            color: #f0fff0;
+        }
+
+        html.dark div.hidden,
+        html.dark div.hidden p,
+        html.dark div.hidden p a,
+        html.dark div.hidden li a {
+            color: black;
+        }
+ */
+		/* page specific */
+		html,
+		body,
+		#fixed-header,
+		#menu-site {
+			background: #f0fff0;
+		}
+
+		div.motto {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		div.container-to-center {
+			width: 600px;
+			max-width: 100%;
+			text-align: center;
+			border: 0px solid blue;
+		}
+
+		@media only screen and (max-width:650px) {
+			div.motto {
+				width: 100%;
+			}
+		}
+
+		/* the two links right after the motto */
+		p.changelog-link {
+			display: inline-block;
+			margin: 10px 20px 10px 0;
+			border: 0px solid red;
+		}
+
+		p.changelog-link:last-child {
+			margin-right: 0;
+			border: 0px solid green;
+		}
+
+		@media only screen and (max-width:320px) {
+			p.changelog-link {
+				margin-right: 0;
+			}
+		}
+
+
+
+		#sitemap-intro-quotes {
+			font-style: italic;
+		}
+
+		#sitemap-intro-quotes span.attrib {
+			font-style: normal;
+		}
+
+		@media only screen and (max-width:500px) {
+			#sitemap-intro-quotes {
+				font-style: normal;
+			}
+		}
+
+		/* Features applicable to all site-root files */
+		/* Necessary for curved screens such as on S7 Edge
+        Expanded further Aug 22, 2019. For narrow screens only: */
+		/* selfdef-respons breapoint is 540ps */
+		/* large screen defaults. Add 16px at 620 for S7 Edge */
+		/* #menu-side is "ul" */
+		/* SITE MAP SPECIFIC COLUMN DESIGN  */
+		/* new design Oct 25, 2019 - no floats - Featured site: Richard Rose at top.
+		Then CSS3 column layout. Wider columns for more information.
+		2 columns on wide screen; 1 column on narrowr screen */
+		/*
+		https://stackoverflow.com/questions/26854095/stop-css3-columns-breaking-paragraphs-up
+
+        https://css-tricks.com/almanac/properties/b/break-inside/
+
+		*/
+		/* in Site Map the column elements are divs, then paragraphs */
+		/* must use l-r margin auto or columns will not vertically align */
+		#toggle-button {
+			color: #23415a;
+			margin-top: 10px;
+			margin-bottom: 15px;
+			padding: 2px 6px 2px 4px;
+		}
+
+		html.dark #toggle-button {
+			color: black;
+			background: #bcc;
+		}
+
+		@media only screen and (max-width:500px) {
+			#toggle-button {
+				font-size: 16px;
+				padding: 5px;
+			}
+		}
+
+		div.css3-columns div.topic,
+		div.featured div.topic {
+			border: 0px solid maroon;
+			/* prevent break, but browser support limited */
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+		}
+
+		/* these are site-map specific */
+		div.featured {
+			max-width: 100%;
+		}
+
+		.css3-columns div {
+			margin-bottom: 20px;
+		}
+
+		/****** left alignment:
+            1. Close for two columns
+            2. indented for single columns, but
+            3. Close again for single columns on small screens */
+		.css3-columns div p:nth-child(n+2),
+		.featured div p:nth-child(n+2) {
+			margin-left: 5px;
+		}
+
+		@media only screen and (max-width:650px) {
+
+			.css3-columns div p:nth-child(n+2),
+			.featured div p:nth-child(n+2) {
+				margin-left: 15px;
+			}
+		}
+
+		/* smaller left margin on smaller screens */
+		@media only screen and (max-width:500px) {
+
+			.css3-columns div p:nth-child(n+2),
+			.featured div p:nth-child(n+2) {
+				margin-left: 7px;
+			}
+		}
+
+		/***** end left alignment *****/
+		/* bold the first item */
+		.css3-columns div p:first-child,
+		.featured div p:first-child {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.css3-columns div p:nth-child(2),
+		.featured div p:nth-child(2) {
+			margin-top: 5px;
+		}
+
+		.css3-columns p a,
+		.featured p a {
+			display: inline-block;
+			font-weight: normal;
+			padding: 5px 20px 5px 5px;
+		}
+
+		/* since "also-see" topic is bolder, increase
+        its bottom margin (default is 8px)
+        Default of the Div is 20px, must reach through it (adding 4px )*/
+		.css3-columns p.also-see {
+			font-size: 90%;
+			margin-bottom: 24px;
+		}
+
+		.topic-name {
+			font-weight: bold;
+			color: black;
+		}
+
+
+		html.dark .topic-name {
+			font-weight: normal;
+			color: inherit;
+		}
+
+
+		.topic-name::after {
+			content: ":  ";
+		}
+
+		/* default root file stylesheet margins: 1em 0; */
+		div.topic p {
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+
+	</style>
+	<script>
+		/* original example, works fine
+
+        $(document).ready(function(){
+        $("button").click(function(){
+        $("p").toggle();
+        });
+        });
+
+        */
+		/* affected element
+        .css3-columns div p:nth-child(n+2) {
+        display:none;
+        }
+*/
+
+		/*
+		https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child
+
+		:nth-child(n+7)
+
+		Represents the seventh and all following elements: 7 [=0+7], 8 [=1+7], 9 [=2+7], etc.
+
+		https://www.geeksforgeeks.org/jquery-toggle-method/
+
+		The toggle() method is used to check the visibility of selected elements to
+		    toggle between hide() and show() for the selected elements.
+		*/
+
+		$(document).ready(function() {
+			$("button").click(function() {
+				$("div.css3-columns div p:nth-child(n+2)").toggle();
+			});
+		});
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper-index">
+		<div id="container">
+			<div id="fixed-header">
+				<ul id="menu-site">
+					<!-- these are floats -->
+					<li><a href="index.htm">Site Root</a></li>
+					<!--
+                    <li><a href="https://albigen.com">Albigen.Com</a></li>
+                    <li class="conditional-hide"><a href="http://www.albigen.net">Albigen.Net<span class="conditional-hide">&nbsp;portal</span></a></li>
+                    -->
+					<li><a href="changelog.htm">Changelog</a></li>
+					<li><a href="paginas-en-espanol.htm">Español</a></li>
+					<li><a href="/search/selfdefinition-search.htm">Search</a></li>
+					<li><a href="javascript:scroll(0,0)" role="button">Top<span class="conditional-hide-3"> of Page</span></a></li>
+				</ul>
+				<div style="clear: both;">
+				</div>
+			</div>
+			<div id="main-content">
+				<div id="style-gadget">
+					<label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+						Dark theme: <input type="checkbox" id="theme-checkbox">
+					</label>
+					<!-- Can't be in head  -->
+					<script src="/scripts/set-theme-cookie-checkbox.js"></script>
+
+				</div>
+
+				<header>
+					<p class="logo">
+						Self<span style="margin-left: 1px;">Definition.Org</span>
+					</p>
+					<h1 class="title">
+						Site Map
+					</h1>
+				</header>
+				<div id="announce">
+					<header>
+						<!-- there is no announce -->
+					</header>
+				</div>
+				<div class="motto note">
+					<p>
+						&quot;No one can have a true faith in a thing which is not true, because such a &apos;faith&apos; would merely be a belief or opinion based upon ignorance of the truth.&quot; <span class="attrib nowrap">&ndash; Paracelsus</span></p>
+					<p>
+						<em>&quot;God's not going to let you cheat and have good luck too.&quot;</em> <span class="attrib nowrap">&ndash; Rod the Hop</span>
+					</p>
+				</div>
+				<div class="container-to-center">
+					<div id="changelog-links-plural">
+						<!-- these are floats -->
+						<p class="changelog-link">
+							Check for updates: <a href="changelog.htm">changelog.htm</a></p>
+						<p class="changelog-link">
+							Artículos <a href="/paginas-en-espanol.htm">en español</a></p>
+						<div style="clear: both;">
+						</div>
+					</div>
+				</div>
+				<h3 style="margin-bottom: 10px;" class="maroon">
+					Featured section</h3>
+				<div class="featured" style="margin-bottom: 30px;">
+					<div class="topic">
+						<p>
+							<a href="/rose/"><span class="topic-name">Richard Rose</span>&nbsp; /rose/</a>
+						</p>
+						<p>
+							Zen master and mystic from West Virginia
+						</p>
+						<p>
+							Lecture transcriptions
+						</p>
+						<p>
+							Writings, newspaper articles, posters
+						</p>
+						<p>
+							About Richard Rose by Michael Casari and Alan Fitzpatrick
+						</p>
+						<p>
+							<em>The Teachings of Richard Rose, American Zen Master</em>, by Alan Fitzpatrick
+						</p>
+					</div>
+				</div>
+				
+				<hr style="width:100%;max-width:300px;" />
+				
+				<h3 style="margin-top:24px;margin-bottom: 5px;"  class="maroon">
+					Topics on this site in alphabetical order</h3>
+				<p class="tight">
+					All sections contain PDFs that are not listed here.<br />
+					In total there are about 1,700 html pages and 700 pdfs.</p>
+				<button id="toggle-button">
+					Toggle between Full and Abbreviated list</button>
+				<div class="css3-columns">
+					<div class="topic">
+						<p>
+							<a href="/advaita/"><span class="topic-name">Advaita</span> /advaita/</a>
+						</p>
+						<p>
+							Adi Shankara, Crest Jewel of Wisdom
+						</p>
+						<p>
+							Atmananda Krishna Menon, Atman Darshan and Atma Nirvritti
+						</p>
+						<p>
+							Parameshwar, Submerging into Myself, <span class="note">[español]</span> Hundiendome en mí mismo
+						</p>
+						<p>
+							Paul Hedderman, video
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/afterlife/"><span class="topic-name">Afterlife</span> /afterlife/</a>
+						</p>
+						<p>
+							John Wren-Lewis, The Dazzling Dark
+						</p>
+						<p>
+							J. Krishnamurti's comments on Afterlife
+						</p>
+						<p>
+							Victor D. Solow, "I died at 10:52 AM" and newspaper articles.
+						</p>
+						<p>
+							Somerset Maugham, The Appointment in Samarra
+						</p>
+						<p>
+							William Q. Judge
+						</p>
+							
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/awareness/"><span class="topic-name">Awareness</span> /awareness/</a>
+						</p>
+						<p>
+							Awareness Watching Awareness
+						</p>
+						<p>
+							Direct-path teachings: Ramana, Muruganar, Sadhu Om, Nisargadatta
+						</p>
+						<p>
+							Most Rapid and Direct Means to Eternal Bliss
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/blavatsky/"><span class="topic-name">H.P. Blavatsky</span> /blavatsky/</a>
+						</p>
+						<p>
+							H.P. Blavatsky</p>
+						<p>
+							The Voice of the Silence, <span class="note">[español]</span> La Voz del Silenco
+						</p>
+						<p>
+							W.Q. Judge, Communications from "Spirits"
+						</p>
+						<p>
+							Mabel Collins, Light on the Path, <span class="note">[español]</span> Luz en el Sendero
+						</p>
+						<p>
+							George Cardinal Legros: "The Secret Doctrine on the Problem of Sex"
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/brunton/"><span class="topic-name">Paul Brunton</span> /brunton/</a>
+						</p>
+						<p>
+							Paul Brunton PDFs
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/buddhism/"><span class="topic-name">Buddhism</span> /buddhism/</a>
+						</p>
+						<p>
+							The 12 links of dependent arising (causes of suffering)
+						</p>
+						<p>
+							E.J. Thomas, Chapter V, The Chain of Causation
+						</p>
+						<p>
+							Topga Rinpoche on the Rice Seedling Sutra
+						</p>
+						<p class="also-see">
+							Also see: <strong>Tibetan, Zen</strong>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/burns/"><span class="topic-name">Jim Burns</span> /burns/</a>
+						</p>
+						<p>
+							Jim Burns, modern day mystic
+						</p>
+						<p>
+							At Home With The Inner Self
+						</p>
+						<p>
+							Audio file lists (contact us for more info).
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/celibacy/"><span class="topic-name">Celibacy</span> /celibacy/</a>
+						</p>
+						<p>
+							Swami Sivananda Saraswati: Practice of Brahmacharya
+						</p>
+						<p>
+							Dr. R. W. Bernard (Walter Siegmeister): Science Discovers the Physiological Value of Continence
+						</p>
+						<p>
+							Celibacy links page
+						</p>
+						<p>
+							Vivekananda, Ramakrishna, Aurobindo, Chidananda, Mahatma Gandhi and others.
+						</p>
+						<p>
+							<a href="/celibacy/quotes/">celibacy/quotes/</a>
+						</p>
+						<p>
+							Napoleon Hill: Sex Transmutation
+						</p>
+						<p>
+							Richard Rose: Notes on Celibacy
+						</p>
+						<p>
+							Dhananjay, celibacy expert
+						</p>
+						<p>
+							Gurdjieff: Kundalini and Transmutation, The Abuse and Use of Sex
+						</p>
+						<p>
+							Many authors, over 40 articles
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/christian/"><span class="topic-name">Christian</span> /christian/</a>
+						</p>
+						<p>
+							Anonymous, 14th Century England: The Cloud of Unknowing 
+						</p>
+						<p>
+							Eckartshausen: The Cloud Upon the Sanctuary, 
+						</p>
+						<p>
+							Eckartshausen: <span class="note">[español]</span> La Nube Sobre el Santuario
+						</p>						
+						<p>
+							Francis Thompson: The Hound of Heaven, <span class="note">[español]</span> El lebrel del cielo
+						</p>
+						<p>
+							Jacob Boehme: Mysterium Magnum
+						</p>
+						<p>
+							Jacob Boehme, Confessions
+						</p>
+						<p>
+							Jacob Boehme: <span class="note">[español]</span> Confesiones
+						</p>
+						<p>
+							Franz Hartmann: Life and Doctrines of Jacob Boehme
+						</p>
+						<p>
+							Richard M. Bucke: Personal Experience of Cosmic Consciousness, Psychogenesis of Man
+						</p>
+						<p>
+							St. John of the Cross
+						</p>
+						<p>
+							Story of Leon Paul Wood, Enlightened Christian Mystic
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/clara-llum/"><span class="topic-name">Clara Llum Ibañez</span> /clara-llum/</a>
+						</p>
+						<p>
+							If Buddha Gets In Your Way, Kill 'Em
+						</p>
+						<p>
+							Satsang audio and transcripts
+						</p>						
+						<p>
+							Satsang video selections
+						</p>						
+						<p>
+							Essays in English and Spanish
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/colin-wilson/"><span class="topic-name">Colin Wilson</span> /colin-wilson/</a>
+						</p>
+						<p>
+							The Mind Parasites, The War Against Sleep, other PDFs
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/contact/"><span class="topic-name">Contact webmaster</span> /contact/</a>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/copyright/"><span class="topic-name">Copyright info.</span> /copyright/</a>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/driedshitzen/"><span class="topic-name">Dried Shit Zen</span> /driedshitzen/</a>
+						</p>
+						<p>
+							Diamond Sutra Zen Roshi
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/frauds/"><span class="topic-name">Frauds</span> /frauds/</a>
+						</p>
+						<p>
+							The Mystery of Robert Adams
+						</p>
+					</div>
+					<!-- must finish
+                                <div class="topic">
+                                    <p>
+                                        <a href="/gnostic/"><span class="topic-name">Gnostic</span>
+                                        gnostic/</a>
+                                        The Gospel of Thomas</p><p>
+                                        Evangelio según Tomás
+                                    </p>
+                                </div>
+                                -->
+					<div class="topic">
+						<p>
+							<a href="/gurdjieff/"><span class="topic-name">Gurdjieff, Ouspensky</span> /gurdjieff/</a>
+						</p>
+						<p>
+							Gurdjieff: Toast to the Idiots, The Aphorisms, other quotes</p>
+						<p>
+							<span class="note">[español]</span> Ciencia del Idiotismo, Los Aforismos, más citas
+						</p>
+						<p>
+							P.D. Ouspensky: Psychology of Man's Possible Evolution, <span class="note">[español]</span> Psicología de la Posible Evolución del Hombre
+						</p>
+						<p>
+							Maurice Nicoll
+						</p>
+						<p>
+							A.R. Orage
+						</p>
+						<p>
+							Jerry Brewster
+						</p>
+						<p>
+							Artículos en español
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/healing/"><span class="topic-name">Healing</span> /healing/</a>
+						</p>
+						<p>
+							Phineas Quimby, The Quimby Manuscripts</p>
+						<p>
+							Ambrose Worrall
+						</p>
+						
+						<!-- video removed	Bruno Gröning -->
+						
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/health/"><span class="topic-name">Health</span> /health/</a>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/hearing-voices/"><span class="topic-name">Hearing Voices</span> /hearing-voices/</a>
+						</p>
+						<p>
+							Alan Fitzpatrick
+						</p>
+						<p>
+							Vernon Howard
+						</p>
+						<p>
+							St. Ignatius of Loyola
+						</p>
+						<p>
+							Wilson Van Dusen (Swedenborg)
+						</p>
+						<p>
+							Alcoholics Anonymous: 252 Slogans
+						</p>
+						<p>
+							Roy Vincent: Listening to the Silences (Hearing voices, Schizophrenia)
+						</p>
+						<p class="also-see">
+							Also see: <strong>Psychology, Possession</strong>
+						</p>
+					</div>
+					<!-- Need a new section
+                                <div class="topic">
+                                    <p>
+                                        <a href="/hermetics/"><span class="topic-name">Hermetics</span>
+                                        hermetics/</a>
+										(move links on hermetics from afterlife section to here)
+										https://en.wikipedia.org/wiki/Hermeticism
+										5 Societies
+										5.1 Rosicrucianism
+										5.2 Hermetic Order of the Golden Dawn
+										5.3 Esoteric Christianity
+										5.4 Mystical Neopaganism
+                                    </p>
+                                </div>
+                                -->
+					<div class="topic">
+						<p>
+							<a href="/huna/"><span class="topic-name">Huna</span> /huna/</a>
+						</p>
+						<p>
+							Max Freedom Long
+						</p>
+						<p>
+							The Secret Science Behind Miracles 
+						</p>
+						<p>
+							Huna: The Workable Psycho-Religious System of the Polynesians
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/joseph-sadony/"><span class="topic-name">Joseph Sadony</span> /joseph-sadony/</a>
+						</p>
+						<p>
+							Gates of the Mind
+						</p>
+						<p>
+							The Golden Chalice
+						</p>
+						<p>
+							Pine Needles
+						</p>
+						<p>
+							enLIGHT'NING FLASHes
+						</p>
+						<p>
+							The Human Radio
+						</p>
+						<p>
+							Joseph Sadony Obituary
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/kabir/"><span class="topic-name">Kabir</span> /kabir/</a>
+						</p>
+						<p>
+							Songs of Kabir
+						</p>
+						<p>
+							<span class="note">[español]</span> Canciones de Kabir
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/koning/"><span class="topic-name">Harold Koning</span> /koning/</a>
+						</p>
+						<p>
+							Harold Koning, Qi Gong and Silat Master
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/krishnamurti/"><span class="topic-name">J. Krishnamurti</span> /krishnamurti/</a>
+						</p>
+						<p>
+							At the Feet of the Master
+						</p>
+						<p>
+							45 PDF files
+						</p>
+					</div>
+					<div class="topic">	
+						<p>
+							<a href="/liberty/"><span class="topic-name">Liberty</span> /liberty/</a>
+						</p>										
+						<p>
+							Articles: C.S Lewis, Larkin Rose
+						</p>
+						<p>
+							Lysander Spooner: Constitution of No Authority, Forced Consent (1873)
+						</p>
+						<p>
+							Étienne de La Boétie: The Politics of Obedience: Discourse of Voluntary Servitude
+						</p>
+						<p>
+							Xenophon, On Tyranny: Hiero a.k.a Tyrannicus
+						</p>
+						<p>
+							Thomas Paine: Common Sense (1776)
+						<p>
+							William S. Lind: Who Stole Our Culture? Cultural Marxism and the Frankfurt School
+						</p>
+						<p>
+							William S. Lind: The Poison and the Antidote
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/magic/"><span class="topic-name">Magic</span> /magic/</a>
+						</p>
+						<p>
+							Franz Hartmann: Magic White and Black, Life of Paracelsus
+						</p>
+						<p>
+							<span class="note">[español]</span> Magia Blanca y Negra
+						</p>
+						<p>
+							Eliphas Levi: Paradoxes of the Highest Science, The Great Secret, <span class="note">[español]</span> Las Paradojas de la Alta Ciencia, El Gran Arcano del Ocultismo Revelado
+						</p>
+						<p>
+							Alchemy
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/new-thought/"><span class="topic-name">New Thought Movement</span> /new-thought/</a>
+						</p>						
+						<p>
+							The Kybalion
+						</p>
+						<p><span class="note">[español]</span> El Kybalion
+						</p>
+						<p>
+							William Walker Atkinson: Thought Vibration: The Law of Attraction in the Thought World
+						</p>
+						<p>
+							<span class="note">[español]</span> La ley de la atracción en el mundo del pensamiento
+						</p>
+						<p>
+							 "Yogi Ramacharaka": Mystic Christianity, The Inner Teachings of the Master
+						</p>
+						
+						<p><span class="note">[español]</span> Cristianismo Místico, Las Enseñanzas Internas del Maestro (1908)
+						</p>
+						<p>
+							Theron Q. Dumont: Practical Memory Training
+						</p>
+						<p>
+							Neville Goddard: Consciousness Is the Only Reality; God and I Are One
+						</p>
+						<p class="also-see">
+							Also see: <strong>Healing</strong>: Phineas Quimby
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/nisargadatta/"><span class="topic-name">Nisargadatta</span> /nisargadatta/</a>
+						</p>
+						<p>
+							Nisargadatta's comments on Ramana Maharshi
+						</p>
+						<p class="also-see">
+							Also see: <strong>Siddharameshwar</strong>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/norbu-chen/"><span class="topic-name">Norbu Chen</span> /norbu-chen/</a>
+						</p>
+						<p>
+							&quot;Tibetan&quot; healer
+						</p>
+						<p>
+							Several articles (now mobile-friendly)</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/osho/"><span class="topic-name">Osho</span> /osho/</a>
+						</p>
+						<p>
+							Comments on Brahmacharya, Sex and Celibacy
+						</p>
+						<p>
+							Osho book list</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/possession/"><span class="topic-name">Possession</span> /possession/</a>
+						</p>
+						<p>
+							Torkom Saraydarian
+						</p>
+						<p>
+							Oesterreich
+						</p>
+						<p>
+							Exorcism
+						</p>
+						<p class="also-see">
+							Also see: <strong>Hearing voices</strong>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/psychology/"><span class="topic-name">Psychology</span> /psychology/</a>
+						</p>
+						<p>
+							Aldous Huxley: Self-Transcendence
+						</p>
+						<p>
+							James H. Loryea, a.k.a. Santanelli, master hypnotist: The Law of Suggestion
+						</p>
+						<p>
+							William James: Experiments with Nitrous Oxide
+						</p>
+						<p>
+							Steven Brier: Archetypal Autism
+						</p>
+						<p>
+							Mantak Chia: Most Effective Cure for Kundalini Psychosis; La cura más efectiva para la psicosis Kundalini
+						</p>
+						<p>
+							Thomas Szasz: Summary Statement and Manifesto
+						</p>
+						<p>
+							Robert Anton Wilson: Free Your Mind (video)
+						</p>
+						<p>
+							6 Harsh Truths That Will Make You a Better Person
+						</p>
+						<p>
+							Lennard Davis: Five Reasons Not to Take SSRIs
+						</p>
+						<p>
+							Psychiatry, the Uncertain Science
+						</p>
+						<p class="strong note">Propaganda/mind-control subsection:</p>
+						<p>Edward L. Bernays: Propaganda (English/Spanish)</p>
+						<p>Gustave Le Bon: The Crowd, La psycologia de las Masas</p>
+						<p>Joost Meerloo: Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</p>
+						<p class="also-see">
+							Also see: <strong>Liberty</strong>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/pulyan/"><span class="topic-name">Alfred Pulyan</span> /pulyan/</a>
+						</p>
+						<p>
+							Letters from a Zen Master, or Why You're Still Suffering
+						</p>
+						<p>
+							The Penny that Blots Out the Sun
+						</p>
+						<p>
+							Other writings
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/radha-soami/"><span class="topic-name">Radha Soami</span> /radha-soami/</a>
+						</p>
+						<p>
+							Sant Mat
+						</p>
+						<p>
+							Kirpal Singh
+						</p>
+						<p>
+							Darshan Singh
+						</p>
+						<p>
+							Paul Twitchell
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/ramana/"><span class="topic-name">Ramana Maharshi</span> /ramana/</a>
+						</p>
+						<p>
+							Self Inquiry
+						</p>
+						<p>
+							<span class="note">[español]</span> La Autoindagación
+						</p>
+						<p>
+							<span class="block note">- Awareness section -</span>
+							Forty Verses On Reality
+						</p>
+						<p>
+							<span class="note">[español]</span> Cuarenta versos sobre la realidad 
+						</p>
+						<p>						
+						<span class="block note">- Awareness section -</span>
+							Who Am I? (Nan Yar?) 
+						</p>
+						<p>
+							<span class="note">[español]</span> ¿Quién Soy Yo? Nan Yar?
+						</p>
+						<p>
+							Sri Sadhu Om
+						</p>
+						<p>
+							David Godman on Ramana
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/science/"><span class="topic-name">Science</span> /science/</a>
+						</p>
+						<p>
+							Robert Anton Wilson
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/shaman/"><span class="topic-name">Shaman, Aborigine</span> /shaman/</a>
+						</p>
+						<p>
+							The Magical World of the Australian Aborigines
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/siddharameshwar/"><span class="topic-name">Siddharameshwar</span> /siddharameshwar/</a>
+						</p>
+						<p>
+							Selections from Amrut Laya
+						</p>
+						<p>
+							Master Key to Self-Realization
+						</p>
+						<p>
+							<span class="note">[español]</span> La llave de la realización del ser
+						</p>
+						<p class="also-see">
+							Also see: <strong>Nisargadatta</strong>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/sufi/"><span class="topic-name">Sufi</span> /sufi/</a>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/tantra/"><span class="topic-name">Tantra, Vajrayana</span> /tantra/</a>
+						</p>
+						<p>
+							Kundalini yoga
+						</p>
+						<p>
+							Kukai and Shingon magic
+						</p>
+						<p>
+							Shiva Sutras
+						</p>
+						<p>
+							 Transmission in Kashmir Shaivism
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/tao/making-all-things-equal.htm"><span class="topic-name">Taoism</span> /tao/</a>
+						</p>
+						<p>
+							Chuang Tzu, Making All Things Equal
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/tibetan/"><span class="topic-name">Tibetan</span> /tibetan/</a>
+						</p>
+						<p>
+							Chögyam Trungpa
+						</p>
+						<p>
+							Alexandra David-Neel
+						</p>
+						<p>
+							Tulpa creation
+						</p>
+						<p>
+							Karma Chakme Rinpoche
+						</p>
+						<p>
+							Gampopa's Instructions to the First Karmapa 
+						</p>
+						<p>
+							Instrucciones de Gampopa para el Primer Karmapa
+						</p>
+						<p class="also-see">
+							Also see: <strong>Buddhism</strong>
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/van-der-leeuw/"><span class="topic-name">J.J. van der Leeuw</span> /van-der-leeuw/</a>
+						</p>
+						<p>
+							J.J. van der Leeuw</p>
+						<p>
+							The Conquest of Illusion</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/vernon-howard/"><span class="topic-name">Vernon Howard</span> /vernon-howard/</a>
+						</p>
+						<p>
+							Satan's Sinister Secrets Exposed
+						</p>
+						<p>
+							Goodness is Intelligence</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/william-samuel/"><span class="topic-name">William Samuel</span> /william-samuel/</a>
+						</p>
+						<p>
+							The Truth About Identity
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/yoga/"><span class="topic-name">Yoga</span> /yoga/</a>
+						</p>
+						<p>
+							Swami Sivananda: Manonasa (Annihilation of the Mind)
+						</p>
+						<p>
+							Many PDFs, Vivekananda, others
+						</p>
+					</div>
+					<div class="topic">
+						<p>
+							<a href="/zen/"><span class="topic-name">Zen</span> /zen/</a>
+						</p>
+						<p>
+							Zen Teachings of Huang Po, The Dharma of Mind Transmission
+						</p>
+						<p>
+							Hubert Benoit: Zen and the Psychology of Transformation, The Supreme Doctrine
+						</p>
+						<p>
+							Garma C. C. Chang: The Practice of Zen, <span class="note">[español]</span> La Práctica del Zen
+						</p>
+						<p>
+							Hui Neng (Wei Lang): Sutra of the Sixth Patriarch, a.k.a. Platform Sutra
+						</p>
+						<p>
+							Jianzhi Sengcan
+						</p>
+						<p>
+							Hsin-Hsin Ming: On Faith in Mind (6 versions)
+						</p>
+						<p>
+							Yongjia Xuanjue: The Song that Attests to the Way (2 versions)
+						</p>
+						<p>
+							Hakuin Ekaku: Song of Meditation, The Cicada's Wing
+						</p>
+						<p>
+							&amp; others
+						</p>
+						<p class="also-see">
+							Also see: <strong>Buddhism</strong>
+						</p>
+					</div>
+					<div class="hidden">
+						<ul class="links-list">
+							<li>
+								<a href="/redirect/">Redirect for pages removed: /redirect/</a>
+							</li>
+							<li>
+								<!-- copy this  to the site map so google can find the mentalism pdf list -->
+								<a href="/redirect/mentalism-redirect.htm">Mentalism PDF list</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="sitemap-footer note">
+				
+					<p>
+						Copyright law, Fair Use guidance: <a href="https://copyright.columbia.edu/basics/fair-use.html">copyright.columbia.edu</a>
+					</p>
+					<p>
+						See our Copyright Policy: <a href="/copyright/copyright-notice.htm">/copyright/copyright-notice.htm</a>
+					</p>
+					
+					<hr style="margin-left: 0; width: 300px;" />
+					
+					<div id="WTF-info">
+						<p>
+							This site uses 3 types of cookies:
+						</p>
+						<ul style="padding-left:5px;">
+							<li>A cookie that remembers whether you have selected the "dark theme" option.</li>
+							<li>A cookie for each "section" (such as /psychology/articles/article-index.htm) that remembers the left menu scroll position for wide-screen pages. These are session cookies, but Firefox and Chrome don't always delete session cookies. (Might depend on your browser settings). </li>
+							<li>Google Analytics (Alphabet).</li>
+							<li>Apart from this, you are not tracked. <a href="https://themarkup.org/blacklight?url=selfdefinition.org">Verify it.</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<p class="totop">
+					<a href="javascript:scroll(0,0)">top of page</a>
+				</p>
+			</div><!-- end #main-content -->
+		</div> <!-- end-container -->
+	</div><!-- end mainwrapper -->
+
+
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

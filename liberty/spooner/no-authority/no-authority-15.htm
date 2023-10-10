@@ -1,0 +1,110 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15. Constitution of No Authority</title>
+    <meta name="description" content="Part 15: Soldiers' oaths: Independently of the criminality of an oath, that he will kill all whom he may be commanded to kill, they were given to nobody.">
+    <meta name="author" content="Lysander Spooner">
+    <meta property="og:title" content="15. Constitution of No Authority">
+    <meta property="og:description" content="Part 15:: Soldiers' oaths: Independently of the criminality of an oath, that he will kill all whom he may be commanded to kill, they were given to nobody.">
+    <meta property="og:image" content="https://selfdefinition.org/liberty/spooner/images/lysander-spooner-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_no-authority-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="prev" href="no-authority-14.htm">
+    <link rel="next" href="no-authority-16.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_no-authority-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_no-authority-title-include.htm"); ?>
+                                    <h3>
+                                        Part XV
+                                    </h3>
+                                    Soldiers' oaths
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="no-authority-14.htm">&lt; Part 14 </a></li>
+                                    <li class="align-right"><a href="no-authority-16.htm">Part 16 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p>On general principles of law and reason, the oaths of soldiers, that they will serve a given number of years, that they will obey the orders of their superior officers, that they will bear true allegiance to the government, and so forth, are of no obligation. Independently of the criminality of an oath, that, for a given number of years, he will kill all whom he may be commanded to kill, without exercising his own judgment or conscience as to the justice or necessity of such killing, there is this further reason why a soldier’s oath is of no obligation, viz. that, like all the other oaths that have now been mentioned, <em>it is given to nobody.</em> There being, in no legitimate sense, any such corporation, or nation, as &quot;the United States,&quot; nor, consequently, in any legitimate sense, any such government as &quot;the government of the United States,&quot; a soldier’s oath given to, or contract made with, such nation or government, is necessarily an oath given to, or a contract made with, nobody. Consequently such oath or contract can be of no obligation.</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="no-authority-14.htm">&lt; Part 14 </a></li>
+                                    <li class="align-right"><a href="no-authority-16.htm">Part 16 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+    </div>
+</body>
+
+</html>

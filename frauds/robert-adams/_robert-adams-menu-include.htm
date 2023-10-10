@@ -1,0 +1,78 @@
+<!-- start of menu include file Update June 8, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/frauds/">"Frauds" index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide"><a href="/">Site root</a></li>
+			<li><a href="mystery-part-1.htm"><span class="conditional-hide">Robert Adams</span> Part 1</a></li>
+			<li><a href="mystery-part-2.htm">Part 2</a></li>
+			<li><a href="kitty-osborne-integrity.htm"><span class="conditional-hide-5">K. </span>Osborne</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/frauds/">"Frauds" index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li style="line-height:1.8em;">The Mystery of Robert Adams, Interview with Steven Strouth</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/robert-adams.jpg" alt="Robert Adams" />
+			</li>
+			<li>Robert Adams</li>
+			<li class="normal note">(1928-1997)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="mystery-part-1.htm">Mystery pt 1,<br /> Feb. 10, 2020</a> </li>
+				<li><a href="mystery-part-2.htm">Mystery pt 2, <br />May 17, 2020</a> </li>
+				<li><a href="kitty-osborne-integrity.htm">Kitty Osborne, The Question of Integrity</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Robert Adams at <a href="https://en.wikipedia.org/wiki/Robert_Adams_(spiritual_teacher)">
+						Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item"><a href="/advaita/">Advaita index</a></li>
+				<li><a href="/ramana/">Ramana index</a></li>
+				<li><a href="/nisargadatta/">Nisargadatta index</a></li>
+			</ul>
+		</div>
+
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

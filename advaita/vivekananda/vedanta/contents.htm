@@ -1,0 +1,204 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vedanta Philosophy</title>
+    <meta name="description" content="Lecture given to Harvard University in 1896 by Swami Vivekananda.">
+    <meta name="author" content="Swami Vivekananda, 1896">
+    <meta property="og:title" content="The Vedanta Philosophy">
+    <meta property="og:description" content="Lecture given to Harvard University in 1896 by Swami Vivekananda.">
+    <meta property="og:image" content="https://selfdefinition.org/advaita/vivekananda/vedanta/images/swami-vivekananda-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_vedanta-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- First link rel="prev" -->
+    <link rel="next" href="1-introduction.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* Social media:  
+        
+        A primer on Vedanta philosophy from Dvaita (dualism) to Advaita (non-dualism) by 
+        Swami Vivekananda, an influential monk, disciple of Ramakrishna, and
+        key figure in introducing Vedanta and Yoga to the west. Lecture by Vivekananda  
+        at Harvard University in 1896. The Q&A are more practical and less abstract.
+
+        */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_vedanta-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_vedanta-title-include.htm"); ?>
+                                    <!-- new format puts page title higher, here -->
+                                    <h3>
+                                        Contents
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="1-introduction.htm">Introduction &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <nav id="index-lists">
+                                <ul class="index-contents-links">
+                                    <li class="contents-first-item"><a href="1-introduction.htm">1. Introduction</a> </li>
+                                    <li><a href="2-vedanta-philosophy.htm">2. Lecture on Vedanta Philosophy</a> </li>
+                                    <li><a href="3-discussion-q-and-a.htm">3. Discussion, Q&amp;A</a> </li>
+                                    <li><a href="4-answers-and-selections.htm">4. Answers and Selections (1-25)</a> </li>
+                                    <li><a href="5-answers-and-selections-cont.htm">5. Answers and Selections (26-49)</a> </li>
+                                </ul>
+                                <hr />
+                                <p class="tiny center">
+                                    Source, 50 page PDF, 234 KB at: <a href="https://www.vedanta.gr/wp-content/uploads/2012/03/SwVivek_The-Vedanta-Philosophy-Harvard_ENA5.pdf">www.vedanta.gr</a></p>
+                                <ul class="index-external-links">
+                                    <li class="first-item">Swami Vivekananda at <a href="https://en.wikipedia.org/wiki/Swami_Vivekananda">Wikipedia</a> </li>
+                                    <li>Vivekananda's bibliography at <a href="https://en.wikipedia.org/wiki/Bibliography_of_Swami_Vivekananda">Wikipedia</a> </li>
+                                </ul>
+                                <ul class="index-site-links">
+                                    <li class="header-item">Also in Advaita</li>
+                                    <li class="first-item">Sri Atmananda Krishna Menon:
+                                        <!--a href="/advaita/atmananda/contents.htm"-->Atman Darshan and Atma Nirvritti [removed, copyright]
+                                    </li>
+                                    <li class="subhead">Adi Shankarya</li>
+                                    <li class="first-item"><a href="/advaita/shankara/crest-jewel/contents.htm">Crest-Jewel of Wisdom </a></li>
+                                    <li class="subhead">Parameshwar Maharaj</li>
+                                    <li class="first-item"><a href="/advaita/parameshwar/submerging-into-self/contents.htm">Submerging into Myself</a></li>
+                                    <li><a href="/advaita/parameshwar/hundiendome/indice.htm"><span class="normal">[español] </span>Hundiendome en mí mismo: El Advaita en la practica </a></li>
+                                    <li class="header-item">Also on this site</li>
+                                    <li>Ramana Maharshi index: <a href="/ramana/">/ramana/</a></li>
+                                    <li>Siddharameshwar: <a href="/siddharameshwar/">/siddharameshwar/</a></li>
+                                    <li class="site-links-item">PDFs in the Yoga section</li>
+                                    <li><a href="/yoga/Vivekananda-Jnana-Yoga.pdf">Vivekananda-Jnana-Yoga.pdf</a></li>
+                                    <li><a href="/yoga/Vivekananda-Raja-Yoga.pdf">Vivekananda-Raja-Yoga.pdf</a></li>
+                                </ul>
+                            </nav>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="A1">&nbsp;</a>
+                            <div class="center">
+                                <p class="note">
+                                    Title Page</p>
+                                <h4>
+                                    THE VEDANTA PHILOSOPHY
+                                </h4>
+                                <p>
+                                    An Address Before
+                                </p>
+                                <p>
+                                    THE GRADUATE PHILOSOPHICAL SOCIETY OF HARVARD&nbsp;UNIVERSITY
+                                </p>
+                                <p>
+                                    MARCH 25, 1896
+                                </p>
+                                <p>
+                                    by the
+                                </p>
+                                <p>
+                                    SWAMI VIVEKANANDA
+                                </p>
+                                <p>
+                                    With an Introduction by
+                                </p>
+                                <p>
+                                    CHARLES CARROLL EVERETT, D.D., LL.D.
+                                </p>
+                                <p>
+                                    FOURTH EDITION
+                                </p>
+                                <p>
+                                    NEW YORK
+                                </p>
+                                <p>
+                                    PUBLISHED BY THE VEDANTA SOCIETY
+                                </p>
+                                <p>
+                                    1901
+                                </p>
+                            </div>
+                            <!-- omitted
+                            <h3>
+                                PUBLICATIONS OF THE VEDANTA SOCIETY (list)
+                            </h3>
+                            -->
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="1-introduction.htm">Introduction &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,723 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="paradoja-1-la-religion-es-la-magia.htm">
+	<link rel="next" href="paradoja-3-el-amor-es-la-realizacion-de-lo-imposible.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* 
+            <span class="sans">¡</span>        
+        */
+
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/ */
+
+		/* paradox 2 */
+		label[for=element-toggle-16-1],
+		label[for=element-toggle-21-1],
+		label[for=element-toggle-22-1],
+		label[for=element-toggle-22-3],
+		label[for=element-toggle-23-1],
+		label[for=element-toggle-24-1],
+		label[for=element-toggle-29-1],
+		label[for=element-toggle-29-2],
+		label[for=element-toggle-31-1] {
+			cursor: pointer;
+		}
+
+		/* paradox 2 */
+		#element-toggle-16-1,
+		#element-toggle-21-1,
+		#element-toggle-22-1,
+		#element-toggle-22-3,
+		#element-toggle-23-1,
+		#element-toggle-24-1,
+		#element-toggle-29-1,
+		#element-toggle-29-2,
+		#element-toggle-31-1 {
+			display: none;
+		}
+
+		/* paradox 2 */
+		#element-toggle-16-1:not(:checked)~#toggled-element-16-1,
+		#element-toggle-21-1:not(:checked)~#toggled-element-21-1,
+		#element-toggle-22-1:not(:checked)~#toggled-element-22-1,
+		#element-toggle-22-3:not(:checked)~#toggled-element-22-3,
+		#element-toggle-23-1:not(:checked)~#toggled-element-23-1,
+		#element-toggle-24-1:not(:checked)~#toggled-element-24-1,
+		#element-toggle-29-1:not(:checked)~#toggled-element-29-1,
+		#element-toggle-29-2:not(:checked)~#toggled-element-29-2,
+		#element-toggle-31-1:not(:checked)~#toggled-element-31-1 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?><h3>
+										<span class="block">La Paradoja 2</span> <span class="h3-block">La libertad es la
+										</span>obediencia a la ley
+									</h3>
+									<p class="tiny">
+										<span class="block">This page in English:</span> <a href="../paradoxes/paradox-2-liberty-is-obedience-to-the-law.htm">
+											.. paradox-2-liberty-is-obedience-to-the-law.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="paradoja-1-la-religion-es-la-magia.htm">&lt; Paradoja
+											1</a></li>
+									<li class="align-right"><a href="paradoja-3-el-amor-es-la-realizacion-de-lo-imposible.htm">
+											Paradoja 3 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								ALLÍ DÓNDE hay un espíritu de Dios hay libertad, dicen las Escrituras Santas.
+							</p>
+							<p>
+								Vos conoceréis la verdad, y la verdad os hará libres, dijo Jesús el Cristo. Debemos
+								escaparnos de la servidumbre de la letra a la libertad del espíritu, escuchamos
+								al gran apóstol. <sup>[16:1]</sup> además que dice, fuiste adquirido por un gran
+								precio, más hacer a los hombres esclavos. Somos los hijos y no los esclavos de Dios.
+								Somos hermanos y no esclavos de Jesús el Cristo.
+							</p>
+							<label for="element-toggle-16-1">
+								[16:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-16-1" type="checkbox" />
+							<div id="toggled-element-16-1" class="fnote hidden">
+								<p>
+									[16:1. la deidad es el semi varón (¿Hermafrodita? &ndash;Trad.) de la filosofía
+									hebrea. El cuerpo del hombre está unido a los tres pares de esposas, a saber, del
+									2o y del 3r, del 4o y del 5o, y el 6to y 7mo principios.
+								</p>
+								<p>
+									Ireneo habla de &quot;Bathos y de Sige, de espíritu y de Aletheia,&quot; de cada
+									uno de ellos varones y hembras. Los tres pares de principios entonces son tratados
+									como tres solamente, y nosotros tenemos la trinidad. la cabala judía le da al Macroprosopus
+									su esposa, y en Microprosopus su esposa. (Liber Mysteri, I, 35, 38.)
+								</p>
+								<p>
+									&quot;Ungiendo llaman, varón-hembra,&quot; dice Cirilo de Jerusalén, VI, XI. El
+									SOL tiene Pneuma como su esposa.
+								</p>
+								<p>
+									Cuando Eliphas Levi habla del Cristo y de su iglesia, quiere decir la monada y su
+									vehículo, el 7émes y 6émes principios. Los libros egipcios herméticos más antiguos
+									dan al primer Quaternation, Monotes (Proarco, Proanennoetos, misterioso y no ser
+									llamado indica 17 tipos de Irenwus) y Henotes, la fuerza que existe en la unión
+									con el &quot;Señor Ferho, la vida desconocida, informe, inconsciente&quot; del códice
+									Nazart.
+								</p>
+								<p>
+									Este Monotes y Henotes, siendo EL, enviado adelante, creado, pero inconscientemente
+									emanado, un PRINCIPIO, como lo llaman (arche), antes de todas las cosas inteligibles,
+									el Aún no nacido e invisible, el arche es la MONADA. (del UNO) En occidente la filosofía
+									religiosa de la magia ha sido conocida por primera vez célebre bajo el nombre de
+									la sabiduría oriental. El mago Simón enseña la doctrina del padre, del hijo y del
+									espíritu santo (hembra), y dice que esta trinidad había aparecido entre los judíos
+									como el hijo, entre Samaritanos como padre, y en otras naciones como espíritu santo.
+									La trinidad cristiana era corporal tomadas de los nazarenos de la Cabala, los que
+									existieron antes de la era del Cristo occidental, y a las que Jeshu (Jesús de Lud,
+									de 130 de A.C. ¿?) pertenecido durante el período de Alejandro Janneo. <sup>(A)</sup>
+								</p>
+								<p>
+									La &quot;vida construyó la casa (cuerpo) en el cual te quedas ahora,&quot; y los
+									siete planetas que quedan en él no subirán ellos todos en la tierra de la luz.&quot;
+									&mdash;códice Nazaret, II, 35.
+								</p>
+								<p>
+									&quot; <span class="sans">¡</span>Sí! Los caldeos llaman a Dios IAO, SABAOTH, él el que es por encima de los
+									SIETE circulo &mdash; Demiurgo. &quot;&mdash;Lydus de Mens, IV, 38, 74.. Las siete
+									órbitas son los siete principios, las tres parejas con el cuerpo de la carne.
+								</p>
+								<p>
+									&quot;Haz del sol que el circulo pulió la luz más justa de todos antes de que los
+									siete -Thebes, hasta de vos largamente brilló adelante, OH ojo del día de Oro.&quot;
+									&mdash;Sófocles, <em>Por Antigona.</em>
+									<br />
+									&nbsp;&nbsp;<span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									A) Alejandro Janneo es generalmente citado como gobernante de 106 o 104 A.C. a
+									79 de A.C. &mdash;<em>Trad</em>.]
+								</p>
+							</div>
+							<p>
+								La ley ha sido hecha para el hombre y no el hombre para la ley, todavía dijo, el
+								Maestro divino. La libertad es el fin de la existencia del hombre; es en el único
+								que su derecho y su deber pueden ser reconciliados; en esto consiste su personalidad
+								y autonomía, y este solo tomándolo lo hacen capaz y digno de la inmortalidad.
+							</p>
+							<p>
+								Para liberarse de la esclavitud de las pasiones, de la tiranía de los perjuicios,
+								de los errores de la ignorancia, de los males del temor, y las inquietudes del deseo,
+								es el trabajo de la vida.
+							</p>
+							<p>
+								Es una cuestión de ser o no ser. El hombre libre es solo un hombre; los esclavos
+								son animales o niños.
+							</p>
+							<p>
+								San Agustín resume la ley entera en esta enunciación de castigo: &quot;ama, y haga
+								lo que desee.&quot; <sup>[18:1]</sup>
+							</p>
+							<p class="fnote">
+								[18:1. pero se añade en algunas palabras: &quot;a condición de que no hacer nada
+								contrario a los mandatos de la iglesia.&quot; <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								El hombre libre puede no desear nada pero el es quién es bueno, porque todos los
+								hombres malos son unos esclavos.
+							</p>
+							<p>
+								Después del espíritu de nuestros símbolos (de católico), la libertad del hombre
+								es la gran obra de Dios; para esto permite a un infierno ser cavado afuera, y a
+								la sombra horrible del demonio que hasta hay que elevar al cielo. Es para esto que
+								en la quietud más que majestuosa de la divinidad prefiere los dolores de la humanidad
+								maldita. Dios aspira a la cruz del malhechor y voluntades, para no ser un déspota
+								que maltrata la omnipotencia, para conquistar, por el sufrimiento, el derecho de
+								perdonar la rebelión. La mujer fue audaz, deseó saber; el hombre fue sublime se
+								le atrevió a amar; y Dios, que mientras admira impresiona, parece haberse vuelto
+								celoso de la paciencia de sus hijos.
+							</p>
+							<p>
+								Todo es una revelación, poética y esotérica; todo esto se produjo en el espíritu
+								humano y en el corazón humano. El hombre se siente su dignidad elevada cuando quiere
+								ser libre; el buitre eterno puede desgarrar el hígado de Prometeo, pero el coraje
+								de la gran víctima renace y jamás se desarrolla con sentido audaz. Júpiter mismo
+								venga, pero teme, y destronará Júpiter y se probará más a Dios que él, que dará
+								la sangre de su corazón entero para curar las heridas de Prometeo, y vendrá para
+								sufrir en su lugar.
+							</p>
+							<p>
+								La emancipación, la libertad, esta es la palabra final de los símbolos. Jesús descendió
+								al infierno para matar la esclavitud de la muerte, y en la que volvía a crecer hacia
+								lo sutil a ser arrastrado después de la cautividad, prisionero.
+							</p>
+							<p>
+								Un día, sólo la muerte habrá muerto; todas las maldiciones serán malditas, y sola
+								la maldición condenada, y el espíritu de la luz que desea que todos los hombres
+								deben ser salvados, todo lleva a un conocimiento de la verdad, Dios - que retorna
+								luego en misa(mies, pan) a todos los seres humanos responsables del pecado simple,
+								puede otorgar el perdón todos a causa de los méritos de uno - Dios causará el bien
+								para triunfar, y el mal será destruido.
+							</p>
+							<p>
+								El momento vendrá cuando se le realizará que no hay ninguna libertad verdadera sin
+								religión, ninguna verdad de la religión sin libertad, pero actualmente la religión
+								y la libertad parecen mutuamente excluirse y luchar una contra otra. Como la religión,
+								la libertad tiene sus mártires, y la libertad negará la autoridad a condición de
+								que la iglesia niegue los derechos de la libertad.
+							</p>
+							<p>
+								&quot;¿Debe concedernos a los hombres la libertad de opinión?&quot; Les pidió a
+								nuestros médicos, y Roma decidió en negarla, pero simplemente medios que la iglesia
+								no repudia el sentido de los que le escuchan a ella.
+							</p>
+							<p>
+								La libertad no es dada, es cogida, o más bien la naturaleza nos la da por la ayuda
+								de la ciencia; para pedir si se debería permitirles a los hombres, los hombres verdaderos,
+								la libertad de opinión, se es como si se pida si deberíamos permitirles una cabeza
+								y un corazón. ¿ Acaso Galilea, hasta después de que hubiera retirado sus demostraciones
+								instruidas, no supo que la tierra había girado? ¿ La civilización girará hacia a
+								tras, porque hay un dogma? ¿ El papa debería prohibirnos proceder? Saludemos al
+								papa y caminemos siempre. Si el padre santo desea hacer, nos oyen a él, él deben
+								en el movimiento arriba a su vuelta; es de dedicación exclusiva para que el pastor
+								se levante cuando su rebaño se va lejos. <span class="sans">¡</span> Tomada! Aproximadamente indicará, su
+								posición como católico no te permite hablar así.
+							</p>
+							<p>
+								<span class="sans">¡</span> Si la autoridad legítima me impone el silencio yo tengo mi lengua, pero la tierra
+								gira la conciencia es inviolable, porque es divina, y está en la verdad que esto
+								que es esencialmente y absolutamente, liberar en casa del hombre. ¿ Para aparte
+								de la conciencia dónde puede una realización absoluta concreta del hallazgo de esta
+								libertad ideal? Desde su cuna el hombre está sometido a las necesidades tiránicas,
+								y, como él o, como puede, debe sostener durante toda su vida esta cadena de los
+								empeños que la sociedad y la naturaleza se pasan imponiéndole. La verdad y la justicia
+								son las maestras austeras, y el amor es un déspota, a menudo cruel. Para él que
+								no es rico tiene las necesidades de la existencia; no hay ninguna alternativa entre
+								el yugo del trabajo y sostén de trabajo la miseria. <sup>[21:1]</sup> Los que se
+								llaman los poderosos y los felices del mundo tienen otros enemigos y otras cadenas;
+								si verdadero es lo que Alejandro el grande casi envidiado media de locura y de indiferencia
+								cínica de Diógenes; pero Diógenes y Alejandro eran ambos extremos de la vanidad
+								paradójica; eran los dos los esclavos de su orgullo, y no eran hombres libres.
+							</p>
+							<label for="element-toggle-21-1">
+								[21:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-21-1" type="checkbox" />
+							<p id="toggled-element-21-1" class="fnote hidden">
+								[21:1 &quot;Ergastule&quot;. Yo antes jamás encontre la palabra en francés, sino
+								la tomo se deriva de ergastylos, el pilar al cual un esclavo que recusante ha sido
+								encadenado para trabajar; también las vigas a los cuales se esclaviza en los barcos
+								han sido encadenados para remar. &mdash;Trad.]
+							</p>
+							<p>
+								La libertad es el placer pleno de todos estos derechos que no sugieren un deber.
+								Está por el cumplimiento del deber que derechos son adquiridos y preservados. El
+								hombre tiene el derecho a hacer su deber porque es encadenado para preservar sus
+								derechos. En el Individuo la devoción es solamente una sublimación del deber, y
+								es la inmensa mayoría subliman todas los deberes. Un hombre puede consagrársele
+								al otro, pero no ser su esclavo; puede pignorar su libertad, pero no puede enajenarla
+								sin especie de suicidio moral. Un hombre puede consagrarle su vida al Triunfo de
+								un ideal, pero reservarse siempre el derecho de la expansión mental y a una devoción
+								a más digno objeto. Un voto perpetuo es una afirmación de lo absoluto en el semejante,
+								del conocimiento en la ignorancia, de lo inmutable en el perecedero , de la contradicción
+								en todas las cosas. Es, pues, un atractivo, alguno y, porque es impetuoso y absurdo
+								y a se arrepiente (y retirarse de él) cuando se realiza su locura, simplemente no
+								se es un justo, por un deber.
+							</p>
+							<p>
+								Es verdad que la iglesia, cuyas decisiones en los sujetos de la fe deben ser respetadas
+								por todos los católicos, aprueba votos perpetuos; pero es solamente cuando son el
+								resultado de gracia sobre natural. <sup>[22:1]</sup> Tales votos están vacío antes
+								la naturaleza, pero en el orden sobre natural son consagrados e inviolables. <sup>[22:2]</sup>
+							</p>
+							<label for="element-toggle-22-1">
+								[22:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-22-1" type="checkbox" />
+							<p id="toggled-element-22-1" class="fnote hidden">
+								[22:1. o de un deseo determinado de obtener una fuerza sobrenatural. Para mandar
+								la naturaleza es necesario ser positivo. No tiene ninguna poder con el magnetismo.
+								desordenado <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p class="fnote">
+								[22:2. Verdaderamente <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								El matrimonio también es un compromiso perpetuo que la naturaleza no siempre ratifica.
+								Por consiguiente sigue también la severidad justa pero inútil de la moralidad y
+								del deterioro de las costumbres. Por consiguiente sigue el contraste perpetuo de
+								las lágrimas y la sangre de la tragedia conyugal, y la alegría inagotable de los
+								cuentos y de comedia. Moisés es terrible cuando baja del monte Sinaí con cuernos;
+								¿ pero por qué tiene cuernos? Ya que era un hombre casado, <sup>[22:3]</sup> posiblemente
+								respondera un indecente <span class="sans">¡</span> Gaulle, y porque estuvo ausente durante cuarenta noches
+								del lecho conyugal! La vieja broma no escatima nada.
+							</p>
+							<label for="element-toggle-22-3">
+								[22:3. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-22-3" type="checkbox" />
+							<p id="toggled-element-22-3" class="fnote hidden">
+								[22:3. ven a un francés! Cínico y lleno de ingenio, hasta en medio de la discusión
+								laboriosa de la filosofía esotérica. Francia tuvo varios alquimistas famosos, jamás
+								tuvo un verdadero Adepto <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								Los dos más grandes libre pensadores que el mundo supo eran Rabelais y Lafontaine,
+								estos dos maestros pasados por el espíritu y el humor. <sup>[23:1]</sup> Los dos
+								por otra parte, católicos buenos y liberados de cualquier sospecha de herejía.
+							</p>
+							<label for="element-toggle-23-1">
+								[23:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-23-1" type="checkbox" />
+							<div id="toggled-element-23-1" class="fnote hidden">
+								<p>
+									[23:1. es imposible traducir en proporción justa la palabra original &quot;&quot;gauloiserie,&quot;
+									(broma atrevida), con su doble sentido y significados amplio de alcanzar. El este
+									él lo que Humpty Dumpty habría llamado una &quot; palabra de moda &quot;.&mdash;<em>Trans</em>.]
+								</p>
+							</div>
+							<p>
+								Rabelais había tomado votos religiosos y tuvo la habilidad para ser tolerado por
+								el papa. Lafontaine estuvo casado, y no vivió con su esposa; <span class="sans">¡</span> pero qué ejemplo
+								de magos! <span class="sans">¡</span> Qué apóstoles de la verdad franca y pura! El trabajo de Rabelais es
+								la Biblia del sentido común y del ingenio infalible; Lafontaine es Evangelio de
+								la naturaleza. Rabelais oficiaba la misa, y si Lafontaine había vivido en su tiempo
+								sin duda alguna asistiría en esta leyendo las profecías de Baruch.
+							</p>
+							<p>
+								Debemos hacer a lo que deseamos, cuando deseamos lo que debemos. <span class="sans">¡</span> Es la ley de
+								la libertad! En otros términos, cada hombre tiene el derecho a hacer su deber, pero
+								el primer deber del hombre es determinado en el primer mandamiento de Decálogo.
+							</p>
+							<p>
+								El culto vuestro de adorar a un solo Dios, y que vosotros solamente obedeces adorándole.
+								<sup>[24:1]</sup>
+							</p>
+							<label for="element-toggle-24-1">
+								[24:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-24-1" type="checkbox" />
+							<p id="toggled-element-24-1" class="fnote hidden">
+								[24:1. en la Cabala Masoretica, los puntos leídos: &quot; un Dios, solamente - el
+								VERDADERO, - y sentido solo a vosotros cesan obedecer. &quot; Teniendo tanto de
+								jesuita en él. E.L. jamás pudo estar bien a un adepto <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								Y&nbsp;Jesús que ampliaba este precepto, hasta el punto de dar a su explicación
+								un carácter paradójico, no vaciló en añadir: no llamarás a nadie en este señor o
+								padre de la gente; es solamente su padre, su señor, y es su Dios. <sup>[24:2, A]</sup>
+							</p>
+							<p class="fnote">
+								[24:2. Dios de, o bien <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p class="fnote">
+								[A. Mateo 23:9.]
+							</p>
+							<p>
+								Y&nbsp;San Juan, el íntimo confidente de pensamientos de Jesús, nos enseña que Dios
+								es la palabra, o razón, &quot; y la palabra era Dios. &quot;
+							</p>
+							<p>
+								Por consiguiente tenemos y debemos tomar por la razón suprema solamente, a la palabra
+								que habla.
+							</p>
+							<p>
+								Pero la palabra, añade San Juan, &quot;era la luz verdadera que ilumina a cada hombre
+								este viene a este mundo.&quot;
+							</p>
+							<p>
+								Jesús el Cristo dijo: soy el principio que habla. <sup>[24:3]</sup>
+							</p>
+							<p class="fnote">
+								[24:3. en esto y muchos de otros casos, las palabras de la versión inglesa autorizada
+								difiere. Pero el sentido es generalmente idéntico.]
+							</p>
+							<p>
+								Y cada hombre que habla según la razón puede decir, &quot;soy la razón.&quot; Y
+								debemos hacer y evitar lo que prescribe, porque la voluntad de la razón reina por
+								encima del capricho del hombre. El capricho es la elección de los necios. Podemos
+								seleccionar y escoger donde a los necios comprenden, pero no en el caso del deber
+								que se nos impone, y que somos obligados a aceptar y hacer.
+							</p>
+							<p>
+								El deber atropella al que procura evitarlo, pero eso adelante con amor él que le
+								cumple.
+							</p>
+							<p>
+								Y la voluntad a lo que amamos, es la voluntad de Dios. <sup>[25:1]</sup> Y cuando
+								la voluntad del hombre es idéntica a la voluntad divina, <sup>[25.2]</sup> se vuelve
+								omnipotente.
+							</p>
+							<p class="fnote">
+								[25:1. o cual voluntad de la verdad y del deber <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p class="fnote">
+								[25:2. voluntad de - la fuerza de Akasic <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								Entonces el caso es que los milagros de la fe son cumplidos; podamos entonces nosotros
+								mandamos a las montañas moverse, y los árboles frutales para trasplantarse en el
+								mar - las palabras de nuestro salvador que no deben ser tomadas en su sentido literal.
+							</p>
+							<p>
+								La palabra de la razón es eficaz, porque quiere los fines y determina los medios.
+								Está seguro que ni las montañas ni los árboles le quitarán de su propia armonía.
+								La fuerza maniobra la materia, y el pensamiento dirige la fuerza. La fe se sirve
+								del conocimiento, y el conocimiento dirige la fe.
+							</p>
+							<p>
+								Dios mismo puede no puede hacer nada opuesto a la razón, que es la ley de la justicia,
+								porque es el juez, la ley y la razón son Dios mismo.
+							</p>
+							<p>
+								Dios no detiene a el sol y a la luna, para permitirle a Josué masacrar a ciertos
+								Cananeos, y el anuncio de tal milagro puede ser solamente una figura simbólica de
+								discurso de la poesía oriental.
+							</p>
+							<p>
+								Dios no rechaza pueblo luego al que él ha escogido, y no cambia su religión luego
+								que lo ha dado como eterno.
+							</p>
+							<p>
+								Los encargos arbitrarios, los favores, los privilegios, la cólera, la negación,
+								el perdón, pertenecen solamente a la debilidad del hombre.
+							</p>
+							<p>
+								Pero para incitar a niños gradualmente a comprender la razón, es necesaria a veces
+								para echar por encima de ella una especie de locura.
+							</p>
+							<p>
+								La infancia es naturalmente idiota; debe tener sus historias absurdas y sus juguetes
+								sensacionales. Debe tener sus muñecas automáticas, sus animales que se desplazan
+								por el mecanismo. Es verdad que romperá muy pronto a estos últimos para ver lo que
+								esta dentro de ellos.
+							</p>
+							<p>
+								Y así rompe la humanidad después de todo todas sus religiones infantiles. La religión
+								verdadera es la religión eterna.
+							</p>
+							<p>
+								La piedad verdadera es la piedad que es independiente. La fe verdadera es la fe
+								absoluta que explica todos los símbolos y desplaza sobre todo dogmas. Dios verdadero
+								es Dios de la razón, y su culto verdadero es amor y libertad.
+							</p>
+							<p>
+								Los cristianos tenían razón rompiendo a los ídolos, porque los hombres insistieron
+								para forzarles por adorar a estos últimos. Los protestantes tenían razón pataleando
+								bajo el pie, y quemando las imágenes de los santos porque, por forzarlos adorar
+								a estos últimos, los hombres quemaron a los protestantes mismos.
+							</p>
+							<p>
+								¿Sin embargo aquel quién es más divino que los grandes trabajos de Phidias y de
+								las vírgenes de Rafael?
+							</p>
+							<p>
+								El culto de las imágenes, no le es el culto del arte, y no era la bella religión
+								de los griegos solamente ¿ Las formas más graciosas y más espléndidas de la religión
+								universal?
+							</p>
+							<p>
+								Verdaderamente adoro la majestad divina ante el Júpiter de Phidias, la belleza inmortal
+								en la Venus de Milo, la divinidad del hombre en el Cristo de Miguel Ángel, él sueña
+								con el cielo en el paraíso de Fray Angélico.
+							</p>
+							<p>
+								<span class="sans">¡</span> Pero si para forzármele al culto de uno o a otro de estos últimos, me muestras
+								andamiajes o pilas de quemados despreciaría al verdugo y daría la espalda al ídolo!
+								<span class="sans">¡</span> Oh Locura de la tiranía humana!
+							</p>
+							<p>
+								En Francia, en el mismo país cuyo nombre hasta significa la libertad, levantaron
+								los andamiajes antes del ídolo de la libertad misma.
+							</p>
+							<p>
+								Sin embargo Robespierre y Marat maldijeron a los inquisidores porque los inquisidores
+								habían maldecido a Nerón y Diocleciano, y Marat y Robespierre han sido malditos
+								en su cumbre por más difuntos asesinados, y la libertad permanece siempre como una
+								paradoja sangrienta, sacrificios exigentes del ídolo.
+							</p>
+							<p>
+								Este día el mundo continua como un gran manicomio. <span class="sans">¡</span> Los números cogieron uno, decirle,
+								&quot; adorar mi botón, o te quemo! &quot;
+							</p>
+							<p>
+								<span class="sans">¡</span> Si el hombre qué cayó en sus garras era hábil, hizo para considerar de adorar
+								el botón, y posiblemente hacía esto ni un hipócrita ni un idolatra <sup>[27:1]</sup>,
+								pero su víctima es un compañero sin astucia, que toma la cosa, con seriedad triste,
+								les resiste, y está bien su martirio!
+							</p>
+							<p class="fnote">
+								[27:1. <span class="sans">¡</span> Un digno hijo de Loyola! <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								El hastió que hereda de la corrupción conduce a los hombres a la locura del suicidio,
+								y las orgías de Decadencia han sido encadenadas a la extremidad fatalmente en la
+								epidemia del martirio. Las jóvenes mujeres en estos días saltaron a la pila ardiente
+								en cuanto a un baile; las madres encaprichadas arrastraron a sus niños en la primera
+								infancia a la matanza. Verdugos, cansados de matar, puestos bajo sus hachas y rezados
+								por la muerte. &quot; Quitar su cuello erguido, &quot; les escribió Tertuliano a
+								las mujeres cristianas, &quot; y hace el sitio para el sable de los verdugos. &quot;
+								Los niños jugaron al martirio, y eran los fragmentos vistos del candente hierro
+								que hay que colocar sobre su mano. La crueldad romana provocó una reacción, y el
+								gusto por la tortura mientras que una exposición creaba un deseo de probarlo como
+								nueva sensación.
+							</p>
+							<p>
+								¿ Polygnotus y Nearchus, interrumpiendo una ceremonia religiosa y derribando los
+								altares de la patria antes de un pueblo horrorizado, parecen haber actuado como
+								seres razonables? ¿ Aquel quién entonces? ¿ San Pablo no se apoyó en premisa que
+								la locura de la cruz? ¿ Y Jesús mismo, no hizo una perturbación en el templo de
+								Jerusalén? Era Dios, callad me dirá. Así como esto sea, pero al hablar humanamente
+								su conducta era extremadamente irregular y muy imprudente, y tú estaría de acuerdo
+								conmigo en este punto si te atrevieras.
+							</p>
+							<p>
+								¿ Es legal bajo el pretexto que se es Dios que ser menos prudente que un hombre
+								sabio? Es lo que se tiene, si no el derecho, por lo menos la inclinación de inquirir;
+								por lo menos si se aceptaba el evangelio como historia. Pero son más que esto; son
+								preceptos y símbolos. Dios condena el comercio en cosas santas; no tendrá el tráfico
+								en su templo, y los vendedores merecen ser conducidos de ahí con golpes de flagelo;
+								sus tiendas deberían ser derribadas, pisoteado su dinero bajo el pie. Es todo lo
+								que la leyenda (o si tú Santo Evangelio) vendedores conducidos por el templo significa;
+								cimbré y tengo mi paz. <sup>[29:1]</sup>
+							</p>
+							<label for="element-toggle-29-1">
+								[29:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-29-1" type="checkbox" />
+							<p id="toggled-element-29-1" class="fnote hidden">
+								[29:1. en lugar de canonizarle, la iglesia de Roma le censuro y persiguió hasta
+								su muerte al Abad Luis Constant Eliphas Levi. &quot;Es peligroso dejar la mitad
+								deshecha de las cosas,&quot; admitió al hombre moribundo <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								Todo es bello en nuestra religión cuando se sabe comprenderla. Toda nuestra religión
+								es verdadera, y hasta me atrevería a decir que cada religión es verdadera, independientemente
+								de las omisiones, las transposiciones, significados falsos, conjeturas impetuosas,
+								adiciones, ensoñaciones y malentendidos. Es lo que los libre pensadores deben por
+								fin darse cuenta si no desean ser para luchar jamás contra la una de las fuerzas
+								más enérgicas de la naturaleza humana, el invencible quieren creer dentro, y adoran
+								algo en el infinito, y tener confianza en una humanidad más grande a una cierta
+								consideración que la naturaleza, con el fin de levantarse hacia esto, y jamás volverse
+								más pura en él, con el fin de conquistar y reinar por él.
+							</p>
+							<p>
+								Voltaire no deseó destruir la religión, sino deseó devolverla al Deísmo puro. Su
+								divisa era: &quot; Dios y libertad. &quot; Él, el que se considero un poeta, pero
+								no comprendió nada de la gran épica de los símbolos, que comienza a partir de las
+								fuerzas errantes <sup>[29:2]</sup> a Llegar a la inteligencia y la libertad, los
+								sellos sobre el sol, el fuego sagrado de Zoroastro, permite su robo por Prometeo
+								como provocación para los pernos de Jove, adora la fuerza que encadena a los pies
+								de la belleza, atraviesa el dominio espléndido y casi infinito de los sueños gloriosos,
+								y finalmente cumple su síntesis en la realidad del hombre.
+							</p>
+							<label for="element-toggle-29-2">
+								[29:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-29-2" type="checkbox" />
+							<div id="toggled-element-29-2" class="fnote hidden">
+								<p>
+									[29:2. en el original &quot;de las fuerza fatales,&quot; por lo que le tomo que
+									quiere decir no simplemente &quot;las fuerzas meramente fatales,&quot; pero el
+									ciego, las fuerzas ininteligente del universo, que surten efecto adelante, esclavos
+									para las leyes inherentes de su ser, y los tiranos irresistibles a todos lo que
+									no penetraron su secreto. &mdash;Trad.
+								</p>
+							</div>
+							<p>
+								Dios no es más el gigante, invisible, fantástico, solitario, escondido en las profundidades
+								insondables del cielo, es entre nosotros, es en nosotros, fue nacido de la mujer,
+								es un bebé del que los gritos del recién nacido recibimos noticias, una juventud
+								que piensa y ama, un proscrito que lucha y sufre, un pensador libre que protesta,
+								un reformador quién conduce fuera a los compradores y a vendedores en el lugar santo,
+								un maldito que bendice, y levanta a los muertos, el hombre puro que perdona a la
+								mujer adúltera, el médico que cura, pero igual el hombre enfermo que espera, el
+								paralítico que surge y camina, el ciego que abre sus ojos.
+							</p>
+							<p>
+								¿ Otros son míos, dijeron
+								al salvador, y él que me ve, también ve a mi padre, todo que es hecho a los menores
+								a ellos estos me es hecho, y Dios es en mí, porque soy en él el hecho habla solamente
+								de personas escogidas por la senda bendita por Abraham? <span class="sans">¡</span>No! Por eso He bendito
+								también el buen Samaritano, al centurión, a la mujer de Tierra de Canáan, y el rebaño
+								inmenso de naciones que espera a la vez cosechar. Así él el que les da el pan a
+								los pobres, Da el pan a Dios; él que consuela a una víctima, Un Dios le consuela;
+								él el que bendice a un infiel, le bendice Dios; el que hiere a un hombre, hiere
+								a Dios; él el que maldice a un hombre, maldice a Dios; el que masacra a un hombre,
+								comete Deicidio.
+							</p>
+							<p>
+								¿ Es ello lo que Jesús le habría pensado del sacerdote y el Levita sin piedad que
+								excomulgaría y condenaría a la muerte al buen Samaritano como hombre cismático y
+								al herido de Jericó para haber recibido con gratitud la ayuda y el cuidado de un
+								infiel? ¿ Quien en su juicio debe ser sobre estos inquisidores que a Dios encarcelaron,
+								torturaron y quemaron vivos? Pero el Dios de estos hombres era el diablo, y su religión
+								era la del Anticristo. El hombre no tiene ningún derecho a matar al hombre, excepto
+								en la defensa legítima. <sup>[31:1]</sup>
+							</p>
+							<label for="element-toggle-31-1">
+								[31:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-31-1" type="checkbox" />
+							<div id="toggled-element-31-1" class="fnote hidden">
+								<p>
+									[31:1 ¿Y aun entonces, porque dónde estaría la diferencia entre los dos? <span class="nowrap">
+										&mdash;O.E.</span></p>
+								<p>
+									La ejecución de un criminal es una desgracia de la guerra en una sociedad que es
+									No todavía cristiana, pero ejecutado es que acepta la expiación del padre del buen
+									ladrón que muere sobre la cruz con el salvador, y nos debe ver en él a Dios que
+									se olvida del bruto. Este crimen no es un acto humano, sino es el sacrificio divino
+									cuando es voluntario. <em>Homo sum humani a me nil alienum puto.</em> Soy un hombre,
+									y nada humano puede ser extraño para mí. Es lo que Dios dijo a la gente en el espíritu
+									de la revelación cristiana.
+								</p>
+								<p>
+									La diferencia sería que el procura matar, en la violación del derecho de su vecino
+									de vivir, agresivamente, y no a la defensa de su propio derecho inherente, mientras
+									que el otro si también viola el derecho de su vecino al matar, hace tan solamente
+									defensivo en la reivindicación de su propia derecho inherente de vivir. Hay una
+									distinción general entre ambas casos que ningún sofisma puede nivelar; los dos pueden
+									ser erróneos, pero sin embargo (un punto discutible con los moralistas más altos
+									de todas las edades) hay una diferencia vasta en grado de criminalidad en ambos
+									casos. O.E. condena el suicidio sin reserva, y correctamente así, pero por permitirle
+									a un hombre matarle, y tú pudes impedir esto matandole, es, me parece, suicidio
+									practicamente. &mdash;<em>Trad</em>.]
+								</p>
+							</div>
+							<p>
+								Dejar a su Dios la búsqueda en especie, debámosle adorar en el espíritu y en la
+								verdad, amemos y sirvámosle en la humanidad. Es la religión, eterna y definitiva.
+							</p>
+							<p class="fnote">
+								[32:1. Unicamente lo que fuere que hagamos nos dejó llamar cosas por sus nombres
+								correctos, &quot; Pas de Demi inconnues. &mdash;O.E.]
+							</p>
+							<p>
+								Y cuando el guía de la familia humana entra en este camino, podremos decir con Voltaire:
+								&quot; Dios es la libertad, &quot; pero el hombre comprenderá a Dios, y merecerá
+								ser libre.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="paradoja-1-la-religion-es-la-magia.htm">&lt; Paradoja
+									1</a></li>
+							<li class="align-right"><a href="paradoja-3-el-amor-es-la-realizacion-de-lo-imposible.htm">
+									Paradoja 3 &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

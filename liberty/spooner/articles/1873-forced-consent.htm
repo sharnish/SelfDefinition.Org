@@ -1,0 +1,150 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Forced Consent (1873) by Lysander Spooner</title>
+	<meta name="description" content="There is no half-way house between a government depending wholly on voluntary support, and one depending wholly on military compulsion.">
+	<meta name="author" content="Lysander Spooner">
+	<meta property="og:title" content="Forced Consent (1873) by Lysander Spooner">
+	<meta property="og:description" content="There is no half-way house between a government depending wholly on voluntary support, and one depending wholly on military compulsion.">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/spooner/images/lysander-spooner-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_spooner-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_spooner-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_spooner-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Forced Consent
+									</h3>
+									<p class="tight">(1873)</p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article-->
+							<nav class="next-previous-item-nav">
+								<!--<ul class="next-previous-item-list">
+									<li class="align-left"><a href="">&lt; Previous</a></li>
+									<li class="align-right"><a href="">Next &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>-->
+							</nav>
+							<p>
+								Abraham Lincoln did not cause the death of so many people from a mere
+								love of slaughter, but only to bring about a state of consent that could
+								not otherwise be secured for the government he had undertaken to
+								administer.
+							</p>
+							<p>
+								When a government has once reduced its people to a state of
+								consent &ndash; that is, of submission to its will &ndash; it can put them to a much
+								better use than to kill them; for it can then plunder them, enslave
+								them, and use them as tools for plundering and enslaving others. And
+								these are the uses to which most governments, our own among the rest, do
+								put their people, whenever they have once reduced them to a state of
+								consent to its will.
+							</p>
+							<p>
+								Andrew Jackson said that those who did not consent
+								to the government he attempted to administer upon them, for that reason,
+								were traitors, and ought to be hanged. Like so many other so-called
+								&quot;heroes,&quot; he thought the sword and the gallows excellent
+								instrumentalities for securing the people's consent to be governed.
+							</p>
+							<p>
+								The idea that, although government should rest on the consent of the governed, yet so much force may nevertheless be employed as may be necessary to produce that consent, embodies everything that was ever exhibited in the shape of usurpation and tyranny in any country on earth. It has cost this country a million of lives, and the loss of everything that resembles political liberty. It can have no place except as a part of a system of absolute military despotism. And it means nothing else either in this country, or in any other.
+							</p>
+							<p>
+								There is no half-way house between a government depending wholly on voluntary support, and one depending wholly on military compulsion. And mankind have only to choose between these two classes &ndash; the class that governs, and the class that is governed or enslaved. In this case, the government rests wholly on the consent of the governors, and not at all on the consent of the governed. And whether the governors are more or less numerous than the governed, and whether they call themselves monarchists, aristocrats, or republicans, the principle is the same.
+							</p>
+							<p>
+								The simple, and only material fact, in all cases, is, that one body of men are robbing and enslaving another. And it is only upon military compulsion that men will submit to be robbed and enslaved, it necessarily follows that any government, to which the governed, the weaker party, do not consent, must be (in regard to that weaker party), a merely military despotism.
+							</p>
+							<p>
+								Such is the state of things now in this country, and in every other in which government does not depend wholly upon voluntary support. There never was and there never will be, a more gross, self-evident, and inexcusable violation of the principle that government should rest on the consent of the governed, than was the late war, as carried on by the North. There never was, and there never will be, a more palpable case of purely military despotism than is the government we now have.
+							</p>
+							<p>&nbsp;</p>
+
+							<p class="tiny center">Source: <a href="https://praxeology.net/LS-FC.htm">https://praxeology.net/LS-FC.htm</a></p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

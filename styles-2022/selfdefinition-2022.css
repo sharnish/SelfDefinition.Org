@@ -1,0 +1,3889 @@
+/* file:  selfdefinition-2022.css Update October 7, 2022
+
+Update log July 20, 2022 - In process
+Liberty - Thomas-Paine - Common Sense Eng-Span
+Zen - Huineng -> 2 versions Goddard, 2 versions Humphreys
+Eliphas Levi Great Secret Eng-Span
+
+
+----- Special CSS -----
+See tooltips on Kybalion, Chapter 2, The Seven Hermetic Principles
+
+See toggle footnote on Paradoxes
+
+For stylesheet-switcher (bolding) see Uarelove - Muruganar Turning Inward, THE wORLD
+
+For numbered lists that put the number above the paragraph on small screen
+Table: urelove/muruganar-realization.htm and nisargadatta-practice
+<table class="numbered-table">
+Ordered list: ramana-40-verses-on-reality.htm
+
+Also see raman-40-verses-on-reality.htm for same treatment with numbered lists
+	ol.verse li:before , display: block, content ="".
+
+For document layout (2 columns) positioning absolute within first positioned
+ancestor see Albigen.Com index.htm
+
+*/
+
+/* Jquery section:
+	To see Jquery swapping of images, menu items and page titles see Redirect section.
+
+	Example:  /redirect/magic-404-redrect.htm
+
+	$(document).ready(function() {
+
+			$('#title-image').attr("src", "/redirect/images/paracelsus.jpg");
+
+			etc, etc ...
+More Jquery examples
+
+		Show/hide elements with Jquery function "toggle"
+
+		See Site Map and Roy Vicent-Silences .js script and CSS
+
+Pure javascript
+
+Set cookie, then how/hide element based on cookie. Uarelove index page #migration-notice
+
+JQuery -- See ajax-menu-item below
+
+*/
+
+/* Complex table formatting cases, responsive tricky stuff
+Christian -> Articles -> bucke-chart-p43-one-in-a-million.htm */
+
+/* Tooltip styling, see Kybalion CSS. */
+
+/* www.w3schools.com/css/css_attribute_selectors.asp
+in pulyan-rose
+.index-contents-links li [href$="rose.htm"] {
+		background: #ffeae4;
+	}
+
+html.dark .index-contents-links li [href$="rose.htm"] {
+	background: inherit;
+	color: yellow;
+}
+*/
+
+
+
+/* Include html5 elements */
+article,
+aside,
+div,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+video {
+	display: block;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+html,
+body {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+/* Start z-index stacking; */
+/* also see further below
+	A) .progress-header (100), .progress-container (101), .progress-bar (102)
+	B) #toTop button (99) */
+body,
+#main-content,
+#announce,
+#article,
+article {
+	z-index: 0;
+}
+
+/* keep links accessible when list item padding overlaps them */
+a.page-link-anchor,
+a.return-anchor,
+a.top-anchor,
+a.endnote,
+ul.references-list a {
+	z-index: 1;
+}
+
+/* a.return-anchor and a.endnote are not clickable. Used for positioning. */
+
+p.totop-above-anchor {
+	z-index: 2;
+}
+
+/* left menu
+	#menu-section-group     must be an ID
+	#menu-section           must be a class */
+#menu-section-group {
+	z-index: 6;
+}
+
+#menu-site {
+	z-index: 10;
+}
+
+/* top menu */
+#fixed-header-small-screen {
+	z-index: 9;
+}
+
+#menu-site-small-screen {
+	z-index: 10;
+}
+
+/* End z-index stacking; */
+
+
+body {
+	font-family: verdana, tahoma, ariel, sans-serif;
+	font-size: 18px;
+	/* line-height: 1.8em; x 18px = 32px  */
+	line-height: 32px;
+	text-align: left;
+}
+
+/* Default light theme, very light blue. Generally overridden by project CSS  */
+html,
+body,
+/* must include these or header will be transparent; cannot be "inherit" */
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	color: #000;
+	background: #fcfeff;
+}
+
+/* Default highlighting color. Generally overridden by project CSS  */
+#menu-section-group a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #b0d9ff;
+}
+
+
+/* The following is used in conjunction with  /scripts/menu-highlighter.js
+	Ajax must be enabled for highlighter to work.
+	Menu element #menu-section-group must exist. It is referenced in the script.
+	Also #menu-container is needed.
+	http://webdesignerhut.com/active-class-navigation-menu/
+/* The anchor gets the background color, not the list item. The anchor has class = active */
+/* Background is among elements with "highlighting color" above.  */
+/* Adjusting padding so selected item doesn't wrap if not already wrapped */
+#menu-section-group a.active {
+	margin-left: -8px;
+	padding-left: 10px;
+	padding-right: 2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+/* spanish default background light theme.
+	See dark theme CSS sheet for dark spanish */
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+	background: #efe;
+}
+
+/* end spanish default background light theme */
+
+
+/* Start customizable features at top of poject styles CSS */
+/* Start customizable features at top of poject styles CSS */
+/* Start customizable features at top of poject styles CSS */
+
+header h3 span {
+	display: block;
+	margin-bottom: 3px;
+}
+
+h3 span.smaller {
+	font-size: 80%;
+}
+
+h5 {}
+
+p.spacer {
+	text-align: center;
+}
+
+/* space footnotes a little wider to make links less likely to miss */
+div.endnote-section p {
+	margin-bottom: 20px;
+}
+
+blockquote.tight p,
+div.tight p,
+p.tight {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+/* End customizable features */
+/* End customizable features */
+/* End customizable features */
+
+
+/* Paragraph styling */
+p {
+	margin: 18px 0;
+}
+
+/*****  A nightmare - getting rid of this May 6, 2022 ***
+/* Start p.first-of-type < removed
+Replace with
+*/
+div.body-text,
+div.page-text,
+article p.top,
+article p.first,
+article div.top {
+	margin-top: 35px;
+}
+
+/* experimental, must check. First use: G's Real World, May 16, 2022 */
+/* no, doesn't work for this purpose
+article header + p, */
+nav.next-previous-item-nav+p,
+nav.in-page-nav+p,
+nav.in-page-nav+blockquote,
+nav.css3-in-page-nav+p,
+nav.css3-in-page-nav+blockquote {
+	margin-top: 35px;
+}
+
+/* BR height experiment - tried July 21, 2022 with Awareness, abandon-release.htm, muruganar world, turning inward */
+/* better then setting "line-height" after hard break, no wide space after soft break
+https://stackoverflow.com/questions/1409649/how-to-change-the-height-of-a-br
+*/
+
+/* adjust top margin as needed */
+/* need Content for Chrome
+	no, do not use, unintended effects. Use in project only
+br {
+	display: block;
+	margin: 2px 0;
+	content: "";
+}
+*/
+
+
+/* new div "page-text" started April 2022	< tried a copuple times, then abandoned
+For div.top-image-wrapper-div see the notes in ".right-image-div" section
+First aappearance blavatsky Articles Wm Judge  */
+
+
+
+/* Designed to deal with errors caused by p:first of type
+	must keep this, already used, renstated May 9, 2022
+*/
+div.top-image-wrapper-div {
+	margin-top: 35px;
+}
+
+
+article div.signature p:first-of-type {
+	margin-top: 25px;
+}
+
+p.signature {
+	text-align: right;
+	margin-right: 50px;
+}
+
+article header p:first-of-type {
+	margin-top: 5px;
+}
+
+/* definition lists */
+/* supreme doctrine */
+dl {
+	margin: 18px 0;
+}
+
+dt,
+dd {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+/* also see image-div section below */
+/* End first-of-type */
+
+
+
+/* start anchors */
+/* start anchors */
+/* start anchors */
+
+/* normal display. For html.datk see dark styles CSS sheet */
+a:link {
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #008000;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+article a {
+	display: inline;
+}
+
+a.inline {
+	display: inline;
+}
+
+/* Anchor is displayed as "inline-block" to avoid dead space between lines
+	when an anchor tag wraps in a menu.
+Can override [class=inline] when it causes unneeded newline. Need to test. */
+nav a {
+	display: inline-block;
+}
+
+/* Allow anchors to break to keep from forcing phone width too wide
+https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/   */
+
+#main-content a {
+	word-break: break-word;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+/* get rid of weird outline auound anchor tags */
+a {
+	outline: none !important;
+}
+
+/* end anchors */
+/* end anchors */
+/* end anchors */
+
+
+/*** scrollbar adjustments ***/
+
+/* hide the scrollbar; only works for webkit, not IE or Firefox */
+#menu-container::-webkit-scrollbar {
+	display: none;
+}
+
+/* https://css-tricks.com/snippets/css/hide-scrollbar-in-edge-ie-1011/
+Syntax:  auto | none | scrollbar | -ms-autohiding-scrollbar
+This gets rid of the (autohidden) scrollbar on IE and Edge but still permits scrolling */
+#menu-container {
+	-ms-overflow-style: none;
+}
+
+/* GET RID OF SCROLLBAR ON FIREFOX
+https://stackoverflow.com/questions/15394065/firefox-scroll-bar-hidden */
+div {
+	scrollbar-width: none;
+}
+
+
+/*** end scrollbar adjustments ***/
+
+
+/* header and h1, h2, etc */
+
+h1 {
+	font-size: 125%;
+}
+
+h2 {
+	font-size: 115%;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+h4 {
+	font-size: 100%;
+}
+
+h5 {
+	font-size: 95%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	text-align: center;
+	line-height: 32px;
+	margin: 18px auto;
+}
+
+header,
+#announce header {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Narrow the top and bottom margins in headers */
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header p {
+	margin: 5px auto 5px;
+}
+
+/* this is the page title, needs separation at top
+	Large screen  still positioned within #announce but after "title-include
+	Small screen, appears below the title-image */
+#announce header h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#announce header h3+h4 {
+	margin-top: 10px;
+}
+
+
+/* also as above for "toowide", see definition below */
+header h1.toowide,
+header h2.toowide,
+header h3.toowide,
+header h4.toowide,
+header h5.toowide,
+header p.toowide {
+	margin: 5px auto 5px;
+}
+
+p.toowide,
+header p.toowide {
+	text-align: center;
+	margin: 18px auto;
+}
+
+/* New hook added to page template Mar 25, 2022. Goes after page header (and navs),
+	and before  the bottom "next-previous" nav
+		<div class="page-text">
+
+	Might allow for finer tuning of elements like "h3" etc. Not used yet.
+
+	To replace #article header in Lachs, because Navs are inside the #article
+*/
+
+/* Class "toowide" - to keep wide headers from stretching full width on wide screens */
+
+/* li.toowide doesn't work */
+h1.toowide,
+h2.toowide,
+h3.toowide,
+h4.toowide,
+h5.toowide,
+p.toowide,
+a.toowide {
+	width: 80%;
+}
+
+/* expand "toowide"for smaller screens */
+@media only screen and (max-width: 767px) {
+
+	h1.toowide,
+	h2.toowide,
+	h3.toowide,
+	h4.toowide,
+	h5.toowide,
+	p.toowide,
+	a.toowide {
+		width: 90%;
+	}
+}
+
+/* used in Lachs, need to check */
+/* get rid of extra space. Default is top:1.33 em by user agaent
+
+Eliminated June 21, 2022, screws up the "to top" spacing.
+h4.top-heading {
+	margin-top: -20px;
+}
+ */
+
+
+/* start blockquotes and tight */
+/* start blockquotes and tight */
+/* start blockquotes and tight */
+/* vertical spacing reliies on paragraph tags */
+
+blockquote,
+div.blockquote {
+	margin: 0 12px 0 18px;
+}
+
+p.blockquote {
+	margin-right: 12px;
+	margin-left: 18px;
+}
+
+@media only screen and (max-width:500px) {
+
+	blockquote,
+	p.blockquote,
+	div.blockquote {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+}
+
+/*still testing. (1/2 em is 9px) */
+div.tight p,
+blockquote.tight p {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+li.tight,
+p.tight {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+/* override this width in project as needed
+used only in Silences so far, May 5, 2022
+To investigate. See Slences-sparse.css
+
+Intended as an adjustable blockquote that can be
+	text-align center or left
+*/
+div.centering-container {
+	width: 400px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* Able to set max-width in pixels for any occurrance inline */
+div.centered-element {
+	width: auto;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width:360px) {
+	div.centering-container {
+		width: auto;
+		max-width: 100%;
+	}
+}
+
+/* end blockquotes and tight */
+/* end blockquotes and tight */
+/* end blockquotes and tight */
+
+/* start list items, general, not menus/navigation */
+/* start list items, general, not menus/navigation */
+/* start list items, general, not menus/navigation */
+
+/* See urelove/muruganar-realization.htm for numbered lists that put
+the number above the paragraph on small screens. Also numbered tables.
+More info at top of this page under Special CSS
+*/
+
+li {
+	/* line height is not behaving as expected */
+	/* line-height: 1.8em; x 1.8 = 32.4 */
+	/* line-height: 32px; */
+	padding: 0;
+}
+
+/* default top margin FF is 8px, default left padding is 40px */
+ul.generic {
+	list-style: square;
+	margin-top: 18px;
+	/* check this */
+	padding-left: 18px;
+}
+
+ul.generic-no-bullet {
+	/* role: list;  validation error */
+	/*accessibility, safari
+	https://developer.mozilla.org/en-US/docs/Web/CSS/list-style */
+	list-style: none;
+	margin-top: 18px;
+	/* check this */
+	padding-left: 18px;
+}
+
+@media only screen and (max-width:500px) {
+	ul.generic {
+		padding-left: 10px;
+	}
+}
+
+ul.generic li,
+ul.generic-no-bullet li {
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+/* usage class="generic tall" */
+ul.generic.tall li,
+ul.generic-no-bullet.tall li {
+	margin-bottom: 24px;
+}
+
+ul.generic li p,
+ul.generic-no-bullet li p {
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+ul.generic li p,
+article ul.generic-no-bullet li p:first-of-type ul.generic-no-bullet li p,
+article ul.generic-no-bullet li p.first-of-type {
+	margin-top: 0px;
+	margin-bottom: 12px;
+}
+
+/* this gives a disk
+ul li::before {
+	content: "\200B";
+  }
+*/
+
+
+/* default chrome and FF left padding is 40px */
+ul.fnote {
+	padding-left: 30px;
+	margin-top: 18px;
+	/* 1.5em; x 18px = 27px */
+	margin-bottom: 27px;
+}
+
+ul.fnote li {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* first used April 27, 2022. Dhananjay, Sublimating */
+ol.generic,
+ol.generic-2 {
+	margin: 18px 0;
+}
+
+ol.generic {
+	padding-left: 30px;
+}
+
+/* when count is in double digits */
+ol.generic-2 {
+	padding-left: 37px;
+}
+
+
+ol.generic li,
+ol.generic-2 li {
+	margin-top: 0;
+	margin-bottom: 14px;
+}
+
+/* usage class="generic tall"
+	Gurdjieff Aphorisms, santanelli */
+ol.generic.tall li,
+ol.generic-2.tall li {
+	margin-bottom: 24px;
+}
+
+/* roy vincent summary of ploys; orage five strivings;
+	black & white, appendix  */
+ol.generic li p,
+ol.generic-2 li p {
+	margin-top: 0px;
+	margin-bottom: 14px;
+}
+
+
+@media only screen and (max-width:500px) {
+
+	/* puts flush to left. Any less is off page border */
+	/* Cannot use this if ordered-list goes into 2 digits (so use ol.generic-2)*/
+	ol.generic {
+		padding-left: 25px;
+	}
+}
+
+
+/* had to use for Awareness, Muruganar turning inward, July 21, 2022
+	bullet points would not align vertically  "li" was not enough, had to use "li a"
+	but it worked ok in Albigen/uarelove without this   */
+ol li,
+ol li a,
+ul li,
+ul li a {
+	vertical-align: top;
+}
+
+
+
+
+/* end list items, general, not menus/navigation */
+/* end list items, general, not menus/navigation */
+/* end list items, general, not menus/navigation */
+
+
+
+/* #nav is container for the entire menu-include file.
+	Menu-include is OUTSIDE the #article  */
+#nav hr {
+	/* WAS margin-left: 25px; */
+	margin-left: 0;
+	/* now same as hr.menu-hr = 0 */
+}
+
+#nav hr.menu-hr {
+	margin-left: 0;
+}
+
+#article hr {
+	margin: 30px auto;
+	width: 50%;
+}
+
+
+/* Inverted Exclamation Mark for Spanish
+For font sans-serif the character does looks like regular "i".
+Without positioning, it hangs too low. Need to test on phone. */
+.sans {
+	font-family: sans-serif;
+	position: relative;
+	top: -0.15ex;
+}
+
+
+/* Start special classes */
+/* Start special classes */
+/* Start special classes */
+
+/* in the .title-include file
+	Was 95% normal. April 22, 2022 made 90% and bold */
+p.logo {
+	/* WA Sfont-weight: bold;
+	font-size: 90%; Changed back to old May 31, 2022 */
+	font-weight: normal;
+	font-size: 85%;
+}
+
+/* reverse p:first-of-type */
+p.logo {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/* shrink the top elements a bit on tablets and phones */
+@media only screen and (max-width:767px) {
+	p.logo {
+		margin-bottom: 3px;
+	}
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.bold,
+.strong {
+	font-weight: bold;
+}
+
+strong,
+.strong,
+b {
+	font-size: 95%
+}
+
+.italic {
+	font-style: italic;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.normal,
+li.normal {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+}
+
+p.tall {
+	margin: 36px 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.totop {
+	margin-top: 20px;
+}
+
+p.totop-above-anchor {
+	position: relative;
+	top: 40px;
+	font-size: 90%;
+}
+
+/* has entry in dark them styles */
+.red {
+	color: red;
+}
+
+/* See more in Jump Link Styling. Dual usage to facilitate different top menu styles
+	1. To-Top
+	2. Returning to a footnote (from either bottom note or endnote page)
+
+/* usage
+	<p class="totop-above-anchor">
+		<a href="javascript:toTopCleanUrl();">top of page</a>
+	</p>
+	<!-- anchor element must not be empty -->
+	<a class="page-link-anchor" id="end">&nbsp;</a>
+*/
+
+
+/* using a border may break this; anchor element must not be empty */
+/*default, large screen; this is the easy method. Can't be used for a list
+of anchor tags because they will overlap. For that see below. */
+a.page-link-anchor {
+	padding-top: 40px;
+}
+
+a.top-anchor {
+	padding-top: 20px;
+}
+
+/* In-page links, for smaller than ipad. Also see jump links. */
+@media only screen and (max-width: 767px) {
+	a.page-link-anchor {
+		padding-top: 160px;
+	}
+
+	a.top-anchor {
+		padding-top: 140px;
+	}
+}
+
+/* this is old, maybe delete
+p.first-totop {top: 0;margin-top: 0;}   */
+
+span.optional {
+	display: initial;
+}
+
+@media only screen and (max-width: 540px) {
+	span.optional {
+		display: none;
+	}
+}
+
+
+/**** default show/hide display styles ****/
+/**** default show/hide display styles ****/
+/**  < must check these   */
+/* small-screen vs large-screen break is at 767px */
+/* Default is to hide. Must override for small screens */
+.hide-if-large-screen,
+a.hide-if-large-screen {
+	display: none;
+}
+
+.hide-if-small-screen {
+	display: block;
+}
+
+.hide-if-phone {
+	display: block;
+}
+
+.hide-if-not-phone {
+	display: none;
+}
+
+.hide-if-large-screen {
+	display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.hide-if-small-screen,
+	p.hide-if-small-screen,
+	div.hide-if-small-screen {
+		display: none;
+	}
+
+	/*  using initial rather than inline, trial and error 2020?, don't know why.
+		defaul is inline. See below */
+	.hide-if-large-screen,
+	a.hide-if-large-screen {
+		display: initial;
+	}
+}
+
+/*
+	https://developer.mozilla.org/en-US/docs/Web/CSS/initial
+*/
+
+@media only screen and (max-width: 540px) {
+	.hide-if-phone {
+		display: none;
+	}
+
+	.hide-if-not-phone {
+		display: block;
+	}
+
+	/* or maybe, to test */
+	.hide-if-not-phone {
+		display: initial;
+	}
+}
+
+
+/* First usage: Transmission, Eng */
+.specified-unhide,
+p.specified-unhide {
+	display: none;
+}
+
+/* show on specified pages
+p.specified-unhide {display:block;}
+span.specified-unhide {display:inline;}*/
+
+
+/* For element "span", don't know where or how used */
+.conditional-block {
+	display: block;
+}
+
+@media only screen and (max-width:400px) {
+	.conditional-block {
+		display: inline;
+	}
+}
+
+/* DO NOT USE .HIDDEN. Reserved for collapsing footnotes. */
+.hide,
+.hide-this {
+	display: none;
+}
+
+/* text align */
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+/* Start classes that set font sizes */
+/* for a footnote in the text but Not in a <sup> tag */
+
+.footnote {
+	font-size: 85%;
+}
+
+.note,
+p.note,
+div.note,
+span.note,
+a.note {
+	font-size: 90%
+}
+
+.fnote,
+p.fnote,
+div.fnote,
+ul.fnote {
+	font-size: 90%
+}
+
+.note80 {
+	font-size: 80%;
+}
+
+.tiny {
+	font-size: 70%;
+}
+
+@media only screen and (max-width: 500px) {
+
+	.footnote {
+		font-size: 90%;
+	}
+
+	.note {
+		font-size: 95%;
+	}
+
+	.fnote {
+		font-size: 95%
+	}
+
+	.note80 {
+		font-size: 90%;
+	}
+
+	.tiny {
+		font-size: 80%;
+	}
+}
+
+/* try to get more on phones reducing the font size from 18px to 17px */
+/* Pixl 2 = 411 ; Iphone X = 375px; Nexus 5 = 360 ;  */
+/* Iphone 4 = 320px */
+@media only screen and (max-width: 320px) {
+
+	/* can't remember if other phones are affected */
+	article {
+		font-size: 17px;
+	}
+}
+
+/* End classes that set font sizes */
+/* End classes that set font sizes */
+
+
+/* to clear floats - may need to test */
+.clear-left {
+	clear: left;
+}
+
+.clear-right {
+	clear: right;
+}
+
+.clear-both {
+	clear: both;
+}
+
+
+
+/* Start colors. See html.dark styles in dark styles CSS sheet */
+/* TEST MAROON. MAY BE BETTER #600 AND NOT #800000 */
+sup {
+	color: maroon;
+}
+
+sup.asterisk {
+	color: inherit;
+}
+
+.maroon {
+	color: maroon;
+}
+
+.yellow {
+	background: yellow;
+}
+
+.fnote {
+	color: Maroon;
+	font-size: 90%;
+}
+
+.fnote80 {
+	color: Maroon;
+	font-size: 80%;
+}
+
+.logo {
+	color: Maroon;
+}
+
+.disclaimer {
+	font-size: 85%;
+	color: Maroon;
+}
+
+p.alert {
+	background: beige;
+}
+
+/* has entry in dark-theme-styles */
+p.highlight,
+div.highlight,
+span.highlight {
+	background: #cff;
+}
+
+/* new html5 element test, default is yellow */
+mark {
+	background: pink;
+}
+
+/* make hr a little weaker */
+hr {
+	color: #303030;
+}
+
+/* first used Victor Solow */
+.draw-a-box {
+	border: 1px solid black;
+}
+
+html.dark .draw-a-box {
+	border: 1px solid #fdfdff;
+}
+
+/* end colors */
+/* end colors */
+/* end colors */
+/* End special classes */
+/* End special classes */
+/* End special classes */
+
+
+
+/* Start miscellaneous items */
+/* Start miscellaneous items */
+/* Start miscellaneous items */
+
+
+/* Taken from Lachs but overridden there to 100% */
+/* normally salutation is P. */
+#salutation,
+.salutation {
+	margin-left: 18px;
+	margin-right: 15px;
+	font-size: 95%;
+	font-style: italic;
+}
+
+#salutation a,
+.salutation a {
+	font-style: normal;
+}
+
+/* has entry in dark styles */
+#salutation,
+.salutation {
+	color: #600000;
+}
+
+@media only screen and (max-width:500px) {
+
+	#salutation,
+	.salutation {
+		margin-left: 7px;
+		margin-right: 5px;
+	}
+}
+
+@media only screen and (max-width:360px) {
+
+	#salutation,
+	.salutation {
+		margin-left: 3px;
+		margin-right: 0;
+	}
+}
+
+
+
+/* End miscellaneous items */
+/* End miscellaneous items */
+/* End miscellaneous items */
+
+
+/* Menu include, title include, and body text swapping for English vs Spanish versions */
+/* Menu include, title include, and body text swapping for English vs Spanish versions */
+/* Menu include, title include, and body text swapping for English vs Spanish versions */
+
+/* Started with Shiva Sutras, then got rid of specially-named Menu items,
+	except scroll-menu and ajax, which have their own styling  */
+
+/* Section A - default is to hide any spanish item on an english page (default language) */
+div.spanish,
+h1.spanish,
+h2.spanish,
+h3.spanish,
+h4.spanish,
+h5.spanish,
+p.spanish,
+li.spanish,
+li.scroll-menu-item-spanish,
+li.ajax-menu-item-spanish,
+#menu-site-small-screen li.spanish,
+#menu-container li.spanish,
+/* style-gadget must be inline-block when shown */
+#style-gadget span.spanish {
+	display: none;
+}
+
+/* Section B - hide english items on a spanish page */
+html.spanish div.english,
+html.spanish h1.english,
+html.spanish h2.english,
+html.spanish h3.english,
+html.spanish h4.english,
+html.spanish h5.english,
+html.spanish p.english,
+html.spanish li.english,
+html.spanish li.scroll-menu-item,
+html.spanish li.ajax-menu-item,
+html.spanish #menu-site-small-screen li.english,
+html.spanish #menu-container li.english,
+html.spanish #style-gadget span.english,
+html.spanish li.scroll-menu-item,
+html.spanish li.ajax-menu-item {
+	display: none;
+}
+
+/* Section C - But show the the spanish items if html=spanish */
+/* Mirrors Section A above */
+html.spanish div.spanish,
+html.spanish h1.spanish,
+html.spanish h2.spanish,
+html.spanish h3.spanish,
+html.spanish h4.spanish,
+html.spanish p.spanish,
+html.spanish li.spanish,
+html.spanish li.scroll-menu-item-spanish,
+html.spanish li.ajax-menu-item-spanish {
+	display: block;
+}
+
+/* Spans and Top menu list items need to be inline-block, not block */
+html.spanish #menu-site-small-screen li.spanish,
+html.spanish #menu-container li.spanish,
+html.spanish #style-gadget span.spanish {
+	display: inline-block;
+}
+
+/* the following are used in Hui Neng version comparison (mixed on page) */
+html.english a span.spanish,
+html.english button span.spanish {
+	display: none;
+}
+
+html.spanish a span.english,
+html.spanish button span.english {
+	display: none;
+}
+
+html.spanish li.english a {
+	display: none;
+}
+
+html.english li.spanish a {
+	display: none;
+}
+
+/* End menu include, title include, and body text swapping for English vs Spanish versions */
+/* End menu include, title include, and body text swapping for English vs Spanish versions */
+/* End menu include, title include, and body text swapping for English vs Spanish versions */
+
+
+/*** Start Next-Previous Nav ***/
+/*** Start Next-Previous Nav ***/
+/*** Start Next-Previous Nav ***/
+
+/* FIRST THE "NAV" THEN THE "LIST" */
+
+/* MUST HAVE (either or both I think) */
+/* Can't be Auto, must stretch */
+nav.next-previous-item-nav,
+ul.next-previous-item-list {
+	width: 100%;
+	padding: 0;
+}
+
+
+/* If an element contains only floated elements, its height collapses to nothing.
+https://developer.mozilla.org/en-US/docs/Web/CSS/clear
+a.k.a. "clearfix"
+Precaution because device contains floating elements. But ends with li.clear */
+ul.next-previous-item-list::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* default large screens, 768px and greater */
+/* Top and bottom margins can be thin because spacing is wide */
+nav.next-previous-item-nav {
+	/* WAS margin-top: 8px; update May 8, 2022 to 12px, updated June 22, 2022 to 18;px; */
+	margin-top: 18px;
+	/* WAS margin-bottom: 5px; */
+	margin-bottom: 8px;
+}
+
+/* need to test these */
+@media only screen and (max-width: 600px) {
+	nav.next-previous-item-nav {
+		margin-top: 12px;
+		margin-bottom: 25px;
+	}
+}
+
+
+/* now the list */
+.next-previous-item-list {
+	list-style: none;
+	font-size: 90%;
+}
+
+/* can decrease font size if page titles are long; default is 90%. put option in project CSS
+ul.next-previous-item-list {font-size:85%;} */
+
+.next-previous-item-list {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* increase bottom margin at point where left and right items may overlap
+	leave option in project CSS
+	NOT NECESSARY BECAUSE OF "AFTER" PSEUDO-ELEMENT
+@media only screen and (max-width: 500px) {
+	.next-previous-item-list {margin-bottom: 25px;}
+} */
+
+/* mow the list items */
+.next-previous-item-list li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+/* long menu items overlap on small screens
+	need inside margin so items don't touch as they come together */
+.next-previous-item-list li.align-left {
+	float: left;
+	text-align: left;
+	margin-left: 2px;
+	margin-right: 8px;
+}
+
+.next-previous-item-list li.align-right {
+	float: right;
+	text-align: right;
+	margin-left: 8px;
+	margin-right: 3px;
+}
+
+li.align-left,
+li.align-right {
+	border: 0px solid green;
+}
+
+
+/* Link color - has corresponding entry in dark-styles css */
+.next-previous-item-list a:link,
+.next-previous-item-list a:visited {
+	color: #400000;
+}
+
+.next-previous-item-nav li a:hover {
+	text-decoration: underline;
+}
+
+/*** End Next-Previous Nav ***/
+/*** End Next-Previous Nav ***/
+/*** End Next-Previous Nav ***/
+
+
+/*** Start Nav In-Page Links ***/
+/*** Start Nav In-Page Links ***/
+/*** Start Nav In-Page Links ***/
+
+/* this is the structure: ul inside nav
+	<nav class="in-page-nav">					< no width set for "in-page-nav"
+		<ul class="page-links">					< default width for "page-links" is 240px;
+			<li><a href="#">section</a></li>
+		</ul>
+	</nav>
+*/
+
+/* from the update CSS */
+/* still overlapping in dev-tools, but this doesn't fix it
+WAS nav.in-page-nav {margin-top:5px;} updated Sep 3, 2020 */
+nav.in-page-nav,
+nav.css3-in-page-nav {
+	/* WAS margin-top: 15px; */
+	margin-top: 35px;
+	/* TO TEST
+	ul.pafge-links has margin-top 20px so here adding net 15px */
+}
+
+/* when Nav is below a title, to test. Start Boehme Life and Doctrines
+	Works ok but must eliminate "nav-spacer" if any */
+h4+nav.in-page-nav,
+h4+nav.css3-in-page-nav {
+	margin-top: 18px;
+}
+
+/* No, has no floats  nav.in-page-nav {clear: both;} */
+
+
+
+
+
+/*
+	This is old. Commented out My 13, 2022
+	for when headings are wide:
+	(see Magic White and Black, ch. 8)
+ul.page-links.too-wide {
+	padding: 0 0 0 3px;
+	width: 310px;
+}
+
+@media only screen and (max-width:767px) {
+	ul.page-links.too-wide {
+		width: 100%;
+		max-width: 340px;
+	}
+}
+
+@media only screen and (max-width:340px) {
+	ul.page-links.too-wide {
+		font-size: 17px;
+	}
+}
+
+ */
+
+
+/* PAGE-LINKS DEFAULT WIDTH -- override this width in project CSS or on page if necesary
+	As ul has zero border */
+
+ul.page-links {
+	list-style: none;
+	font-size: 90%;
+	padding: 0;
+	width: 240px;
+	margin: 0 auto 0px;
+	border: 0px solid red;
+}
+
+/* Weird bug. Must have this or viewport will be screwed up on narrow screens
+   MUST be on a page if page-links width is specified on that page */
+@media only screen and (max-width:300px) {
+	ul.page-links {
+		width: 100%;
+	}
+}
+
+.page-links li {
+	width: inherit;
+	padding: 5px 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border: 0px solid blue;
+}
+
+@media only screen and (max-width: 767px) {
+	ul.page-links li {
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+}
+
+.page-links li a {}
+
+/*** End Nav In-Page Links ***/
+/*** End Nav In-Page Links ***/
+/*** End Nav In-Page Links ***/
+
+
+
+/*** Start Images and Image-Divs ***/
+/*** Start Images and Image-Divs ***/
+/*** Start Images and Image-Divs ***/
+
+/* image never to go beyond width of its container. "auto" to maintain aspect ratio */
+img {
+	/* no max-width: auto; */
+	max-width: 100%;
+	height: auto;
+}
+
+/* style the alt text
+https://stackoverflow.com/questions/7101743/can-i-style-an-images-alt-text-with-css  */
+img {
+	color: inherit;
+	font-size: 80%;
+}
+
+/* Five image types: 1) menu image, 2) title-image, 3) left, 4) right 5) centered  */
+
+/* start image swapping.
+	#menu-container disappears < 768  */
+/* Wide screens show the left menu image. Small screens show the title image (same image) */
+/* default is to show left menu. */
+img.menu-image {
+	display: block;
+}
+
+/* default is to hide title image */
+.title-image-div,
+.title-image {
+	display: none;
+}
+
+@media only screen and (max-width:767px) {
+
+	.title-image-div,
+	.title-image {
+		display: block;
+	}
+}
+
+/* End image swapping */
+
+/* From update CSS */
+img.menu-image {
+	/* WAS max-width: 200px;
+	width: 200px;
+	Changed June 20, 2022 */
+	max-width: 190px;
+	width: 190px;
+}
+
+.title-image-div {
+	margin: 12px auto 5px auto;
+}
+
+.title-image {
+	width: 80%;
+	margin: 0 auto;
+	width: auto;
+	max-width: 190px;
+}
+
+/** End menu-include and title-include images */
+
+/* start left,. right and centered images in the the article */
+
+/* See above for h4 + p and how that might affect .right-image-div */
+.image-div {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.image-div img {
+	margin: 0 auto;
+}
+
+/* 1em is 18px, so align with paragraph, give 2px more. Use "p" class note, not font-size 80%;  */
+.left-image-div {
+	float: left;
+	margin: 18px 20px 0 20px;
+	/* but add 10px to top of image, see below */
+	text-align: center;
+}
+
+.right-image-div {
+	float: right;
+	margin: 18px 20px 0 20px;
+	text-align: center;
+}
+
+
+/* For setting the top margin in case ".right-image-div" (or left) is
+	the very first element of the text. (float is out of flow.)
+
+https://stackoverflow.com/questions/1883414/
+why-top-margin-of-html-element-is-ignored-after-floated-element
+
+Use a wrapper "div" that includes the .right-image-div and the first paragraph,
+and apply the top margin to the wrapper div. << NO, it causes the
+subsequent paragraph to be pushed down.
+
+See p:first-of-type section above.
+
+First aappearance: Blavatsky -> Articles -> Wm Judge
+
+Using "div.top-image-wrapper-div"
+
+*/
+
+/* image is smaller on large screens, when on either side,
+	and larger in small screens, when centered */
+.left-image-div img,
+.right-image-div img {
+	width: auto;
+	max-width: 220px;
+	margin-top: 0px;
+	/* still a bit low */
+	margin-top: -3px;
+}
+
+div.top-image-wrapper-div .left-image-div img,
+div.top-image-wrapper-div .right-image-div img {}
+
+/* overcome p::first-of-type */
+.image-div p,
+.left-image-div p,
+.right-image-div p {
+	margin-top: 3px;
+}
+
+/* Text as caption to the image */
+.image-div p:first-of-type,
+.left-image-div p:first-of-type,
+.right-image-div p:first-of-type {
+	margin-top: 0;
+}
+
+
+
+/* the default */
+
+
+/* right and left images are centered in small screens */
+@media only screen and (max-width: 500px) {
+	.left-image-div {
+		float: none;
+		margin: 0 5px 5px 5px;
+	}
+
+	.right-image-div {
+		float: none;
+		margin: 5px;
+	}
+
+	.left-image-div img,
+	.right-image-div img {
+		width: auto;
+		max-width: 90%;
+	}
+}
+
+@media only screen and (max-width:320px) {
+	.right-image-div img {
+		/* WAS  width: 100%;
+		max-width: auto; */
+		width: auto;
+		max-width: 100%;
+	}
+}
+
+
+/* see below for printing of images */
+
+/*** End Images and Image-Divs ***/
+/*** End Images and Image-Divs ***/
+/*** End Images and Image-Divs ***/
+
+
+
+
+/* CSS3 Columns for navigation, and Contents-Index Page  */
+/* CSS3 Columns for navigation, and Contents-Index Page  */
+/* CSS3 Columns for navigation, and Contents-Index Page  */
+
+
+/* CSS3 columns used:
+	Siddharameshwar -> Dasbodh
+	Joseph Sadony -> Gates, and Pine Needles
+	Roy Vincent
+
+	For 2-column tweak see CSS for Trungpa -> Energy and Emotional Transformation
+
+	*/
+
+/* THERE ARE 2 MAIN MENU SECTIONS, CHOOSE HTML FOR ONLY ONE
+	NAV.CONTENTS -OR-  id="index-lists" -> class="index-contents-links"  */
+
+/* This is the html for columns
+
+	This is a separate section before "nav.index-lists"
+
+<div class="to-center">           <-  used "div.column-container" in Hui Neng Version, see poage
+	<nav class="contents">
+		<div class="item">              <- items have :hover styling, see "highliht" color
+			<a href="page.htm">Page</a>
+		</div>
+	</nav>
+</div>
+*/
+
+/* modify in project as necessary */
+
+/* Adapted from from Pine Needles */
+/* Start CSS3 columns */
+/* Default and wide screen, 3 columns
+	3 x 120px = 360px plus gutters of 10px */
+div.to-center,
+nav.css3-in-page-nav {
+	width: 440px;
+	border: 0px solid red;
+}
+
+div.to-center {
+	margin: 0 auto;
+}
+
+.to-center hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+nav.css3-in-page-nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav.contents,
+ul.css3-contents,
+ul.css3-page-links {
+	-webkit-columns: 3;
+	-moz-columns: 3;
+	columns: 3;
+	width: 100%;
+	/* experiment July 7, 2022 max-width */
+	max-width: 100%;
+	margin: 0 auto;
+	border: 0px solid yellow;
+	-webkit-column-gap: 5px;
+	/* Chrome, Safari, Opera */
+	-moz-column-gap: 5px;
+	/* Firefox */
+	column-gap: 5px;
+}
+
+/* optional, good when item is centered
+
+Example liberty/xenofon/
+Huang Po-Blofield
+
+nav.contents {
+	column-rule: 1px solid #666;
+}
+
+*/
+
+/* hover-item width. These are divs.
+	Override in project CSS if necessary depending on anchor length. */
+
+ul.css3-contents,
+ul.css3-page-links {
+	padding-left: 0;
+}
+
+ul.css3-contents li,
+ul.css3-page-links li {
+	display: inline-block;
+	list-style: none;
+}
+
+/* added "li" Aug 6, 2022
+	See Cloudd of Unknowing  */
+nav.contents .item,
+ul.css3-contents li,
+ul.css3-page-links li {
+	width: 140px;
+	/* times 3 columns = 420px plus gutters 5px x 2 or 3 */
+	margin-bottom: 25px;
+	/* CAREFUL: "center" removed June 9, 2022
+	text-align: center; */
+	text-align: left;
+}
+
+/* Small screens = 2 columns. Dev tools says that "witdth" here is that of #main-content */
+@media only screen and (max-width:460px) {
+
+	div.to-center {
+		width: 300px;
+	}
+
+	nav.contents,
+	ul.css3-contents,
+	ul.css3-page-links {
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		columns: 2;
+		/* no change so remove this
+		width: 100%; */
+		/* don't know what this is so comment out
+		margin: 30px auto 0; */
+	}
+
+	nav.contents .item,
+	ul.css3-contents li {
+		/* no change, so remove this
+		width: 120px;
+		*/
+	}
+}
+
+
+
+/* now the anchor elements */
+/* padding on anchor does not affect highlighting (nav list item) but
+	makes the anchor more easily clickable
+	increase padding if width of item is smaller */
+nav.contents .item a {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* added "li" Aug 6, 2022 */
+ul.css3-contents li a,
+ul.css3-page-links li a {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+
+/* Avoid column breaks:  To test. See if used in Sadony.
+	Not used in:  Transmission-Eng,
+https://css-tricks.com/almanac/properties/b/break-inside/
+*/
+div.item,
+/* added "li" Aug 6, 2022 */
+ul.css3-contents li {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
+}
+
+/* End CSS3 Columns */
+/* End CSS3 Columns */
+/* End CSS3 Columns */
+
+/* Start index lists */
+/* Start index lists */
+/* Start index lists */
+
+
+
+/* From Common Sense */
+
+/* #index-lists is a nav
+	Some of these have dual use with left menu so they can simply be copied */
+
+
+/*dammit, don't know why left margin was set, should be auto. Update April 25, 2022   */
+#index-lists,
+nav.index-lists {
+	/* WAS margin-left: 40px; */
+	/* Increased from 30px to 40px starting Pulyan Writings May 22, 2022 */
+	margin-top: 40px;
+}
+
+@media only screen and (max-width:540px) {
+
+	#index-lists,
+	nav.index-lists {
+		margin-left: 10px;
+	}
+}
+
+#index-lists hr,
+nav.index-lists hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 75%;
+}
+
+/* fix width allows the uls to be centered */
+#index-lists ul,
+nav.index-lists ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+}
+
+/* needed due to specificity, also see p.tight section */
+#index-lists li.tight,
+nav.index-lists li.tight {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+/* Start Pulyan Writings  */
+#index-lists .index-contents-links {}
+
+/* this isn't necessary, handeled above
+#index-lists .index-contents-links li {list-style:none;}
+*/
+
+/* Default width is 400px
+MUST USE MEDIA QUERY TO MATCH
+#index-lists ul.index-contents-links {
+	width: 330px;
+}
+@media only screen and (max-width:440px) {
+	#index-lists ul.index-contents-links {
+		width: 100%;
+	}
+}
+ */
+
+/* default width is 400px, start at 440px to keep from going outside #index-lists */
+@media only screen and (max-width:440px) {
+
+	#index-lists ul,
+	nav.index-lists ul {
+		width: 100%;
+	}
+}
+
+#index-lists ul li,
+nav.index-lists ul li {
+	margin: 0 0 18px 0;
+}
+
+#index-lists ul li.first-item,
+nav.index-lists ul li.first-item {
+	margin-top: 3px;
+}
+
+/* imitate for a paragraph tag */
+p.first-item {
+	margin-top: 3px;
+}
+
+#index-lists ul li.subhead-item,
+#index-lists ul li.subhead,
+nav.index-lists ul li.subhead-item,
+nav.index-lists ul li.subhead {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+/* changed from inline-block to inline April 6, 2022 */
+#index-lists a,
+nav.index-lists a {
+	display: inline;
+}
+
+/* test this from huineng */
+index-lists ul.index-contents-links li:first-child {
+	margin-top: 0;
+}
+
+/* "other" to replace external, site, and optional starting March 23, 2022 */
+/* has a corresponding entry in dark styles CSS */
+/* specificity required here. May be deprecated May 18, 2022 need to check.
+*/
+#index-lists ul li.header-item,
+nav.index-lists ul li.header-item,
+#index-lists ul li.external-links-item,
+nav.index-lists ul li.external-links-item,
+#index-lists ul li.site-links-item,
+nav.index-lists li.site-links-item,
+#index-lists ul li.optional-links-item,
+nav.index-lists ul li.optional-links-item,
+#index-lists ul li.other-links-item,
+nav.index-lists ul li.other-links-item {
+	margin-bottom: 3px;
+}
+
+/* color and bold don't need specificity. Used in both #menu-site and #index-lists
+	April 25, 2022 try to deprecate these in favor of "li.header-item"
+	Start with Victor Solow  */
+li.header-item,
+li.external-links-item,
+li.site-links-item,
+li.optional-links-item,
+li.other-links-item {
+	color: maroon;
+	font-weight: bold;
+	font-size: 95%;
+}
+
+/* April 25, 2022 try to deprecate these in favor of "li.first-item"  */
+li.first.item,
+li.external-first-item,
+li.site-first-item,
+li.optional-first-item,
+li.other-first-item {
+	margin-top: 3px;
+	padding-top: 0;
+}
+
+
+/* April 25, 2022 site-subhead-item-deprecated for subhead-item
+	#menu-section-group     must be an ID
+	#menu-section           must be a class
+	 */
+ul.menu-section li.subhead-item,
+/* left menu */
+ul.index-site-links li.subhead-item,
+ul.index-links li.subhead-item,
+ul.index-links li.subhead,
+nav.index-lists li.subhead
+
+/* contents-index page */
+	{
+	/* has no link, has narrow top and bottom margin */
+	margin-top: 3px;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/* https://stackoverflow.com/questions/9080633/can-a-css-pixel-be-a-fraction */
+ul.menu-section li.subhead-item,
+ul.menu-section li.subhead
+
+/* left menu */
+	{
+	/* removed June 8, 2022 font-weight: bold;
+	use "subhead bold" if desired */
+	font-size: 13.5px;
+	/* reduce the emphasis of bold text; default is 14px */
+}
+
+ul.index-site-links li.subhead-item,
+ul.index-links li.subhead-item,
+ul.index-links li.subhead
+
+/* contents-index page */
+	{
+	/* WAS font-weight: bold; too bright, removed June 23, 2022 */
+	font-weight: normal;
+	/* WAS font-size: 17px;  no longer needed, not bold */
+	/* reduce the emphasis of bold text; default is 18px */
+}
+
+/* added June 2, 2022 */
+#menu-container .site-links li.subhead-item,
+#menu-container li.subhead {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/* imitate for paragraph but no color */
+p.subhead-item {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+/* NO, THIS IS BAD
+	this reduces left margin for this page only when screen size is small say try  360
+@media only screen and (max-width:360px) {
+	#article {}
+
+	div#index-lists ul li {margin-left: -0px;}
+}
+	 */
+
+/* End styles from Contents-Index Page Prototype */
+/* End styles from Contents-Index Page Prototype */
+/* End styles from Contents-Index Page Prototype */
+
+
+
+/* Start Footnotes and Endnotes */
+/* Start Footnotes and Endnotes */
+/* Start Footnotes and Endnotes */
+
+/* appeears
+	Lachs, Garma Chang (separate page), Dazling Dark, Transmission, light on the Path
+
+*/
+
+/* footnote margins and padding */
+p.fnote,
+div.fnote {
+	margin-left: 8px;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width:500px) {
+
+	p.fnote,
+	div.fnote {
+		margin-left: 3px;
+		margin-right: 5px;
+	}
+}
+
+/* Do not include "span" - used in Lachs */
+p.fnote,
+div.fnote {
+	margin-left: 10px;
+	margin-right: 5px;
+	padding-left: 2px;
+}
+
+
+/* Endnotes page, don't wrap complicated endnotes */
+a.endnote {
+	white-space: nowrap;
+}
+
+/* start sup and sub */
+/* start sup and sub */
+/* start sup and sub */
+
+sup {
+	font-size: 90%;
+}
+
+sup.normal,
+h3 sup.normal,
+h4 sup.normal {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 90%;
+}
+
+/* for foonotes in <h3> ; sup is 95% but too big */
+/* 85% still too big, try 80% */
+h3 sup,
+h4 sup {
+	font-weight: normal;
+	font-size: 80%;
+}
+
+/* has corresponding entry on dark styles sheet */
+sup.black {
+	color: Black;
+}
+
+
+/* control line height for sup and sub
+https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/ */
+sup,
+sub {
+	vertical-align: 0;
+	position: relative;
+	font-size: 80%;
+}
+
+sup {
+	bottom: 0.5ex;
+}
+
+sub {
+	top: 0.8ex;
+}
+
+sup a {
+	text-decoration: underline;
+}
+
+@media only screen and (max-width:500px) {
+	sup {
+		font-size: 95%;
+	}
+}
+
+
+/* SUP IN A HEADING such as H4
+put the sup above the h4, the "h4" style includes a clear
+must put in a div. Width of "sup" depends on its text and the h4 text
+
+HTML example Light on the Path: section-1-text.htm
+<div class="tricky-header-sup">
+	<a class="return-anchor" id="part-II"></a>
+	<sup><a href="#note-II">Note on Part II</a></sup>
+	<h4>
+		PART II
+	</h4>
+</div>
+*/
+
+/****************
+Light on the Path usage
+
+div.tricky-header-sup {
+	position: relative;
+}
+
+div.tricky-header-sup sup {
+	position: absolute;
+	right: 0;
+	width: 130px;
+	font-size: 80%;
+	border: 0px solid yellow;
+}
+
+
+@media only screen and (max-width:420px) {
+	div.tricky-header-sup sup {
+		position: static;
+		float: right;
+	}
+
+	div.tricky-header-sup h4 {
+		clear: both;
+	}
+}
+
+****************/
+/* end sup and sub */
+/* end sup and sub */
+/* end sup and sub */
+
+
+
+
+/* from Dazzling Dark
+	Copied in Conjugal Sadahna */
+
+/* footnote-list is a ul */
+#footnote-list {
+	list-style: none;
+	padding-left: 20px;
+}
+
+#footnote-list li {
+	padding-bottom: 20px;
+}
+
+@media only screen and (max-width:500px) {
+	#footnote-list {
+		padding-left: 3px;
+	}
+}
+
+/* This section for footnotes section. Added Feb 5, 2017  */
+/* Used in Light on the Path, Paradoxes */
+ul.references-list {
+	/* WAS margin-left: -35px; */
+	/* WAS padding-left: 40px; */
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+
+/* End Footnotes and Endnotes */
+/* End Footnotes and Endnotes */
+/* End Footnotes and Endnotes */
+
+
+/* Start Jump Links */
+/* Start Jump Links */
+/* Start Jump Links */
+
+/* Section Headings, typically <f4> */
+/* Return to top of page */
+
+/* z-index not needed, positioning only, not clickable:  a.return-anchor, a.endnote */
+
+
+/* Jump links Prototype #1
+	Zen -> Articles -> Stuart Lachs
+	See Lachs CSS history and "jump-link-repository" for 5 methods, trial and error
+	Here using Method C */
+
+/* Html example as follows,
+	can use either a paragraph tag or li in endnote because target is an anchor.
+
+	Needs empty as target, otherwise it will take up space.
+
+In the text, the <sup> is preceded by the return anchor
+
+	id = return note	class = return anchor
+
+<a id="return-note-10" class="return-anchor"></a><sup><a href="#note-10">[10]</a></sup>
+
+Endnote has 2 anchor tags
+
+	<p><a class="endnote" id="note-10"></a>
+		<a href="#return-note-10">[10]</a>
+
+Where used
+Stuart Lachs                prototype, section still in process
+Transmission-Eng-Span       in process
+Light on the Path Eng-Span  in process
+Afterlife Art. Judge
+Dazzling Dark
+Garma Chang
+Quotes ->  Conjugal Sadhana & Paraphilia
+
+*/
+
+/* Below is Lachs method C modified March 23, 2022 for
+	exclusively "No Top Menu" and "2-line height" top menu */
+
+/* both prototypes use the same return-anchor styling */
+
+/* this no longer exists. Replaced by "a.return-anchor" */
+sup.return-anchor {
+	white-space: nowrap;
+}
+
+
+/* TO INVESTIGATE -- experiment on the project CSS
+https://stackoverflow.com/questions/50116250/set-div-padding-z-index
+So I managed to solve this by removing the padding and margins of the div and
+using relative position with the same spacings as the margin previously. I then
+set the canvas z-index to 1 with the container div z-index to 2.
+*/
+
+
+/* Fuck, in the Endnote, the presence or absence of a border affects the position
+   of the element. Don't know at this point which is the preferred behavior.
+
+   Experiment on Light on the path. Transparent is same position as color.
+   Border 0px is the same as none. Need to test. April 25, 2022
+
+		TEST NOW WITH IT SET TO ZERO, SEE IF ANYTHING BAD HAPPENS
+		MUST NOTE TO TEST WITHOUT IN THE FUTURE
+
+a.return-anchor,
+a.return-anchor:target {
+	border: 1px solid transparent;
+	background: yellow;
+}
+
+a.endnote,
+a.endnote:target {
+	border: 1px solid transparent;
+	background: green;
+}
+
+*/
+
+/* Transmission used "class=return-note", not "class=return-anchor".
+Replaced not with anchor March 24, 2022. 593 occurrences in 8 files*/
+/* return anchor when no top menu */
+a.return-anchor,
+a.return-anchor:target {
+	display: inline;
+	/* MUST be inline or you get a blank space */
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+	/* padding-top: 80px;
+	margin-top: -80px; */
+	padding-top: initial;
+	margin-top: initial;
+	position: relative;
+	top: -80px;
+	border: 0px solid red;
+}
+
+/* endnote when no top menu */
+a.endnote,
+a.endnote:target {
+	display: inline;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+	/* padding-top: 50px;
+	margin-top: -50px; */
+	padding-top: initial;
+	margin-top: initial;
+	position: relative;
+	/* changed from -50px to -35px
+	   Mar 29, 2022 Tranmission */
+	top: -35px;
+	border: 0px solid red;
+}
+
+/* return anchor when 2-line top menu */
+@media only screen and (max-width: 767px) {
+
+	/* NOT ::before  */
+	a.return-anchor,
+	a.return-anchor:target {
+		/* padding-top: 180px;
+		margin-top: -180px; */
+		padding-top: initial;
+		margin-top: initial;
+		top: -170px;
+		border: 0px solid green;
+	}
+
+	a.endnote,
+	a.endnote:target {
+		/* padding-top: 135px;
+		margin-top: -135px; */
+		padding-top: initial;
+		margin-top: initial;
+		top: -135px;
+		border: 0px solid green;
+	}
+}
+
+/* SAVE THIS
+three-line top menu. Uncomment in project CSS if needed
+@media only screen and (max-width: 340px) {
+
+	a.return-anchor:target {
+		border: 1px solid blue;
+	}
+
+	a.endnote:target {
+		padding-top: 170px;
+		margin-top: -170px;
+		border: 1px solid blue
+	}
+}
+ */
+
+
+/* Start Prototype #2 */
+/* Start Prototype #2 */
+/* Start Prototype #2 */
+/*   Afterlife -> Dazzling dark
+
+/* both prototype #1 and #2 use same styling for return anchor, above */
+
+/*
+Return anchor
+<sup id="return-anchor-2" class="return-anchor"><a href="#footnote-2">(2)</a></sup>
+
+Footnote, bottom of page, a.k.a. endnote. Html is as follows, uses "li" tag, only 1 anchor tag.
+
+<ul id="footnote-list">
+
+	<li><a class="endnote" id="footnote-2" href="#return-anchor-2">(2)</a>&nbsp;&nbsp;Lorem ipsum ...
+
+*/
+
+
+
+/* End Prototype 2 */
+/* End Prototype 2 */
+/* End Prototype 2 */
+
+
+
+/* END JUMP LINK STYLING */
+/* END JUMP LINK STYLING */
+/* END JUMP LINK STYLING */
+
+
+/* Start Printing Styles */
+/* Start Printing Styles */
+/* Start Printing Styles */
+
+@media only print {
+	#article:after {
+		content: "Update: 2022";
+		/* override this on section CSS */
+		font-size: 65%;
+	}
+}
+
+
+/* Added Apr 19, 2019, don't show left menu when printing
+	Keep this in "drop-in" css template 6  months to avoid CSS cache problems */
+@media only print {
+	#menu-panel {
+		display: none;
+	}
+
+	#main-content {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 10px;
+	}
+
+	#article,
+	article,
+	#announce,
+	section,
+	aside {
+		width: 100%;
+	}
+
+	div.title-image-div,
+	img.title-image {
+		display: block;
+		margin: 10px auto;
+		width: 210px;
+	}
+
+	/* don't print artifacts */
+	#style-gadget,
+	nav.next-previous-item-nav,
+	p.totop-above-anchor {
+		display: none;
+	}
+
+	/* May 20, 2022 this doesn't work in print simulation,
+		display apparently is set by script
+		container works, tested dazzling dark */
+	#toTopButton,
+	#button-container,
+	.button-container {
+		display: none;
+	}
+}
+
+/* End Printing Styles */
+/* End Printing Styles */
+/* End Printing Styles */
+
+
+/* Start Top-and-Left Menu Swapping */
+/* Start Top-and-Left Menu Swapping */
+/* Start Top-and-Left Menu Swapping */
+
+/* #fixed-header-small-screen is swapped with #menu-container */
+/*
+	#menu-site-small-screen     hidden on large screens < top menu
+	#menu-container			    hidden on small screens < left menu
+*/
+/* #fixed-header is a div, #menu-site-small-screen is a UL */
+/* Hide top menu on large screens */
+#fixed-header-small-screen,
+#menu-site-small-screen {
+	display: none;
+}
+
+/* Show top menu on small screens */
+@media only screen and (max-width: 767px) {
+
+	#fixed-header-small-screen,
+	#menu-site-small-screen {
+		display: block;
+	}
+}
+
+/* Show left menu on wide creens */
+#menu-container {
+	display: block;
+}
+
+/* Hide left menu on small screens */
+@media only screen and (max-width: 767px) {
+	#menu-container {
+		display: none;
+	}
+}
+
+/*End Top-and-Left Menu Swapping */
+/*End Top-and-Left Menu Swapping */
+/*End Top-and-Left Menu Swapping */
+
+
+/****** Start Menu Styles *******/
+/****** Start Menu Styles *******/
+/****** Start Menu Styles *******/
+
+/* See Menu swapping section above */
+
+/* This is an unused hook: #menu-include-file-div  */
+
+/* nesting
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+
+	<div id="menu-container">
+		<ul id="menu-site">
+		<ul class="menu-text>
+
+		<div id="menu-section-group">  << must have this for menu-highlighter script to work
+			<ul class="menu-section">
+			<ul class="menu-section">
+		</div>
+		<div class="optional-links">
+		<div class="site-links">
+			<ul class="menu-section">
+		</div>
+
+	</div> <!-- end of #menu-container -->
+
+*/
+
+/* hidden on wide screens */
+/*  #menu-site-small-screen li are no longer floated. Display is inline-block.
+	Menu does not need "clear".
+	Removed March 15, 2022. #menu-site-small-screen li {float:left;} */
+
+#menu-site-small-screen li {
+	list-style: none;
+	display: inline-block;
+	margin: 0px 15px 4px 2px;
+	padding: 5px;
+	/* line-height: 1.8em; x 18 = 32.4 */
+	line-height: 32px;
+}
+
+/* shrink the menu item distances a little on phones */
+@media only screen and (max-width: 540px) {
+	#menu-site-small-screen li {
+		margin-right: 5px;
+	}
+}
+
+/* in case needed. Got rid of top menu "first-item"  */
+#menu-site-small-screen li:first-child {}
+
+#menu-site-small-screen li:last-child {
+	margin-right: 0;
+}
+
+#menu-site-small-screen li a {
+	font-size: 16px;
+}
+
+
+
+/***** Start left menu styles for wide screens *****/
+/* must be reconciled/updated for "top menu anomaly fix" */
+/* this is the at the top of the long, left-side menu */
+/* these are ul's */
+/* Firefox default styles for ul:  margins: 15px 0; padding-left: 40px; */
+
+#menu-section-group {
+	margin-top: 10px;
+}
+
+/* testing to get defaults */
+ul.test {
+	list-style: none;
+}
+
+ul.test li {}
+
+#menu-site,
+ul.menu-text,
+ul.menu-section {
+	list-style: none;
+}
+
+#menu-site {
+	margin-left: -30px;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+.menu-text {
+	margin-left: -30px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	text-align: center
+}
+
+.menu-section {
+	margin-left: -30px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#menu-site {
+	padding-left: 36px;
+}
+
+ul.menu-section,
+ul.menu-text {
+	padding-left: 32px;
+}
+
+/* shrink the left menu width if titles are short. See project CSS. To test */
+
+/* Must NOT set a width or max-width for the next two items */
+/* incredible. Setting a width or max-width for either or both of these causes width to collapse */
+/*
+ul.menu-section, ul.menu-text {
+	/* Setting max width causes it to collapse
+	max-width: 195px; */
+/* And Setting width causes it to collapse
+	width: 195px;
+}
+*/
+/* this is different area than #menu-site-small-screen */
+#menu-site li {
+	margin: 2px 0;
+	padding: 5px 0;
+	font-size: 14px;
+}
+
+#menu-site li.tight {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+/* has two items, 2nd refers to activating Ajax; default margin is already zero */
+#menu-site li.scroll-menu-item,
+#menu-site li.scroll-menu-item-spanish {
+	font-size: 11px;
+	padding-bottom: 0;
+}
+
+/* see /scipts/scrollbar-and-test.js for Ajax display/hide */
+#menu-site li.ajax-menu-item,
+#menu-site li.ajax-menu-item-spanish {
+	font-size: 12px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	color: red;
+	/* has entry in dark-styles */
+}
+
+
+.menu-text li {
+	margin: 15px 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.menu-text li.tight {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.menu-section li {
+	margin: 4px 0;
+	padding: 5px 0;
+	font-size: 14px;
+}
+
+/* Both the left menu and the Contents-Index pages can have these items
+	Also see above in #index-lists section
+	April 25, 2022 try to deprecate these in favor of the first, "li.header-item"
+	Has a corresponding entry in dark-styles CSS  */
+.menu-section li.header-item,
+.menu-section li.external-links-item,
+.menu-section li.site-links-item,
+.menu-section li.optional-links-item {
+	font-weight: bold;
+	color: Maroon;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.index-site-links li.header-item,
+.index-site-links li.external-links-item,
+.index-site-links li.site-links-item,
+.index-site-links li.optional-links-item {
+	font-weight: bold;
+	color: Maroon;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+
+/* April 25, 2022 "site-first-item" etc. deprecated for "first-item" */
+.menu-section li.first-item,
+.menu-section li.external-first-item,
+.menu-section li.site-first-item,
+.menu-section li.optional-first-item {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/* see Images section for .menu-image */
+
+ul.menu-section li {
+	width: 100%;
+}
+
+/* The anchor width needs to be set because it is highlighted and clickable
+	< check this. BUT see next */
+ul.menu-section li a {
+	display: inline;
+	/*width must be 100%, cannot be auto */
+	width: 100%;
+}
+
+/* pages menu needs to expand because it is highlighted */
+#menu-section-group ul.menu-section li a {
+	display: inline-block;
+}
+
+
+.optional-links li,
+.site-links li {
+	margin: 3px 0;
+	padding: 5px 0;
+}
+
+
+.menu-text {
+	font-weight: bold;
+}
+
+
+/* from the update CSS */
+/* NOT #menu-container, screws up menu highlighting
+#menu-container a {display:inline;} */
+.optional-links a,
+.site-links a {
+	display: inline;
+}
+
+/*) prob not used any more */
+li.menu-header {
+	font-weight: bold;
+}
+
+
+
+/* for the anchor tag for the menu-scroll javascript, bottom of the menu
+Menu template switched to p#menu-scroll on Jan 6, 2017 because it's not a div
+Keep p.div-scroll a in the CSS as legacy */
+#menu-scroll {
+	margin-top: 50px;
+}
+
+#menu-scroll a {
+	font-size: 80%;
+	width: auto;
+	max-width: 100%;
+	margin-left: 10px;
+	padding: 5px 3px 5px 3px;
+}
+
+/**** end menu scrolling script ****/
+
+/****** End Menu Styles *******/
+/****** End Menu Styles *******/
+/****** End Menu Styles *******/
+
+
+
+/* Start Default (Wide-Screen) Positioning and Widths  */
+/* Start Default (Wide-Screen) Positioning and Widths  */
+/* Start Default (Wide-Screen) Positioning and Widths  */
+
+/* for browsers that don't recognize media queries or max-width ***/
+
+/* div stacking
+<body>
+	<div id="mainwrapper">
+		<div id="container"> relatively positioned
+			<div id="menu-panel"></div> absolutely positioned
+			<div id="main-content"> absolutely positioned
+				<div id="main-content-relative"> relatively positioned
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+*/
+
+/* https://www.w3schools.com/css/css_positioning.asp
+HTML elements are positioned static by default. Not affected by the top, bottom, left, and right properties
+Relative; is positioned relative to its normal position.
+*/
+
+/* Default large screens; fixed with, page centered.
+Left menu = 210 width + 20 empty space = 230px
+Main content left position = 240, plus 530px article = 770, plus 3 0 for safety = 800px total width
+	(is narrowed a little on width of 767 and less, see below.)
+To center the page: #mainwrapper {margin:0 auto;}
+#mainwrapper must be "position:relative" for #menu-panel and #main-content to respond (absolute within a relative)
+"Relative" must be set on #mainwrapper rather than on #container. << old note. now is set here,
+																		removed from 767, must test
+ */
+#mainwrapper {
+	width: 100%;
+	position: static;
+}
+
+/* Values applied to #container used to be applied here  */
+/* Margin ia 0 because div. #mainwrapper has no height */
+
+/* formerly #container was an unused hook.
+		March 2022 was swapped with #mainwrapper, which is now unused */
+/* position must be "relative". If changed to "static" it collapses to left */
+#container {
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/* #container has no height */
+/*  must be relative to be centered. But why? */
+
+/* menu panel is narrow 220px on large screens, expands to 100% (max 530px) on small screens */
+#menu-panel {
+	width: 220px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* this div is in the "page" file
+NO SENSE IN HAVING. REMOVED APR 20, 2022
+#menu-panel {
+	font-size: 15px;
+}
+*/
+
+#menu-include-file-div {}
+
+/* this div is in the include file. unused hook.  */
+
+/* this is the left menu. See menu swapping section above */
+/* For menu scrolling script /scripts/recoverdivscroll.js */
+/* MUST be present for menu scrolling script to work */
+/* coordinate width with page elements further below  */
+/* width is set further below */
+/* hidden when screen less than 768px */
+#menu-container {
+	width: 210px;
+	/* gives 10px safety on right. but see padding below, reduces it by 10px */
+	position: fixed;
+	/* Don't do this >> position:absolute; << causes left menu to disappear
+	/* Don't know why
+	fixed;      is positioned relative to the viewport
+	absolute;   is positioned relative to the nearest positioned ancestor (instead of relative to viewport)
+	https://www.w3schools.com/css/css_positioning.asp
+	*/
+	top: 0;
+	bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	/* This prevents IE9 scrollbar from obscuring the right edge of the menu */
+	padding-right: 10px;
+}
+
+/* nearest positioned ancestor of #main-content is #container. See above */
+#main-content {
+	width: 530px;
+	position: absolute;
+	top: 0;
+	left: 240px;
+}
+
+/* #main-content position: fixed; << no, causes #main-content to overlap left menu on large screens,
+		don't know why, maybe because #menu-panel is positioned absolute. */
+
+/* To restore relative positioning, so subsequent elements are in normal flow.
+   Must have, but declating it "relative" or not doesn't seem to matter < what?  */
+#main-content-relative {
+	position: relative;
+}
+
+#main-content-relative {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	border-bottom: 200px solid transparent;
+}
+
+#announce,
+#article,
+article,
+section,
+aside {
+	width: 530px;
+}
+
+#announce {
+	margin: 20px 0 0 0;
+}
+
+/* margin-top goes to zero on less than 768px ?? still valid */
+
+#style-gadget {
+	text-align: right;
+	margin: 0 0 0 0;
+	font-size: 70%;
+}
+
+/* too close to edge at 768px */
+@media only screen and (min-width:768px) {
+	#style-gadget {
+		margin-right: 15px;
+	}
+}
+
+
+/* hide in reader view
+Do not use aria-hidden="true" on focusable elements.
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden
+#style-gadget {
+	aria-hidden: true
+}
+*/
+
+/* tittle-include-file, copied to here April 20, 2022 */
+#style-gadget label {
+	display: inline-block;
+	vertical-align: top;
+	background: inherit;
+}
+
+
+
+
+/* Display width for testing if needed, (in title include file) */
+#device-width-display {
+	display: none;
+}
+
+
+/* a little extra space right edge of large screens */
+/* a little space on the right, for this range */
+@media only screen and (min-width:768px) {
+	article {
+		padding-right: 5px;
+	}
+}
+
+/* End Default (Wide-Screen) Positioning and Widths  */
+/* End Default (Wide-Screen) Positioning and Widths  */
+/* End Default (Wide-Screen) Positioning and Widths  */
+
+
+
+/* Start responsive positioning and display */
+/* Start responsive positioning and display */
+/* Start responsive positioning and display */
+
+/* 	Screens smaller than Ipad, i.e., 767 pixels and less, will show top menu, hide left menu.
+	See menu swapping section above */
+
+/* 	Ipad screen is 768 pixels, will show left menu. < above this breakpoint width is 530px fixed
+
+	Phone breakpoint is 540px      NO, NO BREAKPOINT   < at this breakpoint width becomes auto  */
+
+
+
+/* Medium screens, less than 768px (less than ipad) */
+/* Shows top menu, hides left menu  */
+@media only screen and (max-width: 767px) {
+
+	/* CSS: difference between width:auto and width:100%
+	https://stackoverflow.com/questions/17468733/difference-between-width-auto-and-width-100-percent
+
+	Use "auto" to fill. Use "100%" to stretch to fill
+
+	width:auto = default width of block element like "p".
+	Expands to fit space, minus margins and padding.
+
+	width:100% = content is 100% of space.
+	Then add margin, padding, border. Except if border-box, then only add margin.
+
+	*/
+
+	/* Between screen size 541px and 767px the width of top menu and article will be 530px */
+
+	/* new: At screen size 540px and below, the width of top menu and article will be 100%, based on viewport */
+
+	/* Need to correct error of March 20. There is no breakpoint at 540px with regard to #main-content, #article, etc.
+		Everything flows from device width at 767px and under, although some minor elements are styled differently
+	*/
+
+	#mainwrapper {}
+
+	/* unused hook. default above is blank */
+
+	#container {
+		width: auto;
+		max-width: 530px;
+	}
+
+	/* default above is:    width:800px; margin:0 auto; position:relative;*/
+
+	#main-content {
+		margin: 0 auto;
+	}
+
+	/* WAS width:540px; default width above is 530px */
+	/* try to correct as follows */
+	#main-content {
+		width: 100%;
+		max-width: 530px;
+	}
+
+	#main-content-relative {}
+
+	#announce,
+	#article,
+	article,
+	section,
+	aside {
+		width: 100%;
+		max-width: 530px;
+	}
+
+	/* default above is:    #announce, #article, article, section, aside {width:530px;} */
+
+	#announce {
+		margin-top: 0;
+	}
+
+	/* top margin large screens is 20px  */
+
+	#title-include-div {
+		margin: 0;
+	}
+
+	/* top margin large screen is 20px */
+
+	/* on small screen #menu-panel expands from 220px to 100% with maximim 530px */
+	#menu-panel,
+	#nav {
+		position: relative;
+		width: 100%;
+		max-width: 530px;
+	}
+
+
+	/* See menu swaping section above for removing the left menu and showing the top menu */
+	/* Set width at 100% (same as article) so article doesn't show through on the right when scrolled
+			Color must be set or it will also be transparent */
+	/* Can't make it Relative because it will scroll.
+		Needs a non-static position to recognize the "top" and "height" specification */
+	/* Fixed positioning will keep it at top, while #main-content scrolls underneath it */
+	#fixed-header-small-screen {
+		width: 100%;
+		max-width: 530px;
+		position: fixed;
+	}
+
+	/* progress bar height is 5px, its container is set at 6px for overlap. */
+	/* See progress-bar section further below */
+	#fixed-header-small-screen {
+		top: 6px;
+		height: 100px;
+	}
+
+	/* THE WIDTH OF FIXED-HEADER-SMALL-SCREEN (not menu-site-small-screen) causes
+		the menu items to wrap  */
+
+	/* #fixed-header-small-screen and #main-content-relative are
+		adjusted at 540px and below for Edge screens */
+
+	/* Since the addition of "totop" link to the top menu, it nearly always has 2 lines, but
+		if menu is to be 1 or 3 lines, override in project CSS. Default height is 100.
+		a) Reduce height to 80 if one line. Increase to 120 if three lines.
+		b) Adjust top of #main-content to match. Default is 100. Adjust to 81 or 121 */
+
+	/* #menu-site-small-screen is a relative block inside a fixed block */
+	#menu-site-small-screen {
+		position: relative;
+		left: 6px;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* keep integrity of right edge because has left:10px; */
+	#menu-site-small-screen {
+		width: calc(100% - 10px);
+	}
+
+	/* Override in project CSS if necessary to match #fixed-header-small-screen as above. */
+	#menu-site-small-screen {
+		top: 0;
+		height: 100px;
+	}
+
+	/* On screens 767px and less, #main-content scrolls under the fixed header */
+	/* Override in project CSS when top menu is either 1 or 3 lines; see above.  */
+	#main-content {
+		position: absolute;
+		left: 0;
+		top: 101px;
+	}
+
+}
+
+/* Start conditional hide general and menu */
+/* Start conditional hide general and menu */
+/* adjust as needed in project*/
+/* As of Apr 20, 2022
+	conditional hide	600px
+	conditional hide 2	500px
+	conditional hide 3	450px
+	conditional hide 4	400px
+	conditional hide 5	359px
+
+*/
+@media only screen and (max-width:600px) {
+
+	.conditional-hide,
+	#menu-site-small-screen li.conditional-hide,
+	#menu-site-small-screen li span.conditional-hide {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:500px) {
+
+	.conditional-hide-2,
+	#menu-site-small-screen .conditional-hide-2 {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:450px) {
+
+	.conditional-hide-3,
+	#menu-site-small-screen .conditional-hide-3 {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:400px) {
+
+	.conditional-hide-4,
+	#menu-site-small-screen .conditional-hide-4 {
+		display: none;
+	}
+}
+
+/* adjust as needed */
+@media only screen and (max-width:359px) {
+
+	.conditional-hide-5,
+	#menu-site-small-screen .conditional-hide-5 {
+		display: none;
+	}
+}
+
+/* End conditional hide general and menu */
+/* End conditional hide general and menu */
+
+
+
+
+/* memo only. Is also commented out in Section.CSS
+/* THREE-LINE MENU - USED OR NOT
+	IF NEEDED BECAUSE OF EXTRA ELEMENTS
+   Test breakpoint with borders and without
+@media only screen and (max-width: 600px)
+{
+	#fixed-header-small-screen,
+	#menu-site-small-screen     {height:130px;}
+	#main-content               {top:131px;}
+}
+*/
+
+
+/* Start Edge screen width adjustments */
+/* Start Edge screen width adjustments */
+/* Start Edge screen width adjustments */
+
+/* Necessary for curved screens such as on S7 Edge*/
+
+@media only screen and (max-width:540px) {
+	#main-content-relative {
+		padding-left: 18px;
+		padding-right: 16px;
+	}
+
+	#fixed-header-small-screen {
+		padding-left: 18px;
+		padding-right: 16px;
+	}
+
+	/* #menu-site-small-screen  {padding-left:18px;padding-right:16px;} < NO *.
+	/* Choose between padding-left on fixed-header or left:18px on menu-site
+	#menu-site-small-screen {left:18px;} */
+
+}
+
+/* Must put this in a media query or it screws up right edge of large screens */
+@media only screen and (max-width:540px) {
+	#main-content-relative {
+		padding-left: 18px;
+		padding-right: 16px;
+	}
+}
+
+/* Reduce for screens smaller than Samsung Edge */
+/* Most but not all Edge screens have width of 360px, need to verify. So not needed if smaller.
+	 So reverse partially here*/
+@media only screen and (max-width: 359px) {
+	#main-content-relative {
+		padding-left: 13px;
+		padding-right: 10px;
+	}
+
+	#fixed-header-small-screen {
+		padding-left: 8px;
+		padding-right: 6px;
+	}
+}
+
+/* End Edge screen width adjustments */
+/* End Edge screen width adjustments */
+/* End Edge screen width adjustments */
+
+
+
+/* larger body font and menu line-height for mobile menus.
+	iPhone 4 breakpoint is 480 px
+	iPhone 5 width of 320 is 640 px */
+@media only screen and (max-width: 500px) {
+
+	body {
+		font-size: 19px;
+		/* line-height: 1.9em; x 19 = 36px */
+		line-height: 36px;
+	}
+
+	#announce h1,
+	#announce h2,
+	#announce p {
+		/* line-height: 1.8em; x 19 = 34 */
+		line-height: 34px;
+	}
+
+	p {
+		padding: 0
+	}
+
+	/* don't indent much on a phone */
+
+	.hide-if-phone,
+	p.hide-if-phone,
+	div.hide-if-phone {
+		display: none;
+	}
+
+	.hide-if-not-phone {
+		display: block;
+	}
+
+	br.hide-if-not-phone,
+	span.hide-if-not-phone {
+		display: inline;
+	}
+
+	p.fnote,
+	p.fnote80 {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+}
+
+
+/* START PROGRESS BAR AND TOTOP BUTTON */
+/* START PROGRESS BAR AND TOTOP BUTTON */
+/* START PROGRESS BAR AND TOTOP BUTTON */
+
+/* Top progress bar initiated Nov 17, 2019 */
+/* How To Create a Scroll Indicator
+https://www.w3schools.com/howto/howto_js_scroll_indicator.asp
+*/
+
+/* Implemented Nov 17, 2019
+   needs 3 components: Divs, Script and this CSS */
+/* For wide screens default: width is 530px */
+.progress-header {
+	position: fixed;
+	top: 0;
+	/* note: fixed elements don't contribute height to the document  */
+	height: 6px;
+	z-index: 100;
+	width: 525px;
+	/* NOT HERE, width: calc(100% - 20px);   */
+}
+
+@media only screen and (max-width:767px) {
+	.progress-header {
+		/* if you don't set the left edge, bar will start at left edge of
+		#main-content or #main-content-relative, don't know which.
+		Here bar spans entire viewport width, (#mainwrapper?) not the document (article) width */
+		left: 10px;
+		width: calc(100% - 20px);
+	}
+}
+
+/* Progress bar height will affect fixed menu positioning */
+
+/* The progress container */
+.progress-container {
+	width: 100%;
+	height: 6px;
+	z-index: 101;
+	/* backgrounnd cannot be "inherit" or it's see-through
+	background is defined at top along with html, body, etc. */
+}
+
+/* The progress bar (scroll indicator) */
+/* Width is increased by the script */
+.progress-bar {
+	height: 5px;
+	background: #4a5;
+	width: 0%;
+	z-index: 102;
+}
+
+/* to-top button:
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+*/
+/* Since large screen does not have top menu
+only show on large screens, in media query below */
+/* default is to hide. Default on large screen is hide, but shown by script */
+#toTopButton {
+	display: none;
+}
+
+
+#toTopButton a,
+#toTopButton a:active {
+	outline: none !important;
+}
+
+/* This is MIN-WIDTH not MAX-WIDTH */
+@media only screen and (min-width:768px) {
+	#toTopButton {
+		display: none;
+		/* Hidden by default, appears after scroll, shown by script */
+		position: sticky;
+		/* Fixed/sticky position */
+		bottom: 20px;
+		/* Place the button at the bottom of the page */
+		left: 100%;
+		/* Place the button 30px from the right < no, put on right edge */
+		z-index: 99;
+		/* Make sure it does not overlap */
+		border: none;
+		/* Remove borders */
+		outline: none;
+		/* Remove outline */
+		/* background:#;  Set a background color << is set at top */
+		color: #0000ff;
+		/* Text color */
+		cursor: pointer;
+		/* Add a mouse pointer on hover */
+		padding: 14px;
+		/* Some padding */
+		border-radius: 5px;
+		/* Rounded corners */
+		font-size: 17px;
+		/* Increase font size */
+		border: 0px solid #00f;
+		/* pick a color to match */
+	}
+
+	#toTopButton:hover {
+		background: #fcfff0;
+		/* DEFAULT, WILL BE OVERRIDDEN IN PROJECT css */
+		/* use page color instead of gray */
+		text-decoration: underline;
+	}
+}
+
+/* the button is going to be within #main-content-relative,
+	but if page is wide, put it in the right margin */
+@media only screen and (min-width:900px) {
+	#toTopButton {
+		margin-right: -50px;
+	}
+}
+
+/* END PROGRESS BAR AND TOTOP BUTTON */
+/* END PROGRESS BAR AND TOTOP BUTTON */
+/* END PROGRESS BAR AND TOTOP BUTTON */
+
+
+/* Start Collapsing Footnotes */
+/* Start Collapsing Footnotes */
+/* Start Collapsing Footnotes */
+
+/* Toggle, lable, div and paragraph.
+	from Paradoxes. Others: Gustave Le Bon */
+/* Man CSS IS ON EACH PAGE, see html example below
+Label set to match class="fnote" : left margin 8px, font 90%. */
+
+/* label is used in conjunction with "cfnotte" and "hidden" below */
+label {
+	margin-left: 8px;
+	color: maroon;
+	background: #EFE;
+	background: #E9EFFF;
+	font-size: 90%;
+	display: block;
+	width: auto;
+}
+
+/* collapsing foornite = cfnote
+	... need to investigate why was originally 80% and where previously used.
+	Changed from 80% to 85% to match "hidden" below.
+	Starting with Gustave Le Bon English and Spanish May 22, 2022
+	Ramana SelfInquiery. */
+div.cfnote,
+p.cfnote {
+	font-size: 85%;
+	margin-left: 10px;
+	margin-right: 5px;
+	padding-left: 2px;
+}
+
+/* has a dark styles entry */
+div.hidden,
+p.hidden {
+	font-size: 85%;
+	color: green;
+	/* green is #008000; */
+	color: #007000;
+	background: inherit;
+}
+
+/* Template for code on the page
+
+		<label for="element-toggle-1">
+			[1. Toggle footnote.]</label>
+		<input id="element-toggle-1" type="checkbox">
+		<div id="toggled-element-1" class="cfnote hidden">
+			<p>
+			</p>
+		</div>
+
+	Template for CSS on the page
+
+		label[for=element-toggle-1],
+		label[for=element-toggle-2]
+		{
+			cursor: pointer;
+		}
+
+		#element-toggle-1,
+		#element-toggle-2 {
+			display: none;
+		}
+
+		#element-toggle-3-1:not(:checked)~#toggled-element-1,
+		#element-toggle-4-1:not(:checked)~#toggled-element-2 {
+			display: none;
+		}
+
+
+*/
+
+/* End Collapsing Footnotes */
+/* End Collapsing Footnotes */
+/* End Collapsing Footnotes */
+
+
+/* Start Youtube Video Styles */
+/* Start Youtube Video Styles */
+/* Start Youtube Video Styles */
+
+/*********** fluid width for Youtube videos on a page
+https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+AND
+http://alistapart.com/article/creating-intrinsic-ratios-for-video
+padding-bottom: 20%
+This declaration gives the box a specific format.  Using 20% for
+padding makes the height of the box equal to 20% of its width.
+***********/
+/* used on so far:
+Celibacy section:
+embajadores-vallenatos-santo-cachon.htm
+gary-wilson-the-great-porn-experiment.htm
+oscar-brown-jr-a-ladies-man.htm
+
+Elsewhere:
+/psychology/robert-anton-wilson-free-your-mind.htm
+/possession/ = 2 pages with youtube videos
+*/
+
+
+/*
+MUST have text in article (below the video) of sufficient width or the
+video width will collapse on a small screen.
+Can use nonbreaking spaces if text is not needed
+&nbsp; &nbsp; &nbsp; &nbsp; etc.
+*/
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* End Youtube Video Styles */
+/* End Youtube Video Styles */
+/* End Youtube Video Styles */
+
+
+/* amazon styles if used,
+	copied from /redirect/_amazon.css */
+/*******************************************/
+/************** Start Amazon ***************/
+/*******************************************/
+
+
+div.amazon-section {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.amazon-section h4 {
+	margin-bottom: 5px;
+}
+
+.amazon-section p.image-warning {
+	margin-top: 5px;
+}
+
+div.amazon-section header p {}
+
+
+/* styles copied from osho */
+ul.amazon-list {
+	font-size: 90%;
+	padding-left: 25px;
+}
+
+ul.amazon-list li {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+ul.amazon-list li.header {
+	list-style: none;
+	padding-left: 0px;
+	margin-left: -15px;
+}
+
+div.amazon-section div.item-list {
+	text-align: center;
+	margin-top: 30px;
+}
+
+div.amazon-section div.item-container {
+	width: auto;
+	max-width: 100%;
+	display: block;
+	margin: 20px auto;
+	text-align: left;
+}
+
+div.amazon-section div.image-link,
+div.amazon-section div.text-link {
+	float: left;
+	display: block;
+}
+
+/* font size for alt text */
+div.amazon-section div.image-link {
+	width: 20%;
+	margin-top: 10px;
+	font-size: 80%;
+}
+
+div.amazon-section div.text-link {
+	width: 74%;
+	margin-left: 20px;
+}
+
+div.amazon-section div.text-link-only {
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width:500px) {
+	div.amazon-section div.item-container {
+		width: 100%;
+	}
+
+	div.amazon-section div.image-link {
+		width: 30%;
+		margin-top: 5px;
+	}
+
+	div.amazon-section div.text-link {
+		width: calc(70% - 12px);
+		margin-left: 10px;
+	}
+
+	div.amazon-section div.text-link-only {
+		width: 100%;
+	}
+}
+
+/*******************************************/
+/**************  End Amazon  ***************/
+/*******************************************/
+
+/* testing */
+
+/*  *******/
+
+
+#main-content {
+	border: 0px solid yellow;
+}
+
+#article {
+	border: 0px solid white;
+}
+
+#title-include-div {
+	border: 0px solid red;
+}
+
+#announce header {
+	border: 0px solid green;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header p {
+	border: 0px solid blue;
+}
+
+#menu-container {
+	border: 0px solid red;
+}
+
+#fixed-header-small-screen {
+	border: 0px solid blue;
+}
+
+#menu-site-small-screen {
+	border: 0px solid orange;
+}
+
+#menu-site-small-screen li {
+	border: 0px solid green;
+}
+
+#menu-section-group,
+div.optional-links,
+div.site-links,
+div.external-links {
+	border: 0px solid blue;
+}
+
+ul#menu-site,
+ul.menu-text,
+ul.menu-section {
+	border: 0px solid green;
+}
+
+/* #index-lists is a nav. nder that are ul.index-contents-links and ul.index-links
+	These are deprecated: ul.index-site-links, ul.index-external-links, ul.index-optional-links
+*/
+#index-lists {
+	border: 0px solid red;
+}
+
+#index-lists ul {
+	border: 0px solid blue;
+}
+
+#index-lists ul li {
+	border: 0px solid green;
+}
+
+nav.contents {
+	border: 0px solid yellow;
+}
+
+
+nav.next-previous-item-nav {
+	border: 0px solid yellow;
+}
+
+ul.next-previous-item-list {
+	border: 0px solid red;
+}
+
+a.page-link-anchor:target {
+	border: 0px solid red;
+}
+
+@media only screen and (max-width: 767px) {
+	a.page-link-anchor:target {
+		border: 0px solid green;
+	}
+}
+
+a.return-anchor,
+a.return-anchor:target {
+	border: 0px solid red;
+}
+
+a.endnote,
+a.endnote:target {
+	border: 0px solid red;
+}
+
+/* Amazon styles testing, copy to page being tested */
+
+div.item-list {
+	border: 0px solid red;
+}
+
+div.item-container {
+	border: 0px solid blue;
+}
+
+div.image-link {
+	border: 0px solid green;
+}
+
+div.text-link,
+div.text-link-only {
+	border: 0px solid maroon;
+}
+
+
+/* END */

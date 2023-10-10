@@ -1,0 +1,38 @@
+/* file:  /siddharameshwar/master-key/_the-master-ke-excerpt.css
+
+	Update June 1, 2022
+*/
+
+@media only print {
+	#article:after {
+		content: "Update June 1, 2022";
+	}
+}
+
+/* FOR CASUAL-BODY-FORGETFULNESS.HTM ONLY  */
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffff3;
+}
+
+
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #eeeed3;
+}
+
+
+
+/* end */

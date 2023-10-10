@@ -1,0 +1,68 @@
+<!-- start of menu include file Update May 13. 2020.  May 21, 2022-->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-3"><a href="/">Site root</a></li>
+			<li><a href="/psychology/hypnosis/">Hypnosis index</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-not"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/psychology/hypnosis/">Hypnosis index</a></li>
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="normal note">
+				<img class="menu-image" src="images/santanelli.jpg" alt="Santanelli, a.k.a. James H. Loryea">
+			<li><span class="block">James H. Loryea</span> a.k.a. "Satanelli"</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="santanelli-what-hypnosis-really-is.htm">Santanelli: What Hypnosis Really Is (this page)</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr>
+			<ul class="menu-section">
+				<li>Hypnosis at <a href="https://en.wikipedia.org/wiki/Hypnosis">Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site by Santanelli</li>
+				<li class="site-first-item"><a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

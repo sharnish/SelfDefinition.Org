@@ -1,0 +1,68 @@
+/* file:  /christian/jacob-boehm/confessions/_boehm-confessions.css
+
+update Feb 19, 2020. May 10, 2022
+*/
+
+@media only print {
+	#article:after {
+		content: "Update May 10, 2022";
+	}
+}
+
+
+/* nice yellow, or this, #f3fff3; a nice green - use ->  gray matches photo #f9f9f9; */
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fafaea;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+
+
+/* color must contrast with body */
+
+
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+nav.contents .item:hover {
+	background: #eca;
+}
+
+
+
+/* was #400, #fec */
+
+p.quote,
+div.quote,
+blockquote.quote {
+	background: #fec;
+}
+
+p.quote {
+	padding-left: 4px;
+	padding-right: 3px;
+}
+
+html.dark p.quote,
+html.dark div.quote,
+blockquote.quote {
+	background: #353535;
+}
+
+
+/* testing */
+
+
+/* end */

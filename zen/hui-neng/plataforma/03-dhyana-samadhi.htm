@@ -1,0 +1,274 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Discourse on Dhyana and Samadhi, Sutra of Hui Neng</title>
+    <meta name="description" content="">
+    <meta name="author" content="Hui Neng">
+    <meta property="og:title" content="3. Discourse on Dhyana and Samadhi, Sutra of Hui Neng">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://selfdefinition.org/zen/hui-neng-espanol/images/Huineng-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_huineng-espanol-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="prev" href="02-sobre-prajna.htm">
+    <link rel="next" href="04-arrepentimiento.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* One footnote each on page 2, 3, 4, 6, 7  */
+
+        ul.page-links {
+            width: 300px;
+            border: 1px solid blue;
+        }
+
+        .page-links li {
+            width: inherit;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav" role="navigation" aria-label="Main">
+                    <?php include("_huineng-espanol-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- as of Oct 9, 2019 moving "article" to here -->
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_huineng-espanol-title-include.htm"); ?>
+                                    <!-- new format borrowed from mysterium magnum, puts page title higher -->
+                                    <h3 class="toowide">
+                                        <span class="block">Capítulo III</span> El Samadhi, el Prajñā y Dhyana <span class="normal">
+                                            <!-- enchor code from Stuart Lachs, put the anchor inside the sup  
+                                                 but the sup has the return position -->
+                                            <a class="return-anchor" id="return-anchor-1"></a><sup><a href="#notes">[1]</a></sup>
+                                        </span>
+                                    </h3>
+                                    <p class="tiny">
+                                        This page in English: <a href="../platform/03-dhyana-samadhi.htm">..03-dhyana-samadhi.htm</a>
+                                    </p>
+                                    <p class="tiny alert">En el PDF en español, esta página es los Capítulos 4 y 5. En la versión en inglés en Sacred-Texts.Com, es el capítulo 3, "Discurso sobre Dhyana y Samadhi".</p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="02a-preguntas-y-respuestas.htm">&lt; 2a. Preguntas-Respuetas </a></li>
+                                    <li class="align-right"><a href="04-arrepentimiento.htm">4. Sobre el Arrepentimiento &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <div class="nav-spacer" style="line-height:1px;">&nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                </ul>
+                            </nav>
+
+                            <p class="pagenum">page 33 of pdf</p>
+
+                            <p>El Patriarca en otra ocasión predicó a la asamblea como sigue:</p>
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, en mi sistema, el Samadhi y el Prajñā son fundamentales. Pero no permanezcan bajo la impresión errónea que son independientes el uno del otro, porque están inseparablemente unidos y no son dos entidades. Samadhi es la quinta esencia del Prajñā, mientras que Prajñā es la actividad del Samadhi. En el mismo momento que alcanzamos Prajñā, el Samadhi es inmediato y viceversa. Si entienden este principio, entienden el equilibrio de Samadhi y Prajñā. Un discípulo no debe pensar que hay diferencia o antagonismo entre &apos;Samadhi engendra Prajñā&apos; y &apos;Prajñā engendra Samadhi&apos;. Él sostener tal opinión implicaría que hay dos características en el Dharma.</p>
+
+                            <p>&ndash;&nbsp;Para aquel cuya lengua está lista con buenas palabras, pero su corazón es impuro, Samadhi y Prajñā son inútiles, porque no hay balance entre los dos. En otras palabras, cuando somos buenos tanto de mente como de palabra, y cuando nuestra apariencia exterior y nuestros sentimientos internos armonizan el uno con el otro, entonces, es un caso de equilibrio entre Samadhi y Prajñā.</p>
+
+                            <p>&ndash;&nbsp;El argumento es innecesario para un discípulo iluminado. El argumentar sobre qué viene primero, si Prajñā o Samadhi, sería ponernos en la misma posición que aquellos que están bajo el efecto del engaño o la falsa ilusión. El argumento implica un deseo de ganar, fortifica el egoísmo, y nos une a la creencia en la idea de &apos;un yo&apos;, &apos;un ser&apos;, &apos;un ser viviente&apos;, y &apos;una persona&apos;.</p>
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, ¿a qué es análogo Samadhi y Prajñā? Son análogos a una lámpara y su luz. Con una lámpara, hay luz. Sin una lámpara, habrá oscuridad. La lámpara es la quinta esencia de la luz y la luz es la expresión de la lámpara. En nombre son dos cosas, pero en sustancia son una y la misma. Lo mismo sucede con Samadhi y Prajñā.</p>
+
+                            <p>En otra ocasión el Patriarca predicó a la asamblea como sigue:</p>
+
+                            <p>&ndash;&nbsp;El argumento es innecesario para un discípulo iluminado. El argumentar sobre qué viene primero, si Prajñā o Samadhi, sería ponernos en la misma posición que aquellos que están bajo el efecto del engaño o la falsa ilusión. El argumento implica un deseo de ganar, fortifica el egoísmo, y nos une a la creencia en la idea de &apos;un yo&apos;, &apos;un ser&apos;, &apos;un ser viviente&apos;, y &apos;una persona&apos;.</p>
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, ¿a qué es análogo Samadhi y Prajñā? Son análogos a una lámpara y su luz. Con una lámpara, hay luz. Sin una lámpara, habrá oscuridad. La lámpara es la quinta esencia de la luz y la luz es la expresión de la lámpara. En nombre son dos cosas, pero en sustancia son una y la misma. Lo mismo sucede con Samadhi y Prajñā.</p>
+
+                            <p>En otra ocasión el Patriarca predicó a la asamblea como sigue:</p>
+
+                            <p class="alert">Comment in English version only: (That is, it is not thinking that blocks the Path, but attachment to definite thoughts.)
+                            </p>
+                            <p>&ndash;&nbsp;Instruida Audiencia, el practicar el &apos;Samadhi del Modo Especifico&apos; es hacer de él una regla para hacerlo correctamente en todas las ocasiones - no importa si estamos caminando, de pie, sentados, o reclinados. El Sutra Vimalakirti Nirdesa dice, &quot;La rectitud es el lugar santo, la Tierra Pura&quot;. No dejen que sus mentes se tuerzan practicando la rectitud de labios para afuera solamente. Deberemos practicar la rectitud sin apegarnos a nada. Las personas engañadas por la ilusión creen obstinadamente en el Dharmalaksana (cosas y formas) y por lo tanto son tercas en su propia forma de interpretar el &apos;Samadhi del Modo Especifico&apos;, definiéndolo como &apos;sentarse quieta y continuamente, sin dejar que surja idea alguna en su mente&apos;. Tal interpretación nos colocaría con los objetos inanimados, y es un obstáculo en el Camino Correcto, el cual se debe mantener abierto. Cuando nos liberamos en nuestra mente de apegos a todas las &apos;cosas&apos;, el Camino llega a ser claro; de otra manera, nosotros mismos nos imponemos restricciones.
+                                <a name="footnote7"></a><sup><a>[7a]</a></sup> Si esa interpretación &apos;sentarse quieta y continuamente, sin dejar que surja idea alguna en su mente&apos;, es correcta, ¿por qué en una ocasión Sariputta fue amonestado por Virmalakirti por sentarse quietamente en el bosque?
+                                <a name="footnote7b"></a><sup><a>[7b]</a></sup>
+                            </p>
+
+
+                            <p class="pagenum alert">Two footnotes appears bottom p 34 of pdf [Neither found in English version]</p>
+                            <p class="fnote"><a><sup><a href="#nota-7a">[7a]</a>&nbsp;</sup>
+                                </a>&nbsp; Un Bhikkhu una vez le preguntó al Maestro Dhyana Shek Tau, uno de los sucesores de uno de los discípulos del Sexto Patriarca – ¿Qué es la emancipación? – En respuesta el Maestro le preguntó – ¿Quién te puso bajo restricción? – El significado de esta respuesta es prácticamente el mismo que él de nuestro texto aquí. De nuevo, cuando el Sexto Patriarca dijo que el Quinto Patriarca no discutiría el Dhyana y la Emancipación sino solamente la realización de la &quot;Esencia de la Mente&quot; (Capítulo I) él expresó la misma idea. DIH PING TSZE
+                            </p>
+
+                            <p class="fnote"><a><sup><a href="#7b">[7b]</a>&nbsp;</sup>
+                                </a>&nbsp;Virmalakirti le dijo a Sariputta - Sentarse quietamente, debe significar que uno no pone una apariencia en los tres mundos (ejemplo, la conciencia de uno debe estar por encima del Mundo del Deseo, del Mundo de la Materia y del Mundo de la No-Materia). Debe significar que mientras uno permanece en Nirodha Samapatti (el éxtasis con sensación de conciencia), uno es capaz de hacer los variados movimientos corporales tales como caminar, estar de pie, sentarse o reclinarse, etc. Debe significar que sin desviarse de la Norma, uno es capaz de desempeñar los variados deberes temporales. Debe significar que uno practica los treinta y siete Bodhipaksa (Alas de la iluminación) sin ser movidos por puntos de vista herejes. Debe significar que sin exterminar las Klesas (las corrupciones) uno puede entrar en el Nirvana. Aquel que es capaz de sentarse así será aprobado por el Buda.</p>
+
+                            <p class="pagenum">p 34 of pdf</p>
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, algunos maestros de meditación instruyen a sus discípulos que observen su propia mente para tranquilizarla, y así lograr que cese su actividad. De ahí en adelante los discípulos abandonan todo esfuerzo de la mente. Las personas ignorantes se vuelven locas por tener mucha confianza en tales instrucciones. Tales casos no son raros, y es un gran error enseñar a otros a hacer esto.</p>
+
+
+                            <p>(En otra ocasión) el Patriarca se dirigió a la asamblea como sigue:</p>
+
+                            <p class="not-in-english">En el Budismo ortodoxo la distinción entre la Escuela de la &apos;Inmediatez&apos; y la &apos;Gradual&apos; no existe realmente; la única diferencia reconocida es aquella que, por naturaleza, reconoce que algunos hombres son más ingeniosos, mientras que otros son lentos en entender. Aquellos que están iluminados comprenden la verdad inmediatamente, mientras aquellos que viven bajo la ilusión tienen que entrenarse gradualmente a sí mismos. Pero tal diferencia desaparece cuando conocemos nuestra propia mente y comprendemos o realizamos nuestra propia naturaleza. Por lo tanto esos términos, &apos;Gradual&apos; e &apos;Inmediato&apos;, son más bien aparentes que reales.</p>
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, ha sido la tradición de nuestra escuela escoger como nuestro objeto la &apos;No-Idea&apos;, como nuestro fundamento la &apos;No-Objetividad&apos; y como nuestro principio fundamental el &apos;No-Apego&apos;. La &apos;No-Idea&apos; significa no dejarse llevar por ninguna idea en particular en el ejercicio de la facultad mental. La &apos;No-Objetividad&apos; significa no estar absorbidos por objetos al momento de estar en contacto con objetos. El &apos;No-Apego&apos;es la característica de nuestra &lt;Esencia de Mente&gt;.</p>
+
+                            <p>&ndash;&nbsp;Todas las cosas - buenas o malas, bellas o feas - deben ser tratadas como vacías. Incluso en tiempo de disputas y peleas debemos tratar nuestros íntimos y nuestros enemigos por igual y nunca pensar en retaliación. En el ejercicio de nuestra facultad pensante, dejemos que el pasado muera. Si permitimos que nuestros pensamientos pasados, presentes y futuros, se unan en series, nosotros mismos nos imponemos restricciones. Por otra parte, si nunca permitimos que nuestra mente se apegue a cosa alguna, ganaremos la emancipación. Por esa razón, tomamos el No-Apego como nuestro principio fundamental.</p>
+
+                            <p class="pagenum">p 35 of pdf</p>
+
+                            <p>&ndash;&nbsp;El liberarnos de estar absorbidos en objetos externos es llamado la &apos;No-Objetividad&apos;. Cuando estemos en la posición de hacerlo, la naturaleza del Dharma será pura. Por esa razón, tomamos la &apos;No-Objetividad&apos; como nuestro fundamento.</p>
+
+                            <p>&ndash;&nbsp;El mantener nuestra mente libre de corrupciones ante todas las circunstancias es llamado la &apos;No-Idea&apos;. Nuestra mente debe sostenerse apartada de las circunstancias, y por ningún motivo, debemos dejar que influyan la función de nuestra mente. Pero es un gran error el suprimir nuestra mente de todo pensamiento; porque incluso si triunfamos en desprendernos de todo pensamiento, y muriéramos inmediatamente después, todavía reencarnaremos en otra parte. Resalten esto, transeúntes del Camino. Es suficientemente malo para un hombre el cometer un desatino por no saber el significado de la Ley, ¿pero cuánto peor sería alentar a los otros el seguir su ejemplo? Estando engañado, él no ve, y además blasfema contra el Canon Budista. Por lo tanto, nosotros tomamos la &apos;No-Idea&apos; como nuestro objeto.</p>
+
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, déjenme explicarles cuidadosamente por qué nosotros tomamos la &apos;No-Idea como nuestro objeto. Es porque hay un tipo de hombre que aún bajo el engaño alardea sobre lograr la &lt;Esencia de la Mente&gt;; pero llevado por las circunstancias, surgen ideas en su mente, que seguidas por puntos de vista erróneos, son el origen de toda clase de nociones falsas y corrupciones. En la &lt;Esencia de la Mente&gt; (que es el cuerpo del vacío) intrínsecamente no hay nada para ser logrado. Decir que hay logro y hablar descuidadamente sobre los méritos o deméritos, son puntos de vista erróneos y corrupciones. Por esa razón nosotros tomamos la &apos;No-Idea&apos; como el objeto de nuestra Escuela.</p>
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, (en la &apos;No-Idea&apos;) ¿de que debemos desprendernos y en que debemos fijar nuestra mente? Debemos desprendernos de los &apos;pares de opuestos&apos; y de todos los conceptos corruptos. Debemos fijar nuestras mentes en la verdadera naturaleza del Tathata (la Semejanza), porque el Tathata es la quinta esencia de la idea, y la idea es el resultado de la actividad del Tathata.</p>
+
+                            <p>&ndash;&nbsp;Es la esencia positiva del Tathata - no los órganos sensoriales - la que hace surgir la &apos;idea&apos;. Tathata se sustenta en su propio atributo y por lo tanto puede hacer surgir la &apos;idea&apos;. Sin Tathata los órganos de los sentidos y los objetos de los sentidos perecerán inmediatamente. Instruida Audiencia, siendo atributo del Tathata él hacer surgir la &apos;idea&apos;, nuestros órganos sensoriales, a pesar de que su función es la de ver, oír, tocar, saber, etc. no necesitan estar manchados o corruptos en todas las circunstancias y nuestra verdadera naturaleza puede ser &apos;Auto-manifestada&apos; en todo momento. Por lo tanto, el Sutra dice, &quot;Aquel que es un adepto en la discriminación de los variados Dharmalakshanas (las cosas y el fenómeno) será instalado inamoviblemente en el &apos;Primer Principio&apos; (por ejemplo, la morada de bienaventuranza de la Santidad, o el Nirvana)&quot;.</p>
+
+                            <p class="pagenum">End p 35 of pdf, End chapter 4 in Spanish PDF</p>
+
+                            <p class="center">
+                                * * *
+                            </p>
+                            <p class="pagenum">
+                                Start Chapter 5 in Spanish PDF, Dhyana, p 36, which is only 1.25 pages.
+                            </p>
+
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="dhyana">&nbsp;</a>
+                            <h4>
+                                DHYANA
+                            </h4>
+
+                            <p>Un día, El Patriarca predicó a la asamblea como sigue:</p>
+
+                            <p>En nuestro sistema de meditación, no pensamos obsesivamente en la mente (en contra-distinción a la &lt;Esencia de la Mente&gt;), ni en la pureza. Tampoco aprobamos la no-actividad. En cuanto a pensar obsesivamente en la mente, la mente es engañosa por naturaleza; y cuando comprendemos que solamente es un fantasma, no hay necesidad de pensar en ella. En cuanto a pensar obsesivamente en la pureza, nuestra naturaleza es intrínsecamente pura; y en cuanto a desprendernos de la 'idea' errónea, no habrá nada sino pureza en nuestra naturaleza, porque es la idea errónea la que oscurece al Tathata (la Semejanza). Si dirigimos nuestra mente a pensar en la pureza, solamente estaremos creando otro engaño o ilusión, la ilusión de la pureza. Dado que la ilusión no tiene donde permanecer, es ilusorio pensar en ella. La pureza no tiene figura ni forma; pero algunas personas van tan lejos como para inventar la 'Forma de la Pureza', y tratarla como un problema a solucionar. Manteniendo tal opinión, estas personas se dejan llevar por la obsesión de la pureza y así su &lt;Esencia de la Mente&gt; se oscurece.</p>
+
+
+                            <p>
+                                &ndash;&nbsp;Instruida Audiencia, aquellos que se entrenan a sí mismos para la 'Imperturbabilidad', deben, en su contacto con todo tipo de hombres, ignorar las faltas de otros. Deben ser indiferentes a los méritos o deméritos de otros, al bien y al mal, porque tal actitud es acorde con la 'Imperturbabilidad de la &lt;Esencia de la Mente&gt;'.
+                            </p>
+                            <p>
+                                &ndash;&nbsp;Instruida Audiencia, un hombre no-iluminado puede que sea imperturbable físicamente, pero tan pronto como abre su boca, critica a otros por sus méritos o deméritos, su habilidad o flaqueza, el bien y el mal; y así se desvía del camino correcto. Por otra parte, el pensar obsesivamente en nuestra propia mente o en la pureza, es también una piedra u obstáculo en el Camino.</p>
+                            <p class="center">
+                                * * *
+                            </p>
+
+
+                            <p>En otra ocasión, el Patriarca predicó a la asamblea como sigue:</p>
+
+                            <p class="not-in-english">&ndash;&nbsp;Instruida Audiencia, ¿qué es sentarse para meditar? En nuestra escuela, sentarse significa ganar la libertar absoluta y ser mentalmente imperturbable a todas las circunstancias externas, ya sean buenas o de otra forma. Meditar significa lograr interiormente la imperturbabilidad de la &lt;Esencia de la Mente&gt;.</p>
+
+
+                            <p>&ndash;&nbsp;Instruida Audiencia, ¿qué es Dhyana y Samadhi? Dhyana significa estar libre de apegos a los objetos externos, y Samadhi significa lograr la paz interna. Si nosotros estamos apegados a los objetos externos, nuestra mente interna está perturbada. Cuando estamos libres de apegos a todos los objetos externos, la mente está en paz. Nuestra &lt;Esencia de la Mente&gt; es intrínsecamente pura, y la razón por la que estamos perturbados, es porque nos dejamos llevar por las circunstancias en que nos encontramos. Aquel que es capaz de mantener su mente imperturbable, independientemente de las circunstancias, ha logrado Samadhi.</p>
+
+                            <p class="pagenum">p 36 of pdf, middle of next pragraph</p>
+
+                            <p>El estar libre de apegos a todos los objetos externos es Dhyana, y el lograr la paz interna es Samadhi. Cuando estamos en posición de manejarnos con Dhyana y mantener nuestra mente interna en Samadhi, entonces se dice que hemos logrado Dhyana y Samadhi. El Sutra del Bodhisattva Sila dice, &quot;Nuestra &lt;Esencia de la Mente&gt; es intrínsecamente pura.&quot; Instruida Audiencia, permitámonos comprender esto por nosotros mismos en todo momento. Entrenémonos por nosotros mismos, practiquemos por nosotros mismos, y logremos la Budeidad por nuestro propio esfuerzo.</p>
+
+                            <p class="pagenum">End p 37 of pdf, end Chapter</p>
+
+                            <hr />
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="notes">&zwj;</a>
+                            <h4>
+                                Footnotes
+                            </h4>
+                            <p>
+                                <!-- first note is linked to #notes, not footnote number -->
+                                <a class="endnote" id="note-1"></a><a href="#return-anchor-1">[1]</a> NOTE BY EDITOR. The three words, <em>Prajñā</em>, <em>Dhyana</em> and <em>Samadhi</em>, have a very close relation to each other. <em>Prajñā</em>, as we have noticed, is the Principle of mingled Oneness and diversity; <em>Prajñā</em> cannot be perfectly understood, but it can be realised intuitively because <em>Prajñā</em> is Essence of Mind. <em>Dhyana</em> is the active effort to gain self-realisation of <em>Prajñā</em>, while <em>Samadhi</em> is the passive, receptive, realisation itself, of <em>Prajñā</em>, that is, of one's own Mind-essence. <em>Dhyana</em> and <em>Samadhi</em> are both used for the Eighth Stage of the Noble Path, as such they are usually translated &quot;Concentration,&quot; but <em>Dhyana</em> refers to its active aspect and <em>Samadhi</em> to its passive and realising aspect. <em>Samadhi</em> used alone is translated, &quot;exalted ecstasy,&quot; or is thought of as &quot;the blissful state of self-realisation that accompanies Right Contemplation of Mind-essence.&quot;
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="02-sobre-prajna.htm">&lt; 2. Sobre Prajñā </a></li>
+                                    <li class="align-right"><a href="04-arrepentimiento.htm">4. Sobre el Arrepentimiento &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- OLD page nav position -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go to top">arriba</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

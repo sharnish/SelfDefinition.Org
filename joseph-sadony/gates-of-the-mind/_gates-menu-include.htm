@@ -1,0 +1,102 @@
+<!-- start of menu include file   Update November 8, 2020. June 9, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/joseph-sadony/">Joseph Sadony index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/joseph-sadony/">Joseph Sadony index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Gates of the Mind</li>
+			<li class="normal">
+				<img class="menu-image" src="images/joseph-sadony-gates-of-the-mind-cover.jpg" alt="Gates of the Mind by Joseph Sadony cover" />
+			</li>
+			<li>Joseph Sadony</li>
+			<li class="normal note tight">(1877-1960)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="foreword-gates-of-the-mind.htm">Foreword</a></li>
+				<li><a href="introduction-gates.htm">Introduction</a></li>
+				<li><a href="cover-notes-gates.htm">Cover Notes</a></li>
+				<li><a href="chapter-01-gates.htm">Chapter 1</a></li>
+				<li><a href="chapter-02-gates.htm">Chapter 2</a></li>
+				<li><a href="chapter-03-gates.htm">Chapter 3</a></li>
+				<li><a href="chapter-04-gates.htm">Chapter 4</a></li>
+				<li><a href="chapter-05-gates.htm">Chapter 5</a></li>
+				<li><a href="chapter-06-gates.htm">Chapter 6</a></li>
+				<li><a href="chapter-07-gates.htm">Chapter 7</a></li>
+				<li><a href="chapter-08-gates.htm">Chapter 8</a></li>
+				<li><a href="chapter-09-gates.htm">Chapter 9</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Link to PDF file (6 megs) on this site is <a class="inline" href="Joseph-Sadony-Gates-of-the-Mind.pdf">HERE</a></li>
+				<li>Source: <a class="inline" href="https://archive.org/details/gatesofmind00sado">Archive.Org</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">More Sadony this site</li>
+				<li id="obit-link" class="first-item"><a href="/joseph-sadony/gates-of-the-mind/joseph-sadony-obituary-1960.htm">Obituary (1960)</a></li>
+				<li id="gates-link"><a href="/joseph-sadony/gates-of-the-mind/contents.htm">Gates of the Mind (autobiography)</a></li>
+				<li id="chalice-link"><a href="/joseph-sadony/golden-chalice/contents.htm">The Golden Chalice</a></li>
+				<li><a href="/joseph-sadony/pine-needles/contents.htm"><span class="block">Pine Needles</span> (collection of pieces)</a></li>
+				<li><a href="/joseph-sadony/human-radio/contents.htm">The Human Radio</a></li>
+				<li><a href="/joseph-sadony/enlightening-flashes/contents.htm">enLIGHT'NING FLASHes</a></li>
+			</ul>
+		</div>
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="header-item">External Links</li>
+				<!-- website has disappeared
+				<li><a href="http://www.gatesofthemind.com/">GatesOfTheMind.Com</a></li>
+				-->
+				<li class="first-item"><a href="http://www.valleyofthepines.com/">The Valley of the Pines</a></li>
+				<li class="subhead">Joseph Sadony at</li>
+				<li class="first-item"><a href="https://www.spiritualteachers.org/joseph-sadony/">SpiritualTeachers.Org (has links to several articles, videos)</a></li>
+				<li><a href="http://www.mysticmissal.org/sadony.htm">MysticMissal.Org</a></li>
+				<!--
+                <li>Biography and review at <a class="inline" href="https://www.goodreads.com/author/show/2985742.Joseph_Sadony">Goodreads.Com</a> </li>
+				-->
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

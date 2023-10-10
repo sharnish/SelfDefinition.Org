@@ -1,0 +1,323 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Science redirect page</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta property="og:title" content="Science redirect page">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/redirect/images/ramana.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="/redirect/_redirect-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* colors from Tantra articles-2.css */
+		html,
+		body,
+		#fixed-header-small-screen,
+		#menu-site-small-screen,
+		.progress-header,
+		.progress-container {
+			background: #f9ffee;
+		}
+
+		#nav .menu-section a.active,
+		#menu-scroll,
+		#menu-scroll a,
+		#toTopButton {
+			background: #dff0d9;
+		}
+
+		/* MUST have this, don't know why, tried many things */
+		img.menu-image {
+			display: block;
+		}
+
+		/* https://www.w3schools.com/cssref/pr_background-position.asp */
+		/* https://www.w3schools.com/cssref/css3_pr_background-size.asp 
+		img.title-image,
+		img.menu-image {
+			background-image: url("/redirect/images/science.jpg");
+			background-color: transparent;
+			width: 190px;
+			height: 260px;
+			background-repeat: no-repeat;
+			position: left top;
+		}
+*/
+
+	</style>
+	<script>
+		/* replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/redirect/images/science.jpg");
+
+			$('#menu-image').attr("src", "/redirect/images/science.jpg");
+
+			$('#title-image').attr("alt", "Science");
+
+			$('#menu-image').attr("alt", "Science");
+
+
+			//            using css to replace images
+			//            $('#title-image').attr("src", "/redirect/images/science.jpg");
+
+			//            $('#menu-image').attr("src", "/redirect/images/science.jpg");
+
+			$('.replaceable-link span').text('Science Index');
+
+			$('.replaceable-link').attr("href", "/science/");
+
+			$('.replaceable-link').attr("style", "display:block");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_redirect-menu-include.htm"); ?>
+					<div id="menu-image-div">
+
+					</div>
+					<!--
+                    <img src="images/science.jpg" alt="science" />
+                    -->
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_redirect-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Science
+									</h3>
+									<p class="note toowide">
+										The document you requested is not on this server. These suggestions may be of interest.
+									</p>
+									<p class="note tight">
+										Return to Science Index: <a href="/science/">/science/</a></p>
+									<p class="note80 tight" style="margin-top:10px;">
+										Return to Redirect index page: <a href="/redirect/redirect-index.htm">redirect-index.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- next-previous-item-nav not used -->
+							<div class="amazon-section">
+								<p style="margin-top:20px;">If you were looking for ...</p>
+								<p>Feynman Lectures on Physics, or Jared Diamond: Guns Germs and Steel, please see below</p>
+
+
+								<p class="tiny tight" style="margin-top:30px;">
+									At Amazon.Com USA. International links coming soon.</p>
+
+								<p class="tiny tight">
+									No images? Your browser settings may be blocking them.</p>
+
+
+								<div class="item-list">
+									<div class="item-container">
+										<!-- Feynman Lectures on Physics, specific search -->
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/0465023827/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0465023827&linkCode=as2&tag=selfdefinitio-20&linkId=26f7e10178b09e84adfb111aa57751ed"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0465023827&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=0465023827" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/0465023827/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0465023827&linkCode=am2&tag=selfdefinitio-20&linkId=d853efb2ca62fb2f8a779e2b1c48ab4d">The Feynman Lectures on Physics, </a>
+
+											<p class="note">
+												By Richard P. Feynman. Boxed set: The New Millennium Edition
+											</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+
+									<div class="item-container">
+										<!-- general search Feynman no image -->
+										<div class="text-link-only">
+											General search on Feynman at Amazon: <a target="_blank" class="block" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=selfdefinitio-20&keywords=Richard Feynman&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=43932712c2a5d5577ce84182152e046b">Richard Feynman</a>
+										</div>
+									</div>
+
+									<hr />
+
+
+									<!-- Prototype, identify here -->
+									<div class="item-container">
+										<div class="image-link">
+											<a target="_blank" href="https://www.amazon.com/gp/product/0393354326/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354326&linkCode=as2&tag=selfdefinitio-20&linkId=1cd5eb26a521840babad7822b650cb3c"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0393354326&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
+										</div>
+										<div class="text-link">
+											<a target="_blank" href="https://www.amazon.com/gp/offer-listing/0393354326/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393354326&linkCode=am2&tag=selfdefinitio-20&linkId=797dd6deba7119c1837d5f411565a7b3">Guns, Germs, and Steel: The Fates of Human Societies</a>
+											<p class="note">By Jared Diamond</p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+
+									<div class="item-container">
+										<!-- general search Feynman no image -->
+										<div class="text-link-only">
+											General search on Jared Diamond at Amazon: <a target="_blank" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=selfdefinitio-20&keywords=Jared Diamond&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=0f073ab3a7cb03fc1bc06becbeae6427">Jared Diamond</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=ur2&o=1&camp=1789" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+										</div>
+									</div>
+
+									<hr />
+
+
+									<!-- Prototype, identify here -->
+									<div class="item-container">
+
+										<div class="image-link">
+										</div>
+										<div class="text-link">
+
+
+											<p class="note"></p>
+										</div>
+										<div style="clear: both;">
+										</div>
+									</div>
+
+									<!-- Prototype, identify here
+                                <div class="item-container">
+                                    <div class="image-link">
+                                    </div>
+                                    <div class="text-link">
+
+
+                                        <p class="note"></p>
+                                    </div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div> -->
+
+
+									<!-- Prototype, identify here
+                                <div class="item-container">
+
+                                    <div class="image-link">
+                                    </div>
+                                    <div class="text-link">
+
+
+                                        <p class="note"></p>
+                                    </div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div> -->
+
+
+									<!-- Prototype,     no, is in hindi, and only 1 copy
+                                <p>Alternatively:</p>
+                                <div class="item-container">
+
+                                    <div class="image-link">
+                                        <a target="_blank"  href="https://www.amazon.com/gp/product/8177420933/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8177420933&linkCode=as2&tag=selfdefinitio-20&linkId=3b228e7642845596156712ea688e380a"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=8177420933&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20" ></a>
+                                    </div>
+                                    <div class="text-link">
+                                        <a target="_blank" href="https://www.amazon.com/gp/offer-listing/8177420933/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=8177420933&linkCode=am2&tag=selfdefinitio-20&linkId=29f5fcdbac09a24c0afcd9176c7f938d">Mahavairocana Sutra</a>
+
+                                        <p class="note">By Aditya Prakashan, in Hindi, used</p>
+                                    </div>
+                                    <div style="clear: both;">
+                                    </div>
+                                </div>
+                                -->
+
+
+
+
+									<header class="tiny">
+										<!-- not a header, but uing for formatting-->
+										<p class="toowide">
+											Amazon affiliate commissions help defray our costs.</p>
+									</header>
+								</div>
+								<div style="clear: both;">
+								</div>
+								<p>
+									&nbsp;</p>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+								<a class="page-link-anchor" id="end">&zwj;</a>
+								<!-- page nav here if used -->
+							</div>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+					<!-- string to place AFTER end div#article for REFORMAT
+
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+
+					-->
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

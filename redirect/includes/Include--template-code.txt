@@ -1,0 +1,28 @@
+Include code template
+
+From DuMont PMT
+
+
+
+
+        <!-- SUBSEQUENT HEADERS -->
+        <p class="totop-above-anchor">
+            <a href="javascript:toTopCleanUrl();">top of page</a> 
+            
+            <a style="display: inline-block; float: right; margin-right: 30px;" href="javascript:window.history.back()">Go back</a>
+            
+        </p>
+        <!-- anchor element must not be empty -->
+        <a class="page-link-anchor" id="get-books">&nbsp;</a>
+        <div id="book-links">
+            <?php 
+            include($_SERVER['DOCUMENT_ROOT'].'/redirect/includes/include-theron-q-dumont.htm'); 
+            ?>
+        </div>
+
+
+
+
+
+
+end.

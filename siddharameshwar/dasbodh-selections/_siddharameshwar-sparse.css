@@ -1,0 +1,49 @@
+/* file:  /siddharameshwar/dasbodh-selctions/_siddharameshwar-sparse.css
+
+Update May 21, 2020. June 1, 2022
+
+ */
+
+@media only print {
+	#article:after {
+		content: "update June 1, 022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffff3;
+}
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #ffcfef;
+}
+
+/* class "opening-quote" was replaced by "opening-quote maroon blockquote"
+
+There is no special styling for opening quote now.
+
+*/
+
+/* ovverride change in 2022.CSS made June 9 , 2022 */
+
+nav.contents .item {text-align:center;}
+
+
+
+
+
+
+
+
+/* end */

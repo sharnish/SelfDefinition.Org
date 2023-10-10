@@ -1,0 +1,500 @@
+﻿<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Who Am I? - by Ramana Maharshi</title>
+	<meta name="description" content='The original question and answer format for the book "Who am I?"'>
+	<meta property="og:title" content="Who Am I? - by Ramana Maharshi">
+	<meta property="og:description" content='The original question and answer format for the book "Who am I?"'>
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-green.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* this is copied from ramana 40 verses on reality
+           using class "who-am-i" in places of class "verses" */
+		#intro {
+			margin-top: 30px;
+		}
+
+		/* remove borders used for TESTING */
+		ol.who-am-i li {
+			border: 0px solid blue;
+		}
+
+
+		/* defaults for chrome browser
+        
+            ol {
+                display: block;
+                list-style-type: decimal;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+            }
+        */
+
+		/* in CSS style sheeet, about line 57, I remove numbering for numbered lists
+        for widths 500 and less, to makes the content fuller width
+        (pobably only on the Muruganar pages so far)
+        This is only appropriate for short lists.
+        
+        /* SS = get rid of Disk/Numbering for small screens
+        @media only screen and (max-width:500px){
+            ul {padding-left:33px;}
+            ol {padding-left:33px;}
+            ul li {margin-left:-35px;list-style:none;}
+            ol li {margin-left:-25px;list-style:none;}
+        }
+        
+        The following restores numbering on small 
+        screens for this page */
+		@media only screen and (max-width:500px) {
+
+			ol.who-am-i li {
+				list-style: inside decimal;
+				margin-left: -30px;
+			}
+
+			ol.who-am-i li:before {
+				display: inline-block;
+				content: "";
+				height: 5px;
+			}
+
+			/* In combination with inline-block (instead of block) above,
+            put the question, i.e., the first <p> on the same line as the bullet number */
+			ol.who-am-i li p:nth-child(n+2) {}
+		}
+
+		/* spacing below item */
+		ol.who-am-i li {
+			margin-bottom: 30px;
+		}
+
+		/* all screens 
+        to color the bullet number and the question only */
+		ol.who-am-i {
+			color: inherit;
+		}
+
+		html.dark ol.who-am-i {
+			color: inherit;
+		}
+
+
+		ol.who-am-i li p:nth-child(n+2) {
+			color: inherit;
+		}
+
+		ol.who-am-i li p:first-child {
+			display: inline;
+		}
+
+
+		/* LARGE SCREENS
+        select all but the first paragraph, which is the question
+        and move to the left on large screens. "n+2" is selector 
+        Use minimuum 501 because 500 is the breakpoint as above */
+		@media only screen and (min-width:501px) {
+			ol.who-am-i li p:nth-child(n+2) {
+				margin-left: -20px;
+			}
+		}
+
+		/* redefined this page, default is 75%  */
+		.tiny {
+			font-size: 70%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2 class="toowide">
+										Who Am I? <span class="block normal" style="margin-top:5px;">Nan Yar?</span>
+									</h2>
+									<h3>
+										Sri Ramana Maharshi
+									</h3>
+									<p class="tiny">Español: <a href="ramana-quien-soy-yo.htm">ramana-quien-soy-yo.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="sadhu-om-technique.htm">&lt; Sadhu Om: Technique</a></li>
+									<li class="align-right"><a href="ramana-40-verses-on-reality.htm">40 Verses on Reality &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div id="ramana-float-container">
+								<div class="right-image-div">
+									<img style="margin-top:10px; max-width:200px;" src="images/ramana-green.jpg" alt="Ramana Maharshi" />
+								</div>
+								<p id="intro">
+									As all living beings desire to be happy always, without misery, as in the case of everyone there is observed supreme love for one's self, and as happiness alone is the cause for love, in order to gain that happiness which is one's nature and which is experienced in the state of deep sleep where there is no mind, one should know one's self. For that, the path of knowledge, the inquiry of the form "Who am I?" is the principal means.
+								</p>
+								<div style="clear:both;"></div>
+							</div>
+							<ol class="who-am-i">
+								<li>
+									<p>
+										Who am I?</p>
+									<p>
+										The gross body which is composed of the seven humours (dhatus), I am not; the five cognitive sense organs, viz. the senses of hearing, touch, sight, taste, and smell, which apprehend their respective objects, viz. sound, touch, colour, taste, and odour, I am not; the five cognitive sense-organs, viz. the organs of speech, locomotion, grasping, excretion, and procreation, which have as their respective functions speaking, moving, grasping, excreting, and enjoying, I am not; the five vital airs, prana, etc., which perform respectively the five functions of in-breathing, etc., I am not; even the mind which thinks, I am not; the nescience too, which is endowed only with the residual impressions of objects, and in which there are no objects and no functioning's, I am not.</p>
+								</li>
+								<li>
+									<p>
+										If I am none of these, then who am I?
+									</p>
+									<p>
+										After negating all of the above-mentioned as 'not this', 'not this', that Awareness which alone remains - that I am.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the nature of Awareness?
+									</p>
+									<p>
+										The nature of Awareness is existence-consciousness-bliss
+									</p>
+								</li>
+								<li>
+									<p>
+										When will the realization of the Self be gained?</p>
+									<p>
+										When the world which is what-is-seen has been removed, there will be realization of the Self which is the seer.
+									</p>
+								</li>
+								<li>
+									<p>
+										Will there not be realization of the Self even while the world is there?
+									</p>
+									<p>
+										There will not be.
+									</p>
+								</li>
+								<li>
+									<p>
+										Why?
+									</p>
+									<p>
+										The seer and the object seen are like the rope and the snake. Just as the knowledge of the rope which is the substrate will not arise unless the false knowledge of the illusory serpent goes, so the realization of the Self which is the substrate will not be gained unless the belief that the world is real is removed.
+									</p>
+								</li>
+								<li>
+									<p>
+										When will the world which is the object seen be removed?</p>
+									<p>
+										When the mind, which is the cause of all cognition's and of all actions, becomes quiescent, the world will disappear.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the nature of the mind?
+									</p>
+									<p>
+										What is called 'mind' is a wondrous power residing in the Self. It causes all thoughts to arise. Apart from thoughts, there is no such thing as mind. Therefore, thought is the nature of mind.
+									</p>
+									<p>
+										Apart from thoughts, there is no independent entity called the world. In deep sleep there are no thoughts, and there is no world. In the states of waking and dream, there are thoughts, and there is a world also. Just as the spider emits the thread (of the web) out of itself and again withdraws it into itself, likewise the mind projects the world out of itself and again resolves it into itself. When the mind comes out of the Self, the world appears. Therefore, when the world appears, the Self does not appear; and when the Self appears (shines) the world does not appear.</p>
+									<p>
+										When one persistently inquires into the nature of the mind, the mind will end leaving the Self. What is referred to as the Self is the Atman. The mind always exists only in dependence on something gross; it cannot stay alone. It is the mind that is called the subtle body or the soul (jiva).
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the path of inquiry for understanding the nature of the mind?</p>
+									<p>
+										That which rises as 'I' in this body is the mind. If one inquires as to where in the body the thought 'I' rises first, one would discover that it rises in the heart. That is the place of the mind's origin. Even if one thinks constantly 'I' 'I', one will be led to that place.</p>
+									<p>
+										Of all the thoughts that arise in the mind, the 'I' thought is the first. It is only after the rise of this that the other thoughts arise. It is after the appearance of the first personal pronoun that the second and third personal pronouns appear; without the first personal pronoun there will not be the second and third.
+									</p>
+								</li>
+								<li>
+									<p>
+										How will the mind become quiescent?</p>
+									<p>
+										By the inquiry 'Who am I?'. The thought 'who am I?' will destroy all other thoughts, and like the stick used for stirring the burning pyre, it will itself in the end get destroyed. Then, there will arise Self-realization.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the means for constantly holding on to the thought 'Who am I?'</p>
+									<p>
+										When other thoughts arise, one should not pursue them, but should inquire: 'To whom do they arise?' It does not matter how many thoughts arise. As each thought arises, one should inquire with diligence, "To whom has this thought arisen?".</p>
+									<p>
+										The answer that would emerge would be "To me". Thereupon if one inquires "Who am I?", the mind will go back to its source; and the thought that arose will become quiescent. With repeated practice in this manner, the mind will develop the skill to stay in its source.
+									</p>
+									<p>
+										When the mind that is subtle goes out through the brain and the sense-organs, the gross names and forms appear; when it stays in the heart, the names and forms disappear.
+									</p>
+									<p>
+										Not letting the mind go out, but retaining it in the Heart is what is called "inwardness" (antar-mukha). Letting the mind go out of the Heart is known as "externalisation" (bahir-mukha).
+									</p>
+									<p>
+										Thus, when the mind stays in the Heart, the 'I' which is the source of all thoughts will go, and the Self which ever exists will shine. Whatever one does, one should do without the egoity "I". If one acts in that way, all will appear as of the nature of Siva (God).
+									</p>
+								</li>
+								<li>
+									<p>
+										Are there no other means for making the mind quiescent?</p>
+									<p>
+										Other than inquiry, there are no adequate means. If through other means it is sought to control the mind, the mind will appear to be controlled, but will again go forth. Through the control of breath also, the mind will become quiescent; but it will be quiescent only so long as the breath remains controlled, and when the breath resumes the mind also will again start moving and will wander as impelled by residual impressions.
+									</p>
+									<p>
+										The source is the same for both mind and breath. Thought, indeed, is the nature of the mind. The thought "I" is the first thought of the mind; and that is egoity. It is from that whence egoity originates that breath also originates. Therefore, when the mind becomes quiescent, the breath is controlled, and when the breath is controlled the mind becomes quiescent.
+									</p>
+									<p>
+										But in deep sleep, although the mind becomes quiescent, the breath does not stop. This is because of the will of God, so that the body may be preserved and other people may not be under the impression that it is dead.
+									</p>
+									<p>
+										In the state of waking and in samadhi, when the mind becomes quiescent the breath is controlled. Breath is the gross form of mind. Till the time of death, the mind keeps breath in the body; and when the body dies the mind takes the breath along with it. Therefore, the exercise of breath-control is only an aid for rendering the mind quiescent (manonigraha); it will not destroy the mind (manonasa). Like the practice of breath-control, meditation on the forms of God, repetition of mantras, restriction on food, etc., are but aids for rendering the mind quiescent.
+									</p>
+									<p>
+										Through meditation on the forms of God and through repetition of mantras, the mind becomes one-pointed. The mind will always be wandering. Just as when a chain is given to an elephant to hold in its trunk it will go along grasping the chain and nothing else, so also when the mind is occupied with a name or form it will grasp that alone. When the mind expands in the form of countless thoughts, each thought becomes weak; but as thoughts get resolved the mind becomes one-pointed and strong; for such a mind Self-inquiry will become easy. Of all the restrictive rules, that relating to the taking of sattvic food in moderate quantities is the best; by observing this rule, the sattvic quality of mind will increase, and that will be helpful to Self-inquiry.
+									</p>
+								</li>
+								<li>
+									<p>
+										The residual impressions (thoughts) of objects appear unending like the waves of an ocean. When will all of them get destroyed?</p>
+									<p>
+										As the meditation on the Self rises higher and higher, the thoughts will get destroyed.
+									</p>
+								</li>
+								<li>
+									<p>
+										Is it possible for the residual impressions of objects that come from beginningless time, as it were, to be resolved, and for one to remain as the pure Self?</p>
+									<p>
+										Without yielding to the doubt "Is it possible, or not?", one should persistently hold on to the meditation on the Self. Even if one be a great sinner, one should not worry and weep "O! I am a sinner, how can I be saved?"; one should completely renounce the thought "I am a sinner"; and concentrate keenly on meditation on the Self; then, one would surely succeed.
+									</p>
+									<p>
+										There are not two minds - one good and the other evil; the mind is only one. It is the residual impressions that are of two kinds - auspicious and inauspicious. When the mind is under the influence of auspicious impressions it is called good; and when it is under the influence of inauspicious impressions it is regarded as evil.
+									</p>
+									<p>
+										The mind should not be allowed to wander towards worldly objects and what concerns other people. However bad other people may be, one should bear no hatred for them. Both desire and hatred should be eschewed. All that one gives to others one gives to one's self. If this truth is understood who will not give to others? When one's self arises all arises; when one's self becomes quiescent all becomes quiescent.</p>
+									<p>
+										To the extent we behave with humility, to that extent there will result good. If the mind is rendered quiescent, one may live anywhere.
+									</p>
+								</li>
+								<li>
+									<p>
+										How long should inquiry be practised?</p>
+									<p>
+										As long as there are impressions of objects in the mind, so long the inquiry "Who am I?" is required. As thoughts arise they should be destroyed then and there in the very place of their origin, through inquiry. If one resorts to contemplation of the Self unintermittently, until the Self is gained, that alone would do. As long as there are enemies within the fortress, they will continue to sally forth; if they are destroyed as they emerge, the fortress will fall into our hands.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the nature of the Self?
+									</p>
+									<p>
+										What exists in truth is the Self alone. The world, the individual soul, and God are appearances in it, like silver in mother-of-pearl, these three appear at the same time, and disappear at the same time. The Self is that where there is absolutely no "I" thought. That is called "Silence". The Self itself is the world; the Self itself is "I"; the Self itself is God; all is Siva, the Self.
+									</p>
+								</li>
+								<li>
+									<p>
+										Is not everything the work of God?
+									</p>
+									<p>
+										Without desire, resolve, or effort, the sun rises; and in its mere presence, the sun-stone emits fire, the lotus blooms, water evaporates; people perform their various functions and then rest.</p>
+									<p>
+										Just as in the presence of the magnet the needle moves, it is by virtue of the mere presence of God that the souls governed by the three (cosmic) functions or the fivefold divine activity perform their actions and then rest, in accordance with their respective karmas.
+									</p>
+									<p>
+										God has no resolve; no karma attaches itself to Him. That is like worldly actions not affecting the sun, or like the merits and demerits of the other four elements not affecting all pervading space.
+									</p>
+								</li>
+								<li>
+									<p>
+										Of the devotees, who is the greatest?</p>
+									<p>
+										He who gives himself up to the Self that is God is the most excellent devotee. Giving one's self up to God means remaining constantly in the Self without giving room for the rise of any thoughts other than that of the Self. Whatever burdens are thrown on God, He bears them.</p>
+									<p>
+										Since the supreme power of God makes all things move, why should we, without submitting ourselves to it, constantly worry ourselves with thoughts as to what should be done and how, and what should not be done and how not? We know that the train carries all loads, so after getting on it why should we carry our small luggage on our head to our discomfort, instead of putting it down in the train and feeling at ease?
+									</p>
+								</li>
+								<li>
+									<p>
+										What is non-attachment?
+									</p>
+									<p>
+										As thoughts arise, destroying them utterly without any residue in the very place of their origin is non-attachment. Just as the pearl-diver ties a stone to his waist, sinks to the bottom of the sea and there takes the pearls, so each one of us should be endowed with non-attachment, dive within oneself and obtain the Self-Pearl.
+									</p>
+								</li>
+								<li>
+									<p>
+										Is it not possible for God and the Guru to effect the release of a soul?
+									</p>
+									<p>
+										God and the Guru will only show the way to release; they will not by themselves take the soul to the state of release.
+									</p>
+									<p>
+										In truth, God and the Guru are not different. Just as the prey which has fallen into the jaws of a tiger has no escape, so those who have come within the ambit of the Guru's gracious look will be saved by the Guru and will not get lost; yet, each one should by his own effort pursue the path shown by God or Guru and gain release. One can know oneself only with one's own eye of knowledge, and not with somebody else's. Does he who is Rama require the help of a mirror to know that he is Rama?
+									</p>
+								</li>
+								<li>
+									<p>
+										Is it necessary for one who longs for release to inquire into the nature of categories (tattvas)?
+									</p>
+									<p>
+										Just as one who wants to throw away garbage has no need to analyse it and see what it is, so one who wants to know the Self has no need to count the number of categories or inquire into their characteristics; what he has to do is to reject altogether the categories that hide the Self. The world should be considered like a dream.
+									</p>
+								</li>
+								<li>
+									<p>
+										Is there no difference between waking and dream?
+									</p>
+									<p>
+										Waking is long and a dream short; other than this there is no difference. Just as waking happenings seem real while awake, so do those in a dream while dreaming. In dream the mind takes on another body. In both waking and dream states thoughts, names and forms occur simultaneously.
+									</p>
+								</li>
+								<li>
+									<p>
+										Is it any use reading books for those who long for release?
+									</p>
+									<p>
+										All the texts say that in order to gain release one should render the mind quiescent; therefore their conclusive teaching is that the mind should be rendered quiescent; once this has been understood there is no need for endless reading.
+									</p>
+									<p>
+										In order to quieten the mind one has only to inquire within oneself what one's Self is; how could this search be done in books? One should know one's Self with one's own eye of wisdom. The Self is within the five sheaths; but books are outside them. Since the Self has to be inquired into by discarding the five sheaths, it is futile to search for it in books. There will come a time when one will have to forget all that one has learned.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is happiness?
+									</p>
+									<p>
+										Happiness is the very nature of the Self; happiness and the Self are not different. There is no happiness in any object of the world. We imagine through our ignorance that we derive happiness from objects.</p>
+									<p>
+										When the mind goes out, it experiences misery. In truth, when its desires are fulfilled, it returns to its own place and enjoys the happiness that is the Self.
+									</p>
+									<p>
+										Similarly, in the states of sleep, samadhi and fainting, and when the object desired is obtained or the object disliked is removed, the mind becomes inward-turned, and enjoys pure Self-Happiness. Thus the mind moves without rest alternately going out of the Self and returning to it.</p>
+									<p>
+										Under the tree the shade is pleasant; out in the open the heat is scorching. A person who has been going about in the sun feels cool when he reaches the shade. Someone who keeps on going from the shade into the sun and then back into the shade is a fool. A wise man stays permanently in the shade.</p>
+									<p>
+										Similarly, the mind of the one who knows the truth does not leave Brahman. The mind of the ignorant, on the contrary, revolves in the world, feeling miserable, and for a little time returns to Brahman to experience happiness.
+									</p>
+									<p>
+										In fact, what is called the world is only thought. When the world disappears, i.e. when there is no thought, the mind experiences happiness; and when the world appears, the mind goes through misery.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is wisdom-insight (jnana-drsti)?
+									</p>
+									<p>
+										Remaining quiet is what is called wisdom-insight. To remain quiet is to resolve the mind in the Self. Telepathy, knowing past, present and future happenings and clairvoyance do not constitute wisdom-insight.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the relation between desirelessness and wisdom?</p>
+									<p>
+										Desirelessness is wisdom. The two are not different; they are the same. Desirelessness is refraining from turning the mind towards any object. Wisdom means the appearance of no object. In other words, not seeking what is other than the Self is detachment or desirelessness; not leaving the Self is wisdom.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is the difference between inquiry and meditation?</p>
+									<p>
+										Inquiry consists in retaining the mind in the Self. Meditation consists in thinking that one's self is Brahman, existence-consciousness-bliss.
+									</p>
+								</li>
+								<li>
+									<p>
+										What is release?</p>
+									<p>
+										Inquiring into the nature of one's self that is in bondage, and realizing one's true nature is release.
+									</p>
+								</li>
+							</ol>
+
+							<p>&nbsp;</p>
+
+							<p class="note">
+								This is the original question and answer format for the book "Who am I?". Sri Ramanasramam has kindly made this and many other books available for download at:&nbsp;
+								https://<wbr />www.arunachala-ramana.org/<wbr />downloads/<wbr />awareness-home.htm
+							</p>
+
+							<p>&nbsp;</p>
+							<p class="note center">
+
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="sadhu-om-technique.htm">&lt; Sadhu Om: Technique</a></li>
+									<li class="align-right"><a href="ramana-40-verses-on-reality.htm">40 Verses on Reality &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

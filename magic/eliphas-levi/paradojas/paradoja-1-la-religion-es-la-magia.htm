@@ -1,0 +1,515 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="prefacio-y-prologo.htm">
+	<link rel="next" href="paradoja-2-la-libertad-es-obediencia-a-la-ley.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* 
+            <span class="sans">¡</span>        
+        */
+
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/
+
+        Kept on page rather than stylesheet to reduce complexity
+        and need to reload if a change is made.
+        On this page:
+        /* paradox 1
+        #element-toggle-3-1,
+        #element-toggle-4-1,
+        #element-toggle-7-1,
+        #element-toggle-8-1,
+        #element-toggle-9-1,
+        #element-toggle-9-4,
+        #element-toggle-13-1,
+        #element-toggle-15-1
+        */
+
+		/* paradox 1  */
+
+		label[for=element-toggle-3-1],
+		label[for=element-toggle-4-1],
+		label[for=element-toggle-7-1],
+		label[for=element-toggle-8-1],
+		label[for=element-toggle-9-1],
+		label[for=element-toggle-9-4],
+		label[for=element-toggle-13-1],
+		label[for=element-toggle-15-1] {
+			cursor: pointer;
+		}
+
+		#element-toggle-3-1,
+		#element-toggle-4-1,
+		#element-toggle-7-1,
+		#element-toggle-8-1,
+		#element-toggle-9-1,
+		#element-toggle-9-4,
+		#element-toggle-13-1,
+		#element-toggle-15-1 {
+			display: none;
+		}
+
+		/* paradox 1 */
+
+		#element-toggle-3-1:not(:checked)~#toggled-element-3-1,
+		#element-toggle-4-1:not(:checked)~#toggled-element-4-1,
+		#element-toggle-7-1:not(:checked)~#toggled-element-7-1,
+		#element-toggle-8-1:not(:checked)~#toggled-element-8-1,
+		#element-toggle-9-1:not(:checked)~#toggled-element-9-1,
+		#element-toggle-9-4:not(:checked)~#toggled-element-9-4,
+		#element-toggle-13-1:not(:checked)~#toggled-element-13-1,
+		#element-toggle-15-1:not(:checked)~#toggled-element-15-1 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?>
+									<h3 class="toowide"> <span class="block">La Paradoja 1</span> La religión es la magia
+										sancionada por la autoridad</h3>
+									<p class="tiny">
+										<span class="block"><span class="block">This page in English:</span></span> <a href="../paradoxes/paradox-1-religion-is-magic-sanctioned-by-authority.htm">
+											.. paradox-1-religion-is-magic-sanctioned-by-authority.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="prefacio-y-prologo.htm">&lt; Prefacio y Prologo </a>
+									</li>
+									<li class="align-right"><a href="paradoja-2-la-libertad-es-obediencia-a-la-ley.htm">
+											Paradoja 2 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+
+								MAGIA es la divinidad del hombre conquistada por la ciencia en unión con la fe; los verdaderos magos son Hombres-Dioses, en virtud de su unión íntima con el principio divino. Están sin miedo y sin deseos; no están dominados por la falsedad; no comparten ningún error; aman sin ilusión y sufren sin impaciencia, porque dejan que todo suceda como sea posible, y descansan en la quietud del pensamiento eterno. Se apoyan en la religión, pero la religión no pesa sobre ellos; la religión es la Esfinge que obedece, pero nunca los devora. Saben qué es la religión y sienten que es necesaria y eterna.
+							</p>
+							<p>
+								Para las almas degradadas, la religión es un yugo, impuesto a través del interés propio, por la cobardía y las locuras de la esperanza. Para las almas exaltadas, la religión es una fuerza que surge de una dependencia intensificada en el amor de la humanidad.
+							</p>
+							<p>
+								La religión es la poesía colectiva de las grandes almas. Sus ficciones son más verdaderas que la verdad misma; más vastas que el infinito; más duraderas que la eternidad; en otras palabras, son esencialmente paradójicas.
+							</p>
+							<p>
+								Son el sueño de lo Infinito en lo Desconocido, de lo Posible en lo Imposible, de lo Definido en lo Indefinible, del Progreso en lo Inmutable, del Ser Absoluto en lo Inexistente.
+							</p>
+							<p>
+								Son la razón fundamental de lo Absurdo, que se afirma, para negar la duda; son la ciencia de la tontería, el abrazo de la Locura y el Conocimiento. Son los gritos del águila que se eleva sobre las nubes, el rugido del león del Apocalipsis, que se lleva alas y se aleja; el bramido del toro debajo del cuchillo de sacrificio y el interminable gemido de la humanidad ante los portales de la tumba.
+							</p>
+							<p>
+								Para el hombre, Dios es, y solo puede ser, el ideal del hombre. En sí mismo, es lo desconocido, pero en su revelación, a la vez divina y humana, es el hombre paradójico, lo sustancial sin sustancia, lo personal sin definición, lo inmutable que se transforma a sí mismo pero que no tiene forma, el omnipotente que lucha con la debilidad del hombre, la serenidad que truena, la misericordia que condena, la bondad infinita que tortura, la eternidad que perece; una contradicción infinita; el abismo del corazón humano, que sirve como un mundo para un ídolo insaciable y aterrador; la crueldad de Nerón, la política de Tiberio bebiendo la sangre de Jesucristo, <sup>[2:1]</sup> un papa emperador, o un emperador antipapa, el rey de reyes, el pontífice de los pontífices, el verdugo de los verdugos, el médico de los médicos, El libertador de los libres, el inflexible maestro de los esclavos.
+							</p>
+							<p class="fnote">
+								[2:1. El occidental ideal de bien. &mdash;O.E.]
+							</p>
+							<p>
+								Dios es en todas partes el ideal de aquellos que ignorantemente lo adoran; feroz entre los salvajes, instinto con pasiones humanas entre los griegos, un déspota oriental para los judíos, celoso y despiadado de los Ultramontanes como sacerdote célibe. Todos y cada uno crean un personaje al que dotan en un grado infinito con sus propias características y sus propios defectos. <sup>[3:1]</sup> Todo hombre adora al Dios que se ha hecho a sí mismo en su propia imagen, o ha permitido que las autoridades, que tienen más o menos interés en su ignorancia y debilidad, le impongan. Adorar con miedo y temblor es casi odiar, aunque el miedo disfraza al odio; Adorar sin miedo es amar.
+							</p>
+							<label for="element-toggle-3-1">
+								[3:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-3-1" type="checkbox" />
+							<div id="toggled-element-3-1" class="fnote hidden">
+								<p>
+									[3:1. En una Revisión de los "Capítulos sobre la Evolución", en <em>Knowledge</em>, de Wilson, del 23 de febrero de 1883, aparece el siguiente pasaje que muestra cómo la ciencia occidental se está desplazando lentamente hacia la posición ocupada durante miles de años por los ocultistas: &mdash;
+								</p>
+								<p class="blockquote">
+									&quot;Muy pronto se vio que la tendencia de la Teoría de la Evolución era hacia la mayor generalidad posible. Se reconoció que el hombre no podía ser excluido de la Ley de Evolución. Aquellos que habían creído en su origen más noble del polvo de la tierra estaban dolidos. Se opusieron a una doctrina según la cual el hombre, en lugar de haberse hecho originalmente un poco más bajo que los ángeles, se había elevado solo un poco más alto que las bestias de los campos; en lugar de estar hecho a la semejanza de Dios, debe considerarse más bien como haber imaginado a Dios según su propia semejanza. Es cierto que la nueva doctrina presentó al hombre como que se había levantado y que, por lo tanto, probablemente se elevaría aún más alto; mientras que el viejo lo presentaba como que había caído gravemente, de estar al lado de un ángel, y muy a la semejanza de Dios (sin embargo, por una ligera tentación, o ninguna, ofrecida por un reptil objetable, tan ofendido como para merecer la muerte&mdash;no, antes, parte del plan), convertirse en una criatura miserable, &apos;engañosa por encima de todas las cosas y desesperadamente malvada.&apos; De modo que, en general, la nueva enseñanza fue más alegre, aparte de las esperanzas y los temores religiosos, que no pertenecen a nuestra investigación aquí.&quot;
+								</p>
+								<p>
+									<span class="nowrap">&mdash;<em>Trad</em>.]</span>
+								</p>
+							</div>
+							<p>
+								La verdadera piedad, que es el fundamento de la religión, es la exaltación del amor, porque el amor elevado a un tono alto ya no admite las barreras de lo posible; l
+								o imposible es su sueño, y el milagro, para ello, la realidad. ¿Qué aprovecharía una religión que no nos diera el infinito? ¿Qué es el protestantismo con su sacramento desprovisto de realidad? <sup>[4:1]</sup>
+							</p>
+							<label for="element-toggle-4-1">
+								[4:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-4-1" type="checkbox" />
+							<p id="toggled-element-4-1" class="fnote hidden">
+								[4:1. I.e., en el que el pan y el vino no se consideran realmente transmutados en la carne y la sangre de Cristo, como lo sostiene la Iglesia Romana. <span class="nowrap">&mdash;<em>Trad</em>.]</span>
+							</p>
+							<p>
+								<span class="sans">¡</span>Triste como un cirio extinguido o una iglesia desmantelada! ¿Cómo puede el pan consagrado por la palabra representar a Jesucristo si no es el mismo Jesús? <span class="sans">¡</span>Qué locura si el Cristo no es divinidad! Una buena pieza de adoración, en verdad, para masticar un bocado de pan, por desgracia para el que no puede sentir la necesidad del milagro en el acto.
+							</p>
+							<p>
+								Uno puede amar a un ser humano hasta la muerte, hasta el olvido de sí mismo, hasta la locura; pero ¿puede uno inmortalizarlo y hacerlo divino, en la fe en hacerlo divino e inmortalizarse junto con él? ¿Puede uno incorporarlo en uno mismo? Cómelo y siente que vive más que nunca, que vive en nosotros y fuera de nosotros, que nos absorbe en él, como lo absorbemos en nosotros, al ponernos en comunión con su vasto ser y su amor eterno?
+							</p>
+							<p>
+								Se puede amar un ser humano hasta la muerte, hasta el olvido de sí mismo, hasta la locura, pero será posible inmortalizarlo y volverlo divino, inmortalizándonos simultáneamente con él? Será posible incorporarlo en nosotros mismos? Comerlo por entero y sentir que él está más vivo que nunca y fuera de nosotros, cuando lo absorbemos, comulgando con su ser inmenso y su amor eterno?
+							</p>
+							<p>
+								<span class="sans">¡</span>Ay! <span class="sans">¡</span>Sentimos que no es ni eterno ni vasto! ¿Por qué no es Dios? Pues porque solo Dios es Dios! <span class="sans">¡</span>Y así es como el Dios viene a nosotros, velado bajo la apariencia de pan! Lo vemos, lo tocamos, lo probamos, lo comemos y su eternidad tiembla dentro de nuestra carne mortal. La sangre que palpita en nuestro corazón es suya. Nuestro pecho inflama, es el que respira. Ah! <span class="sans">¡</span>Estos Protestantes con su bocanada de pan y un sorbo de vino, verdaderamente un buen Sacramento que tienen allí!
+
+							</p>
+							<p>
+								La fe, el poeta enamorado del ideal, sonríe ante una realidad ridícula, pero el creyente fanático se exaspera. La razón dice que debemos compadecer a los Protestantes. "<span class="sans">¡</span>No!" dice enfurecida la Fe, "<span class="sans">¡</span>debemos castigarlos! El Dios que siento que se enoja en mí, los condena al infierno; ¿por qué debería regañarlos a la pira en llamas?"
+							</p>
+							<p>
+								<span class="sans">¡</span>Aguanta, miserable asesino! ¿Crees entonces que Dios se hizo hombre, que el hombre podría hacerse tigre? Te crees haber concebido con el amor infinito, y he aquí, estás trabajando con odio. <span class="sans">¡</span>Has pensado en devorar el cielo y he aquí que vomitas el infierno! Has comido la carne de Cristo no como cristiano sino como caníbal. Comulgante de sacrificio, guarda tu paz y limpia tu boca, porque tus labios están goteando sangre.
+							</p>
+							<p>
+								Sin duda, la religión no debe ser considerada responsable de los crímenes cometidos en su nombre por la política de las épocas de barbarie. Muchos herejes fueron al mismo tiempo agentes de conspiraciones y sediciones. La masacre de San Bartolomé <sup>[A]</sup> fue un cruel <em>ruse de guerra</em>, cuya perfidia quizás se explica por la necesidad de abortar un complot no menos pérfido.
+							</p>
+							<p class="fnote">
+								[A. (1572) <a href="https://es.wikipedia.org/wiki/Matanza_de_San_Bartolom%C3%A9">
+									es.wikipedia.org/wiki/<wbr />Matanza_de_<wbr />San_<wbr />Bartolomé</a>&nbsp;]
+							</p>
+							<p>
+								Así, en cualquier caso, la Reina Madre y Carlos IX procuraron justificar su acción. Esto al menos es cierto que, en ese período, ambas partes fueron capaces de cualquier indignación.
+							</p>
+							<p>
+								¿Pero qué podría justificar la Inquisición? &quot;Dios se hizo hombre&quot;, puede ser respondido, y estas grandes palabras fueron entendidas por Pío V en un sentido terrible, y por Vicente de Paúl en un sentido adorable. ¿No se arrepintió Dios, según la Biblia, de haber hecho al hombre? <span class="sans">¡</span>Cruel exageración de la iniquidad humana! <span class="sans">¡</span>Se asume que ha sido tan gigantesco como para hacer que Dios vacile en sus designios!
+							</p>
+							<p>
+								El hombre se divinifica a sí mismo incluso en sus crímenes, y sueña con oponerse al Eterno. La irreconciliable revuelta de los condenados, y desde entonces el odio cruelmente impotente de un Dios, que ya no puede perdonar.
+							</p>
+							<p>
+								Bueno, incluso esto es sublime en su horror, y el dogma católico es admirable incluso en sus profundidades más terribles, para aquellas almas que realizan su poesía sin ser víctimas de sus seducciones y sus infatuaciónes.
+							</p>
+							<p>
+								Dios parece arrepentirse de haber hecho al hombre, porque de vez en cuando el hombre se arrepiente de haber hecho un Dios. Las ficciones divinas se suceden como las edades. Júpiter destrona a Saturno, y el Jesucristo de los Papas reina en el lugar de Jehová de los judíos. Sin embargo, el Jesús de Santo Domingo sigue siendo el hijo del cruel Dios de Moisés, pero las fieras bestias de Daniel y el Apocalipsis deben desaparecer inevitablemente para hacer lugar a la paloma y al cordero. Dios se habrá hecho verdaderamente hombre, cuando haya hecho que los hombres se vuelvan tan buenos como lo debería ser un Dios. <sup>[7:1]</sup>
+							</p>
+							<label for="element-toggle-7-1">
+								[7:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-7-1" type="checkbox" />
+							<div id="toggled-element-7-1" class="fnote hidden">
+								<p class="close-bottom">
+									[7:1. Es decir, cuando los hombres de la Séptima Ronda aparecen en la escena, entonces solo habrá un Dios para los hijos del hombre. &mdash;O.E.
+								</p>
+								<p class="close-top">
+									<em>Para los hijos de los hombres</em>, sí; es decir, cognoscibles y comprensibles por intelectos limitados y condicionados; pero esto es una cosa diferente de la afirmación de que no hay Dios, aunque este último sea, sin duda, el punto de vista de O.E. <span class="nowrap">&mdash;Trad.]</span>
+								</p>
+							</div>
+							<p>
+								El genio del hombre, al desarrollarse a lo largo de las edades, desenrolla la genealogía de los dioses. Es en el genio del hombre que un eterno Anciano de Días engendra un hijo que debe suceder a su padre y en el que procede, de padre e hijo, el espíritu de conocimiento e inteligencia que explicará los misterios de ambos.
+							</p>
+							<p>
+								La Trinidad, ¿no nace esto de las mismas entrañas de la humanidad? ¿No siente el hombre que es eterno en tres personas, el padre, la madre y el niño? En la trinidad humana, ¿no es el hijo tan antiguo como el padre? <span class="sans">¡</span>Pues el padre también es hijo! ¿No es la mujer la concepción inmaculada de la naturaleza y el amor? Y esta su concepción, ¿no es pura? Porque el pecado del amor termina donde comienza la maternidad. Hay una virginidad en la santidad de la madre, y desde que Dios se hizo hombre, es decir, ya que Dios no vive realmente para nosotros, ni se personifica, ni piensa, ni ama, ni habla, excepto solo en la humanidad, la mujer ideal, la mujer típica, la mujer colectiva, es verdaderamente la madre de Dios. <sup>[8:1]</sup>
+							</p>
+							<label for="element-toggle-8-1">
+								[8:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-8-1" type="checkbox" />
+							<div id="toggled-element-8-1" class="fnote hidden">
+								<p>
+									[8:1. La mujer tomada colectivamente es, por supuesto, Madre de Dios, la humanidad; pero ¿no tiene Éliphas otro Dios? No, pero él tiene un enemigo: Roma. E.L. fue ateo y poeta. También fue diplomático; busca ganar y no asustar a su público. <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									Es muy cuestionable si E.L. era un ateo; de hecho me parece seguro que no lo era. Su posición no era que no existía Dios (una afirmación que implicaba una suposición de omnisciencia), sino simplemente, que para el conocimiento estrecho y oscuro del hombre e incluso para el de inteligencias mucho más elevadas pero aún condicionadas, Dios solo se manifiesta en la Naturaleza y Humanidad. Decir que el Infinito y el Absoluto está completamente fuera del plano más alto al que puede alcanzar cualquier intelecto limitado y condicionado, y que, por lo tanto, debemos contentarnos con tratar con las leyes y manifestaciones del Universo condicionado, que están más o menos a nuestro alcance, o la de nuestros predecesores perfeccionados, es una cosa; afirmar que no hay poder e inteligencia fuera de la esfera de nuestro posible conocimiento, la fuente de estas leyes y manifestaciones, ningún Dios en realidad, es otra cosa, y uno al cual, en mi opinión, ni Éliphas Lévi, ni ningún otro ocultista de su escuela, se comprometería. <span class="nowrap">&mdash;<em>Trad</em>.]</span>
+								</p>
+							</div>
+							<p>
+								Existe la redención, en otras palabras, solidaridad entre los hombres; los buenos
+								sufren por los males y los justos pagan por los pecadores. <sup>[9:1]</sup>
+							</p>
+							<label for="element-toggle-9-1">
+								[9:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-9-1" type="checkbox" />
+							<p id="toggled-element-9-1" class="fnote hidden">
+								[9:1. Pero este no es el caso en realidad, aunque a un observador superficial a menudo lo parezca. Por el contrario, todos y cada uno inevitablemente pagan hasta el último cuarto de penique sus propias deudas (incurridas en la vida actual o las anteriores) y solo éstas, y las pagan ya sea en esta o en vidas futuras.
+								<span class="nowrap">&mdash;<em>Trad</em>.]</span>
+							</p>
+							<p>
+								Por lo tanto, todo es verdadero en los dogmas de la religión una vez que tenemos la clave para el enigma. El catolicismo es la Esfinge de los tiempos modernos. Sitúate bajo sus garras sin adivinar su enigma, y te devora; adivina su enigma sin conquistarlo, o solo la adivina a medias, y estás condenado como Edipo a la desgracia y la ceguera autoimpuesta.
+							</p>
+							<p>
+								Un católico inteligente no debería de abandonar la iglesia, debe permanecer en ella; <sup>[9:2]</sup> sabio entre los ignorantes, hombre libre entre los esclavos, para iluminar a los primeros y liberar a los últimos, porque una vez más repito que no hay religión verdadera fuera del ámbito de la Catolicidad. <sup>[9:3]</sup>
+							</p>
+
+							<p class="fnote">
+								[9:2. Y es por eso que E.L. lo dejó, por el bien de una paradoja. <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p class="fnote">
+								[9:3. Un juego de palabras: la catolicidad significa con él la universalidad. <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								<span class="sans">¡</span>El fundamento lógico de una religión es ser irracional! Su naturaleza es ser sobrenatural. Dios es supersustancial. El espacio y la sustancia universal son el Infinito, Dios está dentro de él, porque él es el conocimiento y el poder del infinito.
+								<sup>[9:4]</sup>
+							</p>
+
+							<p class="beige" style="display:none;">START HERE</p>
+
+							<label for="element-toggle-9-4">
+								[9:4. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-9-4" type="checkbox" />
+							<p id="toggled-element-9-4" class="fnote hidden">
+								[9:4. nuestra doctrina: el espacio y universal Swabhavat - Materia: la fuerza está
+								por dentro. Manifestándose bajo esta forma la Trinidad, Dios, para el ignorante
+								y el dogma &mdash;O.E.]
+							</p>
+							<p>
+								El infinito es lo absurdo inevitable que se impone a la ciencia. Dios es la explicación
+								paradójica de lo absurdo que se impone a la fe.
+							</p>
+							<p>
+								La ciencia y la fe pueden y deben contrabalancearse recíprocamente produciendo el
+								equilibrio; no pueden jamás amalgamarse.
+							</p>
+							<p>
+								El Padre Eterno es judío; el buen Dios es cristiano; la divinidad de Jesucristo,
+								el Papa y el Demonio son católicos; pero la caridad, que es católica y goza de cierta
+								preeminencia, suprimirá el Demonio y convertirá a los idólatras del Papa. El pecado
+								original es judío, el buen sentido, cristiano, la sencillez y la inteligencia son
+								católicas, pero la locura pretenciosa es protestante.
+							</p>
+							<p>
+								Don Juan, Voltaire, el primer Napoleón, Venillot, Polichinela, Pierrot y Arlequín
+								son católicos, pero Prudhomme es protestante, y lo que es peor, francmasón. La filosofía
+								es Atea o Cristiana, la poesía es Católica y la escasez egoísta y mercantil es Protestante.
+							</p>
+							<p>
+								Por eso la Francia es Voltairiana pero siempre Católica, al paso que los ingleses,
+								los prusianos y los Mxxx son protestantes.
+							</p>
+							<p>
+								- Sí, señores de la Jerarquía Eclesiástica - dijo el católico Galileo; - la tierra
+								es fija, si así lo deseáis; es el sol que gira en torno de ella. Diré más, si lo
+								demandan. Diré que la tierra es plana y que los Cielos son de cristal.
+							</p>
+							<p>
+								Dios permita que vuestros cráneos fueran del mismo material, de modo que un poco
+								de luz pueda penetrar en vuestras respetables cabezas. Sois la autoridad, y la ciencia
+								esta obligada a inclinarse delante de vosotros; ella puede darse el lujo de inclinarse
+								al encontrar la ciencia; por lo tanto ella permanece, mientras vosotros avanzáis.
+								Vuestros sucesores serán obligados, a su vez, a postrarse a ella y a convivir armónicamente
+								con ella&quot;.
+							</p>
+							<p>
+								Rabelais, no menos docto y no menos católico que Galileo, escribió luego lo siguiente
+								en el prologo de su cuarto libro de Gargantua: <sup>[B]</sup>
+							</p>
+							<p class="fnote">
+								[B. <a href="https://en.wikipedia.org/wiki/Gargantua_and_Pantagruel">en.wikipedia.org/wiki/<wbr />Gargantua_<wbr />and_<wbr />Pantagruel</a>&nbsp;]
+							</p>
+							<p class="blockquote">
+								&quot;Si en mi vida, en mis escritos, en mi palabra, conforme hasta en mis mismos
+								pensamientos, yo detecte el más leve vestigio de alguna herejía, con mis propias
+								manos tomaría la leña y encendería el fuego con que me quemaría en la pira&quot;.
+							</p>
+							<p>
+								¿Será posible ver aquí Rabelais, el inquisidor, quemándose a sí mismo, Rabelais,
+								acusado de herejía?
+							</p>
+							<p>
+								Esto nos recuerda a Dios ocasionando la muerte de Dios a propósito de aplacar a
+								dios. es inexplicable, tal cómo debe ser un misterio, pero esencialmente Católico.
+								Nada es tan excitante para la imaginación cómo un misterio, y la imaginación exalta
+								y multiplica por diez a la voluntad. Los hombres sensatos son llamados a gobernar
+								el mundo, pero son los locos que lo convulsionan y se metamorfosean. Por eso la
+								locura esta considerada divina en las naciones de Occidente.
+							</p>
+							<p>
+								En realidad, a los ojos de un mortal cualquiera, el hombre de genio es un loco.
+								Realmente, él tiene, tal vez, en sí algunos granos de locura, por lo tanto a punto
+								que siempre olvida el buen sentido para atender al sublime impulso. Moisés soñaba
+								con una Tierra Prometida y arrastra para el desierto a toda una horda de pastores
+								y esclavos que murmuran, revoltosos, se matan mutuamente y mueren de hambre y cansancio
+								durante cuarenta años.
+							</p>
+							<p>
+								Él jamás llegará a Palestina; morirá, perdido, en la montaña, pero su pensamiento
+								alcanzara los cielos y él dará al mundo un Dios, único, y un código universal; de
+								la sombra de Moisés, insepulto, saldrá la gloria inmensurable de Jehová. Él creó
+								un pueblo y comenzó un libro; un pueblo bravamente malvado en su tenacidad, soberbio
+								y servil a un mismo tiempo; un libro lleno de sombras y luces, de una grandeza y
+								absurdos sobrehumanos; este libro y ese pueblo resistirán a toda y cualquier fuerza,
+								a toda ciencia, a todos los esquemas políticos, a todas las críticas de las naciones
+								y al paso del tiempo. ¿En este libro la civilización aprenderá a adorar; de ese
+								pueblo los reyes tomarán sus tesoros, y quién osará juzgar al hombre del Mar Rojo
+								y del Monte Horeb?
+							</p>
+							<p>
+								¿Que filósofo racionalista irá llamarlo de sabio? Pero quien capaz de apreciar las
+								grandes obras si atreverá a llamarlo de tonto?
+							</p>
+							<p>
+								¿Podemos hablar ahora de Jesucristo? es preciso, sin embargo, que postremos las
+								rodillas delante de aquel que la mitad del mundo adora.
+							</p>
+							<p>
+								¿Que gran Hierofante, que antiguo oráculo había podido prever este Dios? Que astrólogo
+								o que adivino podría haber concebido la idea de decir al Emperador Tiberio:
+							</p>
+							<p>
+								En este instante un judío de la Galilea, proscrito por su propio pueblo, negado
+								por los amigos y condenado por uno de vuestros Prefectos, está en la agonía de la
+								muerte. Después de su muerte él destronará a los Césares y aquellos que reclamen
+								la continuación de su inconcebible dinastía reinarán en la Roma en vuestro lugar.
+								Todos los dioses del Imperio y del mundo entero caerán por tierra ante su imagen;
+								el instrumento de su tortura se transformará en el símbolo de la Salvación. <span class="sans">¡</span>&quot;Que
+								locura será el Cristianismo si no fuera sobrehumano! Que fe horrible, esa en Jesucristo,
+								fe si él no fuese Dios! <sup>[13:1]</sup>
+							</p>
+							<label for="element-toggle-13-1">
+								[13:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-13-1" type="checkbox" />
+							<div id="toggled-element-13-1" class="fnote hidden">
+								<p>
+									&quot;ahora la Virgen regresa, la edad de oro regresa, ahora una nueva progenitura
+									es enviada por el cielo alto, Oh Lucina casta, favorecen al niño ahora que es nacido,
+									La serpiente morirá.&quot; &mdash;4o Eclogue De Virgilio.
+								</p>
+
+								<p>
+									Virgilio murió en septiembre 22, 19 A.C. ¿ El era Profeta? <span class="nowrap">&mdash;E.
+										O.]</span>
+								</p>
+							</div>
+							<p>
+								Será concebible un delirio mental suficientemente contagioso para hacer delirar
+								a través de muchos siglos a tal punto a la totalidad de la humanidad? Que diluvio
+								de sangre hizo correr ese extintor de los sacrificios cruentos! Que odios implacables,
+								que venganzas, que guerras, que torturas, que masacres, que no fomentó ese apologista
+								del perdón? Pero Jesús fue más que un hombre; fue una idea, un principio. Yo soy
+								el principio que habla, dijo él, refiriéndose a sí mismo.
+							</p>
+							<p>
+								Dios se hizo hombre; así se proclama en la tierra la adoración de la humanidad.
+								&quot;Emmanuel. Dios está en nosotros, pronuncian, abrazándose mutuamente los hermanos
+								de la Rosacruz, iniciados en el misterio de Dios Hombre.
+							</p>
+							<p class="fnote">
+								[14:1. &quot;El hombre es Dios e hijo de Dios, y no hay ningún otro Dios para el
+								hombre.&quot; (La obra secreta de los Rosacruces). &mdash;O.E.]
+							</p>
+							<p class="fnote">
+								[14:2. &quot;humanidad - hijo de eternidad&quot; &mdash;O.E.]
+							</p>
+							<p>
+								Sois unos conmigo, dijo el maestro a sus discípulos, así cómo mi Padre y Yo somos
+								uno; aquel que de vosotros oye, me oye a mi, y aquel que vosotros ve, ve a mi Padre.
+								Triunfo y milagro! Dios ya no es un desconocido para los hombres, por qué el hombre
+								conoce al hombre. Dios deja de ser invisible cuando nos es dado verlo en nuestro
+								prójimo. Él es el benefactor que nos ayuda, el hombre pobre que es nosotros ayudamos.
+							</p>
+							<p>
+								Él es el enfermo que padece, el médico que sana. Él es la víctima que llora y el
+								amigo que consuela. Y la mujer que el Cristianismo le eleva! El que de ella se presume;
+								la mujer es la madre de Dios, por lo tanto Dios se hizo hombre! Una virgen, podemos
+								amarla con todas nuestras aspiraciones al infinito; una madre, ya no basta amarla
+								simplemente, es preciso adorarla cómo adoramos la gracia y la providencia. Ella
+								tiene en los labios la ley del perdón; ella es paz y misericordia, es naturaleza
+								y vida, es obediencia es libre, es Libertad, es sumisa. Ella es todo aquello que
+								debemos amar! En su alabanza se recitan las Letanías de la Madre Virgen; Yo te saludo,
+								Puerta del Cielo, Templo de Marfil, Santuario Dorado, Rosa Misteriosa, Vaso Sacro
+								de la Devoción, Vaso Ilustre, Vaso Admirable, Copa de Amor, <sup>[15:1]</sup> Cáliz
+								de los Santos Deseos, Estrella Matutina, Arca de la Alianza.
+							</p>
+							<label for="element-toggle-15-1">
+								[15:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-15-1" type="checkbox" />
+							<p id="toggled-element-15-1" class="fnote hidden">
+								[15:1. Le comparan estas expresiones tomadas de las letanías de R.C. La Iglesia
+								como los halagos sexuales dirigidos al ídolo de Durga (Yoni) por los creyentes del
+								Hinduismo y de las letanías de Vallabacharyas el Dios del amor <span class="nowrap">
+									&mdash;O.E.</span>]
+							</p>
+							<p>
+								Oh! que gritos de amor a ti levantan todos esos mártires, auto condenados a una
+								eterna viudez que no comprenden! Oh, suspiro cruel y desesperado el de todos esos
+								sedientos torturados por una imagen siempre ilusoria, provoquen en sus anhelos por
+								frutos en sus labios siempre negados. Sublimes soñadores! Renuncian a la mujer para
+								ganar el cielo, cómo si el cielo fuese alguna cosa sin mujer, y cómo si la mujer
+								no fuese la reina del Cielo!
+							</p>
+							<p>
+								&quot;Pecado de Adán, glorioso pecado, canta la iglesia en su liturgia, pecado glorioso
+								que mereció el propio Dios cómo redentor! El pecado de Adán, inevitable entre todos!&quot;
+								Se filtra, así, en los cánticos sacros los más recónditos secretos del Santuario,
+								pero aquellos que respeten estas misteriosas palabras no se dan cuenta de su verdadero
+								sentido, y sus corazones, ardiendo tal vez bajo las cenizas, los acusan de deseos,
+								cómo si fuese cosa de avergonzarse, y de añoranzas, cómo si fuese una infidelidad!
+								La religión es, por lo tanto, la exaltación del hombre y la adoración de la mujer.
+								La comprensión de la religión es la emancipación del espíritu y la Biblia de los
+								hierofantes es la Biblia de la libertad. Creer sin saber es debilidad; el creer
+								por saber es poder.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="prefacio-y-prologo.htm">&lt; Prefacio y Prologo </a>
+							</li>
+							<li class="align-right"><a href="paradoja-2-la-libertad-es-obediencia-a-la-ley.htm">
+									Paradoja 2 &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

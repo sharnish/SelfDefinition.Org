@@ -1,0 +1,91 @@
+<!-- start of menu include file   Update June 4, 2020. June 7, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/vernon-howard/">VH index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="satans-sinister-secrets-exposed.htm">Satan<span class="conditional-hide">'s Secrets</span></a></li>
+            <li><a href="goodness-is-intelligence.htm">Goodness</a></li>
+            <li><a href="only-one-cause-of-crime.htm"><span class="conditional-hide">Cause of </span>Crime</a></li>
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-4"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- the next 2 must be id's -->
+    <!-- all of the following disappears on a small screen -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/vernon-howard/">Vernon Howard index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li class="normal">
+                <img class="menu-image" src="images/vernon-howard.jpg" alt="Vernon Howard" />
+            </li>
+            <li>Vernon Howard</li>
+            <li class="normal note tight offset">&nbsp;(1918-1992)</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must not include directory in path for script to work -->
+                <!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+                <li><a href="satans-sinister-secrets-exposed.htm">Satan's Sinister Secrets Exposed</a></li>
+                <li><a href="goodness-is-intelligence.htm">Goodness Is Intelligence</a></li>
+                <li><a href="only-one-cause-of-crime.htm">There is Only One Cause of Crime</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li>Vernon Howard at <a href="https://en.wikipedia.org/wiki/Vernon_Howard">Wikipedia</a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">Also on this site</li>
+                <li class="first-item">By Vernon Howard (hearing voices section):<br />
+                    <a href="/hearing-voices/articles/vernon-howard-freedom-from-harmful-voices.htm">Freedom
+                        From Harmful Voices</a>
+                </li>
+            </ul>
+        </div>
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li class="header-item">External Links</li>
+                <li class="first-item">New Life Foundation <a href="https://www.anewlife.org/">
+                        www.anewlife.org</a></li>
+                <li><a href="https://www.vernonhoward.org/">
+                        VernonHoward.Org</a> (Richard Wooldridge)</li>
+                <li>Vernon Howard's Secrets of Life <a class="inline" href="http://archive.mail-list.com/secretsoflife/mindex/secretsoflife@20380101.000000.00000000.en.html">
+                        Quotes Archive</a></li>
+                <!-- website GONE
+                <li>Life with Vernon Howard, newspaper clippings <a style="display: inline;" href="http://lifewithvernonhoward.com/clippings-articles/newspaper-clippings.html">
+                        Archive</a></li>-->
+            </ul>
+        </div>
+        <p id="menu-scroll" title="To top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

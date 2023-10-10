@@ -1,0 +1,955 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="paradoja-7-la-voluntad-realiza-todo-que-ella-no-desea.htm">
+	<link rel="next" href="los-principios-inalterbles.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		/* THIS PAGE ONLY - RETURN ANCHORS (return from footnotes)
+        POSITIONING IS DEFINED IN CSS STYLESHEET */
+
+		/* this page has NO collapsing footnotes */
+		a.return-anchor {}
+
+		/* special link this page only, need to fix small phone */
+
+		a.to-footnote-page {
+			margin: 10px 30px 30px;
+		}
+
+		@media only screen and (max-width:500px) {
+			a.to-footnote-page {
+				margin: 10px 0 30px 0;
+			}
+		}
+
+		/* add a bit of space from the brackets */
+		a.to-footnote {
+			padding: 0 3px;
+		}
+
+		@media only screen and (min-width:500px) {
+			#punch {
+				max-width: 200px;
+			}
+		}
+
+		a.return-anchor {
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?>
+									<p>
+										Recapitulación Sintética:</p>
+									<h3>
+										La Magia y El Magismo
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="../paradoxes/magic-and-magism.htm">.. magic-and-magism.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="paradoja-7-la-voluntad-realiza-todo-que-ella-no-desea.htm">
+											&lt; Paradoja 7</a></li>
+									<li class="align-right"><a href="los-principios-inalterbles.htm">Los Principios Inalterables
+											&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<hr />
+							<p class="note80">
+								Las notas a pie de este capítulo son tan voluminosas (28) que se agregan en una página
+								aparte: <a class="to-footnote-page inline" href="magia-y-magismo-notas.htm">magia-y-magismo-notas.htm</a></p>
+							<hr />
+							<p style="margin-top: 30px;">
+								El nombre de la magia, luego que había sido temido así y aborrecí así en las edades
+								medios, se hizo en nuestros días casi ridículos. Un hombre que se ocupa seriamente
+								con la magia pasará apenas como ser razonable a menos que establecido como un médico
+								y charlatán. La gente crédula supone que todos los magos son unos obreros de las
+								maravillas, y estando convencido por otra parte que solamente los santos de su comunión
+								tienen el derecho a ejecutar milagros, atribuyen las ideas y los fenómenos de la
+								magia a la influencia de los espíritus de diablo o del mal. Por nuestra parte creemos
+								que los milagros de los santos, y los que son atribuidos a los demonios, son semejantes
+								los resultados normales de las causas que son anormalmente introducidas en la acción.
+								La naturaleza jamás se mueve; su milagro levantado es orden inmutable y eterna.
+							</p>
+							<p>
+								Por otra parte la magia no debe ser confundida con el Magismo. La magia es una fuerza
+								oculta, y el Magismo es una doctrina que convierte esta fuerza en energía. Un mago
+								sin Magismo es solamente un brujo. Un magista sin magia es solamente uno que SABE.
+								El autor de este trabajo es un magista que no practica la magia;&nbsp;<a class="return-anchor" id="ret-99-1"></a><sup>[99:1]</sup>
+								Y es un hombre de estudio y no un hombre de los fenómenos.&nbsp;<a class="return-anchor" id="ret-99-2"></a><sup>[99:2]</sup>
+								<!-- in the Spanish version the word "no" was omitted. Here reinstated. -->
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-99-1">Magia y Magismo nota 99:1</a>]
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-99-2">Magia y Magismo nota 99:2</a>]
+							</p>
+							<p>
+								El no pretende ser tampoco un el mago o el mago, y le pueden gesticular solamente
+								a sus hombros cuando es tomado por un brujo. Estudió Kábala y las doctrinas mágicas
+								de los santuarios antiguos; considera que las comprende, y cree sinceramente dentro
+								y las admira; a él son la Ciencia que el mundo posee, y él los más nobles y más
+								verdaderos profundamente pesares que son tan poco conocidos. Para esto el caso es
+								que procura hacerles mejor conocido, tomando solamente el título del Maestro de
+								la Ciencia más elevada. La Ciencia de Magismo es contenida en los libros de Kábala,
+								en los símbolos de Egipto y de la India,&nbsp;<a class="return-anchor" id="ret-100-1"></a><sup>[100:1]</sup>
+								Y en los libros de Hermes Trismegistus, en los oráculos de Zoroastro, y en las escrituras
+								de algunos grandes hombres de las edades medios, como Dante, Paracelso, Tritemio,
+								Guillermo Postel, Pomponaceus, Roberto Fludd, etc ...
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-100-1">Magia y Magismo nota
+									100:1</a>]
+							</p>
+							<p>
+								Los trabajos de la magia son adivinación o presciencia, Taumaturgia o la utilización
+								de las fuerzas excepcionales, y de la teúrgia o las visiones y los espíritus.
+							</p>
+							<p>
+								Podemos adivinar o prever, por observaciones y las inducciones de la sabiduría,
+								o por las intuiciones del éxtasis o del sueño, o por cálculos de la Ciencia, o por
+								las visiones del entusiasmo, que es una especie de intoxicación. En efecto Paracelso
+								lo llama ebriecatum &quot; o una especie de ebriedad. Es peligroso y contrario a
+								la naturaleza, y contrario a ella es erróneo probar los estados que son conectados
+								otra vez al somnambulismo, a la exaltación, a la alucinación, a la intoxicación
+								por el alcohol o a las drogas, en una palabra con todas las clases de locura artificial
+								o accidental en las cuales el fósforo del cerebro es aumentado o sobre excitado,
+								de producirlos, porque ellos de dirigir el equilibrio nervioso, y lleva casi infalible
+								al frenesí, catalepsia y a la locura.
+							</p>
+							<p>
+								La adivinación y la previsión por único cautela exigen un conocimiento profundo
+								de las leyes de la naturaleza, de la observación constante de los fenómenos y de
+								su correlación, el discernimiento de los espíritus por la ciencia de los signos,
+								la naturaleza exacta de las analogías, y el cálculo, sea el íntegro o el diferencial,
+								posibilidades y probabilidades. Es útil de adivinar y prever, pero no debemos permitirnos
+								adivinar o mezclarse hacia arriba en las previsiones. Un profeta interesado por
+								una cuestión es siempre un profeta falso, porque cautela de trastorna de deseo;
+								un profeta desinteresado, es decir un profeta verdadero, se hace siempre a enemigos,
+								porque hay siempre en este mundo más malo que bono para prever; las ciencias ocultas
+								deberían siempre ser mantenidas escondidas; el iniciado que habla, profanas; y el
+								que sabe guardar el silencio, no sabe nada.&nbsp;<a class="return-anchor" id="ret-102-1"></a><sup>[102:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-102-1">Magia y Magismo nota 102:1</a>]
+							</p>
+							<p>
+								Noé previó el diluvio pero hizo buena atención para no preverle. Tuvo su lengua
+								y construyó su arco. José previó los siete años del hambre y tomó sus arreglos que
+								le fijaron al rey y a los sacerdotes toda la riqueza de Egipto. Jonah previó la
+								destrucción de Nineveh, y se salvó de desesperación porque su previsión no ha sido
+								cumplida. Los primeros cristianos previeron la quemadura de Roma, y Nerón con un
+								cierto aspecto de justicia los acusa de haberlo colocado sobre el fuego. Las brujas
+								de Macbeth lo condujeron al regicidio, por él que decía que sería un rey. La profecía
+								parece atraer el mal y a menudo provoca el crimen. Los judíos creyeron que la gloria
+								de Dios había sido implicada en la conservación eterna de su templo; prever la destrucción
+								de este edificio era blasfematorio. <span class="sans">¡</span> Jesús se atrevió a hacer a esto, y los judíos,
+								qué pero el día antes de que tenido para difundir sus ropas bajo sus pies y adornado
+								su camino con ramas y palmas, lloradas ellos todos con una sola voz, &quot;le hubiera
+								dejado ser crucificado!&quot; Pero esto no era para ellos que el salvador había
+								hecho esta previsión, pero para el pequeño círculo de sus apóstoles y seguidores
+								fieles; desgraciadamente se volvió público y sirvió de pretexto al homicidio jurídico
+								del mejor y más divino de los hombres.&nbsp;<a class="return-anchor" id="ret-103-1"></a><sup>[103:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-103-1">Magia y Magismo nota 103:1</a>]
+							</p>
+							<p>
+								¿ Si exactamente podemos prever y ciertamente cuando los eclipses deben producirse
+								y cometas que hay que devolver, por qué no deberíamos poder prever los períodos
+								del grandeza y de la decadencia de los imperios? ¿ Siendo dado la naturaleza de
+								un germen, no sabemos cual género de árbol producirá? ¿ Conociendo el motor, el
+								impacto y el obstáculo, no podemos determinar la duración y la amplitud del movimiento?
+								<span class="sans">¡</span> Leer el libro, autorizado Prognosticatio eximii docti Theophrasti Paracelsi, y
+								será admirado para los sujetos que este gran hombre podía prever combinando los
+								cálculos de la Ciencia con las intuiciones de un sagacidad maravilloso!
+							</p>
+							<p>
+								Podemos prever con certeza por la ayuda de los cálculos de la ciencia, y con la
+								certeza de uno por ayuda del carácter con sensibilidad impresionable, o a la intuición
+								magnética.
+							</p>
+							<p>
+								Es el igual para los milagros; éstos fenómenos admirables porque son anormales y
+								son producidos hasta aquí según cierto desconocimiento de leyes normales. Cuando
+								la electricidad era siempre un misterio para la multitud, los fenómenos eléctricos
+								eran unos milagros. Los fenómenos magnéticos asombran hoy a los adeptos del espiritismo,
+								porque la ciencia no identificó todavía oficialmente y no determinó las fuerzas
+								del magnetismo humano, que es distinto, según nuestra vista, del magnetismo animal.
+								Todavía no lo conocemos en cual medida la imaginación y la voluntad del hombre son
+								unas fuerzas. Es evidente que en ciertos casos la naturaleza ellas obedezca: el
+								enfermo recuperan repentinamente la salud, el cambio inerte de objetos su posición
+								sin cualquier fuerza motriz aparente, vacían y formas palpables son producidas;
+								La causa de la todo esto es Dios para el conjunto, el diablo para el otros, y nadie
+								refleja que Dios es demasiado grande para condescender a las conjuraciones de la
+								creación, y que el diablo, si existiese, como es descrito en las leyendas, sería
+								demasiado inteligente y demasiado orgulloso para consentir ha ser el ridículo.
+							</p>
+							<p>
+								Todas las religiones exclusivas se fundan sobre milagros, y dan atributos al diablo
+								los milagros que su fe opone. En este último son todo ello; en cierta medida justo.
+								El diablo es la ignorancia, los demonios son los dioses falsos. Ahora todos los
+								dioses falsos ejecutan milagros, Dios verdadero trabaja solamente en uno, que es
+								el orden eterno.
+							</p>
+							<p>
+								Los milagros del evangelio son las operaciones maravillosas del espíritu divino,
+								conectadas otra vez en un modelo enigmático, lo mismo que la costumbre de los antiguos
+								y de Orientales particularmente. Este espíritu convierte el agua en vino, es decir
+								la indiferencia en amor; marcha sobre las aguas, y con una palabras en las tempestades;
+								abre los ojos del ciego y de las orejas del sordo; incita al sordomudo para hablar,
+								y el paralítico a caminar. La humanidad resucita enterrada durante cuatro días (que
+								tiene que decir durante cuatro mil años); la muestra en su putrefacción como Lázaro,
+								y le ordena que sea liberada por sus lazos y por su montura. Tales son los milagros
+								verdaderos del Cristo, pero si le piden prodigios, serán respuestas, &quot;un mal
+								y un ver adúltero de generación después de que un signo y allí algún signo le sea
+								dado, pero un el del profeta Jonás.&quot; Aquí el Maestro nos da para comprender
+								que los milagros de la Biblia también son unas alegorías. La alegoría de Jonás vivo
+								en el pez que se lo tragó es humanidad que se regeneran. Jesús les dio a los judíos
+								como milagros indiscutibles la santidad de su doctrina y del ejemplo de sus virtudes.
+							</p>
+							<p>
+								Jesús pudo ciertamente haber curado al enfermo; desde Vespasiano, Apolonio, Gassner,
+								Mesmer, y Zuavo Jacob también curaron al enfermo; personas enfermas también pudieron
+								haber sido curadas en casa de Lourdes, como a la tumba del diácono París; pero tales
+								tratamientos no son unos milagros, son los resultados normales de una cierta exaltación
+								en la fe. Jesús el Cristo mismo dijo así. &quot;¿ Me puede curar vos?&quot; Le pidió
+								a una persona cierta y enferma; &quot;si el puede vos creéis,&quot; dijo al Maestro,
+								&quot;todas las cosas son posibles para él creé&quot;
+							</p>
+							<p>
+								La fe produce ciertos milagros aparentes, y la credulidad las exagera. Cuando Jesús
+								dijo que ellos todos era posible por la fe, no quiso decir por esto para decir que
+								la imposible jamás podría hacerse lo posible.
+							</p>
+							<p>
+								Lo imposible es lo que absolutamente es contrario a las leyes inmutables de la naturaleza,
+								y contrario a la razón eterna.&nbsp;<a class="return-anchor" id="ret-106-1"></a><sup>[106:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-106-1">Magia y Magismo nota 106:1</a>]
+							</p>
+							<p>
+								Cada hombre es un foco magnético, que atrae e irradia. Esta atracción y esta proyección
+								son lo que se llama en la magia la inspiración y la respiración. Los buenos inspiran
+								y respiran bondad, los malos atraen y respiran el mal; el bien puede curar el cuerpo,
+								porque vuelve a las almas mejores, el mal perjudica a los dos a las almas y a los
+								cuerpos. A menudo los malos atraen el bueno para corromperlo, y los buenos atraen
+								el mal para convertirlo en bien. Así el caso es que a veces los malos parecen prosperar,
+								mientras que los buenos son unas víctimas de sus propias virtudes; pero se equivocan
+								excesivamente a quienes aman que Tiberios en casa de Capri era más feliz que María
+								al pie de la cruz de su hijo. ¿ Cuál placer sin embargo quería en Tiberios, cual
+								dolor a María? <span class="sans">¡</span> Pero cómo feliz una madre,&nbsp;<a class="return-anchor" id="ret-106-2"></a><sup>[106:2]</sup>
+								cómo desgraciado un emperador!
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-106-2">Magia y Magismo nota 106:2</a>]
+							</p>
+							<p>
+								Cambio la miel a la hiel&nbsp;<a class="return-anchor" id="ret-107-1"></a><sup>[107:1]</sup>
+								en las bocas del mal y la hiel en la miel en la boca del justo. El hombre inocente
+								y sacrificado, soberbio por su castigo; el hombre culpable y triunfante, es estigmatizado
+								y quemado por su diadema.
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-107-1">Magia y Magismo nota 107:1</a>]
+							</p>
+							<p>
+								Ahora toquemos las costas peligrosas y la oscuridad envueltas con la magia, los
+								relaciones con otro mundo, con contacto con las invisibles, la teúrgia y con la
+								evocación de los espíritus.
+							</p>
+							<p>
+								Todo nos prueba que allí existen otros seres inteligentes que el hombre. La jerarquía
+								de los espíritus debe ser infinita como el de los cuerpos. La escala misteriosa
+								de Jacob es el símbolo bíblico de esta jerarquía creciente y descendente. Dios se
+								reposa en esta escala o más bien lo sostiene. Podemos decir que esta escala es en
+								él, o más bien que mismo le es, para él es como Dios, y para manifestar a Dios,
+								que el infinito sube y baja.
+							</p>
+							<p>
+								En cada correr el espíritu que sube es igual al que desciende, y puede tomar su
+								mano; pero debe las necesidades todavía seguirlo el que sube delante de él. Es una
+								ley que los que hacen evocación deberían seriamente meditar.
+							</p>
+							<p>
+								Subir eternamente es la esperanza del bendito; descender eternamente es la amenaza
+								que es un peso culpable.
+							</p>
+							<p>
+								Los hombres invocan espíritus superiores, pero pueden evocar solamente espíritus
+								inferiores.
+							</p>
+							<p>
+								Los espíritus superiores que los hombres invocan les atraen hacia arriba; los espíritus
+								inferiores que los hombres evocan les dibujan abajo.&nbsp;<a class="return-anchor" id="ret-108-1"></a><sup>[108:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-108-1">Magia y Magismo nota 108:1</a>]
+							</p>
+							<p>
+								La invocación es oración, evocación es sacrilegio, excepto cuando es una devoción
+								muy peligrosa.
+							</p>
+							<p>
+								Pero mortales impetuosos que sumergen en evocación no tienen ningún pensamiento
+								de hacer el espíritu que llaman suben con ellas; quieren inclinarse sobre eso para
+								levantarse cerca, y necesariamente deben perder su equilibrio en el predisposición
+								sobre lo que es descendente.
+							</p>
+							<p>
+								<span class="sans">¡</span> El espíritu qué desciende es como una carga a él que la levantaría, y necesariamente
+								le anda rodando abajo él que se le entrega! Para renunciar seguir las inspiraciones
+								de un fantasma, esto debe zambullirse en el abismo de la locura.
+							</p>
+							<p>
+								La gran época del teúrgia era la de la caída de los dioses antiguos. Máximo de Efeso
+								los llamó antes que Juliano, porque los hombres habían dejado de llamarlos; hasta
+								habían descendido debajo de la razón de la gente de la mayoría; también a Juliano
+								ligeramente aparecieron, pobres, y decrépito. Juliano, fanatizado por la magia del
+								pasado, deseada para traer este inmortal achacoso sobre el suyo, porque Eneas salvaron
+								a su padre de la conflagración de Troya, y el filósofo arrogante cayeron bajo carga
+								de sus dioses.
+							</p>
+							<p>
+								No podemos ver a los dioses sin muerto. Es una de las axiomas más formidables del
+								teúrgia antiguo, porque los dioses son el inmortalizar; para verlos los que debemos
+								pasar fuera de nuestro plano en el suyo y empezar la vida incorpórea, y si esto
+								sea posible sin morir, es solamente así de modo imaginario o facticio, o por una
+								ilusión que se parece a esto sueños. Debemos concluir que cada aparición a la cual
+								sobrevivimos puede ser solamente un sueño; cuando una visión del otro mundo es verdadera,
+								el hombre muere, o más bien ya murió cuando lo ve.&nbsp;<a class="return-anchor" id="ret-109-1"></a><sup>[109:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-109-1">Magia y Magismo nota 109:1</a>]
+							</p>
+							<p>
+								Esto el que escribirnos no tiene ciertamente ningún sentido como el materialista
+								instruido que no cree en una otra vida, pero éstos son obligados, en le deshizo
+								de toda la evidencia, para negar los fenómenos del magnetismo y del espiritismo;
+								y no pueden, pues, ser las verdades sabias los sinceros son los que creen.
+							</p>
+							<p>
+								El peligro se sitúa en la creencia sin saber; para luego uno cree en absurdo, es
+								decir en imposible. La vieja lengua francesa tuvo una palabra para expresar la convicción
+								impetuosa; era el cuyder de verbo, de donde es derivada nuestra suficiencia de palabra,
+								que significa una confianza ridícula y presuntuosa.
+							</p>
+							<p>
+								La teúrgia es un sueño incitado al realismo que más aterroriza en cuerpo de un hombre
+								que se considera para despertarse. Padece por el debilitamiento y que excita el
+								cerebro, ayuna cerca, meditaciones y observación. Ascetismo es el padre de las pesadillas
+								y del creador de los demonios, el más grotesco y deformado.&nbsp;<a class="return-anchor" id="ret-110-1"></a><sup>[110:1]</sup> Pensamiento de Paracelso
+								este verdadero Larva &nbsp;<a class="return-anchor" id="ret-111-1"></a><sup>[111:1]</sup>
+								podría ser engendrado por las ilusiones nocturnas del celibatos. LOS antiguos creyeron
+								en existencia de los daimones, una especie de genios malévolos que flotaron aproximadamente
+								en la atmósfera.
+							</p>
+							<p class="fnote">
+								<!-- PAGE NUMBER 110-1 IS GUESED. SYMBOL MISSING IN TEXT -->
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-110-1">Magia y Magismo nota
+									110:1</a>]
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-111-1">Magia y Magismo nota 111:1</a>]
+							</p>
+							<p>
+								San Pablo parece admitir a estos últimos cuando habla de potencias de aire contra
+								las que debemos luchar; cabalistas pobló los cuatro elementos, y llamó a su habitante
+								Sílfide, Ondinas, Gnomos y Salamandras.
+							</p>
+							<p>
+								Los jóvenes, de un modo histeria dispuestos vírgenes en la edad media tenían la
+								costumbre de ver a las damas blancas aparecer los parajes próximos; en estos hoy
+								en día llamaron a tales fantasmas de las hadas; En nuestros días cuando los mismos
+								fenómenos se repiten, la gente es persuadida que la Virgen se mostró sobre tierra,
+								y encontraron iglesias y organizan el peregrinaje, que aporta siempre mucho dinero
+								a pesar de la decadencia de la fe. No debemos exigir en los sujetos de la religión
+								alumbrar la multitud demasiado temprano.&nbsp;<a class="return-anchor" id="ret-111-2"></a><sup>[111:2]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-111-2">Magia y Magismo nota 111:2</a>]
+							</p>
+							<p>
+								Hay una gente que podría no creer más tiempo en Dios si dejen de creer en nuestra
+								Señora de Lourdes. Dejémosles el consuelo del sueño a los que todavía no conocen
+								el arco para aplicar el remedio de la razón sobre sus defectuosidades. Las ilusiones
+								son mejores que la desesperación; vale más de ser grato por una idea falsa que para
+								hacer daño por la debilidad de una razón y de un anemia rebellious de la conciencia.
+							</p>
+							<p>
+								Moisés, causando la construcción del arco de la alianza, hizo una concesión a la
+								idolatría de populacho judío, y de oro pare de Samaria era solamente las falsificaciones
+								posteriores de Keroubim del arca; este Keroubim o Cherubim eran las esfinges dos
+								cabezas; había dos tipos de Cherubim y cuatro cabezas, de un niño, el otro del toro,
+								el tercio del león y el cuarto de una águila. Era una reminiscencia de los dioses
+								de los egipcios, de Horus, de Apis, de Celurus, y de Hermomphta; símbolos de los
+								cuatro elementos&nbsp; <a class="return-anchor" id="ret-112-1"></a><sup>[112:1]</sup>
+								y los signos cuatro puntos cardinales del cielo que sirvieron de emblemas de las
+								cuatro virtudes cardinales - prudencia, del temperancia, de la fuerza y de la justicia.
+								Estas cuatro figuras jeroglíficas quedaron en los signos convencionales cristianos
+								y han sido hechas a las insignias de los cuatro evangelistas.
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-112-1">Magia y Magismo nota 112:1</a>]
+							</p>
+							<p>
+								La iglesia católica condenó a los rompedores de las imágenes, pero bono supo que
+								las imágenes eran pero ídolos; el ídolo de palabra en griego no significa nada de
+								otro modo pero una imagen, y los paganos no más creyeron que una estatua de Júpiter
+								era Júpiter, que nos creen que una imagen de la Virgen es la Virgen en casa de la
+								persona. Creyeron, como lo hacemos, en manifestación posible de la divinidad por
+								tales imágenes; tuvieron yo mismo por las estatuas que lloraron, esto rodaron sus
+								ojos, y cantaron a la subida de sol; tenemos, como ellos, nuestra mitología, y la
+								leyenda de oro podría formarle una continuación a metamorfosis de Ovidio. Nada se
+								suprime en la revelación universal, sino todo transforma y se continúa; la manifestación
+								de Dios se produce en el genio humano por aproximaciones sucesivas y por los cambios
+								progresivos. Dios es siempre el ideal de la perfección humana, que se desarrolla
+								en el esplendor como el hombre se levanta. Dios no habló en el pasado, para tener
+								su paz siempre luego. Habla, mientras que crea, siempre.
+							</p>
+							<p>
+								Torquemada <sup>[a]</sup> y Fénelon <sup>[b]</sup> eran unos cristianos y católicos,
+								pero Dios de Fénelon se parece en nada a Dios de Torquemada. La Santa Francia de
+								las ventas y del padre Garassus no habla de Dios dentro a todo el mismo modo, y
+								el catolicismo de Monsignor Dupanloup le sostiene apenas cualquier similitud a la
+								de Luis Venillot.
+							</p>
+							<p class="fnote">
+								[a. Inquisidor. <a href="https://es.wikipedia.org/wiki/Tom%C3%A1s_de_Torquemada">es.wikipedia.org/wiki/Tom&aacute;s_de_Torquemada</a>
+								]
+							</p>
+							<p class="fnote">
+								[b. <a href="https://es.wikipedia.org/wiki/Fran%C3%A7ois_F%C3%A9nelon">es.wikipedia.org/wiki/Fran&ccedil;ois_F&eacute;nelon</a>
+								]
+							</p>
+							<p>
+								Los protestantes nivelaron todo. Ellos todos negaron que no podrían comprender,
+								y comprenden apenas lo que afirman, pero la revelación no vuelve a tratar; no es
+								empobrecida, sino añade siempre algo a los misteriosos ricos de su dogma; los rabís,
+								para poner la luz sobre las oscuridades de la Biblia, repiten la oscuridad en el
+								Talmud, y las edades cristianas dieron, como consecuencia a y comentarios sobre
+								las cuentas increíbles del evangelio, las leyendas imposibles de las vidas de santos.
+								A los que niegan la infalibilidad de la iglesia, respondemos con la infalibilidad
+								del papa. Siempre el enigma es hecho más complicado para impedir imbéciles adivinarle,
+								porque todo el dogma es un enigma filosófico.
+							</p>
+							<p>
+								La TRINIDAD, o los tres en uno, significa la UNIDAD.
+							</p>
+							<p>
+								LA ENCARNACIÓN, o el Dios hizo al hombre, que significa la HUMANIDAD.
+							</p>
+							<p>
+								LA REDENCIÓN, o ellos todos perdió por uno y economizado por uno, que indica nuestra
+								interdependencia mutua, la SOLIDARIDAD en curso.
+							</p>
+							<p>
+								LA UNIDAD, LA HUMANIDAD, LA SOLIDARIDAD, esto será el trilogía del futuro; solución
+								Pacífica de la LIBERTAD revolucionaria del problema, IGUALDAD, FRATERNIDAD.
+							</p>
+							<p>
+								Verdaderamente es única una unidad social que puede garantizar la libertad de las
+								naciones creando el derecho universal; es sólo antes de la humanidad y no antes
+								de la naturaleza que los hombres son planos; y es la interdependencia o la solidaridad
+								mutua que sólo prueba la fraternidad. ¿ Pero cuántas edades deben desaparecer antes
+								de estas verdades, simples mientras que son, serán comprendidos?
+							</p>
+							<p>
+								El catolicismo es ocultismo y se basa totalmente sobre el misterio. El secreto de
+								los santuarios fue profanado, pero no ha sido explicado.
+							</p>
+							<p>
+								El pensamiento de Edipo fue matar la esfinge, y la peste cayeron sobre Tebas. Sus
+								hermanos hostiles combaten y se masacran siempre una vez más. Los símbolos grandes
+								del pasado son el pronóstico del futuro; los misterios y los milagros, tales deben
+								ser la religión para las masas que es esencial causar a sensación profundamente
+								lo que no comprenden, de modo que puedan permitirse ser llevados. Es el secreto
+								del santuario, y el magista de cada vez lo comprendieron. Debe el débil quedan solamente
+								unido bajo la vigilancia y la responsabilidad del fuerte; los fuertes se emancipan.
+								Si jamás hubieran habido unos pastores, no habría habido ningún carnero dócil; si
+								los perros fueran libres, es decir salvajes, deberían ser cazados como lobos: verdaderamente,
+								los vulgares son unos lobos o carneros; es la única servidumbre que los salva.
+							</p>
+							<p>
+								El gran secreto del Masonería no es sólo de otro modo la ciencia de la naturaleza.
+								Desde hace tiempo ha sido divulgado, pero la gente jura siempre para preservarlo
+								eternamente, de este hecho que devuelve el homenaje al principio eterno del ocultismo.
+							</p>
+							<p>
+								Los iniciados verdaderos son unos pastores y conquistadores, elevan los carneros
+								y conquistan a los lobos; era, en el comienzo, la misión de sublimación de la iglesia,
+								pero en este redil del señor, los lobos tienen los pastores hechos y las manadas
+								se salvaron lejos.
+							</p>
+							<p>
+								La iglesia verdadera debe ser una, y no dividido en numerosos sectas; debe ser santa,
+								y no hipócrita o ávida; debe ser universal, y no limitado a un círculo privilegiado
+								que brota casi la totalidad de humanidad. En una palabra debe atarse un centro común,
+								que en el mundo romano era Roma. Pero quien es más irrevocablemente Roma que Jerusalén.
+								&quot;El soplar del viento donde él se orillo,&quot; indicó el Maestro, y así es
+								cada quién es sostenido el espíritu &quot;dondequiera el cuerpo es, allá quieren
+								las águilas sea recogido juntos.&quot;
+							</p>
+							<p>
+								La iglesia católica debe ser la madre de templo de la indulgencia universal. Ella
+								no simplemente tolerar, liberar; debe excomulgar el odio religioso y hasta bendecir
+								a sus hijos que vagaron. Está por la fe católica que todos los creyentes sinceros,
+								importa lo que la fe ellos profesa, pertenecen al alma de la iglesia, si practican
+								la moralidad normal y buscan la verdad en el sinceridad del corazón. Dejado solamente
+								un papa aparecer quién proclamará mucho estas verdades infalibles, e invitar a todas
+								las naciones de la tierra a un jubileo universal, y una nueva era nacerá para la
+								religión cristiana.
+							</p>
+							<p>
+								<span class="sans">¡</span> Vanagloriarse a Dios en todo aquel qué es grande, y la paz y la buena voluntad
+								a los hombres sobre tierra! Estaba por este grito del amor universal que el genio
+								del evangelio, anunciando en vejez el nacimiento del salvador del mundo.
+							</p>
+							<p>
+								La iglesia oficial representa la iglesia oculta mientras que las castas de la sociedad
+								representan la jerarquía normal; los sacerdotes, la nobleza y el pueblo representan
+								a los hombres de la devoción, los hombres que son superiores en inteligencia y hombres
+								que son inferiores.
+							</p>
+							<p>
+								Los sacerdotes verdaderos de la humanidad son los filántropos sinceros; los reyes
+								verdaderos son los hombres del genio; las verdades nobles, los hombres de la inteligencia
+								y los sentimientos elevados; la masa común es la gran banda voluntariamente del
+								ignorante y el cobarde. Un soldado simple fiel a su bandera seguramente es más grande
+								que un mariscal de Francia que traiciona su país.
+							</p>
+							<p>
+								Un trapero honrado es más noble que un príncipe malo; los hombres eminentes en todos
+								los departamentos se levantaron del pueblo, y reyes y las reinas han sido vistos
+								arrastrarse por el lodo. Cada hombre inteligente y virtuoso puede merecer la admisión
+								al disparo más elevado; los profanos son solamente unos imbéciles o criados.
+							</p>
+							<p>
+								El iniciado es un hombre sin partido; desea solamente la unidad, la indulgencia
+								mutua y la paz. No tiene ninguna opinión, porque la verdad no es una opinión; para
+								él todas las hostilidades son unos errores, y totalmente maldito, crímenes.
+							</p>
+							<p>
+								Antes de los abusos de la iglesia de Romana, la protesta es un justo y por consiguiente
+								la verdad; pero Protestantismo es una sección, y pues una falsedad. Catolicidad,
+								es decir universalidad, es el carácter de la religión verdadera, es pues la verdad,
+								pero el catolicismo es una parte y por consiguiente una falsedad. Cuando los abusos
+								cesen, la protesta no tendrá más cualquier razón para existir, y cuando Catolicismo
+								habrá sido establecido en el mundo entero, allí voluntad él más catolicismo en Roma.
+							</p>
+							<p>
+								Mientras tanto como uno no puede vivir honradamente&nbsp;<a class="return-anchor" id="ret-117-1"></a><sup>[117:1]</sup> sin religión, y porque es y único absurdo para
+								cogerse en la religión, ya que la misma religión de palabra significa una cosa que
+								le vincula a hombres a uno de otros,&nbsp;<a class="return-anchor" id="ret-117-2"></a><sup>[117:2]</sup>
+								y debe seguir las utilizaciones y las derechos de la comunión en la cual nació.&nbsp;<a class="return-anchor" id="ret-117-3"></a><sup>[117:3]</sup> todas las religiones
+								tener un lado respetable y un lado defectuoso.
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-117-1">Magia y Magismo nota 117:1</a>]
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-117-2">Magia y Magismo nota 117:2</a>]
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-117-3">Magia y Magismo nota 117:3</a>]
+							</p>
+							<p>
+								No dejarnos más de ídolos de cada uno de corte, pero llevemos despacio a todos los
+								hombres fuera de la idolatría. Debemos aprender a soportar pacientemente en las
+								iglesias católicas el ruido del ceremonial, y del alabarda de Suiza, para cansarse
+								a todos gravedad y consideración en los templos protestantes, para mantener seriedad
+								en Sinagoga y la mezquita a pesar de las cabezas insonorizadas por los rabís y las
+								contorsiones de los derviches. Todo esto debe tener su tiempo.&nbsp;<a class="return-anchor" id="ret-118-1"></a><sup>[118:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-118-1">Magia y Magismo nota 118:1</a>]
+							</p>
+							<p>
+								Una religión pasa lejos, pero matrices del hombre de los restos de religión, pero
+								matrices de humanidad no; una mujer deja de amar o ser amable, pero la mujer es
+								jamás digna del respeto y del amor; una rosa se marchita totalmente demasiado temprano,
+								pero la rosa es una flor imperecedera, y flores de nuevo en cada estación. Sirvamos
+								nos de las religiones para la religión, los hombres de amor para la humanidad, y
+								las mujeres para el amor de la mujer; buscamos elevarnos entre los rosas, y jamás
+								encontraremos la decepción o la desesperación.
+							</p>
+							<p>
+								Pero porque somos unos hombres, no debemos insistir en los niños que son hombres.
+								No debemos pegarlos porque caen, ni los emplean duramente porque no comprenden las
+								cosas quiénes están por encima de su edad. No debemos robarlos sus punzones y sus
+								muñecas; los adoran; más tarde los romperán; la mama les dará otros, y el papá no
+								tendrá que decir nada.
+							</p>
+							<p>
+								Los libros sagrados de todas las naciones en cada vez fueron colecciones de fábulas;
+								son los libros y las imágenes hechas para la instrucción de los niños.
+							</p>
+							<p>
+								Generalmente son los trabajos colectivos que repiten todo el conocimiento y todas
+								aspiraciones más elevadas de personas y de una época. Son consagrados porque los
+								monumentos deberían ser, y dignos del respeto, lo mismo que la memoria de los antepasados.
+								El espíritu divino ciertamente los inspiró, pero les inspiró a los hombres y no
+								a los dioses.
+							</p>
+							<p>
+								Indican a Dios, porque el árbol que se desarrolla indica la semilla plantada en
+								la tierra, o mientras que la pasta naciente indica la levadura escondida. Esta comparación
+								doble es tomada de Jesús el Cristo mismo.
+							</p>
+							<p>
+								Dijimos que las absurdidades del dogma eran enigmáticas; son mucho más sistemáticas.
+								Los grandes iniciados del mundo antiguo jamás explicaron sus símbolos excepto por
+								símbolos oscuros. Dios quiere ser adivinado, porque la adivinación es divina, porque
+								la palabra misma bastante lo indica. El enigma de la esfinge es la prueba de todos
+								los principiantes, y las tres parcas dirigidas del perro siempre a los pórticos
+								de la cripta de los misterios. En la religión, explicarse pertenece a profano; ceder
+								más oscuro es indicar.
+							</p>
+							<p>
+								La Ciencia y la religión tienen por lugar día y noche. Si la razón sea el sol, la
+								fe es la luna.&nbsp;<a class="return-anchor" id="ret-120-1"></a><sup>[120:1]</sup>
+								En ausencia del sol, la luna es la soberana de los cielos ., sin embargo, no olvidamos
+								que es del sol que lo toma totalmente rayos, y que la fe verdadera jamás puede ser
+								absurda excepto parecer.
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-120-1">Magia y Magismo nota 120:1</a>]
+							</p>
+							<p>
+								¿ La Ciencia, no tiene tampoco sus misterios? Escaparse si tú poco fuera del laberinto
+								del infinito. ¿ Las moléculas indivisibles verdaderamente existen? Esfuerzo por
+								concebir la sustancia sin prolongación.&nbsp;<a class="return-anchor" id="ret-120-2"></a><sup>[120:2]</sup>
+								Si sobre la materia contraria es infinitamente divisible, un grano del polvo puede,
+								en el infinito del tiempo, por el número infinito de sus moradas, iguala el infinito
+								del espacio&nbsp;<a class="return-anchor" id="ret-120-3"></a><sup>[120:3]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-120-2">Magia y Magismo nota 120:2</a>]
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-120-3">Magia y Magismo nota 120:3</a>]
+							</p>
+							<p>
+								<span class="sans">¡</span> Absurdidades de todos los lados! Preguntar a Marphurius; desea explicar que la
+								evolución policromía conceptos analíticos, en el pariente, es igual al isocronismo.
+								El concepto sintético en lo absoluto, y de él concluye de ahí que el sincretismo
+								de lo abstracto es análogo al sincretismo de lo concreto. &ndash; <span class="sans">¡</span> Arciturane de
+								Cabricias! <sup>[c]</sup>
+							</p>
+							<p class="fnote">
+								[c. Latin falso de Molière, El doctor a pesar de sí mismo (Le Médecin Malgré Lui).]
+							</p>
+							<p>
+								Los misterios de la fe son tomados por la inmensa mayoría de los misterios de la
+								ciencia; ¿ por ejemplo, no es el ligero, en tres rayos de diferentes colores? En
+								su triplicidad es azul, amarillo y rojo, en su unidad que es blanco. Esta trinidad
+								da siete matices de color; aquí tenemos septenario sagrado.&nbsp;<a class="return-anchor" id="ret-121-1"></a><sup>[121:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-121-1">Magia y Magismo nota 121:1</a>
+								&ndash; Nota a pie muy larga, con una tabla.]
+							</p>
+							<p>
+								La luz produce formas, es encarnado en los seres vivos, muere para restablecer,
+								y compra para atrás cada mañana nuestro hemisferio de la esclavitud de noche. Dupuis
+								concluyó de ahí que Jesús el Cristo era el sol; <span class="sans">¡</span> un descubrimiento fino! Es como
+								si se profese que una esfera de cartón francamente era el universo.
+							</p>
+							<div class="right-image-div">
+								<img id="punch" src="images/mr-punch-killing-the-devil.jpg" alt="Sr. Punch matando al diablo" />
+							</div>
+							<p>
+								La religión es una fuerza que se escapa de la impía y contra los que se rompen.
+								Sr. Punch
+								<!-- in original El punzón-->
+								jamás conseguirá matar al diablo, <sup>[c]</sup> porque el diablo es una caricatura
+								de Dios, y esta caricatura pertenece a los que lo hicieron. Se queda en sus ojos,
+								los fascina y persigue. ¿ Si toda la pantalla pueda fusionarse para exterminar a
+								los que pueden ver, podrían empatar entonces se apagan el sol?
+							</p>
+							<p class="fnote">
+								[c. Sr Punch apareció por primera vez en espectáculos de títeres en Gran Bretaña
+								en el siglo XVII. Era una fuerza de caos imparable, colgando al mismo Diablo en
+								esta caricatura de 1842 de William Newman en la primera compilación del semanario
+								humorístico Punch.]
+							</p>
+							<p>
+								Las masas están sin visibilidad e idiotas y deben ser llevadas por el profeta y
+								los sabios. Pero cuando cuyo deber es para llevar la figura, se vuelven ciego, cuando
+								los guardias mismos del loco se vuelven locos, resultan allí de caídas y desórdenes
+								espantosos. Es la historia de todas las revoluciones.
+							</p>
+							<p>
+								La utilización de la fuerza brutal de reprimir el desorden provoca reacciones inevitables
+								y terribles cuando esta fuerza no tiene el apoyo de la justicia y de la verdad:
+								para entonces se vuelve fatídica &nbsp;<a class="return-anchor" id="ret-127-1"></a><sup>[127:1]</sup> y equilibras, necesariamente, acción por la reacción.
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-127-1">Magia y Magismo nota 127:1</a>]
+							</p>
+							<p>
+								La guerra autoriza represalias, porque en la guerra, según la enunciación cínica
+								de un gran diplomático alemán, es una fuerza que hace bien; y en efecto el despotismo,
+								si reyes o muchedumbre, es guerra; la autoridad de la ley y del imperio de la justicia
+								es paz.
+							</p>
+							<p>
+								La unidad social es el fin y el fin de la civilización y de la política transcendental,
+								una extremidad al cual, desde Nimrod, a todos los grandes conquistadores y a estadista
+								profundos se refirieron. Los asirios, Medes, los persas, griegos, romanos, totalmente
+								buscado para absorber el mundo. Bacchus, Hércules, Alejandro, César, Pedro el grande,
+								Napoleón, no tuvo ningún otro sueño; El pensamiento de papas lo realiza bajo el
+								nombre de la religión, y era una idea grande; pero Alemania se opone en nuestros
+								días a matemáticas en la convulsión entusiasta de la creencia, y se hincha el día,
+								al día su ministerio de las Finanzas. El emperador, uno de ambos pilares del mundo,
+								ahora es todavía derecho, y no es romano más. Roma de un lado, y del otro lo equilibra
+								entero de él mundo no es igual más; necesariamente deberíamos necesitar a un papa
+								cosmopolita, cuando tuvimos un emperador universal.
+							</p>
+							<p>
+								La magia alta es inmediatamente religión y la Ciencia. Este único armoniza contrario
+								explicando las leyes del equilibrio y de las analogías. Este solo toma vuelve al
+								Pontífice soberano infalibles y los monarcas absolutos; el arte Sacerdotal también
+								es el arte real, y lo cuenta José de Maistre no ha sido engañado cuando, desesperando
+								en la creencia apagada y las fuerzas debilitadas, volvió los ojos, contra su voluntad,
+								hacia los santuarios del ocultismo. Es de ahí dónde la salvación vendrá, y ya se
+								indica a las inteligencias más avanzadas.
+							</p>
+							<p>
+								La Masonería, que tiene así asustó el patio de Roma, no es tan terrible como la
+								gente piensa; perdió sus luces antiguas, pero preservó sus símbolos y sus ritos
+								que pertenecen a la filosofía oculta; da siempre los títulos y las cintas de la
+								cruz atractiva, pero el Rosa cruz verdadero no son más en sus templos; son lo que
+								fueron ellas del comienzo - filósofos y desconocido. Paschalis, Martines y San Martín
+								tienen sucesores que no se reúnen en asambleas regulares. Su cámara estaría en la
+								gran pirámide de Egipto, una expresión, alegórica y mística, que los inocentes y
+								los ignorantes están en la libertad de agarrar literalmente.
+							</p>
+							<p>
+								Hay una cosa más indiscutiblemente infalible que el papa, y es matemáticas. Fuerza
+								rigurosamente demostrada por las verdades el espíritu a las suposiciones que podemos
+								llamar las hipótesis necesarias. Estas hipótesis, si puedo así expresarme, son los
+								objetos científicos de la fe. Pero la imaginación, exaltada por un infinito quieren
+								creer y el amor, saca sin cesar de las esto deducciones paradójicas objetivas razonables;
+								para limitar imaginaciones de permiso y de mística, debe tiene allí una razón emocionante
+								de autoridad sobre uno lado y misticismo del otro; esta autoridad, dogmáticamente
+								infalible, no necesita, y no puede, él tan científicamente. La Ciencia y la fe son
+								ambas columnas del templo; sostienen su pórtico.
+							</p>
+							<p>
+								Si ellas ambas eran por el mismo lado, la estructura debe caer de la otra.
+							</p>
+							<p>
+								Es su separación y paralelismo que debería eternamente mantener el equilibrio.&nbsp;<a class="return-anchor" id="ret-130-1"></a><sup>[130:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-130-1">Magia y Magismo nota 130:1</a>]
+							</p>
+							<p>
+								La comprensión de este principio pondría detener en una idea falsa antigua demasiado
+								y aportaría la paz a muchas almas. En la verdad entre la ciencia y la fe ningún
+								verdadero antagonismo puede subsistir. Todo que ha sido demostrado se vuelve inatacable,
+								y le es imposible creer en el lo que francamente se sabe para no ser verdad. Galilea
+								supo que la tierra había girado, pero también supo que la autoridad de la iglesia
+								era inatacable porque la iglesia es necesaria. La iglesia no tiene ninguna autoridad
+								en los sujetos de la ciencia, sino puede oponerse con toda su fuerza a la difusión
+								de las verdades científicas particulares que juzga estar a la hora actual perjudiciales
+								a la fe. Poblar muy generalmente creído en el tiempo de Galilea dónde la vulgarización
+								del sistema de Copérnico daría la mentira a la Biblia. Forzado más tarde se volvió
+								naturalmente necesario admitir este sistema, porque se lo demostró él de encontrar
+								medios de reconciliar la diferencia; la tierra gira de hecho, pero los restos infalibles
+								de iglesia, hasta cuando declara que ella misma no es más, sino nuestro padre santo
+								el papa, que es infalible.&nbsp;<a class="return-anchor" id="ret-131-1"></a><sup>[131:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-131-1">Magia y Magismo nota 131:1</a>]
+							</p>
+							<p>
+								Esto no es dicho irónicamente; el papa es infalible porque es necesario que debería
+								ser así, y es verdaderamente así, para los que lo creen, ya que su infalibilidad
+								se prolonga solamente para los sujetos de la fe.
+							</p>
+							<p>
+								El trabajo de la ciencia debe separar la fe de la letra y unirlo al espíritu; en
+								la proporción como las elevaciones de la ciencia, la fe es exaltada.
+							</p>
+							<p>
+								Evangelio eterno está como la nube que esto llevó a los judíos en el desierto; tiene
+								una cara de sombra y una cara de luz; la cara de la sombra es su misterio, la cara
+								de la luz su razón. La sombra es repartida la carta, la luz emana del espíritu.
+							</p>
+							<p>
+								Hay un evangelio de la fe y un evangelio de la Ciencia. Por otra parte la Ciencia
+								devuelve la fe irrefutable; aquellos a los que duda no conocen.&nbsp;<a class="return-anchor" id="ret-131-2"></a><sup>[131:2]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-131-2">Magia y Magismo nota 131:2</a>]
+							</p>
+							<p>
+								La fe ignorante se preserva solamente por terquedad, y la terquedad en la ignorancia
+								es solamente fanatismo.
+							</p>
+							<p>
+								Cuál se cree sin saber, pero sin fanatismo, comenzará muy pronto a dudar, y esto
+								duda puede tener solamente como su conocimiento o indiferencia del resultado.
+							</p>
+							<p>
+								Debemos aprender, o dejar de creer. Dejar de creer es más fácil, pero para que el
+								alma deje de creer es dejar de amar; y dejar de amar, es dejar de vivir.
+							</p>
+							<p>
+								Los fanáticos son enfermos, pero viven siempre; los indiferentes murieron.
+							</p>
+							<p>
+								La creencia sin visibilidad no mejoran la humanidad; pueden retenerlos por el temor
+								o atraerlos por esperanza, pero el temor y el deseo no son unas virtudes. Un perro
+								puede retener su apetito bajo el temor del látigo, pero sin embargo se queda, ávido,
+								añade solamente la cobardía a la avaricia. Creer así en cualquier buen fin, debemos
+								saber. Le dijimos que una escasas ciencia separara de Dios, y que mucha ciencia
+								todavía nos llevara para atrás a él; esta enunciación debe ser explicada declarando
+								que un principio de la Ciencia y de la filosofía separa al hombre de Dios del idiota,
+								mientras que la adquisición de muchos de estos últimos se lo aporta a Dios de la
+								sabiduría.
+							</p>
+							<p>
+								El Magista no necesita formular su fe en Dios,&nbsp;<a class="return-anchor" id="ret-133-1"></a><sup>[133:1]</sup> que se siente en que la fuerza suprema de la
+								verdad y del Dios, que anima, le sostiene, enriquece y consuela.
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-133-1">Magia y Magismo nota 133:1</a>]
+							</p>
+							<p>
+								¿ Cuál necesidad nos tienen para definir la luz cuando se puede verlo? ¿ Cuáles
+								el resultado él para probar la vida, cuando se está vivo? Cuando San Pablo ha sido
+								convertido, dice en los hechos de los Apóstoles, se sintió como si las vendas hubieran
+								caído de sus ojos.
+							</p>
+							<p>
+								Las escamas que cubren los ojos de nuestras almas son las vanidades vanas de una
+								teología impetuosa y de una malsana sofisma de una filosofía falsa. Los iniciados
+								son el profeta y por lo que es prudente, ver es saber, para saber está a la voluntad,
+								a la voluntad es atreverse; pero para atreverse con éxito, debemos querer y saber
+								ser silenciosos.
+							</p>
+							<p>
+								&quot;Jamás ser ardiente,&quot; dijo Talleyrand, y el mismo diplomático comprobó
+								que la palabra se nos había sido consagrada para disfrazar nuestros pensamientos.
+								Este actor político no está según nuestro gusto; no decimos el disfraz; decimos
+								rearrope y el castamente ponga el velo que la Virgen a la que llamamos el pensamiento,
+								porque nuestro pensamiento no es un pensamiento de interés y de falsedad personales;
+								el velo del santuario no es como la cortina de la comedia; es a veces jirones, pero
+								él jamás se levanta.&nbsp;<a class="return-anchor" id="ret-134-1"></a><sup>[134:1]</sup>
+							</p>
+							<p class="fnote">
+								[<a class="to-footnote" href="magia-y-magismo-notas.htm#nota-134-1">Magia y Magismo nota 134:1</a>]
+							</p>
+							<p>
+								El iniciado evita con cuidado toda la excentricidad; piensa lo mismo informado,
+								y habla lo mismo que la masa. Si explora los caminos de través debe alcanzar solamente
+								más seguramente y rápidamente las grandes vías; sabe que los pensamientos verdaderos
+								están como el agua corriente. Los del flujo pasado por el presente, y la rodadura
+								arriba hacia el futuro sin nuestro deber trabajar mucho hacia a tras en su fuente
+								para encontrarlos; y se permite ser tranquilamente sostenido adelante por la corriente,
+								pero jamás se coge sobre el medio de la corriente, jamás magullándose contra las
+								rocas que rayan a sus bancos.
+							</p>
+							<p class="note center">
+								( Fin del capítulo Magia y Magismo )</p>
+							<hr />
+							<p class="note80">
+								Las notas a pie de este capítulo son tan voluminosas que se agregan en una página
+								aparte: <a class="to-footnote-page inline" href="magia-y-magismo-notas.htm">magia-y-magismo-notas.htm</a></p>
+							<hr />
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="paradoja-7-la-voluntad-realiza-todo-que-ella-no-desea.htm">
+									&lt; Paradoja 7</a></li>
+							<li class="align-right"><a href="los-principios-inalterbles.htm">Los Principios Inalterables
+									&gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

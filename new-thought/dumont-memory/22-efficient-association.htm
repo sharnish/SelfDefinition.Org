@@ -1,0 +1,399 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22: Efficient Association</title>
+    <meta name="description" content="As psychologists have discovered, voluntary recollection is possible only when the memorized thing is connected with or associated with other memorized things.">
+    <meta name="author" content="'Theron Q. DuMont' : William W. Atkinson">
+    <meta property="og:title" content="Lesson 22: Efficient Association">
+    <meta property="og:description" content="As psychologists have discovered, voluntary recollection is possible only when the memorized thing is connected with or associated with other memorized things.">
+    <meta property="og:image" content="https://selfdefinition.org/new-thought/dumont-memory/images/william-walker-atkinson.jpg">
+    <!-- load external stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_dumont-memory-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="21-pointers.htm">
+    <link rel="next" href="23-associative-efficiency.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 288px;
+            border: 0px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_dumont-memory-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_dumont-memory-title-include.htm"); ?>
+                                    <h3>
+                                        <span class="block">Lesson 22</span> Efficient Association
+                                    </h3>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="21-pointers.htm">&lt; 21 Pointers on Perception</a></li>
+                                    <li class="align-right"><a href="23-associative-efficiency.htm">23 Associative Efficiency &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#association">Principle of Association</a></li>
+                                    <li><a href="#analysis">Analysis</a></li>
+                                    <li>&nbsp;&nbsp;Interrogative Analysis</li>
+                                    <li><a href="#higher-analysis">Higher Analysis</a> (Gurdjieff's list)</li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="association">&nbsp;</a>
+                            <h4 class="top-heading">
+                                Principle of Association
+                            </h4>
+                            <p>
+                                As I have repeatedly informed you, this great second principle of memory&mdash;the Principle of Association&mdash;plays a most important part in the process of recollection and remembrance. It is second only to the Principle of Attention. As the best psychologists have discovered, voluntary recollection is possible only when the memorized thing is connected with, linked to, or associated with other memorized things. The greater the number of such associations, the greater the probability of its recollection when required.
+                            </p>
+                            <p>
+                                [James] Beattie <sup>[1]</sup> well sums up the matter when he says: &quot;The more relations or likenesses that we find or can establish between objects, the more easily will the view of one lead us to recollect the rest.&quot;
+                            </p>
+                            <p class="fnote">
+                                [1. (1735-1803) <a href="https://en.wikipedia.org/wiki/James_Beattie_(poet)">
+                                    en.wikipedia.org/wiki/<wbr>James_<wbr>Beattie<wbr>_(poet)</a> Dissertations moral and critical. On memory and imagination (1783) page 25:
+                                <a href="https://archive.org/details/dissertationsmor00beat/page/n8/mode/2up">
+                                    Archive.Org</a>&nbsp;]
+                            </p>
+                            <p>
+                                [Neil] Arnott <sup>[2]</sup> says: &quot;The ignorant man charges his hundred hooks of knowledge with single objects, while the informed man makes each hook support a long chain to which thousands of kindred and useful things are attached.&quot;
+                            </p>
+                            <p class="fnote">
+                                [2. Neil Arnott, MD, <em>Elements of Physics, or Natural Philosophy</em> (pub. about 1835) , <a href="
+                                https://books.google.com.mx/books?id=s-hhAAAAcAAJ&pg=PR35&lpg=PR35&dq=The+ignorant+man+charges+his+hundred+hooks+of+knowledge+with+single+objects&source=bl&ots=JBkMBOfxm2&sig=IErxHkCVicLejvRg4GPI5NQx4iI&hl=en&sa=X&ved=0ahUKEwj78fLLz7PcAhXrhlQKHa_FBGIQ6AEIPDAF#v=onepage&q=The%20ignorant%20man%20charges%20his%20hundred%20hooks%20of%20knowledge%20with%20single%20objects&f=false">
+                                    Google Books</a> &nbsp;Extract here: <a href="images/screencap-dr-arnott-quote-ignorant-man.jpg">
+                                    screencap</a>.]
+                            </p>
+                            <p>
+                                Others have advised that each idea be &quot;entangled&quot; by threads of association to many other related ideas, so that the recollection of one will bring to light the rest, if they are needed.
+                            </p>
+                            <p>
+                                In the earlier lessons of Association, I have described the association of contiguity in time and space. Our present consideration is that of <em>contiguity in consciousness,</em> by relations of likeness, etc. For the reason that we have seen, we should endeavor to associate the thing to be remembered, with as many related and similar things as possible. Or, if you prefer this illustration, it may be said that we should endeavor to view them from as many angles&mdash;as many view-points&mdash;as possible. The more we know about a thing, the more easily is that thing recalled in memory.
+                            </p>
+                            <p>
+                                Many elaborate schemes and systems of artificial association have been devised, and while each of them probably contains some ideas of merit the most of them are too cumbersome, artificial and strained to be of much practical use.
+                            </p>
+                            <p>
+                                For instance, some of these systems teach long chains of words, each associated with the one preceding, and the one following it; the idea being that by memorizing these chains of words, one may travel along this course and recall the desired word. For instance, in some of these systems the following artificial and strained associations were taught&mdash;the examples are actually given in these systems, as amusing as they may seem to the student of rational memory training. Here are the examples&mdash;study them carefully, O, student; and see what you have escaped:
+                            </p>
+                            <blockquote>
+                                <p>
+                                    Example I. &quot;Chimney&mdash;smoke&mdash;wood&mdash;tree&mdash;leaf.&quot;
+                                </p>
+                                <p>
+                                    Example II. &quot;Pillow&mdash;feather&mdash;quill&mdash;pen&mdash;ink.&quot;
+                                </p>
+                                <p>
+                                    Example III. &quot;Apple&mdash;windfall&mdash;windstorm&mdash;wrap well&mdash;Apfel.&quot;
+                                </p>
+                            </blockquote>
+                            <p>
+                                The first two are so far fetched as to need no comment&mdash;surely one could connect Chimney and Leaf, or join Pillow and Ink, without this chain. As for the third, which is supposed to furnish an easy way to teach the English person the German word for Apple&mdash;this in the words of our American cousins, &quot;is the limit.&quot; Does not Apple, itself, suggest Apfel, much more readily than this cumbersome chain? Surely the learning of a new language has sufficient terrors, without adding strange and frightful ones in the form of such a &quot;system!&quot;
+                            </p>
+                            <p>
+                                Imagine trying to memorize a list of names or articles in this way! Such methods remind me of an attempt to reach London from Paris, by traveling eastward through Europe, Asia, the Pacific Ocean, through America, the Atlantic Ocean, Ireland, England, and thus at last reaching London, Hurrah! This may be a delightful trip if one has the time and money&mdash;but for ordinary purposes, I prefer the usual trip across the Strait of Dover, with its little railway journey at each end. Imagine trying to reach a point directly across the street, by deliberately turning your back upon it, and then traveling around the world in the opposite direction from it, with the idea of approaching it from the rear! These systems are equally as ridiculous, to my mind.
+                            </p>
+                            <p>
+                                Before leaving the subject, I ask you to consider a few lines from a satire on these cumbersome systems of memory, which appeared in the magazines a few years ago. In the story, a man tries to remember the name of his sweetheart in this way, as per the &quot;system&quot; he has studied. Listen to him: &quot;Girl&mdash;dress&mdash;dressmaker&mdash;sewing&mdash;thread&mdash;spool&mdash;cotton&mdash;cotton-mill&mdash;spinner&mdash;bobbin&mdash;bob&mdash;Rob&mdash;Robert&mdash;Roberta!&quot; Roberta was the girl's name. Eureka!
+                            </p>
+                            <p>
+                                The story, however, goes on to say that in time the young man fell in love with another girl, whose name he remembered as follows: &quot;Girl&mdash;dress&mdash;dress maker&mdash;sewing&mdash;thread&mdash;needle&mdash;pins&mdash;Pinafore&mdash;Josephlne!&quot; And thus he remembered his beloved Josephine.
+                            </p>
+                            <p>
+                                The sequel is unhappy, however, He gets his associative chains twisted, and proceeds to address Josephine as &quot;Roberta.&quot; Tableau! I do not think that you require any instruction of this kind, dear students. You may easily invent chains of this sort, to amuse yourselves, if you wish&mdash;but not for the purpose of memory training, I beg of you.
+                            </p>
+                            <!-- Bottom half of page 207 is cut off, but it is repeated 2 pages later in full -->
+                            <!-- start copied paragraph -->
+                            <p>
+                                There are, however, a number of forms of artificial association, some of which may be applied at times, as &quot;pegs&quot; upon which to hang little bits of memorized things. I shall mention these in their proper place. At present, however, I think it better to proceed to a consideration of the best and most scientific methods of real, logical methods of efficient association. These methods are based on actual psychological principles, and are as real as the mind itself. They follow Nature's own laws, and are in the line of all real acquisition of knowledge by the use of the memory. An observance of these laws strengthens the mind and memory, instead of weakening them as do many of the extremely artificial systems, such as those I have just mentioned.
+                            </p>
+                            <!--  copied paragraph follows -->
+                            <!-- the duplicated page 207 is now deleted -->
+                            <!-- start p 208 -->
+                            <p>
+                                These methods of efficient association may be grouped into three general classes as follows:
+                            </p>
+                            <ul style="list-style: none;">
+                                <li>I. Analysis. </li>
+                                <li>II. Comparison. </li>
+                                <li>III. Synthesis</li>
+                            </ul>
+                            <p>
+                                I shall now ask you to follow me in the consideration of these three great classes of association in memory. I shall point out the practical methods of application, of course, as we proceed. But you must know why you are doing a thing, as well as being told how to do it, if you wish to become reaIly efficient and proficient in the subject.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="analysis">&nbsp;</a>
+                            <h4>
+                                Analysis
+                            </h4>
+                            <p>
+                                ANALYSIS. Analysis may be defined as the process by means of which anything is resolved into its original parts, usually including the examination of such constituent parts. It is the dissection of a thing; the taking apart of its component parts; the setting aside of its properties, qualities and attributes. In short, it results in the examination of a thing's parts, and the perception of the thing as composed of these parts&mdash;rather than the perception of the thing as a solid whole.
+                            </p>
+                            <p>
+                                It is axiomatic that we can know a thing more fully if we have analyzed it into its parts or qualities. And, it is equally axiomatic that the better we know a thing, the better do we remember it. Therefore, it is seen that by analyzing a subject, or object, which we wish to remember, we are taking the best steps toward impressing it upon the memory.
+                            </p>
+                            <p>
+                                And, I need scarcely again remind you that by associating it in memory with its many component parts or qualities, we are making it easy for us to recollect it by means of the many associative &quot;loose ends&quot; of memory. In short, we are indexing and cross-indexing it very thoroughly in this way, so that we may find it catalogued in memory under many headings.
+                            </p>
+                            <p>
+                                One of the leading principles of many modern &quot;memory systems,&quot; is that known as &quot;Interrogative Analysis.&quot; To listen to the glowing descriptions of this principle by some of the teachers, you might imagine that they had discovered this principle. But, as all students of the subject know, or should know, the principle is as old as the science of teaching, and its value has always been recognized by the best minds of the race. It was the keynote of the teaching method of Socrates, who was born 468 B.C.
+                            </p>
+                            <p>
+                                Socrates taught philosophy by asking questions of his pupils, and thus drawing out their knowledge on the subject, and at the same time opening the way to the creation of more knowledge by stimulating the mind to activity in the direction of fitting out the idea of things which were outlined by his questions. It is noteworthy that the pupils of Socrates were also renowned for their excellent memories&mdash;just what might have been expected, when we remember the laws of association by analysis.
+                            </p>
+                            <h5>
+                                Interrogative Analysis</h5>
+                            <p>
+                                There have been many ingenious plans of interrogative analysis arranged by teachers, but many of them are too cumbersome for efficiency The best results are obtained by the more simple rules and methods. In its simplest form, interrogative analysis may be illustrated by the simple analysis of a verse, or Biblical quotation, which one may wish to remember. This process proceeds as follows using the familiar opening lines of [Sir Walter] Scott's &quot;Lady of the Lake&quot; as an example:
+                            </p>
+                            <blockquote>
+                                <p style="margin-bottom:5px;">
+                                    &quot;The stag at eve had drunk his fill,
+                                    <br> Where danced the moon, on Monan's rill;
+                                    <br> And deep his midnight lair had made,
+                                    <br> In lone Gletartney's hazel shade.&quot;
+                                </p>
+                                <span class="tiny block">&nbsp;&nbsp;* Mispelling of Glenartney.</span>
+                            </blockquote>
+                            <p>
+                                The interrogative analysis would proceed as follows:
+                            </p>
+                            <blockquote>
+                                Q. Who is the actor? A. The stag!
+                                <br> Q. When did he act? A. At eve!
+                                <br> Q. What did he do? A. (a) Drank, and (b) made his lair!
+                                <br> Q. Where did he do these things? A- (a) he drank from Monan's rill, and (b) made his lair in the shade of Gletartney!
+                                <br> Q. How, or in what manner? A- (a) he drank his fill, <span class="nowrap">i.e.,</span> drank deeply and fully; and (b) he made his lair deep, for his night's rest.
+                            </blockquote>
+                            <p>
+                                This may be analyzed still further, if desired, as follows:</p>
+                            <blockquote>
+                                Q. Describe Monan's rill! A. Its waves were in motion, and the moon was reflected from its dancing waves!
+                                <br> Q. Describe the scene in Gletartney's shade! A. It was a lone, quiet, secluded place, and with deep shadows falling from its hazel trees, beneath the light of the moon!
+                            </blockquote>
+                            <p>
+                                From another angle, the analysis may he made as follows:
+                            </p>
+                            <blockquote>
+                                Q. What idea does each line convey? A. (1) The stag drinking his fill at eve; (2) the secne of his drinking&mdash;Monan's rill, with the moon dancing on its waves; (3) the deep midnight lair, made by the stag, following the draught at the rill; and (4) the scene in the lone shade of the hazel trees of Gletartney!
+                            </blockquote>
+                            <p>
+                                The mind can readily picture each of these ideas.
+                            </p>
+                            <p>
+                                Try the experiment of first merely reading these lines aloud, and then reciting them slowly, with the above analysis in mind. You will find that the first recitation merely &quot;scratched the surface&quot; of your memory, whereas the second made a comparatively deep impression. In fact, it is extremely probable that you have impressed the lines themselves upon your memory, by simply making the above analysis, and mental picture. At any rate, you will remember the picture, clearly, and for a long time, from having merely made it once in this exercise. Try the principle on other verses which may occur to you&mdash;the following from Ella Wheeler Wilcox, for example;
+                            </p>
+                            <blockquote>
+                                &quot;Laugh, and the world laughs with you;
+                                <br> Weep, and you weep alone!
+                                <br> For this sad old earth
+                                <br> Is in need of mirth&mdash;
+                                <br> It has troubles enough of its own.&quot;
+                            </blockquote>
+                            <p>
+                                In the same way, the favorite method of Biblical verse analysis has proved of the greatest assistance to many clergymen and priests have followed ft. Apply this method to the following quotation:
+                            </p>
+                            <p>
+                                &quot;For God so lived the world, that he gave his only begotten son, that whosoever believeth in him shall have everlasting life.&quot;
+                            </p>
+                            <blockquote>
+                                Q. Who? A. God!
+                                <br> Q. What? A. He loved!
+                                <br> Q. He loved what? A. He loved the world!
+                                <br> Q. How much did he love the world? A. So much that he gave his son!
+                                <br> Q. What son? A. His only begotten son!
+                                <br> Q. For what purpose did he give his only begotten son? A. That whosoever believeth in him shall have everlasting life!
+                                <br> Q. Who should have everlasting life? A. Whosoever that believeth in him!
+                                <br> Q. What kind of life? A. Everlasting life!
+                                <br> Q. Why shall whosoever that believeth in Him have everlasting life? A. Because God gave his only begotten son for that purpose!
+                                <br> Q. Why did God so give Him? A. Because he so loved the world!
+                            </blockquote>
+                            <p>
+                                Now re-read the verse in the light of the analysis, and see how much clearer it is in the memory and understanding, than before.
+                            </p>
+                            <p>
+                                I know of no better, simpler system of applying the above principles of interrogative analysis, than the familiar set of questions to be so applied, as follows:
+                            </p>
+                            <h5>
+                                The Seven Questions</h5>
+                            <blockquote>
+                                <p>
+                                    (1)&nbsp;Who?
+                                </p>
+                                <p>
+                                    (2)&nbsp;Which?
+                                </p>
+                                <p>
+                                    (3)&nbsp;What?
+                                </p>
+                                <p>
+                                    (4)&nbsp;When?
+                                </p>
+                                <p>
+                                    (5)&nbsp;Where?
+                                </p>
+                                <p>
+                                    (6)&nbsp;Why?
+                                </p>
+                                <p>
+                                    (7)&nbsp;How?
+                                </p>
+                            </blockquote>
+                            <p>
+                                The two first questions bring out and establish the identity of the person or thing; the third brings out the action to or by the person or thing; the fourth and fifth, the place and time, the sixth the reason or purpose, and the seventh the manner of the action.
+                            </p>
+                            <p>
+                                This apparently simple code of questions will bring out a wealth of detail regarding any event, person, or things, and will serve to fix it in the memory as a more clearly understood thing. Each question is the key to a host of associative impressions. I again remind you that the use of a pencil in noting down the information that you draw forth from yourself in this manner, will aid you materially in this work.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="higher-analysis">&nbsp;</a>
+                            <h4>
+                                Higher Analysis <span class="normal">(Gurdjieff's list)</span>
+                            </h4>
+                            <p>
+                                HIGHER ANALYSIS. There have been designed a number of tables, or systems of higher or fuller analysis than the Seven Questions, all operating on the same principle. The following is the one which I have adapted, and used in my personal class work here in Paris. It answers the purpose better than any other form I ever have employed:
+                                <sup>[1]</sup>
+                            </p>
+                            <p class="fnote">
+                                [1. Part of this list appears in Chapter 9 of <em>Views from the Real World</em>, compiled by students of Gurdjieff. <a href="/gurdjieff/real-world/ch-09-constitution-and-how-to-think.htm">/gurdjieff/real-world/ch-09-constitution-and-how-to-think.htm</a>&nbsp;]
+                            </p>
+                            <p>
+                                (1) Name of Person or Thing?
+                            </p>
+                            <p>
+                                (2) When did it exist?
+                            </p>
+                            <p>
+                                (3) Where did (or does) it exist?
+                            </p>
+                            <p>
+                                (4) What caused it to exist?
+                            </p>
+                            <p>
+                                (5) What is its history?
+                            </p>
+                            <p>
+                                (6) What are its leading characteristics?
+                            </p>
+                            <p>
+                                (7) What is its use and purpose?
+                            </p>
+                            <p>
+                                (8) What are its effects, or results?
+                            </p>
+                            <p>
+                                (9) What does it prove or demonstrate?
+                            </p>
+                            <p>
+                                (10) What is its probable end or future?
+                            </p>
+                            <p>
+                                (11) What does it most resemble?
+                            </p>
+                            <p>
+                                (12) What are its opposites?
+                            </p>
+                            <p>
+                                (13) What do I know about it, generally, in the way of associated ideas?
+                            </p>
+                            <p>
+                                (14) What is my general opinion regarding it?
+                            </p>
+                            <p>
+                                (15) What degree of interest has it for me?
+                            </p>
+                            <p>
+                                (16) What are my feelings regarding it&mdash;degree of like or dislike?
+                            </p>
+                            <p>
+                                This system will bring out of your mind a surprising volume of information, and will also serve to impress the thing firmly and clearly upon your memory by hundreds of associative links. Prove this by applying it in earnest, and you will perceive the principle and realize its possibilities.
+                            </p>
+                            <p>&nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="21-pointers.htm">&lt; 21 Pointers on Perception</a></li>
+                                    <li class="align-right"><a href="23-associative-efficiency.htm">23 Associative Efficiency &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

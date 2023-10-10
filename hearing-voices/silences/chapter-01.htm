@@ -1,0 +1,1493 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1. Listening to the Silences</title>
+	<meta name="description" content="1. Listening to the Silences">
+	<meta name="author" content="Roy Vincent">
+	<meta property="og:title" content="1. Listening to the Silences">
+	<meta property="og:description" content="1. Listening to the Silences">
+	<meta property="og:image" content="https://selfdefinition.org/hearing-voices/silences/images/roy-vincent-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_silences-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- Jquery toggle chapter and essay menu items -->
+	<script src="_silences-show-hide-chapters.js"></script>
+	<link rel="prev" href="introduction.htm">
+	<link rel="next" href="chapter-02.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_silences-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, in title-include for small screens -->
+									<?php include( "_silences-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3> Chapter 1 </h3>
+								</header>
+							</div> <!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduction.htm">&lt; Synopsis and Introduction </a></li>
+									<li class="align-right"><a href="chapter-02.htm">Chapter 2 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height:1px;">&nbsp;
+							</div>
+
+							<!-- these are CSS3 columns -->
+							<div class="to-center">
+								<!-- items have :hover styling, color change -->
+								<!-- the uls don't float; they are display: inline-block -->
+								<nav class="contents">
+									<div class="item">
+										<a href="#part-1">Part 1</a>
+									</div>
+									<div class="item">
+										<a href="#part-2">Part 2</a>
+									</div>
+									<div class="item">
+										<a href="#part-3">Part 3</a>
+									</div>
+									<div class="item">
+										<a href="#part-4">Part 4</a>
+									</div>
+									<div class="item">
+										<a href="#part-5">Part 5</a>
+									</div>
+									<div class="item">
+										<a href="#part-6">Part 6</a>
+									</div>
+									<div class="item">
+										<a href="#part-7">Part 7</a>
+									</div>
+								</nav>
+							</div>
+							<!-- extra hook added April 30, 2022 -->
+							<div class="page-text">
+								<div class="centering-container">
+									<div class="centered-element top center">
+										<p>
+											if you are being engulfed in the quicksands of your mind;<br />
+											if you are calling for help in the silence of your mind;<br />
+											if you cannot silence the voices that invade your mind,<br />
+											dominate and torment you;<br />
+											if you are caring for someone who is struggling
+											<br />
+											within the morass that their mind has become ...
+										</p>
+										<p>
+											... if you are any of these, I am writing for you
+										</p>
+										<p>
+											* * *</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="centering-container">
+								<div class="centered-element">
+									<div class="center-left">
+										<p>
+											Don't get annoyed if the people coming to see you,<br />
+											if the people wanting to talk to you,<br />
+											can't manage to express the uproar raging inside them.
+										</p>
+										<p>
+											Much more important than listening to the words<br />
+											is imagining the agonies, fathoming the mystery,
+											<br />
+											listening to the silences ...
+										</p>
+										<p class="attribution">
+											- Dom Helder Camara
+											<!-- https://en.wikipedia.org/wiki/Hélder_Câmara -->
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-1">&nbsp;</a>
+							<h4>
+								Introit ...
+							</h4>
+
+							<p>
+								I am probably one of the people least likely to write anything remotely autobiographical.
+								Not that I have led an uninteresting or uneventful life. As my friends know to their
+								cost, they have only to press the appropriate button and they will have their ears
+								bent with anecdote and happenstance for some considerable time.
+							</p>
+							<p>
+								Essentially I am a private person and cringe at the products of this self-revelatory,
+								tell-all culture in which we live. Daily, hourly, by the minute, on television and
+								radio and in the printed media, people are pouring out the dross of their lives
+								to a gaping, prurient world, and like most trash it is soon dumped and overlaid
+								by the next batch.
+							</p>
+							<p>
+								So why write anything at all? Friends persuade me that from what has happened to
+								me, been inflicted upon me, there can be drawn that which may be of help and guidance
+								to others; to people who find themselves overwhelmed by the problems of their minds;
+								problems which flood their lives and threaten to submerge them, to drown them, or
+								suck them down.</p>
+							<p>
+								If I were to find myself trapped in quicksand, the person most calculated to be
+								able to help me, in whom I would have most confidence, would not be an expert in
+								sand and water mixtures, emulsions, but someone who had actually <i>been there</i>,
+								had been mired and sucked down; someone who had actually <i>extricated</i> himself
+								from the slough - who, even though he used the immortal words of Corporal Jones
+								in <i>Dad's Army</i>, "Don't panic, don't panic", would say them with all of the
+								conviction and authority of someone who knew what he was talking about, and would
+								back-up his words with the practical rescue techniques learned in the maelstrom
+								of personal life-threatening experience.</p>
+							<p>
+								"Life-threatening"? But isn't this going to be an account of the perils that can
+								terrorise, intimidate the mind? How can these be classed as "life-threatening"?
+							</p>
+							<p>
+								I have twice been in these allegorical quicksands; the first time I was pushed,
+								albeit accidentally, but over the long period in which I floundered I almost lost
+								my "mental life", my mind; the second, much briefer time, the one in which I strayed
+								accidentally and innocently into a mire, I found myself in grave danger of losing
+								my spiritual life. So, in that context, yes; life-threatening. But also, and it
+								must be faced, a point can be reached when suicide is the preferred option. So,
+								"life-threatening"? Yes.</p>
+							<p>
+								Unless you have been there yourself, I imagine that you will have difficulty with
+								the concept that death and oblivion could be preferable to continued life, assuming
+								that one had any choice. Frankly, I hope that you never find yourself in that morass.
+								But the imagination cannot conceive of the terror that can be created in the human
+								mind from one's own tormented soul or which can be planted there by dominating "voices",
+								from whatever source they may come.
+							</p>
+							<p>
+								Perhaps a better understanding of the prospect of final submersion before the reality
+								of which suicide is preferable, might be achieved by contemplating the dilemma of
+								someone actually trapped and in imminent danger of being overwhelmed in real quicksand,
+								and having in his hands the ready means of his own death and release.</p>
+							<p>
+								Sir Peter Scott in his wildfowling book, <i>Morning Flight</i> graphically paints
+								in words the picture of his own brother, David, facing this very situation. David
+								had spent a day alone wildfowling and found himself towards the close of the day
+								having shot a widgeon, but it having landed on the opposite side of a small estuary.
+								The tide being out, he had waded across and walked along the far shore. Suddenly
+								he found the sand to be soft; he took two more steps and it became softer. He tried
+								to turn back and he had sunk up to his knees.
+							</p>
+							<p>
+								At every move he sank deeper, and the sand around him had turned to a viscous pudding.
+								His movements became desperate and he made greater and greater efforts. When he
+								stopped, he had sunk to his waist. The more he struggled the farther he sank, until
+								he was so much submerged that he could no longer struggle. Only his head and shoulders
+								and arms remained above the jelly-like morass. Then he began to think carefully
+								of his position ... In an hour the flood tide would arrive. But he would not see
+								it come. He would not watch the water approaching inch by inch until he lost his
+								reason. There were two cartridges in his gun ...</p>
+							<p>
+								David was within moments of taking his own life when something made him turn, and
+								there, a dark shadow on the tide, was a small boat with three net fishermen. After
+								desperate and hoarse shouting and waving, they saw and came near, but not near enough
+								for a rope to reach, so two of the fishermen got out ... they were adept at moving
+								on the surface of the quicksand without sinking in. They hopped about "on all fours",
+								never remaining more than a second in one place. They reached harder ground and
+								from there threw a rope ... the men gave him hope and strength, and after ten minutes
+								of tremendous effort he felt himself gradually working up and out ... It turned
+								out that it was the first day of the smelt fishing season, and one day earlier there
+								would have been no boat on the river.</p>
+							<p>
+								The quicksand of the mind and the quicksand of the shore are most terrible, most
+								vile because they are invisible, indescribable. More terrible for the victim in
+								his mind, because he cannot shout, for who is there to hear him, if indeed he knew
+								<i>what</i> to shout. And yet, in the fastnesses of his mind, there is a desperate
+								call, plea, for help.
+							</p>
+							<p>
+								The quicksands of the mind are terrible because of their loneliness. On the brightest
+								day, in the most sparkling company, the person in depression cannot lift his eyes
+								to beauty, nor open his ears to the laughter, life and joy around. He is in the
+								gut-empty world of no-mind; robbed of all emotion; unable to believe in human love,
+								nor love from any source. If he knew them he would echo the words of the psalmist
+								... <i>you have turned my friends and neighbours against me, my one companion is darkness</i>.</p>
+							<p>
+								But, while darkness brings the immediate oblivion of sleep, it is a traitor. It
+								at first hides, then treacherously opens the trap-door to the world of no-sleep;
+								the world of the night terrors; the world of no-time between true night and day;
+								the world of the tormenting, mocking, teasing, dominating voices - voices from where?
+								If you read on you will find an answer. It may not be an answer which you will want
+								to read or which you will accept, but if you don't I'm afraid that that is your
+								problem. My answer is the answer of personal experience.</p>
+							<p>
+								For nearly forty years, I have had experiences that I would rather not have had,
+								experiences that could have made me exceedingly bitter. But the bitterness could
+								further have harmed me had I let it take a hold. Instead, I have been exceedingly
+								fortunate in being able to extract, distil from it all, much which has been, and
+								is, enthralling and enlightening.
+							</p>
+							<p>
+								Friends have persuaded me that others may derive benefit from my experiences and
+								enlightenment. So, if you are yourself being engulfed in the quicksands of your
+								mind; if you are calling for help in the silence of your mind; if you cannot silence
+								the voices which invade your mind, dominate and torment you; if you care for someone
+								who is struggling in the morass which their mind has become - if you are any of
+								these I am writing for you. As someone who has been there, extricated himself, I
+								am trying to throw you a rope; and while I do not hop around on all fours, I have
+								learned to tread lightly, warily amongst these perils.</p>
+							<p>
+								I have a very good friend whose approach to a new book, no matter how devious or
+								complex the plot, is just to dip at random each time he picks it up. I am still
+								exceedingly baffled to know how he derives pleasure from his reading, or, indeed,
+								apart from seeing the first and last pages, how he knows where the story begins
+								and ends. If he ever gets to read my writings, I wonder just how he will approach
+								them. Without trying to impose any compulsion on you, I shall be grateful if you
+								will read what I have written in sequence, otherwise the thread, and much of my
+								purpose in writing, will be lost.
+							</p>
+							<p>
+								As I wrote at the outset, I open part of my life with reluctance, but with hope
+								that you will benefit. Make of it what you will - each of you will see me differently.
+								Many people quote the one well-known verse of Robbie Burns' poem <i>To a Louse</i>
+								as if it embodies deep philosophy and wisdom; he wrote:
+							</p>
+							<div class="centering-container">
+								<div class="centered-element">
+									<div class="center">
+										<p>
+											<i>"Would some power the giftie gie&nbsp;us
+												<br />
+												&nbsp;to see ourselves as others see&nbsp;us."</i>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<p>
+								I have my medical notes covering a period of thirty years: they do not make for
+								happy reading, particularly in respect of seeing just how one has been seen, interpreted.
+								My advice to you is to decide for yourself just who you are, and to do all in your
+								power to be yourself, hold on to your own identity, and strive for your own goals.
+								It took me a long time and much hard work to recover my own life and identity after
+								I had been robbed of them. So please, try to see me as I portray myself, and if
+								you want to know how I lost and found myself again, well, just read on ...
+							</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-2">&nbsp;</a>
+							<p class="part-number">Part 2</p>
+							<h4>
+								"We had to destroy it to save it."
+							</h4>
+							<p>
+								Such was the bizarre reasoning given by the U.S. Authorities to justify the annihilation
+								of a village during that most bizarre of conflicts, the Vietnam War.</p>
+							<p>
+								As I have begun to write, I have trawled through my own memory, and read, and come
+								to terms with, the copious notes and correspondence that form my medical records.
+								When you read what I shall write, I think that you may agree that the same "justification"
+								could be applied to the almost-achieved outcome of the treatments that were brought
+								to bear to "save" my malfunctioning mind.
+							</p>
+							<p>
+								The treatments were applied with good intent, I have no doubt, by people who were
+								established in their professions of medicine and psychiatry. But in the process
+								of being treated, my <i>mind</i> was almost annihilated. So what went wrong?
+							</p>
+							<p>
+								Well, to start with, at the outset, there was nothing <i>wrong</i> with my mind
+								- it was functioning well and I was in control. But <i>something</i> must have gone
+								wrong and to describe it is the purpose of the first part of my tale. The path ahead
+								may at times seem a little tortuous, but I am sure that you will find the journey
+								interesting.
+							</p>
+							<p>
+								In the past, I have always enjoyed writing, although my authorship then had a different
+								purpose in my professional role - reports, papers, proposals, were the offspring
+								of my love of language, constrained by the accepted forms of technical writing.
+								A fellow Welshman whose evocative use of language has never ceased to please me,
+								is Dylan Thomas. When I listen to a recording of <i>Under Milk Wood</i>, from memories
+								of people and places locked in my mind in my youth, I can "see" all the exquisitely
+								drawn characters, I can "walk" down Cockle Row, I can "look" through the mind's
+								eye of blind Captain Cat.
+							</p>
+							<p>
+								For me there is only one recording - the first made by the BBC, with Huw Gryffudd
+								as Captain Cat; the Reverend Eli Jenkins was spoken by Philip Burton, the English
+								master at my school, and the one who set in train my love of language. But most
+								of all, and no matter how often I listen, guaranteed to produce the same thrill
+								of anticipation are the opening words spoken with his unique timbre by long-ago
+								schoolmate Richard Burton. I can do no better than to recall his voice and echo
+								it as he speaks ...
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-3">&nbsp;</a>
+							<p class="part-number">Part 3</p>
+							<h4>
+								To begin at the beginning ...
+							</h4>
+							<p>
+								A high flyer was I. Was I? I shall never know now. No self-vaunted Icarus was I,
+								flapping higher and higher on phoney wings, only to crash to destruction when the
+								deceit was uncovered by the harsh sun of scrutiny. No: by dint of the steady wing-beats
+								of hard work, dedication and loyalty, I was rising and being lifted from time to
+								time on the up draught of peer approbation. So: how did I lose my feathers? Why
+								did I crash? Why did I have to learn to walk again?</p>
+							<p>
+								How is it that such destruction can be visited on someone in broad daylight, in
+								a civilised society, in his own home, in the midst of a caring family and, at work,
+								under the gaze of a solicitous employer?
+							</p>
+							<p>
+								And what did I lose? I lost a home which was still being carefully built up and
+								consolidated; I lost my wife and, effectively, my daughter; in time I couldn't sustain
+								my job and retired prematurely; financially, in today's (2003) values, I have lost
+								over half a million pounds, while each year I receive in pension about one third
+								of what I could reasonably have expected.
+							</p>
+							<p>
+								But of greater worth, a worth which can not be measured in cash, I have lost a swathe
+								of my memory; memory of a time when life was very good; when I had a wife whom I
+								loved and who was yet young; when work was very rewarding and successful; when my
+								daughter was blossoming. Do you know, I cannot remember how she used to talk when
+								she was little; the things she said; bath times; bed times; Christmas; picnics and
+								holidays; ponies ...
+							</p>
+							<p>
+								I can barely remember the Sunbeam-Talbot that was the family's pride, or taking
+								my mother and in-laws for "runs". I am fortunate in that I have a former work colleague
+								whom I meet from time to time, whose reminiscences remind me of the highly successful
+								and rewarding times we had as vital players in a cutting-edge project that was a
+								world first, otherwise <i>that</i> memory would also be lost.
+							</p>
+							<p>
+								So, how did I lose so much? How did I lose it uncomplainingly, trustingly? Surprisingly,
+								and sadly, I lost it at the hands of, or perhaps more accurately, I had it all stolen
+								by, the very people whose prime intent and professional purpose was to care for
+								me. I lost it through the intervention of medicine and psychiatry.
+							</p>
+							<p>
+								There is only one way for you to understand the extent of my loss - the actual loss
+								over the years and the potential of what might have been - and that is for me to
+								take you sufficiently far back in my life and career to find a convenient staring
+								point.
+							</p>
+							<p>
+								So how about 1947? I was 21 years old, in transition between life as a Petty Officer
+								Radar Mechanic in the Royal Navy, and life as an undergraduate electrical engineer
+								in the University of Wales at Swansea.</p>
+							<p>
+								Three years and an Engineering Degree later saw me, in 1950, make what was for me
+								a very desirable move to the Lake District in Cumbria - scene of several pre-war
+								family holidays - to work in the embryonic nuclear industry. My radar training and
+								experience, combined with my degree, fitted me for the very fascinating and often
+								novel world of measurement. I was becoming an Instrument Engineer.
+							</p>
+							<p>
+								First promotion, and 1953, and I was part of the team destined to run the world's
+								first nuclear power station, Calder Hall - which at the time that I joined was just
+								a large hole in the ground! An exciting time of very hard but fascinating and rewarding
+								work, and of personal change - of marriage in 1955, and parenthood in 1956, and
+								a second promotion.</p>
+							<p>
+								The Works developed and expanded, as did the science and technology, and my responsibility
+								- which led to a further promotion at the end of 1960. Thus, in what turned out
+								to be an exceedingly crucial year, 1961, at age 35 I had the grade of "Principal",
+								and a salary (2003 equivalent) of &pound;50, 000. I had been to France as an advisor
+								during the commissioning of their first power reactor, and to Stockholm to address
+								an international conference. I had a career, a home and a family, and the probability
+								of more children. And with a further thirty years of potential employment, who knows
+								how my future might have blossomed?
+							</p>
+							<p>
+								To mention "diarrhoea" in the context in which I am writing may seem an unnecessary
+								and unpleasant irrelevance: unfortunately, it became very relevant. We lived in
+								Seascale, and in the late summer of almost every year the notorious "Seascale Bug"
+								would strike, bringing stomach upsets, sickness and diarrhoea to the populace at
+								random.
+							</p>
+							<p>
+								When, thus, in 1961, I started with my episode of the "runs" it just seemed as if
+								I was one of that year's unfortunates. But this was no ordinary visitation of the
+								"Seascale Bug". Soon it seemed as if the whole of my inside had turned to fluid
+								- the mediaeval term "the flux" was probably very appropriate. Day after day after
+								day it continued, defying all the usual nostrums and quick-setting cements that
+								were commonly effective. My "samples" yielded no known bacteria. My weight dropped
+								by over a stone; the lavatory pan was my boon companion.</p>
+							<p>
+								Then, one day, a visit to my G.P. produced something new, something different. My
+								medical certificate sported the letters C.A.N. in place of the usual "enteritis",
+								and a prescription which, when dispensed at the local pharmacy, produced a bottle
+								of black and green capsules coyly hiding behind the label bearing the legend "Librium".
+							</p>
+							<p>
+								Now, remember, this was 1961; Librium was brand, spanking new; the word "tranquilliser"
+								was not in common parlance. No warning bells rang in my mind - and why should they
+								have? Like most people, I believed implicitly in the medical profession, in what
+								they said was wrong with me, in the ways in which it should be put right. The average
+								layperson has no base from which to query or dispute the medical opinion; one's
+								view is often met with the slightly tolerant smile that seems to say, " The patient
+								has an opinion, humour him and it will go away".</p>
+							<p>
+								I promise you this: there had been no discussion concerning my nervous state, nor
+								was anything said about Librium, its purpose or its side effects. I had to deduce,
+								yes <i>deduce</i>, that C.A.N. meant "chronic anxiety neurosis", and that I was
+								"on" a tranquilliser. You may wonder at the lack of communication.
+							</p>
+							<p>
+								All I can say is that I was very debilitated and unsure of myself, and that the
+								doctor in question was very reserved, almost taciturn, and did not open himself
+								to discussion. One former colleague at work even now reminds me of the response
+								that <i>he</i> got when suggesting an alternative to <i>his</i> continuing treatment;
+								whatever he was then told was prefaced with the put-down "We in the <i>learned</i>
+								profession ...".
+							</p>
+							<p>
+								(I must emphasise that I am not recounting this to denigrate in any way the doctor
+								in question, who was immensely appreciated in the community both as a person and
+								G.P., but simply to emphasise something to which I will no doubt return many times
+								in this account and the other parts of my "story", namely this communication gulf
+								between medical professional and lay-person).</p>
+							<p>
+								So, dutifully, I took my Librium in complete and blissful ignorance of the most
+								common side effects - of confusion, drowsiness and inability to control voluntary
+								muscular movements - and <i>physical dependence</i>! How, I wonder, would my employers
+								have reacted had <i>they</i> known, for the Department at work of which I was head
+								was responsible for every one of the measuring and safety devices in the whole nuclear
+								power station of four reactors and eight turbines?</p>
+							<p>
+								No doubt everyone has those events in their lives over which they groan internally
+								and long to extinguish the event and its consequences; this is one of my most desperate,
+								as must be that of anyone who has started to take an addictive substance. How many
+								clocks would be put back if given the chance?
+							</p>
+							<p>
+								My anguish is made all the greater with the 20/20 vision with which all hind sight
+								is blessed, and the knowledge, gained some 25 years after the events, of a newly
+								identified parasite that can inhabit the lower gut and produce uncontrollable but
+								<i>self-limiting</i> diarrhoea. Such a parasite one can acquire from polluted water
+								or milk, or from animals - a route that the family hobby of riding and horse-work
+								made readily available. <i>Cryptosporidium</i> is the name of what it is now believed
+								was the cause of my illness - one of a group of parasitic protozoa.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-4">&nbsp;</a>
+							<p class="part-number">Part 4</p>
+							<p>
+								Looking back at the events covered by the next two years, much of what I did, felt
+								and suffered can now be understood and many things fall into place.
+							</p>
+							<p>
+								First, there was the growing addiction. My very first act on waking was to pop a
+								pill. If I didn't get my noon "fix" on time I started to get the shakes. It was
+								while I was doing this one day at work that I received my one piece of cautionary
+								advice. It came from a former G.P. who had given up medical practice to found a
+								firm which made endoscopes; he was visiting to supervise the installation of one
+								of his industrial size 'scopes.
+							</p>
+							<p>
+								When he saw the pill going in, he advised me instead to unwind at home each evening
+								with a glass of sherry. Kind man that he was, on his next visit he handed me a brown
+								wrapped bottle - " Special varnish" he said, "Don't open it here in daylight". I
+								still think of rich, dark port wine as "special varnish".
+							</p>
+							<p>
+								How I wish that I had been able to take his advice, but by now I <i>believed</i>
+								that I had a C.A.N. How else could I explain the shakes that were cured by my next
+								"fix"? How else to account for the drowsiness that was besetting me in my office,
+								the "numbness" which enveloped my midriff and radiated outwards, the confusion or
+								slowness in understanding the developments in computing, which specialist members
+								of my department were engaged with? How else could I explain to myself the frequent
+								malaises that had all the hallmarks of "flu without the temperature"?</p>
+							<p>
+								Life at work was getting difficult, particularly the drowsiness - but how can you
+								explain to your next senior something that you didn't understand yourself, and which
+								he didn't confront directly?
+							</p>
+							<p>
+								(The problems contained in that one sentence, and all the other examples that emerge
+								of the inability to address or articulate a difficulty or problem, of the impossibility
+								of admitting or communicating to one's partner, friends, colleagues, medical advisers,
+								more than an inkling of the gut-wrenching, mind-warping fears and fantasies which
+								emerge, are topics to which I must return somewhere in the discourse if I am to
+								draw meaningful conclusions and offer advice to others on ways to cope or support;
+								but how difficult it is!).</p>
+							<p>
+								In the main, I was still doing a good job; no catastrophes, and many innovations
+								at which I was particularly good. I remember, too, delivering a lecture to the Engineering
+								Society on the subject of computers in general, and the ones in particular that
+								we were then incorporating into the plant - the last major, positive event at work
+								for some time to come. Such changes as were happening to my life and demeanour were
+								yet acceptable and bearable compared with what was to come as 1963 was settling
+								into autumn.
+							</p>
+							<p>
+								The G.P. who had made the original diagnosis and prescription had moved back to
+								his beloved Scotland, and to his replacement I remember saying "You have inherited
+								my chronic anxiety neurosis" - me still accepting what I had been told, and he having
+								no reason to question it. Socially we got on very well and his wife and mine became
+								firm friends. However, his professional visits to the home began to cause him some
+								concern and in time, he expressed the view that what I was experiencing was psychosomatic.
+								He advised that I should see a psychiatrist and arranged for me to do so.
+							</p>
+							<p>
+								After the encounter with Librium, the meeting with the psychiatrist has become another
+								of my life's great "I wish it hadn't happened" moments.
+							</p>
+							<p>
+								From this point on, I have copies of all my medical notes for the next thirty years
+								- both those of the consultant and those of the local practice. The reason why I
+								acquired them is revealed much later in my saga. Reading the notes - not an easy
+								experience to cope with - it is revealing to see oneself as a "he", a third person,
+								almost a specimen with a label.
+							</p>
+							<p>
+								To me, as an engineer, the most glaring difference between my profession and that
+								of the psychiatrist, is the latter's lack of certainty, of objectivity.
+							</p>
+							<p>
+								I was used to dealing with a reality - my whole purpose in my work was measurement
+								- the complete delineation of the state of being of a piece of plant or an operation
+								as it was <i>then</i>, at that moment. I had seen my devices - the nerves of the
+								plant - put in place. Nearly 50 years on, I have the personal and professional satisfaction
+								of knowing that many of them, those completely inaccessible inside the nuclear reactors,
+								are still there, still functioning. Their characteristics were known, for we had
+								calibrated them; they told the operator exactly what was going on in the remote
+								reaches of his plant; if anything broke down outside the reactor I had to know exactly
+								why it had failed, and could only replace it with apparatus that had been thoroughly
+								tested and calibrated.</p>
+							<p>
+								My Consultant (MC) appeared to be thorough, no question of that. We talked, he arranged
+								tests, e.g. was hypoglycaemia a possibility? But to the outsider, there appear to
+								be no certainties in psychiatry, only opinions and educated guesses based upon the
+								personal experience and training of the one particular practitioner; possibly even
+								the "school" of psychiatry to which he subscribes; no precise measurements or standards.
+							</p>
+							<p>
+								Labels are put on "bottles" of symptoms - but the contents of the bottles seem to
+								change at the whim of one school of research or another. Take for instance Alzheimer's
+								disease. I can read the standard, original definition of a "pre-senile dementia",
+								which, when originally identified and defined by Alzheimer himself, applied essentially
+								to persons under the age of 55. Yet in a recent paper describing research into the
+								prevalence of Alzheimer's disease amongst professional footballers, the author states
+								that the condition is rarely experienced in persons under the age of 60!</p>
+							<p>
+								It is only in later years and being outside the maelstrom that I was then in, and
+								fully in charge of my life and mind, that I can look back and be critical. But let
+								me emphasise again, as I do through all that I write, that apart from those whose
+								reasoning and lack of perception I condemn, and who will emerge later, I am not
+								critical of the <i>intent</i> of any individual: I appreciate most deeply the care
+								and concern which were lavished upon me by <i>all</i> the people whom I encountered.
+							</p>
+							<p>
+								But I am a professional in my own right; my training and experience were on a par
+								with most of the medical practitioners in <i>their</i> profession, and so I justify
+								my own right to be critical of analysis and results. All this, of course, looking
+								back with the benefit of the records in my possession, to let me see into the thought
+								processes of those who were examining and analysing <i>mine</i>.
+							</p>
+							<p>
+								My perception of the lack of objectivity begins in the letter to GP2 sent after
+								my first consultation. I was seen effectively as a "garrulous, bespectacled, Welsh
+								hypochondriac". Welsh and bespectacled were irrelevancies that I couldn't alter,
+								but who would <i>not</i> be a garrulous hypochondriac after two years on a continuous
+								and substantial intake of Librium (which modern professional medical opinion now
+								recognises as having been totally inappropriate and unnecessary!)?
+							</p>
+							<p>
+								The fact that he rated me as of above average intelligence mollifies the personal
+								affront to my self-image, which itself pales into insignificance before the recollection
+								of what else appeared in the letter, and its immediate effect. After two years continuous
+								use, at 10mg tds, my Librium was stopped forthwith and replaced by Tryptizol.</p>
+							<p>
+								Oh Boy! Does anyone want to know what "cold turkey" is like? My advice: don't try
+								it! Recollect - I had been taking Librium in substantial dosage for over two years.
+								Information readily available and unequivocal says that it is for <i>short-term</i>
+								use. There is also full information about withdrawal after use - in my case after
+								such dosage for so long my withdrawal might have taken <i>over one year</i>! Mine
+								was overnight!
+							</p>
+							<p>
+								The bizarre reactions and symptoms that I experienced are only partially recorded
+								in my notes, but it was enough that when food was put in my mouth I lost contact
+								with it, for I had no taste, no feeling down my throat. My stomach might not have
+								existed for there was no sensation when I pressed that region, and I had no pressure
+								sensation in my bladder. It was as if everything from my mouth to my fork no longer
+								existed.
+							</p>
+							<p>
+								The symptoms which I was experiencing were in fact so "global" that in the correspondence
+								between MC and GP2, they were referred to as "this remarkable set of symptoms" and
+								"multi-various physical symptoms". The possibility that they might be the effects
+								of the instantaneous withdrawal from Librium was just not considered; everything
+								I was experiencing was put down to a never-before-recorded idiosyncratic reaction
+								to Tryptizol.</p>
+							<p>
+								Time off work and a return to Librium produced a measure of stability. "Stability"?
+								Huh! Work was becoming a daily nightmare, if that isn't too paradoxical, while what
+								was going on in the minds of my wife and daughter, I would not like to examine even
+								after all this time.</p>
+							<p>
+								If you don't succeed in flattening him at the first go, why, just have another.
+								A couple of days on Stelazine - immediate disaster - then a second bash, this time
+								with Melleril. Same result; bizarre symptoms; brief flirtation with Nardil; reduced
+								to quivering jelly. Hospital? Yes please. Refuge. I could, with relief and without
+								feeling guilty, put aside my responsibilities at home and work.</p>
+							<p>
+								Electro convulsive therapy - E.C.T.? If you say so. "Sign here" - as a voluntary
+								patient. Bang! The next assault on my precious mind began.
+							</p>
+							<p>
+								Isn't it amazing how docile we are? Or maybe then we were more docile, accepting,
+								than people are now. Perhaps people nowadays are better informed, or demand more
+								information; also there are patients' support groups, and others active in attempts
+								to outlaw E.C.T - it is, after all, a bizarre and dangerous "treatment". Whatever
+								the analysis, there I was, good little Indian, ready to accept what the kind gentleman
+								said because it would make me better. I am sure that you want to know all about
+								it, for it is done in your hospitals, and by people who, indirectly, you employ.</p>
+							<p>
+								Three times a week the Ward went into its well-rehearsed routine. You wake and get
+								up as usual, but have no breakfast. Shortly, you have an injection of a belladonna
+								(deadly nightshade) derivative whose purpose is to dry the mouth and prevent you
+								choking on your saliva. Meanwhile the nurses are playing trains with the beds, pushing
+								them end-to-end in the corridor outside the treatment room. Next, as your turn approaches,
+								a second injection, this time of a curare derivative. Curare, as you probably know,
+								is the poison that South American Indians put on their blow-darts; the object of
+								its use in this situation being to cause complete muscle relaxation and minimise
+								the risk of vertebral fractures (after all it <i>is</i> electro <i>convulsive</i>
+								therapy) - no mention of the possibility of <i>these</i> when I gave my "informed"
+								consent!
+							</p>
+							<p>
+								Let me quote from <i>The Oxford Companion to the Mind</i>:
+							</p>
+							<blockquote>
+								<p>
+									<i>E.C.T: Applying a voltage with surface electrodes on the head across the brain. This
+										is done under anaesthesia or muscle relaxant, as it produces convulsions which can
+										be dangerous.</i>
+								</p>
+								<p>
+									<i>E.C.T is extensively used as a convenient and quick treatment for depression, though
+										there is no theoretical basis to justify it. There is considerable criticism of
+										its extensive use because it may produce permanent brain damage, especially losses
+										of memory and intelligence, though the evidence is not entirely clear.</i>
+								</p>
+							</blockquote>
+							<p>
+								I want you to take particular note of the last sentence for reasons that will become
+								pertinent later.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-5">&nbsp;</a>
+							<p class="part-number">Part 5</p>
+
+							<p>
+								You lie on the bed, shoes off and tucked under the mattress end. Chug - chug, the
+								train moves on and your "carriage" is manoeuvred into the treatment room. Dentures
+								out and into a glass. An anaesthetist tries to find a suitable vein in your arm
+								and, when successful, dribbles in Pentathol, or a similar anaesthetic. Gentle bliss
+								and oblivion.
+							</p>
+							<p>
+								Next, electrodes are placed on your temples and a burst of electricity is switched
+								into your lovely, delicate, unsuspecting brain. You don't know this, of course;
+								what next you are aware of is gradual reawakening, bemused, head not present, an
+								aching void in its place and sticky jelly clagged in your side hair. You gingerly
+								get up, reclaim your shoes and teeth, and emerge into a pointless day. Nothing has
+								<i>really</i> gone away - although it is at this point, and from now on, that your
+								memory starts to be eroded, never fully to return.
+							</p>
+							<p>
+								The staff were all immensely kind. I joined occupational therapy and became adept
+								at basket making ("<i>In front of two, behind one</i>" was the oft repeated cry!),
+								washed the dishes, and whiled away the evening in the quiet room. Then welcome bed,
+								sans teeth, sans mind, and with hope of oblivion.
+							</p>
+							<p>
+								Of course, there were sleeping pills - Soneryl, Sonergan, Seconal, Amytal, Mogadon
+								- all have gone down my throat. But they were never effective at the time when <i>I</i>
+								wanted them to be. Three in the morning. Someone once said that 3 a.m. should never
+								have been invented; how I and many others would fervently agree. Wide awake, and
+								staring into the void of my mind - not a place for exploration - torch flash on
+								face as the "night watch" passes. Finally, and inevitably, get up for a pee (do
+								all hospital ward toilets have such an unpleasant odour?). Lovely, kind Nancy, wife
+								of Keith, a foreman at work, sitting in the night-station; brief chat; <i>"Sorry, I
+									can't give you another sleeping tablet; here, try a Paracetemol"</i>; back to
+								bed, maybe fitful sleep until the dreaded, but welcome day dawned again.</p>
+							<p>
+								I do not want to remember too much detail of such a drab time in my life. Nor, I
+								suppose, will you want to read about it - but you should, for I am sure that unless
+								it is to visit a close relative, or as a patient, you won't enter a Psychiatric
+								Ward. You won't see the uncontrolled misery and loneliness in faces; you won't see
+								the eyes glazed with drugs or E.C.T; you won't see the hopelessness of a person
+								cut off and isolated from a welter of problems that will still be there on discharge.
+							</p>
+							<p>
+								But like you, no one will want to visit. People can't cope, don't know what to say
+								(Except, perhaps, "It'll be all right if you pull yourself together - yes, that's
+								it - pull yourself together"). Great original thought; how many times did I hear
+								it being said - often by husbands to wives, or wives to husbands, themselves full
+								of woe at the disaster that had befallen their lives and homes.</p>
+							<p>
+								My own wife was magnificent. Never missed a visit; even later, when attending an
+								evening class to prepare for employment should I become incapable of returning to
+								work, she made sure that she came during the day. But she was the only one in a
+								total of about twenty weeks in hospital. Nor were there visitors to the home when
+								I was there and recuperating, apart, that is from a good friend and colleague from
+								work and our Parish Priest. Not one.</p>
+							<p>
+								When, later, I became involved in complementary cancer care, I heard the same story;
+								very few people, even close relatives, will chat. Most go out of their way to avoid
+								even simple contact, conversation. There seemed then - I'm not sure about now -
+								to be a stigma attached to someone with mental health problems, and a reaction that
+								almost seemed to say that it was the fault of the ill person. (Many times have I
+								heard people say, and I have said it myself, "I wish I had a crutch or a leg in
+								plaster so that folk can see that there <i>is</i> something the matter!")
+							</p>
+							<p>
+								But don't you think that you have a duty to learn more, to be compassionate, to
+								understand, to be able to <i>talk</i> to people about their problems? For, after
+								all, people are now being discharged to "Care in the Community". Well, for God's
+								sake, you <i>are</i> the bloody community; they are there with you - in <i>your</i>
+								care, not conveniently isolated, socially sanitised in some distant Victorian pile.
+							</p>
+							<p>
+								The only time <i>you</i> want to know is when someone has an intractable "personality
+								problem" i.e. someone who might be a sexual deviant, a paedophile. Then, Geronimo!,
+								get out the vigilantes; hound them out of the community; castrate the buggers; lock
+								them away even though they haven't committed a crime. They used to <i>burn</i> witches
+								and social undesirables, didn't they? Not much really changes; the hysteria is still
+								there. It is <i>your duty</i> to "get real", to understand fact and not mob panic.
+								After all, not every schizophrenic is an axe-wielding maniac; most of them are very
+								sensitive, isolated people.
+							</p>
+							<p>
+								Statistically, <i>you</i> are just as likely as the next person to succumb to a
+								nervous condition, a mental illness; if you learn more about it now perhaps it will
+								never happen, you'll recognise the warning signs!
+							</p>
+							<p>
+								In writing this account, I have started what has become, for me, a very interesting
+								process. I have, until now, only read my medical notes in a very tentative way,
+								just enough, really, to be able to compile a coherent account for my lawsuit. What
+								little I read disturbed me and brought back such painful memories, un-bottled such
+								nasty genies, that I hastily put the stopper back in the bottle.
+							</p>
+							<p>
+								But as I now have a worthwhile reason for analysing that past, I am delving further
+								and further in as I search for actual dates, actual events, actual drugs and treatments,
+								actual dosages. Memories of events, sequences, dates and people are emerging, but,
+								apart from the recollection of some individuals who did their utmost for me, I am
+								finding much to cause me serious disquiet, and some to make me so very angry - even
+								after so much time has passed. So angry that I can't yet begin to write about it,
+								but shall confront it later when I finally summarise.
+							</p>
+							<p>
+								In total I had ten E.C.T.s as an in-patient and, after the greater part of eight
+								weeks in hospital, I was discharged home "much better", still taking Librium and
+								Seconal. I am not a pharmacologist, but I <i>can</i> read, also I have or have had
+								a number of friends in medicine and some in psychiatry, so an appreciation of drugs
+								and their effects, alone or in combination, is not beyond me.
+							</p>
+							<p>
+								While I intend to summarise and comment upon my various "therapies" during my conclusion,
+								it is worth noting a few facts as I go along. Thus, Seconal is a barbiturate from
+								which there can be severe withdrawal effects similar to those seen in alcohol abstinence.
+								Librium, on the other hand, is a benzodiazepine, which <i>also</i> can cause dependence
+								and withdrawal symptoms, and is prescribed for the <i>short term</i> (2 to 4 weeks only)
+								relief of anxiety; its use should be reviewed regularly and should be discontinued
+								as soon as possible - and other cautions and side effects too numerous to list here
+								- except that benzodiazepines and barbiturates should not be taken simultaneously!
+								At this point in my story, I had been taking Librium for <i>thirty months</i>.</p>
+							<p>
+								For some reason the notes and correspondence in my file are a bit sketchy over this
+								period, don't ask me why. What I next see recorded, is that I had thirteen E.C.Ts
+								as an outpatient between 14th April and 24th May 1964. I look at the copy of the
+								form that I signed indemnifying the hospital against any injury that I might suffer
+								in treatment, and at the form listing each session - the voltages and duration etc.
+								- and memories come back of the breakfast-less journey to the hospital, crammed
+								in a Social Services car, and the return journey, zombified. And I weep inside now,
+								as I must have done openly then.</p>
+							<p>
+								Thus fortified, I finally got back to work. While I had been off there had been
+								some logical organisational and staff structural changes. Calder Hall had become
+								just another power station. The cutting edge of technology had transferred to the
+								up-and-coming Advanced Gas Reactor, and staff of my grade were being dispersed,
+								some to AGR and, in my case, to create a brand new department. Because of my innovative
+								skills in the field of measurement that had come to the fore during the commissioning
+								and experimental phases of the Calder reactors and plant, I was to be involved with
+								experimental instrumentation.</p>
+							<p>
+								But where had I put my mind, my technical knowledge and expertise? Who were these
+								people? I couldn't put names to faces or faces to names. I was isolated - physically
+								in an office high in a new, tall building, and mentally because I had no base from
+								which to think. At work I paced the office, bemused and feeling trapped. I couldn't
+								express what I was feeling to anyone at work, for apart from the fact that you feel
+								ashamed of your own lack of purpose, lack of achievement, people get embarrassed
+								when you talk about personal, particularly nervous, suffering.</p>
+							<p>
+								(It was only later when I was competent again and people saw me working and coping
+								with the aftermath of what I had been through, that their confidences came pouring
+								out, because they knew that I had been "somewhere" - somewhere akin to where they
+								were in their heads and lives. Gradually, I began to learn that behind practically
+								every second door in this peculiar artificial village in which we lived, there was
+								a little hell, disguised from the world by the special face that was kept by the
+								door and put on when going out).</p>
+							<p>
+								When your mind is empty, incapable of constructive thought, it is very wide open
+								to all the anxieties, doubts, and uncertainties concerning your present and future.
+								What future? You can't even face the present, this day. Night is awful. Whilst bed
+								is so desirable, such a refuge, the effects of the sleeping pill soon wear off,
+								and you lie there sweating, almost seeing the entire board of management in censorious
+								array like vultures on the bed-end.</p>
+							<p>
+								One reason why there was not a lot written and my notes are so sketchy at this time,
+								is because I wasn't talking about what was actually <i>in</i> my mind, what I was
+								planning to do. I was planning to take my own life. But I couldn't talk about it
+								- it had to appear to be an accident, and if I showed premeditation, I thought,
+								my insurance policies would not pay out; but I couldn't ask anyone if they <i>would</i>
+								pay out because that might show premeditation and my insurance policies might not
+								pay out. My planned method was electrocution, but that is difficult to stage in
+								the home in such a way as to appear to be accidental, and my ingenious mind just
+								was not functioning.</p>
+							<p>
+								As I walked to the train each morning, I used to look at the wheels of the school
+								buses and wonder if I could find the courage to stumble under one; or, on the platform,
+								whether I could contrive a fall in front of the train as it came in. At night I
+								used to wish fervently that I had been killed along with the thirty-five friends
+								and shipmates who had been fragmented or incinerated within feet of me when the
+								destroyer, HMS <i>Saumarez</i>, in which we were serving, was mined.
+							</p>
+							<p>
+								Obviously, I did not succeed or even attempt, (though it has only struck me as I
+								write that in the Seconal at home I had the ideal "remedy" - easy to overdose, but
+								in my state of mind I couldn't even see <i>that</i> possibility). There is, however,
+								something that I can tell you without fear of contradiction: there is no place on
+								earth more lonely than the mind of someone who wants to die, to achieve <i>oblivion</i>
+								(unless it be the mind of someone facing execution). The most isolated Siberian
+								tundra or Gobi desert wastes would provide more solace than the domain of your mind.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-6">&nbsp;</a>
+							<p class="part-number">Part 6</p>
+							<p>
+								Before I contrived my "accident" or otherwise achieved my own destruction, I was
+								saved by Pentathol. Have you lost the plot? Let's get up to date. We are now at
+								the end of July 1964, and a new strategy was being proposed. I may not be giving
+								them enough credit, but MC, GP2, and the medical staff at work were individually
+								and collectively concerned about my state of mind and future, and discussing ways
+								and means.
+							</p>
+							<p> The Pentathol strategy applied the relaxing anaesthetising properties
+								of the drug to achieve within me total bodily relaxation, in the hope that my mind
+								would respond as well. (In case you have forgotten, I still had no mind). So, three
+								times a week I was driven to the hospital in a Works' car and had Pentathol dribbled into me
+								as I slowly "blissed out", as my Buddhist friends would say. There was one Indian
+								registrar who could dribble it in <i>very</i> slowly and actually inject <i>two</i>
+								syringe-fulls - oh! the ecstasy (and the agony - for nothing goes away, and the
+								let-down on waking is so bleak).</p>
+							<p>
+								But fear not, dear reader, (sound of bugle, yet far off) help is on the way. MC
+								has been to a conference, and come back bursting with new ideas. For me there had
+								been a paper in which excellent results had been achieved in some creatures - possibly
+								wild dogs - in which large doses of Valium (or Librium, I am trying to recall a
+								memory) had been used to good effect.
+							</p>
+							<p>
+								Well done! You've caught up with the plot! <i>I</i> would have large doses of Librium
+								(or Valium). There is nothing that I can find in the notes that relate to this particular
+								trick, but like some other "special" memories that have stayed with me, this one
+								is particularly vivid, as is the memory of the reaction of GP2. He visited me at
+								home almost every day, in my darkened room from which I wouldn't stir. After several
+								days, he stared into my eyes, realised where I was (or wasn't) and said "You're
+								drugged out of your mind!". Before you can say "benzodiazepine", I was back in hospital.</p>
+							<p>
+								All of my files, notes and correspondence were obtained by my Solicitors as we sought
+								to make a case to sue the makers of these drugs, an abortive venture, as it turned
+								out, so fickle is blindfold Justice. In making the case, I had a long session with
+								a Consultant Psychiatrist who was retained by the various law firms. He started
+								interviewing me in the usual manner, but as my story unfolded he just sat there,
+								silent, a sad, sympathetic little smile on his face, his head sometimes shaking
+								from side to side in sheer disbelief that so much could have been visited on one
+								person.
+							</p>
+							<p>
+								But don't go away, psychiatry has so <i>much</i> to offer. The time has come to
+								introduce you to yet another form of shock treatment - insulin shock treatment,
+								or, as it now is, <i>modified</i> insulin treatment (it was modified so that there
+								is now a smaller chance of killing you). This form of shock treatment relies on
+								the injection of increasingly large doses of insulin with the object of reducing
+								the blood sugar level and bringing on a coma.
+							</p>
+							<p>
+								This is how the modified form works: you are woken at about 5 am and given an injection
+								of insulin. You continue to lie in bed for a couple of hours and soon start to sweat
+								and shake uncontrollably, then, while still in bed, you get placed in front of you
+								a tray with a dish of corn flakes heaped, and I mean <i>heaped</i>, with glucose
+								powder, and a full fried breakfast plus toast. No problem eating it, you are ravenous.
+								A little while longer in bed then get up and have a shower (compulsory). I became
+								so inert and depressed that I couldn't even bother to shower, sweaty and niffy though
+								I was - sometimes I just used to shut myself in and pretend.</p>
+							<p>
+								I had in all twenty-six such episodes that, at five a week, took me into the sixth
+								week. How depressed I got, so very, very depressed. I used to pace the corridors
+								feeling utterly lost, pointless and empty; sometimes I went into the next-door geriatric
+								ward just to see people who had less mind than I had.
+							</p>
+							<p>
+								I craved exercise, but when I asked if I could go to the older, former hospital
+								not far away where I knew there was a rehab gym, I was fobbed off and got no help
+								- "Just go for a walk". Where? In the wet, featureless lanes with their potholes
+								and puddles, just behind the hospital, in the autumn? So drab, so weary, so empty
+								- the name "Sneckyeat Road" does as little for me now as it did then!
+							</p>
+							<p>
+								One day, MC said to me "You were referred originally with an anxiety state, now
+								you have a full blown clinical depression". Well, we were making progress, that's
+								something.
+							</p>
+							<p>
+								When it looked as if I was in for a long haul, the occupational therapist suggested
+								something that I had always wanted to do. Weaving. There was a table loom as yet
+								untried. Great! I'd have a go. What to make?
+							</p>
+							<p>
+								"Why not place mats?" said my wife who occasionally came in to OT. So off she went,
+								and came back with some bright orangey Courtelle, and I started. Things that I had
+								only read about before began to become realities - making the warp, the poree cross,
+								and whatever the other one is called; heddles, shuttle, and beater all became realities.
+								Then, entering the warp. That could have been difficult, but one of the nurses had
+								worked at Coates' thread factory where she had been involved with just such a task
+								in making up thread samples for display and advertising. So, with one at one end
+								and the other at the other end of the loom we were soon "entered" and I was away.
+							</p>
+							<p>
+								While my days weren't "swifter than the weaver's shuttle", they nevertheless received
+								a boost from this particular shuttle. I had to overcome some difficulties of technique,
+								but eventually I created six place mats, a centrepiece and a tray cloth. I still
+								have them, a little worse for wear.
+							</p>
+							<p>
+								One hears so much these days in our new "consciousness", our new awareness, of "body,
+								mind and spirit" - the totality of being human. My body was still there, recoiling
+								from the many attacks made upon it; my mind had a certain ephemeral quality, though,
+								on reflection, it had the reaction of a lead balloon showing sudden half-hearted
+								attempts to lift off. My spirit? Now there's a thought; if I ever had a spirit,
+								where was it now?</p>
+							<p>
+								Becoming a Catholic when I married I had become a very diligent follower of my new
+								"brand" of Christianity, but in my depressed state, where indeed <i>was</i> my spirit?
+								Had I just been going through the motions? Had I ever had anything of the sort?
+								Must find out.
+							</p>
+							<p>
+								The church not far away was manned by Benedictine monks, and so, remembering one
+								whose words one Sunday at Mass had impressed me, I rang. With not a moment's hesitation,
+								he jumped on his Noddy bike and put-putted over to see me. I still have a little
+								book which he gave me (Funny, his name was Father <i>Little</i>; the book - <i>They
+									Speak by Silences</i> was a series of meditative thoughts by an anonymous monk
+								of the silent Carthusian order and is one that I still, more than thirty-five years
+								later, use for "provocative" meditation) in the hope that I would find solace in
+								its words, and to this day I am grateful for his earnest attention and compassion.
+								But in spite of his help, what I now know as "spirit" never materialised in me,
+								and never did until I experienced the events that I write about elsewhere.</p>
+							<p>
+								Here is a thought, though; if you want to know what it is like to be in deep depression
+								(no, it is not just being "fed up"!), read Psalm 88. I'll quote it briefly, as it appears
+								in the <i>Jerusalem Bible</i>, but do read it all for you may get some insight.
+								It is called "Lament": as he cries out to his God ...
+							</p>
+							<div class="centering-container">
+								<div class="centered-element">
+									<p>
+										<i>... hear my cries for help;<br />
+											for my soul is all troubled.<br />
+											my life is on the brink of the Underworld;
+											<br />
+											I am numbered among those who go down to the Pit,<br />
+											a man bereft of strength;<br />
+											a man alone, down among the dead,<br />
+											among the slaughtered in their graves,<br />
+											among those you have forgotten ...<br />
+											You have turned my friends and neighbours against me,<br />
+											now my one companion is darkness.</i>
+									</p>
+								</div>
+							</div>
+
+							<p>
+								But soft! What is happening? MC is beginning to have self-doubts. Would I like a
+								second opinion? - He would. So 'twas arranged, and one November morning I was driven
+								with others who had a variety of appointments, to the ultimate seat of learning;
+								me to see a Big Wheel (BW), one who went on to become a Very Big Wheel, at the mention
+								of whose name a young psychiatrist, to whom I quoted it many years later, visibly
+								genuflected.</p>
+							<p>
+								But no, such is the way that things work, protocol etc., I did not immediately see
+								BW; instead, at first, I was taken to his Registrar or Little Wheel (LW). For about
+								half an hour, possibly forty minutes, he interviewed me as if it was my very first
+								encounter with a psychiatrist.
+							</p>
+							<p>
+								Now, there is an unkind saying in education that "those who can, 'do'; those who
+								can't 'do', teach; those who can't teach, teach others to teach; while those who
+								can't teach others to teach become either education administrators or researchers".
+								I feel that there must be an equivalent gradation in psychiatry.
+							</p>
+							<p>
+								I don't know what had brought LW into the profession, and into research in particular,
+								but it certainly wasn't his human interplay. He exhibited not one glimmer of concern
+								or sympathy for my condition or experiences; he had about as much empathy towards
+								me as a gardener has towards a green fly. He was hostile, sarcastic and belittling.
+								Just one example will suffice: I tried to explain the depths of my desire to die,
+								to commit suicide. Had I, as one does, gone to a high place to throw myself off?
+								No? Well, I couldn't have been all that serious, could I? It may not sound a very
+								great put-down, but in the context of the others, the sarcasms and negations of
+								what I was telling him, it was.</p>
+							<p>
+								However, he had been well primed in his negativity. The letter from MC itself was
+								so negative, but not only that, he seemed to go out of his <i>way</i> to be negative.
+								Take, for instance, his comments about the state of our marriage: he records that
+								both my wife and I said that we were happily married; however, <i>he</i> knew better,
+								<i>he</i> had got a snippet (apparently from GP2) which cast doubt upon <i>our</i>
+								understanding of the situation, doubts that he reinforced, but did not specify from
+								a source that he didn't identify. One wonders why he had to put in yet another negative,
+								unsubstantiated, keyhole-peering remark. <i>Why</i> did he not rely on what my wife
+								and I said? After all, we were the main players. Throughout this period, she could
+								not have been more devoted, more caring; "TLC" might have been coined to describe
+								her attitude.
+							</p>
+							<hr />
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-7">&nbsp;</a>
+							<p class="part-number">Part 7</p>
+							<p>
+								In our wider life, and with our daughter, we were fortunate to have a family interest
+								- almost obsession - in riding and horses. We rode whenever possible, had riding
+								holidays, took a deep and intelligent interest in improving our riding skills, mixed
+								with like-minded people and made many friends outside the works environment, outside
+								the peculiar Seascale society. Many of these friends we still have. Yes, we! For
+								although, as I shall describe, we ultimately parted and divorced, we have remained
+								excellent friends, a friendship manifested in a variety of ways that are not here
+								relevant.</p>
+							<p>
+								Before my life was so bludgeoned, I frequently rode a particular horse that was
+								being looked after by some friends. Smokey. Such an eager, willing horse; black;
+								not very big; but he took me everywhere, from the miles of beach to the fell-tops,
+								and along all the many bridle-paths with which this area is blessed. He was a boon
+								companion and I can still recall his moving body under the saddle.
+							</p>
+							<p>
+								When I was recuperating after the first spell in hospital, my wife told me what
+								she had been keeping from me - Smokey was dead, killed by lightning in his field.
+								She also told me that she had been saving up to buy him for me. <i>That</i> reflects
+								the marriage that I knew at that time, not the almost evil representations or half-hints
+								that the letter contains.
+							</p>
+							<p>
+								I have tried since, indeed, I am trying now, to deduce why things were being said
+								about our marriage that at the time were patently untrue. Since we are in the domain
+								of Sigmund Freud perhaps we can get a little Freudian. I have observed in many men,
+								probably in myself also, the in-built, virtually unconscious belief held by each
+								that he is the one who can take over this female's life, protect her, sort her problems,
+								give her better sex than she is currently getting. To do which, as in nature, he
+								has to expose the weaknesses, real or invented, in her current husband, partner,
+								boyfriend; particularly if the latter is in any way vulnerable.
+							</p>
+							<p>
+								I see a manifestation of this occurring among the fifteen or so rams that are sometimes
+								held in my field in the autumn. If one has any defect, first one ram and then all
+								the rest in turn or together, will butt and harry him persistently, all, no doubt,
+								responding to the in-built behaviour of their evolution. We are the sum total of
+								<i>our</i> evolution, nothing lost, nothing taken away, and we have it within ourselves
+								to behave just like the rams.
+							</p>
+							<p>
+								I am not in the remotest way suggesting that anything improper was even <i>thought</i>,
+								but my wife was a very attractive woman, not only in her looks, but also in her
+								vivacity and openness of speech, and the marriages of GP2 and MC were under stress.
+								Remarks made to me by GP2 during his consultations showed a certain disillusion,
+								while MC in a short time parted from his wife and they ultimately divorced. In my
+								analysis, I am suggesting their own personal situations were unconsciously being
+								played out in mine, and in my "vulnerable" state I was the ram being "butted" -
+								and once one starts everyone joins in. A bit convoluted, but <i>I</i> know what
+								I mean.
+							</p>
+							<p>
+								You may think that I am being selective, or that I have an agenda of vindictiveness
+								against the people whom I perceive as having perpetrated wrongs upon me in the past.
+								I can tell you this; if anyone has proper credentials and a legitimate reason for
+								wanting to see the letters and reports, they can come here and I will willingly
+								show them and put them in context.
+							</p>
+							<p>
+								What I find hard to reconcile are the two images that I now have of MC - the man
+								who sat, as I shall describe, urbane and friendly, tying salmon flies in a little
+								hand-held vice, while I had my fortnightly "psychotherapy", and the man who wrote
+								the letters and reports that contain <i>nothing</i> to indicate that I had any achievement
+								or standing. In fact the reverse; his whole thrust seemed to say that I never had
+								any potential and never would.
+							</p>
+							<p>
+								I know that he had only seen me from the outset under the influence of Librium;
+								I know that when first seen I had a label around my neck which said "Anxiety State",
+								but I would have thought that he would have had some discernment, and would have
+								realised that I wouldn't have got where I had without talent.
+							</p>
+							<p>
+								We were roughly of an age, and had reached about the same level, each in our own
+								profession, and, indeed, I had reached at thirty-five a grade that many engineers
+								in public service didn't reach in their whole careers. As I wrote earlier, I had
+								represented the Company in France and Stockholm, and, big disappointment, I was
+								told when I was making recovery that it had been intended that I should be seconded
+								to Japan during the commissioning of some of the Japanese nuclear reactors, but
+								that my illness had scotched the move.
+							</p>
+							<p>
+								So perhaps you can understand my perturbation and inability to comprehend the behaviour
+								of someone in whom I confided much and perceived as a friend and confidant. However,
+								now I realise as I read deeper and deeper in my files that what I thought were personal
+								confidences were, in fact, incorporated into the next progress report to my GP,
+								and retained in my personal file where they remain yet, colouring the view of me
+								of every subsequent GP who has read them.
+							</p>
+							<p>
+								When LW had completed his interview, he went to see BW and was confined with him
+								for about twenty minutes, after which I was invited in. Neither sat; I don't remember
+								whether or not I did. I was not put at my ease, nor made to feel welcome - I felt
+								I was an irrelevance. I still had my raincoat folded over my arm; such was the extent
+								of the courtesy offered to me. I remained in the room for no more than ten minutes,
+								and can only remember one question or remark. This was to be asked what my greatest
+								concern was, to which I replied that my memory had been so affected that I feared
+								it would not fully return. I was assured that it would - and that was that. Back
+								to the hospital and await the verdict. When it came, I was told that Pertofran and
+								Valium had been recommended, and that the recommendation would be accepted. So began
+								the next phase of my drug regime. I was eventually to take Pertofran for ten years
+								and Valium for twelve.</p>
+							<p>
+								I don't know whether MC knew, or even guessed, that the letter that he received
+								analysing my consultation had not been written by his Guru. I know now, having read
+								it several times, that it may have been <i>signed</i> by BW but was definitely drafted
+								entirely by LW. There is virtually every undermining remark, put-down or sarcasm
+								that he had spoken to me appearing in black and white. This letter, too, has its
+								niche in my surgery file. Therefore, MC was, in reality, relying upon the analysis
+								and opinion of someone effectively of lower standing, and one presumes, less experience
+								than himself.
+							</p>
+							<p>
+								I recollect when, early in my career, I attended a junior management-training course.
+								One of our group exercises was to conduct a court of enquiry into a site accident.
+								We were given the "official reports", witness statements and other corroborations
+								that we studied, and then we called and interviewed every one of the parties, admirably
+								role-played by staff of the Training Department. We questioned and re-questioned
+								and then we deliberated and finally reached our conclusion.
+							</p>
+							<p>
+								But where had we gone wrong? What had we missed? Well, I'll tell you. The accident
+								had happened on a day late in November, at 4 pm. It had been <i>dark</i>! So obvious
+								when you see it, but it had eluded some eight or so budding young managers.
+							</p>
+							<p>
+								So what relevance does this bit of philosophy have here? Well it concerns the analysis
+								essentially by all three, BW, LW and MC, of the reasons for my loss of memory and
+								my great concern about it. I won't rehearse the reasons given other than to say
+								that the word "hysterical" appears.
+							</p>
+							<p>
+								Now, can you recollect that earlier, after the description of E.C.T and the definition
+								quoted from my reference book, I asked you to note a particular sentence? Hands
+								up who can remember. Read: learn: memorise:- <i>There is considerable criticism of E.C.T
+									because it may produce permanent brain damage, especially losses of memory and intelligence</i>.
+								How many E.C.Ts had I had? Well done, that's it:- <i>twenty-three</i>. I rest my
+								case.
+							</p>
+							<p>
+								No, I <i>do not</i> rest my case. Just where had they come from, these three "soothsayers"
+								who, each like an ancient Etruscan haruspex, were picking over the entrails of my
+								life and mind? I have related how it came to pass that I was suffering this "disembowelling"
+								process, but how was it that <i>they</i> came to have such jurisdiction over my
+								mind, my precious mind? Were they part of a self-selecting, self-perpetuating "priesthood"?
+							</p>
+							<p>
+								The next time that Stephen Hawking appears on your television screen, pause a while
+								and reflect upon that contorted body, the twisted face and head; read some of what
+								he has written, and reflect further that this is one of the most brilliant minds
+								of our time contained there in that pathetic shell. When you have done that, see
+								whether you can disagree that one's mind is the most precious of one's possessions.
+								I was in grave danger of losing mine, of having it destroyed; I <i>know</i> how
+								precious it is and I defy you to disagree!
+							</p>
+							<p>
+								Some years after the time of which I am writing and, as I shall relate, I made my
+								way back up the recovery ladder, I was, for a time, in charge of training for the
+								whole of the Sellafield complex. As part of my self-education in this post, I took
+								myself off to a conference at Cambridge organised by a research team who looked
+								at aspects of industrial training.
+							</p>
+							<p>
+								One of the discourses involved someone from the Bristol University Dental School.
+								The school had a problem. Aspiring dentists proceeded into their training for several
+								years before they actually came to grips with a tooth in a mouth. At this stage,
+								it was found that some were so lacking in manual dexterity that they were forced
+								to abandon dentistry and transfer to normal medicine on a parallel course. To minimise
+								the waste involved in this abortive training, the Dental School were working with
+								the researchers to try to devise a simple test of manual competence that could be
+								used to assess aspirants <i>before</i> they embarked upon a course for which they
+								were obviously not suited.
+							</p>
+							<p>
+								Is there, one wonders, an assessment process for aspiring psychiatrists, one that
+								seeks to determine whether <i>they</i> have the necessary skills and talents to
+								be allowed access to the most precious possession that anyone can have?
+							</p>
+							<p>
+								Do not treat this as an irrelevance, a hypothetical question, for statistically
+								you are as likely as the next person to have the "entrails" of <i>your</i> mind
+								picked over, to have <i>your</i> brain corrupted by some mind-altering drug, potentially
+								with side-effects far worse than many "conventional" illnesses. I have only, within
+								the last few days, noticed a small letter "hiding" in one of the files of my records.
+								It is the letter written by MC to BW following receipt of his advice with respect
+								to my further treatment. He thanks BW for his advice and taking the trouble, then
+								goes on:
+							</p>
+							<blockquote>
+								<p>
+									<i>"I must both thank you and apologise to you for the trouble you have gone to with
+										the cases I have referred to you during the year I have been over here. They have,
+										I am afraid, run to this sort of pattern and you will appreciate that this is the
+										result both of the difficulties that they present and, I fear, lacunae in my own
+										training."</i>
+								</p>
+							</blockquote>
+							<p>
+								Yes, I have looked it up, just to confirm what I believed the definition to be:
+								a <i>lacuna</i> is a gap, omission, hiatus; <i>lacunae</i> obviously are these in
+								plural. Imagine what would have been my thoughts had I been aware at the time. I
+								had been a patient for just one year and was, therefore, one of the first patients
+								of the consultancy; there had been other second opinions; had we, by any chance,
+								each fallen through a lacuna?
+							</p>
+							<p>
+								Let me recap at the end of this "formative" year in my life. When it began, I had
+								already been taking Librium for two years; I continued for virtually the whole of
+								the year, with a mid-point interval at a double dose rate, before changing to Valium.
+								There had been brief interludes with Tryptizol, Melleril, Nardil and Stelazine;
+								there had been Soneryl, Sonergan, Seconal, Amytal and lastly Mogadon to pacify my
+								nights. I had suffered twenty-three sessions of E.C.T and twenty-six episodes of
+								modified insulin shock treatment. In total, I had received forty-three injections
+								of Pentathol, plus twenty-three each of belladonna and curare derivatives, and now
+								I was going to start on a regimen of Pertofran, Valium and Mogadon.
+							</p>
+							<p>
+								<b>Dare I ask you to remember that at the very outset, I had no episode or history of
+									nervous or psychiatric ailments - I had uncontrollable diarrhoea, nothing else?</b>
+							</p>
+							<p>
+								In time, all good things come to an end and I left hospital and recuperation, and
+								started back at work. My employers were very supportive, and placed me with congenial
+								people in work that was quite undemanding. So slowly I settled. The gradual restructuring
+								of my life began and the building of confidence was real. After a time I was asked
+								to take over Engineering Training and, eventually, the Training Department covering
+								the whole of the establishment.
+							</p>
+							<p>
+								At one time, had I been taken to a high place and, with all of the possible jobs
+								in the Works laid out before me, asked to pick one, the last, the very last choice
+								would have been Training! However, I was more grateful than I could say to the Works'
+								management for the way in which I had been reintegrated into work, and, anyway,
+								it is said that in every Welshman there is a latent preacher or teacher, so maybe
+								I had met my destiny. Many interesting developments were taking place in the world
+								of industrial training and I was soon absorbed.
+							</p>
+							<p>
+								At home, I found in time that my wife had carried the burden of my condition for
+								too long, and she herself became ill. There came a time when it felt as if we were
+								two drowning people clutching at the same straw. MC, who was aware of what was developing,
+								urged me most strongly one day - "For God's sake, get out - go and camp somewhere,
+								but get out". And so I did. I took a flat in a converted farmhouse - and by one
+								of those quirks for which fate is so famous, the flat below me was taken simultaneously
+								by the Clinical Psychologist from MC's department.
+							</p>
+							<p>
+								Once one has separated, it seems to be virtually impossible to reunite and rebuild
+								what had been before, and so, inevitably, my wife and I divorced. In time, I was
+								lucky in finding this house with its land suitable for horses, moved here in 1971
+								and have lived here ever since. Again, giving the lie to what MC had said about
+								our marriage, it was my former wife who actually was instrumental in my finding
+								it in the first place.
+							</p>
+							<p>
+								Almost without a break until about 1970 I continued with psychotherapy, although,
+								at the time I wasn't aware that that is what it was, so little did the "medicine
+								of the mind" figure in one's everyday considerations; all I knew was that it was
+								"good to talk".
+							</p>
+							<p>
+								However, coping with a solitary life and the increasing demands of work (ironically,
+								because I became enthusiastic and could see the potential of the new moves in industrial
+								training <i>I</i> was placing the demands on myself), because of these factors I
+								found myself "going backwards" at work. Whereas I had had much support following
+								my initial return to work, and when I took up my role as Training Manager, now I
+								found that patience seemed to have run out, and my absences were seen in a different
+								light.
+							</p>
+							<p>
+								It was not realised, probably wasn't even addressed, that the continuous drug regime
+								was taking a devastating toll of my faculties. I was even now taking Pertofran and
+								Valium, and had recourse to Mogadon at night, so you may perhaps judge that the
+								start of each day was a little uncertain.
+							</p>
+							<p>
+								I had a most marvellous Girl Friday at work, Val, who could look at my eyes first-thing
+								and then decide if she should stall callers until after 10 am. In time, the constant
+								struggle became unbearable, and one day, in late summer 1976, I set out for work
+								and didn't arrive. Instead, I turned off my normal route and took refuge with a
+								friend with whom I holed-up for two days. That, essentially, was the end of my working
+								career. In time I was pensioned off at fifty-two and then a new phase in my life
+								- indeed, a new <i>life</i> - began.
+							</p>
+							<p>
+								But what sort of new life? The very state of not going to work was in itself a new
+								life, and I knew within myself that I had had enough; nothing was worth the growing
+								loss of ability and status, and the struggle to do well things that previously I
+								could have done in my sleep.
+							</p>
+							<p>
+								If I had known how this new life was going to unfold, what would I have thought,
+								what would I have done? But I wasn't yet in the state of mind to ask myself "What
+								am I going to do with this freedom now that I have made my escape?". I was rather
+								more like the survivor of a shipwreck who has only just made it to a shore - he
+								didn't <i>care</i> what shore - all he knew was that he wasn't fighting something
+								alien anymore.
+							</p>
+							<p>
+								When I look back at that time, it is quite startling to recall how a new life developed
+								almost by spontaneous combustion. I marvel at the expansion - expansion of my circle
+								of friends, expansion in the range of my activities; activities and contacts that
+								opened up an entirely new world - a world that I hadn't previously explored or even
+								thought much about.
+							</p>
+							<p>
+								And my spirit? I had never, not since I posed the question in hospital twelve or
+								so years previously, found an answer - never really given it much further thought.
+							</p>
+							<p>
+								Just five more years down the line and I was to have some enlightenment. It was
+								as if in me there was taking place the metamorphosis of a former caterpillar, now
+								in its cocoon, waiting to emerge to make its destined flight. But I knew as little
+								of what was involved in flying as did the caterpillar when it started to spin the
+								silk of its cocoon. All of this lay ahead.
+							</p>
+							<p>
+								I still don't know whether I would have taken a different path - too often in life
+								we never have the option to choose, or never realise that there is a choice, until
+								we have committed ourselves. As you read further, perhaps you will have an opinion;
+								for myself, I shall leave the analysis until I reach it in the logic of the narrative.
+								At this moment, I have just been cast up on the shore and I am so grateful that
+								I have survived.
+							</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+					</div><!-- end class="page-text -->
+
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="introduction.htm">&lt; Synopsis and Introduction </a></li>
+							<li class="align-right"><a href="chapter-02.htm">Chapter 2 &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+					</article>
+				</div>
+				<!-- end div#article -->
+				<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+				<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+			</div>
+			<!-- end #main-content-relative -->
+		</div>
+		<!-- end main-content -->
+	</div>
+	<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

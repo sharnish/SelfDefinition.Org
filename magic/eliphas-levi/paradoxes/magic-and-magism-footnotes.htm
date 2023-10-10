@@ -1,0 +1,416 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Footnotes for Magic and Magism </title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="Footnotes for Magic and Magism" />
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradoxes/images/Eliphas-Levi-1872-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_paradoxes-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="magic-and-magism.htm">
+	<link rel="next" href="unalterable-principles.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* magic-and-magism.htm and magic-and-magism-footnotes.htm have NO collapsing footnotes */
+
+		a.go-back {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		div.footnotenote-div p {
+			margin-top: 0;
+		}
+
+
+
+		div.extended {
+			border-left: 1px solid red;
+			margin-left: 4px;
+		}
+
+		html.dark div.extended {
+			border-left: 1px solid yellow;
+		}
+
+		div.extended p {
+			padding-left: 8px;
+		}
+
+		/* TESTING jump link */
+		article a {
+			display: inline;
+		}
+
+		/************* Tried new jump-note styling https://www.caktusgroup.com/blog/2017/10/23/css-tip-fixed-headers-and-section-anchors/ anchor offset + header height + header padding + header margins NOT USED tried on magic-and-magis-footnotes.htm - HEIGHT IS SCREWED UP HTML EXAMPLE <a class="to-footnote" href="#target-99-1">to footnote 99-1</a> THEN <div class="target-div"> <a class="target" name="target-99-1"> </a>    <<-- REPLACED WITH "page-link-anchor" <h2 class="target-label">I am a good target</h2> </div> NEW SECTIONS, ABANDONED, THE FOLLOWING ARE COMMENTED OUT, appear only on this page target-div, target, target-label a, a.target, a.page-link-anchor, .target-div, .target-div a.target, .target-div .target-label { position: static; } .target-div { margin: 0; padding: 0; line-height: 1em; } .target-div a.page-link-anchor { top: 0px; padding-top: 0; } @media only screen and (min-width:768px) { .target-div a.page-link-anchor { top: 0px; } } @media only screen and (max-width: 767px) { .target-div a.page-link-anchor { padding-top: 50px; } } @media only screen and (max-width: 525px) { .target-div a.page-link-anchor { padding-top: 100px; } } ************************/
+		table#seven-daemons {
+			padding-left: 5px;
+		}
+
+		table#seven-daemons tr {
+			vertical-align: top;
+			font-size: 85%;
+		}
+
+		table#seven-daemons th {
+			font-weight: normal;
+			font-style: italic;
+			margin-bottom: 20px;
+		}
+
+		table#seven-daemons th,
+		table#seven-daemons td {
+			width: 50%;
+			padding-bottom: 10px;
+		}
+
+		table#seven-daemons th.left,
+		table#seven-daemons td.left {
+			padding-right: 15px;
+		}
+
+		@media only screen and (max-width:400px) {
+
+			table#seven-daemons th.left,
+			table#seven-daemons td.left {
+				padding-right: 5px;
+				border-right: 1px solid black;
+			}
+
+			table#seven-daemons th,
+			table#seven-daemons td {
+				border-top: 1px solid black;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_paradoxes-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens --> <?php include( "_paradoxes-title-include.htm"); ?> <h3> Magic and Magism Footnotes </h3>
+									<p class="tiny"> Esta página en español: <a href="../paradojas/magia-y-magismo-notas.htm">.. magia-y-magismo-notas.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="magic-and-magism.htm">&lt; Magic and Magism</a></li>
+									<li class="align-right"><a href="unalterable-principles.htm">Unalterable Principles &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<hr />
+							<p> Return to: <a href="magic-and-magism.htm">magic-and-magism.htm</a> </p>
+							<p class="note80" style="margin-bottom: 30px;"> Click the footnote number or use your browser's <a href="javascript:history.go(-1)"> Back</a> button to return to the text in chapter: magic-and-magism.htm </p>
+							<hr />
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-99-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-99-1">M&amp;M 99:1</a> His incessant struggles with the "idea" rooted in him by his unhappy Catholico-Romanism, having occupied and wasted all his time.&mdash;E.O.
+								</p>
+							</div>
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-99-2"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-99-2">M&amp;M 99:2</a> It is at least questionable whether this be not the best, wisest, and safest position. Admitting that by a devotion to Occult Physics, two supreme gifts are attainable,&mdash;one, the preservation of the individual memory right through all the further lives on this and the other planets of our cycle, throughout a complete circuit-in other words the quasi-immortalisation of the personality; and second, the power of controlling and directing our own future after death instead of being drawn into the vortex and being there disposed of while still in a passive state under the laws of affinities; yet it is at any rate questionable whether even these, the highest gifts, which not one per cent of adepts even attain to, really profit a man in the long run. Most certainly to attain them, an utterly self-regarding life is needed in the case of men of our race. A sublime selfishness it may be, but none the less selfishness, is essential to the attainment of these highest gifts. It is at least open to doubt whether an active life of unselfishness and benevolence amongst our fellows is not more conducive to happiness in the long run. In a universe governed by a mathematical justice, we may be content to leave our future in the hands of the Eternal Laws and the immortalisation of a necessarily imperfect <em>personality</em> is a doubtful good. As for all other powers dependent on a manipulation of the Astral Essence, though doubtless susceptible of beneficial exercise on rare occasions, they hardly appear to me aims worthy of the Man-Divine.
+								</p> <!-- note 99:2 continues on p. 100 -->
+								<p> A certain theoretical knowledge of the Physics of Occultism grows in the mind in its progress in the Metaphysics of the "Highest Science," but in my humble notion it is to a thorough comprehension and grasp of these latter that our best efforts should be directed. We should not waste time, seeking powers or power; we should lift no longing gaze even to the two supreme accomplishments, but we should strive so to purify our <em>natures</em> and permeate ourselves with an active love for the ALL, as to ensure at the recast, the evolution of a higher personality, and so to make the cognisance of the infinite unity, and all that thereby hangs a part of ourselves, as to render it a necessary intuition of the new personality. This is to be "<em>un vrai magiste qui ne pratique point la magie</em>," and to my mind this is, perhaps, the nobler, though, doubtless, the less attractive path.&mdash;<em>Trans.</em> </p>
+							</div>
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-100-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-100-1">M&amp;M 100:1</a> And above all in the Ancient Sacred Literature of India. But E. Lévi had never studied the <em>Bhagavad-Gita</em> and other like incarnations of the spiritual life in the flesh of the latter, or he would have been a far truer "Magiste".&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-102-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-102-1">M&amp;M 102:1</a> "Keep silence all who enter here," has from time immemorial been graved above the Portals of Occultism, "<em>Gopaniyum Prayatnena</em>," "to be kept secret with the greatest care" is the refrain of all the ancient Aryan writers on Psychism. But valid as this insistence on secrecy has been in the past, it must not be forgotten that evolution never sleeps, and that the wheel is ever turning. A new and higher race is scintillating on the dim horizon, and what are the highest secrets of one race, and intolerable to its mass, become the intuitions, if not the palpable verities, of the next.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-103-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-103-1">M&amp;M 103:1</a> This entire paragraph is sophistical and insincere to a degree. It savours not of "the things which are of God but of the things which are of man"; not of occultism, but of Éliphas Leviism.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-106-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-106-1">M&amp;M 106:1</a> Which leaves the question where it was, since even the highest adept can never have such an exhaustive knowledge of those laws or that Reason, as to be able to assert of anything that it is absolutely contrary to them, or hence to predicate impossibility of anything outside, as Arago said, of pure mathematics.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-106-2"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-106-2">M&amp;M 106:2</a> The wretched Isiacs wound their breasts and imitate the grief of "the INFELICISSIMA MATER <em>Isis</em>" (<em>Min. Felip. c</em> 2r). The return of Isis with the body of Osiris is dated December 15th, and the search lasts seven days. (Plutarch).&nbsp;&mdash;E.O.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-107-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-107-1">M&amp;M 107:1</a> In this and many other cases it is impossible to reproduce in English that antithesis of sound (mielfiel), which, not unfrequently at some little sacrifice of sense, intensifies, so often, the epigrammatic character of our author's <em>dicta</em>.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-108-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-108-1">M&amp;M 108:1</a> Correct. &mdash;E.O.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-109-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-109-1">M&amp;M 109:1</a> Here he alludes to the voluntary trance condition or Samadhi induced according to the rules of occult science. Mediumistic trance is a mode of epilepsy&mdash;E.O.
+								</p>
+								<p> So, for that matter, I venture to submit, if words are used in their strict sense, is <em>Sam&#257;dhi</em>. The real difference consists in the fact that a mediumistic trance is generally the result of an abnormal and quasi-defective organisation, undertaken or fallen into suddenly without the preparations essential to render it innocuous to the health, and without the mental preparations necessary to the retention of the free exercise of the mind and will, and is only partially, often not at all, under control, while <em>Sam&#257;dhi</em> results from a long and careful series of exercises developing abnormal capacities in a normal organisation, and is preceded by a gradual training that protects the physical frame and habituates the mind and will to free exercise under
+									<!-- note 109:1 continues on p. 110 --> conditions that would normally cripple or wholly stupefy them, and is wholly under control.
+								</p>
+								<p> Add that from its nature the former cannot continue many days without producing death, while the latter can continue for months without the slightest injury, unless we reckon as an injury the grave disgust for earthly fleshly life that haunts the adept for a longer or shorter period after revival. </p>
+								<p> Both are epileptic in character, the one only semi-voluntary, the other wholly voluntary; the one without, and the other with, the preliminary physical training necessary to enable the tissues and the mind to bear, unimpaired, subjection to the abnormal conditions. &mdash;<em>Trans</em>. </p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<!-- PAGE NUMBER 110-1 IS GUESED. SYMBOL MISSING IN TEXT -->
+								<p><a class="endnote" id="footnote-110-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-110-1">M&amp;M 110:1</a> This, though <em>true</em>, is a quibble. No doubt elementaries and elementals belong to the <em>K&#257;maloka</em>, and are, therefore, not strictly speaking apparitions of the other world, but the public thinks and talks of all such comparatively immaterial existences as belonging to the other world, and so here again the plain sense of the passage is at variance with what the writer knew to be true.&mdash;<em>Trans</em>.
+								</p>
+							</div> <!-- end fn 109-1 -->
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-111-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-111-1">M&amp;M 111:1</a> This word scarcely as yet in use in English, though thoroughly Gallicised, is from the Latin, Larva, a ghost or spectre.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-111-2"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-111-2">M&amp;M 111:2</a> Sophistry. &mdash;E.O.
+								</p>
+								<p> I quite agree, but if for "Religion" we substitute "Occultism" my friend E.O. apparently considers that the Sophistry disappears.&mdash;<em>Trans</em>. </p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-112-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-112-1">M&amp;M 112:1</a> And of the fourfold nature of man; the three pairs and the outer fleshy case and analogous universal quaternions.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-117-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-117-1">M&amp;M 117:1</a> "<em>Convenablentent</em>," the right word, most assuredly: respectably. &mdash;E.O.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-117-2"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-117-2">M&amp;M 117:2</a> Rather it signifies that which binds together the soul,--or if you will the highest couple, the 6th principle, and the spirit, (or 7th principle or monad), and the absolute, of which this is a ray.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-117-3"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-117-3">M&amp;M 117:3</a> In other words we are by silence to consent to and add currency and vitality to what we think a falsehood.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-118-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-118-1">M&amp;M 118:1</a> There is a vast difference between tolerance for and gentleness with what we believe to be the errors of others, and the ease-loving timidity which shrinks from showing by its own example that it does believe them to be errors. E. Lévi looks forward to a reign of truth, but if men follow his advice, and for the sake of <em>respectability</em> persistently bow to falsehood, how is the usurper to be dethroned, how is the wrong to be conquered, and the right to triumph?&mdash; <em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-120-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-120-1">M&amp;M 120:1</a> These poetical illustrations are misleading. Science, <em>real</em> science, and religion are one; at most two faces of the Eternal Truth; allotropic forms of the same everlasting verity.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-120-2"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-120-2">M&amp;M 120:2</a> There <em>is no</em> such thing; it is only nothing that has no extension; the extension of what <em>we call</em> immaterial things may be beyond our cognisance, but <em>all</em> things have extension, and extension is the essence of <em>substance</em>, which both <em>is</em> and fills <em>space</em>.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-120-3"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-120-3">M&amp;M 120:3</a> Of course this is all a muddle; indivisible atoms do exist. You may say that the mind can divide them in conception, but if you could put the division into practice, the molecule would return into the unmanifested. Then he confuses matter, which is transitory, concrete and manifested, with substance, its eternal, abstract, unmanifested base.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div extended">
+								<p><a class="endnote" id="footnote-121-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-121-1">M&amp;M 121:1</a> <span class="note green block">(Very long footnote: extends from p. 121 to p. 127.) </span>The Septenary is sacred. not for one, but for a thousand reasons. Take any seven coins or discs of precisely the same size. Place one in the centre and you will find that the remaining six, when arranged round it as a belt, will exactly occupy the whole circumscribing space, each touching its neighbours and the original central one. Add, with other precisely similar discs, a similar second belt outside the first, a third outside the second, a fourth outside the third, and so on. Increase it, as you may, each belt will only contain six more pieces than the preceding one, with the one central piece as the seventh. The belts will contain 6, 12, 18, 24, 30 pieces and so on, the numbers being terms of an arithmetical progression of which the increment is 6. You may continue enlarging the circumference till it covers the whole Gobi desert, but you will he unable to add more than 6 for each belt to the number of its predecessor. This may seem childish, but we invite all the western mathematicians to explain the why of it, and on this principle the Universe both in its concrete and abstract manifestations is built up.
+								</p> <!-- footnote 121:1 on p. 122 -->
+								<p> Pythagoras speaks of the <em>Dodekahedron</em> as being the "Divine"--for the first circle of <em>one and six</em> is the <em>central circle</em>, the abstract, the <em>one</em> of nature <em>in abscondito</em>, and the most Occult. It is composed of the ONE, the central point, and of the <em>six</em>, the "number of perfection" of the Kabalists, having this perfection in itself, shared by no other, that by, the assemblage of its half, its third part, and its sixth part (one, two and three) it is made perfect. Therefore it is called "the sign of the world," for in six rounds the group of worlds attains its perfection, and during the seventh enjoys felicity, and neither nature nor beings labour or toil any more, but prepare in their perfection for Nirvana. With the Christian and Jewish Kabalists, it is the six days of creation and their Sabbath. </p>
+								<p> And <em>seven</em> is called by Pythagoras "the vehicle of Life," etc. Seven in short is the symbol of this Yug, and Time. </p>
+								<p> The Sab&aelig;ans worshipped the <em>seven</em> sons of Sabus. The <em>seven</em> "spirits of God" in Revelation mean simply the perfect man; so with its <em>seven</em> stars, lamps, etc.; and the Chaldean "stages" of the seven spheres and the <em>Birs Nimrud</em> with its <em>seven</em> stories, symbolical of the concentric circles of the <em>seven</em> spheres. </p>
+								<p> You moderns, who laugh at the ignorance of the ancients, who <em>knew but of seven planets</em>, you have never understood what was really meant by this limited number; nor have you given one thought to the fact that men who presented Callisthenes (over 2,000 years ago) with records of celestial observations extending back from their time 1,900 years, could not have been ignorant of the existence of other planets. </p> <!-- footnote 121:1 on p. 123 -->
+								<p> And what (not <em>who</em>) is SABAOTH, and why should have been regarded as a creator? How many Christians are there who suspect that SABAOTH was the Demiurgic number, <em>seven</em> with the Ph&oelig;nicians, who became later the Israelites? (Read <em>Lydus de Mens</em>. IV, 38, 74, 98, p. 112.) Seek for SABAOTH. ADONAIOS in the "Sibylline Books," <em>Gallacus</em>, 278. The <em>Demiurge</em> is <em>Iao</em> presiding over the <em>seven</em> circles of the <em>seven</em> Ghebers, the <em>seven</em> spirits of fire, astral light, <em>Fohat</em>, the seven Gabborim, or <em>kabiri</em>, the seven wandering stars, and it is those wanderers who under their collective name of <em>Kabar Ziv</em> (or Mighty Life or Light) as a Central Point emanates and allows to cluster round itself the <em>seven D&aelig;mons</em>. </p>
+								<p> Compare-- </p>
+								<div>
+									<table id="seven-daemons">
+										<tr>
+											<th class="left"> The names of the seven Impostor Daemons in the Codex Nazaraeus. </th>
+											<th> The names of the seven Skandhas or Principles. </th>
+										</tr>
+										<tr>
+											<td class="left"> 1. Sol. </td>
+											<td> 7. Spirit, the reflection of the ONE <em>Life</em>. </td>
+										</tr>
+										<tr>
+											<td class="left"> 2. Spiritus (Holy Spirit), Astro (Venus)or Lebbat Amamet. </td>
+											<td> 6. The spiritual soul (<em>Female</em>). </td>
+										</tr>
+										<tr>
+											<td class="left"> 3. Nebu (Mercury). </td>
+											<td> 5. The Animal Soul (<em>Manas</em>). </td>
+										</tr>
+										<tr>
+											<td class="left"> 4. Sin Luna, called also Shuril and Siro. </td>
+											<td> 4. The <em>Kama Rupa</em>--the most dangerous and treacherous of the Principles. </td>
+										</tr>
+										<tr>
+											<td class="left"> 5. Kiun (Kivan) Saturn. </td>
+											<td> 3. The Life-soul, <em>Linga sarira</em>. </td>
+										</tr>
+										<tr>
+											<td class="left"> 6. Bel, Jupiter (life supporter). </td>
+											<td> 2. The Vital principle. </td>
+										</tr>
+										<tr>
+											<td class="left"> 7. Nerig, Mars--the son of man who despoils the other sons of man; called also "<em>Excoriatores</em>". </td>
+											<td> 1. The Gross body or material form--<em>per se</em> an animal and a very ferocious and wild one. </td>
+										</tr>
+									</table>
+								</div>
+								<p> &mdash;E.O. </p> <!-- footnote 121:1 on p. 124 -->
+								<p> As regards the little problem which E.O. invites Western Mathematicians to explain, it is simple enough. There is no mystery in it; it is a necessary consequence of the hypotheses involved in the premises. First the hypothesis involved in the description, to speak mathematically, of the figure we call a circle, the equality of all <em>radii</em>, and second the hypothesis that we are to use only equal circles. The proof is too long to insert, but it all proceeds from the known geometrical facts that where two circles touch, the line joining their centres passes through the point of contact; that where three circles touch the three lines joning their centres compose an equilateral and equiangular triangle; that the interior angles of a triangle are collectively equal to one-half of the angular extension round a point, and that each angle of an equilateral triangle is equal to one-sixth of this, and that consequently, only six such triangles, exactly this number and no more, can radiate from any point; that though the first belt may look circular, the second and succeeding ones cannot be constructed according to the terms of the problem except as hexagons, when again the properties (also the result of the hypothesis of construction) of the equilateral triangle come into play, and thus it is perfectly easy to demonstrate, that, not as a matter of mystery, but as a result following necessarily on the adopted premises, if there be <em>n</em> belts, then the <em>n</em>&apos;th must contain six <em>n</em> discs or circles. </p>
+								<p> It seems useless to argue with Eastern adepts--from the time of the Gymnosophists, who taught Pythagoras, they have always, verbally at any rate, confounded things and their symbols. There is nothing <em>sacred</em> in the <em>number</em> seven; it is a <em>memoria technica</em> of hidden combinations, etc., which combinations, etc., are or may be held to be sacred, but as for the symbol <em>7</em>, or the word <em>seven</em>, there is nothing <em>sacred</em> in either, the sanctity, if any, pertains to the mysteries they recall, and in no way to the symbol or word. Had our language called 6+1, <em>pig</em>, or used--as the symbol for this, then <em>pig</em> and--would have been as <em>sacred</em> as <em>seven</em> and <em>7</em>. </p>
+								<p> On the other hand to those who ridicule and reject the facts of the occultists on the ground that according to them the universe is built up upon one numerical system, and that everything is in sevens or threes, it may be useful to point out that even in this little world of ours we have instances of the persistent adherence of nature to particular numbers. Thus 3 and multiples of this rule the inflorescence of all <em>endogens</em> and4and 5 that of all <em>exogens</em>; and thousands of other instances can be given, so that the general rejection of occult views of the universe, on account of a symmetry in them, which is over hastily concluded to be unnatural, and, therefore, artificial and false, is not really warranted, even by our little learning. And as to 3 and 7, the latter grows necessarily out of the former, since 7 is the greatest possible number of products of three things taken, 1,2or3together. </p>
+								<p> As for the seven impostors, <em>d&aelig;mons</em>, these were also considered, by some, to represent the cycle of necessity, which, according to them, beginning with Mars, ran through Jupiter and Saturn to the earth,
+									<!-- footnote 121:1 on p. 126 --> and thence through Mercury and Venus to the sun. But though the Tibetan Brotherhood tell us that man does pass hence first to Mercury, they tell us that the Planet on which we lived immediately previous to our advent on this Earth was Mars and their account of the worlds that make up our cycle of necessity is quite different from that above referred to. But though according to this latter Saturn, and not Mars, was the Planet from which we last came, it does not follow that the Planet <em>we call</em> Saturn was really meant, or that the several Planets to which occultism has attached the sings, and names of the Planets known to the Astronomers of old, are <em>really</em> these very Planets. On the contrary, as a rule it may generally be concluded that when occultism says anything, it means something else. Words, like the names of planets, precious stones, minerals, plants, etc., always had two meanings&mdash;one, the palpable obvious one, which; if accepted, leads entirely astray, for the uninitiated; and the other, the artificial one, which gives the real fact for the initiated. This is what has, and I maintain rightly so, brought more discredit on occultism than anything else, and which must engender disbelief in or contempt for it, in the world at large, so long as it is persisted in. But the adepts of all schools have always been so tied down, by the vows and spiritual conditions (which it therefore no longer remains in a man's option to subsequently disregard) of the successive initiations, that they can, in many matters, not speak save in this deceptive phraseology, to' those not initiated, and
+									<!-- footnote 121:1 on p. 127 --> these in their turn, as they progress, become by the immutable laws of the associations to which they belong, similarly tongue-tied and mind-bound; and, as to many things, the only hope for the world at large lies in the gradual development of the higher races on earth, who will, untaught in these schools, work out anew their knowledge for themselves, and untied by laws and conditions, now rapidly becoming an anachronism, give freely of <em>all</em> their store to <em>all</em> men. In this direction the authors of <em>The Perfect Way</em> have made the first important step.
+								</p>
+								<p> Of course, as to many matters, witness the facts given in the introduction, the adepts can speak more plainly, and are, nowadays, some of them, not so unwilling to speak as they have always hitherto been, but there remain the highest and most important laws of which, I am informed, they neither <em>will</em> nor <em>can</em> speak, save only to those who have been initiated, and are therefore for ever precluded from revealing the truth to any non-initiated.&mdash;<em>Trans</em>. </p>
+							</div> <!-- end fn 121-1 -->
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-127-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-127-1">M&amp;M 127:1</a> There is no English equivalent for "<em>fatale</em>," in the sense in which it is here used, and which is not "fatal," but that has become a thing of Fate, operating therefore in a blind, unintelligent, irresponsible manner under blind laws.&mdash; <em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-130-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-130-1">M&amp;M 130:1</a> Although in a certain sense this is true, it is very misleading. <em>Faith</em>, in the ordinary sense of the word, viz., a belief in that for which there is no evidence, direct or indirect, has no place in true Occultism which is an exact science, and accepts nothing which cannot either be demonstrated or at any rate proved to accord with, or follow, necessarily or with a high degree of probability, from what can be demonstrated. Of course, like all sciences, Occultism has its methods, and a man must understand these before be can understand its demonstrations; just, for instance, as a man must understand the methods of mathematical physics, before he can understand the proof that the poles of the moon describe in space a certain very complicated curve. But this latter is none the less an exactly demonstrated fact, and so too are the teachings of Occultism, although to one ignorant of the methods of this latter science they may seem absolute mysteries and matters of <em>Faith</em>.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-131-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-131-1">M&amp;M 131:1</a> And thus proves again that Human Folly is limitless as space itself. &mdash;E.O.
+								</p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-131-2"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-131-2">M&amp;M 131:2</a> It will be seen that by Faith <em>he</em> means the acceptance of the teachings of Authority (<em>i.e.</em>, of those who presumably know more of the matter than ourselves) on those subjects or points on which we do not possess or are unable to obtain knowledge--a constantly varying quantity altering from moment to moment with the progress of the world and the individual, and disappearing in the sanctuary of occultism where all mysteries, at any rate of the conditioned universe, are explained.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-133-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-133-1">M&amp;M 133:1</a> And the <em>Mage</em> has not even need to believe in one. <span class="nowrap"> &mdash;E.O.</span>
+								</p>
+								<p> Quite so, he <em>has</em> no <em>need</em>. Occultism only deals with the conditioned universe, which <em>to all conditioned</em> in it is infinite. Admittedly, <em>in</em> that Universe only Laws, and no God, <em>i.e.</em>, no conscious, intelligent will, the source of those laws, can be traced. So the Mage may justifiably say, "I content myself with the manifested and conditioned universe and believe in no God who, whether he exists somewhere <em>abscondite</em> or not, has not seen fit to indicate himself anywhere in manifestation, and cannot therefore, (if such a being exists) <em>want</em> men to believe in Him." </p>
+								<p> But there are Mages and Mages, and there are some who say, granting all this, we yet know by a <em>higher</em> intuition that the infinite to all conditioned existence is yet not ALL, and that there is a conscious and intelligent will, the origin of those manifested laws which alone we creatures of manifestation can cognise. But this of course is a matter of Faith and pertains not to occultism proper, which is either atheistic or agnostic, but to transcendental occultism.&mdash;<em>Trans</em>. </p>
+							</div>
+
+
+							<div class="footnotenote-div">
+								<p><a class="endnote" id="footnote-134-1"></a>
+									<a class="go-back" href="magic-and-magism.htm#ret-134-1">M&amp;M 134:1</a> It never <em>rises</em>, but as race follows race, and circuit succeeds to circuit, it etherialises more and more, destined to vanish wholly before the veil of the cosmic night, that shrouds a higher mystery and an inner sanctuary, is drawn around us.&mdash;<em>Trans</em>.
+								</p>
+							</div>
+							<p class="note center"> ( End of Magic and Magism Footnotes )</p>
+							<p> Return to: <a class="go-back" href="magic-and-magism.htm">magic-and-magism.htm</a> </p>
+							<p class="totop-above-anchor"> <a href="javascript:toTopCleanUrl();">top of page</a> </p> <!-- anchor element must not be empty --> <a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button> <!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="magic-and-magism.htm">&lt; Magic and Magism</a></li>
+							<li class="align-right"><a href="unalterable-principles.htm">Unalterable Principles &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div> <!-- end #main-content-relative -->
+			</div> <!-- end main-content -->
+		</div> <!-- end container -->
+	</div> <!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path"> <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?> </div>
+</body>
+
+</html>

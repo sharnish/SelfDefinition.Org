@@ -1,0 +1,65 @@
+/* file:  /zen/huang-po/transmission/_transmision-spanish-sparse.css
+
+
+Update to 2022.CSS March 30, 2022. June 13, 2022
+
+ */
+
+@media only print {
+	#article:after {
+		content: "Update June 13, 2022";
+	}
+}
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffda;
+}
+
+
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c9c9ff;
+}
+
+
+h3 span.smaller {
+	font-weight: normal;
+}
+
+/* CSS3 columns on 5 pages
+Copied from Xenophon
+*/
+
+
+nav.contents {
+	margin-top: 20px;
+	column-rule: 1px solid #666;
+}
+
+nav.contents .item {
+	text-align: center;
+}
+
+/* default padding is 10px */
+nav.contents .item a {
+	/* does nothing padding-left: 25px;
+	padding-right: 25px; */
+	width: 120px;
+}
+
+
+
+/* end */

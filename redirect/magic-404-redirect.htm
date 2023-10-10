@@ -1,0 +1,305 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Magic 404 redirect</title>
+	<meta name="description" content="Magic files 404 redirect page">
+	<meta name="author" content="">
+	<meta property="og:title" content="Magic 404 redirect">
+	<meta property="og:description" content="Magic files 404 redirect page">
+	<meta property="og:image" content="https://selfdefinition.org/redirect/images/afterlife.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="/redirect/_redirect-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* colors from Ramana quotes */
+		html,
+		body,
+		#fixed-header-small-screen,
+		#menu-site-small-screen,
+		.progress-header,
+		.progress-container {
+			background: #f6fffc;
+		}
+
+		#nav .menu-section a.active,
+		#menu-scroll,
+		#menu-scroll a,
+		#toTopButton {
+			background: #c9e7d0;
+		}
+
+		h4 {
+			margin-top: 30px;
+			margin-bottom: 8px;
+		}
+
+		h4+p {
+			margin-top: 8px;
+		}
+
+	</style>
+	<script>
+		/* replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/redirect/images/paracelsus.jpg");
+
+			$('#menu-image').attr("src", "/redirect/images/paracelsus.jpg");
+
+			$('#title-image').attr("alt", "Paracelsus");
+
+			$('#menu-image').attr("alt", "Paracelsus");
+
+			$('.replaceable-link span').text('Magic Index');
+
+			$('.replaceable-link').attr("href", "/magic/");
+
+			$('.replaceable-link').attr("style", "display:block");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_redirect-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_redirect-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Magic
+									</h3>
+
+									<p class="toowide">
+										The document you requested is not on this server. These suggestions may be of interest.
+									</p>
+									<p class="note tight">
+										Return to Magic Index : <a href="/magic/">/magic/</a></p>
+									<p class="note80 tight" style="margin-top:10px;">
+										Return to Redirect index page: <a href="/redirect/redirect-index.htm">redirect-index.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- next-previous-item-nav not used -->
+							<div class="amazon-section-left-justify">
+
+								<p style="max-width: 500px;">
+									Due to capacity constraints we had to move some large <strong>Magic</strong> files
+									off this server. Some (not all) books are available at other websites as shown below.
+								</p>
+								<p>
+									To recommend other sources, please use the Contact form on this site: <a href="/contact/">
+										/contact/</a>
+								</p>
+								<p class="note">
+									(When doing web searches, watch out for fake download sites that require membership
+									and request personal information.)</p>
+								<h4>
+									Online Books by Arthur Edward Waite</h4>
+								<p>
+									Full catalog at <a href="http://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Waite%2C%20Arthur%20Edward%2C%201857-1942">
+										onlinebooks.library.upenn.edu</a>
+								</p>
+								<p>
+									Also see Waite's Hermetic Museum at Sacred-Texts.Com: <a href="https://sacred-texts.com/alc/hermmuse/index.htm">
+										sacred-texts.com/alc/hermmuse/index.htm</a>
+								</p>
+								<h4>
+									Other Sources</h4>
+
+								<p>
+									DarkBooks.Org Authors page:
+									<a href="https://darkbooks.org/articles/authors.html">
+										darkbooks.org/articles/authors.html</a>
+								</p>
+								<p>
+									Hermetics.Org Library:
+									<a href="http://www.hermetics.org/library.html">
+										http://www.hermetics.org/library.html</a>
+								</p>
+								<p>
+									Hermetics.Org E-books:
+									<a href="http://www.hermetics.org/e-kitaplar.html">
+										http://www.hermetics.org/e-kitaplar.html</a>
+
+								</p>
+								<h3 class="maroon">
+									Books Removed</h3>
+								<p>
+									<strong>Arthur-E-Waite-Doctrine-and-Literature-of-the-Kabalah.pdf</strong> [47 megabytes]<br />
+									Alternate source: Archive.Org, pick format at this page: <a href="https://archive.org/details/thedoctrineandli00wattuoft">
+										archive.org/details/thedoctrineandli00wattuoft</a>
+								</p>
+								<p>
+									<strong>Arthur-E-Waite-Hermetic-and-Alchemical-Writings-of-Paracelsus-Vol-I.pdf</strong> (part
+									1, Hermetic Chemistry) <span class="nowrap">[13 megabytes in the pdf]</span>
+								</p>
+								<p>
+									Vol. 1 as a pdf (select from different formats at this page): <a href="https://archive.org/details/hermeticandalch00paragoog">
+										archive.org/details/hermeticandalch00paragoog</a>
+								</p>
+								<p>
+									Same at Archive.Org, alternate link: <a href="https://archive.org/details/hermeticalchemic00para">
+										archive.org/details/hermeticalchemic00para</a>
+								</p>
+								<p>
+									See exerpts in html at Sacred-Texts.Com <a href="https://sacred-texts.com/alc/index.htm">
+										sacred-texts.com/alc/index.htm</a>
+								</p>
+								<p>
+									Entry for Volume 1 at <a href="https://books.google.com.mx/books?id=Y1NqAAAAMAAJ&source=gbs_book_other_versions">
+										Google Books</a></p>
+								<p>
+									See entry at Hathitrust.Org for information (not text) Broken link:
+									catalog.hathitrust.org/Record/100775762
+								</p>
+								<p>
+									<strong>Arthur-E-Waite-Hermetic-and-Alchemical-Writings-of-Paracelsus-Vol-II.pdf</strong> (part 2,
+									Hermetic Medicine) <span class="nowrap">[13 megabytes in the pdf]</span>
+								</p>
+								<p>
+									Sorry, can't find Volume 2 as a PDF. For book info see entry at <a href="https://books.google.com.mx/books/about/The_Hermetic_and_Alchemical_Writings_of.html?id=78iFvgAACAAJ&redir_esc=y">
+										Google Books</a>
+								</p>
+								<p>
+									<strong>Encyclopedia of Occultism and Parapsychology</strong>
+									<br />
+									[Vol 1 (A-L, 954 pages) 8 megabytes]<br />[Vol 2 (M-Z, 989 pages) 9 megabytes]
+								</p>
+								<blockquote>
+									<p>
+										<strong>Volume 1 and 2 both:</strong><br />
+										Download from this page at <a href="https://www.paganspace.net/group/sacredtextexchangeebooksandpdffiles/forum/topics/encyclopedia-of-occultism-and">
+											Paganspace.Net</a>
+									</p>
+									<p>
+										Both volumes are also at <strong>Ursi's Eso Garden</strong> (Your Competent Esoteric Guide)<br />
+										Search on the term Encyclopedia in the Search box at their home page:
+										<a href="https://www.eso-garden.com/">www.eso-garden.com</a>
+									</p>
+								</blockquote>
+								<h4>
+									Franz Hartmann</h4>
+								<p>
+									<strong>Franz-Hartmann-Paracelsus-and-the-Substance-of-His-Teachings.pdf</strong> <span class="nowrap">
+										[20 megabytes in the pdf]</span>
+									<br />
+									Alternate source: Archive.Org, pick format at this page: <a href="https://archive.org/details/paracelsusandthe017572mbp">
+										archive.org/details/paracelsusandthe017572mbp</a>
+								</p>
+								<p>
+									At Hermetics.Org, select link from this page: [broken link] www.hermetics.org/library/Library_Alchemy.html
+								</p>
+								<p>
+									<strong>Franz-Hartmann-The-Life-and-Doctrines-of-Jacob-Boehme.pdf</strong> <span class="nowrap">
+										[21 megabytes in the pdf]</span><br />
+									Online version at Sacred-Texts.Com in html: <a href="https://sacred-texts.com/eso/ldjb/index.htm">
+										sacred-texts.com/eso/ldjb/index.htm</a>
+								</p>
+								<p>
+									Archive.Org, select format from this page: <a href="https://archive.org/details/lifeanddoctrine01hartgoog">
+										archive.org/details/lifeanddoctrine01hartgoog</a>
+								</p>
+								<!-- removed Oct 2018 broken link
+                            <p>
+                                <strong>Paracelsus-Selected-Writings.pdf</strong> (Bollingen Foundation, 1951, not Hartmann)
+                                <span class="nowrap">[78 megabytes in the pdf]</span> Scribd.Com download from this
+                                page broken link: 
+                                    www.scribd.com/doc/124011773/Selected-Writings-of-Paracelsus</a>
+                            </p>
+							-->
+								<h4>
+									Other:</h4>
+								<p>
+									<strong>Eliphas-Levi-History-of-Magic-scan.pdf</strong> <span class="nowrap">[48 megabytes in
+										the pdf]</span> Archive.Org, select format from this page<a href="https://archive.org/details/historyofmagicin00lv">
+										archive.org/details/historyofmagicin00lv</a>
+								</p>
+								<p>
+									<strong>Karl-Von-Eckartshausen-Magic-The-Principles-of-Higher-Knowledge.pdf</strong> <span class="nowrap">[48 megabytes in the pdf]</span> Scribd.Com, download from this
+									page: <a href="https://www.scribd.com/doc/108441533/Karl-Von-Eckartshausen-Magic-The-Principles-of-Higher-Knowledge">
+										www.scribd.com/doc/108441533/Karl-Von-Eckartshausen-Magic-The-Principles-of-Higher-Knowledge</a>
+								</p>
+							</div>
+							<div style="clear: both;">
+							</div>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

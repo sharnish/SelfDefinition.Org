@@ -1,0 +1,776 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Ã‰liphas LÃ©vi (1810-1875)">
+	<meta property="og:title" content="Footnotes for Magic and Magism" />
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="magia-y-magismo.htm">
+	<link rel="next" href="los-principios-inalterbles.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* magic-and-magism.htm and magic-and-magism-footnotes.htm
+           have NO collapsing footnotes */
+
+		div.fnote {
+			font-size: 100%;
+			background: inherit;
+			color: inherit;
+		}
+
+		div.extended {
+			border-left: 1px solid black;
+			margin-left: 4px;
+		}
+
+		div.extended p {
+			padding-left: 8px;
+		}
+
+		a.back-to {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		/*************************/
+		table#seven-daemons {
+			padding-left: 5px;
+		}
+
+		table#seven-daemons tr {
+			vertical-align: top;
+			font-size: 85%;
+		}
+
+		table#seven-daemons th {
+			font-weight: normal;
+			font-style: italic;
+			margin-bottom: 20px;
+		}
+
+		table#seven-daemons th,
+		table#seven-daemons td {
+			width: 50%;
+			padding-bottom: 10px;
+		}
+
+		table#seven-daemons th.left,
+		table#seven-daemons td.left {
+			padding-right: 15px;
+		}
+
+		@media only screen and (max-width:400px) {
+
+			table#seven-daemons th.left,
+			table#seven-daemons td.left {
+				padding-right: 5px;
+				border-right: 1px solid black;
+			}
+
+			table#seven-daemons th,
+			table#seven-daemons td {
+				border-top: 1px solid black;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?><h3>
+										Notas para La Magia y El Magismo
+									</h3>
+									<p class="tiny">This page in English: <a href="../paradoxes/magic-and-magism-footnotes.htm">.. magic-and-magism-footnotes.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="magia-y-magismo.htm">&lt; La Magia y el Magismo</a></li>
+									<li class="align-right"><a href="los-principios-inalterbles.htm">Los Principios Inalterables
+											&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<hr>
+							<p>
+								Regresar a: <a href="magia-y-magismo.htm">magia-y-magismo.htm</a>
+							</p>
+							<p class="note80" style="margin-bottom: 30px;">
+								Haga clic en el número de nota, o utilice el botón <a href="javascript:history.go(-1)">
+									Atrás</a> del navegador para volver al texto en el capítulo: magia-y-magismo.htm
+							</p>
+							<p class="note">"Trad." se refiere al traductor del francés al inglés en 1922.</p>
+							<hr />
+
+							<div class="note">
+								<p><a class="page-link-anchor" id="nota-99-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-99-1">M&amp;M 99:1</a>
+									Que sus luchas incesantes con la &quot;idea&quot; arraigó en él por su Católico
+									Romanismo desgraciado, habiendo ocupado y perdido todo su tiempo <span class="nowrap">
+										&mdash;O.E.</span>
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-99-2"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-99-2">M&amp;M 99:2</a> Es incierto por lo menos si esto no sea la mejor, más sabia, y no la más
+									segura posición. Admitiendo esto por una devoción en la física oculta, dos regalos
+									supremos todos son alcanzable, - la una, la conservación del justo individual de
+									memoria por todo las vidas suplementarias sobre esto y otros planetas de nuestro
+									ciclo, un circuito completo en otras palabras casi - inmortalización de la personalidad;
+									y en segundo lugar, la fuerza de mandar y de dirigir nuestro propio futuro después
+									de la muerte en lugar del dibujo en el torbellino y allí ser mientras que siempre
+									en un estado pasivo en virtud de las leyes de las afinidades; sin embargo es en
+									todo caso incierto tan hasta éstos, los regalos más altos, a los cuales no un porcentual
+									de adeptos alcanzado hasta, verdaderamente aprovechan un hombre a la larga. Más
+									ciertamente alcanzarlos, completamente individuo que concierne a la vida son necesarios
+									en el caso de los hombres de nuestra carrera. Un egoísmo de sublimación puede ser,
+									pero sin embargo el egoísmo, es esencial al cumplimiento de estos dones más altos.
+									Es puesto en duda por lo menos si una vida activa de un amor propio y de benevolencia
+									entre nuestros compañeros no favorece la felicidad a la larga. En un universo regido
+									por una justicia matemática, podemos estar contentos para dejar nuestro futuro en
+									las manos de las leyes eternas y el inmortalización de una personalidad necesariamente
+									imperfecta es un bono dudoso. En cuanto a todo otro acciona a la persona a carga
+									sobre una manipulación de la esencia astral, sin embargo sin duda alguna susceptible
+									del ejercicio saludable a las ocasiones raras, parecen apenas a mí objetivos dignos
+									del Hombre Divino. Un conocimiento cierto y teórico de p. 100 de la física del ocultismo
+									se desarrolla en el espíritu en su progreso en metafísica &quot; de la Ciencia más
+									elevada, &quot; pero en mi noción humilde está a una comprensión y a una toma completos
+									de estos últimos que nuestros mejores esfuerzos deberían ser dirigidos. No deberíamos
+									desperdiciar el tiempo, las fuerzas o la energía; no deberíamos levantar ninguna
+									mirada fija de la misma ansia a ambos cumplimientos supremos, pero deberíamos tratar
+									así de depurar nuestras naturalezas y de impregnarnos con un amor activo para TODO,
+									en cuanto a aseguramos al rehecho, a la evolución de una personalidad más elevada,
+									y así conocer la unidad infinita, y todos que enganchan de este formado parte de
+									mí mismo, en cuanto a la hacen una intuición necesaria de la nueva personalidad.
+									Debe ser &quot; magia de Ello de punto de práctica de No del que de magista de verdad
+									de uno, &quot; y a mi parecer es, posiblemente, más el noble, aunque, sin duda alguna,
+									menos atractivo el camino. &mdash;<em>Trad.</em>
+								</p>
+							</div>
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-100-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-100-1">M&amp;M 100:1</a> Y sobre todo en la literatura consagrada antiguo de la India. Pero E. Levi
+									jamás había estudiado Bhagavad-Gita y otro como encarnaciones de la vida espiritual
+									en carne del último, o habría sido &quot;Magista&quot; mucho más verdadero. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-102-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-102-1">M&amp;M 102:1</a> &quot;Silencio todo de subsistencia que entran aquí,&quot; tiene de inmemorial
+									del tiempo como ser grabar por encima de los pórticos del ocultismo, &quot;Gopaniyum
+									Prayatnena,&quot; &quot;para ser mantenido secreto con cuidado más grande&quot;
+									es el estribillo de todos los autores arios antiguos sobre Siquismo. Pero muy válido
+									que esta insistencia sobre el secreto fue en el pasado, no debe olvidar que sueños
+									de evolución jamás, y que la rueda jamás gira. Una nueva y más elevada vía centellea
+									sobre el horizonte débil, y lo que son los secretos más elevados de una carrera,
+									e intolerables a su masa, se hacen las intuiciones, si no la realidad palpable,
+									del prójimo. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-103-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-103-1">M&amp;M 103:1</a> Este párrafo entero es sofístico y no sincero a un grado. Él sabores ninguna
+									&quot; cosas que son de Dios pero cosas que son del hombre &quot;; no del ocultismo,
+									pero del Eliphas Levi. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-106-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-106-1">M&amp;M 106:1</a> Que se va la cuestión donde estaba, ya que hasta el adepto más alto jamás
+									puede tener un conocimiento tan profundizado de estas leyes o de esta razón, en
+									cuanto a pueda afirmar de cualquier cosa esto el que absolutamente les es contrario
+									a les, o por consiguiente para afirmar la imposibilidad de cualquier cosa fuera,
+									como Arago ha dicho, matemáticas puras. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-106-2"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-106-2">M&amp;M 106:2</a> Isiacs miserable hieren sus pechos e imitan la pena &quot; del INFELICISSIMA MATER
+									Isis &quot; (Min. Felip. <span class="nowrap">c 2 r).</span> La vuelta de Isis con cuerpo pág. 107 de Osiris es fechada el 15 de diciembre, y la búsqueda dura siete días. (Plutarco). <span class="nowrap">
+										&mdash;O.E.</span>
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-107-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-107-1">M&amp;M 107:1</a> En esto y muchos de otros casos es imposible reproducirse en inglés que
+									antítesis de ruido (mielfiel), que, no infrecuentemente a un cierto pequeño sacrificio
+									de sentido, se intensifica, tan a menudo, el carácter epigramático dictó de nuestro
+									autor. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-108-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-108-1">M&amp;M 108:1</a> Correcto <span class="nowrap">&mdash;O.E.</span>
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-109-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-109-1">M&amp;M 109:1</a> Aquí hace referencia al estado o a Samadhi voluntario de trance inducido
+									según las reglas de la ciencia oculta. El trance de Mediumistico es un modo de la
+									epilepsia. &mdash;O.E.
+								</p>
+								<p>
+									Así, para esta materia, trato de someter, si palabras son empleadas en su sentido
+									estricto, es Samadhi. La verdadera diferencia consiste de hecho que un trance Mediumistico
+									generalmente es el resultado de una organización anormal y casi-defectuosa, emprendido
+									o derribado en repentinamente por fuera las preparaciones esenciales para hacerlo
+									inofensivo a la salud, y sin preparaciones mentales necesarias de la conservación
+									del ejercicio libre del espíritu y, y es solamente parcialmente, a menudo en absoluto,
+									bajo el encargo, mientras que los resultados de Samadhi de larga y cuidadosa serie
+									de ejercicios que desarrolla capacidades anormales en una organización normal, y
+									es precedido por una formación progresiva que protege el armazón físico y acostumbra
+									el espíritu y la voluntad para liberar ejercitarse en los estados pág. 110 que los
+									estropearían normalmente o aturdirían completamente, y es completamente bajo control.
+								</p>
+								<p>
+									Añadir que de su naturaleza vieja no puede continuar muchos días sin producir a
+									la muerte, entonces que el último continúen viviendo durante meses sin daños más
+									ligeros, a menos que contemos como daños el asco grave durante la vida carnal terrestre
+									que frecuenta al adepto durante un período más largo o más corto después de renacimiento.
+								</p>
+								<p>
+									Los dos son epilépticos el carácter, el solamente semi voluntario, el otro completamente
+									voluntario; la por fuera, y el otro con, la formación física preliminar necesaria
+									para permitir a los tejidos y al espíritu sostener, intacto, sumisión en las condiciones
+									anormales. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<!-- PAGE NUMBER 110-1 IS GUESED. SYMBOL MISSING IN TEXT -->
+								<p>
+									<a class="endnote" id="nota-110-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-110-1">M&amp;M 110:1</a> Esto, aunque verdadera, es un enredo. Ningún Elementarios y elementales dudosos
+									pertenecen a Kamaloka, y son, pues, no hablando con propiedad las apariciones del
+									otro mundo, sino del público piensa y habla de todas tales existencias en comparación
+									poco importantes como que pertenecen al otro mundo, y tanto aquí todavía el sentido
+									llano del paso está en desacuerdo con lo que el autor supo para ser verdad. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+							<!-- end fn 109-1 -->
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-111-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-111-1">M&amp;M 111:1</a> Esta palabra apenas hasta aquí en servicio en inglés, aunque completamente
+									Gallicised, o del latino, de la larva, del fantasma o del espectro. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-111-2"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-111-2">M&amp;M 111:2</a> Sofismo. De <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									Convengo completamente, pero si a la &quot;religión&quot; sustituimos el &quot;ocultismo&quot;
+									mi O.E. de amigo aparentemente considera que el sofismo desaparece. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-112-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-112-1">M&amp;M 112:1</a> Y de la naturaleza cuádruple del hombre; los tres pares y el cuaternio universal
+									de casos y análogos carnosos externos. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-117-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-117-1">M&amp;M 117:1</a> &quot;Convenablentent&quot;, el chiste, más ciertamente: honradamente. &mdash;O.E.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-117-2"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-117-2">M&amp;M 117:2</a> Más bien significa esto que vincula juntos psique, - o si los acoplas los
+									más elevados, el 6o principio, y el espíritu, (o 7o principio o monada), y lo absoluto,
+									de la que es un rayo. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-117-3"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-117-3">M&amp;M 117:3</a> En otros términos estamos por el silencio que hay que consentir a y para
+									añadir la divisa y la vitalidad a lo que pensamos en una falsedad.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-118-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-118-1">M&amp;M 118:1</a> Hay una diferencia vasta entre la tolerancia para y la gentileza con aquel
+									en lo que pensamos para ser los errores de otros, y el timidez facilitado afectuoso
+									que se estrecha de probar por su propio ejemplo que piensa en ellos ser unos errores.
+									¿ E. Levi espera con interés un reinado de la verdad, pero si los hombres siguen
+									su consejo, y para respetabilidad inclínese constantemente a la falsedad, va cómo
+									a usurparle a destronar, va cómo el mal de conquistar, y el derecho de triunfar?
+									&mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-120-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-120-1">M&amp;M 120:1</a> Estas ilustraciones poéticas son falaces. La Ciencia, la verdadera ciencia,
+									y la religión son una; todo lo más dos caras de la verdad eterna; formas alotrópico
+									de la misma verdad eterna. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-120-2"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-120-2">M&amp;M 120:2</a> Allí no es ninguno tal cosa; no es solamente nada que no tenga ninguna prolongación;
+									la prolongación de lo que llamamos unas cosas poco importantes puede estar más allá
+									de nuestro conocimiento, pero todas las cosas tienen la prolongación, y la prolongación
+									es la esencia de la sustancia, que es las dos y cumple espacia. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-120-3"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-120-3">M&amp;M 120:3</a> Naturalmente esto es todo una confusión; los átomos indivisibles existen.
+									Tú poco decir que el espíritu puede dividirlos en la concepción, pero si podrías
+									poner en práctica la división, la molécula regresaría en inmanifestado Entonces
+									confunde la materia, que es pasajera, concreta y manifestada, con la sustancia,
+									el sonido eterno, lo abstracto, la inmanifestado la base. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-121-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-121-1">M&amp;M 121:1</a> <span class="note green block">(Nota a pie de página muy larga: se extiende desde la p. 121 a pág. 127 en el libro.) </span>
+								</p>
+								<p>
+									El septenario es sagrado paso para uno, pero para mil razones. Tomar siete
+									monedas o discos cualquiera con precisión de la misma talla. Colocar uno en el centro
+									y comprobarás que los seis restos, cuando dispuesto alrededor de él como cerca,
+									exactamente ocuparán el espacio entero de cerco, cada contacto de sus vecinos y
+									de la central original uno. Añadir, con otros discos con precisión semejantes, el
+									segundo exterior semejante de cinturón el primero, el tercer exterior en segundo
+									lugar, el cuarto exterior el tercio, etcétera. Aumentarlo, como callado poco, cada
+									cinturón contendrá solamente seis pedazos suplementarios que precedentes, con uno
+									pedazo central a medida que el séptimo. Los cinturones contendrán 6, 12, 18, 24,
+									30 pedazos etcétera, los números que serán límites de una progresión aritmética
+									de la cual el incremento es 6. Tú poco continuar aumentando la circunferencia hasta
+									que cubra todo el desierto de Gobi, pero callado él incapaz de sumar más de 6 para
+									cada cinturón en total de su predecesor. Esto puede parecer infantil, pero invitamos
+									a todos los matemáticos occidentales que explican por qué de él, y según este principio
+									el universo en sus manifestaciones concretas y abstractas es acumulado.
+								</p>
+								<p>
+									Pitágoras habla de Dodecaedro como que es &quot;adivinar&quot; - para el primer
+									círculo de uno y de seis es el círculo central, lo abstracto, una de la naturaleza
+									en el abscondito, y la más oculta. _ ser componer UNO, la central punza, y el seis,
+									el &quot; número perfección &quot; kabalistas, haber esto perfección en sí uno mismo,
+									compartir por ninguno otra, la que por, el conjunto su la mitad, su la tercera parte,
+									y su la sexta parte (uno, dos y tres) ser hacer perfección. Por consiguiente se
+									llama &quot; el signo del mundo, &quot; dentro para seis series el grupo de mundo
+									alcanza su perfección, y durante el séptimo no aprecia en lo sucesivo felicidad,
+									y naturaleza ni seres trabajo o trabajo duro, sino prepara en su perfección para
+									Nirvana. Con kabalistas cristianos y judíos, es los seis días de la creación y de
+									su Sabbath.
+								</p>
+								<p>
+									Y siete se llama por Pitágoras &quot; el vehículo de la vida, &quot; etc ... Siete
+									en breve es el símbolo de este Yug, y el tiempo.
+								</p>
+								<p>
+									Sab&aelig;ans adoró a los siete hijos de Sabus. Siete &quot; espíritus de Dios &quot;
+									en el medio de revelación simplemente el hombre perfecto; así con sus siete estrellas,
+									lámparas, etc.; y las &quot;etapas&quot; caldeas de las siete esferas y del Birs
+									Nimrud con sus siete historias, simbólico círculos concéntricos de las siete esferas.
+								</p>
+								<p>
+									You moderns, who laugh at the ignorance of the ancients, who <em>knew but of seven planets</em>,
+									you have never understood what was really meant by this limited number; nor have
+									you given one thought to the fact that men who presented Callisthenes (over 2,000
+									years ago) with records of celestial observations extending back from their time
+									1,900 years, could not have been ignorant of the existence of other planets.
+								</p>
+								<!--footnote 121:1 on p. 123-->
+								<p>
+									Callando el moderno, que se ríe de la ignorancia de la antigüedad, que supo pero
+									sobre siete planetas, jamás comprendiste quién verdaderamente había sido significado
+									por este número limitado; ni haberte dado pensado en el hecho de que los hombres
+									que presentaron a Callisthenes (sobre hace 2.000 años) con discos de las observaciones
+									celestes que se prolongaban detrás de su tiempo 1.900 años, no podrían haber sido
+									ignorantes de la existencia de otros planetas. ¿ P. 123 y qué (no quién) es SABAOTH,
+									y por qué debería haber sido considerado como creador? ¿ Cuántos cristianos están
+									allí que el sospechoso que SABAOTH era el número del Demiurgo, sept con los fenicios,
+									que se hicieron más tarde los israelitas? (Lydus de Mens leído. IV, 38, 74, 98,
+									p. 112.) Búsqueda para SABAOTH. ADONAIOS en los &quot; libros de Sibilina, &quot;
+									Gallacus, 278. Demiurgo es Iao que dirige por encima de los siete círculos de los
+									siete tipos de Ghebers, los siete espirituales del fuego, la luz astral, Fohat,
+									los siete tipos de Gabborim, o el kabiri, las siete estrellas errantes, y es el
+									peregrino que bajo su nombre colectivo de Kabar Ziv (o la vida o la luz poderosa)
+									como centro mismo emana y permite agrupar a los siete tipos de <em>Daemons</em>.
+								</p>
+								<p>
+									Comparar-
+								</p>
+								<div>
+									<table id="seven-daemons">
+										<tr>
+											<th class="left">
+												Los nombres del Daemons siete Impostor en el Codex Nazarsus
+											</th>
+											<th>
+												Los nombres del siete Skandhas o Principles.
+											</th>
+										</tr>
+										<tr>
+											<td class="left">
+												1. El sol.
+											</td>
+											<td>
+												7. El espíritu, la reflexión de la ÚNICA vida.
+											</td>
+										</tr>
+										<tr>
+											<td class="left">
+												2. Spiritus (el Espíritu Santo), Astro (Venus) o Lebbat Amamet.
+											</td>
+											<td>
+												6. El alma espiritual (la Hembra).
+											</td>
+										</tr>
+										<tr>
+											<td class="left">
+												3. Nebu (el Mercurio).
+											</td>
+											<td>
+												5. El Alma Animal (Manas).
+											</td>
+										</tr>
+										<tr>
+											<td class="left">
+												4. Sin Luna, designado también Shuril y Siro.
+											</td>
+											<td>
+												4. La Kama Rupa - lo más peligroso y traidor de los Principios.
+											</td>
+										</tr>
+										<tr>
+											<td class="left">
+												5. El Saturno Kiun (Kivan).
+											</td>
+											<td>
+												3. El alma vital, Linga Sarira.
+											</td>
+										</tr>
+										<tr>
+											<td class="left">
+												6. Bel, Júpiter (el soportador de vida).
+											</td>
+											<td>
+												2. El principio Vital.
+											</td>
+										</tr>
+										<tr>
+											<td class="left">
+												7. Nerig, marte - el hijo de hombre que despoja los otros hijos de hombre; Designado
+												también &quot;Excoriatores&quot;.
+											</td>
+											<td>
+												1. El cuerpo Vulgar o la forma material - per se un animal y solo descabellado y
+												muy feroz.
+											</td>
+										</tr>
+									</table>
+									<p>
+										&mdash;O.E.
+									</p>
+								</div>
+								<p>
+									En cuanto al pequeño problema que O.E. invita a los matemáticos occidentales
+									que se explican, es bastante simple. No hay ningún misterio en él; es una consecuencia
+									necesaria de las hipótesis implicadas en lugares. Primero implicada la hipótesis
+									en la descripción, para hablar matemáticamente, por la figura llamamos un círculo,
+									la igualdad de todos los rayos, y en segundo lugar la hipótesis que debemos emplear
+									solamente los círculos planos. La prueba es demasiado larga para insertarse, pero
+									él todo el importe de los hechos geométricos conocidos que allí dónde el contacto
+									de dos círculos, la línea que junta sus centros atraviesa el punto de contacto;
+									qué allí dónde tres círculos toquen las tres líneas unión sus centros compongan
+									triángulo equilátero y equiángulo; que los ángulos interiores de triángulo colectivamente
+									son planos a la mitad de la prolongación angular alrededor de un punto, y que cada
+									ángulo de triángulo equilátero es igual al sexto de esto, y que por consiguiente,
+									solamente seis tales triángulos, exactamente este número y no más, pueden irradiar
+									de cualquier punto; Qué aunque el primer cinturón pueda parecer circular, le secunde
+									y los de éxitos no pueden ser construidos según los límites del problema excepto
+									como los hexágonos, cuando todavía las propiedades (también el resultado de la hipótesis
+									de la construcción) de triángulo equilátero heredan el juego, y es tan perfectamente
+									fácil demostrar, que, no como cuestión de misterio, pero seguir necesariamente sobre
+									los lugares adoptados, si hubiera unos cinturones de n, entonces Th de n ' debe
+									contener seis discos o círculos de n.
+								</p>
+								<p>
+									Parece inútil discutir con los adeptos orientales - desde los Gimnosofistas, que
+									enseñó a Pitágoras, tienen siempre, verbalmente en todo caso, como confundido por
+									las cosas y sus símbolos. Consagró nada allí en el número siete; es un experto de
+									memoria combinaciones escondidas, etc., que las combinaciones, etc., son o pueden
+									valorar para consagrados, pero en cuanto al símbolo 7, o la palabra siete, allí
+									no es consagrada nada en la una o la otra, la santidad, si llega el caso, concierne
+									a los misterios que recuerdan, y de ninguna manera el símbolo o la palabra. Hizo
+									llamar nuestra lengua 6+1, el puerco, o lo empleó - Porque el símbolo para esto,
+									luego el cerdo y - habría sido tan sagrado como siete y 7.
+								</p>
+								<p>
+									Por otra parte a aquellos a los que el ridículo y rechazan los hechos del ocultista
+									por la razón que según ellos el universo es acumulado sobre un sistema numérico,
+									y que todo es en el siete o el tres, puede ser útil de precisar que hasta en este
+									pequeño mundo a nos tenemos ejemplos de la adherencia persistente de la naturaleza
+									a los números particulares. Así 3 y múltiples de esta regla la inflorescencia de
+									todo el endógeno y 4 y 5 que de todo el exógeno; y millares de otros ejemplos pueden
+									ser indicados, de modo que la desestimación general de las vistas ocultas del universo,
+									a causa de una simetría en ellas, que es excedente de prisa hubiera concluido para
+									ser artificial, y, en consecuencia, artificial y falso, verdaderamente no es justificado,
+									hasta por nuestro poco estudio. Y en cuanto a 3 y en cuanto a 7, el último necesariamente
+									se desarrolla fuera de antiguos, ya que 7 es el más grande número posible de productos
+									de tres cosas tomadas, 1, 2 o 3 juntos.
+								</p>
+								<p>
+									En cuanto a los siete impostores, espíritu maligno, éstos también han sido considerados
+									como, por algunos, representa el ciclo de la necesidad, que, según ellos, comenzando
+									con Marte, corrió por Júpiter y Saturno a la tierra, y de ahí por el mercurio y
+									Venus al sol. Pero aunque la hermandad tibetana nos dice que el hombre pasa por
+									consiguiente primero al mercurio, nos señalan que el planeta sobre el cual vivimos
+									inmediatamente precedente a nuestra llegada sobre esta tierra estaba el marzo y
+									cuenta con ellos gente que compone nuestro ciclo de necesidad es completamente diferente
+									del por encima de referido. Pero sin embargo según este último Saturno, y no el
+									marte, era el planeta del que por última vez hemos venido, no sigue que el planeta
+									que llamamos Saturno verdaderamente ha sido significado, o que los planetas múltiples
+									a los cuales el ocultismo se pegó canta, y llama planetas conocidos de los astrónomos
+									de viejo, verdaderamente son estos mismos planetas. Al contrario, por regla general
+									generalmente puede concluir que cuando el ocultismo indica cualquier cosa, significa
+									otra cosa. Expresa, como los nombres de los planetas, piedras preciosas, minerales,
+									fábricas, etc., siempre tuvo dos significados - uno, evidentes los palpables, que;
+									tan admitido, los hijos totalmente extraviados, para desconocedor; y el otro, el
+									artificial, que da el verdadero hecho para lanzado. Es lo que ha aportado, y mantengo
+									correctamente así, más duda sobre el ocultismo que muy diferente cosa, y en lo que
+									debe engendrar la incredulidad o se equivoqué para él, en el mundo en conjunto,
+									a condición de que sea persistido dentro. Pero los adeptos de todas las escuelas
+									siempre han sido atados así abajo, por los votos y las condiciones espirituales
+									(que él pues no se queda más en el descuido de la opción de un hombre más tarde)
+									disparos sucesivos, esto lo que pueden, en muchos sujetos, no hablar de economizar
+									en este fraseología engañosa, los lanzados, y p. 127 éstos a su altura, porque
+									progresan, hecho por las leyes inmutables de las asociaciones a las cuales pertenecen,
+									parsimoniosamente lengua atadas y espíritu saltan; y, en cuanto a muchas cosas,
+									la sola esperanza para el mundo a grandes mentiras en el desarrollo progresivo de
+									las carreras más elevadas sobre tierra, que mismas, iletrado en estas escuelas,
+									establece de nuevo su conocimiento, y desatado por leyes y condiciones, ahora que
+									se hacen rápidamente un anacronismo, da exenta de toda su tienda a todos los hombres.
+									En esta dirección los autores de manera perfecto hicieron la primera etapa importante.
+								</p>
+								<p>
+									Naturalmente, en cuanto a muchos sujetos, ser testigo de los hechos dados en la
+									introducción, los adeptos no pueden hablar más simplemente, y son, en nuestros días,
+									algunos de ellos, tan poco dispuesto a hablar porque siempre fueron hasta aquí,
+									pero a quedar allí las leyes más elevadas y más importantes de las que, estoy al
+									tanto, pueden ni hablar, solamente a los que han sido iniciados, y pues
+									son excluidos para siempre de indicar la verdad a no-iniciado. &mdash; <em>Trad</em>.]
+								</p>
+							</div>
+							<!-- end fn 121-1 -->
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-127-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-127-1">M&amp;M 127:1</a> Allí no está ningún equivalente inglés para el &quot;fatal&quot;, en el
+									sentido en el cual se lo emplea aquí, y el cual no es p. 128 &quot;mortal&quot;,
+									pero el se hizo una cosa de destino, funcionando pues en una figura, el modo ininteligente
+									e irresponsable en virtud de las leyes sin visibilidad. &mdash; <em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-130-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-130-1">M&amp;M 130:1</a> Aunque en un cierto sentido esto sea verdad, es muy falaz. La fe, en el
+									sentido ordinario de la palabra, a saber, una creencia en aquella para la que allí
+									no es ninguna evidencia, directo o indirecto, no tiene ningún lugar en el ocultismo
+									verdadero que es una ciencia exacta, y no aceptes nada con cual no puede ser demostrado
+									o en todo caso comprobado concordar, o seguir, necesariamente o con un grado elevado
+									de probabilidad, de lo que puede ser demostrado. Naturalmente, como todas las ciencias,
+									el ocultismo tiene sus métodos, y un hombre debe comprender que éstos antes de que
+									el ser pueda comprender sus demostraciones; justo, por ejemplo, como un hombre debe
+									comprender los métodos de la físico matemática, antes de que pueda comprender la
+									prueba que los postes de la luna describan en el espacio una curva cierta y muy
+									complicada. Pero este último es sin embargo un hecho exactamente demostrado, y es
+									tan también las enseñanzas del ocultismo, aunque a un ignorante de los métodos de
+									esta última ciencia puedan parecer unos misterios y sujetos absolutos de la fe.
+									&mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-131-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-131-1">M&amp;M 131:1</a> Y prueba tan todavía qué la locura humana es ilimitada como espacia él mismo.
+									&mdash;O.E.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-131-2"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-131-2">M&amp;M 131:2</a> Lo veremos que por Creencia, E.L. quiere decir la aceptación de las enseñanzas
+									de la autoridad (i.e, de aquellas que saben probablemente más materia que
+									yo mismo) sobre estos sujetos o puntos sobre los cuales no poseemos o no podemos
+									obtener el conocimiento - una cantidad constantemente variable cambiante del momento
+									al momento con progreso de la gente y del individuo, y que desaparece en el santuario
+									del ocultismo donde todos los misterios, en todo caso del universo condicionado,
+									son explicados. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-133-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-133-1">M&amp;M 133:1</a> Y el Mago hasta no necesita creer en uno. <span class="nowrap">&mdash;O.E.</span>
+								</p>
+								<p>
+									Completamente así, no necesita. El ocultismo trata solamente el universo condicionado,
+									que todo lo acondicionado en él es infinito. Evidentemente, en las leyes de este
+									universo solamente, y ningún Dios, i. e, ninguna voluntad consciente e inteligente,
+									la fuente de estas leyes, puede ser trazado. Así el Mago puede de manera justificable
+									indicar, el &quot; contenido de I como universo manifestado y condicionado y creer
+									mismo en algún Dios que, que existe en alguna parte evadirse o no, no vea el ajustamiento
+									para indicarse dondequiera en la manifestación, y no puede pues, (si tal ser existe)
+									quiere que los hombres crean en él.&quot;
+								</p>
+								<p>
+									Pero hay Magos y de Magos, y hay que indican, concesión todo esto, sin embargo sabemos
+									por una intuición más elevada que TODO el infinito a toda la existencia condicionada
+									todavía no es, y que hay una voluntad consciente e inteligente, el origen de estas
+									leyes manifestadas que solamente nosotros criaturas de saber de toda manifestación.
+									Pero esto naturalmente es una cuestión de la fe y concierne no al ocultismo propiamente
+									dicho, que es ateo o agnóstico, pero el ocultismo es transcendental. &mdash;<em>Trad</em>.
+								</p>
+							</div>
+
+							<div class="note">
+								<p>
+									<a class="endnote" id="nota-134-1"></a>
+									<a class="back-to" href="magia-y-magismo.htm#ret-134-1">M&amp;M 134:1</a> Que jamás se levanta, sino mientras que la raza sigue la raza, y el circuito
+									lleva al circuito, eterizado cada vez más, destinado para desaparecer completamente antes del velo de noche cósmica el que envuelve un misterio más elevado y un santuario interior, es dibujado alrededor de nosotros.
+									&mdash;<em>Trad</em>.
+								</p>
+							</div>
+							<p class="note center">
+								(Fin de Magia y Magismo Notas al pie)</p>
+							<p>
+								Regresar a: <a href="magia-y-magismo.htm">magia-y-magismo.htm</a>
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="magia-y-magismo.htm">&lt; La Magia y el Magismo</a></li>
+							<li class="align-right"><a href="los-principios-inalterbles.htm">Los Principios Inalterables
+									&gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!-- start of menu include file  Update Oct 28, 2020. Update June 1, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<li><a href="/tibetan/">Tibetan index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="tibetan-articles-index.htm">Article Index</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/tibetan/">Tibetan index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="normal note">
+				<img class="menu-image" src="images/mahakala.jpg" alt="Mahakala">
+			</li>
+			<li class="offset">Mahakala</li>
+			<li class="normal note offset tight">Dharma Protector</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<li><a href="tibetan-articles-index.htm">Article Index</a></li>
+				<li><a href="namkhai-norbu-dzogchen-atiyoga.htm">Namkhai Norbu: Dzogchen Atiyoga</a></li>
+				<li><a href="mindfulness-anger-management.htm">Mindfulness, Anger Management</a></li>
+				<li><a href="tibetan-resources-page.htm">Tibetan Resources</a></li>
+				<li><a href="tibetan-links.htm">Tibetan Links</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>Mindfulness at <a href="https://en.wikipedia.org/wiki/Mindfulness">Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li>Tibetan section:</li>
+				<li class="first-item"><a href="/tibetan/quotes/gampopa-instructions.htm">Gampopa's Instructions to the First Karmapa</a></li>
+				<li class="first-item">Chogyam Trungpa Rinpoche<br>
+					(También disponible en español)<br>
+					<a href="/tibetan/trungpa/energy-and-emotional-transmutation.htm">Energy and Emotional Transformation</a>
+				</li>
+				<li><a href="/tibetan/trungpa/trungpa-rinpoche-the-hard-way.htm">The Hard Way</a></li>
+				<li style="margin-top: 10px;">Buddhism section:</li>
+				<li><a href="/buddhism/articles/twelve-links-of-dependent-arising.htm">Twelve Links of Dependent Arising</a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<!-- broken link, remove Oct 2018
+				<li class="external-links-item">External links</li>
+                <li  class="external-first-item">
+                    Mahakala at <a href="http://www.thranguhk.org/buddhism/en_mahakala.html">
+                        Thranguhk.Org</a></li>
+				-->
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

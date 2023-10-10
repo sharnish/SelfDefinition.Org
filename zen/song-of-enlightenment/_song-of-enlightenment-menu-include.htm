@@ -1,0 +1,90 @@
+<!-- start of menu include file  Update April 8, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/zen/">Zen index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="conditional-hide"><a href="/">Site root</a></li>
+            <li><a href="shasta-abbey.htm">Shasta<span class="conditional-hide"> Trans</span></a></li>
+            <li><a href="diamond-sangha.htm">Diamond<span class="conditional-hide-2"> Sangha</span></a></li>
+            <li><a href="himno-iluminacion-yin-zhi-shakya.htm">Hymno<span class="conditional-hide-2"> Iluminación</span></a></li>
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of Page</span></a></li>
+            <li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver
+                    </span>Arriba</a></li>
+            <!-- THIS SECTION HAS NO CONTENTS PAGE -->
+            <!-- not used yet, only 3 versions
+			<li><a href="song-version-index.htm">Version Index</a></li>
+            -->
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/zen/">Zen index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="last-li"><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+            <li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="margin-top:30px;">
+            <li>Song of Enlightenment</li>
+            <li class="normal note tight">a.k.a. Song of Awakening, or Song of Freedom </li>
+            <li class="normal">
+                <img class="menu-image" src="images/yongjia-xuanjue.jpg" alt="Yongjia Xuanjue (Yoka Genkaku)" />
+            </li>
+            <li>Yongjia Xuanjue
+                <br />
+                Yoka Genkaku
+            </li>
+            <li class="tight"><span class="normal">(665-713 AD)</span></li>
+        </ul>
+        <!-- must have the next div-i.d. for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- THIS SECTION HAS NO CONTENTS PAGE -->
+                <li><a href="shasta-abbey.htm">Shasta Abbey<br /> translation</a></li>
+                <li><a href="diamond-sangha.htm">Diamond Sangha translation</a></li>
+                <li><a href="himno-iluminacion-yin-zhi-shakya.htm">Himno de la Iluminación <span class="block">Rev. Yin Zhi Shakya</span></a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li class="hide-if-phone">Yongjia Xuanjue at <a class="inline" href="https://en.wikipedia.org/wiki/Yongjia_Xuanjue">Wikipedia</a></li>
+                <li class="hide-if-phone">Song of Enlightenment at <a class="inline" href="https://en.wikipedia.org/wiki/Song_of_Enlightenment">Wikipedia</a></li>
+                <li class="hide-if-phone">Yongjia Xuanjue (many translations) at <a class="inline" href="https://terebess.hu/zen/sodoka.html">Terebess.Hu</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also on this site</li>
+                <li class="site-first-item"><a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">Zen Teachings of Huang Po - The Dharma of Mind Transmission</a></li>
+                <li><a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">Garma C. C. Chang - The Practice of Zen</a></li>
+                <li><a href="/zen/hsin-hsin-ming/faith-in-mind-dusan-pajin-translation.htm">Hsin-Hsin Ming, &quot;On Faith In Mind&quot; <span class="note nowrap">[5 translations]</span></a> </li>
+                <li><a href="/zen/dongshan/thomas-cleary-comments-on-five-ranks-etc.htm">Dongshan, &quot;Five Ranks&quot;</a> </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

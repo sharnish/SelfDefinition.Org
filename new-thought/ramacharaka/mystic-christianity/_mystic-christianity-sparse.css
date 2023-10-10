@@ -1,0 +1,55 @@
+/* file:  /new-thought/ramacharaka/_mystic-christianity-sparse.css 
+
+Update Feb 16, 2020 with progress bar, never completed. Update September 219, 2022  
+
+***/
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fff9f9;
+}
+
+/******* spanish version color *******/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+	background: #efe;
+}
+
+/* div in title include file 
+#title-include-div {margin:20px 0;} */
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #bde0ff;
+}
+
+/* Many pages
+	when h5, no anchor is included in the menu, so indent */
+ul.page-links li.h5 {
+	margin-left: 10px;
+}
+
+h3 span {
+	font-size: 85%;
+}
+
+
+/* end */

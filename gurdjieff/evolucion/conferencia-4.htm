@@ -1,0 +1,528 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Psicología de la Posible Evolución del Hombre, Cuarta Conferencia</title>
+	<meta name="description" content="Los Centros; Velocidades o tiempos de los centros; Partes positivas y negativas; Faltan
+     emociones positivas; Emociones negativas; Sacrificio; Nada permanente; La observación de sí mismo; El recuerdo de sí mismo">
+	<meta name="author" content="P.D. Ouspensky">
+	<meta property="og:title" content="Psicología de la Posible Evolución del Hombre, Cuarta Conferencia">
+	<meta property="og:description" content="Los Centros; Velocidades o tiempos de los centros; Partes positivas y negativas; Faltan
+     emociones positivas; Emociones negativas; Sacrificio; Nada permanente; La observación de sí mismo; El recuerdo de sí mismo">
+	<meta property="og:image" content="https://selfdefinition.org/gurdjieff/evolucion/images/ouspensky-profile-web.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_evolucion-espanol-sparse.css" rel="stylesheet">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="conferencia-3.htm">
+	<link rel="next" href="conferencia-5.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 410px;
+		}
+
+		@media only screen and (max-width: 410px) {
+			ul.page-links {
+				width: auto;
+			}
+		}
+
+		table td {
+			border: 1px solid black;
+			font-size: 90%;
+			padding: 5px;
+		}
+
+		html.dark table td {
+			border: 1px solid #666;
+		}
+
+
+		table td.col-1 {
+			width: 200px;
+		}
+
+		/* make table smaller on phones */
+		@media only screen and (max-width: 500px) {
+			table {
+				font-size: 90%;
+			}
+
+			table td.col-1 {
+				width: 160px;
+			}
+		}
+
+		img#image-centres {
+			height: auto;
+		}
+
+		ul.three-observacións {
+			margin-left: -20px;
+		}
+
+		ul.three-observacións li {
+			padding: 8px 0;
+			/* first item is hard-coded */
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_evolucion-espanol-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_evolucion-espanol-title-include.htm"); ?>
+									<h3>
+										Cuarta Conferencia
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="/gurdjieff/evolution/lecture-4.htm">lecture-4.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="conferencia-3.htm">&lt; Conferencia 3</a></li>
+									<li class="align-right"><a href="conferencia-5.htm">Conferencia 5 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#the-centres">Los Centros</a></li>
+									<li>&nbsp;&nbsp;Velocidades o tiempos de los centros</li>
+									<li><a href="#positive-and-negative">Partes positivas y negativas</a></li>
+									<li>&nbsp;&nbsp;Si y no</li>
+									<li><a href="#emotional-centre">Centro emocional</a></li>
+									<li>&nbsp;&nbsp;Faltan emociones positivas en estado ordinario</li>
+									<li><a href="#negative-emotions">Emociones negativas</a></li>
+									<li>&nbsp;&nbsp;Desarrollo interno, sacrificio</li>
+									<li>&nbsp;&nbsp;Cuadro verdadero de nuestra vida emocional</li>
+									<li>&nbsp;&nbsp;Nada permanente</li>
+									<li><a href="#work-on-ourselves">El trabajo sobre nosotros mismos</a></li>
+									<li>&nbsp;&nbsp;La observación de sí mismo</li>
+									<li><a href="#self-remembering">El recuerdo de sí mismo</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="the-centres">&nbsp;</a>
+							<h4>
+								Los Centros
+							</h4>
+							<p>
+								Comenzaremos hoy con un examen mas detallado de los centros. Este es el diagrama de los cuatro centros:
+							</p>
+							<table>
+								<tr>
+									<td class="col-1">
+										Centro intelectual
+									</td>
+									<td>
+										Cabeza
+									</td>
+								</tr>
+								<tr>
+									<td class="col-1">
+										Centro emocional
+									</td>
+									<td>
+										Parte media del cuerpo. Pecho
+									</td>
+								</tr>
+								<tr>
+									<td class="col-1">
+										Centros motor e instintivo
+									</td>
+									<td>
+										Parte inferior del tronco y espalda
+									</td>
+								</tr>
+							</table>
+							<div class="image-div">
+								<img style="margin-bottom: 0;" id="image-centres-phone" src="images/conferencia-4-factory-3-stories.jpg" alt="Diagram of Centres" />
+								<p class="note80" style="margin-top: 0;">
+									&lt;- frente del cuerpo &nbsp;&nbsp; posterior -&gt; &nbsp;</p>
+							</div>
+							<p>
+								El diagrama representa a un hombre de pie, de perfil, mirando hacia la izquierda, e indica la position relativa de los centros, de manera muy esquemática.
+							</p>
+							<p>
+								En realidad cada centro ocupa todo el cuerpo, y por así decirlo penetra todo el organismo. Al mismo tiempo, cada centro tiene lo que se llama su &quot;centro de gravedad&quot;. El centro de gravedad del centro intelectual está en el cerebro; el centro de gravedad del centro emocional está en el plexo solar; los centros de gravedad de los centros motor e instintivo están en la medula espinal.
+							</p>
+							<p>
+								Se debe comprender que en el estado actual del conocimiento científico no tenemos medios de verificar esta aseveración; principalmente porque cada centro incluye en sí mismo muchas propiedades que aun son desconocidas para la ciencia ordinaria y hasta para la anatomía. Parecerá extraño, pero el hecho es que la anatomía del cuerpo humano está lejos de ser una ciencia completa.
+							</p>
+							<p>
+								Así que el estudio de los centros, que están escondidos de nosotros, debe comenzar por la observación de sus funciones, que están muy abiertas a nuestra investigación.
+							</p>
+							<p>
+								Este es un método bastante usual. En diferentes ciencias &ndash;física, química, astronomía, fisiología&ndash; cuando no podemos alcanzar los hechos, o los objetos, o las materias que deseamos estudiar, tenemos que comenzar por la investigación de sus resultados o de sus huellas. En este caso nos ocuparemos de las funciones directas de los centros; de manera que todo lo que establezcamos sobre las funciones se puede aplicar a los centros.
+							</p>
+							<p>
+								Todos los centros tienen mucho en común y, al mismo tiempo, cada centro tiene sus propias características peculiares que siempre se deben tener presentes. <sup>[1]</sup>
+							</p>
+							<p class="fnote">
+								[1. También vea los diagramas de Maurice Nicoll (inglés): <a href="/gurdjieff/quotes/nicoll-centers-and-parts-of-centers.htm">/gurdjieff/quotes/nicoll-centers-and-parts-of-centers.htm</a>&nbsp;]
+							</p>
+							<h5>
+								Velocidades o tiempos de los centros
+							</h5>
+							<p>
+								Uno de los principios mas importantes que se debe comprender en relación con los centros es la gran diferencia en sus velocidades, es decir, una diferencia en las velocidades de sus funciones.
+							</p>
+							<p>
+								El mas lento es el centro intelectual. Luego &ndash;aunque mucho mas rápidos&ndash; vienen los centros motor e instintivo, que tienen mas o menos la misma velocidad. El mas rápido de todos es el centro emocional, aun cuando en el estado de &quot;sueño despierto&quot; muy raramente trabaje con nada que se aproxime a su verdadera velocidad, y por lo general trabaja a la velocidad de los centros instintivo y motor.
+							</p>
+							<p>
+								Las observaciones nos pueden ayudar a establecer una gran diferencia entre las velocidades de las funciones, pero no nos pueden dar cifras exactas. En realidad la diferencia es muy grande, mas grande de lo que uno puede imaginar que sea posible entre funciones del mismo organismo. Como acabo de decir, con nuestros medios ordinarios no podemos calcular la diferencia en la velocidad de los centros; pero si se nos dice cual es, podemos encontrar muchos hechos que no nos confirmaran las cifras pero si la existencia de la enorme diferencia.
+							</p>
+							<p>
+								Así que, antes de dar cifras, deseo hablar sobre las observaciones ordinarias que podemos hacer sin un conocimiento especial.
+							</p>
+							<p>
+								Por ejemplo, traten de comparar la velocidad de los procesos mentales con la de las funciones motrices. Traten de observarse cuando tienen que realizar simultáneamente muchos movimientos rápidos, como cuando manejan un auto en una calle congestionada, o cuando cabalgan rápido en un camino malo, o cuando hacen cualquier trabajo que requiera juicio y movimientos rápidos. Verán en seguida que no pueden observar todos sus movimientos. Tendrán que hacerlos mas lentos o perder la mayor parte de sus observaciones; de otra manera corren el riesgo de un accidente y probablemente tengan uno si persisten en observar.
+							</p>
+							<p>
+								Se pueden hacer muchas observaciones similares, especialmente en el centro emocional, que es aun mas rápido. En realidad cada uno de nosotros tiene muchas observaciones sobre las diferentes velocidades de nuestras funciones, pero muy rara vez reconocemos el valor de nuestras observaciones y de nuestras experiencias. Solo cuando conocemos el principio es cuando comenzamos a comprender nuestras propias observaciones previas.
+							</p>
+							<p>
+								Al mismo tiempo debemos decir que todas las cifras que se refieren a estas velocidades diferentes son conocidas y están establecidas en los sistemas de escuela. Como lo verán luego, la relación entre la velocidad de los centros es una cifra extraña que tiene un significado cósmico, es decir, se encuentra en muchos procesos cósmicos o, mejor dicho, es divisor en muchos procesos cósmicos. Esta cifra es 30.000. Esto quiere decir que los centros motor e instintivo son 30.000 veces mas rápidos que el centro intelectual. Y el centro emocional, cuando trabaja a su propia velocidad, es 30.000 veces mas rápido que los centros motor e instintivo. <sup>[2]</sup>
+							</p>
+							<p class="fnote">
+								[2. Unas analogías modernas podrían ser la velocidad del procesador o el ancho de banda. Pero el "significado cósmico" parece implicar diferentes hidrógenos.]
+							</p>
+							<p>
+								Es difícil creer en tan enorme diferencia entre las velocidades de las funciones en el mismo organismo. En realidad esto quiere decir que cada uno de los diferentes centros tiene un tiempo completamente distinto. Los centros motor e instintivo tienen un tiempo 30.000 veces mas largo que el centro intelectual, y el centro emocional tiene 30.000 veces mas tiempo que los centros motor e instintivo.
+							</p>
+							<p>
+								¿Entienden ustedes claramente lo que quiere decir &quot;un tiempo mas largo&quot;? Significa que para cada clase de trabajo que un centro tiene que hacer tiene tanto mas tiempo. Sin embargo, por extraño que sea, la gran diferencia en la velocidad de los centros explica gran numero de fenómenos muy bien conocidos que la ciencia ordinaria no puede explicar y, que por lo general los evade en silencio, o simplemente rehusa discutir. Me refie-ro ahora a la asombrosa y totalmente inexplicable velocidad de algunos procesos fisiológicos y mentales.
+							</p>
+							<p>
+								Por ejemplo, un hombre toma una copa de brandy e inmediatamente, en menos de un segundo, experimenta muchos nuevos sentimientos y sensaciones, un sentimiento de cordialidad, de relajación, de alivio, de paz, de contento, de bienestar; o por el contrario, cólera, irritación, etc. Lo que sienta puede ser diferente en casos distintos, pero lo que no cambia es que el cuerpo responde al estimulante muy rápidamente, casi de inmediato.
+							</p>
+							<p>
+								En realidad no hay necesidad de hablar de brandy o de cualquier otro estimulante; si un hombre está muy sediento o muy hambriento, un vaso de agua o un pedazo de pan producirán el mismo rápido efecto.
+							</p>
+							<p>
+								Por ejemplo, se pueden comprobar fenómenos similares que evidencian la enorme velocidad de ciertos procesos, al observar los sueños. Me he referido a algunas de estas observaciones en <em>Un Nuevo Modelo del Universo.</em>
+							</p>
+							<p>
+								Existe la misma diferencia entre los centros instintivo e intelectual, o entre los centros motor e intelectual. Pero estamos tan acostumbrados a estos fenómenos que raramente pensamos en que extraños e incomprensibles son.
+							</p>
+							<p>
+								Por supuesto, para un hombre que nunca ha pensado en sí mismo y nunca ha tratado de estudiarse a sí mismo, no hay nada extraño en esto o en cualquier otra cosa. Pero en realidad, desde el punto de vista de la fisiología ordinaria estos fenómenos parecen casi milagrosos.
+							</p>
+							<p>
+								Un fisiólogo sabe por cuantos procesos complicados se tiene que pasar entre tomar brandy o un vaso de agua y sentir sus efectos. Cada sustancia que entra en el cuerpo por la boca tiene que ser analizada, probada de diferentes maneras para sólo después ser aceptada o rechazada. Y todo esto sucede en un segundo o menos. Es un milagro y al mismo tiempo no lo es.
+							</p>
+							<p>
+								Puesto que, si conocemos la diferencia de velocidad de los centros y recordamos que el centro instintivo, que es el que tiene que hacer el trabajo, tiene 30.000 veces mas tiempo que el centro intelectual, que es atreves del cual medimos nuestro tiempo ordinario, podemos comprender como es posible que esto pueda suceder. Significa que el centro instintivo no tiene un segundo, sino aproximadamente ocho horas de su propio tiempo para este trabajo, y en ocho horas se puede llevar a cabo este trabajo en un laboratorio ordinario, sin prisa innecesaria. Así que nuestra idea de la extraordinaria velocidad de este trabajo es pura ilusión y la tenemos porque creemos que nuestro tiempo ordinario, o el tiempo del centro intelectual, es el único tiempo que existe.
+							</p>
+							<p>
+								Mas adelante volveremos al estudio de la diferencia de velocidad de los centros.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="positive-and-negative">&nbsp;</a>
+							<h4>
+								Partes positivas y negativas
+							</h4>
+							<p>
+								Ahora tenemos que comprender otra característica de los centros, la que posteriormente nos dará muy buen material para la observación de sí y para el trabajo sobre nosotros mismos.
+							</p>
+							<p>
+								Se supone que cada centro está dividido en dos partes: positiva y negativa. <sup>[3]</sup> Esta división es particularmente clara en el centro intelectual y en el centro instintivo.
+							</p>
+							<p class="fnote">
+								[3. También vea los diagramas de Maurice Nicoll: <a href="/gurdjieff/quotes/nicoll-centers-and-parts-of-centers.htm">/gurdjieff/quotes/nicoll-centers-and-parts-of-centers.htm</a>&nbsp;]
+							</p>
+							<h5>
+								Si y no
+							</h5>
+							<p>
+								Todo el trabajo del centro <em>intelectual</em> está dividido en dos partes: <em>afirmación</em> y <em>negación</em>; <em>si y no</em>. En cada momento de nuestro pensar, uno de los dos prevalece sobre el otro o, en momentos de igual fuerza, llegan a la indecisión. La parte negativa del centro intelectual es tan útil como la positiva, y cualquier debilitamiento en la fuerza de una con respecto de otra acarrea desordenes mentales.
+							</p>
+							<p>
+								En el trabajo del centro <em>instintivo,</em> la división es también bastante clara, y ambas partes, positiva y negativa, o agradable y desagradable, son igualmente necesarias para una justa orientación en la vida.
+							</p>
+							<p>
+								Las sensaciones agradables de sabor, olor, tacto, temperatura, calor, frescura, aire fresco, todas indican condiciones que son beneficiosas para la vida; y las sensaciones desagradables de mal sabor, de mal olor, de contacto desagradable, la sensación de calor opresivo o de frio extremo, todas indican condiciones que pueden ser dañinas para la vida.
+							</p>
+							<p>
+								Se puede entonces decir definitivamente que no es posible ninguna orientación verdadera en la vida si no se tienen ambas sensaciones: las agradables y las desagradables. Ellas son la verdadera guia de toda vida animal en la tierra y cualquier falla en ellas produce una falta de orientación y por consiguiente un peligro de enfermedad o de muerte. Piensen en que rápido se envenenaría un hombre si perdiera todo sentido del sabor y del olor o si, de alguna manera no natural, venciera su disgusto natural por sensaciones desagradables.
+							</p>
+							<p>
+								En el centro <em>motor</em> la división en dos partes, positiva y negativa, sólo tiene un significado lógico; es decir, el movimiento en oposición al reposo. Para la observación practica no tiene utilidad.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="emotional-centre">&nbsp;</a>
+							<h4>
+								Centro emocional
+							</h4>
+							<p>
+								En el centro <em>emocional,</em> a primera vista, la división es muy simple y obvia. Si tomamos emociones agradables, tales como alegría, simpatía, afecto, confianza en sí mismo, como pertenecientes a la parte positiva, y emociones desagradables, tales como aburrimiento, irritación, celos, envidia, miedo, como pertenecientes a la parte negativa, las cosas parecerán muy simples; pero en realidad son mucho mas complicadas.
+							</p>
+							<p>
+								Para comenzar, en el centro emocional no hay una parte negativa natural. La mayoría de las emociones negativas son artificiales; no pertenecen al mismo centro emocional y están basadas en emociones instintivas que les son completamente extrañas, pero que son transformadas por la imaginación y la identificación. Tal es el verdadero significado de la teoría de James y Lange, muy conocidas en su época. Ellos insistían en que todas las emociones eran en realidad sensaciones de cambios en los órganos internos y en los tejidos, cambios que se producían antes que las sensaciones, y que eran las verdaderas causas de las sensaciones. <sup>[4]</sup>
+							</p>
+							<p class="fnote">
+								[4. La excitación fisiológica instiga la experiencia de la emoción. (inglés) <a href="https://en.wikipedia.org/wiki/James%E2%80%93Lange_theory">en.wikipedia.org/wiki/James&ndash;Lange_theory</a>&nbsp;]
+							</p>
+							<p>
+								Eso quería decir que los acontecimientos exteriores y las constataciones interiores no producían emociones. Los acontecimientos exteriores y las constataciones interiores producían reflejos interiores que producían sensaciones; y estas eran interpretadas como emociones.
+							</p>
+							<h5>
+								Faltan emociones positivas en estado ordinario
+							</h5>
+							<p>
+								Al mismo tiempo, las emociones positivas tales como &quot;amor&quot;, &quot;esperanza&quot;, &quot;fe&quot;, en el sentido que se les comprende usualmente &ndash;es decir, como emociones permanentes&ndash; son imposibles para un hombre en el estado <em>ordinario</em> de conciencia. Ellas requieren estados de conciencia mas elevados, requieren la unidad interior, la conciencia de sí, un &quot;Yo&quot; permanente, y la voluntad.
+							</p>
+							<p>
+								Las emociones positivas son emociones que no pueden llegara ser negativas. Pero todas nuestras emociones agradables tales como alegría, simpatía, afecto, confianza en sí mismo, pueden, en cualquier momento, convertirse en aburrimiento, irritación, envidia, miedo, etc. El amor se puede convertir en celos o miedo a perder lo que uno ama, o en cólera u odio; la esperanza puede convertirse en ensueño y en la expectativa de quimeras, y la fe puede convertirse en superstición y en una débil aceptación de un reconfortante disparate.
+							</p>
+							<p>
+								Hasta una emoción puramente intelectual &ndash;el deseo de conocimiento, o una emoción estética, es decir, un sentimiento de belleza o armonía&ndash; si se llega a mezclar con identificación, se une de inmediato con emociones de orden negativo tales como el orgullo, la vanidad, el egoísmo, la presunción, etc.
+							</p>
+							<p>
+								Se puede entonces decir, sin posibilidad de equivocarnos, que no podemos tener emociones positivas. Al mismo tiempo, en la practica, no tenemos emociones negativas que existan sin imaginación ni identificación.
+							</p>
+							<p>
+								Por supuesto que no se puede negar que además de las muchas y variadas clases de sufrimientos físicos que pertenecen al centro instintivo, el hombre tiene muchas clases de sufrimientos mentales que pertenecen al centro emocional. Tiene muchas penas, agravios, temores, aprensiones, etc., que no se pueden evitar y que están tan íntimamente ligados a la vida del hombre como la enfermedad, el dolor y la muerte. Pero estos sufrimientos mentales son muy diferentes de las emociones negativas que están basadas en la imaginación y en la identificación.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="negative-emotions">&nbsp;</a>
+							<h4>
+								Emociones negativas
+							</h4>
+							<p>
+								Estas emociones son un fenómeno terrible. Ocupan un enorme lugar en nuestra vida. Se puede decir de mucha gente que todas sus vidas están reguladas y controladas, y al final arruinadas, por emociones negativas. Al mismo tiempo las emociones negativas no desempeñan ningún papel útil en nuestras vidas. No nos sirven de orientación, no nos dan ningún conocimiento, no nos guían de una manera sensible. Por el contrario, malogran todos nuestros placeres, hacen de la vida una carga para nosotros, e impiden muy efectivamente nuestro posible desarrollo porque no hay nada mas mecánico en nuestra vida que las emociones negativas.
+							</p>
+							<p>
+								No podemos llegar a controlar nunca las emociones negativas. La gente que cree que puede controlar sus emociones negativas y manifestarlas cuando quiere, simplemente se engaña a sí mismo. Las emociones negativas dependen de la identificación; si en un caso particular se destruye la identificación, ellas desaparecen.
+							</p>
+							<p>
+								Lo mas extraño y fantástico sobre las emociones negativas es que la gente en realidad las adora. Creo que para un hombre mecánico ordinario, lo que mas le cuesta advertir es que las propias emociones negativas y las de los demás no tienen ningún valor y que no contienen nada noble, nada hermoso, ni nada fuerte.
+							</p>
+							<p>
+								En realidad las emociones negativas no contienen otra cosa que debilidad y muy a menudo el comienzo de la histeria, de la locura, o del crimen. La única cosa buena de ellas es que, siendo totalmente inútiles y habiendo sido creadas artificialmente por la imaginación y por la identificación, se pueden destruir sin que ocasionen ninguna perdida. Y esta es la única posibilidad de escapar que tiene el hombre.
+							</p>
+							<h5>
+								Desarrollo interno, sacrificio
+							</h5>
+							<p>
+								Si las emociones negativas fueran útiles o necesarias para cualquier propósito, siquiera el mas pequeño, y si ellas fueran una función de una parte del centro emocional cuya existencia fuera real, el hombre no tendría ninguna posibilidad porque no es posible ningún desarrollo interior mientras un hombre conserve sus emociones negativas.
+							</p>
+							<p>
+								En el lenguaje de escuela, sobre el tema de la lucha contra las emociones negativas, se dice:
+							</p>
+							<blockquote>
+								<p>
+									<em>El hombre debe sacrificar su sufrimiento.</em>
+								</p>
+							</blockquote>
+							<p>
+								&quot;¿Que podría ser mas fácil de sacrificar?&quot;, dirá todo el mundo. Pero en realidad la gente sacrificaría cualquier cosa antes que sus emociones negativas. No hay placer ni satisfacción que el hombre no estaría dispuesto a sacrificar, incluso por razones muy triviales, pero nunca sacrificaría su sufrimiento. Y en cierto modo hay una razón para ello.
+							</p>
+							<p>
+								De manera bastante supersticiosa, el hombre espera ganar algo al sacrificar sus placeres, pero no puede esperar nada por el sacrificio de su sufrimiento. Está lleno de falsas ideas sobre el sufrimiento: aun cree que el sufrimiento le es enviado por Dios, o por los dioses, como castigo o para su educación y hasta tendrá miedo de oír que es posible librarse de su sufrimiento de manera tan simple.
+							</p>
+							<p>
+								La idea se hace todavía mas difícil de comprender debido a la existencia de sufrimientos de los cuales el hombre realmente no se puede liberar, y de muchos otros sufrimientos que están basados enteramente en la imaginación del hombre, y a los cuales no puede ni quiere renunciar, como la idea de injusticia, por ejemplo, y la creencia en la posibilidad de destruir la injusticia.
+							</p>
+							<p>
+								Además de esto, muchas personas no tienen otra cosa que emociones negativas. Todos sus &quot;yoes&quot; son negativos. Si se les quitara las emociones negativas, simplemente colapsarían y se volverían humo.
+							</p>
+							<p>
+								¿Y que le pasaría a toda nuestra vida, sin emociones negativas? ¿Que le pasaría a lo que llamamos arte, al teatro, al drama, a la mayoría de las novelas?
+							</p>
+							<p>
+								Desgraciadamente no hay probabilidad de que desaparezcan las emociones negativas. Las emociones negativas sólo pueden ser vencidas y sólo pueden desaparecer con ayuda del conocimiento de escuela y de los métodos de escuela. La lucha contra las emociones negativas es una parte del entrenamiento de escuela y está íntimamente ligada con todo el trabajo de escuela.
+							</p>
+							<p>
+								Si las emociones negativas son artificiales, anormales, e inútiles, ¿cual es su origen? Como no conocemos el origen del hombre, no podemos discutir esta cuestión, y sólo podemos hablar de las emociones negativas y de su origen en relación con nosotros mismos y con nuestras vidas. Por ejemplo, al mirar a los niños podemos ver como se les enseña emociones negativas y como las aprenden ellos por sí mismos atreves de la imitación a los adultos y a los otros niños.
+							</p>
+							<p>
+								Si desde temprana edad se pusiera a un niño entre gente que no tiene emociones negativas, probablemente el tampoco las tendría, o tendría tan pocas que podrían ser fácilmente vencidas con la educación adecuada. Pero en la vida real las cosas suceden muy diferentemente. Con la ayuda de todos los ejemplos que puede ver y oír, con la ayuda de la lectura, del cine, etc., un niño de alrededor de diez años ya conoce toda la gama de emociones negativas y puede imaginarlas, reproducirlas, e identificarse con ellas tan bien como cualquier adulto.
+							</p>
+							<h5>
+								Cuadro verdadero de nuestra vida emocional
+							</h5>
+							<p>
+								En los adultos las emociones negativas están apoyadas por la constante justificación y glorificación que de ellas hacen la literatura y el arte, y por la autojustificación y autoindulgencia personal. Aun cuando nos cansan, no creemos que podamos librarnos completamente de ellas.
+							</p>
+							<p>
+								En realidad, tenemos mucho mas poder de lo que creemos sobre las emociones negativas, particularmente desde el momento en que ya sabemos lo peligrosas que son y que inaplazable es la lucha contra ellas. Pero les encontramos demasiadas disculpas, y nadamos en las aguas de la autocompasión y del egoísmo, según sea el caso, encontrando culpa en todo, excepto en nosotros mismos.
+							</p>
+							<p>
+								Todo lo que acabamos de decir muestra que en relación a nuestro centro emocional nos encontramos en una situación muy extraña. No tiene parte positiva ni tiene parte negativa. La mayoría de sus funciones negativas son inventadas; y hay mucha gente que nunca en su vida ha experimentado alguna emoción real, tan completamente tomado está su tiempo por emociones imaginarias.
+							</p>
+							<p>
+								Así que no podemos decir que nuestro centro emocional está dividido en dos partes, positiva y negativa. Solo podemos decir que tenemos emociones agradables y emociones desagradables, y que todas aquellas que no son negativas un momento dado, se pueden tornar emociones negativas a la menor provocación y hasta sin ninguna provocación.
+							</p>
+							<p>
+								Este es el verdadero cuadro de nuestra vida emocional, y si nos miramos a nosotros mismos sinceramente debemos darnos cuenta de que mientras cultivemos y admiremos en nosotros todas estas venenosas emociones, no podremos esperar ser capaces de desarrollar la unidad, la conciencia o la voluntad. Si fuera posible este desarrollo, todas las emociones negativas entrarían en nuestro nuevo ser y llegarían a ser permanentes en nosotros. Esto significaría que seria imposible para nosotros librarnos de ellas algún día. Felizmente para nosotros, tal cosa no puede suceder.
+							</p>
+							<h5>
+								Nada permanente
+							</h5>
+							<p>
+								En nuestro estado actual, lo único bueno es que no hay nada permanente. Si algo llegara a ser permanente en nuestro estado actual, significaría la locura. Solo los lunáticos pueden tener un ego permanente.
+							</p>
+							<p>
+								Este hecho, por cierto, descarta otro falso término que se había infiltrado en el lenguaje psicológico de nuestros días del así llamado psicoanálisis: me refiero a la palabra &quot;complejo&quot;.
+							</p>
+							<p>
+								En nuestra estructura psicológica no hay nada que corresponda a la idea del &quot;complejo&quot;. En la psiquiatría del siglo diecinueve, lo que ahora se llama un &quot;complejo&quot; era llamado una &quot;idea fija&quot;, y las &quot;ideas fijas&quot; eran consideradas signos de locura. Y esto sigue siendo correcto.
+							</p>
+							<p>
+								El hombre normal no puede tener &quot;ideas fijas&quot;, &quot;complejos&quot; o &quot;fijaciones&quot;. Es útil recordarlo para el caso de que alguien trate de encontrar complejos en ustedes. Ya tenemos demasiados malos rasgos como somos, y nuestras probabilidades son muy pequeñas aun sin los complejos.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="work-on-ourselves">&nbsp;</a>
+							<h4>
+								El trabajo sobre nosotros mismos
+							</h4>
+							<p>
+								Volviendo ahora a la cuestión del trabajo sobre nosotros mismos, debemos preguntarnos cuales son realmente nuestras probabilidades. Debemos descubrir en nosotros mismos las funciones y las manifestaciones que hasta cierto punto podemos controlar, y debemos ejercitar ese control, tratando de aumentarlo tanto como nos sea posible.
+							</p>
+							<p>
+								Por ejemplo, tenemos cierto control sobre nuestros movimientos, y en muchas escuelas, particularmente en el Oriente, el trabajo sobre uno mismo comienza adquiriendo tanto control sobre nuestros movimientos como sea posible. Pero esto requiere entrenamiento especial, muchísimo tiempo, y el estudio de ejercicios muy elaborados. Bajo las condiciones de la vida moderna tenemos mas control sobre nuestros pensamientos, y en relación con esto existe un método especial que nos permite trabajar en el desarrollo de nuestra conciencia usando el instrumento que mejor obedece a nuestra voluntad; es decir, nuestra <em></em>, o nuestro centro intelectual.
+							</p>
+							<p>
+								Para comprender mas claramente lo que voy a decir, deben tratar de recordar que no tenemos control sobre nuestra conciencia. Cuando dije que podemos llegar a ser mas conscientes, o que por un momento se le puede hacer consciente a un hombre al preguntarle simplemente si está consciente o no, use la palabra &quot;consciente&quot; o &quot;conciencia&quot; en un sentido relativo. Hay muchos grados de conciencia y cada mayor grado de conciencia significa &quot;conciencia&quot; en relación con un grado menor.
+							</p>
+							<p>
+								Pero si no tenemos control sobre la misma conciencia, si tenemos cierto control sobre nuestro pensar en la conciencia. Lo que quiero decir es que dando a nuestros pensamientos la dirección que ellos tendrían en un momento de conciencia, podemos inducirla de esta manera.
+							</p>
+							<h5>
+								La observación de sí mismo
+							</h5>
+							<p>
+								Traten ahora de formular lo que notaron cuando trataron de observarse.
+							</p>
+							<p>
+								Notaron tres cosas.</p>
+							<ul class="three-observacións">
+								<li style="padding-top: 0;">Primero, que no se recuerdan a sí mismos; es decir, que no se percatan de sí mismos en el momento en que tratan de observarse.</li>
+								<li>Segundo, que la observación se hace difícil por el incesante flujo de pensamientos, imágenes, ecos de conversaciones, fragmentos de emociones, que fluyen por su mente y muy a menudo distraen su atención de la observación.</li>
+								<li>Y tercero, que desde el momento en que comienzan a observarse, algo en ustedes desata la imaginación, y que la observación de uno mismo, si realmente la tratan, es una lucha constante contra la imaginación. </li>
+							</ul>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="self-remembering">&nbsp;</a>
+							<h4>
+								El recuerdo de sí mismo
+							</h4>
+							<p>
+								Ahora bien, este es el punto principal en el trabajo sobre sí mismo. Si uno se da cuenta de que todas las dificultades en el trabajo dependen del hecho de que uno no puede recordarse a sí mismo, uno ya sabe lo que tiene que hacer.
+							</p>
+							<blockquote>
+								<p>
+									<em>Uno debe tratar de recordarse a sí mismo.</em>
+								</p>
+							</blockquote>
+							<p>
+								Para hacer esto se debe luchar contra los pensamientos mecánicos, y se debe luchar contra la imaginación.
+							</p>
+							<p>
+								Si uno hace esto en forma concienzuda y persistente, vera los resultados en un tiempo relativamente corto. Pero no se debe pensar que es fácil ni que se puede dominar esta practica de inmediato.
+							</p>
+							<p>
+								El recuerdo de sí, como se le llama, es muy difícil de aprender a practicar. No debe estar basado en la expectativa de resultados, de lo contrario uno se puede identificar con sus esfuerzos. Debe basarse en el darse cuenta de que no nos recordamos a nosotros mismos, pero que al mismo tiempo podemos recordarnos a nosotros mismos, si lo tratamos con suficiente persistencia y de manera apropiada.
+							</p>
+							<p>
+								No podemos llegar a ser conscientes a voluntad, en el momento en que lo queramos, porque no tenemos dominio sobre nuestros estados de conciencia. Pero podemos recordarnos a nosotros mismos, por un corto periodo, a voluntad, porque tenemos cierto dominio sobre nuestros pensamientos. Y si comenzamos recordándonos a nosotros mismos, mediante una construcción especial de nuestros pensamientos &ndash;es decir, dándonos cuenta de que no nos recordamos a nosotros mismos, de que nadie se recuerda a sí mismo, y dándonos cuenta de todo lo que esto significa&ndash; esto nos llevara a la conciencia.
+							</p>
+							<p>
+								Ustedes deben recordar que hemos encontrado el punto débil en el muro de nuestra mecanicidad. Este es el conocimiento de que no nos recordamos a nosotros mismos; y el habernos dado cuenta de que podemos tratar de hacerlo. Hasta este momento nuestra tarea sólo ha sido el estudio de sí. Ahora, con la comprensión de la necesidad de un cambio real en nosotros mismos, el trabajo comienza.
+							</p>
+							<p>
+								Mas adelante aprenderán que la practica del recuerdo de sí, conectada con la observación de sí, y con la lucha contra la imaginación, no sólo tiene un significado psicológico sino que también cambia la parte mas sutil de nuestro metabolismo y que produce efectos químicos, o quizá sea mejor decir alquímicos, en nuestro cuerpo. De esta manera hoy, partiendo de la psicología, hemos llegado a la alquimia; es decir, a la idea de la transformación de los elementos groseros en otros mas finos.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="conferencia-3.htm">&lt; Conferencia 3</a></li>
+									<li class="align-right"><a href="conferencia-5.htm">Conferencia 5 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred Pulyan, index to articles on this site</title>
+    <meta name="description" content="Writings by Alfred Pulan and links to materials about him on other sites.">
+    <meta name="author" content="Alfred Pulyan, Zen Master">
+    <meta property="og:title" content="Alfred Pulyan, index to articles on this site">
+    <meta property="og:description" content="Writings by Alfred Pulan and links to materials about him on other sites.">
+    <meta property="og:image" content="https://selfdefinition.org/pulyan/images/Alfred-Pulyan-Zen-Master-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_pulyan-writings-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /*  
+        #index-lists is a nav. Relies in 2022.CSS 
+        */
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_pulyan-writings-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_pulyan-writings-title-include.htm"); ?>
+                                    <h3>
+                                        Pulyan Writings Index
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="the-penny-that-blots-out-the-sun.htm">Penny That Blots Out the Sun &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <nav id="index-lists">
+                                <ul class="index-contents-links">
+                                    <li><a href="the-penny-that-blots-out-the-sun.htm">The Penny That Blots Out the Sun</a> </li>
+                                    <li><a href="chessboard-is-it-black-or-white.htm">The Chessboard: Is It Black or White?</a></li>
+                                    <li><a href="why-fear-visitors-outer-space.htm">What Is It We Fear in Visitors from Space? That They Might Be Like Us?</a></li>
+                                    <li><a href="life-pretty-forlorn-as-some-see-it.htm">Life's Pretty Forlorn, as Some See It</a></li>
+                                    <li><a href="worlds-ill-health-whats-back-of-it.htm">The World's Ill-Health: What's Back of It?</a></li>
+                                    <li><a href="pulyan-timeline-and-writings.htm">Pulyan Timeline and Writings</a></li>
+                                </ul>
+                                <hr />
+                                <ul class="index-links">
+                                    <li class="note">Pulyan image <a style="display: inline;" href="images/Alfred-Pulyan-Zen-Master-width-700px-uncropped.jpg">full size (400K)</a></li>
+                                    <li class="header-item">Also by Alfred Pulyan</li>
+                                    <li class="first-item" style="margin-top: -5px;"><a href="/pulyan/letters/1960-0820-pulyan.htm">Letters from a Zen Master, Or Why You're Still Suffering</a></li>
+                                </ul>
+                                <hr />
+                                <ul class="index-links">
+                                    <!-- redundant, don't use <li class="header">External links </li>-->
+                                    <li class="header-item">The Wanderling on Pulyan</li>
+                                    <li class="first-item">Alfred Pulyan, Richard Rose, My Mentor, and Me: <a href="http://the-wanderling.com/pulyan.html">the-wanderling.com/<wbr />pulyan.html</a></li>
+                                    <li>Pulyan's Teacher, A Female Ramana Without a Mountain or a Following: <a href="http://the-wanderling.com/pulyans_teacher.html">the-wanderling.com/<wbr />pulyans_<wbr />teacher.html</a></li>
+                                    <li class="header-item">TAT Sites, articles on Pulyan</li>
+                                    <li class="first-item">Alfred Pulyan, Master of Transmission, at <a href="https://www.selfdiscoveryportal.com/Pulyan.htm">SelfDiscoveryPortal.Com</a></li>
+                                    <li>Alfred Pulyan: The Transmission of Zen, at <a href="https://www.spiritualteachers.org/alfred-pulyan/">SpiritualTeachers.Org</a></li>
+                                </ul>
+                                <ul class="index-links">
+                                    <li class="header-item">More Zen on This Site </li>
+                                    <li class="first-item">Garma C.C. Chang, <a href="/zen/garma-chang/practice-of-zen/contents.htm">The Practice of Zen</a></li>
+                                    <li>Huang Po, <a href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">The Dharma of Mind Transmission </a></li>
+                                    <li>Hubert Benoit, Zen and the Psychology of Transformation, <a href="/zen/benoit/supreme-doctrine/contents.htm">The Supreme Doctrine</a> </li>
+                                </ul>
+                            </nav>
+
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="the-penny-that-blots-out-the-sun.htm">Penny That Blots Out the Sun &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p id="spacer">
+                                <!-- stupid spacer is neded, I don't know why -->
+                                &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                            </p>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

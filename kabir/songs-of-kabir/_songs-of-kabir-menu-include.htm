@@ -1,0 +1,88 @@
+<!-- start of menu include file update May 13, 2020. May 16, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/kabir/">Kabir index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm"><span class="conditional-hide-3">Table of </span>Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/kabir/">Kabir index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li>Songs of Kabir <span class="block">100 Poems</span></li>
+            <li class="normal note">
+                <img class="menu-image" src="images/sant-kabir.jpg" alt="Kabir" />
+            </li>
+            <li>Kabir</li>
+            <li class="normal note">(15th Century)</li>
+            <li class="normal note">Translated by Rabindranath Tagore</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Table of Contents</a></li>
+                <li><a href="introduction-evelyn-underhill.htm">Introduction</a> </li>
+                <li><a href="poems-1-25.htm">Poems 1-25</a></li>
+                <li><a href="poems-26-50.htm">Poems 26-50</a></li>
+                <li><a href="poems-51-75.htm">Poems 51-75</a></li>
+                <li><a href="poems-76-100.htm">Poems 76-100</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li>Kabir at <a href="https://en.wikipedia.org/wiki/Kabir">Wikipedia</a></li>
+                <li>Songs of Kabir at <a class="inline" href="https://en.wikipedia.org/wiki/Songs_of_Kabir">
+                        Wikipedia</a> </li>
+                <li>Evelyn Underhill at <a class="inline" href="https://en.wikipedia.org/wiki/Evelyn_Underhill">
+                        Wikipedia</a></li>
+                <li>Rabindranath Tagore at <a class="inline" href="https://en.wikipedia.org/wiki/Rabindranath_Tagore">
+                        Wikipedia</a></li>
+                <li>Ramananda at <a class="inline" href="https://en.wikipedia.org/wiki/Ramananda">Wikipedia</a></li>
+                <li>This text at <a class="inline" href="https://www.sacred-texts.com/hin/sok/index.htm">
+                        Sacred-Texts.Com</a></li>
+                <li>This text at <a class="inline" href="http://www.gutenberg.org/ebooks/6519">Project
+                        Gutenberg</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also on this site</li>
+                <li class="site-first-item"><a href="/gurdjieff/">Gurdjieff Index</a></li>
+                <li><a href="/sufi/">Sufi Index</a></li>
+                <li><a href="/yoga/">Yoga Index</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- link color is needed here for some reason -->
+            <a style="color: #0000ff;" onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

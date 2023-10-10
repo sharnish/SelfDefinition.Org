@@ -1,0 +1,353 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> The Brainwashing Manual, by L. Ron Hubbard</title>
+	<meta name="description" content="Synthesis of a Russian Textbook on Psychopolitics">
+	<meta name="author" content="L. Ron Hubbard">
+	<meta property="og:title" content="The Brainwashing Manual, by L. Ron Hubbard">
+	<meta property="og:description" content="Synthesis of a Russian Textbook on Psychopolitics">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/hubbard/brainwashing/images/l-ron-hubbard-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_bw-manual-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (Desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--FIRST  -->
+	<link rel="next" href="editorial-note.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/*
+Presented as something of a curiosity. There's a lot of truth in it, although in places a little tedious to
+read because Hubbard is putting his own views into the mouth of his enemies, using as a device this 
+purported "communist text". Many interesting insights none the less.
+
+Chapters
+
+1. History and Definition of Psychopolitics
+2. The Constitution of Man as a Political Organism
+3. Man as an Economic Organism
+4. State Goals for the Individual and Masses
+5. An Examination of Loyalties
+6. The General Subject of Obedience
+7. Anatomy of Stimulus-Response Mechanisms of Man
+8. Degradation, Shock and Endurance
+9. The Organization of Mental Health Campaigns
+10. Conduct Under Fire
+11. The Use of Psychopolitics in Spreading Communism
+12. Violent Remedies
+13. Recruiting of Psychopolitical Dupes
+14. The Smashing of Religious Groups
+15. Proposals Which Must Be Avoided
+16. In Summary
+        */
+		nav.contents .item:hover {
+			background-color: #bde0ff;
+		}
+
+		.contents .item {
+			margin-bottom: 10px;
+		}
+
+		.to-center {
+			width: 400px;
+			margin: 0 auto;
+		}
+
+		/* CSS3 columns  */
+
+		.contents {
+			-webkit-columns: 3;
+			-moz-columns: 3;
+			columns: 3;
+			width: 100%;
+			margin: 0 auto;
+			border: 1px solid yellow;
+		}
+
+		@media only screen and (max-width:450px) {
+			.to-center {
+				width: 300px;
+			}
+
+			.contents {
+				-webkit-columns: 2;
+				-moz-columns: 2;
+				columns: 2;
+			}
+		}
+
+		/* Avoid column breaks:
+        https://css-tricks.com/almanac/properties/b/break-inside/
+        */
+		/*
+        div.item {
+            -webkit-column-break-inside:avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            }
+        */
+
+		.contents .item {
+			width: 120px;
+		}
+
+		/* #index-lists is a nav */
+		#index-lists {
+			margin-top: 30px;
+			border: 0px solid red;
+			margin-left: 40px;
+		}
+
+		#index-lists hr {
+			margin-top: 30px;
+			margin-bottom: 30px;
+			width: 75%;
+		}
+
+		@media only screen and (max-width:500px) {
+			#index-lists {
+				margin-left: 10px;
+			}
+		}
+
+		#index-lists ul {
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+			border: 0px solid blue;
+			width: 410px;
+		}
+
+		/* adjust to agree with the above */
+		@media only screen and (max-width:400px) {
+			#index-lists ul {
+				width: 100%;
+			}
+		}
+
+		#index-lists ul li {
+			margin: 0 0 25px;
+			border: 0px solid green;
+		}
+
+		#index-lists a {
+			display: inline;
+		}
+
+		#index-lists .index-contents-links {}
+
+		ul.index-external-links,
+		ul.index-site-links,
+		ul.index-optional-links {
+			font-size: 90%;
+			padding-left: 0;
+		}
+
+
+		/* Color coding is replicated on dark stylesheet */
+
+		#index-lists ul li.external-links-item,
+		#index-lists ul li.site-links-item,
+		#index-lists ul li.optional-links-item {
+			color: maroon;
+		}
+
+		/* remove hard-coded color */
+		#index-lists ul li.external-links-item,
+		#index-lists ul li.site-links-item,
+		#index-lists ul li.optional-links-item {
+			font-weight: bold;
+			font-size: 95%;
+			/* color: maroon; */
+			margin-bottom: 3px;
+			padding-bottom: 0;
+		}
+
+		#index-lists ul li.external-first-item,
+		#index-lists ul li.site-first-item,
+		#index-lists ul li.optional-first-item {
+			margin-top: 3px;
+			padding-top: 0;
+		}
+
+		#index-lists ul li.external-subhead-item,
+		#index-lists ul li.site-subhead-item,
+		#index-lists ul li.optional-subhead-item {
+			margin-top: 3px;
+			margin-bottom: 3px;
+			padding-top: 0;
+		}
+
+		/* this reduces left margin for this page only when screen size is small say try  360  */
+		@media only screen and (max-width:360px) {
+			#article {}
+
+			div#index-lists ul li {
+				margin-left: -30px;
+			}
+		}
+
+		/* add bolding (new Feb 2020 */
+		.site-subhead-item {
+			font-weight: bold;
+			font-size: 95%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_bw-manual-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_bw-manual-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Contents
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="editorial-note.htm">Editorial Note &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="note">Note: In places this work is very annoying to read because of its juvenile and amateurish distortions, although it does contain some good information. It would have been better if Hubbard had presented his understanding in a straightfoeward manner without the crude but elaborate pretense. For a serious treatment of the subject we recommend on our website, Joost Meerlo, Rape of the Mind: <a href="/psychology/meerloo/rape-of-mind/contents.htm">/psychology/<wbr>meerloo/<wbr>rape-of-mind/<wbr>contents.htm</a></p>
+							<hr>
+							<nav id="index-lists">
+								<ul class="index-contents-links">
+									<li><a href="editorial-note.htm">Editorial Note</a></li>
+									<li><a href="address-by-beria.htm">An Address by Beria</a></li>
+									<li><a href="chapter-01.htm">1. History and Definition of Psychopolitics</a></li>
+									<li><a href="chapter-02.htm">2. The Constitution of Man as a Political Organism</a>
+									</li>
+									<li><a href="chapter-03.htm">3. Man as an Economic Organism</a></li>
+									<li><a href="chapter-04.htm">4. State Goals for the Individual and Masses</a></li>
+									<li><a href="chapter-05.htm">5. An Examination of Loyalties</a></li>
+									<li><a href="chapter-06.htm">6. The General Subject of Obedience</a></li>
+									<li><a href="chapter-07.htm">7. Anatomy of Stimulus-Response Mechanisms of Man</a>
+									</li>
+									<li><a href="chapter-08.htm">8. Degradation, Shock and Endurance</a></li>
+									<li><a href="chapter-09.htm">9. The Organization of Mental Health Campaigns</a></li>
+									<li><a href="chapter-10.htm">10. Conduct Under Fire</a></li>
+									<li><a href="chapter-11.htm">11. The Use of Psychopolitics in Spreading
+											Communism</a></li>
+									<li><a href="chapter-12.htm">12. Violent Remedies</a></li>
+									<li><a href="chapter-13.htm">13. Recruiting of Psychopolitical Dupes</a></li>
+									<li><a href="chapter-14.htm">14. The Smashing of Religious Groups</a></li>
+									<li><a href="chapter-15.htm">15. Proposals Which Must Be Avoided</a></li>
+									<li><a href="chapter-16.htm">16. In Summary</a></li>
+								</ul>
+								<p class="center note80">Published as a public service by the Hubbard College of Scientology, Saint Hill Manor, East Grinstead, Sussex, England</p>
+								<hr>
+
+								<ul class="index-external-links">
+									<li class="first-item">L. Ron Hubbard at <a href="https://en.wikipedia.org/wiki/L._Ron_Hubbard">Wikipedia</a></li>
+									<li>The communists don't like this book at <a href="https://en.wikipedia.org/wiki/Brain-Washing_(book)">
+											Wikipedia</a> </li>
+									<li>Psychological warfare at <a href="https://en.wikipedia.org/wiki/Psychological_warfare">Wikipedia</a></li>
+									<li>Political warfare at <a href="https://en.wikipedia.org/wiki/Political_warfare">Wikipedia</a></li>
+									<li>Brainwashing at <a href="https://en.wikipedia.org/wiki/Brainwashing">Wikipedia</a></li>
+								</ul>
+
+								<ul class="index-site-links">
+									<li class="header-item">Also in Psychology</li>
+									<li class="first-item">Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm"> The Crowd, A Study of the Popular Mind </a></li>
+									<li>Joost Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind</a></li>
+									<li>Edward Bernays: <a href=" /psychology/bernays/english/contents.htm">Propaganda</a></li>
+									<li>James H. Loryea a.k.a. "Santanelli", <a href="/psychology/santanelli/law-of-suggestion/contents.htm">The Law of Suggestion</a></li>
+									<li class="header-item">Liberty section</li>
+									<li class="first-item">Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+								</ul>
+
+							</nav>
+
+							<p>
+								<!-- spacer STILL needed to fill out width on a narrow page
+                                    Needed here but not in Spanish page - weird
+                                    need to figure out why -->
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+
+
+
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="editorial-note.htm">Editorial Note &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

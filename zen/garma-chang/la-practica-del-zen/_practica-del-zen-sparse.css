@@ -1,0 +1,31 @@
+/* file:  /zen/garma-chang/practica-del-zen/_practica-del-zen-sparse.css 
+
+update Nov 13, 2019, published Dec 28, 2019. Add dark styles March 10, 2022. 
+
+		Update to 2022.CSS June 12, 2022
+
+***/
+
+@media only print {
+	#article:after {
+		content: "Update June 12, 2022";
+	}
+}
+
+p.pagenum {
+	display: none;
+}
+
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #efffef;
+}
+
+/* end */

@@ -1,0 +1,191 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Jones Plantation, by Larken Rose</title>
+	<meta name="description" content="One cannot change reality by changing the words you use to describe reality. Look beneath the rhetoric, and glimpse the truth.">
+	<meta name="author" content="Larken Rose">
+	<meta property="og:title" content="The Jones Plantation, by Larken Rose">
+	<meta property="og:description" content="One cannot change reality by changing the words you use to describe reality. Look beneath the rhetoric, and glimpse the truth.">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/articles/images/C.S.Lewis-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_liberty-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" >
+    <link rel="next" -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* social media:
+		
+		Thanks to @Nosce_Te for posting the video Friday
+		
+        */
+
+	</style>
+	<script>
+		/* see /redirect/magic-404-redirect for full implementation
+		
+		replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/liberty/articles/images/jones-plantation-menu.jpg");
+
+			$('#menu-image').attr("src", "/liberty/articles/images/jones-plantation-menu.jpg");
+
+			$('#title-image').attr("alt", "The Jones Plantation");
+
+			$('#menu-image').attr("alt", "The Jones Plantation");
+
+			$('#swap-menu-author').text("The Jones Plantation");
+
+			$('#swap-menu-dates').text("Larken Rose");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_liberty-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_liberty-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										The Jones Plantation
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="cs-lewis-willing-slaves-welfare-state.htm">&lt; Willing Slaves Welfare State</a></li>
+									<li class="align-right"><a href="article-index.htm">Article Index &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- extra hook added April 30, 2022 -->
+							<div class="page-text">
+								<!-- anchor element must not be empty 
+									do not use page anchor
+									<a class="page-link-anchor" id="jones-plantation">&nbsp;</a>
+								-->
+								<p class="blockquote">"One cannot change reality by changing the words you use to describe reality. Look beneath the rhetoric, and glimpse the truth."</p>
+								<h5>
+									Larken Rose, Outside The Cage <span class="normal block">LarkenRose.Com</span>
+								</h5>
+								<div class="videoWrapper">
+									<!-- see 2022.CSS  -->
+									<div class="loading">
+										<p class="note80">
+											YouTube video is loading ...</p>
+										<img src="/images/video-loading.jpg" alt="video loading image" style="margin-left: 20px;">
+									</div>
+									<!-- their specs: width="560" height="315" -->
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/vb8Rj5xkDPk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<div class="top">
+									<p class="tight note">For more information:</p>
+									<p class="tight">
+										Jones Plantation Feature Film : Post-Production Interview
+									</p>
+								</div>
+								<a class="note" href=" https://www.indiegogo.com/projects/jones-plantation-feature-film-post-production#/">https://www.indiegogo.com/projects/jones-plantation-feature-film-post-production#/</a>
+
+								<p class="top">
+									At Larken Rose's website: <a href="http://larkenrose.com/video/2161-the-jones-plantation.html">http://larkenrose.com/video/2161-the-jones-plantation.html</a>
+								</p>
+
+								<div class="top">
+									<p>Larken Rose at <a href="https://amzn.to/3THBzXr">Amazon.Com</a></p>
+									<ul class="generic no-bullet">
+										<li>Most Dangerous Superstition</li>
+										<li>Parasites on Parade</li>
+										<li>The Iron Web</li>
+										<li>Larken Rose Journal</li>
+										<li>Anarchy Exposed</li>
+									</ul>
+								</div>
+
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+							</div><!-- end #page-text -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="cs-lewis-willing-slaves-welfare-state.htm">&lt; Willing Slaves Welfare State</a></li>
+									<li class="align-right"><a href="article-index.htm">Article Index &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

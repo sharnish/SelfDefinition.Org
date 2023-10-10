@@ -1,0 +1,44 @@
+/*   File:  /liberty/thomas-paine/common-sense/_common-sense-sparse.css
+
+     Update July 27, 2022
+*/
+
+@media only print {
+	#article:after {
+		content: "Update July 27, 2022";
+	}
+}
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #e6ffef;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with aebruary default color */
+/* color must contrast with body */
+/* This is default: #bde0ff - Blue, for selfdefinition-responsive.css
+	nice pink: #FFC0CB */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c0d4fc;
+	/* nice blue, goes with the green */
+
+}
+
+#announce header h3 {
+	margin-bottom: 3px;
+}
+
+/* end */

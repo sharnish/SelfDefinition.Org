@@ -1,0 +1,107 @@
+<!-- start of menu include file - Update Oct 12, 2020. June 18, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float, check where is it cleared? -->
+			<li class="first-item"><a href="/advaita/">Advaita index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+			<li class="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/advaita/">Advaita index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Some features use ajax api</li>
+			<li class="ajax-menu-item-spanish">Algunas funciones usan ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li class="tight"> Astavakra Samhita
+			</li>
+			<li class="tight normal">
+				(Astavakra Gita) </li>
+			<li class="normal note">
+				<img class="menu-image" src="images/ascetic.jpg" alt="Ascetic" />
+			</li>
+			<li class="normal note tight">Translated by Swami Nityaswarupananda</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="01-instruction-on-self-realization.htm">1. Instruction on Self-Realization</a> </li>
+				<li><a href="02-joy-of-self-realization.htm">2. Joy of Self-Realization</a> </li>
+				<li><a href="03-test-of-self-realization.htm">3. Test of Self-Realization</a> </li>
+				<li><a href="04-glorification-of-self-realization.htm">4. Glorification of Self-Realization</a> </li>
+				<li><a href="05-four-ways-to-dissolution.htm">5. Four Ways to Dissolution</a> </li>
+				<li><a href="06-the-higher-knowledge.htm">6. The Higher Knowledge</a> </li>
+				<li><a href="07-nature-of-self-realization.htm">7. Nature of Self-Realization</a> </li>
+				<li><a href="08-bondage-and-liberation.htm">8. Bondage and Liberation</a> </li>
+				<li><a href="09-detachment.htm">9. Detachment</a> </li>
+				<li><a href="10-quietude.htm">10. Quietude</a> </li>
+				<li><a href="11-wisdom.htm">11. Wisdom</a> </li>
+				<li><a href="12-abiding-in-self.htm">12. Abiding in the Self</a> </li>
+				<li><a href="13-happiness.htm">13. Happiness</a> </li>
+				<li><a href="14-tranquility.htm">14. Tranquillity</a> </li>
+				<li><a href="15-knowledge-of-self.htm">15. Knowledge of the Self</a> </li>
+				<li><a href="16-special-instruction.htm">16. Special Instruction</a> </li>
+				<li><a href="17-the-true-knower.htm">17. The True Knower</a> </li>
+				<li><a href="18a-peace.htm">18a. Peace (1-50)</a> </li>
+				<li><a href="18b-peace-cont.htm">18b. Peace (51-100)</a> </li>
+				<li><a href="19-repose-in-self.htm">19. Repose in the Self</a> </li>
+				<li><a href="20-liberation-in-life.htm">20. Liberation-in-Life</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Astavakra Gita at <a href="https://en.wikipedia.org/wiki/Ashtavakra_Gita">
+						Wikipedia</a> </li>				
+				<li>This file as a PDF: <a href="https://estudantedavedanta.net/Astavakra-Samhita.pdf">
+					estudantedavedanta.net</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Advaita</li>
+				<li class="first-item">Adi Shankara: <a href="/advaita/shankara/writings/drik-drishya-viveka.htm">Vakya Sudha a.k.a Drik-drishya-viveka</a></li>
+				<li><a href="/advaita/shankara/crest-jewel/contents.htm">Vivekachudamani, The Crest-Jewel of Wisdom</a></li>
+				<li>Swami Vivekananda: <a href="/advaita/vivekananda/vedanta/contents.htm">The Vedanta Philosophy </a></li>
+				<li class="subhead first-item">Parameshwar Maharaj</li>
+				<li class="first-item"><a href="/advaita/parameshwar/submerging-into-self/contents.htm">Submerging into Myself </a></li>
+				<li class="header-item">Also on our site</li>
+				<li class="subhead">Siddharameshwar</li>
+				<li class="first-item"><a href="/siddharameshwar/dasbodh-selections/contents.htm">Selections from Amrut Laya</a></li>
+				<li><a href="/siddharameshwar/master-key/causal-body-forgetfulness.htm">Master Key to Self Realization: Causal Body and Forgetfulness</a></li>
+
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,160 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>- In the Pronaos of the Temple of Wisdom</title>
+	<meta name="description" content="">
+	<meta name="author" content="Franz Hartmann MD">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/hartmann/wisdom/images/franz-hartmann-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_wisdom-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="">
+	<link rel="next" href="">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		.index-lists ul.index-contents-links {
+			width: 260px;
+			border: 0px solid red;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_wisdom-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_wisdom-title-include.htm"); ?>
+									<!-- new format puts page title higher -->
+									<h3>
+										Contents-Index
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="chapters.htm">Chapter Descriptions &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<nav class="index-lists">
+
+								<ul class="index-contents-links">
+									<li class="first-item"><a href="chapters.htm">Chapter Descriptions</a></li>
+									<li><a href="preface.htm">Title Page and Preface</a> </li>
+									<li><a href="1-introduction.htm">1. Introduction</a> </li>
+									<li><a href="2-hermetic-philosophy.htm">2. The Hermetic Philosophy</a> </li>
+									<li><a href="3-medieval-philosophers.htm">3. Medieval Philosophers</a> </li>
+									<li><a href="4-among-the-adepts.htm">4. Among the Adepts</a> </li>
+									<li><a href="5-the-rosicrucian-orders.htm">5. The Rosicrucian &quot;Orders&quot;</a> </li>
+									<li><a href="6-pseudo-rosicrucians.htm">6. Pseudo Rosicrucians</a> </li>
+									<li><a href="7-yoga-philosophy-rosy-cross.htm">7. Yoga Philosophy</a> </li>
+									<li><a href="8-alchemy.htm">8. Alchemy</a></li>
+								</ul>
+
+								<hr>
+
+								<ul class="index-links">
+									<li>Franz Hartmann at <a href="https://en.wikipedia.org/wiki/Franz_Hartmann">Wikipedia</a> </li>
+									<li>Western Esotericism at <a href="https://en.wikipedia.org/wiki/Western_esotericism">Wikipedia</a> </li>
+									<li>Alchemy at <a href="https://en.wikipedia.org/wiki/Alchemy">Wikipedia</a> </li>
+								</ul>
+
+								<ul class="index-links">
+									<li class="header-item">Also by Franz Hartmann</li>
+									<li class="first-item"><a href="/magic/hartmann/white-and-black/contents.htm"><em>Magic White &amp; Black, The Science Of Finite And Infinite Life</em></a></li>
+									<li><a href="/magic/paracelsus/hartmann-life-of-paracelsus/contents.htm">Life of Paracelsus </a></li>
+									<li><a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Life and Doctrines of Jacob Boehme</a></li>
+									<li class="subhead">&Eacute;liphas L&eacute;vi</li>
+									<li class="first-item"><a href="/magic/eliphas-levi/paradoxes/"><em>Paradoxes of the Highest Science</em></a></li>
+									<li><a href="/magic/eliphas-levi/great-secret/contents.htm">The Great Secret, or Occultism Unveiled</a></li>
+									<li class="header-item">External links</li>
+									<li>This book at <a href="https://www.sacred-texts.com/sro/ptw/index.htm">Sacred-Texts.Com</a></li>
+									<li>Franz Hartmann: <a href="http://sacred-texts.com/sro/wta/index.htm">With the Adepts</a></li>
+									<li class="subhead">Todas las páginas en español</li>
+									<li class="first-item"><a href="/paginas-en-espanol.htm">Páginas en español</a></li>
+
+								</ul>
+							</nav>
+
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="chapters.htm">Chapter Descriptions &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								<!-- spacer STILL needed to fill out width on a narrow page
+                                    need to figure out why -->
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

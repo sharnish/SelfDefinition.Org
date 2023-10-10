@@ -1,0 +1,64 @@
+# .htaccess file for selfdefinition.org/new-thought/
+
+# Canonical links added Sept 20, 2022
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+# EXAMPLE
+
+<Files 'Yogi-Ramacharaka-Mystic-Christianity.pdf'>
+	Header add Link '<https://selfdefinition.org/new-thought/ramacharaka/mystic-christianity/contents.htm>; rel="canonical"'
+	Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+
+
+
+# ignore incomplete
+
+IndexIgnore  napoleon-hill
+
+Redirect 301 "/new-thought/W. R. C. Latson - Secrets of Mental Supremacy.pdf" "/new-thought/WRC-Latson-Secrets-of-Mental-Supremacy.pdf"
+
+# removed "en" from file names
+
+# added rest of PMT, chaged file name Lesson 22
+
+Redirect 301 "/new-thought/dumont-memory/lesson-22-efficient-association.htm"   "/new-thought/dumont-memory/22-efficient-association.htm"
+
+
+Redirect 301 "/new-thought/en-espanol-William-Walker-Atkinson-Biografia.pdf"                "/new-thought/espanol-William-Walker-Atkinson-Biografia.pdf"
+
+Redirect 301 "/new-thought/en-espanol-William-Walker-Atkinson-La-Ciencia-de-La-Palabra.pdf" "/new-thought/espanol-William-Walker-Atkinson-La-Ciencia-de-La-Palabra.pdf"
+
+
+Redirect 301 "/new-thought/en-espanol-William-Walker-Atkinson-Las-Fuerzas-Ocultas.pdf"      "/new-thought/espanol-William-Walker-Atkinson-Las-Fuerzas-Ocultas.pdf"
+
+Redirect 301 "/new-thought/en-espanol-Yogui-Ramacharaka-Raja-Yoga.pdf"                      "/new-thought/espanol-Yogui-Ramacharaka-Raja-Yoga.pdf"
+
+
+
+### template
+###    Redirect 301 "/new-thought/" "/new-thought/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

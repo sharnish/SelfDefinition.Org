@@ -1,0 +1,64 @@
+/* file:  /christian/jacob-boehme/mysterium-magnum/_mysterium-magnum-sparse.css 
+
+First reformat Nov 16, 2016
+Fixes for top menu Oct 8, 2019
+Added progress and top button Jan 8, 2020. Update to 2022.CSS May 9, 2022
+
+*/
+
+
+
+/* background selfdefinition-responsive default is #fcfeff  tan is :#d2b48c; */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #f3fff0;
+}
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #e3dad3;
+}
+
+
+
+@media only screen {
+
+    /* do not include "span"
+       .progress-header.dark  */
+
+    html.dark,
+    html.dark body,
+    html.dark #fixed-header-small-screen,
+    html.dark #menu-site-small-screen,
+    html.dark .progress-container,
+    html.dark p.black,
+    html.dark span.black,
+    html.dark sup.black {
+        background: #000;
+        /* too dark */
+        background: #171421;
+    }
+}
+
+
+#announce header h3 span {
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+/* testing */
+
+
+/* end */

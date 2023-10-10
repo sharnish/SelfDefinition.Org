@@ -1,0 +1,98 @@
+<!-- start of menu include file Update June 5, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/new-thought/">New Thought<span class="conditional-hide-4"> index</span></a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="article-index.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/new-thought/">New Thought index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<!-- ALTERNATIVE REPLACEMENT SCHEMA -->
+		<ul class="menu-text center">
+			<!-- menu title is constant -->
+			<li>New Thought Articles</li>
+			<li class="normal">
+				<!-- ID used for JQuery replacement, class for styling -->
+				<!-- attributes filled in by Jquery -->
+				<!-- Image here, must be blank -->
+				<img id="menu-image" class="menu-image" src="" alt="">
+			</li>
+			<li id="swap-menu-author">
+				<!-- name here, must be blankk -->
+			</li>
+			<li id="swap-menu-dates" class="normal note tight">
+				<!-- date here -->
+			</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="article-index.htm">Contents-Index</a></li>
+				<li><a href="positive-thinking-history.htm">The History of Positive Thinking</a></li>
+				<li><a href="consciousness-is-the-only-reality.htm">Consciousness Is the Only Reality</a></li>
+				<li><a href="goddard-God-and-I-are-one.htm">Goddard: God And I Are One (audio, 1972)</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li>New Thought movement at&nbsp;<a href="https://en.wikipedia.org/wiki/New_Thought">
+						Wikipedia</a> </li>
+				<li>Phineas Parkhurst Quimby at <a href="https://en.wikipedia.org/wiki/Phineas_Parkhurst_Quimby">
+						Wikipedia</a> </li>
+				<li>William Walker Atkinson at <a style="display:inline;" href="https://en.wikipedia.org/wiki/William_Walker_Atkinson">
+						Wikipedia</a> </li>
+				<li>Neville Goddard at <a style="display:inline;" href="https://en.wikipedia.org/wiki/Neville_Lancelot_Goddard">
+						Wikipedia</a> </li>
+
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="subhead">Atkinson / DuMont</li>
+				<li class="first-item"><a href="/new-thought/kybalion/contents.htm">The Kybalion</a></li>
+				<li><a href="/new-thought/atkinson/law-of-attraction/contents.htm">Thought Vibration: The Law of Attraction in the Thought World (1906)</a></li>
+				<li><a href="/new-thought/dumont-memory/contents.htm">Practical Memory Training</a></li>
+				<li class="header">Phineas Parker Quimby</li>
+				<li class="first-item"><a href="/healing/phineas-quimby/quimby-manuscripts/contents.htm">The Quimby Manuscripts </a></li>
+				<li class="subhead">Franz Hartmann</li>
+				<li class="first-item"><a href="/magic/hartmann/white-and-black/contents.htm">Magic White and Black</a></li>
+				<li class="subhead">Todas las paginas en español</li>
+				<li><a href="/paginas-en-espanol.htm">/paginas-en-espanol.htm</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

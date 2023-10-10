@@ -1,0 +1,123 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SelfDefinition.Org redirect pages</title>
+	<meta name="description" content="List of redirect pages.">
+	<meta property="og:title" content="SelfDefinition.Org redirect pages">
+	<meta property="og:description" content="List of redirect pages.">
+	<meta property="og:image" content="https://selfdefinition.org/images/great-ritual-of-the-initiations.jpg">
+	<!-- load css before scripts -->
+	<link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		div.centering-container {
+			width: 400px;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+
+<body>
+	<!-- copied from Changelog April 17, 2022 -->
+	<div id="mainwrapper-index">
+		<div id="container">
+			<div id="fixed-header">
+				<ul id="menu-site">
+					<!-- these are floats -->
+					<li><a href="/">Site Root</a></li>
+					<li><a href="/sitemap.htm">Site Map</a></li>
+					<li><a href="/paginas-en-espanol.htm">Español</a></li>
+					<li><a href="/search/selfdefinition-search.htm">Search</a></li>
+					<li><a href="javascript:scroll(0,0)" role="button">Top of Page</a></li>
+				</ul>
+				<div style="clear: both;">
+				</div>
+			</div>
+
+			<div id="main-content">
+				<div id="style-gadget">
+					<label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+						Dark theme: <input type="checkbox" id="theme-checkbox">
+					</label>
+					<!-- Can't be in head. -->
+					<script src="/scripts/set-theme-cookie-checkbox.js"></script>
+				</div>
+				<header>
+					<p class="logo">
+						Self<span style="margin-left: 1px;">Definition.Org</span>
+					</p>
+					<h1 class="title">
+						Redirect Pages
+					</h1>
+				</header>
+				<div id="announce">
+					<!-- there is no image div, no top-links to clear -->
+				</div>
+
+				<div id="bottom-links">
+					<div class="centering-container">
+						<div class="site-links" style="margin-top:40px;">
+
+							<p>URLs a mess? Maybe try these ...</p>
+
+							<ul class="links-list">
+
+								<li><a href="afterlife-404-redirect.htm">afterlife-404-redirect.htm</a>
+								</li>
+								<li><a href="magic-404-redirect.htm">magic-404-redirect.htm</a>
+								</li>
+								<li><a href="mentalism-404-redirect.htm">mentalism-404-redirect.htm</a>
+								</li>
+								<li><a href="osho-404-and-book-list.htm">osho-404-and-book-list.htm</a>
+								</li>
+								<li><a href="psychology-404-redirect.htm">psychology-404-redirect.htm</a>
+								</li>
+								<li><a href="ramana-404-redirect.htm">ramana-404-redirect.htm</a>
+								</li>
+								<li><a href="science-redirect.htm">science-redirect.htm</a>
+								</li>
+								<li><a href="tantra-404-redirect.htm">tantra-404-redirect.htm</a>
+								</li>
+								<li><a href="yoga-404-redirect.htm">yoga-404-redirect.htm</a>
+								</li>
+								<li><a href="zen-404-redirect.htm">zen-404-redirect.htm</a>
+								</li>
+								<!--
+								</li><li><a href=""></a>
+								</li>
+								-->
+							</ul>
+
+							<p>Or ...</p>
+
+							<ul class="links-list">
+								<li><a href="/search/selfdefinition-search.htm">Search this website</a></li>
+								<li><a href="/sitemap.htm">Site map</a>
+								</li>
+								<li><a href="/">Site root</a>
+								</li>
+							</ul>
+						</div>
+					</div><!-- end .centering-container-->
+				</div>
+				<p class="totop">
+					<a href="javascript:scroll(0,0)">top of page</a>
+				</p>
+			</div><!-- end #main-content" -->
+		</div><!-- end #container -->
+	</div><!-- end #mainwrapper-index -->
+
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

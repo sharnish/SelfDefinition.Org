@@ -1,0 +1,282 @@
+/* file:  /awareness/_awareness-sparse.css
+
+	Update July 20, 2022
+*/
+
+@media only print {
+	#article:after {
+		content: "Update July 210, 2022";
+	}
+}
+
+
+/*
+
+----- Special CSS -----
+
+See 2022.CSS for more
+
+For stylesheet-switcher (bolding) see - Muruganar Turning Inwards
+
+	scripts/stylesheet-switcher-bolding.js
+
+	<link rel="alternate stylesheet" etc.
+
+For numbered lists that put the number above the paragraph on small screen
+Table: urelove/muruganar-realization.htm, turning-inward, the world and nisargadatta-practice
+<table class="numbered-table">
+Ordered list: ramana-40-verses-on-reality.htm
+
+For positioning absolute within first positioned ancestor see Albigen.Com awareness-home.htm
+
+*/
+
+/* numbered tables on inquiry-abidance, murugular_realization, nisargadatta-practice
+
+
+SEE CSS ON PAGE:  Nisargadatta-Practice
+
+*/
+
+/* if text in 2nd "td" is short, ensure it goes to a new line */
+tr td:last-of-type {
+	width: 100%;
+}
+
+td,
+th {
+	vertical-align: top;
+	text-align: left;
+}
+
+table.numbered-table {
+	border: 0;
+}
+
+table.numbered-table tr td:first-child {
+	padding-right: 8px;
+}
+
+table.numbered-table td {
+	padding-bottom: 10px;
+}
+
+table.numbered-table tr td:nth-child(2) {
+	padding-bottom: 35px;
+}
+
+table.wide tr td:first-child {
+	padding-right: 3px;
+}
+
+.numbered-table td p:first-child {
+	margin-top: 0;
+}
+
+
+@media only screen and (max-width:767px) {
+	table.numbered-table td {
+		padding-bottom: 15px;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	table.numbered-table td {
+		display: block;
+		float: left;
+	}
+
+	table.numbered-table tr td:first-child {
+		padding-bottom: 5px;
+	}
+}
+
+/* started July 21, 2022 with Awareness, abandon-release.htm, muruganar world, turning inward */
+/* better then setting "line-height" after hard break, no wide space after soft break
+https://stackoverflow.com/questions/1409649/how-to-change-the-height-of-a-br
+*/
+
+/* Tried this in 2022.CSS but it caused unintended effects, will be impossible to trace.
+	Use this in project only */
+br {
+	display: block;
+	/* adjust top margin as needed */
+	margin: 2px 0;
+	/* need Content for Chrome */
+	content: "";
+}
+
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+/* These mages have no menu include file, just a Table of Contents page (and link) */
+/* #fffff6; is nice on screen but looks white on my tv. */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffdd0;
+	color: black;
+}
+
+html.most-rapid,
+html.most-rapid body,
+html.most-rapid #fixed-header-small-screen,
+html.most-rapid #menu-site-small-screen,
+html.most-rapid .progress-header,
+html.most-rapid .progress-container {
+	background: #dfd;
+}
+
+
+@media only screen {
+
+	/* MOST-RAPID IS DIFFERENT */
+	html.dark.most-rapid,
+	html.dark.most-rapid html,
+	html.dark.most-rapid #fixed-header-small-screen,
+	html.dark.most-rapid #menu-site-small-screen,
+	html.dark.most-rapid .progress-header,
+	html.dark.most-rapid .progress-container {
+		/* same as selfdef spanish */
+		background: #293132;
+		color: #fdfdff;
+	}
+
+}
+
+/* In Most Rapid, h2 was used for SelfDef h3 
+
+	Need to adjust size to avoid large edit
+*/
+
+/* only shows on index page */
+#mirror {
+	display: none;
+}
+
+header h2,
+header h2.toowide {
+	margin-top: 25px;
+	margin-bottom: 0;
+}
+
+header h2 + h3,
+header h2 + p,
+header h3 + p,
+header p + p {
+	margin-top: 4px;
+}
+
+
+header h2 + p,
+header h3,
+header h3 + p {
+	margin-bottom: 0;
+}
+
+
+
+/* special styling for Most Rapid pages */
+/* light green #f0fff0   TAN, nice, a little dark #fffaea;  */
+
+body.most-rapid #title-include-div h1 {
+	font-size: 115%;
+	margin-bottom: 40px;
+}
+
+body.most-rapid h2 {
+	font-size: 105%;
+	margin-bottom: 40px;
+}
+
+body.most-rapid h2 span.block {
+	font-size: 85%;
+}
+
+body.most-rapid h1.toowide {
+	width: 75%;
+}
+
+body.most-rapid h2.toowide {
+	width: 80%;
+}
+
+body.most-rapid h3 {
+	margin-top: 40px;
+}
+
+@media only screen and (max-width:500px) {
+	body.most-rapid .page-link {
+		margin-left: 4px;
+	}
+
+}
+
+/* list spacing copied from uarelove.css */
+
+/* list number, single, double or triple digits */
+ol.book {
+	margin-top: 35px;
+	padding-left: 42px;
+}
+
+@media only screen and (max-width: 560px) {
+	ol.book {
+		/* subtract 12px for smaller screens */
+		padding-left: 30px;
+	}
+}
+
+
+
+ol.book-double {
+	/* NO margin-top: 35px;*/
+	padding-left: 55px;
+}
+
+@media only screen and (max-width: 560px) {
+	ol.book-double {
+		padding-left: 43px;
+	}
+}
+
+
+ol.book-triple {
+	/* NO margin-top: 35px;*/
+	padding-left: 70px;
+}
+
+@media only screen and (max-width: 560px) {
+	ol.book-triple {
+		padding-left: 58px;
+	}
+}
+
+ol.book li,
+ol.book-double li,
+ol.book-triple li {
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 560px) {
+
+	ol.book li,
+	ol.book-double li,
+	ol.book-triple li {
+		margin-right: 3px;
+	}
+}
+
+p.awa-index-link {
+	display: none;
+}
+
+/* copied over fromn the main index page */
+p.page-link {
+	margin: 6px 0 30px 30px;
+}
+
+/* end */

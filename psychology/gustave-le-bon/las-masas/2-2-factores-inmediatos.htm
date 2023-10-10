@@ -1,0 +1,311 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2.2 Los factores inmediatos de la opinión de las masas</title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="2.2 Los factores inmediatos de la opinión de las masas">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="2-1-factores-remotos.htm">
+	<link rel="next" href="2-3-conductores-y-su-medios.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 290px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		label[for=element-toggle-15],
+		label[for=element-toggle-17],
+		label[for=element-toggle-18] {
+			cursor: pointer;
+		}
+
+		#element-toggle-15,
+		#element-toggle-17,
+		#element-toggle-18 {
+			display: none;
+		}
+
+		#element-toggle-15:not(:checked)~#toggled-element-15,
+		#element-toggle-17:not(:checked)~#toggled-element-17,
+		#element-toggle-18:not(:checked)~#toggled-element-18 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3 class="toowide">
+										<span class="block">Libro 2 Capítulo 2</span> Los factores inmediatos de la opinión de las masas
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/2-2-immediate-factors.htm">..2-2-immediate-factors.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="2-1-factores-remotos.htm">&lt; Factores Remotos</a></li>
+									<li class="align-right"><a href="2-3-conductores-y-su-medios.htm">Los conductores y sus medios &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#introduccion">Introducción</a></li>
+									<li><a href="#imagenes">1. Imágenes, palabras y fórmulas</a></li>
+									<li><a href="#illusiones">2. Illusiones </a></li>
+									<li><a href="#experiencia">3. Experiencia </a></li>
+									<li><a href="#razon">4. Razón </a></li>
+								</ul>
+							</nav>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="introduccion">&nbsp;</a>
+							<h4>
+								Introducción
+							</h4>
+							<p>
+								Acabamos de investigar los factores remotos y preparatorios que le otorgan a la mente de las masas una receptividad especial, haciendo posible en ella el crecimiento de ciertos sentimientos y de ciertas ideas. Ahora nos resta estudiar los factores capaces de actuar de manera directa. En el siguiente capítulo veremos cómo estos factores deberían ponerse en vigor a fin de que produzcan sus plenos efectos.
+							</p>
+							<p>
+								En la primer parte de este trabajo estudiamos los sentimientos, las ideas y los métodos de razonamiento de los cuerpos colectivos, y del conocimiento así adquirido evidentemente sería posible deducir de un modo general los medios para conseguir impresionar sus mentes. Ya sabemos qué es lo que impacta en la imaginación de las masas y nos hemos familiarizado con el poder y la contagiosidad de las sugestiones y, de ellas, especialmente las que son presentadas bajo la forma de imágenes. Sin embargo, puesto que las sugestiones pueden proceder de muy diversas fuentes, los factores capaces de actuar sobre las mentes de las masas pueden diferir considerablemente. Es necesario, pues, estudiarlas por separado. No es un estudio innecesario. Las masas son, en cierto modo, como la esfinge de la antigua fábula: es necesario, o bien llegar a una solución de los problemas presentados por su psicología, o bien resignarnos a ser devorados por ellas.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="imagenes">&nbsp;</a>
+							<h4>
+								1. Imágenes, palabras y fórmulas
+							</h4>
+							<p>
+								Al estudiar la imaginación de las masas hemos visto que la misma está particularmente abierta a las impresiones producidas por las imágenes. Estas imágenes no siempre están a mano, pero es posible evocarlas mediante el juicioso empleo de palabras y fórmulas. Utilizadas con arte, las mismas poseen en sobria verdad aquél misterioso poder otrora atribuido a ellas por los adeptos de la magia. En la mente de las masas ocasionan el nacimiento de las tempestades más formidables a las que, a su vez, también son capaces de calmar. Se podría levantar una pirámide de lejos más alta que la de Cheops con los huesos de los hombres que han sido víctimas del poder de las palabras y las fórmulas.
+							</p>
+							<p>
+								El poder de las palabras está relacionado con las imágenes que evocan, y es bastante independiente de su real significado. Las palabras cuyo sentido está peor definido son a veces las que poseen la mayor influencia. Tales son, por ejemplo, los términos democracia, socialismo, igualdad, libertad etc. cuyo significado es tan vago que gruesos volúmenes no alcanzan para establecerlo con precisión. Aún así, es cierto que un poder verdaderamente mágico está adosado a esas cortas sílabas, como si contuvieran la solución a todos los problemas. Sintetizan las aspiraciones inconscientes más diversas y la esperanza de su realización.
+							</p>
+							<p>
+								La razón y los argumentos son incapaces de combatir ciertas palabras y fórmulas. Se las pronuncia con solemnidad en presencia de las masas y, ni bien han sido pronunciadas, una expresión de respeto se hace visible en cada rostro y todas las cabezas se inclinan. Por muchos resultan consideradas como fuerzas naturales, como poderes sobrenaturales. Evocan imágenes grandiosas y vagas en la mente de las personas pero la misma vaguedad que las envuelve en la oscuridad aumenta su misterioso poder. Son las misteriosas divinidades ocultas detrás del tabernáculo al cual los devotos sólo se aproximan con miedo y temblando.
+							</p>
+							<p>
+								Las imágenes evocadas por las palabras, al ser independientes de su sentido, varían de época en época y de pueblo en pueblo mientras que las fórmulas se mantienen idénticas. Ciertas imágenes transitorias se relacionan con ciertas palabras: la palabra actúa meramente como si fuese el pulsador de un timbre eléctrico que las evoca.
+							</p>
+							<p>
+								No todas las palabras y todas las fórmulas poseen el poder de evocar imágenes, mientras que hay otras que alguna vez tuvieron este poder, pero lo han perdido en el transcurso del uso y han dejado de despertar alguna respuesta en la mente. Se convierten en vanos sonidos cuya utilidad principal es relevar a la persona que los emplea de la obligación de pensar. Armados de una pequeña cantidad de fórmulas y de lugares comunes aprendidos mientras fuimos jóvenes, poseemos todo lo que se necesita para desplazarnos por la vida sin la cansadora necesidad de tener que reflexionar sobre algo en absoluto.
+							</p>
+							<p>
+								Si es estudia cualquier idioma en particular, se observa que las palabras que lo componen varían en forma relativamente lenta durante el transcurso de las épocas mientras que las imágenes que estas palabras evocan, o los significados adosados a las palabras, cambian incesantemente. Esta es la razón por la cual, en otro trabajo, llegué a la conclusión que la traducción absoluta de un idioma, especialmente el de una lengua muerta, es totalmente imposible. ¿Que hacemos en realidad, cuando sustituimos una expresión del latín, el griego o el sánscrito por una palabra francesa, o incluso cuando tratamos de comprender un libro escrito en nuestro propio idioma hace dos o tres siglos? Simplemente ponemos las imágenes y las ideas con las cuales la vida moderna ha dotado a nuestra inteligencia en el lugar de nociones e imágenes absolutamente distintas que la vida antigua creó en la mente de razas expuestas a condiciones de existencia que no tienen ninguna analogía con las nuestras. Cuando los hombres de la Revolución se imaginaron que estaba copiando a los griegos y a los romanos, ¿qué estaban haciendo si no dándole a antiguas palabras un sentido que las mismas nunca tuvieron? ¿Qué semejanza puede existir entre las instituciones de los griegos y aquellas designadas en la actualidad por las mismas palabras? Una república de aquella época era una institución esencialmente aristocrática, formada por una reunión de pequeños déspotas que gobernaban sobre una masa de esclavos mantenidos en la más absoluta servidumbre. Estas aristocracias comunales, basadas en la esclavitud, no hubieran podido existir ni por un momento sin ella.
+							</p>
+							<p>
+								Y la palabra &quot;libertad&quot;, de nuevo, ¿qué significado pudo haber tenido en forma alguna similar al que le atribuimos hoy en día, durante un período en el cual la posibilidad de la libertad de pensamiento no era siquiera sospechada y no había crimen mayor ni más excepcional que el de discutir a los diosas, las leyes y las costumbres de la ciudad? ¿Qué significaba una palabra como &quot;patria&quot; para un ateniense o para un espartano, a menos que fuese el culto de Atenas o Esparta, y de ninguna manera el de Grecia, compuesta por ciudades rivales, siempre en guerra las unas contra las otras? ¿Qué significado tuvo la misma palabra &quot;patria&quot; entre los antiguos galos, divididos en tribus y razas rivales, poseyendo diferentes lenguajes y religiones, y que fueron tan fácilmente conquistados por César porque éste siempre encontró aliados entre ellos? Fue Roma la que hizo un país de la Galia otorgándole una unidad política y religiosa. Sin ir tan lejos, apenas hace dos siglos, ¿se puede creer que esta misma noción de patria fue concebida con el mismo significado que el que hoy tiene por príncipes franceses como el gran Conde, que se aliaban con el extranjero en contra de su soberano? Y de nuevo otra vez, la misma palabra ¿no tuvo acaso un sentido muy diferente al moderno para los emigrantes realistas franceses quienes pensaron que obedecían las leyes del honor al luchar contra Francia siendo que, desde su punto de vista, realmente las obedecieron porque la ley feudal obligaba al vasallo con su señor y no con la tierra, de modo tal que allí en dónde se hallaba el soberano, allí estaba la verdadera patria?
+							</p>
+							<p>
+								Son numerosas las palabras cuyo significado ha cambiado profundamente de época en época -palabras que sólo podemos llegar a comprender en el sentido en que antes fueron entendidas luego de un largo esfuerzo. Con razón se ha dicho que es necesario mucho estudio tan sólo para llegar a comprender lo que significaron para nuestros abuelos palabras tales como &quot;rey&quot; y la &quot;familia real&quot;. ¿Cuál podría, entonces, ser el caso con términos aún mucho más complejos?
+							</p>
+							<p>
+								Las palabras, pues, tienen sólo significados móviles y transitorios que cambian de época en época y de pueblo en pueblo; y cuando por su intermedio deseamos ejercer una influencia sobre la masa, el requisito es conocer el sentido que esa masa les da en un determinado momento, y no el significado que tuvieron antes o que pueden seguir teniendo para individuos de una constitución mental diferente.
+							</p>
+							<p>
+								Así, cuando las masas, como consecuencia de alzamientos políticos o cambios de creencia, han llegado a adquirir una profunda antipatía hacia las imágenes suscitadas por ciertas palabras, el primer deber del verdadero estadista es cambiar las palabras sin, por supuesto, meter mano en las cosas mismas ya que estas últimas se hallan demasiado íntimamente unidas a la constitución heredada como para ser transformadas. Hace mucho tiempo, el sensato Tocqueville observó que la obra del consulado y del imperio consistió más particularmente en revestir con nuevas palabras la mayor parte de las antiguas instituciones - esto es: en reemplazar palabras que evocaban imágenes desagradables en la imaginación de la masa por otras palabras cuya novedad impedía tales evocaciones. La <em>&quot;taille&quot;</em> o &quot; <em>tallage</em> &quot; se convirtió en un &quot;impuesto sobre la tierra&quot;; la &quot;gabela&quot; en el impuesto sobre la sal; los &quot;subsidios&quot; se hicieron contribuciones indirectas y deberes consolidados; el impuesto sobre las compañías comerciales y los gremios pasó a llamarse &quot;licencias&quot;, etc.
+							</p>
+							<p>
+								Una de las funciones más esenciales de los estadistas consiste, así, en bautizar con palabras populares o, en todo caso, indiferentes, las cosas que la masa no puede soportar bajo sus antiguos nombres. El poder de las palabras es tan grande que es suficiente designar con términos bien elegidos las cosas más odiosas para hacerlas aceptables a las masas. Taine observa con razón que fue invocando la libertad y la fraternidad - palabras muy populares en su época - que los jacobinos fueron capaces de &quot;instalar un despotismo digno de Dahomey, un tribunal similar al de la Inquisición y producir una hecatombe humana similar a las del antiguo Méjico&quot;. El arte de los que gobiernan, al igual que en el caso del arte de los abogados, consiste sobre todo en la ciencia del empleo de las palabras. Una de las mayores dificultades de este arte es que, en una y la misma sociedad, los mismos términos muy frecuentemente tienen diferentes significados para las diferentes clases sociales, las cuales emplean aparentemente las mismas palabras pero nunca hablan el mismo idioma.
+							</p>
+							<p>
+								En los ejemplos precedentes ha sido especialmente el tiempo el que ha intervenido como el factor principal en el cambio del sentido de las palabras. Sin embargo, si también hacemos intervenir a la raza, veremos que durante el mismo período, entre personas igualmente civilizadas pero de diferente raza, las mismas palabras con frecuencia corresponden a ideas extremadamente disímiles. Es imposible entender estas diferencias sin haber viajado mucho y por esta razón no insistiré sobre ello. Me limitaré a observar que son precisamente las palabras más utilizadas las que entre diferentes pueblos poseen los más diferentes significados. Tal es el caso, por ejemplo, de las palabras &quot;democracia&quot; y &quot;socialismo&quot; de uso tan frecuente hoy en día.
+							</p>
+							<p>
+								En realidad, corresponden a ideas y a imágenes bastante contradictorias en la mente latina y en la anglosajona. Para los pueblos latinos, la palabra &quot;democracia&quot; significa más específicamente la subordinación de la voluntad y de la iniciativa del individuo a la voluntad e iniciativa de la comunidad representada por el Estado. Es el Estado el que termina siendo encargado, en un grado cada vez más grande, con la dirección de todo, la centralización, el monopolio y la fabricación de todo. Es al Estado al que apelan constantemente todos los partidos políticos sin excepción, sean radicales, socialistas o monárquicos. Entre los anglosajones y especialmente en América, la misma palabra &quot;democracia&quot; significa, por el contrario, el intenso desarrollo de la voluntad del individuo y la subordinación más completa posible del Estado al cual, con la excepción de la policía, el ejército y las relaciones diplomáticas, no se le permite dirigir nada, ni siquiera a la instrucción pública. Se puede apreciar, así, cómo la misma palabra, que para un pueblo significa la subordinación de la voluntad y de la iniciativa del individuo y la preponderancia del Estado, para el otro significa el excesivo desarrollo de la voluntad y de la iniciativa del individuo y la completa subordinación del Estado.&nbsp;<sup>[15]</sup>
+							</p>
+							<label for="element-toggle-15">
+								[15. Mostrar/ocultar nota.]</label>
+							<input id="element-toggle-15" type="checkbox">
+							<div id="toggled-element-15" class="cfnote hidden">
+								<p>
+									[15. En mi libro <em>&quot;Las Leyes de la Evolución Psicológica de los Pueblos</em> &quot; insistí en detalle sobre las diferencias que distinguen el ideal democrático latino del ideal democrático anglosajón. Independientemente y como resultado de sus viajes, M. Paul Bourguet, en su bastante reciente libro <em>&quot;Outre-Mer&quot;</em> ha llegado a conclusiones casi idénticas a las mías.]
+								</p>
+							</div>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="illusiones">&nbsp;</a>
+							<h4>
+								2. Ilusiones
+							</h4>
+							<p>
+								Desde los albores de la civilización en adelante las masas siempre ha sufrido la influencia de ilusiones. A los creadores de ilusiones les han erigido más templos, más estatuas y más altares que a cualquier otra clase de hombres. Ya sean las ilusiones religiosas del pasado o las ilusiones filosóficas y sociales del presente, estos formidables poderes soberanos siempre pueden ser encontrados a la cabeza de todas las civilizaciones que sucesivamente han florecido sobre nuestro planeta. Fue en su nombre que se construyeron los templos de Caldea y de Egipto, y los edificios religiosos de la Edad Media, y esa vasta rebelión que sacudió a toda Europa hace un siglo; y no hay una sola de nuestras concepciones artísticas o sociales que se halle libre de su poderosa influencia. Ocasionalmente, al costo de terribles disturbios, el hombre las supera, pero parece estar siempre condenado a volverlas a erigir. Sin ellas nunca hubiera emergido de su primitivo estado de barbarie, y sin ellas regresaría otra vez a él. Sin duda, son huidizas sombras, pero estas hijas de nuestros sueños han forzado a las naciones a crear cualquiera de las artes que puede enorgullecerse de esplendor o de grandeza civilizatoria.
+							</p>
+							<blockquote>
+								<p>
+									&quot;Si se destruyesen en todos los museos y librerías (...) todos los trabajos y todos los monumentos que las religiones han inspirado ¿qué quedaría de los grandes sueños de la humanidad? El darle a los hombres esa porción de esperanza y de ilusión sin la cual no pueden vivir, ésa es la razón de existir de los dioses, los héroes y los poetas. Durante cincuenta años la ciencia pareció hacerse cargo de esta tarea. Pero la ciencia se ha visto comprometida en corazones hambrientos de un ideal, porque no se atreve a ser suficientemente generosa en promesas, porque no puede mentir&quot;.&nbsp;<sup>[16]</sup>
+								</p>
+							</blockquote>
+							<p class="fnote">
+								[16. Daniel Lesueur.]
+							</p>
+							<p>
+								Los filósofos del siglo pasado se dedicaron con fervor a la destrucción de las ilusiones religiosas, políticas y sociales en las que vivieron nuestros antepasados por una larga serie de siglos. Al destruirlas, secaron las fuentes de la esperanza y la resignación. Detrás de las quimeras inmoladas se encontraron frente a frente con las ciegas y silenciosas fuerzas de la naturaleza, que son inexorables con la debilidad e ignoran la compasión.
+							</p>
+							<p>
+								A pesar de todos sus progresos, la filosofía ha sido incapaz hasta ahora de ofrecer a las masas algún ideal que las seduzca pero, como éstas deben tener ilusiones a toda costa, instintivamente se vuelven, al igual que insectos en busca de luz, hacia los retóricos que les conceden lo que quieren. No es la verdad sino el error el que ha constituido el factor principal en la evolución de las naciones, y la razón por la cual el socialismo es tan poderoso hoy en día es que constituye la última ilusión que todavía sigue siendo vital. A pesar de todas las demostraciones científicas, continúa creciendo. Su principal fuerza reside en que es liderado por mentes lo suficientemente ignorantes de cómo son las cosas en realidad como para temerariamente prometerle la felicidad a la humanidad. La ilusión social reina hoy sobre todas las ruinas amontonadas del pasado y a ella pertenece el futuro. Las masas nunca estuvieron sedientas de verdades. Se alejan de la evidencia que no es de su gusto y prefieren deificar el error si el error las seduce. Quienquiera que sea capaz de proveerlas de ilusiones será fácilmente su amo; quienquiera que atente destruir sus ilusiones será siempre su víctima.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="experiencia">&nbsp;</a>
+							<h4>
+								3. Experiencia
+							</h4>
+							<p>
+								La experiencia constituye casi el único proceso efectivo mediante el cual una verdad puede ser sólidamente establecida en la mente de las masas destruyendo ilusiones que se han vuelto demasiado peligrosas. A este fin, sin embargo, es necesario que la experiencia tenga lugar a una escala muy grande y que se repita muy frecuentemente. Las experiencias sufridas por una generación son, por regla, inútiles para la generación siguiente y por esa razón los hechos históricos citados para demostrar un punto de vista no sirven a ningún propósito. Su única utilidad es la de demostrar hasta qué punto las experiencias tienen que ser repetidas de época en época para ejercer alguna influencia o para sacudir a una opinión equivocada cuando la misma está sólidamente implantada en la mente de las masas.
+							</p>
+							<p>
+								Nuestro siglo y el que lo precedió indudablemente será mencionado por los historiadores como una era de curiosos experimentos que en ninguna otra época fueron intentados a esa escala.
+							</p>
+							<p>
+								El más gigantesco de esos experimentos fue la Revolución Francesa. Para descubrir que la sociedad no puede ser remodelada de pies a cabeza de acuerdo con los dictados de la razón pura fue necesario que varios millones de hombres fuesen masacrados y que Europa se viese profundamente perturbada por un período de veinte años. Para demostrarnos que los dictadores les salen caro a las naciones que los aclaman, fueron necesarias dos experiencias ruinosas en cincuenta años y, a pesar de su nitidez, no parecen haber sido lo suficientemente convincentes. La primera, sin embargo, costó tres millones de hombres y una invasión; la segunda implicó la pérdida de territorio y trajo como secuela la necesidad de ejércitos permanentes. Una tercera se intentó no hace mucho y seguramente será vuelta a intentar algún día. Para forzar a toda una nación a admitir que el gran ejército alemán no era, como se alegaba comúnmente hace treinta años, una especie de inofensiva guardia nacional, <sup>[17]</sup> tuvo que tener lugar la guerra que nos salió tan cara. Para imponer el reconocimiento que el proteccionismo arruina a las naciones que la adoptan, serán necesarios al menos veinte años de experiencias desastrosas. Estos ejemplos podrían multiplicarse hasta el infinito.
+							</p>
+							<label for="element-toggle-17">
+								[17. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-17" type="checkbox">
+							<div id="toggled-element-17" class="cfnote hidden">
+								<p>
+									[17. La opinión de la masa fue formada en este caso por esas asociaciones rudimentarias de cosas disímiles cuyo mecanismo ya he explicado anteriormente. Para la guardia nacional francesa de ese período, compuesta por pacíficos comerciantes, completamente carentes de disciplina y bastante incapaces de ser tomados en serio, cualquier cosa que tuviese un nombre similar evocaba la misma concepción y, consecuentemente, terminaba siendo considerada inofensiva. El error de la masa fue compartido en aquél tiempo por sus líderes, como sucede tan frecuentemente en relación con opiniones que tienen que ver con generalizaciones. En un discurso pronunciado en la Cámara el 31 de Diciembre e 1867 y citado en un libro por M. E. Ollivier que ha aparecido recientemente, un estadista que con frecuencia siguió la opinión de la masa pero que nunca se le adelantó - me refiero a M. Thiers - declaró que Prusia sólo poseía una guardia nacional, análoga a la de Francia y consecuentemente sin importancia, en adición a un ejército regular aproximadamente igual al ejército regular francés. Fue una afirmación casi igual de certera como las predicciones del mismo estadista referidas al insignificante futuro de los ferrocarriles.]
+								</p>
+							</div>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="razon">&nbsp;</a>
+							<h4>
+								4. Razón
+							</h4>
+							<p>
+								Al enumerar los factores capaces de impresionar la mente de las masas se podría prescindir de toda referencia a la razón si no fuese necesario destacar el valor negativo de su influencia.
+							</p>
+							<p>
+								Ya hemos visto que las masas no resultan influenciadas por el razonamiento y sólo pueden comprender simples asociaciones de ideas. Los oradores que saben como impresionarlas apelan en consecuencia a sus sentimientos y nunca a su razón. Las leyes de la lógica no ejercen ninguna acción sobre las masas.&nbsp;<sup>[18]</sup>
+							</p>
+							<label for="element-toggle-18">
+								[18. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-18" type="checkbox">
+							<div id="toggled-element-18" class="cfnote hidden">
+								<p>
+									[18. Mis primeras observaciones relacionadas con el arte de impresionar multitudes y referidas a la escasa ayuda que puede derivarse en este sentido de las reglas de la lógica se remontan al sitio de Paris y al día en que vi como era conducido al Louvre, dónde residía entonces el gobierno, al Mariscal V— a quien una muchedumbre furiosa supuestamente había sorprendido en el acto de robar los planos de las fortificaciones para vendérselos a los prusianos. Un miembro del Parlamento (G. P--), muy célebre por su retórica, salió a hablarle a la masa. Yo había esperado que el orador señalaría que el Mariscal acusado era positivamente uno de los que habían construido las fortificaciones cuyos planos, para más datos, se hallaban a la venta en todas las librerías. Para mi inmenso asombro - era muy joven en aquél tiempo -el discurso fue sobre lineamientos bastante diferentes. &quot;Se hará justicia&quot; - exclamó el orador avanzando hacia el prisionero - &quot;y será una justicia sin misericordia. Dejen que el Gobierno de la Defensa Nacional termine vuestra investigación. Mientras tanto, mantendremos al prisionero bajo custodia&quot;. Calmada inmediatamente por esta aparente concesión, la masa se disolvió y un cuarto de hora después el Mariscal pudo regresar a su casa. Lo hubieran hecho pedazos inevitablemente si el orador le hubiese ofrecido a la masa furiosa los argumentos lógicos que mi extrema juventud me inducía a considerar como muy convincentes.]
+								</p>
+							</div>
+							<p>
+								Para producir una convicción en las masas es necesario, ante todo, comprender acabadamente los sentimientos que las animan, pretender compartir esos sentimientos y luego intentar modificarlos haciendo surgir por medio de asociaciones rudimentarias ciertas nociones eminentemente sugestivas. Hay que ser capaces, si es necesario, de regresar al punto de partida y, por sobre todo, de divinizar a cada instante los sentimientos que nuestro discurso está haciendo nacer. Esta necesidad de variar incesantemente nuestro lenguaje de acuerdo con el efecto producido en el momento de hablar le quita de entrada toda eficacia a una perorata estudiada y preparada de antemano. En un discurso como ése, el orador sigue su propia línea de pensamiento, no la de sus oyentes, y por este sólo hecho su influencia es aniquilada.
+							</p>
+							<p>
+								Las mentes lógicas, acostumbradas a ser convencidas por una cadena algo firme de razonamientos no pueden evitar el recurrir a este modo de persuasión cuando se dirigen a las masas, y la ineficacia de sus argumentos siempre los sorprende. &quot;Las consecuencias matemáticas usuales basadas en el silogismo - esto es: en asociaciones de identidades - son imperativas...&quot; escribe un experto en lógica. &quot;Esta imperatividad obligaría al asentimiento incluso a una masa inorgánica si la misma fuese capaz de realizar asociaciones de identidades.&quot; Lo cual es indudablemente cierto, pero una multitud es tan incapaz como una masa inorgánica de realizar tales asociaciones, y ni hablemos de comprenderlas. Si se hiciera el intento de convencer por razonamiento a mentes primitivas - a salvajes o a niños, por ejemplo - se comprendería el escaso valor que posee este método.
+							</p>
+							<p>
+								Ni siquiera es necesario descender al nivel de seres primitivos para lograr una percepción de la total impotencia del razonamiento cuando éste tiene que luchar contra el sentimiento. Simplemente traigamos a la mente qué tenaces fueron, durante siglos, las supersticiones religiosas contradictorias con la más simple de las lógicas. Por casi dos mil años los genios más luminosos se han inclinado ante sus leyes y tuvieron que llegar los tiempos modernos para que su veracidad fuese apenas puesta en duda. La Edad Media y el Renacimiento tuvieron muchos hombres ilustrados, pero ni uno solo que lograra apreciar por razonamiento el aspecto infantil de sus supersticiones, o que pronunciase incluso una leve duda respecto de las fechorías del diablo o de la necesidad de quemar hechiceros.
+							</p>
+							<p>
+								¿Debemos lamentar que las masas nunca son guiadas por la razón? No nos aventuraríamos a afirmarlo. Sin duda la razón humana no hubiera logrado espolear a la humanidad a lo largo del camino de la civilización con el ardor y la tenacidad con que lo hicieron sus ilusiones. Estas ilusiones, hijas de las fuerzas inconscientes que las guían, fueron indudablemente necesarias. Cada raza lleva en su constitución mental las leyes de su destino y quizás es a estas leyes que obedece con un impulso irresistible, incluso en el caso de aquellos impulsos que aparentemente son los más irracionales. A veces parece que las naciones estuviesen sometidas a fuerzas secretas, análogas a las que compelen a la bellota a convertirse en roble, o al cometa a transitar por su órbita.
+							</p>
+							<p>
+								La escasa noción que es posible obtener de estas fuerzas debemos buscarla en el curso general de la evolución de un pueblo y no en los hechos aislados de que esta evolución a veces parece provenir. Si fuesen tomados en consideración solamente estos factores, la historia parecería ser el resultado de una serie de chances improbables. Fue improbable que un carpintero galileo se convirtiese por dos mil años en un Dios todopoderoso en cuyo nombre se fundaron las civilizaciones más importantes; improbable también que unas pocas bandas de árabes, emergiendo de sus desiertos, conquistaran la mayor parte del antiguo mundo grecorromano y estableciesen un imperio más grande que el de Alejandro; improbable, de nuevo, que en Europa, en un avanzado momento de su desarrollo, y cuando la autoridad en ella había sido sistemáticamente jerarquizada, un oscuro teniente de artillería hubiese podido tener éxito en reinar sobre una multitud de reyes y de pueblos.
+							</p>
+							<p>
+								Dejemos, pues, la razón a los filósofos y no insistamos con demasiada fuerza en su intervención en el gobierno de los hombres. No es por la razón sino, mucho más frecuentemente, a pesar de ella que se crean esos sentimientos que constituyen la fuente de toda civilización - sentimientos tales como el honor, el autosacrificio, la fe religiosa, el patriotismo y la pasión por la gloria.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="2-1-factores-remotos.htm">&lt; Factores Remotos</a></li>
+									<li class="align-right"><a href="2-3-conductores-y-su-medios.htm">Los conductores y sus medios &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

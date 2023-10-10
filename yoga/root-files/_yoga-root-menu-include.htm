@@ -1,0 +1,52 @@
+<!-- start of menu include file -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel will be relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<!-- not used <a href="contents.htm"></a>-->
+		<!-- must have associated css -->
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li class="top-item"><a href="/yoga/">Yoga index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+		</ul>
+	</div>
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/yoga/">Yoga index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<!-- short menu, no scroll needed -->
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent -->
+		<ul class="menu-text">
+			<li>Yoga Section</li>
+
+		</ul>
+		<ul class="menu-text">
+			<li>
+				<img class="menu-image" src="/yoga/images/gorakshanath.jpg" alt="Gorakshanath" />
+			</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work -->
+		<!-- must Not include directory in path for script to work -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<li><a href="yoga-files-redirect-page.htm">Yoga Redirect <span class="block">(this page)</span></a></li>
+
+				<li class="spacer">
+					<hr />
+				</li>
+			</ul>
+		</div>
+
+		<!-- short menu, no scroll needed -->
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end #menu-include-file-div-->
+<!-- end of menu include file -->

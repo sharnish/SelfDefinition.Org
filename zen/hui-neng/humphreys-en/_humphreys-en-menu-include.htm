@@ -1,0 +1,119 @@
+<!-- start of menu include file   Update March 30, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/zen/">Zen index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();" role="button">Top of page</a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/zen/">Zen index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center">
+            <li class="normal note">
+                <img class="menu-image" src="images/huineng-humphreys.jpg" alt="Hui Neng" />
+            </li>
+            <!-- image source:
+                http://www.thezengateway.com/latest-news/the-story-of-the-sixth-patriarch-hui-nengeno-daikan
+                -->
+            <li style="font-size:120%;">Platform Sutra</li>
+            <li style="margin-top:0;">Sutra of the Sixth Patriarch Hui Neng <span class="normal note">(638-713)</span></li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="preface.htm">Preface and Foreword</a></li>
+                <li><a href="01-autobiography.htm">1. Autobiography</a></li>
+                <li><a href="02-on-prajna.htm">2. On Prajñā</a></li>
+                <li><a href="03-questions-and-answers.htm">3. Questions and Answers</a></li>
+                <li><a href="04-samadhi-and-prajna.htm">4. Samadhi and Prajna</a></li>
+                <li><a href="05-dhyana.htm">5. Dhyana</a></li>
+                <li><a href="06-on-repentence.htm">6. On Repentence</a></li>
+                <li><a href="07-temperament-and-circumstances.htm">7. Temperament and Circumstances</a></li>
+                <li><a href="08-sudden-and-gradual.htm">8. Sudden and Gradual</a></li>
+                <li><a href="09-royal-patronage.htm">9. Royal Patronage</a></li>
+                <li><a href="10-his-final-instructions.htm">10. His Final Instructions</a></li>
+                <li><a href="appendix-by-ling-to.htm">Appendix by Ling To, the Stupa Keeper</a></li>
+                <li><a style="margin-top:20px;" href="version-comparison-en.htm">Version Comparison</a></li>
+                <li>
+                    <hr style="margin-left:0;margin-bottom:0;" />
+                </li>
+                <li><a class="gold-if-dark" style="margin-top:0;" href="/zen/hui-neng/platform/contents.htm">Goddard Version</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="external-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+
+                <li class="external-first-item">Huineng at <a href="https://en.wikipedia.org/wiki/Huineng">Wikipedia</a>
+                </li>
+                <li>Platform Sutra <a href="https://en.wikipedia.org/wiki/Platform_Sutra">Wikipedia</a></li>
+                <li>Diamond Sutra <a href="https://en.wikipedia.org/wiki/Diamond_Sutra">Wikipedia</a></li>
+                <li>Sudden Enlightenment <span class="nowrap">at <a href="https://en.wikipedia.org/wiki/Subitism">Wikipedia</a></span></li>
+                <li>Christmas Humphreys<br /> at <a href="https://en.wikipedia.org/wiki/Christmas_Humphreys">Wikipedia</a></li>
+                <li>Huineng resources at <a href="https://terebess.hu/zen/huineng-eng.html">Terebess.Hu</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">More Zen on this site</li>
+                <li class="site-first-item">Garma C.C. Chang <a href="/zen/garma-chang/practice-of-zen/contents.htm">The
+                        Practice of Zen </a></li>
+                <li>Huang Po: <a style="display:inline;" href="/zen/huang-po/transmission/contents.htm">The Zen
+                        Teachings of Huang Po on Transmission of Mind &ndash; Trans. John Blofeld</a></li>
+                <li>Huang Po: <a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Dharma of Mind
+                        Transmission &ndash; Trans. Lok To</a></li>
+                <li>Hubert Benoit: <a href="/zen/benoit/supreme-doctrine/contents.htm">The Supreme Doctrine</a></li>
+                <li>Yongjia Xuanjue: <a href="/zen/song-of-enlightenment/yongjia-xuanjue-song-of-enlightenment-shasta-abbey.htm">Song of
+                        Enlightenment</a></li>
+                <li>Hsin-Hsin Ming: <a href="/zen/hsin-hsin-ming/faith-in-mind-dusan-pajin-translation.htm">On Faith In
+                        Mind</a></li>
+            </ul>
+        </div>
+
+        <div class="external-links">
+            <ul class="menu-section">
+                <li class="external-links-item">External links</li>
+                <li class="external-first-item">Terebess.Hu:
+                    <a href="https://terebess.hu/zen/huineng-eng.html">Hui Neng reference page</a>
+                </li>
+                <li>Terebess.Hu:
+                    <a href="https://terebess.hu/zen/textindex.html">Zen Literature Index</a>
+                </li>
+                <li>TheZenSite: <a href="http://www.thezensite.com/index.html">thezensite.com</a></li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

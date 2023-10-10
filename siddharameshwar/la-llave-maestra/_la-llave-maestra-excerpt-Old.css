@@ -1,0 +1,155 @@
+/* file:  /siddharameshwar/la-llave-maestra/_la-llave-maestra.css */
+
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+
+html, body, #fixed-header-small-screen, #menu-site-small-screen {background:#f3fcff;}
+
+
+/* left menu */
+
+ #nav .menu-section a.active, #menu-scroll, #menu-scroll a  {background: #e3ecee;}
+
+
+
+/* SCRIPTS MUST BE HTTPS NOT HTTP, OR THEY WILL NOT LOAD */
+
+ 
+/* why is this necessary???? These are default, but margins are zero when stacked.*/
+
+p.toowide {margin-top:1em;margin-bottom:1em;}
+ 
+
+/* copied Sep 3, 2019 from Eglish version. 
+   Unchanged except the 2-line top menu positioon (at bottom) */
+
+/* narrow width a little. Copied from Law of Suggestion.
+   Default wide screen is 530 which
+ends up producing width of 525px Do NOT include "body", messes up the margins */
+@media only screen and (min-width:520px) {
+	#main-content, announce, article, section {width:513px;}
+}
+ 
+
+/* why is this necessary???? These are default, but margins are zero when stacked.*/
+p.toowide {margin-top:1em;margin-bottom:1em;}
+
+/* Page titles are short, don't make the menu highlighting
+so wide, apply to all, not just the highlighted item */
+#nav .menu-section a {width:140px;}
+
+
+
+/* add class */
+.strong {font-weight:bold;}
+
+/* Deemphasize <strong> a little */
+strong, .strong {font-size:95%;}
+
+/* other font sizes */
+p.note, div.note, .note {font-size:90%} 
+
+p.fnote, div.fnote, .fnote {font-size:90%}
+
+.note80 {font-size:80%}
+
+.tiny {font-size:70%;}
+
+p.blockquote, div.blockquote {margin-left:12px;}
+
+@media only screen and (max-width:500px)
+{
+    p.note, div.note, .note {font-size:95%} 
+
+	p.fnote, div.fnote, .fnote {font-size:95%}
+
+	.note80 {font-size:90%}
+
+    .tiny {font-size:80%;}
+
+    p.blockquote, div.blockquote {margin-left:4px;}
+
+}
+
+#menu-site li.scroll-menu-item {font-size: 11px;}
+
+
+/* FOR PHONES ONLY (less than Ipad) ; NEED TO SHRINK SPACE AT TOP
+   SO THAT THE NAV MENU CAN BE SEEN TO HAVE CHANGED */
+/* shrink the next-page Nav, default is 40px */
+@media only screen and (max-width: 767px)
+{   
+    p.logo {margin-bottom:3px;}
+
+    .title-image-div {margin:0 auto;}
+
+    .title-image {width: 80%;max-width: 140px;}
+
+    nav.next-previous-item-nav {margin-top:0;margin-bottom:0;}
+
+    ul.next-previous-item-list {margin-top:5px;margin-bottom:5px;}
+
+    header h3 span.block {margin-bottom:0;}
+}
+
+/* text size */
+/* try to get more on phones reducing the font size from 18px to 17px */
+/* Pixl 2 = 411 ; Iphone X = 375px; Nexus 5 = 360 ;  */
+/* Did not use */
+@media only screen and (max-width: 415px)
+{
+ article {font-size:18px;}
+}
+/* Iphone 4 = 320px */
+@media only screen and (max-width: 320px)
+{
+ article {font-size:17px;}
+}
+
+#menu-site {margin-top:30px;}
+
+
+/* top menu fix Sep 3 , 2019 */
+#fixed-header-small-screen   {border:0px solid blue;}
+#menu-site-small-screen      {border:0px solid red;}
+#main-content                {border:0px solid maroon;}
+#menu-site-small-screen li   {border:0px solid green;}
+
+#menu-site-small-screen li   {margin-right:15px}
+#menu-site-small-screen li:last-child   {margin-right:0px;}
+
+/* single line */
+@media only screen and (max-width: 767px)
+{
+    /* don't use, screws it up
+    #fixed-header-small-screen {width:calc(100% - 25px);} */
+    #menu-site-small-screen {width:calc(100% - 15px);}
+
+	#fixed-header-small-screen,
+    #menu-site-small-screen {top:0px;height:70px;}
+    #main-content {top:75px;}
+}
+
+/* shrink the menu items a little */
+@media only screen and (max-width: 560px)
+{
+    #menu-site-small-screen li {margin-right:5px}
+}
+/* MASTER KEY EXCERPT - same asenglish version
+breakpoint is at 403px with borders and 393px with no borders */
+@media only screen and (max-width: 403px)
+{
+    #fixed-header-small-screen,
+    #menu-site-small-screen {height:100px;}
+    #main-content {top:105px;}
+}
+
+
+/* end */
+
+    
+     
+
+
+

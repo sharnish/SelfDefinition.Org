@@ -1,0 +1,40 @@
+/* file:  /zen/dongsha/_dongshan.css
+
+Update Sep 7, 2019. Airil 8, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "Update April , 2022";
+        /* KEEP THIS */
+        font-size: 65%;
+    }
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #ffffee;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #bde0ff;
+}
+
+
+
+
+/* end */

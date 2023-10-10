@@ -1,0 +1,89 @@
+<!-- start of menu include file Update June 21, 2020 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li id="menu-totop"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top:15px;line-height:1.6em;">
+			<li>Huang Po's Sermon</li>
+			<li class="normal note">Translated by D.T. Suzuki</li>
+			<li>
+				<img class="menu-image" src="images/huang-po.jpg" alt="Huang-po" />
+			</li>
+			<li>Huang-po <span class="normal note">(d. 850)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top:20px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="huang-po-sermon-suzuki.htm">Huang Po's Sermon<br /> (this page)</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Huang-po (Huangbo Xiyun) at <a href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also by Huang Po</li>
+				<li class="site-first-item">Translated by Lok To: <a style="display:block" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">Doctrine of Mind Transmission</a></li>
+				<li>translated by John Blofeld: <a href="/zen/huang-po/transmission/contents.htm"> The Zen Teaching of Huang Po
+						On the Transmission of Mind </a></li>
+				<li class="site-links-item">Also in Zen</li>
+				<li class="site-first-item"><a href="/zen/hui-neng/platform/contents.htm">Sutra of Hui Neng <br />(Platform Sutra)</a></li>
+				<li>Garma C.C. Chang
+					<a style="display:block" href="/zen/garma-chang/practice-of-zen/contents.htm">The Practice of Zen</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links</li>
+				<li class="external-first-item">This document at Terebess.Hu in html: <a class="inline" href="https://terebess.hu/zen/huangbo.html#a3">huangbo.html#a3</a></li>
+				<li>Huang-po page at <a style="display:inline;" href="https://terebess.hu/zen/huangbo.html">Terebes.Hu: many <br />articles and authors</a></li>
+				<li>Huang-po at <a href="https://www.selfdiscoveryportal.com/cmHuangPo.htm">SelfDiscoveryPortal.Com</a></li>
+				<li>D.T. Suzuki, Manual of Zen Buddhism, 122 page PDF <a style="display:inline;" href="http://www.buddhanet.net/pdf_file/manual_zen.pdf">www.buddhanet.net</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

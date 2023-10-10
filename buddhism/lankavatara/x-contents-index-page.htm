@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <script src="/scripts/recoverdivscroll.js"></script>
+
+    <style>
+        /* ???? this removes the need for a spacer on a contents or other narrow page.
+		   ???? must be #main-content, -- NO  not #article -- MAYBE
+		#main-content {width:100%;} */
+
+
+        /* THERE ARE 2 MAIN MENU SECTIONS, CHOOSE ONLY ONE
+		   NAV.CONTENTS -OR-  id="index-lists" -> class="index-contents-links"  */
+
+
+        /* START NAV#CONTENTS SECTION */
+        /* START NAV#CONTENTS SECTION */
+        /* START NAV#CONTENTS SECTION */
+
+
+        /* move this to css stylesheet
+		nav.contents .item:hover {
+            background-color: #bde0ff;
+        }
+		*/
+
+
+
+        /* CSS3 columns; see Sadony examples
+        	Also Transmission paragraphing	*/
+        	
+		/* These styles are default in 2022.CSS. 
+        	modify in project if necessary
+         */
+        	 
+       	div.to-center {
+            width: 400px;
+            margin: 0 auto;
+        }
+        
+        nav.contents .item {
+            width: 120px;
+        }
+
+		nav.contents .item {
+            margin-bottom: 10px;
+        }        
+
+        nav.contents {
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            columns: 3;
+            width: 100%;
+            margin: 0 auto;
+            border: 1px solid yellow;
+        }
+
+        @media only screen and (max-width:450px) {
+            div.to-center {
+                width: 300px;
+            }
+
+            .contents {
+                -webkit-columns: 2;
+                -moz-columns: 2;
+                columns: 2;
+            }
+        }
+
+        /* Avoid column breaks:
+        https://css-tricks.com/almanac/properties/b/break-inside/
+        */
+        /*
+        div.item {
+            -webkit-column-break-inside:avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            }
+        */
+
+     
+
+        /*
+        @media only screen and (max-width:500px) {
+			.contents {
+				-webkit-columns: 1;
+				-moz-columns: 1;
+				columns: 1;
+			}
+        }
+        */
+
+        /* End Columns */
+        /* End Columns */
+        /* End Columns */
+
+
+        /* #index-lists is a nav */
+        #index-lists {
+            margin-top: 30px;
+            border: 1px solid red;
+            margin-left: 40px;
+        }
+
+        #index-lists hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 75%;
+        }
+
+        @media only screen and (max-width:540px) {
+            #index-lists {
+                margin-left: 10px;
+            }
+        }
+
+        #index-lists ul {
+            list-style: none;
+            margin: 0 auto;
+            padding-left: 0;
+            border: 1px solid blue;
+            width: 400px;
+        }
+
+        /* adjust to agree with the above */
+        @media only screen and (max-width:400px) {
+            #index-lists ul {
+                width: 100%;
+            }
+        }
+
+        #index-lists ul li {
+            margin: 0 0 25px;
+            border: 1px solid green;
+        }
+
+        #index-lists a {
+            display: inline-block;
+        }
+
+        #index-lists .index-contents-links {}
+
+        ul.index-external-links,
+        ul.index-site-links,
+        ul.index-optional-links {
+            font-size: 90%;
+            padding-left: 0;
+        }
+
+
+        /* Color coding is replicated on dark stylesheet */
+
+        #index-lists ul li.external-links-item,
+        #index-lists ul li.site-links-item,
+        #index-lists ul li.optional-links-item {
+            color: maroon;
+        }
+
+        /* remove hard-coded color */
+        #index-lists ul li.external-links-item,
+        #index-lists ul li.site-links-item,
+        #index-lists ul li.optional-links-item {
+            font-weight: bold;
+            font-size: 95%;
+            /* color: maroon; */
+            margin-bottom: 3px;
+            padding-bottom: 0;
+        }
+
+        #index-lists ul li.external-first-item,
+        #index-lists ul li.site-first-item,
+        #index-lists ul li.optional-first-item {
+            margin-top: 3px;
+            padding-top: 0;
+        }
+
+        #index-lists ul li.external-subhead-item,
+        #index-lists ul li.site-subhead-item,
+        #index-lists ul li.optional-subhead-item {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            padding-top: 0;
+        }
+
+        /* this reduces left margin for this page only when screen size is small say try  360  */
+        @media only screen and (max-width:360px) {
+            #article {}
+
+            div#index-lists ul li {
+                margin-left: -30px;
+            }
+        }
+
+        /* add bolding (new Feb 2020 */
+        .site-subhead-item {
+            font-weight: bold;
+            font-size: 95%;
+        }
+
+
+
+        /* Try something like this to fill width on SMALL SCREENS when a page is very narrow.
+   had been using a spacer prior to Voice of the Silence reformat
+		#main-content {width:100%;}  Must be in media query, see CS sheet, screws up width on wide pages
+		#article {margin:0 auto;}
+		*/
+
+        #main-content {}
+
+        /* Works in voz-indice.htm but not in vox-index.htm here ?? */
+        #article {
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_voice-of-silence-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_voice-of-silence-title-include.htm"); ?>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"></li>
+                                    <li class="align-right"><a href="voice-contents.htm">Contents and Preface &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <header>
+                                <h3>
+                                    Contents or Index
+                                </h3>
+                                <p class="tiny">
+                                    Esta página en español: <a class="inline-block" href=""></a>
+                                </p>
+                            </header>
+
+                            <!-- these are CSS3 columns -->
+                            <div class="to-center">
+                                <!-- items have :hover styling, color change -->
+                                <!-- the uls don't float; they are display: inline-block -->
+                                <nav class="contents">
+                                    <div class="item">
+                                        <a href="title-page.htm">Title Page</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="part-1.htm">Part 1</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="part-2.htm">Part 2</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="part-3.htm">Part 3</a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- end of #to-center -->
+
+
+
+
+                            <!-- ALTERNATIVE CONTENTS This is the same as the left menu, with different styling -->
+                            <nav id="index-lists">
+
+                                <ul class="index-contents-links">
+                                    <li class="contents-links-item">Alternative Contents Links</li>
+                                    <li class="contents-first-item"></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                    <li><a href=""></a></li>
+                                </ul>
+
+                                <hr />
+
+                                <ul class="index-external-links">
+                                    <li class="external-links-item">n/a</li>
+                                    <li class="external-first-item">at Wikipedia</li>
+                                    <li>XYZ at <a href="">Wikipedia</a></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+
+                                <ul class="index-site-links">
+                                    <li class="site-links-item">Also on this site</li>
+                                    <li class="site-first-item"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li class="site-subhead-item"></li>
+                                    <li class="site-first-item"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+
+
+
+                                <ul class="index-optional-links">
+                                    <li class="optional-links-item"></li>
+                                    <li class="optional-first-item"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li class="optional-subhead-item"></li>
+                                    <li class="optional-first-item"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+
+                            </nav>
+                            
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                              <p>
+                                <!-- spacer STILL needed to fill out width on a narrow page
+                                    Needed here but not in Spanish page - weird
+                                    need to figure out why -->
+                                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                            </p>
+
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- page nav here if used -->
+                    <nav class="next-previous-item-nav">
+                        <ul class="next-previous-item-list">
+                            <li class="align-left"></li>
+                            <li class="align-right"><a href="voice-contents.htm">Contents and Preface &gt;</a></li>
+                            <li style="clear: both;"></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="googlecode">
+        <?php include("/home/reversev/public_html/selfdefinition.org/includes/googlescript.htm"); ?>
+    </div>
+</body>
+
+</html>

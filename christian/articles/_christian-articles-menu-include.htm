@@ -1,0 +1,101 @@
+<!-- start of menu include file  Update Aug 4, 2020, May 8, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li><a href="/christian/">Christian index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="conditional-hide-4"><a href="/">Site root</a></li>
+            <!-- class="english" means only show on an English page -->
+            <!-- class="spanish" means only show on a Spanish page -->
+            <li class="english"><a href="articles-index.htm">Article list</a></li>
+            <li class="spanish"><a href="articles-index.htm">Article list</a></li>
+            <li class="spanish"><a href="francis-thompson-hound-of-heaven.htm">English</a></li>
+            <!-- only if more Spanish
+            <li class="spanish"><a href="articles-index.htm">Artículos</a></li> -->
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+            <li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver </span>Arriba</a></li>
+            <!-- for when there is only one page in Spanish. See CSS -->
+            <li class="english"><a href="francis-thompson-el-lebrel-del-cielo.htm">Español</a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/christian/">Christian index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+            <!-- as of Mar 3, 2022 scroll and ajax must be classes, not IDs -->
+            <li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+        </ul>
+
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center" style="margin-top:15px;">
+            <li style="line-height:1.8em;"></li>
+            <li class="normal">
+                <img class="menu-image" src="images/christ-resurrection.jpg" alt="Christ, resurection" />
+            </li>
+            <li>Christian Articles</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="articles-index.htm">Article Index</a></li>
+                <li><a href="francis-thompson-hound-of-heaven.htm">Francis Thompson, Hound of Heaven</a> </li>
+                <li><a href="francis-thompson-el-lebrel-del-cielo.htm">El Lebrel del Cielo</a> </li>
+                <li><a href="richard-bucke-personal-experience-cosmic-consciousness.htm">Richard Bucke account Cosmic Consciousness</a> </li>
+                <li><a href="bucke-chart-p43-one-in-a-million.htm">Bucke's chart of the Psychogenesis of Man</a> </li>
+                <li><a href="original-christianity.htm">Original Christianity, overview &amp; article links</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Francis Thompson at <a href="https://en.wikipedia.org/wiki/Francis_Thompson">Wikipedia</a></li>
+                <li class="external-first-item">Hound of Heaven at <a href="https://en.wikipedia.org/wiki/The_Hound_of_Heaven">Wikipediaa</a></li>
+                <li>Richard M. Bucke at <a href="https://en.wikipedia.org/wiki/Richard_Maurice_Bucke">Wikipedia </a></li>
+                <li>Cosmic Consciousness at <a href="https://en.wikipedia.org/wiki/Cosmic_Consciousness">Wikipedia </a></li>
+                <li>Unknown Years of Jesus at <a href="https://en.wikipedia.org/wiki/Unknown_years_of_Jesus">Wikipedia </a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">More Christian</li>
+                <li class="site-first-item">Karl von Eckartshausen <a href="/christian/eckartshausen/cloud-upon-the-sanctuary/contents.htm">The Cloud Upon the Sanctuary</a></li>
+                <li>Jacob Boehme <a href="/christian/jacob-boehme/mysterium-magnum/contents.htm">The Mysterium Magnum</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also on this site</li>
+                <li class="site-first-item">Joseph Sadony <a href="/joseph-sadony/gates-of-the-mind/foreword-gates-of-the-mind.htm">Gates of the Mind</a> </li>
+                <li>Mabel Collins <a href="/blavatsky/light-on-the-path/contents-and-title.htm">Light on the Path</a></li>
+                <li>H.P. Blavatsky <a href="/blavatsky/voice-of-the-silence/voice-contents.htm">The Voice of the Silence</a></li>
+                <li>Franz Hartmann MD <a href="/magic/hartmann/white-and-black/contents.htm">Magic, White and Black</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

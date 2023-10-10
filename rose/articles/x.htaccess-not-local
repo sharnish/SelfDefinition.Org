@@ -1,0 +1,80 @@
+# .htaccess file for selfdefinition.org/rose/
+
+# ignore files
+IndexIgnore 404*
+IndexIgnore richard-rose*.htm rose-search*.htm search.htm rose-tape-list.htm 
+IndexIgnore recordings-count-2014-0303.htm
+IndexIgnore _*
+
+# ignore subdirectories
+IndexIgnore copyright excerpts writings book-test includes
+IndexIgnore rose-audio-temp rose-video-temp mister-rose-video rr-letters weimer-temp
+IndexIgnore newsletter-scans bootleg biographical
+
+# ignore subdirectories for web pages - necessary?
+IndexIgnore *files
+
+
+# error page redirect
+ErrorDocument 404 /rose/404-rose.htm
+
+# redirect pages found by google
+Redirect 301 "/rose/richard-rose-shooting-incident-1968-A.htm" "/rose/richard-rose-shooting-incident.htm"
+
+Redirect 301 "/rose/recordings-count-2014-0303.htm" "/rose/rose-audio-temp/recordings-source-list-in-process.htm"
+
+# redirect Mark Jaqua misspelling.
+# not getting a canonical header, remove brackets from file name
+Redirect 301 "/rose/Mark-Jacqua-Conservation-Therapy[celibacy].pdf"      "/rose/Mark-Jaqua-Conservation-Therapy-celibacy.pdf"
+Redirect 301 "/rose/Mark-Jaqua-Conservation-Therapy%5bcelibacy%5d.pdf"   "/rose/Mark-Jaqua-Conservation-Therapy-celibacy.pdf"
+Redirect 301 "/rose/Mark-Jaqua-Conservation-Therapy[celibacy].pdf"       "/rose/Mark-Jaqua-Conservation-Therapy-celibacy.pdf"
+
+
+# remove incomplete Pulyan pdf
+Redirect 301 "/rose/Alfred-Pulyan-Letters-from-a-Zen-Master.pdf"  "/pulyan/"
+
+# move to articles directory
+Redirect 301 "/rose/richard-rose-notice.htm" "/rose/writings/richard-rose-notice.htm"
+
+
+##### May 10, 2017 create new "about" section and move 3 "articles" to there
+Redirect 301 "/rose/articles/michael-casari-richard-rose-the-man-who-was-a-mirror.htm"           "/rose/about/richard-rose-the-man-who-was-a-mirror.htm"
+
+Redirect 301 "/rose/articles/about-richard-rose-by-michael-casari.htm"                           "/rose/about/michael-casari-about-richard-rose.htm"
+
+Redirect 301 "/rose/articles/alan-fitzpatrick-on-richard-rose-assimilation-of-enlightenment.htm" "/rose/about/richard-rose-assimilation-enlightenment.htm"
+
+
+
+# Canonical links added Oct 1, 2016
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+<Files 'J.J.-van-der-Leeuw-Conquest-Of-Illusion.pdf'>
+	Header add Link '<http://selfdefinition.org/van-der-leeuw/conquest-of-illusion/00-preface-contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+# removed brackets, changed file name, to try to get header
+<Files 'Mark-Jaqua-Conservation-Therapy-celibacy.pdf'>
+	Header add Link '<http://selfdefinition.org/celibacy/quotes/mark-jaqua-conservation-therapy.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Richard-Rose-The-Mind.pdf'>
+	Header add Link '<http://selfdefinition.org/rose/writings/richard-rose-the-mind.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+# can't get a header on this pdf
+<Files 'Santanelli-The-Law-of-Suggestion-hardcover-scan.pdf'>
+	Header add Link '<http://selfdefinition.org/psychology/hypnosis/santanelli-what-hypnosis-really-is.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+
+# end
+

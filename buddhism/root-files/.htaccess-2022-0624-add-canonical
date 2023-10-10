@@ -1,0 +1,96 @@
+# .htaccess file for selfdefinition.org/buddhism/
+
+# Canonical link added June 24, 2022
+
+<Files 'Togpa-Rinpoche-Rice-Seedling-Sutra-course.pdf'>
+	Header add Link '<https://selfdefinition.org/buddhism/topga-rinpoche/contents.htm; rel="canonical"'
+	Header set TestHeader "This is a file-specific custom header for testing Topga."
+</Files>
+
+
+
+# got rid of "quotes" section, deleted directory April 13, 2022
+
+Redirect 301 "/buddhism/quotes/trungpa-rinpoche-the-hard-way.htm"     "/tibetan/trungpa/trungpa-rinpoche-the-hard-way.htm"
+
+Redirect 301 "/buddhism/quotes/index.htm"  "/buddhism/articles/index.htm"
+
+
+# 12 links moved from root to articles Oct 9, 2019 
+
+Redirect 301 "/buddhism/twelve-links-of-dependent-arising.htm"   "/buddhism/articles/twelve-links-of-dependent-arising.htm"
+
+
+Redirect 301 "/buddhism/quotes/trungpa-rinpoche-the-hard-way.htm"   "/tibetan/trungpa/trungpa-rinpoche-the-hard-way.htm"
+
+# Topga MOVED Sep 27, 2019
+ 
+# for google links to old directory BUT produces other errors so remove
+# NO SCREWS UP EVERYTHINGG Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/" "/buddhism/topga-rinpoche/"
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-contents.htm"	"/buddhism/topga-rinpoche/contents.htm"
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-introduction.htm" "/buddhism/topga-rinpoche/introduction.htm"
+
+              
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-01.htm"		"/buddhism/topga-rinpoche/rice-seedling-01.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-01-q-and-a.htm"		"/buddhism/topga-rinpoche/rice-seedling-01-q-and-a.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-02.htm"		"/buddhism/topga-rinpoche/rice-seedling-02.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-03.htm"		"/buddhism/topga-rinpoche/rice-seedling-03.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-04.htm"		"/buddhism/topga-rinpoche/rice-seedling-04.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-05.htm"		"/buddhism/topga-rinpoche/rice-seedling-05.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-06.htm"		"/buddhism/topga-rinpoche/rice-seedling-06.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-07.htm"		"/buddhism/topga-rinpoche/rice-seedling-07.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-08.htm"		"/buddhism/topga-rinpoche/rice-seedling-08.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-09.htm"		"/buddhism/topga-rinpoche/rice-seedling-09.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-10.htm"		"/buddhism/topga-rinpoche/rice-seedling-10.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-11.htm"		"/buddhism/topga-rinpoche/rice-seedling-11.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-12.htm"		"/buddhism/topga-rinpoche/rice-seedling-12.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-13.htm"		"/buddhism/topga-rinpoche/rice-seedling-13.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-14.htm"		"/buddhism/topga-rinpoche/rice-seedling-14.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-15.htm"		"/buddhism/topga-rinpoche/rice-seedling-15.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-16.htm"		"/buddhism/topga-rinpoche/rice-seedling-16.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-17.htm"		"/buddhism/topga-rinpoche/rice-seedling-17.htm"
+
+
+Redirect 301 "/buddhism/topga-rinpoche-rice-seedling/topga-rinpoche-course-part-18.htm"		"/buddhism/topga-rinpoche/rice-seedling-10.htm"
+
+########
+# end
+########
+
+

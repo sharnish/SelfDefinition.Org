@@ -1,0 +1,58 @@
+/* file:  /kabir/songs-of-kabir/_songs-of-kabir-refresh.css
+
+Update May 13, 2020
+
+*/
+
+@media only print {
+    #article:after {
+        content: "update May 14, 2020";
+        font-size: 60%;
+    }
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fffff0;
+}
+
+
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+    background: #e4d9b9;
+}
+
+/* same s spanish */
+h5.poem {
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+
+/* for Indian-language intros in English section */
+p.poem-start {
+    font-size: 75%;
+    margin-top: 6px;
+    text-align: center;
+}
+
+
+header p.tiny {
+    line-height: 1.75em;
+}
+
+
+
+/* end */

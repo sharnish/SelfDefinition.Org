@@ -1,0 +1,123 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pine Needles by Joseph Sadony - Contents</title>
+	<meta name="description" content="A collection of cryptic, intriguing Needles from The Valley of 
+    the Pines which have mentally pricked the readers of our magazine for many years.">
+	<meta name="author" content="Joseph Sadony">
+	<meta property="og:title" content="Pine Needles, quips by Joseph Sadony, pub. 1960">
+	<meta property="og:description" content="A collection of cryptic, intriguing Needles from The Valley of 
+    the Pines which have mentally pricked the readers of our magazine for many years.">
+	<meta property="og:image" content="https://selfdefinition.org/joseph-sadony/images/joseph-sadony-at-83.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_pine-needles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar and device testing -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- start -->
+	<link rel="next" href="part-1.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* styling is on sadony.css and _pine-needles.css */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_pine-needles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_pine-needles-title-include.htm"); ?>
+									<h3>
+										Title Page
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+									<li class="align-right"><a href="part-1.htm">Part 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="center">
+								From The Valley of the Pines
+							</p>
+							<p>
+								A collection of cryptic, intriguing "Needles" from The Valley of the Pines and Joseph A. Sadony, former Assistant Editor of our magazine, which have mentally pricked our readers for many years through the pages of our magazine. Many requests have been received to have them gathered together in book form.
+							</p>
+							<p>
+								In response to these requests we have assembled what we consider the sharpest, most pithy "Needles" from among the harvest garnered throughout the years. They are full of uplift, encourgement and inspiration. Each "Needle" is a thought-provoker &ndash; affording inspiring reading in the morning when awakening, stimulating uplift and comfort at any brief moment during the day, and relaxing, quieting concepts to be taken along in spiritual consciousness during the night. We hope you will enjoy them.
+							</p>
+							<p>
+								&ndash; The Great School of Natural Science</p>
+							<p>&nbsp;</p>
+							<p class="note">Copyright 1958. Second edition: 1960</p>
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+									<li class="align-right"><a href="part-1.htm">Part 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,863 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Nolen, Chapter 10, on Norbu Chen</title>
+    <meta name="description" content="Extract from Healing: A Doctor in Search of a Miracle (1975)">
+    <meta name="author" content="William Nolen">
+    <meta property="og:title" content="William Nolen, Chapter 10, on Norbu Chen">
+    <meta property="og:description" content="Extract from Healing: A Doctor in Search of a Miracle (1975)">
+    <meta property="og:image" content="https://selfdefinition.org/norbu-chen/images/norbu-chen-cropped-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_norbu-chen-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="joann-parks-interview.htm">
+    <link rel="next" href="william-nolen-norbu-chen-chapter-11.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 270px;
+            border: 0px solid blue;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+        div.myaside {
+            padding-left: 10px;
+        }
+
+        div.sidebar {
+            background: #f0f0ff;
+        }
+
+        html.dark div.sidebar {
+            background: inherit;
+        }
+
+        div.myinsert {
+            border-left: 3px solid #aaff;
+            font-size: 90%;
+            padding-left: 10px;
+        }
+
+        /* compensate for offset, to center on page */
+        div.myinsert h4 {
+            margin-left: -30px;
+        }
+
+        div.myinsert p.chapter {
+            text-align: center;
+        }
+
+        div.myinsert p {
+            padding-right: 15px;
+            width: 95%;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_norbu-chen-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_norbu-chen-title-include.htm"); ?>
+                                    <!-- new format puts page title higher, here -->
+                                    <h3 class="toowide">
+                                        William A. Nolen M.D.<br>
+                                        Chapter 10, on Norbu&nbsp;Chen
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="joann-parks-interview.htm">&lt; Interview with JoAnn Parks</a></li>
+                                    <li class="align-right"><a href="william-nolen-norbu-chen-chapter-11.htm">Wm. Nolen, Chapter 11 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <header>
+                                <p class="tiny">
+                                    Extract from <em>Healing: A Doctor in Search of a Miracle</em> (1975)<br>
+                                    (fair use under copyright law, noncommercial, for research purposes only)
+                                </p>
+                            </header>
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#arrangements">Arrangements</a></li>
+                                    <li><a href="#arrival">Arrival</a></li>
+                                    <li><a href="#the-mice">The Mice</a></li>
+                                    <li><a href="#the-way">The Way</a></li>
+                                    <li><a href="#adventures">Adventures</a></li>
+                                    <li><a href="#learning-the-way">Learning the Way </a></li>
+                                    <li><a href="#adn-sidebar">Alexandra David-Neel sidebar</a></li>
+                                    <li><a href="#back-to-the-us">Back to the U.S. </a></li>
+                                    <li><a href="#cures">Cures &amp; Treatment Routine</a></li>
+                                </ul>
+                            </nav>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="arrangements">&nbsp;</a>
+                            <h4>
+                                Arrangements
+                            </h4>
+                            <p>
+                                While on a trip to California, I remembered <strong>Tom Valentine's</strong> suggestion that I look into Norbu Chen's miraculous-healing practice in Houston, and since I was not far from Los Altos, I decided to stop off at the <strong>Institute of Noetic Sciences</strong>, <sup>[1]</sup> which is headed by the former astronaut Captain Edgar D. Mitchell, Sc.D., <sup>[2]</sup> who is, according to Tom Valentine, "one of Norbu Chen's big promoters." The Institute of Noetic Sciences is a tax-exempt organization headed by Dr. Mitchell. "Noetics" means "the study of consciousness." The purpose of the Institute, according to an article by Mitchell in <em>Psychic</em> (July-August 1973), is "to help achieve a new understanding and an expanded consciousness among all people."
+                            </p>
+                            <p class="fnote">
+                                [1. I.O.N.S. <a href="https://en.wikipedia.org/wiki/Institute_of_Noetic_Sciences">en.wikipedia.org/wiki/<wbr>Institute_of_<wbr>Noetic_<wbr>Sciences</a>&nbsp;]
+                            </p>
+                            <p class="fnote">
+                                [2. <a href="https://en.wikipedia.org/wiki/Edgar_Mitchell">en.wikipedia.org/wiki/<wbr>Edgar_<wbr>Mitchell</a>&nbsp;]
+                            </p>
+                            <p>
+                                Mitchell, who was the sixth man to walk on the moon, dropped out of the space program in 1970. Since then he has devoted much of his time and energy to the promotion of ventures designed to "expand human consciousness." Uri Geller, <sup>[3a, 3b]</sup> the man who supposedly can cause objects to move simply by staring at them, is one of those Mitchell has investigated. "Geller can also materialize objects out of nothing," Mitchell told me. "He's really an amazing man."
+                            </p>
+                            <p class="fnote">
+                                [3a. <a href="https://en.wikipedia.org/wiki/Uri_Geller">en.wikipedia.org/wiki/<wbr>Uri_<wbr>Geller</a>&nbsp;]
+                            </p>
+                            <p class="fnote">
+                                [3b. See: <a href="edgar-mitchell-comments.htm">edgar-mitchell-comments.htm</a>&nbsp;]
+                            </p>
+                            <p>
+                                Mitchell was also sold on the psychic surgeons of the Philippines. "What's the most fundamental form of existence?" he asked me.
+                            </p>
+                            <p>
+                                "I don't know," I said. "I suppose it's a neutron or a proton or an electron &ndash; one of those things that goes to make up an atom." My knowledge of physics is rudimentary.
+                            </p>
+                            <p>
+                                "No sir," Mitchell said, "it's none of those. Consciousness is the most fundamental form of existence. When those psychic surgeons operate, they use consciousness. They just slip their hands right in between the cells &ndash; the matter &ndash; that makes up the human body. They use their consciousness in ways that we can't use ours."
+                            </p>
+                            <p>
+                                I didn't quite follow his explanation, and since I could see we didn't have much common ground for discussing these things, I shifted to Norbu Chen. "I understand that when you were in Houston you observed a healer called Norbu Chen."
+                            </p>
+                            <p>
+                                "I certainly did," Mitchell replied. "I worked very closely with him. He's a remarkable person."
+                            </p>
+                            <p>
+                                "I'm limiting my interest in the paranormal, if you'll excuse the phrase, to healing; as you'll probably agree, there are so many fascinating things going on in the paranormal world that it would be impossible for any one man to look, with any depth, into all of them. With my medical background I thought healing would be the natural subject on which to focus my attention. From what I've learned, Norbu Chen is an outstanding healer. Would you agree?"
+                            </p>
+                            <p>
+                                "No doubt about it," Mitchell replied. "There may be other healers as good &ndash; we've got many healers out here in California &ndash; but I'd say Norbu is as good as or better than any of them."
+                            </p>
+                            <p>
+                                "Then you think he'd be a good person for me to study?"
+                            </p>
+                            <p>
+                                "By all means. But let me warn you, he's a very temperamental guy. I had a hell of a time getting along with him. That's one of the reasons I left him back in Texas when I came out here. I'm still interested in studying him, but I don't want to get too close to him. He's up one minute and down the next. If he gets mad at you, he explodes. He's very volatile. He lived in my home for a while, but I couldn't take it."
+                            </p>
+                            <p>
+                                "What kind of results does he get?"
+                            </p>
+                            <p>
+                                "He doesn't cure everyone," Mitchell replied, "but he cures most. Up around eighty or ninety percent, I'd guess."
+                            </p>
+                            <p>
+                                "How about cancer?" I asked. "Do you think he could cure, say, two out of ten?"
+                            </p>
+                            <p>
+                                "Oh, hell, he'd do a lot better than that," Mitchell answered. "He's really very good. Just be damn careful when you're around him. Don't get him mad at you. Don't trifle with Norbu." I assured Dr. Mitchell I wouldn't.
+                            </p>
+                            <p>
+                                John White,<sup><a href="https://noetic.org">IONS website</a> [search on John White]</sup> a man in his mid-twenties I'd guess, serves as Mitchell's assistant at the institute. He said he would approach Norbu Chen for me. Norbu agreed to let me visit him, with the stipulation that Dr. Wilfred J. Hahn, head of the <strong>Mind Science Foundation</strong>, which has an office in Los Angeles, also agree. The Mind Science Foundation was financing studies on Norbu Chen and he, Norbu, was, so to speak, under contract to them. I called Dr. Hahn and explained my project to him, and he assured me that he had no objection.
+                            </p>
+                            <p>
+                                So I wrote to Norbu Chen, told him what I wanted to do and asked him to set a convenient date. When two weeks went by and I hadn't received a reply I phoned him. His secretary assured me he had received my letter but hadn't yet gotten around to answering it. I asked her to have him call me, collect, if he could find the time. When, a week later, I still hadn't heard from Norbu Chen, I phoned him again. This time he was in, and he was, to say the least, belligerent. "What do you think &ndash; I got nothing to do but hang around letting people study me? The Mind Science Foundation pays for all these studies, then some guy like you wants to come down and find out about it, all for nothing. Bullshit." (Norbu Chen, I found later, uses this expletive frequently. He pronounces it boool-shit. Sort of melodious.)
+                            </p>
+                            <p>
+                                "Besides," he continued, "<strong>Tom Valentine</strong> told me about you. Shit, what do you know about healing? You goddamn M.D.s are all the same. You know what I say 'M.D.' stands for? 'Mostly Dumb.'
+                            </p>
+                            <p>
+                                "And I don't like guys who sneak around trying to get to see me. I like guys who come right to the source &ndash; me. I don't like this goddamn sneaking-around stuff."
+                            </p>
+                            <p>
+                                When he paused I tried to explain my position, how I'd been advised to go through the Mind Science Foundation.
+                            </p>
+                            <p>
+                                "That's bullshit," he said. "All you guys are full of bullshit.
+                            </p>
+                            <p>
+                                "All right &ndash; you can come down. Not right now though. I'm too goddamn busy. How about a couple of weeks from now? Let me know when you're getting in and I'll have a car meet you."
+                            </p>
+                            <p>
+                                I wanted to ask him how long I might stay, where I could conveniently live, several other questions, but I didn't. It was enough that he'd said yes. I decided to get off the phone before he changed his mind.
+                            </p>
+                            <p>
+                                I wasn't looking forward to this visit. I don't like to go where I suspect I'm not welcome, and I certainly suspected I wasn't welcome in Houston. But I had to find out if Norbu Chen could, indeed, "heal" with some strange Tibetan power. So, two weeks later, I flew to Houston.
+                            </p>
+                            <p>
+                                When I landed at the Houston airport I looked around for someone who might conceivably be looking for me. I had let Norbu Chen know what time I was arriving and he had said someone would meet me. When it was apparent that no one was there to pick me up I phoned Norbu Chen and he snarled, "Get a cab. We're waiting for you."
+                            </p>
+                            <p>
+                                Idiotically, I had taken only $20 in cash with me. When the meter on the cab reached $8 and we were still on a freeway, I asked the driver how much it would cost me to get to Norbu's home. "Twenty, maybe twenty-one dollars," he said. I then decided it might be less expensive and more convenient if I rented a car. So, having driven me from the International Airport, across Houston, the cabdriver took me to Hobby Airport, Houston's second, smaller airport. There, after my $18 taxi ride, I rented the car I should have rented at International. I'm not always well organized.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="arrival">&nbsp;</a>
+                            <h4>
+                                Arrival
+                            </h4>
+                            <p>
+                                Norbu Chen lives southeast of Houston on a short street that ends by making a circle around a small park. The neighborhood looks as if it had once been fashionable but is now on its way down. Norbu's home is set about a hundred yards back from the street. There is a wall in front with a gate through which one enters. At first I didn't realize that the gate was large enough to admit a car and that the walk was actually a driveway, so I pulled off the street, planning to walk to the house.
+                            </p>
+                            <p>
+                                When I saw a sign saying "Beware of the Dog" nailed to a tree just inside the gate, I returned to my car immediately, deciding I could, after all, drive in. When it comes to savage dogs, I am a first-class coward.
+                            </p>
+                            <p>
+                                Unfortunately, my car was stuck in the mud (it had been raining in Houston almost constantly for three days before I arrived, and it rained almost continually during the four days I was there). One of Norbu's neighbors saw me trying to get my rented car out of the mud, and succeeding only in sinking it in further. He was nice enough to get a chain, and using his station wagon, drag me out. I finally pulled up to Norbu's door at five-thirty on Sunday evening. The dog, I learned later, was away at obedience school. "Learning how to kill," Norbu told me with enthusiasm.
+                            </p>
+                            <p>
+                                When I stepped out of the car I knew immediately why the neighborhood looked as if it was on the way down. There was a pungent, sickening odor in the air; I learned later that it came from an oil refinery, out of sight but not far away. This was really a shame. Norbu's home is surrounded by eight acres of land, with a bayou down a hill from the back of the house. There are many trees on the property, the house is large and attractive, and there is a guesthouse about thirty yards from the main house. But the odor from that refinery spoils it all. In the four days I spent with Norbu I was always aware of the smell, and my eyes would get red, itchy and irritated minutes after I arrived in his yard. They'd clear up ten minutes after I was out of the driveway. A beautiful setting, but pollution has made the area virtually unlivable, at least for someone who is accustomed to the clean air of rural Minnesota.
+                            </p>
+                            <p>
+                                Norbu, as his secretary told me later, rarely introduces anyone to anyone else, but some young woman, I think it was probably Norbu's wife, did introduce me to Norbu and two couples who were sitting in the living room eating hamburgers when I arrived. The men were Dr. Howell Cobb, a biologist at Trinity College in San Antonio, Texas, and a man whom I shall call Randy Lewis, a patient of Norbu's who now serves on the board of Norbu Chen's foundation. One of the women was Randy Lewis' wife, the other was Jean, an associate of Dr. Cobb's who was working with him on the scientific investigation of Norbu Chen's healing powers.
+                            </p>
+                            <p>
+                                Norbu Chen said he was thirty-nine years old, but he looked older. He is not Oriental; I learned later that he had changed his name to "Norbu Chen." He has a weather-beaten face with many wrinkles. His hair is gray and close-cropped, like a monk's. He is about five feet four, stocky, with a slight paunch. When I met him he was wearing brown slacks and a short-sleeved sport shirt. He is muscular and has tattoos on both forearms. The one on the left is about three inches in diameter and has, on the top, the letters "U.S.M.C." which, I presume, stands for United States Marine Corps. I couldn't get a good look at the tattoo on his right forearm.
+                            </p>
+                            <p>
+                                Norbu also has two scars, one about six inches long running obliquely from under his right ear down to the lower midline of his neck. The other is a shorter, vertical scar in the midline of his neck. It looked to me like a tracheotomy scar, the kind Liz Taylor has, except that Norbu's isn't the work of a plastic surgeon. (I never asked him where the scars came from. As you'll see when I tell you more about him, I had to be very careful what I asked him, or he might have tossed me out. But a friend of Norbu's told me Norbu had attributed the scars to "Korea," without elaborating on the circumstances.)
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="the-mice">&nbsp;</a>
+                            <h4>
+                                The Mice
+                            </h4>
+                            <p>
+                                A few minutes after I arrived, we got down to business. "Dr. Cobb is running the research on me for the Mind Science Foundation," Norbu said. "Usually I go to San Antonio to work but today he brought the mices [sic] here. I'm going to treat them and you can watch."
+                            </p>
+                            <p>
+                                "Great," I said. "Can you tell me something about the experiment?" I asked Dr. Cobb.
+                            </p>
+                            <p>
+                                "Happy to," Dr. Cobb replied. "We are studying mice in groups of thirty. We inject all the mice with cancer cells of a type which we know grow very easily in mice. Ordinarily about ninety percent of the injected mice will die of the cancer in two to three weeks.
+                            </p>
+                            <p>
+                                "After injection, Norbu treats fifteen of the mice; the other fifteen remain untreated. It's a blind study; only Jean, my assistant, knows which of the thirty mice have been treated."
+                            </p>
+                            <p>
+                                "When do you sacrifice the mice?" I asked.
+                            </p>
+                            <p>
+                                "We don't," Dr. Cobb answered. "We wait till they die. Then Jean tells us which were treated by Norbu."
+                            </p>
+                            <p>
+                                "Have they all died?" I asked.
+                            </p>
+                            <p>
+                                "So far," Dr. Cobb answered. "But those that had been treated by Dr. Chen have lived significantly longer than those that hadn't been treated."
+                            </p>
+                            <p>
+                                "And up till now," Norbu Chen interrupted, "they haven't let me get my hands on those mices. [Norbu often has a problem with plurals. Once I heard him tell a patient to "take your shoeses off."] I've had to treat them from about a foot away. Not only that, but I've been treating them in San Antonio in a laboratory where the vibrations aren't good. Tonight I'm going to treat them right here and I'm going to get my hands right on those mices. That's going to make things go even better."
+                            </p>
+                            <p>
+                                "Shall we get at it?" Dr. Cobb asked.
+                            </p>
+                            <p>
+                                "Okay with me," Norbu Chen said.
+                            </p>
+                            <p>
+                                Five of the mice would be put to sleep so that Norbu could get his hands right on them. "Do you want the anesthetized mice first?" Dr. Cobb asked.
+                            </p>
+                            <p>
+                                "Makes no difference to me," Norbu answered. "Suit yourself."
+                            </p>
+                            <p>
+                                Dr. Cobb and his assistant went out to the kitchen to prepare the mice and Norbu left the room to prepare for his healing work. In the five minutes Norbu was gone I worked on my notes.
+                            </p>
+                            <p>
+                                When Norbu reappeared he was wearing a brown robe, like the surplice that Catholic priests wear, and he had a gold pendant on a chain around his neck. "Let's go," he said, beckoning to me. I followed him into the treatment room.
+                            </p>
+                            <p>
+                                This room was dimly lit by candles. The smell of incense was strong. The walls here hung with dark-red tapestries. In one corner was a small altar on which there were a skull cup and a small Buddha statue. In the center of the room was a table and on the table were three boxes, each about a foot square. Two of the boxes had wire-mesh covers; these boxes each contained five live mice. The third box was open on the top and in it were the five anesthetized mice. Near the table were two chairs.
+                            </p>
+                            <p>
+                                Norbu told me to sit on one; Randy Lewis was assigned the other.
+                            </p>
+                            <p>
+                                Norbu then turned to the altar with his back toward us. He made a series of waves with his arms outstretched and then started howling like a wolf. After he had howled for about a minute he picked up two small bells that were on the altar and clanged them together over his head. Then he howled some more.
+                            </p>
+                            <p>
+                                After five minutes of this sort of behavior, Norbu came over to the table and held his hands for a few seconds over each of the two boxes of alert mice. He put his hands on the anesthetized mice. Then he walked back to the altar, looked at it for a few seconds, turned to us and said, "That's all." We followed him from the room. (On April 26, 1974, the Mind Science Foundation reported that Norbu's experiments with mice were as yet inconclusive.)
+                            </p>
+                            <p>
+                                He went somewhere, presumably to his bedroom, and a few minutes later joined us all in the living room. He had removed his robe and pendant and was wearing his slacks and sport shirt.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="the-way">&nbsp;</a>
+                            <h4>
+                                The Way
+                            </h4>
+                            <p>
+                                "Did that exhaust you, Mr. Chen?" I asked. (Norbu never told me what to call him, so sometimes I called him Mr. Chen, sometimes Dr. Chen, and toward the end of my visit, Norbu. I noticed that others varied their salutation as I did.)
+                            </p>
+                            <p>
+                                "Of course not," he said. "Why should it? I don't do anything. The power does it." Norbu answered this and all of my subsequent questions with the resigned air of an expert who is forced to explain things to an imbecile.
+                            </p>
+                            <p>
+                                "What power is that?"
+                            </p>
+                            <p>
+                                "The power of The Way, of course. The power I learned to use when I was with my lama. It's very simple. <span class="strong">It's just one-point of concentration. I use sound, one-point concentration and breathing to raise my emotional level to a great height. We say then that I shoot through the golden lotus to another level of being. I focus all the dynamic tensive forces of my body at one point for one instant &ndash; and then I hit.</span>"
+                            </p>
+                            <p>
+                                "When you say 'hit,' do you mean you release all that force to heal someone?"
+                            </p>
+                            <p>
+                                "Of course." Again he answered with a bored, paternalistic sigh. (I won't mention this attitude again. Just assume this was the way Norbu Chen always answered my questions.)
+                            </p>
+                            <p>
+                                "Can you feel this power leaving you?"
+                            </p>
+                            <p>
+                                "Yes."
+                            </p>
+                            <p>
+                                "But it doesn't exhaust you?"
+                            </p>
+                            <p>
+                                "No."
+                            </p>
+                            <p>
+                                Norbu could see I was puzzled. "Look," he said, "don't try to understand all this. Goddammit, how could you? All you know is that stupid M.D. bullshit. You want to understand me, you've got to do what I did. You got to learn 'The Way' and that ain't easy.
+                            </p>
+                            <p>
+                                "I don't mean to be obsequious [sic], but goddamn, you asking me how I work is like me asking you about some stupid tonsil you took out. It's simple for me. It's almost an insult to ask me about it. Why should I waste all my time explaining things to you? Dr. Hahn and the Mind Science Foundation &ndash; they're the ones spending money to find out about my power. Then you want to come in and steal all that information. Bullshit."
+                            </p>
+                            <p>
+                                "I'm not trying to steal anything," I said.
+                            </p>
+                            <p>
+                                "Oh, I don't mean you personally. I mean all these goddamn people want to learn The Way without working at it. They're all bullshit."
+                            </p>
+                            <p>
+                                "Maybe we should start at the beginning," I said. "How did you happen to learn The Way?"
+                            </p>
+                            <p>
+                                Norbu told me. Not fully, not completely and not in one continuous stream of talk, but over the next three days he summarized his life history for me. He refused to be pinned down on names and dates &ndash; in fact, when I asked him what his name had been before he assumed the name Norbu Chen sometime in the early sixties, he became very hostile.
+                            </p>
+                            <p>
+                                "What you want to know that for?" he said.
+                            </p>
+                            <p>
+                                "I guess I'm just curious," I answered.
+                            </p>
+                            <p>
+                                "Oh yeah?" he said. "Well, it's none of your goddamn business."
+                            </p>
+                            <p>
+                                After that one exchange I felt it best not to push Norbu for information, lest I be cut off completely. I simply tried to get him talking, sometimes &ndash; usually unsuccessfully &ndash; trying to steer the conversation in the direction I thought might be productive. Here is Norbu's story as he told it to me.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="adventures">&nbsp;</a>
+                            <h4>
+                                Adventures
+                            </h4>
+                            <p>
+                                In 1956, when he was twenty-two years old, [32 by corrected birth date, see Chapter 11] Norbu &ndash; under his original name, whatever that may be &ndash; said he was working for the Kennedy political organization in Kentucky. He told me a man named Dick Cohn was his boss. Norbu's assignment apparently involved some sort of undertaking, the purpose of which he said was to discredit the incumbent governor and lieutenant governor, "Happy" Chandler and Harry Lee Waterfield. Norbu says that the Kennedy organization wanted Bert Combs elected governor.
+                            </p>
+                            <p>
+                                According to Norbu, as a result of work for the Kennedy organization the police got after him. He spent some time in jail and in the "nut house" and then, in 1958, was forced to leave the United States and go to Europe.
+                            </p>
+                            <div class="right-image-div">
+                                <img src="images/alexandra-david-neel.jpg" alt="" title="">
+                                <p class="note">
+                                    Alexandra David-N&eacute;el <span class="block">(1868-1969) </span>
+                                </p>
+                            </div>
+                            <p>
+                                First he went to Switzerland, sometime later to England. While in London he went to the British Museum and felt drawn to the Tibetan exhibit. He noticed that most of the pieces on display had been donated or lent by Lady Alexandra David-Neel,<sup>**</sup> a woman who had spent many years in Tibet and had written three books on the subject; <em>Initiation Rites of Tibet, Magic and Mystery in Tibet</em> and <em>My Journey to Lhasa.</em> Norbu felt a compulsion to go and visit Madame David-Neel, who was then living in Switzerland.
+                            </p>
+                            <p class="fnote">** See on our site: Three articles from Alexandra David-Néel:
+                                <a href="/tibetan/tulpa-creation/contents.htm">
+                                    /tibetan/<wbr>tulpa-creation/<wbr>contents.htm</a>
+                            </p>
+                            <p>
+                                (It's important for the reader to understand, as I learned later, that Norbu Chen professes to believe in reincarnation. He says that everything we do, we do because we must; we are the result of all our previous lives. He went to jail, to Switzerland, because all these things were preordained.)
+                            </p>
+                            <p>
+                                In Switzerland, Norbu spent some time visiting with Madame David-Neel. When he left, he knew he must eventually go and learn The Way. Madame David-Neel gave him a letter, written in Tibetan, which language, of course, he couldn't read. He took this letter and went to Paris, where he worked to earn money so he could go and meet his lama.
+                            </p>
+                            <p>
+                                In 1960, having now been out of the United States for two years, he left Paris and went to Sikkim, <sup>[4]</sup> high in the Himalayas. Since the Chinese Communists made Tibet off-limits for foreigners, Sikkim is the only country where one can now learn The Way. Today, the ruler of the 200,000 Sikkims is Maharajah Palden Thondup Nam-gyal, <sup>[5]</sup> Sikkim was briefly prominent in the news in 1963, when the Maharajah, then the Crown Prince, married Hope Cooke, a New York debutante.
+                            </p>
+                            <p class="fnote">
+                                [4. <a href="https://en.wikipedia.org/wiki/Sikkim">en.wikipedia.org/wiki/<wbr>Sikkim</a>&nbsp;]
+                            </p>
+                            <p class="fnote">
+                                [5. (1923-1982) <a href="https://en.wikipedia.org/wiki/Palden_Thondup_Namgyal">en.wikipedia.org/<wbr>wiki/<wbr>Palden_<wbr>Thondup_<wbr>Namgyal</a>&nbsp;]
+                            </p>
+                            <p>
+                                When Norbu arrived in Gangtok, the capital, he went directly to the marketplace. There he saw a man whom he had never seen before. Norbu felt a compulsion to walk up to that man and give him 500 rupees, all the money he had saved. Norbu also gave the man the letter from Madame Alexandra David-Neel. The man, who was to be Norbu's lama, said only, "You've been a long time coming." Then he walked away and Norbu followed him.
+                            </p>
+                            <p>
+                                Norbu spent the next three years learning The Way. He was unable to tell me exactly how this is done ("to understand it you must live it") but he did tell me about some of his experiences.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="learning-the-way">&nbsp;</a>
+                            <h4>
+                                Learning the Way
+                            </h4>
+                            <p>
+                                For the first eleven and a half months Norbu lived in a cave. He wore only a loincloth, although the temperature in Sikkim gets down to twenty degrees below zero in the winter. He neither saw nor spoke to anyone in all that time.
+                            </p>
+                            <p>
+                                There was a spring at one end of the cave, so he had all the water he needed. "I went to the other end to piss and shit," Norbu said.
+                            </p>
+                            <p>
+                                Every three days Norbu ate a light meal. The food was passed to him through an S-shaped tunnel, so he never saw the person who brought him his meals. During these eleven and a half months he communed with himself. When he left the cave he had made a start toward learning The Way. The Way, as best I could understand it from Norbu's explanation, is a matter of learning how to put man's mind and body in harmony with the rest of the universe. When we do not have this harmony, we are ill.
+                            </p>
+                            <p>
+                                Over the next two years Norbu acquired some startling powers. For example, Norbu asked me if I'd ever heard of <em>rolang.</em> I hadn't, so he told me about it.
+                            </p>
+                            <p>
+                                "<em>Rolang</em>," Norbu said, "means 'dancing with a corpse.' You lie down on a dead body, a body that's been dead about seven days, and you put your mouth on its mouth. Then the corpse gets up and starts dancing around. You hang on to that corpse while it jumps and dances, and you keep your mouth on its mouth."
+                            </p>
+                            <p class="bold note center">
+                                Chapter 10 continues below this insert.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="adn-sidebar">&nbsp;</a>
+                            <div class="myaside sidebar">
+                                <div class="myinsert">
+                                    <aside>
+                                        <!-- compensate for indentation -->
+                                        <h4>
+                                            Alexandra David-Neel sidebar
+                                        </h4>
+                                        <p>
+                                            The following is Alexandra David-Neel's account of the <em class="strong">rolang</em> in her book, published 1931, <em>With Mystics and Magicians in Tibet.</em> <span class="note">[Free download at <a href="https://www.theosophy.world/sites/default/files/ebooks/magic-and-mystery-in-tibet1931.pdf">www.theosophy.world</a>, page 88]</span>
+                                        </p>
+                                        <p class="chapter">
+                                            CHAPTER IV: DEALING WITH GHOSTS AND DEMONS
+                                        </p>
+                                        <h4>
+                                            <em>The Corpse Who Dances</em>
+                                        </h4>
+                                        <p>
+                                            Another mysterious rite is called <strong>rolang</strong> (the corpse who stands up). Traditions and ancient chronicles relate that, before the introduction of Buddhism into Tibet, it was practiced by the Bönpo shamans during the funeral ceremony. However, the brief movement made by a dead body in such circumstances cannot be compared with what happens in the course of the horrible and grotesque têtê-à-téte that Tibetan occultists depict.
+                                        </p>
+                                        <p>
+                                            There exist several kinds of rolang These must not be mistaken for the trong jug (Written grong hjug) rite which causes the "spirit" of another being to pass into a corpse and apparently resuscitate it, though the corpse is not animated by its original occupant.
+                                        </p>
+                                        <p>
+                                            One of these lugubrious rolang was described to me as follows by a ngagspa who said he had practiced it himself.
+                                        </p>
+                                        <p>
+                                            The celebrant is shut up alone with a corpse in a dark room. To animate the body, he lies on it, mouth to mouth, and while holding it in his arms, he must continually repeat mentally the same magic formula (This differs according to the masters.) excluding all other thoughts.
+                                        </p>
+                                        <p>
+                                            After a certain time the corpse begins to move. It stands up and tries to escape; the sorcerer, firmly clinging to it, prevents it from freeing itself. Now the body struggles more fiercely. It leaps and bounds to extraordinary heights, dragging with it the man who must hold on, keeping his lips upon the mouth of the monster, and continue mentally repeating the magic words.
+                                        </p>
+                                        <p>
+                                            At last the tongue of the corpse protrudes from its mouth. The critical moment has arrived. The sorcerer seizes the tongue with his teeth and bites it off. The corpse at once collapses. (p 127) Failure in controlling the body after having awaked it, means certain death for the sorcerer.
+                                        </p>
+                                        <p>
+                                            The tongue carefully dried becomes a powerful magic weapon which is treasured by the triumphant ngagspa.
+                                        </p>
+                                        <p>
+                                            The Tibetan who gave me these details described most vividly the gradual awakening of the corpse: the first conscious look which brightened its glazed eyes and its feeble movements slowly growing in strength until he became unable to prevent the agitation of the jumping monster and needed all his strength to hold it. He described his sensations when he could feel the tongue issuing from the mouth of the corpse and touching his own lips, and realized that the terrible moment had come when, if he failed to conquer it, the horrible being would kill him.
+                                        </p>
+                                        <p>
+                                            Had that fantastic struggle not been purely subjective? Had it not taken place during one of these trances which are frequently experienced by Tibetan naljorpas , which they also voluntarily cultivate? I doubted and asked to see "the tongue." The sorcerer showed me a desiccated blackish object which might have been "a tongue," but it was not sufficient to prove the origin of the hideous relic.
+                                        </p>
+                                        <p>
+                                            Be that as it may, numbers of Tibetans believe that the rolang rite really takes place.
+                                        </p>
+                                        <p class="note">Reference:
+                                            PDF of 228 pages, 1.5 megs, page 114, or search on "rolang": <a href="/tibetan/Alexandra-David-Neel-With-Mystics-and-Magicians-in-Tibet.pdf">
+                                                https://selfdefinition.org/<wbr>tibetan/<wbr>Alexandra-David-Neel-With-Mystics-and-Magicians-in-Tibet.pdf</a>
+                                        </p>
+                                    </aside>
+                                </div>
+                            </div>
+                            <!-- end class="aside -->
+                            <p class="first-para">
+                                I was almost ill with the thought of all this, but I asked, "Why? What's the point?"
+                            </p>
+                            <p>
+                                "After a while," Norbu said, "the corpse will stick its tongue out. Then you bite it off. The corpse moves around a little longer, then drops to the ground."
+                            </p>
+                            <p>
+                                "What do you do with the tongue?" I asked.
+                            </p>
+                            <p>
+                                "Keep it," Norbu said. "It's a power piece."
+                            </p>
+                            <p>
+                                "Have you done this &ndash; have you danced with a corpse?"
+                            </p>
+                            <p>
+                                "Of course," Norbu answered, "but I'm not going to do it for you. And I've got tongues too, but I'm not going to show them to you. I'm not here to entertain you, goddammit." I had mixed emotions about not seeing Norbu dance with a corpse.
+                            </p>
+                            <p>
+                                Norbu seemed disgusted with my lack of knowledge of his powers. "I bet you never even heard about 'psychic sports,' " he said accusingly. I admitted I hadn't.
+                            </p>
+                            <p>
+                                "Hell," he said, "that's what we do in Sikkim, like you play football here. We have contests. Like in the winter, when it's twenty below zero, we break the ice and soak sheets in that water and then wrap them around us and see which of us can dry the most sheets fastest.
+                            </p>
+                            <div class="myaside">
+                                <div class="myinsert">
+                                    <aside>
+                                        <p>
+                                            See Wikipedia for <a href="https://en.wikipedia.org/wiki/Tummo">Tummo</a>.
+                                        </p>
+                                        <p>
+                                            Tum-mo demonstration at Youtube: <a href="https://www.youtube.com/watch?v=XZUdtFu_hwI">Tibetan Buddhist Monks Meditation and Science. Tummo meditation.</a>
+                                        </p>
+                                        <!-- 
+
+                                Minute 9:00 of this PBS video w/ Alan Alda
+ 
+                                http://www.pbs.org/saf/1310/video/watchonline.htm
+ 
+                                click on "Play Video" in the show entitled "Just Relax"
+ 
+                                Or this direct link may work
+ 
+                                http://vvi.onstreammedia.com/cgi-bin/visearch?user=pbs-saf&template=play220asf.html&query=*&squery=%2BClipID%3A5+%2BVideoAsset%3Apbssaf1310&inputField=%20&entire=No&ccstart=2069479&ccend=3318395&videoID=pbssaf1310
+ 
+                        -->
+                                    </aside>
+                                </div>
+                            </div>
+                            <p>
+                                "Or sometimes we try <em>lung-gum</em>; we see which one of us can float in the air the longest.
+                            </p>
+                            <p>
+                                "If we feel like it, we do astral projection. Our astral body leaves our material body and travels around the country. If we want, we do <em>pho wa</em>; we get into someone else's body." <sup>[6]</sup>
+                            </p>
+                            <p class="fnote">
+                                [6. See <a href="https://en.wikipedia.org/wiki/Phowa">en.wikipedia.org/wiki/Phowa</a>&nbsp;]
+                            </p>
+                            <p>
+                                "Have you done all these things?" I asked.
+                            </p>
+                            <p>
+                                "Of course; no problem. And I can do other things. You see that picture over there?" Norbu pointed at a tapestry on a far wall. I got up, walked to it and looked at the picture. It was a figure of an ugly half-human beast.
+                            </p>
+                            <p>
+                                "That's a picture of a being from another order of existence," Norbu said. "I can make that being appear just by staring at that picture."
+                            </p>
+                            <p>
+                                "You mean you could bring that being into existence, right here in this room, just by staring at that picture?" I asked.
+                            </p>
+                            <p>
+                                "Goddammit, I just said I could, didn't I? Of course I can. But I'm not going to; I'm not here to put on a show for you."
+                            </p>
+                            <p>
+                                I went back to my chair and sat down. I'd certainly have liked to see Norbu materialize this creature from another order of being, preferably in a cage, but I was certain I'd never persuade him to do so.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="back-to-the-us">&nbsp;</a>
+                            <h4>
+                                Back to the U.S.
+                            </h4>
+                            <p>
+                                After learning how to do all these strange things (strange to me, at any rate) and having acquired the ability to heal, using The Way, Norbu came back to the United States.
+                            </p>
+                            <p>
+                                "I didn't want to come," he said, "but my lama told me to come back. I'm here to bring The Way to the Western world. I don't seek anybody out, but some will seek me. I'd rather be back in Sikkim, but for now I've got to stay here."
+                            </p>
+                            <p>
+                                "Do you still keep in touch with your lama?"
+                            </p>
+                            <p>
+                                "Of course."
+                            </p>
+                            <p>
+                                "How?" I asked. "Do you write?"
+                            </p>
+                            <p>
+                                Norbu's look of disdain was something to behold. "Of course not," he said. "We communicate directly."
+                            </p>
+                            <p>
+                                "Mental telepathy?"
+                            </p>
+                            <p>
+                                "I can't explain to you, goddammit. Only those who know The Way can understand."
+                            </p>
+                            <p>
+                                It was 1965 when Norbu came back to the United States. He was very vague about the next three years, though he mentioned that in 1967 he spent four months in the Philippines watching the psychic surgeons. He said that he tried to heal between 1965 and 1970, but the M.D.s wouldn't let him. "You know what they told me down in Florida? They told me to go stick pins into dolls. All the time they were killing patients I could have cured with The Way. You see why I call them 'Mostly Dumb'?"
+                            </p>
+                            <p>
+                                Sometime in 1970 or 1971 Norbu met Dr. Edgar Mitchell at an E.S.P. convention in Arkansas. Mitchell was impressed with Norbu Chen's healing powers and persuaded Norbu to come to Houston, where Mitchell had his office at the time.
+                            </p>
+                            <p>
+                                "I worked on 'motor-mouth,' one of Mitchell's secretaries," Norbu said. "She had bad kidney disease. I cured her. But you know what that dumb broad did? A few weeks later she went out and got drunk and had a recurrence. How dumb can you be? <sup>[7]</sup>
+                            </p>
+                            <p class="fnote">
+                                [7. Apparently Mr Mitchell's future wife, Anita Rettig. See <a href="edgar-mitchell-comments.htm#part-2">Edgar Mitchell's account, part 2</a>&nbsp;]
+                            </p>
+                            <p>
+                                "I worked on Mitchell's mother, too. She had arthritis. I treated that and fixed her eyes too. She used to wear glasses but she doesn't need them any more." <sup>[8]</sup>
+                            </p>
+                            <p class="fnote">
+                                [8. See <a href="edgar-mitchell-comments.htm#part-1">Edgar Mitchell's account, part 1</a>&nbsp;]
+                            </p>
+                            <p>
+                                When Mitchell left Houston for San Antonio, Norbu stayed behind. By that time he had started his own organization, the Chakpori-Ling Foundation, <sup>[9]</sup> and was firmly established as a healer.
+                            </p>
+                            <p class="fnote">
+                                [9. Now inactive.]
+                            </p>
+                            <!-- dead links or no info
+                                <aside class="insert note80">
+                                    <p>
+                                        Some links:  </p>
+                                    <p>
+                                        http://non-profit-organizations.findthebest.com/l/1177645/Chakpori-ling-Foundation
+                                      </p>
+                                    <p>
+                                        http://www.guidestar.org/organizations/94-2378218/chakpori-ling-foundation.aspx
+                                      </p>
+                                     
+                                <p>
+                                    http://www.newagefraud.org/smf/index.php?topic=23.0
+                                  </p>
+                                    
+                                        http://www.v-j-enterprises.com/maxcs.html
+                                      </p>
+                                </aside>
+                            -->
+                            <p>
+                                "My foundation is nonprofit," Norbu said. "I've got it set up like a church. I support it with the money I earn healing, but I've got people with a lot of money on my board. Doris Duke <sup>[10]</sup> is on my board, and so is C. V. Wood, Jr., <sup>[11]</sup> president of the McCulloch Oil Company. They all help me.
+                            </p>
+                            <p class="fnote">
+                                [10. <a href="https://en.wikipedia.org/wiki/Doris_Duke">en.wikipedia.org/wiki/Doris_Duke</a>&nbsp;]
+                            </p>
+                            <p class="fnote">
+                                [11. <a href="https://www.nytimes.com/1992/03/16/us/c-v-wood-jr-who-pioneered-large-theme-parks-is-dead-at-71.html">N.Y. Times obit</a>&nbsp;]
+                            </p>
+                            <p>
+                                "Take Sam Jones, for example. ("Sam Jones" is a fictitious name I am using instead of the actual name Norbu used.) <span class="note">[Possibly Florida surgeon E. Stanton Maxey, M.D. See Fate Magazine article.]</span> Sam's got four planes, but the foundation uses them when we need them. That's how we flew Dr. Cobb and his assistant out from San Antonio and back. I've got lots of support." (Checking later with the office of the Secretary of State in Austin, I found out that Doris Duke and C. V. Wood, Jr., were listed at the time of registration as trustees of Chakpori-Ling Sangha. Although "Sam Jones" was not included on this list, he might have become a trustee later.)
+                            </p>
+                            <p>
+                                "Of course, I don't need their money," he continued. "Shit, I can make two phone calls and fart more money than Sam Jones earns with his surgical practice in a year." (Dr. Jones told me, later, that his practice brings him about $200,000 a year. Norbu has an amazing digestive tract.)
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="cures">&nbsp;</a>
+                            <h4>
+                                Cures and Treatment Routine
+                            </h4>
+                            <p>
+                                "What do you charge for healing?" I asked Norbu.
+                            </p>
+                            <p>
+                                "The minimum donation is five hundred dollars," he said. "Lots of people donate more, because I get good results. Not like you stupid M.D.s."
+                            </p>
+                            <div class="myaside">
+                                <div class="myinsert">
+                                    <aside>
+                                        <p>
+                                            $500 in 1972 amounts to $3,100 in 2020 dollars.
+                                        </p>
+                                    </aside>
+                                </div>
+                            </div>
+                            <p>
+                                "Can you cure patients with one treatment?" I asked.
+                            </p>
+                            <p>
+                                "That's a dumb question," Norbu said. "It depends. Some patients I cure with one treatment, no problem.
+                            </p>
+                            <p>
+                                Sometimes it takes more than one treatment. And I don't cure all of them. I admit it. But my results are a hell of a lot better than yours. Remember, I'm just treating the ones you guys have screwed up."
+                            </p>
+                            <p>
+                                "Do you have figures on your results?"
+                            </p>
+                            <p>
+                                "Not exact. I haven't got time to fool around with that bullshit. But I can give you an idea.
+                            </p>
+                            <p>
+                                "With kidneys I cure about ninety-five percent, hearts ninety percent, multiple sclerosis only about thirty-two to thirty-eight percent. Some of the M.S. patients I can't help at all; some I improve; some I cure completely."
+                            </p>
+                            <p>
+                                "How about cancer?" I asked.
+                            </p>
+                            <p>
+                                "Without metastases (i.e., without spread of the tumor from the organ in which it arose to a distant organ) eighty-seven percent cures."
+                            </p>
+                            <p>
+                                Later, when I got a cursory look at Norbu's "records," I wondered about the percentages that he rattled off so glibly. Most of his records contained nothing but the name, address and phone number of the patient, and some didn't even have all of these.
+                            </p>
+                            <p>
+                                "How many patients do you treat in a month?" I asked.
+                            </p>
+                            <p>
+                                "It depends on how I feel," Norbu answered. "Just like you. You wouldn't go in and operate if you felt lousy, would you?"
+                            </p>
+                            <p>
+                                "Not if I could help it," I admitted.
+                            </p>
+                            <p>
+                                "Well, I'm the same way. I could have all the patients I want, but I only work when I'm feeling good. Shit, I've had some patients fly in here to be treated and I didn't feel like healing, so I sent them home. I even paid their way.
+                            </p>
+                            <p>
+                                "Sometimes, if a patient isn't satisfied with the result I get, I fly him back and treat him again for nothing. That's more than you goddamn M.D.s do."
+                            </p>
+                            <p>
+                                I had to admit he had a point.
+                            </p>
+                            <p>
+                                Later I learned from his patient Randy Lewis what Norbu's treatment routine was like.
+                            </p>
+                            <p>
+                                "Norbu has room here for four patients," Mr. Lewis told me. "He has sleeping accommodations for two women and two men. The patients fly here on the day before treatment. They are supposed to be here by one p.m.
+                            </p>
+                            <p>
+                                They go to bed at three p.m. and are not supposed to get out of bed, except to go to the bathroom, until they receive treatment the next morning. The patient fasts, except for grapefruit juice, from three in the afternoon till the next morning."
+                            </p>
+                            <p>
+                                "What time does Norbu treat his patients?"
+                            </p>
+                            <p>
+                                "Whenever he feels like it," Mr. Lewis said. "Sometimes at eight in the morning, sometimes not till ten."
+                            </p>
+                            <p>
+                                "What's the treatment like?"
+                            </p>
+                            <p>
+                                "Exactly like the treatment you saw him give the mice. He works in front of his altar for a while, then shoots his power through you."
+                            </p>
+                            <p>
+                                "Do you feel anything as the power goes through you?"
+                            </p>
+                            <p>
+                                "No, nothing."
+                            </p>
+                            <p>
+                                "So the entire treatment, including his work in front of the altar, takes only about five minutes?" "Right."
+                            </p>
+                            <p>
+                                "Then the patient goes home."
+                            </p>
+                            <p>
+                                "Correct," Mr. Lewis said. "Though, as Norbu told you, in some cases it's necessary for him to return for more treatments later."
+                            </p>
+                            <p>
+                                Norbu never would tell me how many patients he treated in a week or month or year, though he assured me that he could have as many patients as he wanted. However, with facilities at the Chakpori-Ling Foundation (Norbu's home is the foundation) which will accommodate four patients, Norbu says he can earn, whenever he pleases, a minimum of $2,000 a day. That should support Norbu's foundation, and Norbu himself, quite comfortably.
+                            </p>
+                            <p>
+                                Some of us may have reservations about Norbu's ability to dance with a corpse, but one thing is certain: he sure knows how to make money.
+                            </p>
+                            <p class="note80 center">
+                                [ end of chapter 10 ]
+                            </p>
+                            <p class="note80 center">
+                                Next: <a href="william-nolen-norbu-chen-chapter-11.htm">william-nolen-norbu-chen-chapter-11.htm</a>
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="joann-parks-interview.htm">&lt; Interview with JoAnn Parks</a></li>
+                                    <li class="align-right"><a href="william-nolen-norbu-chen-chapter-11.htm">Wm. Nolen, Chapter 11 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

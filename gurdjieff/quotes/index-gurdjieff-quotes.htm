@@ -1,0 +1,234 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index of Gurdjieff Quotes, Spanish and English</title>
+	<meta name="description" content="G.I. Gurdjieff, P.D. Ouspensky, Maurice Nicoll, Madame de Salzmann, Jerry Brewster, A. Jodorowsky" />
+	<meta name="author" content="George I. Gurdjieff">
+	<meta property="og:title" content="Index of Gurdjieff Quotes, Spanish and English" />
+	<meta property="og:description" content="G.I. Gurdjieff, P.D. Ouspensky, Maurice Nicoll, Madame de Salzmann, Jerry Brewster, A. Jodorowsky" />
+	<meta property="og:image" content="https://selfdefinition.org/gurdjieff/quotes/images/gurdjieff.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_gurdjieff-quotes-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- <link rel="prev" >
+    <link rel="next" href=""> NOT USED NOT A SERIES -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* TEXTS IN SPANISH NEED UTF-8 BOM AND SET LANGUAGE ABOVE */
+		/* reduce the article font a little */
+
+		ul.index-menu-section {
+			margin-top: 35px;
+			list-style-type: none;
+			padding-left: 10px;
+		}
+
+		ul.index-menu-section li {
+			margin: 25px 0;
+		}
+
+		ul.index-menu-section li.part {
+			margin: 10px 0;
+		}
+
+		ul.index-menu-section li a {
+			display: block;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_gurdjieff-quotes-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_gurdjieff-quotes-title-include.htm"); ?>
+
+									<h3>
+										Index of Quotes
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="gurdjieff-aphorisms.htm">Gurdjieff's Aphorisms &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div id="index-menu-group">
+								<ul class="index-menu-section">
+									<li>In English and Spanish</li>
+									<li><a href="gurdjieff-aphorisms.htm">Gurdjieff's Aphorisms</a> </li>
+									<li><a href="gurdjieff-aforismos.htm">Aforismos de Gurdjieff</a> </li>
+									<li>
+										<hr />
+									</li>
+									<li>Auto-observacion &ndash; Self-observation <span class="block note">3 parts esp-eng</span></li>
+									<li><a href="auto-observacion-self-observation-espanol-english.htm">1 - Human Machine</a></li>
+									<li><a href="auto-observacion-self-observation-part-2-centers.htm">2 - Study of Centers</a></li>
+									<li><a href="auto-observacion-self-observation-part-3-imagination.htm">3 - Imagination and Habits</a></li>
+									<li>
+										<hr />
+									</li>
+									<li><a href="gurdjieff-the-last-hour-of-life.htm">Gurdjieff: The Last Hour of Life</a></li>
+									<li><a href="gurdjieff-la-ultima-hora-de-vida.htm">Gurdjieff: La Ultima Hora De Vida</a></li>
+									<li>
+										<hr />
+									</li>
+									<li>In Spanish and English:</li>
+									<li class="esp-eng"><a href="considering-espanol-english.htm">Consideraci&oacute;n &ndash; Considering</a></li>
+									<li class="esp-eng"><a href="obyvatel-spanish-english.htm">El Obyvatel &ndash; Householder or Cabeza de Familia</a></li>
+									<li class="esp-eng"><a href="influences-espanol-english.htm">Influencias A, B, C y Centro Magnetico &ndash; Influences A, B, C and Magnetic Center</a></li>
+									<li class="esp-eng"><a href="gurdjieff-comments-on-going-mad.htm">Comentarios sobre volverse loco &ndash; <span class="block">Comments on Going Mad</span> </a></li>
+									<li>
+										<hr />
+									</li>
+									<li><a href="science-of-idiotism.htm">Science of Idiotism</a></li>
+									<li><a href="ciencia-del-idiotismo.htm">La Ciencia del Idiotismo</a></li>
+									<li><a href="toast-to-the-idiots.htm">Toast to the Idiots</a></li>
+									<li>
+										<hr />
+									</li>
+									<li><a href="la-interrogante-de-gurdjieff-english.htm">Gurdjieff's Question</a></li>
+									<li><a href="la-interrogante-de-gurdjieff.htm">La Interrogante de Gurdjieff</a></li>
+									<li>
+										<hr />
+									</li>
+									<li><a href="cinco-deberes-five-strivings-espanol-english.htm">Gurdjieff: Los Cinco Esfuerzos Eserales &ndash; Five Obligatory Strivings</a></li>
+									<li>
+										<hr />
+									</li>
+									<li>P.D. Ouspensky:<a href="notas-sobre-la-decision-de-trabajar.htm">Notas Sobre La Decisión de Trabajar &ndash; Notes on the Decision to Work</a></li>
+									<li>
+										<hr />
+									</li>
+									<li>A. R. Orage: <a href="orage-five-strivings-english.htm">Five Obligatory Strivings</a></li>
+									<li><a href="orage-cinco-esfuersos-espanol.htm">Los Cinco Esfuerzos Eserales</a></li>
+									<li><a href="orage-aphorisms-english.htm">Aphorisms - English</a></li>
+									<li><a href="orage-aforismos-espanol.htm">Aforismos - Espa&ntilde;ol</a></li>
+									<li>
+										<hr />
+									</li>
+									<li>Maurice Nicoll: <a href="nicoll-centers-and-parts-of-centers.htm">Centers and Parts of Centers</a></li>
+									<li>
+										<hr />
+									</li>
+									<li>Jerry Brewster: <a href="brewster-personality.htm">Personality</a> </li>
+									<li><a href="brewster-personalidad.htm">La personalidad</a> </li>
+									<li>
+										<hr />
+									</li>
+									<li>Alejandro Jodorowsky: <a href="jodorowsky-82-sayings-of-gurdjieff.htm">82 Sayings of Gurdjieff</a></li>
+									<li><a href="jodorowsky-82-mandamientos-de-gurdjieff.htm">82 Mandamientos de Gurdjieff</a></li>
+									<li>
+										<hr />
+									</li>
+									<li class="header-item">More Gurdjieff </li>
+									<li>Mme de Salzmann: <a href="/gurdjieff/salzmann/05-where-our-attention-is.htm">Where our attention is / Dónde está nuestra atención </a></li>
+									<li>
+										<hr />
+									</li>
+									<li>Selections from Views from the Real World <span class="note">(in process)</span></li>
+									<li class="note">English</li>
+									<li><a href="/gurdjieff/real-world/aforismos.htm">The Gurdjieff Aphorisms <span class="note">(duplicate of the above)</span></a></li>
+									<li><a href="/gurdjieff/real-world/ch-07-how-can-we-gain-attention.htm">How Can We Gain Attention?</a></li>
+									<li class="note">Espa&ntilde;ol</li>
+									<li><a href="/gurdjieff/real-world/aforismos.htm">Los Aforismos de Gurdjieff <span class="note">(un duplicado)</span></a></li>
+									<li><a href="/gurdjieff/real-world/cap-07-como-podemos-ganar-atencion.htm">Como Podemos Ganar Atenci&oacute;n?</a> </li>
+									<li>
+										<hr />
+									</li>
+									<li>Ouspensky: Psychology of Man's Possible Evolution <a href="/gurdjieff/evolution/introduction.htm">/gurdjieff/evolution/introduction.htm</a> </li>
+									<li>Psicología de la Posible Evolución del Hombre <a href="https://selfdefinition.org/gurdjieff/evolucion/introduccion.htm">/gurdjieff/evolucion/introduccion.htm</a> </li>
+									<li>
+										<hr />
+									</li>
+									<li class="">Also by Gurdjieff, in the Celibacy section of our site</li>
+									<li>Kundalini and Transmutation <a href="/celibacy/quotes/gurdjieff-on-kundalini-and-transmutation.htm">/celibacy/quotes/gurdjieff-on-kundalini-and-transmutation.htm</a> </li>
+									<li>The Abuse and Use of Sex <a href="/celibacy/quotes/gurdjieff-on-the-abuse-and-use-of-sex.htm">/celibacy/quotes/gurdjieff-on-the-abuse-and-use-of-sex.htm</a> </li>
+									<li>
+										<hr />
+									</li>
+									<!--
+									<li>
+										<hr />
+									</li>
+
+									 <li><a href=""></a></li>
+									-->
+								</ul>
+							</div>
+							<p>
+								&nbsp;
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="gurdjieff-aphorisms.htm">Gurdjieff's Aphorisms &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

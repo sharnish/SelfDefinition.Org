@@ -1,0 +1,960 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Las Paradojas de la Alta Ciencia</title>
+	<meta name="description" content="">
+	<meta name="author" content="Éliphas Lévi (1810-1875)">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/paradojas/images/Eliphas-Levi-color-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-paradojas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="magia-y-magismo.htm">
+	<link rel="next" href="el-gran-secreto.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* ENCODED UTF-8 WITH BOM - WEB PAGES SHOW OK, PHP FILES LOAD OK
+            encoded using VWD - CODEPAGE 65001 */
+
+		p.principle {
+			text-align: center;
+			font-weight: bold;
+		}
+
+		/* unalterable-principles  */
+
+		label[for=element-toggle-135-1],
+		label[for=element-toggle-135-2],
+		label[for=element-toggle-137-1],
+		label[for=element-toggle-137-2],
+		label[for=element-toggle-138-1],
+		label[for=element-toggle-141-1],
+		label[for=element-toggle-143-1],
+		label[for=element-toggle-145-1],
+		label[for=element-toggle-146-1],
+		label[for=element-toggle-150-1],
+		label[for=element-toggle-150-2],
+		label[for=element-toggle-150-3],
+		label[for=element-toggle-153-1],
+		label[for=element-toggle-154-1],
+		label[for=element-toggle-156-1],
+		label[for=element-toggle-156-2],
+		label[for=element-toggle-157-1],
+		label[for=element-toggle-157-2] {
+			cursor: pointer;
+		}
+
+		/* unalterable-principles  */
+
+		#element-toggle-135-1,
+		#element-toggle-135-2,
+		#element-toggle-137-1,
+		#element-toggle-137-2,
+		#element-toggle-138-1,
+		#element-toggle-141-1,
+		#element-toggle-143-1,
+		#element-toggle-145-1,
+		#element-toggle-146-1,
+		#element-toggle-150-1,
+		#element-toggle-150-2,
+		#element-toggle-150-3,
+		#element-toggle-153-1,
+		#element-toggle-154-1,
+		#element-toggle-156-1,
+		#element-toggle-156-2,
+		#element-toggle-157-1,
+		#element-toggle-157-2 {
+			display: none;
+		}
+
+		/* unalterable-principles  */
+
+		#element-toggle-135-1:not(:checked)~#toggled-element-135-1,
+		#element-toggle-135-2:not(:checked)~#toggled-element-135-2,
+		#element-toggle-137-1:not(:checked)~#toggled-element-137-1,
+		#element-toggle-137-2:not(:checked)~#toggled-element-137-2,
+		#element-toggle-138-1:not(:checked)~#toggled-element-138-1,
+		#element-toggle-141-1:not(:checked)~#toggled-element-141-1,
+		#element-toggle-143-1:not(:checked)~#toggled-element-143-1,
+		#element-toggle-145-1:not(:checked)~#toggled-element-145-1,
+		#element-toggle-146-1:not(:checked)~#toggled-element-146-1,
+		#element-toggle-150-1:not(:checked)~#toggled-element-150-1,
+		#element-toggle-150-2:not(:checked)~#toggled-element-150-2,
+		#element-toggle-150-3:not(:checked)~#toggled-element-150-3,
+		#element-toggle-153-1:not(:checked)~#toggled-element-153-1,
+		#element-toggle-154-1:not(:checked)~#toggled-element-154-1,
+		#element-toggle-156-1:not(:checked)~#toggled-element-156-1,
+		#element-toggle-156-2:not(:checked)~#toggled-element-156-2,
+		#element-toggle-157-1:not(:checked)~#toggled-element-157-1,
+		#element-toggle-157-2:not(:checked)~#toggled-element-157-2 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-paradojas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_las-paradojas-title-include.htm"); ?><h3>
+										Los Principios Inalterables
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="../paradoxes/unalterable-principles.htm">.. unalterable-principles.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="magia-y-magismo.htm">&lt; La Magia y Magismo</a></li>
+									<li class="align-right"><a href="el-gran-secreto.htm">El Gran Secreto &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								Ahora resumamos, estableciendo estos principios inalterables que servirán también
+								como base y una consagración por todo lo que escribimos.
+							</p>
+							<p class="principle">
+								I
+							</p>
+							<p>
+								El hombre tiene dos medios de alcanzar las certezas&mdash;matemáticas y el sentido común.
+							</p>
+							<p class="principle">
+								II
+							</p>
+							<p>
+								Puede tener allí las verdades que sobrepasan el sentido común, pero ninguno el que
+								contradiga las matemáticas.
+							</p>
+							<p class="principle">
+								III
+							</p>
+							<p>
+								&quot;Él el que, aparte de las matemáticas puras, pronuncia la palabra imposible,
+								la falta de la prudencia,&quot; (Arago), que significa que el exterior de las matemáticas
+								puras allí no es ninguna certeza completa, universal y absoluta.
+							</p>
+							<p class="principle">
+								IV
+							</p>
+							<p>
+								Aparte de figura, la certeza universal y absoluta allí son solamente creencia u
+								opinión.
+							</p>
+							<p class="principle">
+								V
+							</p>
+							<p>
+								La creencia y las opiniones no pueden ser demostradas; los hombres las escogen como
+								cuestión de gusto o las aceptan como cuestión de la política.
+							</p>
+							<p class="principle">
+								VI
+							</p>
+							<p>
+								Opiniones útiles deben ser animadas, y las peligrosas o nocivas deberían ser reprimidas.
+								Esto explica la lucha necesaria entre los conservadores y los innovadores; solamente
+								los conservadores se hacen perseguidores cuando consideran, o fingen para creer,
+								peligrosos lo que es evidentemente útil.&nbsp;<sup>[135:1]</sup>
+							</p>
+							<label for="element-toggle-135-1">
+								[135:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-135-1" type="checkbox" />
+							<p id="toggled-element-135-1" class="fnote hidden">
+								[135:1. Muy débil! ¿ Quién debe ser el juez? Lo que consideras útilmente, tengo por
+								nocivo, y vice-versa.&mdash;<em>Trad</em>.]
+							</p>
+							<p class="principle">
+								VII
+							</p>
+							<p>
+								Las matemáticas puras mismas existen; ninguna voluntad los produce, alguna fuerza
+								puede limitarlos. <sup>[135:2]</sup> Son las leyes eternas, este hombre de no pueden
+								violar, y detrás de lo que es imposible escapar.
+							</p>
+							<label for="element-toggle-135-2">
+								[135:2. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-135-2" type="checkbox" />
+							<p id="toggled-element-135-2" class="fnote hidden">
+								[135:2. Nuestro autor, tomando ideas pitagóricas, a menudo habla de matemáticas puras, como si fueran un género de existencia sobrehumana, cosas, mientras que dice existir por ellos mismas, o individuo existentes. ¿ Pero cuáles verdaderamente son? Deducciones simplemente rígidamente lógicas de las hipótesis rígidamente limitadas y definidas. Para decir sus resultados están seguros simplemente debe repetir con Oliver Wendell Holmes, la " lógica es una lógica, que es todo lo que digo. " Algún los lugares exactamente y exhaustivamente definidos, entonces deducciones lógicas de ahí debe ser verdad. Las matemáticas son la creación del espíritu humano, y dependen significados y valores y limitaciones de estos últimos, a los que asigna a ciertos símbolos. No hay nada misterioso o superhombre en ellos. Convertir su equilibrio de notación del decimal en duodecimal, y las " leyes diversas eternas " de la antigüedad desaparecen del último. Pasar arriba al cálculo diferencial o al cálculo del infinito en el cual presentas hipótesis no rígidamente limitadas, y haces avanzar inmediatamente, los verdaderos, a muchedumbre de las soluciones completamente no pertinentes. Para indicar que ninguna voluntad los crea y ninguna fuerza las limita es absurdo; han sido creados por la voluntad que lanzó sus hipótesis fundamentales, y por estos últimos rígidamente son limitados. &mdash;<em>Trad</em>.]
+							</p>
+							<p class="principle">
+								VIII
+							</p>
+							<p>
+								Una cosa puede parecer absurda y ser verdadera cuando está por encima de sentido
+								común, <sup>[137:1]</sup> pero una cosa contraria a las leyes de las matemáticas
+								verdaderamente es y absolutamente absurda, y el cuyas creencia en una tal absurdidad
+								es una tontería.
+							</p>
+							<label for="element-toggle-137-1">
+								[137:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-137-1" type="checkbox" />
+							<p id="toggled-element-137-1" class="fnote hidden">
+								[137:1. Nada está por encima de sentido común, pero una cosa puede ser demasiado mal definida para que el sentido común lo toma. El aforismo sentencioso de todo nuestro autor significa, es que si la naturaleza, o nuestro conocimiento, de una cosa es tal que no podemos rigurosamente y definir exhaustivamente sus lugares y discutir entonces lógicamente sobre estos últimos, mirada, a nuestra visión imperfecta, como nuestras conclusiones pueden - pueden sin embargo ser nosotras verdaderamente están en alguna posición que hay que decidir; considerando que, si podemos rigurosamente y definir exhaustivamente los lugares y discutirnos entonces estrictamente lógicamente de estos últimos, nuestro las conclusiones deben ser correctas, y nadie pero un imbécil puede no fiarse del hecho. &mdash;<em>Trad</em>.]
+							</p>
+							<p>
+								La señal de la Cruz, que es la intersección de dos líneas, equilibradas una por
+								la otra, ha estado considerada siempre como símbolo divino.&nbsp;<sup>[137:2]</sup>
+								Es Tau de los Hebreos antiguos, el chi (x) griegos y cristianos; en las matemáticas
+								este signo + representa el infinito, y x el desconocido; + significa cuanto más
+								o más, y el infinito está siempre más.
+							</p>
+							<label for="element-toggle-137-2">
+								[137:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-137-2" type="checkbox" />
+							<p id="toggled-element-137-2" class="fnote hidden">
+								[137:2. Esto parece trapacero. Naturalmente el signo acostumbrado para el infinito en las matemáticas es &#8734; <span class="nowrap">&mdash;<em>Trans</em>.]</span>
+							</p>
+							<p>
+								Desarrollar la ciencia como tú, para marcar su primera etapa con alfa, su trozo
+								con Omega, y sin embargo tendrás siempre antes de ti el desconocido, al que debes
+								identificar, y su fórmula queda Q + x; <sup>[138:1]</sup> que todo de lo que nos
+								enteramos es enrollado además de esto desconocido que jamás es completamente desarrollado,
+								es esto el que produce todas las cosas; no sabiendo lo el que es, lo personificamos
+								y le llamamos Dios. <sup>[138:2]</sup>
+							</p>
+							<label for="element-toggle-138-1" style="margin-top: 20px;">
+								[138:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-138-1" type="checkbox" />
+							<p id="toggled-element-138-1" class="fnote hidden">
+								[138:1. Por consiguiente la cruz tibetana sobre el sombrero de Dalai Lama &mdash;O.E.]
+							</p>
+							<p class="fnote">
+								[138:2. Por fin el gato está fuera del saco. <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p>
+								En cuanto esto parecía como si este personificación haya sido realizado sobre tierra,
+								pero el Dios-hombre moría sobre la cruz, que es sobre ella x eterno, y única de
+								cruz los restos, para nosotros.
+							</p>
+							<p class="principle">
+								X
+							</p>
+							<p>
+								El simbolismo hipotético del poder infinito solamente es infinito y excluye, necesariamente,
+								la unidad individual. Cada individualidad es limitada por otra, a menos que suprima
+								todos los demás; Dios, al contrario, siendo el principio de todas las individualidades,
+								no puede ser un individuo. Está sobre esta cuenta que sería uno en varias personas.
+								Tres es un número místico que representa la generación de todos los números.
+							</p>
+							<p class="principle">
+								XI
+							</p>
+							<p>
+								Dios jamás habla a los hombres, a menos que por los hombres, y no hace nada en especie
+								salvo por las leyes de la naturaleza.
+							</p>
+							<p class="principle">
+								XII
+							</p>
+							<p>
+								Lo sobrenatural es el que saca fuera nuestra inteligencia normal y nuestro conocimiento
+								de las leyes de la naturaleza.
+							</p>
+							<p class="principle">
+								XIII
+							</p>
+							<p>
+								Dios, igual, no debe estar considerado como sobrenatural por los teólogos, ya que
+								piensan en la naturaleza de Dios.
+							</p>
+							<p class="principle">
+								XIV
+							</p>
+							<p>
+								Los padres al Concilio de Niza abastecieron una sustancia a Dios por la afirmación
+								que el hijo es la misma sustancia que el padre. Por otra parte si sea imposible
+								admitir, sin confundirnos, una sustancia terminada y una sustancia infinita, la
+								decisión del Concilio de Niza podría abastecer de argumentos a el panteísmo y hasta
+								al materialista.
+							</p>
+							<p class="principle">
+								XV
+							</p>
+							<p>
+								Si Dios, como dice catolicismo, nos creó para conocerlo, amarle, y servirle, y por
+								estos medios obtener la vida eterna, y si, como a dicho Jesús el Cristo, esto que
+								hacemos al prójimo lo hacemos a Dios, sigue que Dios creó a hombres, para saber,
+								amar, y servirse y por estos medios alcanzar la vida eterna. El culto verdadero
+								de Dios, entonces, debe ser filantropía.
+							</p>
+							<p>
+								Y cada religión que no inspira, no aumenta y no perfecciona la filantropía debe
+								ser una religión falsa.
+							</p>
+							<p class="principle">
+								XVI
+							</p>
+							<p>
+								Una religión, cuya consecuencia es el reprobación y el castigo eterno de la mayoría
+								de los hombres o de algunos hombres, o hasta del hombre simple, no inspira la filantropía.
+							</p>
+							<p>
+								Esto no toca la doctrina verdadera y católica, que utiliza solamente el reprobación
+								como amenaza, y es ofrecida en la redención final a todos los hombres. A quien le
+								gustan no los restos en la muerte, dijo San Juan, y los moldeados lejos por Filantropía
+								son los no les gustará a quienes.
+							</p>
+							<p class="principle">
+								XVII
+							</p>
+							<p>
+								Si Dios eran, como ridículamente es supuesta, una personalidad omnipotente que extendió
+								el esfuerzo siendo honrado por ciertas ceremonias especiales, les habría indicado
+								estas ceremonias en cierto modo, evidente e indiscutible a todos los hombres, y
+								habría solamente una forma de culto religioso sobre tierra, pero tal no es el caso,
+								y lo que dio a todo es la necesidad y el deber de amar. La filantropía es pues la
+								religión, verdaderamente católica, es decir universal verdadera y única.
+							</p>
+							<p class="principle">
+								XVIII
+							</p>
+							<p>
+								Cada palabra de la bendición y el amor es la palabra de Dios, y cada palabra de
+								maldición y de odio es el grito de la maldad humana, que los hombres personificaron,
+								le llama el diablo.
+							</p>
+							<p class="principle">
+								XIX
+							</p>
+							<p>
+								Un acto de la filantropía, mismo el más imperfecto, es más religioso y meritorio
+								que todo el ayuno, toda reverencia, y todas las oraciones.
+							</p>
+							<p class="principle">
+								XX
+							</p>
+							<p>
+								La atracción que reúne los sexos no es filantrópica; al contrario a menudo es la
+								más brutal de todos los egoísmos.
+							</p>
+							<p class="principle">
+								XXI
+							</p>
+							<p>
+								Esta atracción merece solamente el nombre del amor cuando es santificada por sentimientos
+								de devoción individual y de sacrificio.
+							</p>
+							<p class="principle">
+								XXII
+							</p>
+							<p>
+								El hombre que mata a una mujer porque no le ama más es un cobarde y un asesino,
+								que sin embargo no justifica el adulterio; pero todo lo que puede ser dicho con
+								atención a esto ha sido dicho por Jesús el Cristo.
+							</p>
+							<p class="principle">
+								XXIII
+							</p>
+							<p>
+								La ley debería ser siempre rigurosa; justicia indulgente.
+							</p>
+							<p class="principle">
+								XXIV
+							</p>
+							<p>
+								Los pequeños sufren por el grande, pero el grande también debe responder por el
+								pequeño. Los ricos pagarán la deuda de los pobres.&nbsp;<sup>[141:1]</sup>
+							</p>
+							<label for="element-toggle-141-1">
+								[141:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-141-1" type="checkbox" />
+							<p id="toggled-element-141-1" class="fnote hidden">
+								[141:1. Es solamente en un sentido muy forzado o bien transcendental que es verdad. Cada alma paga sus propias deudas, sean grandes o pequeñas. Esta es la base verdadera y eterna de la justicia y la moralidad. &mdash;<em>Trad</em>.]
+							</p>
+							<p class="principle">
+								XXV
+							</p>
+							<p>
+								Los mejores cuando se corrompen son peores que los malos. ¿ Cuál venerable que el
+								buen sacerdote, sin embargo que es más despreciable que un mal sacerdote? Pero las
+								funciones del sacerdocio son así sublimes y tan elevadas por encima de la naturaleza
+								humana, y cada sacerdote que no es un santo es malo. Esto explica la duda que cae
+								sobre el sacerdocio en los períodos cuando el sentimiento religioso es débil. <span class="sans">¡</span>
+								En el evangelio señalan la escritura que el Cristo encontró a un buen ladrón, pero
+								señalan en ninguna parte que encontró a un buen sacerdote!
+							</p>
+							<p class="principle">
+								XXVI
+							</p>
+							<p>
+								El buen sacerdote es la devoción encarnada; es filantropía aumentada a un ideal
+								divino; el mal sacerdote es uno que vende oraciones y toma los vasos sagrados por
+								sus vasijas que hay que cocer.
+							</p>
+							<p class="principle">
+								XXVII
+							</p>
+							<p>
+								Todo lo que él hace bien es bueno; todo lo que hace la defectuosidad es malo.
+							</p>
+							<p class="principle">
+								XXVIII
+							</p>
+							<p>
+								Todo lo que nos da el placer aparece como bueno, y todas esta perturbaciones o nos
+								aflige parece malo; pero a menudo nos equivocamos, y estos errores son &quot; las
+								circunstancias atenuantes &quot; del pecado.
+							</p>
+							<p class="principle">
+								XXIX
+							</p>
+							<p>
+								Es imposible amar el mal en sentido del propio interés, sabiendo lo que lo es, y
+								sin su haber un cierto aspecto de bien.
+							</p>
+							<p class="principle">
+								XXX
+							</p>
+							<p>
+								El mal no tiene ninguna verdadera existencia, o, para ponerla mejor, no existe de
+								modo absoluto. Lo que no debe ser, no es: seguro e indiscutible.&nbsp;<sup>[143:1]</sup>
+							</p>
+
+
+							<label for="element-toggle-143-1">
+								[143:1. Mostrar / ocultar nota muy larga.]</label>
+							<input id="element-toggle-143-1" type="checkbox" />
+							<div id="toggled-element-143-1" class="fnote hidden">
+								<p>
+									[143:1. No es cierto ni indiscutible, y los asuntos enteros de párrafo de modo insuficiente y sofístico con " enigma eterno " - el origen del mal. Podemos en un sentido decir que el mal es la oscuridad necesaria para hacer bien evidente, pero la oscuridad es verdadera para nosotros, todo lo idéntico, y así es mala.
+								</p>
+								<p>
+									La explicación del ocultismo es que el mal simplemente es el resultado de la infracción de leyes normales. El universo es los resultados de las leyes inalterables. Una de estas leyes es evolución; a una etapa de esto, seres sensibles son desarrollados, y luego empiezan, de su trasgresión ignorante de las leyes físicas del universo, el mal físico, el dolor corporal y el sufrimiento. A un estadio ulterior de la evolución, la inteligencia y la responsabilidad moral son desarrolladas, y luego, con la trasgresión de las leyes morales del universo por el espiral que desarrolló la voluntad de tiene y el sentido moral de su propios, mal moral se presenta. No hay ninguna tentativa de negar la realidad&mdash;cuadrilátero nosotros&mdash;el mal; pero es el resultado inevitable de la trasgresión de las leyes de la naturaleza inalterable. Lo admitimos todo que las energías de recuperación (la ley de la reconstrucción de la eficacia fuera del desvanecido) de la naturaleza
+									<!-- Pág. 144-->
+									a menudo (posiblemente siempre a la larga) aportan bono fuera del mal, justo como el cadáver en descomposición es hecho a una fuente de fertilización: pero el mal es verdad así como es, con nuestros sentidos, el olor asqueroso de la putrefacción.
+								</p>
+								<p>
+									Es, probablemente, principalmente la realidad del mal que lleva una sección del ocultismo no simplemente a la palabra " que no podemos encontrar a ningún Dios en el universo, " pero para afirmar que no hay ningún Dios aparte de esto, ninguna voluntad consciente inteligente como fuente de las leyes cognoscible. Para, discutir, si había, él sería responsable de todo el mal, y si así no puede ser Dios&mdash;que quiere decir bueno.
+								</p>
+								<p>
+									Excepto otra sección sostenga eso, condicionado como estamos en el universo, no podemos extraer cualquier conclusiones con atención a, o por cualquier realidad de posibilidad o conciba, cualquier cosa fuera de ese universo, pero que al mismo momento que tienen una intuición espiritual, directo que, sin embargo incapaz para concebirle, saben que hay una voluntad tan consciente inteligente, el ser de toda perfección. Y añaden eso por qué los expertos de la primera clase no tenga tal intuición es simplemente porque su auto-evolución psíquica peculiar, su entrenamiento físico en psicópata, los da tan incapaz de intuición espiritual como el materio-físico entrenando de primera capa de enlucido ordinaria de atletas estos incapaces de intuición psíquica. El hombre, dicen, quien entrena y desarrolla lo que, por falta de una terminología más exacta, llamo sus poderes psíquicos, a fin de guiar los leyes de la naturaleza, controlar a los elementales, y manipular la luz astral, como efectivamente cierra las puertas en sus percepciones espirituales más altas, como la p de hombre.
+									<!--</p>
+                                <p class="note green">
+                                    footnote 143:1 on p. 145
+                                </p>
+                                -->
+									que así los trasforman y desarrollan sus poderes físicos en lo que se refiere a ganarse los remos cortos de plata en el Támesis. o el cinturón del campeón, cierran las puertas en la de él psíquico así como también sus percepciones espirituales. Nosotros los estudiantes sólo podemos sentarnos a los pies de nuestros Maestros respectivos y podemos escuchar. No podemos formar ningún concepción de quien sea correcto; Y una cosa es cierta, eso, quien en toda la vida es correcto en lo que se refiere a estos misterios transcendentales más altos, realmente los adeptos de cualquier clase son casi como el superior para los hombres ordinarios como estos sean para los monos. &mdash;<em>Trad</em>.]
+								</p>
+							</div>
+							<p>
+								Esto lo que llamamos malamente existe como sombra necesaria de la manifestación de la luz; el mal metafísico es error, mal físico es dolor; pero el error es perdonable cuando es involuntaria.
+								Para saber perfectamente. Que nos equivocamos, pero para persistir no se equivoca más; procura engañar otros.
+								En cuanto al dolor físico, es el preservativo, y el remedio para, el abuso del placer;
+								ejerce la paciencia del sabio, advierte la imprudencia y castiga el mal. Es más
+								bien, pues, un bien que un mal.
+							</p>
+							<p class="principle">
+								XXXI
+							</p>
+							<p>
+								El desorden en naturaleza está nunca más que aparente, y todos los milagros alegados
+								son fenómenos excepcionales o trucos de magia.
+							</p>
+							<p class="principle">
+								XXXII
+							</p>
+							<p>
+								Cuando ves un contrario de fenómeno en el aspecto a las leyes demostradas por Matemáticas,&nbsp;<sup>[145:1]</sup>
+								esté seguro uno u otro, que observaste insuficientemente o que has sido engañado,
+								o que has tenido alucinaciones.
+							</p>
+							<label for="element-toggle-145-1">
+								[145:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-145-1" type="checkbox" />
+							<p id="toggled-element-145-1" class="fnote hidden">
+								[145:1. Es difícil de entender lo que es a lo que se quiso decir aquí. Seguramente las leyes de matemáticas demuestran ese dos no corresponde y no puede tomar el lugar de uno. Aún sin cualquier prestidigitación, los dobles ocultistas o reduplican cosas, y tan sin embargo su observación pudieron haber sido perfectas, y aunque vos ha sido ni embaucado ni alucinado. &mdash;<em>Trad</em>.]
+							</p>
+							<p class="principle">
+								XXXIII
+							</p>
+							<p>
+								La verdad no necesita ningún milagro, y ningún milagro puede probar una falsedad.
+							</p>
+							<p class="principle">
+								XXXIV
+							</p>
+							<p>
+								Las leyes generales de la naturaleza son conocidas a la ciencia, pero ni todas las
+								fuerzas ni todos agentes son todavía conocidos. Un bosquejo ha sido conseguido por
+								el magnetismo animal que existe ciertamente, pero la ciencia lo trata como problema
+								que no trató de resolver.
+							</p>
+							<p class="principle">
+								XXXV
+							</p>
+							<p>
+								La gente pregunta siempre por qué los fenómenos extraordinarios del magnetismo jamás
+								son producidos en presencia de los hombres del estudio.&nbsp;<sup>[146:1]</sup>
+								Es porque pocos hombres de aprender quién el testigo un fenómeno inexplicable a
+								ellos mismos tendría el coraje de certificar su caso.
+							</p>
+							<label for="element-toggle-146-1">
+								[146:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-146-1" type="checkbox" />
+							<p id="toggled-element-146-1" class="fnote hidden">
+								[146:1. Así de, sin embargo lo suficientemente razonable una puntuación de años atrás, ahora ha caído en desuso: Bastantes hombres de aprendizaje en los últimos años les han presenciado y les han atestiguado. &mdash;<em>Trad</em>.]
+							</p>
+							<p class="principle">
+								XXXVI
+							</p>
+							<p>
+								La luz que vemos es solamente una parte de la luz infinita. Es los algunos rayos
+								de nuestro sol que sean informe de allí con nuestro aparato visual. Nuestro mismo
+								sol es pero una lámpara convenida en nuestro desconocimiento; está en un punto luminoso
+								en el espacio que sería oscuridad con los ojos de nuestro cuerpo, y que es resplandeciente
+								para la intuición de nuestras almas.
+							</p>
+							<p class="principle">
+								XXXVII
+							</p>
+							<p>
+								El magnetismo de palabra expresa la acción y no la naturaleza del gran agente universal
+								que sirve de mediador entre el pensamiento y la vida. Este agente es la luz infinita
+								o más bien (para la luz es solamente un fenómeno) está el portador ligero, el gran
+								Lucifer de la naturaleza, del mediador entre la materia y del espíritu,&nbsp;<sup>[1474:1]</sup>
+								que los ignorantes y los impostores llaman el diablo, y que es la primera criatura
+								de Dios.
+							</p>
+							<p class="fnote">
+								[147:1. Luz astral, el almacén de la electricidad oculta; el vehículo del caos primitivo. <span class="nowrap">&mdash;O.E.</span>]
+							</p>
+							<p class="principle">
+								XXXVIII
+							</p>
+							<p>
+								¿ Cuáles es más absurdo y más impío que para dar al diablo, es decir al mal personificado,
+								el nombre de Lucifer que significa Luz-portador? Lucifer intelectual es el espíritu
+								de la inteligencia y del amor; es Paráclito, es el espíritu santo, y Lucifer físico
+								es el gran agente del magnetismo universal.
+							</p>
+							<p class="principle">
+								XXXIX
+							</p>
+							<p>
+								Para personificar el mal y hacerle una inteligencia, un rival a Dios, que no puede
+								por otra parte comprender y puede más amor, esto es una ficción monstruosa. Para
+								creer que Dios permite esta inteligencia mala engañar y destruir sus criaturas débiles
+								ya tan débil en ellos mismos, es hacer a Dios un igual más malo de personalidad
+								que el diablo; para Dios, tomando del diablo la posibilidad de arrepintiéndose y
+								de amar, él mismo lo fuerza por hacer daño. Por otra parte un espíritu de error
+								y de falsedad puede ser solamente una locura de pensamiento, y hasta no merece la
+								denominación del espíritu. El diablo es lo contrario de Dios, pues si Dios se define
+								como el que ES, el diablo debe serle que no es.
+							</p>
+							<p class="principle">
+								XL
+							</p>
+							<p>
+								Debemos buscar el espíritu de los dogmas, mientras que la recepción en su integridad
+								de su letra, tal como la esfinge sacerdotal nos lo comunique. Esta letra evidentemente
+								es absurda, para que pudiéramos buscar más lejos y más alto. Está seguro para que
+								para actuar se deba ser, y que al pecado uno debe ser consciente, y que, pues, no
+								se puede ser culpable constante; ése no puede hacer nada fuera de nada; este Dios
+								no puede ser ni un hombre, ni un Dios de hombre; este Dios no puede sufrir ni morir;
+								que una mujer que da origen a un niño no puede ser una virgen, etc., etc ... Nadie,
+								entonces, puede seriamente afirmarnos lo contrario de estas verdades, tan palpable
+								y evidente, sin previo aviso como lo tiene allí un misterio en él, es decir un sentido
+								escondido que debe ser extraído y comprendido bajo la pena de ser bien un apóstata
+								o un imbécil.
+							</p>
+							<p class="principle">
+								XLI
+							</p>
+							<p>
+								Que excusa a los ateos pretendidos es la concepción deplorable a la cual las masas
+								conducen ellos mismos de Dios. Hombres lo dotaron con todos sus propios vicios,
+								e imaginaron que lo hacían grande exagerando a estos últimos a las proporciones
+								paradójicas. Así para un ejemplo:
+							</p>
+							<p>
+								De orgullo - <span class="sans">¡</span> Dios toma por el objeto solamente su propia gloria! <span class="sans">¡</span> Busca esta
+								gloria en la disminución de sus rivales - como si lo podría tener; tortura para
+								la eternidad sus criaturas desgraciadas - para su gloria; mató a su hijo - para
+								su gloria! De avaricia - dueño absoluto de todas las buenas cosas, da al número
+								más grande de su miseria de niños solamente, y distribuye sus favores al número
+								más pequeño, solamente lentamente y parsimoniosamente.
+							</p>
+							<p>
+								De envidia - es Dios celoso. Proscribe la libertad; desvía la razón del sabio, y
+								los favores preferentemente a el ignorante y a el idiota.
+							</p>
+							<p>
+								De avaricia - jamás es no satisfecho con la carne de sus víctimas; en virtud de
+								la vieja ley necesitó holocausto de los toros, bajo la nuevo aspira el vapor de
+								las víctimas humanas que arden en los autos de fe.
+							</p>
+							<p>
+								De lujo - debe tener por vírgenes Minotauro; tiene su serrallo de jovenes enamoradas
+								lánguidas, y los monjes torturados por pesadillas obscenas; inventó el celibato
+								para crear a los fantasmas, más presuntuosos que todas las orgías romanas, y los
+								sueños artificiales.
+							</p>
+							<p>
+								De cólera - La materia principal de los libros y de las colecciones consagrados
+								por sermones es la cólera de Dios. Vuestro qué el furor deja pestilencia cobarde,
+								y en su furor implacable él cava afuera de un infierno para cada eternidad.
+							</p>
+							<p>
+								De Apatía - después de un descanso de una eternidad, trabaja durante seis días.&nbsp;<sup>[150:1]</sup>
+								¿ su trabajo consistió consagrándose dar a diario una orden, y después de haber
+								dado estas seis órdenes que sintió la necesidad del descanso, y cómo San Juan era
+								errónea cuándo, luego después de haber representado el mal bajo la forma de un monstruo
+								con siete cabezas, nos dice que los hombres se prosternaron antes y adoraron esta
+								bestia? <sup>[150:2]</sup>
+							</p>
+							<label for="element-toggle-150-1">
+								[150:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-150-1" type="checkbox" />
+							<p id="toggled-element-150-1" class="fnote hidden">
+								[150:1. Naturalmente los seis días representan entre otras cosas los seis ciclos de funcionamiento o circuitos del hombre - el séptimo que es el ciclo del descanso. &mdash;<em>Trans</em>.]
+							</p>
+							<label for="element-toggle-150-2" style="margin-top: 20px;">
+								[150:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-150-2" type="checkbox" />
+							<p id="toggled-element-150-2" class="fnote hidden">
+								[150:2. La interpretación correcta. No había más Dios personal que encuentra en ideas de Juan que en nuestras propias cabezas. &mdash;O.E.]
+							</p>
+							<p>
+								San Juan añade que Anticristo debe animar la imagen de esta bestia, y el hecho habla,
+								y que la gente se prosternará ante este simulacro que vivirá de la locura humana.
+								Tengamos cuidado con pensar que esto podría jamás ser realizado en la persona de
+								Pontífice soberano del catolicismo; <span class="sans">¡</span> sin duda alguna la referencia es hecha aquí
+								en Antipapa o posiblemente en el gran Lama de Tibet!
+							</p>
+							<p class="principle">
+								XLII
+							</p>
+							<p>
+								San Vicente de Lerius indica esto que sólo concierne al dogma verdadero católico
+								o universal, que ha sido admitido a cada momento, en todos los lugares, y por uno
+								cada. <sup>[150:3]</sup> esto simplificarían los signos convencionales maravillosamente
+								y aumentarían milagros a la iglesia.
+							</p>
+							<label for="element-toggle-150-3">
+								[150:3. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-150-3" type="checkbox" />
+							<p id="toggled-element-150-3" class="fnote hidden">
+								[150:3. Debemos regresar mucho para promover que San Vicente para "<em>quod semper
+									ubique et ab omnibus</em>." [que es siempre, en todas partes y por todos] &mdash;<em>Trans</em>.]
+							</p>
+							<p class="principle">
+								XLIII
+							</p>
+							<p>
+								¿ A aquellos quiénes toman objeciones a las enseñanzas de los teólogos, te es usual
+								responder mucho mas fuerte que San Agustín? ¿ Te tienes más genio que Bossuet? ¿
+								Más inteligencia que Fénélon? Estas cuestiones son muy ridículas, cuando la materia
+								a la salida es de sentido común. Ciertamente soy menos versado en las matemáticas
+								que Pascual, pero soy engañado que viví en el período de este gran hombre, y lo
+								tuve lo que el dijo o permití que eso dicho ante mi que dos y dos suman cinco, debería
+								haber contado su gran autoridad como nada, y debería haber continuado estimando,
+								o más bien sabiendo, que dos y dos suman cuatro.
+							</p>
+							<p class="principle">
+								XLIV
+							</p>
+							<p>
+								Grandes e instruidos hombres que tuvieron sus lenguas, o hablaron de un cierto modo,
+								tuvieron ciertamente sus propias razones para hablar o para guardar el silencio.
+								Las verdades elevadas no son adaptadas a almas bajas; debe allí haber fábulas para
+								niños, y amenazas para los cobardes; debe tener allí absurdidades para la locura
+								y los misterios para la credulidad. Está por los vidrios ennegrecidos que podemos
+								sólo mirar fijamente sobre el sol; mirado por un vaso claro, nos parece negros,
+								y nos ciega. Dios es para nosotros como el sol; debemos marchar por su luz con los
+								ojos bajados: si se trata de mirar fijamente sobre él nuestra vista nos es suspendido.
+								El más peligroso y más triste de las ciencias es teología, porque se constituye
+								incorrectamente que una ciencia de Dios. Más bien es la ciencia de la tontería
+								del hombre cuando procura explicar el misterio impenetrable de lo divino.
+							</p>
+							<p class="principle">
+								XLV
+							</p>
+							<p>
+								La luz de Dios espejea en nosotros todos - es nuestra conciencia. Para hacer el
+								bien a lo que esto nos incite y para evitar el mal del que esto nos advierte, son
+								nuestras funciones hacia Dios.
+							</p>
+							<p class="principle">
+								XLVI
+							</p>
+							<p>
+								Dios siembra la idea en el infinito, y los rayos sol aportan al nacimiento los gérmenes
+								en los planetas. Los animales publicaron de la tierra como los árboles, pero además
+								que los árboles publican completamente formado y de normal; las especies tienen
+								sus períodos embrionarios tanto como los individuos de cada especie. Imaginar que
+								Dios primero moldeó una estatua de arcilla, para soplar más tarde en su cara y así
+								le hace a un hombre, es creer que una historia semejante a la indican de nietas
+								respecto a los bebés que son cavados hacia arriba fuera de las camas de col. ¿ Dios
+								es negado o la gloria es disminuida negándose a mirar sobre él como estatuario?
+								Es la naturaleza que produce muy progresivamente y por grados lentos, jamás funcionando
+								por las funciones ordenadas de las fuerzas inherentes a la sustancia, pero es la
+								palabra divina que guían las fuerzas hacia el ideal de la forma. La naturaleza cumple
+								la orden, no inventa. Los pensamientos que son concebidos en la materia vienen solamente
+								de la materia, aunque la materia no piensa. Del desarrollo de la primera célula
+								viva, a la perfección de la forma humana, Dios dijo a las fuerzas de la naturaleza,
+								&quot; hagamos al hombre, &quot; y su petición sostuvo por muchos millones de los
+								años que, antes de él, eran pero de un instante. El génesis no es la historia natural
+								del hombre, es el comienzo de su Épica religiosa. La pareja primitiva es unidad
+								humana establecida en la primera familia de los creyentes. Cuando Dios difundió
+								por encima de la cara del hombre un soplo de inmortalidad, el hombre ya tuvo una
+								cara; ¿ que le era entonces pero una especie de animal antropoide? Ciertamente el
+								hombre no baja de mono, sino la remeda y el hombre posiblemente descienden del mismo
+								animal primitivo. La teoría de Darwin no contradice la Biblia, él restauraciones
+								a ella su carácter del león simbólico y exclusivamente religioso; la gran semana
+								de la creación es una serie de épocas geológicas decimos que <sup>[153:1]</sup>
+								Dios se reposan cuando el hombre comienza a comprender que el universo sigue adelante
+								aisladamente.&nbsp;<sup>[153:2]</sup>
+							</p>
+							<label for="element-toggle-153-1">
+								[153:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-153-1" type="checkbox" />
+							<p id="toggled-element-153-1" class="fnote hidden">
+								[153:1. O más bien de ciclos del desarrollo de nada al mono-hombre, o del mono-hombre en Nirvana. &mdash;<em>Trad</em>.]
+							</p>
+							<p class="fnote">
+								[153:2. Ingenioso pero ... &mdash;<em>Trad</em>.]
+							</p>
+							<p class="principle">
+								XLVII
+							</p>
+							<p>
+								Lo sobrenatural es la paradoja eterna del deseo infinito. El hombre implora para
+								asimilarse con Dios, y hace así en la comunión católica. De un punto de vista de
+								Racionalista y considerado de modo puramente normal, esta comunión es una cosa de
+								extravagancia colosal. <span class="sans">¡</span> En la comunión católica comen el espíritu de Dios y del
+								cuerpo de un hombre! <span class="sans">¡</span> Comer un espíritu, y un espíritu infinito! <span class="sans">¡</span> Aquel qué locura!
+								<span class="sans">¡</span> Comer el cuerpo de un hombre! <span class="sans">¡</span> Cómo horrible! <span class="sans">¡</span> Teofagia, y Antropofagia! <span class="sans">¡</span> Aquel
+								qué reclama a la inmortalidad! ¿ Pero,&nbsp;<sup>[154:1]</sup> aquel quién puede ser más bello, más calmante, divino más verdaderamente que la comunión católica? Los monjes quieren, innato en
+								el hombre, jamás encontrarán una satisfacción más entera; y cómo brillantemente
+								consideramos que es verdad, cuando le creemos la fe crea en cierta medida lo que
+								afirma; la esperanza en el superhombre jamás engaña, y el amor del divino jamás
+								es una decepción. El Primero la comunión es el coronamiento del canon humano, es
+								la inauguración del lado serio de la vida, es el apoteosis y transfiguración de
+								la infancia, es el más puro de todas las alegrías y la más verdaderamente de toda
+								satisfacción.
+							</p>
+							<label for="element-toggle-154-1">
+								[154:1. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-154-1" type="checkbox" />
+							<div id="toggled-element-154-1" class="fnote hidden">
+								<p>
+									[154:1. Estos &quot;aunque&quot; alguna vez recurrentes y &quot;peros&quot; suenan
+									odiosos! Él más que lleva la corriente superstición pública. Él se convierte en
+									un lacayo literario en sus duplicidades. &mdash;O.E.
+								</p>
+								<p>
+									Ideo que mi amigo reverenciado juzga nuestro autor no sólo severamente, en
+									este caso, pero equivocadamente. El escudo tiene dos lados para el agnóstico y el
+									creyente. La causa de verdad exige mucha que ambos lados deberían él visto y sobreentendido.
+									¿Estaba allí no para el creyente algo el dulce de lo inexpresable y la confortación
+									en este sacramento, los billones de hombres se derivarían de eso su felicidad máxima
+									en la vida, su consolación principal en la muerte? Tal consolación, tal felicidad,
+									no puede ser para nosotros, pero casi podría ser dicha &quot;V w victis&quot; para
+									esas que la VERDAD ha conquistado. Pero, sea esto como puede, la misma causa de
+									la Verdad exige mucha que el tribunal debería probar que su familiaridad con ambos
+									toma partido del caso, y su veredicto tendría poco peso con investigadores imparciales,
+									fue así de no mostrados. En su estado actual, la enunciación poderosa del racionalista
+									del carácter monstruoso de la concepción real, es sólo traída en el alivio más fuerte
+									por la admisión franca de la belleza ideal con la cualcreencia puede poner un velo
+									sobre ella para creyentes. &mdash;<em>Trad</em>.]
+								</p>
+							</div>
+							<p class="principle">
+								XLVIII
+							</p>
+							<p>
+								Hay entonces algo por encima de la naturaleza y por encima de la razón para explicarse,
+								justificar, y satisfacer las aspiraciones más elevadas de ambos. De este punto de
+								vista lo Sobrenatural es normal, y la fórmula paradójica de las hipótesis necesarias
+								se vuelve perfectamente razonable. Es el espíritu humano que construye el imposible
+								con el fin de alcanzar el infinito.
+							</p>
+							<p class="principle">
+								XLIX
+							</p>
+							<p>
+								Según los padres de la iglesia, la ley antigua era solamente una imagen y una sombra
+								de la nueva ley. Las historias asombrosas de la Biblia son pero en imágenes, (no
+								dicen alegorías, la palabra habrían sido peligrosa), imágenes del nuevo dogma inaugurado
+								por Jesús el Cristo, y la base de este dogma es que Dios personalmente esta unido
+								con
+							</p>
+							<p>
+								la humanidad, y que nosotros debemos amar y servir a Dios en el hombre; en una palabra
+								que nos debe amar uno otro, el que repite toda la ley y los profetas. No hay entonces
+								nada verdaderamente en la Biblia que no está conforme al evangelio, y el espíritu
+								del evangelio es el espíritu de la caridad.
+							</p>
+							<p class="principle">
+								L
+							</p>
+							<p>
+								Para amar uno otra y no oprobiar, la maldición, excomulgan, persiguen o les queman.
+								Para amar uno otro y por consiguiente ayudar, consolar, sostener y bendecir uno
+								otro. La caridad es humanidad dotada de un principio divino; es solidaridad enriquecida
+								por individuo-devoción; es el espíritu de los santos, y por consiguiente el espíritu
+								verdadero de la iglesia católica o universal. Los poseídos con un espíritu opuesto
+								a esto no pertenecen a la iglesia.
+							</p>
+							<p>
+								Pero la caridad en la iglesia debe preservar sobre todo de cosas la jerarquía y
+								la unidad.&nbsp;<sup>[156:1]</sup> es legítima para protestar contra el abuso de la autoridad, pero no
+								contra la autoridad misma.&nbsp;<sup>[156:2]</sup>
+							</p>
+							<label for="element-toggle-156-1">
+								[156:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-156-1" type="checkbox" />
+							<p id="toggled-element-156-1" class="fnote hidden">
+								[156:1. Completamente así, cuando los sacerdotes, como Eliphas repite siempre que
+								deberían ser, son todos los adeptos de los misterios ocultos más elevados, y las
+								doctrinas son los de la religión eterna de sabiduría.&mdash;<em>Trad</em>.]
+							</p>
+							<label for="element-toggle-156-2" style="margin-top: 20px;">
+								[156:2. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-156-2" type="checkbox" />
+							<p id="toggled-element-156-2" class="fnote hidden">
+								[156:2. Completamente así, cuando la autoridad verdaderamente significa la superioridad
+								de conocimiento espiritual; pero, saltando hacia abajo tiene que Saltar de esta
+								iglesia y del sacerdocio utópicos de sus esperanzas, en la arena de la iglesia católica
+								como es, invade a los viejos católicos pretendidos para su cisma, que después de
+								que todo sea una etapa, si pequeña, hacia la razón y la verdad, el que se convierte
+								a el niño y el discípulo del error.&mdash;<em>Trad</em>.]
+							</p>
+							<p>
+								¿ Allí existe actualmente una nueva sección de los protestantes quiénes se llaman
+								viejos católicos, como si el niño justo nacido pueda llamarse viejo, porque tuvo
+								un abuelo? Pero los antepasados de estos protestantes ridículos no eran ningún viejo
+								católico, que tenga murió mil veces más bien que se separa de la jerarquía y de
+								la autoridad. Sus antepasados son los herejes de todas las edades, y su gran antepasado
+								es Satanás,&nbsp;<sup>[157:1]</sup> este viejo católico un sometido.
+							</p>
+							<label for="element-toggle-157-1">
+								[157:1. Mostrar / ocultar nota.]</label>
+							<input id="element-toggle-157-1" type="checkbox" />
+							<p id="toggled-element-157-1" class="fnote hidden">
+								[157:1. Muy conformado esto lo que dijo más arriba. ¿ Es esta su simpatía? <span class="nowrap">
+									&mdash;O.E.]</span>
+							</p>
+							<p class="principle">
+								LI
+							</p>
+							<p>
+								Si la religión debe ser una, si debe ser santa, si debe ser universal, si debe preservar
+								y continuar la cadena de la tradición, si debe reposarse en una autoridad legítima
+								y jerárquica, si es realiza y lo que promete, si debe tener signos de fuerza y de
+								consuelos para ellos todos, si debe poner los velos para visiones débiles a las
+								verdades eternas, si debe unir en una grey todas las aspiraciones y todas esperanzas
+								de las almas más abrumadoras, puede ser solamente católico,&nbsp;<sup>[157:2]</sup> y todas las naciones
+								pronto o tarde le volverá al Catolicismo cuando un cierto Papa por Dios iluminado
+								desaprueba atrevidamente las pasiones pequeñas, plenas de la avaricia y del odio,
+								del catolicismo clerical, cuando un clero instruido será competente para reconciliar
+								las luces de la razón las oscuridades de la fe, y cuando el culto libertado de los
+								intereses materiales no será más un objeto de empresa mercante.
+							</p>
+							<label for="element-toggle-157-2">
+								[157:2. Mostrar / ocultar nota larga.]</label>
+							<input id="element-toggle-157-2" type="checkbox" />
+							<div id="toggled-element-157-2" class="fnote hidden">
+								<p>
+									[157:2. Posiblemente podría decir que lo anterior coincide
+									completamente ni agota nuestra concepción de la iglesia ideal del futuro. Pero,
+									ser esto como él puede, que una cosa es cierta, a saber, que sobre el dolor de perder
+									toda la vitalidad, debe tener que hacer nada con el &quot;catolicismo&quot;, o cualquier
+									otro nombre ya que se pone firme con concepciones preexistentes y constituye un
+									haz de las ideas totalmente desarrolladas, los perjuicios y la superstición.
+								</p>
+								<p>
+									¿ Que destruyó la vitalidad de las enseñanzas del Cristo, transformó su amor y bendición
+									en odio y maldiciones para la humanidad, y que mantiene marcas necesarias para recomenzar
+									de nuevo lo que verdaderamente enseñó? Simplemente el descuido de su advertencia
+									para no poner el vino nuevo o en botellas viejas. Cuando los padres de la iglesia
+									cristiana lo quitaron y disfrazaron y vistieron las verdades oculto de Cristianismo
+									verdadero en el fundición y le redujeron a andrajos de las posturas de otras creencias
+									muertas o moribundas, asfixiaron al niño recién nacido como eficazmente como si
+									la hubieran enterrado con los cadáveres que despojaron, para abastecerle con pañales.
+								</p>
+								<p>
+									Teosofía puede no ser absolutamente irreprochable como nombre para la religión del
+									futuro porque a los discípulos es asociado con las doctrinas y con las ideas no
+									completamente verdaderas, aunque teniendo afinidades con la verdad. Pero, a la masa
+									de la humanidad la palabra es un blanco sin asociaciones, y discípulos, a menos
+									que obstinadamente, deben ser engañados así. Con todo modo es preferible a cualesquiera
+									de estos nombres que Eliphas Levi sugiere, con todo lo fragante que todo éste sea
+									de un dogmatismo tiránico y degradado.&mdash;<em>Trad</em>.]
+								</p>
+							</div>
+							<p>
+								Esto será, porque debe ser, y lo descubriremos mientras que en los dogmas cristianos hay, como en las primeras partes de la Biblia, imágenes y sombras de la religión del futuro, que ya existe y podría indicarse como Mesianismo, Paracletismo, o todavía mejorar al Catolicismo absoluto, y que será la luz de todos los espíritus y de la vida eterna de todas las almas.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+					<!-- page nav here if used -->
+					<nav class="next-previous-item-nav">
+						<ul class="next-previous-item-list">
+							<li class="align-left"><a href="magia-y-magismo.htm">&lt; La Magia y Magismo</a></li>
+							<li class="align-right"><a href="el-gran-secreto.htm">El Gran Secreto &gt;</a></li>
+							<li style="clear: both;"></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

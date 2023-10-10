@@ -1,0 +1,324 @@
+﻿<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forty Verses On Reality</title>
+	<meta name="description" content="The Divine gives light to the mind and shines within it. Turn the mind inward and fix it in the Divine.">
+	<meta name="author" content="Ramana Maharshi">
+	<meta property="og:title" content="Forty Verses On Reality">
+	<meta property="og:description" content="The Divine gives light to the mind and shines within it. Turn the mind inward and fix it in the Divine.">
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-og-image-new.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.footnote-list {
+			list-style: none;
+		}
+
+		ol.verses li,
+		ol.invocatory li {
+			border: 0px solid blue;
+		}
+
+		ol {
+			border: 0px solid red;
+		}
+
+		ol.invocatory li {
+			list-style-type: lower-roman;
+		}
+
+		#article h4 {
+			margin-top: 35px;
+		}
+
+		/*  breakpoint wher numbering goes above list */
+		@media only screen and (max-width:500px) {
+			#article h4 {
+				margin-bottom: 5px;
+			}
+
+			ol.invocatory,
+			ol.verses {
+				margin-top: 5px;
+			}
+		}
+
+		/* because of double digits in this list, 
+        This overrides stylesheet to give more space on left margin.
+        SS = ol li {margin-left: -15px;}
+        */
+		ol li {
+			margin-left: -7px;
+		}
+
+		/* in CSS style sheeet, about line 57, I remove numbering for numbered lists
+        for widths 500 and less, to makes the content fuller width
+        (pobably only on the Muruganar pages so far)
+        This is only appropriate for short lists.
+        
+        /* SS = get rid of Disk/Numbering for small screens
+        @media only screen and (max-width:500px){
+            ul {padding-left:33px;}
+            ol {padding-left:33px;}
+            ul li {margin-left:-35px;list-style:none;}
+            ol li {margin-left:-25px;list-style:none;}
+        }
+
+        The following restores numbering on small 
+        screens for this page */
+
+		@media only screen and (max-width:500px) {
+			ol.invocatory li {
+				list-style: inside lower-roman;
+				margin-left: -30px;
+			}
+
+			ol.verses li {
+				list-style: inside decimal;
+				margin-left: -30px;
+			}
+
+			ol.invocatory li:before {
+				display: block;
+				content: "";
+				color: transparent;
+				height: 5px;
+			}
+
+			ol.verses li:before {
+				display: block;
+				content: "";
+				color: red;
+				height: 5px;
+			}
+		}
+
+		/* spacing below item */
+		ol.verses li {
+			margin-bottom: 30px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2 class="toowide">
+										Forty Verses On Reality
+									</h2>
+									<h3>
+										Ramana Maharshi
+									</h3>
+									<p class="tiny">
+										Español: <a href="ramana-40-versos-sobre-la-realidad.htm">ramana-40-versos-sobre-la-realidad.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ramana-who-am-i.htm">&lt; Ramana: Who Am I?</a></li>
+									<li class="align-right"><a href="nisargadatta-practice.htm">Nisargadatta: Practice &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<h4 class="top-heading">
+								Invocatory
+							</h4>
+							<ol class="invocatory">
+								<li>
+									If Reality did not exist, could there be any knowledge of existence? Free from all thoughts, Reality abides in the Heart, the Source of all thoughts. It is, therefore, called the Heart. How then is one to contemplate it? To be as it is in the Heart, is Its contemplation.
+								</li>
+								<li>
+									Those who know intense fear of death seek refuge only at the feet of the Lord Who has neither death nor birth. Dead to themselves and their possessions, can the thought of death occur to them again? Deathless are they.
+								</li>
+							</ol>
+							<h4>
+								THE FORTY VERSES
+							</h4>
+							<ol class="verses">
+								<li>
+									From our perception of the world there follows acceptance of a unique First Principle possessing various powers. Pictures of name and form, the person who sees, the screen on which he sees, and the light by which he sees: he himself is all of these. </li>
+								<li>
+									All religions postulate the three fundamentals: the world, the soul, and God, but it is only the one Reality that manifests Itself as these three. One can say, 'The three are really three' only so long as the ego lasts. Therefore, to inhere in one's own Being, where the 'I', or ego, is dead, is the perfect State. </li>
+								<li>
+									'The world is real.' 'No, it is a mere illusory appearance.' 'The world is conscious.' 'No.' 'The world is happiness.' 'No.' What use is it to argue thus? That State is agreeable to all, wherein, having given up the objective outlook, one knows one's Self and loses all notions either of unity or duality, of oneself and the ego. </li>
+								<li>
+									If one has form oneself, the world and God also will appear to have form, but if one is formless, who is it that sees those forms, and how? Without the eye can any object be seen? The seeing Self is the Eye, and that Eye is the Eye of Infinity. </li>
+								<li>
+									The body is a form composed of the five-fold sheath; therefore, all the five sheaths are implied in the term, body. Apart from the body does the world exist? Has anyone seen the world without the body? </li>
+								<li>
+									The world is nothing more than an embodiment of the objects perceived by the five sense-organs. Since, through these five sense-organs, a single mind perceives the world, the world is nothing but the mind. Apart from the mind can there be a world? </li>
+								<li>
+									Although the world and knowledge thereof rise and set together, it is by knowledge alone that the world is made apparent. That Perfection wherein the world and knowledge thereof rise and set, and which shines without rising and setting, is alone the Reality. </li>
+								<li>
+									Under whatever name and form one may worship the Absolute Reality, it is only a means for realizing It without name and form. That alone is true realization wherein one knows oneself in relation to that Reality, attains peace and realizes one's identity with it. </li>
+								<li>
+									The duality of subject and object and trinity of seer, sight, and seen can exist only if supported by the One. If one turns inward in search of that One Reality they fall away. Those who see this are those who see Wisdom. They are never in doubt. </li>
+								<li>
+									Ordinary knowledge is always accompanied by ignorance, and ignorance by knowledge; the only true Knowledge is that by which one knows the Self through enquiring whose is the knowledge and ignorance. </li>
+								<li>
+									Is it not, rather, ignorance to know all else without knowing oneself, the knower? As soon as one knows the Self, which is the substratum of knowledge and ignorance, knowledge and ignorance perish. </li>
+								<li>
+									That alone is true Knowledge which is neither knowledge nor ignorance. What is known is not true Knowledge. Since the Self shines with nothing else to know or to make known, It alone is Knowledge. It is not a void. </li>
+								<li>
+									The Self, which is Knowledge, is the only Reality. Knowledge of multiplicity is false knowledge. This false knowledge, which is really ignorance, cannot exist apart from the Self, which is Knowledge-Reality. The variety of gold ornaments is unreal, since none of them can exist without the gold of which they are all made. </li>
+								<li>
+									If the first person, I, exists, then the second and third persons, you and he, will also exist. By enquiring into the nature of the I, the I perishes. With it 'you' and 'he' also perish. The resultant state, which shines as Absolute Being, is one's own natural state, the Self. </li>
+								<li>
+									Only with reference to the present can the past and the future exist. They too, while current, are the present. To try to determine the nature of the past and the future while ignoring the present is like trying to count without the unit. </li>
+								<li>
+									Apart from us, where is time and where is space? If we are bodies, we are involved in time and space, but are we? We are one and identical now, then, and forever, here, and everywhere. Therefore we, timeless, and spaceless Being, alone are. </li>
+								<li>
+									To those who have not realized the Self, as well as to those who have, the word 'I' refers to the body, but with this difference, that for those who have not realized, the 'I' is confined to the body whereas for those who have realized the Self within the body the 'I' shines as the limitless Self. </li>
+								<li>
+									To those who have not realized (the Self) as well as to those who have, the world is real. But to those who have not realized, Truth is adapted to the measure of the world, whereas to those that have, Truth shines as the Formless Perfection, and as the Substratum of the world. This is all the difference between them. </li>
+								<li>
+									Only those who have no knowledge of the Source of destiny and free-will dispute as to which of them prevails. They that know the Self as the one Source of destiny and free-will are free from both. Will they again get entangled in them? </li>
+								<li>
+									He who sees God without seeing the Self sees only a mental image. They say that he who sees the Self sees God. He who, having completely lost the ego, sees the Self, has found God, because the Self does not exist apart from God. </li>
+								<li>
+									What is the Truth of the scriptures which declare that if one sees the Self one sees God? How can one see one's Self? If, since one is a single being, one cannot see one's Self, how can one see God? Only by becoming a prey to Him. </li>
+								<li>
+									The Divine gives light to the mind and shines within it. Except by turning the mind inward and fixing it in the Divine, there is no other way to know Him through the mind. </li>
+								<li>
+									The body does not say 'I'. No one will argue that even in deep sleep the 'I' ceases to exist. Once the 'I' emerges, all else emerges. With a keen mind enquire whence this 'I' emerges. </li>
+								<li>
+									This inert body does not say 'I'. Reality-Consciousness does not emerge. Between the two, and limited to the measure of the body, something emerges as 'I'. It is this that is known as Chit-jada-granthi (the knot between the Conscious and the inert), and also as bondage, soul, subtle-body, ego, samsara, mind, and so forth. </li>
+								<li>
+									It comes into being equipped with a form, and as long as it retains a form it endures. Having a form, it feeds and grows big. But if you investigate it, this evil spirit, which has no form of its own, relinquishes its grip on form and takes to flight. </li>
+								<li>
+									If the ego is, everything else also is. If the ego is not, nothing else is. Indeed, the ego is all. Therefore the enquiry as to what this ego is, is the only way of giving up everything. </li>
+								<li>
+									The State of non-emergence of 'I' is the state of being THAT. Without questing for that State of the non-emergence of 'I' and attaining It, how can one accomplish one's own extinction, from which the 'I' does not revive? Without that attainment how is it possible to abide in one's true State, where one is THAT? </li>
+								<li>
+									Just as a man would dive in order to get something that had fallen into the water, so one should dive into oneself, with a keen one-pointed mind, controlling speech and breath, and find the place whence the 'I' originates. </li>
+								<li>
+									The only enquiry leading to Self-realization is seeking the Source of the 'I' with in-turned mind and without uttering the word 'I'. Meditation on 'I am not this; I am That' may be an aid to the enquiry but it cannot be the enquiry. </li>
+								<li>
+									If one enquires 'Who am I?' within the mind, the individual 'I' falls down abashed as soon as one reaches the Heart and immediately Reality manifests itself spontaneously as 'I-I'. Although it reveals itself as 'I', it is not the ego but the Perfect Being, the Absolute Self. </li>
+								<li>
+									For Him who is immersed in the bliss of the Self, arising from the extinction of the ego, what remains to be accomplished? He is not aware of anything (as) other than the Self. Who can apprehend his State? </li>
+								<li>
+									Although the scriptures proclaim 'Thou art That', it is only a sign of weakness of mind to meditate 'I am That, not this', because you are eternally That. What has to be done is to investigate what one really is and remain That. </li>
+								<li>
+									It is ridiculous to say either 'I have not realized the Self' or 'I have realized the Self'; are there two selves, for one to be the object of the other's realization? It is a truth within the experience of everyone that there is only one Self. </li>
+								<li>
+									It is due to illusion born of ignorance that men fail to recognise That which is always and for everybody the inherent Reality dwelling in its natural Heart-centre and to abide in it, and that instead they argue that it exists or does not exist, that it has form or has not form, or is non-dual or dual.
+								</li>
+								<li>
+									To seek and abide in the Reality that is always attained, is the only Attainment. All other attainments (siddhis) are such as are acquired in dreams. Can they appear real to someone who has woken up from sleep? Can they that are established in the Reality and are free from maya, be deluded by them? </li>
+								<li>
+									Only if the thought 'I am the body' occurs will the meditation 'I am not this, I am That', help one to abide as That. Why should we for ever be thinking, 'I am That'? Is it necessary for man to go on thinking 'I am a man'? Are we not always That? </li>
+								<li>The contention, 'Dualism during practice, non-dualism on Attainment', is also false. While one is anxiously searching, as well as when one has found one's Self, who else is one but the tenth man? <a class="return-anchor" id="return-anchor-1"></a><sup><a href="#footnotes">[1]</a></sup>
+								<li>
+									As long as a man is the doer, he also reaps the fruit of his deeds, but, as soon as he realizes the Self through enquiry as to who is the doer, his sense of being the doer falls away and the triple karma <a class="return-anchor" id="return-anchor-2"></a><sup><a href="#note-2">[2]</a></sup> is ended. This is the state of eternal Liberation. </li>
+								<li>
+									Only so long as one considers oneself bound, do thoughts of bondage and Liberation continue. When one enquires who is bound the Self is realized, eternally attained, and eternally free. When thought of bondage comes to an end, can thought of Liberation survive? </li>
+								<li>
+									If it is said, that Liberation is of three kinds, with form or without form or with and without form, then let me tell you that the extinction of three forms of Liberation is the only true Liberation.
+								</li>
+							</ol>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="footnotes">&nbsp;</a>
+							<p class="note">
+								Footnotes
+							</p>
+							<ul class="footnote-list">
+								<li>
+									<a class="endnote" id="note-1"></a><a href="#return-anchor-1">[1]</a>
+									This refers to a traditional story of a party of ten fools who were travelling together. They had to cross a river and on reaching the other shore wanted to check up whether all of them had got safely across. Each one counted in turn, but each one counted the nine others and forgot himself. So they thought the tenth man had been drowned and began to mourn him. Just then a traveller came past and asked them what was the matter. He at once saw the cause of their mistake and in order to convince them he made them walk past him one by one, giving each one a blow as he passed and telling them to count the strokes.
+								</li>
+								<li>
+									<a class="endnote" id="note-2"></a><a href="#return-anchor-2">[2]</a>
+									Sanchita, Agami and Prarabdha.
+								</li>
+							</ul>
+							<p class="note80" style="margin-top:30px;">
+								Copyright information: The Publisher Sri Ramanasramam has kindly made this and other volumes of The Mountain Path available at: <a href="https://www.sriramanamaharshi.org/resource_centre/publications/mountain-path/">
+									https://www.sriramanamaharshi.org/<wbr />resource_<wbr />centre/<wbr />publications/<wbr />mountain-path/</a>
+								<br /> This writing is from the October 1964 edition.<br /><br />
+								Also available at <a href="https://realization.org/p/ramana/index.mountain-path.html">https://realization.org/<wbr />p/ramana/<wbr />index.<wbr />mountain-path.html</a>
+							</p>
+							<p>&nbsp;</p>
+							<p class="note center">
+
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ramana-who-am-i.htm">&lt; Ramana: Who Am I?</a></li>
+									<li class="align-right"><a href="nisargadatta-practice.htm">Nisargadatta: Practice &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

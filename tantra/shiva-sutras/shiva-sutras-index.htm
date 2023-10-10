@@ -1,0 +1,250 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Shiva Sutras Index</title>
+	<meta name="description" content="The most important scripture in Kashmir Shaivism, explaining the nature of bondage and the means to liberation">
+	<meta name="author" content="Vasugupta (9th century)">
+	<meta property="og:title" content="The Shiva Sutras">
+	<meta property="og:description" content="The most important scripture in Kashmir Shaivism, explaining the nature of bondage and the means to liberation">
+	<meta property="og:image" content="https://selfdefinition.org/tantra/shiva-sutras/images/kashmir-shaivism-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_shiva-sutras-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Comments:
+        Shiva Sutras by Vasugupta (9th century) are a collection of 77 aphorisms (three sections: 22 + 10 + 45) that form the foundation of non-dual mysticism known as Kashmir Shaivism. Precise and concise descriptions of states of consciousness, with practice instructions, on a single page. 4 versions in English, 3 versions in Spanish.
+
+        Los Shiva Sutras por Vasugupta (Siglo IX) son una colección de 77 aforismos (tres secciones: 22 + 10 + 45) que forman la base del misticismo no-dual conocido como Shaivismo de Cachemira. Descripciones precisas y concisas de estados de conciencia, con instrucciones de práctica, en una sola página.
+
+        3 versiones en español, más artículo: "Shivaismo Tántrico de Cachemira"
+
+        */
+		/* #index-lists is a nav */
+		#return-list span {
+			display: block;
+			margin-bottom: 10px
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_shiva-sutras-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_shiva-sutras-title-include.htm"); ?>
+									<h3>
+										Shiva Sutras Version Index
+									</h3>
+									<p class="note80">Índice de versiones de Shiva Sutras</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="1-shiva-sutras-lakshmanjoo.htm">Lakshmanjoo version &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav id="index-lists">
+								<ul class="index-contents-links">
+									<li><a href="1-shiva-sutras-lakshmanjoo.htm">1. Lakshmanjoo version</a></li>
+									<li><a href="2-shiva-sutras-pradipaka.htm">2. Pradipaka &ndash; English</a></li>
+									<li><a href="3-shiva-sutras-pradipaka-espanol.htm">3. Pradipaka &ndash; Español</a></li>
+									<li><a href="4-shiva-sutras-feuerstein.htm">4. Feuerstein version</a></li>
+									<li><a href="5-shiva-sutras-dyczkowski.htm">5. Dyczkowski version</a></li>
+									<li><a href="6-shiva-sutras-theosofica-espanol.htm">6. Federación Teosófica Interamericana &ndash; Español</a></li>
+									<li><a href="7-shiva-sutras-IMSS-espanol.htm">7. International Movement for Shiva <span class="nowrap">Spirit &ndash;</span> Español</a></li>
+									<li><a href="shivaismo-tantrico-de-cachemira.htm">Shivaismo Tántrico de Cachemira</a> </li>
+									<li class="note80">For credits see <a href="#references">References</a></li>
+								</ul>
+								<hr />
+								<!-- THIS PAGE IS COMMON, DO NOT SPECIFY THE LANGUAGE -->
+								<ul class="index-links">
+									<li class="first-item">Shiva Sutras of Vasugupta at <a class="inline" href="https://en.wikipedia.org/wiki/Shiva_Sutras_of_Vasugupta">Wikipedia</a> </li>
+									<li>Vasugupta at <a href="https://en.wikipedia.org/wiki/Vasugupta">Wikipedia</a></li>
+									<li>Kasmir Shaivism at <a href="https://en.wikipedia.org/wiki/Kashmir_Shaivism">Wikipedia</a> </li>
+									<li>Tantra at <a href="https://en.wikipedia.org/wiki/Tantra">Wikipedia</a> </li>
+									<li>Shiva Sutra at <a class="inline" href="https://en.wikipedia.org/wiki/Shiva_Sutras_of_Vasugupta">Wikipedia</a> </li>
+									<li>Vasugupta at <a href="https://en.wikipedia.org/wiki/Vasugupta">Wikipedia</a></li>
+
+									<li>Español (muy breve):</li>
+									<li>Shivaísmo de Cachemira <a href="https://es.wikipedia.org/wiki/Shiva%C3%ADsmo_de_Cachemira">es.Wikipedia</a></li>
+									<li>Tantra <a href="https://es.wikipedia.org/wiki/Tantra">es.Wikipedia</a></li>
+								</ul>
+								<ul class="index-links">
+									<li class="header-item">Also on this site</li>
+									<li class="first-item">Lilian Silburn: <a href="/tantra/transmission/contents-and-introduction.htm">Techniques of Transmission in Kashmir Saivism</a> </li>
+									<li>Kukai: <a href="/tantra/kukai/1-sokushin-jobutsu-gi-introduction.htm">Principle Of Attaining Buddhahood With The Present Body</a> </li>
+
+									<li class="header-item">External links</li>
+									<li class="first-item">Kashmir Shaivism and Universal Fraterniti <a href="https://www.esamskriti.com/e/Spirituality/Philosophy/KASHMIR-SHAIVISM-AND-UNIVERSAL-FRATERNITY-1.aspx">www.esamskriti.com</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="references">&nbsp;</a>
+							<h4>
+								References
+							</h4>
+							<p id="return-list" class="note80">
+								Return to:
+								<span><a href="1-shiva-sutras-lakshmanjoo.htm">Lakshmanjoo version</a></span>
+								<span><a href="2-shiva-sutras-pradipaka.htm">Pradipaka English version</a></span>
+								<span><a href="3-shiva-sutras-pradipaka-espanol.htm">Pradipaka - español</a></span>
+								<span><a href="4-shiva-sutras-feuerstein.htm">Feuerstein version</a></span>
+								<span><a href="5-shiva-sutras-dyczkowski.htm">Dyczkowski version</a></span>
+								<span><a href="6-shiva-sutras-theosofica-espanol.htm">Theosophica - español</a></span>
+								<span><a href="7-shiva-sutras-IMSS-espanol.htm">I.M. Shiva Spirit - español</a></span>
+
+							</p>
+							<p class="center bold toowide">
+								Shiva Sutras on this site, fair use
+							</p>
+							<p>
+								<a href="1-shiva-sutras-lakshmanjoo.htm">1. Lakshmanjoo version</a>
+							</p>
+							<p>
+								Extracted from: <em>Shiva Sutras, The Supreme Awakening</em> by Swami Lakshmanjoo, Universal Shaiva Fellowship, 2002.</p>
+							<p>
+								Source PDF, other formats: #1 <a href="https://archive.org/details/TheSivaSutrasTheSupremeAwakeningSwamiLakshmanJoo">archive.org</a> and #2 <a href="https://archive.org/details/SwamiLakshmanjooShivaSutrasTheSupremeAwakening354pAnomolous">archive.org</a>
+							</p>
+							<p>
+								Swami Lakshman Joo at <a href="https://en.wikipedia.org/wiki/Lakshman_Joo">en.wikipedia.org/<wbr />wiki/<wbr />Lakshman_<wbr />Joo</a>
+							</p>
+							<hr />
+							<p>
+								<a href="2-shiva-sutras-pradipaka.htm">2. Pradipaka version, English &ndash; Non-dual Shaivism of Kashmir</a>
+							</p>
+							<p>
+								Source: sanskrit-trikashaivism<wbr />.com: <a href="https://www.sanskrit-trikashaivism.com/en/shiva-sutras-pure-translation-trika-scriptures-non-dual-shaivism-of-kashmir/546">without Sanskrit</a> and <a href="https://www.sanskrit-trikashaivism.com/en/shiva-sutras-normal-translation-complete-trika-scriptures-non-dual-shaivism-of-kashmir/545">with Sanskrit</a>
+							</p>
+							<hr />
+							<p>
+								<a href="3-shiva-sutras-pradipaka-espanol.htm">3. Pradipaka versión en español &ndash; Shaivismo No dual de Cachemira</a>
+							</p>
+							<p>
+								Fuente: sanskrit-trikashaivism<wbr />.com: <a href="https://www.sanskrit-trikashaivism.com/es/shiva-sutras-escrituras-del-trika-pura/546">sin sánscrito</a> and <a href="https://www.sanskrit-trikashaivism.com/es/shiva-sutras-escrituras-del-trika-1/545">con sánscrito</a>
+							</p>
+							<hr />
+							<p>
+								<a href="4-shiva-sutras-feuerstein.htm">4. Georg Feuerstein version</a>
+							</p>
+							<p>
+								Source: (9 page pdf) at <a href="http://www.thenewyoga.org/Shiva_Sutras%20_Feuerstein_.pdf">www.thenewyoga.org</a>
+							</p>
+							<hr />
+							<p>
+								<a href="5-shiva-sutras-dyczkowski.htm">5. Dyczkowski version</a>
+							</p>
+							<p>
+								Excerpt from: <em>The Aphorisms of Shiva: The SivaSutra with Bhaskara's Commentary, the Varttika.</em> Translated with exposition and notes by Mark S. G. Dyczkowski, pages xiii - xvii, at <a href="https://archive.org/stream/Yoga_Nidra_1/Dyczkowski%20Mark%20S%20G%20-%20Aphorisms%20of%20Siva_djvu.txt">Archive.Org</a>
+							</p>
+							<p>
+								Paper copy available: SUNY series in Tantric Studies, 247 pages. <a href="https://amzn.to/2UVt1QU">Amazon.Com</a>
+							</p>
+							<!-- Exclude
+                                Mark S. G. Dyczkowski took his first degree at Banaras Hindu University and then his doctorate at Oxford. He was associated with Sampumananda Sanskrit University in Varanasi. Other works include The Doctrine of Vibration: An Analysis of the Doctrines and Practices of Kashmir Shaivism; The Canon of the Saivagama and the Kubjika: Tantras of the Western Kaula Tradition; and The Stanzas on Vibration: The SpandaKarika with Four Commentaries.
+                            </p-->
+
+							<hr />
+							<p>
+								<a href="6-shiva-sutras-theosofica-espanol.htm">6. Federación Teosofica Interamericana &ndash; Español</a>
+							</p>
+
+							<p>
+								La Realidad Primaria, Según los Shiva Sutras, Por I.K. Taimni, Versión española por Walter Ballesteros R., 1978
+							</p>
+							<p>
+								Fuente: Texto con comentario en español, Digitalizado por Biblioteca Upasika, PDF de 111 páginas: <a href="https://epdf.pub/la-realidad-primaria.html">epdf.pub/la-realidad-primaria.html</a>
+							</p>
+							<hr />
+							<a href="7-shiva-sutras-IMSS-espanol.htm">7. International Movement for Shiva Spirit &ndash; Español</a>
+							<p>
+								Fuente: [server down] www.shivabhakti.org/<wbr />shivasutras.html
+							</p>
+							<hr />
+							<h5>
+								Youtube video:
+							</h5>
+							<p>
+								"The Shiva Sutras" recited in Sanskrit and English by Kumuda. 28 minutes <a href="https://www.youtube.com/watch?v=DwTTEEwDnG0">www.youtube.com/<wbr />watch?<wbr />v=<wbr />DwTTEEwDnG0</a>
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="1-shiva-sutras-lakshmanjoo.htm">Lakshmanjoo version &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p style="width: 100%">
+								<!-- spacer STILL needed to fill out width on a narrow page
+                                    Needed here but not in Spanish page - weird
+                                    need to figure out why -->
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

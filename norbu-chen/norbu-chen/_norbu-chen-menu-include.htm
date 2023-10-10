@@ -1,0 +1,98 @@
+<!-- start of menu include file  Update Aug 22, 2020. Add dark theme March 1, 2022. To 2022.CSS June 7, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+
+            <!-- not used <a href="/norbu-chen/">Norbu Chen index</a></li> -->
+
+            <li><a href="/sitemap.htm">Site map</a> </li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="article-index.htm"><span class="conditional-hide"></span>Article Index</a></li>
+            <li><a href="norbu-chen-sanador-lama-tibetano-de-eu.htm">Español</a></li>
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/norbu-chen/article-index.htm">Norbu Chen Article index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <!-- ajax has negative top and bottom margins in .CSS -->
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+            <!-- only one page in Spanish -->
+            <li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Habilite Cloudflare-Ajax</li>
+
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center">
+            <li>Norbu Chen</li>
+            <li class="tight">"Tibetan" Healer</li>
+            <li class="normal note" style="text-align: left;">
+                <img class="menu-image" style="width: 190px;" src="images/norbu-chen-1974-color.jpg" alt="Norbu Chen 1974">
+            </li>
+            <li class="tight">Norbu Chen, 1974</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group" style="margin-top: 20px;">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="article-index.htm">Article Index</a></li>
+                <li><a href="norbu-chen-fate-magazine-august-1974.htm">Fate Magazine, August 1974, Full Article</a> </li>
+                <li><a href="norbu-chen-fate-magazine-cover.htm">Fate Magazine Cover</a> </li>
+                <li><a href="norbu-chen-sanador-lama-tibetano-de-eu.htm">[español] Sanador Lama Tibetano de&nbsp;EEUU</a></li>
+                <li><a href="edgar-mitchell-comments.htm">Comments by Edgar Mitchell, Astronaut</a></li>
+                <li><a href="joann-parks-interview.htm">Interview with Joann Parks</a></li>
+                <li>Three chapters from William Nolen's book:
+                    <!-- (fair use, noncommercial, for research purposes only)-->
+                </li>
+                <li><a href="william-nolen-norbu-chen-chapter-10.htm">Nolen Chapter 10</a> </li>
+                <li><a href="william-nolen-norbu-chen-chapter-11.htm">Nolen Chapter 11</a> </li>
+                <li><a href="william-nolen-norbu-chen-chapter-12.htm">Nolen Chapter 12</a> </li>
+                <li><a href="william-nolen-norbu-chen-syndicated.htm">Nolen Syndicated Column<br>
+                        'Hit' Healer Gets Credit</a> </li>
+                <!-- DON'T USE
+                <li>Link to William Nolen's book at<br>
+                    <a href="https://books.google.com/books?id=OYEE08NX9gwC&amp;q=Norbu+Chen&amp;source=gbs_word_cloud_r&amp;cad=4">Google Books</a></li>
+                <li>William A. Nolen entry at Wikipedia: <a href="https://en.wikipedia.org/wiki/William_A._Nolen">en.wikipedia.org/wiki/William_A._Nolen</a>
+                    <br>
+                </li>-->
+
+                <li>Russ Michael's account: <a href="russ-michael-healing-of-bernadene-villanueva.htm">Norbu Chen Healing of Bernadene Villanueva in Dallas, June 1974</a> </li>
+                <li class="subhead">Newspaper Articles</li>
+                <li class="first-item"><a href="1974-0528-tibet-miracles-60-per-head.htm">May 1974 - Tibetan Miracles at $60 per Head</a> </li>
+                <li><a href="1974-1028-ex-con-turns-to-healing.htm">Oct 1974 - Honorary Lama: Ex-Con Turns to Healing</a> </li>
+                <li><a href="1974-1110-agents-arrest-faith-healer.htm">Nov 1974 - Agents Arrest Faith Healer</a> </li>
+                <li><a style="display: inline;" href="joann-parks-yahoo-group-post.htm">Joann Parks' Yahoo group post</a> </li>
+            </ul>
+        </div> <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li>
+                    <hr>
+                </li>
+                <li>Tom Valentine: <em>Norbu Chen, The Tibetan Way</em>, 1977 (listing only, not the book) ISBN 9780671225698 <a href="https://books.google.com/books/about/Norbu_Chen_the_Tibetan_Way.html?id=NtOyAAAACAAJ">at Google Books</a> and at <a href="https://catalog.loc.gov/vwebv/search?searchCode=STNO&searchType=1&recCount=25&searchArg=9780671225698">Library of Congress</a> </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="To top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,127 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&quot;Crazy Guggenheim&quot; with Jackie Gleason</title>
+    <meta name="description" content="Screen caps, TV Show">
+    <meta name="author" content="Richard Rose">
+    <meta property="og:title" content="&quot;Crazy Guggenheim&quot; with Jackie Gleason">
+    <meta property="og:description" content="Screen caps, TV Show">
+    <meta property="og:image" content="https://selfdefinition.org/christian/paul-wood/images/michelangelo-creation-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_paul-wood-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        p.crazy-image img {
+            max-width: 255px;
+        }
+
+        p.crazy-image {
+            text-align: center;
+        }
+
+        @media only screen and (max-width:545px) {
+            p.crazy-image img {
+                width: 100%;
+                max-width: 380px;
+                margin: 0 auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_paul-wood-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <!-- as of Oct 9, 2019 moving "article" to here -->
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_paul-wood-title-include.htm"); ?>
+                                    <h3>
+                                        "Crazy Guggenheim" with Jackie Gleason
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="paul-wood-story.htm">Paul Wood Story &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p class="crazy-image">
+                                <img src="images/Guggenheim-Gleason-1.jpg" alt="Crazy Guggenheim" />
+                                <img src="images/Guggenheim-Gleason-2.jpg" alt="Crazy Guggenheim" />
+                            </p>
+                            <p class="crazy-image">
+                                <img src="images/guggenheim-0.jpg" alt="Crazy Guggenheim" />
+                                <img src="images/guggenheim-1.jpg" alt="Crazy Guggenheim" />
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative  -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of page">top</button>
+
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

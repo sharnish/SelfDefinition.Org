@@ -1,0 +1,95 @@
+<!-- start of menu include file  Created, posted June 13, 2020 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float, check where is it cleared? -->
+			<li class="first-item"><a href="/celibacy/">Celibacy index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="english"><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/celibacy/">Celibacy index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!-- scroll and ajax must be classes, not IDs -->
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text" style="margin-top:20px;">
+			<li>The Role of Celibacy in the Spiritual Life</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/swami-chidananda-saraswati.jpg" alt="Swami Chidananda Saraswati">
+			</li>
+			<li>Swami Chidananda Saraswati <span class="normal note">(1916-2008)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="introduction-preface.htm">Introduction, by Swami Chidananda </a> </li>
+				<li><a href="celibacy-part-1.htm">Part 1: Brahmacharya</a></li>
+				<li><a href="celibacy-part-2.htm">Part 2: Stages</a></li>
+				<li><a href="celibacy-part-3.htm">Part 3: Tantra</a></li>
+				<li><a href="celibacy-part-4.htm">Part 4: Key to Success</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<!-- div.optional-links disappears when #menu-container disappears -->
+		<div class="optional-links">
+			<hr>
+			<ul class="menu-section">
+				<li>Swami Chidananda Saraswati at <a href="https://en.wikipedia.org/wiki/Chidananda_Saraswati">
+						Wikipedia</a></li>
+				<li>Swami Sivananda Saraswati at <a href="https://en.wikipedia.org/wiki/Sivananda_Saraswati">
+						Wikipedia</a></li>
+				<li>Swami Sivananda <a href="https://es.wikipedia.org/wiki/Swami_Sivananda">
+						Wikipedia, español</a></li>
+
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site</li>
+				<li class="site-first-item">Sivananda Saraswati: <a href="/celibacy/sivananda/brahmacharya-contents.htm">Practice of Brahmacharya</a></li>
+				<li>Napoleon Hill: <a href="/celibacy/quotes/napoleon-hill-sex-transmutation-part-1.htm">The Mystery of Sex: Transmutation</a></li>
+				<li><a href="/celibacy/articles/celibacy-articles-and-links.htm">Celibacy Articles and Links </a></li>
+			</ul>
+		</div>
+
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links</li>
+				<li class="external-first-item">Divine Life Society at <a href="https://en.wikipedia.org/wiki/Divine_Life_Society">
+						Wikipedia</a></li>
+				<li>Source text at: <a href="https://www.dlshq.org/download/celibacy.htm">www.dlshq.org</a>
+				</li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,84 @@
+<!-- start of menu include file  Update April 21, 2020. May 20, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<!-- these float <  check, where is it cleared? -->
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-3"><a href="/">Site root</a></li>
+			<li><a href="/psychology/articles/article-index.htm"><span></span>Article list</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/psychology/">Psychology index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>Psychology Articles</li>
+			<li class="normal">
+				<img class="menu-image" src="images/william-james-menu.jpg" alt="William James">
+			</li>
+			<li class="normal">William James <span class="block note">(1842-1910)</span></li>
+		</ul>
+		<div id="menu-section-group" style="margin-top:20px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must NOT include directory in path for script to work -->
+				<li><a href="article-index.htm">Article List</a></li>
+				<li><a href="steven-brier-archetypal-autism-faq.htm">Steven Brier: Archetypal Autism</a></li>
+				<li><a href="robert-anton-wilson-free-your-mind.htm">Robert Anton Wilson: Free Your Mind (9.5 min video)</a> </li>
+				<li><a href="aldous-huxley-self-transcendence.htm">Aldous Huxley: Self Transcendence</a></li>
+				<li><a href="mantak-chia-kundalini-psychosis.htm">Mantak Chia: Most Effective Cure for Kundalini Psychosis </a></li>
+				<li><a href="mantak-chia-psicosis-kundalini.htm">Mantak Chia: (español) La cura más efectiva para la psicosis Kundalini</a></li>
+				<li><a href="james-medical-materialism.htm">William James on Medical Materialism</a> </li>
+				<li><a href="james-review-anaesthetic-revelation-gist-of-philosophy.htm">William James on Experiments with Nitrous Oxide</a>
+				<li><a href="thomas-szasz-summary-statement-and-manifesto.htm">Thomas Szasz: Summary Statement and Manifesto</a></li>
+				<li><a href="lennard-davis-five-reasons-not-to-take-ssris.htm">Lennard Davis: Five Reasons Not to Take SSRIs</a> </li>
+				<li><a href="six-harsh-truths-that-will-make-you-a-better-person.htm">Six Harsh Truths That Will Make You a Better Person</a> </li>
+				<li><a href="yuri-bezmenov-socialist-subversion.htm">Former KGB Yuri Bezmenov, Warns America About Socialist Subversion</a></li>
+				<li><a href="the-CIA-mind-bending-disclosures.htm">The CIA: Mind-Bending Disclosures, Brainwashing</a></li>
+				<li><a href="skinner-on-taming-the-lions.htm">Notorious Quote by BF Skinner on Taming the Lions</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<!-- check the following -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site</li>
+				<li>Hearing Voices Section<br>
+					<a href="/hearing-voices/">/hearing-voices/</a>
+				</li>
+				<li>Vernon Howard:</li>
+				<li><a href="/hearing-voices/articles/vernon-howard-freedom-from-harmful-voices.htm">Freedom From Harmful Voices</a> </li>
+				<li>Alan Fitzpatrick:</li>
+				<li><a href="/hearing-voices/articles/alan-fitzpatrick-the-voices-we-may-hear.htm">The Voices We May Hear </a></li>
+				<li style="margin-top: 10px;"><a href="/hearing-voices/articles/alan-fitzpatrick-the-surest-path-to-mental-clarity.htm">The Surest Path to Mental Clarity</a> </li>
+				<li>&nbsp; </li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

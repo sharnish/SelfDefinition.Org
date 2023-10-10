@@ -1,0 +1,88 @@
+<!-- start of menu include file   Update April 25, 2022. Additional 12 pages October 9, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- no section index yet, using "quotes" index page
+            <li><a href="/clara-llum/">Clara Llum index</a></li> -->
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="clara-llum-index.htm">Clara Llum Index</a></li>
+			<li class="english"><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<!-- no section HEADER -->
+			<li><a href="clara-llum-index.htm">Clara Llum index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li>
+				<img class="menu-image" src="images/clara-llum-bw.jpg" alt="Clara Llum">
+			</li>
+			<li>Clara Llum</li>
+			<li class="normal note tight">(d. Jan 1, 2013)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="clara-llum-index.htm">Clara Llum Index Page</a></li>
+				<li><a href="clara-llum-audio-selections.htm">Audio and Transcripts</a> </li>
+				<li><a href="clara-llum-video-selections.htm">Satsang Video Selections</a> </li>
+				<li><a href="acknowledge-the-original-state.htm">Acknowledge the Original State</a></li>
+				<li><a href="if-buddha-gets-in-your-way-kill-em.htm">If Buddha Gets In Your Way, Kill 'Em </a> </li>
+				<li><a href="infinite-light-alone.htm">Infinite Light Alone</a></li>
+				<li><a href="love-devotion-surrender.htm">Love, Devotion, Surrender</a></li>
+				<li><a href="mind-is-hal-9000.htm">Mind is HAL 9000</a></li>
+				<li><a href="mother-compassion-naked-awareness.htm">Mother Compassion, Naked Awareness</a></li>
+				<li><a href="namaste.htm">Namaste</a></li>
+				<li><a href="the-guru-principle.htm">The Guru Principle</a></li>
+				<li><a href="words-are-just-words.htm">Words Are Just Words</a></li>
+				<li><a href="si-buda-se-cruza-en-tu-camino.htm">Si buda se cruza en tu camino</a></li>
+				<!--li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li-->
+			</ul>
+		</div>
+		<div class="optional-links">
+
+			<p>Clara Llum - all audio at <a href="http://archive.org/search.php?query=creator:%22Clara%20Llum%20Ibañez%22">
+					Archive.Org "Clara Llum Ibañez"</a>
+			</p>
+			<ul class="menu-section">
+				<li>Thanks to Phil Burton for preserving Clara's material at <a href="https://terrapura.tumblr.com/tagged/clara%20llum">
+						terrapura.tumblr.com</a> </li>
+				<li>&nbsp;</li>
+			</ul>
+
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item"><a href="/ramana/">Ramana Maharshi section</a>
+				</li>
+				<li><a href="/nisargadatta/">Nisargadatta section</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

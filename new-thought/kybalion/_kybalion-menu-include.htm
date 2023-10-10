@@ -1,0 +1,115 @@
+<!-- start of menu include file  Update June 5, 2020. May 18, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/new-thought/">New Thought index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/new-thought/">New Thought index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top:20px;margin-bottom:15px;">
+			<li class="normal note">
+				<img class="menu-image" src="images/kybalion-logo.jpg" alt="Kybalion cover">
+			</li>
+			<li style="font-size:18px;">The Kybalion </li>
+			<li style="font-size:15px;">Teachings of Hermes Trismegistus</li>
+			<li class="normal note">by 'Three Initiates', Yogi
+				Publication Society, 1908</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="contents.htm">Table of Contents</a> </li>
+				<li><a href="introduction.htm">Introduction</a> </li>
+				<li><a href="chapter-01-hermetic-philosophy.htm">1. The Hermetic Philosophy</a></li>
+				<li><a href="chapter-02-seven-principles.htm">2. The Seven Hermetic Principles</a></li>
+				<li><a href="chapter-03-mental-transformation.htm">3. Mental Transformation</a></li>
+				<li><a href="chapter-04-the-all.htm">4. The ALL</a></li>
+				<li><a href="chapter-05-mental-universe.htm">5. The Mental Universe</a></li>
+				<li><a href="chapter-06-divine-paradox.htm">6. The Divine Paradox</a></li>
+				<li><a href="chapter-07-the-all-in-all.htm">7. &quot;The All&quot; in All</a></li>
+				<li><a href="chapter-08-correspondence.htm">8. The Planes of Correspondence</a></li>
+				<li><a href="chapter-09-vibration.htm">9. Vibration</a></li>
+				<li><a href="chapter-10-polarity.htm">10. Polarity</a></li>
+				<li><a href="chapter-11-rhythm.htm">11. Rhythm</a></li>
+				<li><a href="chapter-12-causation.htm">12. Causation</a></li>
+				<li><a href="chapter-13-gender.htm">13. Gender</a></li>
+				<li><a href="chapter-14-mental-gender.htm">14. Mental Gender</a></li>
+				<li><a href="chapter-15-hermetic-axioms.htm">15. Hermetic Axioms</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr">
+			<ul class="menu-section">
+				<li><em>The Kybalion</em> <a href="https://en.wikipedia.org/wiki/The_Kybalion">Wikipedia</a>
+				</li>
+				<li><span class="block">Hermes Trismegistus</span> at <a href="https://en.wikipedia.org/wiki/Hermes_Trismegistus">
+						Wikipedia</a> </li>
+				<!--<li>Hermeticism at <a href="https://en.wikipedia.org/wiki/Hermeticism">Wikipedia</a></li>-->
+				<li><span class="block">William Walker Atkinson</span> at <a href="https://en.wikipedia.org/wiki/William_Walker_Atkinson">
+						Wikipedia</a> </li>
+				<li>This book (1912 ed.) at <a href="https://www.sacred-texts.com/eso/kyb/">Sacred-Texts.Com</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site</li>
+				<li class="first-item"></li>
+				<li class="subhead-item">Franz Hartmann</li>
+				<li class="first-item"><a href="/magic/hartmann/white-and-black/introduction-spiritual-law.htm">
+						Magic White and Black</a></li>
+				<li><a href="/magic/hartmann/wisdom/chapter-08-alchemy.htm#axiomata-hermetica">
+						43 Axioms of Alchemy</a></li>
+				<li><a href="/magic/paracelsus/hartmann-life-of-paracelsus/contents.htm">
+						Life of Paracelsus</a></li>
+				<li class="subhead-item">Eliphas Levi</li>
+				<li class="first-item"><a href="/magic/eliphas-levi/paradoxes/contents.htm">
+						Paradoxes of the Highest Science</a></li>
+				<li class="subhead-item">Mabel Collins</li>
+				<li class="first-item"><a href="/blavatsky/light-on-the-path/contents-and-title.htm">
+						Light on the Path</a></li>
+			</ul>
+		</div>
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links</li>
+				<li><a href="http://www.kybalion.org/">www.kybalion.org/</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

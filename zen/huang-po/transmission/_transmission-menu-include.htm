@@ -1,0 +1,84 @@
+<!-- start of menu include file   Update June 25, 2020. 2022.CSS June 13, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/zen/">Zen index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep posline-height: 1.6em;itioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li class="offset">The Zen Teaching of Huang Po &ndash; On the Transmission of Mind</li>
+			<li class="normal note offset">Translated John Blofeld</li>
+			<li class="normal note">
+				<img class="menu-image" style="width:190px;" src="images/huang-po.jpg" alt="Huang-po" />
+			</li>
+			<li>Huang-po <span class="normal note offset">(?&ndash;850)</span></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group" style="margin-top: 20px;">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="publishing-notes.htm">Publishing Notes</a></li>
+				<li><a href="introduction.htm">Translator's Introduction</a></li>
+				<li><a href="pei-hsius-preface.htm">P&apos;ei Hsiu&apos;s Preface</a></li>
+				<li><a href="a1-chun-chou-record.htm">Ch&uuml;n Chou Record</a></li>
+				<li><a href="a2-chun-chou-record-cont.htm">Ch&uuml;n Chou&ndash;Continued</a></li>
+				<li><a href="b1-wan-ling-record.htm">Wan Ling Record-1</a></li>
+				<li><a href="b2-wan-ling-anecdotes.htm">Wan Ling&ndash;Anecdotes-2</a></li>
+				<li><a href="b3-wan-ling-anecdotes-cont.htm">Wan Ling&ndash;Anecdotes-3</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Huang-po (Huangbo Xiyun) at <a href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">Wikipedia</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also by Huang Po</li>
+				<li class="first-item">Translated by Lok To: <a style="display: block" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">Doctrine of Mind Transmission</a></li>
+				<li class="first-item">Translated by D.T. Suzuki: <a style="display: block" href="/zen/huang-po/sermon/huang-po-sermon-suzuki.htm">Sermon of Huang Po</a></li>
+				<li class="header-item">Also in Zen section</li>
+				<li class="first-item"><a href="/zen/hui-neng/platform/contents.htm">Sutra of Hui Neng<br /> (Platform Sutra)</a></li>
+				<li>Garma C.C. Chang <a style="display: block" href="/zen/garma-chang/practice-of-zen/contents.htm">The Practice of Zen</a></li>
+				<li class="first-item">Garma C.C. Chang <a style="display: block" href="/zen/garma-chang/la-practica-del-zen/contenido.htm">La Práctica del Zen</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

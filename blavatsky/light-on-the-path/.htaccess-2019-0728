@@ -1,0 +1,12 @@
+# .htaccess file for /magic/light-on-the-path/
+# added Dec 8, 2016
+
+Redirect 301 "/magic/light-on-the-path/contents.htm"   "/magic/light-on-the-path/contents-and-title.htm" 
+
+Redirect 301 "/magic/light-on-the-path/section-2.htm"  "/magic/light-on-the-path/section-2-comments.htm" 
+
+# added Dec 26, 2016
+Redirect 301 "/magic/light-on-the-path/section-1.htm"  "/magic/light-on-the-path/section-1-text.htm"
+
+#end
+

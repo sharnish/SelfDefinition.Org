@@ -1,0 +1,257 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Life of Paracelsus</title>
+	<meta name="description" content="The substance of his teachings: Concerning cosmology, 
+    anthropology, pneumatology, magic and sorcery, medicine, alchemy and astrology, philosophy and theosophy.">
+	<meta property="og:title" content="Life of Paracelsus" />
+	<meta property="og:description" content="The substance of his teachings: Concerning cosmology, 
+    anthropology, pneumatology, magic and sorcery, medicine, alchemy and astrology, philosophy and theosophy. 
+    Extracted and translated from his rare and extensive works and from some unpublished manuscripts" />
+	<meta property="og:image" content="https://selfdefinition.org/magic/paracelsus/hartmann-life-of-paracelsus/images/paracelsus-full-size.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_life-of-paracelsus-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- first -->
+	<link rel="next" href="preface.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* definition list styling on this page was moved to local stylesheet */
+
+		div#index-lists {
+			margin-top: 30px;
+		}
+
+		div#index-lists ul {
+			list-style: none;
+		}
+
+		div#index-lists ul li {
+			margin: 18px 0;
+		}
+
+		div#index-lists a {
+			display: inline-block;
+		}
+
+		.index-contents-links {}
+
+		.index-external-links,
+		.index-site-links,
+		.index-optional-links {
+			font-size: 90%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include( "_paracelsus-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<?php include( "_paracelsus-title-include.htm"); ?>
+									<h3>
+										Table of Contents
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="title-page.htm">Title Page &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div id="contents">
+								<dl>
+									<dt class="hide-if-phone">&nbsp;</dt>
+									<dd class="left hide-if-phone">
+										&nbsp;
+									</dd>
+									<dd class="right hide-if-phone">
+										Page</dd>
+									<dt>&nbsp;</dt>
+									<dd class="left">
+										<a href="title-page.htm">Title Page</a>
+									</dd>
+									<dd class="right">
+										&nbsp;</dd>
+									<dt>&nbsp;</dt>
+									<dd class="left">
+										<a href="preface.htm">Preface</a>
+									</dd>
+									<dd class="right">
+										v</dd>
+									<dt>I.</dt>
+									<dd class="left">
+										<a href="01-life-of-paracelsus.htm">The Life of Paracelsus</a>
+									</dd>
+									<dd class="right">
+										1</dd>
+									<dt>Ia.</dt>
+									<dd class="left">
+										<a href="01a-writings-of-paracelsus.htm">The Writings of Paracelsus</a>
+									</dd>
+									<dd class="right">
+										23</dd>
+									<dt>II.</dt>
+									<dd class="left">
+										<a href="02-explanation-of-terms.htm">Explanations of Terms</a>
+									</dd>
+									<dd class="right">
+										29</dd>
+									<dt>III.</dt>
+									<dd class="left">
+										<a href="03-cosmology.htm">Cosmology</a>
+									</dd>
+									<dd class="right">
+										44</dd>
+									<dt>IV.</dt>
+									<dd class="left">
+										<a href="04-anthropology.htm">Anthropology</a>
+									</dd>
+									<dd class="right">
+										63</dd>
+									<dt>V.</dt>
+									<dd class="left">
+										<a href="05-pneumatology.htm">Pneumatology</a>
+									</dd>
+									<dd class="right">
+										103</dd>
+									<dt>VI.</dt>
+									<dd class="left">
+										<a href="06-magic-and-sorcery.htm">Magic and Sorcery</a>
+									</dd>
+									<dd class="right">
+										128</dd>
+									<dt>VII.</dt>
+									<dd class="left">
+										<a href="07-medicine.htm">Medicine</a>
+									</dd>
+									<dd class="right">
+										165</dd>
+									<dt>VIII. </dt>
+									<dd class="left">
+										<a href="08-alchemy-and-astronomy.htm">Alchemy and Astrology</a>
+									</dd>
+									<dd class="right">
+										238</dd>
+									<dt>IX.</dt>
+									<dd class="left">
+										<a href="09-philosophy-and-theosophy.htm">Philosophy and Theosophy</a>
+									</dd>
+									<dd class="right">
+										266</dd>
+									<dt>&nbsp;</dt>
+									<dd class="left">
+										<a href="appendix.htm">Appendix</a>
+									</dd>
+									<dd class="right">
+										287</dd>
+									<dt>&nbsp;</dt>
+									<dd class="left note">
+										[INDEX is omitted]</dd>
+									<dd class="right">
+										[305]
+									</dd>
+								</dl>
+								<div style="clear: both;">
+								</div>
+								<!-- clears the floats in the definition list -->
+							</div>
+							<!-- index page htms and CSS copied from Voie of the Silence -->
+							<div id="index-lists">
+								<hr />
+								<ul class="index-external-links">
+									<li>Franz Hartman at <a href="https://en.wikipedia.org/wiki/Franz_Hartmann">Wikipedia</a> </li>
+								</ul>
+								<ul class="index-site-links">
+									<li>Also by Hartmann on this site:<br />
+										<a href="/magic/hartmann/wisdom/chapter-08-alchemy.htm#axiomata-hermetica">43 Axioms of Alchemy</a>
+									</li>
+									<li><a href="/magic/hartmann/">Magic White and Black</a></li>
+									<li>Pdf's by Hartmann in the Christian section (re Jakob Boehme) <a href="/christian/">selfdefinition.org/christian/</a></li>
+									<li class="spacer">
+										<hr />
+									</li>
+									<li>Pdf for <em>The Life of Paracelsus</em> is in <a href="/magic/">/magic/</a></li>
+									<li>Sources: 1) <a href="https://www.scribd.com/search?page=1&content_type=tops&query=hartmann%20paracelsus">Scribd.Com</a> 2) <a href="https://archive.org/details/lifeofphilippust00hartuoft">Archive.Org</a></li>
+									<li>Thanks to American-Buddha.Com</li>
+								</ul>
+							</div>
+							<!-- end contents -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor">&nbsp;</a>
+							<p class="spacer">
+								&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+							</p>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="title-page.htm">Title Page &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

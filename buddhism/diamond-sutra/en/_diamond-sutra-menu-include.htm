@@ -1,0 +1,87 @@
+<!-- start of menu include file   Update April 7, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+            <!-- these float, Don't forget Div below to clear -->
+            <li class="first-item"><a href="/buddhism/">Buddhism index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="contents.htm">Contents</a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top of page</a></li>
+        </ul>
+        <div style="clear: both;"></div>
+    </div>
+    <!-- everything below this disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/buddhism/">Buddhism index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <!-- ajax has negative top and bottom margins in .CSS -->
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; " menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center" style="margin-top:10px;">
+            <li>Vagrakkhedikâ, or<br />Diamond Cutter</li>
+            <li class="normal note">
+                <img class="menu-image" src="images/diamond-sutra.jpg" alt="Buddha in Mandala" />
+            </li>
+            <li style="margin-bottom:15px;">Diamond Sutra</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="diamond-sutra-01-to-10.htm">Stanzas 1 to 10</a> </li>
+                <li><a href="diamond-sutra-11-to-20.htm">Stanzas 11 to 20</a> </li>
+                <li><a href="diamond-sutra-21-to-32.htm">Stanzas 21 to 32</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Diamond Sutra <br />at <a href="https://en.wikipedia.org/wiki/Diamond_Sutra">
+                        Wikipedia</a> </li>
+                <li>Mahayana at <a href="https://en.wikipedia.org/wiki/Mahayana">
+                        Wikipedia</a> </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also on this site</li>
+                <li class="site-first-item"><a href="/buddhism/articles/twelve-links-of-dependent-arising.htm">Twelve
+                        Links of Dependent Arising (Twelve Causes of Suffering)</a></li>
+                <li>Zen section: </li>
+                <li><a href="/zen/huang-po/transmission/contents.htm">The Zen Teachings of Huang Po On the
+                        Transmission
+                        of Mind</a></li>
+                <li><a href="/zen/garma-chang/practice-of-zen/contents.htm">Garma C. C. Chang - The Practice of
+                        Zen</a></li>
+                <li><a href="/zen/hui-neng/platform/contents.htm">Hui Neng, Sutra of the Sixth Patriarch a.k.a.
+                        "Platform Sutra"</a></li>
+                <li><a href="/zen/">Zen index, all titles</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+            <a onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

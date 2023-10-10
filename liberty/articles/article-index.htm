@@ -1,0 +1,195 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Liberty Articles</title>
+	<meta name="description" content="Liberty Article Index">
+	<meta name="author" content="">
+	<meta property="og:title" content="Liberty Articles">
+	<meta property="og:description" content="Liberty Article Index">
+	<meta property="og:image" content="https://selfdefinition.org/new-thought/articles/images/phineas-quimby-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_liberty-articles-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!--link rel="prev" >
+    <link rel="next" -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* social medis:
+        */
+
+		ul.index-contents-links li.indent {
+			margin-left: 15px;
+		}
+
+	</style>
+	<script>
+		/* see /redirect/magic-404-redirect for full implementation
+		
+		replaceable link and image
+
+        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+
+        Example:    $('#one span').text('Hi I am replace');
+
+        Change attribute:
+
+        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+
+        */
+
+		$(document).ready(function() {
+
+			$('#title-image').attr("src", "/liberty/articles/images/C.S.Lewis-menu.jpg");
+
+			$('#menu-image').attr("src", "/liberty/articles/images/C.S.Lewis-menu.jpg");
+
+			$('#title-image').attr("alt", "C.S. Lewis");
+
+			$('#menu-image').attr("alt", "C.S. Lewis");
+
+			$('#swap-menu-author').text("C.S. Lewis");
+
+			$('#swap-menu-dates').text("(1898-1963)");
+
+		})
+
+	</script>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_liberty-articles-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_liberty-articles-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3 class="toowide">
+										Article Index
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="cs-lewis-learning-in-war-time.htm">Learning In War Time &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- extra hook added April 30, 2022 -->
+							<div class="page-text">
+								<!-- ALTERNATIVE CONTENTS This is the same as the left menu, with different styling -->
+								<nav class="index-lists">
+
+									<ul class="index-contents-links">
+										<li>C.S. Lewis</li>
+										<li class="indent"><a href="cs-lewis-learning-in-war-time.htm">Learning In War-Time, sermon</a></li>
+										<li class="indent"><a href="cs-lewis-willing-slaves-welfare-state.htm">Willing Slaves of the Welfare State</a></li>
+										<li>Larken Rose </li>
+										<li class="indent"><a href="the-jones-plantation.htm">The Jones Plantation (YT video)</a></li>
+									</ul>
+
+									<hr>
+
+									<ul class="index-links">
+										<li>C.S. Lewis at&nbsp;<a href="https://en.wikipedia.org/wiki/C._S._Lewis">Wikipedia</a> </li>
+
+										<li class="header-item">Also in the Liberty section</li>
+										<li class="subhead">Thomas Paine</li>
+										<li class="first-item"><a href="/liberty/thomas-paine/common-sense/contents.htm"> Common Sense (1776) </a></li>
+										<li class="header">Lysander Spooner</li>
+										<li><a href="https://selfdefinition.org/liberty/spooner/no-authority/contents.htm">No Treason #6, Constitution of No Authority (1867)</a></li>
+										<li><a href="/liberty/spooner/articles/1873-forced-consent.htm"> Forced Consent (1873) </a></li>
+										<li class="subhead">Étienne de La Boétie</li>
+										<li class="first-item"><a href="/liberty/etienne-de-la-boetie/contents.htm">The Politics of Obedience: Discourse of Voluntary Servitude</a></li>
+										<li class="subhead">William S. Lind</li>
+										<li><a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+										<li><a href="/liberty/marxism/lind-poison-and-antidote.htm">The Poison and the Antidote</a></li>
+
+										<li class="header-item">Psychology section</li>
+
+										<li>Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind (English and Spanish)</a></li>
+										<li>Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda (English and Spanish)</a></li>
+										<li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a></li>
+
+										<li class="subhead">Todas las paginas en español</li>
+										<li><a href="/paginas-en-espanol.htm">/paginas-en-espanol.htm</a></li>
+									</ul>
+
+								</nav>
+
+
+								<p>
+									&nbsp;
+								</p>
+								<p class="totop-above-anchor">
+									<a href="javascript:toTopCleanUrl();">top of page</a>
+								</p>
+								<!-- anchor element must not be empty -->
+							</div><!-- end #page-text -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="cs-lewis-learning-in-war-time.htm">Learning In War Time &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

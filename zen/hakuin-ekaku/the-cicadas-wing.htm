@@ -1,0 +1,119 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Cicada's Wing</title>
+	<meta name="description" content="One day in Mino province I observed a cicada casting its skin in the shade. It managed to get its head free, and then its hands and its feet emerged one after the other. Only its left wing remained inside">
+	<meta name="author" content="Hakuin Ekaku">
+	<meta property="og:title" content="The Cicada's Wing">
+	<meta property="og:description" content="One day in Mino province I observed a cicada casting its skin in the shade. It managed to get its head free, and then its hands and its feet emerged one after the other. Only its left wing remained inside">
+	<meta property="og:image" content="http://selfdefinition.org/zen/hakuin-ekaku/images/hakuin-ekaku-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_hakuin-ekaku-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_hakuin-ekaku-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_hakuin-ekaku-title-include.htm"); ?>
+									<h3>
+										The Cicada's Wing
+									</h3>
+								</header>
+							</div><!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="song-of-meditation.htm">&lt; Song of Meditation</a></li>
+									<li class="align-right">&nbsp;</li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p style="margin-top: 35px;">
+								&quot;One day in Mino province I observed a cicada casting its skin in the shade. It managed to get its head free, and then its hands and its feet emerged one after the other. Only its left wing remained inside, still caught to the old skin. It didn't look as though it would ever get that wing unstuck.
+							</p>
+							<p>
+								&quot;Watching it struggling to free itself, I was moved by feelings of pity to assist it with my fingernail. Excellent, I thought, now you are free to go on your way. But the wing that I had touched remained shut and would not open. That cicada never was able to fly as it should have. Looking at it, I felt ashamed of myself and regretted deeply what I had done.
+							</p>
+							<p>
+								&quot;When you think about it, present-day Zen teachers act in much the same way when they guide their students. I've seen and heard how they take young people of exceptional talent—those destined to become the very pillars and ridgepoles of our school—and with their extremely ill-advised and inopportune methods end up making them into something half-baked and unachieved. This is a direct cause of the decline of our Zen school, the reason the Zen gardens are withering away.&quot;
+							</p>
+							<p class="note">
+								—from a letter by Hakuin to Layman Koan
+							</p>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="song-of-meditation.htm">&lt; Song of Meditation</a></li>
+									<li class="align-right">&nbsp;</li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

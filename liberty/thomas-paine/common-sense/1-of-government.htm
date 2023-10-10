@@ -1,0 +1,282 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Common Sense, by Thomas Paine</title>
+	<meta name="description" content="1. On the Origin and Design of Government in General With Concise Remarks on the English Constitution">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Common Sense, by Thomas Paine">
+	<meta property="og:description" content="1. On the Origin and Design of Government in General With Concise Remarks on the English Constitution">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/paine-common-sense/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_common-sense-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="introduction.htm">
+	<link rel="next" href="2-of-monarchy.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_common-sense-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_common-sense-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Of Government
+									</h3>
+									<p class="tiny">Español: <a href="../sentido-commun/1-del-gobierno.htm">1-del-gobierno.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduction.htm">&lt; Introduction</a></li>
+									<li class="align-right"><a href="2-of-monarchy.htm">Of Monarchy &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p style="font-variant: small-caps" class="center">On the origin and design of government in
+								general, with concise remarks on the English Constitution</p>
+							<p>Some writers have so confounded society with government, as to leave little or no
+								distinction between them; whereas they are not only different, but have different
+								origins. Society is produced by our wants, and government by our wickedness; the former
+								promotes our happiness possitively by uniting our affections, the latter negatively by
+								restraining our vices. The one encourages intercourse, the other creates distinctions.
+								The first is a patron, the last a punisher.</p>
+							<p>Society in every state is a blessing, but Government, even in its best state, is but a
+								necessary evil; in its worst state an intolerable one : for when we suffer, or are
+								exposed to the same miseries by a Government, which we might expect in a country without
+								Government, our calamity is heightened by reflecting that we furnish the means by which
+								we suffer. Government, like dress, is the badge of lost innocence; the palaces of kings
+								are built upon the ruins of the bowers of paradise. For were the impulses of conscience
+								clear, uniform and irresistibly obeyed, man would need no other lawgiver; but that not
+								being the case, he finds it necessary to surrender up a part of his property to furnish
+								means for the protection of the rest; and this he is induced to do by the same prudence
+								which in every other case advises him, out of two evils to choose the least. Wherefore,
+								security being the true design and end of government, it unanswerably follows that
+								whatever form thereof appears most likely to ensure it to us, with the least expence and
+								greatest benefit, is preferable to all others.</p>
+							<p>In order to gain a clear and just idea of the design and end of government, let us
+								suppose a small number of persons settled in some sequestered part of the earth,
+								unconnected with the rest; they will then represent the first peopling of any country,
+								or of the world. In this state of natural liberty, society will be their first thought.
+								A thousand motives will excite them thereto; the strength of one man is so unequal to
+								his wants, and his mind so unfitted for perpetual solitude, that he is soon obliged to
+								seek assistance and relief of another, who in his turn requires the same. Four or five
+								united would be able to raise a tolerable dwelling in the midst of a wilderness, but one
+								man might labour out the common period of life without accomplishing any thing; when he
+								had felled his timber he could not remove it, nor erect it after it was removed; hunger
+								in the mean time would urge him to quit his work, and every different want would call
+								him a different way. Disease, nay even misfortune, would be death; for though neither
+								might be mortal, yet either would disable him from living, and reduce him to a state in
+								which he might rather be said to perish than to die.</p>
+							<p>Thus necessity, like a gravitating power, would soon form our newly arrived emigrants
+								into society, the reciprocal blessings of which would supercede, and render the
+								obligations of law and government unnecessary while they remained perfectly just to each
+								other; but as nothing but Heaven is impregnable to vice, it will unavoidably happen that
+								in proportion as they surmount the first difficulties of emigration, which bound them
+								together in a common cause, they will begin to relax in their duty and attachment to
+								each other: and this remissness will point out the necessity of establishing some form
+								of government to supply the defect of moral virtue.</p>
+							<p>Some convenient tree will afford them a State House, under the branches of which the
+								whole Colony may assemble to deliberate on public matters. It is more than probable that
+								their first laws will have the title only of Regulations and be enforced by no other
+								penalty than public disesteem. In this first parliament every man by natural right will
+								have a seat.</p>
+							<p>But as the Colony encreases, the public concerns will en-crease likewise, and the
+								distance at which the members may be separated, will render it too inconvenient for all
+								of them to meet on every occasion as at first, when their number was small, their
+								habitations near, and the public concerns few and trifling. This will point out the
+								convenience of their consenting to leave the legislative part to be managed by a select
+								number chosen from the whole body, who are supposed to have the same concerns at stake
+								which those have who appointed them, and who will act in the same manner as the whole
+								body would act were they present. If the colony continue encreasing, it will become
+								necessary to augment the number of representatives, and that the interest of every part
+								of the colony may be attended to, it will be found best to d ivide the whole into
+								convenient parts, each part sending its proper number: and that the elected might never
+								form to themselves an interest separate from the electors, prudence will point out the
+								propriety of having elections often: because as the elected might by that means return
+								and mix again with the general body of the electors in a few months, their fidelity to
+								the public will be secured by the prudent reflection of not making a rod for themselves.
+								And as this frequent interchange will establish a common interest with every part of the
+								community, they will mutually and naturally support each other, and on this, (not on the
+								unmeaning name of king,) depends the strength of government, and the happiness of the
+								governed.</p>
+							<p>Here then is the origin and rise of government; namely, a mode rendered necessary by the
+								inability of moral virtue to govern the world; here too is the design and end of
+								government, viz. Freedom and security. And however our eyes may be dazzled with show, or
+								our ears deceived by sound; however prejudice may warp our wills, or interest darken our
+								understanding, the simple voice of nature and reason will say, 'tis right.</p>
+							<p>I draw my idea of the form of government from a principle in nature which no art can
+								overturn, viz. that the more simple any thing is, the less liable it is to be
+								disordered, and the easier repaired when disordered; and with this maxim in view I offer
+								a few remarks on the so much boasted constitution of England. That it was noble for the
+								dark and slavish times in which it was erected, is granted. When the world was overrun
+								with tyranny the least remove therefrom was a glorious rescue. But that it is imperfect,
+								subject to convulsions, and incapable of producing what it seems to promise, is easily
+								demonstrated.</p>
+							<p>Absolute governments, (tho' the disgrace of human nature) have this advantage with them,
+								they are simple; if the people suffer, they know the head from which their suffering
+								springs; know likewise the remedy; and are not bewildered by a variety of causes and
+								cures. But the constitution of England is so exceedingly complex, that the nation may
+								suffer for years together without being able to discover in which part the fault lies;
+								some will say in one and some in another, and every political physician will advise a
+								different medicine.</p>
+							<p>I know it is difficult to get over local or long standing prejudices, yet if we will
+								suffer ourselves to examine the component parts of the English constitution, we shall
+								find them to be the base remains of two ancient tyrannies, compounded with some new
+								Republican materials.</p>
+							<p>First.—The remains of Monarchical tyranny in the person of the King.</p>
+							<p>Secondly.—The remains of Aristocratical tyranny in the persons of the Peers.</p>
+							<p>Thirdly.—The new Republican materials, in the persons of the Commons, on whose virtue
+								depends the freedom of England.</p>
+							<p>The two first, by being hereditary, are independant of the People; wherefore in a
+								constitutional sense they contribute nothing towards the freedom of the State.</p>
+							<p>To say that the constitution of England is an union of three powers, reciprocally
+								checking each other, is farcical; either the words have no meaning, or they are flat
+								contradictions.</p>
+							<p>To say that the Commons is a check upon the King, presupposes two things.</p>
+							<p>First.—That the King is not to be trusted without being looked after; or in other words,
+								that a thirst for absolute power is the natural disease of monarchy.</p>
+							<p>Secondly.—That the Commons, by being appointed for that purpose, are either wiser or more
+								worthy of confidence than the Crown.</p>
+							<p>But as the same constitution which gives the Commons a power to check the King by
+								withholding the supplies, gives afterwards the King a power to check the Commons, by
+								empowering him to reject their other bills; it again supposes that the King is wiser
+								than those whom it has already supposed to be wiser than him. A mere absurdity!</p>
+							<p>There is something exceedingly ridiculous in the composition of Monarchy; it first
+								excludes a man from the means of information, yet empowers him to act in cases where the
+								highest judgment is required. The state of a king shuts him from the World, yet the
+								business of a king requires him to know it thoroughly; wherefore the different parts, by
+								unnaturally opposing and destroying each other, prove the whole character to be absurd
+								and useless.</p>
+							<p>Some writers have explained the English constitution thus: the King, say they, is one,
+								the people another; the Peers are a house in behalf of the King, the commons in behalf
+								of the people; but this hath all the distinctions of a house divided against itself; and
+								though the expressions be pleasantly arranged, yet when examined they appear idle and
+								ambiguous; and it will always happen, that the nicest construction that words are
+								capable of, when applied to the description of something which either cannot exist, or
+								is too incomprehensible to be within the compass of description, will be words of sound
+								only, and though they may amuse the ear, they cannot inform the mind : for this
+								explanation includes a previous question, viz. how came the king by a power which the
+								people are afraid to trust, and always obliged to check? Such a power could not be the
+								gift of a wise people, neither can any power, which needs checking, be from God; yet the
+								provision which the constitution makes supposes such a power to exist.</p>
+							<p>But the provision is unequal to the task; the means either cannot or will not accomplish
+								the end, and the whole affair is a <em>Felo de se</em>: <span class="note">[felony
+									against self, suicide]</span> for as the greater weight will always carry up the
+								less, and as all the wheels of a machine are put in motion by one, it only remains to
+								know which power in the constitution has the most weight, for that will govern: and tho'
+								the others, or a part of them, may clog, or, as the phrase is, check the rapidity of its
+								motion, yet so long as they cannot stop it, their endeavours will be ineffectual: The
+								first moving power will at last have its way, and what it wants in speed is supplied by
+								time.</p>
+							<p>That the crown is this overbearing part in the English constitution needs not be
+								mentioned, and that it derives its whole consequence merely from being the giver of
+								places and pensions is self-evident; wherefore, though we have been wise enough to shut
+								and lock a door against absolute Monarchy, we at the same time have been foolish enough
+								to put the Crown in possession of the key.</p>
+							<p>The prejudice of Englishmen, in favour of their own government, by King, Lords and
+								Commons, arises as much or more from national pride than reason. Individuals are
+								undoubtedly safer in England than in some other countries: but the will of the king is
+								as much the law of the land in Britain as in France, with this difference, that instead
+								of proceeding directly from his mouth, it is handed to the people under the formidable
+								shape of an act of parliament. For the fate of Charles the First hath only made kings
+								more subtle —not more just.</p>
+							<p>Wherefore, laying aside all national pride and prejudice in favour of modes and forms,
+								the plain truth is that it is wholly owing to the constitution of the people, and not to
+								the constitution of the government that the crown is not as oppressive in England as in
+								Turkey.</p>
+							<p>An inquiry into the constitutional errors in the English form of government, is at this
+								time highly necessary; for as we are never in a proper condition of doing justice to
+								others, while we continue under the influence of some leading partiality, so neither are
+								we capable of doing it to ourselves while we remain fettered by any obstinate prejudice.
+								And as a man who is attached to a prostitute is unfitted to choose or judge of a wife,
+								so any prepossession in favour of a rotten constitution of government will disable us
+								from discerning a good one.</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduction.htm">&lt; Introduction</a></li>
+									<li class="align-right"><a href="2-of-monarchy.htm">Of Monarchy &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

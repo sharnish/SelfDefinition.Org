@@ -1,0 +1,7 @@
+# .htaccess file for selfdefinition.org/huna/
+
+Redirect 301 "/huna/max-freedom-long-huna-bulletin.htm" "/huna/huna-bulletin/contents.htm"
+
+
+
+# end

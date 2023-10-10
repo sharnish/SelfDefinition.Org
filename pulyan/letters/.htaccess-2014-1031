@@ -1,0 +1,5 @@
+# selfdefinition.org/pulyan/letters
+
+AddType application/x-httpd-php .html .htm 
+
+IndexIgnore Pulyan*

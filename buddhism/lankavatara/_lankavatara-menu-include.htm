@@ -1,0 +1,116 @@
+<!-- start of menu include file   Update /styles-2022/  April 6,2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+            <!-- these float, Don't forget Div below to clear -->
+            <li><a href="/buddhism/">Buddhism index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="english"><a href="contents.htm"><span class="conditional-hide">Table of </span>Contents</a></li>
+            <li class="english"><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- everything below this disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <!-- #menu-container is targeted by the script RecoverDivScroll  -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/buddhism/">Buddhism index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <!-- comment out either the English or the Spanish -->
+            <!-- ajax has negative top and bottom margins in .CSS -->
+            <!-- scroll and ajax must be classes, not IDs -->
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <!-- "offset" allows you to center but remove a little space at left.
+              srr Transmission, English -->
+        <ul class="menu-text center">
+            <li class="offset">Lankavatara Sutra</li>
+            <li class="normal note">
+                <img class="menu-image" src="images/lankavatara-suzuki-cover.jpg" alt="Lankavatara Suzuki cover" />
+            </li>
+            <li class="normal offset">Translated D.T. Suzuki</li>
+            <li class="normal offset tight">Edited Dwight Goddard</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contents.htm">Contents</a></li>
+                <li><a href="preface.htm">Preface</a> </li>
+                <li><a href="introduction.htm">Introduction</a> </li>
+                <li><a href="01-discrimination.htm">1. Discrimination</a> </li>
+                <li><a href="02-false-imagination.htm">2. False Imagination</a> </li>
+                <li><a href="03-right-knowledge.htm">3. Right Knowledge</a> </li>
+                <li><a href="04-perfect-knowledge.htm">4. Perfect Knowledge</a> </li>
+                <li><a href="05-mind-system.htm">5. The Mind System</a> </li>
+                <li><a href="06-transcendental-intelligence.htm">6. Transcendental Intelligence</a> </li>
+                <li><a href="07-self-realisation.htm">7. Self-Realisation</a> </li>
+                <li><a href="08-attainment-of-self-realisation.htm">8. Attainment of Self-Realisation</a> </li>
+                <li><a href="09-fruit-of-self-realisation.htm">9. Fruit of Self-Realisation</a> </li>
+                <li><a href="10-discipleship-lineage.htm">10. Discipleship, Lineage</a> </li>
+                <li><a href="11-bodhisattvahood.htm">11. Bodhisattvahood</a> </li>
+                <li><a href="12-tathagatahood.htm">12. Tathagatahood</a> </li>
+                <li><a href="13-nirvana.htm">13. Nirvana</a> </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr" />
+            <ul class="menu-section">
+                <li>Lankavatara Sutra at <a href="https://en.wikipedia.org/wiki/La%E1%B9%85k%C4%81vat%C4%81ra_S%C5%ABtra">
+                        Wikipedia</a> </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also in Buddhism</li>
+                <li class="site-first-item"><a href="/buddhism/scriptures/chain-of-causation.htm">The Chain of Causation</a></li>
+                <li><a href="/buddhism/articles/twelve-links-of-dependent-arising.htm">Twelve Links of Dependent Arising </a></li>
+                <li><a href="/buddhism/diamond-sutra/en/contents.htm"> Vagrakkhedikâ, the Diamond Sutra </a></li>
+                <li class="site-links-item">Zen section</li>
+                <li class="site-first-item">Lok To: <a href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">Zen Teachings of Huang Po, The Dharma of Mind Transmission</a></li>
+                <li>Trans. John Blofeld: <a href="/zen/huang-po/transmission/contents.htm"> The Zen Teaching of Huang Po, On the Transmission of Mind </a></li>
+                <li>Garma C.C. Chang
+                    <a href="/zen/garma-chang/practice-of-zen/">The Practice of Zen</a>
+                </li>
+                <li class="site-links-item">Tibetan section</li>
+                <li class="site-first-item">Trungpa Rinpoche: <a class="inline" href="/tibetan/trungpa/trungpa-rinpoche-the-hard-way.htm">The Hard Way</a> and <a class="inline" href="/tibetan/trungpa/energy-and-emotional-transmutation.htm">Energy and Emotional Transformation</a></li>
+            </ul>
+        </div>
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li class="external-links-item">External links</li>
+                <li class="external-first-item">Lankavatara Sutra at <a href="https://www.sacred-texts.com/bud/bb/index.htm">Sacred-Texts.Com</a>
+                    <!-- MANY BROKEN LINKS 
+                <li class="external-first-item">Online Buddhist Scriptures at
+                    <a href="http://www.fodian.net/world/index.html">www.fodian.net</a>
+                </li>
+                -->
+                <li>Holybooks.Com (multitude of free pdfs on Buddhism)
+                    <a href="https://holybooks.com/category/buddhism/">holybooks.com</a>
+                </li>
+            </ul>
+        </div>
+
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

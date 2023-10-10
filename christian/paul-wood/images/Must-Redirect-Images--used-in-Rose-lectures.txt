@@ -1,0 +1,26 @@
+
+Paul Wood images are linked in Rose talks
+
+For htaccess file
+
+
+
+Redirect 301 "/christian/images/guggenheim-0.jpg"              "/christian/paul-wood/images/guggenheim-0.jpg"
+
+Redirect 301 "/christian/images/guggenheim-0.jpg"              "/christian/paul-wood/images/guggenheim-0.jpg"
+
+Redirect 301 "/christian/images/Guggenheim-Gleason-1.jpg"      "/christian/paul-wood/images/Guggenheim-Gleason-1.jpg"
+
+Redirect 301 "/christian/images/Guggenheim-Gleason-2.jpg"      "/christian/paul-wood/images/Guggenheim-Gleason-2.jpg"
+
+Redirect 301 "/christian/images/inasmuch-retreat-center.jpg"   "/christian/paul-wood/images/inasmuch-retreat-center.jpg"
+
+Redirect 301 "/christian/images/Paul-Wood-grayscale.jpg"       "/christian/paul-wood/images/Paul-Wood-grayscale.jpg"
+
+Redirect 301 "/christian/images/thumbnail-Paul-Wood-from-Eugene-Register-Guard-1965.jpg"  Redirect 301 "/christian/paul-wood/images/thumbnail-Paul-Wood-from-Eugene-Register-Guard-1965.jpg"
+
+
+
+# Redirect 301 "/christian/images/"  "/christian/paul-wood/images/"
+
+# end

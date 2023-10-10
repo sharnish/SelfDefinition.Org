@@ -1,0 +1,141 @@
+# .htaccess file for selfdefinition.org/celibacy/
+
+
+# May 19, 2020
+# test mobility issue reported by Google on /celibacy/
+# https://www.askapache.com/htaccess-file/htaccess/meodai-mod_autoindexoh-master-htaccess/
+# META VIEWPORT
+# NO   IndexHeadInsert "<meta name="viewport" content="width=device-width, initial-scale=1">"
+# MUST ESCAPE " MARKS
+IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+
+# Example Apache docs
+# https://httpd.apache.org/docs/2.4/mod/mod_autoindex.html
+# this works, have to put on single line, otherwise the 2nd overwrites the first.
+# must escape the \" quote marks
+# IndexHeadInsert "<link rel=\"sitemap\" href=\"/sitemap.html\">\" \"<!-- this is a comment inserted by IndexHeadInsert -->"
+
+
+# May 7, 2020 moved root files to "articles" directory
+
+Redirect 301 "/celibacy/celibacy-articles-and-links.htm"  "/celibacy/articles/celibacy-articles-and-links.htm"
+
+Redirect 301 "/celibacy/Celibate-FAQ-Links.htm"           "/celibacy/articles/celibacy-faq-links.htm"
+
+
+# quotes section has its own htaccess file. Nothing in Quotes section on this page
+
+# ignore subdirectories to reduce clutter
+IndexIgnore images styles  audio
+IndexIgnore sivananda bernard
+
+# Change page name 2016-0924 to get canonical link to work
+Redirect 301 "/celibacy/Mark-Jaqua-Conservation-Therapy[celibacy].pdf"                   "/celibacy/Mark-Jaqua-Conservation-Therapy-and-Celibacy.pdf"
+
+# fix page name Aug 13, 2016
+Redirect 301 "/celibacy/Berrar-McFadden-Virile-Powers-of-Superb-Manhood-scan.pdf"        "/celibacy/Bernarr-Macfadden-Virile-Powers-of-Superb-Manhood-scan.pdf"
+
+# update 9/25/2016
+# REMOVED Mar 3, 2017 causes conflict with SSL rewrite
+# Redirect 301 "/celibacy/bernard/physiological-value-of-continence-part-1.htm"            "/celibacy/bernard/physiological-value-of-continence-part-1-opinion-vs-evidence.htm"
+# Redirect 301 "/celibacy/bernard/physiological-value-of-continence-part-2-neurosis.htm"   "/celibacy/bernard/physiological-value-of-continence-part-2-neurosis-psychosis.htm"
+
+
+# added Jan 3, 2017 for somebody's bad links in referral - got this from logs
+Redirect 301 "/celibacy/bernard/physiologi"                                              "/celibacy/bernard/physiological-value-of-continence-part-1.htm"
+Redirect 301 "/celibacy/bernard/physiological-value-of-conti"                            "/celibacy/bernard/physiological-value-of-continence-part-1.htm"
+
+
+Redirect 301 "/celibacy/quotes/george-cardinal-legros-secret-doctrine-problem-of-sex.htm"    "/blavatsky/george-cardinal-legros-secret-doctrine-problem-of-sex.htm"
+
+
+# Jan 23, 2017 - Removed spaces from file names and reflected these changes in the canonical links further below
+
+Redirect 301 "/celibacy/Richard Rose - Prostaglandins-and-Morality.pdf"        "/celibacy/Richard-Rose-Prostaglandins-and-Morality.pdf"
+
+Redirect 301 "/celibacy/Richard Rose - Temptation.pdf"                         "/celibacy/Richard-Rose-Temptation.pdf"
+
+Redirect 301 "/celibacy/Sri Swami Sivananda - Advice to Sannyasins.pdf"        "/celibacy/Sri-Swami-Sivananda-Advice-to-Sannyasins.pdf"
+
+Redirect 301 "/celibacy/Sri Swami Sivananda - Conquest of Anger.pdf"           "/celibacy/Sri-Swami-Sivananda-Conquest-of-Anger.pdf"
+
+Redirect 301 "/celibacy/Sri Swami Sivananda - Conquest of Fear.pdf"            "/celibacy/Sri-Swami-Sivananda-Conquest-of-Fear.pdf"
+
+Redirect 301 "/celibacy/Sri Swami Sivananda - Practice of Brahmacharya.pdf"    "/celibacy/Sri-Swami-Sivananda-Practice-of-Brahmacharya.pdf"
+
+Redirect 301 "/celibacy/Swami Vivekananda on Brahmacharya.pdf"                 "/celibacy/Swami-Vivekananda-on-Brahmacharya.pdf"
+
+Redirect 301 "/celibacy/Gay-Meth-Sex-Connections-review-of-literature-15-pages.pdf"  "/celibacy/Gay-Meth-Sex-Connection-review-of-literature-15-pages.pdf"
+
+#### add canonical links to pdfs
+#### Use spaces in file names, not %20
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+#</Files>
+
+#### don't use -- this PDF is the whole book
+#<Files 'Napoleon-Hill-Think-and-Grow-Rich.pdf'>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+#</Files>
+
+# Added Dec 4, 2022 Google page index issue, needs canonical
+<Files 'Bernarr-Macfadden-Virile-Powers-of-Superb-Manhood-scan.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/Bernarr-Macfadden-Virile-Powers-of-Superb-Manhood-scan.pdf>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+# see page name changes above
+<Files 'Richard-Rose-Prostaglandins-and-Morality.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/quotes/richard-rose-prostaglandins-and-morality.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Richard-Rose-Temptation.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/quotes/richard-rose-temptation.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Mark-Jaqua-Conservation-Therapy-and-Celibacy.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/quotes/mark-jaqua-conservation-therapy.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+# see page name changes above
+<Files 'Sri-Swami-Sivananda-Practice-of-Brahmacharya.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/sivananda/brahmacharya-contents.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+# fix file names of pdfs
+Redirect 301 "/celibacy/Swami Kripalvanada - Illusion of Conjugal Sadhana.pdf"   "/celibacy/Swami-Kripalvananda-Illusion-of-Conjugal-Sadhana.pdf"
+Redirect 301 "/celibacy/Swami Kripalvanada - Yoga and Celibacy.pdf"              "/celibacy/Swami-Kripalvananda-Yoga-and-Celibacy.pdf"
+
+<Files 'Swami-Kripalvananda-Illusion-of-Conjugal-Sadhana.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/quotes/swami-kripalvananda-illusion-of-conjugal-sadhana.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Swami-Kripalvanada-Yoga-and-Celibacy.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/quotes/swami-kripalvananda-yoga-and-celibacy.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+# NOT added Nov 24, 2016 -- no pdf so no Canonical link needed
+#<Files 'Gopal Keishna PDF NOT NEEDED'>
+#	Header add Link '<https://selfdefinition.org/celibacy/gopal-krishna-collection/contents.htm>; rel="canonical"'
+#	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+#</Files>
+
+# PDF added Jan 31, 2017
+<Files 'Franz-Hartmann-on-Chastity-4-pages.pdf'>
+	Header add Link '<https://selfdefinition.org/celibacy/quotes/franz-hartmann-on-chastity.htm>; rel="canonical"'
+	#Header set CelibacyHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+# end
+

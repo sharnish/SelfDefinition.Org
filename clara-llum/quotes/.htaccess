@@ -1,0 +1,8 @@
+# HTML5 audio not working on Firefox
+# https://stackoverflow.com/questions/8831625/html5-audio-not-working-on-firefox.htaccess
+
+AddType audio/ogg .oga
+AddType video/ogg .ogv
+AddType application/ogg .ogg
+
+#

@@ -1,0 +1,328 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysterium Magnum - Jacob Boehme</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Jacob Boehme">
+    <meta property="og:title" content="Mysterium Magnum - Jacob Boehme" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://selfdefinition.org/christian/jacob-boehme/mysterium-magnum/images/Jacob-Bohme-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_mysterium-magnum-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="/christian/jacob-boehme/mysterium-magnum/cover-page.htm">
+    <link rel="next" href="/christian/jacob-boehme/mysterium-magnum/authors-preface.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <style>
+        /* definition list for contents table */
+        /* in top 3 there there is no dd */
+
+        dt.empty {
+            margin-bottom: 15px;
+        }
+
+        /* chrome browser default is left margin 40px; */
+
+        dd {
+            margin: 5px 0 10px 15px;
+        }
+
+        @media only screen and (max-width:600px) {
+            dd {
+                margin-left: 4px;
+            }
+        }
+
+        @media only screen and (max-width:360px) {
+            dd {
+                margin-left: 0;
+            }
+        }
+
+        /* ******************* */
+        /* end of TOC chapters */
+        /* from voice-index-update.htm */
+        #index-lists ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+            border: 0px solid blue;
+        }
+
+        #index-lists ul li {
+            margin: 18px 0;
+            border: 0px solid green;
+        }
+
+        #index-lists a {
+            display: inline-block;
+        }
+
+        .index-external-links,
+        .index-site-links,
+        .index-optional-links {
+            font-size: 90%;
+            padding-left: 0;
+        }
+
+        #index-lists ul li.external-links-item,
+        #index-lists ul li.site-links-item {
+            font-weight: bold;
+            color: maroon;
+            margin-bottom: 3px;
+            padding-bottom: 0;
+        }
+
+        #index-lists ul li.external-first-item,
+        #index-lists ul li.site-first-item {
+            margin-top: 3px;
+            padding-top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include( "_mysterium-magnum-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <?php include( "_mysterium-magnum-title-include.htm"); ?>
+                                    <h3>
+                                        Table of Contents
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- end announce -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="cover-page.htm">&lt; Cover Page</a></li>
+                                    <li class="align-right"><a href="authors-preface.htm">Author's Preface &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <dl style="margin-top:35px;">
+                                <dt class="empty"><a href="cover-page.htm">Cover Page </a></dt>
+                                <dt class="empty"><a href="authors-preface.htm">Author's Preface </a></dt>
+                                <dt class="empty"><a href="glossary-by-wayne-kraus.htm">Glossary of Boehme's Terminology </a></dt>
+                                <dt><a href="chapter-01.htm">Chapter&nbsp;1:</a></dt>
+                                <dd>
+                                    What the Manifested God is: and of the Trinity.
+                                </dd>
+                                <dt><a href="chapter-02.htm">Chapter&nbsp;2:</a></dt>
+                                <dd>
+                                    Of the Word, or Heart of God.</dd>
+                                <dt><a href="chapter-03.htm">Chapter&nbsp;3:</a></dt>
+                                <dd>
+                                    How out of the Eternal Good an Evil is come to be; which in the Good had no Beginning to the Evil: And of the Original of the Dark World, or Hell, wherein the Devils dwell.
+                                </dd>
+                                <dt><a href="chapter-04.htm">Chapter&nbsp;4:</a></dt>
+                                <dd>
+                                    Of the Two Principles, viz. God's Love, and Anger; of Darkness, and Light; very necessary for the Reader to consider of.
+                                </dd>
+                                <dt><a href="chapter-05.htm">Chapter&nbsp;5:</a></dt>
+                                <dd>
+                                    Of the Five Senses.</dd>
+                                <dt><a href="chapter-06.htm">Chapter&nbsp;6:</a></dt>
+                                <dd>
+                                    Of the Essence of Corporality. The Seventh form of Nature. Luna (Moon) and Saturnus. Beginning --- End.
+                                </dd>
+                                <dt><a href="chapter-07.htm">Chapter&nbsp;7:</a></dt>
+                                <dd>
+                                    Of the Holy Trinity, and Divine Essence.
+                                </dd>
+                                <dt><a href="chapter-08.htm">Chapter&nbsp;8:</a></dt>
+                                <dd>
+                                    Of the Creation of Angels, and their Dominion.
+                                </dd>
+                                <dt><a href="chapter-09.htm">Chapter&nbsp;9:</a></dt>
+                                <dd>
+                                    Of the Fall of Lucifer, with his Legions.
+                                </dd>
+                                <dt><a href="chapter-10.htm">Chapter&nbsp;10:</a></dt>
+                                <dd>
+                                    Of the Creation of Heaven and the Outward World.
+                                </dd>
+                                <dt><a href="chapter-11.htm">Chapter&nbsp;11:</a></dt>
+                                <dd>
+                                    Of the Mystery of the Creation.
+                                </dd>
+                                <dt><a href="chapter-12.htm">Chapter&nbsp;12:</a></dt>
+                                <dd>
+                                    Of the Six Days' Works of the Creation.
+                                </dd>
+                                <dt><a href="chapter-13.htm">Chapter&nbsp;13:</a></dt>
+                                <dd>
+                                    Of The Creation of the Fourth Day.
+                                </dd>
+                                <dt><a href="chapter-14.htm">Chapter&nbsp;14:</a></dt>
+                                <dd>
+                                    Of the Creation of the Fifth Day.
+                                </dd>
+                                <dt><a href="chapter-15.htm">Chapter&nbsp;15:</a></dt>
+                                <dd>
+                                    Of the Sixth Day's Work of the Creation.
+                                </dd>
+                                <dt><a href="chapter-16.htm">Chapter&nbsp;16:</a></dt>
+                                <dd>
+                                    Of the Difference of the Heavenly and Earthly Man.
+                                </dd>
+                                <dt><a href="chapter-17.htm">Chapter&nbsp;17:</a></dt>
+                                <dd>
+                                    Of Paradise.</dd>
+                                <dt><a href="chapter-18.htm">Chapter&nbsp;18:</a></dt>
+                                <dd>
+                                    Of the Paradisical State showing how it should have been if Adam had not fallen.
+                                </dd>
+                                <dt><a href="chapter-19.htm">Chapter&nbsp;19:</a></dt>
+                                <dd>
+                                    Of the building (framing) of the Woman; showing how Man was ordained to the outward Natural Life.
+                                </dd>
+                                <dt><a href="chapter-20.htm">Chapter&nbsp;20:</a></dt>
+                                <dd>
+                                    Of the Lamentable and Miserable Fall and Corruption of Man.
+                                </dd>
+                                <dt><a href="chapter-21.htm">Chapter&nbsp;21:</a></dt>
+                                <dd>
+                                    Of the Impression and Original of the Bestial Man; and of the Beginning and Ground of his Sickness and Mortality.
+                                </dd>
+                                <dt><a href="chapter-22.htm">Chapter&nbsp;22:</a></dt>
+                                <dd>
+                                    Of the Original of Actual Sin, and the Awakening of God's Anger in the Human Property.
+                                </dd>
+                                <dt><a href="chapter-23.htm">Chapter&nbsp;23:</a></dt>
+                                <dd>
+                                    How God re-called Adam and his Eve when they were entered into Sin and Vanity, and awakened in the Serpent's Ens; and laid upon them the Order of this toilsome laborious world, and ordained the Serpent-Bruiser for a Help (or Saviour) to them.
+                                </dd>
+                                <dt><a href="chapter-24.htm">Chapter&nbsp;24:</a></dt>
+                                <dd>
+                                    Of the Cause and Rise of the Curse of the Earth, and of the Body of Sickness.
+                                </dd>
+                                <dt><a href="chapter-25.htm">Chapter&nbsp;25:</a></dt>
+                                <dd>
+                                    How God drove Adam out of Paradise, and laid the Cherub before the Garden.
+                                </dd>
+                                <dt><a href="chapter-26.htm">Chapter&nbsp;26:</a></dt>
+                                <dd>
+                                    Of the Propagation of Man in this World, and of Cain, the First-born, The Murderer of his Brother.
+                                </dd>
+                                <dt><a href="chapter-27.htm">Chapter&nbsp;27:</a></dt>
+                                <dd>
+                                    Of Cain's and Abel's offering and of the False and Antichristian Church, and also of the True Holy Church.
+                                </dd>
+                                <dt><a href="chapter-28.htm">Chapter&nbsp;28:</a></dt>
+                                <dd>
+                                    Of Cain's Killing of his Brother, viz. of the Proud, Haughty, Antichristian, hypocritical Church upon the Earth; and also of the True Christendom hidden under this Antichristian Church.
+                                </dd>
+                                <dt><a href="chapter-29.htm">Chapter&nbsp;29:</a></dt>
+                                <dd>
+                                    Shows how the Adamical Tree has put forth and opened itself out of its Stock, and introduced itself into Boughs, Branches, Twigs, and Fruit; out of which Pullulation or Manifestation the Invention of all Arts and Governments is Arisen.
+                                </dd>
+                                <dt><a href="chapter-30.htm">Chapter&nbsp;30:</a></dt>
+                                <dd>
+                                    Of the Line of the Covenant.
+                                </dd>
+                                <dt><a href="chapter-31.htm">Chapter&nbsp;31:</a></dt>
+                                <dd>
+                                    Of Enoch's Wonderful Line.
+                                </dd>
+                                <dt><a href="chapter-32.htm">Chapter&nbsp;32:</a></dt>
+                                <dd>
+                                    Of the Covenant between God and Noah.
+                                </dd>
+                                <dt><a href="chapter-33.htm">Chapter&nbsp;33:</a></dt>
+                                <dd>
+                                    Of the beginning of the Second monarchy, and of the Covenant of God with Noah, and all Creatures.
+                                </dd>
+                                <dt><a href="chapter-34.htm">Chapter&nbsp;34:</a></dt>
+                                <dd>
+                                    How Noah cursed his Son Ham, and of the Mystical Prophecy Concerning his Three Sons and their Posterity.</dd>
+                                <dt class="empty" style="margin-top: 15px;"><a href="john-sparrow-to-the-reader.htm">To the reader by John Sparrow, translator</a></dt>
+                                <dt class="empty" style="margin-top: 15px;"><a href="martin-euser-comments.htm">Comments by Compiler Martin Euser</a></dt>
+                            </dl>
+                            <!-- This is the same as the left menu, with different styling -->
+                            <!-- from voice-index-updated.htm -->
+                            <div id="index-lists">
+                                <hr />
+                                <ul class="index-external-links">
+                                    <li>Jacob Boehme at <a href="https://en.wikipedia.org/wiki/Jakob_B%C3%B6hme">Wikipedia</a> </li>
+                                    <li>Source, free electronic text edition: <a class="inline" href="https://archive.org/details/JacobBoehmesMysteriumMagnumPartOne">Archive.Org</a> </li>
+                                </ul>
+                                <ul class="index-site-links">
+                                    <li class="site-links-item">Also on this site by Jacob Boehme:</li>
+                                    <li class="site-first-item">Franz Hartmann: <a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Life and Doctrines of Jacob Boehme</a>
+                                    <li><a href="/christian/jacob-boehme/confessions/contents.htm">Confessions of Jacob Boehme</a></li>
+                                    <li>Español: <a href="/christian/jacob-boehme/confesiones/contenido.htm">Confesiones de Jacob Boehme</a></li>
+
+                                    <li>Several Pdfs for Jacob Boehme are in the Christian Index: <a href="/christian/">/christian/</a> </li>
+                                    <li>Ebooks by Jacob Boehme: <a href="http://www.jacobboehmeonline.com">jacobboehmeonline.com </a></li>
+                                </ul>
+                            </div>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="cover-page.htm">&lt; Cover Page</a></li>
+                                    <li class="align-right"><a href="authors-preface.htm">Author's Preface &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

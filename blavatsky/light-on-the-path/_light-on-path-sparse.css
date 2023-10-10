@@ -1,0 +1,60 @@
+/* file:  /blavatsky/light-on-the-path/_light-on-path-sparse.css
+
+Update April 25, 2022 */
+
+
+@media only print {
+	#article:after {
+		content: "Update April 25, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffdf9;
+}
+
+
+/* Fuck, in the Endnote, the presence or absence of a border affects the position
+   of the element. Don't know at this point which is the preferred behavior.
+
+   Experiment on Light on the path. Transparent is same position as color.
+   Border 0px is the same as none. Need to test. April 25, 2022
+
+        TEST NOW WITH IT SET TO ZERO, SEE IF ANYTHING BAD HAPPENS
+        MUST NOTE TO TEST WITHOUT IN THE FUTURE
+
+a.return-anchor,
+a.return-anchor:target {
+	border: 1px solid transparent;
+	background: yellow;
+}
+
+a.endnote,
+a.endnote:target {
+	border: 1px solid transparent;
+	background: green;
+}
+
+*/
+
+a.return-anchor,
+a.return-anchor:target {
+	border: 0px solid transparent;
+	background: yellow;
+}
+
+a.endnote,
+a.endnote:target {
+	border: 0px solid transparent;
+	background: green;
+}
+
+
+
+/* end */

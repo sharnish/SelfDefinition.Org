@@ -1,0 +1,173 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sutra del sexto patriarca, Hui Neng, Sutra de la Plataforma</title>
+    <meta name="description" content="">
+    <meta name="author" content="Hui Neng">
+    <meta property="og:title" content="Sutra del sexto patriarca, Hui Neng, Sutra de la Plataforma">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://selfdefinition.org/zen/hui-neng-espanol/images/Huineng-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_huineng-espanol-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- this is first page -->
+    <link rel="next" href="preface.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /*
+            WHEN FINISHED, UPDATE LINKS IN SPANISH VERSION IN HUANG PO TO POINT TO THIS        
+        */
+        /* UPDATED Nov 6, 2019 used Sadoney (4 sections) */
+        /* for links copied from side menu */
+        /* #index-lists is a nav */
+
+        /* title include file */
+        p.specified-unhide {
+            display: initial;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav" role="navigation" aria-label="Main">
+                    <?php include("_huineng-espanol-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- as of Oct 9, 2019 moving "article" to here -->
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_huineng-espanol-title-include.htm"); ?>
+                                    <!-- new format borrowed from mysterium magnum, puts page title higher -->
+                                    <h3>
+                                        Contentido
+                                    </h3>
+                                    <p class="tiny">
+                                        This page in English: <a href="../platform/contents.htm">../platform/contents.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"></li>
+                                    <li class="align-right"><a href="prefacio.htm">Prefacio &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <header>
+                                <p class="note80 toowide" style="margin-top: 0px; margin-bottom: 0px;">
+                                    Basado en la traducción de Wong Mou-lam (1930), revisada en 1952 por Christmas Humphries
+                                </p>
+                                <p class="tiny" style="margin-top: 0px;">
+                                    Fuente: Hay algunas versiones de este documento disponibles en la web. Aquí se usó el pdf de 88 páginas. <a href="http://www.librosbudistas.com/descargas/sutra-hui-neng.pdf">www.librosbudistas.com [423&nbsp;KB]</a> (88pp)<br /> y <a href="http://www.acharia.org/downloads/sutra_hui_neng_sobre_el_estrado_revisado.pdf">www.acharia.org [481&nbsp;KB]</a> (101pp)<br />También vea:
+                                    <a href="http://www.acharia.org/downloads/">http://www.acharia.org/downloads/</a>
+                                </p>
+                            </header>
+                            <nav id="index-lists">
+                                <ul class="index-contents-links">
+                                    <li><a href="prefacio.htm">Prefacio</a></li>
+                                    <li><a href="01-autobiografia.htm">1. Autobiografía</a></li>
+                                    <li><a href="02-sobre-prajna.htm">2. Sobre Prajñā</a></li>
+                                    <li><a href="02a-preguntas-y-respuestas-p28-32-to-do.htm">2a. Preguntas y Respuestas</a></li>
+                                    <li><a href="03-dhyana-samadhi.htm">3. Dhyana, Samadhi</a></li>
+                                    <li><a href="04-arrepentimiento.htm">4. Arrepentimiento</a></li>
+                                    <li><a href="05-tres-cuerpos-del-buda.htm">5. Tres Cuerpos del Buda</a></li>
+                                    <li><a href="06-temperamentos-y-circunstancias.htm">6. El Temperamento y las Circunstancias </a></li>
+                                    <li><a href="07-inmediatez-y-gradual.htm">7. La Escuela de la Inmediatez la Escuela Gradual</a></li>
+                                    <li><a href="08-el-patrocinio-real.htm">8. El Patrocinio Real</a></li>
+                                    <li><a href="09-instrucciones-finales.htm">9. Sus Instrucciones Finales</a></li>
+                                    <li><a href="apendice.htm">Apéndice</a></li>
+                                    <li style="margin-top:30px" class="note80"><a href="version-comparison-es.htm">Conciliación de capítulos, versiones en inglés y español</a></li>
+                                </ul>
+                                <hr />
+                                <ul class="index-external-links">
+                                    <li class="external-first-item">Huineng en <a href="https://es.wikipedia.org/wiki/Huineng">Wikipedia, Español</a></li>
+                                    <li>Huineng en <a href="https://en.wikipedia.org/wiki/Huineng">Wikipedia, Inglés</a></li>
+                                    <li>Sutra de la Plataforma <a href="https://es.wikipedia.org/wiki/Huineng#La_plataforma_sutra">Wikipedia, Español</a></li>
+                                    <li>Platform Sutra at <a href="https://en.wikipedia.org/wiki/Platform_Sutra">Wikipedia, Inglés</a></li>
+                                    <li>Sutra del Diamante en <a href="https://es.wikipedia.org/wiki/Sutra_del_diamante">Wikipedia</a></li>
+                                    <li>Sudden Enlightenment (Subitism) at <a href="https://en.wikipedia.org/wiki/Subitism">Wikipedia</a></li>
+                                    <li>Huineng materias en <a href="https://terebess.hu/zen/huineng-eng.html">Terebess.Hu (Inglés)</a></li>
+                                </ul>
+                                <ul class="index-site-links">
+                                    <li class="site-links-item">Más zen en este sitio</li>
+                                    <li class="site-first-item">Garma C.C. Chang <a href="/zen/garma-chang/la-practica-del-zen/contenido.htm">La Práctica del Zen</a></li>
+                                    <li>Hsin-Hsin Ming: <a href="/zen/hsin-hsin-ming/canto-al-corazon-de-la-confianza.htm">Canto al Corazón de la Confianza</a></li>
+                                    <li>Inglés:</li>
+                                    <li>Huang Po: <a href="/zen/huang-po/dharma-of-mind/chung-ling-record.htm">The Dharma of Mind Transmission</a></li>
+                                    <li>Hubert Benoit: <a href="/zen/benoit/supreme-doctrine/contents.htm">The Supreme Doctrine</a></li>
+                                    <li>Yongjia Xuanjue: <a href="/zen/song-of-enlightenment/yongjia-xuanjue-song-of-enlightenment-shasta-abbey.htm">Song of Enlightenment</a></li>
+                                </ul>
+                                <ul class="index-optional-links">
+                                    <li class="external-links-item">Enlaces externos (inglés)</li>
+                                    <li class="external-first-item">Terebess.Hu: <a href="https://terebess.hu/zen/huineng-eng.html">Hui Neng reference page</a></li>
+                                    <li>Terebess.Hu: <a href="https://terebess.hu/zen/textindex.html">Zen Literature Index</a></li>
+                                    <li>TheZenSite: <a href="http://www.thezensite.com/index.html">thezensite.com</a></li>
+                                    <li>&nbsp;</li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+
+                    </div>
+                    <!-- end div#article -->
+                    <!-- OLD page nav position -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go to top">arriba</button>
+
+                </div>
+                <!-- end #main-content-relative -->
+
+
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

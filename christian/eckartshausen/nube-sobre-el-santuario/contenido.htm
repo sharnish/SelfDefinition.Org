@@ -1,0 +1,319 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La nube sobre el santuario</title>
+    <meta name="description" content="La Iglesia Interior es invisible y, sin embargo,  
+    gobierna todo; se perpetúa en silencio, uniendo la ciencia del templo con el espíritu del Salvador.">
+    <meta name="author" content="Karl von Eckartshausen">
+    <meta property="og:title" content="La nube sobre el santuario">
+    <meta property="og:description" content="La Iglesia Interior es invisible y, sin embargo,  
+    gobierna todo; se perpetúa en silencio, uniendo la ciencia del templo con el espíritu del Salvador.">
+    <meta property="og:image" content="https://selfdefinition.org/christian/eckartshausen/nube-sobre-el-santuario/images/karl-von-eckartshausen-og-image.jpg">
+    <!-- load external stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_santuario-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!--this is first <link rel="prev" href="">-->
+    <link rel="next" href="carta-1.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* social medi
+
+        "El fin más elevado de la religión es la íntima unión del hombre con Dios, y esta unión es posible incluso aquí abajo; pero sólo lo es por la apertura de nuestro sensorium interior y espiritual que dispone nuestro corazón para recibir a Dios. Estos son grandes misterios que la filosofía ni siquiera sospecha, y cuya clave no puede encontrarse entre los sabios de la escuela. " -- Carta 1
+ 
+        */
+        /* contents nav section */
+        /* make hover color same as menu highlight, move to stylesheet
+        .item:hover, nav.contents .item:hover
+        {
+            background-color: #bde0ff;
+        } */
+
+        .contents .item {
+            margin-bottom: 10px;
+        }
+
+        ul.contents-section {
+            list-style: none;
+            width: 100px;
+            margin: 0 auto 40px;
+        }
+
+        ul.contents-section-wide {
+            list-style: none;
+            width: 440px;
+            margin: 30px auto;
+        }
+
+        @media only screen and (max-width:450px) {
+            ul.contents-section-wide {
+                width: 100%;
+            }
+        }
+
+        /* CSS3 columns; from prototype */
+
+        .to-center {
+            width: 260px;
+            border: 0px solid red;
+            text-align: center;
+            margin: 0px auto 40px;
+        }
+
+        .contents {
+            -webkit-columns: 2;
+            -moz-columns: 2;
+            columns: 2;
+            width: 100%;
+            margin: 0 auto;
+            border: 0px solid yellow;
+            text-align: center;
+        }
+
+        .item,
+        .contents .item {
+            width: 100px;
+            margin-bottom: 20px;
+            border: 0px solid blue;
+        }
+
+        .contents-section li,
+        .contents-section-wide li {
+            margin: 20px 0 20px -35px;
+        }
+
+        #title-page {
+            margin-top: 40px;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        /* index links below contents */
+
+        #index-lists {
+            margin-top: 40px;
+        }
+
+        #index-lists ul {
+            list-style: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 0;
+            border: 0px solid blue;
+        }
+
+        #index-lists ul li {
+            margin: 18px 0;
+            border: 0px solid green;
+        }
+
+        #index-lists a {
+            display: inline-block;
+        }
+
+        .index-external-links,
+        .index-site-links,
+        .index-optional-links {
+            font-size: 90%;
+            padding-left: 0;
+        }
+
+        #index-lists ul li.external-links-item,
+        #index-lists ul li.site-links-item,
+        #index-lists ul li.optional-links-item {
+            font-weight: bold;
+            color: maroon;
+            margin-bottom: 3px;
+            padding-bottom: 0;
+        }
+
+        #index-lists ul li.external-first-item,
+        #index-lists ul li.site-first-item,
+        #index-lists ul li.optional-first-item {
+            margin-top: 3px;
+            padding-top: 0;
+        }
+
+        #index-lists ul li.external-subhead-item,
+        #index-lists ul li.site-subhead-item,
+        #index-lists ul li.optional-subhead-item {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            padding-top: 0;
+        }
+
+        /* this reduces left margin for this page only when screen size is small say try  360  */
+        @media only screen and (max-width:360px) {
+            #article {}
+
+            div#index-lists ul li {
+                margin-left: -30px;
+            }
+        }
+
+        /* add bolding (new Feb 2020 */
+        .site-subhead-item {
+            font-weight: bold;
+            font-size: 95%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_santuario-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_santuario-title-include.htm"); ?>
+                                    <h3>
+                                        Contenido
+                                    </h3>
+                                    <p class="tiny">
+                                        This page in English: <a href="../cloud-upon-the-sanctuary/contents.htm">../cloud../contents.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"></li>
+                                    <li class="align-right"><a href="prologo-frater-lucis-fiducius.htm">Prólogo &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div class="to-center">
+                                <!-- items have :hover styling, color change -->
+                                <!-- these are CSS3 columns -->
+                                <!-- the uls don't float; they are display: inline-block -->
+
+                                <div class="item" style="text-align: left; margin: 35px 0 25px 30px;width: auto; max-width: 100%; border: 0px solid green;">
+                                    <a href="prologo-frater-lucis-fiducius.htm">Prólogo por Frater Lucis Fiducius</a>
+                                </div>
+                                <nav class="contents">
+                                    <div class="item">
+                                        <a href="carta-1.htm">Carta 1</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="carta-2.htm">Carta 2</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="carta-3.htm">Carta 3</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="carta-4.htm">Carta 4</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="carta-5.htm">Carta 5</a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="carta-6.htm">Carta 6</a>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="top-image-wrapper-div">
+                                <div class="right-image-div">
+                                    <img src="images/karl-von-eckartshausen-profile.jpg" alt="Karl von Eckartshausen" />
+                                    <p class="note">Karl von Eckhartshausen </p>
+                                </div>
+                            </div>
+                            <p id="description">
+                                <!-- translation hack using Google -->
+                                <strong>Karl von Eckhartshausen</strong> <span class="nowrap">(1752-1803)</span> fue un místico alemán del siglo XVIII que escribió extensamente sobre temas esotéricos. Esta obra, <em>La nube sobre el santuario</em>, es un misticismo cristiano velado en un código hermético. Eckhartshausen fue brevemente miembro de los Illuminati bávaros, pero sali&oacute; por razones espirituales. Menciona crípticamente una "Sociedad de los elegidos" que ha existido desde el principio de los tiempos, "la Iglesia celestial invisible". Predijo que "es la sociedad cuyos miembros forman una república teocrática, que un día será la Madre Regente de todo el mundo". Este libro más tarde influyó en la Orden de la Golden Dawn, y más notablemente, Aleister Crowley. &mdash;J.B. Hare (traductora de la edición en inglés)
+                            </p>
+
+                            <p class="note80 center">Comprar en <a href="https://amzn.to/3gQqf8U">Amazon.Com</a></p>
+                            <!--
+                            In this work Echartshausen speaks about what Gurdjieff called the Conscious Circle of 
+                            Humanity, a loose association of adepts who task themselves with preserving the 
+                            science of consciousness.
+                            -->
+                            <!--En este trabajo, Echartshausen habla sobre lo que Gurdjieff llamó el Círculo 
+                            Consciente de la Humanidad, una asociación vaga de adeptos que se encargan de preservar 
+                            la ciencia de la conciencia.
+                            -->
+                            <!--  from PROTOTYPE CONTENTS -->
+                            <div id="index-lists">
+                                <ul class="index-external-links">
+                                    <li>Eckartshausen en <a class="nowrap" href="https://es.wikipedia.org/wiki/Karl_von_Eckartshausen">Wikipedia (Español)</a></li>
+                                    <li>Eckartshausen at <a class="nowrap" href="https://en.wikipedia.org/wiki/Karl_von_Eckartshausen">Wikipedia (English)</a></li>
+                                    <li>Este documento en <a href="https://www.scribd.com/document/133451372/Eckarthausen-La-Nube-Sobre-El-Santuario">Scribd.Com (Español)</a></li>
+                                </ul>
+                                <ul class="index-site-links">
+                                    <li class="header-item">También en este sitio en español</li>
+                                    <li class="first-item">Jacob Boehme: <a href="/christian/jacob-boehme/confesiones/contenido.htm">Confesiones</a></li>
+                                    <li class="first-item">Franz Hartmann MD: <a href="/magic/hartmann/blanca-y-negra/introduccion-la-ley-espiritual.htm">Magia Blanca y Negra </a></li>
+                                    <li>H.P. Blavatsky: <a href="/blavatsky/voz-del-silencio/contenido.htm">La Voz del Silenco </a></li>
+                                    <li>Mable Collins: <a href="/blavatsky/luz-en-el-sendero/contenido-y-titulo.htm">Luz en el Sendero</a></li>
+                                    <li class="site-links-item">Todas las paginas en español: <a class="normal" href="/paginas-en-espanol.htm">/paginas-en-espanol.htm</a></li>
+                                </ul>
+                            </div>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"></li>
+                                    <li class="align-right"><a href="prologo-frater-lucis-fiducius.htm">Prólogo &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

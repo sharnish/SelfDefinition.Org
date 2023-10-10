@@ -1,0 +1,37 @@
+﻿/* file:  /gurdjieff/salzmann/_salzmann-in.css
+
+Update Apr 25, 2020. May 22, 2022
+
+*/
+
+@media only print {
+    #article:after {
+        content: "update Apr 25, 2020";
+    }
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fff9f9;
+}
+
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #bde0ff;
+}
+
+
+
+
+
+/* end */

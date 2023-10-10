@@ -1,0 +1,95 @@
+<!-- start of menu include file  Update June 8, 2020. May 22, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <!-- there is no Pulyan section index page, redirect to letters -->
+            <li><a href="/pulyan/letters/1960-0820-pulyan.htm">Pulyan Letters</a></li>
+            <!-- clear left only when screen less than 500px -->
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li><a href="pulyan-writings-index.htm">Writings<span class="conditional-hide"> Index</span></a></li>
+            <li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <!-- there is no Pulyan section index page, redirect to letters -->
+            <li><a href="/pulyan/letters/1960-0820-pulyan.htm">Pulyan Letters</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item">Scroll menu with mouse</li>
+            <li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+        </ul>
+        <!-- put this text inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text" style="">
+            <li>
+                <img src="images/Alfred-Pulyan-Zen-Master-small.jpg" alt="Alfred Pulyan, Zen Master" />
+            </li>
+            <li>Alfred R. Pulyan</li>
+            <li class="normal note tight">(1896-1966)<br />
+                Zen Master, South Kent, Connecticut</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="pulyan-writings-index.htm">Pulyan Writings Index</a></li>
+                <li><a href="the-penny-that-blots-out-the-sun.htm">The Penny That Blots Out the Sun</a> </li>
+                <li><a href="chessboard-is-it-black-or-white.htm">The Chessboard: Is It Black or White?</a></li>
+                <li><a href="why-fear-visitors-outer-space.htm">What Is It We Fear in Visitors from Space? That They Might Be Like Us?</a></li>
+                <li><a href="life-pretty-forlorn-as-some-see-it.htm">Life's Pretty Forlorn, as Some See It</a></li>
+                <li><a href="worlds-ill-health-whats-back-of-it.htm">The World's Ill-Health: What's Back of It?</a></li>
+                <li><a href="pulyan-timeline-and-writings.htm">Pulyan Timeline and Writings</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="site-links">
+            <hr />
+            <ul class="menu-section">
+                <li style="font-size: 90%; margin-top: 10px;">Pulyan image <a style="display: inline;" href="images/Alfred-Pulyan-Zen-Master-width-700px-uncropped.jpg">full size (400K)</a></li>
+                <li class="header-item">Also by Alfred Pulyan</li>
+                <li class="first-item"><a href="/pulyan/letters/1960-0820-pulyan.htm">Letters from a Zen Master, Or Why You're Still Suffering</a></li>
+            </ul>
+        </div>
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li class="external-links-item">The Wanderling on Pulyan</li>
+                <li><a href="http://the-wanderling.com/pulyan.html">Alfred Pulyan, Richard Rose, My Mentor, and Me</a></li>
+                <li><a href="http://the-wanderling.com/pulyans_teacher.html">Pulyan's Teacher, A Female Ramana Without a Mountain or a Following</a></li>
+                <li class="header-item">TAT sites on Pulyan</li>
+                <li class="first-item">Alfred Pulyan, Master of Transmission, at <a href="https://www.selfdiscoveryportal.com/Pulyan.htm">SelfDiscoveryPortal.Com</a></li>
+                <li>Alfred Pulyan: The Transmission of Zen, at <a href="https://www.spiritualteachers.org/alfred-pulyan/">SpiritualTeachers.Org</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">More Zen on This Site</li>
+                <li class="first-item">Garma C.C. Chang, <a href="/zen/garma-chang/practice-of-zen/contents.htm">The Practice of Zen</a></li>
+                <li>Huang Po, <a class="inline" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">The Dharma of Mind Transmission </a></li>
+                <li>Hubert Benoit, Zen and the Psychology of Transformation, <a href="/zen/benoit/supreme-doctrine/contents.htm">The Supreme Doctrine</a></li>
+                <li>&nbsp;
+                    <!-- need this space to separate photo link from scroll link -->
+                </li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

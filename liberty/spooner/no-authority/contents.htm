@@ -1,0 +1,178 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Treason #6, The Constitution of No Authority</title>
+    <meta name="description" content="The Constitution has no inherent authority or obligation. It is no such instrument as it has generally been assumed to be.">
+    <meta name="author" content="Lysander Spooner">
+    <meta property="og:title" content="No Treason #6, The Constitution of No Authority">
+    <meta property="og:description" content="The Constitution has no inherent authority or obligation. It is no such instrument as it has generally been assumed to be.">
+    <meta property="og:image" content="https://selfdefinition.org/liberty/spooner/images/lysander-spooner-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_no-authority-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- link rel="prev" -->
+    <link rel="next" href="title-page.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        nav.index-lists ul {
+            width: 100%;
+            margin-top: 25px;
+            padding-left: 10px;
+            border: 0px solid red;
+        }
+
+        @media only screen and (max-width:500px) {
+            nav.index-lists ul {
+                padding-left: 0px;
+            }
+        }
+
+        nav.index-lists ul.index-contents-links {
+            width: 360px;
+        }
+
+        @media only screen and (max-width:400px) {
+            nav.index-lists ul.index-contents-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_no-authority-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_no-authority-title-include.htm"); ?>
+                                    <h3>
+                                        Contents
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="title-page.htm">Title Page &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <nav class="index-lists">
+
+                                <ul class="index-contents-links">
+                                    <li class="first-item"><a href="title-page.htm">Title Page </a></li>
+                                    <li><a href="no-authority-01.htm">1. Introduction </a></li>
+                                    <li><a href="no-authority-02.htm">2. Voting and Taxation</a></li>
+                                    <li><a href="no-authority-03.htm">3. Your money, or your life</a></li>
+                                    <li><a href="no-authority-04.htm">4. Without any signature</a></li>
+                                    <li><a href="no-authority-05.htm">5. The law of contracts </a></li>
+                                    <li><a href="no-authority-06.htm">6. Absolute, irresponsible power </a></li>
+                                    <li><a href="no-authority-07.htm">7. Constitution is no contract </a></li>
+                                    <li><a href="no-authority-08.htm">8. On what authority does government rest?</a></li>
+                                    <li><a href="no-authority-09.htm">9. Motive to the secret ballot</a></li>
+                                    <li><a href="no-authority-10.htm">10. Alleged representatives</a></li>
+                                    <li><a href="no-authority-11.htm">11. Oaths are of no validity</a></li>
+                                    <li><a href="no-authority-12.htm">12. Oaths of agents also invalid </a></li>
+                                    <li><a href="no-authority-13.htm">13. Oaths of foreigners</a></li>
+                                    <li><a href="no-authority-14.htm">14. South and North</a></li>
+                                    <li><a href="no-authority-15.htm">15. Soldiers' Oaths </a></li>
+                                    <li><a href="no-authority-16.htm">16. Treaties </a></li>
+                                    <li><a href="no-authority-17.htm">17. Debts</a></li>
+                                    <li><a href="no-authority-18.htm">18. Who are the men that rob us?</a></li>
+                                    <li><a href="no-authority-19.htm">19. Lenders of blood money </a></li>
+                                    <li><a href="appendix.htm">Appendix &ndash; Summary </a></li>
+                                </ul>
+
+                                <hr />
+                                <ul class="index-links">
+                                    <li class="tiny">Source: <a href="https://oll.libertyfund.org/title/spooner-no-treason-no-vi-the-constitution-of-no-authority-1870">oll.libertyfund.org</a></li>
+                                    <li>Lysander Spooner at <a href="https://en.wikipedia.org/wiki/Lysander_Spooner">
+                                            Wikipedia</a> </li>
+                                    <li>Lysander Spooner at <a href="http://www.lysanderspooner.org/">LysanderSpooner.Org</a></li>
+                                    <li>Lysander Spooner library, <a href="http://www.lysanderspooner.org/works">
+                                            free searchable texts</a> </li>
+                                </ul>
+                                <ul class="index-links">
+                                    <li class="header-item">Also in Liberty section</li>
+                                    <li class="first-item">Lysander Spooner: <a href="/liberty/spooner/articles/1873-forced-consent.htm">Forced Consent (1873)</a></li>
+                                    <li>Étienne de La Boétie: <a href="/liberty/etienne-de-la-boetie/contents.htm">Politics of Obedience: The Discourse of Voluntary Servitude</a></li>
+                                    <li>William S. Lind: <a href="/liberty/marxism/lind-cultural-marxism-frankfurt.htm">Who Stole Our Culture? Cultural Marxism and the Frankfurt School</a></li>
+                                    <li class="header-item">Psychology section</li>
+                                    <li class="site-first-item">Gustave Le Bon: <a href="/psychology/gustave-le-bon/the-crowd/contents.htm">The Crowd, A Study of the Popular Mind</a></li>
+                                    <li>Edward L. Bernays: <a href="/psychology/bernays/english/contents.htm">Propaganda, 1928</a></li>
+                                    <li>Joost A.M. Meerloo: <a href="/psychology/meerloo/rape-of-mind/contents.htm">Rape of the Mind: The Psychology of Thought Control, Menticide and Brainwashing</a> </li>
+                                    <li>Wilfred N. Caron: <a href="/psychology/caron/contents.htm">The Occult Significance of Hypnosis</a></li>
+                                </ul>
+
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="title-page.htm">Title Page &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+    </div>
+</body>
+
+</html>

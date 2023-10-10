@@ -1,0 +1,921 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. El Temperamento y las Circunstancias, Sutra of Hui Neng</title>
+    <meta name="description" content="">
+    <meta name="author" content="Hui Neng">
+    <meta property="og:title" content="6. El Temperamento y las Circunstancias, Sutra of Hui Neng">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://selfdefinition.org/zen/hui-neng-espanol/images/Huineng-og-image.jpg">
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_huineng-espanol-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="prev" href="05-tres-cuerpos-del-buda.htm">
+    <link rel="next" href="07-inmediatez-y-gradual.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* One footnote each on page 2, 3, 4, 6, 7  */
+
+        ul.page-links {
+            width: 300px;
+            border: 1px solid blue;
+        }
+
+        .page-links li {
+            width: inherit;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+        .missing-in-english {
+            background: #efe;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav" role="navigation" aria-label="Main">
+                    <?php include("_huineng-espanol-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- as of Oct 9, 2019 moving "article" to here -->
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_huineng-espanol-title-include.htm"); ?>
+                                    <!-- new format borrowed from mysterium magnum, puts page title higher -->
+                                    <h3 class="toowide">
+                                        <span class="block">Capítulo VI</span>
+                                        El Temperamento y las Circunstancias
+                                    </h3>
+                                    <p class="tiny">
+                                        This page in English: <a href="../platform/06-temperments-circumstances.htm">..06-temperments-circumstances.htm</a>
+                                    </p>
+                                    <p class="tiny">
+                                        In the Spanish PDF, this is Chapter 7. Here it is Chapter 6.
+                                    </p>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="05-tres-cuerpos-del-buda.htm">&lt; 5. tres-cuerpos-del-buda</a></li>
+                                    <li class="align-right"><a href="07-inmediatez-y-gradual.htm">7. inmediatez-y-gradual.htm &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+                            <h4>Instrucciones dadas de acuerdo al temperamento de los discípulos y a las circunstancias del caso.</h4>
+
+                            <p>Después del regreso del Patriarca a la villa de Tso Hau in Shiu Chow desde Wong Mui, donde el Dharma le fue trasmitido, él era todavía una figura desconocida, y fue un escolar Confuciano llamado Liu Chi Luk quien le ofreció una calurosa bienvenida y entretenimiento. Resultó que Chi Luk tenía una tía llamada Wu Chung Chong que era miembro femenino de la Orden (una Bhikkhuni), y solía recitar el Sutra Maha&ndash;Parinirvana. Después de haber escuchado la recitación por un corto rato, el Patriarca percibió instantáneamente su significado profundo y comenzó a explicárselo a ella. Después de lo cual, ella cogió el libro y le preguntó el significado de ciertas palabras.</p>
+
+                            <p>&ndash;&nbsp;Yo soy analfabeto &ndash; respondió el Patriarca &ndash; pero si usted desea saber el profundo significado de este trabajo, por favor pregunte. &ndash; ¿Cómo puede usted saber el significado del texto &ndash; continuó ella &ndash; cuando usted ni siquiera conoce las palabras? A esto él replicó &ndash; La profundidad de las enseñanzas de los varios Budas no tiene nada que ver con el lenguaje escrito.</p>
+
+                            <p>Esta respuesta la sorprendió muchísimo, y dándose cuenta que él no era un Bhikkhu común, lo divulgó ampliamente entre los ancianos devotos de la villa. &ndash; Este es un hombre santo &ndash; dijo ella &ndash; deberíamos pedirle que se quedara y obtener su permiso para proporcionarle comida y albergue.</p>
+
+                            <p>Después de lo cual, un descendiente del Marqués de Wu de la Dinastía Ai, de nombre Tso Shuk Leung, vino una tarde con otros aldeanos a rendirle homenaje al Patriarca. El histórico Monasterio Po Lam, devastado por la guerra al final de la Dinastía Chu, estaba por ese entonces reducido a un montón de ruinas, pero ellos lo habían reconstruido en la antigua sede y le pidieron al Patriarca que se quedara allí. Muy pronto se convirtió en un monasterio muy famoso.</p>
+
+                            <p class="not-in-english">Después de haber permanecido allí por más de nueve meses, sus malvados enemigos lograron seguirle la pista y lo comenzaron a perseguir de nuevo. Por lo tanto tomó refugio en una colina cercana. Los aldeanos entonces le prendieron fuego al bosque (donde él se encontraba escondido), pero escapó protegiéndose en un peñasco. Este peñasco o peñón, que desde entonces ha sido conocido como el &apos;Peñón del Refugio&apos;, tiene grabadas las huellas de las rodillas del Patriarca en posición de cuclillas así como las marcas de la textura de su manto.</p>
+
+
+                            <p class="center">
+                                * * *
+
+
+                            </p>
+
+                            <hr />
+
+                            <p class="pagenum">p 46 of pdf</p>
+
+
+                            <p>El Bhikkhu Fat Hoi, un nativo de Hook Kong de Shiu Chow, en su primera entrevista con el Patriarca, le preguntó por el significado de la muy conocida expresión, &quot;Lo que la mente es, Buda es&apos;. El Patriarca respondió &ndash; Él no permitir que surjan los pensamientos pasajeros es &apos;mente&apos;. Él no dejar que los pensamientos que pasan sean aniquilados, es Buda. El manifestar toda clase de fenómenos es &apos;mente&apos;. El estar libre de todas las formas (por ejemplo, comprender la irrealidad del fenómeno) es Buda. Si fuera a darte una explicación completa, el tema nunca podría agotarse, incluso si lo hiciera en la totalidad de una Kalpa. Así que escuchen mi estrofa:</p>
+
+                            <blockquote>
+
+                                <p>Prajna es &apos;Lo que la Mente es&apos;,</p>
+
+                                <p>Samadhi es &apos;Lo que Buda es&apos;.</p>
+
+                                <p>Al practicar Prajna y Samadhi, mantengamos el paso a la par del otro;</p>
+
+                                <p>Entonces nuestros pensamientos serán puros.</p>
+
+                                <p>Esta enseñanza puede ser entendida</p>
+
+                                <p>Solamente a través del &apos;hábito de la práctica&apos;.</p>
+
+                                <p>El Samadhi funciona, pero no llega a realizarse inherentemente.</p>
+
+                                <p>La enseñanza ortodoxa es la de practicar tanto el Prajna como el Samadhi.</p>
+
+                            </blockquote>
+                            <p class="center">
+                                * * *
+                            </p>
+
+
+                            <p>Después de escuchar lo que el Patriarca había dicho, Fat Hoi se iluminó al instante y alabó al Patriarca con la siguiente estrofa:</p>
+
+                            <blockquote>
+
+                                <p>¡&apos;Lo que la mente es, Buda es&apos; es en efecto verdadero!</p>
+
+                                <p>Pero me humillo a mí mismo al no entenderlo.</p>
+
+                                <p>Ahora conozco la causa principal de Prajna y Samadhi,</p>
+
+                                <p>Las cuales, ambas, practicaré para liberarme de todas las formas.</p>
+
+                            </blockquote>
+
+                            <hr />
+                            <p class="center">
+                                * * *
+                            </p>
+
+                            <p>El Bhikkhu Fat Tat, un nativo de Hung Chow, que se unió a la Orden a la corta edad de siete años, solía recitar el Sutra Saddharma Pundarika (el Sutra del Loto de la Buena Ley). Cuando llegó a rendirle homenaje al Patriarca, omitió bajar su cabeza y apoyarla en el suelo. Por esta descortesía el Patriarca lo reprobó diciéndole &ndash; Si objetas bajar tu cabeza y apoyarla en el suelo, ¿no sería mejor no saludar del todo? Debe haber algo en tu mente que hace que te infles tanto. Dime, ¿qué haces en tus ejercicios diarios?</p>
+
+                            <p>&ndash;&nbsp;Recitar el Sutra Saddharma Pundarika &ndash; contestó Fat Tat &ndash; He leído el texto completo tres mil veces.</p>
+
+                            <p>&ndash;&nbsp;Si hubieras entendido el significado del Sutra &ndash; recalcó el Patriarca &ndash; no habrías asumido un porte tan altivo, aun si lo hubieras leído diez mil veces. Si lo hubieras entendido estarías caminando por mi mismo camino. Lo que has logrado te ha vuelto vanidoso, y es más, no pareces comprender que esto está mal. Escucha mi estrofa:</p>
+
+                            <blockquote>
+
+                                <p>Ya que el objetivo de la ceremonia es doblegar la arrogancia ¿Por qué has fallado en bajar tu cabeza al piso? &apos;El creer en el yo&apos; es el origen del pecado,</p>
+
+                                <p>¡Pero &apos;al tratar todos los logros como vacíos&apos; obtienes el mérito incomparable!</p>
+
+                            </blockquote>
+
+
+                            <p class="pagenum">p 47 of pdf</p>
+
+
+                            <p class="center">
+                                * * *
+                            </p>
+
+                            <p>Entonces el Patriarca le preguntó su nombre, y después de haberle dicho que su nombre era Fat Tat (que significa el Entendimiento de la Ley), él enfatizó &ndash; Tu nombre es Fat Tat, pero todavía no has entendido la Ley. Concluyó pronunciando otra estrofa:</p>
+
+                            <blockquote>
+                                <p>Tu nombre es Fat Tat.</p>
+
+                                <p>Recitas el Sutra de manera constante y diligente.</p>
+
+                                <p>Repetir el texto de labios para fuera se queda en la simple pronunciación. </p>
+
+                                <p>¡Pero aquel cuya mente esté iluminada por haber comprendido el significado, es en efecto un Bodhisattva!</p>
+
+                                <p>A causa de Pratyaya (las condiciones que producen el fenómeno) que puede ser rastreado hasta nuestras vidas pasadas</p>
+                                <p> Te lo explicaré.</p>
+
+                                <p>Si tan solo crees que Buda no habla con palabras,</p>
+                                <p> Entonces el Loto florecerá en tu boca.</p>
+
+                            </blockquote>
+
+
+
+                            <p class="blockquote alert">English version comment:
+
+                                <br /> (Truth is inscrutable and ineffable; words fail,
+                                <br /> But the Lotus blossoms and radiates its perfume.)
+                            </p>
+
+
+                            <p class="center">
+                                * * *
+                            </p>
+
+
+
+                            <p>Habiendo escuchado la estrofa, Fat Tat sintió remordimiento y presentó disculpas al Patriarca. Añadió &ndash; De ahora en adelante, seré humilde y cortés en todas las ocasiones. Como no alcanzo a entender el significado del Sutra que recito, tengo dudas respecto a su correcta interpretación. Con su profundo conocimiento y su sabiduría superior, ¿seria usted tan gentil de darme una breve explicación?</p>
+
+                            <p>El Patriarca replicó, &ndash; Fat Tat, la Ley es bastante clara; es sólo tu mente la que no está clara. El Sutra está libre de fragmentos dudosos; es sólo tu mente la que los vuelve dudosos. Cuando recitas el Sutra, ¿sabes cuál es su objetivo principal?</p>
+
+                            <p>&ndash;&nbsp;Señor, ¿cómo puedo saberlo si soy tan lerdo y estúpido? &ndash; continuó Fat Tat &ndash; Todo lo que sé es recitarlo palabra por palabra.</p>
+
+                            <p>Entonces el Patriarca dijo &ndash; Por favor recita el Sutra, dado que no puedo leerlo por mí mismo. Entonces te explicaré su significado.</p>
+
+                            <p>Fat Tat comenzó a recitar el Sutra, pero cuando llegó al capítulo titulado &apos;Parábolas&apos;, el Patriarca lo detuvo diciendo &ndash; La idea principal de este Sutra es señalar el propósito y el objeto de la encarnación de un Buda en este mundo. Aunque las parábolas y las ilustraciones son numerosas en este libro, ninguna de ellas va más allá de este punto central. Ahora, ¿cuál es ese objeto? ¿Cuál es ese propósito? El Sutra dice &ndash; Es por un solo propósito, un solo objeto, realmente un propósito y un objeto, elevados y nobles, que el Buda aparece en este mundo. Ahora, el sólo propósito, el solo objeto, ese propósito noble y elevado y ese objeto noble y elevado a la que nos hemos referido son la &apos;visión&apos; del Conocimiento del Buda.</p>
+
+                            <p class="pagenum">p 48 of pdf</p>
+
+
+                            <p>Las personas comunes se apegan, ellas mismas, a objetos externos; e interiormente tienen la idea incorrecta de la &apos;Vacuidad&apos;. Cuando son capaces de liberarse de las ataduras y los apegos a los objetos al estar en contacto con estos, y liberarse de los puntos de vistas falaces de la aniquilación sobre la doctrina de la &apos;Vacuidad&apos;, ellos estarán libres de sus engaños internos y de las ilusiones externas. Aquel que entiende esto y cuya mente por lo tanto se ha iluminado instantáneamente, se dice que ha abierto sus ojos para la visión del Conocimiento del Buda.</p>
+
+                            <p>&quot;El mundo <span class="alert note">[english version "word" not "world"]</span> de &apos;Buda&apos; es equivalente a &apos;Iluminación&apos;, el cual puede ser dividido en (como en el Sutra) en cuatro partes principales:</p>
+
+                            <blockquote>
+
+                                <p>Abrir los ojos por la Visión del Conocimiento-Iluminado</p>
+
+                                <p>Mostrar la visión del Conocimiento-Iluminado.</p>
+
+                                <p>Despertar a la visión del Conocimiento-Iluminado.</p>
+
+                                <p>Estar firmemente establecido en el Conocimiento-Iluminado.</p>
+
+                            </blockquote>
+
+                            <p>&ndash;&nbsp;Si fuéramos capaces, después de haber recibido instrucción, de comprender y entender las enseñanzas del Conocimiento-Iluminado, entonces nuestra cualidad inherente o verdadera naturaleza, por ejemplo, el Conocimiento-Iluminado, tendría la oportunidad de manifestarse por sí mismo. Ustedes no deben malinterpretar el texto, y llegar a la conclusión de que el Conocimiento de Buda es algo especial de Buda y no es común a todos nosotros, porque encuentren en el Sutra el siguiente fragmento, &apos;El abrir los ojos a la visión del Conocimiento del Buda, el mostrar la visión del Conocimiento de Buda, etc.&apos; Tal interpretación errónea sería equivalente a calumniar a Buda y a blasfemar el Sutra. Ya que es un Buda, él ya posee este Conocimiento Iluminado y no hay ocasión para que abra sus ojos a este conocimiento. Deberán, por lo tanto, aceptar que la interpretación del Conocimiento del Buda es el Conocimiento del Buda de tu propia mente y no aquel de otro Buda.</p>
+
+                            <p>&ndash;&nbsp;Obsesionado por los objetos sensoriales, y así cerrándose a su propia luz, todos los seres sintientes, atormentados por circunstancias externas y enfados internos, actúan voluntariamente como esclavos de sus propios deseos. Viendo esto, nuestro Señor Buda tuvo que levantarse de su Samadhi para exhortarlos por medio de sermones formales de varias clases a suprimir sus deseos y abstenerse de su búsqueda exterior de la felicidad, de manera que puedan llegar a ser iguales a Buda. Por esta razón el Sutra dice, &quot;Abrir los ojos por la Visión del Conocimiento-Iluminado, etc.&quot;</p>
+
+                            <p>&ndash;&nbsp;Aconsejo constantemente a las personas a abrir sus ojos al Conocimiento de Buda en su mente. Pero en su perversidad comenten pecados bajo la falsa ilusión y la ignorancia; son gentiles con las palabras, pero perversos en la mente; son codiciosos, malignos, celosos, falsarios, aduladores, ególatras, ofensivos con los hombres y destructivos con los objetos inanimados. Por lo tanto, ellos abren sus ojos al &apos;Conocimiento Común de las personas&apos;. De rectificar su corazón, de manera que la sabiduría surja perpetuamente, la mente estaría en estado de introspección, y las acciones malignas serían remplazadas por la práctica del bien; entonces se iniciarán ellos mismos en el Conocimiento del Buda.</p>
+
+
+
+                            <p>Por lo tanto, de Ksana a Ksana <span class="note">[de una sensación momentánea a otra]</span>, deben ustedes abrir sus ojos, no al &apos;Conocimiento de las personas-comunes&apos; sino al Conocimiento de Buda, que es supra-mundano, mientras que el otro es mundano. Por otra parte, si te aferras al concepto arbitrario de que la simple recitación (del Sutra) como ejercicio diario es suficiente, entonces estás obsesionado como un yak con su propio rabo. (Se dice que los yaks tienen una opinión muy alta de su propio rabo).</p>
+
+                            <p>Entonces Fat Tat dijo &ndash; Si eso es así, solamente tenemos que conocer el significado del Sutra y no habrá necesidad de recitarlo. ¿Es esto correcto, Señor?</p>
+
+
+                            <p class="pagenum">p 49 of pdf</p>
+
+
+                            <p>&ndash;&nbsp;No hay nada incorrecto en el Sutra &ndash; continuó el Patriarca &ndash; como para abstenerte de recitarlo. Pero si la recitación del Sutra te iluminará o no, o te beneficiará o no, depende enteramente de ti mismo. Aquel que recita el Sutra con la lengua y pone sus enseñanzas en práctica con su mente &apos;le da vueltas&apos; al Sutra. Aquel que lo recita sin ponerlo en práctica, el Sutra &apos;le da vueltas a él&apos;. Escucha mi estrofa:</p>
+
+                            <blockquote>
+                                <p>Cuando nuestra mente está bajo la ilusión, el Sutra del Saddharma Pundarika nos &apos;regresa&apos;.</p>
+
+                                <p>Con una mente iluminada, nosotros en su lugar, hacemos que el Sutra &apos;retorne&apos;.</p>
+
+                                <p>Recitar el Sutra por un tiempo considerable sin conocer su propósito principal Indica que eres un desconocido de su significado.</p>
+
+                                <p>La forma correcta de recitar el Sutra no es sosteniendo ninguna creencia arbitraria;</p>
+
+                                <p>De otra forma es incorrecto.</p>
+
+                                <p>Aquel que está más allá de lo &apos;Afirmativo&apos; y lo &apos;Negativo&apos;</p>
+
+                                <p>Cabalga permanentemente en la Carreta del Buey Blanco (el Vehículo del Buda).</p>
+
+                            </blockquote>
+
+
+                            <p class="center">
+                                * * *
+                            </p>
+
+                            <p>Habiendo escuchado esta estrofa, Fat Tat se iluminó y se llenó de lágrimas. Es cierto &ndash;exclamó &ndash; que hasta ahora fui incapaz de &apos;dominar&apos; el Sutra. Más bien era el Sutra el que &apos;me daba vueltas&apos; a mí.</p>
+
+                            <p>Entonces trajo a la luz otro punto. &ndash; El Sutra dice, &apos;Desde los Sravakas (los discípulos), hasta los Bodhisattvas, incluso si ellos fueran a especular con esfuerzos combinados, serían incapaces de comprender el Conocimiento de Buda. <span class="alert">[missing ending quote mark]</span> Pero tú, Señor, me has dado a entender eso, que si un hombre ordinario realiza su propia mente, se dice que ha obtenido el Conocimiento de Buda. Temo, Señor, que exceptuando aquellos de mentalidad superior, otros dudarán de tu observación. Además, las tres clases de Carretas que se mencionan en el Sutra, básicamente, Carretas con yuntas de cabras (por ejemplo, el vehículo de los Sravakas), Carretas con yuntas de ciervos (por ejemplo, el vehículo de los Budas Pratyekas), y las Carretas con yuntas de bueyes (el vehículo de los Bodhisattvas). ¿Cómo han de distinguirse de la Carreta del Buey Blanco?</p>
+
+                            <p>El Patriarca contestó &ndash; el Sutra es bastante claro en ese punto; eres tú él que lo ha malinterpretado. La razón del por qué los Sravakas, los Budas Pratyekas y los Bodhisattvas no pueden comprender el Conocimiento del Buda es porque especulan sobre él. Ellos pueden combinar sus esfuerzos para especular, pero mientras más especulen, más se alejarán de la verdad. Fue a hombres ordinarios y comunes, no a otros Budas, al que el Buda Gautama predicó este Sutra. En cuanto a aquellos que no podían aceptar la doctrina que él expuso, él les permitió retirarse de la asamblea. Tú no pareces saber que dado que ya estamos cabalgando en &apos;la Carreta del Buey Blanco&apos; (el Vehículos de los Budas), no tenemos necesidad de salir a buscar los otros tres vehículos. Es más, el Sutra te dice categóricamente que solamente hay el Vehículo de Buda; y que no hay otros vehículos, tales como el segundo y el tercero. Es por el bien de este único vehículo que el Buda tuvo que predicarnos con ingeniosos mecanismos, usando variedad de razones y argumentos, parábolas e ilustraciones, etc. ¿Por qué no puedes entender que los otros tres vehículos son mecanismos provisionales, para el pasado solamente; mientras que el único vehículo, el Vehículo del Buda, es el fundamental para el presente?</p>
+
+
+                            <p class="pagenum">p 50 of pdf</p>
+
+                            <p>&ndash;&nbsp;El Sutra te enseña a deshacerte de lo provisional y a recurrir a lo fundamental. Habiendo recurrido a lo fundamental, encontrarás que incluso el nombre &apos;fundamental&apos; desaparece. Debes valorar que eres el único poseedor de estos valores y que están enteramente a tu disposición.
+                                <a name="footnote9"></a><sup><a>[9]</a></sup> Cuando estés libre de la concepción arbitraria de que ellos son los padres de, o los hijos de, o que están a disposición de tal o cual, puedes decir que has aprendido la forma correcta de recitar el Sutra. En ese caso, de Kalpa a Kalpa, el Sutra estará en tus manos, desde la mañana hasta la noche, estarás recitando el Sutra todo el tiempo.
+                            </p>
+
+
+                            <p class="pagenum">footnote bottom of p 50 of pdf</p>
+                            <p class="fnote"><a><sup><a href="#footnote9">[9]</a>&nbsp;</sup>
+                                </a> Nota: Una alusión al capítulo en el Sutra, titulado &apos;Parábolas&apos;, ejemplificando que el Conocimiento del Buda es innato en cada hombre.</p>
+
+                            <p>Habiendo despertado de este modo, Fat Tat elogió al Patriarca en un arrebato de gran felicidad, con la siguiente estrofa:</p>
+
+                            <blockquote>
+
+                                <p>
+                                    El engaño de que hube obtenido grandes méritos por recitar el Sutra tres mil veces
+                                </p>
+
+                                <p>Se ha disipado by la pronunciación del Maestro de Tso Kai (ejemplo, el Patriarca).</p>
+
+                                <p>Aquel que no entiende el objeto de la encarnación del Buda en este mundo</p>
+
+                                <p> Es incapaz de reprimir las pasiones salvajes acumuladas en muchas vidas.</p>
+
+                                <p> Las tres yuntas de cabras, de ciervos y de bueyes de los vehículos respectivamente son sólo recursos,</p>
+
+                                <p>¡Mientras que en las tres etapas, Preliminar, Intermedia y Final,</p>
+
+                                <p> definitivamente el Dharma ortodoxo es tanto expuesto como bien propuesto! </p>
+
+                                <p>¡Sólo unos pocos aprecian eso que está en sí mismo dentro de la casa en llamas (ejemplo, la existencia mundana)</p>
+
+                                <p> ¡El Rey del Dharma debe ser hallado!</p>
+
+                            </blockquote>
+
+
+                            <p>Entonces el Patriarca le dijo que de aquí en adelante podía llamarse a sí mismo un &apos;Bhikkhu&ndash;recitador del Sutra&apos;. Después de esta entrevista, Fat Tat fue capaz de entender el significado profundo del Budismo; no obstante, él continuó recitando el Sutra como antes.</p>
+
+                            <hr />
+
+
+                            <p>El Bhikkhu Chi Tong, un nativo de Shau Chow de An Fung, había leído el Sutra Lankavatara mil veces más o menos, pero no podía entender el significado del Trikaya y de los cuatro Prajnas. Por lo cual, visitó al Patriarca y le pidió una interpretación.</p>
+
+                            <p>&ndash;&nbsp;En cuanto a los &apos;Tres Cuerpos&apos; &ndash; explicó el Patriarca &ndash; el Puro Dharmakaya es tu naturaleza (esencial); el Perfecto Sambhogakaya es tu sabiduría; y las miríadas Nirmanakayas son tus acciones. Si medias con esos Tres Cuerpos separadamente de la &lt;Esencia de la Mente&gt;, habrá &apos;cuerpos sin sabiduría&apos;. Si comprendes que esos Tres Cuerpos no tienen una esencia positiva en sí mismos (porque son solamente propiedades de la &lt;Esencia de la Mente&gt;) obtendrás el Bodhi de los Cuatro Prajnas. Escucha mi estrofa:</p>
+
+
+                            <p class="pagenum">p 51 of pdf</p>
+
+                            <blockquote>
+                                <p>Los Tres Cuerpos son inherentes a la &lt;Esencia de la Mente&gt;,</p>
+
+                                <p> Por el desarrollo de los cuales, los cuatro Prajnas son manifestados.</p>
+
+                                <p> Por lo tanto, sin cerrar tus ojos y tus oídos para mantenerte apartado del mundo externo
+                                </p>
+
+                                <p>Puedes alcanzar la Budeidad directamente.</p>
+
+                                <p>Créelo firmemente, y serás libre de engaños para siempre.</p>
+
+                                <p>No sigas aquellos que buscan la &apos;Iluminación&apos; del exterior;</p>
+
+                                <p>Aquellas personas hablan acerca del Bodhi todo el tiempo (pero nunca lo encuentran).</p>
+
+                            </blockquote>
+
+
+                            <p>&ndash;&nbsp;¿Puedo saber algo acerca de los cuatro Prajnas? &ndash; preguntó Chi Tong.</p>
+
+                            <p>&ndash;&nbsp;Si entiendes los Tres Cuerpos &ndash; respondió el Patriarca &ndash; debes entender también los Cuatro Prajnas; así que tu pregunta es completamente innecesaria. Si concibes los cuatro Prajnas separadamente de los Tres Cuerpos, habrá Prajnas sin cuerpos, y en tal caso no serían Prajnas.</p>
+
+                            <p>Entonces el Patriarca pronunció otra estrofa:</p>
+
+
+                            <p class="note alert">next needs work</p>
+
+                            <blockquote>
+
+                                <p>La Sabiduría Reflejada (como en un Espejo), es pura por naturaleza.</p>
+
+                                <p> La Sabiduría de la Igualdad libera la mente de todos los impedimentos.</p>
+
+                                <p> La Sabiduría que lo Discierne ve las cosas intuitivamente sin pasar a través del proceso de razonamiento.</p>
+
+                                <p>La Sabiduría que lo Ejecuta todo tiene las mismas características que la Sabiduría Reflejada.</p>
+
+                            </blockquote>
+
+                            <p>Los primeros cinco vijnanas (sentido de conciencia que depende respectivamente de los cinco órganos sensoriales) y el Alaya vijnana (Depósito o Conciencia Universal) son &apos;trasmutados&apos; a Prajna en la Fase de Buda; mientras que el Klista-Mano vijnana (la conciencia empañada o la conciencia del yo) y la Mano vijnana (la conciencia pensante), son trasmutados en la Fase del Bodhisattva.
+                                <a name="footnote10a"></a><sup><a>[10a]</a></sup>
+                            </p>
+
+
+                            <p class="fnote"><a><sup><a href="#footnote10a">10a</a>&nbsp;</sup>
+                                </a> Nota: Es en la primera Etapa, &apos;Mudita&apos; o Etapa de Gozo, cuando un Bodhisattva realiza el Vacío del yo y el Dharma (las cosas), que él &apos;trasmuta&apos; el Klista-Mano Vijnana a la Sabiduría que todo lo Discierne. Cuando se logra la Budeidad, los primeros vijnanas serán &apos;trasmutados&apos; a la Sabiduría que todo lo Ejecuta; y el Alaya Vijnana a la Sabiduría Reflejada.
+
+
+                                <!-- enchor code from Stuart Lachs, put the anchor inside the sup  
+                                                 but the sup has the return position -->
+                                <a class="return-anchor" id="return-anchor-1"></a><sup><a href="#notes">[1]</a></sup>
+                            </p>
+
+                            <p>Estas llamadas &apos;trasmutaciones de vijnana&apos; son sólo cambios de denominación y no un cambio de fondo.
+                                <a name="footnote10b"></a><sup><a>[10b]</a></sup>
+                            </p>
+
+
+                            <p class="fnote"><a><sup><a href="#footnote10b">[10b]</a></sup> Nota: En la &lt;Esencia de laMente&gt; no hay tal cosa como la &apos;trasmutación&apos;. Cuando un hombre se ilumina, el término &apos;Prajna&apos; es usado; de otra forma, el término &apos;vijnana&apos; es él que aplica. En otras palabras, la palabra &apos;trasmutación&apos; es usada solamente en sentido figurativo.</p>
+
+
+
+                            <p class="pagenum">End 2 fotnotes bottom of p 51 of pdf</p>
+
+                            <p class="pagenum">p 52 of pdf</p>
+
+
+                            <p>Cuando eres capaz de liberarte enteramente de los apegos a los objetos de los sentidos en el momento en que las tal llamadas &apos;trasmutaciones&apos; se llevan a cabo, entonces habitarás eternamente en el siempre surgente Naga (Dragón) Samadhi.</p>
+
+                            <p>(Después de haber escuchado esto), Chi Tong realizó repentinamente el Prajna de su &lt;Esencia de la Mente&gt; y presentó la siguiente estrofa al Patriarca:</p>
+
+                            <p>Cuando eres capaz de liberarte enteramente de los apegos a los objetos de los sentidos en el momento en que las tal llamadas &apos;trasmutaciones&apos; se llevan a cabo, entonces habitarás eternamente en el siempre surgente Naga (Dragón) Samadhi.</p>
+
+                            <p>(Después de haber escuchado esto), Chi Tong realizó repentinamente el Prajna de su &lt;Esencia de la Mente&gt; y presentó la siguiente estrofa al Patriarca:</p>
+
+                            <blockquote>
+
+                                <p>Intrínsecamente, los tres Cuerpos están en nuestra &lt;Esencia de la Mente&gt;. Cuando nuestra mente se ilumina, los cuatro Prajnas aparecerán en su interior.</p>
+
+                                <p>Cuando absolutamente los Cuerpos y los Prajnas se identifican los unos con los otros,</p>
+
+                                <p>Seremos capaces de responder (de acuerdo con sus temperamentos y disposiciones) a las apariencias de todos los seres, no importa que forma puedan ellos asumir.</p>
+
+                                <p>El comenzar buscando por el Trikaya y los cuatro Prajnas es tomar un curso completamente erróneo (por ser ellos inherentes en nosotros, tienen que ser realizados y no buscados).</p>
+
+                                <p>El tratar de &apos;asirlos&apos; o &apos;confinarlos&apos; es ir en contra de su naturaleza intrínseca. A través de ti, Señor, ahora soy capaz de entender la profundidad de sus significados.</p>
+
+                                <p>Y de aquí en adelante, puedo descartar para siempre sus nombres falsos y arbitrarios. (Nota: Habiendo entendido el espíritu de la doctrina, uno puede dispensar o eximir los nombres usados interiormente, dado que todos los nombres son solamente provisionales).</p>
+
+                            </blockquote>
+
+                            <hr />
+                            <p class="note center">* * *</p>
+
+                            <p>El Bhikkhu Chi Sheung, un nativo de Kwai Kai de Shun Chow, se unió a la Orden en su niñez, y era muy entusiasta en sus esfuerzos por realizar su &lt;Esencia de la Mente&gt;. Un día, fue a rendirle homenaje al Patriarca, y éste le preguntó desde dónde y por qué había venido.</p>
+
+                            <p>&ndash;&nbsp;He estado recientemente en la Montaña del Acantilado Blanco en Hung Chow &ndash;contestó él &ndash; entrevistándome con el Maestro Ta Tung, que fue suficientemente bondadoso al enseñarme cómo poder realizar la &lt;Esencia de la Mente&gt; y por lo tanto, alcanzar la Budeidad. Pero todavía tengo algunas dudas, y he viajado desde muy lejos para brindar a usted mis respetos. Señor, ¿Sería usted tan amable de aclarármelas?</p>
+
+                            <p>&ndash;&nbsp;¿Qué instrucciones te dio él? &ndash; preguntó el Patriarca.</p>
+
+                            <p>&ndash;&nbsp;Después de permanecer allí por tres meses sin recibir instrucción alguna, en mi entusiasmo por obtener el Dharma, una noche fui solo a su habitación y le pregunté cuál era mi &lt;Esencia de la Mente&gt;.</p>
+
+                            <p>&ndash;&nbsp;¿Ves el vacío infinito? &ndash; preguntó él.</p>
+
+
+                            <p class="pagenum">p 53 of pdf</p>
+
+
+                            <p>&ndash;&nbsp;Sí, lo veo &ndash; contesté. Entonces me preguntó si el vacío tenía alguna forma en particular, y cuando respondí que el vacío no tiene forma y que por lo tanto no podía tener una forma en particular, él dijo &ndash; Tu &lt;Esencia de la Mente&gt; es exactamente como el vacío. Comprender que nada puede ser visto es la &apos;Visión Correcta&apos;. Comprender que nada es conocido es el &apos;Verdadero Conocimiento&apos;. Comprender que ni es verde ni amarilla, ni larga ni corta, que es pura por naturaleza, que su quinta esencia es perfecta y clara, &apos;es realizar la &lt;Esencia de la Mente&gt; y por lo tanto obtener la Budeidad&apos;, que también es llamada el Conocimiento de Buda. Como no entiendo completamente su enseñanza, Señor, por favor ilumíneme.</p>
+
+                            <p>&ndash;&nbsp;Sus enseñanzas indican &ndash; comenzó el Patriarca &ndash; que él todavía retiene el concepto arbitrario de &apos;Visión&apos; y &apos;Conocimiento&apos;, y esto explica por qué él fracasa en aclarártelo. Escucha mi estrofa:</p>
+
+                            <blockquote>
+
+                                <p>Realizar que nada puede ser visto pero retener el concepto de &apos;Invisibilidad&apos;</p>
+
+                                <p>Es como la superficie del sol oscurecida por las nubes pasajeras.</p>
+
+                                <p>Realizar que nada es conocido pero retener el concepto del &apos;Desconocimiento&apos;</p>
+
+                                <p>Puede ser como un cielo claro desfigurado por un destello de luz.</p>
+
+                                <p>Dejar que esos conceptos arbitrarios se levanten espontáneamente en tu mente</p>
+
+                                <p>Indica que no has identificado la &lt;Esencia de la Mente&gt;, y que no has encontrado aún el expediente diestro para realizarla.</p>
+
+                                <p>Si realizas por un momento que esos conceptos arbitrarios están equivocados,</p>
+
+                                <p> Tu propia luz espiritual brillará permanentemente.</p>
+
+                            </blockquote>
+
+                            <p>Habiendo escuchado esto, Chi Sheung sintió al instante que su mente estaba iluminada. Por lo tanto, presentó al Patriarca la siguiente estrofa:</p>
+
+                            <blockquote>
+                                <p>El permitir que los conceptos de &apos;Invisibilidad&apos; y &apos;Desconocimiento&apos; se levanten espontáneamente en la mente</p>
+
+                                <p>Es buscar al Bodhi sin liberarse uno mismo de los conceptos arbitrarios de los fenómenos.</p>
+
+                                <p>Aquel que presume por la leve impresión &apos;Estoy ahora iluminado&apos;,</p>
+
+                                <p>No es mejor que cuando estaba bajo el engaño.</p>
+
+                                <p>Si no me hubiera puesto a los pies del Patriarca,</p>
+
+                                <p>Hubiera estado desorientado sin conocer el camino correcto a seguir.</p>
+
+                            </blockquote>
+
+                            <p>Un día, Chi Sheung le preguntó al Patriarca &ndash; Buda predicó la doctrina de los &apos;Tres Vehículos&apos; y también la del &apos;Supremo Vehículo&apos;. Como no entiendo esto, por favor explícamelo.</p>
+
+                            <p>El Patriarca respondió &ndash; (Al tratar de entender esto), debes hacer introspección de tu mente y actuar independientemente del Dharmalaksana externo (cosas y fenómenos). La distinción de estos cuatro vehículos no existe en el Dharma en sí, sino en la diferenciación de las mentes de las personas. Ver, escuchar y recitar el Sutra es el Vehículo Pequeño. Conocer el Dharma y entender su significado es el Vehículo Medio.</p>
+
+
+                            <p class="pagenum">p 54 of pdf</p>
+
+
+                            <p>Llevar realmente a la práctica el Dharma es el Gran Vehículo. Entender completamente todos los Dharmas, absorberlos completamente, el estar libre de todos los apegos, estar por encima y más allá del Dharmalaksana, y estar en posesión de nada, es el Vehículo Supremo.</p>
+
+                            <p>Dado que la palabra &apos;Yana&apos; (Vehículo) implica movimiento (por ejemplo, poner en práctica), argumentar sobre este punto es completamente innecesario. Todo depende de practicar por uno mismo, así que no necesitas preguntarme más. (Pero puedo recordarte que) en todo momento la &lt;Esencia de la Mente&gt; está en un estado de &apos;Semejanza&apos;.</p>
+
+                            <p>Chi Sheung hizo una reverencia y le dio las gracias al Patriarca. De ahí en adelante, trabajó como su asistente hasta la muerte del Maestro.</p>
+
+                            <hr />
+
+                            <p class="alert">This is page 54 in Spanish version</p>
+
+
+                            <p class="alert">Page 55 through 59 are missing/rearranged from English version</p>
+
+                            <div class="missing-in-english">
+
+
+
+                                <p>El Bhikkhu Chi Tao, un nativo de Nam Hoi de Kwong Tung, vino donde el Patriarca a pedir ilustración diciendo &ndash; Desde que me uní a la Orden he leído el Sutra Maha Parinirvana por más de diez años, pero todavía no he entendido su idea principal. Por favor enséñame.</p>
+
+                                <p>&ndash;&nbsp;¿Qué parte de él no entiendes? &ndash; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Señor, es acerca de esta parte de la que estoy dudoso: &quot;Todas las cosas son impermanentes, y por lo tanto pertenecen al Dharma del Devenir [Llegar a Ser] y al de la Cesación (por ejemplo, el Dharma Samskrita). Cuando ambos, el Devenir y la Cesación, paran de operar, el deleite del Descanso Perfecto y la Cesación de los Cambios (por ejemplo, el Nirvana) surge.&quot;</p>
+
+                                <p>&ndash;&nbsp;¿Qué te hace dudar? &ndash; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Todos los seres tienen dos cuerpos, el cuerpo físico y el Dharmakaya, &ndash; replicó Chi Tao &ndash; El primero es impermanente; existe y muere. El último es permanente; no conoce y no siente. Ahora, el Sutra dice, &quot;Cuando ambos, el Devenir y la Cesación, paran de operar, el deleite del Descanso Perfecto y la Cesación de los Cambios surge.&quot; Yo no sé cuál cuerpo cesa de existir y cuál cuerpo disfruta del deleite. No puede ser el cuerpo físico el que disfruta, porque cuando muere, los cuatro Mahabhutas (los elementos materiales, por ejemplo, tierra, agua, fuego y aire) se desintegrarán, y la desintegración es sufrimiento puro, el opuesto completo del deleite. Si es el Dharmakaya él que cesa de existir, él estaría en el mismo estados que los objetos &apos;inanimados&apos;, tales como la hierba, los árboles, las piedras, etc.; ¿quién será entonces él que disfruta?</p>
+
+                                <p>&ndash;&nbsp;Es más, la naturaleza del Dharma es la quinta esencia del &apos;Devenir y la Cesación&apos;, que se manifiesta como los cinco Skandhas (Rupa, Vedana, Samjna, y Vijnana). Se dice que, en una quintaesencia hay cinco funciones. El proceso del &apos;Devenir y la Cesación&apos; es eterno. Cuando las funciones u operaciones &apos;surgen&apos; de la quintaesencia, esta llega a ser; cuando la operación o la función es absorbida de nuevo en la quinta esencia, cesa de existir. Si se admite la reencarnación, no habrá &apos;Cesación de Cambios&apos; como en el caso de los seres sintientes. Si no aceptamos la reencarnación, entonces las cosas permanecerán por siempre en un estado de quintaesencia sin vida, como los objetos inanimados. Si eso es así, entonces bajo las limitaciones y restricciones del Nirvana, aún la existencia sería imposible para todos los seres; ¿qué disfrute podría haber ahí?</p>
+
+
+                                <p class="pagenum">p 55 of pdf</p>
+
+
+                                <p class="alert">&ndash;&nbsp;Eres el hijo de Gina (por ejemplo, un hijo de Buda, o un Bhikkhu), &ndash; dijo el Patriarca &ndash; entonces ¿por qué adoptas los puntos de vista falaces del Eternalismo y la Aniquilación sostenidos por los herejes, y te atreves a criticar la enseñanza del Vehículo Supremo?</p>
+
+                                <p>&ndash;&nbsp;Tu argumento implica que aparte del cuerpo físico, hay una Ley del cuerpo (Dharmakaya); y que el &apos;Descanso Perfecto&apos; y la &apos;Cesación de los Cambios&apos; pueden ser buscados fuera del &apos;Devenir y la Cesación&apos;. Además de eso, de la declaración de que &apos;el Nirvana es el goce perpetuo&apos;, infieres que debe haber alguien que juegue el papel del que disfruta.</p>
+
+                                <p>&ndash;&nbsp;Es exactamente estos puntos de vista falaces los que hacen a las personas desear una existencia de sensaciones, gratificándose en los placeres mundanos. Es para estas personas, las victimas de la ignorancia, que identifican la unión de los cinco Skandhas con el &apos;yo&apos;, y miran las otras cosas como el &apos;no-yo&apos; (literalmente, los objetos sensoriales externos); quienes apetecen la existencia individual y tienen aversión a la muerte; quienes vagan sin rumbo en la vorágine de la vida y la muerte sin darse cuenta de lo hueco de la existencia mundana, que sólo es un sueño o una ilusión; quienes se encomiendan a si mismos a un sufrimiento innecesario al aferrarse a la rueda de los re-naceres; quienes confunden el estado de deleite perpetuo del Nirvana con un estado de sufrimiento, y quienes están siempre buscando el placer sensual; es para estas personas que el Buda compasivo predicó verdadero goce del Nirvana.</p>
+
+                                <p>&ndash;&nbsp;En ningún momento, el Nirvana tiene el fenómeno del Devenir, ni el de la Cesación, ni aquel de la cesación de la operación del Devenir y la Cesación. Es la manifestación del &apos;Descanso Perfecto y la Cesación de los Cambios&apos;; pero en el momento de la manifestación no hay incluso un concepto de manifestación; así que es llamado &apos;El Gozo Perpetuo&apos; que no tiene el que &apos;disfruta&apos; ni el que &apos;no-disfruta&apos;.</p>
+
+                                <p>&ndash;&nbsp;No hay tal cosa como &apos;una quintaesencia y cinco funciones&apos; (como alegas), y estás difamando al Buda y blasfemando la Ley cuando afirmas que bajo tal limitación y restricción la existencia del Nirvana es imposible para todos los seres. Escucha mi estrofa:</p>
+
+                                <blockquote>
+                                    <p>El Maha Parinirvana Supremo</p>
+
+                                    <p>Es perfecto, permanente, calmado e iluminante.</p>
+
+                                    <p>Las personas comunes e ignorantes lo llaman erróneamente muerte,</p>
+
+                                    <p>Mientras que los herejes sostienen arbitrariamente que es aniquilación.</p>
+
+                                    <p>Aquellos que pertenecen al Vehículo Sravaka o al Vehículo del Buda Pratyeka</p>
+
+                                    <p>Lo miran como la &apos;No-acción&apos;.</p>
+
+                                    <p>Todas estas son meras especulaciones intelectuales,</p>
+
+                                    <p>Y forma la base de los sesenta y dos puntos de vista falaces.</p>
+
+                                </blockquote>
+
+
+                                <p class="pagenum">p 56 of pdf</p>
+
+
+                                <blockquote>
+
+                                    <p>Dado que ellos son simplemente unos nombres ficticios inventado para la ocasión</p>
+
+                                    <p>Ellos no tienen nada que ver con la Verdad Absoluta. Solamente aquellos con una mente súper-eminente</p>
+
+                                    <p>Pueden entender completamente lo que el Nirvana es, y adoptar la actitud de, ni apego ni indiferencia hacia él.
+                                        <a name="footnote-missed"></a><sup><a>footnote-missed</a></sup>
+                                    </p>
+
+                                    <blockquote>
+                                        ----------------------
+                                        <p class="alert">Footnote missed by Abbyy? Appers at bottom of page 56</p>
+
+                                        <p><sup><a href="#footnote-missed">10b</a></sup> Mientras las personas ordinarias se aturden por la vorágine de la vida y la muerte, la actitud de los &apos;Sravakas&apos; y los Budas Pratyekas hacia eso es de detesto. Ninguno de ellos está correcto. El caminante del Camino no se afierra a la existencia de la sensación ni la esquiva deliberadamente. Porque la idea del &apos;yo&apos; y esa de &apos;persona&apos; son ajenas para él, y porque toma la actitud de ni apego ni aversión hacia las cosas, la libertad está a su alcance todo el tiempo y está cómodo y tranquilo con las circunstancias. Él puede ir a través del proceso del nacimiento y la muerte, pero tal es un proceso que nunca puede doblegarlo, así que para él la pregunta del &apos;nacimiento y la muerte&apos; no es del todo una pregunta. Tal hombre puede ser llamado un hombre de mente súper-eminente. </p>
+
+                                        <p class="pagenum">End footnote bottom p 56 of pdf</p>
+
+                                        Stanza continues on middle page 56 ----------------
+                                    </blockquote>
+
+                                    <p>Ellos conocen que los cinco Skandhas</p>
+
+                                    <p>Y el llamado &apos;ego&apos; surge de la unión de estos Skandhas, Junto con todos los objetos y las formas externas</p>
+
+                                    <p>Y los variados fenómenos de sonido y voz</p>
+
+                                    <p>Son igualmente irreales, como un sueño, o una ilusión.</p>
+
+                                    <p>Ellos no hacen discriminación entre un santo y una persona ordinaria,</p>
+
+                                    <p>Ni tienen ningún concepto arbitrario del Nirvana.</p>
+
+                                    <p>Ellos están por encima de la &apos;Afirmación&apos; y la &apos;Negación&apos; y rompen las barreras del pasado, presente y futuro.</p>
+
+                                    <p>Ellos usan sus órganos sensoriales, cuando la ocasión lo requiere, Pero el concepto de &apos;Usar&apos; no surge. Ellos pueden particularizarse en muchas clases de cosas, Pero el concepto de &apos;particularización&apos; no surge.</p>
+
+                                    <p>Incluso durante el cataclismo del fuego al final de un Kalpa, cuando las bases de los océanos se queman hasta secarlos,</p>
+
+                                    <p>O durante el soplo del viento catastrófico cuando una montaña se vuelca sobre otra,</p>
+
+                                    <p>La bienaventuranza real y perpetua del &apos;Descanso Perfecto&apos; y la &apos;Cesación de los Cambios&apos;</p>
+
+                                    <p>Del Nirvana, permanece en el mismo estado y no cambia.</p>
+
+                                    <p>Aquí estoy tratando de describirte algo que es inefable</p>
+
+                                    <p>De manera que puedas desprenderte de tus puntos de vista falaces.</p>
+
+                                    <p>Pero si no interpretas mis palabras literalmente</p>
+
+                                    <p>¡Puedes quizás aprender un poquito del significado del Nirvana!</p>
+
+                                </blockquote>
+
+                                <p>Habiendo escuchado esta estrofa, Chi Tao fue iluminado por lo alto. En éxtasis, hizo una reverencia y partió.</p>
+
+                                <hr />
+
+                                <p class="pagenum">p 57 of pdf</p>
+
+
+                                <p>Bhikkhu Hang Shi, un Maestro Dhyana, nació en la familia de los Liu en An Sheng de Kat Chow. Después de oír que las predicas del Patriarca habían iluminado un gran número de personas, vino de inmediato a Tso Kai a rendirle homenaje y formularle esta pregunta:</p>
+
+                                <p>&ndash;&nbsp;¿Un aprendiz a qué debe dirigir su mente de manera que su logro no pueda ser evaluado por el acostumbrado &apos;Estado de Progreso&apos;?</p>
+
+                                <p>&ndash;&nbsp;¿Qué trabajo has estado dedicado? preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Incluso con las Nobles Verdades enseñadas por varios Budas no tengo nada que ver &ndash;replicó Hang Shi.</p>
+
+                                <p>&ndash;&nbsp;¿En qué Estado de Progreso estás? &ndash; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;¿Qué &apos;Estado de Progreso&apos; puede haber, cuando rehúso tener algo que ver incluso con las Nobles Verdades enseñadas por los Budas?, replicó él.</p>
+
+                                <p>Su agudeza le ganó el gran respeto del Patriarca, quien le confirió el liderazgo de la asamblea.</p>
+
+                                <p>Un día el Patriarca le dijo que debía propagar la Ley en su propio distrito, de manera que las enseñanzas nunca llegaran a extinguirse. Por lo cual, él regresó a la Montaña de Ching Un en su distrito natal. Habiéndole sido trasmitido el Dharma, él lo propagó extensamente, y por lo tanto, perpetuó las enseñanzas de su Maestro. Después de su muerte, se le confirió el título póstumo de &apos;Maestro Dhyana Hung Tsai&apos;.</p>
+
+                                <hr />
+
+                                <p>Bhikkhu Wei Yang, un Maestro Dhyana, nació de una familia Tao en Kim Chow. Después de su primera visita al &apos;Maestro Nacional&apos; Wei On de la Montaña de Sung Shan, fue encaminado por este último a ir a Tso Kai a entrevistarse con el Patriarca.</p>
+
+                                <p>A su arribo y después del saludo de costumbre, el Patriarca le preguntó de dónde había venido.</p>
+
+                                <p>&ndash;&nbsp;De Sung Shan &ndash; replicó él.</p>
+
+                                <p>&ndash;&nbsp;¿Qué cosa es esta? ¿Cómo vino esto? &ndash; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Sería un error decir que es similar a cosa alguna &ndash; replicó él.</p>
+
+                                <p>&ndash;&nbsp;¿Es obtenible por medio de entrenamiento? &ndash; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;No es imposible lograrlo por entrenamiento; pero es completamente imposible corromperlo &ndash; respondió él.</p>
+
+
+                                <p class="pagenum">p 58 of pdf</p>
+
+                                <p>A lo cual el Patriarca exclamó &ndash; Es exactamente esta cosa incorrupta la que todos los Budas cuidan con esmero. Es así tanto para ti como para mí. El Patriarca Prajnatara de la India predijo que bajo tus pies un caballito
+                                    <a name="footnote11"></a><sup><a>11</a></sup> se adelantaría pisando a todas las personas del mundo entero. No necesito interpretar este oráculo enseguida, ya que la respuesta deberá ser encontrada en tu mente.
+                                </p>
+
+
+
+                                <p><a><sup><a href="#footnote11">11</a>&nbsp;</sup>
+                                    </a> Nota: Esto se refiere el famoso discípulo de Wei Yang, Ma (caballo) Tso, a través de quien las enseñanzas de la Escuela de Dhyana fueron diseminadas por toda la China.</p>
+
+                                <p class="pagenum">end footnote bottom p 58 of pdf</p>
+
+                                <p class="pagenum">continue top p 58 of pdf</p>
+
+                                <p>Iluminándose así, Wei Yang comprendió intuitivamente lo que el Patriarca había dicho De ahí en adelante, llegó a ser su asistente por un periodo de quince años; y día tras día, su conocimiento sobre Budismo se hizo cada vez más profundo. Posteriormente, instaló su residencia en Heng Shan, donde difundió extensamente las enseñanzas del Patriarca. Después de su muerte, por edicto imperial, le fue conferido el título póstumo de &apos;Maestro Dhyana Tai Wai&apos;.</p>
+
+                                <hr />
+
+                                <p>El Maestro Dhyana Yuen Kwok de Wing Ka nació de una familia Tai en Wenchow. En su juventud, estudió los Sutras y los Shastras y era muy versado en las enseñanzas de Samatha (inhibición o quietud) y Vipassana (contemplación o discernimiento) de la Escuela de Tendai. A través de la lectura del Sutra Vimalakirti Nirdesa, comprendió intuitivamente el misterio de su propia mente.</p>
+
+                                <p>Un discípulo del Patriarca que tenía por nombre Un Chak, lo fue a visitar un día. Durante el curso de una larga discusión, Un Chak notó que las declaraciones de su amigo concordaban en gran parte con los pronunciamientos de los diversos Patriarcas. Por consiguiente le preguntó &ndash; ¿Puedo saber el nombre del maestro que te transmitió el Dharma?</p>
+
+                                <p>&ndash;&nbsp;Yuen Kwok replicó &ndash; He tenido maestros que me han instruido cuando estudié los Sutras y los Shastras de la sección de Vaipulya. Pero después, fue a través de las lecturas del Sutra Vimalakirti Nirdesa que comprendí el significado de la Escuela Buddhacitta (Dhyana); y en lo que a eso respecta, no he tenido todavía ningún maestro que verifique y confirme mi conocimiento.</p>
+
+                                <p>&ndash;&nbsp;Antes de los tiempos del Buda Bhismagarjitasvara Raja (el primer Buda) &ndash; recalcó Un Chak &ndash; era posible prescindir de los servicios de un maestro; pero desde entonces, aquel que logra la iluminación sin la ayuda y la confirmación de un maestro es un hereje por naturaleza.</p>
+
+                                <p>&ndash;&nbsp;Señor, ¿podría usted amablemente servirme de testigo? &ndash; preguntó Yuen Kwok.</p>
+
+                                <p>&ndash;&nbsp;Mis palabras no tienen peso &ndash; replicó su amigo. &ndash; En Tso Kai está el Sexto Patriarca, a quien los visitantes, en un gran número, llegan de todas las direcciones con el objetivo común de que se les transmita el Dharma. Usted deberá ir allí y yo estaré gustoso de acompañarlo.</p>
+
+
+                                <p class="pagenum">p 59 of pdf</p>
+
+
+                                <p>A su debido momento arribaron a Tso Kai y se entrevistaron con el Patriarca. Después de circundar al Patriarca tres veces, Yuen Kwok se detuvo (por ejemplo, sin hacer reverencia al Maestro) con el Khakkharam (el bastón de mando del Buda) en su mano.</p>
+
+                                <p>(Por su descortesía), el Patriarca hizo la siguiente observación &ndash; Como un Sramana (monje Budista) es la encarnación de tres mil preceptos morales y de ochenta mil reglas menores de disciplina, me pregunto de donde vienes y que te hace tan presuntuoso.</p>
+
+                                <p>&ndash;&nbsp;La pregunta de los incesantes re-naceres es muy importante - replicó él - y como la muerte puede llegar en cualquier momento (no tengo tiempo que perder en ceremonias).</p>
+
+
+                                <p>&ndash;&nbsp;¿Por qué no comprendes el principio de &apos;No-nacimiento&apos; y entonces resolverás el problema de la transitoriedad de la vida? &apos; el Patriarca arguyó.</p>
+
+                                <p>A lo cual Yuen Kwok comentó &apos; Realizar la &lt;Esencia de la Mente&gt; es estar libre de re-naceres; y una vez que el problema esté resuelto y la cuestión de la transitoriedad no existe ya más.</p>
+
+                                <p>Así es, así es &apos; asintió el Patriarca.</p>
+
+                                <p>A estas alturas, Yuen Kwok cedió e hizo reverencia completa fiel al ceremonial acostumbrado. Después de un corto tiempo le dijo adiós al Patriarca.</p>
+
+
+                                <p>&ndash;&nbsp;Te estás yendo muy rápido, ¿no es así? &ndash; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;¿Cómo puede haber &apos;rapidez&apos; cuando el movimiento intrínsecamente no existe? replicó él.</p>
+
+                                <p>&ndash;&nbsp;¿Quién es el que sabe que el movimiento no existe? &apos; preguntó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Señor, espero que usted no particularice &apos; observó él.</p>
+
+                                <p>El Patriarca lo alabó por su comprensión cabal de la noción del &apos;No-nacimiento&apos;, pero Yuen Kwok continuó &apos; ¿Hay alguna noción en el &apos;No -nacimiento&apos;?</p>
+
+                                <p>&ndash;&nbsp;Sin una noción, ¿quién puede particularizar? &apos; preguntó esta vez el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Aquello que particulariza no es una noción &apos; replicó Yuen Kwok.</p>
+
+                                <p>&ndash;&nbsp;¡Bien dicho! &apos; exclamó el Patriarca. Entonces le pidió a Yuen Kwok que postergara su partida y pasara una noche allí. En lo sucesivo Yuen Kwok fue conocido por su contemporáneos como &apos;el iluminado que pasó una noche con el Patriarca&apos;.</p>
+
+                                <p>Posteriormente escribió el famoso trabajo titulado &quot;El Himno del Logro Espiritual&quot;, que circula ampliamente. Su título póstumo es el de &apos;Gran Maestro Wu Seng&apos; (Él que está por encima de la forma y el fenómeno), y también fue llamado por sus contemporáneos &apos;Maestro Dhyana Chun Kwok&apos; (Aquel que realmente está iluminado).</p>
+
+
+                                <p class="pagenum">p 60 of pdf</p>
+
+                            </div>
+
+
+                            <p class="alert">This is page 60 in Spanish version</p>
+
+
+
+                            <p>El Bhikkhu Chi Wang, un seguidor de la Escuela Dhyana, después de consultar con el Quinto Patriarca (respecto al progreso de su trabajo), se consideró a sí mismo como alguien que había logrado el Samadhi. Por veinte años se enclaustró en un pequeño templo manteniéndose sentado en cuclillas todo el tiempo.</p>
+
+                            <p>Un Chak, un discípulo del Sexto Patriarca, en un viaje de meditación al banco norte del Hoang Ho, oyó acerca de él y fue a su templo.</p>
+
+                            <p>&ndash;&nbsp;¿Qué estás haciendo aquí? &apos; preguntó Un Chak.</p>
+
+                            <p>&ndash;&nbsp;Estoy viviendo en el Samadhi &apos; contestó su amigo Chi Wang.</p>
+
+                            <p>&ndash;&nbsp;¿Dijiste que viviendo en el Samadhi? &apos; observó Un Chak &apos; Me gustaría saber si lo estás haciendo conscientemente o inconscientemente. Porque si lo estás haciendo inconscientemente, significaría que es posible para todos los objetos inanimados como la loza de barro, las piedras, los árboles y las hierbas, lograr el Samadhi. Por otra parte, si lo estás haciendo conscientemente, entonces todos los objetos animados o seres sintientes estarían también en el Samadhi.</p>
+
+                            <p>&ndash;&nbsp;Cuando estoy en el Samadhi &apos; observó Chi Wang &apos; no conozco la conciencia ni la inconciencia.</p>
+
+                            <p>&ndash;&nbsp;Si ese es el caso &apos; dijo Un Chak &apos; eso es Samadhi perpetuo; y en ese estado ni permaneces ni te vas. Ese estado en él cual puedes habitar o puedes irte no es el Gran Samadhi.</p>
+
+
+
+                            <p>&ndash;&nbsp;Chi Wang estaba perplejo. Después de un tiempo, preguntó &apos; ¿Puedo saber cuál es tu Maestro?</p>
+
+                            <p>&ndash;&nbsp;Mi Maestro es el Sexto Patriarca de Tso Kai &apos; replicó Un Chak.</p>
+
+                            <p>&ndash;&nbsp;¿Cómo define él Dhyana y Samadhi? &apos; preguntó Chi Wang.</p>
+
+                            <p>&ndash;&nbsp;De acuerdo con sus enseñanzas &apos; replicó Un Chak &apos; el Dharmakaya es perfecto y sereno; su quinta esencia y su función están en estado de Semejanza. Los cinco Skandhas (agregados) están intrínsecamente vacíos y los seis objetos sensoriales son no-existentes. En el Samadhi no hay el habitar ni el marcharte. No hay quietud ni perturbación. La naturaleza de Dhyana es no-habitable, así que debemos superar la noción de &apos;crear un estado de Dhyana&apos;. El estado de la mente puede ser similar a un espacio, pero (es infinito) y por lo tanto no tiene la limitación de éste.</p>
+
+                            <p>Habiendo escuchado esto, Chi Wang fue de inmediato a Tso Kai a entrevistar al Patriarca. Después de que le preguntaron de dónde venía, le contó al Patriarca en detalle la conversación que había sostenido con Un Chak.</p>
+
+
+                            <p class="pagenum">p 61 of pdf</p>
+
+
+                            <p>&ndash;&nbsp;Lo que dijo Un Chak es correcto &apos; dijo el Patriarca. &apos; Deja que tu mente permanezca en un estado tal como el del vacío ilimitable, pero no te apegues a la idea de &apos;vacuidad&apos;. Deja que funcione libremente. Ya sea que estés activo o en descansando, deja que tu mente habite en ninguna parte. Olvídate de la discriminación entre un santo y un hombre ordinario. Ignora la diferencia entre sujeto y objeto. Deja que la &lt;Esencia de la Mente&gt; y todos los objetos fenomenales permanezcan en estado de Semejanza. Entonces estarás en el Samadhi todo el tiempo.</p>
+
+                            <p>De este modo Chi Wang fue plenamente iluminado. Lo que había considerado por los últimos veinte años como un logro, en ese momento se desvaneció. Esa noche los habitantes de Ho Pei (el banco norte del Río Amarillo) oyeron una voz en el aire, por efecto de la iluminación que el Maestro Dhyana Chi Wang había logrado en ese día.</p>
+
+                            <p>Algún tiempo después, Chi Wang se despidió del Patriarca y regresó a Ho Pei, donde enseñó a un gran número de hombres y mujeres, tanto monjes como laicos.</p>
+
+
+                            <hr />
+
+                            <div class="missing-in-english">
+
+                                <p class="alert">missing in English version?</p>
+
+
+
+                                <p>Una vez un Bhikkhu le preguntó al Patriarca qué clase de hombre podría obtener el principio fundamental de la enseñanza de Wong Mui (el Quinto Patriarca).</p>
+
+                                <p>&ndash;&nbsp;Aquel que entiende el Dharma Budista puede obtenerlo &apos; replicó el Patriarca.</p>
+
+                                <p>&ndash;&nbsp;Señor, ¿entonces usted lo ha obtenido? &apos; Preguntó el Bhikkhu.</p>
+
+                                <p>&ndash;&nbsp;Su respuesta fue &apos; Yo no conozco el Dharma Budista.</p>
+
+
+                                <hr />
+
+                                <p>Un día el Patriarca quería lavar el manto que había heredado, pero no encontraba una buena corriente de agua para tal propósito. Por lo tanto, caminó a un lugar que se encontraba a más o menos cinco millas de distancia de la parte posterior del monasterio, donde notó que las plantas y los árboles crecían profusamente y el ambiente ofrecía un aire de buenos presagios. Sacudió su bastón (el cual tintinea por los aros amarrados a su extremo superior) y lo clavó en la tierra. El agua brotó de inmediato y en breve se formó una poza.</p>
+
+                                <p>Mientras estaba arrodillado sobre la piedra lavando el manto, de repente apareció ante él un Bhikkhu quien le rindió homenaje.</p>
+
+                                <p>&ndash;&nbsp;Mi nombre es Fong Pin &apos; comenzó el Bhikkhu &apos; y soy natural de Szechuen. Cuando estaba en el Sur de la India, conocí al Patriarca Bodhidharma, quien me ordenó que regresara a la China. &apos;La Matriz del Dharma Ortodoxo&apos; &apos; me comentó &apos; junto con el manto que he heredado de Mahakasyapa ha sido ahora transmitido al Sexto Patriarca, quien ahora se encuentra en Tso Kai de Shiu Chow. Ve allí para que puedas verlos y rendirle tus respetos al Patriarca. &apos; Después de un largo viaje, he llegado. ¿Puedo ver el manto y la escudilla que has heredado?</p>
+
+
+                                <p class="pagenum">p 61 of pdf</p>
+
+                                <p>Habiéndole enseñado las dos reliquias, el Patriarca le preguntó sobre la línea de trabajo a que se dedicaba. &apos; Soy muy bueno en el trabajo escultural &apos; contestó Fong Pin.</p>
+
+                                <p>&ndash;&nbsp;Entonces, déjame ver algunos de tus trabajos &apos; exigió el Patriarca.</p>
+
+                                <p>Fong Pin estaba perplejo en ese momento, pero después de unos días fue capaz de terminar una estatua de más o menos siete pulgadas de alto, con la imagen del Patriarca, una obra maestra de escultura.</p>
+
+                                <p>(Después de haber visto la estatua) el Patriarca se rió y le dijo a Fong Pin &apos;Definitivamente conoces algo acerca de la naturaleza del arte de la escultura, pero parece que no conoces la naturaleza de Buda. Seguidamente estiró su mano para frotarle la coronilla (la forma Budista de bendecir) y declaró &apos; Serás por siempre un &apos;campo de mérito&apos; para los seres humanos y celestiales.</p>
+
+                                <p>Adicionalmente, el Patriarca premió sus servicios con un manto, el cual Fong Pin dividió en tres partes, una para vestir la estatua, una para él mismo, y una para enterrar en la tierra después de cubrirla con hojas de palma. (Al momento del entierro) hizo la promesa que para cuando se hubiese exhumado el manto, él reencarnaría como el abate del monasterio y que también se comprometía a renovar el trono y el edificio.</p>
+
+
+                                <hr />
+
+
+                                <p>Un Bhikkhu citó la siguiente Gatha (estrofa) compuesta por el Maestro Dhyana Au Lun:</p>
+
+                                <blockquote>
+                                    <p>Au Lun tiene caminos y medios</p>
+
+                                    <p>Para aislar la mente de los pensamientos.</p>
+
+                                    <p>Cuando las circunstancias no reaccionan sobre la mente,</p>
+
+                                    <p>El árbol del Bodhi (símbolo de la sabiduría) crecerá firmemente.</p>
+
+                                </blockquote>
+
+                                <p>Oyendo esto, el Patriarca dijo &apos; Esta estrofa indica que el compositor de ella no ha realizado todavía completamente la &lt;Esencia de la Mente&gt;. Al poner sus enseñanzas en práctica (no lograría la liberación), sino que uno mismo se ataría más fuertemente. Por lo tanto, él le enseñó al Bhikkhu la siguiente estrofa de su propia cosecha:</p>
+
+                                <blockquote>
+                                    <p>Wei Lang no tiene caminos ni medios</p>
+
+                                    <p>Para aislar la mente de los pensamientos.</p>
+
+                                    <p>Las circunstancias frecuentemente reaccionan sobre mi mente;</p>
+
+                                    <p>Y me pregunto, ¿cómo puede el árbol del Bodhi crecer?</p>
+                                </blockquote>
+
+
+
+
+                                <p class="pagenum">p 61 of pdf</p>
+
+
+                                <p>(Nota: En la última línea, el Patriarca desafía la declaración de que &quot;el árbol del Bodhi crecerá&quot;, ya que el Bodhi ni aumenta ni disminuye.)</p>
+
+
+                                <p>End page 63, End Chapter</p>
+
+                                <p class="alert">end part not in English version? </p>
+                            </div>
+
+
+
+
+                            <hr />
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="notes">&zwj;</a>
+                            <h4>
+                                Footnotes
+                            </h4>
+                            <p>
+                                <!-- first-only note is linked to #notes, not footnote number -->
+                                <a class="endnote" id="note-1"></a><a href="#return-anchor-1">[1]</a> NOTE By EDITOR. It will be difficult to understand this stanza without knowing a little about Mahayana psychology and the Ten Stages of Bodhisattvahood. In Mahayana the mind is conceived as a rising series of faculties for cognition, vis, (1) The six vijnanas: seeing-mind, hearing, smelling, tasting, touching, and the mental processes involved. (2) The Mano-vijnana, or discriminative mind. (3) The Manas, or intuitional-emotional-volitional mind. (4) Alaya-vijnana, or Universal Mind. It is sometimes called the system of the Vijnanas, and is developed in the great sutras, notably the Lankavatara, which has particularly to do with self-realisation. The Ten Stages of Bodhisattva-hood that culminates in Buddhahood, is the gradual getting rid of, or transcending, or transmuting, the defilements or hindrances of these successive &quot;minds.&quot; The Alaya is immaculate but it acts as a &quot;storage&quot; for the accumulated karma of habit-energy from beginningless time, and its face is thereby defiled which acts as a particularising screen for the pure rays of Prajñā, that in passing through become discolored and perfumed. This is true of each of the successive minds. Self-realisation of Mind-essence consists in getting rid of these successive layers of defilement. Success comes suddenly as one learns to &quot;about face&quot; and look inward intuitively, rather than outwardly by the discriminative faculties.
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">volver arriba</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    massac
+                    <!-- OLD page nav position -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go to top">arriba</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+# page name changes August 27, 2020
+
+Redirect 301 "/norbu-chen/norbu-chen-fate-magazine-august-1974-full-article.htm"   "/norbu-chen/norbu-chen-fate-magazine-august-1974.htm"
+
+Redirect 301 "/norbu-chen/joann-parks-yahoo-group-post-to-e-bryant-holman.htm"          "/norbu-chen/joann-parks-yahoo-group-post.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-and-uri-geller-by-edgar-mitchell-astronaut.htm"    "/norbu-chen/edgar-mitchell-comments.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-interview-with-joann-parks.htm"                    "/norbu-chen/joann-parks-interview.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-yahoo-group-post-re-william-nolen-book.htm"        "/norbu-chen/yahoo-group-william-nolen-book.htm"
+
+Redirect 301 "/norbu-chen/russ-michael-norbu-chen-healing-of-bernadene-villanueva.htm"  "/norbu-chen/russ-michael-healing-of-bernadene-villanueva.htm"
+
+
+# Nolen pages are moved into root directiory. However, the scans were left in /norbu-chen/nolen/scans/
+
+Redirect 301 "/norbu-chen/nolen/william-nolen-norbu-chen-chapter-10.htm"    "/norbu-chen/william-nolen-norbu-chen-chapter-10.htm"
+
+Redirect 301 "/norbu-chen/nolen/william-nolen-norbu-chen-chapter-11.htm"    "/norbu-chen/william-nolen-norbu-chen-chapter-11.htm"
+
+Redirect 301 "/norbu-chen/nolen/william-nolen-norbu-chen-chapter-12.htm"    "/norbu-chen/william-nolen-norbu-chen-chapter-12.htm"
+
+
+# THESE ARE OLD, now updated
+# first 2 to fix errors in the file names
+
+Redirect 301 "/norbu-chen/norbu-chen-3-fate-mag-cover-august-1974l.htm"    "/norbu-chen/norbu-chen-fate-magazine-cover.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-3-fate-mag-cover-august-1974.htm"     "/norbu-chen/norbu-chen-fate-magazine-cover.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-fate-magazine-cover-august-1974.htm"  "/norbu-chen/norbu-chen-fate-magazine-cover.htm"
+
+# DELETING THIS PAGE SEPT 22, 2020
+Redirect 410 "/norbu-chen/norbu-chen-criticism-by-william-a-nolen.htm"     
+
+
+# THESE ARE ALSO OLD, now updated
+# four had page name changes
+
+Redirect 301 "/norbu-chen/norbu-chen-1-william-nolen.htm"                     "/norbu-chen/yahoo-group-william-nolen-book.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-2-and-uri-geller-by-edgar-mitchell.htm"  "/norbu-chen/edgar-mitchell-comments.htm"
+
+Redirect 301 "/norbu-chen/norbu-chen-3-fate-mag-cover-august-1974.htm"        "/norbu-chen/norbu-chen-fate-magazine-cover.htm
+
+Redirect 301 "/norbu-chen/norbu-chen-4-interview-with-joann-parks.htm"        "/norbu-chen/interview-with-joann-parks.htm"
+
+
+# END

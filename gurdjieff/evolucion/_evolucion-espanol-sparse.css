@@ -1,0 +1,33 @@
+/* file:  /gurdjieff/_evolucion-espanol-sparse.css
+
+Updated Jan 2, 2020 o add progress bar and totop button. Update to dark theme May12, 2022
+
+ */
+
+/* background selfdefinition-responsive default is #fcfeff  ENGLISH VERSION is background:#fffff0; */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fafcff;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+The structure of menu must conform to specs of script.  */
+/* color must contrast with body */
+/* this is default Blue for for selfdefinition-responsive.css
+ #nav .menu-section a.active {background: #bde0ff;} */
+
+/* The English version Evolution is blue:    */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a #toTopButton {
+	background: #d3daef;
+}
+
+
+
+/* end */

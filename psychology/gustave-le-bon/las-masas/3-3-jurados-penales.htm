@@ -1,0 +1,199 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3.3 Jurados penales</title>
+	<meta name="description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta name="author" content="Gustave Le Bon">
+	<meta property="og:title" content="3.3 Jurados penales">
+	<meta property="og:description" content="Una de las obras de psicología social más influyentes de la historia, fundamental en la creación de este campo de estudio mediante el análisis del comportamiento de masas.">
+	<meta property="og:image" content="https://selfdefinition.org/psychology/gustave-le-bon/las-masas/images/gustave-le-bon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_las-masas-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="3-2-masas-criminales.htm">
+	<link rel="next" href="3-4-masas-electorales.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 0px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		label[for=element-toggle-27],
+		label[for=element-toggle-28] {
+			cursor: pointer;
+		}
+
+		#element-toggle-27,
+		#element-toggle-28 {
+			display: none;
+		}
+
+		#element-toggle-27:not(:checked)~#toggled-element-27,
+		#element-toggle-28:not(:checked)~#toggled-element-28 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_las-masas-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_las-masas-title-include.htm"); ?>
+									<h3>
+										<span class="block">Libro 3 Capítulo 3</span> Jurados penales
+									</h3>
+									<p class="tiny">This page in English: <a href="../the-crowd/3-3-criminal-juries.htm">..3-3-criminal-juries.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3-2-masas-criminales.htm">&lt; Masas denominadas criminales</a></li>
+									<li class="align-right"><a href="3-4-masas-electorales.htm">Masas electorales &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- English courts were the equivalent of the French as described in Wikipedia here:  <sup><a href="https://en.wikipedia.org/wiki/Assizes">[Wikipedia]</a></sup>-->
+							<p>
+								No pudiendo aquí estudiar cada categoría de jurados examinaré tan sólo la más importante -la de los jurados de la Corte de Asís. Estos jurados ofrecen un excelente ejemplo de la masa heterogénea que no es anónima. Hallaremos que demuestran tener sugestionabilidad y tan sólo una leve capacidad de raciocinio, mientras que se hallan abiertas a la influencia de los líderes de masas, estando guiadas mayormente por sentimientos inconscientes. En el transcurso de esta investigación tendremos ocasión de observar algunos ejemplos interesantes de los errores que pueden ser cometidos por personas no familiarizadas con la psicología de las masas.
+							</p>
+							<p>
+								Los jurados, en primer lugar, nos ofrecen un buen ejemplo de la escasa importancia que tiene el nivel mental de los diferentes elementos que componen una masa en lo concerniente a las decisiones que toman. Hemos visto que, cuando se convoca a una asamblea deliberativa para dar su opinión sobre una cuestión cuyo carácter no es enteramente técnico, la inteligencia no sirve de nada. Por ejemplo, una asamblea de científicos o de artistas, debido al mero hecho de formar una asamblea, no producirá, sobre asuntos generales, juicios sensiblemente diferentes de los que produciría una asamblea de albañiles o verduleros. Durante varios períodos, particularmente antes de 1848, la administración francesa instituyó una selección cuidadosa de las personas convocadas a formar un jurado, eligiendo a los jurados de entre las clases ilustradas; designando profesores, funcionarios, hombres de letras, etc. En la actualidad los jurados se reclutan en su mayor parte de entre pequeños comerciantes, pequeños capitalistas y empleados. Sin embargo, para gran asombro de los escritores especializados, las decisiones de los jurados han sido idénticas cualesquiera que fuese su composición. Incluso los magistrados, hostiles como son a la institución del jurado, han tenido que reconocer la exactitud de esta afirmación. M. Berard des Glajeux, un ex-presidente de la Corte de Asís, se manifiesta sobre el asunto en sus &quot;Memorias&quot; en los siguientes términos:
+							</p>
+							<p class="blockquote">
+								&quot;La selección de las personas del jurado está actualmente en realidad en las manos de los consejeros municipales, quienes agregan personas a la lista o las eliminan de ella de acuerdo con las preocupaciones políticas y electorales inherentes a su situación ... La mayoría de los jurados designados son personas dedicadas al comercio, pero también personas de menor importancia y empleados pertenecientes a ciertas ramas de la administración ... Ambas profesiones no cuentan para nada una vez asumido el papel de juez. Muchos de los jurados tienen el ardor de los neófitos y los hombres de las mejores intenciones, al estar similarmente dispuestos en situaciones humildes, ha hecho que el espíritu del jurado no haya cambiado: sus veredictos han permanecido siendo los mismos.&quot;
+							</p>
+							<p>
+								En el pasaje que acabamos de citar, hay que retener en la mente las conclusiones, que son correctas, y no las explicaciones, que son débiles. No debemos sorprendernos demasiado ante esta debilidad ya que, por regla, tanto consejeros como magistrados parecen ser igualmente ignorantes de la psicología de las masas y, consecuentemente, de la de los jurados. Encuentro una prueba de esta afirmación en un hecho relatado por el autor recientemente citado. Hace notar que Lachaud, uno de los más ilustres abogados de la Corte de Asís, hizo un sistemático uso de su derecho a objetar a todos los jurados inteligentes de la lista. Sin embargo, la experiencia - y solamente la experiencia - terminó haciéndonos conocer la total inutilidad de estas objeciones. Esto está probado por el hecho que hasta el día de hoy, los fiscales y los abogados - en todo caso aquellos que pertenecen al distrito de París - han renunciado enteramente a su derecho de objetar un jurado y a pesar de ello, como indica M. des Glajeux, los veredictos no han cambiado; &quot;no son, ni mejores ni peores.&quot;
+							</p>
+							<p>
+								Al igual que las masas, los jurados se impresionan muy fuertemente por consideraciones sentimentales y muy levemente por argumentos. &quot;No pueden resistir la vista&quot; - escribe un abogado - &quot;de una madre dándole el pecho a su hijo, o el de los huérfanos.&quot; &quot;Es suficiente que una mujer tenga una presencia agradable&quot; - dice M. des Glajeux - &quot;para ganarse la benevolencia del jurado&quot;.
+							</p>
+							<p>
+								Carentes de misericordia por crímenes de los cuales parecería posible que ellos mismos podrían terminar siendo víctimas - estos crímenes, por lo demás, son los más peligrosos para la sociedad - los jurados, en contrapartida, son muy indulgentes en el caso de violaciones a la ley cuyo motivo es la pasión. Son muy raramente severos en casos de infanticidio cometidos por niñas-madres, o duros con la mujer que arroja ácido sulfúrico al hombre que la ha seducido y abandonado, porque instintivamente sienten que la sociedad corre muy poco peligro por tales crímenes <sup>[27]</sup> y que en un país en el cual la ley no protege a las mujeres abandonadas, el crimen de una joven que toma venganza resulta más beneficioso que dañino, por cuanto disuade a futuros seductores.
+							</p>
+							<label for="element-toggle-27">
+								[27. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-27" type="checkbox">
+							<div id="toggled-element-27" class="cfnote hidden">
+								<p>
+									[27. Sea dicho de paso que esta división de crímenes peligrosos y no peligrosos para la sociedad, que los jurados hacen bien e instintivamente, está lejos de ser injusta. El objeto del código penal evidentemente es el de proteger a la sociedad de los criminales peligrosos y no el de vengarla. Por el otro lado, el código francés y, por sobre todo, las mentes de los magistrados franceses, todavía están profundamente imbuidos con el espíritu de venganza característico de la antigua primitiva ley y el término de &quot;reivindicar&quot; (proveniente del latín <em>vindicta,</em> es decir: venganza) sigue siendo diariamente utilizado. Una prueba de esta tendencia de parte de los magistrados se encuentra en la negativa de muchos de ellos a aplicar la Ley de Berenger que permite a una persona condenada a no cumplir la sentencia a menos que reincida en su crimen. Sin embargo, ningún magistrado puede ignorar, ya que el hecho está probado por las estadísticas, que la aplicación de un castigo inflingido por la primera vez infaliblemente conduce a un crimen subsiguiente por parte de la persona castigada. Cuando los jueces dejan en libertad a una persona sentenciada siempre les parece que la sociedad no ha sido vengada. En lugar de renunciar a esta venganza, prefieren crear un peligroso y confirmado criminal.]
+								</p>
+							</div>
+							<p>
+								Los jurados, al igual que las masas, se dejan impresionar profundamente por el prestigio y el Presidente des Gajeux destaca muy adecuadamente que por más democráticos que sean los jurados en su composición, resultan ser muy aristocráticos en sus filias y sus fobias. &quot;Nombre, cuna, gran fortuna, celebridad, la asistencia de un defensor ilustre, cualquier cosa de naturaleza distinguida o que otorgue brillo al acusado, lo pone en una posición extremadamente favorable.&quot;
+							</p>
+							<p>
+								La principal preocupación de una buena defensa debería ser la de trabajar sobre los sentimientos del jurado y, como con todas las masas, argumentar lo menos posible, o bien emplear tan sólo modos rudimentarios de razonamiento. Un abogado inglés, famoso por sus éxitos en las cortes, ha establecido muy bien la línea de acción a seguir:&mdash;
+							</p>
+							<p class="blockquote">
+								&quot;Durante el alegato observará atentamente al jurado. La oportunidad más favorable ha llegado. Basado en su conocimiento y experiencia, el abogado lee el efecto de cada frase en las caras de los miembros del jurado y saca sus conclusiones en consecuencia. El primer paso es asegurarse de cuales miembros ya son favorables a su caso. Hace falta poco trabajo para ganar definitivamente su adhesión y, habiéndolo logrado, enfoca su atención sobre los miembros que, por el contrario, parecen mal predispuestos y se dispone a descubrir por qué son hostiles al acusado. Esta es la parte delicada de su tarea puesto que puede haber una infinidad de razones para condenar a una persona, aparte del sentimiento de justicia.&quot;
+							</p>
+							<p>
+								Estas pocas líneas resumen todo el mecanismo del arte de la oratoria y vemos por qué el discurso preparado de antemano tiene un efecto tan escaso, siendo necesario poder modificar los términos empleados de un momento a otro, de acuerdo con la impresión producida.
+							</p>
+							<p>
+								El orador no necesita convertir a su opinión a todos los miembros del jurado sino solamente a los espíritus lideradores del mismo quienes determinarán la opinión general. Como en todas las masas, también en los jurados hay un reducido número de individuos que sirven de guía al resto. &quot;He hallado por experiencia&quot; - dice el abogado antes citado - &quot;que una o dos personas enérgicas bastan para arrastrar el resto del jurado con ellas&quot;. Es a esos dos o tres que es necesario convencer por medio de hábiles sugestiones. Ante todo y por encima de todo es necesario agradarles. La persona que forma parte de una masa a la cual uno ha tenido éxito en agradar está a punto de ser convencida y está bastante dispuesta a aceptar como excelente cualquier argumento que se le ofrezca. Extraigo la siguiente anécdota de un interesante informe sobre M. Lachaud al que aludo más arriba:
+							</p>
+							<p class="blockquote">
+								&quot;Es bien sabido que durante los discursos que pronunciaba en el transcurso de una sesión, Lachaud nunca perdía de vista a los dos o tres jurados de quienes sabía o presentía que eran influyentes pero obstinados. Por regla general tenía éxito en ganarse a estos jurados refractarios. En una ocasión, sin embargo, en las provincias, tuvo que vérselas con un hombre del jurado al cual le alegó en vano durante tres cuartos de hora con sus más punzantes argumentos. El hombre era el séptimo jurado, el primero sobre el segundo banquillo. El caso era desesperado. De pronto, en medio de una apasionada demostración, Lachaud se detuvo bruscamente y, dirigiéndose al Presidente de la corte le dijo: ¿Podría dar instrucciones para correr las cortinas allá enfrente? El séptimo miembro del jurado está siendo encandilado por el sol.' El hombre del jurado se ruborizó, sonrió y expresó su agradecimiento. Había sido conquistado por la defensa.&quot;
+							</p>
+							<p>
+								Muchos escritores, algunos de ellos muy distinguidos, han iniciado recientemente una fuerte campaña en contra de la institución del jurado a pesar de que es la única protección de la cual disponemos contra los errores, realmente muy frecuentes, de una casta que no se halla bajo ningún control.&nbsp;<sup>[28]</sup>
+							</p>
+							<label for="element-toggle-28">
+								[28. Mostrar/ocultar nota larga.]</label>
+							<input id="element-toggle-28" type="checkbox">
+							<div id="toggled-element-28" class="cfnote hidden">
+								<p>
+									[28. De hecho, la magistratura es la única administración cuyos actos no se hallan bajo ningún control. A pesar de todas sus revoluciones, la Francia democrática no posee ese derecho de <em>habeas corpus</em> del cual Inglaterra está tan orgullosa. Hemos desterrado a todos los tiranos, pero hemos instituido una magistratura en cada ciudad que dispone a voluntad del honor y de la libertad de los ciudadanos. Un insignificante juez de instrucción, recién salido de la universidad, posee el desagradable poder en enviar caprichosamente al presidio a personas de la más considerada posición, sobre la base de una simple suposición de culpabilidad de su parte y sin estar obligado a justificar sus actos ante nadie. Bajo el pretexto de realizar su investigación puede mantener a estas personas en prisión por seis meses y hasta por un año, y liberarlas por fin sin deberles ni una indemnización ni una disculpa. La órden de allanamiento en Francia es el exacto equivalente de la órden de cateo, con la diferencia de que esta última, cuyo empleo le fue tan justamente reprochado a la monarquía, sólo podía ser emitida por personas que ocupaban una muy alta posición, mientras que la orden de allanamiento es un instrumento que está en manos de toda una clase de ciudadanos que está muy lejos de pasar por muy ilustrada o muy independiente.]
+								</p>
+							</div>
+							<p>
+								Una parte de estos escritores aboga por un jurado reclutado exclusivamente de entre las filas de las clases ilustradas; pero ya hemos probado que aún en este caso los veredictos serían idénticos a los producidos por el actual sistema. Otros escritores, basándose en los errores cometidos por los jurados, los abolirían reemplazándolos por jueces. Es difícil de ver como estos supuestos reformadores pueden olvidar que los errores por los cuales se critica a los jurados fueron cometidos en primera instancia por los jueces y que, cuando una persona llega ante un jurado, ya ha sido hallado culpable por varios magistrados; por el juez de instrucción, por el fiscal y por la Corte de Acusación. De este modo debería quedar en claro que si el acusado fuese definitivamente juzgado por jueces en lugar de serlo por un jurado, perdería su única oportunidad de ser declarado inocente. Los errores de los jurados han sido siempre, antes que nada, errores de los magistrados. Es sólo a los magistrados, pues, a quienes se debería culpar cuando aparecen errores judiciales particularmente monstruosos como, por ejemplo, la reciente condena del Dr. L— quien, juzgado por un juez de instrucción de excesiva estupidez, sobre la base de la acusación de una joven semi idiota quien acusó al doctor de haber cometido una operación ilegal sobre ella por treinta francos, hubiera sido enviado a la cárcel si no hubiese sido por la explosión de la indignación pública que tuvo por resultado el que fuese inmediatamente liberado por el Jefe de Estado. El carácter honorable reconocido al hombre condenado por parte de todos sus conciudadanos hizo autoevidente la magnitud del error. Los propios magistrados lo admitieron y, aún así, por consideraciones de casta, hicieron todo lo que estuvo a su alcance para impedir que se firmara el indulto. En todos los casos similares, el jurado, enfrentado con detalles técnicos que es incapaz de comprender, naturalmente escucha al fiscal pensando en que, después de todo, el asunto fue investigado por magistrados adiestrados para desentrañar las situaciones más complicadas. ¿Quiénes, entonces, son los verdaderos autores del error: los miembros del jurado o los magistrados? Deberíamos aferrarnos vigorosamente a los jurados. Constituyen, quizás, la única categoría de masa que no puede ser reemplazada por ninguna individualidad. Sólo ellos pueden atemperar la severidad de la ley, la cual, igual para todos, debería en principio ser ciega y no tomar conocimiento de casos particulares. Inaccesible a la piedad y sosteniendo nada más que el texto de la ley, el juez en su severidad profesional le aplicaría la misma pena al ladrón culpable de homicidio y a la pobre muchacha a la cual la pobreza y el abandono de su seductor han llevado al infanticidio. El jurado, por el otro lado, instintivamente siente que la muchacha seducida es mucho menos culpable que el seductor quien, sin embargo, no es alcanzado por la ley, y que es ella la que merece toda indulgencia.
+							</p>
+							<p>
+								Estando bien familiarizado con la psicología de las castas y también con la psicología de otras clases de masas, no veo ningún caso en el cual, falsamente acusado de un crimen, no preferiría tener que vérmelas con un jurado antes que con magistrados. Tendría alguna chance de que mi inocencia fuese reconocida por el primero y ni la más mínima de que fuese admitida por los segundos. El poder de las masas ha de ser temido, pero el poder de ciertas castas es de temer mucho más. Las masas pueden estar abiertas a la persuasión; las castas nunca lo están.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3-2-masas-criminales.htm">&lt; Masas denominadas criminales</a></li>
+									<li class="align-right"><a href="3-4-masas-electorales.htm">Masas electorales &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!-- start of menu include file Update March 2, 2022. June 11, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/rose/">Richard Rose index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="article-index.htm"><span class="conditional-hide">Article </span>Index</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/rose/">Richard Rose index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top: 30px;">
+			<li>Newspaper Articles</li>
+			<li class="normal note">
+				<img class="menu-image" style="max-width: 185px;" src="images/richard-rose-1974.jpg" alt="Richard Rose 1974" />
+			</li>
+			<li>Richard Rose</li>
+			<li class="normal note tight">(1917-2005)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="article-index.htm">Article Index Page</a></li>
+				<li><a href="richard-rose-farm-1968.htm">1968 - McCreary Ridge Hippies Live Quietly in Hills Meditating</a></li>
+				<li><a href="1967-richard-rose-letter-to-san-francisco-oracle-about-ashram.htm">1967 - Richard Rose letter to <i>San Francisco Oracle</i> about forming a rural ashram</a></li>
+				<li><a href="1975-0215-youths-here-explain-drift-from-religion.htm">February 1975 - Youths Here Explain Drift From Religion </a></li>
+				<li><a href="1977-0614-truth-is-an-individual-trip-pyramid-zen-founder-declares.htm">June 1975 - Truth Is An Individual Trip, Pyramid Zen Founder Declares </a></li>
+				<li><a href="1977-1121-he-found-meaning-shares-experience.htm">November 1977 - He Found Meaning, Shares Experience</a></li>
+				<li><a href="1982-june-higher-mind-seminar-farm.htm">June 1982 - Higher Mind Seminar at the Farm</a></li>
+				<li><a href="1983-0806-absolute-philosopher-doesnt-want-crowd.htm">August 1983 - 'Absolute' Philosopher Doesn't Want Crowd</a></li>
+				<li class="subhead">The Shootout</li>
+				<li class="first-item"><a href="richard-rose-shooting-incident.htm">1968 - The Shootout</a></li>
+				<li><a href="richard-rose-charges-dropped.htm">1969 - Charges against Richard Rose Dropped</a></li>
+				<li class="subhead">Also see</li>
+				<li class="first-item"><a href="richard-rose-mariner-card-1947.htm">Richard Rose Mariner Card&nbsp;1947</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Richard Rose at <a href="https://en.wikipedia.org/wiki/Richard_Rose_(mystic)">Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="subhead">About Richard Rose</li>
+				<li><a href="/rose/about/richard-rose-the-man-who-was-a-mirror.htm">Richard Rose, The Man Who Was a Mirror - by Michael Casari</a></li>
+				<li><a href="/rose/about/michael-casari-about-richard-rose.htm">About Richard Rose - interview with Michael Casari, 2005</a></li>
+				<li><a href="/rose/about/richard-rose-assimilation-enlightenment.htm">Richard Rose and the Assimilation of his Enlightenment Experience - by Alan Fitzpatrick, 2012</a></li>
+				<li class="subhead">Alfred Pulyan</li>
+				<li class="first-item"><a href="/pulyan/letters/contents.htm">Alfred Pulyan's letters to Richard Rose</a></li>
+
+			</ul>
+		</div>
+		<div class="external-links">  
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">Richard Rose Lecture Transcripts at <a href="https://www.direct-mind.org/index.php?title=Recordings">Direct-Mind.Org</a></li>
+				<li>
+					Richard Rose's seminal work <em>The Albigen Papers</em> at 
+                        	<a href="https://amzn.to/3yLxTfs">Amazon.Com</a>
+				</li>
+				<li class="subhead">TAT Foundation Sites </li>
+				
+				<li class="first-item"><a href="https://tatfoundation.org/index.htm">TATFoundation.Org</a></li>
+				<li><a href="https://www.searchwithin.org/">SearchWithin.Org</a></li>
+				<!-- website down for months. Removed June 11, 2022
+				<li><a href="http://richardroseteachings.com/">RichardRoseTeachings<wbr />.Com</a></li>-->
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,69 @@
+<!-- start of menu include file Update May 31, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel will be relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<!-- not used <a href="contents.htm"></a>-->
+		<!-- must have associated css -->
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/science/">Science index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<!-- video, no top of page needed
+			 <li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide"> of page</span></a></li>-->
+		</ul>
+	</div>
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/science/">Science index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<!-- short menu, no scroll needed -->
+		</ul>
+		<!-- put this text inside ul to keep positioning consistent -->
+		<ul class="menu-text">
+			<li>Science Section</li>
+			<!--not used
+            <li class="note80 normal">Scroll menu with mouse</li>
+            -->
+		</ul>
+		<ul class="menu-text">
+			<li>
+				<img class="menu-image" src="images/science.jpg" alt="Great Architect of the Universe" />
+			</li>
+			<li class="normal note">Great Architect of the Universe</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work -->
+		<!-- must Not include directory in path for script to work -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<li><a href="/redirect/science-redirect.htm"><span class="block">Science Books</span>
+						Redirect Page</a></li>
+				<li class="spacer">
+					<hr />
+				</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li><a href="/psychology/">/psychology/</a></li>
+				<li><a href="/magic/">/magic/ (and alchemy)</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

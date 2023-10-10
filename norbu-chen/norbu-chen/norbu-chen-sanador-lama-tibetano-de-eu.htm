@@ -1,0 +1,369 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norbu Chen, el sanador Lama tibetano de EE.UU. </title>
+    <meta name="description" content="Diario de Ciencias Psíquicas, septiembre de 2017, número 7, una traducción de un artículo de la revista Fate Magazine, Agosto 1974">
+    <meta name="author" content="Thomas Valentine">
+    <meta property="og:title" content="Norbu Chen, el sanador Lama tibetano de EE.UU.">
+    <meta property="og:description" content="Diario de Ciencias Psíquicas, septiembre de 2017, número 7, una traducción de un artículo de la revista Fate Magazine, Agosto 1974">
+    <meta property="og:image" content="https://selfdefinition.org/norbu-chen/images/norbu-chen-cropped-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_norbu-chen-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- NONE link rel="prev" -->
+    <!-- NONE link rel="next" -->
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 300px;
+            border: 1px solid blue;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+        div.article-image,
+        div.right-image-div {
+            background: inherit;
+        }
+
+        html,
+        body,
+        #fixed-header-small-screen,
+        #menu-site-small-screen,
+        .progress-header,
+        .progress-container {
+            background: #e6ffef;
+        }
+
+        #ajax-menu-item {
+            display: none;
+        }
+
+        #ajax-menu-item-spanish {
+            display: block;
+        }
+
+        div.article-image {
+            font-size: 85%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_norbu-chen-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_norbu-chen-title-include.htm"); ?>
+                                    <!-- new format puts page title higher, here -->
+                                    <h3>
+                                        Norbu Chen, el sanador Lama <span class="nowrap">tibetano de EE.UU.</span>
+                                    </h3>
+                                    <p class="tiny toowide">
+                                        This page and other articles in English: <a href="norbu-chen-fate-magazine-august-1974.htm">norbu-chen-fate-magazine-august-1974.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <!-- NONE OF THIS IS USED FOR THE SPANISH VERSION
+                            STANDS OUTSIDE OF NEXT-PAGE NAV STRUCTURE
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="">&lt; Previous</a></li>
+                                    <li class="align-right"><a href="">Next &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav> 
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                </ul>
+                            </nav>
+                            -->
+                            <p>
+                                Esta página es una reimpresión de un artículo que apareció en el <em>Diario de Ciencias Psíquicas</em> en septiembre de 2017, número 7,<sup class="black">*</sup> que había sido copiado, traducido al español y parcialmente actualizado del artículo de <em>Fate Magazine</em> de agosto de 1974, como se vincula arriba.
+                            </p>
+                            <p class="note">
+                                * Fuente: <a href="https://www.slideshare.net/cienciaspsiquicas/diario-de-ciencias-psquicas-n7-septiembre-2017">Slideshare.Net</a>
+                                <!-- diariodecienciaspsquicas.com ?? -->
+                            </p>
+                            <div class="right-image-div">
+                                <img src="images/sanador/image-47-joann-reduced.jpg" alt="JoAnn Parks" title="JoAnn Parks">
+                                <p class="note">
+                                    Jo Ann Parks
+                                </p>
+                            </div>
+                            <p>
+                                Su nombre en la actualidad está asociado a una calavera que consiguió de una tumba maya en Guatemala hallada en 1926, una calavera de cristal llevada a Houston, Texas y que sus amigos Carl y Jo Ann Parks (a la derecha aparece con la calavera de cristal entre las manos) heredaron pero ¿quién fue Norbu? ¿qué cosas hizo para ser denominado sanador?
+                            </p>
+                            <p>
+                                Los experimentos científicos de laboratorio confirmaron que el control de su energía vital ha curado tumores cancerosos en ratones.
+                            </p>
+                            <p>
+                                Fue el único ciudadano estadounidense en ganar el título honorífico de Lama. Un chico de una granja de Kentucky, estudió con el Lama Norbu Lampasen la pequeña nación asiática de Sikkim, donde obtuvo el título legal.
+                            </p>
+                            <p>
+                                Chen no creía en la &quot;fe&quot; y prefería no mencionar esta palabra cuando se hablaba de curaciones. La curación es el control de la mente sobre las funciones del cuerpo, sostenía, que se producía por el uso de la energía vital que impregna el universo.
+                            </p>
+                            <p>
+                                Chen practicaba una versión particular del budismo tibetano llamado <em>Dugpah.</em> Este es el camino de los <em>&quot;sombreros rojos&quot;,</em> un grupo minoritario de monjes que practican una forma activa de budismo. Los sombreros rojos son venerados, pero a menudo temidos en el Tibet que se rigen por los practicantes llamados los <em>&quot;sombreros amarillos&quot;.</em> El Dalai Lama es un sombrero amarillo. Los monjes moderados son más populares entre las personas, ya que son pasivos, ritualistas y tolerantes en su religión, mientras que los sombreros rojos son austeros y reservados. Norbu Lampas era conocido como un &quot;mago&quot; que es común entre los monjes de sombrero rojo. Chen, un hombre pequeño, con ojos penetrantes que vivió en Houston, Texas, estudió antropología en la universidad de Kentucky, después de servir a las fuerzas armadas durante la guerra de Corea. Dijo &quot;después de un rato, vi la inutilidad del estilo de vida americano y el llamado cristianismo, así que dejé la escuela y me convertí en un buscador del conocimientos con mi propio camino&quot;.
+                            </p>
+                            <p>
+                                Su &quot;búsqueda&quot; lo llevó a dar con algunos extraños compañeros de cama en el ámbito policial.
+                            </p>
+                            <p>
+                                Usó dos alias que utilizó cuando se convirtió en asistente especial del gobernador Bert Combs de Kentucky. Chen se ofreció a ser voluntario en prisión y obtener valiosa información para el gobernador. Después siguió como espía pagado por el gobernador pero se metió en problemas y tuvo que huir para salvar su vida.
+                            </p>
+                            <p>
+                                Se fue a Inglaterra en 1960 y allí vio una exposición tibetana de Madame Alexandra David-Neel. Él quiso conocer a la gran dama por lo que viajó a su casa en Bigne, Suiza. Se habló del Tibet y la filosofía, como resultado, la Sra. David-Neel mandó una carta de presentación para un <em>Dilupa</em> Lama y Chen viajó a Asia con la esperanza de encontrar significado a su vida. Sin embargo, las prácticas hindúes de la India eran relajadas y los sombreros amarillos del Tibet no le impresionaron mucho. Chen estaba a punto de salir de Sikkim, donde muchos refugiados tibetanos huían de los comunistas chinos, cuando escuchó al maravilloso &quot;mago&quot;, Norbu Lampas.
+                            </p>
+                            <div class="article-image">
+                                <img src="images/sanador/image-48-Norbu-arm-extended-reduced.jpg" alt="Norbu Chen arm raised" title="Norbu Chen arm raised">
+                                <p>
+                                    Norbu Chen canta un <em>tantra</em> antes de &quot;golpear&quot; a los ratones en los experimentos del laboratorio en la Universidad de Trinidad, San Antonio, Texas.
+                                </p>
+                            </div>
+                            <p>
+                                Se encontró con este austero monje y dejó a los sombreros amarillos que solo hacían girar cilindros con oraciones y adorar al Dalai Lama, con desdén, se convirtió en un estudiante (. <em>trappa</em> ), bajo el mando de su profesor (gelog) y entró en el monasterio <em>(gompa).</em>
+                            </p>
+                            <p>
+                                &quot;Mi lama me enseñó el camino <em>Dugpah</em> - El camino de los sombreros rojos. Hoy demuestro el camino de la verdad mediante la acción&quot;.
+                            </p>
+                            <p>
+                                Así, en 1961, después de haber sido aceptado como estudiante, Chen se colocó inmediatamente en una cueva donde permaneció durante nueve meses. &quot;Esto fue mi enseñanza de la meditación. Me pasaban la comida por una ventana&quot;, recuerda Chen. &quot;A veces pensaba que me volvería loco, pero en defensa yo aprendí a meditar - y perdí 40 libras de peso&quot;.
+                            </p>
+                            <p>
+                                Después de tres años y medio en la <em>gompa, </em>estaba listo para realizar las pruebas para alcanzar el estado <em>gelong,</em> y ganar el título y la veneración de un lama.
+                            </p>
+                            <p>
+                                &quot;Para demostrar que habíamos aprendido a controlar nuestro cuerpo con nuestra mente tuvimos que pasar tres sencillas pruebas. Tuvimos que pasar un punzón o aguja a través de nuestras manos sin experimentar dolor o sangrado. Tuvimos que mantener brasas en cada mano, pero sin mostrar signos de quemaduras; y finalmente, tuvimos que cortar una arteria de la muñeca, sangrar momentáneamente en un recipiente, y luego con la fuerza de nuestra voluntad detener la hemorragia - o morir&quot;.
+                            </p>
+                            <p>
+                                Chen dice, &quot;no tuve ningún problema y pasé las pruebas con facilidad&quot;.
+                            </p>
+                            <p>
+                                Estos logros, afirma Chen, no son trucos, es el control de la mente sobre el cuerpo, que se ha demostrado en innumerables ocasiones por diversos profesionales de todo el mundo, así como por los monjes tibetanos. &quot;La gran diferencia entre los demás y los maestros del Tíbet está en saber lo que está pasando. Los tibeta nos entienden la ley, han avanzado más allá de la etapa de los trucos hipnóticos&quot;.
+                            </p>
+                            <div class="article-image">
+                                <img src="images/sanador/image-49-Norbu-Chen-Walt-Snyder-medical-records.jpg" alt="Walt Snyder with Norbu verify medical records" title="Walt Snyder with Norbu Chen">
+                                <p class="note">
+                                    Los registros médicos verificaron que los trastornos cardíacos y renales críticos de Walt Snyder se curaron después de solo dos sesiones de sanación con el lama Chen en Houston.
+                                </p>
+                            </div>
+                            <p>
+                                En 1965 estaba de vuelta en los Estados Unidos para practicar la curación en Houston, Texas. Norbu Chen no dio clases de curación. Su práctica se llevó a cabo bajo los auspicios de su iglesia y fundación, <em>Fundación Chakpori Ling</em> - que le impidió dar cualquier enseñanza en ese momento, pero planteó preparar clases para los estudiantes que mostrara una aptitud particular y desarrollar otros gelongs. El consejo de administración de la Fundación chakpori Ling, que lleva el nombre de la escuela de medicina de Lhasa, es impresionante. Los hombres de ese lugar han observado notables capacidades de Chen durante varios años. Incluidos C.V. Word, Jr., presidente de la Bolsa de Valores de los Estados Unidos y de la compañía petrolera McCullouck; Doris Duke, una de las mujeres más ricas del mundo y estudiante con conocimientos de las filosofías orientales; Harry Saltzman, famoso director de cine y productor de James Bond, y Tom Slick, Jr., hijo del fallecido Tomo Slick, fundador de Slick Airways, del Instituto de Investigación del Sudeste y de la Fundación de Ciencias de la Mente.
+                            </p>
+                            <p>
+                                La fundación de Chen es una organización de investigación exenta de impuestos y estableció el primer monasterio tibetano en los Estados Unidos dedicado a la curación de los enfermos. Norbu Chen no practicó la medicina, sino una religión budista activa que le permitía curar a los enfermos &quot;a través de técnicas que son perfectamente naturales, pero prácticamente desconocidas para el mundo occidental&quot;.
+                            </p>
+                            <p>
+                                Durante dos años, Chen realizó unas 20 curaciones en cada semana. El núcleo del ritual y ritos puede llevar a pagar un peaje alto. Él mismo dijo que &quot;podría quemarme en unos tres años más a este ritmo. Gran parte de mi propia energía vital se utiliza en el trabajo con otros.&quot;
+                            </p>
+                            <p>
+                                Trabajaba en una habitación con paneles de pino que contenía una tabla de &quot;operaciones&quot; y un santuario. Llevaba un traje negro de trabajo la mayor parte del tiempo, pero de vez en cuando se ponía la túnica roja y un sombrero alto de copa tibetano. Cuando un paciente se le hacía entrar en la capilla, Chen primero caminaba alrededor de la mesa de operaciones y luego daba unas zancadas hacia su santuario. En una pequeña mesa que tiene lámparas de grasa y parafernalia tradicional sagrada del monje tibetano. Esto incluía una trompeta de 400 años, hecha con un fémur y un tambor hecho de un cráneo.
+                            </p>
+                            <p>
+                                Bebía de un vaso sagrado y, de manera tibeta-na, comenzaba a cantar el &quot;om&quot;. Estos cantos están diseñados para magnificar la energía curativa que se transfiere de su cuerpo al de los pacientes.
+                            </p>
+                            <p>
+                                &quot;Yo llamo a esto la acumulación de las energías &quot;lanzadas&quot; y cuando se entrega la energía al paciente, digo que estoy haciendo un &quot;golpeo&quot;, explicó.
+                            </p>
+                            <div class="article-image">
+                                <img src="images/sanador/image-50-Norbu-red-hat-Snyder.jpg" alt="Snyder with Norbu red hat session" title="Norbu conducts healing session">
+                                <p class="note">
+                                    Después de haber completado los cantos, Chen daba vueltas a la mesa en la que estaba su paciente, colocando su mano en el cuerpo del afectado y exhalando con fuerza. Muchos pacientes dijeron sentir una repentina sensación de bienestar después de ser &quot;golpeado&quot; por esta inexplicable energía invisible.
+                                </p>
+                            </div>
+                            <p>
+                                &quot;Por lo general, puedo decir si doy un buen golpe a una dolencia&quot;, comentó Chen. &quot;A veces solo se puede efectuar una curación parcial, o incluso ninguna cura en absoluto, pero a menudo lo que puedo decir por la sensación de lo que he hecho, que un segundo golpe a los 21 días suele ser eficaz&quot;.
+                            </p>
+                            <p>
+                                Chen pedía a los pacientes que volvieran varias veces para golpes adicionales y, finalmente, para efectuar la cura notable. También ha efectuado curaciones asombrosas de mejoras generales o con éxitos individuales.
+                            </p>
+                            <p>
+                                Este lama americano no socializa con sus pacientes y muchos visitantes se quejaban de su arrogancia.
+                            </p>
+                            <p>
+                                A esta acusación respondió: &quot;No me gusta involucrarme emocionalmente con las personas que quieren la curación; es más eficaz si sé poco personalmente de ellos.&quot; No se disculpó si fue mal interpretado. &quot;No soy responsable de los sentimientos de las otras personas, así son&quot;, espetó.
+                            </p>
+                            <p>
+                                Chen trabajó con ricos y pobres por igual. Ha tratado a ricos y famosos, también a muchos mexicanos pobres que viven en Texas o al otro lado de la frontera y que acampaban en los terrenos de su monasterio con la esperanza de que les ayudase.
+                            </p>
+                            <p>
+                                A pesar de que ha trabajado con muchas personas sin ver sus informes médicos, prefiere que sus pacientes vengan con los informes médicos bien documentados. &quot;Trato de documentarme en cada caso y ahora tengo cerca de 1000 casos sólidos en el archivo, y puedo ver que he tenido una tasa del 70% de mejoras. Esto es característico de un gelong, y lo más gratificante es que la mayoría de los casos que vinieron a mí estaban graves o en estado crítico&quot;.
+                            </p>
+                            <p>
+                                Uno de los casos más sorprendentes de Chen es el de Walt Snyder, de Illinois. Snyder pasó más de tres años en los hospitales de veteranos donde los médicos le dijeron que necesitaba una operación de &quot;by-pass&quot; para seguir viviendo. Llegó a Houston para ser operado por el Dr. Michael E. DeBakey, doctor de renombre en operaciones a corazón abierto. Cuando el Dr. Debakey visitó a Snyder, una semana antes de operación programada, estuvo de acuerdo en hacer una &quot;resección total&quot;. Él le dijo al paciente asustado que no se preocupara.&quot;
+                            </p>
+                            <p>
+                                Pero Snyder se preocupó. Habló con algunos de sus amigos y con su cuñado policía y se sugirió que visitara al inusual médico lama.
+                            </p>
+                            <p>
+                                Norbu sintió que el caso de Snyder era tan grave que tendría que trabajar en un solo lado de su cuerpo.
+                            </p>
+                            <div class="article-image">
+                                <img src="images/sanador/image-51-Dr-E-Stanton-Maxey.jpg" alt="Dr. E. Stanton Maxey" title="Dr. E. Stanton Maxey">
+                                <p class="note toowide">
+                                    El cirujano Dr. E. Stanton Maxey verificó las capacidades curativas de Chen en Florida
+                                </p>
+                            </div>
+                            <p>
+                                &quot;Me imaginé dar un golpe en el lado derecho y otro en el lado izquierda, 21 días más tarde, pero hubiera sido una equivocación; el primer golpe se fijó en su corazón, por lo que en su segunda visita trabajé en sus riñones&quot;, dijo Norbu.
+                            </p>
+                            <p>
+                                Snyder al instante se sintió mucho mejor, así que detuvo su medicación. Al día siguiente tuvo un electrocardiograma y el técnico pensó que la máquina estaba rota, ya que el corazón del paciente aparecía normal. Dos especialistas fueron llamados pero no había nada malo en el corazón de Snyder.
+                            </p>
+                            <p>
+                                El Dr. DeBakey no operó. Snyder estaba sano y fuerte, y trabajó a tiempo completo por primera vez después de muchos años.
+                            </p>
+                            <p>
+                                &quot;Yo podría haber hecho un trabajo demasiado bueno&quot;, ríe Norbu. &quot;Se está poniendo más gordo que un cerdo.&quot;
+                            </p>
+                            <p>
+                                La atractiva azafata Dee Jay Kimball visitó a Chen por el Dr. Karl Parker, uno de los quiro-prácticos más respetados del sureste. El día antes de que la Srta. Kimball fuera a una histe-rectomía completa, debido a una hemorragia severa y a una infección de útero, Chen aplicó su técnica de curación.
+                            </p>
+                            <p>
+                                &quot;Yo sabía que en el instante que la golpeé, sabía que había conseguido un buen golpe en ella&quot;, dijo más tarde.
+                            </p>
+                            <p>
+                                La mujer de 25 años dijo: &quot;Yo estaba muy enferma y desesperada. Desde luego, no quería la cirugía, pero los médicos dijeron que podría morir si no me quitaban la infección. Ahora gracias a Norbu Chen, soy una mujer normal y saludable con ganas de tener hijos&quot;.
+                            </p>
+                            <p>
+                                Tales casos bien diagnosticados, casos claros, hacen que sea difícil disputar la eficacia de las curaciones de Chen. Sin embargo, a diferencia de muchos otros que reclaman la capacidad de curar, Chen ha aceptado someterse a extensas pruebas de laboratorio controlados.
+                            </p>
+                            <p>
+                                Chen ya ha sido objeto de una serie de pruebas bajo los auspicios de la Fundación Ciencia de la Mente, durante un año, encabezados por Tom Slick, Jr., y el Dr. J.W. Hahn, señalado microbiólogo. Se utilizaron las instalaciones de la Universidad Trinity de San Antonio, Texas. Y una persona escépticas, Dr. Ho-well D. Cobb; prepararon los ratones experimentales para el sanado poco ortodoxo.
+                            </p>
+                            <p>
+                                &quot;No puedo hacer una declaración definitiva en este momento&quot;, dice Cobb con la típica reticencia científica, pero los resultados fueron sorprendentes y ciertamente deben hacerse más pruebas&quot;.
+                            </p>
+                            <p>
+                                Chen, evidentemente, era capaz de efectuar curaciones en los ratones de laboratorio con tumores cancerosos. También afectó a los cultivos de tejidos de diversas algas durante las
+                            </p>
+                            <p>
+                                La atractiva azafata Dee Jay Kimball, acreditó que Norbu Chen, detectó sus hemorragias uterinas severas de las que fue tratada y la histerectomía planeada no fue necesaria
+                            </p>
+                            <p>
+                                pruebas controladas. Más pruebas estuvieron programadas para ese año.
+                            </p>
+                            <p>
+                                Una de las figuras clave responsables de la meteórica carrera de Chen en los círculos científicos fue el astronauta Edgar D. Mitchell. Mit-chell llegó a ser paciente de Chen después de presenciar una sanación, junto con otros dos médicos calificados, el Dr. Parker y el Dr. E. Stanton Maxey, cirujano de Florida. La paciente fue Anita Rettig, cuya infección en el riñón había sido diagnosticado.
+                            </p>
+                            <div class="article-image">
+                                <img src="images/sanador/image-52-Edgar-Mitchell-NASA.jpg" alt="Edgar Mitchell in spacesuit" title="Edgar Mitchell in spacesuit">
+                                <p class="note">
+                                    Edgar D. Mitchell en traje espacial de la NASA
+                                </p>
+                            </div>
+                            <p>
+                                &quot;Su estado era tal que cualquier mejoría sería una evidencia de la capacidad de Chen&quot;, dijo Mitchell. El astronauta quería también probar las capacidades de Chen para diagnosticar, así que no le dijo nada de su dolencia. &quot;Fue una prueba única&quot;, añadió Mitchell. &quot;Íbamos para verificar su diagnóstico mediante la comparación con las dadas en el quirófano y el médico&quot;.
+                            </p>
+                            <p>
+                                &quot;No estoy seguro de cómo los demás diagnosticarán&quot;, dijo Chen, &quot;pero el Dr. Parker (quiropráctico) fue el que estuvo más cerca de mi opinión. Sufría de pielonefritis, una inflamación del riñón. Me di cuenta de esta infección y su artritis en la columna, causada por el desequilibro, tanto vital como con su sistema hormonal.&quot;
+                            </p>
+                            <p>
+                                Parker y Maxey admitieron que Chen se había concentrado en la dolencia, pero por supuesto, no podían estar seguros de que era correcta la causa del desequilibrio. &quot;Me di cuenta de que el paciente tenía un dolor extremo cuando le tocaba durante mi examen&quot;, dijo Parker. &quot;Así que cuando Chen apretó las manos con fuerza contra su cuerpo durante el tratamiento, me sorprendió que ella no mostrara ningún sigo de dolor&quot;.
+                            </p>
+                            <p>
+                                En cuestión de días, la Sra. Rettig no mostró signos de enfermedad.
+                            </p>
+                            <p class="note center">
+                                * * *
+                            </p>
+                            <p>
+                                Sí, hay dolencias que Norbu Chen no ha sido capaz de curar. Él es franco y honesto acerca de esto. &quot;A pesar de que soy consciente de la ley y sé lo que hace, hay razones dentro de cada humano que afectan al cuerpo y que están más allá de mi conocimiento&quot;.
+                            </p>
+                            <div class="article-image">
+                                <img src="images/sanador/image-53-chakpori-ling-reduced.jpg" alt="Chakpori Ling center on Mountain" title="Chakpori Ling center on Mountain">
+                                <p class="note toowide">
+                                    Centro Médico Chakpori-Ling, templo tibetano creado por Norbu Chen. <span class="red">&lt; Error en el artículo original. Norbu Chen nombró a su centro en honor a este templo en el Tíbet.</span>
+                                </p>
+                            </div>
+                            <p class="center">
+                                <em>Fate Magazine&ndash;1974</em>
+                            </p>
+                            <p class="note center">
+                                [ fin ]
+                            </p>
+                            <p class="tiny center toowide">
+                                This page and other articles in English: <a href="norbu-chen-fate-magazine-august-1974.htm">norbu-chen-fate-magazine-august-1974.htm</a>
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper --> <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+# .htaccess file for selfdefinition.org/healing/phineas-quimby/quimby-manuscripts/
+
+
+# error in page name, Fixed May 1, 2020
+
+Redirect 301 "/healing/phineas-quimby/quimby-manuscripts/biography-by-george-a-qimby.htm"  "/healing/phineas-quimby/quimby-manuscripts/biography-by-george-a-quimby.htm"
+
+
+
+
+# end

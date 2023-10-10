@@ -1,0 +1,972 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Zen Teaching of Huang Po, on the Transmission of Mind</title>
+	<meta name="description" content="The Wan Ling Record, pt. 1">
+	<meta name="author" content="Huang Po. Translated by John Blofeld">
+	<meta property="og:title" content="The Zen Teaching of Huang Po, on the Transmission of Mind">
+	<meta property="og:description" content="Wan Ling Record, pt. 1">
+	<meta property="og:image" content="https://selfdefinition.org/zen/huang-po/transmission/images/huang-po-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_transmission-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="a2-chun-chou-record-cont.htm">
+	<link rel="next" href="b2-wan-ling-anecdotes.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		/* string 
+                
+        <a class="return-anchor" id="return-note-"></a><sup><a href="#note-">[]</a></sup>
+        
+<a class="endnote" id="note-"></a>
+<a class="send-back" href="#return-note-">[]</a>
+        
+        */
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_transmission-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include("_transmission-title-include.htm"); ?>
+									<h3 class="toowide">
+										<span class="normal block">Part Two</span> The Wan Ling Record of the Zen Master Huang Po (Tuan Chi)
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a class="inline-block" href="../transmision/b1-archivos-wan-ling.htm">../b1-archivos-wan-ling.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="a2-chun-chou-record-cont.htm">&lt; Ch&uuml;n Chou (cont.)</a></li>
+									<li class="align-right"><a href="b2-wan-ling-anecdotes.htm">Wan Ling&ndash;Anecdotes &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header style="margin-top:35px;">
+								<p>
+									A collection of dialogues, sermons and anecdotes recorded by P&apos;ei Hsiu during his tenure of the prefecture of Wan Ling
+								</p>
+								<h3>
+									Paragraphs 1 &ndash; 26 <span class="smaller">(of 56)</span>
+								</h3>
+							</header>
+							<div class="to-center">
+								<!-- items have :hover styling, color change -->
+								<!-- these are CSS3 columns -->
+								<!-- the uls don't float; they are display: inline-block -->
+								<nav class="contents">
+									<div class="item">
+										<a href="#1">1</a>
+									</div>
+									<div class="item">
+										<a href="#2">2</a>
+									</div>
+									<div class="item">
+										<a href="#3">3</a>
+									</div>
+									<div class="item">
+										<a href="#4">4</a>
+									</div>
+									<div class="item">
+										<a href="#5">5</a>
+									</div>
+									<div class="item">
+										<a href="#6">6</a>
+									</div>
+									<div class="item">
+										<a href="#7">7</a>
+									</div>
+									<div class="item">
+										<a href="#8">8</a>
+									</div>
+									<div class="item">
+										<a href="#9">9</a>
+									</div>
+									<div class="item">
+										<a href="#10">10</a>
+									</div>
+									<div class="item">
+										<a href="#11">11</a>
+									</div>
+									<div class="item">
+										<a href="#12">12</a>
+									</div>
+									<div class="item">
+										<a href="#13">13</a>
+									</div>
+									<div class="item">
+										<a href="#14">14</a>
+									</div>
+									<div class="item">
+										<a href="#15">15</a>
+									</div>
+									<div class="item">
+										<a href="#16">16</a>
+									</div>
+									<div class="item">
+										<a href="#17">17</a>
+									</div>
+									<div class="item">
+										<a href="#18">18</a>
+									</div>
+									<div class="item">
+										<a href="#19">19</a>
+									</div>
+									<div class="item">
+										<a href="#20">20</a>
+									</div>
+									<div class="item">
+										<a href="#21">21</a>
+									</div>
+									<div class="item">
+										<a href="#22">22</a>
+									</div>
+									<div class="item">
+										<a href="#23">23</a>
+									</div>
+									<div class="item">
+										<a href="#24">24</a>
+									</div>
+									<div class="item">
+										<a href="#25">25</a>
+									</div>
+									<div class="item">
+										<a href="#26">26</a>
+									</div>
+									<div class="item">
+										<a style="padding: 0; font-size: 80%;" href="#footnotes">Notes</a>
+									</div>
+								</nav>
+							</div>
+							<!-- end of #to-center -->
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="1">&nbsp;</a>
+							<h4>
+								1
+							</h4>
+							<p>
+								1. Once I put this question to the Master. How many of the four or five hundred persons gathered here on this mountain have fully understood Your Reverence&apos;s teaching?
+							</p>
+							<p>
+								The Master answered: Their number cannot be known. Why? Because my Way is through Mind-awakening. How can it be conveyed in words? Speech only produces some effect when it falls on the uninstructed ears of children.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="2">&nbsp;</a>
+							<h4>
+								2
+							</h4>
+							<p class="question">
+								2. Q: What is the Buddha? <a class="return-anchor" id="return-note-2a"></a><sup><a href="#footnotes">[2a]</a></sup>
+							</p>
+							<p>
+								A: Mind is the Buddha, while the cessation of conceptual thought is the Way. Once you stop arousing concepts and thinking in terms of existence and non-existence, long and short, other and self, active and passive, and suchlike, you will find that your Mind is intrinsically the Buddha, that the Buddha is intrinsically Mind, and that Mind resembles a void. <a class="return-anchor" id="return-note-2b"></a><sup><a href="#note-2b">[2b]</a></sup> Therefore is it written that &quot;the true Dharmakāya <a class="return-anchor" id="return-note-2c"></a><sup><a href="#note-2c">[2c]</a></sup> resembles es a void&quot;. Seek for naught besides this, else your search must end in sorrow. Though you perform the six pāramitās <a class="return-anchor" id="return-note-2d"></a><sup><a href="#note-2d">[2d]</a></sup> for as many aeons as there are grains of sand in the Ganges, adding also all the other sorts of activities for gaining Enlightenment, YOU WILL STILL FALL SHORT OF THE GOAL. Why? Because these are karma-forming activities and, when the good karma they produce has been exhausted, you will be born again in the ephemeral world. Therefore is it also written: &quot;The Samboghkāya <a class="return-anchor" id="return-note-2e"></a><sup><a href="#note-2e">[2e]</a></sup> is not a real Buddha, nor a real teacher of the Dharma. <a class="return-anchor" id="return-note-2f"></a><sup><a href="#note-2f">[2f]</a></sup> Only come to know the nature of your own Mind, in which there is no self and no other, and you will in fact be a Buddha!
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="3">&nbsp;</a>
+							<h4>
+								3
+							</h4>
+							<p class="question">
+								3. Q: Allowing that the Enlightened man who achieves the cessation of conceptual thought is Buddha, would not an ignorant man, on ceasing to think conceptually, lose himself in oblivion?
+							</p>
+							<p>
+								A: There ARE no Enlightened men or ignorant men, and there IS no oblivion. Yet, though basically everything is without objective existence, you must not come to think in terms of anything non-existent; and though things are not non-existent, you must not form a concept of anything existing. For &quot;existence&quot; and &quot;non-existence&quot; are both empirical concepts no better than illusions. Therefore it is written: &quot;Whatever the senses apprehend resembles an illusion, including everything ranging from mental concepts to living beings.&quot; Our Founder <a class="return-anchor" id="return-note-3"></a><sup><a href="#note-3">[3]</a></sup> preached to his disciples naught but total abstraction leading to elimination of sense-perception. In this total abstraction does the Way of the Buddhas flourish; while from discrimination between this and that a host of demons blazes forth!
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="4">&nbsp;</a>
+							<h4>
+								4
+							</h4>
+							<p class="question">
+								4. Q: If Mind and the Buddha <a class="return-anchor" id="return-note-4"></a><sup><a href="#note-4">[4]</a></sup> are intrinsically one, should we continue to practise the six pāramitās and the other orthodox means of gaining Enlightenment?
+							</p>
+							<p>
+								A: Enlightenment springs from Mind, regardless of your practice of the six pāramitās and the rest. All such practices are merely expedients for handling &quot;concrete&quot; matters when dealing with the problems of daily life. Even Enlightenment, the Absolute, Reality, Sudden Attainment, the Dharmakāya and all the others down to the Ten Stages of Progress, the Four Rewards of virtuous and wise living and the State of Holiness and Wisdom are &ndash; every one of them &ndash; mere concepts for helping us through saṁsāra; they have nothing to do with the real Buddha-Mind. Since Mind is the Buddha, the ideal way of attainment is to cultivate that Buddha-Mind. Only avoid conceptual thoughts, which lead to becoming and cessation, to the afflictions of the sentient world and all the rest; then you will have no need of methods of Enlightenment and suchlike. Therefore is it written:
+							</p>
+							<blockquote class="tight">
+								<p>
+									All the Buddha&apos;s teachings just had this single object&nbsp;&ndash;
+								</p>
+								<p>
+									To carry us beyond the stage of thought.
+								</p>
+								<p>
+									Now, if I accomplish cessation of my thinking,
+								</p>
+								<p>
+									What use to me the Dharmas Buddha taught?
+								</p>
+							</blockquote>
+							<p>
+								From Gautama Buddha down through the whole line of patriarchs to Bodhidharma, none preached aught besides the One Mind, otherwise known as the Sole Vehicle of Liberation. Hence, though you search throughout the whole universe, you will never find another vehicle. Nowhere has this teaching leaves or branches; its one quality is eternal truth. Hence it is a teaching hard to accept. When Bodhidharma came to China and reached the Kingdoms of Liang and Wei, only the Venerable Master Ko gained a silent insight into our own Mind; as soon as it was explained to him, he understood that Mind is the Buddha, and that individual mind and body are nothing. This teaching is called the Great Way. The very nature of the Great Way is voidness of opposition. Bodhidharma firmly believed in being ONE WITH THE REAL &quot;SUBSTANCE&quot; OF THE UNIVERSE IN THIS LIFE! Mind and that &quot;substance&quot; do not differ one jot &ndash; that &quot;substance&quot; is Mind. They cannot possibly be separated. It was for this revelation that he earned the title of Patriarch of our sect, and therefore is it written: &quot;The moment of realizing the unity of Mind and the &apos;substance&apos; which constitutes reality may truly be said to baffle description.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="5">&nbsp;</a>
+							<h4>
+								5
+							</h4>
+							<p class="question">
+								5. Q: Does the Buddha really liberate sentient beings? <a class="return-anchor" id="return-note-5"></a><sup><a href="#note-5">[5]</a></sup>
+							</p>
+							<p>
+								A: There are in reality no sentient beings to be delivered by the Tathāgata. If even self has no objective existence, how much less has other-than-self! Thus, neither Buddha nor sentient beings exist objectively.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="6">&nbsp;</a>
+							<h4>
+								6
+							</h4>
+							<p class="question">
+								6. Q: Yet it is recorded that &quot;Whosoever possesses the thirty-two characteristic signs of a Buddha is able to deliver sentient beings&quot;. How can you deny it?
+							</p>
+							<p>
+								A: Anything possessing ANY signs is illusory. It is by perceiving that all signs are no signs that you perceive the Tathāgata. <a class="return-anchor" id="return-note-6a"></a><sup><a href="#note-6a">[6a]</a></sup> &quot;Buddha&quot; and &quot;sentient beings&quot; are both your own false conceptions. It is because you do not know real Mind that you delude yourselves with such objective concepts. If you WILL conceive of a Buddha, YOU WILL BE OBSTRUCTED BY THAT BUDDHA!!! And when you conceive of sentient beings, you will be obstructed by those beings. All such dualistic concepts as &quot;ignorant&quot; and &quot;Enlightened&quot;, &quot;pure&quot; and &quot;impure&quot;, are obstructions. It is because your minds are hindered by them that the Wheel of the Law must be turned. <a class="return-anchor" id="return-note-6b"></a><sup><a href="#note-6b">[6b]</a></sup> Just as apes spend their time throwing things away and picking them up again unceasingly, so it is with you and your learning. All you need is to give up your &quot;learning&quot;, your &quot;ignorant&quot; and &quot;Enlightened&quot;, &quot;pure&quot; and &quot;impure&quot;, &quot;great&quot; and &quot;little&quot;, your &quot;attachment&quot; and &quot;activity&quot;. Such things are mere conveniences, mere ornaments within the One Mind. I hear you have studied the Sūtras of the twelve divisions of the Three Vehicles. They are all mere empirical concepts. Really you must give them up!
+							</p>
+							<p>
+								So just discard all you have acquired as being no better than a bed spread for you when you were sick. Only when you have abandoned all perceptions, there being nothing objective to perceive; only when phenomena obstruct you no longer; only when you have rid yourself of the whole gamut of dualistic concepts of the &quot;ignorant&quot; and &quot;Enlightened&quot; category, will you at last earn the title of Transcendental Buddha. Therefore is it written: &quot;Your prostrations are in vain. Put no faith in such ceremonies. Hie from such false beliefs.&quot; Since Mind knows no divisions into separate entities, phenomena must be equally undifferentiated. Since Mind is above all activities, so must it be with phenomena. Every phenomenon that exists is a creation of thought; therefore I need but empty my mind to discover that all of them are void. It is the same with all sense-objects, to whichever of the myriads of categories they belong. The entire void stretching out in all directions is of one substance with Mind; and, since Mind is fundamentally undifferentiated, so must it be with everything else. Different entities appear to you only because your perceptions differ &ndash; just as the colours of the precious delicacies eaten by the Devas are said to differ in accordance with the individual merits of the Devas eating them!
+							</p>
+							<p>
+								Anuttara-samyak-sa-bodhi <a class="return-anchor" id="return-note-6c"></a><sup><a href="#note-6c">[6c]</a></sup> is a name for the realization that the Buddhas of the whole universe do not in fact possess the smallest perceptible attribute. There exists just the One Mind. Truly there are no multiplicity of forms, no Celestial Brilliance, and no Glorious Victory (over samsara) or submission to the Victor. <a class="return-anchor" id="return-note-6d"></a><sup><a href="#note-6d">[6d]</a></sup> Since no Glorious Victory was ever won, there can be no such formal entity as a Buddha; and, since no submission ever took place, there can be no such formal entities as sentient beings.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="7">&nbsp;</a>
+							<h4>
+								7
+							</h4>
+							<p class="question">
+								7. Q: Even though Mind be formless, how can you deny the existence of the Thirty-Two Characteristic Signs of a Buddha, or of the Eighty Excellencies whereby people have been ferried over? <a class="return-anchor" id="return-note-7a"></a><sup><a href="#note-7a">[7a]</a></sup>
+							</p>
+							<p>
+								A: The Thirty-Two Signs are signs, <a class="return-anchor" id="return-note-7b"></a><sup><a href="#note-7b">[7b]</a></sup> and whatever has form is illusory. The Eighty Excellencies belong to the sphere of matter; but whoever perceives a self in matter is travelling the wrong path; he cannot comprehend the Tathāgata thus.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="8">&nbsp;</a>
+							<h4>
+								8
+							</h4>
+							<p class="question">
+								8. Q: Does the essential substance of the Buddha differ at all from that of sentient beings or are they identical?
+							</p>
+							<p>
+								A: Essential substance partakes neither of identity nor difference. If you accept the orthodox teachings of the Three Vehicles of Buddhism, discriminating between the Buddha-Nature and the nature of sentient beings, you will create for yourself Three Vehicle karma, and identities and differences will result. But if you accept the Buddha-Vehicle, which is the doctrine transmitted by Bodhidharma, you will not speak of such things; you will merely point to the One Mind which is without identity or difference, without cause or effect. <a class="return-anchor" id="return-note-8"></a><sup><a href="#note-8">[8]</a></sup> Therefore is it written: &quot;There is only the way of the One Vehicle; there is neither a second nor a third, except for those ways employed by the Buddha as purely relative expedients (upāya) for the liberation of beings lost in delusion.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="9">&nbsp;</a>
+							<h4>
+								9
+							</h4>
+							<p class="question">
+								9. Q: Why was the Bodhisattva of Infinite Extent unable to view the sacred sign on the crown of the Buddha&apos;s head? <a class="return-anchor" id="return-note-9a"></a><sup><a href="#note-9a">[9a]</a></sup>
+							</p>
+							<p>
+								A: There was really nothing for him to see. Why? The Bodhisattva of Infinite Extent WAS the Tathāgata; it follows that the need to look did not arise. The parable is intended to prevent your conceiving of the Buddha and of sentient beings as entities and thereby falling into the error of spacial separateness. It is a warning against conceiving of entities as existing or not existing and thereby falling into the error of special separateness, and against conceiving of individuals as ignorant or Enlightened and thereby falling into that same error. Only one entirely liberated from concepts can possess a body of infinite extent. All conceptual thinking is called erroneous belief. The upholders of such false doctrines delight in a multiplicity of concepts, but the Bodhisattva remains unmoved amid a whole host of them. &quot;Tathāgata&quot; means the THUSNESS of all phenomena. Therefore it is written: &quot;Maitreya is THUS; saints and sages are THUS.&quot; THUSNESS consists in not being subject to becoming or to destruction; THUSNESS consists in not being seen and in not being heard. The crown of the Tathāgata&apos;s head is a concept of perfection, but it is also no-perfection-to-be-conceived. So do not fall into conceiving of perfection objectively. It follows that the Buddhakāya <a class="return-anchor" id="return-note-9b"></a><sup><a href="#note-9b">[9b]</a></sup> is above all activity: <a class="return-anchor" id="return-note-9c"></a><sup><a href="#note-9c">[9c]</a></sup> therefore must you beware of discriminating between the myriads of separate forms.
+							</p>
+							<p>
+								The ephemeral may be likened to mere emptiness; <a class="return-anchor" id="return-note-9d"></a><sup><a href="#note-9d">[9d]</a></sup> the Great Void is perfection wherein is neither lack nor superfluity, a uniform quiescence in which all activity is stilled. <a class="return-anchor" id="return-note-9e"></a><sup><a href="#note-9e">[9e]</a></sup> Do not argue that there may be other regions lying outside the Great Void, for such an argument would inevitably lead to discrimination. Therefore is it written: &quot;Perfection <a class="return-anchor" id="return-note-9f"></a><sup><a href="#note-9f">[9f]</a></sup> is a deep sea of wisdom; samsāra <a class="return-anchor" id="return-note-9g"></a><sup><a href="#note-9g">[9g]</a></sup> is like a whirling chaos.&quot;
+							</p>
+							<p>
+								When we talk of the knowledge I may gain, the learning &quot;I&quot; may achieve, &quot;my&quot; intuitive understanding, &quot;my&quot; deliverence from rebirth, and &quot;my&quot; moral way of living, our successes make these concepts seem pleasant to us, but our failures make them appear deplorable. What is the use of all that? I advise you to remain uniformly quiescent and above all activity. Do not deceive yourselves with conceptual thinking, and do not look anywhere for the truth, for all that is needed is to refrain from allowing concepts to arise.
+							</p>
+							<p>
+								It is obvious that mental concepts and external perceptions are equally misleading, and that the Way of the Buddhas <a class="return-anchor" id="return-note-9h"></a><sup><a href="#note-9h">[9h]</a></sup> is as dangerous to you as the way of demons. Thus, when Mañjuśrī temporarily entered into dualism, he found himself dwarfed by two iron mountains which made egress impossible. But Mañjuśrī <a class="return-anchor" id="return-note-9i"></a><sup><a href="#note-9i">[9i]</a></sup> had true understanding, while Samantabhadra <a class="return-anchor" id="return-note-9j"></a><sup><a href="#note-9j">[9j]</a></sup> possessed only ephemeral knowledge. Nevertheless, when true understanding and ephemeral knowledge are properly integrated, it will be found that they no longer exist. There is only the One Mind, Mind which is neither Buddha nor sentient beings, for it contains no such dualism. As soon as you conceive of the Buddha, you are forced to conceive of sentient beings, or of concepts and no-concepts, of vital and trivial ones, which will surely imprison you between those two iron mountains.
+							</p>
+							<p>
+								On account of the obstacles created by dualistic reasoning, Bodhidharma merely pointed to the original Mind and substance of us all as being in fact the Buddha. He offered no false means of self-perfecting oneself; he belonged to no school of gradual attainment. His doctrine admits of no such attributes as light and dark. Since it <a class="return-anchor" id="return-note-9k"></a><sup><a href="#note-9k">[9k]</a></sup> is not light, lo there is no light; since it is not dark, lo there is no dark! Hence it follows that there is no Darkness, <a class="return-anchor" id="return-note-9l"></a><sup><a href="#note-9l">[9l]</a></sup> nor End of Darkness. <a class="return-anchor" id="return-note-9m"></a><sup><a href="#note-9m">[9m]</a></sup> Whosoever enters the gateway of our sect must deal with everything solely by means of the intellect. <a class="return-anchor" id="return-note-9n"></a><sup><a href="#note-9n">[9n]</a></sup> This sort of perception is known as the Dharma; as the Dharma is perceived, we speak of Buddha; while perceiving that in fact there are no Dharma and no Buddha is called entering the Sangha, who are otherwise known as &quot;monks dwelling above all activity&quot;; and the whole sequence may be called the Triratna or Three Jewels in one Substance. <a class="return-anchor" id="return-note-9o"></a><sup><a href="#note-9o">[9o]</a></sup>
+							</p>
+							<p>
+								Those who seek the Dharma <a class="return-anchor" id="return-note-9p"></a><sup><a href="#note-9p">[9p]</a></sup> must not seek from the Buddha, nor from the Dharma <a class="return-anchor" id="return-note-9q"></a><sup><a href="#note-9q">[9q]</a></sup> nor from the Sangha. They should seek from nowhere. When the Buddha is not sought, there is no Buddha to be found! When the Dharma is not sought, there is no Dharma to be found! When the Sangha is not sought, there is no Sangha!
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="10">&nbsp;</a>
+							<h4>
+								10
+							</h4>
+							<p class="question">
+								10. Q: You yourself are a member of the Sangha now, obviously engaged in preaching the Dharma. Then how can you declare that neither of them exists?</p>
+							<p>
+								A: If you suppose there is a Dharma to be preached, you will naturally ask me to expound it, but if you postulate a &quot;ME&quot;, that implies a spacial entity! The Dharma is NO Dharma &ndash; it is MIND! Therefore Bodhidharma said:
+							</p>
+							<blockquote class="tight">
+								<p>
+									Though I handed down Mind&apos;s Dharma,
+								</p>
+								<p>
+									How can Dharma be a Dharma?
+								</p>
+								<p>
+									For neither Mind nor Dharma
+								</p>
+								<p>
+									Can objectively exist.
+								</p>
+								<p>
+									Only thus you&apos;ll understand
+								</p>
+								<p>
+									The Dharma that is passed with Mind to Mind.
+								</p>
+							</blockquote>
+							<p>
+								Knowing that in truth not a single thing exists which can be attained! <a class="return-anchor" id="return-note-10a"></a><sup><a href="#note-10a">[10a]</a></sup> is called sitting in a bodhimandala. <a class="return-anchor" id="return-note-10b"></a><sup><a href="#note-10b">[10b]</a></sup> A bodhimandala is a state in which no concepts arise, in which you awaken to the intrinsic voidness of phenomena, also called the utter voidness of the Womb of Tathāgatas. <a class="return-anchor" id="return-note-10c"></a><sup><a href="#note-10c">[10c]</a></sup>
+							</p>
+							<blockquote class="tight">
+								<p>
+									There&apos;s never been a single thing;
+								</p>
+								<p>
+									Then where&apos;s defiling dust to cling?
+								</p>
+								<p>
+									If you can reach the heart of this,
+								</p>
+								<p>
+									Why talk of transcendental bliss? <a class="return-anchor" id="return-note-10d"></a><sup><a href="#note-10d">[10d]</a></sup></p>
+							</blockquote>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="11">&nbsp;</a>
+							<h4>
+								11
+							</h4>
+							<p class="question">
+								11. Q: If &quot;there&apos;s never been a single thing&quot;, can we speak of phenomena as non-existent?</p>
+							<p>
+								A: &quot;Non-existent&quot; is just as wrong as its opposite. Bodhi means having no concept of existence or nonexistence.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="12">&nbsp;</a>
+							<h4>
+								12
+							</h4>
+							<p class="question">
+								12. Q: What is the Buddha? <a class="return-anchor" id="return-note-12"></a><sup><a href="#note-12">[12]</a></sup>
+							</p>
+							<p>
+								A: Your Mind is the Buddha. The Buddha is Mind. Mind and Buddha are indivisible. Therefore it is written: &quot;That which is Mind is the Buddha; if it is other than Mind, it is certainly other than Buddha.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="13">&nbsp;</a>
+							<h4>
+								13
+							</h4>
+							<p class="question">
+								13. Q: If our own Mind is the Buddha, how did Bodhidharma transmit his doctrine when he came from India?
+							</p>
+							<p>
+								A: When he came from India, he transmitted only Mind-Buddha. He just pointed to the truth that the minds of all of you have from the very first been identical with the Buddha, and in no way separate from each other. That is why we call him our Patriarch. Whoever has an instant understanding of this truth suddenly transcends the whole hierarchy of saints and adepts belonging to any of the Three Vehicles. You have always been one with the Buddha, so do not pretend you can ATTAIN to this oneness by various practices. <a class="return-anchor" id="return-note-13"></a><sup><a href="#note-13">[13]</a></sup>
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="14">&nbsp;</a>
+							<h4>
+								14
+							</h4>
+							<p class="question">
+								14. Q: If that is so, what Dharma do all the Buddhas teach when they manifest themselves in the world?
+							</p>
+							<p>
+								A: When all the Buddhas manifest themselves in the world, they proclaim nothing but the One Mind. Thus, Gautama Buddha silently transmitted to Mahākāsyapa the doctrine that the One Mind, which is the substance of all things, is co-extensive with the Void and fills the entire world of phenomena. This is called the Law of All the Buddhas. Discuss it as you may, how can you even hope to approach the truth through words? Nor can it be perceived either subjectively or objectively. So full understanding can come to you only through an inexpressible mystery. The approach to it is called the Gateway of the Stillness beyond all Activity. If you wish to understand, know that a sudden comprehension comes when the mind has been purged of all the clutter of conceptual and discriminatory thought-activity. Those who seek the truth by means of intellect and learning only get further and further away from it. Not till your thoughts cease all their branching here and there, not till you abandon all thoughts of seeking for something, not till your mind is motionless as wood or stone, will you be on the right road to the Gate. <a class="return-anchor" id="return-note-14"></a><sup><a href="#note-14">[14]</a></sup>
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="15">&nbsp;</a>
+							<h4>
+								15
+							</h4>
+							<p class="question">
+								15. Q: At this very moment, all sorts of erroneous thoughts are constantly flowing through our minds. How can you speak of our having none?
+							</p>
+							<p>
+								A: Error has no substance; it is entirely the product of your own thinking. If you know that Mind is the Buddha and that Mind is fundamentally without error, whenever thoughts arise, you will be fully convinced that THEY are responsible for errors. If you could prevent all conceptual movements of thought and still your thinking-processes, naturally there would be no error left in you. Therefore is it said: &quot;When thoughts arise, then do all things arise. When thoughts vanish, then do all things vanish.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="16">&nbsp;</a>
+							<h4>
+								16
+							</h4>
+							<p class="question">
+								16. Q: At this moment, while erroneous thoughts are arising in my mind, where is the Buddha? <a class="return-anchor" id="return-note-16a"></a><sup><a href="#note-16a">[16a]</a></sup>
+							</p>
+							<p>
+								A: At this moment you are conscious of those erroneous thoughts. Well, your consciousness is the Buddha! Perhaps you can understand that, were you but free of these delusory mental processes, there would then be no &quot;Buddha&quot;. Why so? Because when you allow a movement of your mind to result in a concept of the Buddha, you are bringing into existence an objective being capable of being Enlightened. Similarly, any concept of sentient beings in need of deliverance CREATES such beings as objects of your thoughts. All intellectual processes and movements of thought result from your concepts. <a class="return-anchor" id="return-note-16b"></a><sup><a href="#note-16b">[16b]</a></sup> If you were to refrain from conceptualizing altogether, where could the Buddha continue to exist? You are in the same predicament as Mañjuśrī who, as soon as he permitted himself to conceive of the Buddha as an objective entity, was dwarfed and hemmed in on all sides by those two iron mountains.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="17">&nbsp;</a>
+							<h4>
+								17
+							</h4>
+							<p class="question">
+								17. Q: At the moment of Enlightenment, where is the Buddha?
+							</p>
+							<p>
+								A: Whence does your question proceed? Whence does your consciousness arise? When speech is silenced, all movement stilled, every sight and &ndash; sound vanished THEN is the Buddha&apos;s work of deliverence truly going forward! Then, where will you seek the Buddha? You cannot place a head upon your head, or lips upon your lips; rather, you should just refrain from every kind of dualistic distinction. <a class="return-anchor" id="return-note-17a"></a><sup><a href="#note-17a">[17a]</a></sup> Hills are hills. Water is water. Monks are monks. Laymen are laymen. But these mountains, these rivers, the whole world itself, together with sun, moon and stars &ndash; not one of them exists outside your minds! The vast chiliocosm exists only within you, so where else can the various categories of phenomena possibly be found? Outside Mind, there is nothing. The green hills which everywhere meet your gaze and that void sky that you see glistening above the earth &ndash; not a hairsbreadth of any of them exists outside the concepts you have formed for yourself! So it is that every single sight and sound is but the Buddha&apos;s Eye of Wisdom. <a class="return-anchor" id="return-note-17b"></a><sup><a href="#note-17b">[17b]</a></sup>
+							</p>
+							<p>
+								Phenomena do not arise independently but rely upon environment. <a class="return-anchor" id="return-note-17c"></a><sup><a href="#note-17c">[17c]</a></sup> And it is their appearing as objects which necessitates all sorts of individualized knowledge. You may talk the whole day through, yet what has been said? You may listen from dawn till dusk, yet what will you have heard? Thus, though Gautama Buddha preached for forty-nine years, in truth no word was spoken. <a class="return-anchor" id="return-note-17d"></a><sup><a href="#note-17d">[17d]</a></sup>
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="18">&nbsp;</a>
+							<h4>
+								18
+							</h4>
+							<p class="question">
+								18. Q: Assuming all this is so, what particular state is connoted by the word Bodhi? <a class="return-anchor" id="return-note-18"></a><sup><a href="#note-18">[18]</a></sup>
+							</p>
+							<p>
+								A: Bodhi is no state. The Buddha did not attain to it. Sentient beings do not lack it. It cannot be reached with the body nor sought with the mind. All sentient beings ARE ALREADY of one form with Bodhi.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="19">&nbsp;</a>
+							<h4>
+								19
+							</h4>
+							<p class="question">
+								19. Q: But how does one &quot;Attain to the Bodhi-Mind&quot;?
+							</p>
+							<p>
+								A: Bodhi is not something to be attained. <a class="return-anchor" id="return-note-19a"></a><sup><a href="#note-19a">[19a]</a></sup> If, at this very moment, you could convince yourselves of its unattainability, being certain indeed that nothing at all can ever be attained, you would already be Bodhi-minded. Since Bodhi is not a state, it is nothing for you to attain. And therefore is it written of Gautama Buddha; &quot;While I was yet in the realm of Dīpamkara Buddha, there was not a grain of anything to be attained by me. It was then that Dīpamkara Buddha made his prophecy that I, too, should become a Buddha.&quot; If you know positively that all sentient beings are already one with Bodhi, you will cease thinking of Bodhi as something to be attained. You may recently have heard others talking about this &quot;attaining of the Bodhi-Mind&quot;, but this may be called an intellectual way of driving the Buddha away! By following this method, you only APPEAR to achieve Buddhahood; if you were to spend aeon upon aeon in that way, you would only achieve the Sambhogakāya and Nirmāņakāya. What connection would all that have with your original and real Buddha-Nature? <a class="return-anchor" id="return-note-19b"></a><sup><a href="#note-19b">[19b]</a></sup> Therefore is it written: &quot;Seeking outside for a Buddha possessed of form has nothing to do with you.&quot;
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="20">&nbsp;</a>
+							<h4>
+								20
+							</h4>
+							<p class="question">
+								20. Q: If we have always been one with the Buddha (Absolute), why are there nevertheless beings who come into existence through the four kinds of birth and enter the six states of existence, each with the characteristic form and appearance of its kind?
+							</p>
+							<p>
+								A: The essential Buddha-Substance is a perfect whole, without superfluity or lack. It permeates the six states of existence and yet is everywhere perfectly whole. Thus, every single one of the myriads of phenomena in the universe is the Buddha (Absolute). This substance may be likened to a quantity of quicksilver which, being scattered in all directions, everywhere re-forms into perfect wholes. When undispersed, it is of one piece, the one comprising the whole and the whole comprising the one. The various forms and appearances, on the other hand, may be likened to dwellings. Just as one abandons a stable in favour of a house, so one exchanges a physical body for a heavenly body, and so on up to the planes of Pratyeka-Buddhas, Bodhisattvas and Buddhas. But all alike are things sought by you or abandoned by you; hence the differences between them. How is it possible that the original and essential nature of the universe should be subject to this differentiation?
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="21">&nbsp;</a>
+							<h4>
+								21
+							</h4>
+							<p class="question">
+								21. Q: How do the Buddhas, out of their vast mercy and compassion, preach the Dharma (Law) to sentient beings?
+							</p>
+							<p>
+								A: We speak of their mercy and compassion as vast just because it is beyond causality (and therefore infinite). By mercy is really meant not conceiving of a Buddha to be Enlightened, while compassion really means not conceiving of sentient beings to be delivered. <a class="return-anchor" id="return-note-21"></a><sup><a href="#note-21">[21]</a> </sup>
+							</p>
+							<p>
+								In reality, their Dharma is neither preached in words nor otherwise signified; and those who listen neither hear nor attain. It is as though an imaginary teacher had preached to imaginary people. As regards all these dharmas (teachings), if, for the sake of the Way, I speak to you from my deeper knowledge and lead you forward, you will certainly be able to understand what I say; and, as to mercy and compassion, if for your sakes I take to thinking things out and studying other people&apos;s concepts &ndash; in neither case will you have reached a true perception of the real nature of your own Mind from WITHIN YOURSELVES. So, in the end, these things will be of no help at all.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="22">&nbsp;</a>
+							<h4>
+								22
+							</h4>
+							<p class="question">
+								22. Q: What is the meaning of &quot;zealous application&quot;? <a class="return-anchor" id="return-note-22a"></a><sup><a href="#note-22a">[22a]</a></sup>
+							</p>
+							<p>
+								A: The most completely successful form of zealous application is the absence from your minds of all such distinctions as &quot;my body&quot;, &quot;my mind&quot;. As soon as you begin to seek for something outside your own Mind, you are like Kalirāja bent on hunting. <a class="return-anchor" id="return-note-22b"></a><sup><a href="#note-22b">[22b]</a></sup> But when you prevent your minds from going on travels outside themselves, you are already akṣānti-rishi. NO BODIES AND NO MINDS &ndash; that is the Way of the Buddhas!
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="23">&nbsp;</a>
+							<h4>
+								23
+							</h4>
+							<p class="question">
+								23. Q: If I follow this Way, and refrain from intellectual processes and conceptual thinking, shall I be certain of attaining the goal?
+							</p>
+							<p>
+								A: Such non-intellection is following the Way! Why this talk of attaining and not attaining? The matter is thus &ndash; by thinking of something you create an entity and by thinking of nothing you create another. Let such erroneous thinking perish utterly, and then nothing will remain for you to go seeking!
+
+								<span class="note">&nbsp; &nbsp;[Return to <a href="#note-14">Note 14</a>]</span>
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="24">&nbsp;</a>
+							<h4>
+								24
+							</h4>
+							<p class="question">
+								24. Q: What is meant by &quot;Transcending the Three Worlds&quot;? (Of desire, form and formlessness.) <a class="return-anchor" id="return-note-24a"></a><sup><a href="#note-24a">[24a]</a></sup>
+							</p>
+							<p>
+								A: Transcending the Three Worlds connotes rising beyond the dualism of good and evil. Buddhas appear in the world in order to make an end of desire, of form and of formless phenomena. For you also the Three Worlds will vanish if you can reach the state beyond thought. On the other hand, if you still cling to the notion that something, even if it be as small as the hundredth part of a grain, might exist objectively, then even a perfect mastery of the entire Mahāyāna Canon will fail to give you victory over the Three Worlds. Only when every one of those tiny fragments is seen to be nothing can the Mahāyāna achieve this victory for you. <a class="return-anchor" id="return-note-24b"></a><sup><a href="#note-24b">[24b]</a></sup>
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="25">&nbsp;</a>
+							<h4>
+								25
+							</h4>
+							<p>
+								25. One day, after taking his seat in the great hall, the Master began as follows. Since Mind is the Buddha (Absolute), it embraces all things, from the Buddhas (Enlightened Beings) at one extreme to the meanest of belly-crawling reptiles or insects at the other. All these alike share the Buddha-Nature and all are of the substance of the One Mind. So, after his arrival from the West, Bodhidharma transmitted naught but the Dharma of the One Mind. He pointed directly to the truth that all sentient beings have always been of one substance with the Buddha. He did not follow any of those mistaken &quot;methods of attainment&quot;. And if YOU could only achieve this comprehension of your own Mind, thereby discovering your real nature, there would assuredly be nothing for you to seek, either.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="26">&nbsp;</a>
+							<h4>
+								26
+							</h4>
+							<p class="question">
+								26. Q: How, then, does a man accomplish this comprehension of his own Mind?
+							</p>
+							<p>
+								A: That which asked the question is your own Mind; but if you were to remain quiescent and to refrain from the smallest mental activity, its substance would be seen as a void &ndash; you would find it formless, occupying no point in space and falling neither into the category of existence nor into that of non-existence. Because it is imperceptible, Bodhidharma said: &quot;Mind, which is our real nature, is the unbegotten and indestructible Womb; in response to circumstances, it transforms itself into phenomena. For the sake of convenience, we speak of Mind as the intelligence; but when it does not respond to circumstances, <a class="return-anchor" id="return-note-26a"></a><sup><a href="#note-26a">[26a]</a></sup> it cannot be spoken of in such dualistic terms as existence or nonexistence. Besides, even when engaged in creating objects in response to causality, it is still imperceptible. If you know this and rest tranquilly in nothingness &ndash; then you are indeed following the Way of the Buddhas. Therefore does the Sūtra say: &quot;Develop a mind which rests on no thing whatever.&quot;
+							</p>
+							<p>
+								Every one of the sentient beings bound to the wheel of alternating life and death is re-created from the karma of his own desires! Endlessly their hearts remain bound to the six states of existence, thereby involving them in all sorts of sorrow and pain. Ch&apos;ing Ming <a class="return-anchor" id="return-note-26b"></a><sup><a href="#note-26b">[26b]</a></sup> says: &quot;There are people with minds like those of apes who are very hard to teach; people who need all sorts of precepts and doctrines with which to force their hearts into submission.&quot; And so when thoughts arise, all sorts of dharmas <a class="return-anchor" id="return-note-26c"></a><sup><a href="#note-26c">[26c]</a></sup> follow, but they vanish with thought&apos;s cessation. We can see from this that every sort of dharma is but a creation of Mind. And all kinds of beings &ndash; humans, devas, sufferers in hell, asuras and all comprised within the six forms of life &ndash; each one of them is Mind-created. If only you would learn how to achieve a state of non-intellection, immediately the chain of causation would snap.
+							</p>
+							<p>
+								Give up those erroneous thoughts leading to false distinctions! There is no &quot;self&quot; and no &quot;other&quot;. There is no &quot;wrong desire&quot;, no &quot;anger&quot;, no &quot;hatred&quot;, no &quot;love&quot;, no &quot;victory&quot;, no &quot;failure&quot;. Only renounce the error of intellectual or conceptual thought-processes and your nature will exhibit its pristine purity &ndash; for this alone is the way to attain Enlightenment, to observe the Dharma (Law), to become a Buddha and all the rest. Unless you understand this, the whole of your great learning, your painful efforts to advance, your austerities of diet and clothing, will not help you to a knowledge of your own Mind. All such practices must be termed fallacious, for any of them will lead to your rebirth among &quot;demons&quot; &ndash; enemies of the truth &ndash; or among the crude nature spirits. What end is served by pursuits like those? Chih Kung says: &quot;Our bodies are the creations of our own minds.&quot; But how can one expect to gain such knowledge from books? If only you could comprehend the nature of your own Mind and put an end to discriminatory thought, there would naturally be no room for even a grain of error to arise. Ch&apos;ing Ming expressed this in a verse:
+							</p>
+							<blockquote class="tight">
+								<p>
+									Just spread out a mat
+								</p>
+								<p>
+									For reclining quite flat &ndash;
+								</p>
+								<p>
+									When thought&apos;s tied to a bed
+								</p>
+								<p>
+									Like a sick man growing worse.
+								</p>
+								<p>
+									All karma will cease
+								</p>
+								<p>
+									And all fancies disperse.
+								</p>
+								<p>
+									THAT&apos;S what is meant by Bodhi!
+								</p>
+							</blockquote>
+							<p>
+								As it is, so long as your mind is subject to the slightest movement of thought, you will remain engulfed in the error of taking &quot;ignorant&quot; and &quot;Enlightened&quot; for separate states; this error will persist regardless of your vast knowledge of the Mahāyāna or of your ability to pass through the &quot;Four Grades of Sainthood&quot; and the &quot;Ten Stages of Progress Leading to Enlightenment&quot;. For all these pursuits belong to what is ephemeral; even the most strenuous of your efforts is doomed to fail, just as an arrow shot never so high into the air must inevitably fall spent to the ground. So, in spite of them, you are certain to find yourselves back on the wheel of life and death. Indulging in such practices implies your failure to understand the Buddha&apos;s real meaning. Surely the endurance of so much unnecessary suffering is nothing but a gigantic error, isn&apos;t it? Chih Kung says elsewhere: &quot;If you do not meet with a teacher able to transcend the worlds, you will go on swallowing the medicine of the Mahāyāna Dharma quite in vain.&quot;
+							</p>
+							<p>
+								Were you now to practise keeping your minds motionless at all times, whether walking, standing, sitting or lying; concentrating entirely upon the goal of no thought-creation, no duality, no reliance on others and no attachments; just allowing all things to take their course the whole day long, as though you were too ill to bother; unknown to the world; innocent of any urge to be known or unknown to others; with your minds like blocks of stone that mend no holes &ndash; then all the Dharmas <a class="return-anchor" id="return-note-26d"></a><sup><a href="#note-26d">[26d]</a></sup> would penetrate your understanding through and through. In a little while you would find yourselves firmly unattached. Thus, for the first time in your lives, you would discover your reactions to phenomena decreasing and, ultimately, you would pass beyond the Triple World; and people would say that a Buddha had appeared in the world. Pure and passionless knowledge <a class="return-anchor" id="return-note-26e"></a><sup><a href="#note-26e">[26e]</a></sup> implies putting an end to the ceaseless flow of thoughts and images, for in that way you stop creating the karma that leads to rebirth &ndash; whether as gods or men or as sufferers in hell.
+							</p>
+							<p>
+								Once every sort of mental process has ceased, not a particle of karma is formed. Then, even in this life, your minds and bodies become those of a being completely liberated. Supposing that this does not result in freeing you immediately from further rebirths, at the very least you will be assured of rebirth in accordance with your own wishes. The Sūtra declares: &quot;Bodhisattvas are re-embodied into whatsoever forms they desire.&quot; But were they suddenly to lose the power of keeping their minds free from conceptual thought, attachment to form would drag them back into the phenomenal world, and each of those forms would create for them a demon&apos;s karma!
+							</p>
+							<p>
+								With the practices of the Pure Land Buddhists it is also thus, for all these practices are productive of karma; hence, we may call them Buddha-hindrances! As they would obstruct your Mind, the chain of causation would also grapple you fast, dragging you back into the state of those as yet unliberated. <a class="return-anchor" id="return-note-26f"></a><sup><a href="#note-26f">[26f]</a></sup>
+							</p>
+							<p>
+								Hence all dharmas such as those purporting to lead to the attainment of Bodhi possess no reality. The words of Gautama Buddha were intended merely as efficacious expedients for leading men out of the darkness of worse ignorance. It was as though one pretended yellow leaves were gold to stop the flow of a child&apos;s tears. Samyak-Sambodhi <a class="return-anchor" id="return-note-26g"></a><sup><a href="#note-26g">[26g]</a></sup> is another name for the realization that there are no valid Dharmas. Once you understand this, of what use are such trifles to you? According harmoniously with the conditions of your present lives, you should go on, as opportunities arise, reducing the store of old karma laid up in previous lives; and above all, you must avoid building up a fresh store of retribution for yourselves!
+							</p>
+							<p>
+								Mind is filled with radiant clarity, so cast away the darkness of your old concepts. Ch&apos;ing Ming says: &quot;Rid yourselves of everything.&quot; The sentence in the Lotus Sūtra concerning a whole twenty years spent in the shovelling away of manure symbolizes the necessity of driving from your minds whatever tends to the formation of concepts. In another passage, the same Sūtra identifies the pile of dung which has to be carted away with metaphysics and sophistry. Thus the &quot;Womb of the Tathāgatas&quot; is intrinsically a voidness and silence containing no individualized dharmas of any sort or kind. And therefore says the Sūtra: &quot;The entire realms of all the Buddhas are equally void.&quot; <a class="return-anchor" id="return-note-26h"></a><sup><a href="#note-26h">[26h]</a></sup>
+							</p>
+							<p>
+								Though others may talk of the Way of the Buddhas as something to be reached by various pious practices and by Sūtra-study, you must have nothing to do with such ideas. A perception, sudden as blinking, that subject and object are one, will lead to a deeply mysterious wordless understanding; and by this understanding will you awake to the truth of Zen. When you happen upon someone who has no understanding, you must claim to know nothing. He may be delighted by his discovery of some &quot;way to Enlightenment&quot;; yet if you allow yourselves to be persuaded by him, YOU will experience no delight at all, but suffer both sorrow and disappointment. What have such thoughts as his to do with the study of Zen? Even if you do obtain from him some trifling &quot;method&quot;, it will only be a thought-constructed dharma having nothing to do with Zen. Thus, Bodhidharma sat rapt in meditation before a wall; he did not seek to lead people into having opinions. Therefore it is written: &quot;To put out of mind even the principle from which action springs is the true teaching of the Buddhas, while dualism belongs to the sphere of demons.&quot;
+							</p>
+							<p>
+								Your true nature is something never lost to you even in moments of delusion, nor is it gained at the moment of Enlightenment. It is the Nature of the Bhūtatathatā. In it is neither delusion nor right understanding. It fills the Void everywhere and is intrinsically of the substance of the One Mind. How, then, can your mind-created objects exist outside the Void? The Void is fundamentally without spacial dimensions, passions, activities, delusions or right understanding. You must clearly understand that in it there are no things, no men and no Buddhas; for this Void contains not the smallest hairsbreadth of anything that can be viewed spacially; it depends on nothing and is attached to nothing. It is all-pervading, spotless beauty; it is the self-existent and uncreated Absolute. Then how can it even be a matter for discussion that the REAL Buddha has no mouth and preaches no Dharma, or that REAL hearing requires no ears, for who could hear it? Ah, it is a jewel beyond all price! <a class="return-anchor" id="return-note-26i"></a><sup><a href="#note-26i">[26i]</a></sup>
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="footnotes">&nbsp;</a>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="a2-chun-chou-record-cont.htm">&lt; Ch&uuml;n Chou (cont.)</a></li>
+									<li class="align-right"><a href="b2-wan-ling-anecdotes.htm">Wan Ling&ndash;Anecdotes &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<h4>
+								Footnotes
+							</h4>
+							<p class="center tiny" style="margin-top: -10px;">
+								Numbered by paragraph.</p>
+							<div class="endnote-section">
+								<p>
+									<a class="endnote" id="note-2a"></a><a class="send-back" href="#return-note-2a">[2a]</a> The Absolute.
+								</p>
+								<p>
+									<a class="endnote" id="note-2b"></a><a class="send-back" href="#return-note-2b">[2b]</a> Meaning intangible, not a mere negation.
+								</p>
+								<p>
+									<a class="endnote" id="note-2c"></a><a class="send-back" href="#return-note-2c">[2c]</a> The Absolute Body of a Buddha.
+								</p>
+								<p>
+									<a class="endnote" id="note-2d"></a><a class="send-back" href="#return-note-2d">[2d]</a> Charity, morality, patience under affliction, zealous application, right control of the mind, and the application of highest wisdom.
+								</p>
+								<p>
+									<a class="endnote" id="note-2e"></a><a class="send-back" href="#return-note-2e">[2e]</a> Buddha&apos;s Body of Bliss.
+								</p>
+								<p>
+									<a class="endnote" id="note-2f"></a><a class="send-back" href="#return-note-2f">[2f]</a> This means that the idealized or heavenly form of a Buddha, to whom the Unenlightened pray, is unreal in that he is regarded as an entity and therefore as apart from the One Mind.
+								</p>
+								<p>
+									<a class="endnote" id="note-3"></a><a class="send-back" href="#return-note-3">[3]</a> Bodhidarma.
+								</p>
+								<p>
+									<a class="endnote" id="note-4"></a><a class="send-back" href="#return-note-4">[4]</a> Absolute.
+								</p>
+								<p>
+									<a class="endnote" id="note-5"></a><a class="send-back" href="#return-note-5">[5]</a> From samṁsāra &ndash; the endless round of birth and death.
+								</p>
+								<p>
+									<a class="endnote" id="note-6a"></a><a class="send-back" href="#return-note-6a">[6a]</a> Buddha.
+								</p>
+								<p>
+									<a class="endnote" id="note-6b"></a><a class="send-back" href="#return-note-6b">[6b]</a> I.e. that the relative truths of orthodox Buddhism must be taught.
+								</p>
+								<p>
+									<a class="endnote" id="note-6c"></a><a class="send-back" href="#return-note-6c">[6c]</a> Supreme Omniscience.
+								</p>
+								<p>
+									<a class="endnote" id="note-6d"></a><a class="send-back" href="#return-note-6d">[6d]</a> Buddha.
+								</p>
+								<p>
+									<a class="endnote" id="note-7a"></a><a class="send-back" href="#return-note-7a">[7a]</a> From saṁsāra to Nirvāna.
+								</p>
+								<p>
+									<a class="endnote" id="note-7b"></a><a class="send-back" href="#return-note-7b">[7b]</a> I.e. forms.
+								</p>
+								<p>
+									<a class="endnote" id="note-8"></a><a class="send-back" href="#return-note-8">[8]</a> It is not Huang Po&apos;s intention to deny the validity of karmic law as it applies to the ephemeral world of saṁsāra.
+								</p>
+								<p>
+									<a class="endnote" id="note-9a"></a><a class="send-back" href="#return-note-9a">[9a]</a> It is clear that this question was asked by somebody not present during the previous discussions.
+								</p>
+								<p>
+									<a class="endnote" id="note-9b"></a><a class="send-back" href="#return-note-9b">[9b]</a> Absolute.
+								</p>
+								<p>
+									<a class="endnote" id="note-9c"></a><a class="send-back" href="#return-note-9c">[9c]</a> I.e. activity in production of form.
+								</p>
+								<p>
+									<a class="endnote" id="note-9d"></a><a class="send-back" href="#return-note-9d">[9d]</a> Flux.
+								</p>
+								<p>
+									<a class="endnote" id="note-9e"></a><a class="send-back" href="#return-note-9e">[9e]</a> A distinction is here made between &quot;void&quot; in the sense of flux where all forms are seen in dissolution, and the Great Void which overspreads, penetrates and is all. When the scientists speak of the stuff of the world-as mind-stuff, it is probable that they are speaking of the flux, for the Great Void can hardly have been deduced from laws governing the ephemeral world of transitory phenomena. Compared with the Great Void, &quot;mind-stuff&quot; is a relatively substantial concept!
+								</p>
+								<p>
+									<a class="endnote" id="note-9f"></a><a class="send-back" href="#return-note-9f">[9f]</a> Nirvāna.
+								</p>
+								<p>
+									<a class="endnote" id="note-9g"></a><a class="send-back" href="#return-note-9g">[9g]</a> The transient universe.
+								</p>
+								<p>
+									<a class="endnote" id="note-9h"></a><a class="send-back" href="#return-note-9h">[9h]</a> If conceived objectively.
+								</p>
+								<p>
+									<a class="endnote" id="note-9i"></a><a class="send-back" href="#return-note-9i">[9i]</a> The personification of Ultimate Wisdom.
+								</p>
+								<p>
+									<a class="endnote" id="note-9j"></a><a class="send-back" href="#return-note-9j">[9j]</a> The personification of Love and Action.
+								</p>
+								<p>
+									<a class="endnote" id="note-9k"></a><a class="send-back" href="#return-note-9k">[9k]</a> Truth.
+								</p>
+								<p>
+									<a class="endnote" id="note-9l"></a><a class="send-back" href="#return-note-9l">[9l]</a> Avidyā or primordial ignorance.
+								</p>
+								<p>
+									<a class="endnote" id="note-9m"></a><a class="send-back" href="#return-note-9m">[9m]</a> Enlightenment.
+								</p>
+								<p>
+									<a class="endnote" id="note-9n"></a><a class="send-back" href="#return-note-9n">[9n]</a> Here, &quot;intellect&quot; stands for MANAS, the highest faculty of the human mind by which a man rises from conceptual thought to intuitive knowledge.
+								</p>
+								<p>
+									<a class="endnote" id="note-9o"></a><a class="send-back" href="#return-note-9o">[9o]</a> Huang Po is juggling with the most sacred of Buddhist terms, perhaps causing some of his hearers to stiffen with disapproval, but clearly in the hope of shocking them into a deeper understanding of truth. The terse humour with which he cloaks his underlying sincerity is lost in the translation.
+								</p>
+								<p>
+									<a class="endnote" id="note-9p"></a><a class="send-back" href="#return-note-9p">[9p]</a> Truth.
+								</p>
+								<p>
+									<a class="endnote" id="note-9q"></a><a class="send-back" href="#return-note-9q">[9q]</a> Doctrine.
+								</p>
+								<p>
+									<a class="endnote" id="note-10a"></a><a class="send-back" href="#return-note-10a">[10a]</a> Grasped, perceived, conceived, etc.
+								</p>
+								<p>
+									<a class="endnote" id="note-10b"></a><a class="send-back" href="#return-note-10b">[10b]</a> A sanctuary for attaining Enlightenment.
+								</p>
+								<p>
+									<a class="endnote" id="note-10c"></a><a class="send-back" href="#return-note-10c">[10c]</a> The source of all phenomena.
+								</p>
+								<p>
+									<a class="endnote" id="note-10d"></a><a class="send-back" href="#return-note-10d">[10d]</a> This famous poem of Hui Nêng is intended to refute the view that Mind is a mirror to be cleansed of the defiling dust of phenomena, passion and other illusions, for this view leads to dualism, besides implying a certain degree of objectivity in the nature of mind. The dust and the mirror are one intangible unity.
+
+									<span class="note block">* See <a href="/zen/hui-neng/platform/contents.htm">/zen/hui-neng/<wbr />platform/<wbr />contents.htm</a></span>
+								</p>
+								<p>
+									<a class="endnote" id="note-12"></a><a class="send-back" href="#return-note-12">[12]</a> The questioner seems to be a newcomer.
+								</p>
+								<p>
+									<a class="endnote" id="note-13"></a><a class="send-back" href="#return-note-13">[13]</a> We cannot BECOME what we have always been; we can only become intuitively aware of our original state, previously hidden from us by the clouds of māyā.
+								</p>
+								<p>
+									<a class="endnote" id="note-14"></a><a class="send-back" href="#return-note-14">[14]</a> These words recall the admonitions of so many mystics &ndash; Buddhist, Christian, Hindu or Sufi &ndash; who have committed their experience to words. What Huang Po calls the total abandonment of HSIN &ndash; mind, thought, perceptions, concepts and the rest &ndash; implies the utter surrender of self insisted on by Sufi and Christian mystics. Indeed, in paragraph
+									<!-- was 28 -->23&nbsp;<sup>*</sup> he used the very words: &quot;LET THE SELF PERISH UTTERLY&quot;. Such striking unanimity of expression by mystics widely separated in time and space can hardly be attributed to coincidence. No several persons entirely unacquainted with one another could produce such closely similar accounts of purely imaginary journeys. Hence one is led to suppose that what they describe is real. This seems to have been Aldous Huxley&apos;s view when he compiled that valuable work The Perennial Philosophy.
+
+									<span class="block note">[ * In the original, was stated as #28 in error. <br /> See paragraph <a href="#23">#23</a> for a close approximation.]</span>
+
+								</p>
+								<p>
+									<a class="endnote" id="note-16a"></a><a class="send-back" href="#return-note-16a">[16a]</a> Is the One Mind then no longer present in me?
+								</p>
+								<p>
+									<a class="endnote" id="note-16b"></a><a class="send-back" href="#return-note-16b">[16b]</a> Which bring the corresponding thought objects into existence.
+								</p>
+								<p>
+									<a class="endnote" id="note-17a"></a><a class="send-back" href="#return-note-17a">[17a]</a> Since we are the Buddha, to seek him elsewhere is to place a head upon our head.
+								</p>
+								<p>
+									<a class="endnote" id="note-17b"></a><a class="send-back" href="#return-note-17b">[17b]</a> The Buddha&apos;s Eye of Wisdom commonly means the eye with which he perceives the true unity of all things. Huang Po, however, does not say &quot;perceived BY the Eye&quot;, but uses the phrase &quot;is the Eye&quot;, thereby identifying see-er and seen.
+								</p>
+								<p>
+									<a class="endnote" id="note-17c"></a><a class="send-back" href="#return-note-17c">[17c]</a> I.e. the mental environment created by us.
+								</p>
+								<p>
+									<a class="endnote" id="note-17d"></a><a class="send-back" href="#return-note-17d">[17d]</a> Words belong to the realm of flux and illusion. The truth is beyond words, a silent and profound experience. The Buddha spoke of relative means. Viewed absolutely, no word was spoken.
+								</p>
+								<p>
+									<a class="endnote" id="note-18"></a><a class="send-back" href="#return-note-18">[18]</a> Enlightenment or Supreme Wisdom.
+								</p>
+								<p>
+									<a class="endnote" id="note-19a"></a><a class="send-back" href="#return-note-19a">[19a]</a> Perceived, grasped, entered, realized, conceived, etc.
+								</p>
+								<p>
+									<a class="endnote" id="note-19b"></a><a class="send-back" href="#return-note-19b">[19b]</a> I.e. you would achieve the physical and spiritual aspects of a Buddha, which an Enlightened One bears within the various realms of transitory existence, but you would lack the Dharmakāya, the aspect of a Buddha as identical with the Absolute.
+								</p>
+								<p>
+									<a class="endnote" id="note-21"></a><a class="send-back" href="#return-note-21">[21]</a> The Zen Masters, in their single-minded desire to lead their disciples beyond the realm of dualism, would have them abandon even the notion of compassion as such, since it leads to the dualistic concept of its opposite. By Zen adepts compassion must be practised as a matter o. course and without giving rise to the least feeling of self-satisfaction Still less may it be practised as a means of gaining some heavenly or earthly reward.
+								</p>
+								<!-- numbering is funny on the page. Since 1 from the prior page overlaps, there is no "1" on this page -->
+								<p>
+									<a class="endnote" id="note-22a"></a><a class="send-back" href="#return-note-22a">[22a]</a> One of the six pāramitās.
+								</p>
+								<p>
+									<a class="endnote" id="note-22b"></a><a class="send-back" href="#return-note-22b">[22b]</a> Kalirāja is said to have sliced up some sages, including a former incarnation of Gautama Buddha. The latter bore this piecemeal dismemberment with the equanimity of akṣānti-rishi, one who practises the pāramitā of uncomplaining patience in affliction.
+								</p>
+								<p>
+									<a class="endnote" id="note-24a"></a><a class="send-back" href="#return-note-24a">[24a]</a> The formless world is far other than the Great Void, being one of the three states or worlds constituting saṁsāra.
+								</p>
+								<p>
+									<a class="endnote" id="note-24b"></a><a class="send-back" href="#return-note-24b">[24b]</a> I.e. even atoms have no objective existence &ndash; whether atoms of matter or those atoms of consciousness in which certain Buddhist metaphysicians believed.
+								</p>
+								<p>
+									<a class="endnote" id="note-26a"></a><a class="send-back" href="#return-note-26a">[26a]</a> And so rests from creating objects.
+								</p>
+								<p>
+									<a class="endnote" id="note-26b"></a><a class="send-back" href="#return-note-26b">[26b]</a> A famous lay-disciple.
+								</p>
+								<p>
+									<a class="endnote" id="note-26c"></a><a class="send-back" href="#return-note-26c">[26c]</a> Doctrines, precepts, concepts, things.
+								</p>
+								<p>
+									<a class="endnote" id="note-26d"></a><a class="send-back" href="#return-note-26d">[26d]</a> Laws of Existence or Universal Laws.
+								</p>
+								<p>
+									<a class="endnote" id="note-26e"></a><a class="send-back" href="#return-note-26e">[26e]</a> Enlightenment.
+								</p>
+								<p>
+									<a class="endnote" id="note-26f"></a><a class="send-back" href="#return-note-26f">[26f]</a> The Pure Land Sect advocates utter reliance upon Amida, Buddha of Boundless Light and Life, holding that perfect faith will ensure rebirth in a paradise where preparation for final Enlightenment follows under ideal conditions. Zen Buddhists, on the contrary, often claim that reliance on Amida Buddha is the negation of that self-reliance which Gautama Buddha taught to be the only sure path. Nevertheless, the Pure Land doctrine PROPERLY UNDERSTOOD is not truly opposed to Zen, since the real meaning of Amida is the Buddha-Substance innate in man, and rebirth into his paradise implies the awakening of the individual&apos;s mind to its Oneness with the Buddha-Substance.
+								</p>
+								<p>
+									<a class="endnote" id="note-26g"></a><a class="send-back" href="#return-note-26g">[26g]</a> Supreme Knowledge.
+								</p>
+								<p>
+									<a class="endnote" id="note-26h"></a><a class="send-back" href="#return-note-26h">[26h]</a> The implication is that the Western Paradise of Amida Buddha is as void as the rest of them.
+								</p>
+								<p>
+									<a class="endnote" id="note-26i"></a><a class="send-back" href="#return-note-26i">[26i]</a> This passage, in which the Master comes as near as possible to describing the indescribable, using terms as &quot;all-pervading spotless beauty&quot;, should be sufficient answer to those critics of Buddhist &quot;pessimism&quot; who suppose that the doctrine of śūnyatā or voidness equates Nirvāna with total extinction.
+								</p>
+							</div>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="a2-chun-chou-record-cont.htm">&lt; Ch&uuml;n Chou (cont.)</a></li>
+									<li class="align-right"><a href="b2-wan-ling-anecdotes.htm">Wan Ling&ndash;Anecdotes &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- spacer to accomadate footnotes -->
+					<p>
+						&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

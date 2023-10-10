@@ -1,0 +1,79 @@
+<!-- start of menu include file - update April 2, 2020, then April 25, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/blavatsky/">Blavatsky index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="conditional-hide-3"><a href="/">Site root</a></li>
+            <li><a href="contenido-y-titulo.htm">Contenido</a></li>
+            <li><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver
+                    </span>Arriba</a></li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/blavatsky/">Blavatsky index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item-spanish">Desplaze menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!--  "menu-text" must be a class -->
+        <ul class="menu-text center">
+            <li>Luz en el Sendero &nbsp;<span class="block normal">(1888)</span></li>
+            <li>
+                <img class="menu-image" src="images/mabel-collins.jpg" alt="Mabel Collins" />
+            </li>
+            <li>Mabel Collins <span class="normal block">&nbsp;(1851&ndash;1927)</span></li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li><a href="contenido-y-titulo.htm">Contenido y Titulo</a> </li>
+                <li><a href="seccion-1-texto.htm">Sección 1 - El Texto</a></li>
+                <li><a href="seccion-2-comentarios.htm">Sección 2 - Comentarios</a></li>
+                <!--  page removed
+                <li><a href="appendix.htm"><span class="block">Appendix (Intro</span> by Leadbeater)</a></li>
+                -->
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li>Libro: Biblioteca Upasika &quot;Teosofía Siglo XIX&quot; <a href="/blavatsky/espanol-Collins-Mabel-Luz-en-el-sendero.pdf">PDF, 37 paginas, 281 KB</a></li>
+                <li class="header-item">También en este sitio</li>
+                <li class="subhead-item">H.P. Blavatsky, <a href="/blavatsky/voz-del-silencio/contenido.htm"><em>La Voz del Silenco</em></a></li>
+                <li class="first-item">Franz Hartmann, <a href="/magic/hartmann/blanca-y-negra/contenido.htm"><em>Magia Blanca y Negra</em></a></li>
+            </ul>
+            <hr />
+            <ul class="menu-section">
+
+                <li class="header-item">Enlaces externos (inglés)</li>
+                <li class="first-item">Mabel Collins at <a href="https://en.wikipedia.org/wiki/Mabel_Collins">Wikipedia</a></li>
+                <li>Comments by Osho on this work appear in <em>The New Alchemy: To Turn You On.</em> See <a href="https://www.satrakshita.com/light_on_the_path.htm">satrakshita.com</a> </li>
+                <li>Theosophical University Press: <a style="display: inline;" href="https://www.theosociety.org/pasadena/ts/tup.htm">TUP Catalog</a></li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

@@ -1,0 +1,15 @@
+# file /driedshitzen/.htaccess     new June 8, 2022
+
+
+# Files moved June 8, 2022
+
+Redirect 301 "/driedshitzen/dried-shit-zen.htm"			"/driedshitzen/vignettes/dried-shit-zen.htm"
+
+Redirect 301 "/driedshitzen/dried-shit-zen-460.htm"		"/driedshitzen/vignettes/dried-shit-zen-460.htm"
+
+Redirect 301 "/driedshitzen/dried-shit-zen-bonus-tracks.htm"	"/driedshitzen/vignettes/dried-shit-zen-bonus-tracks.htm"
+
+Redirect 301 "/driedshitzen/dried-shit-zen-google-cache.htm"	"/driedshitzen/vignettes/dried-shit-zen-google-cache.htm"
+
+
+# end

@@ -1,0 +1,111 @@
+<!-- start of menu include file  Update June 5, 2020. May 19, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+            <li><a href="/new-thought/">New Thought index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li class="conditional-hide-3"><a href="/">Site root</a></li>
+            <li class="spanish"><a href="contenido.htm">Contenido</a></li>
+            <li class="spanish"><a href="javascript:toTopCleanUrl();">Arriba</a></li>
+        </ul>
+        <div style="clear: both;">
+        </div>
+    </div>
+    <!-- everything below disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li><a href="/new-thought/">New Thought index</a></li>
+            <li><a href="/sitemap.htm">Site map</a></li>
+            <li><a href="/">Site root</a></li>
+            <li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+            <li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text center">
+            <li class="normal note">
+                <img class="menu-image" src="images/el-kybalion-logo.jpg" alt="Kybalion cover">
+            </li>
+            <li style="font-size: 18px;">El Kybalion </li>
+            <li style="font-size: 15px;">Enseñanzas de Hermes Trismegistus</li>
+            <li class="normal note left">Por 'Tres Iniciados', Yogi Publication Society, 1908</li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <!-- no contents page yet <li><a href="contenido.htm">Contents</a></li>-->
+                <li><a href="contenido.htm">Contenido</a> </li>
+                <li><a href="introduccion.htm">Introducción</a> </li>
+                <li><a href="capitulo-01-la-philosophia-hermetica.htm">1. La filosofía hermética</a></li>
+                <li><a href="capitulo-02-los-siete-principios-hermeticos.htm">2. Los siete principios herméticos</a></li>
+                <li><a href="capitulo-03-transmutacion-mental.htm">3. Transmutación mental</a></li>
+                <li><a href="capitulo-04-el-todo.htm">4. El TODO</a></li>
+                <li><a href="capitulo-05-universo-mental.htm">5. El universo mental</a></li>
+                <li><a href="capitulo-06-la-paradoja-divina.htm">6. La paradoja divina</a></li>
+                <li><a href="capitulo-07-el-todo-en-todo.htm">7. «El Todo» en todo</a></li>
+                <li><a href="capitulo-08-los-planos-de-correspondencia.htm">8. Los planos de correspondencia</a></li>
+                <li><a href="capitulo-09-vibracion.htm">9. Vibración</a></li>
+                <li><a href="capitulo-10-polaridad.htm">10. Polaridad</a></li>
+                <li><a href="capitulo-11-ritmo.htm">11. Ritmo</a></li>
+                <li><a href="capitulo-12-causalidad.htm">12. Causalidad</a></li>
+                <li><a href="capitulo-13-genero.htm">13. Género</a></li>
+                <li><a href="capitulo-14-genero-mental.htm">14. Género mental</a></li>
+                <li><a href="capitulo-15-axiomas-hermeticos.htm">15. Axiomas herméticos</a></li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group -->
+        <div class="optional-links">
+            <hr class="menu-hr">
+            <ul class="menu-section">
+                <li>El <em>Kybalión</em> en <a class="inline" href="https://es.wikipedia.org/wiki/Kybali%C3%B3n">Wikipedia en español</a></li>
+                <li><em>El Kybalion</em> en <a class="inline" href="https://en.wikipedia.org/wiki/The_Kybalion">Wikipedia en inglés</a> </li>
+                <li>Hermes Trismegistus en <a class="inline" href="https://en.wikipedia.org/wiki/Hermes_Trismegistus">Wikipedia</a> </li>
+                <!--<li>Hermeticism at <a href="https://en.wikipedia.org/wiki/Hermeticism">Wikipedia</a></li>-->
+                <li>William Walker Atkinson en <a class="inline" href="https://en.wikipedia.org/wiki/William_Walker_Atkinson">Wikipedia</a> </li>
+                <li>Este libro en español en <a class="inline" href="https://archive.org/details/ElKybalion_842">Archive.Org</a>
+                <li>This book in English (1912 ed.) at <a class="inline" href="https://www.sacred-texts.com/eso/kyb/">Sacred-Texts.Com</a></li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="header-item">También en este sitio en español</li>
+                <li class="subhead-item">Franz Hartmann:</li>
+                <li class="first-item"><a href="/magic/hartmann/blanca-y-negra/contenido.htm">Magia Blanca y Negra</a></li>
+                <li class="subhead-item">H. P. Blavatsky:</li>
+                <li class="first-item"><a href="/blavatsky/voz-del-silencio/voz-fragmento-1.htm">La Voz del Silenco</a></li>
+                <li class="subhead-item">Mabel Collins:</li>
+                <li class="first-item"><a href="/blavatsky/luz-en-el-sendero/contenido-y-titulo.htm">Luz en el Sendero</a></li>
+                <li>Todas las páginas en español: <a href="/paginas-en-espanol.htm">paginas-en-espanol.htm</a> </li>
+
+            </ul>
+        </div>
+        <div class="external-links">
+            <ul class="menu-section">
+                <li class="external-links-item">Enlaces externas</li>
+                <li>Mucha información sobre el Kybalion aquí (inglés): <a href="http://www.kybalion.org/">www.kybalion.org/</a></li>
+                <!--
+                <li class="external-first-item">optional something<br> Link opens a <a href="">link here</a></li>
+                -->
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll" title="Top of menu">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

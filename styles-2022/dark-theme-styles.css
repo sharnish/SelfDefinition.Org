@@ -1,0 +1,258 @@
+/* dark theme styles as of May 9, 2022  */
+
+/*******************************************************
+    THIS SECTION USES "ADD DARK CLASSES" METHOD
+    Script in Title include file
+    src="/scripts/set-theme-cookie-checkbox.js"
+*/
+
+/* dark color palettes
+https://www.htmlcsscolor.com/hex/1C0E04
+
+Vermilion, dramatic
+#E34234
+https://htmlcolorcodes.com/colors/vermillion/
+
+*/
+
+/* Dark theme color inventory
+Bucke table, dark row backround: (blue) #131316, color (yellow) #fdfddd. key:  lightblue
+
+Nice green text for dark theme, Pulyan letters #afa;
+
+also see light green for footnote toggle class "hidden"
+
+*/
+
+
+@media only screen {
+
+    /* do not include "span"
+       .progress-header.dark  What is this? */
+
+    html.dark,
+    html.dark body,
+    html.dark #fixed-header-small-screen,
+    html.dark #menu-site-small-screen,
+    html.dark .progress-header,
+    /* progress-header-is covered by progress-container */
+    html.dark .progress-container,
+    html.dark p.black,
+    html.dark span.black,
+    html.dark sup.black,
+    html.dark sup.asterisk {
+        background: #202020;
+        /* update April 20, 2022 */
+        color: #fdfdff;
+    }
+
+    html.dark.spanish,
+    html.dark.spanish body,
+    html.dark.spanish #fixed-header-small-screen,
+    html.dark.spanish #menu-site-small-screen,
+    html.dark.spanish .progress-header,
+    /* progress-header-is covered by progress-container */
+    html.dark.spanish .progress-container,
+    html.dark.spanish sup.black {
+        /* update May 30, 2022
+        background: #252729; */
+		/* update Dec 29, 2022 */
+		background: #222222; 
+    }
+
+    html.dark #nav .menu-section a.active,
+    html.dark #menu-scroll,
+    html.dark #menu-scroll a,
+    html.dark #toTopButton,
+    html.dark .item:hover,
+    html.dark nav.contents .item:hover {
+        /* WAS background: #449; 
+        update Sp 19, 2022 */
+        background: #303090;
+    }
+
+    html.dark #toTopButton {
+        border: 0px solid #ccf;
+    }
+
+    /* (lightblue #add8e6) is not bright enough    */
+    html.dark a,
+    html.dark a:visited,
+    html.dark a:link,
+    html.dark a:hover,
+    html.dark #toTopButton {
+        color: aqua;
+        /* aqua is #00ffff; */
+    }
+
+    /* used in Tranmision-Spanish
+    Template to change link color in article (exclude toTopButton)
+    html.dark #article a,
+    html.dark #article a:visited,
+    html.dark #article a:link,
+    html.dark #article a:hover {
+        color: #90eea0;
+    } */
+
+    /* if different
+    /* aqua is #00ffff;
+    html.dark #article p.totop-above-anchor a {
+        color: aqua;
+        color: #00ffcc;
+    } */
+
+    /* gold is this: #FFD700  try #FF8362 */
+    html.dark .progress-bar {
+        background: aqua;
+    }
+
+    html.dark label,
+    html.dark p.logo,
+    html.dark .fnote,
+    html.dark p.fnote,
+    html.dark sup,
+    html.dark .disclaimer,
+    html.dark .maroon {
+        color: #FA8362;
+        /* make brighter May 30, 2022 */
+        color: #FA9473;
+        /* brightened for Life of Parcelsus June 22, 2022 as follows
+        color: #FDA888;
+        much easier to read
+        Vermilion, dramatic
+		#E34234
+		https://htmlcolorcodes.com/colors/vermillion/
+				 */
+    }
+
+    html.dark #index-lists ul li.header-item,
+    html.dark #index-lists ul li.external-links-item,
+    html.dark #index-lists ul li.site-links-item,
+    html.dark #index-lists ul li.optional-links-item,
+    html.dark #index-lists ul li.other-links-item,
+    html.dark .menu-section li.header-item,
+    html.dark .menu-section li.external-links-item,
+    html.dark .menu-section li.site-links-item,
+    html.dark .menu-section li.optional-links-item,
+    html.dark .menu-section li.other-links-item {
+        color: #FA8362;
+        /* make brighter May 30, 2022 */
+        color: #FA9473;
+    }
+
+    /* if used other than in an index list or menu-include */
+    html.dark #index-lists ul li.header-item,
+    html.dark ul li.external-links-item,
+    html.dark ul li.site-links-item,
+    html.dark ul li.optional-links-item,
+    html.dark ul li.other-links-item,
+    html.dark li.header-item,
+    html.dark li.external-links-item,
+    html.dark li.site-links-item,
+    html.dark li.optional-links-item,
+    html.dark li.other-links-item {
+        color: #FA8362;
+        /* make brighter May 30, 2022 */
+        color: #FA9473;
+    }
+
+
+    html.dark h5 {
+        color: inherit;
+    }
+
+    /* lightblue = add8e6 is not bright enough?    */
+    html.dark ul.next-previous-item-list li a:link,
+    html.dark ul.next-previous-item-list li a:visited {
+        color: lightblue;
+    }
+
+    /* chapter summmaries page */
+    html.dark ul.chapter-summaries li.link {
+        background: inherit;
+    }
+
+    html.dark p.question {
+        background: #313131;
+    }
+
+    /* from line about 420 default is 90%
+    html.dark ul.next-previous-item-list,
+    html.dark ul.next-previous-item-list li.align-left,
+    html.dark ul.next-previous-item-list li.align-right {
+        font-size: 95%;
+    }  */
+
+    /* see _scrollbar-and-test.js for Ajax display/hide */
+    html.dark #menu-site li.ajax-menu-item,
+    html.dark #menu-site li.ajax-menu-item-spanish {
+        color: #FF3333;
+        font-weight:bold;
+        font-size:11px;
+    }
+
+    html.dark label {
+        color: #FA8362;
+        /* make brighter May 30, 2022 */
+        color: #FA9473;
+        background: #303030;
+        /* was #202020 */
+    }
+
+    html.dark div.hidden,
+    html.dark p.hidden {
+        /* color: lightgreen; */
+        color: #caffca;
+        color: #d6ffd6;
+        /* to get more contrast */
+        background: inherit;
+    }
+
+    html.dark p.beige {
+        color: black !important;
+    }
+
+    html.dark .red {
+        color: #FF3040;
+    }
+
+    html.dark p.highlight,
+    html.dark div.highlight,
+    html.dark span.highlight {
+        background: #303030;
+    }
+
+    html.dark .alert {
+        background: #555;
+    }
+
+    html.dark mark {
+        background: #404040
+    }
+
+    /* make hr a little weaker */
+    html.dark hr {
+        color: #ccc;
+    }
+
+    /* same color as body */
+    html.dark #salutation,
+    html.dark .salutation {
+        color: #fdfdff;
+    }
+
+    .gold-if-dark,
+    a.gold-if-dark {
+        color: #047005;
+    }
+
+    /* https: //encycolorpedia.com/d4af37 */
+    html.dark .gold-if-dark,
+    html.dark a.gold-if-dark {
+        color: gold;
+    }
+
+}
+
+/*******************************************************
+ **** END DARK STYLES *********/

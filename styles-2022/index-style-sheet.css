@@ -1,0 +1,171 @@
+/* File:  selfdefinition.org/index-style-sheet.css update Oct 5, 2016 then April 19, 2019 */
+/* Used for automatic-index directory listings */
+/* ref: http://www.apachelounge.com/viewtopic.php?p=21759 */
+/* When header files are used, this stylesheet is overridden by
+    the following stylesheet:  /styles/selfdefinition-section-indexes.css  */
+
+
+/* MEDIA QUERIES:
+	viewport:  good for Firefox but not Chrome on android 
+*/
+
+/* for html injection see the Style-update spreadsheet in /styles-2022-Working -> spredsheets
+
+	Code in .htaccess file as follows: 
+	
+# test mobility issue reported by Google on /celibacy/
+# https://www.askapache.com/htaccess-file/htaccess/meodai-mod_autoindexoh-master-htaccess/
+# META VIEWPORT
+# NO   IndexHeadInsert "<meta name="viewport" content="width=device-width, initial-scale=1">"
+# MUST ESCAPE " MARKS
+
+IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+
+have been used in the following so far, don't know if they work
+Afterlife -> Victor Solow
+
+*/
+	
+
+
+/* added the following on Nov 3, 2018. Doesn't do anything on Chrome */	
+@viewport {
+  width: device-width;
+}
+
+/* IE only *
+/* setting a fixed width gives different results on different IE versions */
+@-ms-viewport {
+  width: device-width;
+}
+
+	
+/* WAS  html, body { background:#ffffe3; }  
+	Update August 1, 2022  */
+html, body { 
+	color: #fdfdff;
+	background: #252729; }
+
+body { font-family: verdana, tahoma, arial, sans-serif; 
+	  font-size:14px; line-height: 2.1em; margin-left:2em; }
+
+h1		{font-size: 16px;}  
+table	{font-size: 16px;}
+
+
+body {margin:30px auto; width:auto;max-width:520px;} 
+
+/* apparently can only set margin on body, can't get it to work on table */
+table {max-width:500px;}
+
+
+/* added 19 Apr 2019. Put some more space at bottom of page */
+/* you cannot add html tags inside content:"" of pseudo-element. */
+
+table::after {  
+	content: "";
+	display:block;
+	background:transparent;
+	height:150px;
+}
+
+
+/* Media query is ignored in Chrome EXCEPT for breakpoint at 980px or larger  */
+/* table must be narrower than body, or the right side will be cut off */
+/* Weird thing is, media query is recognized momentarily on Chrome, then effects disappear 
+@media only screen and (max-width:980px) {	
+	body	{width:auto;max-width:470px;margin:30px auto;}
+	table	{width:auto;max-width:450px;}
+}
+ */
+
+/* TEST styling on a phone
+
+Does not work on Chrome or Firebox so commented out
+
+@media only screen and (max-width:500px} {
+	
+	table td {background:yellow;}
+}
+*/
+
+/* none of this does anything in Chrome
+@viewport {
+width: auto;
+zoom: 1.0;
+orientation: portrait;
+} 
+*/
+
+/* this does nothing in chrome
+@viewport {
+    width: device-width;     
+  }
+*/
+
+/* this also does nothing in chrome
+@media only screen and (max-width:980px) {	
+	@viewport {
+		width: device-width;     
+	  }
+	body {background:yellow;}
+}
+
+Try again as above:
+https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport
+
+*/
+
+
+ 
+	  
+/* http://www.html5hacks.com/blog/2012/11/28/elegantly-resize-your-page-with-the-at-viewport-css-declaration/
+*/
+/* Example 1 - this does nothing, even outside a media query 
+@viewport {width: 375px;}
+*/
+
+/* CSS "content" property
+http://www.w3schools.com/CSSref/pr_gen_content.asp 
+single and double colons both work, except that IE8 only supports single */
+
+/* The following doesn't work in IE7, but is ok in IE8 */
+table:before { content: "If you arrived here via the site map, you can return by using the Back button"; } 
+
+/* The folloing doesn't work in IE8, but is ok in IE9 */
+/* Trick to add the full path to the "Parent Directory" anchor. */
+tr:nth-child(3) > td:nth-child(1) a:after { content: " https://selfdefinition.org" attr(href); } 
+
+/* This doesn't do anything: 
+title::before { content: "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"}
+*/
+
+/* file listings need a monospece font */
+/* A proper IndexOptions combination has to be set so that 
+   files will be listed in a "table" element, not "pre" */
+
+h1 {margin-left:5px;}
+
+table {
+	font-family: lucida console, prestige, courier; 
+	font-weight: bold;
+	line-height: 30px;
+	margin-left: 5px;}
+	
+	td {padding-top:20px;}
+
+/* update August 1, 2022 */
+th a:link {color:aqua;}
+
+a:link    { color: aqua; text-decoration: none; }
+a:active  { color: red; text-decoration: none }
+a:visited { color: aqua; text-decoration: none;}
+a:hover   { color: white; text-decoration: underline;}
+
+
+
+
+/* end */
+
+
+

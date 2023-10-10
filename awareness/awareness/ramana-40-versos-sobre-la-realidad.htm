@@ -1,0 +1,453 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cuarenta versos sobre la realidad</title>
+	<meta name="description" content="Dios ilumina la mente y brilla dentro de ella, sin ser visto.  
+    Sólo tomar la mente hacia el interior y fijarla en Él es tener Su visión.">
+	<meta name="author" content="Ramana Maharshi">
+	<meta property="og:title" content="Cuarenta versos sobre la realidad">
+	<meta property="og:description" content="Dios ilumina la mente y brilla dentro de ella, sin ser visto.  
+    Sólo tomar la mente hacia el interior y fijarla en Él es tener Su visión.">
+	<meta property="og:image" content="https://selfdefinition.org/awareness/images/ramana-color-cuarenta-versos.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_awareness-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* Special color for pages in Spanish */
+
+		html,
+		body {
+			background: #e0fff6;
+		}
+
+		ul.footnote-list {
+			list-style: none;
+		}
+
+		article {
+			border: 0px solid blue;
+		}
+
+		/*        
+        .right-image-div {
+            border: 1px solid red;
+        }        
+        .right-image-div img {
+            border: 1px solid blue;
+        }
+        #article h4 {border: 1px solid green;}
+        */
+
+		#article h4 {
+			margin-top: -15px;
+		}
+
+		#ramana-float-container {
+			/* No styling is used for this element. Just has html. 
+            Was constructed originally for this page, 
+            then used in Spanish version */
+		}
+
+		/* put the heading either at same level as the image, or below the image */
+
+		#article #oration-wide-screen {
+			display: block;
+			text-align: center;
+			margin-top: 35px;
+		}
+
+		#oration-small-screen {
+			display: none;
+			margin-top: 35px;
+		}
+
+		@media only screen and (max-width:767px) {
+			#article h4 {
+				text-align: left;
+				margin-left: 15px;
+			}
+
+			#article #oration-wide-screen {
+				display: none;
+			}
+
+			#article #oration-small-screen {
+				display: block;
+				margin-top: 35px;
+				text-align: left;
+			}
+		}
+
+		@media only screen and (max-width:500px) {
+			#article #oration-small-screen {
+				display: block;
+				margin-top: 25px;
+			}
+
+			#article h4 {
+				margin-bottom: 5px;
+			}
+
+			ol.invocatory,
+			ol.verses {
+				margin-top: 5px;
+			}
+		}
+
+		ol.invocatory {
+			border: 0px solid green;
+		}
+
+		ol.verses li,
+		ol.invocatory li {
+			border: 0px solid blue;
+		}
+
+		ol {
+			border: 0px solid red;
+		}
+
+		ol.invocatory li {
+			list-style-type: lower-roman;
+		}
+
+		/* because of double digits in this list, 
+        This overrides stylesheet to give more space on left margin.
+        SS = ol li {margin-left: -15px;}
+        */
+
+		ol li {
+			margin-left: -7px;
+		}
+
+		/* in CSS style sheeet, about line 57, I remove numbering for numbered lists
+        for widths 500 and less, to makes the content fuller width
+        (pobably only on the Muruganar pages so far)
+        This is only appropriate for short lists.
+        
+        /* SS = get rid of Disk/Numbering for small screens
+        @media only screen and (max-width:500px){
+            ul {padding-left:33px;}
+            ol {padding-left:33px;}
+            ul li {margin-left:-35px;list-style:none;}
+            ol li {margin-left:-25px;list-style:none;}
+        }
+
+        The following restores numbering on small 
+        screens for this page */
+
+		@media only screen and (max-width:500px) {
+			ol.invocatory li {
+				list-style: inside lower-roman;
+				margin-left: -30px;
+			}
+
+			ol.verses li {
+				list-style: inside decimal;
+				margin-left: -30px;
+			}
+
+			ol.invocatory li:before {
+				display: block;
+				content: "";
+				color: #ecc;
+				height: 5px;
+			}
+
+			ol.verses li:before {
+				display: block;
+				content: "";
+				color: red;
+				height: 5px;
+			}
+		}
+
+		/* spacing below item */
+
+		ol.verses li {
+			margin-bottom: 30px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2 class="toowide">
+										Cuarenta versos sobre la realidad
+									</h2>
+									<h3>
+										Ramana Maharshi
+									</h3>
+									<p>
+										<span class="tiny">English: <a href="ramana-40-verses-on-reality.htm">ramana-40-verses-on-reality.htm</a></span> <a class="return-anchor" id="return-anchor-1"></a><sup><a href="#footnotes">[1]</a></sup>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is positioned within article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ramana-who-am-i.htm">&lt; Ramana: Who Am I?</a></li>
+									<li class="align-right"><a href="nisargadatta-practice.htm">Nisargadatta: Practice &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p class="note80 center">También en español: <a href="ramana-quien-soy-yo.htm">
+									ramana-quien-soy-yo.htm</a></p>
+							<!-- compensate, move up because of extra line of text in the header -->
+							<h4 id="oration-wide-screen">
+								Oración
+							</h4>
+							<div id="ramana-float-container">
+								<div class="right-image-div">
+									<img style="margin-top:10px; max-width:200px;" src="images/ramana-color-cuarenta-versos.jpg" alt="Ramana Maharshi" />
+								</div>
+
+								<h4 id="oration-small-screen">
+									Oración
+								</h4>
+								<ol class="invocatory">
+									<li>
+										Si la realidad no existiera, ¿podría haber algún conocimiento de la existencia? Libre de todos los pensamientos, la Realidad reside en el Corazón, la Fuente de todos los pensamientos. Es, por lo tanto, llamado el Corazón. ¿Cómo, pues, hay que contemplarlo? Ser como es en el corazón, es su contemplación.
+									</li>
+									<li>
+										Los que conocen el miedo intenso a la muerte buscan refugio solo a los pies del Señor que no tiene ni muerte ni nacimiento. Muertos a sí mismos y sus posesiones, ¿se les puede ocurrir de nuevo el pensamiento de la muerte? Sin muerte son ellos.
+									</li>
+								</ol>
+								<div style="clear:both;"></div>
+							</div>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="verses">&nbsp;</a>
+							<h4>
+								Los Versos
+							</h4>
+							<ol class="verses">
+								<li>
+									De nuestra percepción del mundo sigue la aceptación de un Primer Principio único que posee varios poderes. Imágenes de nombre y forma, la persona que ve, la pantalla en la que ve y la luz con la que ve: él mismo es todo esto.
+								</li>
+								<li>
+									Todas las religiones postulan los tres fundamentos: el mundo, el alma y Dios, pero es solo la Realidad que se manifiesta a sí misma como estas tres. Uno puede decir: &quot;Los tres son realmente tres&quot; solo mientras dure el ego. Por lo tanto, adentrarse en el propio Ser, donde el &quot;Yo&quot;, o ego, está muerto, es el Estado perfecto. </li>
+								<li>
+									&quot;El mundo es real&quot;. &quot;No, es una mera apariencia ilusoria&quot;. &quot;El mundo es consciente&quot;. &quot;No.&quot; &quot;El mundo es felicidad&quot;. &quot;No.&quot; ¿De qué sirve argumentar así? Ese Estado es agradable para todos, en el cual, habiendo renunciado a la visión objetiva, uno se conoce a sí mismo y pierde todas las nociones de unidad o dualidad, de uno mismo y del ego.
+								</li>
+								<li>
+									Si uno tiene forma, el mundo y Dios también parecen tener forma, pero si uno no tiene forma, ¿quién es el que ve esas formas y cómo? Sin el ojo, ¿se puede ver algún objeto? El Ser que ve es el Ojo, y ese Ojo es el Ojo del Infinito.
+								</li>
+								<li>
+									El cuerpo es una forma compuesta de las cinco envolturas; por lo tanto, todas las cinco envolturas están implícitas en el término cuerpo. ¿Aparte del cuerpo existe el mundo? ¿Alguien ha visto el mundo sin el cuerpo?
+								</li>
+								<li>
+									El mundo no es más que una encarnación de los objetos percibidos por los cinco órganos sensoriales. Dado que, a través de estos cinco órganos sensoriales, una sola mente percibe el mundo, el mundo no es más que la mente. ¿Aparte de la mente puede haber un mundo?
+								</li>
+								<li>
+									Aunque el mundo y su conocimiento aparecen y desaparecen juntos, es solo por el conocimiento que el mundo se hace evidente. La Perfección en la que el mundo y su conocimiento aparecen y desaparecen, y que brilla sin que aparecen y desaparecen, es solo la Realidad.
+								</li>
+								<li>
+									Bajo cualquier nombre y forma, uno puede adorar a la Realidad Absoluta, es solo un medio para realizarlo sin nombre ni forma. Solo eso es la verdadera realización en la que uno se conoce a sí mismo en relación con esa Realidad, alcanza la paz y se da cuenta de su identidad con ella.
+								</li>
+								<li>
+									La dualidad de sujeto y objeto y la trinidad de vidente, facultad de la vista, y las cosas vistas pueden existir solo si están apoyadas por el Uno. Si uno se vuelve hacia adentro en busca de esa Realidad Única, ellos desaparecen. Los que ven esto son los que ven la Sabiduría. Nunca están en duda.
+								</li>
+								<li>
+									El conocimiento ordinario está siempre acompañado por la ignorancia, y la ignorancia por el conocimiento; el único Conocimiento verdadero es aquel por el cual uno conoce al Ser a través de la indagación de quién es el conocimiento y la ignorancia.
+								</li>
+								<li>
+									¿No es, más bien, ignorancia saber todo lo demás sin conocerse a uno mismo, el conocedor? Tan pronto como uno conoce al Ser, que es el sustrato del conocimiento y la ignorancia, el conocimiento y la ignorancia perecen.
+								</li>
+								<li>
+									Solo eso es verdadero Conocimiento que no es ni conocimiento ni ignorancia. Lo que se sabe no es verdadero conocimiento. Puesto que el Sí mismo brilla con nada más que saber o dar a conocer, solo el Conocimiento es. No es un vacío.
+								</li>
+								<li>
+									El Sí mismo, que es Conocimiento, es la única Realidad. El conocimiento de la multiplicidad es conocimiento falso. Este conocimiento falso, que en realidad es ignorancia, no puede existir aparte del Sí mismo, que es la Realidad del Conocimiento. La variedad de adornos de oro es irreal, ya que ninguno de ellos puede existir sin el oro del cual están hechos todos.
+								</li>
+								<li>
+									Si la primera persona, yo, existe, entonces la segunda y la tercera persona, tú y él, también existirán. Al indagar sobre la naturaleza del yo, el yo perece. Con él, &quot;tú&quot; y &quot;él&quot; también perecen. El estado resultante, que brilla como Ser Absoluto, es el propio estado natural de uno, el Ser.
+								</li>
+								<li>
+									Sólo con referencia al presente puede existir el pasado y el futuro. Ellos también, aunque actuales, son el presente. Tratar de determinar la naturaleza del pasado y del futuro mientras se ignora el presente es como tratar de contar sin el número uno?
+								</li>
+								<li>
+									Aparte de nosotros, ¿dónde está el tiempo y dónde está el espacio? Si somos cuerpos, estamos involucrados en el tiempo y el espacio, pero ¿lo somos? Somos uno e idéntico ahora, entonces, y para siempre, aquí y en todas partes. Por lo tanto, nosotros, el Ser intemporal y sin espacio, solo estamos.
+								</li>
+								<li>
+									Para aquellos que no se han realizado del Sí mismo, así como para aquellos que lo han hecho, la palabra "yo" se refiere al cuerpo, pero con esta diferencia, que para aquellos que no se han realizado, el "yo" se limita al cuerpo mientras que para aquellos que se han realizado del Ser dentro del cuerpo, el "Yo" brilla como el Ser ilimitado.
+								</li>
+								<li>
+									<!-- 18 -->
+									Para aquellos que no se han realizado del Sí mismo, así como para aquellos que lo han hecho, el mundo es real. Pero para aquellos que no se han realizado, la Verdad se adapta a la medida del mundo, mientras que para aquellos que la tienen, la Verdad brilla como la Perfección sin Forma, y como el Subestrato del mundo. Esta es toda la diferencia entre ellos.
+								</li>
+								<li>
+									Solo aquellos que no tienen conocimiento de la Fuente del destino y el libre albedrío disputan sobre cuál de ellos prevalece. Los que conocen al Ser como la única Fuente de destino y libre albedrío están libres de ambos. ¿Se enredarán de nuevo en ellos?
+								</li>
+								<li>
+									El que ve a Dios sin ver al Ser, solo ve una imagen mental. Dicen que el que ve al Sí mismo ve a Dios. El que, habiendo perdido completamente el ego, ve al Sí mismo, ha encontrado a Dios, porque el Sí mismo no existe aparte de Dios.
+								</li>
+								<li>
+									¿Cuál es la Verdad de las Escrituras que declaran que si uno ve al Sí mismo, ve a Dios? ¿Cómo puede uno ver su propio Ser? Si, dado que uno es un solo ser, uno no puede ver su Ser, ¿cómo puede uno ver a Dios? Sólo por convertirse en una presa para él.
+								</li>
+								<li>
+									<!-- 22 -->
+									Lo Divino da luz a la mente y brilla dentro de ella. Excepto al girar la mente hacia adentro y fijarla en lo Divino, no hay otra manera de conocerlo a través de la mente.
+								</li>
+								<li>
+									El cuerpo no dice &quot;yo&quot;. Nadie argumentará que incluso en el sueño profundo el &quot;yo&quot; deja de existir. Una vez que el &quot;yo&quot; emerge, todo lo demás emerge. Con una mente aguda, pregunte de dónde surge este &quot;yo&quot;.
+								</li>
+								<li>
+									Este cuerpo inerte no dice &quot;yo&quot;. La Realidad-Conciencia no emerge. Entre los dos, y limitado a la medida del cuerpo, algo emerge como "yo". Esto es lo que se conoce como Chit-jada-granthi (el nudo entre el consciente y el inerte), y también como la esclavitud, el alma, el cuerpo sutil, el ego, el samsara, la mente, etc.
+								</li>
+								<li>
+									Llegó a estar equipado con una forma, y siempre que retenga una forma perdura. Teniendo una forma, se alimenta y crece grande. Pero si lo investigas, este espíritu maligno, que no tiene forma propia, abandona su control sobre la forma y emprende el vuelo.
+								</li>
+								<li>
+									Si el ego es, todo lo demás también lo es. Si el ego no lo es, nada más lo es. De hecho, el ego es todo. Por lo tanto, la indagación sobre qué es este ego, es la única forma de renunciar a todo.
+								</li>
+								<li>
+									El estado de no-emergencia del "yo" es el estado de ser ESO. Sin buscar ese estado de la no emergencia del "yo" y alcanzarlo, ¿cómo puede uno lograr su propia extinción, desde la cual el "yo" no revive? Sin ese logro, ¿cómo es posible permanecer en el verdadero Estado de uno, donde uno es ESO?
+								</li>
+								<li>
+									Del mismo modo que un hombre bucearía para obtener algo que había caído al agua, uno debería sumergirse en uno mismo, con una mente aguda de un punto, controlando el habla y la respiración, y encontrar el lugar donde se origina el "yo".
+								</li>
+								<li>
+									La única indagación que conduce a la Realización del Ser es buscar la Fuente del &quot;yo&quot; con la mente cambiada y sin pronunciar la palabra &quot;yo&quot;. Meditación sobre &quot;No soy esto; Yo soy Eso &quot;puede ser una ayuda para la investigación, pero no puede ser la investigación.
+								</li>
+								<li>
+									Si uno indaga &quot;¿Quién soy yo?&quot; dentro de la mente, el &quot;yo&quot; individual se cae abatido tan pronto como uno llega al corazón e inmediatamente la realidad se manifiesta espontáneamente como &quot;yo&ndash;yo&quot;. Aunque se revela a sí mismo como &quot;yo&quot;, no es el ego sino el Ser Perfecto, el Ser Absoluto.
+								</li>
+								<li>
+									Para Aquel que está inmerso en la dicha del Yo, que surge de la extinción del ego, ¿qué queda por lograr? Él no es consciente de nada más que del Sí mismo. ¿Quién puede aprehender su estado?
+								</li>
+								<li>
+									Aunque las escrituras proclaman &quot;Tú eres eso&quot;, es solo un signo de debilidad mental meditar &quot;Yo soy eso, no esto&quot;, porque tú eres eternamente eso. Lo que hay que hacer es investigar qué es realmente uno y seguir siendo Eso.
+								</li>
+								<li>
+									Es ridículo decir: &quot;No me he realizado al Ser&quot; o &quot;Me he realizado al Ser&quot;; ¿Hay dos yo, para que uno sea el objeto de la realización del otro? Es una verdad en la experiencia de todos que solo hay un Sí mismo.
+								</li>
+								<li>
+									Es debido a la ilusión nacida de la ignorancia que los hombres no reconocen Eso que es siempre y para todos, la Realidad inherente que habita en su Centro Natural del Corazón y que permanecen en él, y que en su lugar argumentan que existe o no existe, que tiene forma o no tiene forma, o es no dual o dual.
+								</li>
+								<li>
+									Buscar y permanecer en la Realidad que siempre se alcanza, es el único Logro. Todos los demás logros (siddhis) son tales como los que se adquieren en los sueños. ¿Pueden parecer reales a alguien que se ha despertado del sueño? ¿Pueden aquellos que están establecidos en la Realidad y están libres de maya, ser engañados por ellos?
+								</li>
+								<li>
+									Solo si se produce el pensamiento &quot;Yo soy el cuerpo&quot;, la meditación &quot;No soy esto, Yo soy Eso&quot;, ayudará a uno a permanecer como Eso. ¿Por qué deberíamos estar siempre pensando, &quot;Yo soy Eso&quot;? ¿Es necesario que el hombre siga pensando &quot;Soy un hombre&quot;? ¿No somos siempre eso?
+								</li>
+								<li>
+									La afirmación, &quot;Dualismo durante la práctica, no dualismo en la realización&quot;, también es falsa. Mientras uno está buscando ansiosamente, así como cuando ha encontrado su propio Ser, ¿quién más es uno, sino el décimo hombre? <a class="return-anchor" id="return-anchor-2"></a><sup><a href="#note-2">[2]</a></sup>
+								</li>
+								<li>
+									Mientras un hombre es el hacedor, también cosecha el fruto de sus acciones, pero, tan pronto como se da cuenta del Ser a través de la indagación sobre quién es el hacedor, su sentido de ser el hacedor desaparece y el karma triple <a class="return-anchor" id="return-anchor-3"></a><sup><a href="#note-3">[3]</a></sup> termina. Este es el estado de la liberación eterna.
+								</li>
+								<li>
+									Solo mientras uno se considere esclavizado, los pensamientos de esclavitud y Liberación continúan. Cuando uno pregunta quién está esclavizado, el Sí mismo se realiza, alcanza eternamente y es eternamente libre. Cuando el pensamiento de esclavitud llega a su fin, ¿puede sobrevivir el pensamiento de Liberación?
+								</li>
+								<li>
+									Si se dice que la Liberación es de tres tipos, con forma o sin forma o con y sin forma, entonces permítame decirle que la extinción de tres formas de Liberación es la única verdadera Liberación.
+								</li>
+							</ol>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="footnotes">&nbsp;</a>
+							<p class="note">
+								Notas
+							</p>
+							<ul class="footnote-list">
+								<li>
+									<a class="endnote" id="note-1"></a><a href="#return-anchor-1">[1]</a>
+									Ramana Maharshi escribió esta obra, Sat Darsham, en Tamil a petición de Sri Muruganar. Traducido del inglés al español por albigen.com. Si tienes sugerencias para mejorar la traducción, favor de escribir:
+									<a href="https://selfdefinition.org/contact/">selfdefinition.org/contact/</a>
+								</li>
+								<li>
+									<a class="endnote" id="note-2"></a><a href="#return-anchor-2">[2]</a>
+									Esto se refiere a la historia tradicional de un grupo de diez tontos que viajaban juntos. Tuvieron que cruzar un río y al llegar a la otra orilla querían comprobar si todos ellos habían cruzado a salvo. Cada uno contó a su vez, pero cada uno contó los otros nueve y se olvidó de sí mismo. Así que pensaron que el décimo hombre se había ahogado y comenzaron a llorarlo. En ese momento, un viajero pasó y les preguntó qué pasaba. Inmediatamente vio la causa de su error y para convencerlos, los hizo caminar uno por uno, dándoles un golpe a cada uno al pasar y diciéndoles que contaran los golpes.
+								</li>
+								<li>
+									<a class="endnote" id="note-3"></a><a href="#return-anchor-3">[3]</a>
+									Sanchita, Agami and Prarabdha.
+								</li>
+							</ul>
+							<p class="note80" style="margin-top:30px;">
+								Derechos de publicación: El Editor Sri Ramanasramam ha hecho este y otros volúmenes de The Mountain Path disponibles (Inglés) en:
+								<a href="https://www.sriramanamaharshi.org/resource_centre/publications/mountain-path/">
+									https://www.sriramanamaharshi.org/<wbr />resource_<wbr />centre/<wbr />publications/<wbr />mountain-path/</a> &nbsp; Este escrito es de la edición de octubre de 1964.<br /><br />
+								Tambien disponible en <a href="https://realization.org/p/ramana/index.mountain-path.html">https://realization.org/<wbr />p/ramana/<wbr />index.<wbr />mountain-path.html</a>
+							</p>
+							<p>&nbsp;</p>
+							<p class="note center">
+
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:scroll(0,0);">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- next-page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ramana-who-am-i.htm">&lt; Ramana: Who Am I?</a></li>
+									<li class="align-right"><a href="nisargadatta-practice.htm">Nisargadatta: Practice &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>&nbsp;</p>
+							<p class="awa-index-link bottom">
+								<a href="awareness-home.htm">&lt; AWA home page</a>
+							</p>
+							<h1 style="color: transparent; font-size: 2px;">
+								Michael Langford</h1>
+						</article>
+					</div> <!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div><!-- end #main-content-relative -->
+			</div><!-- end main-content -->
+		</div><!-- end container -->
+	</div><!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-in-server-doc-root-plus-uarelove">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics-uarelove.htm"; ?>
+	</div>
+</body>
+
+</html>

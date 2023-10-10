@@ -1,0 +1,103 @@
+# .htaccess file for selfdefinition.org/zen
+ 
+
+IndexIgnore  _* osho-zen-hubert-benoit.htm
+IndexIgnore copyrighted
+IndexIgnore bodhidharma pyramid-zen-is-not-this  
+# bodhimara directory blocked now but has some pages in process
+
+# pages  
+
+redirect 301 "/zen/huang-po.htm" "/zen/huang-po/huang-po-dharma-of-mind-transmission.htm"
+
+
+============== next looks like aa mistake ========================
+redirect 301 "/zen/osho-on-hubert-benoit.htm" "/zen/osho-zen-hubert-benoit.htm"
+
+This is the page Apr 7, 2022, has been for long time
+
+/zen/osho-on-zen/osho-on-zen-and-hubert-benoit.htm  < current
+
+note:  The following redirects to the above
+/zen/osho-zen-hubert-benoit.htm"                    < old
+
+==================================================================
+
+
+
+
+# pdf files
+
+redirect 301 "/zen/Alan Watts - 1959 - Beat Zen Square Zen and Zen.pdf" "/zen/Alan-Watts-1959-Beat-Zen-Square-Zen-and-Zen.pdf"
+
+redirect 301 "/zen/Alan Watts - 1966 - On The Taboo Against Knowing Who You Are.pdf" "/zen/Alan-Watts-1966-The-Book-On-The-Taboo-Against-Knowing-Who-You-Are.pdf"
+
+redirect 301 "/zen/Blue Cliff Record - clearscan.pdf" "/zen/Blue-Cliff-Record-clearscan.pdf"
+
+# fixes my misspelling, somebody's post at Reddit, ciff not cliff
+redirect 301 "/zen/Blue Ciff Record - clearscan.pdf" "/zen/Blue-Cliff-Record-clearscan.pdf"
+redirect 301 "/zen/Blue-Ciff-Record-clearscan.pdf"   "/zen/Blue-Cliff-Record-clearscan.pdf" 
+
+redirect 301 "/zen/Bodhidharma Anthology - The Earliest Records of Zen--scan.pdf"  "/zen/Bodhidharma-Anthology-The-Earliest-Records-of-Zen--scan.pdf"
+
+redirect 301 "/zen/Dzogchen Ponlop Rinpoche - Mind Beyond Death.pdf"  "/zen/Dzogchen-Ponlop-Rinpoche-Mind-Beyond-Death.pdf"
+
+redirect 301 "/zen/Garma C. C. Chang - The Practice of Zen-ocr.pdf"  "/zen/Garma-C.C.-Chang-The-Practice-of-Zen-ocr.pdf"
+
+
+redirect 301 "/zen/Garma C. C. Chang - The Practice-of-Zen-scan.pdf"  "/zen/Garma-C.C.-Chang-The-Practice-of-Zen-scan.pdf"
+
+
+redirect 301 "/zen/Hubert Benoit - The Interior Realization.pdf"  "/zen/Hubert-Benoit-The-Interior-Realization.pdf"
+
+redirect 301 "/zen/Hubert Benoit - The Supreme Doctrine - Zen and the Psychology of Transformation.pdf"  "/zen/Hubert-Benoit-The-Supreme-Doctrine-Zen-and-the-Psychology-of-Transformation.pdf"
+
+redirect 301 "/zen/Seung Sahn - Only Don't Know - selected letters.pdf"  "/zen/Seung-Sahn-Only-Don't-Know-selected-letters.pdf"
+
+redirect 301 "/zen/Seung Sahn - Teaching Letters II.pdf"  "/zen/Seung-Sahn-Teaching-Letters-II.pdf"
+
+redirect 301 "/zen/Seung Sahn - Teaching Letters IV.pdf"  "/zen/Seung-Sahn-Teaching-Letters-IV.pdf"
+
+redirect 301 "/zen/Thich Nhat Hanh - Zen Keys.pdf"  "/zen/Thich-Nhat-Hanh-Zen-Keys.pdf"  
+
+redirect 301 "/zen/Zen Teaching of Bodhidharma - trans. Red Pine - Clearscan.pdf"   "/zen/Zen-Teaching-of-Bodhidharma-trans-Red-Pine-clearscan.pdf"
+
+
+#fix misspelling
+redirect 301 "/zen/Original-Theachings-of-Ch'an-Buddhism-scan-OCR.pdf" "/zen/Original-Teachings-of-Ch'an-Buddhism-scan-OCR.pdf"
+
+
+#redirect 301 "/zen/"  "/zen/"
+
+
+# canonical links added Oct 3, 2016
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+<Files 'Garma-C.C.-Chang-The-Practice-of-Zen-ocr.pdf'>
+	Header add Link '<http://selfdefinition.org/zen/garma-chang/practice-of-zen/practice-of-zen-table-of-contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Garma-C.C.-Chang-The-Practice-of-Zen-scan.pdf'>
+	Header add Link '<http://selfdefinition.org/zen/garma-chang/practice-of-zen/practice-of-zen-table-of-contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Hubert-Benoit-The-Supreme-Doctrine-Zen-and-the-Psychology-of-Transformation.pdf'>
+	Header add Link '<http://selfdefinition.org/zen/benoit/supreme-doctrine/contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+
+
+
+
+
+
+
+
+

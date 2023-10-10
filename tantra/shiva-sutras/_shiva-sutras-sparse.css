@@ -1,0 +1,58 @@
+/* file:  /tantra/shiva-sutras/_shiva-sutras-with-dark.css 
+
+Update June 18, 2020 ; Update with dark style Update November 2, 
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update May 31, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffec;
+}
+
+/*********** spanish version *****************/
+
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+	background: #f6fff6;
+}
+
+
+/* menu highlight color must contrast with body */
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #ddddcc;
+}
+
+
+html.spanish #menu-site-small-screen li.if-spanish-hide {
+	display: none;
+}
+
+/* what is this? 
+ul.generic-no-bullet {
+	margin: 25px;
+}
+*/
+
+/* end */

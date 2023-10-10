@@ -1,0 +1,89 @@
+<!-- start of menu include file  Update Aug 17, 2020. May 27, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/health/">Health index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-xyz"> of page</span></a></li>
+			<!--
+			<li><a id="this-page-test-link" href="fat-facts-len-kravitz-phd.htm">This Page</a></li>
+           -->
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/health/">Health index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>Health Articles</li>
+			<li class="normal">
+				<img class="menu-image" src="images/pharmacist-middle-ages.jpg" alt="Pharmacist" />
+			</li>
+			<!--
+            <li class="normal note">(DATES)</li>
+            -->
+		</ul>
+		<!-- must have the next div-i.d. for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<!-- must Not include directory in path for script to work -->
+				<!-- no contents page yet <li><a href="contents.htm">Contents</a></li>-->
+				<li><a href="fat-facts-len-kravitz-phd.htm">Fat Facts &ndash; Len Kravitz, Ph.D. [this page]</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<!-- not used yet
+        <div class="optional-links">
+            <hr />
+            <ul class="menu-section">
+                <li>drop-in at <a href="">
+                    Wikipedia</a> </li>
+                    
+            </ul>
+        </div>
+        -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="first-item"><a href="/healing/">Healing Section</a></li>
+				<li><a href="/psychology/articles/">Psychology Articles</a></li>
+				<li><a href="/magic/paracelsus/hartmann-life-of-paracelsus/contents.htm">Life of Paracelsus</a></li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External links</li>
+				<li class="first-item">
+					Seferino Alvarez Ramos:<br /> <a href="https://www.reynaamaya.com/sintoma-seferino-alvarez-ramos/">Yo Soy Tu Síntoma</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

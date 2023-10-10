@@ -1,0 +1,36 @@
+﻿/* css for /health/articles/_health-articles-refresh.css
+
+-- update August 17, 2020. May 27, 2022 */
+
+@media only print {
+	#article:after {
+		content: "Update May 27, 2022";
+	}
+}
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fcfffc;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of the menu must conform to specs of script.
+    Default CSS is in >> selfdefinition-responsive.css << with a default color.
+    Background must contrast with the body */
+/* The anchor is what is class = active */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #e0eaf8;
+}
+
+
+/* end */

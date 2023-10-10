@@ -1,0 +1,112 @@
+<!-- start of menu include file   Update /styles-2022/  July 19, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<!-- these float, Don't forget Div below to clear -->
+			<li><a href="../awareness-home.htm">Awareness<span class="conditional-hide-3"> Home</span></a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<!-- #menu-container is targeted by the script RecoverDivScroll  -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="../awareness-home.htm">Awareness Home</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; menu-text must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<!-- "offset" allows you to center but remove a little space at left. -->
+		<ul class="menu-text center">
+			<li class="offset">Awareness Watching Awareness</li>
+			<li class="normal note">
+				<!-- ID used for replacement, class for styling -->
+				<img id="menu-image" class="menu-image" src="../images/ramana.jpg" alt="Ramana Maharshi" />
+			</li>
+			<li class="offset">Ramana Maharshi</li>
+			<li class="normal note offset tight">(1879-1950)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<!-- This div (the "a.active element)  is targeted by menu highlighter script
+		$ document.ready script - runs on page load -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="../awareness-home.htm">Return to Awareness Home</a></li>
+				<li><a href="contents.htm">Most Rapid and Direct Contents</a> </li>
+				<li><a href="introduction.htm">Introduuction</a> </li>
+				<li><a href="chapter-01.htm">1. The Impostor</a> </li>
+				<li><a href="chapter-02.htm">2. The Impostor's Tricks</a> </li>
+				<li><a href="chapter-03.htm">3. Thought, Thinking, and Beliefs </a> </li>
+				<li><a href="chapter-04.htm">4. The Desire for Liberation </a> </li>
+				<li><a href="chapter-05.htm">5. How to Awaken the Extremely Intense Desire for Liberation </a> </li>
+				<li><a href="chapter-06.htm">6. Awareness Watching Awareness Discovery </a> </li>
+				<li><a href="chapter-07.htm">7. Awareness Watching Awareness Method Practice Instructions </a> </li>
+				<li><a href="chapter-08.htm">8. Further Clarification of the Awareness Watching Awareness Method </a> </li>
+				<li><a href="chapter-09.htm">9. The Abandon Release Method </a> </li>
+				<li><a href="chapter-10.htm">10. The Eternal Method </a> </li>
+				<li><a href="chapter-11.htm">11. The Infinite Space Method </a> </li>
+				<li><a href="chapter-12.htm">12. The Loving-All Method </a> </li>
+				<li><a href="chapter-13.htm">13. The Reminders </a> </li>
+				<li>
+					<hr />
+				</li>
+				<li class="note"><a href="../authors-page.htm">The Author's Page</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Ramana Maharshi at <a href="https://en.wikipedia.org/wiki/Ramana_Maharshi">
+						Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="site-first-item"><a href="/ramana/">Ramana Maharshi section</a> </li>
+				<li>Talks on Ramana, narrated by David Godman: <a href="/ramana/quotes/talks-on-ramana-narrated-by-godman.htm">42 minute video</a> </li>
+				<li class="site-first-item"><a href="/nisargadatta/">Nisargadatta section</a> </li>
+				<li class="site-first-item"><a href="/siddharameshwar/">Siddharameshwar section</a> </li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links </li>
+				<li class="external-first-item">Sri Ramana Maharshi Ashram and website:
+					<br />
+					<a href="https://www.sriramanamaharshi.org">sriramanamaharshi.org</a>
+				</li>
+				<li>The Teachings of Sri Ramana (Michael James):
+					<br />
+					<a href="https://www.happinessofbeing.com/">happinessofbeing.com</a>
+				</li>
+				<li class="subhead">Todas las páginas en español</li>
+				<li class="first-item"><a href="/paginas-en-espanol.htm">Páginas en español</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

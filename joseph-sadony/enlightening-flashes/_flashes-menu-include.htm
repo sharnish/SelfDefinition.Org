@@ -1,0 +1,86 @@
+<!-- start of menu include file   Update November 11, 2020. June 8, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the sections are swapped for small screens -->
+			<li><a href="/joseph-sadony/">Joseph Sadony index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below this disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/joseph-sadony/">Joseph Sadony index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please enable Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li style="font-size: 110%;">enLIGHT'NING FLASHes</li>
+			<li class="normal note">
+				<img class="menu-image" src="images/joseph-sadony-flashes.jpg" alt="Joseph Sadony" />
+			</li>
+			<li>Joseph Sadony</li>
+			<li class="normal note tight">(1877-1960)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a></li>
+				<li><a href="flashes-001-to-100.htm">Flashes 1 to 100</a> </li>
+				<li><a href="flashes-101-to-200.htm">Flashes 101 to 200</a> </li>
+				<li><a href="flashes-201-to-300.htm">Flashes 201 to 300</a> </li>
+				<li><a href="flashes-301-to-359.htm">Flashes 301 to 359</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">More Sadony this site</li>
+				<li class="first-item"><a href="/joseph-sadony/gates-of-the-mind/joseph-sadony-obituary-1960.htm">Obituary (1960)</a></li>
+				<li><a href="/joseph-sadony/gates-of-the-mind/contents.htm">Gates of the Mind (autobiography)</a></li>
+				<li><a href="/joseph-sadony/golden-chalice/contents.htm">The Golden Chalice</a></li>
+				<li><a href="/joseph-sadony/pine-needles/contents.htm">Pine Needles (aphorisms)</a></li>
+				<li><a href="/joseph-sadony/human-radio/contents.htm">The Human Radio</a></li>
+			</ul>
+		</div>
+		<div class="external-links">
+			<ul class="menu-section">
+				<li class="header-item">External Links</li>
+				<!-- website has disappeared
+				<li><a href="http://www.gatesofthemind.com/">GatesOfTheMind.Com</a></li>
+				-->
+				<li class="first-item"><a href="http://www.valleyofthepines.com/">The Valley of the Pines</a></li>
+				<li class="subhead bold">Joseph Sadony at</li>
+				<li class="first-item"><a href="https://www.spiritualteachers.org/joseph-sadony/">SpiritualTeachers.Org (has links to several articles, videos)</a></li>
+				<li><a href="http://www.mysticmissal.org/sadony.htm">MysticMissal.Org</a></li>
+				<!--
+                <li>Biography and review at <a class="inline" href="https://www.goodreads.com/author/show/2985742.Joseph_Sadony">Goodreads.Com</a> </li>
+				-->
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<!-- for some strange reason anchor text has to be styled blue; otherwise is black -->
+			<a onclick="scrollDivToTop()">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

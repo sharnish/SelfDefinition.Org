@@ -1,0 +1,102 @@
+<!-- start of menu include file  Update May 31, 2020. May 18, 2022  -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<!-- modeled after quotes -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/rose/">Rose index</a></li>
+			<!-- clear left only when screen less than 500px -->
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="/rose/writings/writings-index.htm">Writings<span class="conditional-hide-4"> index</span></a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-x"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/rose/">Richard Rose index</a></li>
+			<li><a href="/rose/about/article-index.htm">About Richard Rose</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li class="conditional-image-large normal">
+				<img class="menu-image" style="width:190px;" src="images/richard-rose-vertical.jpg" alt="Richard Rose">
+			</li>
+			<li>Richard Rose</li>
+			<li class="normal note tight">(1917-2005)</li>
+			<li class="tight" style="font-weight:normal;font-size:12px;">Link to this image: <a href="/rose/images/Richard-Rose-ABJ-1982.jpg">full size</a></li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must not include directory in path for script to work -->
+				<li><a href="writings-index.htm">Writings Index</a></li>
+				<li><a href="richard-rose-the-mind.htm">The Mind</a></li>
+				<li><a href="approach-to-validity.htm">Approach to Validity <span style="font-size:14px;">(Lecture
+							of Questions)</span></a></li>
+				<li><a href="richard-rose-yoga-hatha-shabd-raja.htm">Yoga: Hatha, Shabd, and Raja</a></li>
+				<li><a href="richard-rose-notice.htm">Notice</a> </li>
+				<li><a href="states-of-mind-fifth-paper.htm">States of Mind</a></li>
+				<li><a href="https://albigen.com/writings/writings-index.htm">More writings at Albigen.Com</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li>Richard Rose at <a href="https://en.wikipedia.org/wiki/Richard_Rose_(mystic)">Wikipedia</a>
+				</li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site:</li>
+				<li>
+					<a href="/rose/articles/article-index.htm">Rose Articles</a>
+				</li>
+				<li><a href="/rose/about/richard-rose-the-man-who-was-a-mirror.htm">The Man Who Was a Mirror</a></li>
+
+				<li class="first-item"><a href="/pulyan/letters/contents.htm">Alfred Pulyan's letters to Richard Rose</a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="header-item">External Links</li>
+				<li class="first-item">Richard Rose Lecture Transcript Project at<br> <a href="https://www.direct-mind.org/index.php?title=Recordings">Direct-Mind.Org</a>
+				</li>
+				<li>
+					Richard Rose's seminal work <em>The Albigen Papers</em> at
+					<a href="https://amzn.to/3yLxTfs">Amazon.Com</a>
+				</li>
+				<li>TAT Foundation:<br>
+					<a href="https://tatfoundation.org/">tatfoundation.org</a>
+				</li>
+
+				<li>TAT Forum <a href="https://tatfoundation.org/forum.htm">current issue</a></li>
+				<li>TAT Forum <a href="https://tatfoundation.org/forum_index.htm#Rose">Rose Archives</a></li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

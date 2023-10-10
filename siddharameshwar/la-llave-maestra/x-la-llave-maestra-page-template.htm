@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La llave de la realización del ser,  </title>
+    <meta name="description" content="" />
+    <meta name="author" content="Siddharameshwar Maharaj">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="og-image.jpg" />
+
+    <!-- load external stylesheets before the menu scripts -->
+    <link href="/styles/selfdefinition-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="_la-llave-maestra.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- the following gives you the jquery library -->
+	<!-- MUST be version HTTPS and not HTTP -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <script src="/scripts/recoverdivscroll.js"></script>
+
+    <!-- relative links OK
+    https://support.google.com/webmasters/answer/1663744?hl=en
+    -->
+
+    <link rel="prev" href="">
+    <link rel="next" href="">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <style>
+        ul.page-links {width:300px; border:1px solid blue;}
+        .page-links li {width:inherit; margin:auto;border:1px solid red;}
+
+* this goes ON PAGE -- to avoid CSS stylesheet having to be refreshed
+
+/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/
+
+        Keep THIS css on PAGE rather than stylesheet to reduce complexity
+        and need to reload if a change is made.
+        On this page:
+
+        #element-toggle-3-1,
+        #element-toggle-7-1
+		etc
+        */
+
+          /* paradox 1  */
+        label[for=element-toggle-3-1],
+        label[for=element-toggle-7-1]
+        {
+            cursor: pointer;
+        }
+        #element-toggle-3-1,
+        #element-toggle-7-1,
+        #element-toggle-8-1
+        {
+            display: none;
+        }
+        /* paradox 1 */
+        #element-toggle-3-1:not(:checked) ~ #toggled-element-3-1,
+        #element-toggle-7-1:not(:checked) ~ #toggled-element-7-1
+        {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <!--<?php include("_la-llave-maestra-menu-include.htm"); ?>-->
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div id="announce">
+                        <header>
+                            <!-- image is shown in menu for large screens, title include for small screens -->
+                            <!--<?php include( "_la-llave-maestra-title-include.htm"); ?>-->
+                        </header>
+                    </div>
+                    <nav class="next-previous-item-nav">
+                        <ul class="next-previous-item-list">
+                            <li class="align-left"><a href="">&lt; Previous</a></li>
+                            <li class="align-right"><a href="">Next &gt;</a></li>
+                            <li style="clear: both;"></li>
+                        </ul>
+                    </nav>
+                    <div id="article">
+                        <article>
+                            <header>
+                                <h3>
+                                    Capítulo 
+                                </h3>
+                            </header>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="">&nbsp;</a>
+                            <h4 class="top-heading">
+                                section
+                            </h4>
+
+
+							<!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                             </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="A1">&nbsp;</a>
+                            <h4>
+                                section
+                            </h4>
+
+
+
+
+
+
+
+							<p class="note">
+                                [ end ]
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                        </article>
+						</div>
+                    <!-- end div#article -->
+                    <!-- page nav here if used -->
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+    </script>
+    <div id="googlecode">
+        <!--<?php include("/home/reversev/public_html/selfdefinition.org/includes/googlescript-blank.htm"); ?>-->
+    </div>
+</body>
+</html>

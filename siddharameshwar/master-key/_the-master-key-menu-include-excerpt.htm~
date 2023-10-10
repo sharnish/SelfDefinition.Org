@@ -1,0 +1,116 @@
+<!-- start of menu include file -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+    <div id="fixed-header-small-screen">
+        <ul id="menu-site-small-screen">
+            <!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+            <li class="first-item">
+                <a href="/siddharameshwar/">Siddharameshwar index</a>
+            </li>
+            <li>
+                <a href="/sitemap.htm">Site map</a>
+            </li>
+            <li>
+                <a href="/">Site root</a>
+            </li>
+        </ul>
+    </div>
+    <!-- all of the following disappears on a small screen -->
+    <!-- the next 2 must be id's -->
+    <div id="menu-container">
+        <ul id="menu-site">
+            <li>
+                <a href="/siddharameshwar/">Siddharameshwar index</a>
+            </li>
+            <li>
+                <a href="/sitemap.htm">Site map</a>
+            </li>
+            <li>
+                <a href="/">Site root</a>
+            </li>
+        </ul>
+        <!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+        <!-- for some reason width is not responding correctly -->
+        <ul class="menu-text">
+            <li>
+                <span class="block">The Master Key to</span>Self-Realization
+            </li>
+            <li>
+                <img class="menu-image" src="images/siddharameshwar.jpg" alt="Siddharameshwar Maharaj" />
+            </li>
+            <li>
+                <span class="block">Siddharameshwar</span> Maharaj &nbsp;<span class="note normal">(1888-1936)</span>
+            </li>
+            <li class="normal note"></li>
+        </ul>
+        <!-- must have the next div for menu highlighter.js to work; must be an id -->
+        <div id="menu-section-group">
+            <!-- "menu-section" must be a class, not an id -->
+            <ul class="menu-section">
+                <!-- must Not include directory in path for script to work -->
+                <li>
+                    <a href="causal-body-forgetfulness.htm">
+                        <span class="block">Causal Bodyâ€“Forgetfulness </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end #menu-section-group
+        -->
+        <div class="optional-links">
+            <hr style="margin-left: 0; width: 120px;" />
+            <ul class="menu-section">
+                <li>
+                    Siddharameshwar<br /> at <a href="https://en.wikipedia.org/wiki/Siddharameshwar">Wikipedia</a>
+                </li>
+                <li>
+                    Nisargadatta Maharaj<br /> at <a href="https://en.wikipedia.org/wiki/Nisargadatta_Maharaj">
+                        Wikipedia
+                    </a>
+                </li>
+                <li>
+                    Source at: <a href="http://www.inner-quest.org/Siddharameshwar_Master_Key.htm">Inner-Quest.Org</a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-links">
+            <ul class="menu-section">
+                <li class="site-links-item">Also on this site</li>
+                <li>
+                    <a href="/nisargadatta/">Nisargadatta index</a>
+                </li>
+                <li>
+                    <a href="/ramana/">Ramana index</a>
+                </li>
+            </ul>
+        </div>
+        <div class="optional-links">
+            <ul class="menu-section">
+                <li class="external-links-item">External links</li>
+                <li class="external-first-item">
+                    Siddharameshwar Maharaj and related works at
+                    <a href="https://www.inner-quest.org/Siddharameshwar_E.htm">Inner-Quest.Org</a>
+                </li>
+                <li>
+                    What is the Nisarga Yoga of Nisargadatta Maharaj?<br />
+                    <a href="https://nisargayoga.org/">NisargaYoga.Org</a>
+                </li>
+                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <p id="menu-scroll">
+            <!-- scrollDivToTop is in menu-highlighter script -->
+            <!-- link color is needed here for some reason -->
+            <a style="color: #0000ff;" onclick="scrollDivToTop()">scroll menu to top</a>
+        </p>
+        <div style="border-bottom: 160px solid transparent;">
+            &nbsp;
+        </div>
+    </div>
+    <!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

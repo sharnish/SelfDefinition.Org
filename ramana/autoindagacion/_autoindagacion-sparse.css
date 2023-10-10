@@ -1,0 +1,61 @@
+/* file:  /ramana/autoindagacion/_autoindagacion-refresh-1.css
+
+Update June 17. 2020. May 24, 2022.
+
+*/
+
+
+@media only print {
+	#article:after {
+		content: "Update May 24, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f3fff3;
+}
+
+
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #a9ffa9;
+}
+
+p.qnum {
+	background: #c9ffc9;
+	text-align: center;
+}
+
+div.hidden,
+p.hidden {
+	color: maroon;
+}
+
+html.dark p.qnum {
+	background: #333;
+}
+
+label,
+label span {
+	background: inherit;
+}
+
+html.dark label,
+html.dark label span {
+	background: inherit;
+}
+
+
+
+/* end */

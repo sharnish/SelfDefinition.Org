@@ -1,0 +1,20 @@
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider-video
+Disallow: /
+
+User-agent: "PDF Drive Crawler"
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+
+Sitemap: https://selfdefinition.org/sitemap.xml	  
+
+

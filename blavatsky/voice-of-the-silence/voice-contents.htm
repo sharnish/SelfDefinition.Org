@@ -1,0 +1,209 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Voice of the Silence</title>
+	<meta name="description" content="Chosen fragments from the Book of the Golden Precepts, put into the
+    hands of mystic students in the east, for the daily use of disciples. Translated and annotated by HPB.">
+	<meta name="author" content="H. P. Blavatsky">
+	<meta property="og:title" content="Voice of the Silence">
+	<meta property="og:description" content="Chosen fragments from the Book of the Golden Precepts, put into the
+    hands of mystic students in the east, for the daily use of disciples. Translated and annotated by HPB.">
+	<meta property="og:image" content="https://selfdefinition.org/blavatsky/voice-of-the-silence/images/blavatsky-young.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_voice-of-silence-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="voice-index.htm">
+	<link rel="next" href="voice-fragment-1.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* no Glossary-Footnotes this page, just Wikipedia fnotes */
+
+		#contents-menu-div {
+			width: 420px;
+			margin: 0 auto;
+		}
+
+
+		@media only screen and (max-width:430px) {
+			#contents-menu-div {
+				width: 100%;
+				margin: 0 5px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_voice-of-silence-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_voice-of-silence-title-include.htm"); ?>
+									<h3>
+										Contents
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a class="inline-block" href="../voz-del-silencio/contenido.htm">../../contenido.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a class="small-screen-only" href="voice-index.htm">&lt; Index page</a></li>
+									<li class="align-right"><a href="voice-fragment-1.htm">Fragment 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header>
+								<p class="strong" style="margin-top: 15px; margin-bottom: 15px;">
+									Dedicated to the Few
+								</p>
+							</header>
+							<div id="contents-menu-div">
+								<p>
+									<a href="#preface">PREFACE</a>&nbsp;<span class="note">(this page)</span>
+								</p>
+								<p>
+									<a href="voice-fragment-1.htm">FRAGMENT I</a>. THE VOICE OF THE SILENCE
+								</p>
+								<p>
+									<a href="voice-fragment-2.htm">FRAGMENT II</a>. THE TWO PATHS
+								</p>
+								<p>
+									<a href="voice-fragment-3.htm">FRAGMENT III</a>. THE SEVEN PORTALS
+								</p>
+							</div>
+							<div id="frontispiece">
+								<p>
+									Being Chosen Fragments from the <em>"Book of the Golden Precepts."</em> For the Daily Use of Lanoos (Disciples). Translated and Annotated by "H.P.B."
+								</p>
+							</div>
+							<p class="totop-above-anchor" style="margin-top: 5px;">
+								<a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="preface">&nbsp;</a>
+							<h3>
+								Preface</h3>
+							<p>
+								THE following pages are derived from "The Book of the Golden Precepts," one of the works put into the hands of mystic students in the East. The knowledge of them is obligatory in that school, the teachings of which are accepted by many Theosophists. Therefore, as I know many of these Precepts by heart, the work of translating has been relatively an easy task for me.
+							</p>
+							<p>
+								It is well known that, in India, the methods of psychic development differ with the Gurus (teachers or masters), not only because of their belonging to different schools of philosophy, of which there are six, but because every Guru has his own system, which he generally keeps very secret. But beyond the Himalayas the method in the Esoteric Schools does not differ, unless the Guru is simply a Lama, but little more learned than those he teaches.
+							</p>
+							<p>
+								The work from which I here translate forms part of the same series as that from which the "Stanzas" of the <em>Book of Dzyan</em> were taken, on which the <em>Secret Doctrine</em> is based. Together with the great mystic work called <em>Paramartha,</em> <sup>[1]</sup> which, the legend of <em>Nagarjuna</em> tells us, was delivered to the great Arhat by the Nagas or "Serpents" (in truth a name given to the ancient Initiates), the "Book of the Golden Precepts" claims the same origin.
+							</p>
+							<p class="fnote">
+								[1. <a href="https://en.wikipedia.org/wiki/Paramartha">en.wikipedia.org/wiki/Paramartha</a> ]
+							</p>
+							<p>
+								Yet its maxims and ideas, however noble and original, are often found under different forms in Sanskrit works, such as the <em>Dnyaneshwari,</em> <sup>[2]</sup> that superb mystic treatise in which Krishna describes to Arjuna in glowing colours the condition of a fully illumined Yogi; and again in certain Upanishads. This is but natural, since most, if not all, of the greatest Arhats, the first followers of Gautama Buddha were Hindus and Aryans, not Mongolians, especially those who emigrated into Tibet. The works left by Aryasanga <sup>[3]</sup> alone are very numerous.
+							</p>
+							<p class="fnote">
+								[2. <a href="https://en.wikipedia.org/wiki/Dnyaneshwari">en.wikipedia.org/wiki/Dnyaneshwari</a> ]
+							</p>
+							<p class="fnote">
+								[3. <a href="https://en.wikipedia.org/wiki/Asanga">en.wikipedia.org/wiki/Asanga</a> ]
+							</p>
+							<p>
+								The original <em>Precepts</em> are engraved on thin oblong squares; copies very often on discs. These discs, or plates, are generally preserved on the altars of the temples attached to centres where the so-called "contemplative" or Mahayana (Yogacharya) schools are established. They are written variously, sometimes in Tibetan but mostly in ideographs.
+							</p>
+							<p>
+								The sacerdotal language (Senzar), besides an alphabet of its own, may be rendered in several modes of writing in cypher characters, which partake more of the nature of ideographs than of syllables. Another method (<em>lug</em>, in Tibetan) is to use the numerals and colours, each of which corresponds to a letter of the Tibetan alphabet (thirty simple and seventy-four compound letters) thus forming a complete cryptographic alphabet.
+							</p>
+							<p>
+								When the ideographs are used there is a definite mode of reading the text; as in this case the symbols and signs used in astrology, namely the twelve zodiacal animals and the seven primary colours, each a triplet in shade, <em>i.e.</em> the light, the primary, and the dark &ndash; stand for the thirty-three letters of the simple alphabet, for words and sentences. For in this method, the twelve "animals" five times repeated and coupled with the five elements and the seven colours, furnish a whole alphabet composed of sixty sacred letters and twelve signs.
+							</p>
+							<p>
+								A sign placed at the beginning of the text determines whether the reader has to spell it according to the Indian mode, when every word is simply a Sanskrit adaptation, or according to the Chinese principle of reading the ideographs. The easiest way however, is that which allows the reader to use no special, or <em>any</em> language he likes, as the signs and symbols were, like the Arabian numerals or figures, common and international property among initiated mystics and their followers. The same peculiarity is characteristic of one of the Chinese modes of writing, which can be read with equal facility by any one acquainted with the character; for instance, a Japanese can read it in his own language as readily as a Chinaman in his.
+							</p>
+							<p>
+								The Book of the Golden Precepts &ndash; some of which are pre-Buddhistic while others belong to a later date &ndash; contains about ninety distinct little treatises. Of these I learnt thirty-nine by heart, years ago. To translate the rest, I should have to resort to notes scattered among a too large number of papers and memoranda collected for the last twenty years and never put in order, to make of it by any means an easy task. Nor could they be all translated and given to a world too selfish and too much attached to objects of sense to be in any way prepared to receive such exalted ethics in the right spirit. For, unless a man perseveres seriously in the pursuit of self-knowledge, he will never lend a willing ear to advice of this nature.
+							</p>
+							<p>
+								And yet such ethics fill volumes upon volumes in Eastern literature, especially in the Upanishads. "Kill out all desire of life," says Krishna to Arjuna. That desire lingers only in the body, the vehicle of the embodied Self, not in the SELF which is "eternal, indestructible, which kills not nor is it killed" (<em>Katha Upanishad</em>). "Kill out sensation," teaches <em>Sutta Nipata;</em> "look alike on pleasure and pain, gain and loss, victory and defeat." Again, "Seek shelter in the eternal alone" (<em>ibid</em>). "Destroy the sense of separateness," repeats Krishna under every form. "The Mind (<em>Manas</em>) which follows the rambling senses, makes the Soul (<em>Buddhi</em>) as helpless as the boat which the wind leads astray upon the waters." (<em>Bhagavatgita II.</em> 70)
+							</p>
+							<p>
+								Therefore it has been thought better to make a judicious selection only from those treatises which will best suit the few real mystics in the Theosophical Society, and which are sure to answer their needs. It is only these who will appreciate these words of Krishna-Christos, the "Higher Self":
+							</p>
+							<blockquote>
+								<p>
+									&quot;Sages do not grieve for the living nor the dead. Never did I not exist, nor you, nor these rulers of men; nor will any one of us ever hereafter cease to be.&quot; (<em>Bhagavat Gita</em>, II. 27).
+								</p>
+							</blockquote>
+							<p>
+								In this translation, I have done my best to preserve the poetical beauty of language and imagery which characterise the original. How far this effort has been successful, is for the reader to judge. &ndash; "H.P.B."
+							</p>
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a class="small-screen-only" href="voice-index.htm">&lt; Index page</a></li>
+									<li class="align-right"><a href="voice-fragment-1.htm">Fragment 1 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adi Shankara: Vakya Sudha a.k.a Drik-drishya-viveka</title>
+    <meta name="description" content="The changing moods of mind are seen, but the witnessing Self, the seer, is never seen. ">
+    <meta name="author" content="Adi Shankara">
+    <meta property="og:title" content="Adi Shankara: Vakya Sudha a.k.a Drik-drishya-viveka">
+    <meta property="og:description" content="The changing moods of mind are seen, but the witnessing Self, the seer, is never seen. ">
+    <meta property="og:image" content="https://selfdefinition.org/advaita/shankara/writings/images/adi-shankara-02-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_shankara-writing-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* socia media:
+
+        Adi Shankaryacharya (8th century AD) describes the ray of consciousness as it enters the consciousness of man. (see Albigen Papers chapter 8, "the projected ray.")
+
+        "The conscious Self, remaining one, shines on all the moods of mind: on desire, determination, doubt, faith, unfaith, firmness and the lack of it, shame, insight, fear, and such as these. This conscious Self rises not, nor has its setting, nor does it come to wax or wane; unhelped, it shines itself, and illumines others also."
+
+        */
+        ul.page-links {
+            width: 235px;
+            border: 0px solid blue;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width:300px) {
+            ul.page-links {
+                width: 90%;
+            }
+        }
+
+        h3 {
+            font-size: 120%;
+        }
+
+        header h3 span {
+            font-size: 90%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_shankara-writings-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_shankara-writings-title-include.htm"); ?>
+                                    <!-- new format puts page title higher, here -->
+                                    <h3>
+                                        Vakya Sudha <span class="block">a.k.a Drik-drishya-viveka</span> <span class="block">Dṛg-Dṛśya-Viveka</span>
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article
+                            NOT USED YET
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="">&lt; Previous</a></li>
+                                    <li class="align-right"><a href="">Next &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                             -->
+                            <header>
+                                <!--p>
+                                    [a.k.a Bala Bodhani] &nbsp; The Essence of the Teaching
+                                </p-->
+                                <p class="note">
+                                    Translated by Charles Johnston
+                                </p>
+                            </header>
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#seer-and-seen">Seer and Seen</a></li>
+                                    <li><a href="#personal-idea">The Personal Idea</a></li>
+                                    <li><a href="#power-of-maya">The Power of Maya</a></li>
+                                    <li><a href="#six-steps">Six Steps of Soul Vision</a></li>
+                                    <li><a href="#three-selves">The Three Selves</a></li>
+                                    <li><a href="#freedom-peace">Freedom and Final Peace</a></li>
+                                </ul>
+                            </nav>
+                            <p class="tiny center" style="margin-top: 30px;">
+                                Source: <a href="https://www.shankaracharya.org/vakyasudha.php">Shankaracharya.Org</a></p>
+                            <p class="tiny center">
+                                Get the complete book at <a href="https://amzn.to/2GocuRb">Amazon (kindle)</a> or <a href="https://ia802609.us.archive.org/29/items/drgdrsyaviveka030903mbp/drgdrsyaviveka030903mbp.pdf">Archive.Org (pdf)</a>
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="seer-and-seen">&nbsp;</a>
+                            <h4>
+                                Seer and Seen
+                            </h4>
+                            <p>
+                                1. The form is seen, the eye is seer; the mind is both seen and seer. The changing moods of mind are seen, but the witnessing Self, the seer, is never seen.
+                            </p>
+                            <p>
+                                2. The eye, remaining one, beholds varying forms; as, blue and yellow, coarse and fine, short and long; and differences such as these.
+                            </p>
+                            <p>
+                                3. The mind, remaining one, forms definite intentions, even while the character of the eye varies, as in blindness, dullness, or keen-sightedness; and this holds also of hearing and touch.
+                            </p>
+                            <p>
+                                4. The conscious Self, remaining one, shines on all the moods of mind: on desire, determination, doubt, faith, unfaith, firmness and the lack of it, shame, insight, fear, and such as these.
+                            </p>
+                            <p>
+                                5. This conscious Self rises not, nor has its setting, nor does it come to wax or wane; unhelped, it shines itself, and illumines others also.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="personal-idea">&nbsp;</a>
+                            <h4>
+                                The Personal Idea</h4>
+                            <p>
+                                6. This illumining comes when the ray of consciousness enters the thinking mind; and the thinking mind itself is of twofold nature. The one part of it is the personal idea; the other part is mental action.
+                            </p>
+                            <p>
+                                7. The ray of consciousness and the personal idea are blended together, like the heat and the hot iron ball. As the personal idea identifies itself with the body, it brings that also a sense of consciousness.
+                            </p>
+                            <p>
+                                8. The personal idea is blended with the ray of consciousness, the body, and the witnessing Self, respectively &ndash; through the action of innate necessity, of works, and of delusion.
+                            </p>
+                            <p>
+                                9. Since the two are bound up together, the innate blending of the personal idea with the ray of consciousness never ceases; but its blending with the body ceases, when the works wear out; and with the witnessing Self, through illumination.
+                            </p>
+                            <p>
+                                10. When the personal idea melts away in deep sleep, the body also loses its sense of consciousness. The personal idea is only half expanded in dream, while in waking it is complete.
+                            </p>
+                            <p>
+                                11. The power of mental action, when the ray of consciousness has entered into union with it, builds up mind-images in the dream-state; and external objects, in the waking state.
+                            </p>
+                            <p>
+                                12. The personal form, thus brought into being by the personal idea and mental action, is of itself quite lifeless. It appears in the three modes of consciousness; it is born, and so also dies.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="power-of-maya">&nbsp;</a>
+                            <h4>
+                                The Power of Maya</h4>
+                            <p>
+                                13. For the Maya has two powers &ndash; extension and limitation, or enveloping. The power of extension brings into manifestation the whole world, from the personal form to the universal cosmos.
+                            </p>
+                            <p>
+                                14. This manifesting is an attributing of name and form to the Reality &ndash; which is Being, Consciousness, Bliss, the Eternal; it is like foam on the water.
+                            </p>
+                            <p>
+                                15. The inner division between the seer and the seen, and the outer division between the Eternal and the world, are concealed by the other power, limitation; and this also is the cause of the cycle of birth and death.
+                            </p>
+                            <p>
+                                16. The light of the witnessing Self is united with the personal form; from this entering-in of the ray of consciousness arises the habitual life, the ordinary self.
+                            </p>
+                            <p>
+                                17. The isolated existence of the ordinary self is attributed to the witnessing Self, and appears to belong to it; but when the power of limitation is destroyed, and the difference appears, the sense of isolation in the Self vanishes away.
+                            </p>
+                            <p>
+                                18. It is the same power which conceals the difference between the Eternal and the visible world; and, by its power, the Eternal appears subject to change.
+                            </p>
+                            <p>
+                                19. But when this power of limitation is destroyed, the difference between the Eternal and the visible world becomes clear; change belongs to the visible world, and by no means to the Eternal.
+                            </p>
+                            <p>
+                                20. The five elements of existence are these: being, shining, enjoying, form, and name. The three first belong to the nature of the Eternal; the last two, to the nature of the visible world.
+                            </p>
+                            <p>
+                                21. In the elements &ndash; ether, air, fire, water, earth; in creatures &ndash; gods, animals, and men, Being, Consciousness, Bliss are undivided; the division is only of name and form.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="six-steps">&nbsp;</a>
+                            <h4>
+                                Six Steps of Soul Vision</h4>
+                            <p>
+                                22. Therefore setting aside this division through name and form, and concentrating himself on Being, Consciousness, Bliss, which are undivided, let him follow after soul-vision perpetually, first inwardly in the heart, and then in outward things also.
+                            </p>
+                            <p>
+                                23. Soul-vision is either fluctuating or unwavering; this is its two-fold division in the heart. Fluctuating soul-vision is again two-fold; it may consist either in things seen or heard.
+                            </p>
+                            <p>
+                                24. This is the fluctuating soul-vision which consists in things seen: a meditating on consciousness as being merely the witness of the desires and passions that fill the mind.
+                            </p>
+                            <p>
+                                25. This is the fluctuating soul-vision which consists in things heard: the constant thought that "I am the self, which is unattached, Being, Consciousness, Bliss, self-shining, secondless."
+                            </p>
+                            <p>
+                                26. The forgetting of all images and words, through entering into the bliss of direct experience &ndash; this is unwavering soul-vision, like a lamp set in a windless place.
+                            </p>
+                            <p>
+                                27. Then, corresponding to the first, there is the soul-vision which strips off name and form from the element of pure Being, in everything whatever; now accomplished outwardly, as it was before, in the heart.
+                            </p>
+                            <p>
+                                28. And, corresponding to the second is the soul-vision which consists in the unbroken thought, that the Real is a single undivided Essence, whose character is Being, Consciousness, Bliss.
+                            </p>
+                            <p>
+                                29. Corresponding to the former third, is that steady being, is the tasting of this Essence for oneself. Let him fill the time by following out these, the six stages of soul-vision.
+                            </p>
+                            <p>
+                                30. When the false conceit, that the body is the Self, falls away; when the Self supreme is known; then, whithersoever the mind is directed, there will the powers of soul-vision arise.
+                            </p>
+                            <p>
+                                31. The knot of the heart is loosed; all doubts are cut; all bondage to works wither away &ndash; when That is known, which is the first and the last.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="three-selves">&nbsp;</a>
+                            <h4>
+                                The Three Selves</h4>
+                            <p>
+                                32. The individual self appears in three degrees: as a limitation of the Self; as a ray of the conscious Self; and, thirdly, as the self imagined in dreams. The first alone is real.
+                            </p>
+                            <p>
+                                33. For the limitation in the individual self is a mere imagination; and that which is supposed to be limited is the Reality. The idea of isolation in the individual self is only an error; but its identity with the Eternal is its real nature.
+                            </p>
+                            <p>
+                                34. And that song they sang of "That thou art" is for the first of these three selves alone; it only is one with the perfect Eternal, not the other selves.
+                            </p>
+                            <p>
+                                35. The power of Maya existing in the Eternal, has two potencies: extension and limitation. Through the power of limitation, Maya hides the undivided nature of the Eternal, and so builds up the images of the individual self and the world.
+                            </p>
+                            <p>
+                                36. The individual self which comes into being when the ray of consciousness enters the thinking mind, is the self that gains experience and performs works. The whole world, with all its elements and beings, is the object of its experience.
+                            </p>
+                            <p>
+                                37. These two, the individual self and its world, were before time began; they last till Freedom comes, making up our habitual life. Hence they are called the habitual self and world.
+                            </p>
+                            <p>
+                                38. In this ray of consciousness, the dream-power exists, with its two potencies of extension and limitation. Through the power of limitation, it hides the former self and world, and so builds up a new self and a new world.
+                            </p>
+                            <p>
+                                39. As this new self and world are real only so long as their appearance lasts, they are called the imaginary self and the imaginary world. For, when one has awakened from the dream, the dream existence never comes back again.
+                            </p>
+                            <p>
+                                40. The imaginary self believes its imaginary world to be real; but the habitual self knows that world to be only mythical, as also is the imaginary self.
+                            </p>
+                            <p>
+                                41. The habitual self looks on its habitual world as real; but the real Self knows that the habitual world is only mythical, as also is the habitual self.
+                            </p>
+                            <p>
+                                42. The real Self knows its real oneness with the Eternal; it sees nothing but the Eternal, yet sees that what seemed the unreal is also the Self.
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="freedom-peace">&nbsp;</a>
+                            <h4>
+                                Freedom and Final Peace</h4>
+                            <p>
+                                43. As the sweetness, the flowing, and the coldness, that are the characteristics of the water, reappear in the wave, and so in the foam that crests the wave; ...
+                            </p>
+                            <p>
+                                44. So, verily, the Being, Consciousness, and Bliss of the witnessing Self enter into the habitual self that is bound up with it; and, by the door of the habitual self, enter into the imaginary self also.
+                            </p>
+                            <p>
+                                45. But when the foam melts away, its flowing, sweetness, coldness, all sink back into the wave; and when the wave itself comes to rest, they sink back to the sea.
+                            </p>
+                            <p>
+                                46. When the imaginary self melts away, its Being, Consciousness, Bliss sink back into the habitual self; and, when the habitual self comes to rest, they return to the Self supreme, the witness of all.
+                            </p>
+                            <p>
+                                &nbsp;
+                            </p>
+                            <p class="note center">
+                                [ end ]
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

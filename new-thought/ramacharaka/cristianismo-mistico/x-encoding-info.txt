@@ -1,0 +1,34 @@
+Need o understand, why do I need "BOM" with Spanish pages?
+
+From:
+
+https://www.w3.org/International/questions/qa-css-charset
+
+You should always use UTF-8 as the character encoding of your style sheets and your HTML pages, and declare that encoding in your HTML. If you do that, there is no need to declare the encoding of your style sheet.
+
+Other approaches are only needed if your style sheet contains non-ASCII characters and, for some reason, you can't rely on the encoding of the HTML and the associated style sheet to be the same. In this case you should use @charset or HTTP headers to declare the encoding. (If your HTML and CSS files use the same encoding, the latest versions of major browsers will apply the encoding of the HTML file to the CSS stylesheet.)
+
+
+
+
+Choosing & applying a character encoding
+
+https://www.w3.org/International/questions/qa-choosing-encodings
+
+Choose UTF-8 for all content and consider converting any content in legacy encodings to UTF-8.
+
+If you really can't use a Unicode encoding, check that there is wide browser support for the page encoding that you have selected, and that the encoding is not on the list of encodings to be avoided according to recent specifications.
+
+Check whether your choice will be affected by HTTP server-side settings. <<< MAYBE PROBLEM
+
+In addition to declaring the encoding of the document inside the document and/or on the server, you need to save the text in that encoding to apply it to your content.
+
+
+BYTE ORDER MARK BOM
+
+https://www.w3.org/International/questions/qa-byte-order-mark
+
+
+
+
+

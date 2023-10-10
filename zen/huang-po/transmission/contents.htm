@@ -1,0 +1,173 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Zen Teaching of Huang Po, on the Transmission of Mind</title>
+	<meta name="description" content="The Chung-Ling Record &amp; The Wan-Ling Record, Translated by John Blofeld">
+	<meta name="author" content="Huang Po. Translated by John Blofeld">
+	<meta property="og:title" content="The Zen Teaching of Huang Po, on the Transmission of Mind">
+	<meta property="og:description" content="The Chung-Ling Record &amp; The Wan-Ling Record, Translated by John Blofeld">
+	<meta property="og:image" content="https://selfdefinition.org/zen/huang-po/transmission/images/huang-po-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_transmission-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- first link rel="prev" -->
+	<link rel="next" href="publishing-notes.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* social media
+        
+        The way of the Buddhas flourishes in a mind utterly freed from conceptual thought processes, while discrimination between this and that gives birth to a legion of demons!   
+        
+        b3-wan-ling-anecdotes-cont.htm
+
+        OR
+
+        a2-chun-chou-record-cont.htm
+
+        18. If an ordinary man, when he is about to die, could only see the five elements of consciousness as void; the four physical elements as not constituting an "I"; the real Mind as formless and neither coming nor going; his nature as something neither commencing at his birth nor perishing at his death, but as whole and motionless in its very depths; his Mind and environmental objects as one &ndash; if he could really accomplish this, he would receive Enlightenment in a flash. He would no longer be entangled by the Triple World; he would be a World-Transcendor. He would be without even the faintest tendency towards rebirth. 
+        
+        */
+
+		/* For "No Zen in China" see Paragraph 35 of 
+        b2-wan-ling-anecdotes.htm
+        Can't you understand that in the whole Empire of T'ang [35b] there are NO 'teachers skilled in Zen'?"
+        */
+		p.specified-unhide {
+			display: block;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_transmission-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include("_transmission-title-include.htm"); ?>
+									<h3>
+										Contents
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a class="inline-block" href="../transmision/contenido.htm">../transmision/<wbr />contenido.htm</a>
+									</p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="publishing-notes.htm">Publishing Notes &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav id="index-lists">
+								<ul class="index-contents-links">
+									<li class="contents-first-item"><a href="publishing-notes.htm">Publishing Notes</a></li>
+									<li><a href="introduction.htm">Translator's Introduction</a></li>
+									<li><a href="pei-hsius-preface.htm">P&apos;ei Hsiu&apos;s Preface</a></li>
+									<li><a href="a1-chun-chou-record.htm">Ch&uuml;n Chou Record</a></li>
+									<li><a href="a1-chun-chou-record.htm">Ch&uuml;n Chou Record&ndash;Continued</a></li>
+									<li><a href="b1-wan-ling-record.htm">Wan Ling Record</a></li>
+									<li><a href="b2-wan-ling-anecdotes.htm">Wan Ling Record, Anecdotes</a></li>
+									<li><a href="b3-wan-ling-anecdotes-cont.htm">Wan Ling Anecdotes&ndash;Continued</a></li>
+								</ul>
+								<ul class="index-external-links">
+									<li class="note80">Html coding credits: Terebess.Hu</li>
+									<li>
+										<hr class="menu-hr" />
+									</li>
+									<li class="external-first-item">Huang-po (Huangbo Xiyun) at <a style="display: inline;" href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">Wikipedia</a></li>
+								</ul>
+								<ul class="index-site-links">
+									<li class="site-links-item">Also by Huang Po on this site</li>
+									<li class="site-first-item">Translated by Lok To: <a style="display: block" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">Doctrine of Mind Transmission</a></li>
+									<li class="site-first-item">Translated by D.T. Suzuki: <a style="display: block" href="/zen/huang-po/sermon/huang-po-sermon-suzuki.htm">Sermon of Huang Po</a></li>
+									<li class="site-links-item">Also in Zen section</li>
+									<li class="site-first-item"><a href="/zen/hui-neng/platform/contents.htm">Sutra of Hui Neng (Platform Sutra)</a></li>
+									<li>Garma C.C. Chang <a style="display: inline;" href="/zen/garma-chang/practice-of-zen/contents.htm">The Practice of Zen</a></li>
+									<li class="site-first-item">Garma C.C. Chang <a style="display: inline;" href="/zen/garma-chang/la-practica-del-zen/contenido.htm">La Práctica del Zen</a></li>
+								</ul>
+								<ul class="index-external-links">
+									<li class="external-links-item">External links</li>
+									<li class="external-first-item">This document at Terebess.Hu in html: <a class="inline" href="https://terebess.hu/zen/huangboBlofeld.html#a2">HuangBo Blofeld</a></li>
+									<li>Scanned pdf, without OCR (5 megs) at <a class="inline" href="https://terebess.hu/zen/Huangpo.pdf">Terebes.Hu</a></li>
+									<li class="external-first-item">Huang-po page at <a href="https://terebess.hu/zen/huangbo.html">Terebes.Hu: many articles and authors</a></li>
+									<li>Huang-po at <a href="https://www.selfdiscoveryportal.com/cmHuangPo.htm">SelfDiscoveryportal.Com</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="publishing-notes.htm">Publishing Notes &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

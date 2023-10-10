@@ -1,0 +1,44 @@
+/* file:  /burns/inner-self/_inner-self-sparse.css Updated Jul 29, 2019.
+
+Update April 26, 2022  */
+
+/*** ENCODING info here  https://www.w3.org/International/questions/qa-css-charset
+***/
+
+@media only print {
+	#article:after {
+		content: "Update April , 2022";
+	}
+}
+
+/* use a beige to match photo */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fffbed;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+
+/* this is orange: #ff4500; */
+/* This is default #bde0ff; Blue, selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #eedfbf;
+}
+
+
+
+
+
+/* end */

@@ -1,0 +1,118 @@
+<!-- start of menu include file  January 17, 2022. May 23, 2022.
+
+	There are TWO menu-include files, one for Book 2, One for Book 3. This is Book 2.
+
+-->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li class="first-item"><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contentido.htm">Contentido</a></li>
+			<li class="spanish"><a href="javascript:toTopCleanUrl();"><span class="conditional-hide">Volver
+					</span>Arriba</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/magic/">Magic index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con mouse</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text">
+			<li>El Gran Arcano del Ocultismo Revelado </li>
+			<li class="offset normal note tight">(1866)</li>
+			<li>
+				<img class="menu-image" src="images/eliphas-levi.jpg" alt="Éliphas Lévi" />
+			</li>
+			<li class="offset tight">Éliphas Lévi</li>
+			<li class="offset tight" class="normal note">(1810-1875)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+
+				<li><a href="contenido.htm">Contenido</a></li>
+				<li><a href="introduccion.htm">Introducción</a></li>
+				<li>
+					<hr />
+				</li>
+				<li><strong>Libro Dos:</strong></li>
+				<li><a href="libro-2-capitulo-01.htm">Libro 2 Capítulo 1</a> </li>
+				<li><a href="libro-2-capitulo-02.htm">Libro 2 Capítulo 2</a> </li>
+				<li><a href="libro-2-capitulo-03.htm">Libro 2 Capítulo 3</a> </li>
+				<li><a href="libro-2-capitulo-04.htm">Libro 2 Capítulo 4</a> </li>
+				<li><a href="libro-2-capitulo-05.htm">Libro 2 Capítulo 5</a> </li>
+				<li><a href="libro-2-capitulo-06.htm">Libro 2 Capítulo 6</a> </li>
+				<li><a href="libro-2-capitulo-07.htm">Libro 2 Capítulo 7</a> </li>
+				<li><a href="libro-2-capitulo-08.htm">Libro 2 Capítulo 8</a> </li>
+				<li><a href="libro-2-capitulo-09.htm">Libro 2 Capítulo 9</a> </li>
+				<li><a href="libro-2-capitulo-10.htm">Libro 2 Capítulo 10</a> </li>
+				<li><a href="libro-2-capitulo-11.htm">Libro 2 Capítulo 11</a> </li>
+				<li><a href="libro-2-capitulo-12.htm">Libro 2 Capítulo 12</a> </li>
+				<li>
+					<hr />
+				</li>
+				<li><a href="libro-3-capitulo-01.htm"><strong>Libro Tres</strong></a> </li>
+				<li>
+					<hr />
+				</li>
+				<li><a href="apendice.htm">Apéndice</a></li>
+				<li>
+					<hr />
+				</li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li>Éliphas Lévi a <a href="https://es.wikipedia.org/wiki/Eliphas_L%C3%A9vi">
+						Wikipedia (espa&ntilde;ol)</a> </li>
+
+				<li>Éliphas Lévi at <a href="https://en.wikipedia.org/wiki/%C3%89liphas_L%C3%A9vi">
+						Wikipedia (English)</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site</li>
+				<li style="margin-bottom:0;padding-bottom:0;">Éliphas Lévi</li>
+
+				<li style="margin-top:0;"><a href="/magic/eliphas-levi/paradojas/contenido.htm">
+						<em><span class="block">Las Paradojas de</span> la Alta Ciencia</em></a></li>
+				<li style="margin-bottom:0;padding-bottom:0;">This book in English:</li>
+				<li style="margin-top:0;"><a href="/magic/eliphas-levi/great-secret/contents.htm"><em>The Great Secret,
+							or Occultism Unveiled</em>em></a></li>
+				<li>by Franz Hartmann <a href="/magic/hartmann/white-and-black/contents.htm"><em>Magic
+							White and Black</em></a> </li>
+				<li>by Jacob Boehme <a href="/christian/jacob-boehme/mysterium-magnum/contents.htm"><em>
+							The Mysterium Magnum</em></a> </li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="Top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

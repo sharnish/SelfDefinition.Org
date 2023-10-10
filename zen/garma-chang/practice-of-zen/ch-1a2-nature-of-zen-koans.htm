@@ -1,0 +1,364 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Three Types of Koans - Practice of Zen, Garma C. C. Chang</title>
+	<meta name="description" content="We temporarily and arbitrarily allocate the numerous kinds of Zen koans into three groups.">
+	<meta name="author" content="Garma C. C. Chang">
+	<meta property="og:title" content="Three Types of Koans - Practice of Zen, Garma C. C. Chang">
+	<meta property="og:description" content="We temporarily and arbitrarily allocate the numerous kinds of Zen koans into three groups.">
+	<meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+	<!-- load style sheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_practice-of-zen-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="prev" href="ch-1a1-nature-of-zen.htm">
+	<link rel="next" href="ch-1a3-nature-of-zen-special-art.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 200px;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_practice-of-zen-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_practice-of-zen-title-include.htm"); ?>
+									<h3>
+										Three Types of Koans
+										<!-- title not in book, added for this page-->
+									</h3>
+									<p class="tiny">
+										Esta página en español: <a href="../la-practica-del-zen/cp-1a2-naturaleza-del-zen-el-koan.htm">..naturaleza-del-zen-el-koan.htm</a>
+									</p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ch-1a1-nature-of-zen.htm">&lt;&nbsp;The Nature of Zen </a></li>
+									<li class="align-right"><a href="ch-1a3-nature-of-zen-special-art.htm">Zen a Special Art&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<!-- new item Nov 1, 2019 -->
+							<div class="nav-spacer" style="line-height: 1px;">
+								&nbsp;</div>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#koans-1">Koans - First type</a></li>
+									<li><a href="#koans-2">Koans - Second type</a></li>
+									<li><a href="#koans-3">Koans - Third type</a></li>
+								</ul>
+							</nav>
+							<p class="note">[Continuing with <strong>Point 2</strong> from the preceeding page: <em>different ways and from different levels</em>.]</p>
+							<!-- begins in PDF page 17 -->
+							<p>
+								Zen can be explained in numerous ways because there are no definite "instructions" for Zen to follow. The great Zen Masters seldom followed any set pattern in expressing themselves or in teaching their students. However, in order to make Zen a little easier to understand, let us temporarily and arbitrarily allocate the numerous kinds of Zen expression found in the koans into the following three groups:
+							</p>
+							<blockquote>
+								<p>
+									1. Koans that illustrate Zen-Truth through plain and direct statements, i.e., the "explicit-affirmative" type.
+								</p>
+								<p>
+									2. Koans that illustrate Zen-Truth through a negating approach, i.e., the "implicit-negative" type.
+								</p>
+								<p>
+									3. Koans that may be described as somewhat beyond, between, or encompassing types 1 and 2.
+								</p>
+							</blockquote>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="koans-1">&nbsp;</a>
+							<h4>
+								Koans - 1st type
+							</h4>
+							<p>
+								Some examples of group 1 follow:
+							</p>
+							<blockquote>
+								<p>
+									A. <strong>Chao Chou</strong> <a class="note" href="https://en.wikipedia.org/wiki/Zhaozhou_Congshen">[Zhaozhou Congshen]</a> asked <strong>Nan Chuan</strong>, "What is the Tao?" Nan Chuan answered, "The ordinary mind is Tao." Chao Chou then asked, "How can one approach it?" Nan Chuan replied, "If you want to approach it, you will certainly miss it." "If you do not approach it, how do you know it is the Tao?" "The Tao is not a matter of knowing, nor a matter of not knowing. To know is a delusory way of thinking, and not to know is a matter of insensibility. If one can realize the Tao unmistakably, [his mind will be like] the great space &ndash; vast, void, and clear. How, then, can one regard this as <em>right</em> and that as <em>wrong</em>?" Upon hearing this remark, Chao Chou was immediately awakened.
+								</p>
+							</blockquote>
+							<ul class="fnote">
+								<li>Ma Tsu <a class="note" href="https://en.wikipedia.org/wiki/Mazu_Daoyi">[Mazu Daoyi]</a> was the teacher of Nan Chuan.</li>
+								<li>Nan Chuan <a class="note" href="https://en.wikipedia.org/wiki/Nanquan_Puyuan">[Nanquan Puyuan]</a> was the teacher of Chao Chou. </li>
+								<li>Chao Chou <a class="note" href="https://en.wikipedia.org/wiki/Zhaozhou_Congshen">[Zhaozhou Congshen]</a> was a Zen master in the Tang dynasty.</li>
+							</ul>
+							<p>
+								Wu Men <a class="note" href="https://en.wikipedia.org/wiki/Wumen_Huikai">[Wumen Huikai]</a> made the following interesting comment on the above koan: "Even though Chao Chou became enlightened, he should still work for another thirty years to graduate."
+							</p>
+							<ul class="fnote">
+								<li>Ma Tsu was also the teacher of Pai Chang.</li>
+								<li>Pai Chang <a class="note" href="https://en.wikipedia.org/wiki/Baizhang_Huaihai">[Baizhang Huaihai]</a> was the teacher of Huang Po.</li>
+								<li>Huang Po (d. 850) <a class="note" href="https://en.wikipedia.org/wiki/Huangbo_Xiyun">[Huangbo Xiyun]</a> and Chao Chou (d. 897) were contemporaries, according to a story below. For more Huang Po, see in the Zen section, <em>Zen Teachings of Huang Po,</em> <a class="note" href="/zen/huang-po/dharma-of-mind/contents-introduction-preface.htm">The Dharma of Mind Transmission</a> </li>
+							</ul>
+							<blockquote>
+								<p>
+									B. Master <strong>Huang Po</strong> said in his sermon, "All the Buddhas and sentient beings are nothing but one's mind. From the very no-beginning-time this Mind never arises and is not extinguished. It&nbsp;is neither blue nor yellow. It has no form or shape. It&nbsp;is neither existent nor nonexistent, old or new, long or short, big or small. It&nbsp;is beyond all limitation and measurement, beyond all words and names, transcending all traces and relativity. It is here now! But as soon as any thought arises [in your mind] you miss it right away! It is like space, having no edges, immeasurable and unthinkable. Buddha is nothing else but this, your very mind!"
+								</p>
+								<p>
+									C. The Second Patriarch <a class="note" href="https://en.wikipedia.org/wiki/Dazu_Huike">[Dazu Huike]</a> asked <strong>Bodhidharma</strong>, <a class="note" href="https://en.wikipedia.org/wiki/Bodhidharma">[Bodhidharma]</a> "How can one get into Tao?" Bodhidharma replied:
+								</p>
+								<p>
+									Outwardly, all activities cease;
+									<br />
+									Inwardly, the mind stops its panting.
+									<br />
+									When one's mind has become a wall,
+									<br />
+									Then he may [begin to] enter into the Tao.
+								</p>
+							</blockquote>
+							<p>
+								This highly significant stanza is one of the esoteric type of koans that the Zen Masters are disinclined to discuss or elaborate. Despite its apparent "mystic" flavor and profound significance, it is very explicit and straightforward. It describes plainly the actual experience of the pre-Enlightenment state. This koan, therefore, belongs to the first group.
+							</p>
+							<blockquote>
+								<p>
+									D. Zen Master <strong>Shen Tsan</strong> <a class="note" href="https://en.wikipedia.org/wiki/Sheng-yen">[Sheng-yen]</a> gained his enlightenment through <strong>Pai Chang</strong>. <a class="note" href="https://en.wikipedia.org/wiki/Baizhang_Huaihai">[Baizhang Huaihai]</a> He then returned to the monastery in which he had been ordained by his "first teacher," the monk who had brought him up from childhood and who, at that time, was a very old man. One day Shen Tsan was helping his old teacher to bathe. While washing the old man's back, he said to him, "This is such a fine temple, but the Buddha in it is not at all holy!" His old teacher then turned around and looked at him, whereupon Shen Tsan commented, "Though the Buddha is not holy, he can still radiate the light." Again, one day, while the old man was reading a sutra near a paper-covered window, a bee tried desperately, with all its strength, to fly out of the room through the paper but was unable to get through. Shen Tsan, seeing this, said,
+								</p>
+								<blockquote>
+									<p>
+										"The world is so vast and wide that you may easily set yourself free in it. Why, then, do you foolishly bore into old, rotten paper?
+									</p>
+									<p>
+										While the empty door is widely open
+										<br />
+										How foolish it is to try to get out
+										<br />
+										By thrusting against the window!
+										<br />
+										Alas! How can you [Master]
+										<br />
+										Raise your head above the slough
+										<br />
+										By putting your nose against old, rotten papers
+										<br />
+										For a hundred years?"
+									</p>
+								</blockquote>
+								<p>
+									Hearing this remark, the old man laid down his book and said to Shen Tsan, "For quite a few times now, you have made unusual remarks. From whom did you gain your knowledge while you were away from home?" Shen Tsan replied, "I have reached the state of peaceful rest through the grace of Master Pai Chang. Now I have come back home to pay my debt of gratitude to you." The old teacher then prepared a great festival in his young disciple's honor, summoned the monks in the monastery to the assembly hall, and besought Shen Tsan to preach the Dharma to all. Whereupon Shen Tsan ascended to the high seat and, following the tradition of Pai Chang, preached as follows:
+								</p>
+								<blockquote>
+									<p>
+										Singularly radiating is the wondrous Light;
+										<br />
+										Free is it from the bondage of matter and the senses.
+										<br />
+										Not binding by words and letters,
+										<br />
+										The Essence is nakedly exposed in its pure eternity.
+										<br />
+										Never defiled is the Mind-nature;
+										<br />
+										It exists in perfection from the very beginning.
+										<br />
+										By merely casting away your delusions
+										<br />
+										The Suchness of Buddhahood is realized.
+									</p>
+								</blockquote>
+								As soon as the old teacher heard this stanza, he was immediately awakened.
+								<p>
+									E. The <strong>Sixth Patriarch's [Hui Neng]</strong> <a class="note" href="https://en.wikipedia.org/wiki/Huineng">[Huineng]</a> remark is another good example: "If you have come here for Dharma, you should first cast aside all mental activity and let no thoughts whatsoever arise in you. Then I shall preach the Dharma for you." After a long time of silence, the Sixth Patriarch continued, "Not thinking of good, not thinking of evil, <em>right at this very moment, that</em> is your original face." Hui Ming was immediately enlightened.
+								</p>
+							</blockquote>
+							<p>
+								If the phrase, "Not thinking of good, not thinking of evil," is considered by itself, this koan is easily misinterpreted as being negative or nullifying. But the real point of the Sixth Patriarch's remark is in the words that follow: "<em>right at this very moment, that</em> is your original face." Nothing could be more direct and affirmative than this.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="koans-2">&nbsp;</a>
+							<h4>
+								Koans - 2nd type
+							</h4>
+							<p>
+								Now let us consider a few koans belonging to our second group, the "implicit-negative" type, that is, those which illustrate Zen-Truth through "nullifying" or abrogating expressions.
+							</p>
+							<blockquote>
+								<p>
+									A. Said a Zen Master, "If you have a staff, I will give you one; if you do not have a staff, I will take one away from you."
+								</p>
+								<p>
+									B. <strong>Te Shan</strong> <sup>[1]</sup> <a class="note" href="https://en.wikipedia.org/wiki/Deshan_Xuanjian">[Deshan_Xuanjian]</a> said, "If you cannot answer I shall give you thirty blows; if you can answer, I shall also give you thirty blows."
+								</p>
+							</blockquote>
+							<p class="fnote">
+								[1. For Te Shan (Deshan Xuanjin) aka Te-shan Hsüan-chien (780-865) also see <a class="note" href="https://terebess.hu/zen/deshan.html">terebess.hu/zen/deshan.html</a>&nbsp;]
+							</p>
+							<blockquote>
+								<p>
+									C. "What is the Buddha?" "A stick of dry dung."
+								</p>
+								<p>
+									D. A monk asked Chao Chou, "What is Chao Chou?" Chao Chou answered, "The east gate, west gate, south gate, and north gate."
+								</p>
+								<p>
+									E. A monk asked <strong>Tung Shan</strong>, <sup>[2]</sup> <a class="note" href="https://en.wikipedia.org/wiki/Dongshan_Liangjie">[Dongshan Liangjie]</a> "When the cold winter and the hot summer come, how can you avoid them?" Tung Shan answered, "Why don't you escape to a place where there is no cold winter and no hot summer?" The monk asked, "Where is that place without winter and summer?" Tung Shan replied. "In the winter the Master is frozen, and in the summer is scorched to death."
+								</p>
+								<p class="fnote">
+									[2. See on this site: <a href="/zen/dongshan/thomas-cleary-comments-on-five-ranks-etc.htm">../dongshan/thomas-cleary-comments-on-five-ranks-etc.htm</a>&nbsp;]
+								</p>
+								<p>
+									F. One day I Shan, Wu Feng, and some other monks were ail attending Pai Chang. Pai Chang asked I Shan, "How can you speak without your throat, lips, and tongue?" I Shan said, "Well, Master, in that case, you say it, please." Pai Chang replied, "I don't mind saying it to you, but I don't want to murder my posterity."
+								</p>
+								<p>
+									G. A monk asked Nan Chuan, "Is there any teaching that is not to be given to the people?" "Yes." "What is it then?" "It is not mind, not Buddha, and not a thing."
+								</p>
+								<p>
+									H. A monk was reciting the <em>Diamond Sutra</em>: "... if one sees that <em>forms are not forms,</em> he then sees Buddha." The Master was passing by and heard it. He then said to the monk, "You recite wrongly. It goes like this: 'If one sees that <em>forms are forms,</em> he then sees Buddha.'" The monk exclaimed, "What you have said is just opposite to the words of the <em>Sutra</em>!" The Master then replied, "How can a blind man read the <em>Sutra</em>?"
+								</p>
+								<p>
+									I. One day when <strong>Lin Chi</strong> <sup>[3]</sup> <a class="note" href="https://en.wikipedia.org/wiki/Linji_Yixuan">[Linji Yixuan]</a> saw a monk approaching him, he raised his <em>Fo Tzu</em> [duster]; the monk then bowed before him, but Lin Chi beat him. After a while another monk came by. Lin Chi again raised his <em>Fo Tzu.</em> When this monk showed no sign of respect, Lin Chi beat him as well.
+								</p>
+								<p class="fnote">
+									[3. Lin Chi's teacher was Huang Po (above). Also see Chapter III: <a href="ch-3d-four-distinctions-of-lin-chi.htm">The "Four Distinctions" of Lin Chi</a>&nbsp;]
+								</p>
+								<p>
+									J. One day Lin Chi was invited by his patron to give a sermon. When he ascended to his seat and was about to preach, Ma Ku came forward and asked him: "The All-merciful One [Avalokitesvara] has a thousand arms and a thousand eyes. Which is the main eye?" Lin Chi answered, "The All-merciful One has a thousand arms and a thousand eyes. Which is the main eye? Say it! Say it!" Ma Ku then dragged Lin Chi down forcibly from the seat and sat upon the seat himself. Lin Chi walked up to Ma Ku and said very humbly, "I do not understand, Sir." Ma Ku was about to reply, when Lin Chi dragged him down from the seat and sat on it again himself. Ma Ku then walked out of the hall. After Ma Ku had walked out, Lin Chi also descended from the seat, and no sermon was given. (See Chapter III, "The Four Problems of Zen Buddhism," pp. 157-175.)
+								</p>
+								<p>
+									K. The Sixth Patriarch [<strong>Hui Neng</strong>] said in this famous stanza:
+								</p>
+								<blockquote>
+									<p>
+										The <em>Bodhi</em> is not like a tree;
+										<br />
+										The mirror bright is nowhere shining;
+										<br />
+										From the beginning not a thing exists.
+										<br />
+										Where can one find any dust collecting?
+									</p>
+								</blockquote>
+								<span class="note80">[For more on Hui Neng see the next 2 pages and endnote <span class="nowrap">Chapter 1</span> Note 8.]</span>
+							</blockquote>
+							<p>
+								If, from the very beginning, not a thing ever is, how can we accuse the Zen Masters of being negatory? The fact is, they did not negate anything. What they have done is to point out our delusions in thinking of the nonexistent as existent, and the existent as nonexistent.
+							</p>
+							<p>
+								This rather arbitrary classification of these two types of Zen expressions is neither definite nor irrevocable and does not imply that they are either wholly affirmative or wholly negative. For the affirmative type of koan also contains a negative element, and the negative type an affirmative one. No Zen koan is absolutely one type or the other. The Zen-Truth that both types try to convey has not been modified or mutilated, despite the outward difference of presentation.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="koans-3">&nbsp;</a>
+							<h4>
+								Koans - 3rd type
+							</h4>
+							<p>
+								The koans in our third group are somewhat difficult to understand and explain. The Zen monks described them as the "impenetrable type," like "silver mountains and iron walls." They can, strictly speaking, only be understood by advanced persons whose profound intuitions match those of the actors, thus enabling them to discern directly and clearly the meaning of the koan without resorting to guessing or analysis. If one is willing to risk missing the point, these koans may not be absolutely unintelligible or unexplainable, but the desirability of such an approach is also very doubtful. Nevertheless, a few examples are given here for the reader to interpret according to his own understanding and insight.
+							</p>
+							<blockquote>
+								<div class="right-image-div">
+									<img src="images/nan-chuan-kills-the-cat.jpg" alt="Chao Chou" />
+									<p class="note80">
+										Nan Chuan (c.749-c.835)<br />
+										<a href="https://en.wikipedia.org/wiki/Nanquan_Puyuan">Nanquan Puyuan<br />
+											"Nansen kills the cat"</a>
+									</p>
+								</div>
+								<p>
+									A. One day, in the monastery of <strong>Nan Chuan</strong>, the monks of the east and west wing had a dispute over the possession of a cat. They all came to Nan Chuan for arbitration. Holding a knife in one hand and the cat in the other, Nan Chuan said, "If any one of you can say the right thing, this cat will be saved; otherwise it will be cut into two pieces!" None of the monks could say anything. Nan Chuan then killed the cat. In the evening, when Chao Chou returned to the monastery, Nan Chuan asked him what he would have said had he been there at the time. Chao Chou took off his straw sandals, put them upon his head, and walked out. Whereupon Nan Chuan commented, "Oh, if you had only been here, the cat would have been saved!"
+								</p>
+								<p>
+									B. Teng Yin Feng was a disciple of <strong>Ma Tsu</strong>. <a class="note nowrap" href="https://en.wikipedia.org/wiki/Mazu_Daoyi">[Mazu Daoyi]</a> One day he decided to visit Master Shih Tou [meaning stone, or rock]. When he mentioned this to Ma Tsu, the Master said, "Well, you can go there, but the way of Shih Tou is very slippery!" Teng Yin Feng replied, "I am taking my staff with me. I can play my role in any drama that befalls me." Whereupon he went to the abode of Shih Tou. Coming into the room, he circled the meditation bed on which Shih Tou was sitting, struck the ground with his staff, and asked, "What is the meaning of this?" Shih Tou exclaimed, "Alas, Heaven! Alas, Heaven!" Yin Feng said nothing, and returned to Ma Tsu to ask his advice.
+								</p>
+								<p>
+									Ma Tsu suggested, "Go to him again and say exactly the same thing. After he gives you an answer, immediately [and forcefully] exhale your breath with a sound of 'Whew, whew!' " Keeping this advice in mind, Yin Feng went to Shih Tou for the second time and asked him the same question. But unexpectedly Shih Tou did not give him any answer. Instead, he blew out his breath twice, whistling "Whew, whew." [before Yin Feng had a chance to do the same]Failing to find any answer to this unexpected situation, Yin Feng again returned to Ma Tsu and told him what had happened. Ma Tsu then said, "Well, I told you before, the way of Shih Tou is very slippery!"
+								</p>
+								<p>
+									C. A monk called Tien Jan went to visit the Royal Master, Hui Chung. [Upon arriving there] he asked the attendant monk whether the Royal Master was at home. The monk replied, "Yes, but he won't receive any guests." Tien Jan said, "Oh, that is too profound and remote!" The attendant monk answered, "Even the Buddha's eyes cannot see him." Said Tien Jan, "The dragon gives birth to a baby dragon and the phoenix gives birth to a baby phoenix!" <a class="return-anchor" id="return-ch-1a2-note-3"></a><sup><a href="endnotes.htm#chapter-1-3">[Endnote 1-3]</a></sup> He then left. Later, when Hui Chung got up from his sleep and learned what had happened, he beat the attendant monk.
+								</p>
+								<p>
+									When Tien Jan heard about this he commented, "This old man deserves to be called 'the Royal Master'!" The next day Tien Jan went to visit Hui Chung again. As soon as he saw the Royal Master, he spread his "sitting shawl" on the ground [as if he were going to sit down]. Hui Chung remarked, "This is not necessary, this is not necessary." Tien Jan then retreated a few steps, upon which the Royal Master said, "All right, all right." But suddenly Tien Jan moved a few paces forward again. The Royal Master then said, "No, no." Whereupon Tien Jan circled the Master and left. Afterward, the Master commented: "It is a long time since the days of the Holy Ones. People are now very lazy. Thirty years hence it will be hard to find a man like him."
+								</p>
+								<p>
+									D. Chao Chou went to visit Huang Po. When Huang Po saw him coming, he closed the door. Chao Chou then picked up a torch and shouted loudly in the congregation hall, "Fire! Fire! Help! Help!" Hearing this cry, Huang Po opened the door and came out. As soon as he saw Chao Chou he caught his arm and said, "Say it! Say it!" Chao Chou replied, "You begin to draw the bow after the thief has left."
+								</p>
+							</blockquote>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="ch-1a1-nature-of-zen.htm">&lt;&nbsp;The Nature of Zen </a></li>
+									<li class="align-right"><a href="ch-1a3-nature-of-zen-special-art.htm">Zen a Special Art&nbsp;&gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

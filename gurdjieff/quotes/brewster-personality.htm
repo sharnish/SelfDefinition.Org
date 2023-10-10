@@ -1,0 +1,503 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ch. 3, Personality, Spiritual Physics</title>
+	<meta name="description" content="The ego and the personality; The centers; Profit of personality and essence; What is sincerity? Active and passive personality">
+	<meta name="author" content="Jerry Brewster">
+	<meta property="og:title" content="Ch. 3, Personality, Spiritual Physics">
+	<meta property="og:description" content="The ego and the personality; The centers; Profit of personality and essence; What is sincerity? Active and passive personality">
+	<meta property="og:image" content="https://selfdefinition.org/gurdjieff/quotes/images/gurdjieff.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_gurdjieff-quotes-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* TEXTS IN SPANISH NEED UTF-8 BOM AND SET LANGUAGE ABOVE */
+		/* this template updated Mar 12, 2018 to fix menu scroll */
+
+		ul.page-links {
+			width: 315px;
+		}
+
+		.page-links li {
+			width: inherit;
+		}
+
+		@media only screen and (max-width:360px) {
+			ul.page-links {
+				width: 100%;
+			}
+
+			p {
+				color: #001111;
+			}
+
+			/* has entry in dark theme styles  */
+			p.question {
+				color: #800000;
+			}
+
+			p.blockquote {
+				margin-left: 20px;
+			}
+
+			div.hidden p {
+				padding: 0 4px;
+			}
+		}
+
+		/* Brewster footnote. Keep on page to prevent reload problem.
+           Style CSS is also added to the CSS stylesheet */
+
+		label {
+			margin-left: 10px;
+			/* has entry in dark styles */
+			color: maroon;
+			/* has entry in dark styles */
+			background: #EFE;
+			font-size: 80%;
+			display: block;
+			width: auto;
+		}
+
+		div.fnote,
+		p.fnote {
+			font-size: 80%;
+			margin-left: 10px;
+			margin-right: 5px;
+			padding-left: 2px;
+			color: maroon;
+		}
+
+		div.hidden,
+		p.hidden {
+			font-size: 90%;
+			color: maroon;
+			/* has entry in dark styles */
+			background: #d0ffd0;
+		}
+
+		label[for=element-toggle-1],
+		label[for=element-toggle-2] {
+			cursor: pointer;
+		}
+
+		#element-toggle-1,
+		#element-toggle-2 {
+			display: none;
+		}
+
+		#element-toggle-1:not(:checked)~#toggled-element-1,
+		#element-toggle-2:not(:checked)~#toggled-element-2 {
+			display: none;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_gurdjieff-quotes-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_gurdjieff-quotes-title-include.htm"); ?>
+									<h3>
+										Personality <span class="block">Jerry Brewster </span>
+									</h3>
+									<p class="tiny">
+										Esta pagina en español: <a href="brewster-personalidad.htm">brewster-personalidad.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="nicoll-centers-and-parts-of-centers.htm">&lt; Nicoll: Centers</a></li>
+									<li class="align-right"><a href="brewster-personalidad.htm">Brewster: La Personalidad &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<header>
+
+								<p class="note80" style="margin-bottom: 0;">
+									Excerpt from <em>Spiritual Physics</em>
+								</p>
+								<p class="note80" style="margin-top: 0; margin-bottom: 0;">
+									chapter 3, pages 45-54
+									<br />
+									<span class="block" style="font-size: 90%;">Copyrighted, Excerpt, Fair Use</span>
+								</p>
+								<p class="tiny block" style="margin-top: 0;">
+									See at <a href="https://books.google.com/books?id=1L_GBgAAQBAJ&pg=PA45&lpg=PA45&dq=%22Most+of+the+time+ego+is+invisible.%22&source=bl&ots=26osZp4Lup&sig=ACfU3U0wxc7gluyw6aKOpQLV2JCpZXwr5Q&hl=en&sa=X&ved=2ahUKEwip08mSspviAhUjGDQIHUHzBjUQ6AEwAHoECAAQAQ#v=onepage&q=%22Most%20of%20the%20time%20ego%20is%20invisible.%22&f=false">Google Books</a> and <a href="https://amzn.to/3bD0AMZ">Amazon.com</a></p>
+							</header>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#ego-and-personality">1. Ego and Personality</a></li>
+									<li><a href="#ego-and-centers">2. Ego and Centers</a></li>
+									<li><a href="#work-with-ego">3. Work with Ego?</a></li>
+									<li><a href="#personality-essence-profit">4a. Personality Profit, Essence Profit</a></li>
+									<li><a href="#sincerity-of-effort">4b. Sincerity of Effort</a></li>
+									<li><a href="#sincerity">5. What is Sincerity?</a></li>
+									<li><a href="#active-passive-personality">6. Active vs. Passive Personality</a></li>
+									<li><a href="#experimentation">7. Experimentation</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ego-and-personality">&nbsp;</a>
+							<p class="question">
+								Q1: If there is a difference between ego and personality, what is it?
+							</p>
+							<div class="right-image-div">
+								<img src="images/Jerry-Brewster.jpg" alt="Jerry Brewster" />
+							</div>
+							<p>
+								JB: Most of the time ego is invisible. I don’t see it; in fact, I am the ego. I define that as active personality. Ego runs the world. People die unnecessarily because of it. Everything’s a triad, so there’s always a part that’s lower. There’s ego on every level; every frequency of vibration has its own relationship to ego. The aim of that ego is to satisfy an illusion or the lie about myself: that’s active personality, everything is about me, me, me; I want, my requirements, and it’s all for personality’s profit.
+							</p>
+							<p>
+								The idea of personality profit and even essence profit is very useful to help me identify it. Without knowing this idea, I’ll never see my ego, unless somebody says something to me that doesn’t meet my requirements and I’m present enough to receive that impression.
+							</p>
+							<p>
+								Then there’s the ego of the essence, an <span class="nowrap">I-am-ness</span>. It does have an ego, but it’s a much better, healthier ego than personality’s. There’s ego, and then there’s another kind of ego about which Gurdjieff said, "One must become a conscious egoist before one could become an altruist." And then there’s the ego of Man No. 4, which is the ego of consciousness. I need this ego to evolve. There’s ego, but I act from a truth about myself, not the usual lie of personality. The ego of Man No. 4 is really what Gurdjieff means when he speaks about a more conscious egoist.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ego-and-centers">&nbsp;</a>
+							<p class="question">
+								2: What is the effect of ego on our centers?
+							</p>
+							<p>
+								JB: We need to consider that our centers are contaminated and ego is one of the forces behind a lot of the contamination. There is a something put into all sentient beings that comes from a very high place, the real need to be. Since I don’t yet have being, that need gets twisted into ego. I create a fantasy with the contents of my centers, an illusion of being.
+							</p>
+							<div class="right-image-div">
+								<img src="images/Jerry-Brewster-cover.jpg" alt="Jerry Brewster cover" />
+							</div>
+							<p>
+								I remember a story to illustrate this point. One day the Devil is stoking the furnaces in Hell, and one little imp comes running to him and says, "Oh my God, Satan, we have a great problem. We’re going to have to shut down Hell." The Devil screams, "What are you talking about? We’re going to shut down Hell? I know we’re only half full because people don’t have a soul so we don’t get too much material down here. You know, you have to have a soul in order to get into Hell." So he said, "What do you mean, we’re going to have to shut down?" The imp says, "I just found out that God put out an impulse into the universe so that every entity, every cell in the whole universe is going to have this impulse to be." He said, "Nobody will go to Hell, if they all have real being."
+							</p>
+							<p>
+								And Satan said, "Gee, that is a problem. Let me think about this overnight." The next day, the little imp comes in, and he sees Satan, not only having half the furnaces burning, he’s now lighting up the rest of them. The little imp asks, "What are you doing? I told you that God put out this edict ‘to be.’" He said, "I know, but I added something to it. I added to be good, to be famous, and to be rich. See, I put a little tagline on it; now we’ll get them all." "To be" is what we need, but a tagline has been included.
+							</p>
+							<p>
+								It’s the equivalent of Kundabuffer. It becomes active. You’re born with a very infantile being, and before anything real can take place, you start to have an education to be this, to be that, and that starts to create the illusion of being. We’re educated to create this illusion of being something, and that’s the contents of the centers. Certainly, not all; some contents are different and each center has its own content, and its own illusion of being; even our postures act as an "I am."
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="work-with-ego">&nbsp;</a>
+							<p class="question">
+								3: Is one able to detect ego and work directly with ego?
+							</p>
+							<p>
+								JB: One of the machine’s main fuels is ego; probably 85 percent of what drives me is ego. With a little less ego, maybe our whole life would be different.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="personality-essence-profit">&nbsp;</a>
+							<p class="question">
+								4a: What do you mean when you say that real Work cannot be for personality profit or even for essence profit?
+							</p>
+							<p>
+								JB: According to the Enneagram, you could say that personality is based on the frequency of vibration of H192. You can say that man is a triad which includes false personality, which is H384, total illusion and personality; H192 which is education and formatory apparatus to a degree, what we’ve learned; but the third part of the triad of ordinary man is essence, H96. We live, mostly, between false personality and personality, between H384 and H192, with very little essence, H96. But we’re very hungry for essence. We have a need for a relationship with it, unless it has died.
+							</p>
+							<p>
+								I have seen people buy art for that. They’re hard-nosed businessmen, who usually try to get a bargain, and suddenly they pay through the nose for a work of art. There’s something about it they had to have. I saw these hard-bitten, what I call fork-tongued, buffalo-shooting businessmen come in, and be touched suddenly. It has to be real art, however, and there are certain artists that have something more objective in them; they’re able to transmit a finer vibration.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="sincerity-of-effort">&nbsp;</a>
+							<p class="question">
+								4b: Can you explain the idea that the result comes from the sincerity of the effort, not from the magnitude of the effort?
+							</p>
+							<p>
+								JB: The magnitude of the result doesn’t necessarily come from the magnitude of the effort. I can feel a certain <span class="nowrap">I-am-ness</span>, the equivalent of having a permanent I for a moment. If you make an effort to search for the succeeding higher and you make an effort to maintain that, there will be another result entirely.
+							</p>
+							<p>
+								There’s nothing in life that needs consciousness. Consciousness will help you in life, but there’s no need for it. If you’re in a state of identification, the last thing that the I’s that are identified want is consciousness. They don’t want the light of consciousness. We need passive personality to evolve in the evolving triad. Active personality is the descending triad. You have to see and know the difference. You need to maintain the effort of consciousness along with the idea of active personality and passive personality.
+							</p>
+							<p>
+								If you maintain the effort for a certain period of time, you may see the posture you’re in: your shoulders are up, you have this expression on your face, all artificial; you’re leaning over and you can’t get your head back, and you’re nodding, even though you think they’re full of shit or you don’t agree with anything, you’re still nodding, like one of these bobblehead dolls on a car dashboard.
+							</p>
+							<p>
+								And you see in the emotions you’re just trying to impress this person. You feel at that moment and you see how mechanical it is but the personality can’t take the light, and suddenly it’s gone; it hides. Depending on how deeply I see it, those I’s disappear and could even be gone forever, according to how deep their roots are.
+							</p>
+							<!-- Hi Madeline - haven't seen you in about 10 years, since the old G group days in S. Florida. I'm living in Puerto Vallarta and attending a G group here.
+
+In Jerry's book, Spiritual Physics, chapter 3, Personality, there is an ambiguous sentence structure that maybe you could help me with. 
+
+"This kind of seeing enables me to get to passive Do, which is receptive personality, and the I’s that wish to evolve that wish to help."
+
+Is he saying that the "I's that which to evolve" ARE part of the passive Do? Or that he can get to passive Do AND to the other I's?
+
+Thanks very much. Hope you are well. -->
+							<p>
+								This kind of seeing enables me to get to passive Do, which is receptive personality, and the I’s that wish to evolve that wish to help. These I’s have the right education and aim, and they’re for the Work. They’re not part of an unhealthy ego; they’re running now on another fuel, a fuel needed to get to essence; for that moment, you’re free of active personality.
+							</p>
+							<p>
+								Through this kind of seeing you realize that you’ve been dragged through your life, in the best times as well as your worst times and all the times in between, by this claw that’s been around your neck; that claw is active Do, active personality. It’s dragged you down the path of least resistance all your life.
+							</p>
+							<p>
+								Suddenly, at the moment you see that, you realize that. It’s still not essence, but a freedom appears. But in the next moment, active Do imitates passive Do. You have the self-remembering look. You’re still really close to that state of relaxation, but you’re not sensing yourself anymore; you’ve now got active Do imitating passive Do.
+							</p>
+							<p>
+								It’s a situation that one has to see and recognize over and over again. I need to work for a different consciousness, for a different reason, because drop by drop I deposit a finer vibration in me, which is accumulated. It may be at a certain moment that when I make an effort, I make it from a much higher energy, and then the reconciliations are much higher.
+							</p>
+							<p>
+								Sometimes, if you bring a high enough energy, you just skip through the Enneagram to another part of the triad to the left side of the Enneagram; you reach it immediately. It’s even possible you can see chief feature for a moment. This level of effort could bring you to any triad of the Enneagram, at any time. You could have an experience of the higher centers. I’ve had experiences of H6, and of H12. That’s why I diagrammed the Enneagram the way I did. <span class="note80">[The diagram does not appear in this chapter.]</span> I began to understand what the characteristics of those notes might be.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="sincerity">&nbsp;</a>
+							<p class="question">
+								5: What is sincerity?
+							</p>
+							<p>
+								JB: Conscience is what we must aspire to. It begins with real remorse. I was told time and again I was practicing cheap remorse. I’d bring in my sob story and would be told this is cheap remorse. I was given special exercises by Mme. de Hartmann to be able to open to real remorse, but at that time I wasn’t ready for it, and I couldn’t understand why she gave me these exercises. I didn’t have the right feeling. Later, I understood the exercises she gave me and was able to use them to acquire the right vibration of feeling.
+							</p>
+							<p>
+								What we usually call "sincerity" is usually cheap sincerity or cheap remorse. Gurdjieff refers to this as a very big weakness. So, one must ask, what does it really mean to value consciousness? Gurdjieff says, "Conscience is to the emotions what consciousness is to the mind." When he says conscience, he means objective conscience, that everyone in the world will feel the same. In one country, everyone will have the same morality, but if you go to a different country, those same actions and thoughts may be considered immoral. Yet, there is also an objective morality that has been implanted within all of mankind but has been buried.
+							</p>
+							<p>
+								Personality is a lie based on the illusion we’ll live forever. We think that we’re the center of the universe. Even the galaxy is too small for personality. It can’t conceive of death. That’s why when one sees deeply enough one sees that everything underneath is fear. Personality knows it is a lie and that it will die. So it bends over backwards to act and feel the opposite.
+							</p>
+							<p>
+								Otherwise, how could we do what we do? In fact, everything we do, we do as if we were going to live forever. How not to lie? This is interesting because as you become more essential, you start to see this unconscious lying. You start to correct yourself in conversations because you see yourself exaggerating. As you become even more conscious this changes, but it is not a question of mechanical lying or mechanically telling the truth. If you are able to consider externally, then if you need to lie, you lie, if it is all for the good of the person and yourself.
+							</p>
+							<p>
+								Gurdjieff spoke about clever sincerity and stupid sincerity. When you are stupidly sincere, people will walk all over you. There are predators in life that are looking for this sincerity and will use you. This means you can’t be sincere with just anybody. I realized that I had been stupidly sincere most of my life. Up to that point I had not been really sincere with anybody, and it was my responsibility to know with whom to be sincere and with whom not to be sincere.
+							</p>
+							<p>
+								I found I was able to have friends with whom I didn’t have to be sincere. I knew they would use me if I showed weakness, so I was strong with them. There were other people whom I call triers. I was able to open my heart to them, and I was able to be friends with them as well. It is like the difference between inner considering and outer considering. Bringing clever sincerity and stupid sincerity into life changed my personal life a lot. It solved the problem of trying to be sincere without getting stepped on.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="active-passive-personality">&nbsp;</a>
+							<p class="question">
+								6: What is active personality as opposed to passive personality?
+							</p>
+							<p>
+								JB: One of the very important moments in my Work life was when I picked up Nicoll’s <em>Commentaries</em> and read an extraordinary statement: "We have been taught that the evolutionary octave starts with a passive Do." <sup>[1]</sup> I was stunned, because you would think it starts with an active Do. But I realized, of course, the ray of creation is a descending octave which begins with an active Do: the higher meeting the lower and becoming the middle, an involutionary octave.
+							</p>
+							<label for="element-toggle-1">
+								[1. Volume 3, page 1078. Click to read/hide quote.]</label>
+							<input id="element-toggle-1" type="checkbox" />
+							<div id="toggled-element-1" class="fnote hidden">
+								<div class="center">
+									<p>
+										Nicoll Volume 3, page 1078</p>
+									<p>
+										Great Amwell House, October 25, 1947</p>
+									<p>
+										THE WORK-OCTAVE</p>
+									<p>
+										II</p>
+								</div>
+								<p>
+									We are taught that an ascending octave starts with Passive Do. The Work-Octave does not start with work but with valuation. It does not, for instance, start with thinking one can do and all the consequences that arise from that illusion. To think one can do—to think, for example, that one can easily change one's Being and become different and behave differently if one wants to—is to think from Active Do. What does it mean to start from Passive Do? Some people think they can do anything by force. They think perhaps that they can compel people to believe in God by violent measures and through fear of consequences. This is starting from Active Do. It is starting from the wrong attitude. To start from Passive Do is an entirely different thing. It is very interesting to study at different times what it means and how one continually tries to start from Active Do and continually fails because one has not begun rightly. As was said, the Work-Octave begins not with doing but with valuation. Since it is an ascending octave it must start with Passive Do—for all ascending octaves start from Passive Do. In this case, then, the valuation of the Work must constitute a Passive Do.
+								</p>
+							</div>
+							<p>
+								A force can be either passive or active in the moment. If you are in the descending, involutionary octave, it could be a passive or active force which is descending. The evolutionary octave is the active force. The Absolute descends and creates the universe, including organic life on Earth, the moon, and beyond, then returns. The universe is maintained by energies; I don’t know what the reconciling force would be in relation to these two giant octaves, maybe world maintenance.
+							</p>
+							<p>
+								Descending becomes more and more mechanical. Returning against that descent is very different. In an evolutionary movement it has to become more and more conscious. The energy becomes more and more refined. To me, the Enneagram reflected the evolutionary movement and the octave reflected the involutionary movement. The evolutionary octave is about enlightenment.
+							</p>
+							<p>
+								That got me thinking. It all made sense. It is easy to think that passive is bad. The idea of being passive as a start to the evolutionary movement was a revelation. I started to see that my personality was neither receptive nor passive. When you bring Work methods into your life you bring a real active force. And what does it meet? It meets another active force, personality, and the two active forces repel each other. How do we stay present, maintaining an attention? Even if I sense a part of my body, the next moment I’m gone. How do I maintain an attention long enough to see my personality and how it works?
+							</p>
+							<p>
+								In Beelzebub, Gurdjieff says, "Holy Affirming, Holy Denying, Holy Reconciling, transubstantiate in me for my being." <sup>[2]</sup> Our problem is that we have what I call an unholy denying which is active personality. It is necessary to transform active personality into passive personality in order to reconcile at essence. Struggling against personality is like looking into the distorting mirrors at a Coney Island funhouse. Our centers are also distorted.
+							</p>
+							<p class="fnote">
+								[2. Book 2, Ch. 39, The Holy Planet Purgatory, p. 689 of pdf.]
+							</p>
+							<!-- FOOTNOTE NOT USED, TOO CONFUsING
+                            <label for="element-toggle-2">
+                                [2. Beelzebub, page 689 of pdf. Click to read quote.]</label>
+                            <input id="element-toggle-2" type="checkbox" />
+                            <div id="toggled-element-2" class="fnote hidden">
+                                <p>Book 2, Chapter 39, The Holy Planet Purgatory</p>
+
+                                <p>
+                                    "... these three holy forces of the sacred Triamazikamno, which they named:
+                                </p>
+                                <p class="blockquote">
+                                    the first, 'God the Father'
+                                    <br /> the second, 'God the Son'
+                                    <br /> and the third, 'God the Holy Ghost'
+                                </p>
+
+                                <p>
+                                    "In various circumstances they expressed the hidden meaning of these forces and their longing to receive from them a beneficent effect for their own individuality by the following prayers:</p>
+
+                                <p class="blockquote">
+                                    Sources of divine
+                                    <br /> rejoicings, revolts, and sufferings,
+                                    <br /> direct your actions upon us
+                                </p>
+                                <p class="blockquote">
+                                    Holy Affirming, Holy Denying,
+                                    <br /> Holy Reconciling, transubstantiate
+                                    <br /> in me for my being
+                                </p>
+
+                                <p>or</p>
+                                <p class="blockquote">
+                                    Holy God, Holy the Firm, Holy the
+                                    <br /> Immortal, have mercy on us ..."
+                                </p>
+                            </div>-->
+							<p>
+								Now, if we are rooted in a real body or real mind or real feelings, depending on the center we are working with, we can see more objectively. As we bring inner light, active personality is exposed, and it lets go and turns passive. Now I’m in a state of passive/<wbr>receptive personality. Active personality, the grip that has dragged me through my life, has suddenly let go. Passive/<wbr>receptive Do is a wonderful state, but this is not my final destination.
+							</p>
+							<p>
+								I now know the direction I am going in. I’m still trying to remember myself, following the indications of one of the representatives of self-remembering. Both forces exist. I’m present, I’m aware. I need to turn active Do H192 passive. Then the struggle is to bring the active force of the Work, H48, to passive H192, and through the law of triadic attraction, or self-tuning, to be reconciled at Mi H96 essence, and then become receptive to a succeeding higher. <span class="note80">[The sentence is a little garbled in the original.]</span>
+							</p>
+							<p class="note80">
+								Source: Ouspensky, <em>Fragments</em>, chapter 9, figure 36. Partial diagram of energy transformation. See the text for the individual triads and the completed diagram, figure 39.
+							</p>
+							<p class="center">
+								<img src="images/three-story-factory.png" alt="Ouspensky, three-story factory" /><br />
+								Fig. 36
+							</p>
+							<p>
+								In my view of the Enneagram, active Re H48 represents tasks or methods of a real teaching. In the beginning, this struggle is brought into my life by the meeting of two active forces repelling each other, active Re H48 and active Do 192. Only sustained effort to maintain the struggle between these two active forces will result in Do H192 becoming passive/receptive and thus becoming open to a succeeding higher, active force! When you reconcile at essence, Mi H96, the triad is completed, you then feel the joy of life, you love people who Work.
+							</p>
+							<p>
+								It doesn’t matter what you think of their personalities, because you get by that immediately and you love them as brothers in the Work. We need more of this. Essence is a state of love, where all three centers exist simultaneously—maybe not unified, but simultaneous. It’s from essence that you can eventually cross to the left-hand side of the Enneagram, the next evolving triad.
+							</p>
+							<p>
+								That’s the first conscious shock where energies are transmuted and transformed into the much higher vibrations needed to feed our higher centers, to feed our real emotional center. This is lawful, a science. Unless you have those energies you are not going to sense the results of them! The trap is that if essence, after reconciling, becomes active to a preceding lower without making the proper effort to go further, I fall back out of the evolutionary movement, back into the involutionary movement, and right out of the Enneagram.
+							</p>
+							<p>
+								We have to bring this demand for attention not just for the occasional Work fix or titillation of energy but for self-knowledge. Bringing Work methods to get self-knowledge, you suddenly see active personality for what it is and struggle to be free of it. If you’re successful, you are at passive Do. But a few minutes later you can see active Do is imitating passive Do: you have that self-remembering expression on your face but you’re not sitting straight and you’re not sensing your body; personality is mimicking self-remembering; you’ve lost the connection with active Re H48 (your struggle or task) and your attention.
+							</p>
+							<p>
+								I can maintain this struggle at passive Do like a preemptive strike, to prevent active personality from automatically imitating passive/<wbr>receptive personality. I immediately need to find exact methods before active personality returns. I need to find a new active force! One example would be to like what it does not like. When we say "like what it does not like," what is "it"? It is active personality, my habitual strong likes and dislikes. I go against what active personality is attracted to at that moment. I use this to awaken; this struggle can bring me to a state of passive Do.
+							</p>
+							<p>
+								If I’m asked to do something in work conditions, I do it to go against active personality, like work in a dirty basement, volunteer for the manure team, to like what it doesn’t like. I went against everything that it liked. For example, years ago at Mendham we were supposed to pick up a large, heavy ladder. I saw that I wanted to take the light end, so I took the heavy end. Every moment there is an automatic inclination to do something in a way to protect oneself. We are never out of opportunities to go against personality.
+							</p>
+							<p>
+								Gurdjieff’s <a href="gurdjieff-aphorisms.htm">aphorisms</a> are all remarkable. Another one is "Remember yourself, always and everywhere." We know about "always," but what about "everywhere"? Are we willing and able to bring these efforts into the dark and hidden parts of our life? It reminds me of the Mullah Nasr Eddin story, where Mullah is searching under a lamppost for his key. A friend comes along and asks him what he is doing. Mullah says, "I’m looking for my key." After both look for a long time his friend asks, "Are you sure you lost it here?" Mullah says, "No, I lost it over there." His friend asks, "Why are you looking here?" And Mullah responds, "Well, there’s more light here."
+							</p>
+							<p>
+								We think that’s a funny story, but think of it in relation to our observation. Do we look in the dark or do we always try to look in the light? It’s much easier to stay with your eyes closed, dreaming that you’re looking. We want objective self-knowledge. We need it.
+							</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="experimentation">&nbsp;</a>
+							<p class="question">
+								7: Would you say that when someone is in experimentation <span class="note80">[?]</span>, that person can’t use active personality anymore?
+							</p>
+							<p>
+								JB: I would say at that state, active personality would not exist. But he could use all those parts that active personality was based on. He would have a grown essence; personality would be passive, at the service of essence, a real state of quiet mind. Associations are one of the greatest gifts that God has given man; when they’re the active force they’re horrible, but they can be incredible servants. In real thought, you have to be in quiet mind for long periods of time. It’s very rough terrain to get to quiet mind, because the conceptual I is in the way of it.
+							</p>
+							<p>
+								The most difficult thing is to sacrifice conceptual I, to die to that. That brings fear like you can’t imagine since you are the conceptual I. Fortunately, if you’re on the right track, it’s not a long chasm; it’s deep, but it’s bridgeable. You get by it quickly if you maintain the right Work. So it’s not about whether one uses active personality later on because active personality is corrupt in the sense of I’s that still rule.
+							</p>
+							<p>
+								This is another reason to always go through interference for a while, because if you go through too quickly and you get to participation before you’re ready, some of those I’s which would have been eliminated will instead steal the energy that should go to participation. And if you haven’t really gotten to passive Do, if there’s still some active personality participating, those I’s will steal that energy and inhibit going further. If you’ve been along the path, you know there are many traps and you experience them. The Enneagram is so important; it’s what can keep you safe and on the path, and eventually it can be a teacher to a large degree.
+							</p>
+							<p>
+								One night, two mice were playing on the rafters in a barn when, becoming a little too exuberant and careless, they suddenly toppled off and fell into a large bucket filled with milk. They kept swimming around desperately until they realized their situation was hopeless and they would never get out. At this point one of the mice gave up saying, "It’s useless to keep swimming, we have no chance." He stopped struggling, sank, and drowned.
+							</p>
+							<p>
+								The other mouse kept swimming anyway until he was so completely exhausted that finally, with one last stroke, he passed out. Later, he awoke and found himself lying on top of a bucket of butter.
+							</p>
+							<p>
+								&nbsp;
+							</p>
+							<p class="note center">
+								[ end ]
+							</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="nicoll-centers-and-parts-of-centers.htm">&lt; Nicoll: Centers</a></li>
+									<li class="align-right"><a href="brewster-personalidad.htm">Brewster: La Personalidad &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

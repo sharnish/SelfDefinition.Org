@@ -1,0 +1,150 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?> <!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gran Arcano ca del Ocultismo Revelado </title>
+    <meta name="description" content="">
+    <meta name="author" content="Éliphas Lévi">
+    <meta property="og:title" content="El Gran Arcano ca del Ocultismo Revelado">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://selfdefinition.org/magic/eliphas-levi/gran-arcano/images/eliphas-levi-1872-bw-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css"> <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_gran-arcano-sparse.css" rel="stylesheet" type="text/css">
+    
+    
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+            <!-- keeps the left menu position intact after page change (desktop layout) -->  <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="prev" href="libro-">
+    <link rel="next" href="libro-">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon" />
+    <style>
+        ul.page-links {
+            width: 300px;
+            border: 1px solid blue;
+        }
+
+        .page-links li {
+            width: inherit;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_gran-arcano-menu-include-bk2.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_gran-arcano-title-include.htm"); ?>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="">&lt; Libro 2 Capitulo</a></li>
+                                    <li class="align-right"><a href="">Libro 3 Capitulo &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+
+
+                            <header>
+                                <h3>
+                                    <span class="block">Capítulo </span>
+                                </h3>
+                            </header>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                    <li><a href="#">section</a></li>
+                                </ul>
+                            </nav>
+                            <p class="totop-above-anchor">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="">&nbsp;</a>
+                            <h4 class="top-heading">
+                                section
+                            </h4>
+
+
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="A1">&nbsp;</a>
+                            <h4>
+                                section
+                            </h4>
+
+
+
+
+
+
+
+                            <p class="note">
+
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Top of Page">top</button>
+                    <!-- page nav here if used -->
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+    </div>
+</body>
+
+</html>

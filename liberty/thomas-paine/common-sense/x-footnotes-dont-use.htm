@@ -1,0 +1,141 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Common Sense, by Thomas Paine</title>
+	<meta name="description" content="">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Common Sense, by Thomas Paine">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/paine-common-sense/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_common-sense-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="">
+	<link rel="next" href="">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_common-sense-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_common-sense-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Page title
+									</h3>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="">&lt; Previous</a></li>
+									<li class="align-right"><a href="">Next &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<h4>Footnotes</h4>
+							<p>COMMON SENSE 85</p>
+							<p><a><sup><a href="#footnote1">1</a>&nbsp;</sup></a> Paine is playing on the proverb &quot;Spare the rod, spoil the child.&quot; He uses this reference to a rod to suggest the the elected will be careful to represent the interests of the electors to avoid being punished (with a metaphorical rod) by them.</p>
+							<p><a><sup><a href="#footnote2">2</a>&nbsp;</sup></a> The English Constitution was not one single document, like the US Constitution, for example. Rather, it was comprised of a series of documents which included Magna Carta and the 1688 Declaration of Rights accepted by William and Mary when they ascended to the throne in what is known as the Glorious Revolution. Rather than being codified in one document, the structure of the government and the rights of the subjects of Great Britain were contingent upon a shared cultural understanding shaped by these documents and English case history.This explains why Paine often refers to the English Constitution with a lowercase 'c', since there isn't a specific document that bears the title of constitution.</p>
+							<p><a><sup><a href="#footnote3">3</a>&nbsp;</sup></a> &quot;Felo de se&quot; literally refers to a suicide or self-murder. Paine uses the term figuratively as a synonym for an absurdity He suggests in this paragraph and the one that precedes it that the English constitution undermines itself by locating the source of its authority to govern in a series of theoretical and structural contradictions.</p>
+							<p><a><sup><a href="#footnote4">4</a>&nbsp;</sup></a>&nbsp;The story of Gideon appears in Judges 6-8.</p>
+							<p><a><sup><a href="#footnote5">5</a>&nbsp;</sup></a>&nbsp;See Matthew 22.21, Mark 12.17, and Luke 20.25. All of Paines biblical quotations are taken from the King James Version.</p>
+							<p><a><sup><a href="#footnote6">6</a>&nbsp;</sup></a>&nbsp;Judges 8.22.</p>
+							<p><a><sup><a href="#footnote7">7</a>&nbsp;</sup></a>&nbsp;Judges 8.23.</p>
+							<p><a><sup><a href="#footnote8">8</a>&nbsp;</sup></a> This is where the section from 1 Samuel 5-8 ends. Paine strategically omits the story of Saul, in which the Lord appears to choose Saul to become king of the Israelites. Instead he continues his narrative at 1 Samuel 12:17-19 in which Samuel once again chastises the Israelites for their lack of faith in the Lord and they acknowledge their error.Those passages are reproduced in the two italicized quotations that appear next in the text of Common Sense.</p>
+							<p><a><sup><a href="#footnote9">9</a>&nbsp;</sup></a> Mahomet is the common eighteenth-century British name for the prophet Muhammad (c. 570-632 CE), founder of Islam. Paine shares his Protestant countrymen's prejudice against Islam and thus identifies it with superstition. Curiously, in 77ie Age of Reason (1794) he refers to Muhammad in much more neutral terms, calling him the founder of a religion and likening him to Moses and Jesus in that role.</p>
+							<p><a><sup><a href="#footnote10">10</a>&nbsp;</sup></a>&nbsp;William the Conqueror (1027-87), illegitimate son of the Duke of Normandy (now part of France), invaded England in 1066 and defeated the Anglo-Saxon Harold II who had just ascended to the throne. William s impressive victory and subsequent importation of Norman laws and customs had a profound impact on English history, as it fundamentally reshaped the political and social landscape of the country.</p>
+							<p><a><sup><a href="#footnote11">11</a>&nbsp;</sup></a>&nbsp;Here Paine returns to the account of Saul that he had omitted in his earlier interpretation of these events from the Book of Samuel. This particular reference is to 1 Samuel 10.20-24. Paine offers a somewhat tenuous reading of Saul's selection because in 1 Samuel 9.15-17 the Lord explicitly tells Samuel that he will&quot;send to you a man from the land of Benjamin, and you shall anoint him to be prince over my people Israel.&quot; The people may choose by lot, but in the broader context of the narrative the Lord has chosen Saul to be king.</p>
+							<p><a><sup><a href="#footnote12">12</a>&nbsp;</sup></a> The Wars of the Roses began during Henry VI's reign when Edward of York (later Edward IV) contested Henry of Lancaster's claim to the thtone. Beginning in 1455 the houses of Lancaster and York engaged in armed struggle for the next 32 years until the Battle of Bosworth Field where Richard III,Edwards brother, was defeated. Henry VII, related to the House of Lancaster but not a direct descendant of Henry VI, became king and established the Tudor line, which ushered in a period of relative stability.</p>
+							<p><a><sup><a href="#footnote13">13</a>&nbsp;</sup></a> Henry Pelham (1694-1754) served as Prime Minister of England from 1743 until his death in 1754.</p>
+							<p><a><sup><a href="#footnote14">14</a>&nbsp;</sup></a> On April 19, 1775 British forces stationed in Boston set out to confiscate a cache of arms that they had learned were being kept by the Massachusetts militia in Concoid, a town just outside of Boston. In what is often considered the first battle of the American Revolution, even though it took place 15 months before the Declaration of Independence was signed, the Massachusetts forces (&quot;the Minutemen&quot;) repeatedly set ambushes and sniped at the British. By the end of the day the heavily outnumbered Americans had killed 273 British soldiers and lost only 95 of their own.This battle has become the source of several of the slogans and myths of the Revolution, including &quot;the shot heard round the world&quot; and Paul Revere's midnight ride. Later in the text Paine calls it the &quot;Massacre at Lexington.&quot;</p>
+							<p><a><sup><a href="#footnote15">15</a>&nbsp;</sup></a> In the eighteenth century the Jesuits were popularly perceived by Protestant English and North Americans as deceitful and conniving. Anti-Catholic feeling was very strong in the Protestant Anglo-American world, so Paine and his contemporaries often used references to the Roman Catholic church pejoratively. Another instance of this anti-Catholic bias is the frequent use of the terms derived from the Pope, popish and popery, as a synonym for tyranny or to indicate an excessive reliance on meaningless ceremony and/or mystery.</p>
+							<p><a><sup><a href="#footnote16">16</a>&nbsp;</sup></a> In his study of eighteenth-century immigration to the colonies, Hopeful Journeys: German Immigration, Settlement, and Political Culture in Colonial America, 1717-1775 (Pennsylvania UP, 1996), Aaron Spencer Fogleman notes, &quot;By 1776, large numbers of Germans, Scots, Irish, and other 'strangers' populated the colonies, in addition to hundreds of thousands of Africans and African-Americans. The ethnic English population had become a minority&quot; (3). In a colony like Pennsylvania, populated heavily by German immigrants (the misnamed Pennsylvania Dutch), the ethnic English population would have been even smaller. In the 1790 census, for example, 25.8 per cent of Pennsylvanians were ethnic English (Fogleman, 82). Paine's perspective was shaped by his residence in Philadelphia, so his perception more accurately reflected the ethnic diversity in his home colony than it did the situation in New England, which, due to migration patterns and other social and religious factors, tended to be more English.</p>
+							<p><a><sup><a href="#footnote17">17</a>&nbsp;</sup></a> John Milton (1608-74) is generally considered one of the greatest English poets. His major works include Paradise Lost, Samson Agonistes, and Paradise Regained. Milton, a devout Puritan and supporter of the Commonwealth, also wrote important works advocating civil and religious liberty. He was widely read in eighteenth-century America not only for his poetic brilliance but also for his political writing?.This quotation is taken from Satan's speech at the beginning of Book 4 of Paradise Ijost (lines 98-99).</p>
+							<p><a><sup><a href="#footnote18">18</a>&nbsp;</sup></a> The Stamp Act (1765) was the first attempt by the British Parliament to tax the American colonies directly. Great Britain had expended a great deal of capital defending its American colonies in the Seven Years War with France (also known as the French and Indian War) and Parliament decided that the colonies should help defray the costs of their defense. The colonists were outraged.They saw it as an unlawful tax and a violation of their rights as Englishmen: hence the famous slogan &quot;No taxation without representation.&quot; Parliament repealed the act in 1766 but reasserted its power to tax the colonies in the Declaratory Act. A year later, Parliament ratified the Townshend Acts which included a series of taxes on glass, paper, paint, lead, and tea. The crises over the Stamp Act and the Townshend Duties are often seen as a critical prelude to the Revolution. Paine repeatedly implies that the crisis in British-American relations in 1776 is simply an extension of the same problems that had arisen with the Stamp Act.</p>
+							<p><a><sup><a href="#footnote19">19</a>&nbsp;</sup></a> N— is a reference to Frederick, Lord North (1732-92), who served as Prime Minister of England from 1770-82. North, therefore, was Prime Minister during the American Revolution, although he felt that the King's approach to handling American resistance to British authority was wtongheaded. On the other hand, he didn't have the wherewithal to oppose George either.</p>
+							<p><a><sup><a href="#footnote20">20</a>&nbsp;</sup></a> Giacinto Dragonetti (1738-1818) served as Italian consul to Sicily and eventually became president of the Royal Court of Sicily. His Treatise of Virtues and Rewards was originally published in Naples in 1765 and was translated into English in a London edition in 1769.The Treatise was written in response to Beccaria's influential On Crimes and Punishments (Livorno, 1764). Both works were widely read by politicians and intellectuals in Europe and America.</p>
+							<p>* Thomas Anello, otherwise Masenello, a fisherman of Naples, who after spiriting up his countrymen in the public market place, against the oppression of the Spaniards, to whom the place was then subject, prompted them to revolt, and in the space of a day became King [Paine's noteJ.Tommasso Aniello (1620-47) was, as Paine notes, the leader of a popular revolt against the Spanish nobles who then ruled Naples. The revolt was successful but short-lived. After only 10 days in power Mas-saniello was killed, probably by agents of the Spanish Viceroy. His story immediately spread throughout Europe and was narrated in a number of books. His revolt would have been especially relevant to the American case since the events in Naples had been prompted by public displeasure with a series of tax increases imposed by the Spanish authorities.</p>
+							<p><a><sup><a href="#footnote21">21</a>&nbsp;</sup></a> John Entick (1703?~73) published his A New Naval History: or, Compleat View of the British Marine in London in 1757.</p>
+							<p><a><sup><a href="#footnote22">22</a>&nbsp;</sup></a> Pages 73-74 in this edition.</p>
+							<p>* Those who would fully understand of what great consequence a large and equal representation is to a state, should read Burgh's political Disquisitions [Paine's note], James Burgh's Political Disquistions was published in 1774. In this work, Burgh, an influential rhetorician and educator who had also authored The Art of Speaking (1775), supported the colonies' right to resist the king's unconstitutional attempts to oppress them.</p>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->  <!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!-- start of menu include file  Update June 17, 2020. May 24, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the 
+             sections are swapped for small screens -->
+			<li><a href="/ramana/">Ramana index</a> </li>
+			<li><a href="/sitemap.htm">Site map</a> </li>
+			<li><a href="/">Site root</a> </li>
+			<li><a href="contents.htm">Contents</a> </li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- all of the following disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/ramana/">Ramana index</a> </li>
+			<li><a href="/sitemap.htm">Site map</a> </li>
+			<li><a href="/">Site root</a> </li>
+			<li class="scroll-menu-item">Scroll menu with mouse </li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text" style="margin-top:20px;">
+			<li><span class="block">Self-Enquiry</span>Vicharasangraham </li>
+			<li>
+				<img class="menu-image" src="images/ramana.jpg" alt="Ramana Maharshi" />
+			</li>
+			<li>Sri Ramana Maharshi </li>
+			<li class="normal note" style="margin-left:10px;">(1879-1950) </li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents</a> </li>
+				<li><a href="introduction.htm">Introduction</a> </li>
+				<li><a href="questions-01-to-10.htm">Questions 1 to 10</a> </li>
+				<li><a href="questions-11-to-20.htm">Questions 11 to 20</a> </li>
+				<li><a href="questions-21-to-30.htm">Questions 21 to 30</a> </li>
+				<li><a href="questions-31-to-40.htm">Questions 31 to 40</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr />
+			<ul class="menu-section">
+				<li>Ramana Maharshi at <a href="https://en.wikipedia.org/wiki/Ramana_Maharshi">Wikipedia</a> </li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="site-links-item">Also on this site </li>
+				<li class="site-first-item"><a href="/ramana/quotes/sadhu-om-self-inquiry.htm">Self-Inquiry by <span class="nowrap">Sri Sadhu Om</span></a> </li>
+				<li>Talks on Ramana, narrated by David Godman: <a href="/ramana/quotes/talks-on-ramana-narrated-by-godman.htm">42 minute video</a> </li>
+			</ul>
+		</div>
+		<div class="optional-links">
+			<ul class="menu-section">
+				<li class="external-links-item">External links </li>
+				<li class="external-first-item">Sri Ramana Maharshi Ashram and website:
+					<br />
+					<a href="https://www.sriramanamaharshi.org">sriramanamaharshi.org</a>
+				</li>
+				<li>The Teachings of Sri Ramana (Michael James):
+					<br />
+					<a href="https://www.happinessofbeing.com/">happinessofbeing.com</a>
+				</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

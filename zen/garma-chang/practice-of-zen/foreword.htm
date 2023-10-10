@@ -1,0 +1,243 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreword - Practice of Zen - Garma C. C. Chang</title>
+    <meta name="description" content="The Practice of Zen 1959 Garma C.C. Chang Chang Chen-chi (1920-1988) Foreword by the Author">
+    <meta name="author" content="Garma C. C. Chang">
+    <meta property="og:title" content="Practice of Zen, Garma C. C. Chang">
+    <meta property="og:description" content="The Practice of Zen 1959 Garma C.C. Chang Chang Chen-chi (1920-1988) Foreword by the Author">
+    <meta property="og:image" content="https://selfdefinition.org/zen/garma-chang/practice-of-zen/images/Ma-Tsu-og-image.jpg">
+    <!-- load style sheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_practice-of-zen-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; must be after ajax call -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="contents.htm">
+    <link rel="next" href="ch-1a1-nature-of-zen.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 325px;
+            border: 0px solid red;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+           MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width: 360px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+        .right-image-div img {
+            max-width: 160px;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .right-image-div img {
+                width: auto;
+                max-width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_practice-of-zen-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_practice-of-zen-title-include.htm"); ?>
+                                    <h3>
+                                        Foreword by the Author
+                                    </h3>
+                                    <p class="tiny">
+                                        Esta página en español: <a href="../la-practica-del-zen/prefacio.htm">..prefacio.htm</a>
+                                    </p>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt;&nbsp;Contents</a></li>
+                                    <li class="center"><a href="">&nbsp;</a></li>
+                                    <li class="align-right"><a href="ch-1a1-nature-of-zen.htm">The Nature of Zen&nbsp;&gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <!-- new item Nov 1, 2019 -->
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#foreword">Foreword</a></li>
+                                    <li><a href="#garma-cc-chang">About the Author, Garma C.C. Chang</a></li>
+                                </ul>
+                            </nav>
+                            <!-- see new CSS for this class Aug 30, 2019 -->
+                            <p class="totop-above-anchor first-totop">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="foreword">&nbsp;</a>
+                            <h4>
+                                Foreword
+                            </h4>
+                            <div class="right-image-div">
+                                <img src="images/garma-cc-chang-1984.jpg" alt="Garma  C.C. Chang, 1984, TsemRinpoche.Com" />
+                                <p class="note80">
+                                    Garma C.C. Chang, 1984<br />
+                                    TsemRinpoche.Com</p>
+                            </div>
+                            <p>
+                                People in the West who take up the study of Zen Buddhism enthusiastically often discover, after the initial fascination has worn off, that the consecutive steps required for its serious pursuit turn out to be disappointing and fruitless. Wonderful indeed is the experience of Enlightenment; but the crucial question is, how can one get into it? The problem of catching this tantalizing "Zen witch" remains unsolved for most of the Zen enthusiasts in the West.
+                            </p>
+                            <p>
+                                This is because Zen studies in the West are still in their beginnings, and its students are still lingering in that shadowy region between "being interested in" and "understanding" Zen. Most of them have not yet come to a point of maturity in their studies at which they can actually practice Zen, realize it, and make it their own innermost possession.
+                            </p>
+                            <p>
+                                Since Zen is not, in its essence and on its higher levels, a philosophy, but a direct experience that one must enter into with his whole being, the primary aim should be at the attainment and realization of the Zen experience. To realize this supreme experience, known as the "Wu insight" or "Enlightenment," one needs either to rely completely on an accomplished Zen Master, or to struggle on alone through study and actual practice.
+                            </p>
+                            <p>
+                                In the hope of furthering an understanding of Zen and making things easier for those who have been searching for practical instruction, I selected, translated, and presented herein a number of short autobiographies and discourses of the great Zen Masters, from both ancient and modern sources, which, although very popular in the East, are generally unknown in the West. From the contents of these documents one may obtain a picture of the lives and works of the Zen Masters, thus getting a clearer idea of how Zen work is actually done. For none is better qualified than these accomplished Masters to deal with the subject of practical Zen. To follow their example and instruction is, therefore, the best and safest way to practice it. It is for this reason that the discourses of the <strong>four celebrated Chinese Zen Masters, Hsu Yun, Tsung Kao, Po Shan, and Han Shan</strong>, are introduced.
+                            </p>
+                            <p>
+                                In addition to my own suggestions and comments on Zen practice, which may be found in the beginning of the second chapter, a survey of the essential aspects of Zen Buddhism is also given at the outset of this book. It is hoped that, after reading the first chapter, the reader may gain a further insight into Zen Buddhism, and thus be able to pursue his studies with greater ease than before. The newcomer to Buddhism, however, may meet with some difficulties. Although as a whole this book is of an introductory nature, it is perhaps more specific on certain problems and in certain fields of Zen study than some other books of its kind available at present in the English language.
+                            </p>
+                            <p>
+                                Chapter III, "The Four Problems of Zen Buddhism," was originally an essay on "The Nature of Ch'an Buddhism" appearing in the January, 1957, issue of <em>Philosophy East and West,</em> published by the University of Hawaii. With some minor changes, it has now been incorporated into this book. I believe that the four problems discussed therein are of great importance for Zen studies.
+                            </p>
+                            <p>
+                                Chapter IV, "Buddha and Meditation," was originally in the form of a lecture, given in a seminar at Columbia University in 1954, at the invitation of Dr. Jean Mahler. It gives some basic teachings of Buddhism and some essential principles underlying Buddhist meditation practice which perhaps have not yet been fully introduced to the West.
+                            </p>
+                            <p>
+                                As many Zen phrases and expressions are extremely difficult if not impossible to translate, even being considered by some scholars as utterly untranslatable, I have had to resort, in a few instances, to free translation. Some of the Japanese terms such as "koan" for <em>Kung-an,</em> "Satori" for <em>Wu</em>, "Zen" for <em>Ch'an</em> etc., have now become established and are widely used in the West, and they are also employed in this book, concurrently with the original Chinese terms. The romanization of the Chinese characters used is based upon the Wade-Giles system. All the diacritical marks in romanized Chinese and Sanskrit words used in the text have been left out, since they would only be confusing to the general reader and are unnecessary for Chinese and Sanskrit scholars, who will at once recognize the original Chinese characters and Devanagiri script.
+                            </p>
+                            <p>
+                                I wish to express my deep gratitude to Mr. George Currier, Miss Gwendolyn Winsor, Mrs. Dorothy Do-nath, and to my wife, Hsiang Hsiang, all of whom have rendered great assistance in helping me with my English, in preparing, editing, and typing the manuscript, and in making valuable suggestions and comments on the work. I also wish to thank my old friend, Mr. P. J. Gruber, for his constant assistance and encouragement.
+                            </p>
+                            <p>
+                                As a refugee from China, I wish also to thank all of my American friends, and both the Bollingen Foundation and the Oriental Study Foundation, for their generous assistance in providing me with the opportunity to continue my work and study in the field of Buddhism here in the United States. To them all I am grateful beyond measure.
+                            </p>
+                            <p>
+                                NEW YORK CITY MARCH, 1959
+                            </p>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="garma-cc-chang">&nbsp;</a>
+                            <h4>
+                                Professor Garma C.C. Chang
+                            </h4>
+                            <p class="note80">
+                                Extract fom Tsem Rinpoche and Pastor David Lai, Jul 30, 2017. Please see the link below for the full article and book references.
+                            </p>
+                            <p>
+                                The Chinese Buddhist scholar Professor Garma C. C. Chang (1920-1988) was one of the few pioneering scholars who introduced Buddhism to the West primarily through the publication of books and his illustrious teaching career as a professor. He was an authority on Buddhist philosophy and was best known as an editor and translator of the teachings and practice of Tibetan tantra along with Zen Buddhism. Chang’s aim was to introduce people to vital books on achieving Buddhahood through strict Zen meditation or via esoteric tantric meditative techniques.
+                            </p>
+                            <p>
+                                His name Garma is a derivative of the word Dharma and C.C. Chang literally stands for Chen-Chi Chang, or in the Chinese order of placing the surname first, Chang Chen-Chi. In Pinyin, his name is spelt Zhang Chengji. He was born in Hubei, China in 1920. His father, Zhang Dulun was initially a senior army officer and was later promoted to be the provincial governor of Hubei. His mother was a devout Buddhist and was influential in shaping his childhood. Consequently, Chang’s childhood was filled with frequent visits to Buddhist temples and the recitation of many Buddhist sutras.
+                            </p>
+                            <!--
+                            <p> 
+                                While studying, Chang found school to be meaningless and boring, and he instead filled his time by reading voraciously on philosophy and books on spirituality. He developed a keen interest towards philosophies that made him ponder the meaning of life and the uncovering of life’s great mysteries. After much effort at grappling with the archaic language used in such works, he was able to read a few volumes of sutras. He felt at peace reading the Buddhist teachings because they were deep and gave him an overwhelming sense of compassion. Therefore in 1935, at the age of 15 he left school, setting aside the ridicule and objection of friends and relatives in order to engage in Dharma study and practice as a lifetime pursuit.
+                            </p
+                            <p>
+                                At 16, he followed an old lay master up into the Lushan Mountains in order to engage in a 100-day retreat and during this period, he was said to have been able to discern both true and false Dharmas. After the retreat, he came to the conclusion that nothing is more meaningful than the study and practice of Dharma. The following year, Chang wanted to travel to Tibet in order to deepen his realisation of the Dharma but his father objected. His father felt that Tibet was too remote and transportation in the region was undeveloped and unreliable.
+                            </p
+                            <p>
+                                In the end, his father made arrangements for Chang to visit Gangkar Monastery on Mount Gangkar, or Minya Konka Riwo in Tibetan, located in Kham, which is now part of Szechuan province. Gangkar Rinpoche was Chang’s mother’s teacher and the patriarch of the monastery. He remained in the monastery for eight years studying at the feet of this great master. Aside from studying the Buddhist teachings and practices, he also studied the Tibetan and English languages at this time.
+                            </p
+                            <p>
+                                Chang’s Tibetan master was the 9th Gangkar Rinpoche Karma Chokyi Senge. This master was born in Minya in 1893. On the day of his birth, it was said that the entire region witnessed two suns in the sky, which was considered to be auspicious. A few days later, was recognized as the incarnation of the 7th Gangkar Rinpoche. At the age of three, he was enthroned in the monastery as the tulku incarnation of Gangkar. He grew up to be a very famous scholar, master, lineage holder, and was followed by many disciples. He taught both sutra and tantra, and bestowed important empowerments unto many high lamas and ordained the famous disciples.
+                            </p
+                            <p>
+                            The portrait of the 9th Gangkar Rinpoche Karma Chokyi Senge who is the teacher of Garma C.C. Chang.
+                            </p
+-->
+                            <p class="center">
+                                . . .</p>
+                            <p>
+                                In 1948, Chang married Yu Nian Li (Helena) in Hankou and in 1949 he immigrated to the United States where he arrived in the 1950s with his wife via India, Taiwan, and Hong Kong. In the United States, Chang became research fellow at the Bollingen Foundation in New York from 1955 onwards. During this time, he wrote many books, beginning with The Practice of Zen published in 1959, The Hundred Thousand Songs of Milarepa published in 1962, and Teachings and Practice of Tibetan Tantra published in 2004.
+                                <!--The book on Tibetan tantra was based on an earlier publication in 1993, which was itself based on the original version published in 1962.-->
+                            </p>
+                            <!--
+                            <p>
+                                In his book Teachings and Practice of Tibetan Tantra, Chang wrote about the generation of yogic heat in the body (Tibetan: tummo). In addition, he also taught tantric teachings on how sexual bliss can be transformed onto the path of awakening. John C. Wilson writes in the 1962 book’s introduction that Chang’s work on Tibetan tantra is hard to grasp with just a few readings. Therefore Chang advises that a serious practitioner should first be initiated and well guided in the basics before starting any actual tantric practices. As such, Chang’s book is only intended to be a source of reference for would-be tantric practitioners.
+                            </p>
+                            <p>
+                                Chang’s extensive efforts in receiving teachings during his life and his written works regarding the Mahayana tradition has blazed a trail for others to follow. His first published Buddhist text in English was the Practice of Zen, which draws on the rich Chinese Mahayana tradition. Even earlier than that, he had translated The Hundred Thousand Songs of Milarepa into English in the 1950s, a large collection of verses by Milarepa, all of which cemented Chang as a foremost Tibetan translator of his time.
+                            </p>
+                            <p>[other publishing info]</p>
+                            <p>
+                                Professor Chang underwent two heart surgeries in 1974 and 1984. His failing eyesight also made it difficult for Chang’s quality of life and his work, which required a lot of reading and writing. In 1988, he finally passed away in Marietta, leaving behind his wife Helena Chang. Ever since, Helena Chang occasionally gives talks on her experience with her late husbands’ life and works.
+                            </p>
+                            -->
+                            <p>
+                                Please see the full biography and book list at: <a href="https://www.tsemrinpoche.com/tsem-tulku-rinpoche/buddhas-dharma/professor-garma-cc-chang-the-illustrious-pioneer.html">www.tsemrinpoche.com</a>
+                            </p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt;&nbsp;Contents</a></li>
+                                    <li class="center"><a href="">&nbsp;</a></li>
+                                    <li class="align-right"><a href="ch-1a1-nature-of-zen.htm">The Nature of Zen&nbsp;&gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div> <!-- end container -->
+    </div> <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path"> <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?> </div>
+</body>
+
+</html>

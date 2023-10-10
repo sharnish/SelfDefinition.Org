@@ -1,0 +1,510 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El lebrel del cielo, por Francis Thompson</title>
+    <meta name="description" content="Le huía noche y día a través de los arcos de los años, y le huía a porfía por entre los tortuosos aledaños">
+    <meta name="author" content="Francis Thompson">
+    <meta property="og:title" content="El lebrel del cielo, por Francis Thompson">
+    <meta property="og:description" content="Le huía noche y día a través de los arcos de los años, y le huía a porfía por entre los tortuosos aledaños">
+    <meta property="og:image" content="https://selfdefinition.org/christian/articles/images/francis-thompson-og-image.jpg">
+    <!-- load external stylesheets before the scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_christian-articles-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* html entities:
+        &#161; = inverted exclamation mark
+        &#191; = inverted question mark
+        */
+
+        @media only screen and (min-width:400px) {
+            header .conditional-block {
+                display: block;
+            }
+        }
+
+        div.poem {
+            text-align: center;
+        }
+
+        div.poem div {
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        div.poem div.first {
+            margin-top: 35px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_christian-articles-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <!-- as of Oct 9, 2019 moving "article" to here -->
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_christian-articles-title-include.htm"); ?>
+                                    <h3>
+                                        El lebrel del cielo
+                                    </h3>
+                                    <p class="tight">
+                                        Francis Thompson</p>
+                                    <p class="note80 tight" style="margin-top: 0; margin-bottom: 0;">
+                                        (1859-1907)</p>
+                                    <p class="tiny tight">
+                                        ver abajo para créditos</p>
+                                    <p class="tiny tifht">
+                                        <span class="conditional-block">This page in English:</span> <a href="francis-thompson-hound-of-heaven.htm">francis-thompson-hound-of-heaven.htm</a>
+                                    </p>
+                                </header>
+                            </div> <!-- page nav is positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="francis-thompson-hound-of-heaven.htm">&lt; The Hound of Heaven</a></li>
+                                    <li class="align-right"><a href="richard-bucke-personal-experience-cosmic-consciousness.htm">Cosmic Consciousness &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div class="poem">
+                                <div class="first">
+                                    Le huía noche y día</div>
+                                <div>
+                                    a través de los arcos de los años,</div>
+                                <div>
+                                    y le huía a porfía</div>
+                                <div>
+                                    por entre los tortuosos aledaños</div>
+                                <div>
+                                    de mi alma y me cubría</div>
+                                <div>
+                                    con la niebla del llanto</div>
+                                <div>
+                                    o con la carcajada, como un manto.</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    He escalado esperanzas,</div>
+                                <div>
+                                    me he hundido en el abismo deleznable,</div>
+                                <div>
+                                    para huir de los Pasos que me alcanzan:
+                                </div>
+                                <div>
+                                    persecución sin prisa, imperturbable,
+                                </div>
+                                <div>
+                                    inminencia prevista y sin contraste.</div>
+                                <div>
+                                    Los oigo resonar..... y aún más fuerte</div>
+                                <div>
+                                    una voz que me advierte:</div>
+                                <div>
+                                    Todo te deja porque me dejaste.</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Golpeaba las ventanas</div>
+                                <div>
+                                    que ofrecen al proscrito sus encantos</div>
+                                <div>
+                                    y temblando de espanto</div>
+                                <div>
+                                    pensaba que el Amor que me persigue,</div>
+                                <div>
+                                    si al final me consigue,</div>
+                                <div>
+                                    no dejará brillar más que su llama;</div>
+                                <div>
+                                    y si alguna ventana se entreabría,</div>
+                                <div>
+                                    el soplo de su acceso la cerraba.</div>
+                                <div>
+                                    El miedo no alcanzaba</div>
+                                <div>
+                                    a huir cuanto el Amor me perseguía.</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Me evadí de este mundo;</div>
+                                <div>
+                                    violé la puerta de oro de los cielos,
+                                </div>
+                                <div>
+                                    pidiendo amparo a sus sonoros velos,
+                                </div>
+                                <div>
+                                    y arranqué notas dulces y un profundo</div>
+                                <div>
+                                    rumor de plata al astro plateado.</div>
+                                <div>
+                                    Al alba dije: &#161;Ven! &#161;Ven!, a la tarde,</div>
+                                <div>
+                                    "escondedme de aqueste Enamorado,
+                                </div>
+                                <div>
+                                    de miedo que me guarde"</div>
+                                <div>
+                                    Tenté a sus servidores</div>
+                                <div>
+                                    y sólo hallé traición en su constancia.</div>
+                                <div>
+                                    Para El la fe; de mi perseguidores</div>
+                                <div>
+                                    con falsa rectitud y leal falacia.</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Pedí volar a todo lo ligero,</div>
+                                <div>
+                                    asiéndole a los crines del pampero,
+                                </div>
+                                <div>
+                                    y aunque se deslizaba</div>
+                                <div>
+                                    por la azul lejanía,</div>
+                                <div>
+                                    y el trueno hacía resonar su carro,
+                                </div>
+                                <div>
+                                    y zapateaba el rayo</div>
+                                <div>
+                                    el miedo no alcanzaba</div>
+                                <div>
+                                    a huir cuanto el Amor me perseguía.</div>
+                                <div>
+                                    Persecución sin prisa, imperturbable,
+                                </div>
+                                <div>
+                                    majestuosa inminencia. En las veredas dejan
+                                </div>
+                                <div>
+                                    los Pasos que la Voz me hable:</div>
+                                <div>
+                                    "Nada te hospedará si no me hospedas"</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Ya no busco mi sueño interrogando</div>
+                                <div>
+                                    un rostro de hombre o de mujer, mas quedan</div>
+                                <div>
+                                    los ojos de los niños esperando:</div>
+                                <div>
+                                    hay algo en ellos para mí de veras.</div>
+                                <div>
+                                    Y cuando mi ansiedad se prometía</div>
+                                <div>
+                                    el dulce despertar de una respuesta,</div>
+                                <div>
+                                    los ángeles venían</div>
+                                <div>
+                                    y los llevaban por la senda opuesta.</div>
+                                <div>
+                                    "Venid-clamaba-, dadme la frescura
+                                </div>
+                                <div>
+                                    de la Naturaleza</div>
+                                <div>
+                                    que guardan vuestros labios de pureza;</div>
+                                <div>
+                                    dejadme juguetear en las alturas
+                                </div>
+                                <div>
+                                    habitar el palacio</div>
+                                <div>
+                                    azul de vuestra Madre, cuyas trenzas</div>
+                                <div>
+                                    vagan por el espacio,</div>
+                                <div>
+                                    y beber como un llanto de ambrosía</div>
+                                <div>
+                                    el rocío del día"</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Y al fin lo conseguí: fui recibido</div>
+                                <div>
+                                    en su dulce amistad, y abrí el sentido</div>
+                                <div>
+                                    de los matices de la faz del cielo,</div>
+                                <div>
+                                    de la nube naciente entre los velos
+                                </div>
+                                <div>
+                                    de la espuma del mar. Nací con ella</div>
+                                <div>
+                                    para morir con todo lo escondido.</div>
+                                <div>
+                                    Me conforme a sus huellas.</div>
+                                <div>
+                                    Supe caer cuando la tarde cae</div>
+                                <div>
+                                    al encender sus lámparas de duelo,</div>
+                                <div>
+                                    y reír con la aurora de ojos suaves,</div>
+                                <div>
+                                    y llorar con la lluvia de los cielos,</div>
+                                <div>
+                                    y hacer mi corazón de sol gemelo.</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Pero &#161;qué inútilmente!
+                                </div>
+                                <div>
+                                    Imposible entender lo que otro siente.</div>
+                                <div>
+                                    Las cosas hablan un lenguaje arcano,</div>
+                                <div>
+                                    incomprensible; es un silencio vano</div>
+                                <div>
+                                    para mi inteligencia. Aunque pudiera</div>
+                                <div>
+                                    prenderme de sus pechos como un niño,</div>
+                                <div>
+                                    seguiría mi sed de otro cariño.</div>
+                                <div>
+                                    Y noche a noche afuera</div>
+                                <div>
+                                    oigo los Pasos que me dan alcance</div>
+                                <div>
+                                    con medida carrera,</div>
+                                <div>
+                                    deliberado avance,</div>
+                                <div>
+                                    majestad inminente,</div>
+                                <div>
+                                    que deja oír la Voz de la otra parte:
+                                </div>
+                                <div>
+                                    "-Nada podrá llegar a contentarte</div>
+                                <div>
+                                    mientras no me contestes"</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Espero el golpe de tu amor, inerme.</div>
+                                <div>
+                                    Pieza a pieza rompiste mi armadura.
+                                </div>
+                                <div>
+                                    De rodillas estoy, y dudo al verme</div>
+                                <div>
+                                    despierto y despojado.</div>
+                                <div>
+                                    La fuerza juvenil de mi locura</div>
+                                <div>
+                                    sacudió las columnas de las horas
+                                </div>
+                                <div>
+                                    y mi vida es un templo desplomado;</div>
+                                <div>
+                                    montón de años, multitud d e escombros</div>
+                                <div>
+                                    el ayer y el ahora.</div>
+                                <div>
+                                    Los sueños mismos se han evaporado,</div>
+                                <div>
+                                    y los días mismos son polvo.</div>
+                                <div>
+                                    Las fantasías con que ataba el mundo</div>
+                                <div>
+                                    me abandonan: son cuerdas muy delgadas
+                                </div>
+                                <div>
+                                    para alzar unas tierras recargadas</div>
+                                <div>
+                                    por el dolor profundo.</div>
+                                <div>
+                                    &#161;Ay! que tu amor es hierbas de dolores</div>
+                                <div>
+                                    que sólo deja florecer sus flores.</div>
+                                <div>
+                                    &#161;Oh imaginero eterno, es suficiente!</div>
+                                <div>
+                                    Tú quemas el carbón con que dibujas.</div>
+                                <div>
+                                    Mi juventud es fuga de burbujas;</div>
+                                <div>
+                                    mi corazón la fuente</div>
+                                <div>
+                                    quebrada</div>
+                                <div>
+                                    donde no queda nada</div>
+                                <div>
+                                    del llanto de mi mente</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    &#161;Sea! mas &#191;qué amargura</div>
+                                <div>
+                                    si la pulpa es amarga me deparan</div>
+                                <div>
+                                    las heces? Lo vislumbro en la fisura</div>
+                                <div>
+                                    del telón de las nubes que rasgara</div>
+                                <div>
+                                    el sonar de las trompas celestiales</div>
+                                <div>
+                                    Aun sin poder reconocer sus reales,</div>
+                                <div>
+                                    su purpura, su cetro, su guarida,</div>
+                                <div>
+                                    le conozco y le entiendo. Se apresura;</div>
+                                <div>
+                                    quiere mi corazón, quiere mi vida,</div>
+                                <div>
+                                    quiere mi podredumbre,</div>
+                                <div>
+                                    quiere mi oscuridad para su lumbre!</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Ya persecución está lograda.</div>
+                                <div>
+                                    Y la voz como un mar en torno fluye:</div>
+                                <div>
+                                    " &#191; Crees que la tierra gime destrozada?</div>
+                                <div>
+                                    Todo te huye, porque me huyes"</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    &#161;Extraña, fútil cosa, miserable!</div>
+                                <div>
+                                    dime, &#191;Cómo podrías ser amada?
+                                </div>
+                                <div>
+                                    &#191;no he hecho demasiado de tu nada</div>
+                                <div>
+                                    para hacerte sin mérito aceptable?</div>
+                                <div>
+                                    Pizca de barro, &#191;Acaso tu no sabes</div>
+                                <div>
+                                    cuán poco amor te cabe?
+                                </div>
+                                <div>
+                                    &#191;Quién hallarás que te ame? Solamente</div>
+                                <div>
+                                    yo, que cuanto te pido te he quitado,</div>
+                                <div>
+                                    para que me lo pidas de prestado</div>
+                                <div>
+                                    y lo dé misericordiosamente.</div>
+                                <div class="spacer">
+                                    &nbsp;</div>
+                                <div>
+                                    Lo que tú crees perdido está en mi casa:</div>
+                                <div>
+                                    Levántate, toma mi mano y pasa
+                                </div>
+                                <div>
+                                    Los Pasos se han quedado junto al vano.</div>
+                                <div>
+                                    Acaso &#191;Oh tu tiniebla que me ofusca</div>
+                                <div>
+                                    sea sólo la sombra de Su mano!</div>
+                                <div>
+                                    "Oh loco, ciego, enfermo que te abrasas</div>
+                                <div>
+                                    pues buscas el amor a mí me buscas</div>
+                                <div>
+                                    y lo rechazas cuando me rechazas"</div>
+                                <div>
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <!-- end "poem" -->
+                            <div class="note center">
+                                [ fin ]</div>
+                            <div>
+                                &nbsp;
+                            </div>
+                            <div class="center">
+                                <p class="note80 toowide">
+                                    Extraído de <em>El Evangelio de Jesucristo</em>, Leonardo Castellani,
+
+                                    a travez de <a href="http://dichosaventura.blogspot.com/2009/02/el-lebrel-del-cielo-hound-of-heaven.html">dichosaventura.blogspot.com </a>
+                                </p>
+                            </div>
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="francis-thompson-hound-of-heaven.htm">&lt; The Hound of Heaven</a></li>
+                                    <li class="align-right"><a href="richard-bucke-personal-experience-cosmic-consciousness.htm">Cosmic Consciousness &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <p>
+                                <!-- spacer STILL needed to fill out width on a narrow page
+                                Needed here but not in Spanish page - weird
+                                need to figure out why -->
+                                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                            </p>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

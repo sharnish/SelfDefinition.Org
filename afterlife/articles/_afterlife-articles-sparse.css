@@ -1,0 +1,50 @@
+/*     File:  /afterlife/articles/_afterlife-articles-sparse.css:      
+
+Update April 21, 2022
+
+*/
+
+
+
+@media only print {
+    #article:after {
+        content: "Update April 21, 2022";
+    }
+    /* test on page dazzling dark only */
+    #button-container {display:none;}
+}
+
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fff0e9;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with aebruary default color */
+/* color must contrast with body */
+/* This is default: #bde0ff - Blue, for selfdefinition-responsive.css
+	nice pink: #FFC0CB */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #d6d3ff;
+    /* nice blue, goes with the green */
+
+}
+
+
+
+
+
+/* end */

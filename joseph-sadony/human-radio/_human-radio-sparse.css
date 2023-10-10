@@ -1,0 +1,72 @@
+﻿/* css for /joseph-sadony/human-radio/_human-radio-sparse.css 
+
+Update November 21, 2020. June 9, 2022
+
+  */
+
+@media only print {
+	#article:after {
+		content: "Update June 9, 2022";
+	}
+}
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f2f2e0;
+}
+
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of the menu must conform to specs of script.
+    Default CSS is in >> selfdefinition.css << with a default color.
+    Background must contrast with the body */
+
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #b0e8b9;
+}
+
+ul.page-links li a:hover {
+	background: #b0e8b9;
+}
+
+/* add padding for the :hover color */
+ul.index-contents-links a,
+ul.page-links li a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+html.dark nav.index-lists ul.index-contents-links a:hover,
+html.dark ul.page-links li a:hover {
+	background: #449;
+}
+
+/* hide these */
+.pageno {
+	font-size: 80%;
+	color: red;
+	display: none;
+}
+
+/* page: 1. Evidence             */
+ul.generic-list {
+	list-style: none;
+	padding-left: 5px;
+}
+
+ul.generic-list li {
+	margin-bottom: 18px;
+}
+
+
+
+/* end */

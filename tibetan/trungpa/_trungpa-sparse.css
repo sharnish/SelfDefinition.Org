@@ -1,0 +1,71 @@
+/* file:  /tibetan/trungpa/_trungpa-refresh.css
+
+Update June 1, 2020. Update June 2, 2022
+
+***/
+
+@media only print {
+	#article:after {
+		content: "update June 2, 2022";
+	}
+}
+
+/* background selfdefinition-responsive default is #fcfeff Nice but overused: #fff9f9;*/
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #f8fffc;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+/* THIS IS DEFAULT - Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #bde0ff;
+}
+
+/* CSS3 Columns
+   For Energy and Emotional Transformation, Energía y transmutación emocional */
+/* default is 3 */
+div.to-center {
+	margin-top: 30px;
+	width: 300px;
+	border: 0px solid yellow;
+}
+
+nav.contents {
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	columns: 2;
+}
+
+/* default is 140px */
+nav.contents .item {
+	font-size: 18px;
+	width: 150px;
+	text-align: left;
+	border: 0px solid red;
+}
+
+/* default is 10px */
+/* want to keep the "hover" color some distance from 2nd column */
+nav.contents .item a {
+	padding-right: 0;
+}
+
+/* default drk is #191919 */
+html.dark p.question {
+	background: #353535;
+}
+
+/* end */

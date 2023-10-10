@@ -1,0 +1,138 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sentido Común por Thomas Paine</title>
+	<meta name="description" content="">
+	<meta name="author" content="Thomas Paine">
+	<meta property="og:title" content="Sentido Común por Thomas Paine">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="https://selfdefinition.org/liberty/thomas-paine/sentido-comun/images/thomas-paine-portrait-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_sentido-comun-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="3b-asuntos-americanos-cont.htm">
+	<link rel="next" href="4-capacidad-actual-de-america.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 300px;
+			border: 1px solid blue;
+		}
+
+		/* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+		@media only screen and (max-width:300px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_sentido-comun-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned-->
+				<!-- now reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in left menu for large screens, title include for small screens -->
+									<?php include( "_sentido-comun-title-include.htm"); ?>
+									<!-- new format puts page title higher, here -->
+									<h3>
+										Asuntos Americanos-final
+									</h3>
+									<p class="tiny">English: <a href="../common-sense/3c-american-affairs-end.htm">3c-american-affairs-end.htm</a></p>
+								</header>
+							</div>
+							<!-- page nav is now positioned within the article -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3b-asuntos-americanos-cont.htm">&lt; Asuntos Americanos-cont</a></li>
+									<li class="align-right"><a href="4-capacidad-actual-de-america.htm">Capacidad actual America &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<p>Thousands are already ruined by British barbarity; (thousands more will probably suffer the same fate.) Those men have other feelings than us who have nothing suffered. All they now possess is liberty ; what they before enjoyed is sacrificed to its service, and having nothing more to lose they disdain submission. Besides, the general temper of the Colonies, towards a British government will be like that of a youth who is nearly out of his time; they will care very little about her: And a government which cannot preserve the peace is no government at all, and in that case we pay our money for nothing; and pray what is it that Britain can do, whose power will be wholly on paper, should a civil tumult break out the very day after reconciliation ? I have heard some men say, many of whom I believe spoke without thinking, that they dreaded an independance, fearing that it would produce civil wars: It is but seldom that our first thoughts are truly correct, and that is the case here; for there is ten times more to dread from a patched up connection than from independance. I make the sufferer's case my own, and I protest, that were I driven from house and home, my property destroyed, and my circumstances ruined, that as a man, sensible of injuries, I could never relish the doctrine of reconciliation, or consider myself bound thereby.</p>
+							<p>The Colonies have manifested such a spirit of good order and obedience to Continental government, as is sufficient to make every reasonable person easy and happy on that head. No man can assign the least pretence for his fears, on any other grounds, than such as are truly childish and ridiculous, viz., that one colony will be striving for superiority over another.</p>
+							<p>Where there are no distinctions there can be no superiority; perfect equality affords no temptation. The Republics of Europe are all (and we may say always) in peace. Holland and Switzerland are without wars, foreign or domestic:</p>
+							<p>Monarchical governments, it is true, are never long at rest: the crown itself is a temptation to enterprising ruffians at home; and that degree of pride and insolence ever attendant on regal authority, swells into a rupture with foreign powers in instances where a republican government, by being formed on more natural principles, would negociate the mistake.</p>
+							<p>If there is any true cause of fear respecting independance, it is because no plan is yet laid down. Men do not see their way out. Wherefore, as an opening into that business I offer the following hints; at the same time modestly affirming, that I have no other opinion of them myself, than that they may be the means of giving rise to something better. Could the straggling thoughts of individuals be collected, they would frequently form materials for wise and able men to improve into useful matter.</p>
+							<p>Let the assemblies be annual, with a president only. The representation more equal, their business wholly domestic, and subject to the authority of a Continental Congress.</p>
+							<p>Let each Colony be divided into six, eight, or ten, convenient districts, each district to send a proper number of Delegates to Congress, so that each Colony send at least thirty. The whole number in Congress will be at least 390. Each congress to sit and to choose a President by the following method. When the Delegates are met, let a Colony be taken from the whole thirteen Colonies by lot, after which let the Congress choose (by ballot) a president from out of the Delegates of that Province. In the next Congress, let a Colony be taken by lot from twelve only, omitting that Colony from which the president was taken in the former Congress, and so proceeding on till the whole thirteen shall have had their proper rotation. And in order that nothing may pass Into a law but what is satisfactorily just, not less than three fifths of the Congress to be called a majority. He that will promote discord, under a government so equally formed as this, would have joined Lucifer in his revolt.</p>
+							<p>But as there is a peculiar delicacy from whom, or in what manner, this business must first arise, and as it seems most agreeable and consistent that it should come from some intermediate body between the governed and the governors, that is, between the Congress and the People, let a Continental Conference be held in the following manner, and for the following purpose,</p>
+							<p>A Committee of twenty six members of congress, viz. Two for each Colony. Two Members from each House of Assembly, or Provincial Convention; and five Representatives of the people at large, to be chosen in the capital city or town of each Province, for, and in behalf of the whole Province, by as many qualified voters as shall think proper to attend from all parts of the Province for that purpose; or, if more convenient, the Representatives may be chosen in two or three of the most populous parts thereof. In this conference, thus assembled, will be united the two grand principles of business, knowledge and power. The Members of Congress, Assemblies, or Conventions, by having had experience in national concerns, will be able and useful counsellors, and the whole, being impowered by the people, will have a truly legal authority.</p>
+							<p>The conferring members being met, let their business be to frame a Continental Charter, or Charter of the United Colonies; (answering to what is called the Magna Charta of England) fixing the number and manner of choosing Members of Congress, Members of Assembly, with their date of sitting; and drawing the line of business and jurisdiction between them: Always remembering, that our strength is Continental, not Provincial. Securing freedom and property to all men, and above all things, the free exercise of religion, according to the dictates of conscience; with such other matter as it is necessary for a charter to contain. Immediately after which, the said conference to dissolve, and the bodies which shall be chosen conformable to the said charter, to be the Legislators and Governors of this Continent for the time being: Whose peace and happiness, may God preserve. Amen.</p>
+							<p>Should any body of men be hereafter delegated for this or some similar purpose, I offer them the following extracts from that wise observer on Governments, Dragonetti. &quot; The science,&quot; says he, &quot; of the Politician consists in fixing the true point of happiness and freedom. Those men would deserve the gratitude of ages, who should discover a mode of government that contained the greatest sum of individual happiness, with the least national expense.&quot; (Dragonetti on &quot; Virtues and Reward.&quot;)</p>
+							<p>But where, say some, is the King of America? I'll tell you, friend, he reigns above, and doth not make havoc of mankind like the Royal Brute of Great Britain. Yet that we may not appear to be defective even in earthly honours, let a day be solemnly set apart for proclaiming the Charter; let it be brought forth placed on the Divine Law, the Word of God; let a crown be placed thereon, by which the world may know, that so far as we approve of monarchy, that in America the law is king. For as in absolute governments the King is law, so in free countries the law ought to be king; and there ought to be no other. But lest any ill use should afterwards arise, let the Crown at the conclusion of the ceremony be demolished, and scattered among the people whose right it is.</p>
+							<p>A government of our own is our natural right: and when a man seriously reflects on the precariousness of human affairs, he will become convinced, that it is infinitely wiser and safer, to form a constitution of our own in a cool deliberate manner, while we have it in our power, than to trust such an interesting event to time and chance. If we omit it now, some Massanello<a name="footnote1"></a><sup><a href="#bookmark1">[1]</a></sup> may hereafter arise, who, laying hold of popular disquietudes, may collect together the desperate and the discontented, and by assuming to themselves the powers of government, finally sweep away the liberties of the Continent like a deluge. Should the government of America return again into the hands of Britain, the tottering situation of things will be a temptation for some desperate adventurer to try his fortune ; and in such a case, what relief can Britain give ? Ere she could hear the news, the fatal business might be done; and ourselves suffering like the wretched Britons under the oppression of the Conqueror. Ye that oppose independance now, ye know not what ye do: ye are opening a door to eternal tyranny, by keeping vacant the seat of government. There are thousands and tens of thousands, who would think it glorious to expel from the Continent, that barbarous and hellish power, which hath stirred up the Indians and the Negroes to destroy us; the cruelty hath a double guilt, it is dealing brutally by us, and treacherously by them.</p>
+							<p>To talk of friendship with those in whom our reason forbids us to have faith, and our affections wounded thro' a thousand pores instruct us to detest, is madness and folly. Every day wears out the little remains of kindred between us and them; and can there be any reason to hope, that as the relationship expires, the affection will encrease, or that we shall agree better when we have ten times more and greater concerns to quarrel over than ever ?</p>
+							<p>Ye that tell us of harmony and reconciliation, can ye restore to us the time that is past ? Can ye give to prostitution its former innocence ? neither can ye reconcile Britain and America. The last cord now is broken, the people of England are presenting addresses against us. There are injuries which nature cannot forgive; she would cease to be nature if she did. As well can the lover forgive the ravisher of his mistress, as the Continent forgive the murders of Britain. The Almighty hath implanted in us these unex-tinguishable feelings for good and wise purposes. They are the Guardians of his Image in our hearts. They distinguish us from the herd of common animals. The social compact would dissolve, and justice be extirpated from the earth, or have only a casual existence were we callous to the touches of affection. The robber and the murderer would often escape unpunished, did not the injuries which our tempers sustain, provoke us into justice.</p>
+							<p>O! ye that love mankind! Ye that dare oppose not only the tyranny but the tyrant, stand forth! Every spot of the old world is overrun with oppression. Freedom hath been hunted round the Globe. Asia and Africa have long expelled her. Europe regards her like a stranger, and England hath given her warning to depart. O! receive the fugitive, and prepare in time an asylum for mankind.</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();" role="button">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="3b-asuntos-americanos-cont.htm">&lt; Asuntos Americanos-cont</a></li>
+									<li class="align-right"><a href="4-capacidad-actual-de-america.htm">Capacidad actual America &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"; ?>
+	</div>
+</body>
+
+</html>

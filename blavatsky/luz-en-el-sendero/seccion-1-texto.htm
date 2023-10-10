@@ -1,0 +1,629 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luz en el Sendero, Sección 1, El Texto</title>
+	<meta name="description" content="Antes de que el alma pueda erguirse en presencia de los Maestros es necesario que los pies se hayan lavado en sangre del corazón.">
+	<meta name="author" content="Mabel Collins">
+	<meta property="og:title" content="Luz en el Sendero, Sección 1, El Texto">
+	<meta property="og:description" content="Antes de que el alma pueda erguirse en presencia de los Maestros es necesario que los pies se hayan lavado en sangre del corazón.">
+	<meta property="og:image" content="http://selfdefinition.org/blavatsky/light-on-the-path/images/mabel-collins-og-image.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_luz-en-el-sendero-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="contenido-y-titulo.htm">
+	<link rel="next" href="seccion-2-comentarios.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 220px;
+		}
+
+
+		/* to put a "sup" alongside a heading, put it above the h4 */
+		/* the "h4" needs a clear */
+		/* must put in a div. Width of "sup" depends on its text and the h4 text 
+        
+        HTML example Light on the Path: section-1-text.htm
+        <div style="position:relative;">
+        </div><a class="return-anchor" id="part-II"></a>
+        <sup class="tricky-header-sup"><a href="#note-II">Note on Part II</a></sup>
+        <h4>
+            PART II
+        </h4>
+        
+        */
+
+		div.tricky-header-sup {
+			position: relative;
+		}
+
+		div.tricky-header-sup sup {
+			position: absolute;
+			right: 0;
+			width: 130px;
+			font-size: 80%;
+			border: 0px solid yellow;
+		}
+
+
+		@media only screen and (max-width:420px) {
+			div.tricky-header-sup sup {
+				position: static;
+				float: right;
+			}
+
+			div.tricky-header-sup h4 {
+				clear: both;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_luz-en-el-sendero-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- #main-content is absolutely positioned -->
+				<!-- now set relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_luz-en-el-sendero-title-include.htm"); ?>
+									<h3>
+										Sección I - El Texto
+									</h3>
+
+									<p class="tiny">This page in English: <a href="../light-on-the-path/section-1-text.htm">../section-1-text.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contenido-y-titulo.htm">&lt; Contenido y Titulo</a></li>
+									<li class="align-right"><a href="seccion-2-comentarios.htm">Sección 2 - Comentarios &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li class="note">Seccións en esta página:</li>
+									<li><a href="#part-1">Parte I</a></li>
+									<li><a href="#part-2">Parte II</a></li>
+									<li><a href="#karma">Karma</a></li>
+									<li><a href="#notes">Notas por el Maestro</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-1">&nbsp;</a>
+							<h4>
+								PARTE I&mdash;REGLAS
+							</h4>
+							<p>
+								Estas reglas han sido escritas para todos los discípulos: Síguelas.
+							</p>
+							<p>
+								Antes que los ojos puedan ver, deben ser incapaces de llorar. Antes que el oído pueda oír, tiene que haber perdido la sensibilidad. Antes de que la voz pueda hablar en presencia de los Maestros, debe haber perdido la posibilidad de herir. Antes de que el alma pueda erguirse en presencia de los Maestros es necesario que los pies se hayan lavado en sangre del corazón.
+							</p>
+							<p>
+								Regla 1. Mata la ambición. <a id="rule-I-1" class="return-anchor"></a><sup><a href="#note-I-1">Nota Regla I-1</a></sup>
+							</p>
+							<p>
+								Regla 2. Mata el deseo de vivir.
+							</p>
+							<p>
+								Regla 3. Mata el deseo del bienestar.
+							</p>
+							<p>
+								Regla 4. Trabaja como trabajan los que son ambiciosos.
+							</p>
+							<blockquote>
+								<p>
+									Respeta la vida como lo hacen los que la desean. Sé feliz como lo son los que viven por la felicidad. Busca en tu corazón la raíz del mal y arráncala. Esta raíz vive en el corazón del discípulo fervoroso lo mismo que en el hombre de deseos. Solamente el fuerte puede destruirla. El débil tiene que esperar su crecimiento, su fructificación y su muerte. Es ésta una planta que vive y se desarrolla a través de las edades. Florece cuando el hombre ha acumulado en sí mismo existencias innumerables.
+								</p>
+								<p>
+									El que quiera entrar en la senda del poder, debe arrancarla de su corazón. Y entonces del corazón brotará sangre, y la vida toda del hombre parecerá desvanecerse por completo. Hay que sufrir esta prueba; puede presentarse desde el primer peldaño de la peligrosa escala que al sendero de vida conduce: puede no venir hasta lo último. Pero acuérdate, ¡oh, discípulo!, que tienes que pasar por esta prueba, y refuerza las energías de tu alma para tal empresa. No vivas en lo presente ni en lo futuro, sino en lo eterno. Allí no puede florecer esta hierba gigantesca: esta mancha de la existencia la borra la atmósfera misma del pensamiento eterno.
+								</p>
+							</blockquote>
+							<p>
+								Regla 5. Mata todo sentimiento de separatividad. <a id="rule-I-5" class="return-anchor"></a><sup><a href="#note-I-5">Nota Regla I-5</a></sup>
+							</p>
+							<p>
+								Regla 6. Mata el deseo de sensación.
+							</p>
+							<p>
+								Regla 7. Mata la sed de crecimiento.
+							</p>
+							<p>
+								Regla 8. Sin embargo, mantente solo y aislado, porque nada de cuanto tiene cuerpo, nada de cuanto tiene conciencia de la separación, nada de cuanto está fuera de lo eterno puede acudir en tu auxilio.
+							</p>
+							<blockquote>
+								<p>
+									Estudia la sensación y obsérvala, porque únicamente así puedes empezar la ciencia del propio conocimiento, y colocar el pie en el primer peldaño de la escala. Crece como la flor, inconscientemente, pero ardiendo en ansias por entreabrir su cáliz a la brisa. Así es como debes avanzar abriendo tu alma a lo eterno. Pero debe ser lo eterno lo que debe desarrollar tu fuerza, y no el deseo de crecimiento. Porque en el primer caso floreces con la lozanía de la pureza y en el otro te endureces con la avasalladora pasión de la importancia personal.
+								</p>
+							</blockquote>
+							<p>
+								Regla 9. Desea únicamente lo que está en ti.
+							</p>
+							<p>
+								Regla 10. Desea únicamente lo que está fuera de tu alcance.
+							</p>
+							<p>
+								Regla 11. Desea únicamente lo que es inasequible.
+							</p>
+							<p>
+								Regla 12. Porque en ti está la luz del mundo, la única luz que en el sendero puede difundirse.
+							</p>
+							<blockquote>
+								<p>
+									Si eres incapaz de percibirla dentro de ti, es inútil que la busques en otra parte. Está fuera de tu alcance, porque cuando a ella llegues ya no te encuentras a ti mismo. Es inasequible, porque siempre retrocede. Entrarás en el seno de la luz, pero no tocarás nunca la llama.
+								</p>
+							</blockquote>
+							<p>
+								Regla 13. Desea ardientemente el poder.
+							</p>
+							<p>
+								Regla 14. Desea ardientemente la paz.
+							</p>
+							<p>
+								Regla 15. Desea las posesiones por encima de todo. ...
+							</p>
+							<p>
+								Regla 16. Pero estas posesiones deben pertenecer al alma pura, y por consiguiente, deben ser igualmente poseídas por todas las almas puras, siendo así la propiedad especial del todo que unidas constituyen.
+							</p>
+							<blockquote>
+								<p>
+									Anhela las posesiones propias del alma pura, a fin de que puedas acumular riquezas para aquel espíritu común de vida que es tu único ser verdadero. La paz que debes desear es aquella paz sagrada que nada puede turbar, y en el seno de la cual, el alma crece como la flor santa en las lagunas inmóviles. Y ese poder a que debe aspirar el discípulo, es aquel que le hará aparecer como nada a los ojos de los hombres.
+								</p>
+							</blockquote>
+							<p>
+								Regla 17. Busca la senda. <a id="rule-I-17" class="return-anchor"></a><sup><a href="#note-I-17">Nota Regla I-17</a></sup>
+							</p>
+							<p>
+								Regla 18. Busca el camino penetrando al interior.
+							</p>
+							<p>
+								Regla 19. Busca el camino avanzando resueltamente al exterior.
+							</p>
+							<p>
+								Regla 20. Búscalo, pero no en una dirección única. <a id="rule-I-20" class="return-anchor"></a><sup><a href="#note-I-20">Nota Regla I-20</a></sup>
+							</p>
+							<blockquote>
+								<p>
+									Para cada temperamento existe una vía al parecer más deseable. Pero no se encuentra el camino sólo por la devoción, ni por la mera contemplación religiosa, ni por el ardor de progreso, ni por el laborioso sacrificio de sí mismo, ni por la observación estudiosa de la vida. Ninguna de estas cosas por si sola hace adelantar al discípulo más de un paso. Todos los peldaños son necesarios para recorrer la escala.
+								</p>
+								<p>
+									Los vicios de los hombres se convierten en los peldaños de la misma, uno por uno, a medida que se van dominando. Las virtudes del hombre son, en verdad, escalones necesarios, de los cuales no se puede en modo alguno prescindir. Sin embargo, aunque crean una atmósfera bella y un porvenir feliz, son inútiles sin son aisladas. La naturaleza toda del hombre debe ser sabiamente empleada por el que desee entrar en el sendero.
+								</p>
+								<p>
+									Cada hombre es absolutamente para sí mismo el sendero, la verdad y la vida. Pero esto lo es sólo cuando domina firmemente toda su individualidad, y cuando por la energía de su despertada individualidad, reconoce que esta individualidad no es él mismo, sino aquella cosa que él ha creado trabajosamente para su uso, y por cuyo medio se propone, a medida que su crecimiento desarrolla lentamente su inteligencia, alcanzar la vida más allá de la individualidad. Cuando sabe que para esto existe su asombrosa vida compleja y separada, entonces, en verdad, y sólo entonces, se halla en el sendero.
+								</p>
+								<p>
+									Búscalo sumergiéndote en las espléndidas y misteriosas profundidades de lo más íntimo de tu ser. Búscalo probando toda experiencia, utilizando los sentidos a fin de comprender el desenvolvimiento y significación de la individualidad, y la hermosura y oscuridad de estos otros fragmentos divinos que contigo y a tu lado combaten, y que forman la raza a la cual perteneces. Búscalo estudiando las leyes del ser, las leyes de la naturaleza, las leyes de lo sobrenatural; y búscalo postrando tu alma ante la pequeña estrella que arde en el interior.
+								</p>
+								<p>
+									En tanto que vigilas y adoras con perseverancia, su luz irá siendo más y más brillante. Entonces podrás conocer que has encontrado el fin, su luz se convertirá súbitamente en luz infinita.
+								</p>
+							</blockquote>
+							<p>
+								Regla 21. Busca la flor que debe abrirse durante el silencio que sigue a la tormenta y no antes. <a id="rule-I-21" class="return-anchor"></a><sup><a href="#note-I-21">Nota Regla I-21</a></sup>
+							</p>
+							<blockquote>
+								<p>
+									La planta crecerá y se desarrollará, echará ramas y hojas y formará capullos, en tanto que continúa la tempestad y el duro combate. Pero mientras la personalidad toda del hombre no se haya disuelto y desvanecido; mientras que el divino fragmento que la ha creado no la considere como mero instrumento de experimentación y experiencia; mientras la naturaleza toda no esté vencida y se halle subyugada por su yo superior, no puede abrirse la flor.
+								</p>
+								<p>
+									Entonces sobrevendrá una calma como la que en los países tropicales sucede a una lluvia torrencial, cuando la Naturaleza obra con tanta rapidez que puede verse su acción. Una calma semejante se difundirá sobre el espíritu fatigado. Y en el silencio profundo, ocurrirá el misterioso suceso que probará que se ha encontrado el sendero.
+								</p>
+								<p>
+									Llámesela como se quiera, es una voz que habla donde no hay nadie que hable; es un mensajero que viene, mensajero sin forma ni sustancia, o bien es la flor del alma que se ha abierto. No hay metáfora que pueda describirlo. Pero se puede presentir, buscar y desear, aún en medio de la furia de la tempestad. El silencio puede durar sólo un momento, o bien puede prolongarse un millar de años, pero tendrá fin. Sin embargo, en ti residirá su fuerza. Una y otra vez tiene que darse y ganarse la batalla. El reposo de la Naturaleza sólo puede ser un intervalo.
+								</p>
+							</blockquote>
+							<p>
+								Estas reglas expuestas son las primeras que han sido escritas en los muros del Templo del Saber. Los que pidan, obtendrán. Los que deseen aprender, aprenderán.
+							</p>
+							<p class="center">
+								LA PAZ SEA CONTIGO.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="part-2">&nbsp;</a>
+							<!-- This is accessed BOTH from menu above and footnote below -->
+
+							<div class="tricky-header-sup">
+								<a class="return-anchor" id="part-II"></a>
+								<sup><a href="#note-II">Nota Parte II</a></sup>
+								<h4>
+									PARTE II
+								</h4>
+							</div>
+
+							<p>
+								Del Seno del Silencio que es la paz, una voz resonante se elevará. Y esta voz dirá: &quot;Hace falta algo más: tú has recogido, ahora tienes que sembrar&quot;. Y sabiendo que esta voz es el silencio mismo, obedecerás.
+							</p>
+							<p>
+								Tú, que eres ahora un discípulo capaz de tenerse firme, capaz de oír, capaz de hablar, que has vencido el deseo y alcanzado el conocimiento de ti mismo; tú, que has visto tu alma en su flor y la has reconocido y has oído la voz del silencio, encamínate al Templo del Saber, y lee lo que allí está escrito para ti.
+							</p>
+							<p>
+								Regla 1. Mantente ajeno a la batalla que empieza, y aunque tú pelees, no seas el guerrero.
+							</p>
+							<p>
+								Regla 2. Busca al guerrero y deja que pelee en ti.
+							</p>
+							<p>
+								Regla 3. Recibe sus órdenes para la batalla, y obedécelas.
+							</p>
+							<p>
+								Regla 4. Obedécele, no como si fuera un general, sino como si fueras tú mismo, y como si sus palabras fuesen la expresión de tus secretos deseos; pues él es tú mismo, aunque infinitamente más sabio y fuerte que tú.
+							</p>
+							<blockquote>
+								<p>
+									Búscale antes de que en el fragor y fiebre de la batalla puedas dejar de percibirlo; pues él no te reconocerá a menos que tú le conozcas. Si tu grito llega a su oído atento, entonces luchará en ti y llenará el triste vacío del interior. Y si esto sucede, entonces podrás permanecer durante la batalla sereno e infatigable, manteniéndote apartado y dejándole pelear por ti. Entonces será imposible que des un golpe en falso. Pero si no lo buscas, si pasas a su lado sin percibirle, entonces no hay salvaguardia para ti. Tu cerebro se turbará, tu corazón se tornará irresoluto, y en medio del polvo del campo de batalla, tu vista y sentidos se oscurecerán; y no distinguirán tus amigos de tus enemigos.
+								</p>
+								<p>
+									Él es tu mismo; sin embargo, tú eres finito y sujeto al error. Él es eterno y seguro. Él es la verdad eterna. Una vez que haya penetrado en ti y se haya convertido en tu guerrero, jamás te abandonará por completo, y en el día de la gran paz, él y tú os convertiréis en uno.
+								</p>
+							</blockquote>
+							<p>
+								Regla 5. Escucha el canto de la vida. <a id="rule-II-5" class="return-anchor"></a><sup><a href="#note-II-5">Nota Regla II-5</a></sup></p>
+							<p>
+								Regla 6. Conserva en tu memoria la melodía que oigas.
+							</p>
+							<p>
+								Regla 7. Aprende de ella la lección de armonía.
+							</p>
+							<p>
+								Regla 8. Tú puedes entonces mantenerte erguido, firme como una roca en medio del tumulto, obedeciendo al guerrero que eres tú mismo y tu rey.
+							</p>
+							<blockquote>
+								<p>
+									Indiferente al combate, salvo en la ejecución de sus mandatos, y sin preocuparte ya del resultado de la batalla, porque una sola cosa es importante: que el guerrero venza, y tú sabes que no puede ser derrotado; permaneces así, sereno y vigilante, y usa de la facultad de oír que has adquirido por medio del sufrimiento y de la destrucción del sufrimiento. Mientras no seas más que un hombre, sólo llegarán a tus oídos fragmentos del gran canto.
+								</p>
+								<p>
+									Pero si lo escuchas, imprímelo fielmente en tu memoria, de suerte que no se pierda nada de lo que hasta ti haya llegado, y trata de aprender de ello el significado del misterio que te rodea. Con el tiempo no necesitarás instructor alguno. Porque así como el individuo posee una voz, asimismo la posee aquello en lo cual el individuo existe. La vida misma tiene su lenguaje, y nunca está silenciosa. Y este lenguaje no es un grito como podrías suponer tú, que eres sordo, sino un canto. Aprende de él que tú eres una parte de la Armonía: aprende de él a obedecer las leyes de la Armonía.
+								</p>
+							</blockquote>
+							<p>
+								Regla 9. Observa atentamente toda la vida que te rodea.
+							</p>
+							<p>
+								Regla 10. Aprende a sondear de una manera inteligente el corazón de los hombres. <a id="rule-II-10" class="return-anchor"></a><sup><a href="#note-II-10">Nota Regla II-10</a></sup>
+							</p>
+							<p>
+								Regla 11. Considera ansiosamente tu propio corazón.
+							</p>
+							<p>
+								Regla 12. Porque a través de tu propio corazón viene la luz única que puede iluminar la vida y hacerla clara a tus ojos.
+							</p>
+							<blockquote style="margin-bottom: 0;">
+								<p style="margin-bottom: 0;">
+									Estudia el corazón de los hombres a fin de que puedas conocer lo que es el mundo en que vives y del cual quieres ser parte. Observa la vida que te rodea en constante movimiento, en transformación incesante, pues está formada por los corazones de los hombres; y a medida que vayas aprendiendo a conocer su constitución y significado, gradualmente irás siendo capaz de leer la palabra más grande de la vida.
+								</p>
+							</blockquote>
+							<!-- must use TWO anchors because footnote is on 2nd line of paragraph -->
+							<!-- adjust margins to get rid of extra spacing -->
+							<p>
+								Regla 13. La palabra sólo viene con el conocimiento. Alcanza el conocimiento y alcanzarás la vida. <a id="rule-II-13" class="return-anchor"></a><sup><a href="#note-II-13">Nota Regla II-13</a></sup>
+							</p>
+							<p>
+								Regla 14. Habiendo adquirido el uso de los sentidos internos, habiendo dominado los deseos de los sentidos externos, habiendo subyugado los deseos del alma individual, y habiendo obtenido el conocimiento, prepárate ahora, ¡oh, discípulo!, a entrar realmente en el camino. El Sendero se ha encontrado; disponte a recorrerlo.
+							</p>
+							<p>
+								Regla 15. Pide a la tierra, al aire y al agua los secretos que guardan para ti. El desarrollo de tus sentidos internos te permitirán hacerlo.
+							</p>
+							<p>
+								Regla 16. Pide a los santos de la tierra los secretos que guardan para ti. El dominio de los deseos de tus sentidos internos te permitirá hacerlo.
+							</p>
+							<p>
+								Regla 17. Pide al íntimo, al uno, su secreto final que reserva para ti en el transcurso de las edades.
+							</p>
+							<blockquote>
+								<p>
+									La grande y difícil victoria, el dominio de los deseos del alma individual es obra de edades; por tanto, no esperes recibir la recompensa hasta que se hayan acumulado edades y edades de experiencias. Cuando haya llegado el tiempo de aprender esta regla 17, el hombre está próximo a ser más que un hombre.
+								</p>
+							</blockquote>
+							<p>
+								Regla 18. El conocimiento que ahora posees, sólo es tuyo porque tu alma se ha convertido en una con todas las almas puras y con el íntimo.
+							</p>
+							<blockquote>
+								<p>
+									Es un depósito que el Altísimo te ha confiado. Abusa de ellos; emplea mal tu conocimiento o descuídalo y aún es posible que caigas del estado elevado a que has llegado. Almas grandes hay que retroceden en el umbral, no pudiendo sostener el peso de su responsabilidad, incapaces de seguir adelante. Por tanto, considera siempre ese momento del porvenir con temeroso respeto, y prepárate para la batalla.
+								</p>
+							</blockquote>
+							<p>
+								Regla 19. Está escrito que aquel que se halla en los umbrales de la divinidad no puede idearse ley alguna, ni puede tampoco existir guía. Sin embargo, para que el discípulo comprenda la lucha final, puede expresarse en estos términos:
+							</p>
+							<p>
+								Aférrate a lo que no tiene sustancia ni conciencia.
+							</p>
+							<p>
+								Regla 20. No prestes oído sino a la voz insonora.
+							</p>
+							<p>
+								Regla 21. No mires más que lo que es invisible, tanto en el sentido interno como al externo.
+							</p>
+							<p class="center">
+								LA PAZ SEA CONTIGO.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="karma">&nbsp;</a>
+							<h4>
+								Karma
+							</h4>
+							<p class="note center">
+								[por el maestro]</p>
+							<p>
+								Considera conmigo que la existencia individual es un cable que se extiende desde el infinito al infinito, que no tiene principio ni fin ni puede tampoco romperse. Este cable está formado de innumerables y tenues hilos que apretados unos con otros, constituyen su espesor. Estos hilos son incoloros, son perfectamente rectos, sólidos y lisos.
+
+							</p>
+							<p>
+								Este cable, al pasar, como sucede, por toda clase de sitios, sufre extraños accidentes. Muy a menudo enganchase un hilo y permanece cogido, o quizá sólo es desviado violentamente de su dirección normal. Entonces, durante largo tiempo, queda torcido y pone así en desorden los hilos restantes. Algunas veces uno de ellos se mancha de suciedad o de color, y la mancha no sólo se extiende alrededor del punto de contacto, sino que impregna otros hilos. Y ten presente que los hilos son vivos, que son como hilos eléctricos, más aún, son como nervios vibrantes. ¡Calcula, pues, cuanto puede extenderse la mancha o la violencia de la torcedura!
+							</p>
+							<p>
+
+								Pero sucede eventualmente que los largos cordones, los hilos vivientes que en su continuidad no interrumpida forman el individuo, pasan desde la sombra a la luz. Entonces los hilos ya no son incoloros, son dorados; una vez más están unidos, lisos. Una vez más se establece la armonía entre ellos, y desde esta armonía interna percibes la armonía más grande.
+							</p>
+							<p>
+								Este ejemplo no representa sino una parte mínima, un solo aspecto de la verdad: es menos que un fragmento. Sin embargo, detente en él; con su ayuda puedes llegar a percibir algo más. Lo que es necesario comprender en primer término consiste no en que el porvenir está formado arbitrariamente por actos aislados del presente, sino que todo el futuro forma una continuidad no interrumpida con el presente, así como el presente lo está con el pasado. Desde un punto de vista en un plano el ejemplo es exacto.
+							</p>
+							<p>
+								Se dice que un poco de atención prestada al Ocultismo, produce grandes resultados kármicos. Esto sucede porque es imposible prestar alguna atención al Ocultismo sin hacer una elección definida de lo que se llama familiarmente bien y mal.
+							</p>
+							<p>
+								El primer paso en el Ocultismo conduce al estudiante al árbol del conocimiento. Debe lanzarse y comer; tiene que decidirse. Ya no puede permanecer en la indecisión de la ignorancia. Tiene que adelantar en la senda del bien o en la del mal. Y el avanzar sólo un paso definidamente y con conocimiento en cualquiera de las dos sendas, produce grandes resultados kármicos.
+							</p>
+							<p>
+								La masa humana marcha vacilante, incierta, respecto a la meta a que aspira; su ideal de existencia es confuso, y por consiguiente, su Karma obra de un modo confuso. Pero una vez que se ha llegado al vestíbulo del conocimiento, la confusión principia a ser menor, y por tanto, los resultados kármicos aumentan enormemente, porque todos actúan en la misma dirección en todos los diversos planos; pues e1 ocultista no puede hacer las cosas a medias, ni puede retroceder una vez que ha pasado el vestíbulo. Esto es tan imposible como un hombre volver a ser niño. El individuo se ha aproximado al estado de responsabilidad por razón del crecimiento y no puede ya volver atrás.
+							</p>
+							<p>
+								El que quiera librarse de los lazos del Karma, tiene que elevar su individualidad desde la sombra a la luz; tiene que elevar tanto su existencia, que estos hilos no se pongan en contacto con las materias que manchan, ni puedan tampoco ser cogidos hasta el punto de desgarrarse. Se eleva sencillamente por encima de la región en que el Karma opera. No abandona por ello la existencia por la que está pasando. El terreno puede ser áspero e inmundo, o cuajado de espléndidas flores, cuyo polen mancha, y de sustancias deliciosas que se adhieren y se convierten en atractivas; pero allá en lo alto ostentase siempre el límpido cielo.
+							</p>
+							<p>
+								El que desea estar libre de todo Karma, debe buscar su mansión en el aire, y más adelante en el éter. El que desea formar un buen Karma, experimentará muchas confusiones, y en el esfuerzo de sembrar excelente semilla para su propia cosecha, puede suceder que al mismo tiempo se exponga a sembrar mil hierbas dañinas, por ejemplo el cardo espinoso y muchas otras. No desees sembrar semilla alguna para tu propia cosecha; trata sólo de sembrar aquella semilla cuyo fruto alimentará al mundo. Tú eres una parte del mundo; al darle alimento, te lo das a ti mismo.
+							</p>
+							<p>
+								Sin embargo, aun en este pensamiento ocultase un gran peligro que se adelanta y hace frente al discípulo que durante mucho tiempo ha creído haber trabajado para el bien mientras que en lo íntimo de su alma sólo ha percibido el mal, esto es, ha creído que se había dedicado al bien del mundo, mientras que todo el tiempo no ha hecho más que pensar en el Karma, y que el gran bien que obra, lo hace para sí mismo.
+							</p>
+							<p>
+								Un hombre puede negarse a sí propio el pensar en la recompensa; pero en esta misma negación se ve el hecho de que la recompensa es deseada. E inútil es para el discípulo tratar de aprender refrenándose: El alma debe estar en libertad, los deseos libres. Pero hasta que estén fijos en aquel estado donde no existe ni recompensa ni castigo, ni bien ni mal, en vano se afana.
+							</p>
+							<p>
+								Puede parecer que hace grandes progresos, pero día llegará en que se vea frente a frente de su alma, y reconozca que cuando se aproximó al árbol del conocimiento, escogió el fruto amargo en lugar del dulce, y entonces el velo caerá por completo y abandonará su libertad para convertirse en un esclavo del deseo.
+							</p>
+							<p>
+								Por tanto, estad sobre aviso vosotros los que empezáis a dirigiros hacia la vida del Ocultismo. Aprended, desde luego, que no hay cura para el deseo; que no hay cura para el afán de recompensa; que no hay cura para el anhelo grosero, sino fijando la vista y el oído en aquello que es invisible e inaudible. Principia desde luego a practicarlo, y de este modo alejarás de tu camino mil serpientes. Vive en lo eterno.
+
+							</p>
+							<p>
+								La operación de las verdaderas leyes del Karma, no debe estudiarse hasta que el discípulo ha alcanzado el punto en que ya no le afectan. El Iniciado tiene el derecho de exigir los secretos de la Naturaleza y de conocer las reglas que rigen la vida humana. Obtiene ese derecho evadiéndose de los límites de la Naturaleza y libertándose de las reglas que gobiernan la vida humana. Se ha convertido en una parte reconocida del elemento divino, y ya no le afecta lo que es temporal. Obtiene el conocimiento de las leyes que rigen los estados temporales.
+							</p>
+							<p>
+								Por tanto, vosotros, los que deseáis comprender las leyes del K arma, intentad primeramente libertaros de esas leyes; y esto sólo puede hacerse fijando vuestra atención en aquello que no es afectado por estas leyes.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="notes">&nbsp;</a>
+							<h4>
+								Notas por el Maestro
+							</h4>
+							<p class="note center">
+								[Haga clic en el número de nota para volver al texto.]
+							</p>
+							<ul class="references-list">
+								<li class="center">
+									<h4>Parte I Notas</h4>
+								</li>
+								<li><a class="endnote" id="note-I-1"></a>Nota en <a href="#rule-I-1">Regla I-1</a>
+									<p>
+										La ambición es el defecto primero, el gran tentador del hombre que se eleva por encima de sus semejantes. Es la forma más sencilla de buscar la recompensa. Ella es la que continuamente desvía a los hombres de sus posibilidades superiores. Sin embargo, es un instructor necesario. Sus resultados tórnanse polvo y ceniza en la boca; como la muerte y el retraimiento, demuestran últimamente al hombre que trabajar para sí es trabajar para una decepción inevitable.
+									</p>
+									<p>
+										Pero aún cuando esta primera regla parezca tan fácil y sencilla, no la consideres a la ligera, porque estos vicios del hombre ordinario sufren una transformación sutil, y reaparecen bajo otro aspecto en el corazón del discípulo. Es fácil decir &quot;no seré ambicioso&quot;, pero no lo es tanto el decir: &quot;cuando el Maestro lea en mi corazón, lo encontrará limpio de toda mancha&quot;.
+									</p>
+									<p>
+										El artista puro que trabaja, por amor a su obra, está algunas veces más firmemente colocado en el verdadero camino, que el ocultis ta que se imagina haber apartado de sí el interés propio, pero que, en realidad, sólo ha ensanchado los límites de la experiencia y del deseo, y transferido su interés a cosas relacionadas con su mayor expansión de vida.
+									</p>
+									<p>
+										El mismo principio se aplica a las otras dos reglas que siguen, en apariencia tan sencillas. Fija tu atención en ellas, y no te dejes engañar fácilmente por tu propio corazón; pues ahora, en los umbrales, un error puede remediarse. Pero si lo llevas contigo crecerá y dará sus frutos, o bien tendrás que sufrir amargamente al destruirlo.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-I-5"></a>Nota en <a href="#rule-I-5">Regla I-5</a>
+									<p>
+										No imagines que puedes separarte del hombre malvado o del insensato. Ellos eres tú mismo, aunque en grado menor que tu amigo o Maestro. Pero si dejas arraigar en ti la idea de separación de cualquier cosa o persona mala, al obrar así, creas Karma que te ligará a aquella cosa o persona, hasta que tu alma reconozca que no puede estar aislada. Recuerda que el pecado y el oprobio del mundo son tu pecado y tu oprobio, porque tú formas parte del mismo: tu Karma está entretejido de un modo intrincado con el gran Karma. Y antes de que hayas logrado el conocimiento es preciso que hayas pasado por todos los lugares así inmundos como puros.
+									</p>
+									<p>
+										Por lo tanto, ten presente que el vestido manchado, cuyo contacto te repugna, puede haber sido el tuyo ayer, o quizá lo será mañana. Y si horrorizado apartas los ojos de él una vez echado sobre tus hombros, más a ti se adherirá.
+									</p>
+									<p>
+										El hombre que se cree justo se prepara un lecho de cieno. Abstente, no para permanecer limpio, sino porque el abstenerse es un deber.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-I-17"></a>Nota en <a href="#rule-I-17">Regla I-17</a>
+									<p>
+										Estas tres palabras parecerán quizá muy insignificantes para constituir una regla por sí solas. El discípulo dirá: ¿Estudiaría yo estos pensamientos si no buscase la senda? Sin embargo, no te apresures a pasar adelante. Detente y medita un poco. ¿Es realmente el camino lo que deseas, o es que tu fantasía te ofrece una vaga perspectiva de encumbradas alturas que escalar, o un gran porvenir que abarcar? Ten presente la advertencia. El camino ha de buscarse por él mismo, no teniendo en cuenta tus pies que lo deben recorrer.
+									</p>
+									<p>
+										Existe una relación entre esta regla y la 17 de la 2da serie. Cuando después de siglos de lucha y de numerosas victorias se gana la batalla final y se exige el último secreto, entonces estarás preparado para un sendero más avanzado. Cuando se haya dicho el secreto final de esta gran lección, en él está abierto el misterio del nuevo camino, sendero que conduce más allá de toda experiencia humana, y que se halla absolutamente fuera del alcance de la percepción e imaginación del hombre. En cada uno de estos puntos es necesario detenerse mucho y reflexionar bien. En cada uno de estos puntos es preciso estar seguro de que se ha escogido el camino por el camino mismo. El camino y la verdad vienen primero: luego sigue la vida.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-I-20"></a>Nota en <a href="#rule-I-20">Regla I-20</a>
+									<p>
+										Búscalo probando toda experiencia, y no olvides que al decir esto no digo: cede a las seducciones de los sentidos, a fin de conocerlas. Antes de convertirse en ocultista puedes hacerlo, pero no después. Una vez que hayas escogido el sendero y entrado en él, no puedes ya sucumbir sin vergüenza a tales seducciones.
+									</p>
+									<p>
+										Sin embargo, puedes experimentarlas sin horror, puedes observarlas y analizarlas, y esperar con paciencia y confianza la hora en que ninguna impresión causen en ti.</p>
+
+									<p>Pero no condenes al hombre que sucumbe: tiéndele la mano como a un peregrino hermano tuyo, cuyos pies se han entorpecido con el fango del camino. Ten presente, ¡oh, discípulo!, que por grande que sea el abismo que existe entre el hombre virtuoso y aquel que ha obtenido el conocimiento; y que es inconmensurable entre el hombre virtuoso y el que se encuentra en los umbrales de la divinidad.
+									</p>
+									<p>
+										Por tanto, guárdate de imaginar antes de tiempo que tú eres algo distinto de la masa. Cuando hayas encontrado el principio del sendero, la estrella de tu alma dejará ver su luz, y a su claridad advertirás cuán grande es la oscuridad en medio de la cual brilla.
+
+									</p>
+									<p>
+										La mente, el corazón, el cerebro, todo está oscuro y en tinieblas, hasta que se haya ganado la primera batalla. Pero no por esto dejes que el espanto y el temor te dominen; mantén tus ojos fijos en la pequeña luz y ésta irá creciendo. Pero haz que la oscuridad interior te ayude a comprender la desolación de aquellos que no han visto luz alguna, y cuyas almas están sumidas en pro fundas tinieblas.
+									</p>
+									<p>
+										No les censures, no te apartes de ellos, sino procura aligerar algún tanto el pesado Karma que al mundo agobia; presta tu ayuda a los pocos brazos vigorosos que impiden a las potencias de las tinieblas obtener una completa victoria. Obrando de esta suerte entrarás a participar de la felicidad, que acarrea, en verdad, un trabajo terrible y tristeza profunda, pero que es también un manantial de delicias sin fin.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-I-21"></a>Nota en <a href="#rule-I-21">Regla I-21</a>
+									<p>
+										La expansión de la flor es el glorioso momento en que la percepción se despierta: con ella nacen la confianza, el conocimiento y la certeza. La pausa del alma es el momento de asombro, y el siguiente momento de satisfacción es el silencio.
+									</p>
+									<p>
+										Sabe, ¡oh, discípulo!, que los que han pasado por el silencio, y han sentido su paz y retenido su fuerza, ansían que pases tú también por él. Así, pues, cuando el discípulo sea capaz de entrar en el Templo del Saber, encontrará siempre a su Maestro.
+									</p>
+									<p>
+										Los que pidan, obtendrán. Pero aunque el hombre ordinario pida continuamente, su voz no es oída. Porque pide tan sólo con la mente, y la voz de la mente no es oída sino en la
+										esfera donde ella actúa. Por tanto, mientras no estén pasadas las reglas, no digo los que pidan, obtendrán.
+									</p>
+									<p>
+										Leer en el sentido oculto, es leer con los ojos del espíritu. Pedir, es sentir el hambre interna, el deseo de aspiración espiritual. Ser capaz de leer significa haber obtenido en grado
+										mínimo el poder de satisfacer esta hambre. Cuando el discípulo está en disposición de aprender, entonces es aceptado, reconocido y admitido. Así debe ser, por cuanto ha encendido su lámpara y no puede estar oculta.
+
+									</p>
+									<p>
+										Pero es imposible aprender hasta que no se ha ganado la primera gran batalla. La mente puede reconocer la verdad, pero el espíritu no puede recibirla. Una vez que se ha pasado por la tormenta y se ha llegado a la paz, entonces es siempre posible aprender, aún cuando el discípulo dude, vacile y se desvíe.
+
+									</p>
+									<p>
+										La voz del silencio mora en él, y aún cuando abandonase por completo el sendero, llegará un día, sin embargo, en que resonará y lo desgarrará en dos, separando sus pasiones de sus posibilidades divinas. Entonces, en medio del sufrimiento y de los gritos desesperados del abandonado yo inferior, él volverá.
+
+									</p>
+									<p>
+										Por eso te digo: La paz sea contigo. Yo te doy mi paz, puede únicamente decirlo el Maestro a sus amados discípulos, que son como él mismo. Algunos hay, aún entre los que ignoran la sabiduría oriental, a quienes esto se les puede decir diariamente con mayor precisión.
+									</p>
+									<p>
+										Contempla las tres verdades. Son iguales.
+									</p>
+								</li>
+
+								<li>
+									<a class="endnote" id="note-II"></a>
+									<h4 class="center">Parte II Notas</h4>
+									Nota en <a href="#part-2">Parte II</a>
+								</li>
+
+								<li>
+									<p>
+										Ser capaz de tenerse firme, significa tener confianza; ser capaz de oír, es haber abierto las puertas del alma: ser capaz de ver, es haber alcanzado la percepción: ser capaz de hablar, es haber obtenido el poder de auxiliar a los demás: haber conquistado el deseo, es haber aprendido a servirse del yo y a dominarlo; haber alcanzado el conocimiento de sí mismo, es haberse retirado a lo interior de la fortaleza, desde donde el hombre personal puede ser contemplado con imparcialidad; haber visto tu alma en su flor, es haber obtenido una visión momentánea en ti mismo de la transfiguración que te convertirá eventualmente en más que un hombre; reconocer, es llevar a cabo la grande empresa de contemplar la luz resplandeciente sin bajar la vista y sin retroceder, presa del espanto, como ante un fantasma horrible.
+									</p>
+									<p>
+										Esto sucede a algunos, y así pierden la victoria en el preciso momento de alcanzarla; oír la voz del silencio, es comprender que la única dirección verdadera viene del interior; encaminarse al Templo del Saber, es entrar en el estado en que es posible aprender. Entonces se escribirán allí para ti muchas palabras en caracteres de fuego que te será fácil leer; pues cuando el discípulo está pronto, lo está en el Maestro también.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-II-5"></a>Nota en <a href="#rule-II-5">Regla II-5</a>
+									<p>
+										Búscalo y escúchalo primeramente en tu propio corazón. Al principio tal vez dirás que no está allí, que cuando buscas sólo encuentras discordancia. Búscalo más hondo. Si aún fracasas, detente un instante y mira todavía más hondo. En todo corazón humano existe una melodía natural, una fuente oscura. Puede estar cubierta y por completo oculta y misteriosa; pero allí está.
+									</p>
+									<p>
+										En la base misma de tu naturaleza encontrarás la fe, la esperanza y el amor. Aquel que escoge el mal, rehúsa mirar dentro de sí mismo, cierra sus oídos a la melodía de su corazón, así como cierra sus ojos a la luz de su alma. Y obra así porque encuentra más fácil vivir anegado en los deseos.
+									</p>
+									<p>
+										Pero en el fondo de toda vida existe una corriente impetuosa que no reconoce obstáculo; las grandes aguas están allí realmente. Encuéntralas y percibirás que ninguno, ni aún la criatura más miserable, deja de ser parte de ellas, por más que procure cegarse y construirse una fantástica forma externa de horror.
+									</p>
+									<p>
+										Todos los seres, entre los que penosamente avanzas, son fragmentos de lo divino. Y tan engañadora es la ilusión en que vives, que es difícil adivinar si percibirás primero la dulce voz en el corazón de otros. Pero sabe que seguramente se encuentra dentro de ti. Búscala ahí, y una vez que la hayas oído, la distinguirás más prontamente en torno tuyo.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-II-10"></a>Nota en <a href="#rule-II-10">Regla II-10</a>
+									<p>
+										Desde un punto de vista absolutamente impersonal, pues de otro modo verías a través de un prisma falso. Por tanto, la impersonalidad tiene primeramente que ser entendida.
+									</p>
+									<p>
+										La inteligencia es imparcial: ningún hombre es tu enemigo; ningún hombre es tu amigo. Todos son igualmente tus instructores. Tu enemigo se convierte en un misterio que hay que resolver, aún cuando se necesiten siglos para ello; pues el hombre debe ser comprendido. Tu amigo se convierte en una parte de ti mismo, una extensión de ti mismo, un enigma difícil de descifrar. Sólo hay una cosa que sea más difícil de conocer: tu propio corazón. Antes que se hayan aflojado los lazos de la personalidad, no puede empezar a verse este profundo misterio del yo. Hasta que no estés apartado de ella, no será en modo alguno revelada a tu entendimiento. Entonces y sólo entonces podrás usar todos sus poderes y consagrarlos a un servicio digno.
+									</p>
+								</li>
+								<li><a class="endnote" id="note-II-13"></a>Nota en <a href="#rule-II-13">Regla II-13</a>
+									<p>
+										Es imposible que ayudes a los demás, hasta que no hayas adquirido alguna certeza de ti mismo. Cuando hayas aprendido las primeras 21 reglas y hayas penetrado en el Templo de la Sabiduría con tus poderes desarrollados y el sentido libre, entonces descubrirás que dentro de ti existe un manantial de donde brotará la palabra.
+									</p>
+								</li>
+							</ul>
+							<p class="center">
+								* * *</p>
+							<p>
+								Después de la regla 13 no puedo añadir palabra alguna a lo que ya se ha escrito.
+							</p>
+							<p>
+								Yo te doy mi paz.
+							</p>
+							<p>
+								Estas notas han sido escritas únicamente para aquellos a quienes yo doy mi paz; para aquellos que pueden leer lo que he escrito con su sentido interno lo mismo que con el sentido externo.</p>
+							<div class="hr">
+								<hr />
+							</div>
+							<p>&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">encima de página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="contenido-y-titulo.htm">&lt; Contenido y Titulo</a></li>
+									<li class="align-right"><a href="seccion-2-comentarios.htm">Sección 2 - Comentarios &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

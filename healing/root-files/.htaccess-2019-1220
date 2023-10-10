@@ -1,0 +1,30 @@
+# .htaccess file for selfdefinition.org/healing/
+
+# new June 1, 2015 -- Add stylesheet for auto-indexing
+# Can't use with HEADER.html or you get two stylesheet links
+# ref: http://www.apachelounge.com/viewtopic.php?p=21759  
+
+# Must have this or you get a white screen
+IndexStyleSheet "/index-style-sheet.css"  
+
+
+
+# page moved Dec 20 2019
+Redirect 301 "/healing/ambrose-alexander-worrall.htm"  "/healing/articles/ambrose-alexander-worrall.htm"
+
+
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+
+# Quimby canonical added Jan 5, 2017
+
+<Files 'Phineas-Quimby-The-Quimby-Manuscripts.pdf'>
+	Header add Link '<http://selfdefinition.org/healing/phineas-quimby/quimby-manuscripts/contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+# end

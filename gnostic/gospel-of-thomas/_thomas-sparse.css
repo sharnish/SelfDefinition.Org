@@ -1,0 +1,65 @@
+/* file:  /gnostic/gospel-of-thomas/_thomas-with-dark.css
+
+Update Oct 5, 2020. June 8, 2022
+
+*/
+
+@media only print {
+	#article:after {
+		content: "June 8, 2022";
+	}
+}
+
+
+
+/* nice yellow, or this, #f3fff3; a nice green */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #ffffea;
+}
+
+/*    beautiful gren:  background: #e6ffef;  */
+
+/*********** start spanish version styling incl menu *****************/
+html.spanish,
+html.spanish body,
+html.spanish #fixed-header-small-screen,
+html.spanish #menu-site-small-screen,
+html.spanish .progress-header,
+html.spanish .progress-container {
+	background: #efe;
+}
+
+
+li#menu-totop {
+	display: block;
+}
+
+li#menu-totop-spanish {
+	display: none;
+}
+
+
+/*********** end spanish version styling incl menu *****************/
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition-responsive.css with a default color */
+/* color must contrast with body */
+/* This is default #bde0ff- Blue, for selfdefinition-responsive.css  */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+	background: #c9d4fc;
+}
+
+
+
+/* end */

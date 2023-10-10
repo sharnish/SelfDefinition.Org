@@ -1,0 +1,662 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Approach to Validity</title>
+	<meta name="description" content="Lecture of Questions">
+	<meta name="author" content="Richard Rose">
+	<meta property="og:title" content="Approach to Validity">
+	<meta property="og:description" content="Lecture of Questions">
+	<meta property="og:image" content="https://selfdefinition.org/rose/images/Richard-Rose-ABJ-1982.jpg">
+	<link rel="canonical" href="https://albigen.com/writings/approach-to-validity.htm">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_rose-writings-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- not used, not a sequence
+    <link rel="prev" >
+    <link rel="next" >
+    -->
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* copied from Albigen.Com */
+		nav.in-page-nav {
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			columns: 2;
+			/* WAS width: 100%; */
+			width: 320px;
+			border: 0px solid yellow;
+			margin: 30px auto 0;
+			column-rule: 1px solid #666;
+		}
+
+
+		nav.in-page-nav li {
+			width: 120px;
+			margin-left: 20px;
+			margin-right: 0;
+			border: 0px solid red;
+			/* must have this to align correctly at top
+			https://stackoverflow.com/questions/5314726/css-multi-column-layout-of-list-items-doesnt-align-properly-in-chrome    */
+			display: inline-block;
+		}
+
+		@media only screen and (max-width:340px) {
+			nav.in-page-nav {
+				width: 100%;
+				column-rule: 0px solid #666;
+			}
+
+			nav.in-page-nav li {
+				margin-left: 5px;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_rose-writings-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_rose-writings-title-include.htm"); ?>
+									<h3>Approach to Validity</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="richard-rose-the-mind.htm">&lt; The Mind</a></li>
+									<li class="align-right"><a href="richard-rose-yoga-hatha-shabd-raja.htm">Yoga: Hatha, Shabd, and Raja &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#ownership">Ownership</a></li>
+									<li><a href="#ant-hills">Ant Hills</a></li>
+									<li><a href="#good">The Good</a></li>
+									<li><a href="#equality">Equality</a></li>
+									<li><a href="#soul">Soul</a></li>
+									<li><a href="#reality">Reality</a></li>
+									<li style="width: 150px;"><a href="#self-knowledge">Self-Knowledge</a></li>
+									<li style="width: 150px;"><a href="#consciousness">Consciousness</a></li>
+									<li><a href="#work">Why Work?</a></li>
+									<li><a href="#thought">Thought</a></li>
+								</ul>
+							</nav>
+
+							<p class="note center">Hear the reading at: <a href="https://albigen.com/readings/essays-1.htm">Albigen.Com</a></p>
+
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ownership">&nbsp;</a>
+							<h4>
+								Ownership
+							</h4>
+
+							<p>Does a man own a house or does the house own him?</p>
+
+							<p>Does a man have power or is he overpowered?</p>
+
+							<p>Does a man enjoy or is he consumed?</p>
+
+							<p>Does a man really reason... or is it all a complex rationalization?</p>
+
+							<p>Does a man rationalize... or is he so programmed?</p>
+
+							<p>Can a man learn... that which he really wishes to... by himself alone?</p>
+
+							<p>Can a man become?</p>
+
+							<p>How shall he know what he should become?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="ant-hills">&nbsp;</a>
+							<h4>
+								Ant Hills
+							</h4>
+
+							<p>Why build ant hills before knowing what an ant is?</p>
+
+							<p>Why do we build conceptual towers of Babel about human thinking... before we
+								know that which thought is?</p>
+
+							<p>How can you dare to define thought before knowing the source-cause of all
+								thought? Or the essence of thought?</p>
+
+							<p>When you describe bouncing... do you describe the striking object or that which
+								is struck?</p>
+
+							<p>Can you start thinking? Can you stop thinking?</p>
+
+							<p>Is thought something received or something projected?</p>
+
+							<p>Is thought a sort of somatic effluvium, synaptic or chemical? Do we think, or
+								are we caused to think?</p>
+
+							<p>Do we observe or do &quot;they&quot; observe? Are we the view or the viewer?</p>
+
+							<p>Do we create the idea of creation? Or are we the created idea? Do we experience,
+								or are we experienced?</p>
+
+							<p>Is negative thinking (as commonly discussed), negative to man or negative to nature?</p>
+
+							<p>Does the brain generate thought like a radio generates the message coming from
+								its speaker?</p>
+
+							<p>Is thought limited to the brain?</p>
+
+							<p>When a tree bends over does it create wind by waving its branches?</p>
+
+							<p>Can theological facts be established by voting?</p>
+
+							<p>Is Mary the mother of God or is humanity the mother of God?</p>
+
+							<p>Is God determined by victorious armies?</p>
+
+							<p>Is virtue established by Psychological edict?... by ecclesiastical vote... or by
+								the requisites of our ultimate essence?</p>
+
+							<p>What is sin?... an offense against yourself... an offense against your
+								fellow-man... an offense against God?</p>
+
+							<p>Is an offense against God recognized by divine outcry... earthquake or cosmic
+								catastrophe?</p>
+
+							<p>Is it a sin to eat meat?</p>
+
+							<p>Are the animals our brothers?</p>
+
+							<p>Are they possessed of intelligence and soul?</p>
+
+							<p>Do animals sin when they eat other animals? Or are such sinning animals pardoned
+								for keeping ecology in balance?</p>
+
+							<p>Is it wrong to kill except for food?</p>
+
+							<p>Do we do wrong by not eating the people we kill?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="good">&nbsp;</a>
+							<h4>
+								The Good
+							</h4>
+
+							<p>Who is knowledgeable about Good?</p>
+
+							<p>Is Good that which we desire... or that which is in itself Good? What is the
+								condition of &quot;being Good&quot; in itself?</p>
+
+							<p>Is evil the child of Good... or is it a twin?</p>
+
+							<p>If a man drives a horse through a plate glass window should the man be
+								prosecuted... or is it the horse who should be prosecuted?</p>
+
+							<p>If a man robs to feed his children... should we prosecute the man, or that which
+								drove him—the children?</p>
+
+							<p>If a man rapes a girl should we prosecute... a. the man, b. the girl who tempted
+								him, c. his ancestors for his genetic inheritance of glandular inclination, d.
+								the force that designed mankind?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="equality">&nbsp;</a>
+							<h4>
+								Equality
+							</h4>
+							<p>What is equality?</p>
+
+							<p>Was Samson equal to Delilah?</p>
+
+							<p>Is a baby equal to a dying man?</p>
+
+							<p>Are you only half of a plan by virtue of not possessing both sexes?</p>
+
+							<p>Is peace of mind more important than global peace or herd-peace?</p>
+
+							<p>Who or what are you?</p>
+
+							<p>Are you only a body?</p>
+
+							<p>Are you rather a complex organism? A cell colony... a nature-oriented bundle of
+								conditioned reflexes?</p>
+
+							<p>Is the brain a monitoring station designed for the organism's indefinite
+								survival? Or is our body programmed for death (death gene) following
+								procreation?</p>
+
+							<p>Is all religion and philosophy merely rationalization emanating from that
+								computer?... to answer constant cellular awareness of death?</p>
+
+							<p>Or is the universal belief in life after death an intuitive reading from that
+								computer, a reading not completely translatable into computer symbols which are
+								limited?</p>
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="soul">&nbsp;</a>
+							<h4>
+								Soul
+							</h4>
+
+							<p>Is there a soul?</p>
+
+							<p>Did it exist before the body or must it be developed, grown or evolved?</p>
+
+							<p>Prove the following: Mind (as other than somatic awareness), sub-conscious mind,
+								ego, id, superego, chakra, kundalini, tisra til, astral, etheric, causal,
+								desire, aura, halo, ectoplasm, spiritual ear (picks up shabd), conscience,
+								spiritual nectar, philosopher's stone, guardian angel, hydrogen.</p>
+
+							<p>What is the correct definition of sanity?</p>
+
+							<p>Do our psychologists practice rationalization and make-believe when they
+								substitute behaviorism for a deeper set of factors of human origins or factors
+								of prenatal determination... meaning factors that would bring us to a knowledge
+								of the true essence of man?</p>
+
+							<p>Do they not procrastinate the search for real causes?</p>
+
+							<p>Do they not manifest a possible paranoia in fear that subjective observations
+								and pursuits may find more substantial things about the essence of man?</p>
+
+							<p>Which is the worse schizophrenic? The man who talks in tongues? The
+								schizophrenic who is possessed and cannot help himself? Or... the professionals
+								who create volumes of confusing, complex terminology describing nothing better
+								than their own frustrating dichotomy?</p>
+
+							<p>Which is worse? The manic-depressives who brood or babble as a result of
+								excessive voltage, chemical imbalance, some electrolytic deficiency or toxic
+								condition?... or... the pompous alienist who babbles on the witness stand that
+								this or that man should be subjected to ice pick, shock treatment... or electric chair?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="reality">&nbsp;</a>
+							<h4>
+								Reality
+							</h4>
+							<p>What is real?</p>
+
+							<p>Is a mirage real?</p>
+
+							<p>Is a dream real? If not—why not?</p>
+
+							<p>Is wakefulness a dream?... is it an undefined state qualified by erratic or
+								inferior senses?</p>
+
+							<p>Is the objective world real or only that which we believe it to be? Is an idea
+								more real than a planet?</p>
+
+							<p>Is a planet merely a projected idea? Is an angel more real than a planet?</p>
+
+							<p>If the concept of a space-time continuum is valid... does space exist at all
+								independently of time?</p>
+
+							<p>If time does not exist... do things move?</p>
+
+							<p>Is that which we see, actually there as it is seen, or is it projected? What is
+								matter... atoms, force fields,—electricity?</p>
+
+							<p>Are force-fields projected energy?</p>
+
+							<p>Do we witness the material world through or with the senses.</p>
+
+							<p>Do we hear as well as the dog, see as well as the eagle, or smell as well as
+								most animals?</p>
+
+							<p>Do we not have a limited color range?</p>
+
+							<p>If we have a limited color-view, how can we have a complete view of the world?</p>
+
+							<p>Is there a pure, or direct sense?</p>
+
+							<p>How can we have an accurate world-view if we are prone to the projection of a
+								paradigm?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="self-knowledge">&nbsp;</a>
+							<h4>
+								Self-Knowledge
+							</h4>
+
+							<p>What about knowledge of yourself?</p>
+
+							<p>Are there two selves or just one, (dualism) physical self and soul?</p>
+
+							<p>Do desires and prejudices do your thinking for you?</p>
+
+							<p>Are you an actor whose act hides the real self?</p>
+
+							<p>Do you lie to yourself? If so, how can you know the truth?</p>
+
+							<p>Do you really think you know what is the truth?</p>
+
+							<p>Is truth decided by that which most people think? Or by that which is?</p>
+
+							<p>Is truth decided once and for all by experts or authorities?</p>
+
+							<p>Is truth learned... or is it only experienced? Do you act? Are you capable of acting?</p>
+
+							<p>Are you merely a bundle of conditioned reflexes? (Behaviorism) If we are such a
+								robot-bundle... how can we be conditioned by another robot? </p>
+
+							<p>If we know that we are such a bundle, does not this knowledge give us knowledge
+								of the robot's mechanicalness that might lead to the robot's emancipation?</p>
+
+							<p>Has such an answer or knowledge ever been found?</p>
+
+							<p>Is it found by faith or is it found by studying the self?</p>
+
+							<p>Do we identify the self with that which thinks?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="consciousness">&nbsp;</a>
+							<h4>
+								Consciousness
+							</h4>
+
+							<p>Do we identify the self with that which thinks? Or is the self identified as
+								that which is conscious... even conscious of thinking?</p>
+
+							<p>Do we know the nature of thought? What is a thought in itself?</p>
+
+							<p>What is the relation between a synapse (or a reaction) and awareness?</p>
+
+							<p>What is awareness?</p>
+
+							<p>Do you need to understand yourself?</p>
+
+							<p>Can you understand yourself by an objective study of behavior?</p>
+
+							<p>Can you understand yourself by the study of psychology, by either pure or
+								manipulative psychology?</p>
+
+							<p>Is it possible to understand yourself without completely understanding your
+								origin and destiny, and without satisfactorily defining the self?</p>
+
+							<p>Is not identification of the self, necessarily the isolation of the self from
+								its environment?</p>
+
+							<p>If this is true where is the boundary-line?</p>
+
+							<p>Do motivating factors such as the appetites fall into the category of being
+								separate from the self?</p>
+
+							<p>How can a &quot;self&quot; drink itself to death?</p>
+
+							<p>Is temptation alien to our real Self, or is it intrinsic?</p>
+
+							<p>Are we selves of many facets or are we a unique self, artfully invaded?</p>
+
+							<p>Do curiosity and desire belong in the category of separateness from the Self?</p>
+
+							<p>Is the body part of the Self or a garment of the spirit?</p>
+
+							<p>Is the mind part of the Self?</p>
+
+							<p>Is the mind in its presently understood potential, all that we can consider as
+								the Self?</p>
+
+							<p>When a man loses his mind, where does his self go? Where did the mind go?</p>
+
+							<p>If a man lives for twenty years in a state of mental conviction, and then
+								experiences a radical reversal of that conviction, what can be said about such a
+								mind especially when we have regarded it as the ultimate self?</p>
+
+							<p>Is mind a faculty through which we observe God... as through a glass darkly?</p>
+
+							<p>Is it possible to know God before knowing the Self? Is it possible to know
+								anything?</p>
+
+							<p>Do not hypnotic demonstrations with the senses indicate that reality is somehow
+								irrevocably interlocked with belief?</p>
+
+							<p>Is the world only that which we believe it to be?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="work">&nbsp;</a>
+							<h4>
+								Why Do We Work?
+							</h4>
+
+							<p>Why do we work so frenetically? Is it to get a better job, a better house and
+								car, so that we can have a better mate, and better children?</p>
+
+							<p>Why do fantasies beget agonies?</p>
+
+							<p>Is our ulterior self in our heads or in our gonads?</p>
+
+							<p>Why do we still have innate spiritual hope, unless our intuition sees a solution?</p>
+
+							<p>Is spiritual hope and belief nothing more than a part of a robot's programmed
+								stimulation?</p>
+
+							<p>Does a robot have any meaning or purpose beyond the intentions of the designer?</p>
+
+							<p>Can a robot program itself in any degree?</p>
+
+							<p>Can a robot be programmed by other robots for its own good?</p>
+
+							<p>Can a robot be reprogrammed in this manner to seek its definition and
+								self-motivation?</p>
+
+							<p>Can logic be defined as well-coordinated robot-functioning, in which the robot
+								reacts with seeming consciousness of its own programmed state of acceptance to
+								every situation and suggestion?</p>
+
+							<p>Is sanity defined by logic?</p>
+
+							<p>Or do we attain it by being logical?</p>
+
+							<p>Is it sane to wish to know about our Real Essence?</p>
+
+							<p>Can the individual decide?</p>
+
+							<p>Can an individual decide on something outside the scope of that which is his
+								limited perspective?</p>
+
+							<p>Is man doomed to predestiny?</p>
+
+							<p>Or is a man doomed to forever struggle in the uncertainty and inability of ever
+								knowing whether he can act or decide, or not?</p>
+
+							<p>Does existence necessitate consciousness? Is man capable of self-consciousness?</p>
+
+							<p>Or is man merely aware of the idea of self-consciousness?</p>
+
+							<p>Can a man watch himself?</p>
+
+							<p>Are there two people in such an act, or is one only the view?</p>
+
+							<!-- SUBSEQUENT HEADERS -->
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="thought">&nbsp;</a>
+							<h4>
+								Thought
+							</h4>
+
+							<p>What is thought?</p>
+
+							<p>Is thought synaptic or spiritual?</p>
+
+							<p>Is thought the reaction of cholinesterase upon acetylcholine?</p>
+
+							<p>Is thought the viewing of our own projections, and nothing more?</p>
+
+							<p>If thoughts travel in telepathy, what is the vehicle for this travel?</p>
+
+							<p>Do thoughts travel in another dimension, or is their action similar to that of
+								electricity?</p>
+
+							<p>Protoplasm ends and thought begins where?</p>
+
+							<p>What psychological scientist has discovered this link between thought and matter?</p>
+
+							<p>Does the body manufacture subtle little essences called thoughts?</p>
+
+							<p>Or does the body develop receiving mechanisms or chemicals so that it will be
+								aware of possible external essences?</p>
+
+							<p>Would such an external essence be called mind? If so would that mind be external
+								to the body?</p>
+
+							<p>Are we then a body being influenced by an external mind?</p>
+
+							<p><em>Or are we the external mind?</em></p>
+
+							<p>Is thought transmitted in or with electrical energy?</p>
+
+							<p>Does a man's soul or essence make contact with the body of the man in energy
+								generated by the gap of the synapses?</p>
+
+							<p>Is the inner man any more than conscious energy?</p>
+
+							<p>Does all energy come from food, or is it possible that we may draw energy from
+								higher spiritual levels?</p>
+
+							<p>Do we transmute food-energy into other forms of energy such as mental energy, or
+								is mental energy poured into us from a universal mind?</p>
+
+							<p>Are thoughts related to endocrine glands?</p>
+
+							<p>Is it possible that man can, with energy transmuted upward, produce thoughts
+								with volition, rather than just submit to reacting?</p>
+
+							<p>Is memory an automatic recording?</p>
+
+							<p>What sees, what remembers, what reacts to perception and memory?</p>
+
+							<p>Does not the mind also have the unique ability which is forgetting, and is not
+								all experience that has been gained, lost, when the mind forgets?</p>
+
+							<p>Do space and time both exist in space-time, or do neither exist?</p>
+
+							<p>Is real knowing, not knowing?</p>
+
+							<p>What is valid? Is a rock valid?</p>
+
+							<p>Unless we know that which a rock is to itself, how can we know its validity? If
+								the rock is only our projection, does it have any validity?</p>
+
+							<p>Shall the finite mind ever perceive the infinite?</p>
+
+							<p>Is it true that the only question worth answering is whether or not we should
+								commit suicide?</p>
+
+							<p>
+								&nbsp;</p>
+
+							<p class=" note center">[ end ]</p>
+
+
+
+							<p>
+								&nbsp;</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="richard-rose-the-mind.htm">&lt; The Mind</a></li>
+									<li class="align-right"><a href="richard-rose-yoga-hatha-shabd-raja.htm">Yoga: Hatha, Shabd, and Raja &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<!-- "menu-container" is in the menu include file -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

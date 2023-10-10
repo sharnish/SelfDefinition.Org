@@ -1,0 +1,721 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Psicología de la Posible Evolución del Hombre, Primera Conferencia</title>
+	<meta name="description" content="Una psicología diferente; La posible evolución del hombre; El hombre no puede hacer;
+     Diagrama de muchos 'yoes' ; La conciencia; El estudio de sí mismo; Funciones en estados de conciencia">
+	<meta name="author" content="P.D. Ouspensky">
+	<meta property="og:title" content="Psicología de la Posible Evolución del Hombre, Primera Conferencia">
+	<meta property="og:description" content="Una psicología diferente; La posible evolución del hombre; El hombre no puede hacer;
+     Diagrama de muchos 'yoes' ; La conciencia; El estudio de sí mismo; Funciones en estados de conciencia">
+	<meta property="og:image" content="https://selfdefinition.org/gurdjieff/evolucion/images/ouspensky-profile-web.jpg">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_evolucion-espanol-sparse.css" rel="stylesheet">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<link rel="prev" href="introduccion.htm">
+	<link rel="next" href="conferencia-2.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		ul.page-links {
+			width: 365px;
+		}
+
+		ul.page-links li {
+			width: inherit;
+		}
+
+		@media only screen and (max-width: 370px) {
+			ul.page-links {
+				width: 100%;
+			}
+		}
+
+		ul.states {
+			margin: -10px 0;
+		}
+
+		ul.states li {
+			margin: 5px 0;
+		}
+
+		/* test
+        img#diagram-of-Is {display:none;}
+        */
+
+		img#diagram-of-Is {
+			width: 320px;
+		}
+
+		@media only screen and (max-width:360px) {
+			img#diagram-of-Is {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_evolucion-espanol-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar">
+							</div>
+						</div>
+					</div>
+					<!-- as of Oct 9, 2019 moving "article" to here -->
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_evolucion-espanol-title-include.htm"); ?>
+									<h3>
+										Primera Conferencia
+									</h3>
+									<p class="tiny">
+										This page in English: <a href="/gurdjieff/evolution/lecture-1.htm">lecture-1.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduccion.htm">&lt; Introducción</a></li>
+									<li class="align-right"><a href="conferencia-2.htm">Conferencia 2 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+							<nav class="in-page-nav">
+								<ul class="page-links">
+									<li><a href="#a-different-psychology">Una psicología diferente</a></li>
+									<li><a href="#evolution">La posible evolución del hombre</a></li>
+									<li>&nbsp;&nbsp;El hombre no es un ser completo</li>
+									<li>&nbsp;&nbsp;Debe convertirse en un ser diferente</li>
+									<li>&nbsp;&nbsp;El eslabón que falta</li>
+									<li>&nbsp;&nbsp;El hombre no se conoce a sí mismo</li>
+									<li><a href="#man-cannot-do">El hombre no puede <em>hacer</em></a></li>
+									<li>&nbsp;&nbsp;El hombre no es uno; el es muchos</li>
+									<li><a href="#many-Is">Diagrama de muchos 'yoes'</a></li>
+									<li><a href="#development">¿Que significa 'desarrollo'?</a></li>
+									<li><a href="#consciousness">La conciencia</a></li>
+									<li>&nbsp;&nbsp;Grados de conciencia</li>
+									<li>&nbsp;&nbsp;Las cuatro estados de conciencia</li>
+									<li>&nbsp;&nbsp;¿Es posible llegara ser consciente?</li>
+									<li><a href="#self-study">Psicología significa el estudio de sí mismo</a></li>
+									<li><a href="#four-chief-functions">Las cuatro funciones principales</a></li>
+									<li><a href="#states-of-consciousness">Funciones en estados de conciencia</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="a-different-psychology">&nbsp;</a>
+							<h4>
+								Una psicología diferente
+							</h4>
+							<p>
+								Hablare sobre el estudio de la psicología, pero debo advertirles que la psicología de la cual me ocupo es muy diferente de cuanto ustedes pueden conocer bajo ese nombre.
+							</p>
+							<p>
+								Para comenzar debo decir que prácticamente nunca en su historia la psicología ha estado a un nivel tan bajo como en la actualidad. Ha perdido todo contacto con su origen y su significado, a tal punto que aun hoy es difícil definir la palabra «psicología», esto es precisar que es la psicología y que estudia. Y es así a pesar de que nunca en la historia ha habido tantas teorías psicológicas ni tantos escritos psicológicos.
+							</p>
+							<p>
+								A veces a la psicología se le llama una nueva ciencia. Esto no tiene ninguna razón. Quizá la psicología es la ciencia mas antigua, y en sus rasgos mas esenciales, desafortunadamente, una ciencia olvidada.
+							</p>
+							<p>
+								Para comprender como se puede definir la psicología es necesario darse cuenta de que la psicología nunca ha existido bajo su propio nombre, excepto en tiempos modernos. Por una u otra razón siempre se ha sospechado de tendencias equivocadas o subversivas de la psicología, ya sean religiosas, políticas o morales, y por lo tanto ha tenido que usar diferentes disfraces.
+							</p>
+							<p>
+								Por miles de años la psicología existió bajo el nombre de filosofa. En la India todas las formas de Yoga, que son esencialmente psicología, se describen como uno de los seis sistemas de filosofía. Las enseñanzas Sufíes, que ante todo son psicológicas, se consideran en parte religiosas y en parte metafísicas. En Europa, hasta no hace mucho tiempo, en las últimas décadas del siglo diecinueve, muchos trabajos sobre psicología eran considerados como filosofa. Y a pesar de que casi todas las subdivisiones de la filosofía, tales como la lógica, la teoría del conocimiento, la ética, la estética, se referían al trabajo de la mente humana o de los sentidos, la psicología era considerada como inferior a la filosofía y como relacionada sólo con los lados más bajos o mas triviales de la naturaleza humana.
+							</p>
+							<p>
+								Paralelamente a su existencia bajo el nombre de filosofía, la psicología existió aun por mas tiempo conectada con una u otra religión. Esto no quiere decir que la religión y la psicología alguna vez fueron una y la misma cosa, ni que la conexión entre religión y psicología fuera reconocida. Pero no hay duda de que casi todas las religiones conocidas -por supuesto no me refiero a las falsas religiones modernas- desarrollaron uno u otro tipo de enseñanza psicológica conectada a menudo con cierta practica, de manera que el estudio de la religión, muy frecuentemente, incluía en sí mismo el estudio de la psicología.
+							</p>
+							<p>
+								Hay muchos trabajos excelentes sobre psicología en la bastante ortodoxa literatura religiosa de diferentes países y épocas. Por ejemplo, en los primeros tiempos del Cristianismo, había bajo el nombre general de <em>Philokalia</em>,&nbsp;<sup>[1, 2]</sup> una colección de libros de diferentes autores, usado en la actualidad en la Iglesia Oriental, especialmente para la instrucción de los monjes.
+							</p>
+							<p class="fnote">
+								[1. <a href="https://en.wikipedia.org/wiki/Philokalia">en.wikipedia.org/wiki/<wbr />Philokalia</a>&nbsp;]
+							</p>
+							<p class="fnote">
+								[2. Texto (inglés, más de 1,200 páginas) : <a href="https://archive.org/details/Philokalia-TheCompleteText">Archive.Org</a>&nbsp;]
+							</p>
+							<p>
+								Durante el tiempo en que la psicología estuvo conectada con la filosofía y la religión, también existía bajo la forma de Arte. La Poesía, el Drama, la Escultura, la Danza, y aun la Arquitectura eran medios de transmisión del conocimiento psicológico. Por ejemplo, las catedrales góticas eran en su sentido primordial tratados de psicología.
+							</p>
+							<p>
+								En la antigüedad antes de que la filosofía, la religión y el arte adoptaran formas separadas, bajo las cuales las conocemos ahora, la psicología había existido en forma de Misterios, tales como los de Egipto y de la antigua Grecia.
+							</p>
+							<p>
+								Posteriormente, luego de la desaparición de los Misterios, la psicología existió en forma de Enseñanzas Simbólicas, las que algunas veces estaban ligadas a la religión de la época y otras no, como en los casos de la astrología, la alquimia, la magia; y entre los mas modernos, la Masonería, el Ocultismo y la Teosofía. <sup>[3]</sup>
+							</p>
+							<p class="fnote">
+								[3. <a href="https://en.wikipedia.org/wiki/Western_esotericism">en.wikipedia.org/wiki/<wbr />Western_esotericism</a>&nbsp;]
+							</p>
+							<p>
+								Aquí es necesario notar que todos los sistemas psicológicos y doctrinas, tanto los que existen o los que existieron abiertamente como los que fueron ocultos o disfrazados, pueden dividirse en dos categorías principales.
+							</p>
+							<p>
+								Primero: los sistemas que estudian al hombre tal como ellos lo encuentran, o tal como ellos suponen o lo imaginan ser. La psicología «científica» moderna, o lo que se conoce bajo este nombre, pertenece a esta categoría.
+							</p>
+							<p>
+								Segundo: los sistemas que estudian al hombre no desde el punto de vista de lo que es, o de lo que parece ser, sino desde el punto de vista de lo que puede llegar a ser; esto es, desde el punto de vista de su posible evolución.
+							</p>
+							<p>
+								Estos últimos sistemas son en realidad los originales, o en todo caso los mas antiguos, y sólo ellos pueden explicar el origen olvidado y el significado de la psicología.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="evolution">&nbsp;</a>
+							<h4>
+								La posible evolución del hombre</h4>
+							<p>
+								Cuando comprendamos la importancia del estudio del hombre desde el punto de vista de su posible evolución, comprenderemos que la primera respuesta a la pregunta: ¿que es psicología? debería ser que la psicología es el estudio de los principios, leyes, y hechos de la posible evolución del hombre.
+							</p>
+							<p>
+								Aquí, en estas conferencias, hablare sólo desde este punto de vista.
+							</p>
+							<p>
+								Nuestra primera pregunta será: ¿que quiere decir la evolución del hombre?, y la segunda: ¿se requieren condiciones especiales para ello?
+							</p>
+							<p>
+								Con respecto a modernos y ordinarios puntos de vista sobre el origen del hombre y su previa evolución, debo decir ante todo que no pueden ser aceptados. Debemos darnos cuenta de que no sabemos nada acerca de su origen y que no tenemos pruebas de la evolución física o mental del hombre.
+							</p>
+							<p>
+								Por el contrario, si tomamos la humanidad histórica, es decir, la humanidad de los últimos diez o quince mil años, podemos encontrar señales inconfundibles de un tipo de hombre superior, cuya presencia se puede establecer ante la evidencia de monumentos antiguos y conmemorativos que la humanidad actual no puede repetir o imitar.
+							</p>
+							<p>
+								Con respecto al hombre prehistórico o a esas criaturas de aspecto parecido al hombre y sin embargo, al mismo tiempo, tan diferentes de el, cuyos huesos se encuentran en yacimientos del periodo glacial o preglacial, podemos aceptar la muy plausible idea de que esos huesos pertenecen a un ser bastante distinto del hombre, que pereció hace mucho tiempo.
+							</p>
+							<p>
+								Al negar la evolución anterior del hombre, tenemos que negarle cualquier posibilidad de evolución <em>mecánica</em> futura; es decir, una evolución que se desarrolle por sí sola, de acuerdo con las leyes de la herencia y de la selección, sin esfuerzos conscientes del hombre, y sin una comprensión de su posible evolución.
+							</p>
+							<h5>
+								El hombre no es un ser completo
+							</h5>
+							<p>
+								Nuestra idea fundamental va a ser que el hombre, tal como lo conocemos, no es un ser completo; que la naturaleza lo desarrolla sólo hasta un cierto punto y que luego lo deja, para que siga desarrollandose por sus propios esfuerzos e iniciativas, o vivir y morir tal cual nació, o degenerar y perder su capacidad de desarrollo.
+							</p>
+							<p>
+								En este caso la evolución del hombre querrá decir el desarrollo de ciertas cualidades y rasgos interiores que generalmente permanecen sin crecer y que no pueden desarrollarse por sí solos.
+							</p>
+							<p>
+								La experiencia y la observación muestran que ese desarrollo es posible sólo en ciertas condiciones determinadas, con esfuerzos de cierta clase por parte del hombre mismo, y con ayuda suficiente de aquellos que comenzaron antes un trabajo similar y que ya han obtenido un cierto grado de desarrollo, o por lo menos cierto conocimiento de los métodos.
+							</p>
+							<p>
+								Tenemos que comenzar con la idea de que sin esfuerzos es imposible la evolución; sin ayuda, igualmente, es imposible.
+							</p>
+							<p>
+								Después de lo cual tenemos que comprender que, en el camino del desarrollo, el hombre tiene que hacerse un ser diferente, y tenemos que aprender y comprender en que sentido y en que dirección el hombre tiene que hacerse un ser diferente; es decir, que significa ser un ser diferente.
+							</p>
+							<p>
+								Luego tenemos que comprender que no todos los hombres pueden desarrollarse y llegar a ser seres diferentes. La evolución es cuestión de esfuerzos personales, y en relación con la masa de la humanidad la evolución es una rara excepción. Puede parecer extraño, pero debemos darnos cuenta de que no sólo es rara, sino que cada vez está llegando a ser mas y mas rara.
+							</p>
+							<h5>
+								Debe convertirse en un ser diferente
+							</h5>
+							<p>
+								Por supuesto, surgen muchas preguntas de lo dicho anteriormente:
+							</p>
+							<div class="blockquote">
+								<p>
+									¿Que significa que en el camino de la evolución el hombre tiene que llegar a ser un ser diferente?
+								</p>
+								<p>
+									¿Que quiere decir un &quot;ser diferente&quot;?
+								</p>
+								<p>
+									¿Cuales son las cualidades o rasgos interiores que pueden ser desarrollados en el hombre, y como se puede lograr?
+								</p>
+								<p>
+									¿Por que no se pueden desarrollar todos los hombres y llegar a ser seres diferentes? ¿Por que tal injusticia?
+								</p>
+							</div>
+							<p>
+								Tratare de contestar a estas preguntas y comenzare por la última:
+							</p>
+							<p>
+								¿Por que no se pueden desarrollar todos los hombres y llegar a ser seres diferentes?
+							</p>
+							<p>
+								La respuesta es muy sencilla. Porque no lo quieren. Porque no saben nada acerca de ello y, aunque se les diga, sin una larga preparación, no podrán comprender lo que significa.
+							</p>
+							<p>
+								La idea principal es que para hacerse un ser diferente un hombre debe quererlo mucho y por muy largo tiempo. Un deseo pasajero o vago, basado en el descontento con las condiciones exteriores, no creara el impulso suficiente.
+							</p>
+							<p>
+								La evolución del hombre depende de su comprensión de lo que puede conseguir, y de lo que tiene que dar para ello.
+							</p>
+							<p>
+								Si el hombre no lo quiere, o si no lo quiere con suficiente intensidad, y no hace los esfuerzos necesarios, nunca se desarrollara. De manera que en esto no hay injusticia. ¿Por que debería tener lo que no quiere? Si al hombre se le forzara a convertirse en un ser diferente, cuando está satisfecho de lo que es, esto si seria entonces injusticia.
+							</p>
+							<p>
+								Ahora preguntémonos que significa un ser diferente. Si consideramos todo el material que podamos conseguir, que se refiera a esta proposición, encontramos la afirmación de que al hacerse un ser diferente el hombre adquiere muchas nuevas cualidades y poderes que no posee ahora. Esta es una afirmación común encontrada en toda clase de sistemas que admiten la idea de un crecimiento psicológico o interior del hombre.
+							</p>
+							<p>
+								Pero esto no es suficiente. Aun la descripción mas detallada de estos nuevos poderes no nos ayudara en forma alguna a comprender como aparecen ni de donde vienen.
+							</p>
+							<h5>
+								El eslabón que falta
+							</h5>
+							<p>
+								En las teorías generalmente conocidas falta un eslabón, aun en aquellas que acabo de mencionar que están basadas en la idea de la posibilidad de evolución del hombre.
+							</p>
+							<p>
+								La verdad es que antes de que el hombre adquiera cualesquiera nuevas facultades o poderes, que no conoce ni posee ahora, tiene que adquirir facultades y poderes que tampoco posee, pero que se arroga a sí mismo; es decir, que cree que las conoce y que las puede usar o controlar.
+							</p>
+							<p>
+								Este es el eslabón que falta, y este es el punto mas importante.
+							</p>
+							<p>
+								Por el camino de la evolución, que ha sido descrito como un camino basado en el esfuerzo y en la ayuda, el hombre debe adquirir cualidades que cree que ya posee, pero sobre las cuales se engaña a sí mismo.
+							</p>
+							<p>
+								Para poder comprenderlo mejor, y saber que facultades y poderes puede adquirir el hombre, tanto completamente nuevos como inesperados, y también aquellos que se imagina que ya posee, tenemos que partir del conocimiento general que tiene el hombre de sí mismo.
+							</p>
+							<h5>
+								El hombre no se conoce a sí mismo
+							</h5>
+							<p>
+								Y así llegamos, de inmediato, a un hecho muy importante: <em>El hombre no se conoce a sí mismo.</em>
+							</p>
+							<p>
+								No conoce, ni sus propias limitaciones, ni sus propias posibilidades. Ni siquiera conoce lo mucho que no se conoce.
+							</p>
+							<p>
+								El hombre ha inventado muchas maquinas, y sabe que una maquina complicada necesita algunas veces años de estudio cuidadoso antes de poder usarla o controlarla. Pero no aplica este conocimiento a sí mismo, aunque el mismo sea una maquina mucho mas complicada que cualquier maquina que ha inventado.
+							</p>
+							<p>
+								Tiene toda clase de ideas falsas acerca de sí mismo. Ante todo, no se da cuenta de que el es verdaderamente una maquina.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="man-cannot-do">&nbsp;</a>
+							<h4>
+								El hombre no puede <em>hacer</em>
+							</h4>
+							<p>
+								¿Que quiere decir que el hombre es una maquina?
+							</p>
+							<p>
+								Quiere decir que no tiene movimientos independientes, ni dentro ni fuera de el. Es una maquina que es puesta en movimiento por influencias externas y por impactos exteriores. Todos sus movimientos, acciones, palabras, ideas, emociones, humores y pensamientos son producidos por influencias exteriores. Por sí mismo, es tan sólo un autómata con cierta provisión de recuerdos de experiencias previas y cierta cantidad de energía de reserva.
+							</p>
+							<p>
+								Tenemos que comprender que el hombre no puede hacer nada.
+							</p>
+							<p>
+								Pero el no se da cuenta de ello y se atribuye la <em>capacidad de hacer.</em> Esta es la primera cosa falsa que el hombre se arroga.
+							</p>
+							<p>
+								Esto tiene que comprenderse con toda claridad. <em>El hombre no puede hacer.</em> Todo lo que el hombre cree que hace, en realidad <em>sucede.</em> Sucede exactamente como &quot;llueve&quot; o &quot;nieva&quot;.
+							</p>
+							<p>
+								En español no hay formas impersonales de verbos que se puedan usar en relación con las acciones del hombre. De manera que tenemos que seguir diciendo que el hombre piensa, lee, escribe, ama, odia, comienza guerras, pelea, etc. En realidad todo ello <em>sucede.</em>
+							</p>
+							<p>
+								El hombre no puede moverse, pensar o hablar de motu propio. Es una marioneta tirada de aquí y de allá por hilos invisibles. Si así lo comprende puede aprender mas sobre sí mismo, y tal vez entonces las cosas comiencen a cambiar para él. Pero si no puede darse cuenta ni comprender su total mecanicidad, o si no quiere aceptarla como un hecho, no puede aprender nada mas y las cosas no pueden cambiar para él.
+							</p>
+							<p>
+								El hombre es una maquina, pero una maquina muy peculiar. Es una maquina que, en las circunstancias adecuadas, y con el tratamiento adecuado, puede saber que es una maquina. Al darse plena cuenta de ello puede encontrar los medios para dejar de ser una maquina.
+							</p>
+							<h5>
+								El hombre no es <em>uno</em>; el es muchos
+							</h5>
+							<p>
+								Ante todo, el hombre debe saber que el no es <em>uno</em>; el es muchos. No tiene un Yo permanente e inmutable. El es siempre diferente. En un momento es uno, en el siguiente momento es otro, en el tercer momento es un tercero, y así sucesivamente, casi sin término.
+							</p>
+							<p>
+								La ilusión de unidad o unicidad se crea en el hombre, ante todo, por la sensación de un cuerpo físico, luego por su nombre, que en casos normales siempre sigue siendo el mismo, y tercero, por cierto numero de hábitos mecánicos que le son implantados por la educación o los adquiere por imitación. Al tener siempre las mismas sensaciones físicas, al oír siempre el mismo nombre, y al notar en sí mismo los mismos hábitos e inclinaciones que tenia antes, se cree ser siempre el mismo.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="many-Is">&nbsp;</a>
+							<h4>
+								Diagrama de muchos 'yoes'</h4>
+							<p>
+								En realidad no hay unidad en el hombre y no hay un centro de control, ni un Yo permanente.
+							</p>
+							<p>
+								Este es el esquema general del hombre:
+							</p>
+							<div class="image-div">
+								<img id="diagram-of-Is" src="images/conferencia-1-diagrama-de-los-yoes.jpg" alt="Diagrama de muchos 'yoes'" />
+								<p class="note">
+									Diagrama de muchos 'yoes'
+								</p>
+							</div>
+							<p>
+								Cada pensamiento, cada sentimiento, cada sensación, cada deseo, cada gusto y cada aversión es un &quot;yo&quot;. Estos &quot;yoes&quot; no están conectados entre si, ni coordinados en forma alguna. Cada uno depende de los cambios de las circunstancias exteriores, y de los cambios de las impresiones.
+							</p>
+							<p>
+								Algunos siguen mecánicamente a otro, y algunos aparecen siempre acompañados de otros. Pero en esto no hay ni orden ni sistema.
+							</p>
+							<p>
+								Hay ciertos grupos de &quot;yoes&quot; que están ligados naturalmente. Hablaremos de estos grupos posteriormente. Por ahora debemos tratar de comprender que hay grupos de &quot;yoes&quot; ligados tan sólo por asociaciones accidentales, recuerdos accidentales, o semejanzas totalmente imaginarias.
+							</p>
+							<p>
+								En todo momento, cada uno de estos &quot;yoes&quot; sólo representa a una muy pequeña parte de nuestro &quot;cerebro&quot;, &quot;mente&quot;, o &quot;inteligencia&quot;; pero cada uno de ellos pretende representar a la totalidad. Cuando el hombre dice &quot;yo&quot;, cree que está expresando la totalidad de sí mismo, pero en realidad, aun cuando lo pretenda, es sólo un pensamiento pasajero, un deseo pasajero. Una hora después lo puede haber olvidado completamente, y expresar con la misma convicción una opinión, un punto de vista, o un interés opuesto.
+							</p>
+							<p>
+								Lo peor de todo es que el hombre no lo recuerda. En la mayoría de los casos cree en el último yo que se expreso, mientras este dure: esto es, hasta que otro &quot;yo&quot;, a veces totalmente desconectado del precedente, no exprese su opinión o deseo en un tono mas fuerte que el primero.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="development">&nbsp;</a>
+							<h4>
+								¿Que significa 'desarrollo'?
+							</h4>
+							<p>
+								Volvamos ahora a las otras dos preguntas:
+							</p>
+							<p>
+								¿Que significa &quot;desarrollo&quot;? ¿Y que quiere decir que el hombre tiene que llegar a ser &quot;un ser diferente&quot;? En otras palabras, ¿que clase de cambio es posible para el hombre?, y ¿como y cuando comienza este cambio?
+							</p>
+							<p>
+								Ya se ha dicho que el cambio comenzara con aquellos poderes y capacidades que el hombre se atribuye a sí mismo, pero que en realidad no posee.
+							</p>
+							<p>
+								Esto quiere decir que antes de que adquiera cualesquiera nuevos poderes o capacidades, el hombre debe desarrollar en sí mismo las capacidades que cree poseer y sobre las cuales tiene las mas grandes ilusiones.
+							</p>
+							<p>
+								El desarrollo no puede comenzar basado en la mentira que uno se hace a sí mismo, ni engañándose a sí mismo. El hombre debe saber lo que tiene y lo que no tiene. Esto significa que debe darse cuenta de que no posee las cualidades ya descritas que se arroga a sí mismo, o sea: la capacidad de <em>hacer</em>, la individualidad o unidad, un Yo permanente, y además Conciencia y Voluntad.
+							</p>
+							<p>
+								Y es necesario que el hombre lo sepa, porque mientras crea que posee estas cualidades no hará los esfuerzos apropiados para adquirirlas, exactamente como un hombre que no comprara cosas caras, pagando un alto precio por ellas, si cree que ya las posee.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="consciousness">&nbsp;</a>
+							<h4>
+								La conciencia
+							</h4>
+							<p>
+								La mas importante y la mas engañosa de estas cualidades es <em>la conciencia.</em> <sup>[4]</sup> Y el cambio en el hombre comienza por el cambio de su comprensión del significado de la conciencia, para seguir luego con la adquisición gradual de su dominio sobre ella.
+							</p>
+							<p class="fnote">
+								[4. Las conferencias originalmente fueron escritas en inglés. Aquí, Ouspensky usa la palabra "consciousness", como diferente de "conscience", de la cual ambas se traducen como "la consciencia" en español.]
+							</p>
+							<p>
+								¿Que es la conciencia?
+							</p>
+							<p>
+								En la mayoría de los casos en el lenguaje ordinario se usa la palabra &quot;conciencia&quot; como un equivalente de la palabra &quot;inteligencia&quot;, en el sentido de actividad de la mente.
+							</p>
+							<p>
+								En realidad, la conciencia es una especie muy particular de &quot;darse cuenta&quot; en el hombre, independiente de su actividad mental. Ante todo, &quot;darse cuenta&quot; de sí mismo, darse cuenta de quien es el, de donde está, y mas aun &quot;darse cuenta&quot; de lo que sabe, de lo que no sabe, y así sucesivamente.
+							</p>
+							<p>
+								Sólo uno mismo puede saber si en un momento dado está &quot;consciente&quot; o no. Esto fue probado hace mucho tiempo en cierta corriente de pensamiento en la psicología europea, la que comprendió que sólo el mismo hombre puede conocer ciertas cosas acerca de s&iacute;.
+							</p>
+							<p>
+								Aplicándolo a la conciencia, quiere decir que sólo un mismo hombre puede saber si su conciencia existe en un momento o no. Esto quiere decir que la presencia o la ausencia de la conciencia en un hombre no se puede probar por la observación de sus actos exteriores.
+							</p>
+							<p>
+								Como ya lo he dicho, este hecho fue probado hace mucho tiempo, pero su importancia nunca fue totalmente comprendida, porque siempre se le ligaba con la comprensión de la conciencia como un proceso mental o una actividad de la mente. Si un hombre se da cuenta de que no estaba consciente hasta el momento en que lo percibe, y luego se olvida de esta percepción, o aun si la recuerda, esto no es conciencia. Es tan sólo el recuerdo de una fuerte percepción.
+							</p>
+							<p>
+								Quiero ahora atraer su atención hacia otro hecho que ha sido perdido de vista por todas las escuelas modernas de psicología.
+							</p>
+							<p>
+								Es un hecho que la conciencia en el hombre, no importa como se la mire, nunca permanece en el mismo estado. Existe, o no está. Los momentos mas elevados de conciencia crean memoria. Los otros momentos, el hombre simplemente no los recuerda. Esto, mas que nada, produce en el hombre la ilusión de conciencia continúa o de un continúo &quot;darse cuenta de s&iacute;&quot;.
+							</p>
+							<p>
+								Algunas escuelas modernas de psicología niegan enteramente la conciencia, inclusive niegan la necesidad de tal término, pero ello no es sino un derroche de mala inteligencia. Otras escuelas, si se les puede llamar así, hablan de estados de conciencia, queriendo significar: pensamientos, sentimientos, impulsos motrices y sensaciones. Esto está basado en el error fundamental de mezclar la conciencia con las funciones psíquicas. Hablaremos de ello mas tarde.
+							</p>
+							<p>
+								En realidad, en la mayoría de los casos, el pensamiento moderno todavía confía en la vieja formulación de que la conciencia no tiene grados. La aceptación general de esta idea, si bien tacita, aunque este en contradicción con muchos descubrimientos recientes, detuvo muchas posibles observaciones sobre las variaciones de la conciencia.
+							</p>
+							<h5>
+								Grados de conciencia
+							</h5>
+							<p>
+								El hecho es que la conciencia tiene grados bastante visibles y observables, por cierto visibles y observables para cada uno en sí mismo.
+							</p>
+							<p>
+								Primero está la duración: cuanto tiempo ha estado uno consciente?
+							</p>
+							<p>
+								Segundo, la frecuencia de aparición: cuantas veces se ha llegado a ser consciente?
+							</p>
+							<p>
+								Tercero, la extensión y la penetración: de que era uno consciente?, lo cual puede variar muchísimo con el crecimiento del hombre.
+							</p>
+							<p>
+								Si tomamos sólo los dos primeros, podremos comprender la idea de la posible evolución de la conciencia. Esta idea está ligada con un hecho muy importante y muy conocido por las antiguas escuelas psicológicas, como por ejemplo la de los autores de la <em>Philokalia</em>, pero completamente ignorado por la filosofía y la psicología europeas de los dos o tres últimos siglos.
+							</p>
+							<p>
+								O sea que la conciencia se puede hacer continúa y controlable por medio de esfuerzos especiales y de estudios especiales.
+							</p>
+							<p>
+								Tratare de explicar como se puede estudiar la conciencia. Tomen un reloj y miren el segundero, tratando de darse cuenta de sí mismos, y concentrándose en el pensamiento &quot;Yo soy Pedro Ouspensky&quot; &quot;Estoy ahora aquí&quot;. Traten de no pensar en nada mas, simplemente siguiendo el movimiento del segundero y dándose cuenta de sí mismo s, de su nombre, de su existencia, y del lugar en que están. Mantengan apartado todo otro pensamiento.
+							</p>
+							<p>
+								Si son persistentes, podrán hacer esto por dos minutos. Este es el límite de su conciencia. Y si tratan de repetir el experimento inmediatamente después, lo encontraran mas difícil que la primera vez.
+							</p>
+							<p>
+								Este experimento demuestra que un hombre, en su estado natural, puede con gran esfuerzo ser consciente de una cosa (el mismo) por dos minutos o menos.
+							</p>
+							<p>
+								La deducción mas importante que uno puede hacer después de realizar este experimento en la forma debida, es que el hombre no es consciente de sí mismo. La ilusión de estar consciente de sí mismo es creada por la memoria y por los procesos del pensamiento.
+							</p>
+							<p>
+								Por ejemplo, un hombre va al teatro. Si está acostumbrado no tiene especialmente conciencia de estar allí mientras lo está. Sin embargo, puede ver y observar cosas, el espectáculo puede gustarle o no, recordarlo, acordarse de la gente que encontró, y así sucesivamente.
+							</p>
+							<p>
+								Cuando regresa a su casa recuerda que estuvo en el teatro, y por supuesto cree que estuvo consciente mientras se hallaba en el. De esta manera no tiene dudas sobre su conciencia y no se da cuenta de que su conciencia puede estar completamente ausente mientras el puede actuar razonablemente, pensar, observar.
+							</p>
+							<h5>
+								Cuatro estados de conciencia
+							</h5>
+							<p>
+								Para una descripción general, el hombre tiene posibilidad de cuatro estados de conciencia. Estos son:
+							</p>
+							<ul class="states">
+								<li>el sueño, </li>
+								<li>el estado de vigilia, </li>
+								<li>la conciencia de sí, y</li>
+								<li>la conciencia objetiva.</li>
+							</ul>
+							<p>
+								Pero aunque tiene la posibilidad de estos cuatro estados de conciencia, el hombre de hecho no vive sino en dos: una parte de su vida la pasa en el sueño y la otra en lo que es llamado &quot;estado de vigilia&quot;, aunque en realidad su estado de vigilia difiere muy poco del sueño.
+							</p>
+							<p>
+								En la vida ordinaria, el hombre no sabe nada de la &quot;conciencia objetiva&quot; y no es posible ningún experimento en esta dirección. El hombre se atribuye el tercer estado, o &quot;conciencia de sí&quot;; esto es, cree poseerlo, aunque en realidad sólo puede ser consciente de sí por muy raros chispazos y aun entonces es probable que no lo reconozca, porque no sabe lo que ello implicaría si en realidad lo poseyera.
+							</p>
+							<p>
+								Estos vislumbres de conciencia vienen en momentos excepcionales, en estados altamente emocionales, en momentos de peligro, en circunstancias y situaciones muy nuevas e inesperadas; o algunas veces en momentos completamente ordinarios cuando no ocurre nada en particular. Pero en su estado ordinario o &quot;normal&quot;, el hombre carece de todo control sobre ellos.
+							</p>
+							<p>
+								En cuanto a nuestra memoria ordinaria, o a momentos de memoria, en realidad sólo recordamos momentos de conciencia, aun cuando no nos demos cuenta de que esto sea así.
+							</p>
+							<p>
+								Explicare mas adelante lo que significa la memoria en un sentido técnico, así como las diferentes clases de memoria que poseemos. Por ahora sólo quiero atraer su atención a la propia observación de su memoria. Notaran que recuerdan las cosas de manera diferente. Algunas cosas las recuerdan muy vívidamente, algunas muy vagamente, y otras no las recuerdan en absoluto. Solamente saben que sucedieron.
+							</p>
+							<p>
+								Se sorprenderán mucho cuando se den cuenta de que poco es lo que recuerdan en realidad. Y esto sucede así, porque ustedes recuerdan sólo los momentos en que estuvieron conscientes.
+							</p>
+							<p>
+								De manera que, con referencia al tercer estado de conciencia, podemos decir que el hombre tiene momentos ocasionales de conciencia de sí, que dejan recuerdos vividos de las circunstancias en que se produjeron, pero no tiene dominio sobre ellos. Vienen y se van por sí mismos, estando controlados por circunstancias exteriores y asociaciones ocasionales o recuerdos de emociones.
+							</p>
+							<h5>
+								¿Es posible llegara ser consciente?
+							</h5>
+							<p>
+								Surge la pregunta: ¿Es posible adquirir el control sobre estos momentos fugaces de conciencia, el evocarlos mas a menudo, y el mantenerlos por mas tiempo, o aun el hacerlos permanentes? En otras palabras, ¿es posible llegara ser conscientes?
+							</p>
+							<p>
+								Este es el punto mas importante, y desde el mismo comienzo de nuestro estudio debemos comprender que este punto, hasta en teoría, ha sido totalmente olvidado por todas las escuelas modernas de psicología sin excepción.
+							</p>
+							<p>
+								Porque con los métodos adecuados y los esfuerzos apropiados el hombre puede adquirir el control de la conciencia, y puede llegar a ser consciente de sí mismo, con todo lo que esto implica. Y lo que esto implica, en nuestro estado actual, no nos lo podemos ni siquiera imaginar.
+							</p>
+							<p>
+								Solo después de que se haya comprendido este punto, puede llegar a ser posible un estudio serio de la psicología.
+							</p>
+							<p>
+								Este estudio debe comenzar con la investigación de los obstáculos a la conciencia en nosotros mismos, porque la conciencia sólo puede comenzar a crecer cuando por lo menos algunos de los obstáculos son extirpados.
+							</p>
+							<p>
+								En las conferencias siguientes, hablare sobre estos obstáculos. El mayor de ellos es nuestra ignorancia de nosotros mismos, y nuestra equivocada convicción de que nos conocemos a nosotros mismos, al menos hasta cierto punto y de que podemos estar seguros de nosotros mismos, cuando en realidad no nos conocemos en lo absoluto ni podemos estar seguros de nosotros mismos ni siquiera en las cosas mas pequeñas.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="self-study">&nbsp;</a>
+							<h4>
+								Psicología significa el estudio de sí mismo
+							</h4>
+							<p>
+								Debemos comprender ahora que la psicología significa en realidad el estudio de sí mismo. Esta es la segunda definición de psicología.
+							</p>
+							<p>
+								Uno no puede estudiar la psicología como se estudia la astronomía; esto es, fuera de uno mismo.
+							</p>
+							<p>
+								Al mismo tiempo, uno debe estudiarse a sí mismo de la misma manera en que estudiaría cualquier maquina nueva y complicada. Debe conocer las partes de esta maquina, sus funciones principales, las condiciones para un trabajo apropiado, las causas del trabajo equivocado, y muchas otras cosas difíciles de describir sin usar un lenguaje especial, el que también es necesario conocer para poder estudiar la maquina.
+							</p>
+							<p>
+								La maquina humana tiene siete funciones diferentes:
+							</p>
+							<p>
+								1° El pensar (o intelecto).
+							</p>
+							<p>
+								2° El sentir (o emociones).
+							</p>
+							<p>
+								3° La función instintiva (todo el trabajo interno del organismo).
+							</p>
+							<p>
+								4° La función motriz (todo el trabajo externo del organismo, el movimiento en el espacio, etc.).
+							</p>
+							<p>
+								5° El sexo (la función de los dos principios, masculino y femenino, en todas sus manifestaciones).
+							</p>
+							<p>
+								Además de estas cinco, hay otras dos funciones para las cuales no tenemos nombre en el lenguaje ordinario. Estas aparecen sólo en los estados superiores de conciencia: una, <em>la función emocional superior</em>, que aparece en el estado de conciencia de sí; y otra, <em>la función intelectual superior</em>, que aparece en el estado de conciencia objetiva. Como no estamos en estos estados de conciencia, no podemos estudiar estas funciones o experimentar con ellas. Solo las conocemos indirectamente, por aquellos que la han alcanzado o experimentado con ellas.
+							</p>
+							<p>
+								En la antigua literatura filosófica y religiosa de diferentes naciones hay muchas alusiones a los estados superiores de conciencia y a las funciones superiores. Lo que crea una dificultad adicional para comprender estas alusiones es la falta de división entre los estados superiores de conciencia.
+							</p>
+							<p>
+								Lo que se llama <em>samadhi</em> o estado de éxtasis o iluminación, o, en trabajos mas recientes, &quot;conciencia cósmica&quot;, puede referirse a uno u otro estado: algunas veces a experiencias de conciencia de sí, y a veces a experiencias de conciencia objetiva.
+							</p>
+							<p>
+								Y, por extraño que parezca, tenemos mas material para juzgar sobre el estado mas elevado, o sea, la conciencia objetiva, que sobre el estado intermedio, esto es, la conciencia de sí, a pesar de que la anterior sólo se puede alcanzar después de la última.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="four-chief-functions">&nbsp;</a>
+							<h4>
+								Las cuatro funciones principales
+							</h4>
+							<p>
+								El estudio de sí mismo debe comenzar con el estudio de las cuatro funciones: el pensar, el sentir, la función instintiva, y la función motriz. La función sexual sólo se puede estudiar mucho después; esto es, cuando estas cuatro funciones hayan sido suficientemente comprendidas.
+							</p>
+							<p>
+								Al contrario de lo que afirman algunas teorías modernas, la función sexual es realmente posterior; es decir, aparece mas tarde en la vida, cuando las cuatro primeras funciones ya se han manifestado plenamente, y está condicionada por ellas. Por lo tanto, el estudio de la función sexual sólo puede ser útil cuando las primeras cuatro funciones sean totalmente conocidas en todas sus manifestaciones. Al mismo tiempo se tiene que comprender que cualquier irregularidad seria o anormalidad en la función sexual hace imposible el desarrollo de sí y aun el estudio de sí mismo.
+							</p>
+							<p>
+								Tratemos ahora de comprender las cuatro funciones principales.
+							</p>
+							<p>
+								Daré por sentado que para ustedes es claro lo que yo quiero decir por la función intelectual o función de pensar. En ella están incluidos todos los procesos mentales: la percepción de impresiones, la formación de representaciones y de conceptos, el raciocinio, la comparación, la afirmación, la negación, la formación de palabras, la facultad de hablar, la imaginación, y así sucesivamente.
+							</p>
+							<p>
+								La segunda función es el sentir o las emociones: la alegría, la pena, el miedo, el asombro, etc. Aun si están seguros de que está claro para ustedes el como y en que difieren las emociones de los pensamientos, les aconsejaría que revisen sus puntos de vista a este respecto. En nuestra manera ordinaria de pensar y de hablar mezclamos pensamientos y sentimientos; pero para comenzar el estudio de sí es necesario diferenciar cual es cual.
+							</p>
+							<p>
+								Tomara mas tiempo el comprender las dos funciones que siguen, instintiva y motriz, ya que en ningún sistema ordinario de psicología están descritas y divididas de manera correcta.
+							</p>
+							<p>
+								Las palabras &quot;instinto&quot;, &quot;instintivo&quot; se emplean por lo general en sentido equivocado, y muy a menudo sin sentido alguno. En especial, por lo general se le asigna al instinto funciones externas que son en realidad funciones motrices y algunas veces emocionales.
+							</p>
+							<p>
+								La función instintiva en el hombre incluye cuatro clases diferentes de funciones:
+							</p>
+							<p>
+								PRIMERO: Todo el trabajo interno del organismo, toda la fisiología por así decirlo; la digestión y asimilación de los alimentos, la respiración, la circulación de la sangre, todo el trabajo de los órganos internos, la formación de nuevas células, la eliminación de desechos, el trabajo de las glándulas endocrinas, etcétera.
+							</p>
+							<p>
+								SEGUNDO: Los así llamados cinco sentidos: la vista, el oído, el olfato, el gusto, el tacto; y todas las otras facultades de percibir el peso, la temperatura, la sequedad o la humedad, etc., es decir, todas las sensaciones indiferentes, sensaciones que de por sf no son ni agradables ni desagradables.
+							</p>
+							<p>
+								TERCERO: Todas las emociones físicas; es decir, todas las sensaciones físicas que son agradables o desagradables. Toda clase de dolores o de sensaciones desagradables, tales como un sabor desagradable u olor desagradable, y toda clase de placeres físicos, tales como sabores agradables, olores agradables, etc.
+							</p>
+							<p>
+								CUARTO: Todos los reflejos, aun los mas complicados, tales como la risa y el bostezo; toda clase de memorias físicas, tales como la memoria del gusto, la memoria del olfato, la memoria del dolor, que son en realidad reflejos internos.
+							</p>
+							<br />
+							<p>
+								La función motriz comprende todos los movimientos externos tales como el caminar, el escribir, el hablar, el comer, y sus memorias. También pertenecen a la función motriz aquellos movimientos que en el lenguaje ordinario se llaman &quot;instintivos&quot;, tales como el atrapar, sin pensarlo, un objeto que se cae.
+							</p>
+							<p>
+								La diferencia entre la función instintiva y la motriz es muy clara y puede ser fácilmente comprendida si uno simplemente recuerda que todas las funciones instintivas, sin excepción, son innatas y que para usarlas no es necesario aprenderlas; mientras que, por el otro lado, ninguna de las funciones motrices son innatas y uno tiene que aprenderlas todas, tal como el niño aprende a caminar, o como se aprende a escribir o a dibujar.
+							</p>
+							<p>
+								Además de estas funciones normales del movimiento, también hay algunas extrañas funciones motrices que representan el trabajo inútil de la maquina, sin intención de la naturaleza; pero que ocupan mucho lugar en la vida del hombre usando gran cantidad de su energía. Estas son: la formación de sueños, la imaginación, el ensueño, el hablar interno, el hablar por hablar, y en general, todas las manifestaciones descontroladas e incontrolables.
+							</p>
+							<p>
+								Las cuatro funciones: intelectual, emocional, instintiva y motriz, ante todo tienen que ser comprendidas en todas sus manifestaciones, y mas tarde tienen que ser observadas en sí mismo. Tal observación de sí, o sea, la observación sobre bases correctas, con la comprensión preliminar de los estados de conciencia y de las diferentes funciones, constituye la base del estudio de uno mismo, es decir, el principio de la psicología.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="states-of-consciousness">&nbsp;</a>
+							<h4>
+								Funciones en estados de conciencia
+							</h4>
+							<p>
+								Es muy importante el recordar que al observar diferentes funciones es útil el observar al mismo tiempo su relación con los diferentes estados de conciencia.
+							</p>
+							<p>
+								Tomemos los tres estados de conciencia, sueño, vigilia, y posibles vislumbres de conciencia de sí, y las cuatro funciones: pensamiento, sentimiento, instinto y movimiento. Todas las cuatro funciones se pueden manifestar en el sueño, pero sus manifestaciones son deshilvanadas y no confiables. No hay manera de usarlas, simplemente van por su cuenta.
+							</p>
+							<p>
+								En el estado de vigilia, o de conciencia relativa, hasta cierto punto pueden servirnos de orientación. Se pueden comparar sus resultados, verificarlos, enderezarlos; y a pesar de que pueden crear muchas ilusiones, en nuestro estado ordinario aun no tenemos otra cosa y debemos hacer con ellas lo que podamos. Si nos diéramos cuenta de las falsas observaciones, de las falsas teorías, de las falsas deducciones y conclusiones hechas en este estado, deberíamos dejar de creer por completo en nosotros mismos.
+							</p>
+							<p>
+								Pero los hombres no se dan cuenta de cuan decepcionantes pueden ser sus observaciones y sus teorías, y continúan creyendo en ellas. Es esto lo que impide a los hombres el observar los raros momentos en que sus propias funciones se manifiestan en conexión con vislumbres del tercer estado de conciencia, es decir, de conciencia de s&iacute;.
+							</p>
+							<p>
+								Todo esto quiere decir que cada una de las cuatro funciones se puede manifestar en cada uno de los tres estados de conciencia. Pero los resultados son totalmente diferentes. Cuando aprendamos a observar estos resultados y sus diferencias, comprenderemos la relación correcta entre las funciones y los estados de conciencia.
+							</p>
+							<p>
+								Pero aun antes de considerar la diferencia en la función en relación con los estados de conciencia es necesario comprender que la conciencia del hombre y las funciones del hombre son fenómenos totalmente diferentes, de naturaleza totalmente distinta, dependientes de causas diferentes, y que el uno puede existir sin el otro. Las funciones pueden existir sin la conciencia y la conciencia puede existir sin las funciones.
+							</p>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">inicio de la página</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a href="introduccion.htm">&lt; Introducción</a></li>
+									<li class="align-right"><a href="conferencia-2.htm">Conferencia 2 &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative NAME MUST AGREE WITH SCRIPT -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+						arriba</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-doc-root-plus-path">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

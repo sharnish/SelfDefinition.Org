@@ -1,0 +1,34 @@
+/* file:  /nisargadatta/quotes/_nisargadatta-sparse.css */
+
+/* update Dec 19, 2019  add progress bar; copied from garma-chang. Update May 18, 2022.  */
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+    background: #fff9f9;
+}
+
+/* div in title include file 
+#title-include-div {margin:20px 0;} */
+
+/* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents .item:hover {
+    background: #fce;
+}
+
+
+
+/* end */

@@ -1,0 +1,10 @@
+# .htaccess file for selfdefinition.org/tibetan//mahamudra-dzogchen/
+
+# Dec 22, 2016
+# move image into the images directory
+Redirect 301 "/tibetan/mahamudra-dzogchen/khenpo-karthar-rinpoche.jpg"  "/tibetan/mahamudra-dzogchen/images/khenpo-karthar-rinpoche.jpg"  
+
+
+# end
+
+
