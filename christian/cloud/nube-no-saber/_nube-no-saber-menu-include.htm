@@ -1,0 +1,100 @@
+<!-- start of menu include file -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-4"><a href="/">Site root</a></li>
+			<li><a href="contenido.htm">Contenido</a></li>
+			<li><a href="tabla-de-capitulos.htm"><span class="conditional-hide-3">Capítulo </span>Resúmenes</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item-spanish">Desplace menú con ratón</li>
+			<li class="ajax-menu-item-spanish">Permite Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li><em>La nube del no-saber</em> <span class="normal">Anónimo inglés <span class="block">del siglo XIV</span></span></li>
+			<li>
+				<!-- WAS <img class="menu-image" src="images/anthony-of-egypt-book-cover.jpg" alt="Hermit icon" /> -->
+				<img class="menu-image" style="width:170px;" src="images/st-benedict-icon.jpg" alt="Icono de San Benito" />
+			</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contenido.htm">Contenido-índice</a></li>
+				<li><a href="prologo-y-glossario.htm">Prólogo and Glosario</a></li>
+				<li><a href="introduccion.htm">Introducción</a></li>
+				<li><a href="tabla-de-capitulos.htm">Tabla de los Capítulos</a></li>
+				<li><a href="capitulos-01-a-05.htm">Capítulos 1-5</a></li>
+				<li><a href="capitulos-06-a-10.htm">Capítulos 6-10</a></li>
+				<li><a href="capitulos-11-a-15.htm">Capítulos 11-15</a></li>
+				<li><a href="capitulos-16-a-20.htm">Capítulos 16-20</a></li>
+				<li><a href="capitulos-21-a-25.htm">Capítulos 21-25</a></li>
+				<li><a href="capitulos-26-a-30.htm">Capítulos 26-30</a></li>
+				<li><a href="capitulos-31-a-35.htm">Capítulos 31-35</a></li>
+				<li><a href="capitulos-36-a-40.htm">Capítulos 36-40</a></li>
+				<li><a href="capitulos-41-a-45.htm">Capítulos 41-45</a></li>
+				<li><a href="capitulos-46-a-50.htm">Capítulos 46-50</a></li>
+				<li><a href="capitulos-51-a-55.htm">Capítulos 51-55</a></li>
+				<li><a href="capitulos-56-a-60.htm">Capítulos 56-60</a></li>
+				<li><a href="capitulos-61-a-65.htm">Capítulos 61-65</a></li>
+				<li><a href="capitulos-66-a-70.htm">Capítulos 66-70</a></li>
+				<li><a href="capitulos-71-a-75.htm">Capítulos 71-75</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li><em>Nube del desconocimiento</em> en <a href="https://es.wikipedia.org/wiki/Nube_del_desconocimiento">
+						Wikipedia</a> </li>
+				<li><em>La nube del no-saber</em> at <a class="inline" href="https://sacred-texts.com/chr/cou/índice.htm">
+						Sacred-Texts.Com</a> </li>
+				<li>[inglés] Study Guide (chapters in reverse order) at <a href="http://thecloudofunknowingguide.blogspot.com/">
+						Blogspot.Com</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Christian Section [inglés]</li>
+				<li class="first-item"><a href="/christian/jacob-boehme/life-and-doctrines/contenido.htm">Franz Hartmann, The Life and Doctrines of Jacob Boehme</a></li>
+				<li><a href="/christian/jacob-boehme/confessions/contenido.htm">Jacob Boehme, Confessions</a></li>
+				<li><a href="/christian/articles/francis-thompson-hound-of-heaven.htm">Francis Thompson, "The Hound of Heaven" </a></li>
+				<li><a href="/christian/eckartshausen/cloud-upon-the-sanctuary/contenido.htm">Karl von Eckartshausen, The Cloud Upon the Sanctuary</a></li>
+				<li class="header-item">Gnostic Section</li>
+				<li class="first-item"><a href="/gnostic/gospel-of-thomas/gospel-of-thomas-índice.htm">The Gospel of Thomas, Nag Hammadi Library</a> </li>
+				<li class="header-item">Magic Section</li>
+				<li class="first-item"><a href="/magic/hartmann/white-and-black/introduction-spiritual-law.htm">Franz Hartmann, Magic White and Black, The Science of Finite and Infinite Life </a> </li>
+			</ul>
+		</div>
+
+
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

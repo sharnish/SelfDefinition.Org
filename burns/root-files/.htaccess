@@ -1,0 +1,28 @@
+# .htaccess file for selfdefinition.org/burns/
+
+
+# ignore subdirectories
+IndexIgnore burns-audio-uncut-harnish temp*  burns-audio-list.htm  burns-files-dropbox.htm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

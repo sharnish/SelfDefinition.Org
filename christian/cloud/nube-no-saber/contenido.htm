@@ -1,0 +1,199 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="es" class="spanish <?php echo $themeClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La nube del no-saber</title>
+	<meta name="description" content="In the time of this work all the creatures that ever have been, be now, or ever shall be should be hid under the cloud of forgetting.">
+	<meta name="author" content="Anónimo, Inglaterra del siglo XIV.">
+	<meta property="og:title" content="La nube del no-saber">
+	<meta property="og:description" content="In the time of this work all the creatures that ever have been, be now, or ever shall be should be hid under the cloud of forgetting.">
+	<meta property="og:image" content="https://selfdefinition.org/christian/cloud/nube-del-no-saber/images/st-benedict-icon-og-image.jpg">
+	<!-- load stylesheets before scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_nube-no-saber-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the left menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!--link rel="prev" -->
+	<link rel="next" href="prologo-y-glossario.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/*  https://css-tricks.com/guide-responsive-friendly-css-columns/ 
+		
+			https://stackoverflow.com/questions/14745297/how-to-display-an-unordered-list-in-two-columns
+		*/
+
+		/* this matches width of the ULs above and below it */
+		/* must be centered because the ULs are centered */
+		div.to-center {
+			/* must be 400px or the alignment is off */
+			width: 400px;
+		}
+
+		ul.css3-contents {
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			columns: 2;
+			/* cant make column-rule work unless items are centered */
+			column-rule: 0px solid #666;
+			border: 0px solid green;
+		}
+
+		ul.css3-contents li {
+			width: 165px;
+			text-align: left;
+			border: 0px solid yellow;
+		}
+
+
+		@media only screen and (max-width:440px) {
+
+			div.to-center {
+				margin-left: 10px;
+				/* do not make width 100% */
+				width: 240px;
+			}
+
+			/* will not give a single column unless width is limited */
+			ul.css3-contents {
+				-webkit-columns: 1;
+				-moz-columns: 1;
+				columns: 1;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_nube-no-saber-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_nube-no-saber-title-include.htm"); ?>
+									<h3>
+										Contenido
+									</h3>
+									<p class="tiny">English: <a href="../unknowing/contents.htm">../unknowing/contents.htm</a></p>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a></a></li>
+									<li class="align-right"><a href="prologo-y-glossario.htm">Prólogo and Glosario &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<nav class="index-lists">
+								<ul class="index-contents-links">
+									<li><a href="prologo-y-glossario.htm">Prólogo, Glosario</a></li>
+									<li><a href="introduccion.htm">Introducción por William Johnston</a></li>
+									<li><a href="tabla-de-capitulos.htm">Tabla de los Capítulos</a></li>
+									<li class="note" style="margin-bottom:15px">Capítulos, organizado cinco por página:</li>
+								</ul>
+							</nav>
+							<div class="to-center">
+								<ul class="css3-contents">
+									<li><a href="capitulos-01-a-05.htm">Capítulos 1-5&nbsp;&nbsp;</a></li>
+									<li><a href="capitulos-06-a-10.htm">Capítulos 6-10&nbsp;</a></li>
+									<li><a href="capitulos-11-a-15.htm">Capítulos 11-15</a></li>
+									<li><a href="capitulos-16-a-20.htm">Capítulos 16-20</a></li>
+									<li><a href="capitulos-21-a-25.htm">Capítulos 21-25</a></li>
+									<li><a href="capitulos-26-a-30.htm">Capítulos 26-30</a></li>
+									<li><a href="capitulos-31-a-35.htm">Capítulos 31-35</a></li>
+									<li><a href="capitulos-36-a-40.htm">Capítulos 36-40</a></li>
+									<li><a href="capitulos-41-a-45.htm">Capítulos 41-45</a></li>
+									<li><a href="capitulos-46-a-50.htm">Capítulos 46-50</a></li>
+									<li><a href="capitulos-51-a-55.htm">Capítulos 51-55</a></li>
+									<li><a href="capitulos-56-a-60.htm">Capítulos 56-60</a></li>
+									<li><a href="capitulos-61-a-65.htm">Capítulos 61-65</a></li>
+									<li><a href="capitulos-66-a-70.htm">Capítulos 66-70</a></li>
+									<li><a href="capitulos-71-a-75.htm">Capítulos 71-75</a></li>
+								</ul>
+							</div>
+
+							<nav class="index-lists">
+								<!-- so they match CSS on this page -->
+								<ul class="index-contents-links">
+									<li><em>La nube del no-saber</em> at <a href="https://en.wikipedia.org/wiki/The_Cloud_of_Unknowing">
+											Wikipedia</a> </li>
+									<li><em>La nube del no-saber</em> at <a class="inline" href="https://sacred-texts.com/chr/cou/index.htm">
+											Sacred-Texts.Com</a> </li>
+									<li>Study Guide (chapters in reverse order) at <a href="http://thecloudofunknowingguide.blogspot.com/">
+											Blogspot.Com</a></li>
+									<li class="header-item" style="margin-top:30px;">Also in the Christian Section</li>
+									<li class="first-item"><a href="/christian/jacob-boehme/life-and-doctrines/contenido.htm">Franz Hartmann, The Life and Doctrines of Jacob Boehme</a></li>
+									<li><a href="/christian/jacob-boehme/confessions/contenido.htm">Jacob Boehme, Confessions</a></li>
+									<li><a href="/christian/articles/francis-thompson-hound-of-heaven.htm">Francis Thompson, "The Hound of Heaven" </a></li>
+									<li><a href="/christian/eckartshausen/cloud-upon-the-sanctuary/contenido.htm">Karl von Eckartshausen, The Cloud Upon the Sanctuary</a></li>
+									<li class="header-item">Gnostic Section</li>
+									<li class="first-item"><a href="/gnostic/gospel-of-thomas/gospel-of-thomas-index.htm">The Gospel of Thomas, Nag Hammadi Library</a> </li>
+									<li class="header-item">Magic Section</li>
+									<li class="first-item"> <a href="/magic/hartmann/white-and-black/introduction-spiritual-law.htm">Franz Hartmann, Magic White and Black, The Science of Finite and Infinite Life </a> </li>
+								</ul>
+							</nav>
+
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">arriba</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&nbsp;</a>
+							<!-- page nav here if used -->
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left"><a></a></li>
+									<li class="align-right"><a href="prologo-y-glossario.htm">Prólogo and Glosario &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+						</article>
+					</div>
+					<!-- end div#article --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">arriba</button>
+
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics">
+		<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+
+# /advaita/.htaccess
+
+
+# Canonical links added June 24, 2022
+#<Files ' relative link ok here '>
+#	Header add Link '<https://  etc  >; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+<Files 'Parameshwar-Maharaj-Hundiendome-en-Mi-Mismo.pdf'>
+	Header add Link '<https://selfdefinition.org/advaita/parameshwar/hundiendome/indice.htm; rel="canonical"'
+	Header set TestHeader "This is a file-specific custom header for testing Parameshwar."
+</Files>
+
+<Files 'Sankara-La-Joya-del-Discernimiento-Viveka-Chudamani.pdf'>
+	Header add Link '<https://selfdefinition.org/advaita/shankara/joya/contenido.htm>; rel="canonical"'
+	Header set TestHeader "This is a file-specific custom header for testing Joya."
+</Files>
+
+<Files 'espanol-Ashtavakra-Gita-ver-2014-desconicido-28-paginas.pdf'>
+	Header add Link '<https://selfdefinition.org/advaita/ashtavakra/es/contenido.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing Ashtavakra."
+</Files>
+
+
+# update June 17, 2020 bad link in Ramana. Directory change, bad file name, and there was no file there anyway:
+
+Redirect 301 "/advaita/shankara/joya-del-discernimiento/contents.htm"  "/advaita/shankara/joya/contenido.htm"
+
+
+# new Dec 12, 2020
+
+IndexIgnore bootleg*
+
+# Update May 16, 2020
+
+# moved crest jewel directory
+
+
+Redirect 301  "/advaita/shankara-crest-jewel/01-first-steps.htm"              "/advaita/shankara/crest-jewel/01-first-steps.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/02-self-potencies-vestures.htm"  "/advaita/shankara/crest-jewel/02-self-potencies-vestures.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/03-the-witness.htm"              "/advaita/shankara/crest-jewel/03-the-witness.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/04-finding-the-real-self.htm"    "/advaita/shankara/crest-jewel/04-finding-the-real-self.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/05-power-of-mind-images.htm"     "/advaita/shankara/crest-jewel/05-power-of-mind-images.htm"
+
+# old page name change
+Redirect 301  "/advaita/shankara-crest-jewel/05-power-mind-images.htm"        "/advaita/shankera/crest-jewel/05-power-of-mind-images.htm"
+
+
+Redirect 301  "/advaita/shankara-crest-jewel/06-free-even-in-life.htm"        "/advaita/shankara/crest-jewel/06-free-even-in-life.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/07-three-kinds-of-works.htm"     "/advaita/shankara/crest-jewel/07-three-kinds-of-works.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/08-master-and-pupil.htm"         "/advaita/shankara/crest-jewel/08-master-and-pupil.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/09-the-perfect-sage.htm"         "/advaita/shankara/crest-jewel/09-the-perfect-sage.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/10-for-ever-free.htm"            "/advaita/shankara/crest-jewel/10-for-ever-free.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/contents.htm"                    "/advaita/shankara/crest-jewel/contents.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/introductory.htm"                "/advaita/shankara/crest-jewel/introductory.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/preface.htm"                     "/advaita/shankara/crest-jewel/preface.htm"
+
+Redirect 301  "/advaita/shankara-crest-jewel/index.htm"                       "/advaita/shankara/crest-jewel/index.htm"
+
+
+
+# end

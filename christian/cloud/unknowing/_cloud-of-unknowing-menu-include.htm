@@ -1,0 +1,100 @@
+<!-- start of menu include file -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="conditional-hide-4"><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="table-of-chapters.htm"><span class="conditional-hide-3">Chapter </span>Summaries</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-4"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/christian/">Christian index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li class="last-li"><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center">
+			<li><em>Cloud of Unknowing</em> <span class="normal">(Anynoymous) <span class="block">14th Century</span></span></li>
+			<li>
+				<!-- WAS <img class="menu-image" src="images/anthony-of-egypt-book-cover.jpg" alt="Hermit icon" /> -->
+				<img class="menu-image" style="width:170px;" src="images/st-benedict-icon.jpg" alt="St Benedict icon" />
+			</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents-Index</a></li>
+				<li><a href="title-prologue-glossary.htm">Title Page, Prologue and Glossary</a></li>
+				<li><a href="introduction.htm">Introduction by Evelyn Underhill</a></li>
+				<li><a href="table-of-chapters.htm">Table of the Chapters</a></li>
+				<li><a href="chapters-01-to-05.htm">Chapters 1-5</a></li>
+				<li><a href="chapters-06-to-10.htm">Chapters 6-10</a></li>
+				<li><a href="chapters-11-to-15.htm">Chapters 11-15</a></li>
+				<li><a href="chapters-16-to-20.htm">Chapters 16-20</a></li>
+				<li><a href="chapters-21-to-25.htm">Chapters 21-25</a></li>
+				<li><a href="chapters-26-to-30.htm">Chapters 26-30</a></li>
+				<li><a href="chapters-31-to-35.htm">Chapters 31-35</a></li>
+				<li><a href="chapters-36-to-40.htm">Chapters 36-40</a></li>
+				<li><a href="chapters-41-to-45.htm">Chapters 41-45</a></li>
+				<li><a href="chapters-46-to-50.htm">Chapters 46-50</a></li>
+				<li><a href="chapters-51-to-55.htm">Chapters 51-55</a></li>
+				<li><a href="chapters-56-to-60.htm">Chapters 56-60</a></li>
+				<li><a href="chapters-61-to-65.htm">Chapters 61-65</a></li>
+				<li><a href="chapters-66-to-70.htm">Chapters 66-70</a></li>
+				<li><a href="chapters-71-to-75.htm">Chapters 71-75</a></li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li><em>Cloud of Unknowing</em> at <a href="https://en.wikipedia.org/wiki/The_Cloud_of_Unknowing">
+						Wikipedia</a> </li>
+				<li><em>Cloud of Unknowing</em> at <a class="inline" href="https://sacred-texts.com/chr/cou/index.htm">
+						Sacred-Texts.Com</a> </li>
+				<li>Study Guide (chapters in reverse order) at <a href="http://thecloudofunknowingguide.blogspot.com/">
+						Blogspot.Com</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also in Christian Section</li>
+				<li class="first-item"><a href="/christian/jacob-boehme/life-and-doctrines/contents.htm">Franz Hartmann, The Life and Doctrines of Jacob Boehme</a></li>
+				<li><a href="/christian/jacob-boehme/confessions/contents.htm">Jacob Boehme, Confessions</a></li>
+				<li><a href="/christian/articles/francis-thompson-hound-of-heaven.htm">Francis Thompson, "The Hound of Heaven" </a></li>
+				<li><a href="/christian/eckartshausen/cloud-upon-the-sanctuary/contents.htm">Karl von Eckartshausen, The Cloud Upon the Sanctuary</a></li>
+				<li class="header-item">Gnostic Section</li>
+				<li class="first-item"><a href="/gnostic/gospel-of-thomas/gospel-of-thomas-index.htm">The Gospel of Thomas, Nag Hammadi Library</a> </li>
+				<li class="header-item">Magic Section</li>
+				<li class="first-item"><a href="/magic/hartmann/white-and-black/introduction-spiritual-law.htm">Franz Hartmann, Magic White and Black, The Science of Finite and Infinite Life </a> </li>
+			</ul>
+		</div>
+
+
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

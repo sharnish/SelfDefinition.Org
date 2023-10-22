@@ -1,0 +1,328 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atma Darshan and Atma Nirvritti</title>
+    <meta name="description" content="It is mind that has thoughts and feelings, not I. Birth, growth, decay and death pertain to the body, not to Me.">
+    <meta name="author" content="Atmananda Krishna Menon">
+    <meta property="og:title" content="Atma Darshan and Atma Nirvritti">
+    <meta property="og:description" content="It is mind that has thoughts and feelings, not I. Birth, growth, decay and death pertain to the body, not to Me.">
+    <meta property="og:image" content="https://selfdefinition.org/advaita/atmananda/images/atmananda-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_atmananda-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!--FIRST link rel="prev" -->
+    <link rel="next" href="atma-darshan.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* social media
+
+        Atmananda Krishna Menon (1883-1959)
+        
+        A clear path to self enquiry and self-realization on a single pages. The second page provides clarity on some deep philosophical concepts.  A "direct-path" teaching. Profound but very simple. This writing is at the level of scripture. A poetic masterpiece of Advaita. 
+        
+        */
+
+        nav.index-lists ul.index-contents-links {
+            width: 220px;
+            border: 0px solid red;
+        }
+
+
+        /****** For Glossary ******/
+        div.glossary-list {
+            margin-top: 30px;
+        }
+
+        div.row {
+            border: 0px solid red;
+        }
+
+        .term {
+            background: #cfc;
+            background: inherit;
+            font-weight: bold;
+        }
+
+        .definition {
+            background: #ccf;
+            background: inherit;
+            margin-bottom: 25px;
+        }
+
+        /****** End Glossary ******/
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_atmananda-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_atmananda-title-include.htm"); ?>
+                                    <h3>
+                                        Contents, Glossary
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="atma-darshan.htm">1. Atma-Darshan &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <nav class="index-lists">
+                                <ul class="index-contents-links">
+                                    <li class="contents-first-item"><a href="#glossary">Glossary (this page)</a></li>
+                                    <li><a href="atma-darshan.htm">1. Atma-Darshan</a> </li>
+                                    <li><a href="atma-nirvriti.htm">2. Atma-Nirvriti</a> </li>
+                                </ul>
+                                <hr />
+                                <ul class="index-links">
+                                    <li>Atmananda Krishna Menon at <a href="https://en.wikipedia.org/wiki/Atmananda_Krishna_Menon">Wikipedia</a> </li>
+                                    <li>No-Dualidad.Com <span class="note">[español]</span> <a href="https://www.nodualidad.info/articulos/ensenanzas-atmananda-via-directa1.html">Las Enseñanzas de Atmananda y la Vía Directa</a></li>
+                                </ul>
+                                <ul class="index-links">
+                                    <li class="header-item">Also on this site</li>
+                                    <li class="first-item">Adi Shankarya: <a href="/advaita/shankara/crest-jewel/contents.htm">Crest-Jewel of Wisdom </a></li>
+                                    <li>Ramana Maharshi index: <a href="/ramana/">/ramana/</a></li>
+                                    <li>Siddharameshwar: <a href="/siddharameshwar/">/siddharameshwar/</a></li>
+                                    <li class="subhead note80">Source</li>
+                                    <li class="first-item note80">This document as a PDF: <a href="https://www.scribd.com/doc/74791491/AtmaDarshan-and-AtmaNirvriti-Atmananda">Scribd.Com [removed]</a></li>
+                                </ul>
+                            </nav>
+                            <!-- SUBSEQUENT HEADERS -->
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="glossary">&nbsp;</a>
+                            <h4>
+                                Glossary
+                            </h4>
+                            <p class="note">
+                                Approximate meaning of Sanskrit terms, arranged in the order in which they first appear in the text
+                            </p>
+                            <div class="glossary-list">
+                                <div class="row">
+                                    <div class="term">
+                                        Atma
+                                    </div>
+                                    <div class="definition">
+                                        The real Self.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Atma Darshan
+                                    </div>
+                                    <div class="definition">
+                                        Literally, perception of the Real Self. In the context, it means Self-realisation. It may also mean the means of Self-realisation.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Advaita
+                                    </div>
+                                    <div class="definition">
+                                        Non-dualism.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Jiva
+                                    </div>
+                                    <div class="definition">
+                                        Individual soul; or apparent &quot;I&quot;.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Sat
+                                    </div>
+                                    <div class="definition">
+                                        Life absolute.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Chit
+                                    </div>
+                                    <div class="definition">
+                                        Knowledge absolute.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Ananda
+                                    </div>
+                                    <div class="definition">
+                                        Bliss absolute.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Satva
+                                    </div>
+                                    <div class="definition">
+                                        Thought turning towards Atma (Self).
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Avidya
+                                    </div>
+                                    <div class="definition">
+                                        Wrong knowledge.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Vidya
+                                    </div>
+                                    <div class="definition">
+                                        Right knowledge.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Nirvikalpa Samadhi
+                                    </div>
+                                    <div class="definition">
+                                        The state in which mind becomes merged in Consciousness for while and there is deep peace.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Rasa
+                                    </div>
+                                    <div class="definition">
+                                        Unbroken peace and harmony.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Prana
+                                    </div>
+                                    <div class="definition">
+                                        Vital energy.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Swarupa
+                                    </div>
+                                    <div class="definition">
+                                        That which maintains the identity of thing, the background of phenomenal attributes.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Samvit
+                                    </div>
+                                    <div class="definition">
+                                        Consciousness.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="row">
+                                    <div class="term">
+                                        Buddhi
+                                    </div>
+                                    <div class="definition">
+                                        Intellect.
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                            </div>
+                            <!-- end glossary-list -->
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left">&nbsp;</li>
+                                    <li class="align-right"><a href="atma-darshan.htm">1. Atma-Darshan &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,817 @@
+<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atma-Darshan, at the Ultimate</title>
+    <meta name="description" content="Advaita; Different Stages of Illumination; The &quot;I&quot; as the Light of Consciousness; False Identification of the Self.">
+    <meta name="author" content="Atmananda Krishna Menon">
+    <meta property="og:title" content="Atma-Darshan, at the Ultimate.">
+    <meta property="og:description" content="Advaita; Different Stages of Illumination; The &quot;I&quot; as the Light of Consciousness; False Identification of the Self.">
+    <meta property="og:image" content="https://selfdefinition.org/advaita/atmananda/images/atmananda-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_atmananda-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <link rel="prev" href="contents.htm">
+    <link rel="next" href="atma-nirvriti.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        ul.page-links {
+            width: 300px;
+            border: 0px solid blue;
+        }
+
+        /* must have this or viewport will be screwed up on narrow screens
+		   MUST be on a page if page-links width is specified on that page */
+        @media only screen and (max-width:360px) {
+            ul.page-links {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_atmananda-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- #main-content is absolutely positioned-->
+                <!-- now reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in left menu for large screens, title include for small screens -->
+                                    <?php include( "_atmananda-title-include.htm"); ?>
+                                    <h1>
+                                        Atma-Darshan
+                                    </h1>
+                                    <h3>
+                                        At the Ultimate
+                                    </h3>
+                                </header>
+                            </div>
+                            <!-- page nav is now positioned within the article -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="atma-nirvriti.htm">2. Atma Nirvritti &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-spacer" style="line-height: 1px;">
+                                &nbsp;</div>
+                            <nav class="in-page-nav">
+                                <ul class="page-links">
+                                    <li><a href="#1-advaita">1. Advaita </a></li>
+                                    <li><a href="#2-quest">2. Quest Regarding the Cause of the World &ndash; Meaningless</a></li>
+                                    <li><a href="#3-mind">3. Mind and Pure Satva</a></li>
+                                    <li><a href="#4-stages">4. Different Stages of Illumination</a></li>
+                                    <li><a href="#5-deep-sleep">5. Deep Sleep, Nimkalpa Samadhi and Natural State</a></li>
+                                    <li><a href="#6-witness-jiva">6. Witness of Jiva</a></li>
+                                    <li><a href="#7-the-I">7. The &quot;I&quot; as the Light of Consciousness</a></li>
+                                    <li><a href="#8-pure-consciousness">8. Pure Consciousness</a></li>
+                                    <li><a href="#9-the-self">9. The Self</a></li>
+                                    <li><a href="#10-false">10. False Identification of the Self, and the Means to Rise Above It</a></li>
+                                    <li><a href="#11-reality">11. Reality As It Is</a></li>
+                                    <li><a href="#12-experience">12. Experience</a></li>
+                                    <li><a href="#13-witness-thought">13. Witness of Thoughts</a></li>
+                                    <li><a href="#14-world">14. World &amp; Consciousness</a></li>
+                                    <li><a href="#15-nothing-changes">15. Nothing Changes</a></li>
+                                    <li><a href="#16-jnani">16. Jnani</a></li>
+                                    <li><a href="#17-the-real">17. The Real &quot;I&quot;</a></li>
+                                    <li><a href="#18-thoughts">18. Thoughts and Objects</a></li>
+                                    <li><a href="#19-two-aspects">19. Two Aspects of Consciousness</a></li>
+                                    <li><a href="#20-seer-and-seen">20. The Seer and the Seen</a></li>
+                                </ul>
+                            </nav>
+                            <div class="paragraph-list">
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="1-advaita">&nbsp;</a>
+                                <h4>
+                                    1. Advaita
+                                </h4>
+                                <p>
+                                    I. Jivas, <sup>[1]</sup> like waves in the sea, come into being, rise and fall, fight against each other and die.
+                                </p>
+                                <p class="fnote">
+                                    [1. Jiva: individual soul or apparent "I". See <a href="contents.htm#glossary">contents.htm<wbr />#glossary</a>&nbsp;]
+                                </p>
+                                <p>
+                                    II. Striking against the seashore, waves recede, tired and worn out, seeking rest and peace. Likewise Jivas seek the Supreme in various ways.
+                                </p>
+                                <p>
+                                    III. Waves have their birth, life and death in the sea itself, Jivas in the Lord.
+                                </p>
+                                <p>
+                                    IV. Waves are nothing but water. So is the sea. Likewise the Jiva and the Lord are nothing other than Sat, Chit, and Ananda.
+                                </p>
+                                <p>
+                                    V. When waves realise that the sea is their common support, all fight ceases.
+                                </p>
+                                <p>
+                                    VI. Much is not gained thereby. This is not the final word. Work lies ahead to remove the sense of separateness.
+                                </p>
+                                <p>
+                                    VII. When water is realised, wave and sea vanish. What appeared as two is thus realised as one.
+                                </p>
+                                <p>
+                                    VIII. Water can be reached straightway from wave by following the direct path. If the way through sea is taken, much more time is needed.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="2-quest">&nbsp;</a>
+                                <h4>
+                                    2. Quest Regarding the Cause of the World &ndash; Meaningless
+                                </h4>
+                                <p>
+                                    I. No question can be there regarding the time, place and cause of the origin of this world, for these themselves form parts of the world.
+                                </p>
+                                <p>
+                                    II. The question seeks to have an explanation of the whole in terms of its part. This can never be a logical question.
+                                </p>
+                                <p>
+                                    Ill. The question as to who superimposes doership upon oneself is also not a proper question. The very act of superimposition presupposes a doer. Therefore this question also is illogical.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="3-mind">&nbsp;</a>
+                                <h4>
+                                    3. Mind and Pure Satva
+                                </h4>
+                                <p>
+                                    I. Consciousness going out towards objects is mind. That which turns towards the Self is pure Satva.
+                                </p>
+                                <p>
+                                    II. It is the opinion of the wise that the mind is avidya, and pure Satva is vidya. Vidya alone is the means of liberation. <sup>[2]</sup>
+                                </p>
+                                <p class="fnote">
+                                    [2. Avidya = Wrong knowledge. Vidya = Right knowledge.&nbsp;]
+                                </p>
+                                <p>
+                                    III. The path of avidya leads to bondage. So the aspirant must take to the path of vidya for liberation.
+                                </p>
+                                <p>
+                                    IV. For eternal peace, persistent striving is necessary till enlightenment.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="4-stages">&nbsp;</a>
+                                <h4 class="toowide">
+                                    4. Different Stages of illumination
+                                </h4>
+                                <p>
+                                    I. He whose mind is captivated by the beauty of a figure sculptured in a piece of rock, forgets even the fact of the rock being its background.
+                                </p>
+                                <p>
+                                    II. When he rises above this captivation and looks at the figure, he sees the background &ndash; rock &ndash; which supports the figure.
+                                </p>
+                                <p>
+                                    III. When the rock thus receives attention, rock is seen also in the figure, and later on the figure is seen as nothing other than rock.
+                                </p>
+                                <p>
+                                    IV. Enlightenment of truth also comes in this manner. Consciousness becomes dimmed chiefly through one's captivation and abiding interest in external objects.
+                                </p>
+                                <p>
+                                    V. When one outgrows this interest and looks at the objects it will be found that they rise and abide in Consciousness alone.
+                                </p>
+                                <p>
+                                    VI. When Consciousness thus begins to receive due attention, it becomes revealed in the objects as well, and they themselves will in due course become transformed into Consciousness.
+                                </p>
+                                <p>
+                                    VII. It is the realisation of oneself and the entire world as one Consciousness that is known as realisation of Truth.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="5-deep-sleep">&nbsp;</a>
+                                <h4 class="toowide">
+                                    5. Deep Sleep, Nirvikalpa Samadhi and Natural State
+                                </h4>
+                                <p>
+                                    I. It is in Consciousness that objects rise. Therefore when they disappear, what remains <span class="hide">over</span> is this Consciousness and not nothingness.
+                                </p>
+                                <p>
+                                    II. If this truth takes deep root in thought, deep sleep &ndash; giving up its character of veiling the Reality &ndash; becomes transformed into nirvikalpa samadhi.
+                                </p>
+                                <p>
+                                    III. When objects are also realised as nothing other than Consciousness, one comes back to one's true nature, which is changeless and above all states including samadhi.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="6-witness-jiva">&nbsp;</a>
+                                <h4>
+                                    6. Witness of Jiva
+                                </h4>
+                                <p>
+                                    I. Only what has been perceived before can come up in memory. The embodied &quot;I&quot; who perceived, did, or enjoyed anything, also comes up in memory at times. From this it follows that the embodied &quot;I&quot; was witnessed by another &quot;I-Principle&quot; at the time of this perception, action, or enjoyment.
+                                </p>
+                                <p>
+                                    II. It is this witnessing &quot;I&quot; that is the real &quot;I.&quot; Fixing attention there and establishing oneself in it, one becomes freed from bondage.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="7-the-I">&nbsp;</a>
+                                <h4 class="toowide">
+                                    7. The &quot;I&quot; as the Light of Consciousness
+                                </h4>
+                                <p>
+                                    I. The light in the perception of sense objects is the changeless Atma, the One without second which abides, infilling all.
+                                </p>
+                                <p>
+                                    II. To see It as It is, the objects must be separated from It or else they must be made to point towards It.
+                                </p>
+                                <p>
+                                    III. The &quot;I&quot; must be removed from body to Atma. Freedom from bondage, peace and happiness will flow from it.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="8-pure-consciousness">&nbsp;</a>
+                                <h4>
+                                    8. Pure Consciousness
+                                </h4>
+                                <p>
+                                    Atma is that changeless, one <em>rasa</em>, <sup>[3]</sup> into which thoughts and feelings merge. To see it, enter it and establish it as the &quot;I,&quot; removes all delusions and brings in lasting peace.
+                                </p>
+                                <p class="fnote">
+                                    [3. Unbroken peace and harmony.&nbsp;]
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="9-the-self">&nbsp;</a>
+                                <h4>
+                                    9. The Self
+                                </h4>
+                                <p>
+                                    I. One does not need to be told, for one knows it clearly that the &quot;I&quot; does not change.
+                                </p>
+                                <p>
+                                    II. The &quot;I&quot; persists in all the states. It is there when there is thought. It is there when there is no thought.
+                                </p>
+                                <p>
+                                    III. If so, what other evidence is needed to show that it cannot be doer or enjoyer, which means change?
+                                </p>
+                                <p>
+                                    IV. At the time a thing is being done, there is no thought or feeling that one is doing it. This is further proof that one is not a doer.
+                                </p>
+                                <p>
+                                    V. Claiming to have done thing after the doing cannot make one a doer.
+                                </p>
+                                <p>
+                                    VI. The intense feeling that one is neither doer nor enjoyer removes all bondage and one's real nature comes to light thereby.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="10-false">&nbsp;</a>
+                                <h4 class="toowide">
+                                    10. False Identification of the Self, and the Means to Rise Above It
+                                </h4>
+                                <p>
+                                    I. Jiva is a combination of body and Atma appearing as one. When they are separated, Jiva as such cannot subsist any longer.
+                                </p>
+                                <p>
+                                    II. Are not body, prana, and all mind-modifications, percepts? Consciousness, the Self, is their perceiver.
+                                </p>
+                                <p>
+                                    III. Those who, forgetting this, identify Self with body, mind, etc. live in bondage.
+                                </p>
+                                <p>
+                                    IV. Those who by wise discrimination rise above this wrong identification, become liberated and rest in peace in their true nature.
+                                </p>
+                                <p>
+                                    V. The thought that one is the body, gross or subtle, is the cause of all bondage. If the thought is that one is Consciousness, and that thought is deep and strong, one becomes freed from all bondage at once.
+                                </p>
+                                <p>
+                                    VI. The seer as such can never be the seen, and the seen as such can never be the seer. If this truth goes deep into one's heart, the mistaken identification with body ceases.
+                                </p>
+                                <p>
+                                    VII. It can be seen in life's activities that the characteristics of the one are often superimposed upon the other. Special care must be taken to avoid this.
+                                </p>
+                                <p>
+                                    VIII. When reality is attributed to things in the objective world, remember that you are then an embodied being; in other words, there is then identification of one's Self with the body.
+                                </p>
+                                <p>
+                                    IX. Always bear in mind that such changes as birth, growth, decay and destruction, are the characteristics of matter, an object of Consciousness.
+                                </p>
+                                <p>
+                                    X. It must be clearly understood that Consciousness is different from its object and that, while objects vary, Consciousness remains constant.
+                                </p>
+                                <p>
+                                    XI. Consciousness is the light of Atma, while objects are directly linked with body. When one's body-connection is severed, the connection with external objects is severed also.
+                                </p>
+                                <p>
+                                    XII. Strictly viewed there can be no connection between Atma and body. How can there be any connection between things wholly different in nature and make?
+                                </p>
+                                <p>
+                                    XIII. Atma is the only Reality. Body is quite unreal. From this fact too it follows that there can hardly be any connection between them.
+                                </p>
+                                <p>
+                                    XIV. It is clear then that their connection is but fancy. It drops away when Truth is known and kept alive.
+                                </p>
+                                <p>
+                                    XV. The desire not to die has its deep root in Atma, which is deathless.
+                                </p>
+                                <p>
+                                    XVI. If this desire becomes bound up with the objective, it is superimposition of the characteristic of Atma on non-Atma. How can objects that are by definition time-limited, be made to transcend time?
+                                </p>
+                                <p>
+                                    XVII. Atma is Happiness itself. It is on account of this that in every being there is desire for happiness. When it is supposed to come from objects, there is superimposition of the characteristic of the one upon the other.
+                                </p>
+                                <p>
+                                    XVIII. The desire for freedom too has its root in Atma, which is the only unconditioned existence.
+                                </p>
+                                <p>
+                                    XIX. Attraction, repulsion, fear, sorrow, restlessness, sense of dependence, untruthfulness, laziness, passivity and such-like spring from body-connection.
+                                </p>
+                                <p>
+                                    XX. Steadiness, love, happiness, peace, courage, sense of freedom, truthfulness, sense of existence, alertness, knowledge &ndash; these belong to the realm of Atma.
+                                </p>
+                                <p>
+                                    XXI. Everything that emphasises personality must be understood to have its origin in body-connection.
+                                </p>
+                                <p>
+                                    XXII. That which helps one to expand beyond body-limits, must be seen to have emanated from Atma. Characteristics must be distinguished in this manner and seen in their respective domains.
+                                </p>
+                                <p>
+                                    XXIII. If this is done then and there, it blocks the way to the superimposition of the characteristics of the one upon the other.
+                                </p>
+                                <p>
+                                    XXIV. If all possibility of superimposition is thus removed, one comes to one's natural state, in which it is realised that the entire objective world is also nothing other than Consciousness.
+                                </p>
+                                <p>
+                                    XXV. This latter truth can be realised too by strict analysis of the objective world itself.
+                                </p>
+                                <p>
+                                    XXVI. Objects of Consciousness can never be separated from Consciousness itself. They have no independent existence. They are therefore nothing other than Consciousness.
+                                </p>
+                                <p>
+                                    XXVII. Approaching the truth in this manner will also remove the mistaken body-Consciousness identity and all delusion. One will then find oneself established as Atma, the one and only Reality.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="11-reality">&nbsp;</a>
+                                <h4>
+                                    11. Reality As It Is
+                                </h4>
+                                <p>
+                                    I. Words such as immutable and formless cannot even by their negative import, show Reality as it is.
+                                </p>
+                                <p>
+                                    II. The statement that man is not beast is no doubt true. But does it show any of his true characteristics?
+                                </p>
+                                <p>
+                                    III. It is impossible to show Reality as it is. Words are at best mere pointers.
+                                </p>
+                                <p>
+                                    IV. If, without knowing this, one contemplates what is literally signified by words, one's experience of Reality will be tainted to that extent.
+                                </p>
+                                <p>
+                                    V. If words are taken merely as helps to rise above all thoughts, it is perfectly in order.
+                                </p>
+                                <p>
+                                    VI. If Reality is conceived of as beyond all thoughts, and contemplation directed accordingly, words may help to lead one to a stage where all thoughts cease and Reality is experienced.
+                                </p>
+                                <p>
+                                    VII. Doubt may arise whether it is possible to contemplate anything beyond all thoughts. It is possible. The difficulty is only apparent.
+                                </p>
+                                <p>
+                                    VIII. It is true that only an object of perception can be directly contemplated. The &quot;I&quot; is always perceiver and never an object of perception.
+                                </p>
+                                <p>
+                                    IX. As it is not an object of perception, direct contemplation of the &quot;I&quot; is out of the question. None the less, because it is experienced as one's Being, it is possible to contemplate it indirectly.
+                                </p>
+                                <p>
+                                    X. Can it not be contemplated as the residue left after the removal of everything objective from the apparent &quot;I&quot;?
+                                </p>
+                                <p>
+                                    XI. This contemplative thought itself will automatically come to standstill in the end, and in that stillness will be seen shining one's true nature.
+                                </p>
+                                <p>
+                                    XII. What is beyond all thoughts may be indirectly contemplated in other ways as well. They will also take one to one's true nature.
+                                </p>
+                                <p>
+                                    XIII. Always bear in mind that such words as Consciousness or Knowledge, Being or Happiness, all point to the &quot;I&quot;.
+                                </p>
+                                <p>
+                                    XIV. Hold on to one thought to dispel other thoughts. Let that thought be such as points to one's being.
+                                </p>
+                                <p>
+                                    XV. Think of one's being as that into which all thoughts merge; then the one thought taken hold of gives up its form and merges into Being.
+                                </p>
+                                <p>
+                                    XVI. Just as we apply the word knowledge to denote also the function of knowing, we use the word happiness to denote the function of enjoying as well.
+                                </p>
+                                <p>
+                                    XVII. It is within the experience of all, that knowledge and happiness dawn only when the respective functions of knowing and enjoying cease.
+                                </p>
+                                <p>
+                                    XVIII. Thus, Knowledge and Happiness are one's own Being. With this conviction, if thought is directed to either of these, that thought also gives up its form and merges.
+                                </p>
+                                <p>
+                                    XIX. Merger will never be into deep sleep, but into one's own Being. All knots of the heart will be cut asunder by this means.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="12-experience">&nbsp;</a>
+                                <h4>
+                                    12. Experience
+                                </h4>
+                                <p>
+                                    I. In one's experience &ndash; strictly so called &ndash; there is neither thought nor external object present. It is the state in which all alone one abides in one's Self.
+                                </p>
+                                <p>
+                                    II. Objects of perception, being believed to be the cause of experience, tempt the ignorant.
+                                </p>
+                                <p>
+                                    III. If strictly viewed, it can be seen that there is nothing like cause and effect. Even if they are conceded, effect will never exist independently of cause. It is admitted on all hands that the cause will be seen in the effect.
+                                </p>
+                                <p>
+                                    IV. But no such cause appears in one's experience. It follows then that experience has no cause.
+                                </p>
+                                <p>
+                                    V. If it has no cause, why this hunt for objects? All that is needed is only the merger of thoughts.
+                                </p>
+                                <p>
+                                    VI. Always contemplating the nature of experience itself, will bring about this merger.
+                                </p>
+                                <p>
+                                    VII. The intense thought that one is neither doer nor enjoyer will also bring about the same result.
+                                </p>
+                                <p>
+                                    VIII. If one can see that thought as such is really nonexistent or that it is nothing other than Consciousness, this is the best means.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="13-witness-thought">&nbsp;</a>
+                                <h4>
+                                    13. Witness of Thoughts.
+                                </h4>
+                                <p>
+                                    I. Right analysis will show that it is the mind assuming the form of an object that is commonly spoken of as the illumination of the object (its perception or knowledge).
+                                </p>
+                                <p>
+                                    II. Atma is the immutable Consciousness that, without effort or any change in Itself, perceives such modifications of the mind.
+                                </p>
+                                <p>
+                                    III. A little thinking will show that this is the principle signified by the word &quot;I&quot;.
+                                </p>
+                                <p>
+                                    IV. Abiding there, one sees nothing else; there is no body, mind, world, or sense-organs.
+                                </p>
+                                <p>
+                                    V. Nothing came into existence; nor is there indeed a thought that anything existed before or is existing now. The non-doer-Conseiousness is always &quot;enjoying&quot; Itself.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="14-world">&nbsp;</a>
+                                <h4>
+                                    14. World &amp; Consciousness.
+                                </h4>
+                                <p>
+                                    I. Water, by contact with time and space, which are entirely distinct and different from it, can produce a wave. There is no possibility of a world being formed in this way.
+                                </p>
+                                <p>
+                                    II. Nothing exists independently of Consciousness. How then is it possible for a different and independent something to come into contact with Consciousness to form a world?
+                                </p>
+                                <p>
+                                    III. Water by itself can never form a wave. Likewise Consciousness by itself can never form a world.
+                                </p>
+                                <p>
+                                    IV. Therefore the world is not, has never been and is never going to be.
+                                </p>
+                                <p>
+                                    V. What is really existing is Consciousness alone. Consciousness is Happiness itself. The Atma signified by the word &quot;I&quot; is also That.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="15-nothing-changes">&nbsp;</a>
+                                <h4>
+                                    15. Nothing changes.
+                                </h4>
+                                <p>
+                                    I. It is clear that one thing can never change into another without the destruction of its swarupa. <sup>[4]</sup>
+                                </p>
+                                <p class="fnote">
+                                    [4. That which maintains the identity of thing. See <a href="contents.htm#glossary">contents.htm<wbr />#glossary</a>&nbsp;]
+                                </p>
+                                <p>
+                                    II. If its swarupa is destroyed can the thing remain over? Unless it remains over how can it be said that it has changed into another, since its identity is lost, and there is nothing to connect it with the new thing?
+                                </p>
+                                <p>
+                                    III. Thus a thing can never undergo a change. There is neither birth nor death &ndash; are not both changes?
+                                </p>
+                                <p>
+                                    IV. He who in like manner by a searching enquiry into the nature of things discovers this truth and abides in it, is the great soul who has gained his objective, known the one thing that has to be known, and remains ever contented.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="16-jnani">&nbsp;</a>
+                                <h4>
+                                    16. Jnani.
+                                </h4>
+                                <p>
+                                    I. I am that Consciousness that remains over after the removal of everything objective from Me.
+                                </p>
+                                <p>
+                                    II. I have no body, vital energy (prana), perceptions, thoughts and desires; I am above attraction and repulsion, pleasure and pain, fear and delusion.
+                                </p>
+                                <p>
+                                    Ill. I am pure Consciousness. Realising that every object wherever placed is asserting Me, I enjoy Myself everywhere and in everything.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="17-the-real">&nbsp;</a>
+                                <h4>
+                                    17. The real &quot;I&quot;
+                                </h4>
+                                <p>
+                                    I. In the deep-sleep state and whenever any desire is accomplished, I alone shine as the undisturbed peace and happiness. I am the inmost principle which is Sat-Chit-Ananda itself. I am That which transcends all.
+                                </p>
+                                <p>
+                                    II. Just before and just after every thought and feeling, I shine in My own glory by Myself. It is in Me that thoughts and feelings rise and set. I am their changeless Witness.
+                                </p>
+                                <p>
+                                    III. I am the Light of Consciousness in all thoughts and perceptions and the Light of Love in all feelings. I have no birth and death, nor grief and delusion. I transcend bondage and liberation.
+                                </p>
+                                <p>
+                                    IV. The world which rises in and grows by thought is also thought itself. Thought is nothing but Consciousness and Consciousness is My Being. Therefore the whole world is Consciousness which is Myself. I am perfect and indivisible.
+                                </p>
+                                <p>
+                                    V. I have no mine-ness, attachment or egoism. I am eternal, non-doer, all purity, self-dependent and self-luminous. Attributeless, changeless and unconditioned, I am the abode of Love, stainless, the one without second and ever peaceful.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="18-thoughts">&nbsp;</a>
+                                <h4>
+                                    18. Thoughts and Objects.
+                                </h4>
+                                <p>
+                                    I. The attribution of reality to things which rise in thoughts is the cause of all bondage.
+                                </p>
+                                <p>
+                                    II. Form can exist only as the object of seeing and never independently of it. This rule applies alike to all sense-objects.
+                                </p>
+                                <p>
+                                    III. Objects have themselves no connection with each other &ndash; their connection is always with thought alone.
+                                </p>
+                                <p>
+                                    IV. An object cannot exist even for a moment unless cognised by thought. When thought changes, the object changes also.
+                                </p>
+                                <p>
+                                    V. Thus they are inseparable and therefore one. The truth is that One thing is kept divided by mere words.
+                                </p>
+                                <p>
+                                    VI. Therefore even to hold that a thing rises in thought is mere delusion. There is thought only, and the content of thought is Consciousness.
+                                </p>
+                                <p>
+                                    VII. If this truth is always kept alive, thought will soon vanish and Consciousness reign. Then comes liberation from all bondage.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="19-two-aspects">&nbsp;</a>
+                                <h4>
+                                    19. Two aspects of Consciousness.
+                                </h4>
+                                <p>
+                                    I. Samvit (Consciousness) has two aspects: conditioned and unconditioned. It is the former that illumines objects of Consciousness. The latter is pure Consciousness.
+                                </p>
+                                <p>
+                                    II. Sense-objects such as sound, touch, smell, etc., are mere thought-forms. Therefore, correctly speaking, thoughts alone are the objects of consciousness.
+                                </p>
+                                <p>
+                                    III. He who by careful analysis and discrimination is unable to reach the unconditioned aspect, may well abide in the conditioned. He will reach the unconditioned in due course if he does not remain contented in the conditioned.
+                                </p>
+                                <p>
+                                    IV. Observing carefully, one can see every thought rise and set in pure Consciousness alone.
+                                </p>
+                                <p>
+                                    V. What is not Consciousness is all thought-form. Pure Consciousness can never bear witness to it.
+                                </p>
+                                <p>
+                                    VI. It is no argument to say that memory &ndash; itself a thought-form &ndash; stands changeless watching all thoughts in succession.
+                                </p>
+                                <p>
+                                    VII. It is a common experience that when there are other thoughts, memory is not there with them. How then can memory call up past thoughts?
+                                </p>
+                                <p>
+                                    VIII. If memory cannot do it, it is no memory at all. Memory is therefore a meaningless word.
+                                </p>
+                                <p>
+                                    IX. It cannot but be admitted that it is always memory that calls up past thoughts.
+                                </p>
+                                <p>
+                                    X. If memory is non-existent, it follows that other thoughts are non-existent also, there being no witness to prove their existence.
+                                </p>
+                                <p>
+                                    XI. Therefore it can be clearly understood that what appeared to be conditioned is also pure unconditioned Consciousness.
+                                </p>
+                                <!-- SUBSEQUENT HEADERS -->
+                                <p class="totop-above-anchor">
+                                    <a href="javascript:toTopCleanUrl();">top of page</a>
+                                </p>
+                                <!-- anchor element must not be empty -->
+                                <a class="page-link-anchor" id="20-seer-and-seen">&nbsp;</a>
+                                <h4>
+                                    20. The Seer and the Seen.
+                                </h4>
+                                <p>
+                                    I. If one looks through the gross organ eye, gross forms alone appear. The same relation exists between other gross organs and their objects.
+                                </p>
+                                <p>
+                                    II. Leaving the physical organs, if one looks through the subtle organ called mind, subtle forms appear.
+                                </p>
+                                <p>
+                                    III. Looking through the attributeless pure Consciousness, one sees Consciousness only and nothing else.
+                                </p>
+                                <p>
+                                    IV. This experience proves that the objective world will always appear in perfect tune with the stand taken up by the subject.
+                                </p>
+                                <p>
+                                    V. Therefore it is not the objective world which presents obstacles to one's spiritual progress, but the false stand one has taken up.
+                                </p>
+                                <p>
+                                    VI. If this is given up, spiritual enlightenment follows. To give up the stand, courage and one-pointed attention and heart's devotion are absolutely necessary.
+                                </p>
+                                <p>
+                                    VII. A critical examination of the objective world will also bring about the same result.
+                                </p>
+                                <p>
+                                    VIII. To arrive at the conclusion that this solid-seeming world is mere thought does not solve the whole problem. It cannot give entire satisfaction, for the thought-world remains.
+                                </p>
+                                <p>
+                                    IX. The examination did not give satisfaction because it was conducted from the level of the buddhi, <sup>[5]</sup> which was left unexplained.
+                                </p>
+                                <p class="fnote">
+                                    [5. Intellect.&nbsp;]
+                                </p>
+                                <p>
+                                    X. Buddhi is also something perceived. Is not oneself (Consciousness) the real Perceiver? To examine thoughts one has to take one's stand in perceiving Consciousness.
+                                </p>
+                                <p>
+                                    XI. When it is seen that the content of thought is nothing but Consciousness, thought vanishes and Consciousness remains.
+                                </p>
+                                <p>
+                                    XII. Consciousness when mistakenly supposed to be conditioned by time, appears as thought. Really it is not so conditioned.
+                                </p>
+                                <p>
+                                    XIII. Is not time itself thought? How then can the rise of thought be attributed to the conditioning of Consciousness by time?
+                                </p>
+                                <p>
+                                    XIV. Therefore, strictly speaking, there is no thought. There is only Consciousness. The idea of time is mere superimposition by delusion.
+                                </p>
+                                <p>
+                                    XV. Only one who, right through, maintains a disinterested witness's standpoint and examines things calmly with critical and never-faltering eye, can realise this absolute Truth.
+                                </p>
+                                <p>
+                                    XVI. In the waking state one becomes aware that dream-objects were unreal.
+                                </p>
+                                <p>
+                                    XVII. If a man seen in dream was unreal, his mind must be equally unreal.
+                                </p>
+                                <p>
+                                    XVIII. His thoughts, seeing, hearing, etc., will likewise be unreal.
+                                </p>
+                                <p>
+                                    XIX. In the same manner the subject in the dream-state, who is also a product of the dream, cannot but be unreal.
+                                </p>
+                                <p>
+                                    XX. The body in the dream-state is different from the body in the waking-state. When the former is all-active the latter is lying in a passive state.
+                                </p>
+                                <p>
+                                    XXI. The thoughts and perceptions of the subject in the dream cannot likewise be the thoughts and perceptions of the waking subject.
+                                </p>
+                                <p>
+                                    XXII. The thoughts and perceptions of the former are unreal, being the product of the dream.
+                                </p>
+                                <p>
+                                    XXIII. The question then arises: Who had the dream? To this, the correct answer is that no one had it and that there has never been a dream-state.
+                                </p>
+                                <p>
+                                    XXIV. The world of the waking-state also, if examined in like manner, will be found to be non-existent. Then one regains one's true nature and becomes permanently established as pure Consciousness.
+                                </p>
+                            </div>
+                            <!-- end paragraph-list -->
+                            <p>
+                                &nbsp;</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&zwj;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="contents.htm">&lt; Contents</a></li>
+                                    <li class="align-right"><a href="atma-nirvriti.htm">2. Atma Nirvritti &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article -->
+                    <!-- button is placed within #main-content-relative. Name must be ID and must agree with script -->
+                    <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">
+                        top</button>
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <!-- "menu-container" is in the menu include file -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics-doc-root-plus-path">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

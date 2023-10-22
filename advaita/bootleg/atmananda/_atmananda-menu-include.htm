@@ -1,0 +1,79 @@
+<!-- start of menu include file Update  Sept 27, 2020. June 24, 2022 -->
+<!-- must be encoded UTF-8 without BOM to avoid extra characters -->
+<!-- this is under id="menu-panel" in the file that calls this -->
+<!-- #menu-panel is relatively positioned -->
+<div id="menu-include-file-div">
+	<div id="fixed-header-small-screen">
+		<ul id="menu-site-small-screen">
+			<!-- this is a duplicate of the section below; the
+             sections are swapped for small screens -->
+			<li><a href="/advaita/">Advaita index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li><a href="contents.htm">Contents</a></li>
+			<li><a href="javascript:toTopCleanUrl();">Top<span class="conditional-hide-5"> of page</span></a></li>
+		</ul>
+	</div>
+	<!-- everything below disappears on a small screen -->
+	<!-- the next 2 must be id's -->
+	<div id="menu-container">
+		<ul id="menu-site">
+			<li><a href="/advaita/">Advaita index</a></li>
+			<li><a href="/sitemap.htm">Site map</a></li>
+			<li><a href="/">Site root</a></li>
+			<li class="scroll-menu-item">Scroll menu with mouse</li>
+			<li class="ajax-menu-item">Please allow Cloudflare-Ajax</li>
+		</ul>
+		<!-- put the following inside ul to keep positioning consistent; "menu-text" must be a class -->
+		<!-- for some reason width is not responding correctly -->
+		<ul class="menu-text center" style="margin-top:3px;">
+			<li>Atma Darshan and Atma&nbsp;Nirvritti</li>
+			<li class="normal note80">
+				<img class="menu-image" src="images/atmananda.jpg" alt="Atmananda Krishna Menon" />
+			</li>
+			<li>Atmananda Krishna&nbsp;Menon</li>
+			<li class="normal note tight">(1883-1959)</li>
+		</ul>
+		<!-- must have the next div for menu highlighter.js to work; must be an id -->
+		<div id="menu-section-group">
+			<!-- "menu-section" must be a class, not an id -->
+			<ul class="menu-section">
+				<!-- must Not include directory in path for script to work -->
+				<li><a href="contents.htm">Contents, Glossary</a></li>
+				<li><a href="atma-darshan.htm">1. Atma-Darshan</a> </li>
+				<li><a href="atma-nirvriti.htm">2. Atma-Nirvriti</a> </li>
+			</ul>
+		</div>
+		<!-- end #menu-section-group -->
+		<div class="optional-links">
+			<hr class="menu-hr" />
+			<ul class="menu-section">
+				<li>Atmananda Krishna Menon at <a href="https://en.wikipedia.org/wiki/Atmananda_Krishna_Menon">
+						Wikipedia</a> </li>
+				<li>No-Dualidad.Com [español] <a href="https://www.nodualidad.info/articulos/ensenanzas-atmananda-via-directa1.html">Las Enseñanzas de Atmananda y la Vía Directa</a></li>
+			</ul>
+		</div>
+		<div class="site-links">
+			<ul class="menu-section">
+				<li class="header-item">Also on this site</li>
+				<li class="subhead">Adi Shankarya</li>
+				<li class="first-item"><a href="/advaita/shankara/crest-jewel/contents.htm">Crest-Jewel of Wisdom </a></li>
+				<li>Ramana Maharshi index: <a href="/ramana/">/ramana/</a></li>
+				<li>Siddharameshwar: <a href="/siddharameshwar/">/siddharameshwar/</a></li>
+				<li class="subhead">Source</li>
+				<li class="external-first-item">This document as a PDF: <a href="https://www.scribd.com/doc/74791491/AtmaDarshan-and-AtmaNirvriti-Atmananda">Scribd.Com [removed]</a></li>
+				<li>&nbsp;</li>
+			</ul>
+		</div>
+		<p id="menu-scroll" title="To top of menu">
+			<!-- scrollDivToTop is in menu-highlighter script -->
+			<a onclick="scrollDivToTop()" role="button">scroll menu to top</a>
+		</p>
+		<div style="border-bottom: 160px solid transparent;">
+			&nbsp;
+		</div>
+	</div>
+	<!-- end of #menu-container -->
+</div>
+<!-- end of #menu-include-file-div -->
+<!-- end of menu include file -->

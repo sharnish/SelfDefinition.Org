@@ -1,0 +1,42 @@
+# .htaccess file for selfdefinition.org/afterlife/
+
+# IndexIgnore victor-solow  
+
+# need this to avoid two doctypes etc.
+# IndexOptions SuppressHTMLPreamble
+
+
+# added Apr 18, 2020
+Redirect 301 "/afterlife/Raymond-Moody-Life-After-Life.pdf"    "/redirect/afterlife-redirect.htm"
+
+ErrorDocument 404 "/redirect/afterlife-redirect.htm"
+
+####
+
+
+# these videos were removed
+# Redirect 301 "/afterlife/Raymond Moody - video - NDEs-on-Geraldo-show-45-min.wmv" "/afterlife/Raymond-Moody-video-NDEs-on-Geraldo-1988.wmv"
+# Redirect 301 "/afterlife/Raymond-Moody-video-NDEs-on-Geraldo.wmv" "/afterlife/Raymond-Moody-video-NDEs-on-Geraldo-1988.wmv"
+# Redirect 301 "/afterlife/Raymond Moody - video - Life After Life (Near Death Experience).avi" "/afterlife/Raymond-Moody-video-Life-After-Life.avi"
+
+Redirect 301 "/afterlife/Allen-Spraggett-biography.pdf" "/afterlife/Allen-Spraggett-biography-info.pdf"
+
+
+# two articles moved to "articles" directory Sep 13, 2019
+
+Redirect 301 "/afterlife/krishnamurti-conversation-on-afterlife.htm"   "/afterlife/articles/krishnamurti-conversation-on-afterlife.htm"  
+
+Redirect 301 "/afterlife/john-wren-lewis-dazzling-dark.htm"            "/afterlife/articles/john-wren-lewis-dazzling-dark.htm"  
+
+
+# this file also exists in the tibetan section
+
+<Files 'Death-and-Undeath-in-Tibet--15-page-article.pdf'>
+	Header add Link '<http://selfdefinition.org/tibetan/Death-and-Undeath-in-Tibet--15-page-article.pdf>; rel="canonical"' 
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+
+# end
+

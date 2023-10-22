@@ -1,0 +1,533 @@
+﻿<?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud of Unknowing, Table of Chapters</title>
+    <meta name="description" content="Table of the 75 Chapters and their Contents">
+    <meta name="author" content="Anonymous, 14th Century England">
+    <meta property="og:title" content="Cloud of Unknowing, Table of Chapters">
+    <meta property="og:description" content="Table of the 75 Chapters and their Contents">
+    <meta property="og:image" content="https://selfdefinition.org/christian/cloud/unknowing/images/st-benedict-icon-og-image.jpg">
+    <!-- load stylesheets before scripts -->
+    <link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+    <link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+    <link href="_unknowing-sparse.css" rel="stylesheet" type="text/css">
+    <!-- the following gives you the jquery library -->
+    <!-- MUST be version HTTPS and not HTTP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- this highlights the menu item for the current page (non-essential) -->
+    <script src="/scripts/menu-highlighter.js"></script>
+    <!-- keeps the left menu position intact after page change (desktop layout) -->
+    <script src="/scripts/recoverdivscroll.js"></script>
+    <!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+    <script src="/scripts/scrollbar-and-test.js"></script>
+    <link rel="prev" href="introduction.htm">
+    <link rel="next" href="chapters-01-to-05.htm">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+    <style>
+        /* reset default margin/padding */
+        ul,
+        li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        dd {
+            margin-top: 20px;
+        }
+
+        /*  https://css-tricks.com/guide-responsive-friendly-css-columns/ */
+
+        .nav-column li {
+            text-align: left;
+            list-style-type: none;
+            border: 0px solid red;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        div.nav-column {
+            margin: 0 auto;
+            -webkit-column-count: 2;
+            /* Chrome, Safari, Opera */
+            -moz-column-count: 2;
+            /* Firefox */
+            column-count: 2;
+            -webkit-column-gap: 5px;
+            /* Chrome, Safari, Opera */
+            -moz-column-gap: 5px;
+            /* Firefox */
+            column-gap: 5px;
+            width: 400px;
+        }
+
+        @media only screen and (max-width:450px) {
+            div.nav-column {
+                margin: 0 auto;
+                -webkit-column-count: 1;
+                /* Chrome, Safari, Opera */
+                -moz-column-count: 1;
+                /* Firefox */
+                column-count: 1;
+                width: 170px;
+            }
+
+            .nav-column li {
+                text-align: left;
+                list-style-type: none;
+                border: 0px solid blue;
+                margin: 20px auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper">
+        <div id="container">
+            <div id="menu-panel">
+                <nav id="nav">
+                    <?php include("_cloud-of-unknowing-menu-include.htm"); ?>
+                </nav>
+            </div>
+            <div id="main-content">
+                <!-- to reset relative positioning -->
+                <div id="main-content-relative">
+                    <div class="progress-header">
+                        <div class="progress-container">
+                            <div class="progress-bar" id="myBar"> </div>
+                        </div>
+                    </div>
+                    <div id="article">
+                        <article>
+                            <div id="announce">
+                                <header>
+                                    <!-- image is shown in menu for large screens, title include for small screens -->
+                                    <?php include( "_cloud-of-unknowing-title-include.htm"); ?>
+                                    <h3 class="block">
+                                        Here Beginneth a Table of the&nbsp;Chapters
+                                    </h3>
+                                    <p class="tiny">Español: <a href="../nube-no-saber/tabla-de-capitulos.htm">../tabla-de-capitulos.htm</a></p>
+                                </header>
+                            </div>
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="introduction.htm">&lt; Introduction</a></li>
+                                    <li class="align-right"><a href="chapters-01-to-05.htm">Chapters 1 - 5 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                            <div style="clear:both;"></div>
+                            <p class="tiny center">
+                                Scroll down or click a link to see the chapter summaries.
+                            </p>
+                            <!-- links are taken from Section 1 menu, then secondary items are hidden with class="hide" -->
+                            <nav class="in-page-nav" style="margin-top:5px;">
+                                <div class="nav-column">
+                                    <li><a href="#ch-01-05">Chapters 1 to 5</a></li>
+                                    <li><a href="#ch-06-10">Chapters 6 to 10</a></li>
+                                    <li><a href="#ch-11-15">Chapters 11 to 15</a></li>
+                                    <li><a href="#ch-16-20">Chapters 16 to 20</a></li>
+                                    <li><a href="#ch-21-25">Chapters 21 to 25</a></li>
+                                    <li><a href="#ch-26-30">Chapters 26 to 30</a></li>
+                                    <li><a href="#ch-31-35">Chapters 31 to 35</a></li>
+                                    <li><a href="#ch-36-40">Chapters 36 to 40</a></li>
+                                    <li><a href="#ch-41-45">Chapters 41 to 45</a></li>
+                                    <li><a href="#ch-46-50">Chapters 46 to 50</a></li>
+                                    <li><a href="#ch-51-55">Chapters 51 to 55</a></li>
+                                    <li><a href="#ch-56-60">Chapters 56 to 60</a></li>
+                                    <li><a href="#ch-61-65">Chapters 61 to 65</a></li>
+                                    <li><a href="#ch-66-70">Chapters 66 to 70</a></li>
+                                    <li><a href="#ch-71-75">Chapters 71 to 75</a></li>
+                                </div>
+                            </nav>
+                            <p class="totop-above-anchor" style="margin-top:5px;">
+                                <a class="hide-if-large-screen" href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-01-05">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-01-to-05.htm">Chapters 1-5</a></dt>
+                                <dd>
+                                    <b>Chapter 1:</b> Of four degrees of Christian men's living; and of the course of his calling that this book was made unto.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 2:</b> A short stirring to meekness, and to the work of this book.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 3:</b> How the work of this book shall be wrought, and of the worthiness of it before all other works.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 4:</b> Of the shortness of this work, and how it may not be come to by the curiosity of wit, nor by imagination.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 5:</b> That in the time of this work all the creatures that ever have been, be now, or ever shall be, and all the works of those same creatures, should be hid under the cloud of forgetting.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-06-10">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Ir a la página de:&nbsp;<a href="chapters-06-to-10.htm">Chapters 6-10</a></dt>
+                                <dd>
+                                    <b>Chapter 6:</b> A short conceit of the work of this book, treated by question.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 7:</b> How a man shall have him in this work against all thoughts, and specially against all those that arise of his own curiosity, of cunning, and of natural wit.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 8:</b> A good declaring of certain doubts that may fall in this work, treated by question, in destroying of a man's own curiosity, of cunning, and of natural wit, and in distinguishing of the degrees and the parts of active living and contemplative.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 9:</b> That in the time of this work the remembrance of the holiest creature that ever God made letteth more than it profiteth.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 10:</b> How a man shall know when his thought is no sin; and if it be sin, when it is deadly and when it is venial.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-11-15">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-11-to-15.htm">Chapters 11-15</a></dt>
+                                <dd>
+                                    <b>Chapter 11:</b> That a man should weigh each thought and each stirring after that it is, and always eschew recklessness in venial sin.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 12:</b> That by virtue of this work sin is not only destroyed, but also virtues begotten.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 13:</b> What meekness is in itself, and when it is perfect and when it is imperfect.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 14:</b> That without imperfect meekness coming before, it is impossible for a sinner to come to the perfect virtue of meekness in this life.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 15:</b> A short proof against their error that say that there is no perfecter cause to be meeked under, than is the knowledge of a man's own wretchedness.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-16-20">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-16-to-20.htm">Chapters 16-20</a></dt>
+                                <dd>
+                                    <b>Chapter 16:</b> That by virtue of this work a sinner truly turned and called to contemplation cometh sooner to perfection than by any other work; and by it soonest may get of God forgiveness of sins.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 17:</b> That a very contemplative list not meddle him with active life, nor of anything that is done or spoken about him, nor yet to answer to his blamers in excusing of himself.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 18:</b> How that yet unto this day all actives complain of contemplatives as Martha did of Mary. Of the which complaining ignorance is the cause.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 19:</b> A short excusation of him that made this book, teaching how all contemplatives should have all actives fully excused of their complaining words and deeds.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 20:</b> How Almighty God will goodly answer for all those that for the excusing of themselves list not leave their business about the love of Him.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-21-25">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-21-to-25.htm">Chapters 21-25</a></dt>
+                                <dd>
+                                    <b>Chapter 21:</b> The true exposition of this gospel word, &quot;Mary hath chosen the best part&quot;.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 22:</b> Of the wonderful love that Christ had to man in person of all sinners truly turned and called to the grace of contemplation.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 23:</b> How God will answer and purvey for them in spirit, that for business about His love list not answer nor purvey for themselves.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 24:</b> What charity is in itself, and how it is truly and perfectly contained in the work of this book..
+                                </dd>
+                                <dd>
+                                    <b>Chapter 25:</b> That in the time of this work a perfect soul hath no special beholding to any one man in this life.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-26-30">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-26-to-30.htm">Chapters 26-30</a></dt>
+                                <dd>
+                                    <b>Chapter 26:</b> That without full special grace, or long use in common grace, the work of this book is right travailous; and in this work, which is the work of the soul helped by grace, and which is the work of only God.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 27:</b> Who should work in the gracious work of this book.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 28:</b> That a man should not presume to work in this work before the time that he be lawfully cleansed in conscience of all his special deeds of sin.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 29:</b> That a man should bidingly travail in this work, and suffer the pain thereof, and judge no man.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 30:</b> Who should blame and condemn other men's defaults.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-31-35">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-31-to-35.htm">Chapters 31-35</a></dt>
+                                <dd>
+                                    <b>Chapter 31:</b> Chapter How a man should have him in beginning of this work against all thoughts and stirrings of sin.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 32:</b> Of two ghostly devices that be helpful to a ghostly beginner in the work of this book.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 33:</b> That in this work a soul is cleansed both of his special sins and of the pain of them, and yet how there is no perfect rest in this life.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 34:</b> That God giveth this grace freely without any means, and that it may not be come to with means.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 35:</b> Of three means in the which a contemplative prentice should be occupied; in reading, thinking, and praying.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-36-40">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-36-to-40.htm">Chapters 36-40</a></dt>
+                                <dd>
+                                    <b>Chapter 36:</b> Of the meditations of them that continually travail in the work of this book.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 37:</b> Of the special prayers of them that be continual workers in the work of this book.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 38:</b> How and why that short prayer pierceth heaven.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 39:</b> How a perfect worker shall pray, and what prayer is in itself; and, if a man shall pray in words, which words accord them most to the property of prayer.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 40:</b> That in the time of this work a soul hath no special beholding to any vice in itself nor to any virtue in itself.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-41-45">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-41-to-45.htm">Chapters 41-45</a></dt>
+                                <dd>
+                                    <b>Chapter 41:</b> That in all other works beneath this, men should keep discretion; but in this none.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 42:</b> That by indiscretion in this, men shall keep discretion in all other things; and surely else never.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 43:</b> That all writing and feeling of a man's own being must needs be lost if the perfection of this work shall verily be felt in any soul in this life.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 44:</b> How a soul shall dispose it on its own part, for to destroy all witting and feeling of its own being.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 45:</b> A good declaring of some certain deceits that may befall in this work.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-46-50">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-46-to-50.htm">Chapters 46-50</a></dt>
+                                <dd>
+                                    <b>Chapter 46:</b> A good teaching how a man shall flee these deceits, and work more with a listiness of spirit, than with any boisterousness of body.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 47:</b> A slight teaching of this work in purity of spirit; declaring how that on one manner a soul should shew his desire unto God, and on ye contrary, unto man.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 48:</b> How God will be served both with body and with soul, and reward men in both; and how men shall know when all those sounds and sweetness that fall into the body in time of prayer be both good and evil.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 49:</b> The substance of all perfection is nought else but a good will; and how that all sounds and comforts and sweetness that may befall in this life be to it but as it were accidents.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 50:</b> Which is chaste love; and how in some creatures such sensible comforts be but seldom, and in some right oft.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-51-55">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-51-to-55.htm">Chapters 51-55</a></dt>
+                                <dd>
+                                    <b>Chapter 51:</b> That men should have great wariness so that they understand not bodily a thing that is meant ghostly; and specially it is good to be wary in understanding of this word <em>in,</em> and of this word <em>up</em>.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 52:</b> How these young presumptuous disciples misunderstand this word
+                                    <em>in,</em> and of the deceits that follow thereon.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 53:</b> Of divers unseemly practices that follow them that lack the work of this book.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 54:</b> How that by virtue of this work a man is governed full wisely, and made full seemly as well in body as in soul.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 55:</b> How they be deceived that follow the fervour of spirit in condemning of some without discretion.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-56-60">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-56-to-60.htm">Chapters 56-60</a></dt>
+                                <dd>
+                                    <b>Chapter 56:</b> How they be deceived that lean more to the curiosity of natural wit, and of clergy learned in the school of men than to the common doctrine and counsel of Holy Church.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 57:</b> How these young presumptuous disciples misunderstand this other word <em>up;</em> and of the deceits that follow thereon.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 58:</b> That a man shall not take ensample of Saint Martin and of Saint Stephen, for to strain his imagination bodily upwards in the time of his prayer.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 59:</b> That a man shall not take ensample at the bodily ascension of Christ, for to strain his imagination upwards bodily in the time of prayer: and that time, place, and body, these three should be forgotten in all ghostly working.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 60:</b> That the high and the next way to heaven is run by desires, and not by paces of feet.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-61-65">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-61-to-65.htm">Chapters 61-65</a></dt>
+                                <dd>
+                                    <b>Chapter 61:</b> That all bodily thing is subject unto ghostly thing, and is ruled thereafter by the course of nature, and not contrariwise.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 62:</b> How a man may wit when his ghostly work is beneath him or without him and when it is even with him or within him, and when it is above him and under his God.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 63:</b> Of the powers of a soul in general, and how Memory in special is a principal power comprehending in it all the other powers and all those things in the which they work.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 64:</b> Of the other two principal powers, Reason and Will, and of the work of them before sin and after.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 65:</b> Of the first secondary power, Imagination by name; and of the works and of the obedience of it unto Reason, before sin and after.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-66-70">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-66-to-70.htm">Chapters 66-70</a></dt>
+                                <dd>
+                                    <b>Chapter 66:</b> Of the other secondary power, Sensuality by name; and of the works and of the obedience of it unto Will, before sin and after.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 67:</b> That whoso knoweth not the powers of a soul and the manner of her working, may lightly be deceived in understanding of ghostly words and of ghostly working; and how a soul is made a God in grace.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 68:</b> That nowhere bodily, is everywhere ghostly; and how our outer man calleth the work of this book nought.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 69:</b> How that a man's affection is marvelously changed in ghostly feeling of this nought, when it is nowhere wrought.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 70:</b> That right as by the defailing of our bodily wits we begin more readily to come to knowing of ghostly things, so by the defailing of our ghostly wits we begin most readily to come to the knowledge of God, such as is possible by grace to be had here.
+                                </dd>
+                            </dl>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="ch-71-75">&nbsp;</a>
+                            <dl>
+                                <dt class="page">Go to page for:&nbsp;<a href="chapters-71-to-75.htm">Chapters 71-75</a></dt>
+                                <dd>
+                                    <b>Chapter 71:</b> That some may not come to feel the perfection of this work but in time of ravishing, and some may have it when they will, in the common state of man's soul.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 72:</b> That a worker in this work should not deem nor think of another worker as he feeleth in himself.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 73:</b> How that after the likeness of Moses, of Bezaleel and of Aaron meddling them about the Ark of the Testament, we profit on three manners in this grace of contemplation, for this grace is figured in that Ark.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 74:</b> How that the matter of this book is never more read or spoken, nor heard read or spoken, of a soul disposed thereto without feeling of a very accordance to the effect of the same work: and of rehearsing of the same charge that is written in the prologue.
+                                </dd>
+                                <dd>
+                                    <b>Chapter 75:</b> Of some certain tokens by the which a man may prove whether he be called of God to work in this work.
+                                </dd>
+                            </dl>
+                            <p>
+                                AND HERE ENDETH THE TABLE OF THE ChapterS</p>
+                            <p class="totop-above-anchor">
+                                <a href="javascript:toTopCleanUrl();">top of page</a>
+                            </p>
+                            <!-- anchor element must not be empty -->
+                            <a class="page-link-anchor" id="end">&nbsp;</a>
+                            <!-- page nav here if used -->
+                            <nav class="next-previous-item-nav">
+                                <ul class="next-previous-item-list">
+                                    <li class="align-left"><a href="introduction.htm">&lt; Introduction</a></li>
+                                    <li class="align-right"><a href="chapters-01-to-05.htm">Chapters 1 - 5 &gt;</a></li>
+                                    <li style="clear: both;"></li>
+                                </ul>
+                            </nav>
+                        </article>
+                    </div>
+                    <!-- end div#article --> <button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+
+                </div>
+                <!-- end #main-content-relative -->
+            </div>
+            <!-- end main-content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end mainwrapper -->
+    <script>
+        RecoverDivScroll.init("", "menu-container");
+
+    </script>
+    <div id="analytics">
+        <?php include ($_SERVER['DOCUMENT_ROOT'] . "/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

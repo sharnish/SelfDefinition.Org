@@ -1,0 +1,53 @@
+# .htaccess file for selfdefinition.org/blavatsky/
+
+# testing Feb 25, 2021
+# Site5 tech support, plus .htm and .html
+# teted ok here, hem moved to selfddef-root
+# <IfModule mime_module>
+# 	AddHandler application/x-httpd-ea-php74 .php .php5 .phtml .htm .html
+# </IfModule>
+
+
+# Moved Two articles into their own section Mar 6, 2019
+
+Redirect 301 "/blavatsky/george-cardinal-legros-secret-doctrine-problem-of-sex.htm"           "/blavatsky/articles/george-cardinal-legros-secret-doctrine-problem-of-sex.htm"
+
+Redirect 301 "/blavatsky/wq-judge-communications-from-spirits-their-sources-and-methods.htm"  "/blavatsky/articles/wq-judge-communications-from-spirits-their-sources-and-methods.htm"
+
+
+# renamed PDFs Feb 24, 2017
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - Isis Unveiled vol. 1.pdf"               "/blavatsky/H.P.Blavatsky-Isis-Unveiled-vol-1.pdf"
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - Isis Unveiled vol. 2.pdf"               "/blavatsky/H.P.Blavatsky-Isis-Unveiled-vol-2.pdf"
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - The Key to Theosophy.pdf"               "/blavatsky/H.P.Blavatsky-The-Key-to-Theosophy.pdf"
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - The Secret Doctrine vol 1 Cosmogenesis.pdf"     "/blavatsky/H.P.Blavatsky-The-Secret-Doctrine-vol-1-Cosmogenesis.pdf"
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - The Secret Doctrine vol 2 Anthropogenesis.pdf"  "/blavatsky/H.P.Blavatsky-The-Secret-Doctrine-vol-2-Anthropogenesis.pdf"
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - The Theosophical Glossary.pdf"          "/blavatsky/H.P.Blavatsky-The-Theosophical-Glossary.pdf"
+
+Redirect 301 "/blavatsky/H.P. Blavatsky - Voice of the Silence.pdf"               "/blavatsky/H.P.Blavatsky-Voice-of-the-Silence.pdf"
+
+
+# Add Mar 3, 2017
+
+Redirect gone /blavatsky/Blavatsky-Collected-Writings-15-ebooks/
+
+# canonical links added Sep 30 2016
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set CelibacyHeader1 "This is a file-specific custom header for testing."
+#</Files>
+
+<Files 'H.P.Blavatsky-Voice-of-the-Silence.pdf'>
+	Header add Link '<https://selfdefinition.org/blavatsky/voice-of-the-silence/voice-contents.htm>; rel="canonical"'
+	#Header set CelibacyHeader1 "This is a file-specific custom header for testing."
+</Files>
+
+
+
+
+# end

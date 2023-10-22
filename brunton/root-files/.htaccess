@@ -1,0 +1,25 @@
+# .htaccess file for selfdefinition.org/brunton/
+
+
+# page name fix Jan 23, 2017
+
+Redirect 301 "/brunton/Peter Holleran--Paul-Brunton-Architect-of-a-21st-Century-Philosophy.pdf"  "/brunton/Peter-Holleran-Paul-Brunton-Architect-21st-Century-Philosophy.pdf"
+
+Redirect 301 "/brunton/Brunton-Paul-A-Search-in-Secret-India--ebook.pdf"         "/brunton/Brunton-Paul-A-Search-in-Secret-India.pdf"
+
+
+
+# did this for 25 greatest science books and mentalism and tibetan also
+
+# try redirect-gone Jan 25 2017
+# http://www.quickonlinetips.com/archives/2014/11/http-410-error-pages-htaccess/
+# Redirect gone /path/path/folder/
+# test with this:
+#  curl -I selfdefinition.org/brunton/bodhitest/
+Redirect gone /brunton/bodhitest/
+
+
+
+
+# end
+

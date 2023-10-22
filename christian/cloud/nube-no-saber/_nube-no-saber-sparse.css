@@ -1,0 +1,80 @@
+/* file:  /christian/cloud/nube-del-no-saber/_nube-no-saber-sparse.css
+
+uUpdate August 6, 2022
+
+*/
+
+
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #e6ffef;
+}
+
+/* div in title include file
+#title-include-div {margin:20px 0;} */
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton {
+	background: #cdf;
+}
+
+ul.page-links {
+	width: 120px;
+	border: 0px solid red;
+}
+
+
+header h3 {
+	width: 80%;
+}
+
+
+h4 span.block {
+	font-size: 95%;
+}
+
+h4 + p {
+	text-align: center;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.css3-page-links {
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	columns: 2;
+	column-rule: 1px solid #666;
+}
+
+
+
+nav.css3-in-page-nav {
+	width: 300px;
+	border: 0px solid red;
+}
+
+nav.css3-in-page-nav {
+	border: 0px solid red;
+}
+
+ul.css3-page-links {
+	border: 0px solid green;
+}
+
+ul.css3-page-links li {
+	text-align: center;
+	border: 0px solid blue;
+}
+
+/* end */

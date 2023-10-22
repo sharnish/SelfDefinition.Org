@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Bootleg" 
+require valid-user
+AuthUserFile "/home4/reversev/.htpasswds/public_websites/selfdefinition.org/advaita/bootleg/passwd"
+
+# copied from Albigen.com/html directory July 5, 2022
+
