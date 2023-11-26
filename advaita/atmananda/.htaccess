@@ -1,0 +1,11 @@
+
+# added Dec 12, 2020
+
+Redirect 301 "/advaita/atmananda/atma-darshan.htm"   "/advaita/atmananda/file-removed-sorry.htm"
+
+Redirect 301 "/advaita/atmananda/atma-nirvriti.htm"     "/advaita/atmananda/file-removed-sorry.htm"
+
+Redirect 301 "/advaita/atmananda/contents.htm"         "/advaita/atmananda/file-removed-sorry.htm"
+
+
+# end

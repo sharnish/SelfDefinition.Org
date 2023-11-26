@@ -1,0 +1,106 @@
+/* file:  /osho/_osho-quotes.css */
+
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html, body, #fixed-header-small-screen, #menu-site-small-screen {background:#eefff6;}
+
+
+ /* the following is used in conjunction with menu-highlighter.js 
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+ /* color must contrast with body */
+ #nav ul li a.active { 	
+	background: #fce; 
+}
+
+
+/* can increase font size due to short titles; default is 80% */
+ul.next-previous-item-list {font-size:90%;font-weight:bold;} 
+/* COLOR: darken the blue link as background is blue. Default is #2277dd*/
+ul.next-previous-item-list a:link,
+ul.next-previous-item-list a:visited {color: #400000;} 
+
+ #article
+        {
+            font-size: 16px;
+        }
+        /* #osho-list is a ul */
+        #osho-list
+        {
+            margin-left: -16px;
+        }
+        #osho-list p
+        {
+            margin-left: -8px;
+        }
+        #osho-list li p:first-child
+        {
+            margin-left: 0;
+            margin-top: 25px;
+        }
+        
+/* default is 170px */
+.menu-section li a {width:180px;}
+
+/* override responsive default */
+@media only screen and (max-width:767px)
+{
+    #main-content {top:41px;}
+}
+
+
+/* since no content button (default is 41px) */
+@media only screen and (max-width:420px)
+{
+    #menu-site-small-screen {top:21px;}
+}
+
+
+
+/* Anything smaller than Iphone6 */
+@media only screen and (max-width:375px)
+{
+    #main-content {top:60px;}
+    #menu-site-small-screen li a {font-size:15px;}
+}
+/* Iphone5 -- reduce the font size so you get 4 items in the 2nd line */
+@media only screen and (max-width:320px)
+{
+    
+    #menu-site-small-screen li.clear-left {clear:initial;}
+    
+}
+
+        
+/* testing 
+
+#menu-site-small-screen {background:beige;}
+#menu-site-small-screen li {border:1px solid red;}
+
+#fixed-header-small-screen	{background:green;}
+
+header h3   {border:1px solid red;}
+
+header.chapter-header p  {border:1px solid red;}
+
+.menu-text li {background:pink;}
+
+.menu-section {border:1px solid green;}
+
+.page-links {border:1px solid green;} */
+
+
+/* test width of menu-container 
+
+nav#nav  {border:1px solid maroon;}
+
+#menu-container  {border:1px solid blue;}
+
+#menu-section-group {border:1px solid yellow;} */
+ 
+
+
+/* end */
+
+
