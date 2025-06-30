@@ -1,0 +1,80 @@
+<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/get-cookie.php"); ?>
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?>">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>403 Forbidden</title>
+    <meta property="og:title" content="<title>403 Forbidden</title>">
+    <link href="/styles-2022/section-index-2022.css" rel="stylesheet" type="text/css">
+    <link href="/rose/five-item-top-menu-tweak.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+    <div id="mainwrapper-index">
+        <div id="container">
+            <div id="fixed-header">
+                <ul id="menu-site">
+                    <!-- these are floats -->
+                    <li><a href="/">Site Root</a></li>
+                    <li><a href="/sitemap.htm">Site Map</a></li>
+                    <li><a href="/paginas-en-espanol.htm">Español</a></li>
+                    <li><a href="/selfdefinition-search.htm">Search</a></li>
+                </ul>
+                <div style="clear: both;">
+                </div>
+            </div>
+
+            <div id="main-content">
+                <div id="style-gadget">
+                    <label for="theme-checkbox" style="display: inline-block; vertical-align: top; background: inherit;">
+                        Dark theme: <input type="checkbox" id="theme-checkbox">
+                    </label>
+                    <!-- Can't be in head. Can be in README -->
+                    <script src="/scripts/set-theme-cookie-checkbox.js"></script>
+                </div>
+                <header>
+                    <p class="logo">
+                        Self<span style="margin-left: 1px;">Definition.Org</span>
+                    </p>
+                    <h1 class="title">
+                        403 Forbidden (403.shtml)
+                    </h1>
+                    <p>
+                        Return to <a href="/sitemap.htm">Site Map</a></p>
+                </header>
+
+                <p>
+                    You don't have permission to access the following on this server.</p>
+                <p>
+                    <!-- SERVER REQUESTS ARE IN COMMENTS BUT THEY WORK - March 17, 2022 -->
+                    Request:
+                    <!--#echo var="REQUEST_URI" -->
+                </p>
+
+                <p>Your IP:
+                    <!--#echo var="REMOTE_ADDR" -->
+                </p>
+
+                <p>Referrer:
+                    <!--#echo var="HTTP_REFERER" -->
+                </p>
+
+            </div><!-- end #main-content" -->
+        </div><!-- end #container -->
+    </div><!-- end #mainwrapper-index -->
+
+    <div id="analytics">
+        <?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+    </div>
+</body>
+
+</html>

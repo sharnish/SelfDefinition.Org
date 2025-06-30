@@ -556,6 +556,7 @@ body,
 	html.dark span.black,
 	html.dark sup.black {
 		background: #202020;
+		background: #212529;
 		color: #fdfdff;
 		/* see note below */
 	}

@@ -1,0 +1,16 @@
+# .htaccess file for selfdefinition.org/rose/articles/
+
+
+# redirect page newspaper date eror
+
+Redirect 301 /rose/articles/1974-0215-youths-here-explain-drift-from-religion.htm /rose/articles/1975-0215-youths-here-explain-drift-from-religion.htm
+
+
+
+# correct article date, May 8, 2025
+
+Redirect 301 /rose/articles/1977-1121-he-found-meaning-shares-experience.htm		/rose/articles/1977-1119-he-found-meaning-shares-experience.htm
+
+
+# end
+

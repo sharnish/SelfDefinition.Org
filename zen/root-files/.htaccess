@@ -1,0 +1,137 @@
+# .htaccess file for selfdefinition.org/zen
+
+
+# moving hui-neng to hui-neng/platform/ July 30, 2020
+
+Redirect 301 "/zen/hui-neng/01-autobiography.htm"             "/zen/hui-neng/platform/01-autobiography.htm"
+Redirect 301 "/zen/hui-neng/02-prajna.htm"                    "/zen/hui-neng/platform/02-prajna.htm"
+Redirect 301 "/zen/hui-neng/03-dhyana-samadhi.htm"            "/zen/hui-neng/platform/03-dhyana-samadhi.htm"
+Redirect 301 "/zen/hui-neng/04-repentence.htm"                "/zen/hui-neng/platform/04-repentence.htm"
+Redirect 301 "/zen/hui-neng/05-three-bodies-of-buddha.htm"    "/zen/hui-neng/platform/05-three-bodies-of-buddha.htm"
+Redirect 301 "/zen/hui-neng/06-temperments-circumstances.htm" "/zen/hui-neng/platform/06-temperments-circumstances.htm"
+Redirect 301 "/zen/hui-neng/07-sudden-and-gradual.htm"        "/zen/hui-neng/platform/07-sudden-and-gradual.htm"
+Redirect 301 "/zen/hui-neng/08-royal-patronage.htm"           "/zen/hui-neng/platform/08-royal-patronage.htm"
+Redirect 301 "/zen/hui-neng/09-final-words-death.htm"         "/zen/hui-neng/platform/09-final-words-death.htm"
+Redirect 301 "/zen/hui-neng/contents.htm"                     "/zen/hui-neng/platform/contents.htm"
+Redirect 301 "/zen/hui-neng/preface.htm"                      "/zen/hui-neng/platform/preface.htm"
+# old index points to new contents:
+Redirect 301 "/zen/hui-neng/index.htm"                        "/zen/hui-neng/platform/contents.htm"
+
+
+
+# fix directory mispelling Oct 5, 2020
+
+Redirect 301 "/zen/haukin-tea-kettle/embossed-tea-kettle-all-one-page.htm"   "/zen/hakuin-tea-kettle/embossed-tea-kettle-all-one-page.htm"
+
+
+
+# file names in "song" shortened June 25, 2020
+
+Redirect 301 "/zen/song-of-enlightenment/yongjia-xuanjue-song-of-enlightenment-diamond-sangha.htm"  "/zen/song-of-enlightenment/diamond-sangha.htm"
+
+Redirect 301 "/zen/song-of-enlightenment/yongjia-xuanjue-song-of-enlightenment-shasta-abbey.htm" "/zen/song-of-enlightenment/shasta-abbey.htm"
+
+# see directory and htaccess => /zen/garma-chang/.htaccess for file renaming in Practice of Zen on Nov 9, 2019
+
+
+# pdf moved Dec 1, 2019
+
+Redirect 301 "/zen/Garland-Sutra-Avatamsaka-Sutra.pdf"    "/buddhism/Garland-Sutra-Avatamsaka-Sutra.pdf"
+
+
+# hui-neng Spanish pdfs renamed Nov 2, 2019
+
+Redirect 301 "/zen/espanol-Sutra-Hui-Neng-trad-Yin-Zhi-Shakya-2002-basada-Wong-Mou-Lam.pdf"  "/zen/espanol-Sutra-Hui-Neng-trad-Yin-Zhi-Shakya-basada-Wong-Mou-Lam.pdf"
+
+Redirect 301 "/zen/espanol-Sutra-Hui-Neng-trad-Yin-Zhi-Shakya-revisada-2003.pdf"             "/zen/espanol-Sutra-Hui-Neng-trad-Yin-Zhi-Shakya-basada-Cleary.pdf"
+
+# added Jan 3, 2017
+# ErrorDocument 404 "/zen/404-zen.htm"
+ErrorDocument 404 "/redirect/zen-404-redirect.htm"
+
+
+IndexIgnore  _* osho-zen-hubert-benoit.htm
+IndexIgnore 404*
+
+
+# pages  moved
+
+redirect 301 "/zen/huang-po.htm" "/zen/huang-po/huang-po-dharma-of-mind-transmission.htm"
+
+redirect 301 "/zen/osho-zen-hubert-benoit.htm" "/zen/osho-on-zen/osho-on-zen-and-hubert-benoit.htm"
+
+# pdf files
+
+redirect 301 "/zen/Alan Watts - 1959 - Beat Zen Square Zen and Zen.pdf" "/zen/Alan-Watts-1959-Beat-Zen-Square-Zen-and-Zen.pdf"
+
+redirect 301 "/zen/Alan Watts - 1966 - On The Taboo Against Knowing Who You Are.pdf" "/zen/Alan-Watts-1966-The-Book-On-The-Taboo-Against-Knowing-Who-You-Are.pdf"
+
+redirect 301 "/zen/Blue Cliff Record - clearscan.pdf" "/zen/Blue-Cliff-Record-clearscan.pdf"
+
+# fixes my misspelling, somebody's post at Reddit, ciff not cliff
+redirect 301 "/zen/Blue Ciff Record - clearscan.pdf" "/zen/Blue-Cliff-Record-clearscan.pdf"
+redirect 301 "/zen/Blue-Ciff-Record-clearscan.pdf"   "/zen/Blue-Cliff-Record-clearscan.pdf"
+
+redirect 301 "/zen/Bodhidharma Anthology - The Earliest Records of Zen--scan.pdf"  "/zen/Bodhidharma-Anthology-The-Earliest-Records-of-Zen--scan.pdf"
+
+redirect 301 "/zen/Dzogchen Ponlop Rinpoche - Mind Beyond Death.pdf"  "/zen/Dzogchen-Ponlop-Rinpoche-Mind-Beyond-Death.pdf"
+
+redirect 301 "/zen/Garma C. C. Chang - The Practice of Zen-ocr.pdf"  "/zen/Garma-C.C.-Chang-The-Practice-of-Zen-ocr.pdf"
+
+
+redirect 301 "/zen/Garma C. C. Chang - The Practice-of-Zen-scan.pdf"  "/zen/Garma-C.C.-Chang-The-Practice-of-Zen-scan.pdf"
+
+
+redirect 301 "/zen/Hubert Benoit - The Interior Realization.pdf"  "/zen/Hubert-Benoit-The-Interior-Realization.pdf"
+
+redirect 301 "/zen/Hubert Benoit - The Supreme Doctrine - Zen and the Psychology of Transformation.pdf"  "/zen/Hubert-Benoit-The-Supreme-Doctrine-Zen-and-the-Psychology-of-Transformation.pdf"
+
+redirect 301 "/zen/Seung Sahn - Only Don't Know - selected letters.pdf"  "/zen/Seung-Sahn-Only-Don't-Know-selected-letters.pdf"
+
+redirect 301 "/zen/Seung Sahn - Teaching Letters II.pdf"  "/zen/Seung-Sahn-Teaching-Letters-II.pdf"
+
+redirect 301 "/zen/Seung Sahn - Teaching Letters IV.pdf"  "/zen/Seung-Sahn-Teaching-Letters-IV.pdf"
+
+redirect 301 "/zen/Thich Nhat Hanh - Zen Keys.pdf"  "/zen/Thich-Nhat-Hanh-Zen-Keys.pdf"
+
+redirect 301 "/zen/Zen Teaching of Bodhidharma - trans. Red Pine - Clearscan.pdf"   "/zen/Zen-Teaching-of-Bodhidharma-trans-Red-Pine-clearscan.pdf"
+
+
+#fix misspelling
+redirect 301 "/zen/Original-Theachings-of-Ch'an-Buddhism-scan-OCR.pdf" "/zen/Original-Teachings-of-Ch'an-Buddhism-scan-OCR.pdf"
+
+
+#redirect 301 "/zen/"  "/zen/"
+
+
+# canonical links added Oct 3, 2016
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+<Files 'Garma-C.C.-Chang-The-Practice-of-Zen-ocr.pdf'>
+	Header add Link '<http://selfdefinition.org/zen/garma-chang/practice-of-zen/practice-of-zen-table-of-contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Garma-C.C.-Chang-The-Practice-of-Zen-scan.pdf'>
+	Header add Link '<http://selfdefinition.org/zen/garma-chang/practice-of-zen/practice-of-zen-table-of-contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+<Files 'Hubert-Benoit-The-Supreme-Doctrine-Zen-and-the-Psychology-of-Transformation.pdf'>
+	Header add Link '<http://selfdefinition.org/zen/benoit/supreme-doctrine/contents.htm>; rel="canonical"'
+	#Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+
+
+
+
+
+
+
+
+

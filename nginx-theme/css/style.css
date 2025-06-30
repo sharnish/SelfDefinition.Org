@@ -1,0 +1,61 @@
+/* https://abhij.it/58-2/  */
+
+
+/* his */
+
+body {
+  max-width: 90%;
+}
+
+#title {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+#title .stats {
+  font-size: 0.8em;
+  float: right;
+  margin: 0 10px;
+}
+
+#listing {
+  font-size: 1.1em;
+}
+
+#listing h1 {
+  font-size: 1.1em;
+}
+
+.folderup {
+  color: #FFCA28;
+  color: green;
+  color: lightgreen;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* a[href$="/"].link-icon:before, */
+/* a[href$=".html"].link-icon:before, */
+
+a[href$="/"].link-icon:before,
+a.link-icon.link-folder[href]:before {
+  content: "\f07b"; /*Folder*/
+}
+a[href$=".html"].link-icon:before,
+a.link-icon.link-html5[href]:before {
+  content: "\f13b"; /*HTML5*/
+}
+
+
+
+/* sh add */
+
+/*
+html {
+	color-scheme: light dark;
+}
+
+*/
+
+a {color:lightskyblue;}
+

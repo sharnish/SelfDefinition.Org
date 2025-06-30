@@ -1,0 +1,187 @@
+<?php include "scripts/get-cookie-with-show-hide.php"; ?>
+<!--php include $_SERVER['DOCUMENT_ROOT'] . "/scripts/get-cookie.php"; ?-->
+<!DOCTYPE html>
+<html lang="en" class="english <?php echo $themeClass; ?> <?php echo $showClass; ?>">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Retreat from Untruth</title>
+	<meta name="description" content="Retreat from Untruth: The Teachings of Richard Rose, American Zen Master">
+	<meta name="author" content="Alan Fitspatrick">
+	<meta property="og:title" content="Retreat from Untruth">
+	<meta property="og:description" content="Retreat from Untruth: The Teachings of Richard Rose, American Zen Master">
+	<meta property="og:image" content="https://selfdefinition.org/rose/retreat/images/rose-retreat-cover-og-image.jpg">
+	<link rel="canonical" href="https://albigen.com/retreat/contents.htm">
+	<!-- load external stylesheets before the scripts -->
+	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
+	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
+	<link href="_retreat-sparse.css" rel="stylesheet" type="text/css">
+	<!-- the following gives you the jquery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- scrollbar, button, ajax test and device width testing; Ajax must be active -->
+	<script src="/scripts/scrollbar-and-test.js"></script>
+	<!-- this highlights the menu item for the current page (non-essential) -->
+	<script src="/scripts/menu-highlighter.js"></script>
+	<!-- keeps the menu position intact after page change (desktop layout) -->
+	<script src="/scripts/recoverdivscroll.js"></script>
+	<!-- first link rel="prev" -->
+	<link rel="next" href="chapter-12.htm">
+	<link rel="icon" href="/styles/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/styles/favicon.ico" type="image/x-icon">
+	<style>
+		/* center the #toc section to match the centering of the title */
+		nav.index-lists ul.index-contents-links {
+			width: 100%;
+			max-width: 410px;
+			border: 0px solid blue;
+		}
+
+		@media only screen and (max-width:500px) {
+			nav.index-lists ul.index-contents-links {
+				max-width: initial;
+				border: 0px solid red;
+			}
+
+			nav.index-lists ul.index-contents-links li {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="mainwrapper">
+		<div id="container">
+			<div id="menu-panel">
+				<nav id="nav">
+					<?php include("_retreat-menu-include.htm"); ?>
+				</nav>
+			</div>
+			<div id="main-content">
+				<!-- to reset relative positioning -->
+				<div id="main-content-relative">
+					<div class="progress-header">
+						<div class="progress-container">
+							<div class="progress-bar" id="myBar"> </div>
+						</div>
+					</div>
+					<div id="article">
+						<article>
+							<div id="announce">
+								<header>
+									<!-- image is shown in menu for large screens, title include for small screens -->
+									<?php include( "_retreat-title-include.htm"); ?>
+									<p class="tiny center">Used by Permission</p>
+
+									<h3 style="font-size:100%;">
+										Contents / Index
+									</h3>
+								</header>
+							</div>
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="chapter-12.htm">12. Ascendency of Rose's Teachings &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<nav class="index-lists">
+								<ul class="index-contents-links">
+
+									<!--li class="subhead">Alan Fitzpatrick </li-->
+									<li class="center">Chapters Presented</li>
+									<li><a href="chapter-12.htm">12. Ascendency of Rose's Teachings</a></li>
+									<li><a href="chapter-13.htm">13. The surest path: In Rose's own&nbsp;words</a></li>
+									<li><a href="bibliography.htm">Bibliography and Document Links</a></li>
+								</ul>
+								<hr>
+								<ul class="index-links">
+                                    <li class="note">To obtain the full text:</li>
+									<li>Full book at <a href="https://richardroseteachings.com/shop/books/retreat-from-untruth/">RichardRoseTeachings.Com</a> (best&nbsp;price)</li>
+									<li>Retreat from Untruth at <a href="https://amzn.to/3Au2NJd">Amazon.Com</a></li>
+									<li>Richard Rose at <a style="display:inline;" href="https://en.wikipedia.org/wiki/Richard_Rose_(mystic)">Wikipedia</a>
+									</li>
+									<li class="header-item">About Richard Rose</li>
+									<li>Richard Rose Index page: <a href="/rose/">/rose/</a></li>
+									<li class="subhead">Alan Fitzpatrick </li>
+									<li class="first-item"><a href="/rose/about/richard-rose-assimilation-enlightenment.htm">Richard Rose and the Assimilation of his Enlightenment Experience</a></li>
+
+									<li class="subhead">Michael Casari</li>
+									<li class="first-item"><a href="/rose/about/richard-rose-the-man-who-was-a-mirror.htm">Richard Rose, the Man Who Was a Mirror</a></li>
+									<li><a href="/rose/about/michael-casari-about-richard-rose.htm">About Richard Rose - Interview, Interfaith Forums, 2005</a></li>
+									<li class="subhead">Gary Harmon </li>
+									<li class="first-item"><a href="/rose/about/gary-harmon-ashram-life-zen-master.htm">Memories of Ashram Life with a Zen Master</a></li>
+									<li class="subhead">Articles on Richard Rose</li>
+									<li class="first-item">Wheeling newspaper, 1968: <a href="/rose/articles/richard-rose-farm-1968.htm">"McCreary Ridge Hippies Live Quietly in Hills Meditating"</a></li>
+
+									<li class="header-item">Writings by Richard Rose</li>
+									<li>"Notice" by Richard Rose <a href="/rose/writings/richard-rose-notice.htm">/rose/writings/richard-rose-notice.htm</a></li>
+									<li>"The Mind" by Richard Rose <a href="/rose/writings/richard-rose-the-mind.htm">/rose/writings/richard-rose-the-mind.htm</a></li>
+									<li>"Yoga: Hatha, Shabd, and Raja," by Richard Rose <a href="/rose/writings/richard-rose-yoga-hatha-shabd-raja.htm">/rose/writings/richard-rose-yoga-hatha-shabd-raja.htm</a></li>
+
+									<li class="subhead">Richard Rose in the Celibacy section</li>
+									<li>Temptation (1947): <a href="/celibacy/quotes/richard-rose-temptation.htm">/celibacy/quotes/richard-rose-temptation.htm</a></li>
+									<li>Prostaglandins and Morality: <a href="/celibacy/quotes/richard-rose-prostaglandins-and-morality.htm">/celibacy/quotes/richard-rose-prostaglandins-and-morality.htm</a></li>
+									<li>Notes on Celibacy (1980): <a href="/celibacy/quotes/richard-rose-notes-on-celibacy.htm">/celibacy/quotes/richard-rose-notes-on-celibacy.htm</a></li>
+									<li>The Albigen Papers at: <a href="https://richardroseteachings.com/shop/books/the-albigen-papers/">Richard Rose Teachings</a> and at <a href="https://amzn.to/3e1VDnM">Amazon.Com</a></li>
+									<li class="header-item">External Links</li>
+									<li class="subhead">Our sister site, Albigen.Com</li>
+									<li class="first-item"><a href="https://albigen.com/system/albigen-system.htm">The Albigen System</a></li>
+
+									<li class="subhead">Books, Audio and Video by and about Richard Rose</li>
+									<li class="first-item"><a href="https://richardroseteachings.com/">https://richardroseteachings.com/</a></li>
+
+									<li class="subhead">Richard Rose Audio Recordings </li>
+									<li>Wiki of transcripts, including transcripts in-process: <a href="https://www.direct-mind.org/index.php?title=Recordings">https://www.direct-mind.org</a></li>
+									<li>Spreadsheet of known recordings <span class="note">(wide screen):</span> <a href="/rose/rose-audio-temp/recordings-source-list-in-process.htm">/rose/rose-audio-temp/recordings-source-list-in-process.htm</a></li>
+									<li class="subhead">Contact webmaster for more information</li>
+									<li><a href="https://selfdefinition.org/contact/">https://selfdefinition.org/contact/</a></li>
+								</ul>
+							</nav>
+							<p class="totop-above-anchor">
+								<a href="javascript:toTopCleanUrl();">top of page</a>
+							</p>
+							<!-- anchor element must not be empty -->
+							<a class="page-link-anchor" id="end">&zwj;</a>
+							<!-- page nav here if used -->
+
+							<nav class="next-previous-item-nav">
+								<ul class="next-previous-item-list">
+									<li class="align-left">&nbsp;</li>
+									<li class="align-right"><a href="chapter-12.htm">12. Ascendency of Rose's Teachings &gt;</a></li>
+									<li style="clear: both;"></li>
+								</ul>
+							</nav>
+
+							<p>
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+							</p>
+						</article>
+					</div>
+					<!-- end div#article -->
+					<!-- button is placed within #main-content-relative. Name must agree with script -->
+					<button onclick="javascript:toTopCleanUrl();" id="toTopButton" title="Go-to-top">top</button>
+				</div>
+				<!-- end #main-content-relative -->
+			</div>
+			<!-- end main-content -->
+		</div>
+		<!-- end container -->
+	</div>
+	<!-- end mainwrapper -->
+	<script>
+		RecoverDivScroll.init("", "menu-container");
+
+	</script>
+	<div id="analytics-server-root-plus-path">
+		<?php include("/home4/reversev/public_websites/selfdefinition.org/scripts/analytics.htm"); ?>
+	</div>
+</body>
+
+</html>

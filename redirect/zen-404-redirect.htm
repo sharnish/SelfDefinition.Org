@@ -11,7 +11,7 @@
 	<meta name="author" content="">
 	<meta property="og:title" content="Zen 404 redirect">
 	<meta property="og:description" content="Zen files 404 redirect page">
-	<meta property="og:image" content="https://selfdefinition.org/redirect/images/afterlife.jpg">
+	<meta property="og:image" content="https://selfdefinition.org/zen/images/zen.gif">
 	<!-- load external stylesheets before the scripts -->
 	<link href="/styles-2022/selfdefinition-2022.css" rel="stylesheet" type="text/css">
 	<link href="/styles-2022/dark-theme-styles.css" rel="stylesheet" type="text/css">
@@ -45,33 +45,39 @@
 			background: #c9e7d0;
 		}
 
+
+		/* selfdef 2022 says 74% */
+		div.amazon-section div.text-link,
+		div.text-link-only {
+			width: 100%;
+		}
 	</style>
 	<script>
 		/* replaceable link and image
 
-        https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
+		https://stackoverflow.com/questions/11867269/replace-only-text-inside-a-div-using-jquery
 
-        Example:    $('#one span').text('Hi I am replace');
+		Example:    $('#one span').text('Hi I am replace');
 
-        Change attribute:
+		Change attribute:
 
-        https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
+		https://www.tutorialrepublic.com/faq/how-to-change-href-attribute-of-a-hyperlink-using-jquery.php
 
-        */
+		*/
 
-		$(document).ready(function() {
+		$(document).ready(function () {
 
-			$('#title-image').attr("src", "/redirect/images/paracelsus.jpg");
+			$('#title-image').attr("src", "/redirect/images/zen.jpg");
 
-			$('#menu-image').attr("src", "/redirect/images/paracelsus.jpg");
+			$('#menu-image').attr("src", "/redirect/images/zen.jpg");
 
-			$('#title-image').attr("alt", "Paracelsus");
+			$('#title-image').attr("alt", "Zen");
 
-			$('#menu-image').attr("alt", "Paracelsus");
+			$('#menu-image').attr("alt", "Zen");
 
-			$('.replaceable-link span').text('Magic Index');
+			$('.replaceable-link span').text('Zen Index');
 
-			$('.replaceable-link').attr("href", "/magic/");
+			$('.replaceable-link').attr("href", "/zen/");
 
 			$('.replaceable-link').attr("style", "display:block");
 
@@ -135,7 +141,7 @@
 								</p>
 								<p>
 									For a huge collection of Zen documents consult Terebess.Hu<br />
-									<a href="http://terebess.hu/zen/textindex.html">terebess.hu/zen/textindex.html</a>
+									<a href="https://terebess.hu/zen/textindex.html">terebess.hu/zen/textindex.html</a>
 								</p>
 								<p>
 									If you wish to see the site map go here:<br />

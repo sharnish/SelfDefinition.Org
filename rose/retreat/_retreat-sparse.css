@@ -1,0 +1,173 @@
+/* file:  /rose/writings/_retreat-sparse.css
+
+Update September 17, 2022
+
+*/
+
+@media only print {
+	#article:after {
+		content: "Update September 17, 2022";
+	}
+}
+
+
+/* background selfdefinition-responsive default is #fcfeff */
+html,
+body,
+#fixed-header-small-screen,
+#menu-site-small-screen,
+.progress-header,
+.progress-container {
+	background: #fff9f9;
+}
+
+#fixed-header-for-footnote-toggle {
+	/* background: inherit; < NO, will be TRANSPARENT' */
+	background: #fff9f9;
+}
+
+html.dark #fixed-header-for-footnote-toggle {
+	/* background: inherit; < NO, will be TRANSPARENT' */
+	background: #202020;
+}
+
+/* the following is used in conjunction with menu-highlighter.js
+    The structure of menu must conform to specs of script.
+    Default CSS is in selfdefinition.css with a default color */
+/* color must contrast with body */
+#nav .menu-section a.active,
+#menu-scroll,
+#menu-scroll a,
+#toTopButton,
+.item:hover,
+nav.contents,
+.item:hover {
+	background: #cce0ea;
+}
+
+/* Chapter number in page titles */
+#article h3 span {
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-size: 80%;
+	font-weight: normal;
+}
+
+
+h3.toowide {
+	width: 75%;
+	border: 0px solid red;
+}
+
+p.fnote {
+	font-size: 85%;
+}
+
+/*  NOT NECESSARY WITH HIDE-FOOTNOTES TOGGLE 
+html.dark sup,
+html.dark p.fnote {
+	
+	darken, too intrusive
+	WAS color: #FA9473;
+	color: #EA8463;
+} */
+
+/* TOO MANY FOOTNOTES, MUST HIDE */
+/* BACKGROUND COLOR IS SET ABOVE */
+/* fixed header for 768px and up
+	show in top menu for 767px and down */
+#show-hide-footnote-gadget label {
+	color: darkgreen;
+}
+
+html.dark #show-hide-footnote-gadget label {
+	color: white;
+}
+
+/* these 2 classes are managed by the script and the cookie */
+html.show_footnotes p.fnote {
+	display: block;
+}
+
+html.hide_footnotes p.fnote {
+	display: none;
+}
+
+
+/* must have, because "page-with-footnote" has different 
+	top position for #main-content */
+body #fixed-header-for-footnote-toggle {
+	display: none;
+}
+
+/* only inserted on body.page-with-footnotes */
+body.page-with-footnotes #fixed-header-for-footnote-toggle {
+	z-index: 199;
+	display: block;
+	/* converted to STICKY header */
+	position: sticky;
+	/* sticky must have a top or it scrolls */
+	/* must be below progress bar */
+	top: 4px;
+	height: 36px;
+	text-align: right;
+	/* must use padding, not margin, as margin area is transparent*/
+
+	/* testing
+	border: 1px solid blue;*/
+
+	/* NONE OF THE FOLLOWING IS NECESSARY AFTER CHANGING 
+	POSITION FROM FIXED TO STICKY	
+	position: fixed;
+	must have text-align: right if width is 100%; */
+	/* must have width:100% or it will be transparent
+		Also must have width:100% or it will align to left IF it is in menu-include */
+	/* width:100%; 
+	/* must be below progress bar */
+	/* top: 6px; */
+	/* left: 0;
+	right: 0px;
+	height: 34px; */
+}
+
+/* doesn't do anyhing
+#sticky-header-wrapper,
+#show-hide-footnote-gadget {
+	height: 36px;
+}
+*/
+
+
+/* normal position of #main-content for wide screen is is top: 0px
+	Adjust by adding 34px height of #fixed-header-for-footnote-toggle 
+	Adjustment Was only needed for Fixed. Not needed since sticky x
+*/
+body.page-with-footnotes #main-content,
+body.page-with-footnotes #menu-container {
+	/* not needed since sticky, if "0" ?
+	top: 0px; */
+	top: 0;
+}
+
+
+@media only screen and (max-width:767px) {
+
+	/* normal position of #main-content for small screen is top: 101px */
+	/* insert this first */
+	body.page-with-footnotes #fixed-header-for-footnote-toggle {
+		/* must have "top" or it will scroll */
+		top: 101px;
+	}
+
+	/* 101px plus 34px height of #fixed-header-for-footnote-toggle */
+	body.page-with-footnotes #main-content,
+	body.page-with-footnotes #menu-container {
+		top: 101px;
+	}
+
+
+}
+
+
+
+/* end */

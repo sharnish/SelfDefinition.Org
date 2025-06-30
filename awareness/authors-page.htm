@@ -69,9 +69,6 @@
 			border: 0px solid blue;
 		}
 
-		div.image-link {
-			border: 0px solid green;
-		}
 
 		div.text-link,
 		div.text-link-only {
@@ -90,26 +87,8 @@
 			text-align: left;
 		}
 
-		div.image-link,
 		div.text-link {
-			float: left;
-		}
-
-		/* uarelove skin adjustments */
-		div.image-link {
-			width: 30%;
-			margin-top: 10px;
-		}
-
-		/* The image is 100% of container. Overrides natural width of 167px */
-		div.image-link img {
 			width: 100%;
-			padding: 0;
-			margin: 0;
-		}
-
-		div.text-link {
-			width: calc(70% - 22px);
 			margin-left: 20px;
 			margin-top: 0;
 		}
@@ -129,13 +108,8 @@
 				width: 100%;
 			}
 
-			div.image-link {
-				width: 30%;
-				margin-top: 5px;
-			}
-
 			div.text-link {
-				width: calc(70% - 12px);
+				width: 100%;
 				margin-left: 10px;
 			}
 
@@ -145,7 +119,6 @@
 		}
 
 		/************** End Amazon *****************/
-
 	</style>
 </head>
 
@@ -153,7 +126,9 @@
 	<div id="mainwrapper">
 		<div id="container">
 			<div id="menu-panel">
-				<nav id="nav"> <?php include("_awareness-menu-include.htm"); ?> </nav>
+				<nav id="nav">
+					<?php include("_awareness-menu-include.htm"); ?>
+				</nav>
 			</div>
 			<div id="main-content">
 				<!-- #main-content is absolutely positioned-->
@@ -168,7 +143,8 @@
 						<article>
 							<div id="announce">
 								<header>
-									<?php include( "_awareness-title-include.htm"); ?><h2 class="toowide">
+									<?php include( "_awareness-title-include.htm"); ?>
+									<h2 class="toowide">
 										Author Information
 									</h2>
 								</header>
@@ -198,19 +174,13 @@
 									Items at Amazon.Com, USA.
 									<!--International links coming soon.-->
 								</p>
-								<p class="toowide tiny">
-									If you don't see book cover images in the left column, your browser settings may be blocking them (Amazon images).
-								</p>
 							</header>
 							<div class="item-list">
 								<!-- Only first book item and first Prime video item have a pixel. in the text link -->
 								<div class="item-container">
 									<!-- The Direct Means to Eternal Bliss, 7th Edition (2015)
                                     Paperback: 122 pages -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/1937995895/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995895&linkCode=as2&tag=selfdefinitio-20&linkId=7a1aebe51575c6bb363f22d98580027a">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1937995895&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/1937995895/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995895&linkCode=as2&tag=selfdefinitio-20&linkId=ed28ce47fe156fa3f0b226c81238c27b">The Direct Means to Eternal Bliss, <span class="note">7th Edition</span></a>
 										<p class="note80">
@@ -222,10 +192,7 @@
 								</div>
 								<div class="item-container">
 									<!-- How to Practice the Teachings 1st Edition  -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/1937995747/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995747&linkCode=as2&tag=selfdefinitio-20&linkId=a79ac9c9ff06e702019816eddaa8c21a">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1937995747&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/1937995747/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995747&linkCode=as2&tag=selfdefinitio-20&linkId=6c5b064729a5bcc20cc2773c55b4248e">How to Practice the Teachings </a>
 										<p class="note80">
@@ -239,10 +206,7 @@
 									<!-- How to Practice Self Inquiry 
                                     Paperback: 102 pages
                                     Publisher: THE FREEDOM RELIGION PRESS -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/1937995798/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995798&linkCode=as2&tag=selfdefinitio-20&linkId=31b7950478b98e4517a454edb3cb651a">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1937995798&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/1937995798/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995798&linkCode=as2&tag=selfdefinitio-20&linkId=531e25b6fcaf5558208b9d1429b49aee">How to Practice Self Inquiry; <span class="note">quotes from Ramana Maharshi</span></a>
 										<p class="note80">
@@ -257,10 +221,7 @@
                                     Paperback: 246 pages
 Publisher: Freedom Religion Press, 1 edition (April 22, 2016)
                                      -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/1937995739/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995739&linkCode=as2&tag=selfdefinitio-20&linkId=b8a5fbd9ab8bc16292345dabfbc8d5f3">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1937995739&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/1937995739/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995739&linkCode=as2&tag=selfdefinitio-20&linkId=de3b07b862a4f749786fc9350b49c39d">Manonasa: A Spiritual Autobiography, by Michael Langford</a>
 										<p class="note80">
@@ -279,10 +240,7 @@ Publisher: Freedom Religion Press, 1 edition (April 22, 2016)
                                     Paperback: 196 pages
 Publisher: The Freedom Religion Press; 2 edition (May 25, 2015)
                                       -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/097972676X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=097972676X&linkCode=as2&tag=selfdefinitio-20&linkId=37199fbbac53d28f5cace55e95db3f0e">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=097972676X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/097972676X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=097972676X&linkCode=as2&tag=selfdefinitio-20&linkId=700d398ea9b4fcbf5293d513d80dad8d">The Seven Steps to Awakening</a>
 										<p class="note80">
@@ -296,10 +254,7 @@ Publisher: The Freedom Religion Press; 2 edition (May 25, 2015)
 									<!-- Importance of Practice &amp; Effort: Essentials for Self Realization 1st Edition 
                                     
                                     https://www.amazon.com/Importance-Practice-Effort-Essentials-Realization/dp/1937995879/ref=sr_1_1?dchild=1&keywords=The+Importance+of+Practice+%26+Effort%3A+Essentials+for+Self+Realization&qid=1586978400&s=books&sr=1-1-->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Importance-Practice-Effort-Essentials-Realization/dp/1937995879/ref=as_li_ss_il?dchild=1&keywords=The+Importance+of+Practice+&+Effort:+Essentials+for+Self+Realization&qid=1586978400&s=books&sr=1-1&linkCode=li3&tag=selfdefinitio-20&linkId=d9343a44b2fe26e5292f1f47e829eca2&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937995879&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Importance-Practice-Effort-Essentials-Realization/dp/1937995879/ref=as_li_ss_tl?dchild=1&keywords=The+Importance+of+Practice+&+Effort:+Essentials+for+Self+Realization&qid=1586978400&s=books&sr=1-1&linkCode=ll1&tag=selfdefinitio-20&linkId=181daad2bf21bde9c13fe1bfd0dce329&language=en_US">Importance of Practice &amp; Effort: Essentials for Self Realization </a>
 										<p class="note80">
@@ -315,10 +270,7 @@ Publisher: The Freedom Religion Press; 2 edition (May 25, 2015)
                                     Paperback: 78 pages
 Publisher: THE FREEDOM RELIGION PRESS; 2 edition (December 22, 2012)
                                      -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/1937995860/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995860&linkCode=as2&tag=selfdefinitio-20&linkId=226d2e4cb191ec581857ab269cd020cb">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1937995860&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/1937995860/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1937995860&linkCode=as2&tag=selfdefinitio-20&linkId=7526dcc6323f432d46ba78d96f4620b2">Powerful Quotes from Sankara</a>
 										<p class="note80">
@@ -334,10 +286,7 @@ Publisher: THE FREEDOM RELIGION PRESS; 2 edition (December 22, 2012)
 Publisher: THE FREEDOM RELIGION PRESS (December 22, 2012)
 https://www.amazon.com/Crest-Jewel-Wisdom-other-writings-Sankaracharya/dp/1937995992/
                                    -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Crest-Jewel-Wisdom-other-writings-Sankaracharya/dp/1937995992/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=6ca2c82f315aa4a2c2a0942344f3db4d&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937995992&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Crest-Jewel-Wisdom-other-writings-Sankaracharya/dp/1937995992/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=da43357416bba2432e93038517f5b789&language=en_US">The Crest-Jewel of Wisdom: and other writings of Sankaracharya</a>
 										<p class="note80">
@@ -359,10 +308,7 @@ https://www.amazon.com/Crest-Jewel-Wisdom-other-writings-Sankaracharya/dp/193799
 Publisher: The Freedom Religion Press (November 21, 2011)
                                      https://www.amazon.com/gp/product/0982965109/
                                       -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/0982965109/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=cf421856b6428b48f0f91f241c00f1eb&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0982965109&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/0982965109/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=2e4a9ae37137cb6798de681f1cb3526d&language=en_US">EVERYTHING IS AN ILLUSION </a>
 										<p class="note80">
@@ -376,10 +322,7 @@ Publisher: The Freedom Religion Press (November 21, 2011)
 									<!-- HOW NOT TO GET LOST IN CONCEPTS by Ramana Maharshi, Nisargadatta Maharaj, Vasistha, Sankara, Mu (2011) Paperback 
                   https://www.amazon.com/gp/product/B00MEY36OC/ 
                   Publisher: The Freedom Religion Press (2011) -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/B00MEY36OC/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=de846d456799249bb80c06a6877e516c&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00MEY36OC&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/B00MEY36OC/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=ac1399bc2a7b8db404571217bdd8ad1d&language=en_US">HOW NOT TO GET LOST IN CONCEPTS </a>
 										<p class="note80">
@@ -392,10 +335,7 @@ Publisher: The Freedom Religion Press (November 21, 2011)
 								<div class="item-container">
 									<!-- SELF-AWARENESS PRACTICE INSTRUCTIONS                  
                   https://www.amazon.com/AWARENESS-PRACTICE-INSTRUCTIONS-Ramana-Maharshi/dp/0979726719/ -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/AWARENESS-PRACTICE-INSTRUCTIONS-Ramana-Maharshi/dp/0979726719/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=61fb7d8de99d83294d055f6f1cddb6df&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0979726719&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/AWARENESS-PRACTICE-INSTRUCTIONS-Ramana-Maharshi/dp/0979726719/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=9e17da6046e16479c33c33759c52f9be&language=en_US">SELF AWARENESS PRACTICE INSTRUCTIONS </a>
 										<p class="note80">
@@ -409,10 +349,7 @@ Publisher: The Freedom Religion Press (November 21, 2011)
 									<!-- INSPIRATION AND ENCOURAGEMENT On The Path To Self Realization
                   https://www.amazon.com/INSPIRATION-ENCOURAGEMENT-Path-Self-Realization/dp/0979726727/
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/INSPIRATION-ENCOURAGEMENT-Path-Self-Realization/dp/0979726727/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=e9054d63ac59ef07cfd04785982a8544&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0979726727&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/INSPIRATION-ENCOURAGEMENT-Path-Self-Realization/dp/0979726727/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=714af8ca93a54e980d235d83e4d96962&language=en_US">INSPIRATION AND ENCOURAGEMENT On The Path To Self Realization </a>
 										<p class="note80">
@@ -426,10 +363,7 @@ Publisher: The Freedom Religion Press (November 21, 2011)
 									<!-- THE FALSE SELF                   
                   https://www.amazon.com/FALSE-SELF-Ramana-Maharshi/dp/0979726735/
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/FALSE-SELF-Ramana-Maharshi/dp/0979726735/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=ef3c64f4412fe4c19533729216415246&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0979726735&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/FALSE-SELF-Ramana-Maharshi/dp/0979726735/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=13600700fbb18da5046528c6837124f6&language=en_US">THE FALSE SELF Paperback </a>
 										<p class="note80">
@@ -443,10 +377,7 @@ Publisher: The Freedom Religion Press (November 21, 2011)
 									<!-- THE DESIRE FOR LIBERATION                  
                   https://www.amazon.com/DESIRE-LIBERATION-Nisargadatta-Maharaj/dp/0979726778/
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/DESIRE-LIBERATION-Nisargadatta-Maharaj/dp/0979726778/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=351f7966f8137587b42f97ad33b8c417&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0979726778&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/DESIRE-LIBERATION-Nisargadatta-Maharaj/dp/0979726778/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=e4e4d2b0ebcc4bc58a9c2e198dc61db9&language=en_US">THE DESIRE FOR LIBERATION </a>
 										<p>
@@ -462,10 +393,7 @@ Publisher: The Freedom Religion Press (November 21, 2011)
                   https://www.amazon.com/True-Self-Nisargadatta-Maharaj/dp/1937995755/
                   Paperback: 154 pages
 Publisher: The Freedom Religion Press -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/True-Self-Nisargadatta-Maharaj/dp/1937995755/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=2679c5192faa9437384a95d9574d3460&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937995755&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/True-Self-Nisargadatta-Maharaj/dp/1937995755/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=c1c1cb216c8822d4ce22f7e62cd261dc&language=en_US">The True Self </a>
 										<p class="note80">
@@ -479,10 +407,7 @@ Publisher: The Freedom Religion Press -->
 									<!-- Direct Path Quotes from A Course in Miracles                    
                      https://www.amazon.com/Direct-Path-Quotes-Course-Miracles/dp/1937995704/
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Direct-Path-Quotes-Course-Miracles/dp/1937995704/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=4904232087ef110fe00ba99ad6746f31&language=en_US">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937995704&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Direct-Path-Quotes-Course-Miracles/dp/1937995704/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=9bccc0352fe9f3d4b177be7fb22c2c3f&language=en_US">Direct Path Quotes from A Course in Miracles </a>
 										<p class="note80">
@@ -494,9 +419,7 @@ Publisher: The Freedom Religion Press -->
 								</div>
 								<div class="item-container">
 									<!-- -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/dp/1937995720/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=01750b6bb7658e094d7fd93e85e2bb1f&language=en_US"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1937995720&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/dp/1937995720/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=ad048b73a278cef4ff0bd25015d58011&language=en_US">
 											65 Brilliant Choices: that lead to less problems, more joy &amp; skillful living</a>
@@ -515,10 +438,7 @@ Publisher: The Freedom Religion Press -->
 									<!-- Has pixel, way down on page
                                     The Sage of Arunachala - Sri Ramana Maharshi
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/B0829DW2BT/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0829DW2BT&linkCode=as2&tag=selfdefinitio-20&linkId=5dad1d8d3ca4b66656b81bd938103908">
-											<img src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B0829DW2BT&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/B0829DW2BT/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B0829DW2BT&linkCode=as2&tag=selfdefinitio-20&linkId=2b290200aa7ad1cb29ba21079ab61f51">The Sage of Arunachala - Sri Ramana Maharshi</a>
 										<img src="//ir-na.amazon-adsystem.com/e/ir?t=selfdefinitio-20&l=am2&o=1&a=B0829DW2BT" width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />
@@ -531,10 +451,7 @@ Publisher: The Freedom Religion Press -->
 								</div>
 								<div class="item-container">
 									<!-- Advaita: Non-Dual Spirituality - from Ancient India to our Global Age-->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/B07QVMG2Z9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07QVMG2Z9&linkCode=as2&tag=selfdefinitio-20&linkId=ebecbb8523f62c383e53e520e170b541">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B07QVMG2Z9&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/B07QVMG2Z9/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07QVMG2Z9&linkCode=as2&tag=selfdefinitio-20&linkId=b22919946ba1e4b0936670e83caa82c8">Advaita: Non-Dual Spirituality from Ancient India to our Global Age</a>
 										<p class="note80">
@@ -547,10 +464,7 @@ Publisher: The Freedom Religion Press -->
 								<div class="item-container">
 									<!-- 
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/B00GN5CM8E/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00GN5CM8E&linkCode=as2&tag=selfdefinitio-20&linkId=114559c02525e8724e1b86f7760a1d26">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00GN5CM8E&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/B00GN5CM8E/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00GN5CM8E&linkCode=as2&tag=selfdefinitio-20&linkId=c5ca26879d5d5ed7b46e01b3e343cd48">Arunachala Shiva - Teachings of Ramana Maharshi</a>
 										<p class="note80">
@@ -572,10 +486,7 @@ Publisher: The Freedom Religion Press -->
 								</div>
 								<div class="item-container" style="margin-top: 40px;">
 									<!-- Who Am I?: The Teachings of Bhagavan Sri Ramana Maharshi -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/818801804X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=818801804X&linkCode=as2&tag=selfdefinitio-20&linkId=f4b17f6c38801ecde3604d3010062349">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=818801804X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/818801804X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=818801804X&linkCode=as2&tag=selfdefinitio-20&linkId=235d3603031b35bd0b739bbb93e51ea6">Who Am I?: The Teachings of Bhagavan Sri Ramana Maharshi</a>
 										<p class="note80">
@@ -587,10 +498,7 @@ Publisher: The Freedom Religion Press -->
 								</div>
 								<div class="item-container">
 									<!-- Be as You Are The Teachings of Sri Ramana Maharshi Publisher: Penguin -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/B004WGL1GK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004WGL1GK&linkCode=as2&tag=selfdefinitio-20&linkId=6960bd9197167483f55bb12cb7d6088f">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B004WGL1GK&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/B004WGL1GK/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004WGL1GK&linkCode=as2&tag=selfdefinitio-20&linkId=e71cfa4858c45546f8d480ac8215eb4a">Be as You Are: The Teachings of Sri Ramana Maharshi (Penguin)</a>
 										<p class="note80">
@@ -602,10 +510,7 @@ Publisher: The Freedom Religion Press -->
 								</div>
 								<div class="item-container">
 									<!-- Be As You Are: The spiritual teachings and wisdom of Sri Ramana Maharshi (Arkana, Kindle and paperback -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/B002RI9JS2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002RI9JS2&linkCode=as2&tag=selfdefinitio-20&linkId=667f3e94a82e74637ebc902b4d412a3a">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B002RI9JS2&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/B002RI9JS2/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B002RI9JS2&linkCode=as2&tag=selfdefinitio-20&linkId=f5356b7420e0e999331fb18f0b4738f0">Be As You Are: The Spiritual Teachings of Sri Ramana Maharshi (Arkana)</a>
 										<p class="note80">
@@ -617,10 +522,7 @@ Publisher: The Freedom Religion Press -->
 								</div>
 								<div class="item-container">
 									<!-- The Power of the Presence (Part Three) -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/gp/product/0971137129/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0971137129&linkCode=as2&tag=selfdefinitio-20&linkId=d31280d2479ee4def169f0d67309a250">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0971137129&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=selfdefinitio-20"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/gp/product/0971137129/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0971137129&linkCode=as2&tag=selfdefinitio-20&linkId=a8aac60bdd81bc8fefa9ccba5ee6b258">The Power of the Presence <span class="note">(Part Three)</span></a>
 										<p class="note80">
@@ -630,31 +532,12 @@ Publisher: The Freedom Religion Press -->
 									<div style="clear: both;">
 									</div>
 								</div>
-								<div class="item-container">
-									<!-- The Collected Works of Sri Ramana Maharshi 
-                   https://www.amazon.com/Collected-Works-Sri-Ramana-Maharshi-ebook/dp/B00F0NSAP4/                   
-                   Print Length: 246 pages, Publisher: Sri Ramanasramam -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Collected-Works-Sri-Ramana-Maharshi-ebook/dp/B00F0NSAP4/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=b73159cf6ce1737cbfbab7b80af5cb77&language=en_US">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00F0NSAP4&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
-									<div class="text-link">
-										<a target="_blank" href="https://www.amazon.com/Collected-Works-Sri-Ramana-Maharshi-ebook/dp/B00F0NSAP4/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=ba20388ac5562db17c592426a7a8d9c3&language=en_US">The Collected Works of Sri Ramana Maharshi </a>
-										<p class="note80">
-											Kindle, hardcover and paperback versions. Print length 246 pages. Text-to-speech enabled in the Kindle edition. See the table of contents for the many works included.
-										</p>
-									</div>
-									<div style="clear: both;">
-									</div>
-								</div>
+
 								<div class="item-container">
 									<!-- The Garland of Guru's Sayings: Guru Vachaka Kovai
                    https://www.amazon.com/Garland-Gurus-Sayings-Vachaka-Kovai/dp/8182880815/
                    Paperback: 252 pages, Publisher: Sri Ramanasramam -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Garland-Gurus-Sayings-Vachaka-Kovai/dp/8182880815/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=09aaaddfb84c4cb79d8af6c6c9c85c10&language=en_US">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=8182880815&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Garland-Gurus-Sayings-Vachaka-Kovai/dp/8182880815/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=5f8b9bd8e09c74d02f4d6a46298ccd7b&language=en_US">The Garland of Guru's Sayings: Guru Vachaka Kovai </a>
 										<p class="note80">
@@ -668,10 +551,7 @@ Publisher: The Freedom Religion Press -->
 									<!-- Happiness and the Art of Being: An introduction to the philosophy and practice of the spiritual teachings of Bhagavan Sri Ramana
                   https://www.amazon.com/Happiness-Art-Being-introduction-philosophy-ebook/dp/B007NIHBXQ/
                   Print Length: 502 pages, Publisher: Michael D A James -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Happiness-Art-Being-introduction-philosophy-ebook/dp/B007NIHBXQ/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=f35548ca734be0f488e00dff398a49d2&language=en_US">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B007NIHBXQ&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Happiness-Art-Being-introduction-philosophy-ebook/dp/B007NIHBXQ/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=b4209b2be548fc7394084dd77c826a99&language=en_US">Happiness and the Art of Being, by Michael James </a>
 										<p class="note80">
@@ -685,10 +565,7 @@ Publisher: The Freedom Religion Press -->
 									<!-- Living By the Words of Bhagavan, by David Godman 
                    https://www.amazon.com/Living-Words-Bhagavan-David-Godman/dp/B002DIZITA/
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Living-Words-Bhagavan-David-Godman/dp/B002DIZITA/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=9eeb615f366543f1380989ea25a977f0&language=en_US">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B002DIZITA&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Living-Words-Bhagavan-David-Godman/dp/B002DIZITA/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=92c9f5a46f5f0b5c40d4b0e815b9f652&language=en_US">Living By the Words of Bhagavan, by David Godman </a>
 										<p class="note80">
@@ -702,10 +579,7 @@ Publisher: The Freedom Religion Press -->
 									<!-- A Course in Miracles (Kindle, hardback, paperback)
                    https://www.amazon.com/Course-Miracles-Dr-Helen-Schucman-ebook/dp/B0018A01L4/
                                     -->
-									<div class="image-link">
-										<a target="_blank" href="https://www.amazon.com/Course-Miracles-Dr-Helen-Schucman-ebook/dp/B0018A01L4/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=095eec1c106692ae949f2d1fa0e971a8&language=en_US">
-											<img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0018A01L4&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US"></a>
-									</div>
+
 									<div class="text-link">
 										<a target="_blank" href="https://www.amazon.com/Course-Miracles-Dr-Helen-Schucman-ebook/dp/B0018A01L4/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=f00f9011c782c7a9507e7c5eebb7cacf&language=en_US">A Course in Miracles </a>
 										<p class="note">
@@ -719,21 +593,7 @@ Publisher: The Freedom Religion Press -->
 									<!-- A Light on the Teaching of Bhagavan Sri Ramana Maharshi 
                   https://www.amazon.com/Light-Teaching-Bhagavan-Ramana-Maharshi/dp/1888599219/
                   Paperback: 115 pages. Publisher: AHAM Publications  -->
-									<!--p class="yellow">as of April 17, 2020 "currently unavailable"</p>
-                                   
-                                    <div class="image-link">
-                                    <a target="_blank"
-                                    href="https://www.amazon.com/Light-Teaching-Bhagavan-Ramana-Maharshi/dp/1888599219/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=selfdefinitio-20&linkId=8ac8d5591975c7f0e6bac76610db3fa5&language=en_US" ><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1888599219&Format=_SL250_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=selfdefinitio-20&language=en_US" ></a>
-                                    </div>
-                                    <div class="text-link">
-                                    <a target="_blank"
-                                    href="https://www.amazon.com/Light-Teaching-Bhagavan-Ramana-Maharshi/dp/1888599219/ref=as_li_ss_tl?ie=UTF8&linkCode=ll1&tag=selfdefinitio-20&linkId=f3413c6ee5b3f5f95c47fa923acb5a83&language=en_US">
-                                        A Light on the Teaching of Bhagavan Sri Ramana Maharshi (paperback)
-                                    </a>
-                                    </div>
-                                    <div style="clear: both;">
-                                    </div>
-                                    -->
+									<!--p class="yellow">as of April 17, 2020 "currently unavailable"</p>-->
 								</div>
 								<header class="tiny">
 									<!-- not a header, but uing for formatting-->

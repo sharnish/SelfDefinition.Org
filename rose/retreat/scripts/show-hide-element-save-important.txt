@@ -1,0 +1,33 @@
+show-hide-element-save-important
+
+Alternative method - MUCH easier but no cookie yet
+
+	<script type="text/javascript">
+		
+		function valueChanged() {
+			if ($('.footnote_question').is(":checked"))
+				//	$(".answer").hide();
+				$(".fnote").hide();
+
+			else
+				$(".fnote").show();
+		}
+		
+	</script>
+
+
+HTML
+
+<fieldset class="question">
+	<label style="display:inline;" for="coupon_question">Hide the footnotes?</label>
+	<input style="display:inline;" class="footnote_question" type="checkbox" name="footnote_question" value="0" onchange="valueChanged()" />
+</fieldset>
+
+<p class="fnote">[1. A test footnote.]</p>
+
+
+
+
+
+
+end

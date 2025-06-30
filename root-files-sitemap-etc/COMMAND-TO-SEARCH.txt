@@ -1,0 +1,19 @@
+First do this to see if php files exist:
+
+ls --R |grep php
+
+
+Show the full path:
+
+ls -ault `find $PWD/ -type f` | grep .php
+
+
+# ref
+#  
+# https://superuser.com/questions/595697/recursively-list-full-absolute-path-of-files-with-permissions-in-linux
+#
+
+
+
+
+

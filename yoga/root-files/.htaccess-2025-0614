@@ -1,0 +1,78 @@
+# .htaccess file for selfdefinition.org/yoga/
+
+# April 18, 2020 comment:
+# this file was named "htaccess-save" don't know why
+# will instate
+
+# add Apr 18, 2020, but already have this at bottom of page, doesn't seem to be working
+# Redirect 301 "/yoga/Swami Niranjananda Saraswati - Prana and Pranayama.pdf"  "/yoga/yoga-files-redirect-page.htm"
+
+
+# MUST use absolute paths if file used as a 404 page
+# ErrorDocument 404 "/yoga/yoga-files-redirect-page.htm"  < no, redirect page is now in /redirects/
+
+ErrorDocument 404 "/redirect/yoga-404-redirect.htm"
+
+# temporary fix for server error Mar 17, 2017
+# don't know why I did this
+# ErrorDocument 500 "/yoga/yoga-files-redirect-page.htm"
+
+
+# Radha Soami moved to its own section 25 Jul  2016
+
+Redirect 301 "/yoga/radha-soami/radha-soami-satsang.htm"  "/radha-soami/radha-soami-satsang.htm"
+
+
+# 301s created Jul 25, 2016, then changed to "gone" Mar 17, 2017
+
+Redirect gone "/yoga/diagrams/The-Creation-According-To-Sant-Mat.jpeg"
+
+Redirect gone "/yoga/Kashmir-Shaivism.pdf"
+
+Redirect gone "/yoga/Kirpal Singh -  Naam or Word [1 ebook-PDF].PDF"
+
+Redirect gone "/yoga/Kirpal Singh -  Prayer, its Nature & Technique [1 ebook-PDF].pdf"
+
+Redirect gone "/yoga/Kirpal Singh -  Surat Shabd Yoga, Yoga of The Celestial Sound Current.pdf"
+
+Redirect gone "/yoga/Kirpal Singh -  The Jap Ji [1 ebook-PDF].pdf"
+
+Redirect gone "/yoga/Kirpal Singh -  The Way of Saints, Sant Mat [1 ebook-PDF].PDF"
+
+Redirect gone "/yoga/Paul Twitchell - All About ECK.pdf"
+
+Redirect gone "/yoga/Paul Twitchell - Spiritual Notebook.pdf"
+
+## end of radha soami
+
+## clean up file names Jan 23, 2017
+
+Redirect 301 "/yoga/Anthony Bright-Paul - Stairway to Subud (1965).pdf"        "/yoga/Anthony-Bright-Paul-Stairway-to-Subud-1965.pdf"
+
+Redirect 301 "/yoga/Lefebure - L01 - The subud initiation.pdf"                 "/yoga/Lefebure-L01-The-Subud-Initiation.pdf"
+
+Redirect 301 "/yoga/Swami Sivananda - Essence of Yoga.pdf"                     "/yoga/Swami-Sivananda-Essence-of-Yoga.pdf"
+
+Redirect 301 "/yoga/Swami Sivananda - Mind (its mysteries and control).pdf"    "/yoga/Swami-Sivananda-Mind-Its-Mysteries-and-Control.pdf"
+
+Redirect 301 "/yoga/Swami Sivananda - Yoga in daily life.pdf"                  "/yoga/Swami-Sivananda-Yoga-In-Daily-life.pdf"
+
+Redirect 301 "/yoga/The Eight Limbs of Yoga - 1 page.pdf"                      "/yoga/The-Eight-Limbs-of-Yoga-1-page.pdf"
+
+Redirect 301 "/yoga/Bhavagad-Gita-Canto-del-Senor.pdf"                         "/yoga/espanol-Bhavagad-Gita-Canto-del-Senor.pdf"
+
+
+### large files removed Dec 20, 2016
+Redirect 301 "/yoga/Harold Percival - Thinking and Destiny.pdf"                  "/yoga/yoga-files-redirect-page.htm"
+Redirect 301 "/yoga/Lucy Lidell - The Sivananda Companion to Yoga.pdf"           "/yoga/yoga-files-redirect-page.htm"
+Redirect 301 "/yoga/Philosophy of Gorakhnath-by-Akshaya-Kumar-Banerjea.pdf"      "/yoga/yoga-files-redirect-page.htm"
+Redirect 301 "/yoga/Swami Niranjananda Saraswati - Prana and Pranayama.pdf"      "/yoga/yoga-files-redirect-page.htm"
+
+
+
+#end
+
+
+
+
+

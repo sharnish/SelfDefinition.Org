@@ -42,6 +42,7 @@ also see light green for footnote toggle class "hidden"
     html.dark sup.black,
     html.dark sup.asterisk {
         background: #202020;
+		background: #212529;
         /* update April 20, 2022 */
         color: #fdfdff;
     }
@@ -58,6 +59,7 @@ also see light green for footnote toggle class "hidden"
         background: #252729; */
 		/* update Dec 29, 2022 */
 		background: #222222; 
+		background: #212529;
     }
 
     html.dark #nav .menu-section a.active,

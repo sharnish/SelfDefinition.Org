@@ -1,0 +1,34 @@
+# selfdefinition.org/pulyan/ 
+
+# ?? why is this necessary? Was it used in old format?
+# AddType application/x-httpd-php .html .htm 
+
+
+
+# new section added Oct 4, 2019, the-penny-that-blocks-out-the-sun.htm moved to "writings"
+
+redirect 301 "/pulyan/the-penny-that-blocks-out-the-sun.htm"    "/pulyan/writings/the-penny-that-blocks-out-the-sun.htm" 
+
+
+
+# pages moved April 29, 2015 
+
+redirect 301 /pulyan/0820.htm /pulyan/letters/1960-0820-pulyan.htm
+redirect 301 /pulyan/0827.htm /pulyan/letters/1960-0827-pulyan.htm
+redirect 301 /pulyan/0906.htm /pulyan/letters/1960-0906-pulyan.htm
+redirect 301 /pulyan/0917.htm /pulyan/letters/1960-0917-pulyan.htm
+redirect 301 /pulyan/0923.htm /pulyan/letters/1960-0923-pulyan.htm
+redirect 301 /pulyan/0928.htm /pulyan/letters/1960-0928-pulyan.htm
+redirect 301 /pulyan/1006.htm /pulyan/letters/1960-1006-pulyan.htm
+redirect 301 /pulyan/1012.htm /pulyan/letters/1960-1012-pulyan.htm
+redirect 301 /pulyan/1023.htm /pulyan/letters/1960-1023-pulyan.htm
+
+
+# page reformatted and renamed Mar 20, 2017
+
+
+Redirect 301 "/pulyan/alfred-pulyan-penny-that-blocks-out-the-sun.htm"   "/pulyan/the-penny-that-blocks-out-the-sun.htm"
+
+
+
+# end

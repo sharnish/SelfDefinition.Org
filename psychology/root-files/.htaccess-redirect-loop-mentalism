@@ -1,0 +1,248 @@
+# .htaccess file for selfdefinition.org/psychology/  and /psychology/mentalism/
+
+# temp while under construxtion
+IndexIgnore robert-greene
+
+# ADD THESE ITEMS MARCH 17, 2022 FOR FILES MOVED TO LIBERTY SECTION
+
+# Redirect 301  "/psychology/etienne-de-la-boetie/contents.htm"		"/psychology/etienne-de-la-boetie/contents.htm"
+
+# THIS WORKS
+
+Redirect 301  "/psychology/etienne-de-la-boetie/"		"/liberty/etienne-de-la-boetie/"
+
+Redirect 301  "/psychology/xenofon/"		"/liberty/xenofon/"
+
+Redirect 301  "/psychology/marxism/"		"/liberty/marxism/"
+
+Redirect 301 "/psychology/Etienne-de-la-Boetie-Politics-of-Obedience-von-Mises.pdf" "/liberty/Etienne-de-la-Boetie-Politics-of-Obedience-von-Mises.pdf"
+
+### END MARCH 17, 2022
+
+
+# Change name Sep 5, 2021
+
+Redirect 301 "/psychology/joost-meerloo"   "/psychology/meerloo"
+
+# need canonical link for meerloo pdf
+
+# Canonical links added Oct 1, 2016 < copied from /magic on Sep 7, 2021
+#<Files ''>
+#	Header add Link '<>; rel="canonical"'
+#	#Header set TestHeader "This is a file-specific custom header for testing."
+#</Files>
+
+<Files 'A.M.Meerloo-Md-Rape-Of-The-Mind-Psychology-of-Thought-Control-1956.pdf'>
+	Header add Link '<https://selfdefinition.org/psychology/meerloo/rape-of-mind/contents.htm>; rel="canonical"'
+	Header set TestHeader "This is a file-specific custom header for testing."
+</Files>
+
+
+# June 6, 2020 Moved Stratton and renamed some of them.
+
+Redirect 301 "/psychology/george-malcolm-stratton/index.htm"                    "/psychology/stratton/contents.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/00-contents.htm"              "/psychology/stratton/contents.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/00-editors-introduction.htm"  "/psychology/stratton/editors-introduction.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/00-outline.htm"               "/psychology/stratton/outline.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/01-is-the-mind-a-gymnasium-or-a-tool-chest.htm"      "/psychology/stratton/01-is-the-mind-a-gymnasium-or-a-tool-chest.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/02-defects-in-the-rival-accounts.htm"       "/psychology/stratton/02-defects-in-the-rival-accounts.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/03-the-interplay-of-mind-and-body.htm"      "/psychology/stratton/03-the-interplay-of-mind-and-body.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/04-influences-within-intelligence.htm"      "/psychology/stratton/04-influences-within-intelligence.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/05-emotion-and-mental-energy.htm"           "/psychology/stratton/05-emotion-and-mental-energy.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/06-organization-of-impulses-and-will.htm"   "/psychology/stratton/06-organization-of-impulses-and-will.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/07-care-of-the-emotions.htm"                "/psychology/stratton/07-care-of-the-emotions.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/08-instincts-wild-and-tame.htm"             "/psychology/stratton/08-instincts-wild-and-tame.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/09-exercises-for-the-will.htm"              "/psychology/stratton/09-exercises-for-the-will.htm"
+
+Redirect 301 "/psychology/george-malcolm-stratton/10-establishing-government-in-the-mind.htm" "/psychology/stratton/10-establishing-government-in-the-mind.htm"
+
+
+
+# note:  /psychology/hypnosis/ and /psychology/mentalism/ each have their own .htaccess files
+#        (redirects and canonica links)
+
+
+# File is in New Thought
+
+Redirect 301 "/psychology/mentalism/William Walker Atkinson - Practical Mind Reading.pdf"              "/new-thought/William-Walker-Atkinson-Practical-Mind-Reading.pdf"
+Redirect 301 "/psychology/mentalism/William%20Walker%20Atkinson%20-%20Practical%20Mind%20Reading.pdf"  "/new-thought/William-Walker-Atkinson-Practical-Mind-Reading.pdf"
+
+
+# try psychology redirect with Amazon link, for 404s
+
+Redirect 301 "/psychology/Julian-Jaynes-Origin-of-Consciousness-Breakdown-of-Bicameral-Mind.pdf" "/redirect/psychology-404-redirect.htm"
+
+
+
+# START of mentalim redirects PUT BEFORE ERROR DOCUMENT
+
+Redirect 301 "/psychology/mentalism/Basil Horfitz - Mental Magic IV.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Ben Rayot - Deadly Mentalism.PDF"							"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Body Language - Allan Pease.pdf"							"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Body Language.pdf"											"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Chuck Hickok - Mentalism Incorporated.pdf"					"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Corinda - 13 Steps To Mentalism (Complete).pdf"				"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Encyclopedic Dictionary of Mentalism - Volume 1.pdf"		"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Encyclopedic Dictionary of Mentalism - Volume 3.pdf"		"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/George B. Anderson - Dynamite Mentalism.pdf"				"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/How to Tell if Someone is Lying.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Impromptu Mind Reading Effect.pdf"							"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Jas Jakutsch - Completely Mental - Vol 2.pdf"				"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Joseph R. Plazo - PhD of Persuasion.pdf"					"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Juan Tamariz - Mental Blockbuster Prediction.pdf"			"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Katz - mentalism in linguistics.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Larry Becker - Bold Business.pdf"							"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Larry Becker - Book Test 4 Dummies.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Larry Becker - Out of Body.pdf"								"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Larry Becker - World of Super Mentalism I.pdf"				"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Larry Becker - World Of Super Mentalism, II.pdf"				"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Making Manifestations (Building the Commercial Seance) by Lee Earle.pdf"			"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Marc Spelmann - Glimpse.pdf"											"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Mark Timon - Triple Impact Design Duplication - Mentalism.pdf"		"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Master Of Body Language.pdf"									"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Mastering Hypnosis.pdf"										"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Max Maven - Flaunting Five Fanciful Formulae.pdf"			"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Nick Trost - Mental Card Miracles.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Ormond McGill - Psychic Magic - Vol 2.pdf"					"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Ormond McGill - Psychic Magic - Vol 4.pdf"					"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Patrick Page - Entertaining ESP.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Phil Goldstein - The Blue, Red, And Green Books Of Mentalism.pdf"		"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Phil Goldstein - The Blue-green and red Book Of Mentalism.pdf"			"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Phil Goldstein - The Violet Book of Mentalism.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Phil Goldstein - The Yellow Book Of Mentalism.pdf"						"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Psychokinesis Magic Book.pdf"								"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Ralph W Read - One Man Mind Reading Secrets.pdf"			"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Robert Nelson - Deluxe Club Mind Reading.pdf"				"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Sealed Vision - Will Dexters.pdf"							"/redirect/mentalism-redirect.htm"
+
+Redirect 301 "/psychology/mentalism/Using Playing Cards in Mentalism.pdf"						"/redirect/mentalism-redirect.htm"
+
+# Redirect 301 "/psychology/mentalism/William Walker Atkinson - Practical Mind Reading.pdf"     "/new-thought/William-Walker-Atkinson-Practical-Mind-Reading.pdf"
+
+# end of mentalim redirects
+
+
+## process of removing started April 19, 2020 - DO NOT USE, REPLACED BY ABOVE
+## WAS Redirect gone /psychology/mentalism/
+
+# TOO RISKY?  Redirect 301 "/psychology/mentalism/"  "/redirect/mentalism-redirect.htm"
+
+# Redirect 301 "/psychology/mentalism/"  "/redirect/mentalism-redirect.htm"
+# THIS WORKS
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} /psychology/mentalism/
+RewriteRule (.*) /redirect/mentalism-redirect.htm [R=307,L]
+
+#############################################
+
+
+ErrorDocument 404 "/redirect/psychology-404-redirect.htm"
+
+## need to do with mentalism and hypnosiss, plus catch any other ccommon psychology 404s
+######
+
+######## Jan 22 2017
+######## Got rid of /psychology/psychology-files-redirect-page.htm
+########
+######## also got rid of mentalism redirect < replaced Apr 21, 2020
+######## Too many url errors
+########
+######## preserved "Article" redirects  for page moves.
+######## Also improved some page names
+
+# did this for 25 greatest science books and mentalism
+
+# try redirect-gone Jan 25 2017
+# http://www.quickonlinetips.com/archives/2014/11/http-410-error-pages-htaccess/
+# Redirect gone /path/path/folder/
+# test with this:
+#  curl -I selfdefinition.org/psychology/mentalism/
+#############################################
+
+
+# added Feb 24, 2017
+Redirect gone "/psychology/harris-thomas-im-ok-youre-ok-in-html/"
+Redirect gone "/psychology/harris-thomas/"
+
+IndexIgnore george-malcolm-stratton
+
+# Redirect is part of mod_alias and has different syntax than mod_rewrite
+# https://httpd.apache.org/docs/current/mod/mod_alias.html#redirect
+
+
+# Redirects after creating the "/psychology/articles/" section on Oct 10, 2016
+# Files were moved AND had name changes
+
+Redirect 301 "/psychology/robert-anton-wilson-free-your-mind.htm"           "/psychology/articles/robert-anton-wilson-free-your-mind.htm"
+Redirect 301 "/psychology/aldous-huxley--article--self-transcendence.htm"   "/psychology/articles/aldous-huxley-self-transcendence.htm"
+Redirect 301 "/psychology/james-medical-materialism.htm"                    "/psychology/articles/james-medical-materialism.htm"
+
+Redirect 301 "/psychology/james-review-Anaesthetic-Revelation-and-Gist-of-Philosophy.htm"  "/psychology/articles/james-review-anaesthetic-revelation-gist-of-philosophy.htm"
+
+Redirect 301 "/psychology/lennard-davis-five-reasons-not-to-take-ssris.htm"         "/psychology/articles/lennard-davis-five-reasons-not-to-take-ssris.htm"
+Redirect 301 "/psychology/six-harsh-truths-that-will-make-you-a-better-person.htm"  "/psychology/articles/six-harsh-truths-that-will-make-you-a-better-person.htm"
+Redirect 301 "/psychology/quotes/skinner-on-taming-the-lions.htm"                   "/psychology/articles/skinner-on-taming-the-lions.htm"
+
+
+Redirect 301 "/psychology/Behavioral Sexual Maladaptation Contagion in America.pdf"         "/psychology/Behavioral-Sexual-Maladaptation-Contagion-in-America.pdf"
+
+Redirect 301 "/psychology/Joseph Chilton Pearce - Spiritual Initiation - Breakthrough.pdf"  "/psychology/Joseph-Chilton-Pearce-Spiritual-Initiation-Breakthrough.pdf"
+
+Redirect 301 "/psychology/Joseph Chilton Pearce - The Crack in The Cosmic Egg.pdf"          "/psychology/Joseph-Chilton-Pearce-Crack-in-the-Cosmic-Egg.pdf"
+
+Redirect 301 "/psychology/Robert Ornstein - The Roots of the Self.pdf"                      "/psychology/Robert-Ornstein-The-Roots-of-the-Self.pdf"
+
+
+
+# end
+
